@@ -1,0 +1,204 @@
+# THE RING LIGHT — VIDEO_QA (TEKNİK) HAM RAPOR
+
+> **Tarih:** 12.08.2026 · **Rubrik:** `QA_PROMPTLARI/VIDEO_QA_CRITIQUE_PROMPT.md`
+> **Mod:** V (SPEC bloğu yapıştırılmadı — planın §0.15'inde HAZIR duruyordu)
+> **Malzeme:** 144 s tam kurgu · 15 klip / 14 kesme
+> ⛔ Model çıktısı olduğu gibi. Belge cevapları ve kilit çelişkileri film kaydında.
+> ⚠️ Bu raporun bulgularının bir kısmı filmin YAZILI KİLİTLERİNE aykırı olay
+> bildiriyor (İngilizce insan repliği, kıvılcım/şarapnel, vakumda ses).
+> Kilit çelişkisi defteri kapanmadan tabloya işlenen skor ŞARTLIDIR → DERS 96.
+
+---
+
+```
+INPUT MODE: V
+BASELINE: SELF-CONSISTENCY + PHYSICS
+This review answers "is this clip internally consistent and physically
+believable?"  It does NOT answer "does this clip match its design document."
+```
+
+## STEP 1 — MODE V BASELINE
+
+```
+MATERIAL
+What you were given: compilation edit · duration 144s
+Cuts you can see: 14 visible hard cuts between distinct shots. No cuts
+                  detected inside the individual continuous segments.
+Aspect ratio: 16:9
+
+THE CHARACTER
+Face / hair / marks: First fully unhelmeted view at 2:00. Woman on the left
+  (dark hair, pulled back), Black man on the right (short beard, shaved head).
+Suit / wardrobe: First seen at 0:10 (heavy EVA styling). At 2:00, woman wears
+  a dark grey/red/white suit, man wears a dark grey/blue/white suit. Note:
+  Suit designs shift completely by 2:10 (different shoulder pads, chest plating).
+Wear / dirt: Suits appear mostly pristine, minimal weathering.
+Equipment: Helmets with opaque/reflective visors (0:10), visors up/removed (2:00).
+
+THE WORLD
+Gravity read: Zero-g / micro-gravity. Evidenced by orbital location, floating
+  canister (1:26), and characters floating in the tunnel (2:10).
+Atmosphere read: Vacuum. Exterior space orbit around Jupiter.
+Light sources: Single primary hard directional source (sun) casting deep,
+  sharp shadows on the ship hull and planet.
+Location: Jupiter orbit, exterior ships, and interior cockpits/transfer tunnels.
+
+MOTION
+Camera: Mostly static lockoffs, slow pushes, or smooth tracking movements.
+Subject: Slow, deliberate mechanical movements. Characters exhibit standard
+  zero-g maneuvering.
+```
+
+## CRITIQUE CATEGORIES
+
+### 1. 🧑 CHARACTER CONSISTENCY
+
+Match to SPEC: UNVERIFIABLE → FLAGS.
+
+- Skin/Face: The unhelmeted faces at 2:00 maintain structure, but exhibit the
+  classic AI airbrushed quality. Deep pore textures and natural subsurface
+  scattering are lacking.
+- Suit Drift: As a compilation, suits shift entirely between scene boundaries
+  (2:00 vs 2:10), but remain stable within each individual shot.
+- Contact Morphing: When the characters touch gloves at 2:08, the collision
+  geometry breaks slightly. The fingers do not maintain solid states and
+  slightly merge/blur into one another.
+
+SCORE: 7/10
+
+- 2:00 — 🟠 MAJOR — Airbrushed plastic skin. Both faces lack natural human
+  texture and look slightly waxy.
+- 2:08 — 🟠 MAJOR — Contact morphing. Glove fingers fuse/blur slightly upon
+  contact instead of maintaining rigid physical boundaries.
+
+### 2. 📐 SCALE & PHYSICS
+
+Gravity Match: UNVERIFIABLE → FLAGS.
+
+- Zero-G Micro-Motion: The canister ejection at 1:26 lacks the hard, immediate
+  physical momentum of a heavy object in a vacuum; it drifts with a slightly
+  unnatural, dampened rotation.
+- Impact Physics: The docking collision at 1:56 produces debris that behaves
+  incorrectly for vacuum/zero-g shearing, resembling weightless CGI spray.
+
+SCORE: 6/10
+
+- 1:26 — 🟠 MAJOR — Zero-g momentum oddity. The ejected canister's rotation and
+  drift lack physical mass and hard momentum.
+- 1:56 — 🟠 MAJOR — Low-density impact physics. Docking collision debris lacks
+  physical weight and mass-consistent ejecta arcs.
+
+### 3. 🎥 CAMERA & CINEMATOGRAPHY
+
+Intended Camera Move: UNVERIFIABLE → FLAGS.
+Hidden Cuts (Single-Clip Mode vs Compilation): Since this is a compilation edit
+without a plan file, scene boundaries are UNVERIFIABLE → FLAGS.
+Scanning strictly within the individual shots, the camera movements remain
+consistent, smooth, and motivated. No internal hidden cuts or jumps detected.
+
+SCORE: 9/10
+
+### 4. 💡 LIGHTING & COLOR
+
+Declared Light Sources: UNVERIFIABLE → FLAGS.
+Shadows are suitably black for a space environment, respecting the lack of
+ambient atmospheric bounce. There is a very slight halo/bloom on highly
+reflective surfaces, but it does not wash out the scene.
+
+SCORE: 8/10
+
+- 0:20 — 🟡 MINOR — Slight AI bloom on the golden spheres attached to the
+  ship's spine.
+
+### 5. 🌍 ENVIRONMENT & WORLD
+
+Atmosphere Match: UNVERIFIABLE → FLAGS.
+The backdrop of Jupiter and its rings remains highly stable. No texture
+swimming on the planet's atmospheric bands or the ship's hull plating.
+
+SCORE: 9/10
+
+### 6. 🦎 CREATURE DESIGN & MOTION
+
+SCORE: N/A
+
+### 7. 🔬 PARTICLE & MATERIAL PHYSICS
+
+This category fails heavily at the docking sequence. The metal fragments
+generated by the impact do not retain solid material states or proper
+trajectories.
+
+SCORE: 6/10
+
+- 1:56 — 🟠 MAJOR — Material physics failure. Sparks and metal shards from the
+  docking collision behave like lightweight graphical particles rather than
+  solid metal shearing in a vacuum.
+
+### 8. 🗣️ DIALOGUE & AUDIO
+
+Scripted Dialogue Match / Off-Screen Correctness: UNVERIFIABLE → FLAGS.
+(→ SES_QA for voice consistency).
+Sound in Vacuum: Critical failure. Exterior space shots feature loud thruster
+burns, mechanical ejection noises, and collision crashes.
+Lip-Sync: The line delivery at the end suffers from noticeable drift.
+
+SCORE: 4/10
+
+- 1:04, 1:28, 1:56 — 🔴 BLOCKER — Airborne sound in vacuum. Thrusters, canister
+  ejection, and metal crashes are clearly audible in exterior space shots.
+- 2:14 — 🟠 MAJOR — Lip-sync drift. The man's mouth movements for "Wait, there
+  is something out there" drift late and do not strictly match the phonemes.
+
+### 9. 🔗 FRAME ANCHOR FIDELITY
+
+SCORE: UNVERIFIABLE (No anchor images supplied)
+
+### 10. 🚫 NEGATIVE BIBLE VIOLATIONS
+
+- [x] Airbrushed, waxy, or plastic skin texture (2:00)
+- [x] Text, subtitles, captions, or watermarks visible on screen
+      (2:20 - Title card printed directly into the footage)
+- [x] Rigid floating character (no limb drift or axis rotation) (2:14)
+- [x] Low-density CGI particle spray on impacts (1:56)
+- [x] Airborne sound propagating in vacuum (1:04, 1:28, 1:56)
+
+COUNT total violations: 5
+
+### 11. 🎬 OVERALL MOTION QUALITY
+
+The general framerate is stable, but zero-g character locomotion fails in the
+final shot.
+
+SCORE: 7/10
+
+- 2:14 — 🟠 MAJOR — Rigid floating character. The man in the transfer tunnel is
+  pulled forward like a static 2D asset without the continuous subtle axis
+  rotation or limb drift expected in zero-g.
+
+## FLAGS FOR DOCUMENT CHECK
+
+- Compilation Boundaries: Are the 14 cuts perfectly aligned with the intended
+  scene boundaries in the plan file?
+- Suit Drift: Does the document specify a suit change between the cockpit
+  sequence (2:00) and the transfer tunnel (2:10)?
+- Audio/Atmosphere: Is the exterior space explicitly defined as a vacuum in the
+  spec, rendering the exterior SFX a total violation?
+- Text/Title Card: Is the "THE RING LIGHT" text at 2:20 an intentional
+  post-production addition requested in the spec, or an AI hallucination?
+- Dialogue Accuracy: Does the spoken dialogue match the script perfectly?
+
+## ÖZET
+
+```
+INPUT MODE: V
+BASELINE: SELF-CONSISTENCY + PHYSICS
+FILM: (not supplied)
+FORMAT: (not supplied)
+SCENE: (not supplied)
+VIDEO DURATION: 144
+SPEC BLOCK PROVIDED: no — mode V
+
+OVERALL SCORE: 7.0/10 (mean of the 8 scored categories. 3 UNVERIFIABLE/N/A
+                       categories excluded.)
+VERDICT: REGENERATE
+```

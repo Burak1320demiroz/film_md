@@ -1,0 +1,510 @@
+# 📚 DERSLER — Ekipman ve Varlık Sürekliliği
+
+> `LESSONS_LEARNED.md` 07.08.2026'da tematik dosyalara bölündü; bu dosya
+> **Ekipman ve Varlık Sürekliliği** derslerini taşır. Numaralar depo genelindeki atıflar yüzünden
+> DEĞİŞTİRİLMEZ ve dosyalar arasında kesintisiz DEĞİLDİR — tam dizin:
+> [`../LESSONS_LEARNED.md`](../LESSONS_LEARNED.md) · yeni ders ekleme: `AGENTS.md` kart G.
+
+---
+
+## 🟡 DERS 5: VİZÖR KAYBOLMASI — KASK CAM TUTARSIZLIĞI
+
+**Kaynak:** The Canopy World QA — Karakter: 7/10
+**Sorun:** Karakter başını çevirdiğinde kask vizörü kayboluyor veya beliriyor. Vizör cam yüzeyi tutarsız.
+
+**ÇÖZÜM — CHARACTER BIBLE'a eklenecek:**
+```
+VISOR PERSISTENCE RULE: The transparent visor/helmet glass must remain ALWAYS
+VISIBLE in every frame, regardless of head angle or lighting conditions. The
+visor must show consistent reflections, condensation, or environmental
+interaction (water beading, fog, dust) appropriate to the current layer. The
+visor must NEVER disappear, become invisible, or merge with the face — it is
+always a distinct, visible glass surface between the camera and the face.
+```
+
+---
+
+## 🟢 DERS 8: KIYAFETTEĞİŞİMİ — SAHNE ARASI TUTARSIZLIK
+
+**Kaynak:** The Canopy World QA — Karakter: 7/10
+**Sorun:** Kesmelerden sonra sırt çantası/yaşam destek sistemi tasarımı değişiyor.
+
+**ÇÖZÜM — Her sahnede CHARACTER BIBLE'ın TAMAMI tekrarlanmalı:**
+```
+SUIT CONTINUITY RULE: The character's suit, equipment, and all accessories must
+match the CHARACTER BIBLE description EXACTLY in every single scene. No design
+changes, no color shifts, no added or removed equipment between scenes. The
+backpack, harness, rope reel, wrist display, visor, gloves, and boots must be
+IDENTICAL across all shots.
+
+IMPLEMENTATION: Copy the full CHARACTER BIBLE suit description into EVERY scene
+prompt — do not use shorthand like "[CHARACTER BIBLE]" for suit details in
+scenes where continuity has previously failed.
+```
+
+---
+
+## 🟡 DERS 32: GEMİ/YAPI ÖLÇEK TUTARLILIĞI — ORANLAR DEĞİŞİYOR
+
+**Kaynak:** The Ring Walker QA — Ölçek: 4/10
+- `1:44 — Lander staircase angle and door proportions alter relative to 0:01 setup.`
+
+**Sorun:** Gemi (lander/ship) veya büyük yapıların oranları farklı sahnelerde değişiyor. Merdiven açıları, kapı boyutları, pencere oranları ilk kuruluşa göre farklılaşıyor. Bu, karakterin gemiye göre boyut değişmesi sorunuyla (Ders 4'ün ölçek kısmı) ilişkili ama farklı: burada GEMİNİN KENDİ İÇ ORANLARI değişiyor.
+
+**ÇÖZÜM — Gemi/yapı içeren her sahnenin SHIP BIBLE veya ENVIRONMENT bölümüne eklenecek:**
+```
+VEHICLE/STRUCTURE SCALE LOCK: The ship, lander, or any significant
+structure must maintain IDENTICAL INTERNAL PROPORTIONS across all scenes:
+
+- Door height must remain the SAME ratio to the character's height in
+  every frame the door appears (e.g., door = 1.3x character height).
+- Staircase/ramp angle must remain CONSTANT between wide and close shots.
+- Window proportions (width:height ratio) must not change.
+- Landing leg geometry (angle, pad size, strut thickness) must remain
+  identical in every visible frame.
+- Hull panel proportions and accent stripe widths must not shift.
+- The ship's LONGEST DIMENSION (e.g., 12m) relative to the character
+  (e.g., 1.67m = 1:7.2 ratio) must remain CONSTANT in all establishing
+  shots where both are visible.
+
+IMPLEMENTATION: The IMAGE PROMPT for scenes containing the ship should
+include the critical proportions explicitly (e.g., "door height = 2.1m,
+character height = 1.67m, ramp angle = 25 degrees"). These numbers
+must be COPIED IDENTICALLY into every scene prompt that shows the ship.
+
+NEGATIVE ADDITION: No door/window proportion shifts. No staircase angle
+changes. No hull scaling between scenes. No landing leg geometry changes.
+```
+
+---
+
+## 🔴 DERS 37: EKİPMAN DURUM GEÇİŞİ — KASK ANİDEN BELİRİYOR
+
+**Kaynak:** The Dead Approach Compilation QA (Genel 3/10) — Karakter: 3/10 — `0:19 — Suit design drifts, helmet appears instantly`
+**Sorun:** Ders 8 (kıyafet devamlılığı) kıyafetin DETAYLARININ sahneler arası korunmasını kapsıyordu. Bu ise farklı bir hata: ekipmanın **AÇIK/KAPALI DURUMU** bir kesme olmadan değişiyor — kask sahne ortasında birdenbire kafada beliriyor, harness kendiliğinden geri geliyor, eldiven ortaya çıkıyor. Model, ekipmanı bir "durum" değil bir "dekor" olarak işliyor.
+
+**Neden oluyor:** Prompt ekipmanı tarif ediyor ama DURUMUNU sahneye kilitlemiyor. "Kask entegre" yazıyor ama "bu sahnede kask TAKILI ve tüm çekim boyunca TAKILI KALIYOR" yazmıyor. Model boşluğu kendi doldurmaya çalışıyor.
+
+**ÇÖZÜM — PROMPT GÜNCELLEMELERİ:**
+1. **Her sahne promptunda ekipman durumu açıkça beyan edilir** — sadece varlığı değil, durumu:
+```
+HELMET STATE: worn and sealed for the entire take — it is already on at
+0s and never removed, and no helmet appears, materializes or is put on
+during the shot.
+HARNESS STATE: removed before this scene — it stays off her body for the
+entire take and does not reappear.
+```
+2. **Bible'a "EKİPMAN DURUM TABLOSU" eklenir** — hangi sahnede hangi parça takılı:
+```
+| Sahne | Kask | Harness | Eldiven | Toz kirlenmesi |
+|-------|------|---------|---------|----------------|
+| S1-S6 | Takılı | Takılı | Takılı | Temiz |
+| S7    | Takılı | Çıkarılıyor | Takılı | Temiz |
+| S8+   | Takılı | YOK | Takılı | Kirli |
+```
+3. Negatif bloğa: `no equipment appearing or disappearing, no helmet materializing, no gear state change mid-shot`
+
+---
+
+## 🟡 DERS 38: HASAR ABARTMA — MODEL "HASARLI"YI "PARÇALANMIŞ" OKUYOR
+
+**Kaynak:** The Dead Approach Compilation QA (Genel 3/10) — Parçacık: 4/10 — `0:00 — Debris excessive, structural disintegration instead of localized damage`
+**Sorun:** Prompt spesifik ve sınırlı bir hasar tarif ediyordu (kanat ucu kopuk, sensör direği bükülmüş). Model bunu genel bir "hasarlı gemi" sinyali olarak alıp gövdeyi parçalara ayırdı, etrafa sürekli enkaz saçtı ve yapısal bütünlüğü bozdu. Sonuç: gemi ölçek kilidi de çöktü (Ders 32 ile zincirleme hata).
+
+**Neden oluyor:** "Damaged", "wrecked", "torn", "shattered" gibi kelimeler eğitim verisinde felaket görüntüleriyle güçlü ilişkilidir. Tek bir güçlü hasar kelimesi, spesifik tarifi ezip geçiyor.
+
+**ÇÖZÜM — PROMPT GÜNCELLEMELERİ:**
+1. **Hasarı SAY ve SINIRLA.** Genel sıfat yerine sayılabilir liste:
+```
+❌ "a heavily damaged ship with torn hull"
+✅ "the hull is intact and structurally whole except for exactly three
+   points of damage: the left wing tip is missing at 70% of its length,
+   the forward sensor mast is bent 45 degrees, and the bow beacon array
+   is a clean torn stump. All other surfaces are undamaged."
+```
+2. **Sağlam olanı da açıkça söyle.** Model neyin BOZULMAYACAĞINI bilmiyorsa hepsini bozabilir.
+3. **Enkaz miktarını sınırla:**
+```
+no continuous debris shedding, no structural disintegration, no
+fragmenting hull, no expanding debris field — the ship is damaged but
+whole and holds its exact 34-meter silhouette
+```
+4. Negatif bloğa: `excessive debris, structural disintegration, fragmenting hull, wreckage cloud`
+
+---
+
+## 🟡 DERS 42: KİR VE TOZ DESENİ SÜRÜKLENMESİ — YIPRANMA HER KAREDE YENİDEN ÜRETİLİYOR
+
+**Kaynak:** Low Power QA (Genel 4/10) — Karakter: 6/10 — `0:08 — Dust accumulation patterns on shoulders and chest shift completely between frames`
+**Sorun:** Ders 8 kıyafetin *tasarımını* (renk, şerit, amblem) kilitliyordu. Ama kıyafetin üzerindeki **kir, toz, leke ve yıpranma deseni** ayrı bir kategori: model bunları tasarım değil doku gürültüsü sayıyor ve her karede yeniden üretiyor. Sonuç: omuzdaki toz birikimi kare kare yer değiştiriyor, suit "titriyor".
+
+**Neden önemli:** Kirlenme bu seride bir **anlatı aracıdır** — Low Power'da tozun artması zamanın geçtiğini, The Waking Ground'da kirlenme fazın ilerlediğini gösterir. Deseni oynayan bir suit, bu anlatımı yok eder.
+
+**ÇÖZÜM — PROMPT GÜNCELLEMELERİ:**
+1. Kirlenmeyi **konumlandır** — "tozlu" demek yetmiyor, nerede olduğunu söyle:
+```
+❌ "dirty suit with heavy dust accumulation"
+✅ "rust-red dust staining concentrated on the knees, the glove palms and
+   the lower right chest panel; the shoulders and back stay comparatively
+   clean. This exact staining pattern is fixed and identical in every
+   frame — it does not shift, redistribute, regenerate or animate."
+```
+2. Negatif bloğa: `shifting dirt patterns, regenerating dust texture, animated grime, wear pattern drift`
+3. Bible'a **KİRLENME HARİTASI** eklenir — hangi fazda hangi bölge ne kadar kirli.
+
+---
+
+## 🚨 UYARI — 5 VE 37 NUMARALI DERSLER İKİ FİLMDE DE YAZILIYDI, İKİSİNDE DE TUTMADI
+
+> Bu bir ders değil, **dersler hakkında bir ölçüm.** Numarası yoktur ve
+> ders sayısına dahil edilmez.
+
+
+Her iki filmin Bible'ında, ders numarasına atıfla, şu satır var:
+
+```
+VISOR PERSISTENCE RULE [LESSON 5]: Visor ALWAYS VISIBLE in every frame
+```
+
+Sonuç:
+
+| Film | Kural yazılı mı | Ekranda |
+|---|:---:|---|
+| The Inversion | ✅ satır 135, 408 | 0:16 çıplak baş · 1:06 vizör yok · 2:32 kask çıkıyor |
+| The Kaleida Crash | ✅ satır 180, 459 | 0:22 çıplak baş · 1:02 çıplak baş — 4 kez salınıyor |
+
+**Ders yazıldı, prompta girdi, uygulandı — ve iki filmde de tutmadı.**
+
+Bu, projedeki en önemli ölçümü doğruluyor: *"Sayısal kilit çalışıyor, tarif
+kilidi çalışmıyor."* "ALWAYS VISIBLE" bir tarif kilididir. The Slow Stone'da
+tutan kilit ise sayıydı: *"kask S21'de bir kez"*.
+
+**Yapılacak:** Ders 5 ve 37 tarif biçiminden **takvim biçimine** çevrilmeli:
+
+```
+❌ Visor ALWAYS VISIBLE in every frame
+✅ HELMET STATE SCHEDULE — 13 scenes, sealed in all 13.
+   The helmet is never removed, never opened, and appears in exactly
+   0 scenes as open. Any frame without the visor is a generation error.
+```
+
+---
+
+## 🔴 DERS 57: TEK ÇEKİM İÇİNDE EKİPMAN MORPHU — 7. SANİYEDE TÜP BELİRİYOR
+
+**Kaynak:** The Deep Pressure MANTIK QA — 🔴 BLOCKER `00:00 vs 00:07` —
+`Character starts with a full clear bubble helmet and no tank. Seven seconds
+later in the SAME CONTINUOUS ACTION, she has a scuba face mask, a regulator
+in her mouth, and a ribbed tank on her back.`
+
+**Sorun:** Bugüne kadar ölçülen bütün kostüm hataları **iki klip arasında**
+doğuyordu (Ders 8, 37; Kaleida/Inversion kask salınımı). Bu ilk kez **tek
+kesintisiz çekimin içinde** oluyor — kamera kesmiyor, karakter yüzmeye devam
+ediyor ve yaşam destek sistemi kare kare değişiyor.
+
+Sebep: prompt kıyafeti yalnız **0. saniyede** tarif ediyor. 0s'de kurulan
+görsel, 10s boyunca modelin serbest yorumuna bırakılıyor; model boşluğu
+kendi klişesiyle dolduruyor. Zaman çizelgesi (`At 2s / At 5s / At 7s`) hep
+KAMERA ve AKSİYON yazıyor, **hiç KIYAFET yazmıyor.**
+
+**ÇÖZÜM — kıyafet, sahne tarifine değil zaman çizelgesine yazılır:**
+
+```
+EQUIPMENT FRAME LOCK: The suit and life-support configuration visible in
+frame 1 is IDENTICAL in frame 300. Nothing is added, nothing is removed,
+nothing changes shape at any point in this 10-second take.
+Specifically at 0s, 3s, 6s and 10s she wears exactly:
+[SUIT IDENTITY LOCK bloğu — birebir aynı cümle]
+No tank appears. No mask appears. No regulator appears. No visor opens,
+closes, tints or clears. If any piece of equipment differs between the
+first and last frame, the generation is an ERROR.
+```
+
+Video prompt'unun zaman satırlarına da kısa hatırlatma girer:
+
+```
+At 5s: the camera pans right — her suit, helmet and equipment unchanged.
+At 9s: she glides alongside the drifters — same suit, same helmet, no tank.
+```
+
+**KURGUDA UCUZ ÇÖZÜM:** morph başladığı yerden klibi kes. Bu filmde S1'in
+son 2 saniyesini atmak 4 BLOCKER'dan birini bedelsiz siliyor —
+rapor "Low cost" olarak işaretledi.
+
+> 🔗 Ders 37 sahneler ARASI ekipman durumunu kilitler; 57 tek çekimin
+> İÇİNİ kilitler. İkisi birlikte yazılmazsa aradaki boşluktan bu hata geçer.
+
+---
+
+## 🟡 DERS 58: TEKRAR EDEN VARLIK KİMLİK KİLİDİ — AYNI YER İKİ FARKLI YER
+
+**Kaynak:** The Deep Pressure MANTIK QA — Coğrafya **4/10** — LOCATION MAP'in
+3 satırının 2'si `Consistent? No`:
+
+```
+Portal   S4 amber/mor + astronot giysisi   ·  S8 mavi/camgöbeği + dalgıç kıyafeti
+Dev göz  S11 yeşil göz, gri buruşuk deri   ·  S14 neon mavi göz, yıldızlı doku
+Denizaltı S2 ↔ S13                          ·  ✅ TEK TUTAN — çünkü tek tasarımı vardı
+```
+
+**Sorun:** Filmin iki kez dönülen üç varlığından ikisi ikinci gelişte başka
+bir şeye dönüşmüş. Kıyafet için Bible tutuluyor (en azından tutulması
+gerektiği biliniyor); **lokasyon ve dev nesneler için hiç Bible tutulmuyor.**
+Tekrar eden portal, tekrar eden yaratık, tekrar eden yapı — hepsi ikinci
+sahnede sıfırdan tarif ediliyor ve tarif değişiyor.
+
+Aynı bölümdeki iki prop da tek kullanımlık kaldı: mavi lazer alet (00:40)
+bir kez kesip kayboldu, yerine 01:40'ta sarı ışıklı el feneri geldi.
+
+**ÇÖZÜM — Bible'a ikinci bir bölüm: TEKRAR EDEN VARLIKLAR**
+
+```
+RECURRING ENTITY BIBLE — karakterden sonra, sahne haritasından önce.
+Filmde birden fazla sahnede görünen HER lokasyon, yapı, yaratık ve alet
+için bir kart:
+
+| Varlık   | Sahneler | Sabit tanım (sayısal) |
+|----------|----------|------------------------|
+| Sınır    | S4, S8   | dikey, altın-sol / mor-sağ, 2m kırılma bandı — RENK ASLA DEĞİŞMEZ |
+| Dev göz  | S11, S14 | 40m çapında, sarı-yeşil iris, gri buruşuk deri, tek göz |
+| Denizaltı| S2, S13  | küresel, 3m, bakır çerçeve, tek ön pencere |
+| Tarayıcı | S5, S11  | ince bakır gövde, dar altın ışık konisi — TEK ALET |
+
+KURAL 1: Kart varsa, o varlığın geçtiği her sahne prompt'una kartın
+         TAMAMI kopyalanır — kıyafet gibi (Ders 8/55).
+KURAL 2: Bir alet iki sahneden azında görünüyorsa ya silinir ya ikinci
+         sahnesi yazılır. Tek kullanımlık prop üretilmez.
+KURAL 3: İkinci gelişte "aynı yer" demek yetmez; ilk sahnenin renk,
+         ölçü ve doku değerleri sayıyla tekrarlanır.
+```
+
+**NEDEN 🟡:** İzleyici kıyafet değişimini saniyede fark eder, portalın rengini
+90 saniye arayla fark etmez. Ama bu iki bulgu filmin **iki dönüş noktasında**
+duruyor — tekrar, kurgunun tek yapısal iddiası. Denizaltı tuttuğu için
+Kurulum skoru 7/10 çıktı; kart sistemi olsaydı üçü de tutardı.
+
+> 🔗 Ders 32 (gemi ölçek tutarlılığı) bunun tek varlıklı halidir; 58 onu
+> filmdeki BÜTÜN tekrar eden varlıklara genişletir ve sayısal kilit ister —
+> projedeki tek kanıtlanmış çalışan kilit türü.
+
+---
+
+## 🟡 DERS 79: BIBLE'DAKİ OLUMSUZ KOSTÜM KİLİDİ NEGATİF ÇEKİRDEĞE GİRMEDİKÇE TUTMUYOR — SIRT ÜNİTESİ VE AYNALI VİZÖR İKİ FİLMDE ÜST ÜSTE GERİ GELDİ
+
+**Kaynak:** THE STARLESS CIRCLE · KARAKTER_QA 6.0/10 — pasaport:
+`life-support backpack` + `visor state fluctuates between clear and
+opaque/reflective` (Ekipman 4/10, yüz 14 sahnenin yalnız 3'ünde okunuyor).
+**Tekrar:** THE UNBROKEN CITY · KARAKTER_QA 8.0/10 — `rear backpack life
+support`. İki filmin Character Bible'ı da aynı cümleyi taşıyordu:
+*"No back-mounted tank, no hose, no cable."* Starless Circle ayrıca
+*"one fully transparent seamless visor, no tint, no coating… her whole
+face clearly readable through it"* diyordu.
+
+**Sorun:** Bu iki yasak **yalnız Character Bible'da** duruyor; 36 promptta
+tekrarlanan NEGATİF ÇEKİRDEK'te yok. Çekirdeğe giren yasaklar (klon, metin,
+bloom, sıvı, ateş) tuttu; bible'da kalanlar tutmadı. Mekanizma basit ve
+ölçülmüş: **model prompt gövdesindeki tarifi çiziyor, referans belgeyi
+okumuyor** — ve "astronot" ön-yargısı sırt ünitesi + aynalı vizör getiriyor.
+Vizörün bedeli ayrıca dramatik: bu filmin bütün okuma-karar zinciri (Ders
+45 · yetkinlik kuralı) yüzden okunacaktı.
+
+**ÇÖZÜM — negatif çekirdeğe iki cümle, POZİTİF tarifle:**
+
+```
+Add to NEGATIVE CORE (verbatim, in every prompt of any film whose suit
+bible forbids them):
+
+"The suit has NO back-mounted unit: no backpack, no tank, no hose, no
+cable, no rear housing of any kind — her back silhouette is flat.
+The visor is optically clear glass with zero tint, zero mirror coating
+and zero reflection of the environment; her face is fully readable
+through it in every frame, at every head angle."
+
+⚠️ Neden pozitif cümle: "no tinted visor" cümlesi aynalı vizörü çağırıyor
+   (Ders 59). Çekirdeğe hem yasak hem POZİTİF durum yazılır: "flat back
+   silhouette" ve "face fully readable" ölçülebilir; "no coating" değil.
+```
+
+> 🔗 Ders 5 (vizör kalıcılığı) · Ders 8 (suit devamlılığı) · Ders 55
+> (bible yoksa üretim bozulur) ile aynı hat. Yeni olan şu: **bible VAR,
+> dolu ve doğru — ama prompt gövdesine girmeyen satırı model görmüyor.**
+> Kontrol: yeni film yazarken bible'daki her "No …" cümlesi için sor —
+> bu cümle 36 promptun 36'sında var mı? Yoksa ya çekirdeğe girer ya
+> bible'dan silinir; ikisinin arası, iki filmde iki kez, üretim hatası
+> oldu.
+>
+> 🔁 **3. vaka (07.08.2026 · THE BLIND RETURN):** karakter pasaportu yine
+> `Backpack` + `dual headlamps` yazdı; bible yine "No back-mounted tank,
+> no hose, no cable" + "a single integrated helmet lamp" diyordu ve sabit
+> yıpranma izleri (çene yanık izi dahil) yine üretilmedi. Film bu dersle
+> AYNI GÜN yazılmıştı ve D79 cümlesi negatif çekirdeğine girmemişti —
+> D77'nin mekanizması bir kez daha: ders plana geri akmıyor.
+
+---
+
+## 🔴 DERS 84: SAHNELER ARASI DURUM METİNLE KİLİTLENMİYOR — ÜÇ ÇAPA DA YAZILIYDI, ÜÇÜ DE KIRILDI
+
+**Kaynak:** THE THIRD DUNE QA (11.08.2026) — 🧍 KARAKTER Yıpranma 3/10 ·
+Kostüm 5/10 · 🧩 MANTIK Kostüm-Prop · `2:29 kumlu → 2:40 tertemiz` ·
+`1:30 mor bant → 2:10 bant yok` · iki suitte de sırt çantası
+
+**Sorun:** Bu depoda ilk kez, bulguların kökü **eksik cümle değil.**
+Önceki vakalarda yanıt hep "cümle promptta yoktu" çıkıyordu (Starless
+Circle vizör · Blind Return sırt ünitesi · Dawn Front kostüm). Third
+Dune'da üç çapa da yazılıydı ve üçü de kurguda kırıldı:
+
+```
+KİLİT                          NEREDE YAZILI            EKRANDA
+sırt ünitesi yasağı            42/42 promptun negatifi   iki suitte de çanta
+bant rengi (mor / buz mavisi)  çift blok, 42 prompt      2:10'da mor yok
+toz seviyesi (2→3→4 takvim)    her sahneye tek tek       2:40'ta sıfırlandı
+  + 3 cm temiz referans şeridi  42/42 promptta
+```
+
+Mekanizma: **her klip önceki klibi görmeden üretiliyor.** "Seviye 4"
+yazan bir cümle modele bir önceki karede ne yaptığını söylemez; sahne
+İÇİNDEKİ durumu kilitler, sahneler ARASINDAKİ durumu kilitlemez. Toz,
+yıpranma, bant, sırt silueti — hepsi sahneler arası niceliklerdir.
+Bu yüzden sayısal kilit (Ders 44'ün kanıtlanmış aracı) burada çalışmaz:
+sayı doğru, taşıyıcı yok.
+
+**ÇÖZÜM — prompt cümlesi DEĞİL, üretim zinciri kararı:**
+
+```
+① DURUM DEĞİŞEN SAHNELERİ I2V ÜRET
+   Toz/yıpranma seviyesinin değiştiği ilk sahne text-to-video üretilir;
+   o klibin SON KARESİ bir sonraki sahnenin start frame'i olur. Metin
+   yalnız hareketi tarif eder. (7-9 dk formatının zaten yaptığı şey —
+   3-5 dk formatı bunu yalnız durum kırılma noktalarında kullanır,
+   25 sahnenin hepsinde değil: ~4 zincir noktası yeter.)
+
+② AYNI SEVİYEYİ BLOK HÂLİNDE ÜRET
+   Seviye 2'nin beş sahnesi arka arkaya, seviye 3'ün dokuzu arka arkaya,
+   seviye 4'ün yedisi arka arkaya üretilir. Aynı oturumda üretilen
+   klipler arasında sapma ölçülebilir biçimde daha az.
+
+③ KABUL ET VE ONARIMI BÜTÇELE
+   Kırılan klip sayısı azdır (bu filmde 3). Yeniden üretim maliyeti,
+   25 promptu yeniden yazma maliyetinden düşük. Onarım listesi film
+   kaydına yazılır, prompt dosyası DEĞİŞTİRİLMEZ — cümle zaten doğru.
+```
+
+⛔ **Bu derse "prompta şunu ekle" çözümü yazma.** Üç kilidin üçü de
+zaten prompttaydı; dördüncü bir cümle eklemek ölçülmüş bir başarısızlığı
+dördüncü kez denemektir [AGENTS §8].
+
+---
+
+## 🔴 DERS 89: SAHNENİN EYLEMİ BİR ÇIKARMA İSE, MODEL EN YAKIN ÇIKARILABİLİRİ ÇIKARIR
+
+**Kaynak:** THE SECOND SHIP · Faz 7 / BEDEL 1. koşusu (S69, 1:23) —
+fazın BLOCKER'ı · `.../FAZ_07_BEDEL/FAZ_07_QA_DERSLER.md` D-AK
+**Sorun:** ilk vaka, ama sınıfı F6 D-AD'nin (kemeri yasakla, kapı kasası
+gelir) insan-ekipman kardeşi — negasyon klişeyi komşuya kaydırıyor
+
+Sahnenin olayı bir çıkarma feinti: adam eldiven halkasını çeviriyor,
+kadın bileğini tutup durduruyor, **eldiven çıkmıyor.** Prompt bunu
+açıkça yazıyordu: "The glove NEVER comes off: no bare hand, no bare
+skin, no exposed wrist." Ekranda eldiven gerçekten çıkmadı — **kadın
+kaskını çıkardı.** Solunamaz atmosfer kilidi, faz blocker'ı ve bir
+sonraki fazın ateşlemesi tek karede harcandı.
+
+Kök neden grep'le görülüyor:
+
+```
+grep -n "helmet stays ON and sealed" FAZ_07_BEDEL.md
+→ yalnız S61 ve S64 (kaskın çıkması akla bile gelmeyen iki sahne)
+→ S69'da YOK — çıkarma eyleminin geçtiği TEK sahnede yok.
+```
+
+Mekanizma: jest iptal edilmiyor, **hedef değiştiriyor.** Modele
+"burada bir şey çıkıyor" bilgisi verildiğinde, yasaklanan parçayı
+bırakıp mühür ailesinin bir sonraki üyesine geçiyor
+(eldiven → kask → yaka halkası).
+
+**ÇÖZÜM — TEK MÜHÜR SAYIMI (sayısal, tarif değil):**
+
+```
+Çıkarma / açma / sökme geçen HER sahnede, dokunulan mühür SAYILIR ve
+geri kalan bütün mühürler tek tek kapalı ilan edilir:
+
+EXACTLY ONE SEAL IS TOUCHED IN THIS SHOT AND IT IS THE RING AT HIS
+RIGHT WRIST. Every other seal stays closed in every frame - both
+helmets ON and locked at the collar, both collar rings closed, both
+gloves on both hands. No bare head, face, neck, hand, wrist or skin
+appears at any second; no helmet is lifted, opened or removed.
+
+⭐ Kural lisanslı çıkarma sahnelerinde de aynıdır — orada sayı yine
+   BİRDİR, sadece açılan mühür değişir:
+   "EXACTLY ONE SEAL OPENS IN THIS SHOT AND IT IS THE RIGHT WRIST
+   RING: no helmet, collar ring or second glove is touched."
+```
+
+⛔ **Kilidi "riskli görünen" sahneye değil, EYLEMİN GEÇTİĞİ sahneye
+yaz.** Bu depoda kilit tam tersi dağılmıştı ve bedeli bir blocker oldu.
+
+---
+
+## 🔴 DERS 95: "OPTİK BERRAK, RENKSİZ, YANSIMASIZ VİZÖR" EKRANDA "KASK YOK" OKUNUYOR — MÜHÜRLÜ DURUM KENDİ KANITINI SİLDİ
+
+**Kaynak:** THE RING LIGHT · 12.08.2026 · 🧍 KARAKTER_QA pasaportu + 🔧 VIDEO_QA
+baseline'ı — iki bağımsız mercek aynı yanlışı okudu
+**Sorun:** D79'un POZİTİF hâlinin ters etkisi; ilk vaka, ama D88 ("sınırlı izin
+tam izindir") ile aynı aileden
+
+Ders 79 aynalı vizörü yasaklattı, çünkü yüz okunmuyordu. Ring Light bunu en uç
+biçimde uyguladı (§0.12):
+
+```
+Vizör: tek parça, optik berrak, RENKSİZ, kaplamasız, yansımasız —
+yüz her kafa açısında tam okunur.
+KASK TAKVİMİ: S0-S13 kask TAKILI, vizör KAPALI ve MÜHÜRLÜ, durum değişimi 0.
+```
+
+Ekranda ortaya çıkan şey: **vizörün var olduğunu gösteren tek bir işaret yok.**
+Renk yok, yansıma yok, çerçeve tarif edilmemiş, kenar parlaması yasaklanmış.
+İki mercek de aynı sonuca vardı:
+
+```
+🧍 "Equipment: Helmet (visor retracted/open)" · "unhelmeted faces at 2:00"
+🧍 FLAGS: "Does the script specify the crew retracting their visors?"
+🔧 "Equipment: Helmets with opaque/reflective visors (0:10),
+    visors up/removed (2:00)"
+```
+
+Mekanizma önemli: bu bir üretim hatası olmayabilir. **Görünmez kılınan bir
+kilit, doğru üretilse bile doğrulanamaz.** QA vizörü göremiyorsa izleyici de
+göremez; "14/14 mühürlü" bilgisi ekranda hiçbir yerde yoktur ve filmin vakum
+gerilimi (dışarısı öldürür) o mühürden beslenir.
+
+⚠️ İkinci etki: rapor "kask çıktı" okuduğu için Ekipman kategorisine 8/10
+verdi ve gerçek soru (mühür sabit mi) hiç ölçülmedi.
+
+**ÇÖZÜM — mühürlü durumun ÜÇ GÖRÜNÜR İŞARETİ, her insanlı prompta sayısal:**
+
+```
+The visor is a single curved pane held in a 2 cm brushed-metal frame; the
+frame's lower seal ring is visible where it meets the collar in every frame.
+One thin unbroken specular line runs along the visor's upper edge in every
+frame — the only reflection the visor carries. The face is fully readable
+THROUGH the pane at every head angle.
+
+NEGATIVE: no bare skin above the collar, no open helmet, no lifted or
+retracted visor, no removed pane, no mirror coating, no colored tint, no
+environment reflected in the visor.
+```
+
+```
+ÜÇ İŞARET, TEK CÜMLEYLE ÖZETİ:
+  ① ÇERÇEVE  2 cm metal — vizörün SINIRI görünür
+  ② MÜHÜR    yaka halkası — vizörün KAPALI olduğu görünür
+  ③ TEK ÇİZGİ üst kenarda ince parlama — camın VAR olduğu görünür
+Üçü de "yansımasız berrak vizör" kuralını bozmaz: yüz hâlâ tam okunur.
+```
+
+⛔ **Genel kural:** bir durum kilidi ("mühürlü", "kapalı", "dolu", "bağlı")
+ekranda **ayırt edici bir işaret** taşımıyorsa, o kilit ölçülemez. Kilidi
+yazarken sor: *bu durumun tersi ekranda nasıl görünürdü?* İki durum aynı
+görünüyorsa kilit değil, temennidir.
+
+---
