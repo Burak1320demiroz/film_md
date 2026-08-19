@@ -37,10 +37,10 @@
 ### ⚠️ UZUNLUK BANDI — BİLİNÇLİ SAPMA + İLK RED PROTOKOLÜ
 
 ```
-prompt_kontrol.py sonucu (17.08.2026, eleştiri turu sonrası): ⛔ 0 BLOCK ·
-⚠️ FIX (yalnız uzunluk)
-  PART_A: image 1.995-2.577 · video 2.511-3.295
-  PART_B: image 1.883-2.499 · video 2.487-3.909 (en uzun: S19)
+prompt_kontrol.py sonucu (17.08.2026, turkuaz kaplama turu sonrası):
+⛔ 0 BLOCK · ⚠️ FIX (yalnız uzunluk)
+  PART_A: image 2.029-2.577 · video 2.590-3.299
+  PART_B: image 1.929-2.526 · video 2.528-3.909 (en uzun: S19)
   tavan 4.300 — 50/50 prompt altında
 
 GEREKÇE: video promptları hedef bandın (2.000-2.600) üstünde. Sebep tek
@@ -106,12 +106,10 @@ ZAMAN       film 249 saniyedir ve gemi bu 249 saniyede hiçbir şeyini
 ```
 ÇAPA A — THE CROSSING SHIP (uzak/tam gövde)
 the crossing ship — a 210-metre interstellar vessel under constant burn,
-its bow at the TOP of frame and its stern at the bottom: a blunt 26-metre
-pitted grey ice shield at the bow, three dirty-white quilted habitat drums,
-four bare machined 9-metre propellant spheres, a 12-metre lattice berth
+its bow at the TOP of frame and its stern at the bottom: a sleek 26-metre ceramic-white ice shield with a turquoise rim stripe at the bow, three habitat drums wrapped in clean white multi-layer insulation quilting, each ringed by a thin turquoise band,
+four polished bright-metal 9-metre propellant spheres, a 12-metre lattice berth
 boom standing out from its port flank, a long open graphite truss spine,
-two dead-black knife-edge radiator wings, a 30-metre dull grey conical
-shadow shield and an armoured drive block with three recessed nozzles
+two dead-black knife-edge radiator wings, a 30-metre satin pearl-grey conical shadow shield and an armoured drive block with three recessed nozzles
 
 ÇAPA B — THE PLUME
 three pale blue-white exhaust cones merge into one straight, sharply
@@ -120,8 +118,7 @@ it never billows, never curls, never mushrooms, never bends
 
 ÇAPA C — THE FERRY CAPSULE
 the ferry capsule — a 5.2-metre truncated cone standing nose-UP, 3.6
-metres across its flat base, matte machined grey-white composite with
-crisp recessed seams and flush rivet rows; a 60-centimetre docking probe
+metres across its flat base, matte ceramic-white composite over a dark graphite frame, a sweeping TURQUOISE chevron stripe down its flank, crisp recessed seams and flush rivet rows; a 60-centimetre docking probe
 with three alignment vanes on its nose; one wide curved window 1.6 metres
 across in the upper cone; four scorched main nozzles in the base ring; a
 six-socket cartridge rack low on its port flank; and the cargo cradle
@@ -174,8 +171,7 @@ channel
 the cabin — a cramped 2.4-metre-wide cone interior with TWO deep-bucketed
 seats side by side, the pilot's at LEFT and the engineer's at RIGHT, both
 reclined so the crew face UP toward the window; one wide curved window
-above the console; a matte dark console of abstract amber and grey light
-segments with no digits and no screens; a machined six-detent selector at
+above the console; a matte dark console with slim turquoise accent trim, abstract amber and grey light segments, no digits and no screens; a machined six-detent selector at
 the left cheek; a BURNT-ORANGE two-handed lever at the right cheek; and a
 40-centimetre brass lanyard hanging from the window frame, hanging dead
 straight DOWNWARD under tension
@@ -187,9 +183,9 @@ straight DOWNWARD under tension
 
 ```
 GEÇİT — 210 m, pruvadan kıça:
-   0-24 m    buz kalkanı, 26 m çapında kör disk, çukurlu
-  24-60 m    üç yaşam tamburu, 18 m çapında, kirli beyaz kapitone
-  60-92 m    dört yakıt küresi, her biri 9 m, çıplak metal, kırağı izli
+   0-24 m    buz kalkanı, 26 m mat seramik beyazı disk, turkuaz çember şerit
+  24-60 m    üç yaşam tamburu, 18 m çapında, temiz beyaz kapitone yalıtım + turkuaz bant
+  60-92 m    dört yakıt küresi, her biri 9 m, cilalı parlak metal + turkuaz kızak, kırağı izli
      100 m   YANAŞMA KOLU — port bordadan 12 m dışarı; yuva ALT yüzde
  104-150 m   kafes omurga, altıgen, grafit gri
  150-166 m   iki radyatör kanadı, siyah bıçak ağzı, her biri 40 m
@@ -198,7 +194,7 @@ GEÇİT — 210 m, pruvadan kıça:
   ⛔ SAYI KİLİDİ: 3 tambur · 4 küre · 2 kanat · 3 lüle · 3 yakalama kolu
   ⛔ Gemi dönmez, halkası yoktur, kanadı (radyatör dışında) yoktur.
 
-İĞNE — 5.2 m kesik koni, taban 3.6 m, burun yukarı:
+İĞNE — 5.2 m kesik koni, taban 3.6 m, burun yukarı · mat seramik beyazı, grafit iskelet, turkuaz chevron şerit:
   burun      60 cm prob + 3 hizalama kanadı
   pencere    1.6 m × 0.6 m kavisli tek cam, işlenmiş çerçeve
   taban      4 ana lüle (0.4 m boğaz) — SABİT İTKİ, kısılamaz
@@ -368,6 +364,8 @@ Photorealistic with 35mm film grain.
 
 ## 🎬 SAHNE 0 (S0) — HOOK: GEÇİT (9 saniye)
 
+> 🎯 **REFERANS:** **RA** p1 · p2 · p3 — gemi tam boy (p1) · 1/40 ölçek (p2) · alev (p3) · **RC** p1 (uzakta yüklü kapsül silueti)
+
 ### 📸 IMAGE PROMPT
 
 ```
@@ -378,17 +376,16 @@ no figure is visible in frame.
 
 SCENE: The crossing ship crosses the frame vertically, bow at the TOP and
 stern at the bottom — a 210-metre interstellar vessel under constant burn:
-a blunt 26-metre pitted grey ice shield at the bow, three dirty-white
-quilted habitat drums, four bare machined 9-metre propellant spheres, a
+a sleek 26-metre ceramic-white ice shield with a turquoise rim stripe at the bow, three habitat drums wrapped in clean white multi-layer insulation quilting, each ringed by a thin turquoise band, four polished bright-metal 9-metre propellant spheres, a
 12-metre lattice berth boom standing out from its port flank, a long open
 graphite truss spine, two dead-black knife-edge radiator wings, a 30-metre
-dull grey conical shadow shield and an armoured drive block with three
+satin pearl-grey conical shadow shield and an armoured drive block with three
 recessed nozzles at the stern. From those nozzles, three pale blue-white
 exhaust cones merge into one straight, sharply defined 400-metre lance that
 leaves the BOTTOM of frame and thins away. At screen-left of the ship,
 holding 40 metres off its flank and 118 metres below the berth boom, level
 with the drive block: the ferry capsule — a 5.2-metre truncated cone
-standing nose-UP, matte grey-white composite, with a 60-centimetre docking
+standing nose-UP, matte ceramic-white composite over a dark graphite frame with a sweeping TURQUOISE chevron stripe, with a 60-centimetre docking
 probe on its nose and a cargo cradle of forty white core tubes under one
 BURNT-ORANGE strap on its upper cone. It is one fortieth of the ship's
 length — shorter than one propellant sphere is wide.
@@ -422,11 +419,10 @@ capsule — no figure is visible in frame.
 
 SCENE: The crossing ship crosses the frame vertically, bow at the TOP and
 stern at the bottom — a 210-metre interstellar vessel under constant burn:
-a blunt 26-metre pitted grey ice shield at the bow, three dirty-white
-quilted habitat drums, four bare machined 9-metre propellant spheres, a
+a sleek 26-metre ceramic-white ice shield with a turquoise rim stripe at the bow, three habitat drums wrapped in clean white multi-layer insulation quilting, each ringed by a thin turquoise band, four polished bright-metal 9-metre propellant spheres, a
 12-metre lattice berth boom standing out from its port flank, a long open
 graphite truss spine, two dead-black knife-edge radiator wings, a 30-metre
-dull grey conical shadow shield and an armoured drive block with three
+satin pearl-grey conical shadow shield and an armoured drive block with three
 recessed nozzles. From those nozzles, three pale blue-white exhaust cones
 merge into one straight, sharply defined 400-metre lance that leaves the
 BOTTOM of frame and thins away. At screen-left, holding 40 metres off the
@@ -470,6 +466,8 @@ with 35mm film grain.
 ---
 
 ## 🎬 SAHNE 1 (S1) — PENCEREDEN YUKARI
+
+> 🎯 **REFERANS:** **RD** p1 (ana iç kadraj) · **RE** p1 · p2 (iki insan) · **RA** p3 (pencereyi dolduran yanan motor bloğu)
 
 ### 📸 IMAGE PROMPT
 
@@ -574,6 +572,10 @@ text, no title card, no watermark. Photorealistic with 35mm film grain.
 
 ## 🎬 SAHNE 2 (S2) — KIRK KAROT
 
+> 🎯 **REFERANS:** **RC** p4 (yüklü kızak makro — kayış gergin) · **RC** p1 (gövde) · **RA** p4 (sağ kenarda küre + kapitone yalıtım)
+>
+> ⚠️ Bu bir DIŞ çekimdir; kabin/karakter sayfası yüklenmez.
+
 ### 📸 IMAGE PROMPT
 
 ```
@@ -583,17 +585,17 @@ exist in this film and both are sealed inside this capsule — no figure is
 visible in frame.
 
 SCENE: The upper cone of the ferry capsule fills the left two thirds of the
-frame — matte machined grey-white composite with crisp recessed seams and
+frame — matte ceramic-white composite over a dark graphite frame, a sweeping TURQUOISE chevron stripe down its flank, crisp recessed seams and
 flush rivet rows, the worn metal frame of its wide curved window running
 across the top of the shot. Bolted to the upper cone on the starboard side:
 the cargo cradle — a machined rack of FORTY identical sealed white core
 tubes in five rows of eight, each tube 0.9 metres long and 0.12 metres
 across, packed tight and held down by ONE wide BURNT-ORANGE strap drawn
-tight through a machined buckle. The strap is the only saturated colour
+tight through a machined buckle. The strap is the only warm saturated colour
 anywhere in the frame. The rack's clamp bar is closed and pinned; frost
 rimes the lower edge of every tube. Beyond and behind, 40 metres away at
 screen-right and out of focus only slightly, the flank of an enormous ship:
-bare machined propellant sphere and dirty-white quilted insulation, filling
+polished bright-metal propellant sphere and clean white quilted insulation with a turquoise accent line, filling
 the right edge of the frame from top to bottom.
 
 ENVIRONMENT: Hard vacuum, 0.220 g of thrust acceleration, absolute black
@@ -623,16 +625,15 @@ no camera movement. Exactly 2 human figures exist in this film and both are
 sealed inside this capsule — no figure is visible in frame.
 
 SCENE: The upper cone of the ferry capsule fills the left two thirds of the
-frame — matte machined grey-white composite with crisp recessed seams and
+frame — matte ceramic-white composite over a dark graphite frame, a sweeping TURQUOISE chevron stripe down its flank, crisp recessed seams and
 flush rivet rows, the worn metal frame of its wide curved window across the
 top of the shot. Bolted to the upper cone on the starboard side: the cargo
 cradle — a machined rack of FORTY identical sealed white core tubes in five
 rows of eight, each 0.9 metres long, packed tight and held down by ONE wide
 BURNT-ORANGE strap drawn tight through a machined buckle, its clamp bar
-closed and pinned. The strap is the only saturated colour in frame; frost
+closed and pinned. The strap is the only warm saturated colour in frame; frost
 rimes the lower edge of every tube. At screen-right, 40 metres away, the
-flank of an enormous ship fills the frame edge from top to bottom: bare
-machined propellant sphere and dirty-white quilted insulation.
+flank of an enormous ship fills the frame edge from top to bottom: polished bright-metal propellant sphere and clean white quilted insulation with a turquoise accent line.
 
 TIMELINE:
 0.0s — Stillness. Forty white tubes, one orange strap, hard shadows between
@@ -665,6 +666,8 @@ subtitles, no title card. Photorealistic with 35mm film grain.
 ---
 
 ## 🎬 SAHNE 3 (S3) — İLK KARTUŞ
+
+> 🎯 **REFERANS:** **RD** p1 · p3 (seçici BİRİNCİ dişte) · **RE** p1 · p2
 
 ### 📸 IMAGE PROMPT
 
@@ -769,6 +772,8 @@ Photorealistic with 35mm film grain.
 
 ## 🎬 SAHNE 4 (S4) — 🎬 VİRAL #1: ALEV
 
+> 🎯 **REFERANS:** **RA** p3 (alev · motor bloğu) · **RC** p1 (yüklü kapsül)
+
 ### 📸 IMAGE PROMPT
 
 ```
@@ -786,7 +791,7 @@ one straight, sharply defined 400-metre lance that runs down the right side
 of the frame and leaves the BOTTOM of frame, thinning as it goes. At
 screen-left, 40 metres out from the ship's flank and level with the nozzle
 plane: the ferry capsule — a 5.2-metre truncated cone standing nose-UP,
-matte machined grey-white composite, a 60-centimetre docking probe with
+matte ceramic-white composite over a dark graphite frame with a sweeping TURQUOISE chevron stripe, a 60-centimetre docking probe with
 three alignment vanes on its nose pointing at the TOP of frame, one wide
 curved window in its upper cone, forty white core tubes under a
 BURNT-ORANGE strap on its starboard side, four scorched nozzles in its base
@@ -827,7 +832,7 @@ deeply recessed engine nozzles. Three pale blue-white exhaust cones merge
 below them into one straight, sharply defined 400-metre lance running down
 the right of frame and out of the BOTTOM. At screen-left, 40 metres off the
 ship's flank: the ferry capsule — a 5.2-metre truncated cone standing
-nose-UP, matte grey-white composite, a 60-centimetre docking probe with
+nose-UP, matte ceramic-white composite over a dark graphite frame with a sweeping TURQUOISE chevron stripe, a 60-centimetre docking probe with
 three alignment vanes on its nose pointing at the TOP of frame, one wide
 curved window in the upper cone, forty white core tubes under a
 BURNT-ORANGE strap on its starboard side, four scorched nozzles in the base
@@ -869,6 +874,8 @@ film grain.
 ---
 
 ## 🎬 SAHNE 5 (S5) — MAVİ ALTTAN
+
+> 🎯 **REFERANS:** **RE** p1 · p4 (pilot tek yüz, kasklı — vizörün üç işareti p4'te)
 
 ### 📸 IMAGE PROMPT
 
@@ -971,6 +978,8 @@ no title card, no watermark. Photorealistic with 35mm film grain.
 
 ## 🎬 SAHNE 6 (S6) — TUTMA
 
+> 🎯 **REFERANS:** **RC** p1 · p2 (kartuş rafı: 4 dolu / 2 boş = p2'nin durumu) · **RA** p1 (gölge kalkanı gövde sırasından)
+
 ### 📸 IMAGE PROMPT
 
 ```
@@ -980,8 +989,7 @@ in this film and both are sealed inside this capsule — no figure is visible
 in frame.
 
 SCENE: The ferry capsule stands nose-UP in the left half of the frame — a
-5.2-metre truncated cone, 3.6 metres across its flat base, matte machined
-grey-white composite with crisp recessed seams and flush rivet rows, a
+5.2-metre truncated cone, 3.6 metres across its flat base, matte ceramic-white composite over a dark graphite frame, a sweeping TURQUOISE chevron stripe down its flank, crisp recessed seams and flush rivet rows, a
 60-centimetre docking probe with three alignment vanes on its nose pointing
 at the TOP of frame, one wide curved window in the upper cone with two
 helmeted heads dimly visible behind the glass, forty white core tubes under
@@ -989,8 +997,7 @@ a BURNT-ORANGE strap on its starboard side, four scorched nozzles in the
 base ring, and a six-socket cartridge rack low on its port flank with FOUR
 sockets loaded and TWO empty and scorched. From two small ports set high on
 its shoulder, near the top face, two short hard white jets fire straight UP
-out of the top of frame. At screen-right, 40 metres away, the wide dull
-grey face of a 30-metre conical shadow shield fills the frame edge, turned
+out of the top of frame. At screen-right, 40 metres away, the wide satin pearl-grey face of a 30-metre conical shadow shield fills the frame edge, turned
 toward the bottom of frame. Far below, the top of a pale blue-white exhaust
 lance shows at the bottom corner.
 
@@ -1021,14 +1028,13 @@ movement. Exactly 2 human figures exist in this film and both are sealed
 inside this capsule — no figure is visible in frame.
 
 SCENE: The ferry capsule stands nose-UP in the left half of frame — a
-5.2-metre truncated cone, matte machined grey-white composite with crisp
-recessed seams and flush rivet rows, a 60-centimetre docking probe with
+5.2-metre truncated cone, matte ceramic-white composite over a dark graphite frame, a sweeping TURQUOISE chevron stripe down its flank, crisp recessed seams and flush rivet rows, a 60-centimetre docking probe with
 three alignment vanes on its nose pointing at the TOP of frame, one wide
 curved window in the upper cone with two helmeted heads dimly visible
 behind the glass, forty white core tubes under a BURNT-ORANGE strap on its
 starboard side, four scorched nozzles in the base ring, and a six-socket
 cartridge rack low on its port flank. At screen-right, 40 metres away, the
-wide dull grey face of a 30-metre conical shadow shield fills the frame
+wide satin pearl-grey face of a 30-metre conical shadow shield fills the frame
 edge. Far below at the bottom corner, the head of a pale blue-white exhaust
 lance.
 
@@ -1073,6 +1079,8 @@ Photorealistic with 35mm film grain.
 
 ## 🎬 SAHNE 7 (S7) — KANAT
 
+> 🎯 **REFERANS:** **RA** p1 · p4 (radyatör kanadı geometrisi + omurga) · **RC** p1
+
 ### 📸 IMAGE PROMPT
 
 ```
@@ -1089,7 +1097,7 @@ like a blade. Behind and to screen-right, the ship's open hexagonal
 graphite truss spine recedes upward toward the top of frame with bolted
 nodes and clipped cable runs. Below the wing at screen-left, small in the
 lower third of the frame and 40 metres out from the hull: the ferry capsule
-— a 5.2-metre truncated cone standing nose-UP, matte grey-white composite,
+— a 5.2-metre truncated cone standing nose-UP, matte ceramic-white composite over a dark graphite frame with a sweeping TURQUOISE chevron stripe,
 a 60-centimetre docking probe with three alignment vanes on its nose
 pointing at the TOP of frame, one wide curved window in the upper cone,
 forty white core tubes under a BURNT-ORANGE strap. The wing is eight times
@@ -1126,7 +1134,7 @@ light-swallowing, its edge cutting the star field like a blade. Behind it
 at screen-right the ship's open hexagonal graphite truss spine recedes
 toward the top of frame. Below the wing at screen-left, small in the lower
 third and 40 metres out from the hull: the ferry capsule, a 5.2-metre
-truncated cone standing nose-UP, matte grey-white composite, a
+truncated cone standing nose-UP, matte ceramic-white composite over a dark graphite frame with a sweeping TURQUOISE chevron stripe, a
 60-centimetre docking probe with three alignment vanes on its nose pointing
 at the TOP of frame, one wide curved window in the upper cone, forty white
 core tubes under a BURNT-ORANGE strap. The wing is eight times the
@@ -1165,6 +1173,8 @@ card. Photorealistic with 35mm film grain.
 ---
 
 ## 🎬 SAHNE 8 (S8) — İKİNCİ TIRMANIŞ
+
+> 🎯 **REFERANS:** **RD** p1 · p3 (seçici ÜÇÜNCÜ dişte) · **RE** p1 · p2 · **RA** p4 (pencerede omurga + kanat altı)
 
 ### 📸 IMAGE PROMPT
 
@@ -1269,6 +1279,10 @@ card, no watermark. Photorealistic with 35mm film grain.
 ---
 
 ## 🎬 SAHNE 9 (S9) — YAKLAŞAN AĞIZ
+
+> 🎯 **REFERANS:** **RE** p4 ⭐ (iki yüz yan yana — KLON KAPISI) · **RD** p1 (pencere çerçevesi) · **RA** p4 (kanadın siyah altı)
+>
+> ⚠️ Bu bir İÇ karakter sahnesidir; ayrışma burada ölçülür.
 
 ### 📸 IMAGE PROMPT
 
@@ -1376,6 +1390,8 @@ grain.
 
 ## 🎬 SAHNE 10 (S10) — 🎬 VİRAL #2: ERKEN TUTMA
 
+> 🎯 **REFERANS:** **RA** p4 (kanat ucu + omurga) · **RC** p1 · p2 (raf: 3 dolu / 3 boş)
+
 ### 📸 IMAGE PROMPT
 
 ```
@@ -1385,8 +1401,7 @@ directly above it. Exactly 2 human figures exist in this film and both are
 sealed inside the capsule — no figure is visible in frame.
 
 SCENE: The ferry capsule stands nose-UP in the lower left of frame — a
-5.2-metre truncated cone, matte machined grey-white composite with crisp
-recessed seams, a 60-centimetre docking probe with three alignment vanes on
+5.2-metre truncated cone, matte ceramic-white composite over a dark graphite frame, a sweeping TURQUOISE chevron stripe down its flank, crisp recessed seams, a 60-centimetre docking probe with three alignment vanes on
 its nose pointing at the TOP of frame, one wide curved window in the upper
 cone, forty white core tubes under a BURNT-ORANGE strap on its starboard
 side, and a six-socket cartridge rack low on its port flank with THREE
@@ -1427,8 +1442,7 @@ movement. Exactly 2 human figures exist in this film and both are sealed
 inside the capsule — no figure is visible in frame.
 
 SCENE: The ferry capsule stands nose-UP in the lower left of frame — a
-5.2-metre truncated cone, matte machined grey-white composite with crisp
-recessed seams, a 60-centimetre docking probe with three alignment vanes on
+5.2-metre truncated cone, matte ceramic-white composite over a dark graphite frame, a sweeping TURQUOISE chevron stripe down its flank, crisp recessed seams, a 60-centimetre docking probe with three alignment vanes on
 its nose pointing at the TOP of frame, one wide curved window in the upper
 cone, forty white core tubes under a BURNT-ORANGE strap on its starboard
 side, a six-socket cartridge rack low on its port flank. Crossing the whole
@@ -1479,6 +1493,10 @@ grain.
 
 ## 🎬 SAHNE 11 (S11) — YANA KAYMA
 
+> 🎯 **REFERANS:** **RD** p1 (kordon — yana savrulup dikeye oturur) · **RE** p1 · p2 · **RA** p4 (pencerede küre + omurga)
+>
+> ⚠️ İÇ sahne: kapsül dışı (RC) kadraja girmez.
+
 ### 📸 IMAGE PROMPT
 
 ```
@@ -1498,8 +1516,7 @@ curved optically clear pane in a 2-centimetre brushed-metal frame with its
 lower seal ring visible at the collar. His gloved left hand is closed
 around a short machined translation grip on the console's left edge.
 Through the wide curved window above them: at screen-right, the enormous
-flank of the ship — graphite truss members and one bare machined propellant
-sphere; at screen-left, open black space and sharp stars. The
+flank of the ship — graphite truss members and one polished bright-metal propellant sphere; at screen-left, open black space and sharp stars. The
 40-centimetre brass lanyard hangs from the window frame, dead straight
 DOWNWARD and taut — the capsule is not yet moving sideways.
 
@@ -1540,7 +1557,7 @@ LEFT FOREARM only. Both backs FLAT, both helmets sealed: each visor a
 single curved optically clear pane in a 2-centimetre brushed-metal frame,
 its seal ring visible at the collar. Through the window above them: at
 screen-right the enormous flank of the ship, graphite truss members and one
-bare propellant sphere; at screen-left open black space and sharp stars. A
+polished propellant sphere; at screen-left open black space and sharp stars. A
 brass lanyard hangs from the window frame.
 
 TIMELINE:
@@ -1584,6 +1601,8 @@ text, no title card, no watermark. Photorealistic with 35mm film grain.
 
 ## 🎬 SAHNE 12 (S12) — PART A KAPANIŞ: YUVA GÖRÜNÜR
 
+> 🎯 **REFERANS:** **RB** p4 → p1 (yuva ilk kez görünür — duruş + kollar açık) · **RA** p4 (küreler + omurga) · **RC** p1
+
 ### 📸 IMAGE PROMPT
 
 ```
@@ -1593,8 +1612,7 @@ in this film and both are sealed inside the small capsule — no figure is
 visible in frame.
 
 SCENE: The ship's flank runs up the right half of the frame — open
-hexagonal graphite truss spine with bolted nodes, and above it four bare
-machined 9-metre propellant spheres in a row. Standing out from the flank
+hexagonal graphite truss spine with bolted nodes, and above it four polished bright-metal 9-metre propellant spheres in a row. Standing out from the flank
 near the top of frame: a 12-metre lattice berth boom, square in section,
 carrying a flat structural pad at its outer end. Set into the UNDERSIDE of
 that pad and facing straight down: a 2.0-metre machined capture ring with a
@@ -1603,7 +1621,7 @@ open at 120-degree spacing, ringed by a continuous recessed warm-white
 light channel that lays a clean pool of 3400K light on the open arms — the
 first warm light anywhere in this film. In the lower left third of frame,
 56 metres below the boom and 46 metres out from the hull: the ferry capsule
-— a 5.2-metre truncated cone standing nose-UP, matte grey-white composite,
+— a 5.2-metre truncated cone standing nose-UP, matte ceramic-white composite over a dark graphite frame with a sweeping TURQUOISE chevron stripe,
 its 60-centimetre probe pointing at the TOP of frame, forty white core
 tubes under a BURNT-ORANGE strap, a six-socket cartridge rack with FOUR
 sockets empty and scorched.
@@ -1634,8 +1652,7 @@ vacuum, no camera movement. Exactly 2 human figures exist in this film and
 both are sealed inside the small capsule — no figure is visible in frame.
 
 SCENE: The ship's flank runs up the right half of frame — open hexagonal
-graphite truss spine with bolted nodes, and above it four bare machined
-9-metre propellant spheres in a row. Standing out from the flank near the
+graphite truss spine with bolted nodes, and above it four polished bright-metal 9-metre propellant spheres in a row. Standing out from the flank near the
 top of frame: a 12-metre lattice berth boom carrying a flat structural pad
 at its outer end, with a 2.0-metre machined capture ring set into the
 UNDERSIDE of that pad facing straight down, a 40-centimetre conical throat

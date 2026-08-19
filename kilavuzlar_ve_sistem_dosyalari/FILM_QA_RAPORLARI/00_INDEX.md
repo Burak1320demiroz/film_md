@@ -28,7 +28,7 @@
 # 🔢 SAYIM
 
 ```
-TOPLAM FİLM                62   ← kaynak her zaman sayac.sh'tir; betik artık
+TOPLAM FİLM                63   ← kaynak her zaman sayac.sh'tir; betik artık
                                 bu sayıyı kendisi karşılaştırıp ❌ basıyor
                                 (12.08.2026: zombi+savaş filmleri silindi,
                                 59→57 · 13.08.2026: THE PLUMB LINE ve
@@ -70,14 +70,17 @@ TOPLAM FİLM                62   ← kaynak her zaman sayac.sh'tir; betik artık
                                 ve sayıma girmez, 62→61 · 17.08.2026:
                                 THE UPHILL DARK yazıldı (3-5 dk klasörü:
                                 PLAN + PART_A + PART_B + KAPAK +
-                                REFERANS_PAKETI), 61→62)
+                                REFERANS_PAKETI), 61→62 · 17.08.2026:
+                                THE BLUE DRIFT planı yazıldı (3-5 dk
+                                klasörü — Cold Burn/Black Cradle
+                                ailesinin MAVİ üçüncüsü), 62→63)
 ✅ QA VERİSİ OLAN          29   (%48 — film kaydı sayısı 30, ama biri
                                 THE_BLACK_CRADLE_FRAGMAN: fragman film
                                 sayımına girmez, 29+32 = 61 korunur ·
                                 17.08: THE BLACK CRADLE kaydı açıldı,
                                 beş mercek — dördü 🚨 GEÇERSİZ [D107])
-❌ ELEŞTİRİSİ OLMAYAN      33   (%53 — 17.08: THE UPHILL DARK eklendi,
-                                29 + 33 = 62)
+❌ ELEŞTİRİSİ OLMAYAN      34   (%54 — 17.08: THE UPHILL DARK ve
+                                THE BLUE DRIFT eklendi, 29 + 34 = 63)
 
 TAM QA RAPORU OLAN          2   (The Slow Stone · Ring Walker senaryo geçişi)
 KALİTE TABLOSUNDA OLAN     11   (The Last Crossing QA edildi ama tabloya girmedi)
@@ -347,6 +350,7 @@ KALİTE TABLOSUNDA OLAN     11   (The Last Crossing QA edildi ama tabloya girmed
 | **The Hollow Count** | ❌ | ❌ | ❌ | **0/3** 🆕 15.08 · 2-4 dk · ince atm. (🆕 EVAPORİT TERASI / ÇÖKME HAVZASI, %4 basınç) · **novum gerçek jeoloji: yürünen zemin bir TAVANDIR** — çözünmüş tuz boşluğunun tavanı, kusursuz düz bir çizgi hâlinde, 20 saniyede bir 2 m levha vererek çöküyor (düşüş 14 m / 2.0 s, 0.7 g'de doğrulandı) · 14 × 10 s = 2:20, **16 segment · 2 kesme (yalnız S11)**, 14/14 sabit çerçeve, 5 viral ara (S0·S3·S5·S11·S13), tamamen sessiz (0 replik) · ⚠️ risk 4/9 (kask · ikinci figür · toz · katmanlı dünya); iki 🔴 kart (su·canlı) SIFIR ve **YAPAY IŞIK 0** (S13 jeti dışında) — Starless Circle'ın "model fazladan ışık icat ediyor" riski yapısal olarak elendi · ⭐ **dış film analizinin İKİNCİ saha denemesi** (`film_analizleri/.../NOBODY_WAS_ALIVE_WHEN_WE_LANDED`, 66 rapor): devralınan 13 dersin hangi sahneye indiği §0.19'da satır satır yazılı — A1 sırttan ifşa (S8, 10 s hold, yüz 0 kare) · A3 toplu ölüm **60 boş diskle** (ceset/rakam 0) · B4 **eşleştirilmiş kadraj çifti S2↔S12** (aynı SETUP/CAMERA, tek değişken: her şey yok) · B5 **hız kartı S11** (deponun ilk kez SADECE tırmandırma için kullanılan kesmesi, filmin %79-86 aralığı) · B1 tersine çevrildi: uyarı GECİKMEDİ, kapı 90 saniyede kapandı — insanlar zaten aşağıdaydı · üç sayaç metinsiz (kazık sayısı 12→0 = dramatik saat · çizgi uzunluğu 40 m→9 km→iki havza · ayak izi hattı, dönüşte yok) · doruk S9 = tek atımlık kap iki yuvadan **vince** giriyor (kapı yuvası boş kalır); bedel S12 · final **çözüm değil GENİŞLEME** (çizgi ikinci havzaya girer) · ⛔ D69 ① kaydı planda: biniş/kalkış 0 kare · dört üretim kapısı + Plan B'leri §BÖLÜM 4'te · ✅ prompt_kontrol.py: **0 BLOCK**, 32/32 prompt tavanın (4.300) altında; tek FIX (uzunluk bandı) bilinçli sapma, gerekçesi ve ilk-red protokolü §0.14b'de · ⛔ SPEC bloğu dosyanın içinde (§0.15) — **MOD D koşulacak, mod V ön koşudur [D94]** |
 | **The Tall Shore** | ❌ | ❌ | ❌ | **0/3** 🆕 14.08 · 2-4 dk · ince atm. (🆕 KURU OKYANUS HAVZASI, 0.09 atm) · **ÖLÇEK filmi: 9.000 m'lik kıyı basamağından 1.100 km'lik tuz havzasına iniş** · 18 × 10 s = 3:00, 0 kesme, 18/18 sabit lockoff, 4 viral ara (S3·S7·S10·S15) · ⚠️ **risk 6/9 — depodaki en yüksek sayım ve EŞİĞİN ÜSTÜNDE**, gerekçesi ve azaltma planı planda yazılı: iki 🔴 kart (su·canlı) SIFIR, gerçek ağırlık Kart 7'de · ⛔ **depo standardından bilinçli sapma: kadın ÜÇ KEZ konuşuyor** (Ring Light/Blind Return 0 insan repliği) — karşı önlem TURN LOCK (sahne başına tek konuşmacı, 9 replikli sahnenin 9'unda) + AI sahnelerinde ağız kapalı + kadın sahnelerinde 75mm · ⭐ **HAZIR DÜŞÜŞ planda yazılı**: S2 üretim kapısı batarsa kadının üç repliği düşer, üç AI repliğiyle değişir, risk 6/9 → 5/9 (yeniden yazım gerekmez) · dört metinsiz sayaç: zaman SESLİ + mesafe YEDİ SEKİ + perspektif SIRT SAYISI (9→7→5→3→2→1, monotonik) + geri sayım GÖLGE ETEĞİ (25 m/dk) · ölçek mekanizması **HAVA PERSPEKTİFİ** sayısal kilidi (10 km'de kontrast dörtte bir düşer) — Cold Burn'ün dok kapısının panzehiri · doruk S13 (26 kg'lık kanıtı tuza gömmek; bedel aynı sahnede, S17'de kadrajda duruyor) · kask 18/18 kapalı, durum değişimi 0 · Canopy World'ün battığı madde (katmanlı dünya ışık takvimi) bu filmin omurgası: LAYER LIGHT SCHEDULE irtifaya göre sıralı ve monotonik · ⚠️ **PROMPT_KONTROL betiği FIX döndü** (36/36 prompt, ⛔ 0 BLOCK; tek bulgu UZUNLUK: 14/18 video promptu bandın 30-490 karakter üstünde, tavanın çok altında) — üretimden önce kapatılacak, yol filmin BÖLÜM 3'ünde yazılı · ⛔ SPEC bloğu dosyanın içinde (§0.16) — **MOD D koşulacak, mod V ön koşudur [D94]** |
 | **The Uphill Dark** | ❌ | ❌ | ❌ | **0/3** 🆕 17.08 · 3-5 dk · 🆕 **VAKUM + İTKİ YERÇEKİMİ (0.220 g)** — depoda ilk alt-ortam: vakumun bütün kuralları geçerli ama "her şey süzülür" kuralı GEÇERSİZ, her şey DÜŞER · ⭐ **novum: uzayda düşmek var** — 210 m'lik yıldızlararası gemi kalkış yanmasını durduramaz, yanındaki her serbest cisim kıça doğru 2.16 m/s² ile düşer; novum'un üç kanıtı da KATI NESNE (sarkan kordon · düşen kovan · düşen yük), türetilmiş optik fenomen [D73] ya da yokluk [D76] DEĞİL · 25 sahne (Hook 9 s + 24 × 10 s = 4:09), 0 kesme, 25/25 sabit lockoff, 4 viral ara (S4·S10·S19·S23), **0 replik** · ⚠️ risk 4/9 (kask · ikinci figür · sayaç · parçacık); iki 🔴 kart (su·canlı) SIFIR · ⭐ **D23 (sıfır-g rijitliği) YAPISAL OLARAK ELENDİ** — film boyunca hiçbir kare sıfır yerçekiminde değil; kural değil KARAR ile kapatıldı [AGENTS §8] · ⭐ **ikisi de 25/25 sahnede kemerli ve oturuyor** → biniş/iniş/yürüme 0 kare [D69 ①] · dört metinsiz sayaç: PENCERE MERDİVENİ (gemi gövdesinin hangi bölümü pencerede) · SARKAN KORDON (itki var mı) · KARTUŞ YUVALARI 6→0 · YÜK KIZAĞI 40 dolu→40 boş · aritmetik filmin kendisi: 3 tırmanış × 40 m = 120 m ama radyatör kanadı tırmanış 2'yi 12 s erken kestirir (22 m) → 16 m AÇIK, 0 kartuş · CENTRAL CHOICE S19 (%75.7) = 900 kg yükü bırakmak, bedel AYNI KAREDE (kırk karot düşerken gövde pencerede kaymaya başlar) · doruk S21 temas 0.20 m/s (3:37.9 = **%87.5**, bant içi) · turuncu TAM ÜÇ YERDE (iki skafandr · yük kayışı · atma kolu) ve S19'dan sonra kadrajdaki tek turuncu iki insandır · ⭐ **REFERANS PAKETİ 5 SAYFA × 4 PANEL** (varlık başına tek sayfa; 17.08.2026'da 13 tek görselden indirildi, iki durum çifti aynı sayfada) · ✅ prompt_kontrol.py: **0 BLOCK**, 50/50 prompt tavanın (4.300) altında; tek FIX (uzunluk bandı) bilinçli sapma, gerekçesi + İLK RED PROTOKOLÜ PART_A §Üretim Notları'nda · ⛔ SPEC bloğu planın içinde — **MOD D koşulacak, mod V ön koşudur [D94]** |
+| **The Blue Drift** | ❌ | ❌ | ❌ | **0/3** 🆕 17.08 · 3-5 dk · **YAZIM TAMAM:** PLAN + PART_A + PART_B + KAPAK + **REFERANS_PAKETI (5 sayfa × 4 panel, Uphill Dark formatı; üç durum çifti aynı sayfada)** — 50 film promptu + 2 kapak; prompt_kontrol 0 BLOCK (A/B FIX yalnız uzunluk, gerekçeli · KAPAK ✅ GO) · üretim KAPI 0 (referans sayfaları + §4 devamlılık kapısı) → S21 → S15 → S4 → S0 sırasıyla başlar · 🆕 ortam: mavi devin KIRAĞI UYDUSU (azot buzu, 0.4g, gece yüzü YALNIZ mavi planetshine ile aydınlık) — **palet üçlemesinin kapanışı: beyaz (Cold Burn) → siyah (Black Cradle) → MAVİ** · ⭐ **novum: ölü aracın YAKALANIŞI** — perde kenarı iticileri öldürür, araç balistik; depodaki beş yanaşma filminde manevrayı hep küçük araç yapıyordu, ilk kez YAKALAYAN ANA GEMİDİR ("katedral pervaneye gelir") ve doruk EDİLGENDİR · tehdit depoda ilk kez GÖKTEN iner: plazma perdesi (aurora, taban 90°→40°, yalnız mavi-menekşe — YEŞİL NEGATİFTE) · 25 sahne × 10 s = 4:09 (standart, sapma yok), 0 kesme, 25/25 lockoff, 4 viral ara (S4·S7·S15·S21) · 16 replik / 13 sahne — 10 MACHINE (KERTE ana gemidedir, S9-S11 bağlantı kopuk = atışma yapısal imkânsız [D82]) · CENTRAL CHOICE S14 = kabin havasını itki olarak harcamak (6 düz puf ile despin; bedel S16 mekanik ibrede %40) · doruk S21 yakalayış %84-88 (sahibi KERTE: "Tuttum.") · ⚠️ risk 5/9 TAM EŞİKTE; iki 🔴 kart (su·canlı) SIFIR, ateş/patlama 0 kare · kartlarda olmayan iki risk yazılı: MAVİ-ÜSTÜ-MAVİ (beş mavi ton/doku skalası + amber istisna ailesi + HAZIR DÜŞÜŞ) ve AURORA KLİŞESİ · üretim S21→S15→S4→S0 kapılarıyla başlar · ⛔ SPEC bloğu planın içinde — **MOD D koşulacak, mod V ön koşudur [D94]** |
 | **diğer 23 film** | ❌ | ❌ | ❌ | **0/3** |
 
 ```
@@ -471,7 +475,7 @@ testiyle ELLE yapılır (kaynak: `KAPAK_FOTOGRAFI_MIMARISI_KILAVUZU.md`).
 
 ---
 
-# 🎬 3-5 dk — 5 film (2 ✅ / 3 ❌)
+# 🎬 3-5 dk — 6 film (2 ✅ / 4 ❌)
 
 | | Film | Kapsam | Skor | Ders | Dosya |
 |:--:|---|:---:|:---:|:---:|---|
@@ -480,6 +484,7 @@ testiyle ELLE yapılır (kaynak: `KAPAK_FOTOGRAFI_MIMARISI_KILAVUZU.md`).
 | ⚠️ | LOW_POWER — **senaryo QA** | 🚨 var olmayan 7 sahnelik kurgu | ~~7.0/10~~ | 0 | [→](02_HAM_RAPORLAR/LOW_POWER_SENARYO_HAM.md) GEÇERSİZ SPEC |
 | ❌ | THE_RISING_SNOW | — | — | — | üretim aşamasında |
 | ❌ | THE_UPHILL_DARK | — | — | — | 🆕 17.08.2026 · PLAN + PART_A + PART_B + KAPAK + **REFERANS_PAKETI (5 sayfa × 4 panel)** · 25 sahne × 10 s = 4:09, 0 kesme, 0 replik, 25/25 lockoff · 🆕 ortam: **vakum + 0.220 g itki yerçekimi** (novum: uzayda düşmek var) · risk 4/9 · doruk S21 temas %87.5 · merkezi seçim S19 (900 kg yük bırakılır, bedel aynı karede) · ✅ prompt_kontrol 0 BLOCK, 50/50 · üretim KAPI 0 (referans paketi) ile başlar |
+| ❌ | THE_BLUE_DRIFT | — | — | — | 🆕 17.08.2026 · YAZIM TAMAM: PLAN + PART_A + PART_B + KAPAK + REFERANS_PAKETI (5 sayfa × 4 panel) · 50 prompt + 2 kapak, prompt_kontrol 0 BLOCK / kapak ✅ GO · üretim KAPI 0 (referans) ile başlar · Cold Burn + Black Cradle ailesinin MAVİ üçüncüsü — mavi dev uydusu, planetshine, gökten inen plazma perdesi · novum: ÖLÜ ARACIN YAKALANIŞI (aktif taraf ilk kez ana gemi, doruk edilgen) · 25 sahne × 10 s = 4:09 standart · 16 replik (10 MACHINE) · merkezi seçim S14 (kabin havası = son itici, bedel ibrede) · doruk S21 %84-88 · risk 5/9 tam eşikte · ayrıntı tamlık matrisinde |
 | ✅ | THE_COLD_BURN | **BEŞ mercek** 🔧🧩📖🧍🔊 | **5.0Ⓥ · 🧩7.0 · 📖4.0Ⓥ⚠️ · 🧍6.0 · 🔊5.0** | **2** | [→](01_FILM_RAPORLARI/THE_COLD_BURN.md) 🔧🧩📖🧍🔊 ham rapor ✅ ×5 · ⭐ **BEŞ raporlu ilk film + SES_QA ilk koşusu + DERS 82-83'ün kaynağı** · 🚨 kurgu kapısı 4/4 ihlal — ekranda 12/30 sahne, doruk/seçim/final yok · ❓ üretim zinciri doğrulanmadı |
 
 ---

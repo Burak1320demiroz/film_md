@@ -11,6 +11,8 @@
 > TAM 4 PANEL** — 5 üretim. Gerekçe ve bedeli §0'da; kaybedileni geri
 > alan üç önlem de orada.
 >
+> ⭐ **Kaplama kararı (17.08.2026, depo ev stiliyle hizalı):** gemi + kapsül > modern livery — **mat seramik beyazı + grafit iskelet + turkuaz şerit/bant**, > Cold Burn lander'ın (TEAL chevron) ve Ring Light lander'ın (bone-white > ceramic + graphite) diliyle aynı aile. Tamburlar temiz beyaz MLI kapitone > (Cold Burn ana gemisi gibi, kirli/sararmış DEĞİL). Geometri, sayı kilitleri > ve ışık sistemi DEĞİŞMEDİ. Turkuaz her yerde boyadır, ışık değil; turuncu > tek SICAK doygun renk olarak kalır.
+>
 > Tüm promptlar **Ders 34** uyumlu: karakter adı hiçbir promptta geçmez.
 > Tüm promptlar **Ders 79 + 95** uyumlu: sırt düz, vizör berrak ama
 > **görünür** (çerçeve + yaka mührü + tek parlama çizgisi).
@@ -106,22 +108,60 @@ RE   ⭐ İKİ KARAKTER TEK SAYFADA — bu sayfa aynı zamanda KLON KAPISIDIR.
 > Parantez içindeki panel numarası "hangi panel bu sahnenin kadrajıdır"
 > demektir, "yalnız onu yükle" demek değildir.
 
-| Sahne | Yüklenecek referans | Kadraj paneli |
-|---|---|---|
-| S0 · S24 | **RA** | p1 · p2 · p3 (gemi tam boy, ölçek, alev) |
-| S1 · S2 | **RD + RE** | RD p1 + RE p1·p2 (kabin + iki karakter) |
-| S3 · S8 · S14 · S17 | **RD** | p2 · p3 (kartuş atışı — konsol ve seçici) |
-| **S4** | **RA + RC** | RA p3 + RC p1 (alevin yanında kapsül) |
-| S5 · S13 | **RE** | p4 (yüz yakın planı, kasklı) |
-| S6 · S15 · S16 · S20 | **RA + RC** | RA p1·p4 + RC p1 (gövde pencerede akıyor) |
-| S7 · S9 · **S10** | **RA** | p1 · p4 (radyatör kanadı geometrisi) |
-| S11 | RA + RC | RA p1 + RC p1 (yanal öteleme) |
-| **S12** | **RB** | p4 → p1 (yuva ilk kez görünür) |
-| S18 | RB + RC | RB p1 + RC p1 (16 m altında asılı) |
-| **S19** | **RC + RD** | RC p1·p3·p4 + RD p4 (dolu → boş kızak + turuncu kol) |
-| **S21** | **RB** | p1 → p2 (temas: kollar açıktan kapalıya) |
-| S22 | RB + RD | RB p2 + RD p1 (kenetli + kabin) |
-| **S23** | **RC** | p3 (boş kızak — bedelin görüntüsü) |
+> ⭐ **17.08.2026 düzeltmesi:** tablo sahne sahne yeniden çıkarıldı (PART_A /
+> PART_B promptları tek tek okundu). Altı satır yanlıştı — gruplama iç ve dış
+> sahneleri karıştırıyordu: **S2 · S9 · S11 · S16 · S17 · S20**. Gerekçeler
+> tablonun altındaki nottadır. Aynı eşleme artık sahne başlıklarının altında
+> da yazılıdır (PART_A / PART_B · `> 🎯 REFERANS:` satırı).
+
+| Sahne | İç/Dış | Yüklenecek referans | Kadraj paneli |
+|---|:---:|---|---|
+| **S0** | dış | **RA + RC** | RA p1·p2·p3 (tam boy · ölçek · alev) + RC p1 |
+| **S1** | iç | **RD + RE + RA** | RD p1 + RE p1·p2 + RA p3 (pencerede yanan motor) |
+| **S2** ⚠️ | **dış** | **RC + RA** | RC p4·p1 (yüklü kızak makro) + RA p4 |
+| **S3** | iç | **RD + RE** | RD p1·p3 (seçici 1. diş) + RE p1·p2 |
+| **S4** | dış | **RA + RC** | RA p3 + RC p1 (alevin yanında kapsül) |
+| **S5** | iç | **RE** | p1 · p4 (pilot tek yüz, kasklı) |
+| **S6** | dış | **RC + RA** | RC p1·p2 (raf 4 dolu/2 boş) + RA p1 |
+| **S7** | dış | **RA + RC** | RA p1·p4 (radyatör kanadı) + RC p1 |
+| **S8** | iç | **RD + RE + RA** | RD p1·p3 (seçici 3. diş) + RE p1·p2 + RA p4 |
+| **S9** ⚠️ | **iç** | **RE + RD + RA** | RE p4 ⭐ (iki yüz) + RD p1 + RA p4 |
+| **S10** | dış | **RA + RC** | RA p4 + RC p1·p2 (raf 3 dolu/3 boş) |
+| **S11** ⚠️ | **iç** | **RD + RE + RA** | RD p1 (kordon) + RE p1·p2 + RA p4 |
+| **S12** | dış | **RB + RA + RC** | RB p4 → p1 (yuva ilk kez) + RA p4 + RC p1 |
+| **S13** | iç | **RE + RD** | RE p4 ⭐ (iki yüz) + RD p1 |
+| **S14** | iç | **RD + RE + RB** | RD p1·p3 (seçici 5. diş) + RE p1·p2 + RB p4 |
+| **S15** | dış | **RA + RB + RC** | RA p4 + RB p4 + RC p1·p2 (raf 1 dolu/5 boş) |
+| **S16** ⚠️ | **iç** | **RD + RE + RA** | RD p1 (kordon yana) + RE p1·p2 + RA p4 |
+| **S17** ⚠️ | **dış** | **RC** | p2 (kartuş rafı makro — boş yuva içi, ejektör, is) |
+| **S18** | dış | **RB + RC** | RB p1 + RC p1 (16 m altında asılı) |
+| **S19** | iç | **RC + RD + RE** | RC p1→p3 ⭐ · p4 + RD p4 (turuncu kol) + RE p2 |
+| **S20** ⚠️ | iç | **RD + RE + RB + RC** | RD p1 + RE p1·p2 + RB p1 + RC **p3** (boş kızak) |
+| **S21** | dış | **RB + RC** | RB p1 → p2 ⭐ · p3 + RC p1 (burun + prob) |
+| **S22** | iç | **RB + RD + RE** | RB p2 (kenetli) + RD p1 + RE p1·p2 |
+| **S23** | dış | **RC + RB** | RC p3 ⭐ · p4 + RB p2 (kapalı kollar) |
+| **S24** | dış | **RA + RB + RC** | RA p1·p2·p3 (S0 kadrajı) + RB p2 + RC p3 |
+
+```
+⚠️ DÜZELTİLEN ALTI SATIR — neden yanlıştı:
+
+S2   dış çekimdir (yüklü kızak makro), tablo onu S1 ile birlikte kabin
+     sayfasına bağlıyordu. Kadrajda ne kabin ne de karakter var.
+S9   iç karakter sahnesidir (iki yüz yan yana, kanat pencerenin ardında);
+     tablo radyatör grubuna koymuştu. Bu sahne KLON KAPISIDIR — RE p4
+     yüklenmeden üretilirse depodaki üç klon vakasının koşulu geri gelir.
+S11  iç sahnedir; kapsül dışı (RC) kadraja hiç girmez.
+S16  iç sahnedir; tablo RA+RC diyordu, kabin sayfası (RD) eksikti.
+S17  dış detay çekimidir (kartuş rafı, 85mm); tablo onu kabin/seçici
+     grubuna koymuştu. Kadrajda kabin yok — doğru çapa RC p2'dir.
+S20  S19'DAN SONRA GEÇER: yük yoktur. Tablo RC p1 (YÜKLÜ) diyordu —
+     bu doğrudan blok 5 kilidini bozardı. Doğrusu RC p3 (boş kızak).
+
+⚠️ TEK PANELDE OLMAYAN İKİ DURUM (metin taşır, referans taşımaz):
+  · S15 · S17 · S18 — kartuş rafı 5 veya 6 BOŞ. RC p2 yalnız 4 dolu/2 boş
+    gösterir; boş yuvanın DİLİ p2'den, sayısı prompt metninden gelir.
+  · S18 — yük DOLU + altı yuva BOŞ. Gövde ve yük p1'den, boş yuva p3'ten.
+```
 
 ---
 
@@ -145,17 +185,11 @@ crossing vessel, a long working machine built for a passage between stars
 — not a shuttle, not a warship, not a saucer. From bow to stern, in this
 exact order and these exact proportions:
 
-1) BOW ICE SHIELD, 0 to 24 metres: a blunt disc 26 metres across, dirty
-   grey ablative composite, its forward face pitted and scoured with
-   thousands of tiny impact craters, its rim chipped. It is a shield, not
+1) BOW ICE SHIELD, 0 to 24 metres: a smooth disc 26 metres across, matte ceramic-white ablative composite, its forward face clean and unbroken, a single TURQUOISE stripe ringing its rim. It is a shield, not
    a dish, not an antenna: solid, thick, featureless.
 2) THREE HABITAT DRUMS, 24 to 60 metres: three cylinders in a line, each
-   18 metres across and 12 metres long, wrapped in dirty-white quilted
-   multi-layer insulation with visible quilting seams, taped edges, sun
-   yellowing on the upper side and grey staining below.
-3) FOUR PROPELLANT SPHERES, 60 to 92 metres: four bare machined metal
-   spheres in a row, each 9 metres across, held in ring cradles, their
-   lower surfaces streaked with frost and their weld seams visible.
+   18 metres across and 12 metres long, wrapped in clean white multi-layer insulation quilting with taut, even quilting seams, each drum ringed by one thin TURQUOISE accent band.
+3) FOUR PROPELLANT SPHERES, 60 to 92 metres: four polished bright-metal spheres in a row, each 9 metres across, held in TURQUOISE-anodised ring cradles, their lower surfaces streaked with frost.
 4) THE BERTH BOOM at 100 metres: a machined lattice boom standing 12
    metres straight out from the near flank, square in section, carrying a
    flat pad at its outer end; a 2.0-metre machined capture ring is set
@@ -168,14 +202,12 @@ exact order and these exact proportions:
    panels standing straight out from the spine on opposite sides, each 40
    metres long and only 30 centimetres thick, their surfaces matte and
    light-swallowing.
-7) SHADOW SHIELD, 166 to 182 metres: a dull grey cone 30 metres across,
+7) SHADOW SHIELD, 166 to 182 metres: a satin pearl-grey cone 30 metres across,
    its wide face turned toward the stern.
 8) DRIVE BLOCK, 182 to 210 metres: a dense armoured mass with THREE
    deeply recessed engine nozzles in a triangle, their throats scorched.
 
-FINISH — IDENTICAL EVERYWHERE: worn and used — micrometeorite pitting,
-sun-yellowed insulation, grey thruster staining, chipped paint, heat
-discolouration to straw and blue-grey near the nozzle throats. No
+FINISH — IDENTICAL EVERYWHERE: clean and well kept — a matte ceramic-white and TURQUOISE livery over graphite structure, tight even panel gaps, light grey staining at the thruster ports, heat discolouration to straw and blue-grey near the nozzle throats. A working vessel, maintained — never dirty, never derelict. No
 markings, no numbers, no insignia, no flags, no logos anywhere on the
 hull.
 
@@ -191,7 +223,7 @@ its stern receding toward panel-right, so the depth of the truss and the
 standoff of the berth boom both read. A single small ferry capsule holds
 station 40 metres off the ship's near flank, level with the berth boom —
 a 5.2-metre truncated cone standing nose-up, 3.6 metres across its flat
-base, matte grey-white composite, with a 60-centimetre docking probe on
+base, matte ceramic-white composite over a dark graphite frame with a sweeping TURQUOISE chevron stripe, with a 60-centimetre docking probe on
 its nose. It must read as roughly ONE FORTIETH of the ship's length: the
 capsule is shorter than one propellant sphere is wide, and one radiator
 wing alone is nearly eight times the capsule's height. Both craft are
@@ -222,8 +254,7 @@ sphere → berth boom standing 12 metres out with its socket facing DOWN →
 open hexagonal truss spine with bolted nodes and clipped cable runs →
 black knife-edge radiator wing rising out of frame. This is the exact
 scale at which the hull passes the capsule's window in the film: close
-enough that quilting seams, bolt heads, frost streaks and grab rails read
-individually, far enough that four sections fit in one frame.
+enough that turquoise accent lines, bolt heads, frost streaks and grab rails read individually, far enough that four sections fit in one frame.
 
 NEGATIVE: ONE ship only per panel — no second vessel, no fleet, no
 variant designs on the sheet; panel 2's small ferry capsule is the only
@@ -274,8 +305,7 @@ even neutral key at 5000K plus the berth's own light.
 THE BERTH — IDENTICAL IN ALL FOUR PANELS: a machined lattice boom, square
 in section and 1.6 metres on a side, standing 12 metres straight out from
 the hull of a large vessel; the hull itself reads at the inboard end of
-the boom as a wall of dirty-white quilted insulation and bare machined
-propellant sphere. At the boom's outer end is a flat structural pad 4
+the boom as a wall of clean white quilted insulation with a turquoise accent line and polished bright-metal propellant sphere. At the boom's outer end is a flat structural pad 4
 metres square. Set into the UNDERSIDE of that pad, facing straight down,
 is the socket:
 
@@ -314,8 +344,7 @@ the vanes have rotated into their guide grooves and sit flush. The THREE
 capture arms have swung inward and are now CLOSED over the probe's
 collar, all three seated home and identical to one another, their
 actuator rods drawn in, their hinge pins loaded. Below the ring, the top
-1.5 metres of a ferry capsule's nose is visible: matte grey-white
-composite with crisp recessed seams and flush rivet rows, pressed up
+1.5 metres of a ferry capsule's nose is visible: matte ceramic-white composite with a TURQUOISE chevron stripe, crisp recessed seams and flush rivet rows, pressed up
 against the ring so the two machined faces meet with a clean structural
 boundary and a visible 1-centimetre seam line between them — the metal
 does not merge, blend or melt into the ring at any point. Fine paint
@@ -334,8 +363,7 @@ channel is a thin lit line deep in its groove, not a halo. No probe, no
 capsule, nothing docked.
 
 PANEL 4 — BOTTOM RIGHT, THE BERTH IN CONTEXT: a wide view from 50 metres
-below and forward, showing where the boom meets the ship: dirty-white
-quilted habitat insulation and one bare machined propellant sphere at
+below and forward, showing where the boom meets the ship: clean white quilted insulation with a turquoise accent line and one polished bright-metal propellant sphere at
 panel-top, the lattice boom standing 12 metres clear of that flank, and
 the socket at its outer end facing straight DOWN into empty black space,
 arms open, its warm light channel a small bright ring at this distance.
@@ -387,8 +415,7 @@ mid-grey seamless studio background in every panel, even neutral key at
 THE CAPSULE — IDENTICAL IN ALL FOUR PANELS: a 5.2-metre truncated cone
 ferry capsule, 3.6 metres across its flat circular base and 2.1 metres
 across its flat top face. It is not a rocket, not a winged shuttle, not a
-sphere: a short blunt cone standing on its base. Matte machined grey-white
-composite panels with crisp recessed seams and visible flush rivet rows,
+sphere: a short blunt cone standing on its base. Matte ceramic-white composite panels with crisp recessed seams and visible flush rivet rows, one sweeping TURQUOISE chevron stripe down each flank,
 laid over an exposed graphite-grey structural frame that shows at every
 panel joint.
 
@@ -413,9 +440,7 @@ panel joint.
     metres long and 0.12 metres across, with ONE single wide BURNT-ORANGE
     strap running across the whole rack through a machined buckle.
 
-FINISH — IDENTICAL EVERYWHERE: used and worn — scuffs on the base ring,
-grey staining around the nozzles, hairline scratches across the flanks,
-dust in the seams. The only saturated colour anywhere on the craft is the
+FINISH — IDENTICAL EVERYWHERE: clean and well kept — matte ceramic-white panels with tight even gaps, the TURQUOISE chevron's paint edge lightly chipped from use, light scuffs on the base ring and grey staining around the nozzle throats. A working vehicle, maintained — never dirty, never derelict. The only warm saturated colour anywhere on the craft is the
 single burnt-orange cargo strap. No markings, no numbers, no insignia, no
 logos. The engines are cold and unlit on the whole sheet.
 
@@ -432,8 +457,7 @@ PANEL 2 — TOP RIGHT, LOW THREE-QUARTER FROM BENEATH: the same capsule
 seen from beneath and to one side, standing nose-up so its base ring
 dominates the panel and its flank recedes upward. The FOUR main nozzles
 read individually, their bells deeply scorched and heat-discoloured to
-straw and blue-grey, with their cooling lines and feed pipes across the
-scuffed grey-stained base plate. On the near flank the cartridge rack is
+straw and blue-grey, with their cooling lines and feed pipes across the lightly grey-stained base plate. On the near flank the cartridge rack is
 seen square: in THIS panel FOUR sockets hold white cartridges seated
 flush and TWO sockets are EMPTY, showing their dark machined interior,
 the ejector rod at the back and the scorching around the mouth left by
@@ -452,7 +476,7 @@ and scratch is identical to panel 1. THE TWO CHANGES, AND ONLY THESE TWO:
   - THE ORANGE STRAP HANGS LOOSE: the single wide burnt-orange strap is
     still attached at one end to its machined buckle and hangs straight
     DOWN along the flank, slack and unloaded, its free end swinging clear
-    of the empty rack. It is still the only saturated colour on the craft.
+    of the empty rack. It is still the only warm saturated colour on the craft.
 Additionally the cartridge rack on the near flank shows SIX sockets, ALL
 SIX EMPTY and scorched at the mouth. Nothing else differs from panel 1.
 
@@ -522,8 +546,7 @@ and 0.6 metres tall, set in a heavy machined metal frame worn bright at
 the handholds beside it. The glass is clean and optically clear with no
 tint; beyond it, plain neutral grey for reference use.
 
-THE CONSOLE, filling the space between the seats and the window: matte
-dark grey panels with crisp recessed seams and flush fastener rows,
+THE CONSOLE, filling the space between the seats and the window: matte graphite-dark panels with crisp recessed seams, flush fastener rows and slim TURQUOISE accent trim along their edges,
 scuffed to bare metal along every edge a glove has touched. Rows of
 ABSTRACT amber and pale grey light segments indicate fill level only by
 how many are lit — no digits, no letters, no icons, no screens, no
@@ -540,7 +563,7 @@ THREE OBJECTS THAT MUST READ CLEARLY AND IDENTICALLY WHEREVER THEY APPEAR:
   - On the right cheek of the console, within the right seat's reach: a
     BURNT-ORANGE two-handed lever, 30 centimetres long, with a machined
     knurled grip at each end and a hinged steel safety collar folded back
-    and clipped off it. It is the only saturated colour in the cabin.
+    and clipped off it. It is the only warm saturated colour in the cabin.
   - On the left cheek of the console, within the left seat's reach: a
     machined rotary selector 9 centimetres across with SIX detent
     positions cut evenly into its collar and a stubby knurled lever arm,
@@ -877,6 +900,10 @@ KARAKTERLER (RE)
 
 HEPSİ
 □ Turuncu YALNIZ üç yerde: iki skafandr · yük kayışı · atma kolu
+□ Turkuaz yalnız BOYA mı? (şerit · bant · dikiş çizgisi) — turkuaz IŞIK,
+  turkuaz parıltı, turkuaz neon varsa at; alev mavi-beyaz, yuva ışığı
+  sıcak beyaz kalır
+□ Gövde ev stilinde mi — mat seramik beyazı + grafit + turkuaz şerit; tamburlar TEMİZ beyaz kapitone? Kirli/sararmış/paslı panele ya da parlak cilalı 'showroom' yüzeye kaymışsa at (17.08 kaplama kararı)
 □ Seed §1 tablosuna yazıldı
 ```
 

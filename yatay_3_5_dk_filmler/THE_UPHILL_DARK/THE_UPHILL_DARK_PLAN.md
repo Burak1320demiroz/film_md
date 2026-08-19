@@ -268,9 +268,9 @@ ORTAM        VAKUM (KILAVUZ_REHBERI §3.1) + 0.220 g itki yerçekimi
 ```
 Pruvadan kıça, 210 metre — pencere merdiveninin basamakları da budur:
 
-  0–24 m    BUZ KALKANI      26 m çapında kör, kirli gri ablatif disk
- 24–60 m    ÜÇ YAŞAM TAMBURU 18 m çapında, kirli beyaz kapitone yalıtım
- 60–92 m    DÖRT YAKIT KÜRESİ  her biri 9 m, çıplak metal, kırağı izli
+  0–24 m    BUZ KALKANI      26 m mat seramik beyazı ablatif disk, turkuaz çember şerit
+ 24–60 m    ÜÇ YAŞAM TAMBURU 18 m çapında, temiz beyaz kapitone yalıtım + turkuaz bant
+ 60–92 m    DÖRT YAKIT KÜRESİ  her biri 9 m, cilalı parlak metal + turkuaz kızak, kırağı izli
     100 m   ⭐ YANAŞMA KOLU   port bordadan 12 m dışarı çıkan kafes kol;
                               yuva kolun ALT yüzündedir (§Yanaşma yeri)
 104–150 m   KAFES OMURGA      açık altıgen grafit gri, cıvatalı düğümler
@@ -307,7 +307,7 @@ itki altında doğru geometri budur: yük basınçla taşınır, asılmaz.
 
 ```
 5.2 m yüksekliğinde kesik koni, burnu YUKARI durur; taban 3.6 m.
-Mat işlenmiş gri-beyaz kompozit, gömük dikişler, görünür perçin sıraları.
+Mat seramik beyazı kompozit, grafit iskelet üstünde, yanda turkuaz chevron şerit, görünür perçin sıraları.
   BURUN        60 cm prob + 3 hizalama kanadı
   PENCERE      üst konide tek geniş kavisli cam, 1.6 m
   TABAN        dört ana lüle halka dizilişte
@@ -336,8 +336,13 @@ TURUNCU OLAN ÜÇ ŞEY — TAM ÜÇ:
    Bir renk, bir bedeli anlatır.
 
 GERİ KALAN PALET — turuncuyu yalnız bırakmak için:
-  gemi         kirli beyaz kapitone + grafit gri + çıplak metal
-  kapsül       mat gri-beyaz kompozit
+  ⭐ 17.08.2026 KAPLAMA KARARI: gemi + kapsül modern livery'ye çekildi
+     (mat seramik beyazı + grafit + turkuaz aksan — Cold Burn/Ring Light lander diliyle aynı aile). Turkuaz SOĞUK bir renktir ve
+     turuncunun neredeyse tam karşıtıdır — turuncu, kadrajdaki TEK SICAK
+     doygun renk olarak kalır; dramaturji bozulmaz. Turkuaz her yerde
+     BOYADIR (şerit · bant · dikiş çizgisi), asla ışık değil.
+  gemi         temiz beyaz kapitone + seramik beyazı + turkuaz aksan + grafit gri
+  kapsül       mat seramik beyazı + grafit iskelet + turkuaz chevron şerit
   uzay         mutlak siyah + sert yıldızlar
   alev         soluk mavi-beyaz (turuncunun tam karşıtı)
   yuva ışığı   sıcak beyaz (3400K) — filmin tek "ev" rengi

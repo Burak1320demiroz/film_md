@@ -39,11 +39,9 @@ Kapağın işi:          O cümleyi DEĞİL, o cümlenin GERİLİMİNİ satmak �
 Photorealistic cinematic poster frame, 16:9 widescreen, maximum
 resolution. Deep space. A 210-metre interstellar vessel crosses the frame
 vertically, its bow at the TOP and its stern at the bottom, seen from 500
-metres out: a blunt 26-metre pitted grey ice shield at the bow, three
-dirty-white quilted habitat drums, four bare machined 9-metre propellant
-spheres, a 12-metre lattice boom standing out from its port flank, a long
+metres out: a sleek 26-metre ceramic-white ice shield with a turquoise rim stripe at the bow, three habitat drums wrapped in clean white multi-layer insulation quilting, each ringed by a thin turquoise band, four polished bright-metal 9-metre propellant spheres, a 12-metre lattice boom standing out from its port flank, a long
 open graphite truss spine, two dead-black knife-edge radiator wings, a
-30-metre dull grey conical shadow shield, and an armoured drive block with
+30-metre satin pearl-grey conical shadow shield, and an armoured drive block with
 three deeply recessed nozzles at the stern. From those nozzles three pale
 blue-white exhaust cones merge into one straight, sharply defined
 400-metre lance that runs down the right of frame and leaves the BOTTOM of
@@ -52,10 +50,9 @@ billowing, never curling, never mushrooming.
 
 In the lower left third of the frame, small and alone in the black, 40
 metres out from the ship's flank and far below the boom: a 5.2-metre
-truncated-cone ferry capsule standing nose-UP, matte machined grey-white
-composite with crisp recessed seams, a 60-centimetre docking probe with
+truncated-cone ferry capsule standing nose-UP, matte ceramic-white composite over a dark graphite frame, a sweeping TURQUOISE chevron stripe down its flank, crisp recessed seams, a 60-centimetre docking probe with
 three alignment vanes on its nose pointing at the TOP of frame, one wide
-curved window in its upper cone, and — the only saturated colour anywhere
+curved window in its upper cone, and — the only warm saturated colour anywhere
 in the image — a rack of forty sealed white core tubes held under a single
 wide BURNT-ORANGE strap on its starboard side, with a burnt-orange glint
 from a suited shoulder just visible behind the window glass. The capsule
@@ -98,8 +95,7 @@ grain.
 Photorealistic cinematic poster frame, 16:9 widescreen, maximum
 resolution. Deep space, seen from 12 metres off the flank of a small
 spacecraft. The upper cone of a 5.2-metre truncated-cone ferry capsule
-fills the upper left of the frame — matte machined grey-white composite
-with crisp recessed seams and flush rivet rows, the worn metal frame of
+fills the upper left of the frame — matte ceramic-white composite over a dark graphite frame, a sweeping TURQUOISE chevron stripe down its flank, crisp recessed seams and flush rivet rows, the worn metal frame of
 its wide curved window across the top of the shot, and behind that glass,
 lit dim amber from below, two helmeted heads in matte BURNT-ORANGE
 hard-shell pressure suits, faces fully readable through their optically

@@ -169,6 +169,7 @@ Rubrik dosyasına YAZILMAZ (salt prompt ilkesi).
 | Dosya | Film | Neyi ölçer | Girdi |
 |---|---|---|---|
 | `FILME_OZEL/THE_RING_LIGHT_QA_CRITIQUE_PROMPT.md` | THE RING LIGHT | aksiyon (planlı vuruş + ölü kare) ve filmin kendi sayısal kilitleri | tek klip (MOD K) veya tam kurgu (MOD F) |
+| `FILME_OZEL/THE_BLUE_DRIFT_QA_CRITIQUE_PROMPT.md` | THE BLUE DRIFT | tek klibin promptuna UYGUNLUĞU + **ATIF**: kilit prompt'ta var da model mi uymadı, yoksa kilit prompt'ta hiç yok muydu | tek klip (MOD K) + AS-BUILT prompt |
 
 ```
 ⚠️ BUNLAR MERCEK DEĞİL, ÜRETİM KAPISIDIR.

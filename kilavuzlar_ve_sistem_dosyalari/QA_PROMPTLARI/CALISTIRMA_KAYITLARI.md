@@ -912,3 +912,39 @@ NOT: SHORTS'un KNOWN AI FAILURE PATTERNS tablosundaki ders numaraları
 > devamlılığı, ses kimliği kayması ve miks sıçraması kategorilerinin dördü
 > birden ANLAMSIZDIR — bu rubriğin ölçtüğü şeylerin çoğu yalnızca kesmelerin
 > ARASINDA yaşar. Tek klibe koşulan bir SES_QA satırı tabloya girmez.
+
+---
+
+# FILME_OZEL/THE_BLUE_DRIFT_QA_CRITIQUE_PROMPT.md
+
+```
+0 kez çalıştırıldı · 18.08.2026'da yazıldı · film-özel ÜRETİM KAPISI
+(mercek değil; skorları 03-07 tablolarına GİRMEZ, 6'lık sayıma girmez)
+
+NİYE AÇILDI: S1 videosunda figür/iş/araç doğru çıktı, ARKA PLAN değişti.
+Kök sebep prompt tarafındaydı — gezegen ve zemin çapa blokları IMAGE
+promptunda tam, VIDEO promptunda parafrazdı. Genel rubrikler bu ayrımı
+yapamaz: ekranda gördükleri hatayı MODELE fatura ederler. Bu rubriğin tek
+yeniliği ATIF KAPISI'dır — her bulgu üç etiketten birini alır:
+  🅐 MODEL DRIFT  kilit prompt'ta VAR, ekran uymadı
+  🅑 PROMPT GAP   kilit prompt'ta YOK/zayıf — aynı promptla yeniden üretim
+                  aynı hatayı üretir (para iki kez yanar)
+  🅓 UNATTRIBUTED as-built prompt verilmedi
+Bu yüzden rubrik MOD K'ya ek olarak AS-BUILT PROMPT ister; verilmezse
+YENİDEN ÜRET kararı yasaktır.
+
+MOD: her zaman D (SPEC gövdeye gömülü) · girdi: 1 klip + sahne no +
+as-built prompt · S1 sahne bloğu tam, diğer sahneler için film-geneli
+kilitler geçerli (sahne bloğu eklenerek büyütülür).
+
+KOŞU KAYITLARI (her koşu TEK SATIR):
+1 kez çalıştırıldı · son 18.08.2026 · S1 klibi (as-built V1) · sonuç:
+  GÖZLEM SETİ — rapor çıktı şablonunu kullanmadı (künye/ledger/zaman
+  kodu/atıf/skor/karar yok), bu yüzden hiçbir kategoriye sayı yazılmadı
+  ve atıf operatör tarafında yapıldı. 5 bulgu: 3'ü 🅑 PROMPT GAP
+  (prop boşluğu ×2, vizör görünürlüğü), 2'si 🅐 MODEL DRIFT (ses, temas
+  erimesi). ⬜ C2 (arka plan sabitliği) ÖLÇÜLMEDİ — kapının açılış
+  sebebi hâlâ açık. Rubrik aynı gün sertleştirildi: FORMAT NOT FOLLOWED
+  durdurma koşulu + ledger'da ilk/son kare karşılaştırması zorunlu.
+  Kayıt: FILM_QA_RAPORLARI/01_FILM_RAPORLARI/THE_BLUE_DRIFT.md
+```
