@@ -1753,3 +1753,287 @@ as a question.
 > (etiket sayı taşımaz — N/A'nın ortalamaya girmemesi aynı ailedendir).
 
 ---
+
+## 🔴 DERS 115: ÇAPRAZ SAYIM KAPISI RAPORLARI BİRBİRİNE BAKAR, IZGARAYA BAKMAZ — İKİ RAPOR AYNI SAYIYI VERİP İKİSİ DE ON SAHNE YANLIŞ OLABİLİR; IZGARA REPLİK ZAMAN KODUYLA GERİ ALINIR
+
+**Kaynak:** THE BLUE DRIFT · 20.08.2026 · beş mercek, aynı ~254 s kurgu, hepsi mod V ·
+`FILM_QA_RAPORLARI/01_FILM_RAPORLARI/THE_BLUE_DRIFT.md` KOŞU 2
+**Sorun:** D107 bu hatayı GÖRDÜ ve rubrik yaması ("count the cuts before you name
+the scenes") beş rubriğin beşinde de yazılıydı. Yine olmadı — ikinci vaka.
+
+Raporların bildirdiği sahne sayısı:
+
+```
+📖 SENARYO   → 10 sahne (ve ~23 kesme — kesmeyi neredeyse doğru saydı)
+🧩 MANTIK    → 15 sahne          🧍 KARAKTER → 15 sahne
+🔧 VIDEO     → saymadı           🔊 SES      → saymadı
+FİLMİN GERÇEĞİ → 25 segment (9 s hook + 24 × 10 s = 249 s)
+```
+
+İki şey aynı anda doğrudur ve ikisi de kapıyı deler:
+
+```
+① D107'nin rubrik yaması raporu KENDİ haritasını denetlemeye çağırır.
+   Rapor bunu yapmaz: 🧩 kendi envanterinde 5 ve 9 saniyelik bloklar
+   listeledi, sonra 30 saniyelik "tek sahne"ler yazdı — kendi kuralına göre
+   bölmesi gerekiyordu. Raporun kendi kendini denetlemesine güvenilmez.
+
+② D107'nin operatör kapısı raporları BİRBİRİYLE karşılaştırır: fark ≤ 1 ise
+   "koşular birbirini doğruluyor, işle". Bu partide 🧩 ve 🧍 birebir aynı 15
+   bloğu bildirdi — fark 0. Yani gate, on sahne yanlış olan iki raporu
+   DOĞRULANMIŞ ilan ederdi. Ölçüyü ölçüye vurmak, ikisi de aynı yönde
+   yanlışsa hiçbir şey ölçmez.
+```
+
+Bedeli, blokların içinde eriyen şeylerdir: 🧩 filmin üçüncü viral karesini
+(airlock nefesi) "kokpit" etiketli 30 saniyelik bloğun içine gömdü; 📖 filmin
+dönüm noktasını ve umut anını 40 saniyelik tek "tekrarlı kokpit" bloğu sanıp
+kesme listesine yazdı.
+
+**ÇÖZÜM — ölçüyü ölçüye değil, IZGARAYA vur (sayısal, master'a bakmadan):**
+
+```
+HİZALAMA KAPISI — plan dosyası elde olan her koşuda, rapor işlenmeden önce:
+
+① IZGARA plandan alınır, rapordan DEĞİL:
+      sahne başlangıcı(n) = hook süresi + (n-1) × klip süresi
+② Her REPLİKLİ sahne için beklenen mutlak saniye hesaplanır:
+      beklenen = sahne başlangıcı + o repliğin prompt TIMELINE'ındaki ofseti
+③ Ses raporunun dialogue ledger'ındaki zaman koduyla karşılaştırılır:
+      |Δ| ≤ 2 s   → sahne yerinde
+      |Δ| ≈ klip süresinin katı → sahne kaymış: hangi dilim olduğu Δ'nın
+                    işaretinden ve büyüklüğünden okunur
+④ Raporun sahne haritası ızgara dilimlerinin birleşimi olarak yeniden yazılır;
+   rapordaki sahne SAYISI hiçbir kapıya girdi sayılmaz.
+
+Blue Drift'te: 16 repliğin 14'ü ±2 s içinde çıktı, biri (S6, iki replik) tam
+−9.5 s → tek sıra şüphesi 20 saniyelik pencereye indi. Sıra denetiminin
+tamamı, master açılmadan, iki belgeyle yapıldı.
+```
+
+⭐ **Bu kapı aynı zamanda kimlik kapısının SAYISAL biçimidir [D105].** Uydurulmuş
+ya da başka filme ait zaman kodları bir ızgaraya oturmaz; 14 repliğin ızgaraya
+düşmesi, raporun gerçekten O FİLMİ izlediğinin kanıtıdır — üstelik bunun için
+başlık kartına bakmak gerekmez (kartın kanıt sayılması D105'in yasağıdır).
+
+⛔ **Kapının koşulamadığı yer:** sessiz filmler. Orada aynı iş sahne sınırı
+zaman kodlarıyla yapılır (blokların ızgara dilimlerinin birleşimi olup olmadığı
+kontrol edilir) — Blue Drift'te 15 bloğun 15'i öyleydi ve blok 1 tam 9 s'lik
+hook'tu.
+
+> 🔗 Ders 107 (çapraz sayım kapısı — bu onun ikinci vakası ve düzeltmesi) ·
+> Ders 110 (aynı oturum = ortak defter; iki raporun aynı sayıyı vermesi bu
+> yüzden doğrulama değildir) · Ders 101 (kapı sahne sayar, çekim saymaz) ·
+> Ders 105 (kimlik çapası) · Ders 92 (eşleme çöktüğünde rubrik susmuyor).
+
+---
+
+## 🔴 DERS 116: "BU DEĞİŞİM FİLMİN ÖNERMESİ Mİ?" KAPISI YALNIZ TEK KARTTA KOŞUYOR — AYNI YANLIŞ OKUMA DÖRT MERCEKTEN GELDİ, ÜÇÜNÜ HİÇBİR KAPI GÖRMEDİ
+
+**Kaynak:** THE BLUE DRIFT · 20.08.2026 · beş mercek ·
+`FILM_QA_RAPORLARI/01_FILM_RAPORLARI/THE_BLUE_DRIFT.md` KOŞU 2 · defter C bölümü
+**Sorun:** D87 çözümü 12.08'de yazıldı ve **yalnız MANTIK kartına** (adım 2b)
+işlendi. Bu partide filmin tasarımını "hata" diye faturalayan dört bulgunun
+üçü başka merceklerden geldi.
+
+```
+🧩 MANTIK   turuncu kubbe (🟡)                → kapı VAR, bulgu düşer
+🔧 VIDEO    perde kenarı = "vakumda aurora" (🔴)   → kapı YOK
+🔧 VIDEO    telsiz repliğinde ağzın kımıldamaması (🔴) → kapı YOK
+🧩 MANTIK   açık yakalama yuvası (🟠) + reçete: "4:00 çekimini kes" → kapı VAR
+```
+
+Dördünün de kaynağı planda yazılı:
+perde kenarını sıyırarak geçiş = S8 · verici kubbesinin amber nabzı = S10'un
+umut vuruşu · omurgadaki açık yakalama yuvası = S24 finali · kapalı kask +
+arkadan kadraj = filmin ses mimarisi [D82 sigortası].
+
+Bedeli iki cümlede:
+
+```
+· 🧩'in bir numaralı reçetesi uygulansaydı filmin PLANLI FİNALİ kesilecekti.
+· 🔧'ün iki 🔴'sinden biri, filmin ses mimarisinin ta kendisiydi — yani
+  "düzeltme" filmin çalışan tasarımını bozmak olurdu.
+```
+
+**ÇÖZÜM — kapı karttan çıkar, ORTAK ADIMLAR bloğuna girer:**
+
+```
+ÖNERME KAPISI, rapor hangi mercekten gelirse gelsin koşulur:
+
+Coğrafya · Kostüm-Prop · Zaman-Işık · Çevre · Fizik · Ses mimarisi ·
+Ekipman durumu başlıklarındaki HER bulgu, tabloya işlenmeden önce planın
+logline + sahne haritası + sayısal kilit listesine karşı okunur:
+   kaynağı planda YAZILI  → bulgu DÜŞER, film kaydına "önerme" yazılır
+   kaynağı yok            → bulgu ayakta
+
+⛔ Bulguyu getiren merceğin adı bu kararı değiştirmez. Tasarım, teknik
+   rubrikten geldiğinde de tasarımdır.
+```
+
+⭐ **D111'in kart karşılığı.** D111 bir dersin kardeş RUBRİKLERE taranmasını
+zorunlu kılar; bu ders aynı şeyi KARTLAR için söyler: bir kapı tek görev
+kartına yazıldıysa, o kapının göreceği hata diğer kartlardan serbestçe geçer.
+Yeni bir kapı yazan herkes şu soruyu cevaplar: **bu kapının yakaladığı hata
+başka hangi karttan girebilir?**
+
+> 🔗 Ders 87 (kapının kendisi) · Ders 111 (kardeş tarama — rubrik tarafı) ·
+> Ders 94 (SPEC hazırken mod V koşmak: kapı olsaydı bile mercek tasarımı
+> göremezdi) · Ders 82 (burada "hata" sanılan ses mimarisinin kaynağı).
+
+---
+
+## 🔴 DERS 117: SPEC PLANIN İÇİNDE GÖMÜLÜ KALDIĞI SÜRECE MOD D HİÇ KOŞULMUYOR — KAPI İHLALİ ETİKETLİYOR AMA AZALTMIYOR
+
+**Kaynak:** LOSS OF LIFT · 21.08.2026 · üç koşu (📖 ×1 · 🧩 ×2), **üçü de mod V** ·
+`FILM_QA_RAPORLARI/01_FILM_RAPORLARI/LOSS_OF_LIFT.md` § SPEC kapısı
+**Sorun:** 6. vaka. D94 kapısı 12.08'de yazıldı; o günden beri **mod D sayısı 0.**
+
+```
+SPEC hazır, mod V koşuldu:  Slow Stone · Starless Circle · Third Dune ·
+                            Ring Light · Banded Deep · LOSS OF LIFT
+mod D koşusu:               0
+```
+
+Bu filmde SPEC eksik değildi — **üretimden önce**, yazım paketinin parçası
+olarak, 12 maddelik kontrol listesinin E maddesi olarak yazılmıştı. Yine
+kullanılmadı. Sebep bilgi değil ERİŞİM:
+
+```
+SPEC bloğu = 906 satırlık PLAN dosyasının 738. satırı
+QA anında operatörün elinde  = video + rubrik dosyası
+Aradaki mesafe               = bir dosyayı açıp doğru bölümü bulup kopyalamak
+```
+
+Kapı bunu yakaladı ve koşuyu ÖN KOŞU olarak etiketledi — ama etiket altı
+filmde altı kez basıldı ve davranışı bir kez değiştirmedi. **Yalnız etiketleyen
+kapı, kapı değildir.** Bedeli bu partide ölçüldü: üç koşu harcandı, üçünün de
+kesme listesi uygulanamaz, üçü de tabloya ŞARTLI girdi.
+
+**ÇÖZÜM — SPEC bir BÖLÜM değil, bir DOSYADIR:**
+
+```
+Film klasöründe:  <FILM>_QA_SPEC.md          ← yazım paketinin 6. parçası
+İçinde üç blok:   A = SENARYO_QA SPEC alanları (rubriğin alan sırasıyla)
+                  B = kurgu geometrisi (klip · süre · ızgara · insan şeridi)
+                  C = belgesiz merceklerin FLAGS sorularını cevaplayan kilitler
+Başında tek tablo: hangi rubriğe NE verilir — 🧩 🧍 🔊 için "HİÇBİR ŞEY"
+
+QA anında iş = iki dosya yapıştırmak (rubrik + SPEC). Bölüm aramak yok.
+```
+
+⛔ **Yazım paketi artık PLAN + PART_A + PART_B + KAPAK + MUZIK + QA_SPEC'tir.**
+SPEC dosyası yoksa film "yazımı tamam" sayılmaz; plan içindeki blok kaynaktır,
+teslim biçimi değildir.
+
+> 🔗 Ders 94 (SPEC kapısının kendisi — bu ders onun uygulanma biçimi) · Ders 74
+> (kaydı olmayan kapı koşulmamış kapıdır; buradaki eşdeğeri: **eline verilmeyen
+> SPEC yazılmamış SPEC'tir**) · Ders 116 (mod V'de önerme kapısı: SPEC verilse
+> kesme listesi virali zaten kesemezdi).
+
+---
+
+## 🔴 DERS 118: KURGU KAPISI SAYIYI VE SÜREYİ DOĞRULUYOR, SIRAYI DOĞRULAMIYOR — İKİ MADDE DE GEÇERKEN FİLMİN DORUĞU YANLIŞ YUVADA OLABİLİR
+
+**Kaynak:** LOSS OF LIFT · 21.08.2026 ·
+`FILM_QA_RAPORLARI/01_FILM_RAPORLARI/LOSS_OF_LIFT.md` § kurgu kapısı
+**Sorun:** ilk kez ölçüldü. D109'un kapısı iki maddeydi ve ikisi de GEÇTİ:
+
+```
+a) KLİP SAYISI   26 − 1 kart = 25  = plan 25            ✅
+b) SÜRE          255 − 5 = 250 s ≈ plan 249 s (Δ 1 s)   ✅
+   → kapı "koşu NORMAL" dedi
+```
+
+Üç QA raporu da filmin **doruk sahnesini insansız bir gece dışı çekimi**,
+ondan önceki insansız virali ise **doruğun kendisi** olarak bildirdi. Sayı
+tuttuğu ve süre tuttuğu için hiçbir kapı bu soruyu sormadı; üç mercek de
+o sıraya göre puanladı — senaryo merceği doruğu 30 saniye erken yerde arayıp
+"dönüş çok geç geliyor" yazdı.
+
+**Sıra, sayı ve süreden bağımsız bir boyuttur ve ölçmesi bedavadır.**
+
+**ÇÖZÜM — kurgu kapısına ÜÇÜNCÜ madde: İNSAN ŞERİDİ**
+
+```
+Plandan yazılır (sahne haritasının "İnsan" sütunu), 1 karakter = 1 sahne:
+    1 = sahnede insan var        - = insansız sahne
+Örnek (25 sahne):  -111111111111-11111-1111-
+
+Rapordan yazılır (her rubriğin sahne tablosunda "who is present" sütunu var;
+rubriklere PRESENCE STRING çıktısı da eklendi — rapor bu diziyi kendisi verir).
+
+c) SIRA   iki dize birebir aynı mı?
+          aynı  → kurgu sırası doğrulandı
+          değil → ⛔ ÖNCE ÇÖZ, SONRA PUANLA: farkın olduğu yuvaların
+                  saniyeleri master'da izlenir (yuva başına ~10 s iş)
+```
+
+Kilit neden İNSAN: raporun sahne tablosundaki en az yorumlu sütun budur.
+Mekân adı, aksiyon tarifi ve duygu okuması modele göre değişir; "kadrajda
+insan var mı" değişmez. Bu yüzden metinsiz, sayılabilir ve mod V'de de çalışır.
+
+⭐ Şerit bir yan ürün değil, **planın yazdığı bir kilittir**: insansız sahneler
+zaten viral aralar ve açılış-kapanış çiftidir — yani filmin sırasının en çok
+anlam taşıyan yerleri. Şerit tutuyorsa o dört yuva doğru; tutmuyorsa ilk
+bakılacak yer tam olarak orasıdır.
+
+> 🔗 Ders 109 (kurgu kapısının iki maddesi — bu ders üçüncüsü) · Ders 115
+> (ızgara geri alma: bu dersin ZAMAN eksenindeki kardeşi; D115 sahnenin
+> NEREDE olduğunu, D118 HANGİ SIRADA olduğunu ölçer) · Ders 101 (kapı sahne
+> sayar, çekim saymaz) · Ders 70/72 (kart ayıklaması şeritten önce yapılır).
+
+---
+
+## 🔴 DERS 119: SKOR ARİTMETİĞİ RUBRİKTE YAZILI DEĞİLSE MODEL TOPLAMI UYDURUR — AYNI DEFTER, TEK YENİ GÖZLEM YOK, 2.0 PUAN FARK
+
+**Kaynak:** LOSS OF LIFT · 21.08.2026 · 🧩 MANTIK_QA aynı dosyaya iki koşu ·
+`02_HAM_RAPORLAR/LOSS_OF_LIFT_MANTIK_HAM.md`
+**Sorun:** iki koşunun çelişki defteri, severity tally'si ve sahne haritası
+**birebir aynı** — yalnız skorlar farklı:
+
+```
+                     hücrelerin ortalaması      raporun yazdığı OVERALL
+KOŞU 1  10·10·9·10·7·10·10·10 =  9.5                    8/10
+KOŞU 2   7· 7·6· 7·5· 7· 7· 7 =  6.6                    6/10
+                                 └ ikisi de kendi tablosuyla tutmuyor
+FARK: 2.0 puan · YENİ GÖZLEM: 0
+```
+
+İki ayrı ihlal üst üste bindi:
+
+```
+① VARSAYILAN DEĞER KELİMEYLE YAZILMIŞTI. Rubrik "kaynağı olmayan kategori TAM
+   puanla başlar" diyor. Koşu 2 beş hücreye "[no in-scope source]" yazdı ve
+   aynı satıra 7/10 koydu — yani kuralı okudu, uyguladı sandı, uygulamadı.
+② TOPLAMIN NEREDEN GELECEĞİ HİÇ YAZILMAMIŞTI. MANTIK_QA'da "OVERALL =
+   hücrelerin ortalaması" cümlesi YOK. Aynı cümle SENARYO_QA'da VAR — ve bu
+   partide toplamı kendi tablosuyla tutan tek rapor o oldu (7.0 = 70/10).
+```
+
+⚠️ Bunun AGENTS §2 ⑥'ya (ölçüm sapması) etkisi doğrudan: **2.0 puanlık sapma
+algıdan değil, boş bırakılmış bir varsayılan değerden geliyordu.** Aritmetik
+yazılı olsaydı iki kopya koşu birbirinin aynısını verirdi.
+
+**ÇÖZÜM — beş rubriğin skor bloğuna dördüncü madde (kaynak rubrik MANTIK önce):**
+
+```
+④ THE OVERALL SCORE IS ARITHMETIC, NOT AN IMPRESSION. Every category begins
+   at 10/10 and loses only the deductions its own Issue cell lists with
+   timecodes. A category whose issue cell reads "no in-scope source" scores
+   10/10 — writing that phrase and a number below ten in the same row is a
+   contradiction, and the phrase wins. Then compute the OVERALL SCORE as the
+   mean of the category scores you actually printed... if they disagree, the
+   table is right and the overall is wrong.
+```
+
+⭐ **Genel kural:** bir rubrikte sayı üreten her adımın aritmetiği GÖVDEDE
+yazılı olmalı. "Tam puanla başlar" bir tariftir; "10/10 yaz" bir sayıdır.
+Tarif kilitleri bu depoda %0 tuttu.
+
+> 🔗 Ders 110 (kopya defter — bu iki koşunun neden tek ölçüm olduğu; yeni
+> gözlem: kopya, sapmayı her zaman KÜÇÜK göstermez) · Ders 113 (yokluk `N/A`,
+> düşük puan değil — aynı ailenin bir önceki üyesi) · Ders 63 + 111 (kaynak
+> rubrik önce, sonra kardeş tarama: yama beş rubriğe işlendi).
+
+---

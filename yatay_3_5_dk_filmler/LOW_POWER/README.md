@@ -14,6 +14,7 @@
 | **LOW_POWER_PART_A.md** | Tüm Bible'lar (World, Station, Character, Camera, Lighting, Physics, Negative) + **S0-S12** (13 sahne × IMAGE + VIDEO promptu) |
 | **LOW_POWER_PART_B.md** | **S13-S24** (12 sahne × IMAGE + VIDEO promptu) + müzik promptları + film özet tablosu |
 | **LOW_POWER_KAPAK.md** | Kapak A (mavi gün batımı + yüz), Kapak B (tek yeşil pencere), tipografi spesifikasyonu, A/B test planı |
+| **LOW_POWER_FRAGMAN_DIKEY.md** | **FRAGMAN (teaser)** — 9:16 dikey, 6 vuruş × 8 s = 48 s, mekanik **ÖRTÜLME**. Kaynak vuruşlar: S0·S6·S7·S14·S8·S10. Ayrı teslim; film sayımına girmez. Merceği SHORTS_QA |
 
 ---
 

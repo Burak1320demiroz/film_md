@@ -190,7 +190,9 @@ reference for every later check, and it goes into your report.
 ```
 MATERIAL
   What you were given: [single clip / compilation edit] · duration [s]
-  Cuts you can see:    [count + timecodes, or "none — reads as one take"]
+  Cuts you can see:    [COUNT them — a number plus every timecode, or
+                        "none — reads as one take". A word like "several"
+                        is not a count and does not close this line.]
   Aspect ratio:        [16:9 / 9:16 / other]
 
 THE CHARACTER — as first clearly seen
@@ -716,6 +718,13 @@ MATERIAL TYPE: [FILM / TEASER / FILM (undeclared)] — a teaser is a trailer for
                  advances by jumping, and a closing beat that resolves the
                  story is a fault in it, not a virtue. Never prescribe adding
                  the outcome, the resolution or the reveal to a teaser.
+CUTS COUNTED: [n + timecodes, or "none — reads as one take"]
+
+⛔ CUTS COUNTED is not optional and not a rounded impression: it is the count
+you made in STEP 1, with its timecodes. "several cuts" is not a count. A
+report that names scenes without printing this number has not measured the
+material's shape, and every score built on that scene map is a score of a
+film that may not exist.
 SPEC BLOCK PROVIDED: [yes / partial — list blank fields / no — mode V]
 
 OVERALL SCORE: __/10   (mean of the categories that carry a number.
@@ -738,6 +747,17 @@ VERDICT: [ACCEPT / ACCEPT WITH FIX PASS / REGENERATE]
 ③ An event you called UNVERIFIABLE in one category may NOT be scored in a
    neighbouring one. The label belongs to the OBSERVATION, not to the
    category cell you happened to write it in.
+④ THE OVERALL SCORE IS ARITHMETIC, NOT AN IMPRESSION. Every category begins
+   at 10/10 and loses only the deductions its own Issue cell lists with
+   timecodes. A category whose issue cell reads "no in-scope source", "no
+   source" or the equivalent scores 10/10 — writing that phrase and a number
+   below ten in the same row is a contradiction, and the phrase wins. Then
+   compute the OVERALL SCORE as the mean of the category scores you actually
+   printed, and use that same number everywhere the report asks for a total.
+   Before you finish, add the printed cells and check the mean against your
+   overall: if they disagree, the table is right and the overall is wrong.
+   Two different totals for one film is a defect, and a total that no set of
+   printed cells can produce is a fabricated measurement.
 ```
 
 | Category | Score | Critical Issues |
@@ -759,6 +779,16 @@ the scoreability map says so. Never write 0, never write "N/A — assumed ok".)
 
 ## SCENE INVENTORY — mode V only
 [the STEP 1 baseline table: material, character, world, motion]
+
+
+## PRESENCE STRING
+One character per scene, in edit order, no spaces: `1` if a human figure is
+visible anywhere in that scene, `-` if the scene has none. Cover only the
+scenes you listed above, and leave out any title card or other non-scene
+material you set aside. Write this line even when the order looks fine to
+you, and never reorder it to match what you expect a film to do — it is a
+fingerprint of the EDIT'S ORDER, and it is the one line another reader can
+check against the shooting plan without watching anything.
 
 ## SEVERITY TALLY
 🔴 BLOCKER: __    🟠 MAJOR: __    🟡 MINOR: __

@@ -643,6 +643,7 @@ FILM: [title — or "(not supplied)" in mode V; never read off a title card]
 FORMAT: [2-4dk / 3-5dk / 7-9dk — or "(not supplied)"]
 RUNTIME: [seconds — say "measured" or "~x ESTIMATED", never both]
 SCENE COUNT: [counted by you in mode V — say "counted, not from a document"]
+CUTS COUNTED: [n — the number from the material gate, not an impression]
 SPEC BLOCK PROVIDED: [yes / partial — list blank fields / no — mode V]
 
 — MODE D ONLY —
@@ -711,6 +712,16 @@ VERDICT: [SHOOT AS IS / SHOOT WITH TRIMS / REVISE STRUCTURE / REWRITE PREMISE]
 
 ## SCENE MAP — mode V only
 [the STEP 1 table, with the note that the numbering is yours]
+
+
+## PRESENCE STRING
+One character per scene, in edit order, no spaces: `1` if a human figure is
+visible anywhere in that scene, `-` if the scene has none. Cover only the
+scenes you listed above, and leave out any title card or other non-scene
+material you set aside. Write this line even when the order looks fine to
+you, and never reorder it to match what you expect a film to do — it is a
+fingerprint of the EDIT'S ORDER, and it is the one line another reader can
+check against the shooting plan without watching anything.
 
 ## SCENE-BY-SCENE VERDICT
 [full table — in mode V every row carries a timecode, not just a number]

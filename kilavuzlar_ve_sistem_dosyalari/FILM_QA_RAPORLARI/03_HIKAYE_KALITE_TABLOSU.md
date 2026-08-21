@@ -30,6 +30,20 @@
 | The Banded Deep Ⓥ | 2-4dk | 7 | **8** | 7.5 | 7 | **8** | N/A | 7.5 | **8** | 7 | **6.5** | ⚠️ **7.4/10 ŞARTLI** |
 | The Last Shift Ⓥ | 2-4dk | **4** | 7 | 6 | **4** | 7 | **9** | 6 | **3** | 7 | 5 | ⚠️ **6.0/10 ŞARTLI** |
 | ~~The Black Cradle Ⓥ~~ | 3-5dk | ~~6~~ | ~~8~~ | ~~6~~ | ~~7~~ | ~~7~~ | ~~7~~ | ~~6~~ | ~~8~~ | ~~6~~ | ~~7~~ | 🚨 **GEÇERSİZ** |
+| Loss of Lift Ⓥ | 3-5dk | 6 | 7 | **5** | 7 | **8** | **9** | 6 | **8** | **8** | 6 | ⚠️ **7.0/10 ŞARTLI** |
+
+> 🎈 **Loss of Lift (21.08.2026) — ⚠️ ŞARTLI, üç sebeple ve üçü de koşunun kendisinde.**
+> ① **ÖN KOŞU [DERS 94/117]:** planın SPEC bloğu 20.08'de yazılmıştı (satır 738),
+> koşu yine mod V yapıldı — deponun 6. vakası, mod D sayısı hâlâ 0. Kesme listesi
+> ve REMOVE reçeteleri **UYGULANMAZ**.
+> ② **Kopya defter [DERS 110]:** aynı oturumda koşulan iki MANTIK koşusuyla TEK
+> sahne haritasını paylaşıyor — üç rapor, üç ölçüm değil.
+> ③ **Sıra şüphesi [DERS 118]:** insan şeridi planla tutmuyor (slot 19/20). Raporun
+> doruk okuması (2:50) planın doruğuyla (3:19) uyuşmuyor; Yapı 5/10 ve Duygu Yayı
+> 6/10 bu sıraya göre verildi. Master'ın 3:09-3:29'u izlenmeden bu iki hücre
+> filmin değil kurgunun puanıdır.
+> Kaydı: `01_FILM_RAPORLARI/LOSS_OF_LIFT.md`
+
 
 > 🌑 **Black Cradle (17.08.2026) — 🚨 GEÇERSİZ: mercek 23 kliplik filmi DÖRT SAHNE
 > olarak haritalandırdı [DERS 107].** Aynı dosyaya koşulan VIDEO_QA 21 kesme saydı;

@@ -28,6 +28,17 @@
 
 ## ⚠️ BU DOSYA `FRAGMAN.md`'NİN YERİNE GEÇMEZ — İKİNCİ TESLİMDİR
 
+> ➡️ **ÜÇÜNCÜ DİKEY TESLİM EKLENDİ (20.08.2026):** `FRAGMAN_DIKEY_3.md`
+> — 9:16 · 60 s · 6 vuruş · mekanik **KUSUR YOK**. Kaynak sahneleri
+> S13 · S14 · S32 · S37 · S49 · S51; bu dosyayla **kesişim 0 sahne,
+> 0 klip**. Kadraj denetimi de koşuldu (§1.3c): D3'ün 100mm makrosu
+> ZEMİN, onun K3'ü aynı lensle GÖVDE; D4'ün 85mm/0,6 m eldiven–duvar
+> teması ile onun 32mm/25 m kule kadrajı ayrı kadrajlardır.
+> **Bu dosyanın D3/D4 vuruşları (zeminin cevap vermesi) o fragmanın
+> spoiler listesindedir** — üç teaser aynı görüntüyü satmaz.
+> Aşağıdaki tablo üç teslim için yazıldı; dördüncüsü o dosyanın
+> başındaki tablodadır.
+
 Aynı filmin üç fragman teslimi var. Üçü üç ayrı iş yapar:
 
 | | `FRAGMAN.md` BÖLÜM 1 | `FRAGMAN_PRO_YATAY.md` | **bu dosya** |

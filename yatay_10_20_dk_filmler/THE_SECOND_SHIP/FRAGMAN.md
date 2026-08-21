@@ -33,6 +33,14 @@
 > yoktur. İki teaser aynı filme iki ayrı kapı açar ve yayında A/B
 > testine girer — biri diğerinin yerine geçmez.
 >
+> ➡️ **ÜÇÜNCÜ DİKEY TESLİM:** `FRAGMAN_DIKEY_3.md` — 9:16 · 60 s ·
+> 6 vuruş · mekanik **KUSUR YOK** (bu dosyanınki SAYIM). Kaynak
+> sahneleri S13 · S14 · S32 · S37 · S49 · S51; bu dosyayla ve
+> `FRAGMAN_DIKEY_2.md` ile **kesişim 0 sahne, 0 klip**. Bekçi hiçbir
+> karesinde yok ve bu dosyanın afiş karesi (S35 ikinci gemi) onun
+> spoiler listesindedir — üç teaser aynı görüntüyü satmaz. Aynı müzik
+> masterının dikey kesimini kullanır, yeni beste yoktur.
+>
 > ➡️ **YATAY TESLİM:** `FRAGMAN_PRO_YATAY.md` — 16:9 · 2:00 ·
 > APEXAIC logolu giriş + kapanış · 27 kesme, hepsi **master kliplerden
 > kırpılarak** (yeni üretim 0 klip). Bu dosya onun yerine geçmez; ikisi

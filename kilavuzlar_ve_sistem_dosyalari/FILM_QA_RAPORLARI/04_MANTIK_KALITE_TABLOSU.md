@@ -40,6 +40,28 @@
 | **The Third Dune** | 6 | **10** | 4⚠️ | **9** | →🧍 | 8 | **10** | 6 | **7.0/10** |
 | **The Last Shift** | 6 | **N/A** ⚠️ | 4⚠️ | 5⚠️ | 4 →🧍 | 5 | 6 | 5 | ⚠️ **5.0/10** |
 | ~~**The Black Cradle**~~ | ~~4~~ | ~~N/A~~ | ~~7~~ | ~~7~~ | ~~8~~ | ~~5~~ | ~~9~~ | ~~8~~ | 🚨 **GEÇERSİZ** |
+| ~~**Loss of Lift**~~ | ~~10/7~~ | ~~10/7~~ | ~~9/6~~ | ~~10/7~~ | ~~7/5~~ | ~~10/7~~ | ~~10/7~~ | ~~10/7~~ | 🚨 **GEÇERSİZ** |
+
+> 🎈 **Loss of Lift (21.08.2026) — 🚨 GEÇERSİZ. Rubrik kendi içinde tutarsız çıktı.**
+> Aynı rubrik aynı dosyaya AYNI oturumda iki kez koşuldu. İki koşunun **sahne
+> haritası, çelişki defteri ve severity tally'si birebir aynı** (🔴0 🟠1 🟡2) —
+> yani tek yeni gözlem üretilmedi. Buna rağmen:
+>
+> ```
+>          hücrelerin ortalaması     raporun yazdığı OVERALL
+> KOŞU 1            9.5                      8/10
+> KOŞU 2            6.6                      6/10
+> ```
+>
+> İki toplam da kendi tablosuyla tutmuyor, aradaki fark **2.0 puan**. Sebep
+> filmde değil rubrikte: "kaynağı olmayan kategori tam puanla başlar" kuralı
+> KELİMEYLE yazılmıştı, koşu 2 beş hücreye "[no in-scope source]" yazıp 7/10
+> verdi; ve "OVERALL = hücrelerin ortalaması" cümlesi bu rubrikte hiç yoktu
+> (SENARYO_QA'da var — bu partide toplamı tutan tek rapor oydu).
+> → **DERS 119**, beş rubriğe ④ maddesi olarak yamandı. Parti temiz oturumlarda
+> ve mod D ile yeniden koşulacak [DERS 110].
+> Kaydı: `01_FILM_RAPORLARI/LOSS_OF_LIFT.md`
+
 
 > 🌑 **Black Cradle (17.08.2026) — 🚨 GEÇERSİZ, iki ayrı sebeple.**
 > ① **Sahne envanteri imkânsız [DERS 107]:** rapor 232 s'lik kurguyu 4 sahne saydı,

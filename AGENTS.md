@@ -172,6 +172,10 @@ YAZ
  □ Adlandırma: BUYUK_HARF_ALT_CIZGI.md · Türkçe karakter kullanma
  □ Sahne başlıkları ## ile (kural ②)
  □ PLAN → BIBLE → PROMPT sırası (KILAVUZ_REHBERI §6)
+ □ ⭐ <FILM>_QA_SPEC.md yazılır — yazım paketinin son parçası [Ders 117]
+      A bloğu SENARYO_QA alanları · B kurgu geometrisi + İNSAN ŞERİDİ ·
+      C belgesiz merceklerin FLAGS sorularını cevaplayan kilitler
+      ⛔ SPEC dosyası yoksa film "yazımı tamam" sayılmaz
 
 KONTROL ET
  □ URETIM_ONCESI_ANALIZ/03_PLAN_ONCESI_KONTROL_LISTESI.md · 12 madde
@@ -241,7 +245,12 @@ commit'lenmemişti; 18 commit tarandı, tek iz yok.)*
 ## ⛔ C/D/E/E2/E3'ÜN ORTAK ADIMLARI — her rapor işlemede önce bunlar
 
 ```
-① SPEC KAPISI [Ders 94]
+① SPEC KAPISI [Ders 94 · teslim biçimi Ders 117]
+   ⛔ SPEC BİR DOSYADIR, BÖLÜM DEĞİL. Aranacak yer önce film klasöründeki
+      `<FILM>_QA_SPEC.md`; yoksa planın `📋 QA SPEC BLOĞU` bölümünden ÇIKARILIR
+      ve o dosya açılır — QA anında operatörün eline iki dosya verilir:
+      rubrik + SPEC. Blok planın içinde kaldığı sürece mod D koşulmuyor:
+      SPEC hazır olduğu hâlde mod V koşulan film sayısı 6, mod D sayısı 0.
    Filmin planında `📋 QA SPEC BLOĞU` var mı (2-4 dk dosyalarında §0.15)?
    VAR + rapor mod V ise  → koşu bir ÖN KOŞU'dur:
         · skor satırı tabloya Ⓥ ⚠️ ŞARTLI girer,
@@ -278,10 +287,26 @@ commit'lenmemişti; 18 commit tarandı, tek iz yok.)*
    aynı şüphe 06.08'den beri çözülmedi).
 
 ④ KURGU KAPISI KAPISI [Ders 109]  ⛔ RAPOR İSTENMEDEN ÖNCE
-   QA koşulmadan önce iki satır doğrulanır:
+   ⛔ ÖNCE AYIKLA, SONRA SAY [Ders 93 mekanizması]: sayım yapılmadan önce
+      SAHNE-DIŞI MALZEME ayrılır — süresi ≤ 6 s VE ekranda metin taşıyan /
+      statik kart / hiçbir sahnenin parmak izini taşımayan klip. Kurgunun
+      başında veya sonundaysa: kayda TEK SATIR yazılır ("kart 5 s"),
+      🔴 loglanır [D70/72] ve sayımın DIŞINDA tutulur. Ortasındaysa bu
+      başka bir kurgudur, koşu durur.
+      Sebep: eklenen 5 saniyelik bir kart, sahne şeridi plana birebir
+      uyarken kapıyı düşürür ve ölçümü iptal ettirir.
+   QA koşulmadan önce iki satır doğrulanır (sahne şeridi üzerinde):
      a) üretilen klip sayısı = planın SCENE COUNT'u
      b) kurgunun süresi      = planın RUNTIME'ı ± 2 s
-   ikisi de tutuyorsa koşu NORMAL. Biri tutmuyorsa koşu ÖN KOŞU'dur:
+     c) kurgunun SIRASI    = planın İNSAN ŞERİDİ  [Ders 118]
+        Plandan 1 karakter = 1 sahne yazılır (1 = insan var · - = insansız),
+        aynı dize raporun "who is present" sütunundan / PRESENCE STRING
+        çıktısından yazılır ve yan yana konur.
+        aynı  → sıra doğrulandı
+        değil → ⛔ ÖNCE ÇÖZ, SONRA PUANLA: farklı yuvaların saniyeleri
+                master'da izlenir. Sayı ve süre tutarken sıra bozuk olabilir —
+                bir filmin doruğu bu yüzden yanlış yuvada ölçüldü.
+   üçü de tutuyorsa koşu NORMAL. Biri tutmuyorsa koşu ÖN KOŞU'dur:
      · satır tabloya ⚠️ ŞARTLI girer,
      · film boyuna bakan kategoriler (Yapı · Duygu Yayı · Final ·
        Tutundurma · Ortam Devamlılığı · Kimlik Sürekliliği) SAYI TAŞIMAZ,
@@ -321,6 +346,28 @@ commit'lenmemişti; 18 commit tarandı, tek iz yok.)*
    SENARYO_QA fragmana koşulmaz [FRAGMAN_KILAVUZU §0] ve fragman satırı FİLM
    tablolarına (03/04) girmez. Yanlış mercek koşulduysa: ham rapor korunur,
    film kaydı açılır, ⛔ SKOR SATIRI YAZILMAZ, kesme/reçete UYGULANMAZ.
+
+⑨ HİZALAMA KAPISI [Ders 115]  ⛔ ⑤'TEN SONRA, PLAN ELDEYSE HER KOŞUDA
+   Raporun sahne SAYISI hiçbir kapıya girdi sayılmaz; ızgara PLANDAN alınır:
+     sahne başlangıcı(n) = hook süresi + (n-1) × klip süresi
+   Replikli filmde doğrulama replik zaman koduyla yapılır:
+     beklenen = sahne başlangıcı + repliğin prompt TIMELINE'ındaki ofseti
+     |Δ| ≤ 2 s → sahne yerinde · |Δ| ≈ klip süresinin katı → sahne kaymış
+   Sessiz filmde: raporun blokları ardışık ızgara dilimlerinin birleşimi mi?
+   ⭐ Kapı master açılmadan koşar ve kimlik kapısının (③) sayısal biçimidir:
+      uydurulmuş zaman kodları ızgaraya oturmaz.
+   Sonuç film kaydına IZGARA GERİ ALMA tablosu olarak yazılır; raporun
+   kendi sahne haritası o tabloyla değiştirilir.
+
+⑩ ÖNERME KAPISI [Ders 87 · kapsamı Ders 116]  ⛔ HANGİ MERCEKTEN GELİRSE GELSİN
+   Coğrafya · Kostüm-Prop · Zaman-Işık · Çevre · Fizik · Ses mimarisi ·
+   Ekipman durumu bulguları tabloya işlenmeden ÖNCE planın logline + sahne
+   haritası + sayısal kilit listesine karşı okunur:
+     kaynağı planda YAZILI → bulgu DÜŞER, film kaydına "önerme" yazılır
+     kaynağı yok           → bulgu ayakta
+   ⛔ Bulguyu getiren merceğin adı bu kararı değiştirmez. Kapı 12.08'de
+      yalnız kart E'ye yazıldı; 20.08'de aynı yanlış okuma dört mercekten
+      geldi ve biri filmin PLANLI FİNALİNİ kesmeyi önerdi.
 ```
 
 ---
@@ -410,7 +457,7 @@ commit'lenmemişti; 18 commit tarandı, tek iz yok.)*
 2. ⭐ FLAGS FOR DOCUMENT CHECK sorularını plan dosyasından CEVAPLA
       → rubriğin ikinci yarısı budur; en değerli bulgular buradan çıktı
       → cevapları 01_FILM_RAPORLARI/<FILM>.md içine yaz
-2b. ⭐ "BU DEĞİŞİM FİLMİN ÖNERMESİ Mİ?"  [Ders 87]
+2b. ⭐ "BU DEĞİŞİM FİLMİN ÖNERMESİ Mİ?"  [Ders 87 · artık ORTAK ADIM ⑩]
       Coğrafya · Kostüm-Prop · Zaman-Işık bulgusu TABLOYA İŞLENMEDEN önce
       planın logline + orta nokta + sayaç kanalları okunur.
       evet → bulgu DÜŞER, film kaydına "önerme" yazılır, satır ŞARTLI

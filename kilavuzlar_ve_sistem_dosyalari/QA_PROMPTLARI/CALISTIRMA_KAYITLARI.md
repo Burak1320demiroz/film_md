@@ -57,6 +57,19 @@ D108       → MANTIK · KARAKTER · SES · NOT IN THIS PASS "an out-of-scope
              it would have landed in"
 D109       → RUBRİĞE GİRMEZ (operatör kapısı): AGENTS.md kart C/D/E/E2/E3
              ortak adım ③ KURGU KAPISI KAPISI
+D117       → RUBRİĞE GİRMEZ (operatör + yazım kapısı): AGENTS.md kart A
+             "<FILM>_QA_SPEC.md yazılır" + ortak adım ① SPEC bir DOSYADIR
+             · GEREKMEZ · rubrik SPEC'in nereden geldiğini göremez
+D118       → VIDEO · MANTIK · KARAKTER · SENARYO · SHORTS · çıktı bloğu
+             "## PRESENCE STRING" (sıra parmak izi, sahne tablosundan)
+           → SES · GEREKMEZ · bu merceğin defteri replik ekseninde, sahne
+             tablosu insan-varlığı sütunu taşımıyor
+           → kapının kendisi AGENTS.md ortak adım ④ madde (c)
+D119       → MANTIK (kaynak rubrik, önce) · KARAKTER · SES · SHORTS · VIDEO ·
+             SCORES SUMMARY bloğu madde ④ "the overall score is arithmetic"
+           → SENARYO · GEREKMEZ · aritmetik özdeşlik zaten yazılı ("the total
+             must equal the OVERALL... mean of the ten category scores") ve
+             bu partide toplamı kendi tablosuyla tutan tek rapor o oldu
 D110       → VIDEO · SENARYO · MANTIK · KARAKTER · SES · STEP 1 "build this
              from the media alone; a ledger from earlier in this session is
              not evidence" + operatör kuralı: her mercek TEMİZ oturumda
@@ -119,6 +132,21 @@ D113 → SENARYO · KARAKTER · SES · SHORTS · künye/önsöz bloğu
      → VIDEO · GEREKMEZ: kategori düzeyinde N/A mekanizması yok, ölçtüğü
        şey karede VAR OLANIN kalitesi
 
+D115 → VIDEO · MANTIK · KARAKTER · SES · SENARYO · künye satırında
+       `CUTS COUNTED` alanı + "several is not a count" cümlesi (STEP 1'de
+       zaten istenen sayının çıktı şablonunda ALANI yoktu, o yüzden yok
+       oluyordu)
+     → SHORTS · GEREKMEZ: 6 sahnelik sabit ızgara rubriğin gövdesinde
+       yazılı, mod B zaten sırayı ve birleşmeyi kendi kapısında ölçüyor
+     → operatör tarafı RUBRİĞE GİRMEZ: AGENTS.md kart C/D/E/E2/E3 ortak
+       adım ⑨ HİZALAMA KAPISI (ızgara plandan, doğrulama replik zaman
+       kodundan — model plan dosyasını görmediği için bu kapı rubrikte
+       koşulamaz)
+D116 → HİÇBİR RUBRİĞE GİRMEZ (operatör kapısı): AGENTS.md ortak adım ⑩
+       ÖNERME KAPISI. Sebep: mod V'de model tasarımı bilemez; "bu tasarım
+       mıydı" sorusunu yalnız planı elinde tutan taraf cevaplayabilir.
+       Rubrik tarafındaki karşılığı zaten var: FLAGS FOR DOCUMENT CHECK.
+
 SHORTS_QA
 D62 → ARITHMETIC GATE + "sütun adı SCORES SUMMARY'de birebir var olmalı"
 D63 → STEP 0.5 kapısının rapor içinde ALAN olamaması
@@ -138,6 +166,16 @@ NOT: SHORTS'un KNOWN AI FAILURE PATTERNS tablosundaki ders numaraları
 ---
 
 # VIDEO_QA_CRITIQUE_PROMPT.md
+> 🔎 **20.08.2026 — THE BLUE DRIFT (mod V, ⛔ ön koşu [D94] · parti 🚨 GEÇERSİZ
+> [D107 ikinci vaka]):** SPEC planda hazırdı, verilmedi; beş mercek AYNI oturumda
+> koşuldu [D110]. Bu rapor kesme SAYMADI ("multiple scene cuts") — künyeye
+> `CUTS COUNTED` alanı bu koşudan sonra eklendi (**DERS 115**). İki 🔴'sinden biri
+> filmin ses mimarisiydi (kapalı kask + telsiz → ağız kımıldamaz), bir 🔴'si S8'in
+> planlı plazma perdesi, bir 🟠'si S10'un amber verici nabzı: üç bulgu da planda
+> yazılı tasarım ve hiçbiri MANTIK'tan gelmediği için D87 kapısını görmedi
+> (**DERS 116**). Gerçek olabilecek beş bulgu (0:43 ikiz · 3:04 altı parmak ·
+> 1:41 el kaynaması · 2:31 gaz yönü · 0:12 karot teması) kilit çelişkisi
+> defterinde ⬜ AÇIK. Kayıt: 01_FILM_RAPORLARI/THE_BLUE_DRIFT.md
 > 🔎 **17.08.2026 — THE BLACK CRADLE (mod V, ⛔ ön koşu [D94 ×6]):** SPEC planda
 > hazırdı, verilmedi. 232 s kurgu, Ⓥ 6.0 — ⭐ **beş merceğin içinde malzemeyi DOĞRU
 > sayan tek rapor bu oldu:** 21 kesmeyi zaman koduyla listeledi, diğer dördü aynı
@@ -253,6 +291,26 @@ NOT: SHORTS'un KNOWN AI FAILURE PATTERNS tablosundaki ders numaraları
 
 
 # MANTIK_VE_DEVAMLILIK_QA_CRITIQUE_PROMPT.md
+> 🔎 **21.08.2026 — LOSS OF LIFT (mod V · AYNI OTURUMDA İKİ KOŞU · 🚨 GEÇERSİZ):**
+> iki koşunun sahne haritası, çelişki defteri ve severity tally'si (🔴0 🟠1 🟡2)
+> birebir aynı; **tek yeni gözlem yok, toplam 2.0 puan ayrı** (8/10 · 6/10) ve
+> ikisi de kendi hücrelerinin ortalaması değil (9.5 · 6.6). Koşu 2 beş hücreye
+> "[no in-scope source]" yazıp 7/10 verdi — rubriğin kendi "kategori tam puanla
+> başlar" kuralına rağmen. **DERS 119** buradan doğdu; ④ maddesi bu rubriğe
+> (kaynak) ve dört kardeşine yamandı. STEP 1'deki "aynı oturumdaki haritayı
+> delil sayma" yasağı okunurken çiğnendi → yasağın yeri operatör tarafı [D110].
+> Üç bulgusundan biri (kostüm yakası) planda yazılı tasarım çıktı, üçü de kilit
+> çelişkisi defterine ⬜ AÇIK olarak alındı: ders YAZILMADI.
+> Kayıt: 01_FILM_RAPORLARI/LOSS_OF_LIFT.md
+> 🔎 **20.08.2026 — THE BLUE DRIFT (mod V · parti 🚨 GEÇERSİZ):** 15 blok bildirdi,
+> film 25 segment. ⭐ Blokların 15'i de ardışık ızgara dilimlerinin BİREBİR
+> birleşimi çıktı (blok 1 = 9 s hook) — ızgara bu yüzden geri alınabildi
+> (**DERS 115**). Üç bulgusunun üçü de planda yazılı tasarım: açık yakalama
+> yuvası (S24), amber verici kubbesi (S10), başlık kartındaki yüz (film sahnesi
+> değil). Bir numaralı reçetesi uygulansaydı filmin PLANLI FİNALİ kesilecekti
+> (**DERS 116**). 2b kapısı bu mercekte VARDI ve iki bulguyu yakalayabilirdi;
+> koşu tek oturumda yapıldığı için kapı işletilmedi.
+> Kayıt: 01_FILM_RAPORLARI/THE_BLUE_DRIFT.md
 > 🔎 **17.08.2026 — THE BLACK CRADLE (🚨 GEÇERSİZ koşu):** 232 s kurguyu **4 sahne**
 > saydı; aynı dosyada VIDEO_QA 21 kesme saydı ve raporun sahne haritasında 85 s'lik
 > bir "sahne" var — 10 s klip tavanlı bu hatta böyle bir sahne üretilemez
@@ -392,6 +450,25 @@ NOT: SHORTS'un KNOWN AI FAILURE PATTERNS tablosundaki ders numaraları
 
 
 # SENARYO_QA_CRITIQUE_PROMPT.md
+> 🔎 **21.08.2026 — LOSS OF LIFT (mod V · ⛔ ÖN KOŞU · Ⓥ7.0 ŞARTLI):** SPEC planda
+> hazırdı (satır 738), verilmedi — **6. vaka, mod D hâlâ 0** (**DERS 117**; SPEC
+> artık ayrı dosya). Kesme listesinin 4 maddesinin 4'ü de planın omurgasını
+> hedefledi: katalizör (pin bir çentik aşağı), filmin tezi, tek şefkat beati ve
+> gece geçişi — önerme kapısı [D116] dördünü de düşürdü. ⭐ Buna karşılık mod V'nin
+> meşru okuması üç tasarım kararını doğruladı: tek replik **9/10** ve "korunacak üç
+> şey"in birincisi, novum tek cümlede okundu (özgünlük 8/10), S0↔S24 çifti
+> paylaşılabilir an seçildi. Doruk okuması (2:50) planın doruğuyla (3:19)
+> uyuşmuyor → insan şeridi kapısı (**DERS 118**) buradan doğdu.
+> Kayıt: 01_FILM_RAPORLARI/LOSS_OF_LIFT.md
+> 🔎 **20.08.2026 — THE BLUE DRIFT (mod V, ⛔ ön koşu [D94] · parti 🚨 GEÇERSİZ):**
+> SPEC planda hazırken verilmedi; 25 sahnelik filmi 10 blok saydı ve kesme listesi
+> filmin dönüm noktasını (S9 ölü araç) + umut vuruşunu (S10 verici nabzı) 40
+> saniyelik "tekrarlı kokpit" bloğunun içinde eritip kesmeye aday gösterdi
+> (**DERS 115**). ⭐ D94'ün bedelinin en net ölçümü: mercek, üretimde BOZULMUŞ
+> olabilecek repliği ("Avanis içimizdedir…", plan: "Havanız iticinizdir…") filmin
+> EN İYİ repliği ilan etti ve bozulmamış olanı kesmeyi önerdi. Ayrıca kartta
+> gördüğü sloganı ("HE'S NOT TRYING TO SURVIVE. HE'S WAITING.") alıntıladı —
+> bu dize depoda hiçbir dosyada geçmiyor. Kayıt: 01_FILM_RAPORLARI/THE_BLUE_DRIFT.md
 > 🔎 **17.08.2026 — THE BLACK CRADLE (mod V, ⛔ ön koşu [D94 ×6] · 🚨 GEÇERSİZ):**
 > Mercek 26 sahnelik filmin ~23 kliplik kurgusunu **4 sahne** olarak haritalandırdı
 > ve iki "sahne"si 85 s / 62 s uzunluğunda çıktı → **DERS 107**. Bedeli doğrudan
@@ -605,6 +682,25 @@ NOT: SHORTS'un KNOWN AI FAILURE PATTERNS tablosundaki ders numaraları
 >             D94'ün 7. vakası (SPEC fragman dosyasında hazırdı).
 >             Rapor SCENE INVENTORY yazmadı — D105 yaması tam buna
 >             bakıyor. SONUÇ: 3/5 geçti, 1'i atfedilemedi.
+> 20.08.2026  LOW POWER — FRAGMAN · MOD B + MOD V · SKOR YOK
+>             ✅ MERCEK İLK KEZ DOĞRU: SHORTS_QA + `MATERIAL TYPE: TEASER`
+>             beyan edildi (Cold Burn'e SENARYO_QA koşulmuştu → D111).
+>             ✅ SCENE INVENTORY yazıldı (D105 yaması tuttu) ve kimlik
+>             kapısı 3/2 çapayla GEÇTİ — kartın yazısı kanıt sayılmadı.
+>             ⛔ Rapor kategori skoru (n/10) üretmedi: QUALITY TABLE ROW
+>             yok, tabloya satır girmedi [D65].
+>             🚨 D112 PARMAK İZİ ŞÜPHESİ AÇILDI: künye (64 s · 7 segment ·
+>             ~10 s sahne · sonda kart) bu rubriğin son üç koşusuyla ±%5
+>             içinde aynı. Süre ve sahne sayısı hiçbir kapıya girdi
+>             sayılmadı; operatörden dosyanın kendi süresini okuması
+>             istendi. DERS 70'in BEŞİNCİ vakası (64 s + kart).
+>             Geçerli bulgular: kart (🔴 ×2) · toz sıvı gibi (belgenin
+>             1 numaralı öngörülen riski) · temas erimesi · video-game
+>             görünümü. Defterde 7 madde, 5'i ⬜ AÇIK.
+>             Rubriğin göremediği asıl sapma operatör tarafında bulundu:
+>             son üç vuruş YER DEĞİŞTİRMİŞ → mekanik merdiveni kırık,
+>             kapanış soru değil manzara, ZORUNLU loop dikişi imkânsız.
+>             Kayıt: FILM_QA_RAPORLARI/01_FILM_RAPORLARI/LOW_POWER_FRAGMAN.md
 > ```
 >
 > **Kök neden (Ders 63):** 03.08'de `eec615c` commit'i Ders 60/61/62'yi yazdı
@@ -662,6 +758,15 @@ NOT: SHORTS'un KNOWN AI FAILURE PATTERNS tablosundaki ders numaraları
 ---
 
 # KARAKTER_DEVAMLILIK_QA_CRITIQUE_PROMPT.md
+> 🔎 **20.08.2026 — THE BLUE DRIFT (mod V · parti 🚨 GEÇERSİZ):** Sahne envanteri
+> MANTIK raporuyla BİREBİR aynı (15 blok, aynı zaman kodları, aynı üç bulgu) —
+> D110'un tarif ettiği ortak defterin en net vakası: iki rapor aynı sayıyı verdi
+> ve ikisi de on sahne yanlıştı, yani çapraz sayım kapısı fark 0 görüp ikisini de
+> DOĞRULANMIŞ ilan ederdi (**DERS 115**). İki 🔴'sinden biri (4:10 kimlik kırılması
+> + yara izi) filmin sahnesi olmayan başlık kartındadır; 3:50 için "yüzler temiz"
+> dedi, VIDEO aynı saniye için "iki yüz birden morph" dedi — ⬜ AÇIK.
+> Kanıt tabanı: yüz ~%9 (D97 eşiği altında, rapor kendi ölçüsünü yazdı ✅).
+> Kayıt: 01_FILM_RAPORLARI/THE_BLUE_DRIFT.md
 > 🔎 **17.08.2026 — THE BLACK CRADLE (🚨 GEÇERSİZ koşu):** Rubriğin **KANIT TABANI
 > EŞİĞİ ilk kez ihlal edildi** (D97'nin 2. vakası): raporun kendi ölçümü yüz için
 > 1/4 sahne · ~25 s / 232 s (%11) diyor, eşik "3 sahneden az VEYA %25'ten az →
@@ -805,6 +910,16 @@ NOT: SHORTS'un KNOWN AI FAILURE PATTERNS tablosundaki ders numaraları
 
 
 # SES_VE_DIYALOG_QA_CRITIQUE_PROMPT.md
+> 🔎 **20.08.2026 — THE BLUE DRIFT (mod V · parti 🚨 GEÇERSİZ):** AUDIO STATE A,
+> 23 replik zaman koduyla yazıldı. ⭐ **Partinin en değerli belgesi bu ledger
+> oldu:** 16 planlı repliğin 14'ü, planın ızgarası + prompt içi replik ofsetiyle
+> hesaplanan saniyeye ±2 s içinde oturdu — sıra denetimi master açılmadan yapıldı
+> (**DERS 115**). Register: rapor 2 ses / 0 MACHINE dedi, plan 10 replik MACHINE
+> (KERTE) diyor → kart E3 adım 2 gereği "sentetik duruyor" bulguları İŞLENMEDİ,
+> soru ⬜ AÇIK (Cold Burn D82'nin aynı sorusu, bu kez sigorta 25 promptun
+> gövdesinde yazılıydı). Dört replikte metin sapması şüphesi (sayı 1→40, verici→
+> itici, metre→pencere, havanız iticinizdir→avanis içimizdedir) + iki replik
+> tekrarı: hepsi defterde. Kayıt: 01_FILM_RAPORLARI/THE_BLUE_DRIFT.md
 > 🔎 **17.08.2026 — THE BLACK CRADLE (🚨 GEÇERSİZ koşu):** Ses defteri **2 replik**
 > içeriyor; plan 14 replik / 12 sahne diyor ve ölçülen bandın içinde bile en az 7
 > replik var. Ortam haritası 4 satır — bu merceğin ana sorusu ("yatak kesmelerde

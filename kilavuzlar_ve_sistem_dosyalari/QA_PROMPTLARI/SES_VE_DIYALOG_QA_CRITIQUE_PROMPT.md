@@ -511,7 +511,14 @@ FILM: [name as shown, or "(not supplied)"]
 RUNTIME: [mm:ss — "measured" if read from the container's own duration,
           "~mm:ss ESTIMATED" if counted from playback; an estimated runtime
           may never be used to declare a line missing or a plan violated]
-AUDIO STATE: [A / B / C / D] · SPOKEN LINES: [n]
+AUDIO STATE: [A / B / C / D] · SPOKEN LINES: [n] · CUTS COUNTED: [n]
+
+⛔ CUTS COUNTED is not optional and not a rounded impression: it is the count
+you made in STEP 1, with its timecodes. A report that names scenes without
+printing this number has not measured the material's shape, and every score
+built on that scene map is a score of a film that may not exist. If your
+scene map contains a block longer than twice the shortest gap you measured
+between two cuts, split it and count again BEFORE you write this line.
 
 ⛔ DECLARED ABSENCE IS NOT A DEFICIT. A soundtrack with no spoken line at all
 is a constraint of this series, not a deficit: the dialogue-side categories
@@ -548,6 +555,17 @@ VERDICT: [SOUNDTRACK HOLDS / AUDIBLE DRIFT, FIXABLE IN THE MIX /
 ③ An event you called UNVERIFIABLE in one category may NOT be scored in a
    neighbouring one. The label belongs to the OBSERVATION, not to the
    category cell you happened to write it in.
+④ THE OVERALL SCORE IS ARITHMETIC, NOT AN IMPRESSION. Every category begins
+   at 10/10 and loses only the deductions its own Issue cell lists with
+   timecodes. A category whose issue cell reads "no in-scope source", "no
+   source" or the equivalent scores 10/10 — writing that phrase and a number
+   below ten in the same row is a contradiction, and the phrase wins. Then
+   compute the OVERALL SCORE as the mean of the category scores you actually
+   printed, and use that same number everywhere the report asks for a total.
+   Before you finish, add the printed cells and check the mean against your
+   overall: if they disagree, the table is right and the overall is wrong.
+   Two different totals for one film is a defect, and a total that no set of
+   printed cells can produce is a fabricated measurement.
 ```
 
 | Category | Score | Critical Issue |

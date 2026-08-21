@@ -360,7 +360,14 @@ FILM: [name as shown, or "(not supplied)"]
 RUNTIME: [mm:ss — "measured" if read from the container's own duration,
           "~mm:ss ESTIMATED" if counted from playback; an estimated runtime
           may never be used to declare a scene missing or a plan violated]
-SCENES OBSERVED: [n] · CHARACTERS TRACKED: [n]
+SCENES OBSERVED: [n] · CUTS COUNTED: [n] · CHARACTERS TRACKED: [n]
+
+⛔ CUTS COUNTED is not optional and not a rounded impression: it is the count
+you made in STEP 1, with its timecodes. A report that names scenes without
+printing this number has not measured the material's shape, and every score
+built on that scene map is a score of a film that may not exist. If your
+scene map contains a block longer than twice the shortest gap you measured
+between two cuts, split it and count again BEFORE you write this line.
 
 ⛔ DECLARED ABSENCE IS NOT A DEFICIT. When something this lens measures is
 absent in EVERY scene without a single exception — no face ever framed, no
@@ -397,6 +404,17 @@ VERDICT: [SAME PERSON THROUGHOUT / DRIFTS BUT RECOVERABLE / IDENTITY BREAK]
 ③ An event you called UNVERIFIABLE / NOT OBSERVABLE in one category may NOT
    be scored in a neighbouring one. The label belongs to the OBSERVATION,
    not to the category cell you happened to write it in.
+④ THE OVERALL SCORE IS ARITHMETIC, NOT AN IMPRESSION. Every category begins
+   at 10/10 and loses only the deductions its own Issue cell lists with
+   timecodes. A category whose issue cell reads "no in-scope source", "no
+   source" or the equivalent scores 10/10 — writing that phrase and a number
+   below ten in the same row is a contradiction, and the phrase wins. Then
+   compute the OVERALL SCORE as the mean of the category scores you actually
+   printed, and use that same number everywhere the report asks for a total.
+   Before you finish, add the printed cells and check the mean against your
+   overall: if they disagree, the table is right and the overall is wrong.
+   Two different totals for one film is a defect, and a total that no set of
+   printed cells can produce is a fabricated measurement.
 ```
 
 | Category | Score | Critical Issue |
@@ -409,6 +427,16 @@ VERDICT: [SAME PERSON THROUGHOUT / DRIFTS BUT RECOVERABLE / IDENTITY BREAK]
 | Cross-Cut Action | __/10 | [brief] |
 | Count & Separation | __/10 or N/A | [brief] |
 | Voice & Performance | __/10 or N/A | [brief] |
+
+
+## PRESENCE STRING
+One character per scene, in edit order, no spaces: `1` if a human figure is
+visible anywhere in that scene, `-` if the scene has none. Cover only the
+scenes you listed above, and leave out any title card or other non-scene
+material you set aside. Write this line even when the order looks fine to
+you, and never reorder it to match what you expect a film to do — it is a
+fingerprint of the EDIT'S ORDER, and it is the one line another reader can
+check against the shooting plan without watching anything.
 
 ## SEVERITY TALLY
 🔴 BLOCKER: __   🟠 MAJOR: __   🟡 MINOR: __

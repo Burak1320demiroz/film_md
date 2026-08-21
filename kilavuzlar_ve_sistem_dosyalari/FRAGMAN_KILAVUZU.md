@@ -12,6 +12,9 @@
 > `yatay_10_20_dk_filmler/THE_SECOND_SHIP/FRAGMAN_DIKEY_2.md`
 > (aynı filmin **İKİNCİ** dikey teaser'ı · 6 vuruş · farklı mekanik →
 > §1.3b: bir filme ikinci fragman ne zaman yazılır)
+> `yatay_10_20_dk_filmler/THE_SECOND_SHIP/FRAGMAN_DIKEY_3.md`
+> (aynı filmin **ÜÇÜNCÜ** dikey teaser'ı · 6 vuruş · mekanik KUSUR YOK ·
+> ⚠️ üretim BEKLİYOR, prompt kontrol GO → §1.3b'nin üçüncü teslim notu)
 > `yatay_3_5_dk_filmler/THE_COLD_BURN/THE_COLD_BURN_FRAGMAN_DIKEY.md`
 > (dikey · 6 vuruş · mekanik KAPANAN KAPILAR · **kadraj kesişimi**
 > denetimini ekledi → §1.3c)
@@ -32,7 +35,7 @@
 | Tür | **TEASER** — tek mekanik, tek tırmanış | **TRAILER** — 3+1 perde (cold open dahil) |
 | Replik | **0 replik** (varsayılan) | ≤ 2 replik, tercihen gövdesiz AI |
 | Loop | ZORUNLU (son kare → ilk kare dikişi) | opsiyonel |
-| Dosya | **kaynak film klasörlüyse İÇİNE** (`<FILM>/…_FRAGMAN_DIKEY.md` · ikincisi `…_FRAGMAN_DIKEY_2.md`, §1.3b) · kaynak film tek dosyaysa `dikey_shorts_filmler/<FILM>_FRAGMAN_DIKEY_SHORTS.md` | film klasörlüyse `<FILM>/FRAGMAN.md` · tek dosyaysa yanına `<FILM>_FRAGMAN_YATAY.md` |
+| Dosya | **kaynak film klasörlüyse İÇİNE** (`<FILM>/…_FRAGMAN_DIKEY.md` · ikincisi `…_FRAGMAN_DIKEY_2.md`, üçüncüsü `…_FRAGMAN_DIKEY_3.md`, §1.3b) · kaynak film tek dosyaysa `dikey_shorts_filmler/<FILM>_FRAGMAN_DIKEY_SHORTS.md` | film klasörlüyse `<FILM>/FRAGMAN.md` · tek dosyaysa yanına `<FILM>_FRAGMAN_YATAY.md` |
 | Sayımdaki yeri | klasör içi dosya film sayımına GİRMEZ (17.08.2026 · Second Ship · Black Cradle · Cold Burn emsali) · yalnız dikey klasörde duran dosya ayrı film satırı sayılır | klasör içi dosya — film sayımına GİRMEZ |
 | QA merceği | SHORTS_QA | VIDEO_QA (kurgu) — SENARYO_QA fragmana koşulmaz |
 
@@ -144,10 +147,16 @@ Her fragmanın TEK bir mekaniği olur ve bütün vuruşlar ona hizmet eder:
 
 ```
 Second Ship  → SAYIM        seyirciye saymayı öğret, son vuruşta sayımı boz
+Second Ship 2→ CEVAP        her vuruşta bir şey gönderilir, bir şey karşılık verir
+Second Ship 3→ KUSUR YOK    her vuruşta hatasız yapılmış bir iş; kırılma tek EKSİKTE
 Cold Burn    → KAPANAN KAPILAR  her vuruş bir kaçış yolunu siler (YOKLUK ailesi)
 Black Cradle → TERS KURALLAR    her vuruş bir beklentiyi çevirir
+Low Power    → ÖRTÜLME      her vuruşta toz bir şeyin daha üstünü kapatır
 diğer adaylar→ ÖLÇEK (merdiven yukarı) · TAKVİM (sayaç ilerler)
               · YAKLAŞMA (tehdit her vuruşta yakında)
+
+⚠️ Bu liste bir SİCİLDİR: aynı filme ikinci/üçüncü fragman yazan ajan
+   buradan hangi mekaniğin tutulduğunu okur (§1.3b ①).
 ```
 
 Mekanik "filmi özetlemek" değildir. Fragman filmi YENİDEN ANLATMAZ —
@@ -183,6 +192,22 @@ Bir filme ikinci fragman ancak ÜÇÜ BİRDEN sağlanırsa yazılır:
     O zaman cue yeniden bestelenir.
     Kontrol: iki fragmanın rejim/ton değiştirdiği SANİYELER aynı mı?
   · spoiler kapısı ve negatif çekirdek — bir kez yazılır, kopyalanır
+
+⭐ ÜÇÜNCÜ TESLİM DE AYNI KAPIDAN GEÇER — İKİ KEZ (20.08.2026):
+   Second Ship'in üçüncü dikey teaser'ı (`FRAGMAN_DIKEY_3.md`) yazıldı
+   ve üç koşul TEK kardeşe değil, İKİ kardeşe karşı ayrı ayrı koşuldu:
+     · mekanik: SAYIM · CEVAP · KUSUR YOK — üçü de ayrı
+     · sahne kesişimi: 6+6+6 vuruş, iki kesişim de 0
+       (S1·S11+S12·S21·S28·S35·S40 | S10·S25·S29·S47·S50·S39 |
+        S13·S14·S32·S37·S49·S51)
+     · soru: üçü de farklı cümle
+   ⭐ VE BİR ADIM DAHA: üçüncü teslim, kardeşlerinin AFİŞ ve MEKANİK
+     karelerini kendi SPOİLER LİSTESİNE yazdı (ikinci geminin tam
+     gövdesi · zeminin kabarması = 0 kare). Kesişimi sıfır tutmak
+     yetmiyor; teslimler birbirinin sattığı görüntüyü de satmamalı,
+     yoksa üçü aynı izleyiciyi paylaşır.
+   ⚠️ n'inci teslim için kural değişmiyor: koşullar her kardeşe karşı
+     AYRI koşulur, tek bir "önceki dosya" karşılaştırması yetmez.
 
 ⚠️ RİSK PROFİLİ BİLEREK FARKLI SEÇİLİR. Second Ship'in birinci dikey
    fragmanının 1 numaralı riski Bekçi'nin TAM BOY DÖNÜŞÜYDÜ (Ders 2);
