@@ -17,6 +17,10 @@ Google DeepMind imzalı **Veo 3.1** ve **Veo 3.1 Fast** modelleri, yapay zeka fi
 
 ## 📊 2. VEO 3.1 MODEL VARYANTLARI TEKNİK VE EKONOMİK KARŞILAŞTIRMASI
 
+> ⛔ **BİLGİ AMAÇLI (21.08.2026):** Bu tablo karar girdisi değildir —
+> hat Flow üzerinden üretir, model/fiyat seçimi yapılmaz. Fiyatlar
+> yazıldığı günün değeridir, güncelliği doğrulanmadan alıntılanmaz.
+
 | Model Varyantı | Çözünürlük ve Kare Hızı | Süre Seçenekleri | Maliyet (Saniye Başına) | İdeal Kullanım Senaryosu |
 | :--- | :--- | :--- | :--- | :--- |
 | **Veo 3.1 Standard** | 720p, 1080p, 4K* (24fps) | 4s, 6s, 8s | ~$0.40 | Maksimum sinematik detay gerektiren, bütçe kısıtlaması olmayan prestijli sahneler. |
@@ -60,6 +64,14 @@ Zarflar (`in a weary voice`, `angrily`, `softly whispers`, `excitedly`) sesin ak
 ---
 
 ## 💻 5. YAPIOLANDIRILMIŞ KOMUT MÜHENDİSLİĞİ: JSON TABANLI İŞ AKIŞLARI
+
+> ⛔ **BU ŞABLON BU HATTA KULLANILMAZ (21.08.2026):** Aşağıdaki örnek
+> `35mm anamorphic lens` (vakumda YASAK — REHBER §3.1 + SİNEMATOGRAFİK
+> §11) ve `Cinematic realism` (D33 "cinematic lighting" riskinin
+> akrabası) içerir; 1800 karakter JSON sınırı da hattın düzyazı bandıyla
+> (REHBER §7: video 2.000-2.600) çelişir. Hat DÜZYAZI prompt kullanır —
+> iskelet: `IMAGE_VIDEO_PROMPT_TEMPLATES.md`. Bölüm, Dzine/Flow-dışı
+> platform araştırması olarak arşivdedir.
 
 Veo 3.1 Fast, özellikle **Dzine** veya **Flow** gibi gelişmiş platformlarda JSON formatındaki komutlara dikkat sızıntısını (attention bleed) engelleyerek mükemmel tepki verir.
 
@@ -118,6 +130,10 @@ Görsel eylem ile ses `as`, `when`, `while` bağlaçlarıyla senkronize edilmeli
 ---
 
 ## 🔄 9. İLERİ SEVİYE HİBRİT İŞ AKIŞLARI (ELEVENLABS SYNC 3 ENTEGRASYONU)
+
+> ⛔ **KULLANILMIYOR (21.08.2026):** Hat ElevenLabs entegrasyonu
+> kullanmıyor — ses üretimi Veo native + miks. Yazım tarafı:
+> `SES_VE_DIYALOG_URETIM_KILAVUZU.md`.
 
 İngilizce dışındaki dillerde (Türkçe vb.) veya yüksek kaliteli seslendirmelerde **Hibrit Metot** uygulanır:
 

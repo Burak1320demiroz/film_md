@@ -157,8 +157,55 @@ kilavuzlar_ve_sistem_dosyalari/
 │   ├── FRAGMAN_KILAVUZU.md .............. iki formatlı teaser: dikey 3-6
 │   │                                      vuruş · yatay 8-12 vuruş, spoiler
 │   │                                      kapısı, tek mekanik (12.08.2026)
-│   └── TEK_CEKIM_VE_GIZLI_GECIS_KILAVUZU.md  klipler ARASI geçiş
-│                                          (Ders 1 klip İÇİNİ kapsar)
+│   ├── TEK_CEKIM_VE_GIZLI_GECIS_KILAVUZU.md  klipler ARASI geçiş
+│   │                                      (Ders 1 klip İÇİNİ kapsar)
+│   ├── KURGU_VE_TESLIM_KILAVUZU.md ...... birim sözlüğü + 10 maddelik
+│   │                                      kurgu kapısı + kırpma bütçesi
+│   │                                      (21.08.2026 — beş dosyadan
+│   │                                      konsolide, tek adres)
+│   ├── SES_VE_DIYALOG_URETIM_KILAVUZU.md  replik/ses YAZIM tarafı:
+│   │                                      register haritası + AUDIO
+│   │                                      kalıpları (21.08.2026)
+│   ├── KARAKTER_VE_DUYGU_KILAVUZU.md .... izleyici bağını kuran bütçeler:
+│   │                                      göz · Kuleshov döngüsü · el ·
+│   │                                      nefes · yürüyüş · eşya
+│   │                                      (22.08.2026 — sahne haritasına
+│   │                                      dağıtılır, sonradan eklenemez)
+│   ├── KURGU_RITMI_VE_IHRAC_KILAVUZU.md . ASL eğrisi (KAYNAK) · örüntü
+│   │                                      kırıcı · J/L-cut ses köprüsü ·
+│   │                                      ihraç sayıları (22.08.2026)
+│   │                                      ⚠️ KURGU_VE_TESLIM = KAPI,
+│   │                                         bu dosya = KAYNAK
+│   ├── TEMA_MUHENDISLIGI_KILAVUZU.md .... tema seçimi · tema→motif→sahne
+│   │                                      matrisi · süre-tatmin kuralı ·
+│   │                                      olay filmi teşhisi (22.08.2026)
+│   ├── KAMERA_ACISI_PSIKOLOJISI_KILAVUZU.md  8 açının anlam sözlüğü ·
+│   │                                      vuruş→açı karar tablosu ·
+│   │                                      abartı/kiç eşikleri (22.08.2026)
+│   ├── ACI_YAYI_VE_SEKANS_KILAVUZU.md ... sahneden sahneye açı/ölçek
+│   │                                      sıçrama bandı · kurulum sayısı ·
+│   │                                      yay şablonları (22.08.2026)
+│   ├── MESHUR_SAHNE_KALIPLARI_KILAVUZU.md 20 ikonik sahne kalıbı ·
+│   │                                      taşınabilirlik · homage/telif
+│   │                                      sınırı (22.08.2026)
+│   ├── ONERME_VE_NOVUM_KILAVUZU.md ...... KONSEPT kapısı: novum tipi ·
+│   │                                      taşıyıcı (nesne × jest) · üç
+│   │                                      kabul testi (22.08.2026)
+│   │                                      ⚠️ vuruş tablosundan ÖNCE koşar
+│   ├── FINAL_VE_PAYLASIM_KILAVUZU.md .... final tipi → davranış · tohum
+│   │                                      bilgi %10-15 · görsel ikilem
+│   │                                      (22.08.2026 — hook'un karşı ucu)
+│   └── PAKETLEME_VE_VAAT_KILAVUZU.md .... kapak ANI senaryoda seçilir ·
+│                                          vaat-teyit penceresi · dört
+│                                          yüzeyli spoiler bütçesi [D114]
+│                                          (22.08.2026)
+│
+├── 📱 FORMATA GÖRE
+│   └── DIKEY_MIKRO_DRAMA_KILAVUZU.md .... 9:16 dramaturjisi: 6×8 vuruş
+│                                          tablosu · Z-ekseni · kinesik
+│                                          reset · bağımsızlık kuralı
+│                                          (22.08.2026 — SHORTS_SISTEM_
+│                                          PROMPTU'ndan ÖNCE okunur)
 │
 ├── 🎭 TÜRE GÖRE
 │   ├── UZAY_SENARYO_KILAVUZU.md ......... bilimkurgu
@@ -172,6 +219,13 @@ kilavuzlar_ve_sistem_dosyalari/
 │   └── VIRAL_BASLIK_VE_ACIKLAMA_PROMPT.md  paketleme
 │       ⚠️ Üçü de kökte duruyor ama QA promptları ayrı klasörde.
 │          Aynı ayrımın iki tarafında — birleştirilmeli.
+│
+├── 🔬 PROMPT_KONTROL/ ................... üretimden ÖNCE koşan sıfır maliyetli kapı
+│   ├── prompt_kontrol.py ................ sayar: uzunluk · yasak kelime ·
+│   │                                      çekirdek imzası · GO/FIX/BLOCK
+│   │                                      (akıştaki yeri: REHBER §6 adım 3.5)
+│   ├── PROMPT_QA_CRITIQUE_PROMPT.md ..... yargılar: kilit SAYI mı TARİF mi
+│   └── RAPORLAR/ ........................ koşu raporları
 │
 ├── 🔮 URETIM_ONCESI_ANALIZ/ ............. para harcanmadan önce bakan tek yer
 │   ├── 00_README.md ..................... akıştaki yeri + dürüstlük kuralı
@@ -201,11 +255,23 @@ kilavuzlar_ve_sistem_dosyalari/
 │   ├── 04_MANTIK_KALITE_TABLOSU.md ...... mantık QA skorları
 │   ├── 05_SHORTS_KALITE_TABLOSU.md ...... shorts QA skorları
 │   ├── 06_KARAKTER_KALITE_TABLOSU.md .... karakter QA skorları (opsiyonel mercek)
-│   └── 07_SES_KALITE_TABLOSU.md ......... ses QA skorları (opsiyonel mercek)
+│   ├── 07_SES_KALITE_TABLOSU.md ......... ses QA skorları (opsiyonel mercek)
+│   └── 08_YAYIN_PERFORMANS_TABLOSU.md ... ⭐ gerçek izleyici koşuları
+│                                          (22.08.2026 — yukarıdaki altısını
+│                                          bir MODEL doldurur, bunu VERİ
+│                                          doldurur; çakışırsa bu üstündür)
 │
 └── 🎨 YAYIN
     ├── KAPAK_FOTOGRAFI_MIMARISI_KILAVUZU.md  thumbnail psikolojisi
-    └── GOOGLE_FLOW_MUSIC_URETIM_KILAVUZU.md  müzik · §7-19 kuram ve künye
+    ├── GOOGLE_FLOW_MUSIC_URETIM_KILAVUZU.md  müzik · §7-19 kuram ve künye
+    ├── SERI_VE_KANAL_STRATEJI_KILAVUZU.md .. evren modeli · kapak aile
+    │                                         kimliği · playlist · kadans ·
+    │                                         devam hakkı eşikleri (22.08.2026)
+    └── YAYIN_VE_PERFORMANS_KILAVUZU.md ..... ⭐ AKIŞIN SON ADIMI: karar
+                                              matrisi · sinyal/gürültü ·
+                                              retention eğrisi → SAHNE ·
+                                              gerçek veri → kılavuz
+                                              revizyonu (22.08.2026)
 
 FORMATA ÖZEL — kendi klasöründe durur
 └── yatay_7_9_dk_filmler/kilavuzlar/
@@ -291,9 +357,15 @@ Egzoz/duman         düz koni        yayılır,çöker  kıvrılır       KISA v
 Rüzgar kuvveti      yok             yok denecek    var            var ama yavaş
 Kaldırma kuvveti    yok             ihmal          ihmal          ⭐ GERÇEK (yüzme)
 ──────────────────────────────────────────────────────────────────────────────
+🆕 3.5 VAKUM + İTKİ (yanan geminin yanı):  3.1 tablosunun aynısı, tek fark —
+   SÜZÜLME YOK: her serbest cisim kıça doğru düşer, D23 TETİKLENEMEZ.
+🆕 3.6 SÜREKLİ BULUT / NÖTR YÜZERLİK (Venüs 55 km):  toz YOK · gölge YOK ·
+   bağıl rüzgâr 0 · kaldırma GERÇEK · güneş diski görünmez. D39 elenir.
+
 İlgili dersler:     36, 39, 41 → HER BİRİNİN CEVABI ORTAMA GÖRE DEĞİŞİR
                     Kalın atmosferde 36 ve 39 TERSİNE döner.
-Referans filmler:   DEAD_APPROACH · LOW_POWER · LAST_ROAD · THE_HERD
+Referans filmler:   DEAD_APPROACH · LOW_POWER · THE_HERD · UPHILL_DARK ·
+                    LOSS_OF_LIFT  (LAST_ROAD 12.08.2026'da silindi)
 ```
 
 > Ders 41 kendi içinde şunu yazıyor: *"Vakum filmlerinde bu ders GEÇERSİZDİR."*

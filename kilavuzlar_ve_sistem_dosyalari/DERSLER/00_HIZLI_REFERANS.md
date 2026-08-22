@@ -1,12 +1,28 @@
-# 📋 HIZLI REFERANS — HER PROMPT'A EKLENECEK BLOK
+# 📋 HIZLI REFERANS — KİLİT HAVUZU (sahneye göre seçilir)
 
 > `LESSONS_LEARNED.md` 07.08.2026'da tematik dosyalara bölündü; bu dosya ders
-> içermez — tüm derslerden damıtılan **evrensel kopyala-yapıştır bloğunu** taşır.
+> içermez — derslerden damıtılan **kilit havuzunu** taşır.
 > Ders metinleri kardeş dosyalarda, tam dizin:
 > [`../LESSONS_LEARNED.md`](../LESSONS_LEARNED.md) · yeni ders ekleme: `AGENTS.md` kart G.
 
-Aşağıdaki blok, tüm derslerden çıkarılan direktifleri tek bir kopyala-yapıştır
-bloğu olarak içerir. Her video prompt'unun sonuna eklenmelidir:
+> ⛔ **BU BLOK BİR HAVUZDUR — TAMAMI HİÇBİR PROMPTA YAPIŞTIRILMAZ.**
+> (21.08.2026 düzeltmesi. Eski talimat "her video promptunun sonuna ekle"
+> diyordu; bloğun kendisi ~8.400 karakter, video bandı 2.000-2.600,
+> Veo tavanı ~4.300 — talimat aritmetik olarak uygulanamazdı ve hiçbir
+> filmde uygulanmadı.)
+>
+> **Kullanım:**
+> 1. Her prompta giren tür-bağımsız öz: `KILAVUZ_REHBERI.md` §5
+>    NEGATİF ÇEKİRDEK (~1.350 karakter, tam metin orada).
+> 2. Bu havuzdan yalnız **sahnenin tetiklediği** kilitler seçilir:
+>    suit varsa EQUIPMENT/SUIT blokları, su varsa DYNAMIC WATER,
+>    sıfır-g varsa ZERO-G, canlı varsa CREATURE... Ortam/tür kartının
+>    "İlgili ders" satırı hangi kilitlerin tetiklendiğini söyler.
+> 3. Toplam uzunluk `KILAVUZ_REHBERI.md` §7 bandının içinde kalır.
+> 4. Kilitler prompta **etiketsiz** taşınır — `[LESSON n]` köşeli
+>    parantezleri gövdeye girmez [Ders 45].
+
+Havuz:
 
 ```
 === UNIVERSAL QUALITY DIRECTIVES (from Lessons Learned v8) ===

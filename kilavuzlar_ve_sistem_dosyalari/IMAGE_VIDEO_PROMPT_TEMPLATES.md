@@ -177,85 +177,28 @@ MOTION ([X] seconds, [lens]mm, [hareket tipi] at [X] meters):
 
 ---
 
-## 🛡️ EVRENSEL KALİTE DİREKTİFLERİ BLOĞU
+## 🛡️ KALİTE DİREKTİFLERİ — TEK KAYNAK ADRESİ
 
-> Bu blok `LESSONS_LEARNED.md` derslerinden ve üretilmiş filmlerin
-> deneyiminden derlenmiştir. Güncel sayılar: `bash sayac.sh`
+> ⛔ **Burada eskiden duran "v4 UNIVERSAL QUALITY DIRECTIVES" bloğu
+> 21.08.2026'da kaldırıldı.** Üç sebep:
+> 1. Blok, ders tabanının yalnız ilk 19 dersinden derlenmişti (21.08.2026 tespiti) ve
+>    `DERSLER/00_HIZLI_REFERANS.md`'deki güncel havuzla ayrışmıştı —
+>    iki blok, iki ayrı doğru.
+> 2. Her maddesi `[LESSON n]` etiketi taşıyordu — aşağıdaki Ders 45
+>    uyarısının bizzat yasakladığı biçim.
+> 3. "Her video promptunun sonuna eklenmeli" talimatı uzunluk bandıyla
+>    (`KILAVUZ_REHBERI.md` §7) aritmetik olarak çelişiyordu.
 >
-> 🚨 **Ders 45 uyarısı:** `[CHARACTER BIBLE]` gibi köşeli parantezli etiketler
-> prompt GÖVDESİNDE durursa model onları ekrana çizebiliyor. The Inversion’da
-> tam olarak bu oldu. Etiketleri gövdeden çıkar.
-> Her video prompt'unun **sonuna** eklenmeli VEYA Bible'lara entegre edilmelidir.
-
-```
-=== UNIVERSAL QUALITY DIRECTIVES (from Lessons Learned v4) ===
-
-CONTINUITY LOCK [LESSON 1]: SINGLE UNBROKEN CAMERA TAKE. No teleport,
-no jump-cut, no reset, no angle change, no transitions. Every frame
-flows from the previous. Each scene = SEPARATE 10-second video.
-
-CREATURE ANATOMY LOCK [LESSON 2]: Fixed rigid anatomy throughout.
-Locked silhouette. Background creatures in shallow DOF.
-
-ANTI-BLOOM [LESSON 3]: Sharp directional light with clear falloff.
-HIGH CONTRAST. Skin retains pore texture. Visor reflections match
-environment.
-
-WEIGHT & CONTACT [LESSON 4]: Visible weight on every surface. No
-floating. Rigid skeletal proportions. No jello, no rubber-banding.
-
-VISOR PERSISTENCE [LESSON 5]: Visor ALWAYS VISIBLE regardless of
-head angle.
-
-ENVIRONMENT STABILITY [LESSON 6]: Background elements STATIC unless
-explicitly moving. No breathing, warping, morphing.
-
-SUIT CONTINUITY [LESSON 8]: Equipment matches CHARACTER BIBLE EXACTLY
-across all scenes.
-
-NO AI TEXT [LESSON 13]: Displays show abstract patterns or blank glow
-only. NEVER text, digits, letters, or symbols.
-
-VOLUMETRIC PARTICLES [LESSON 10]: Dust, smoke, exhaust = volumetric
-with real dispersion. Never frozen, flat, static.
-
-CONTACT INTEGRITY [LESSON 11]: Fingers/hands NEVER merge with
-surfaces. Clear boundary. Head connected to neck/torso at all times.
-
-MOTION SPEED [LESSON 12]: Real-time natural speed unless slow-motion
-specified explicitly.
-
-DYNAMIC WATER [LESSON 14]: All water shows continuous micro-motion.
-NEVER frozen, static, gel-like. Accurate wakes.
-
-GRAVITY VECTOR [LESSON 15]: Body responds to gravity correctly. Hair/
-equipment hangs per true gravitational down. All loose objects in
-a frame share the SAME gravity vector at the SAME moment.
-
-FACE LOCK [LESSON 16]: Face maintains IDENTICAL bone structure, eye
-spacing, nose shape throughout. No morphing.
-
-COLLISION INTEGRITY [LESSON 17]: ALL objects obey rigid body
-collision. Nothing phases through any solid. Ship gear rests ON
-surfaces.
-
-CREATURE LOCOMOTION [LESSON 18]: Articulated limb motion. Each leg
-lifts, plants, pushes. Wings flap with joint articulation. NEVER
-slide across surfaces.
-
-REFLECTION ACCURACY [LESSON 19]: All reflections match source object
-in shape, scale, color, angle. No warped or invented reflections.
-
-ANTI-CUT NEGATIVE: No cuts, transitions, dissolves, fades, jump
-cuts, montage, editing, multiple angles, scene changes, camera
-teleportation, chase-cam, text overlay, title card, watermark,
-bloom, glow filter, airbrushed skin, plastic texture, Unreal Engine,
-video game aesthetic, frozen particles, static exhaust, hand-surface
-merging, frozen water, gel-like water, AI-generated text, face
-morphing, object phasing, object clipping, creature sliding, warped
-reflections, melting terrain.
-===
-```
+> **Güncel kullanım:**
+> - Tür-bağımsız çekirdek (her prompta giren kısa blok):
+>   `KILAVUZ_REHBERI.md` **§5 NEGATİF ÇEKİRDEK** — tam metin orada.
+> - Sahneye göre seçilecek kilit havuzu (suit/su/canlı/sıfır-g vb.):
+>   `DERSLER/00_HIZLI_REFERANS.md` — havuzdur, tamamı yapıştırılmaz.
+>
+> 🚨 **Ders 45 uyarısı (geçerli):** `[CHARACTER BIBLE]` gibi köşeli
+> parantezli etiketler prompt GÖVDESİNDE durursa model onları ekrana
+> çizebiliyor. The Inversion'da tam olarak bu oldu. Etiketleri gövdeden
+> çıkar; kilit maddelerini etiketsiz düz cümle olarak yaz.
 
 ---
 

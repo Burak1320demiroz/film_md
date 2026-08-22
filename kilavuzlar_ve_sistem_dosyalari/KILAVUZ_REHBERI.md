@@ -44,18 +44,43 @@ Yeni bir filme başlarken **sırayla** cevapla. Her cevap bir sonrakini daraltı
   prompta yazılır / post'ta yapılır / hiç girmez)
 □ TEK_CEKIM_VE_GIZLI_GECIS_KILAVUZU.md §5 (sahne sınırları: gizli
   geçiş mi, bilinçli sert kesme mi — sahne haritası yazılırken karar)
+□ ONERME_VE_NOVUM_KILAVUZU.md (KONSEPT kapısı: novum tipi + taşıyıcı
+  satırı + üç kabul testi — vuruş tablosundan da sahne haritasından da
+  ÖNCE; geçmeyen konsept plana dönüşmez · 22.08.2026)
 □ SENARYO_VE_VIRAL_KAMERA_KILAVUZU.md (vuruş haritası §2 sahne
   haritasından ÖNCE doldurulur · loop/kamera psikolojisi)
 □ HOOK_VE_ILK_SAHNE_KILAVUZU.md (ilk iki sahne: S0 karar + S1
   tırmandırma · hook tipi plana yazılır — vuruş tablosundan SONRA,
   sahne haritasından ÖNCE)
+□ FINAL_VE_PAYLASIM_KILAVUZU.md (final tipi + tohum bilgi + görsel
+  ikilem — hook'un karşı ucu; tohum ilk %10-15'e düştüğü için filmin
+  BAŞINI da değiştirir · 22.08.2026)
+□ SES_VE_DIYALOG_URETIM_KILAVUZU.md (filmde replik VEYA ses tasarımı
+  varsa ZORUNLU · register haritası + replik bütçesi + AUDIO kalıpları —
+  yazım tarafı; ölçüm tarafı 7c'de kalır)
+□ KARAKTER_VE_DUYGU_KILAVUZU.md (bağ kurma bütçeleri: göz · Kuleshov
+  döngüsü · el/nefes/yürüyüş/eşya · isim-istek-bedel saati — SAHNE
+  HARİTASI yazılırken dağıtılır, üretimden sonra eklenemez · 22.08.2026)
+□ KURGU_RITMI_VE_IHRAC_KILAVUZU.md §1-2 (ASL bandı SPEC'e yazılır ·
+  örüntü kırıcı kapısı sahne haritasında koşulur · 22.08.2026)
+□ PAKETLEME_VE_VAAT_KILAVUZU.md (KAPAK ANI sahnesi plana yazılır ·
+  vaat-teyit penceresi · dört yüzeyli spoiler bütçesi [D114] — sahne
+  haritası yazılırken · 22.08.2026)
+□ TEMA_MUHENDISLIGI_KILAVUZU.md (PLAN adım 1'de logline yazılırken —
+  tema seçimi + format-süre uyumu + tema→motif→sahne matrisi · 22.08.2026)
+□ KAMERA_ACISI_PSIKOLOJISI_KILAVUZU.md (sahne haritasında kamera satırları
+  yazılırken — vuruş→açı tablosu + abartı eşikleri · 22.08.2026)
+□ ACI_YAYI_VE_SEKANS_KILAVUZU.md (kamera satırları TOPLUCA dizilirken —
+  sıçrama bandı + kurulum sayısı + yay şablonları · 22.08.2026)
+□ MESHUR_SAHNE_KALIPLARI_KILAVUZU.md (vuruşa görsel karşılık veya kapak
+  anı aranırken — 20 hazır kalıp + homage/telif sınırı · 22.08.2026)
 ```
 
 ### Formata göre ek okuma
 
 | Format | Ek okuma |
 |---|---|
-| **dikey shorts** | `SHORTS_SISTEM_PROMPTU.md` + Bölüm 2.1 |
+| **dikey shorts** | **`DIKEY_MIKRO_DRAMA_KILAVUZU.md`** (9:16 dramaturjisi — sistem promptundan ÖNCE) + `SHORTS_SISTEM_PROMPTU.md` + Bölüm 2.1 |
 | **fragman (dikey 3-6 / yatay 8-12 vuruş)** | **`FRAGMAN_KILAVUZU.md`** + kaynak filmin format kartı · emsal: `THE_COLD_BURN/THE_COLD_BURN_FRAGMAN_DIKEY.md` (dikey) · `THE_SECOND_SHIP/FRAGMAN.md` (çift format) |
 | **2-4 dk** | Bölüm 2.2 + referans film: `THE_DEAD_APPROACH` |
 | **3-5 dk** | Bölüm 2.3 + `yatay_3_5_dk_filmler/README.md` + referans: `LOW_POWER/` · çok varlıklı filmde referans paketi örneği: `THE_COLD_BURN/THE_COLD_BURN_REFERANS_PAKETI.md` |
@@ -70,6 +95,7 @@ Yeni bir filme başlarken **sırayla** cevapla. Her cevap bir sonrakini daraltı
 | **İnce atmosfer** | Bölüm 3.2 + Ders 39, 41 |
 | **Dünya atmosferi** | Bölüm 3.3 + Ders 39, 41 |
 | **Kalın atmosfer** | Bölüm 3.4 + Ders 36, 39 (ikisi de TERS çalışır) |
+| **Sürekli bulut / nötr yüzerlik** 🆕 | Bölüm 3.6 + Ders 41, 59; Ders 39 tetiklenemez (toz yok) |
 
 ### Türe göre ek okuma
 
@@ -169,13 +195,23 @@ DOSYA:       README + 5 faz + MUZIK + REFERANS_PAKETI = 8 dosya
 İMAJ:        75 (3 çapa + 12 bitiş karesi) × 5 faz
 KLİP:        8s — Veo native, extend GEREKMEZ ✅
 ÜRETİM:      START/END FRAME ZİNCİRİ (text-to-video DEĞİL)
-REFERANS:    THE_WAKING_GROUND/
+REFERANS:    ⚠️ YOK — aşağıdaki dürüst kayda bak
 
 KRİTİK FARK: Sahne başına TEK yeni imaj — başlangıç karesi bir öncekinin
              bitiş karesidir. Referans paketi EN BAŞTA hazırlanır (diğer
              formatlarda sonda) — 75 imajlık zincirde çapa kilitlenmezse
              3. fazda yüz kayar ve geri dönüşü olmaz.
 ```
+
+> ⚠️ **DÜRÜST KAYIT (21.08.2026):** Bu kart TEORİK tanımdır ve gerçekle
+> henüz buluşmadı. Eski referans THE_WAKING_GROUND depoda YOK (yalnız
+> adı geçiyordu). Formatta yazılmış tek film **THE_SLOW_STONE** ve üç
+> tanımlayıcı kuraldan üçünde de GEREKÇELİ saptı: 4 kısım × 12 sahne
+> (5 faz değil) · 10 s sahne + extend (8 s native değil) · start/end
+> frame zinciri REDDEDİLDİ (48 sahne ≈ 60 imaj maliyeti). Gerekçeler:
+> `yatay_7_9_dk_filmler/THE_SLOW_STONE/README.md`. Bu formatta İKİNCİ
+> film yazılmadan önce kart ile film arasında karar verilmeli — o karar
+> verilene dek şablon olarak THE_SLOW_STONE'u aç, bu kartı değil.
 
 ---
 
@@ -289,6 +325,41 @@ KANIT NESNELERİ  Durum ekranda kanıtlanmazsa ölçülemez [D95 mantığı].
                  yükselir. Sahnede itki değişiyorsa bu iki cümle yazılır.
 İlgili ders      36 (alev · geçerli) · 23 (elenir) · 30/39 (parçacık)
 Referans film    THE UPHILL DARK (yatay_3_5_dk_filmler/)
+```
+
+## 3.6 SÜREKLİ BULUT / NÖTR YÜZERLİK (Venüs bulut katmanı, 55 km bandı)
+
+> 🆕 LOSS OF LIFT ile açıldı (yazım 20.08.2026 · kart 21.08.2026'da
+> plandaki öneriden terfi etti). Zemin yerine BULUT içinde, yüzen bir
+> gövdede geçen her filmin ön şartıdır. 3.4'ün (kalın atmosfer)
+> akrabasıdır ama üç kuralı ayrışır: toz YOK · gölge YOK · bağıl rüzgâr 0.
+
+```
+Toz              YOK — yüzey yok, kaynak yok. D39 tetiklenemez.
+Gölge            YOK ya da neredeyse yok; ışık her yönden gelir.
+                 Gölgesizlik MEŞRUDUR, hata değil.
+Dolgu ışığı      ÇOK GÜÇLÜ ve motivasyonlu (bulut içi çoklu saçılma)
+                 ⚠️ Ama bloom yine YASAK: yumuşak ışık ≠ parlama halkası [D41]
+Güneş            DİSK YOK, ışın demeti yok, lens parlaması yok
+                 → D104 (ışık mıknatısı) yapısal olarak zayıflar
+Ufuk/zemin       İKİSİ DE YOK — yukarısı parlak kubbe, aşağısı okra uçurum;
+                 ölçek yakın nesneyle kurulur
+Ses              yoğun CO2: iyi taşır, tınılar ALÇALIR
+Rüzgar           BAĞIL 0-2 m/s — akıntıyla sürükleniyorsun (süper-rotasyon).
+                 Kumaş kıpırdamaz, hiçbir şey savrulmaz.
+Kaldırma         ⭐ GERÇEK (Arşimet). Gövde havada DURUR.
+                 ⚠️ Negatif çekirdeğin "never hovering" yasağıyla çakışır.
+                 ÇÖZÜM [3.4 kartıyla aynı]: yasağı PARÇACIK için koru,
+                 gövde için POZİTİF kural yaz —
+                 "the station floats in neutral buoyancy and is settling
+                  at a constant 30 metres per hour; it never hovers,
+                  never hangs motionless, never rises"
+Kask             dışarısı solunamaz (CO2 + asit) → vizör %100 kapalı,
+                 ara durum YOK
+Yerçekimi        0.904 g — yürüyüş Dünya gibi, süzülme yok
+İlgili ders      39 (elenir) · 41 (geçerli) · 59 (pozitif isim) ·
+                 104 (zayıflar) · 79 (vizör/sırt)
+Referans film    LOSS OF LIFT (yatay_3_5_dk_filmler/)
 ```
 
 ---
@@ -429,7 +500,9 @@ off-screen only — no mouth in frame, no invented on-screen speaker.
                    malzeme azaltmak prompt iyileştirmekten daha etkili.
 
 1. PLAN          konsept, tema, farklılaşma gerekçesi, sahne haritası
-                 → tema yoksa DURMA, film koreografi olur
+                 → tema yoksa DURMA, film koreografi olur — tema seçimi,
+                   format-süre uyumu, tema→motif→sahne matrisi:
+                   TEMA_MUHENDISLIGI_KILAVUZU.md (22.08.2026)
                  → sahne haritasından ÖNCE vuruş tablosu doldurulur:
                    SENARYO_VE_VIRAL_KAMERA_KILAVUZU.md §2 — boş vuruş
                    "bilinçli sapma" notu ister; açılış-kapanış imajı
@@ -438,6 +511,10 @@ off-screen only — no mouth in frame, no invented on-screen speaker.
                    HOOK_VE_ILK_SAHNE_KILAVUZU.md §8 (7 madde) —
                    HOOK TİPİ + S0 soru cümlesi + S1 ikinci bilgi +
                    ilk 2 sn ses kararı plana yazılır
+                 → sahne haritasının KAMERA SATIRLARI üç kılavuzdan:
+                   vuruş→açı: KAMERA_ACISI_PSIKOLOJISI_KILAVUZU.md ·
+                   diziliş bandı + yay: ACI_YAYI_VE_SEKANS_KILAVUZU.md ·
+                   hazır kalıp / kapak anı: MESHUR_SAHNE_KALIPLARI_KILAVUZU.md
 
 2. BIBLE         world / character / ortam / tür / negatif
                  → karakter bloğu KELİMESİ KELİMESİNE sabitlenir
@@ -473,6 +550,11 @@ off-screen only — no mouth in frame, no invented on-screen speaker.
 
 5. ÜRETİM        önce imaj, onaylanınca video
                  → onaylanmamış imajdan video üretme, boşa gider
+
+5.5 KURGU        KURGU_VE_TESLIM_KILAVUZU.md   🆕 21.08.2026
+                 → birim sözlüğü (SAHNE ≠ ÇEKİM ≠ KLİP) + 10 maddelik
+                   kurgu kapısı + kırpma bütçesi + tek grade/gren
+                 → kapıyı geçmeyen filme koşulan QA ÖN KOŞU sayılır [D109]
 
 6. TEKNİK QA     VIDEO_QA_CRITIQUE_PROMPT.md
                  → künye bloğunu DOLDUR, yoksa rapor UNVERIFIABLE döner
@@ -513,7 +595,8 @@ off-screen only — no mouth in frame, no invented on-screen speaker.
 
 8. YENİ DERS     QA yeni hata bulduysa DERSLER/ tematik dosyasına ekle
                  + LESSONS_LEARNED.md dizin tablosuna satır (AGENTS.md kart G)
-                 → v7 direktif bloğunu ve QA promptunun ders sayısını güncelle
+                 → DERSLER/00_HIZLI_REFERANS.md kilit havuzunu ve ilgili QA rubriğini
+                   güncelle (iz: QA_PROMPTLARI/CALISTIRMA_KAYITLARI.md)
                  → Ders 46-50 hepsi MANTIK QA'dan çıktı ve hiçbiri prompt
                    cümlesiyle çözülmüyor: kurguda, planda veya sahne
                    haritasında çözülüyor (bkz. DERSLER/07_KURGU_VE_ANLATI.md)
@@ -535,6 +618,24 @@ off-screen only — no mouth in frame, no invented on-screen speaker.
 
 11. PAKETLEME    VIRAL_BASLIK_VE_ACIKLAMA_PROMPT.md
                  → YouTube + Instagram + TikTok ayrı ayrı
+                 → ⭐ seri/evren kararı ve başlık mimarisi:
+                   SERI_VE_KANAL_STRATEJI_KILAVUZU.md §3 (bölüm numarası
+                   başlığın BAŞINA yazılmaz · kapak aile kimliği)
+
+12. İHRAÇ        KURGU_RITMI_VE_IHRAC_KILAVUZU.md §6   🆕 22.08.2026
+                 → 1440p+ · BT.709 · 48 kHz · −14 LUFS · −1,0 dBTP
+                 → sesi DÜŞÜK teslim etmek en pahalı hata: platform
+                   yüksek sesi kısar, düşük sesi YÜKSELTMEZ
+
+13. YAYIN        YAYIN_VE_PERFORMANS_KILAVUZU.md       🆕 22.08.2026
+                 → ⛔ satır yayından ÖNCE açılır:
+                   FILM_QA_RAPORLARI/08_YAYIN_PERFORMANS_TABLOSU.md
+                 → ilk 48 saatte TEK değişken oynatılır (kapak VEYA başlık)
+                 → 24/48/72 saat ölçümü · retention eğrisi SAHNEYE çevrilir
+                 → ⭐ AKIŞ BURADA KAPANIR: gerçek veri hangi kılavuzu
+                   yanlışlıyorsa o kılavuz revize edilir (§6 geri besleme).
+                   Bu adım koşulmadan depodaki hiçbir viral hipotez
+                   test edilmiş sayılmaz.
 ```
 
 ---
@@ -548,7 +649,12 @@ off-screen only — no mouth in frame, no invented on-screen speaker.
 PROMPT UZUNLUĞU
   ~4.300 karakter → Veo hata veriyor (Low Power S5, S11 doğrulandı)
   ~2.500 karakter → sorunsuz
-  → Hedef bant: image 1.700-2.100 / video 2.000-2.600
+  → VIDEO hedef bandı: 2.000-2.600 (tavan ~4.300 yalnız video için ölçüldü)
+  → IMAGE bandı ÖLÇÜLMEDİ (21.08.2026 düzeltmesi): eski "1.700-2.100"
+    bandı depodaki hiçbir filmle uyuşmuyordu — Holding Field 3.417-4.017 ·
+    Third Dune 2.732-4.154 · Quiet Impact 4.577-5.644, üçü de üretildi/
+    reddedilmedi. Image uzunluğu bulgu değil GÖZLEMDİR; prompt_kontrol.py
+    de böyle davranır (kaynak: betiğin başlık yorumu).
   ⚠️ 10-11.08.2026 · THIRD DUNE ilk üretim turu — BEŞ RED, beşi de
      eşiğin altında: S1 3.842 · S7 3.917 · S5 3.155 · S9 4.065 ·
      S12 4.288 karakter. Dördü "I encountered an error", biri "I seem
@@ -603,28 +709,17 @@ KOPYALAMA
   ✗ İki promptu birleştirme  → politika reddi aldı, doğrulandı
   ✗ Yarım kalmış/bozuk yapıştırma → reddin gerçek sebebi bu olabilir
 
-KURGU / TESLİM  [Ders 70 + 72 · Unbroken City 06.08.2026 doğrulandı]
-  ✗ Kapak çıktısı / başlık kartı film kurgusuna EKLENMEZ — kapak
-    promptunun "SUBJECT — ..." başlık satırı 2:40'ta yanık ekran metni
-    olarak çıktı (kapak ayrı dosyadır, klip zincirine karışmaz)
-    ⚠️ 14.08.2026 THE BANDED DEEP: zincirin 6. VAKASI — 3:00'te yanık
-      "THE BANDED DEEP" kartı; üç ayrı mercek bağımsız gördü. Yazılı
-      yasak yine tutmadı; kart teslim öncesi KURGU KAPISI koşulmadan
-      çıkmıyor (D70/72).
-  ✗ Üretim kilitleri kurguyu bağlamaz: teslimden önce KURGU KAPISI —
-    klip sayısı = **CLIP COUNT** · çekim sayısı = SHOT COUNT · sahne
-    sayısı = SCENE COUNT (üçü eşit değilse ÜÇÜ DE ölçülür) · süre ±2 s ·
-    ekran metni 0.0 sn · CENTRAL CHOICE sahnesi kurguda VAR ve seçim
-    ekranda tamamlanıyor · **ASL = süre / çekim, hedef bandın içinde** ·
-    **planın EN KISA çekimi kurguda o uzunlukta mı** [Ders 101]
-    ⚠️ 16.08.2026 THE LAST SHIFT: kapı "14 sahne = 14 segment" görüp ✅
-      verdi; ekranda 27 klibin ~17'si vardı. Sahne ≠ çekim ≠ klip olan
-      filmde tek birim saymak, en kalabalık birimi görmemektir.
-  ✗ Değişken çekim süresi = KIRPMA BÜTÇESİ [Ders 100]: hattın klibi sabit
-    (~10 s) olduğu için 27 klip 270 s ham malzeme demektir. §0.18'e klip
-    başına kırpma satırı yazılmazsa kurgu kırpmaz, KLİP DÜŞÜRÜR — ve süre
-    yaklaşık tuttuğu için kayıp görünmez. SPEC'e iki satır eklenir:
-      RAW FOOTAGE: __ klip × __ s = __ s   ·   TRIM BUDGET: __ s
+KURGU / TESLİM  → TEK KAYNAK: KURGU_VE_TESLIM_KILAVUZU.md (21.08.2026'da
+  bu bloktan + DERSLER/07'den + TEK_CEKIM §8'den konsolide edildi)
+  Çekirdek gerçekler (ayrıntı ve 10 maddelik kapı orada):
+  ✗ Kapak/başlık kartı klip zincirine KARIŞMAZ — yazılı yasak 6 vakada
+    tutmadı (Unbroken City 2:40 · Banded Deep 3:00 ...); tek çözüm
+    teslim öncesi KURGU KAPISI [D70/72]
+  ✗ Kapı ÜÇ BİRİM sayar: klip = CLIP COUNT · çekim = SHOT COUNT · sahne
+    = SCENE COUNT [D101 · Last Shift: "14=14" ✅ verdi, 27 klibin ~17'si
+    ekrandaydı] — süre tek başına ALDATIR [D100]
+  ✗ Değişken çekim süresi = KIRPMA BÜTÇESİ zorunlu: RAW FOOTAGE +
+    TRIM BUDGET satırları; yoksa kurgu kırpmaz, KLİP DÜŞÜRÜR [D100]
 
 HATA MESAJLARI AYRIMI
   "I can't generate that video"        → POLİTİKA reddi (içerik/ifade)
@@ -681,11 +776,25 @@ YAPISAL RED — "having a hard time fulfilling your request"
    4. Hâlâ reddediyorsa: 3 satırlık mini prompt probu (geçerse
       sorun yapı/uzunluk, geçmezse hesap/oturum tarafı)
       ⭐ AYNI FİLMDE ÜÇÜNCÜ RED GELDİYSE bu adım BAŞA alınır —
-        kısaltmadan önce çalıştır. Hazır prob metni:
-        THE_THIRD_DUNE_PART_A.md · BÖLÜM 2 başındaki teşhis kutusu
-        (10.08.2026 · üç red üst üste geldiğinde yazıldı)
+        kısaltmadan önce çalıştır. PROB METNİ (10.08.2026'da Third
+        Dune'da yazıldı; 21.08.2026'da film dosyasından buraya terfi
+        etti — sistem bilgisi film dosyasında yaşayamaz, KULE 7 dersi):
+
+        8-second single unbroken shot, 16:9, photorealistic. A fixed
+        locked-off camera looks at rippled orange desert sand under a
+        pale yellow sky. Wind moves a thin layer of sand across the
+        ground. The desert stretches empty to the horizon in every
+        direction.
+
+        Prob da hata veriyorsa → sorun hesap/oturum/kota tarafındadır;
+        hiçbir yeniden yazım işe yaramaz, kısaltmayı bırak.
+        Prob geçiyorsa → sorun promptun yapısı/uzunluğudur; revize
+        sürümle devam et, o da batarsa MİNİMAL sürüme in.
    5. Son çare I2V: image promptu üret, start frame ver, video
       promptunu yalnız HAREKET cümlelerine indir
+      → teknik tarif: yatay_7_9_dk_filmler/kilavuzlar/
+        KESINTISIZ_VIDEO_URETIM_TEKNIGI.md (start/end frame zinciri —
+        7-9 formatına yazıldı ama I2V kurtarmasının tek belgesi budur)
 
 QA KULLANIMI
   Künye bloğu boşsa rapor "UNVERIFIABLE" döner ve işe yaramaz.
@@ -770,4 +879,13 @@ BİLİNEN BORÇLAR
     dizin + teknik kalite tablosu
   • Derslerin tamamı bilimkurgudan geldi; yeni bir tür açılırsa kendi
     hatalarını üretecek, ders numaralarına tür etiketi gerekebilir
+  • ✅ ÇÖZÜLDÜ (21.08.2026) — üç rakip "her prompta yapıştır" bloğu vardı
+    (§5 çekirdek · 00_HIZLI_REFERANS v8 8.4k karakter "hepsini ekle" ·
+    IMAGE_VIDEO_PROMPT_TEMPLATES v4 ölü blok). v4 silindi, v8 "kilit
+    havuzu"na çevrildi, tek zorunlu blok §5 kaldı.
+  • 7-9 dk kartı ↔ tek gerçek film (THE_SLOW_STONE) çelişkisi AÇIK —
+    dürüst kayıt §2.4'te; ikinci filmden önce format kararı gerekli
+  • URETIM_ONCESI_ANALIZ/01 ders-etkinlik raporu bayat (01.08.2026):
+    yalnız o kesitteki 50 dersi ölçtü (01.08.2026); D51-119 hiç
+    ölçülmedi — rapor yeniden koşulmalı
 ```

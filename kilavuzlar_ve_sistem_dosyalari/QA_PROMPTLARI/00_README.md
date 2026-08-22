@@ -31,9 +31,13 @@
    kodlarını ve severity sayımını devralıyor. O zaman "dört mercek aynı
    şeyi gördü" bir doğrulama değil, tek raporun dört kopyasıdır.
 
-⛔ ÖNCE KURGU KAPISI, SONRA QA [DERS 109]
-   Klip sayısı = plan SCENE COUNT ve süre = plan RUNTIME ±2 s değilse
-   koşu ÖN KOŞU'dur; film boyuna bakan kategoriler puan taşımaz.
+⛔ ÖNCE KURGU KAPISI, SONRA QA [DERS 109 + 101]
+   Kapı ÜÇ BİRİM sayar (21.08.2026 — Last Shift vakasıyla düzeltildi):
+   klip = plan CLIP COUNT · çekim = SHOT COUNT · sahne = SCENE COUNT
+   (üçü eşitse tek satır yeter; eşit değilse ÜÇÜ DE ölçülür) ve
+   süre = plan RUNTIME ±2 s. Tutmuyorsa koşu ÖN KOŞU'dur; film boyuna
+   bakan kategoriler puan taşımaz. Kapının tam listesi:
+   ../KURGU_VE_TESLIM_KILAVUZU.md
 ```
 
 Bu yüzden rubrik dosyalarına ŞUNLAR YAZILMAZ:

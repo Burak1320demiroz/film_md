@@ -300,6 +300,11 @@ S11  BOŞ ÖDÜL       Hedefe ulaşıldı. Hedef değersiz. Kapanış yok.
 
 # 9. 🔍 THE LAST BLOCK — BU KILAVUZA GÖRE DEĞERLENDİRME
 
+> ⛔ **TARİHSEL (21.08.2026):** THE_LAST_BLOCK 12.08.2026'da depodan
+> silindi (tür ⏸️ rafta). Bu denetim, kılavuzun nasıl uygulanacağının
+> ÖRNEĞİ olarak durur; filme dair satırlar doğrulanamaz. Kılavuzun
+> aktif tek kullanıcısı: dikey `THE_DULL_EDGE`.
+
 Kılavuzu kendi filmimize uygulayalım. Dürüst denetim:
 
 ```

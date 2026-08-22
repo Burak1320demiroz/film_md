@@ -1,6 +1,12 @@
 # 📊 DERS ETKİNLİK RAPORU
 
-> **Soru:** 50 dersin hangisi gerçekten çalışıyor?
+> ⚠️ **KESİT UYARISI (eklendi 21.08.2026):** Bu rapor yalnız
+> 01.08.2026 kesitindeki 50 dersi ölçtü (kesit tarihi: 01.08.2026).
+> D51-119 bu raporda HİÇ ÖLÇÜLMEDİ —
+> sonuçları yeni derslere genelleme. Yeniden koşulması bilinen borçtur
+> (`../KILAVUZ_REHBERI.md` §9).
+
+> **Soru:** Kesitteki (01.08.2026) 50 dersin hangisi gerçekten çalışıyor?
 > **Yöntem:** Ders X, Y filminden çıktı. Y'den SONRA QA edilen filmlerde
 > aynı hata tekrar bildirildi mi? Tekrar bildirildiyse **ders tutmadı.**
 > **Kanıt:** film adı + kategori skoru veya timestamp. Kanıtsız satır yok.
@@ -277,7 +283,7 @@ DERS 45: model prompt'un kendi künyesini ekrana çizdi.
 
 **Ölçmek için gereken (tek seferlik, ucuz):** Aynı sahneyi üç promptla üret —
 (a) çıplak, (b) +10 ders, (c) +50 ders. Aynı rubrikle puanla. Bu, projedeki
-tek gerçek A/B testi olur ve 50 dersin ağırlığını tartar.
+tek gerçek A/B testi olur ve kesit derslerinin (01.08.2026) ağırlığını tartar.
 
 ---
 
@@ -285,7 +291,7 @@ tek gerçek A/B testi olur ve 50 dersin ağırlığını tartar.
 
 ```
 1. YENİ DERS YAZMAYI DURDUR, MEVCUTLARI SAYISALLAŞTIR.
-   50 ders yeterli. Tutma oranı %0 olan 6 tarif kilidini sayısal biçime
+   Kesitteki 50 ders yeterliydi (01.08.2026). Tutma oranı %0 olan 6 tarif kilidini sayısal biçime
    çevirmek, 51. dersi yazmaktan daha değerli.
    → Öncelik: Ders 1 · 3 · 5 · 9 · 13 · 37
 
@@ -308,7 +314,7 @@ tek gerçek A/B testi olur ve 50 dersin ağırlığını tartar.
 
 | Veri | Dosya |
 |---|---|
-| 50 dersin metni ve kaynağı | `../LESSONS_LEARNED.md` |
+| ders metinleri ve kaynağı (güncel sayı: sayac.sh) | `../LESSONS_LEARNED.md` |
 | Kalite tablosu (11 film × 7 kategori) | `../LESSONS_LEARNED.md` §KALİTE TAKİP |
 | Timestamp'li ham bulgular | `../FILM_QA_RAPORLARI/02_HAM_RAPORLAR/` |
 | Ders 5/37 karşılaştırması | `../LESSONS_LEARNED.md` §"DERS 5 VE 37..." |

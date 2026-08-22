@@ -57,6 +57,20 @@ kısafilmler/
 │   ├── SENARYO_VE_VIRAL_KAMERA_KILAVUZU.md vuruş haritası + loop + kamera psikolojisi
 │   ├── HOOK_VE_ILK_SAHNE_KILAVUZU.md      ilk iki sahne: S0 karar / S1 tırmandırma + hook tipolojisi
 │   ├── FRAGMAN_KILAVUZU.md                fragman: dikey 3-6 / yatay 8-12 vuruş, spoiler kapısı
+│   ├── KURGU_VE_TESLIM_KILAVUZU.md        birim sözlüğü + 10 maddelik kurgu kapısı + kırpma bütçesi (21.08.2026)
+│   ├── SES_VE_DIYALOG_URETIM_KILAVUZU.md  replik/ses YAZIM tarafı: register + AUDIO kalıpları (21.08.2026)
+│   ├── KARAKTER_VE_DUYGU_KILAVUZU.md      bağ kurma bütçeleri: göz · Kuleshov · el/nefes/yürüyüş (22.08.2026)
+│   ├── KURGU_RITMI_VE_IHRAC_KILAVUZU.md   ASL eğrisi · örüntü kırıcı · ses köprüsü · ihraç sayıları (22.08.2026)
+│   ├── SERI_VE_KANAL_STRATEJI_KILAVUZU.md evren modeli · kapak aile kimliği · devam hakkı (22.08.2026)
+│   ├── YAYIN_VE_PERFORMANS_KILAVUZU.md    ⭐ akışın SON adımı: gerçek veri → kılavuz revizyonu (22.08.2026)
+│   ├── ONERME_VE_NOVUM_KILAVUZU.md        KONSEPT kapısı: novum tipi + taşıyıcı satırı + üç kabul testi (22.08.2026)
+│   ├── FINAL_VE_PAYLASIM_KILAVUZU.md      final tipi → davranış · tohum bilgi %10-15 · görsel ikilem (22.08.2026)
+│   ├── DIKEY_MIKRO_DRAMA_KILAVUZU.md      9:16 dramaturjisi: 6×8 vuruş tablosu · kinesik reset (22.08.2026)
+│   ├── PAKETLEME_VE_VAAT_KILAVUZU.md      kapak ANI senaryoda seçilir · vaat-teyit · spoiler bütçesi (22.08.2026)
+│   ├── TEMA_MUHENDISLIGI_KILAVUZU.md      tema seçimi + tema→motif→sahne matrisi + süre-tatmin kuralı (22.08.2026)
+│   ├── KAMERA_ACISI_PSIKOLOJISI_KILAVUZU.md  8 açının anlam sözlüğü + vuruş→açı tablosu + abartı eşikleri (22.08.2026)
+│   ├── ACI_YAYI_VE_SEKANS_KILAVUZU.md     açı/ölçek sıçrama bandı + kurulum sayısı + yay şablonları (22.08.2026)
+│   ├── MESHUR_SAHNE_KALIPLARI_KILAVUZU.md 20 ikonik sahne kalıbı + taşınabilirlik + homage/telif sınırı (22.08.2026)
 │   │
 │   ├── QA_PROMPTLARI/             🔍 RUBRİKLER (girdi) — üretilmiş işi eleştirir
 │   │   │  ⭐ altısı da SALT PROMPT + TEK DOSYA çalışır: medya + rubrik,
@@ -85,7 +99,10 @@ kısafilmler/
 │   │   ├── 04_MANTIK_KALITE_TABLOSU.md   MANTIK_QA skorları
 │   │   ├── 05_SHORTS_KALITE_TABLOSU.md   SHORTS_QA skorları (06.08 açıldı)
 │   │   ├── 06_KARAKTER_KALITE_TABLOSU.md KARAKTER_QA skorları
-│   │   └── 07_SES_KALITE_TABLOSU.md      SES_QA skorları (09.08 açıldı)
+│   │   ├── 07_SES_KALITE_TABLOSU.md      SES_QA skorları (09.08 açıldı)
+│   │   └── 08_YAYIN_PERFORMANS_TABLOSU.md ⭐ tek İZLEYİCİ tablosu — diğer
+│   │                                 beşini bir model doldurur, bunu
+│   │                                 gerçek veri doldurur (22.08 açıldı)
 │   │                                 (yatay TEKNİK skorlar → LESSONS_LEARNED)
 │   │
 │   └── URETIM_ONCESI_ANALIZ/      🧪 META-ANALİZ — üretmeden önce oku
@@ -101,14 +118,17 @@ kısafilmler/
 ├── yatay_10_20_dk_filmler/        16:9 · 3 PERDE · FİLM KLASÖRÜ
 │   └── THE_SECOND_SHIP/              120 sahne × 10s = 20:00 (8s'den sapma)
 │
-├── film_analizleri/               🎞️ DIŞ FİLM ANALİZLERİ — bizim yapmadığımız
-│   │                                 filmler, 20 parça × 3 mercek (KAMERA·OLAY·
-│   │                                 TEMA) + SENTEZ · film sayımına GİRMEZ
-│   ├── ANALIZ_QA_PROMPTLARI/         salt promptlar (video + tek dosya)
-│   └── ANALIZ_EDILEN_FILMLER/        film başına klasör (KUNYE + raporlar)
+├── araştırmalar/                  🔬 DERİN ARAŞTIRMA RAPORLARI — dış modele
+│                                     sipariş edilen raporlar (numaralı .md)
+│                                     + sipariş arşivi (ARASTIRMA_PROMPTLARI.md);
+│                                     kılavuzlar buradan damıtılır — üretimde
+│                                     rapor değil kılavuz kullanılır
 │
-├── web/                           Nuxt üretim paneli (.md dosyalarını okur)
-└── .agents/skills/                yüklü ajan yetenekleri (AI_AJAN_YETENEKLERI.md)
+└── film_analizleri/               🎞️ DIŞ FİLM ANALİZLERİ — bizim yapmadığımız
+    │                                 filmler, 20 parça × 3 mercek (KAMERA·OLAY·
+    │                                 TEMA) + SENTEZ · film sayımına GİRMEZ
+    ├── ANALIZ_QA_PROMPTLARI/         salt promptlar (video + tek dosya)
+    └── ANALIZ_EDILEN_FILMLER/        film başına klasör (KUNYE + raporlar)
 ```
 
 **Format seçimi, tür kilitleri, fizik kuralları → hepsi `KILAVUZ_REHBERI.md`'de.
@@ -125,8 +145,10 @@ Burada tekrarlanmaz.**
 
 ② HER FİLM DOSYASI MARKDOWN BAŞLIĞI KULLANIR
    Sahne başlıkları ## ile başlar: "## 🎬 SAHNE 3 — BAŞLIK"
-   Emoji ile başlayan düz satır YETMEZ. Web paneli başlıksız dosyayı göremez
-   ve film sistemden düşer (4 dosyada bu oldu — bkz. §6).
+   Emoji ile başlayan düz satır YETMEZ. Gerekçe: sayaç, grep taraması ve
+   herhangi bir gelecek parser başlıktan sayar — başlıksız dosya sayımdan
+   ve taramadan düşer (4 dosyada oldu — bkz. §6; web paneli döneminde
+   film fiilen sistemden kayboluyordu, panel gitti ama kural kalır).
 
 ③ PROMPT SELF-CONTAINED'DIR
    "[BIBLE'a bak" atfı yasak. Her prompt tek başına çalışmalı.
@@ -172,9 +194,17 @@ YAZ
  □ Adlandırma: BUYUK_HARF_ALT_CIZGI.md · Türkçe karakter kullanma
  □ Sahne başlıkları ## ile (kural ②)
  □ PLAN → BIBLE → PROMPT sırası (KILAVUZ_REHBERI §6)
+ □ ⭐ SAHNE HARİTASI YAZILIRKEN İKİ BÜTÇE DAĞITILIR (22.08.2026) —
+      ikisi de üretimden SONRA eklenemez:
+      · KARAKTER_VE_DUYGU_KILAVUZU.md §6 — göz · tepki planı · el ·
+        yürüyüş · eşya sahnelerinin sayısı formattan hesaplanır
+      · KURGU_RITMI_VE_IHRAC_KILAVUZU.md §2 — ardışık iki sahne aynı
+        ölçek + palet + ses dokusunda OLAMAZ (örüntü kırıcı kapısı)
  □ ⭐ <FILM>_QA_SPEC.md yazılır — yazım paketinin son parçası [Ders 117]
       A bloğu SENARYO_QA alanları · B kurgu geometrisi + İNSAN ŞERİDİ ·
       C belgesiz merceklerin FLAGS sorularını cevaplayan kilitler
+      + TARGET ASL BAND / ASL CURVE satırları (KURGU_RITMI §1; sabit
+        ızgaralı filmde gerekçe satırı ZORUNLU [D74])
       ⛔ SPEC dosyası yoksa film "yazımı tamam" sayılmaz
 
 KONTROL ET
@@ -236,7 +266,52 @@ commit'lenmemişti; 18 commit tarandı, tek iz yok.)*
  □ Kapak: KAPAK_FOTOGRAFI_MIMARISI_KILAVUZU.md (metinsiz üret)
  □ Fragman yazılacaksa: FRAGMAN_KILAVUZU.md (dikey 3-6 / yatay 8-12 vuruş)
  □ Paketleme: VIRAL_BASLIK_VE_ACIKLAMA_PROMPT.md
+ □ İhraç: KURGU_RITMI_VE_IHRAC_KILAVUZU.md §6 (1440p+ · −14 LUFS · −1,0 dBTP)
  □ 00_INDEX.md → filmin durumunu "üretildi" olarak işaretle
+ □ Yayınlanacaksa → görev kartı Y
+ □ commit
+```
+
+---
+
+## 📡 Y — FİLM YAYINLANACAK / YAYINLANDI
+
+**Kılavuz:** `YAYIN_VE_PERFORMANS_KILAVUZU.md` · tablo:
+`FILM_QA_RAPORLARI/08_YAYIN_PERFORMANS_TABLOSU.md`
+*(22.08.2026'da açıldı — üretim akışı 11. adımda bitiyordu, yayın sonrası
+ölçüm hiçbir dosyada yoktu. Deponun bütün hook/kapak/başlık sayıları
+DIŞ ARAŞTIRMA hipotezidir ve bu kart koşulmadan test edilmez.)*
+
+```
+⛔ SATIR YAYINDAN ÖNCE AÇILIR. Geriye dönük açılan kayıt 🚨 GEÇERSİZDİR:
+   hangi kapak, hangi başlık, hangi hook tipi — bunlar sonradan
+   hatırlanarak yazılamaz (kimlik kapısının yayın karşılığı).
+
+YAYINDAN ÖNCE
+ □ 08_YAYIN_PERFORMANS_TABLOSU.md → §1 kimlik satırı doldur
+ □ Plan B kapağı hazır mı (KAPAK_FOTOGRAFI §7.2)
+ □ ⛔ TEK DEĞİŞKEN KİLİDİ: ilk 48 saatte kapak VEYA başlık — ikisi değil
+ □ Seri/playlist kararı: SERI_VE_KANAL_STRATEJI_KILAVUZU.md §5.1
+      (bir film YALNIZ TEK resmi seride yer alabilir)
+
+24 / 48 / 72 SAAT
+ □ §2 metrik satırı · §3 eğri teşhisi · §4 karar satırı
+ □ ⭐ Terk saniyesi IZGARA ARİTMETİĞİYLE SAHNEYE çevrilir —
+      hizalama kapısıyla (ortak adım ⑨) aynı formül
+ □ Suçlu değişken eleme sırası: paketleme → kurgu → ses → sahne →
+      plan → format (ucuzdan pahalıya, kılavuz §4.2)
+
+GERİ BESLEME — bu kartın VAR OLMA SEBEBİ
+ □ Kılavuz §6 tablosundan hangi belgenin revize edileceğini bul
+ □ ⛔ SIRA: veri → BELGE revizyonu → (ancak tekrarlarsa) ders.
+      Yeni ders yazmak ilk refleks DEĞİLDİR [AGENTS §8]
+ □ ⭐ QA skoru yüksek + gerçek metrik düşük çıktıysa: yanlış olan
+      RUBRİKTİR → URETIM_ONCESI_ANALIZ/01_DERS_ETKINLIK_RAPORU.md
+ □ Devam adaylığı: SERI_VE_KANAL_STRATEJI_KILAVUZU.md §4.2
+      (üç filmde ölçülmeden tam kapıya geçilmez)
+
+BİTİŞ
+ □ Tablo satırı geçerlilik işareti taşıyor mu (✅ / ⚠️ / 🚨)
  □ commit
 ```
 
@@ -629,9 +704,6 @@ yayan opsiyonel mercek; ilk koşu aynı gün: THE COLD BURN 5/10, DERS 82-83.)*
       yeni tür için §4.4 boş şablonundan başla
  □ YAPI_GRAFI.md → karar ağacına dal + klasör ağacına satır
  □ Yeni klasör açıldıysa → sayac.sh içindeki klasör listesine ekle
- □ Yeni klasör açıldıysa → web/server/utils/parser.ts · FOLDERS dizisine
-      { dir, format, genre, mode: 'flat' | 'grouped' }
-      flat = her .md bir film · grouped = her alt klasör bir film
  □ commit
 ```
 
@@ -645,7 +717,6 @@ yayan opsiyonel mercek; ilk koşu aynı gün: THE COLD BURN 5/10, DERS 82-83.)*
  □ AGENTS.md §1 haritasından satırı sil
  □ YAPI_GRAFI.md → karar ağacındaki dal + klasör ağacındaki satır
  □ sayac.sh içindeki klasör listesinden çıkar
- □ web/server/utils/parser.ts · FOLDERS dizisinden çıkar
  □ FILM_QA_RAPORLARI/00_INDEX.md → o klasörün bölümü/satırları kaldırılır
  □ KILAVUZ_REHBERI.md → tür/format kartı SİLİNMEZ, başına ⏸️ RAFTA yazılır
       (kılavuz bilgisi ucuz, yeniden yazmak pahalı)
@@ -655,44 +726,13 @@ yayan opsiyonel mercek; ilk koşu aynı gün: THE COLD BURN 5/10, DERS 82-83.)*
 
 ---
 
-## 🌐 I — WEB PANELİNE DOKUNDUM
+## 🌐 I — WEB PANELİ (KALDIRILDI)
 
-```
-web/
-├── server/utils/parser.ts     .md → film verisi (sahne/bible/prompt/kapak/müzik)
-├── server/utils/lessonParser.ts   DERSLER/*.md → ders verisi
-├── server/utils/mdTree.ts     /oku okuyucusunun dosya ağacı + yol güvenliği
-├── server/api/                films.get · films/[slug].get · lessons.get
-│                              tree.get · raw.get  (okuyucu)
-├── pages/ layouts/ components/ composables/
-└── nuxt.config.ts             runtimeConfig.contentRoot = depo kökü
-
-İki görünüm:  /     üretim paneli (parser'a bağlı)
-              /oku  sade okuyucu (her .md ham hâliyle)
-
-🎨 TEMA TEK YERDE DURUR — assets/css/main.css
-   Açık tema (Swiss/minimal). Renk, boşluk, yarıçap, gölge ve odak halkası
-   token olarak orada tanımlı. Bileşende ham hex ya da rgba() YAZMA:
-   yeni bir renk gerekiyorsa önce token ekle, sonra kullan.
-   Kontrast eşiği: gövde metni zemininde en az 4.5:1.
-   ⚠️ --text-3 hem beyaz kartta hem --bg zemininde kullanılıyor; değerini
-      değiştirirsen İKİ zemine karşı da ölç.
-
-🚫 EMOJİ İKON KULLANILMAZ — ikonlar lucide-vue-next'ten gelir.
-   Emoji ne tema alır, ne ölçeklenir, ne de ekran okuyucuya durum bildirir.
-
-⚠️ utils/promptLint.ts = KILAVUZ_REHBERI §7'nin kod hâli (uzunluk bandı,
-   yasak kelimeler, NEGATIVE zorunluluğu). §7 değişirse burası da değişir;
-   kuralı iki yerde ayrı tutma.
-
- □ cd web && npx nuxt build         hata vermeden bitmeli
- □ node .output/server/index.mjs && curl -s localhost:3000/api/films
-      → film sayısı sayac.sh ile aynı mı? Değilse bir film düşmüş demektir
-        (sebep neredeyse her zaman: dosyada ## sahne başlığı yok)
- □ curl -s localhost:3000/api/tree → "count" depodaki .md sayısıyla aynı olmalı
-      (okuyucu hiçbir dosyayı elemez; eşitsizlik yeni bir eleme kuralı demektir)
- □ commit
-```
+> Panel (`web/`) 21.08.2026'da depodan kaldırıldı — kart H2 bu tarihte
+> uygulandı ve dört haritadan panel satırları silindi. Panel geri
+> gelirse git geçmişindeki bu kartın eski hâli temel alınır
+> (`git log --all -- web/`). O güne dek "panele dokundum" diye bir
+> görev yok.
 
 ---
 
@@ -740,19 +780,16 @@ tipler:  film    yeni/güncellenen film dokümanı
 > 02.08.2026 denetiminde bulundu. Düzeltilene kadar ajanın bilmesi gerekir.
 
 ```
-🟡 web paneli QA ortalaması YANLIŞ (hesap hâlâ bozuk, artık gösterilmiyor)
-   /api/films → qa_average, film dosyasında geçen her "x/10" ifadesini
-   ortalıyor; gerçek skorlar FILM_QA_RAPORLARI/'da ve panel oraya bakmıyor.
-   14.08.2026: sayı arayüzden KALDIRILDI, yerine kaynağa yollayan uyarı kondu
-   (StatsBar.vue). API alanı hâlâ yanlış hesaplıyor — yeni bir yerde kullanma.
-   → Skor için TEK kaynak: FILM_QA_RAPORLARI/00_INDEX.md
-
-🔴 6 film panelde görünmüyor
-   (14.08.2026 ölçümü: sayac.sh 59 film diyor, /api/films 53 — fark aynen 6)
-   4 dosya hiç markdown başlığı kullanmıyor (V1 düz metin) → parser göremiyor:
+🔴 4 dosya başlık standardı dışında (V1 düz metin — kural ② ihlali):
    THE_BREATHING_STORM · THE_DEEP_PRESSURE · THE_ETERNAL_ENGINE · THE_PULSE
-   THE_DEEP_ROOT: puanı var ama 13 sahnenin 0'ı yazılmış
-   THE_WAKING_GROUND: format kartında referans film, 5 faz dosyası yok
+   (panel varken bu dosyalar parser'dan düşüyordu; panel 21.08.2026'da
+   kaldırıldı ama başlıksızlık hâlâ tarama/sayaç hatası üretir)
+   Ayrıca: THE_DEEP_ROOT puanı var ama 13 sahnenin 0'ı yazılmış ·
+   THE_WAKING_GROUND yok — format kartına dürüst kayıt düşüldü
+   (KILAVUZ_REHBERI §2.4, 21.08.2026)
+
+🟡 URETIM_ONCESI_ANALIZ/01 ders etkinlik raporu 01.08.2026 kesitinde
+   (50 ders); D51-119 hiç ölçülmedi — rapor yeniden koşulmalı
 
 🟡 sayac.sh · VIDEO_QA sayısı eksik
    Regex kalın yazılmış tablo satırlarını (| **Film** | **Full**) atlıyor.
@@ -789,9 +826,6 @@ for f in dikey_shorts_filmler/*.md yatay_2_4_dk_filmler_*/*.md; do
   [ "$(grep -cE '^#' "$f")" -lt 3 ] && echo "BAŞLIKSIZ: $f"
 done
 
-# panel filmleri görüyor mu
-cd web && npx nuxt build && node .output/server/index.mjs &
-curl -s localhost:3000/api/films | grep -o '"film_count":[0-9]*'
 ```
 
 ---

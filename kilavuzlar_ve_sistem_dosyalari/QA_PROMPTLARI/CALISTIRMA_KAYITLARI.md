@@ -48,6 +48,10 @@ D75        → SENARYO · STEP −0.5 MATERIAL GATE
 D80        → VIDEO · STEP −2 MEDIA GATE
            → SES · STEP 0 AUDIO PRESENCE GATE (STATE C bloğu)
 D94        → VIDEO · SENARYO · STEP −1 operatöre SPEC uyarısı
+D101       → RUBRİĞE GİRMEZ (operatör kapısı): 00_README "ÖNCE KURGU
+             KAPISI" bloğu 21.08.2026'da üç birime çıkarıldı (klip =
+             CLIP COUNT · çekim = SHOT COUNT · sahne = SCENE COUNT);
+             kapının tam listesi ../KURGU_VE_TESLIM_KILAVUZU.md
 D102       → altı rubrik · SCORES SUMMARY "her puan hücresi kaynağını
              taşır, hiçbir gözlem iki kez faturalanmaz" bloğu
 D107       → SENARYO · MANTIK · KARAKTER · SES · STEP 1 "count the cuts

@@ -12,6 +12,11 @@
 
 ## 1. 🚀 SINEMATİK MÜZİK ÜRETİMİNDE YAPAY ZEKA DEVRİMİ
 
+> ⛔ **§1-6 GENEL ARAŞTIRMA (21.08.2026):** Üretim akışı yalnız
+> **§7-19**'u kullanır (REHBER §6 adım 9 oraya işaret eder). §3 telif/
+> lisans bilgisi yazıldığı günündür — yayın kararı vermeden önce
+> güncelliği doğrula.
+
 Sinema endüstrisi ve bağımsız film prodüksiyon dünyası, yapay zeka destekli üretken (generative) ses teknolojilerinin gelişimiyle birlikte köklü bir paradigma değişiminden geçmektedir. 
 
 * **Eski Paradigma:** Stok müzik kütüphanelerinde günlerce uygun parça aramak veya senfonik bir orkestraya binlerce dolar ödeyerek beste yaptırmak.

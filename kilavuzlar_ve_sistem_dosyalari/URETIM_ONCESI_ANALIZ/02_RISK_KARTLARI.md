@@ -3,7 +3,11 @@
 > **Kullanım:** Filmin içinde ne var? Aşağıdan o kartları seç. Her kart
 > geçmiş veriden **ne bozulacağını**, **kaç filmde bozulduğunu** ve
 > **planın hangi satırını yazman gerektiğini** söyler.
-> **Kaynak:** 11 QA raporu + 50 ders. Tahmin yok, hepsi ölçülmüş.
+> **Kaynak:** Kart 1-8: 01.08.2026 kesiti (11 QA raporu + 50 ders).
+> Kart 9-11: 21.08.2026'da eklendi (D104 · yapısal red vakaları ·
+> D70/72/100/101). Tahmin yok, hepsi ölçülmüş.
+> ⚠️ Eski filmlerin `n/9` skorları 9 kalemlik sürümle ölçüldü ve YENİDEN
+> YAZILMAZ; 21.08.2026 sonrası filmler `n/12` yazar.
 
 ---
 
@@ -11,7 +15,9 @@
 
 ```
 1. Filmin malzeme listesini çıkar:  su · canlı · diyalog · parçacık ·
-                                    sıfır-g · patlama · kask · sayaç · ikinci figür
+                                    sıfır-g · patlama · kask · sayaç · ikinci figür ·
+                                    tek baskın ışık + hedefe hareket ·
+                                    insansız sahne · değişken çekim süresi
 2. Karşılık gelen kartları oku
 3. Her kartın "PLANA YAZ" bloğunu plan dosyasına KOPYALA
 4. "SAHNEDEN ÇIKAR" uyarısı olan malzemeyi gerçekten çıkarmayı düşün
@@ -243,6 +249,87 @@ KANIT:       Low Power 8/10 (sabit lockoff) · Slow Stone 7/10 (ayrı üretim)
 
 ---
 
+# 🔴 KART 9 — TEK BASKIN IŞIK + HEDEFE HAREKET (ışık mıknatısı) 🆕 21.08.2026
+
+```
+RİSK SKORU:  🔴 YÜKSEK — dört kanallı panzehir bile bir vakada yetmedi
+KANIT:       Black Cradle S4 (16.08.2026): İKİ ayrı red — astronotlar
+             landera değil ŞAFAĞA koştu; prompt uzamsal kılavuza uygundu
+             ve betik kapısından geçmişti. V3 (kamera hedefe taşındı)
+             17.08'de İLK denemede geçti.
+İLGİLİ DERS: 104
+```
+
+**Ne bozulur:** Kadrajda TEK baskın ışık kaynağı (şafak, patlama,
+projektör) varken model hareketli özneyi ONA DÖNDÜRÜR — hedef ve yön
+yazılıyken bile. Araç sahnesindeki karşılığı: burnu ışığa çevirir.
+
+```
+✅ PLANA YAZ:   DÖRT KANAL birden — hedef-dilim+yön · omuz hattı ·
+                IŞIĞA GÖRE POZ ("their backs are to the light — it rims
+                their back silhouettes") · yön negatifi ("no one runs
+                toward the light, no direction reversal"). [UZAMSAL §6.7]
+⛔ İKİ YENİLGİ KURALI: iki redden sonra üçüncü yeniden yazım YOK —
+                kamera HEDEFE taşınır, hareket kameraya doğru kurulur
+                (frontal refleks doğru cevaba dönüşür). [UZAMSAL §6.8]
+⚠️ BETİK GÖREMEZ: yön kapısı konum+hareketi arar, YÖNELİMİ aramaz.
+                Denetim insan gözüyle.
+```
+
+---
+
+# 🟡 KART 10 — İNSANSIZ SAHNE + UZUN NEGATİF BLOK (yapısal red) 🆕 21.08.2026
+
+```
+RİSK SKORU:  🟡 ORTA — üretim başlamadan reddedilir; para değil GÜN yakar
+KANIT:       Cold Burn S8 (07.08) · Ring Light S2/S4: aynı gün 3 red /
+             0 başarı (12.08) · Third Dune: 5 red / 0 başarı (10-11.08)
+İLGİLİ DERS: 59 · REHBER §7 "YAPISAL RED" bölümü
+```
+
+**Ne bozulur:** İnsansız sahnede uzun `NEGATIVE:` bloğu + "Exactly 0
+human figures" kalıbı, istem sınıflandırıcısında "yerine getirilemez"
+sayılıyor — yokluk listesi istek olarak okunamıyor. Aynı blok insanlı
+sahnede sorun çıkarmıyor.
+
+```
+✅ PLANA YAZ:   insansız sahneler işaretlenir; onların promptunda
+                NEGATIVE bloğu TEK pozitif Style satırına iner, boş
+                kadraj VARLIK olarak tarif edilir ("the cabin around it
+                is empty and unlit") [D59]
+⛔ ÜÇÜNCÜ REDDE: prob BAŞA alınır (REHBER §7 adım 4 — tam metin orada);
+                SIFIR BAŞARI varken prompt kısaltmak boşa emektir.
+```
+
+---
+
+# 🔴 KART 11 — DEĞİŞKEN ÇEKİM SÜRESİ / SAHNE İÇİ KESME (kurgu riski) 🆕 21.08.2026
+
+```
+RİSK SKORU:  🔴 YÜKSEK — üretim mükemmel olsa bile film kurguda kaybolur
+KANIT:       Last Shift (16.08): 27 klipten ~17'si ekranda, süre
+             "yaklaşık tuttuğu" için kayıp görünmedi; düşenler arasında
+             İFŞA 1 ve tek aksiyon ritmi · yanık başlık kartı 6 vaka ·
+             Unbroken City: doruk S9 kurguya girmedi
+İLGİLİ DERS: 70 · 72 · 100 · 101
+```
+
+**Ne bozulur:** Hattın klibi sabit (~10 s); plan değişken çekim süresi
+yazarsa ham malzeme > hedef süre olur ve talimatsız kurgu KIRPMAZ,
+KLİP DÜŞÜRÜR. Sahne=çekim=klip olmayan filmde kapı tek birim sayarsa
+kayıp görünmez.
+
+```
+✅ PLANA YAZ:   SPEC'e üç sayım (SCENE/SHOT/CLIP COUNT) + iki satır:
+                RAW FOOTAGE: __ klip × __ s = __ s · TRIM BUDGET: __ s
+                + §0.18 KIRPMA TABLOSU (klip başına: ham → kurguda →
+                nereden kırpılır)
+⛔ TESLİMDEN ÖNCE: 10 maddelik kurgu kapısı koşulur —
+                ../KURGU_VE_TESLIM_KILAVUZU.md (tek adres)
+```
+
+---
+
 # 📋 RİSK TOPLAMI — planı yazmadan önce doldur
 
 ```
@@ -257,6 +344,9 @@ FİLM: ______________________
 □ Katmanlı/bölgeli dünya mı?    → varsa KART 6b — ışık takvimi şart
 □ Diyalog var mı?               → varsa KART 7
 □ Kamera hareketi var mı?       → KART 8 — kaldırabiliyor musun?
+□ Tek baskın ışık + hedefe hareket? → varsa KART 9 — dört kanal + iki yenilgi kuralı
+□ İnsansız sahne var mı?        → varsa KART 10 — NEGATIVE bloğu tek satıra
+□ Değişken çekim süresi / sahne içi kesme? → varsa KART 11 — kırpma bütçesi
 
 RİSK SAYISI: ___ / 9
 

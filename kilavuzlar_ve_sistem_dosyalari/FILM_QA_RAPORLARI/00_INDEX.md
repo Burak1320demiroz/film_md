@@ -912,6 +912,8 @@ bozmaya yönlendirir.**
 | `04_MANTIK_KALITE_TABLOSU.md` | mantık/devamlılık QA skorları — üçüncü mercek |
 | `06_KARAKTER_KALITE_TABLOSU.md` | 🆕 karakter kimlik/devamlılık skorları — opsiyonel derin mercek |
 | `07_SES_KALITE_TABLOSU.md` | 🆕 ses/diyalog skorları — 09.08'de Cold Burn ilk koşusuyla açıldı |
+| `08_YAYIN_PERFORMANS_TABLOSU.md` | 🆕 22.08 · **gerçek izleyici koşuları** — yukarıdakileri bir MODEL doldurur, bunu VERİ doldurur. Bu matrise sütun AÇMAZ (QA merceği değil); çakışma hâlinde bu tablo üstündür |
+| `../YAYIN_VE_PERFORMANS_KILAVUZU.md` | 🆕 22.08 · o tabloyu besleyen kılavuz — karar matrisi, sinyal/gürültü eşiği, geri besleme yolu |
 | `02_HAM_RAPORLAR/` | ham QA çıktıları — özetlenmemiş |
 | `../LESSONS_LEARNED.md` | ders arşivi + teknik kalite tablosu |
 | `../QA_PROMPTLARI/VIDEO_QA_CRITIQUE_PROMPT.md` | 11 kategorili QA rubriği |

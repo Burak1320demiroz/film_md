@@ -392,6 +392,12 @@ tek bir sahne maliyetiyle tüm filmin anlamını değiştirir.
 
 # 12. 🔍 MEVCUT FİLMLERİN DENETİMİ
 
+> ⚠️ **TARİHSEL DENETİM (21.08.2026):** Bu bölüm yazıldığı günkü
+> depoyu denetledi; bugünkü film listesi ve güncel skorlar
+> `FILM_QA_RAPORLARI/00_INDEX.md`'dedir. Bölüm, YENİ bir filmi bu
+> kılavuza göre denetlemenin ŞABLONU olarak okunur — film listesi
+> olarak değil.
+
 Kuramı kendi filmlerimize uygulayalım. Dürüst değerlendirme:
 
 > 🆕 **31.07.2026 — Bu bölüm artık kısmen ölçüm.** Aşağıdaki ilk üç denetim

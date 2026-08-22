@@ -3,6 +3,13 @@
 > **5 Faz Mimarisi | 8 Saniyelik Sahne Standardı | Start/End Frame Zincirleme**
 > Bu format, Veo 3.1'in native 8 saniyelik üretim penceresi üzerine kurulmuştur.
 
+> ⚠️ **DÜRÜST KAYIT (21.08.2026):** Bu README teorik tanımdır. Formatta
+> yazılmış tek film **THE_SLOW_STONE** üç tanımlayıcı kuraldan üçünde de
+> GEREKÇELİ saptı (4 kısım × 12 · 10 s + extend · zincir reddedildi) —
+> gerekçeler `THE_SLOW_STONE/README.md`'de, karar durumu
+> `kilavuzlar_ve_sistem_dosyalari/KILAVUZ_REHBERI.md` §2.4'te. İkinci
+> filmden önce kart ile film arasında karar verilmeli.
+
 ---
 
 ## 📐 FORMAT KURALLARI

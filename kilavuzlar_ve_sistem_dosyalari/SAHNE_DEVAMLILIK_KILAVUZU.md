@@ -8,6 +8,12 @@
 
 ## 1. 🎯 AI MODEL SEÇİM KARARI
 
+> ⛔ **TARİHSEL — KARAR GİRDİSİ DEĞİL (21.08.2026):** Hat %100 Veo
+> (Flow) üzerinde üretiyor; bu bölümdeki Kling/Runway/Luma/Firefly
+> kıyası araştırma arşividir. Tablodaki yüzdeler (%94, %89, %84, %38)
+> kaynağı depoda olmayan ölçümlerdir — alıntılanmaz. Veo dışına
+> çıkılacaksa önce güncel ölçüm yapılır.
+
 Hangi sahne için hangi model daha uygun?
 
 | Senaryo Tipi | Önerilen Model | Neden |

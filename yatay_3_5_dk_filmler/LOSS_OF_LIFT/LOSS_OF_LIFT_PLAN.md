@@ -288,7 +288,8 @@ Bu sessizlik LOW POWER'ın sessizliğiyle aynı işlevi görür, başka sebeple.
 
 ## 🌍 YENİ ORTAM KARTI ÖNERİSİ — "SÜREKLİ BULUT / NÖTR YÜZERLİK"
 
-> Onaylanırsa `KILAVUZ_REHBERI.md` §3'e **3.6** olarak yazılır.
+> ✅ **21.08.2026'da `KILAVUZ_REHBERI.md` §3.6 olarak yazıldı** — kartın
+> güncel hâli ORADA; buradaki blok öneri arşividir, güncellenmez.
 > 3.4'ün (kalın atmosfer) akrabasıdır ama üç kuralı ayrışır.
 
 ```

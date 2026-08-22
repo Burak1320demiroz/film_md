@@ -132,6 +132,11 @@ Shorts ve Reels için durağan kapağı 4-5 saniyelik sinematik döngüye (motio
 
 ## 📈 7. VERİ ODAKLI KARAR ALMA VE A/B TEST SÜREÇLERİ
 
+> ⛔ **BU HATTA A/B ALTYAPISI YOK (21.08.2026):** Depoda tek A/B testi
+> koşulmadı; KAPAK_QA rubriği de 12.08.2026'da hiç çalıştırılmadan
+> kaldırıldı. Tek zorunlu test: 120 px posta pulu — elle, üretimden
+> önce (REHBER §6 adım 10).
+
 ### 🎯 CTR (Tıklama Oranı) Başarı Skalası
 * **%1 - %2 CTR:** Vasatın altında (Alarm seviyesi). Kapak ve başlık derhal değiştirilmelidir.
 * **%3 - %4 CTR:** Ortalama performans.
