@@ -721,7 +721,7 @@ a visible walker, atmospheric haze, wind, lens flare.
 
 ---
 
-## 📋 QA KÜNYE BLOĞU (VIDEO_QA_CRITIQUE_PROMPT.md için hazır)
+## 📋 QA KÜNYE BLOĞU (1_KARE_QA_CRITIQUE_PROMPT.md için hazır)
 
 > Bu blok doldurulmadan QA raporu `UNVERIFIABLE` döner (kılavuz §7).
 > Sahne bazlı alanlar (LENS / DISTANCE / MOVE / DIALOGUE) her sahnenin
@@ -1803,9 +1803,9 @@ TAGS: [Instrumental] [No Vocals] [No Percussion] [No Reverb] [Unresolved]
 □ 2. VİDEOLAR     Onaylanan her imajı first-frame olarak yükle, video
                   promptunu yapıştır, "Highest Quality" modunda üret.
                   8s üret + 2s extend (S0 hariç — o zaten 8s).
-□ 3. TEKNİK QA    VIDEO_QA_CRITIQUE_PROMPT.md + bu dosyadaki QA künye
+□ 3. TEKNİK QA    1_KARE_QA_CRITIQUE_PROMPT.md + bu dosyadaki QA künye
                   bloğu (yukarıda hazır). Künye boşsa rapor işe yaramaz.
-□ 4. SENARYO QA   SENARYO_QA_CRITIQUE_PROMPT.md
+□ 4. SENARYO QA   4_HIKAYE_QA_CRITIQUE_PROMPT.md
 □ 5. YENİ DERS    Bu film iki YENİ hata sınıfı üretebilir:
                   (a) modelin ize bir figür eklemesi
                   (b) askıdaki toz tabakasının sise dönüşmesi

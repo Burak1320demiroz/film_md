@@ -234,6 +234,6 @@ KARAKTER_VE_DUYGU_KILAVUZU.md          §1 göz bütçesi · §4 vekil kanallar
 FINAL_VE_PAYLASIM_KILAVUZU.md          §2 dikeyde döngü zorunlu · tohum bilgi penceresi
 FRAGMAN_KILAVUZU.md                    dikey fragman ayrı iş — bu kılavuz onu kapsamaz
 KAPAK_FOTOGRAFI_MIMARISI_KILAVUZU.md   §5 dikey güvenli alan
-QA_PROMPTLARI/SHORTS_QA_CRITIQUE_PROMPT.md  dikey ölçüm merceği
+QA_PROMPTLARI/1_KARE_QA_CRITIQUE_PROMPT.md (FORMAT: DİKEY)  dikey ölçüm merceği
 DERSLER/07_KURGU_VE_ANLATI.md          D70 · D71 · D72 tam metin
 ```

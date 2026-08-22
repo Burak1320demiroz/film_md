@@ -16,6 +16,27 @@ character may have silently been replaced.
 
 ---
 
+## ⛔ STEP −2 — MEDIA GATE: IS THERE A PLAYABLE VIDEO?
+
+```
+⛔ FIRST ACTION OF THE RUN: measure the attached media's duration.
+
+If no video is attached, the duration cannot be measured, it reads 0 s,
+or not a single frame can be decoded, the ONLY legal output is:
+
+   MEDIA MISSING — RUN NOT STARTED
+   Attached media: none readable.
+   No scores. No verdict. No severity. No table row.
+
+This block is the ENTIRE output. "INPUT MISSING" is not a legal output and
+never applies to the media itself — it covers DOCUMENTS ONLY. A run without
+media is not a run. A verdict is the result of a measurement; with no media
+there is no measurement, and a page of UNVERIFIABLE categories cannot add
+up to one.
+```
+
+---
+
 ## ⛔ STEP −1 — INPUT MODE: THIS RUBRIC IS VIDEO-ONLY, ALWAYS
 
 > **This prompt is self-contained.** It is written to be run by a model that
@@ -185,7 +206,7 @@ passes before scoring. Do not score from memory.
    character carries, cause and effect             → MANTIK_QA
 ❌ Whether the character is well written, motivated, sympathetic;
    whether their arc lands                         → SENARYO_QA
-❌ The cover image                                 → KAPAK_QA
+❌ The cover image — no rubric owns it; it is checked by hand
 ❌ Anything you think is MISSING — you have no bible, so you cannot know.
 ```
 
@@ -378,6 +399,11 @@ absence that is scattered: present in some scenes and gone in others. A
 throughout-absence you suspect is deliberate goes to FLAGS as a question.
 BASELINE: SELF-CONSISTENCY — this review measures whether each character
           agrees with themselves, not whether they match a design sheet.
+
+ARITHMETIC GATE — write these three numbers BEFORE the score
+  SCORED CATEGORIES:  __        (UNVERIFIABLE and N/A excluded, never 0)
+  SUM OF SCORES:      __._
+  DIVISION:           __._ ÷ __ = __._      ← this is OVERALL SCORE
 
 OVERALL SCORE: __/10
 VERDICT: [SAME PERSON THROUGHOUT / DRIFTS BUT RECOVERABLE / IDENTITY BREAK]

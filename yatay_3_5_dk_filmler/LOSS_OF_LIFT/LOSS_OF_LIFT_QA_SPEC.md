@@ -8,24 +8,27 @@
 
 ---
 
-## 🚦 HANGİ RUBRİĞE NE VERİLİR — önce bunu oku
+## 🚦 HANGİ RUBRİĞE NE VERİLİR
 
 ```
-📖 SENARYO_QA   → aşağıdaki A BLOĞU yapıştırılır          MOD D
-🔧 VIDEO_QA     → aşağıdaki A + B BLOĞU yapıştırılır       MOD D
-🧩 MANTIK_QA    → ⛔ HİÇBİR ŞEY. Baseline filmin kendi iç tutarlılığıdır.
-🧍 KARAKTER_QA  → ⛔ HİÇBİR ŞEY. Baseline videodan kurulan pasaporttur.
-🔊 SES_QA       → ⛔ HİÇBİR ŞEY. Baseline kurgudan kurulan ses defteridir.
+① 🔧 KARE        → A + B BLOĞU yapıştırılır            MOD D
+④ 📖 HİKAYE      → A BLOĞU yapıştırılır                MOD D
+② 🔗 DEVAMLILIK  → ⛔ HİÇBİR ŞEY (baseline: videodan sahne envanteri
+                                  + karakter pasaportu)
+③ 🔊 SES         → ⛔ HİÇBİR ŞEY (baseline: kurgudan ses defteri)
 
-Belgesiz üç mercek için bu dosyanın işi koşudan SONRA başlar: raporun
-FLAGS FOR DOCUMENT CHECK soruları C BLOĞU'ndan cevaplanır.
-⛔ Her mercek AYRI ve TEMİZ sohbette koşulur [D110] — aynı oturumda ikinci
-   rubrik çalıştırılmaz, yoksa parti tek ölçümün kılıflarına dönüşür.
+⛔ ② ve ③'e belge vermek yasaktır — eksikliği değil, TASARIMI bozar.
+   O iki merceğin değeri filmin kendisiyle çelişip çelişmediğini
+   ölçmesinde; ölçüte plan verilirse ölçüt kaybolur.
+   FLAGS soruları koşudan SONRA C BLOĞU'ndan cevaplanır.
+
+⛔ Her mercek AYRI ve TEMİZ sohbette [D110].
+⛔ Dördüne de AYNI video dosyası verilir [D75].
 ```
 
 ---
 
-## 🅰️ A BLOĞU — SENARYO_QA SPEC (rubriğin alan sırasıyla, birebir yapıştır)
+## 🅰️ A BLOĞU — ④ HİKAYE SPEC (rubriğin alan sırasıyla, birebir yapıştır)
 
 ```
 FILM:                 LOSS OF LIFT
@@ -69,7 +72,7 @@ LIBRARY CONTEXT:      sibling of LOW POWER (same engine: one person, silent
 
 ---
 
-## 🅱️ B BLOĞU — KURGU GEOMETRİSİ (kurgu kapısı ve VIDEO_QA için)
+## 🅱️ B BLOĞU — KURGU GEOMETRİSİ (① KARE'ye A ile birlikte) (kurgu kapısı ve VIDEO_QA için)
 
 ```
 CLIP COUNT:      25          (sahne = çekim = klip; üçü eşit)

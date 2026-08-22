@@ -22,6 +22,27 @@ SPEC does not stop the run. See STEP 0.5.
 
 ---
 
+## ⛔ STEP −2 — MEDIA GATE: IS THERE A PLAYABLE VIDEO?
+
+```
+⛔ FIRST ACTION OF THE RUN: measure the attached media's duration.
+
+If no video is attached, the duration cannot be measured, it reads 0 s,
+or not a single frame can be decoded, the ONLY legal output is:
+
+   MEDIA MISSING — RUN NOT STARTED
+   Attached media: none readable.
+   No scores. No verdict. No severity. No table row.
+
+This block is the ENTIRE output. "INPUT MISSING" is not a legal output and
+never applies to the media itself — it covers DOCUMENTS ONLY. A run without
+media is not a run. A verdict is the result of a measurement; with no media
+there is no measurement, and a page of UNVERIFIABLE categories cannot add
+up to one.
+```
+
+---
+
 ## ⛔ STEP 0 — TWO GATES, TWO AXES
 
 Two independent questions decide what you may score. Declare **both** in the
@@ -499,6 +520,47 @@ That is the standard — not "good for AI video."
 
 ---
 
+## ═══ YOUR SCOPE — and the one thing you hand over ═══
+
+```
+✅ THIS RUBRIC DELIBERATELY CARRIES ALL LENSES. The vertical line has one
+   rubric, so in-frame technique, cross-scene logic, story and music are
+   all yours. Do not hand any of them to another rubric by default.
+```
+
+⛔ **THE ONE HANDOVER — audio.** When a dedicated audio rubric is run on the
+SAME cut, category 16 collapses to a pointer: report the music and sound
+findings there in full, and write one line here naming where they went. The
+same drift is never scored twice. If no audio rubric was run on this cut,
+category 16 is yours and you score it normally.
+
+```
+❌ The cover image — no rubric owns it; it is checked by hand
+❌ In INPUT MODE V, anything you think is MISSING — you have no plan, so
+   you cannot know.
+```
+
+If you notice a defect that is genuinely outside everything above, write ONE
+line at the very end under `OUT-OF-SCOPE FLAGS` and nothing more.
+
+```
+⛔ AN OUT-OF-SCOPE FINDING CARRIES NO NUMBER — AND NEITHER DOES THE
+   CATEGORY IT WOULD HAVE LANDED IN.
+
+"Do not score it" fails silently when the event fits one of your
+categories perfectly. So make the consequence explicit: a defect your
+scope list hands to another lens gets no severity tag, no deduction, no
+row in a contradiction log and no mention in a scores cell. A category
+whose ONLY source is such an observation stays at FULL score and writes
+"no in-scope source" in its issue cell.
+
+Reviews from different lenses are merged into one record. Scoring an
+event that belongs to another lens bills one defect several times and
+drags the film down once per reviewer.
+```
+
+---
+
 ## CRITIQUE CATEGORIES
 
 Category names 1-8 are IDENTICAL to the horizontal technical rubric on
@@ -707,6 +769,17 @@ DECLARED ABSENCE: [none / name it] — when something this rubric measures is
                out of the mean, and the constraint is named in one line.
                Never convert it into a low score; the only way to raise such
                a score is to break the lock.
+CUTS COUNTED: [n + timecodes, or "none — reads as one take"]
+
+⛔ CUTS COUNTED is not optional and not a rounded impression: it is the count
+you made in the baseline step, with its timecodes. A report that names scenes
+without printing this number has not measured the material's shape, and every
+score built on that scene map is a score of a film that may not exist. This
+matters most in MATERIAL MODE B: an assembly is judged by what is actually
+joined in it, and a scene the cut does not contain cannot be scored. In
+MATERIAL MODE A the count is normally zero — a single clip that reads as one
+take — and any non-zero count there is a hidden cut, which is a 🔴 BLOCKER.
+
 GENERATION MODE: [t2v / i2v / (not supplied)]
 SOURCE DOCUMENT: [path as given by the operator, or "(not supplied) — mode V"]
 SPEC BLOCK PROVIDED: [yes / partial — list blank fields / no — mode V]
@@ -931,6 +1004,10 @@ average does not enter the quality table.
 and a conformity score are different measurements and must stay separable in
 the table. `Ⓥ` is not a demerit — a mode V row is a real row.
 ```
+
+## OUT-OF-SCOPE FLAGS
+One line each, no score, no severity. Write "none" if there are none.
+
 
 ## FLAGS FOR DOCUMENT CHECK — INPUT MODE V only
 Everything you could not settle without the production .md, written as a

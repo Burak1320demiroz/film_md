@@ -73,7 +73,7 @@ kısafilmler/
 │   ├── MESHUR_SAHNE_KALIPLARI_KILAVUZU.md 20 ikonik sahne kalıbı + taşınabilirlik + homage/telif sınırı (22.08.2026)
 │   │
 │   ├── QA_PROMPTLARI/             🔍 RUBRİKLER (girdi) — üretilmiş işi eleştirir
-│   │   │  ⭐ altısı da SALT PROMPT + TEK DOSYA çalışır: medya + rubrik,
+│   │   │  ⭐ dördü de SALT PROMPT + TEK DOSYA çalışır: medya + rubrik,
 │   │   │     başka hiçbir şey. Rubriğe YAZILMAZ: Türkçe not, tarih,
 │   │   │     film adı, [DERS n] etiketi, depo yolu. Ders GÖVDEYE KURAL
 │   │   │     olarak girer; numarası CALISTIRMA_KAYITLARI'ndaki iz
@@ -84,26 +84,28 @@ kısafilmler/
 │   │   ├── CALISTIRMA_KAYITLARI.md   koşu tarihçesi + ders dipnotları —
 │   │   │                             12.08.2026'da rubriklerden taşındı
 │   │   ├── FILME_OZEL/               film-özel üretim kapıları (tabloya girmez)
-│   │   ├── VIDEO_QA_CRITIQUE_PROMPT.md          teknik · video (+SPEC)
-│   │   ├── MANTIK_VE_DEVAMLILIK_QA_CRITIQUE_PROMPT.md  mantık · YALNIZ video
-│   │   ├── KARAKTER_DEVAMLILIK_QA_CRITIQUE_PROMPT.md   karakter · YALNIZ video
-│   │   ├── SES_VE_DIYALOG_QA_CRITIQUE_PROMPT.md ses/diyalog · YALNIZ KURGU
-│   │   ├── SENARYO_QA_CRITIQUE_PROMPT.md        hikaye · video (+PLAN)
-│   │   └── SHORTS_QA_CRITIQUE_PROMPT.md         dikey 9:16
+│   │   ├── ARSIV_6_MERCEK/           ⛔ eski 6 rubrik — ÇALIŞTIRILMAZ, kanıt
+│   │   ├── 1_KARE_QA_CRITIQUE_PROMPT.md         ① sahne içi · yatay VEYA dikey
+│   │   ├── 2_DEVAMLILIK_QA_CRITIQUE_PROMPT.md   ② sahneler arası · dünya+gövde
+│   │   ├── 3_SES_QA_CRITIQUE_PROMPT.md          ③ film boyu ses · YALNIZ KURGU
+│   │   └── 4_HIKAYE_QA_CRITIQUE_PROMPT.md       ④ film boyu anlatı · (+PLAN)
 │   │
 │   ├── FILM_QA_RAPORLARI/         📊 SONUÇLAR (çıktı) — buraya YAZILIR
 │   │   ├── 00_INDEX.md               ⭐ PROJEDEKİ TEK SAYAÇ + tamlık matrisi
 │   │   ├── 01_FILM_RAPORLARI/        film başına kalıcı QA kaydı
 │   │   ├── 02_HAM_RAPORLAR/          modelin ham çıktısı, dokunulmaz
-│   │   ├── 03_HIKAYE_KALITE_TABLOSU.md   SENARYO_QA skorları
-│   │   ├── 04_MANTIK_KALITE_TABLOSU.md   MANTIK_QA skorları
-│   │   ├── 05_SHORTS_KALITE_TABLOSU.md   SHORTS_QA skorları (06.08 açıldı)
-│   │   ├── 06_KARAKTER_KALITE_TABLOSU.md KARAKTER_QA skorları
-│   │   ├── 07_SES_KALITE_TABLOSU.md      SES_QA skorları (09.08 açıldı)
+│   │   ├── T1_KARE_KALITE.md         ① skorları        ⭐ CANLI
+│   │   ├── T2_DEVAMLILIK_KALITE.md   ② skorları        ⭐ CANLI
+│   │   ├── T3_SES_KALITE.md          ③ skorları        ⭐ CANLI
+│   │   ├── T4_HIKAYE_KALITE.md       ④ skorları        ⭐ CANLI
+│   │   ├── 03_ · 04_ · 05_ · 06_ · 07_   ⛔ KAPALI (22.08) — eski 6 mercekli
+│   │   │                             sistemin skorları; yeni satır YAZILMAZ,
+│   │   │                             yenilerle KARŞILAŞTIRILAMAZ
 │   │   └── 08_YAYIN_PERFORMANS_TABLOSU.md ⭐ tek İZLEYİCİ tablosu — diğer
-│   │                                 beşini bir model doldurur, bunu
+│   │                                 dördünü bir model doldurur, bunu
 │   │                                 gerçek veri doldurur (22.08 açıldı)
-│   │                                 (yatay TEKNİK skorlar → LESSONS_LEARNED)
+│   │                                 (LESSONS_LEARNED teknik tablosu da
+│   │                                  22.08'de KAPANDI → T1)
 │   │
 │   └── URETIM_ONCESI_ANALIZ/      🧪 META-ANALİZ — üretmeden önce oku
 │       ├── 01_DERS_ETKINLIK_RAPORU.md    hangi ders işe yaradı, hangisi yaramadı
@@ -201,7 +203,7 @@ YAZ
       · KURGU_RITMI_VE_IHRAC_KILAVUZU.md §2 — ardışık iki sahne aynı
         ölçek + palet + ses dokusunda OLAMAZ (örüntü kırıcı kapısı)
  □ ⭐ <FILM>_QA_SPEC.md yazılır — yazım paketinin son parçası [Ders 117]
-      A bloğu SENARYO_QA alanları · B kurgu geometrisi + İNSAN ŞERİDİ ·
+      A bloğu ④ HİKAYE alanları · B kurgu geometrisi + İNSAN ŞERİDİ ·
       C belgesiz merceklerin FLAGS sorularını cevaplayan kilitler
       + TARGET ASL BAND / ASL CURVE satırları (KURGU_RITMI §1; sabit
         ızgaralı filmde gerekçe satırı ZORUNLU [D74])
@@ -317,7 +319,7 @@ BİTİŞ
 
 ---
 
-## ⛔ C/D/E/E2/E3'ÜN ORTAK ADIMLARI — her rapor işlemede önce bunlar
+## ⛔ C/D/E/E3'ÜN ORTAK ADIMLARI — her rapor işlemede önce bunlar
 
 ```
 ① SPEC KAPISI [Ders 94 · teslim biçimi Ders 117]
@@ -417,9 +419,9 @@ BİTİŞ
    karşılaştırır; bu kapı FARKLI dosyalara koşulan aynı merceği karşılaştırır.
 
 ⑧ FRAGMAN MERCEK KAPISI [Ders 111]
-   Malzeme bir FRAGMAN mı? Merceği SHORTS_QA (dikey) / VIDEO_QA (yatay);
-   SENARYO_QA fragmana koşulmaz [FRAGMAN_KILAVUZU §0] ve fragman satırı FİLM
-   tablolarına (03/04) girmez. Yanlış mercek koşulduysa: ham rapor korunur,
+   Malzeme bir FRAGMAN mı? Merceği ① KARE'dir (dikeyse `FORMAT: DİKEY`);
+   ④ HİKAYE fragmana koşulmaz [FRAGMAN_KILAVUZU §0] ve fragman satırı FİLM
+   tablolarına (T1-T4) girmez. Yanlış mercek koşulduysa: ham rapor korunur,
    film kaydı açılır, ⛔ SKOR SATIRI YAZILMAZ, kesme/reçete UYGULANMAZ.
 
 ⑨ HİZALAMA KAPISI [Ders 115]  ⛔ ⑤'TEN SONRA, PLAN ELDEYSE HER KOŞUDA
@@ -447,9 +449,17 @@ BİTİŞ
 
 ---
 
-## 🔧 C — VIDEO_QA (TEKNİK) RAPORU GELDİ
+## 🔧 C — ① KARE RAPORU GELDİ
 
-**Rubrik:** `QA_PROMPTLARI/VIDEO_QA_CRITIQUE_PROMPT.md` · girdi: video (+ SPEC)
+**Rubrik:** `QA_PROMPTLARI/1_KARE_QA_CRITIQUE_PROMPT.md` · girdi: video (+ SPEC)
+
+```
+⛔ FORMAT KAPISI (22.08.2026): raporun ilk satırında `FORMAT:` var mı?
+   YATAY → kategori 12-14 (9:16 · güvenli alan · kanca) N/A olmalı
+   DİKEY → o üçü PUANLI olmalı; boşsa koşu eksiktir, tabloya girmez
+   Rubrik aspect'i dosyadan ölçer. Rapor formatı başlıktan aldığını
+   söylüyorsa ölçüm yapılmamıştır.
+```
 
 ```
 ⛔ ÖNCE KAPI: raporun ilk satırındaki INPUT MODE nedir?
@@ -460,11 +470,11 @@ BİTİŞ
    Rapor "INPUT MISSING" diyorsa rubrik güncel değildir ya da modele eski
    sürüm verilmiştir — 05.08.2026'dan beri geçersiz bir çıktıdır.
 
-1. HAM RAPORU KAYDET       02_HAM_RAPORLAR/<FILM>_TEKNIK_HAM.md
+1. HAM RAPORU KAYDET       02_HAM_RAPORLAR/<FILM>_KARE_HAM.md
                            model çıktısı olduğu gibi, düzenlemeden
 
 2. FİLM KAYDINI YAZ/GÜNCELLE  01_FILM_RAPORLARI/<FILM>.md
-                           yoksa oluştur · üst blokta üç merceğin durumu,
+                           yoksa oluştur · üst blokta dört merceğin durumu,
                            künye, kategori skor tablosu, bulgular
                            (şablon: 01_FILM_RAPORLARI/THE_INVERSION.md)
 
@@ -490,9 +500,9 @@ BİTİŞ
 
 ---
 
-## 📖 D — SENARYO_QA (HİKAYE) RAPORU GELDİ
+## 📖 D — ④ HİKAYE RAPORU GELDİ
 
-**Rubrik:** `SENARYO_QA_CRITIQUE_PROMPT.md` · girdi: video (+ PLAN dosyası)
+**Rubrik:** `QA_PROMPTLARI/4_HIKAYE_QA_CRITIQUE_PROMPT.md` · girdi: video (+ PLAN)
 
 ```
 ⛔ İKİ MOD VAR (05.08.2026'dan beri):
@@ -505,11 +515,11 @@ BİTİŞ
    senaryo denetimi kimseyi korumuyordu (üç Dawn Front çalıştırması boşa
    gitti).
 
-1. 02_HAM_RAPORLAR/<FILM>_SENARYO_HAM.md      ham çıktı
-2. 01_FILM_RAPORLARI/<FILM>.md                📖 SENARYO QA bölümü
+1. 02_HAM_RAPORLAR/<FILM>_HIKAYE_HAM.md       ham çıktı
+2. 01_FILM_RAPORLARI/<FILM>.md                📖 HİKAYE QA bölümü
    ⭐ mod V ise: FLAGS FOR DOCUMENT CHECK sorularını plan dosyasından
       CEVAPLA ve cevapları buraya yaz (kart E adım 2 ile aynı iş)
-3. 03_HIKAYE_KALITE_TABLOSU.md                skor satırı — TEKNİK TABLOYA DEĞİL
+3. FILM_QA_RAPORLARI/T4_HIKAYE_KALITE.md      skor satırı — T1'E DEĞİL
    | Film | Format | Kanca | Önerme | Yapı | Karakter | Tema | Diyalog | Duygu Yayı | Final | Özgünlük | Tutundurma | Toplam |
    geçerlilik işareti:  ✅ geçerli · ⚠️ ŞARTLI · 🚨 GEÇERSİZ
    mod V satırı:  film adının yanına `Ⓥ` + ⚠️ ŞARTLI
@@ -520,15 +530,29 @@ BİTİŞ
 
 ---
 
-## 🧩 E — MANTIK_QA RAPORU GELDİ
+## 🔗 E — ② DEVAMLILIK RAPORU GELDİ
+*(22.08.2026'da eski E + E2 kartları birleşti — rubrikler birleştiği için.
+Karakter artık opsiyonel derin mercek DEĞİL, bu merceğin gövde yarısıdır.)*
 
-**Rubrik:** `MANTIK_VE_DEVAMLILIK_QA_CRITIQUE_PROMPT.md` · girdi: **yalnız video**
+**Rubrik:** `QA_PROMPTLARI/2_DEVAMLILIK_QA_CRITIQUE_PROMPT.md` · girdi: **yalnız video**
 
 ```
-⛔ TERSİ KURAL: Bu rubriğe DOKÜMAN VERİLMEZ. Baseline filmin kendi iç
-   tutarlılığıdır. "Eksik sahne" raporlaması bu rubrikte yasaktır.
+⛔ TERSİ KURAL: Bu rubriğe DOKÜMAN VERİLMEZ. Baseline STEP 1'de videodan
+   kurulan sahne envanteri + karakter pasaportudur. "Eksik sahne" ve
+   "eksik karakter" raporlaması bu rubrikte yasaktır.
 
-1. 02_HAM_RAPORLAR/<FILM>_MANTIK_HAM.md       ham çıktı
+⛔ İKİ YARI KAPISI: rapor 13 kategoriyi de taşıyor mu?
+   GÖVDE 1-6   kimlik · kostüm · yıpranma · ekipman · çapraz kesme · fizik
+   DÜNYA 7-13  sayaç · coğrafya · zaman-ışık · dünya propu · nedensellik
+               · nicelik+sayı · kurulum
+   Gövde yarısı boşsa koşu YARIMDIR — eski MANTIK_QA'nın ölçtüğü kadarını
+   ölçmüştür ve tabloya tam satır olarak girmez.
+
+⛔ ⚠️ PARTIAL KAPISI: kanıtı 3 sahneden az ya da sürenin %25'inden azı
+   olan kategori numarasız kalır ve ortalamaya girmez. Numaralı bir
+   ⚠️ PARTIAL hücresi aritmetik hatasıdır.
+
+1. 02_HAM_RAPORLAR/<FILM>_DEVAMLILIK_HAM.md   ham çıktı
 2. ⭐ FLAGS FOR DOCUMENT CHECK sorularını plan dosyasından CEVAPLA
       → rubriğin ikinci yarısı budur; en değerli bulgular buradan çıktı
       → cevapları 01_FILM_RAPORLARI/<FILM>.md içine yaz
@@ -539,46 +563,37 @@ BİTİŞ
       hayır → bulgu ayakta
       ⚠️ Third Dune: üç MAJOR'ın ikisi buradan düştü (araç gömülmesi =
          filmin orta noktası · kalkış çanağı = planlı S22)
-3. 04_MANTIK_KALITE_TABLOSU.md                skor satırı
-   | Film | Fizik | Sayaç | Coğrafya | Zaman-Işık | Kostüm-Prop | Nedensellik | Nicelik | Kurulum | Genel |
-4. 00_INDEX.md                                🧩 sütunu + sayım
+2c. ⭐ KİMLİK / SAYAÇ KAPISI — diğer bütün skorları ezen iki bulgu
+      Rapor IDENTITY BREAK (başka yüz ya da ekranda kopya karakter) veya
+      sayaç tersinmesi bildiriyorsa, ortalama ne olursa olsun verdict'in
+      ilk satırı odur ve film kaydına ÖNCE o yazılır.
+
+3. FILM_QA_RAPORLARI/T2_DEVAMLILIK_KALITE.md   skor satırı
+   | Film | Kimlik | Kostüm | Yıpranma | Ekipman | Çapraz Kesme | Fizik |
+     Sayaç | Coğrafya | Zaman-Işık | Dünya Propu | Nedensellik |
+     Nicelik+Sayı | Kurulum | Toplam |
+4. 00_INDEX.md                                ② sütunu + sayım
 5. Yeni ders → kart G
 6. commit
 ```
 
 ---
 
-## 🧍 E2 — KARAKTER_QA RAPORU GELDİ
+## 🧍 E2 — KALDIRILDI (22.08.2026)
 
-**Rubrik:** `KARAKTER_DEVAMLILIK_QA_CRITIQUE_PROMPT.md` · girdi: **yalnız video**
-*(05.08.2026'da eklendi — MANTIK_QA 5. kategorisinin karakter tarafını
-derinleştiren opsiyonel mercek; ilk koşu aynı gün: THE STONE SKY 6/10.)*
-
-```
-⛔ TERSİ KURAL: Bu rubriğe DOKÜMAN VERİLMEZ. Baseline STEP 1'de videodan
-   kurulan karakter pasaportudur. "Eksik" raporlaması yasaktır.
-
-1. 02_HAM_RAPORLAR/<FILM>_KARAKTER_HAM.md     ham çıktı
-2. ⭐ FLAGS FOR DOCUMENT CHECK sorularını bible/plan dosyasından CEVAPLA
-      → cevapları 01_FILM_RAPORLARI/<FILM>.md · 🧍 KARAKTER QA bölümüne yaz
-3. 06_KARAKTER_KALITE_TABLOSU.md               skor satırı
-   | Film | Yüz | Saç-Beden | Kostüm | Yıpranma | Ekipman | Kesme | Sayı | Ses | Genel |
-   (tablo 05.08.2026'da Stone Sky ilk koşusuyla açıldı)
-4. 00_INDEX.md · film satırına "+🧍 <skor>" işlenir — 🧍 matrisin /4
-   paydasına GİRMEZ (opsiyonel derin mercek), ayrı sütun açılmaz
-5. ⚠️ MANTIK_QA ile aynı filme koşulduysa kesişen kostüm-prop bulgularını
-   birleştirmede teke indir — aynı hata iki tabloya iki kez yazılmaz
-6. Yeni ders → kart G
-7. commit
-```
+> Karakter merceği ② DEVAMLILIK'in **gövde yarısı** oldu; ayrı kartı yok.
+> Karakter raporu geldiğinde **kart E**'ye bak. Eski kartın tek kuralı
+> oraya taşındı: kesişen kostüm-prop bulguları artık kural değil YAPI
+> gereği tekildir — gövde 1-6, dünya 7-13.
 
 ---
 
-## 🔊 E3 — SES_QA RAPORU GELDİ
+## 🔊 E3 — ③ SES RAPORU GELDİ
 
-**Rubrik:** `SES_VE_DIYALOG_QA_CRITIQUE_PROMPT.md` · girdi: **yalnız video**
-*(09.08.2026'da eklendi — VIDEO_QA 8. kategorisinin ses tarafını film boyuna
-yayan opsiyonel mercek; ilk koşu aynı gün: THE COLD BURN 5/10, DERS 82-83.)*
+**Rubrik:** `QA_PROMPTLARI/3_SES_QA_CRITIQUE_PROMPT.md` · girdi: **yalnız video**
+*(22.08.2026: artık OPSİYONEL DEĞİL — kurguda ses varsa zorunlu dört
+mercekten biri. Eski karakter merceğinin ses/performans yarısı da buraya
+geldi: ses bu merceğin, beden ②'nin.)*
 
 ```
 ⛔ TERSİ KURAL: Bu rubriğe DOKÜMAN VERİLMEZ. Baseline STEP 1'de kurgudan
@@ -607,21 +622,21 @@ yayan opsiyonel mercek; ilk koşu aynı gün: THE COLD BURN 5/10, DERS 82-83.)*
 3. ⭐ FLAGS FOR DOCUMENT CHECK sorularını plan/senaryo dosyasından CEVAPLA
       → cevapları 01_FILM_RAPORLARI/<FILM>.md · 🔊 SES QA bölümüne yaz
 
-4. 07_SES_KALITE_TABLOSU.md                    skor satırı
-   | Film | Atıf | Sentetik | Ses Kimliği | Performans | Sıra-Akustik |
-     Ortam | SFX | Miks | Müzik | Genel |
-   (tablo 09.08.2026'da Cold Burn ilk koşusuyla açıldı)
+4. FILM_QA_RAPORLARI/T3_SES_KALITE.md          skor satırı
+   | Film | Ses Durumu | Atıf | Sentetik | Ses Kimliği | Aktarım |
+     Sıra Alma | Ambiyans | SFX Senk | Miks | Müzik | Toplam |
 
-5. 00_INDEX.md · film satırına "+🔊 <skor>" işlenir — 🔊 matrisin /4
-   paydasına GİRMEZ (opsiyonel derin mercek), ayrı sütun açılmaz
+5. 00_INDEX.md · ③ sütunu + sayım — ③ artık matrisin /4 paydasının
+   TAM ÜYESİDİR (22.08'e kadar opsiyonel derin mercekti ve bu yüzden
+   34 film kaydının yalnız 5'inde ses raporu vardı)
 
 6. ⚠️ KESİŞİM BİRLEŞTİRME — aynı filme koşulan diğer mercekler:
-      KARAKTER_QA 8. kategorisi (Ses) → bulgu SES_QA'da kalır, orada
-        işaretçiye iner; skor iki tabloya iki kez yazılmaz
-      VIDEO_QA 8. kategorisi (Diyalog ve Ses) → tek klip ölçüldüyse yerinde
-        kalır; AYNI KURGU ölçüldüyse ses bulguları SES_QA'ya devredilir
+      ① KARE 8. kategorisi (Diyalog ve Ses) → tek klip ölçüldüyse yerinde
+        kalır; AYNI KURGU ölçüldüyse ses bulguları ③'e devredilir
+      ② DEVAMLILIK ile kesişim YOK — ses bu merceğin, beden ②'nin;
+        ayrım rubriklerin kapsam bloğunda yapısaldır
       OUT-OF-SCOPE FLAGS satırları ilgili merceğin kaydına taşınır
-      (dudak-fonem ve vakumda ses → VIDEO_QA · altyazı → VIDEO_QA D40)
+      (dudak-fonem · vakumda ses · altyazı → ① KARE)
 
 7. ⭐ "FIXABLE IN THE MIX vs REQUIRES REGENERATION" tablosunu 00_INDEX
    YAPILACAKLAR listesine iki ayrı blok olarak geçir — bu merceğin
@@ -791,9 +806,10 @@ tipler:  film    yeni/güncellenen film dokümanı
 🟡 URETIM_ONCESI_ANALIZ/01 ders etkinlik raporu 01.08.2026 kesitinde
    (50 ders); D51-119 hiç ölçülmedi — rapor yeniden koşulmalı
 
-🟡 sayac.sh · VIDEO_QA sayısı eksik
+🟡 sayac.sh · ① KARE sayısı eksik
    Regex kalın yazılmış tablo satırlarını (| **Film** | **Full**) atlıyor.
-   Diğer çıktıları güvenilir; teknik QA sayısı için LESSONS_LEARNED tablosunu say.
+   Diğer çıktıları güvenilir. ⛔ 22.08'den beri ayrıca BAYAT: saydığı
+   LESSONS_LEARNED teknik tablosu KAPANDI, canlı tablo T1_KARE_KALITE.md.
 
 🟡 Ders sayısı üç belgede farklı
    Gerçek kaynak LESSONS_LEARNED.md. URETIM_ONCESI_ANALIZ/00_README ve

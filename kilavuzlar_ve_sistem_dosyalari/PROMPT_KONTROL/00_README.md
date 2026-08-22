@@ -41,7 +41,7 @@ KULLANIM SIRASI — ikisi aynı şeyi ölçmez, ikisi de gerekir
 
 ## ⛔ NEDEN BİRİ BETİK, DİĞERİ RUBRİK
 
-Depodaki diğer yedi rubrik **dış modelde, depoyu göremeden** koşar
+`../QA_PROMPTLARI/` rubrikleri **dış modelde, depoyu göremeden** koşar
 (05.08.2026 kararı: *"göremediğin depoda dosya var deme"*). Bu denetimin
 girdisi ise zaten depodaki `.md` dosyasıdır. Karakter saymak, yasak kelime
 aramak ve `Scene N of X` karşılaştırmak modele sorulacak işler değil —

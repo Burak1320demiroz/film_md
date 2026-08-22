@@ -694,7 +694,8 @@ Things this file does not lock and you could not resolve. Questions only —
 never guesses.
 
 ## OUT-OF-SCOPE FLAGS
-One line each, no score: cover image → KAPAK_QA · story/dramaturgy →
+One line each, no score: cover image → checked by hand, no rubric ·
+story/dramaturgy →
 SENARYO_QA · anything about a scene you were not given.
 ```
 

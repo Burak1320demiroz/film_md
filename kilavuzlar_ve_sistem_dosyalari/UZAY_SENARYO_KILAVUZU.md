@@ -773,7 +773,7 @@ FİLM REFERANSLARI
 BU PROJEDEKİ İLGİLİ DOSYALAR
   KILAVUZ_REHBERI.md §4.1 ......... bilimkurgu tür kartı (teknik kilitler)
   KILAVUZ_REHBERI.md §3 ........... ortam kartları (fizik sözleşmesi)
-  SENARYO_QA_CRITIQUE_PROMPT.md ... üretim sonrası hikaye eleştirisi
+  4_HIKAYE_QA_CRITIQUE_PROMPT.md ... üretim sonrası hikaye eleştirisi
   SAVAS_SENARYO_KILAVUZU.md ....... kardeş kılavuz (savaş türü)
   THE_DEAD_APPROACH / LOW_POWER / THE_WAKING_GROUND ... denetlenen örnekler
   THE_RING_WALKER ................. 📖 ölçülen ilk film (§12, §9.1, §15)

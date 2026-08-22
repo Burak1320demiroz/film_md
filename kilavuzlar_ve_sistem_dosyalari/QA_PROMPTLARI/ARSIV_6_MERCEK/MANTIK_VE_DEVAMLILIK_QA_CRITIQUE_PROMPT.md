@@ -7,6 +7,27 @@ TOGETHER.
 
 ---
 
+## ⛔ STEP −2 — MEDIA GATE: IS THERE A PLAYABLE VIDEO?
+
+```
+⛔ FIRST ACTION OF THE RUN: measure the attached media's duration.
+
+If no video is attached, the duration cannot be measured, it reads 0 s,
+or not a single frame can be decoded, the ONLY legal output is:
+
+   MEDIA MISSING — RUN NOT STARTED
+   Attached media: none readable.
+   No scores. No verdict. No severity. No table row.
+
+This block is the ENTIRE output. "INPUT MISSING" is not a legal output and
+never applies to the media itself — it covers DOCUMENTS ONLY. A run without
+media is not a run. A verdict is the result of a measurement; with no media
+there is no measurement, and a page of UNVERIFIABLE categories cannot add
+up to one.
+```
+
+---
+
 ## ⛔ STEP −1 — INPUT MODE: THIS RUBRIC IS VIDEO-ONLY, ALWAYS
 
 > **This prompt is self-contained.** It is written to be run by a model that
@@ -151,7 +172,7 @@ passes before scoring. Do not score from memory.
    lens, morphing, on-screen text, lip-sync quality      → VIDEO_QA
 ❌ Whether the story moves, whether anyone cares, pacing,
    emotional arc, theme, whether a scene should be cut   → SENARYO_QA
-❌ The cover image                                        → KAPAK_QA
+❌ The cover image — no rubric owns it; it is checked by hand
 ❌ Whether a light is physically motivated (VIDEO_QA owns that). Here you
    only ask whether it MATCHES the neighbouring scenes.
 ❌ Anything you think is MISSING — you have no plan, so you cannot know.
@@ -302,8 +323,20 @@ MATERIAL TYPE: [FILM / TEASER / FILM (undeclared)]
           so a skipped transition is never a causality finding in it; report
           only STATE contradictions — what was opened is closed again, what
           was taken is back, what was damaged is whole.
+⛔ DECLARED ABSENCE IS NOT A DEFICIT. When something this lens measures is
+absent in EVERY scene without a single exception, that is a constraint of the
+material, not a defect. Such a category takes `N/A`, stays out of the mean,
+and the absence is named in one line. Score low only for an absence that is
+scattered: present in some scenes and gone in others. A throughout-absence
+you suspect is deliberate goes to FLAGS as a question, never to a score.
+
 BASELINE: SELF-CONSISTENCY — this review measures whether the film agrees
           with itself, not whether it matches its design.
+
+ARITHMETIC GATE — write these three numbers BEFORE the score
+  SCORED CATEGORIES:  __        (UNVERIFIABLE and N/A excluded, never 0)
+  SUM OF SCORES:      __._
+  DIVISION:           __._ ÷ __ = __._      ← this is OVERALL SCORE
 
 OVERALL SCORE: __/10
 VERDICT: [COHERENT / FIXABLE IN EDIT / STRUCTURAL PROBLEM]

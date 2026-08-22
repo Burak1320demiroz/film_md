@@ -20,6 +20,27 @@ actor than the line before it.
 
 ---
 
+## ⛔ STEP −2 — MEDIA GATE: IS THERE A PLAYABLE VIDEO?
+
+```
+⛔ FIRST ACTION OF THE RUN: measure the attached media's duration.
+
+If no video is attached, the duration cannot be measured, it reads 0 s,
+or not a single frame can be decoded, the ONLY legal output is:
+
+   MEDIA MISSING — RUN NOT STARTED
+   Attached media: none readable.
+   No scores. No verdict. No severity. No table row.
+
+This block is the ENTIRE output. "INPUT MISSING" is not a legal output and
+never applies to the media itself — it covers DOCUMENTS ONLY. A run without
+media is not a run. A verdict is the result of a measurement; with no media
+there is no measurement, and a page of UNVERIFIABLE categories cannot add
+up to one.
+```
+
+---
+
 ## ⛔ STEP −1 — INPUT MODE: THIS RUBRIC IS VIDEO-ONLY, ALWAYS
 
 > **This prompt is self-contained.** It is written to be run by a model that
@@ -530,6 +551,11 @@ DISTINCT VOICES: [n] · REGISTERS: [n human / n machine / n unclear]
 BASELINE: SELF-CONSISTENCY — this review measures whether the soundtrack
           agrees with itself and with the picture, not whether it matches
           a script.
+
+ARITHMETIC GATE — write these three numbers BEFORE the score
+  SCORED CATEGORIES:  __        (UNVERIFIABLE and N/A excluded, never 0)
+  SUM OF SCORES:      __._
+  DIVISION:           __._ ÷ __ = __._      ← this is OVERALL SCORE
 
 OVERALL SCORE: __/10
 VERDICT: [SOUNDTRACK HOLDS / AUDIBLE DRIFT, FIXABLE IN THE MIX /

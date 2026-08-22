@@ -23,11 +23,11 @@ or not a single frame can be decoded, the ONLY legal output is:
    Attached media: none readable.
    No scores. No verdict. No severity. No table row.
 
-This block is the ENTIRE output. The rule below — "'INPUT MISSING' is not
-a legal output" — applies to DOCUMENTS ONLY, never to the media itself:
-a run without media is not a run. A verdict is the result of a measurement;
-with no media there is no measurement, and a page of UNVERIFIABLE categories
-cannot add up to one.
+This block is the ENTIRE output. "INPUT MISSING" is not a legal output and
+never applies to the media itself — it covers DOCUMENTS ONLY. A run without
+media is not a run. A verdict is the result of a measurement; with no media
+there is no measurement, and a page of UNVERIFIABLE categories cannot add
+up to one.
 ```
 
 ---
@@ -320,6 +320,68 @@ from 1 (terrible) to 10 (flawless).
               or a tighter crop. (bloom wash, suit drift, particle hover)
 🟡 MINOR   — Noticeable only on close inspection. Acceptable in AI video.
               (single-frame flicker, slight texture softening, faint grain shift)
+```
+
+---
+
+## ═══ YOUR SCOPE ═══
+
+```
+✅ What goes wrong INSIDE the frame and INSIDE the shot: morphing, melting,
+   anatomy, hidden cuts, camera and lens behaviour, light physics, bloom,
+   particle and material behaviour, texture swimming, on-screen text,
+   lip-sync accuracy, sound that could not exist in that medium at all,
+   frame-anchor seams, negative-bible violations.
+```
+
+⛔ **THE TEST: could you state the finding while looking at ONE scene?** If
+stating it requires TWO scenes — "it was clean here and dirty there" — it is
+not yours. Drift between scenes belongs to another lens, and this rubric can
+be run on a single clip precisely because it never needs a second one.
+
+## ═══ NOT IN THIS PASS ═══
+
+```
+❌ Counters, geography, time-of-day drift, cause and effect, props that
+   change BETWEEN scenes, quantities that disagree      → MANTIK_QA
+❌ Whether the person in scene 12 is the person from scene 3; costume,
+   wear and equipment drift ACROSS scenes               → KARAKTER_QA
+❌ Which character a line belongs to, whether a voice stays one voice,
+   ambience continuity, mix levels, how music behaves   → SES_QA
+❌ Whether the story moves, whether anyone cares, pacing, theme, emotional
+   arc, whether a scene should be cut                   → SENARYO_QA
+❌ The cover image — no rubric owns it; it is checked by hand
+❌ In mode V, anything you think is MISSING — you have no plan, so you
+   cannot know.
+```
+
+The boundary with SES_QA, precisely: **you ask whether the mouth matches the
+words and whether the sound could exist in that medium at all. SES_QA asks
+whether the voice matches the person.** A line whose lip-sync drifts is
+yours. A line coming out of the wrong character is theirs.
+
+The boundary with KARAKTER_QA, precisely: **a face that warps WITHIN one shot
+is yours. A face that is a different face in the NEXT scene is theirs.**
+
+If you notice an out-of-scope defect, write ONE line at the very end under
+`OUT-OF-SCOPE FLAGS` and nothing more. Do not score it. Holding this boundary
+is what lets reports from different rubrics be merged without counting the
+same defect twice.
+
+```
+⛔ AN OUT-OF-SCOPE FINDING CARRIES NO NUMBER — AND NEITHER DOES THE
+   CATEGORY IT WOULD HAVE LANDED IN.
+
+"Do not score it" fails silently when the event fits one of your
+categories perfectly. So make the consequence explicit: a defect your
+scope list hands to another lens gets no severity tag, no deduction, no
+row in a contradiction log and no mention in a scores cell. A category
+whose ONLY source is such an observation stays at FULL score and writes
+"no in-scope source" in its issue cell.
+
+Reviews from different lenses are merged into one record. Scoring an
+event that belongs to another lens bills one defect several times and
+drags the film down once per reviewer.
 ```
 
 ---
@@ -725,11 +787,26 @@ you made in STEP 1, with its timecodes. "several cuts" is not a count. A
 report that names scenes without printing this number has not measured the
 material's shape, and every score built on that scene map is a score of a
 film that may not exist.
+
+⛔ DECLARED ABSENCE IS NOT A DEFICIT. When something this lens measures is
+absent in EVERY scene without a single exception, that is a constraint of the
+material, not a defect. Such a category takes `N/A`, stays out of the mean,
+and the absence is named in one line. Score low only for an absence that is
+scattered: present in some scenes and gone in others. A throughout-absence
+you suspect is deliberate goes to FLAGS as a question, never to a score.
+
 SPEC BLOCK PROVIDED: [yes / partial — list blank fields / no — mode V]
 
+ARITHMETIC GATE — write these three numbers BEFORE the score
+  SCORED CATEGORIES:  __        (UNVERIFIABLE and N/A excluded, never 0)
+  SUM OF SCORES:      __._
+  DIVISION:           __._ ÷ __ = __._      ← this is OVERALL SCORE
+
 OVERALL SCORE: __/10   (mean of the categories that carry a number.
-                        UNVERIFIABLE categories are excluded from the mean,
-                        not counted as zero. State how many were excluded.)
+                        UNVERIFIABLE and N/A categories are excluded from the
+                        mean, never counted as zero. NEGATIVE VIOLATIONS is a
+                        COUNT, not a score — it never enters the mean either.
+                        State how many categories were excluded.)
 VERDICT: [ACCEPT / ACCEPT WITH FIX PASS / REGENERATE]
          (Any 🔴 BLOCKER = REGENERATE, regardless of scores)
 
@@ -830,6 +907,11 @@ write it in this shape so the operator can file it directly:
 If no new failure mode was found, write: "No new lesson — all errors map to
 the failure patterns listed above [list their numbers]."
 
+## OUT-OF-SCOPE FLAGS
+One line each, no score, no severity, no timecode budget — the lens that owns
+it is named at the end of the line. Write "none" if there are none.
+
+
 ## FLAGS FOR DOCUMENT CHECK — mode V only
 Everything you could not settle without the production document, written as a
 QUESTION for the operator to answer from the plan file. Never as a finding.
@@ -839,7 +921,17 @@ QUESTION for the operator to answer from the plan file. Never as a finding.
 If you have nothing to ask, write "none".
 
 ## QUALITY TABLE ROW (for the operator's technical quality table)
-| [Film] | [Sahne] | [Karakter] | [Fizik] | [Kamera] | [Işık] | [Çevre] | [Canlı] | [Hareket] | **_/10** |
+
+⛔ Every column name below must exist VERBATIM in SCORES SUMMARY, and every
+scored category in SCORES SUMMARY must have a column here. A column this
+rubric never scores gets an invented number; a category with no column is a
+measurement the operator's table silently loses.
+
+| [Film] | [Sahne] | [Karakter] | [Fizik] | [Kamera] | [Işık] | [Çevre] | [Canlı] | [Parçacık] | [Diyalog-Ses] | [Kare Çapası] | [Hareket] | [Negatif: n] | **_/10** |
+
+Unverifiable and N/A categories go in EMPTY, never as 0 and never as a guess.
+`[Negatif: n]` is a COUNT of violations, not a score — it is never averaged
+into the total.
 
 ⚠️ Mode V rows are marked: put `Ⓥ` after the film name. A self-consistency
 score and a conformity score are not the same measurement and must stay

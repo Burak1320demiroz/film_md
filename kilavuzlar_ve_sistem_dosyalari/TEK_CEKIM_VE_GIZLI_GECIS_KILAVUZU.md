@@ -476,5 +476,5 @@ PLAN:
 | `SINEMATOGRAFIK_TEKNIK_KILAVUZ.md` §5 | Görünmez geçişler (match cut, J-cut) — bu kılavuz onun genişletilmiş hâli |
 | `SINEMATOGRAFIK_TEKNIK_KILAVUZ.md` §10 | Rolling shutter — whip pan geçişinde zorunlu |
 | `SAHNE_DEVAMLILIK_KILAVUZU.md` | Karakter/ışık çapaları — §6'daki üç şartın altyapısı |
-| `VIDEO_QA_CRITIQUE_PROMPT.md` | Gizli geçiş denetimi QA'ya madde olarak eklenmeli |
+| `1_KARE_QA_CRITIQUE_PROMPT.md` | Gizli geçiş denetimi QA'ya madde olarak eklenmeli |
 | `yatay_7_9_dk_filmler/kilavuzlar/KESINTISIZ_VIDEO_URETIM_TEKNIGI.md` | Start/end frame zinciri — 7-9 dk formatına özel, bu kılavuzla çakışmaz |

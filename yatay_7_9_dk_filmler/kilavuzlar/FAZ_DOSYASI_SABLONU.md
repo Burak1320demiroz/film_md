@@ -254,6 +254,6 @@ film grain.
    ⚠️ İmajlar onaylanmadan video üretme — yanlış imaj = boşa video
 4. Video üretiminde: Start frame + End frame yükle, prompt yapıştır
 5. Her videoyu bir öncekiyle yan yana kontrol et (devamlılık)
-6. Faz bitince VIDEO_QA_CRITIQUE_PROMPT.md çalıştır
+6. Faz bitince 1_KARE_QA_CRITIQUE_PROMPT.md çalıştır
 7. Yeni hata çıkarsa LESSONS_LEARNED.md'ye ders ekle
 ```

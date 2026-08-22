@@ -238,24 +238,27 @@ kilavuzlar_ve_sistem_dosyalari/
 │   ├── 00_README.md ..................... klasör rehberi + ajan akışı
 │   ├── CALISTIRMA_KAYITLARI.md .......... koşu tarihçesi + ders dipnotları
 │   ├── FILME_OZEL/ ...................... film-özel üretim kapıları
-│   ├── VIDEO_QA_CRITIQUE_PROMPT.md ...... yatay · kare içi teknik
-│   ├── MANTIK_VE_DEVAMLILIK_QA_....md ... yatay · sahneler arası (yalnız video)
-│   ├── KARAKTER_DEVAMLILIK_QA_....md .... yatay · karakter kimliği (yalnız video)
-│   ├── SES_VE_DIYALOG_QA_....md ......... ses · konuşmacı atfı + sentetik ses
+│   ├── ARSIV_6_MERCEK/ .................. ⛔ eski 6 rubrik — ÇALIŞTIRILMAZ
+│   ├── 1_KARE_QA_....md ................. ① sahne içi · yatay VEYA dikey
+│   │                                      (FORMAT: DİKEY → 9:16 · güvenli
+│   │                                       alan · kanca kategorileri açılır)
+│   ├── 2_DEVAMLILIK_QA_....md ........... ② sahneler arası · dünya + gövde
+│   │                                      (yalnız video · 13 kategori)
+│   ├── 3_SES_QA_....md .................. ③ konuşmacı atfı + sentetik ses
 │   │                                      (yalnız TAM KURGU — tek klibe koşulmaz)
-│   ├── SENARYO_QA_CRITIQUE_PROMPT.md .... yatay · dramaturji (+PLAN = MOD D ·
-│   │                                      yalnız video = MOD V, satır Ⓥ işaretli)
-│   └── SHORTS_QA_CRITIQUE_PROMPT.md ..... dikey · güvenli alan + hook
+│   └── 4_HIKAYE_QA_....md ............... ④ dramaturji (+PLAN = MOD D ·
+│                                          yalnız video = MOD V, satır Ⓥ)
 │
 ├── 📊 FILM_QA_RAPORLARI/ ................ QA çıktıları — TEK SAYAÇ
 │   ├── 00_INDEX.md ...................... ⭐ film listesi + ölçüm durumu
 │   ├── 01_FILM_RAPORLARI/ ............... film başına QA kaydı
 │   ├── 02_HAM_RAPORLAR/ ................. ham çıktı, özetlenmemiş
-│   ├── 03_HIKAYE_KALITE_TABLOSU.md ...... senaryo QA skorları
-│   ├── 04_MANTIK_KALITE_TABLOSU.md ...... mantık QA skorları
-│   ├── 05_SHORTS_KALITE_TABLOSU.md ...... shorts QA skorları
-│   ├── 06_KARAKTER_KALITE_TABLOSU.md .... karakter QA skorları (opsiyonel mercek)
-│   ├── 07_SES_KALITE_TABLOSU.md ......... ses QA skorları (opsiyonel mercek)
+│   ├── T1_KARE_KALITE.md ................ ① skorları        ⭐ CANLI
+│   ├── T2_DEVAMLILIK_KALITE.md .......... ② skorları        ⭐ CANLI
+│   ├── T3_SES_KALITE.md ................. ③ skorları        ⭐ CANLI
+│   ├── T4_HIKAYE_KALITE.md .............. ④ skorları        ⭐ CANLI
+│   ├── 03_ 04_ 05_ 06_ 07_ .............. ⛔ KAPALI (22.08) — eski 6 mercekli
+│   │                                      sistemin skorları, yeni satır YAZILMAZ
 │   └── 08_YAYIN_PERFORMANS_TABLOSU.md ... ⭐ gerçek izleyici koşuları
 │                                          (22.08.2026 — yukarıdaki altısını
 │                                          bir MODEL doldurur, bunu VERİ

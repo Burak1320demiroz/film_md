@@ -23,6 +23,126 @@
 
 ---
 
+# ⭐⭐ 22.08.2026 — ALTI MERCEK DÖRDE İNDİ
+
+> **Eksen değişti: konu değil ZAMAN.** Kusuru söylemek için kaç sahneye
+> bakman gerekiyor? Bir sahne → ①. İki sahne → ②. Film boyu → ③ (ses) ve
+> ④ (anlatı). Bu eksen depoda zaten vardı: 7-9 dk hattı aynı problemi
+> 3 geçişli bir sistemle çözmüş ve MANTIK+KARAKTER'i tek geçişte,
+> SENARYO+SES'i tek geçişte birleştirmişti.
+
+```
+ÖNCE  6 rubrik · 62 kategori yuvası · 4.266 satır
+SONRA 4 rubrik · 45 kategori yuvası
+      ① KARE       11 + 3 dikey anahtar
+      ② DEVAMLILIK 13   (gövde 1-6 · dünya 7-13)
+      ③ SES         9
+      ④ HİKAYE     10
+```
+
+**Kaybolan kategori yok, kaybolan KOPYA var.** SHORTS_QA'nın 16
+kategorisinin 13'ü ölçüm öncesi taramada başka bir rubriğin aynısı çıktı:
+1-8 birebir VIDEO_QA · 12 negatif · 13 mantık · 14-15 senaryo · 16 ses.
+Gerçekten özgün olan üçü — 9:16 kadraj, güvenli alan, kanca zamanlaması —
+üçü de tek kareden okunur, yani KARE düzeyi ölçümdür. Bu yüzden dikey
+artık ayrı rubrik değil, ① ve ④ içinde bir **FORMAT ANAHTARI**.
+
+**② birleşmesi neden tuttu:** sınır kuralı zaten yazılıydı — *"üzerindeyse
+karakter, dünyaya aitse dünya"*. Birleşmede o kural bir NOT'tan YAPIYA
+döndü: gövde 1-6, dünya 7-13, ve aynı tozlu kol iki kez faturalanamıyor.
+
+**En büyük davranış değişikliği:** karakter ve ses artık OPSİYONEL DEĞİL.
+Eskiden öyleydiler ve bedeli sayıyla ölçülebilir — 34 film kaydının yalnız
+5'inde ses raporu, 10'unda karakter raporu vardı.
+
+**Taşınan yerler:**
+```
+6 rubrik        → ARSIV_6_MERCEK/ (silinmedi: 83 ham rapor onlarla üretildi
+                  ve ancak kendi metinleriyle okunabilirler)
+5 skor tablosu  → ⛔ KAPALI (03 · 04 · 05 · 06 · 07)
+LESSONS teknik  → ⛔ KAPALI  (kendi kusuru da gerekçenin parçası: başlığı
+                  "11 kategori" diyordu, 7 sütun taşıyordu)
+4 yeni tablo    → T1_KARE · T2_DEVAMLILIK · T3_SES · T4_HIKAYE (boş açıldı)
+tamlık matrisi  → payda 3 → 4, ③ SES sütunu eklendi
+AGENTS kartları → C=① · E=② (E2 yutuldu) · E3=③ · D=④
+```
+
+⛔ **Eski ve yeni skorlar KARŞILAŞTIRILAMAZ.** Kategori sayısı, kategori
+sınırları ve ortalamanın paydası değişti. Matristeki her dolu hücre
+arşivlenmiş bir aletin ölçümüdür; ② sütunundaki ✅'ler ise yalnız dünya
+yarısının ölçümüdür — gövde yarısı hiç ölçülmemiştir.
+
+⛔ **HİÇBİR FİLM HENÜZ 4/4 DEĞİL.** Dört merceğin hiçbiri henüz hiçbir
+filme koşulmadı. Sistem yazıldı, sınanmadı — ilk koşu bunu değiştirir ve
+② DEVAMLILIK'in rapor uzunluğu riski (sahne envanteri + karakter pasaportu
+aynı çıktıda) ancak orada ölçülür.
+
+---
+
+# ⭐ 22.08.2026 — ORTAK ÇEKİRDEK: SEKİZ KAPI, ALTI RUBRİKTE BİREBİR AYNI
+
+> **Neden:** Kapılar altı rubriğe rastgele dağılmıştı. Ölçüm öncesi tarama:
+> MEDIA GATE yalnız VIDEO'da (README onu "yaşayan üç durdurucudan biri"
+> sayıyordu) · CUTS COUNTED SHORTS'ta yok · DECLARED ABSENCE VIDEO ve
+> MANTIK'ta yok · ARITHMETIC GATE yalnız SHORTS'ta · SCORES SUMMARY ④
+> SENARYO'da yok · kapsam sınırı (NOT IN THIS PASS) VIDEO ve SHORTS'ta
+> HİÇ YOK — yani en çok kategori taşıyan iki mercek (11 ve 16) başkasının
+> kusurunu kendine yazmasını engelleyen bloktan yoksundu.
+>
+> **Yapılan:** Aşağıdaki sekiz parça kanonik metin hâline getirildi ve
+> altı rubriğe BİREBİR AYNI sözcüklerle yayıldı. Bundan sonra yeni ders
+> çekirdeğe bir kez yazılır, altı kopyaya birlikte iner.
+
+```
+① STEP −2 MEDIA GATE            ← VIDEO'nun sürümü kanonik alındı,
+                                  5 rubriğe eklendi (SES'in kısa kuralı
+                                  tam kapıya yükseldi)
+② CUTS COUNTED zorlama          ← SHORTS ve SENARYO'ya eklendi
+③ DECLARED ABSENCE              ← VIDEO ve MANTIK'a eklendi
+④ ARITHMETIC GATE (3 sayı)      ← SHORTS'un sürümü kanonik, 5 rubriğe
+⑤ SCORES SUMMARY ④              ← SENARYO'ya eklendi
+⑥ NOT IN THIS PASS + sınır      ← VIDEO ve SHORTS'a YAZILDI (yeni metin)
+⑦ OUT-OF-SCOPE sonuç bloğu      ← VIDEO, SHORTS, SENARYO'ya
+⑧ OUT-OF-SCOPE FLAGS çıktısı    ← VIDEO, SHORTS, SENARYO'ya
+```
+
+**Aynı turda kapatılan üç çelişki:**
+
+```
+🔧 SENARYO — DOKUZ MU ON MU
+   Kategori 6 sessiz filmde "dokuz kategori üzerinden ortalama" diyordu,
+   tracking row "on kategori skorunun ortalaması" diyordu. Tabloda N/A'lı
+   üç satır zaten vardı (Kaleida · Unbroken City · Wrong Shadow) ve hangi
+   paydayla hesaplandıkları belirsizdi. İkisi de tek kurala bağlandı:
+   sayı taşıyan kategoriler, N/A ortalamanın DIŞINDA, sıfır sayılmaz.
+
+🔧 VIDEO — NEGATİF İHLAL ORTALAMAYA GİRİYORDU
+   `Negative Violations | __count` bir SAYI hücresi, ④ ise "sayı taşıyan
+   kategorilerin ortalaması" diyor. 4 ihlal, 4/10 gibi ortalamaya
+   girebiliyordu. Açıkça ortalama dışına alındı.
+
+🔧 VIDEO — TABLO SATIRI 11 KATEGORİDEN 7'SİNİ TAŞIYORDU
+   Parçacık · Diyalog-Ses · Kare Çapası · Negatif İhlal operatör tablosuna
+   hiç ulaşmıyordu. SHORTS'taki VERBATIM sütun kapısı buraya da kondu ve
+   satır 11 kategoriye tamamlandı.
+   ⛔ AÇIK BORÇ: LESSONS_LEARNED · KALİTE TAKİP tablosu hâlâ 7 sütunlu ve
+      başlığında "VIDEO_QA · 11 kategori" yazıyor. Bu tablo 4 mercek
+      birleşmesinde T1_KARE_KALITE'ye devredilecek; o güne kadar fazla
+      hücreler ham raporda durur.
+```
+
+**Ölü işaretçi temizliği:** MANTIK ve KARAKTER'in kapsam listesi ile
+RING LIGHT'ın OUT-OF-SCOPE bloğu hâlâ `→ KAPAK_QA`'ya yönlendiriyordu;
+o rubrik 12.08.2026'da kaldırılmıştı. Üçü de "elle kontrol edilir, rubriği
+yok" ile değiştirildi.
+
+**Bu bir hazırlıktır.** Sıradaki adım altı merceğin DÖRDE indirilmesi
+(① KARE · ② DEVAMLILIK · ③ SES · ④ HİKAYE); ortak çekirdek o birleşmenin
+önkoşuluydu. Karar kaydı: eski skor tabloları (03 · 04 · 05 · 06 · 07)
+DONDURULACAK, dört yeni tablo boş açılacak.
+
+---
+
 # 🧭 DERS → RUBRİK İZ DEFTERİ
 
 > **Ne işe yarar:** "Bu ders hangi rubriğe işlendi?" sorusunun TEK cevabı.

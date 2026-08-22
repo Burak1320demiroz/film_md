@@ -180,6 +180,6 @@ VEO_3_1_FAST_DIYALOG_VE_VIDEO_URETIM_KILAVUZU.md  §3 sentaks · §4 lip-sync ·
 YANASMA_VE_KENETLENME_KILAVUZU.md                 §2 ses/dramaturji (üç filmde donan kararlar)
 GOOGLE_FLOW_MUSIC_URETIM_KILAVUZU.md              §10 sessizlik · §14-17 tempo/frekans/künye
 KURGU_VE_TESLIM_KILAVUZU.md §4                    miks/kurgu tarafı
-QA_PROMPTLARI/SES_VE_DIYALOG_QA_CRITIQUE_PROMPT.md ölçüm merceği (register sözlüğünün kaynağı)
+QA_PROMPTLARI/3_SES_QA_CRITIQUE_PROMPT.md ölçüm merceği (register sözlüğünün kaynağı)
 DERSLER                                            D35 · D40 · D78 · D82 · D83 tam metin
 ```

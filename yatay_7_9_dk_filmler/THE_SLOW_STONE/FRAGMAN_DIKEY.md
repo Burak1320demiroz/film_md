@@ -506,7 +506,7 @@ seviyede kesilir — loop noktasında ses adımı YOK [D83].
 ## 📱 GÜVENLİ ALAN HARİTASI (9:16 · 1080×1920)
 
 Kaynak: `KAPAK_FOTOGRAFI_MIMARISI_KILAVUZU.md` §5 · denetleyen rubrik:
-`QA_PROMPTLARI/SHORTS_QA_CRITIQUE_PROMPT.md` §B
+`QA_PROMPTLARI/1_KARE_QA_CRITIQUE_PROMPT.md (FORMAT: DİKEY)` §B
 
 ```
 ┌──────────────────────────────┐ y=0

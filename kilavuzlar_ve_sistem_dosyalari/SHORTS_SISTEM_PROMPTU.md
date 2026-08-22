@@ -76,7 +76,7 @@ KURAL:  Karakterin hiçbir parçası y=1436'nın ALTINA inmez.
 ```
 
 > Bu kural `KAPAK_FOTOGRAFI_MIMARISI_KILAVUZU.md` §5 evrensel matrisinden gelir
-> ve `SHORTS_QA_CRITIQUE_PROMPT.md` §B ile birebir aynıdır — QA bu bandı
+> ve `1_KARE_QA_CRITIQUE_PROMPT.md (FORMAT: DİKEY)` §B ile birebir aynıdır — QA bu bandı
 > denetliyor. "Karakter alt 1/5'te" yazan bir shorts, karakterini açıklama
 > şeridinin arkasına koymuş olur.
 3. **TEK LENS KİLİDİ** — Geniş/establishment: 32mm Cooke anamorphic. Yakın/duygusal: 75mm. İkisi asla karışmaz. Her promptta kamera mesafesi **metre olarak** belirtilir.

@@ -17,6 +17,64 @@ The ONLY time you mention a technical issue is when it actively destroys a
 STORY beat (e.g. the emotional climax is unreadable because the character's
 face never appears). Say so once, then move on.
 
+```
+❌ Physics, hidden cuts, bloom, lip-sync, particles, on-screen text,
+   anything wrong INSIDE one frame                      → VIDEO_QA
+❌ Counters, geography, time-of-day drift, cause and effect, props that
+   change between scenes                                → MANTIK_QA
+❌ Whether the person in scene 12 is the person from scene 3; costume
+   and equipment drift across scenes                    → KARAKTER_QA
+❌ Which character a line belongs to, whether a voice stays one voice,
+   ambience, mix levels, how music behaves in the mix    → SES_QA
+   (you judge whether the LINE IS WELL WRITTEN — subtext, exposition,
+   whether it earns its place. That half is yours and only yours.)
+❌ The cover image — no rubric owns it; it is checked by hand
+❌ In mode V, anything you think is MISSING — you have no plan, so you
+   cannot know.
+```
+
+If you notice an out-of-scope defect, write ONE line at the very end under
+`OUT-OF-SCOPE FLAGS` and nothing more. Do not score it. Holding this boundary
+is what lets reports from different rubrics be merged without counting the
+same defect twice.
+
+```
+⛔ AN OUT-OF-SCOPE FINDING CARRIES NO NUMBER — AND NEITHER DOES THE
+   CATEGORY IT WOULD HAVE LANDED IN.
+
+"Do not report it here" fails silently when the event fits one of your
+categories perfectly. So make the consequence explicit: a defect your
+scope list hands to another lens gets no deduction, no row in a finding
+list and no mention in a scores cell. A category whose ONLY source is
+such an observation stays at FULL score and writes "no in-scope source"
+in its issue cell.
+
+Reviews from different lenses are merged into one record. Scoring an
+event that belongs to another lens bills one defect several times and
+drags the film down once per reviewer.
+```
+
+---
+
+## ⛔ STEP −2 — MEDIA GATE: IS THERE A PLAYABLE VIDEO?
+
+```
+⛔ FIRST ACTION OF THE RUN: measure the attached media's duration.
+
+If no video is attached, the duration cannot be measured, it reads 0 s,
+or not a single frame can be decoded, the ONLY legal output is:
+
+   MEDIA MISSING — RUN NOT STARTED
+   Attached media: none readable.
+   No scores. No verdict. No severity. No table row.
+
+This block is the ENTIRE output. "INPUT MISSING" is not a legal output and
+never applies to the media itself — it covers DOCUMENTS ONLY. A run without
+media is not a run. A verdict is the result of a measurement; with no media
+there is no measurement, and a page of UNVERIFIABLE categories cannot add
+up to one.
+```
+
 ---
 
 ## ⛔ STEP −1 — INPUT MODE (declare this in the first line of your report)
@@ -473,8 +531,10 @@ Online, the first 10 seconds decide everything.
 - ⛔ **FULLY SILENT FILM → SCORE THIS CATEGORY `N/A`, NOT A NUMBER.**
   Silence is a declared constraint of this series, not a deficit. Scoring a
   wordless film 5/10 for "being wordless" penalises the design and drags the
-  average toward the mean for no reason. Compute the OVERALL score over the
-  remaining nine categories. If the film has even one spoken line, score
+  average toward the mean for no reason. An `N/A` category stays OUT of the
+  mean — it is never counted as zero and never counted as ten. Compute the
+  OVERALL score over the categories that actually carry a number, exactly as
+  the ARITHMETIC GATE requires. If the film has even one spoken line, score
   normally.
 - SCORE: __/10 (or N/A — silent film)
 
@@ -643,7 +703,16 @@ FILM: [title — or "(not supplied)" in mode V; never read off a title card]
 FORMAT: [2-4dk / 3-5dk / 7-9dk — or "(not supplied)"]
 RUNTIME: [seconds — say "measured" or "~x ESTIMATED", never both]
 SCENE COUNT: [counted by you in mode V — say "counted, not from a document"]
-CUTS COUNTED: [n — the number from the material gate, not an impression]
+CUTS COUNTED: [n + timecodes — the number from the material gate]
+
+⛔ CUTS COUNTED is not optional and not a rounded impression: it is the count
+you made in the material gate, with its timecodes. "several cuts" is not a
+count. A report that names scenes without printing this number has not
+measured the material's shape, and every score built on that scene map is a
+score of a film that may not exist. If your scene map contains a block longer
+than twice the shortest gap you measured between two cuts, split it and count
+again BEFORE you write this line.
+
 SPEC BLOCK PROVIDED: [yes / partial — list blank fields / no — mode V]
 
 — MODE D ONLY —
@@ -660,6 +729,11 @@ DECLARED EMOTIONAL PEAK: [present / ABSENT — name the scene]
 — MODE V ONLY —
 ENDS OR STOPS: [ends / stops — one sentence on the last shot]
 PEAK LOCATED AT: [timecode + scene, or "no peak located"]
+
+ARITHMETIC GATE — write these three numbers BEFORE the score
+  SCORED CATEGORIES:  __        (UNVERIFIABLE and N/A excluded, never 0)
+  SUM OF SCORES:      __._
+  DIVISION:           __._ ÷ __ = __._      ← this is OVERALL SCORE
 
 OVERALL STORY SCORE: __/10
 VERDICT: [SHOOT AS IS / SHOOT WITH TRIMS / REVISE STRUCTURE / REWRITE PREMISE]
@@ -681,6 +755,17 @@ VERDICT: [SHOOT AS IS / SHOOT WITH TRIMS / REVISE STRUCTURE / REWRITE PREMISE]
 ③ An event you called UNVERIFIABLE / NOT OBSERVABLE in one category may NOT
    be scored in a neighbouring one. The label belongs to the OBSERVATION,
    not to the category cell you happened to write it in.
+④ THE OVERALL SCORE IS ARITHMETIC, NOT AN IMPRESSION. Every category begins
+   at 10/10 and loses only the deductions its own Issue cell lists with
+   timecodes. A category whose issue cell reads "no in-scope source", "no
+   source" or the equivalent scores 10/10 — writing that phrase and a number
+   below ten in the same row is a contradiction, and the phrase wins. Then
+   compute the OVERALL SCORE as the mean of the category scores you actually
+   printed, and use that same number everywhere the report asks for a total.
+   Before you finish, add the printed cells and check the mean against your
+   overall: if they disagree, the table is right and the overall is wrong.
+   Two different totals for one film is a defect, and a total that no set of
+   printed cells can produce is a fabricated measurement.
 ```
 
 
@@ -750,6 +835,11 @@ prescribes the destruction of the teaser.
 2. SCENE __: cut the line "[quote]" → it narrates what we already see
 3. SCENE __: move to position [n] → the turn currently lands too late
 
+## OUT-OF-SCOPE FLAGS
+One line each, no score — the lens that owns it is named at the end of the
+line. Write "none" if there are none.
+
+
 ## FLAGS FOR DOCUMENT CHECK — mode V only
 Everything you could not settle without the plan document, written as a
 QUESTION for the operator to answer from the plan file. Never as a finding,
@@ -772,8 +862,11 @@ apart. A mode V row is still a real, usable row — it is not 🚨 GEÇERSİZ.
 ```
 
 > ⚠️ The total in the tracking row must equal the OVERALL STORY SCORE at the
-> top of the report. Compute it once (mean of the ten category scores) and use
-> the same number in both places. Two numbers for one film is a defect.
+> top of the report. Compute it once — the mean of the categories that carry
+> a number, `N/A` categories excluded from the mean, never counted as zero —
+> and use the same number in both places. The ARITHMETIC GATE at the top of
+> the report is that calculation; this row repeats its result and never
+> recomputes it. Two numbers for one film is a defect.
 
 ---
 

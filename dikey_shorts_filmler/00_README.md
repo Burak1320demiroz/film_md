@@ -1,12 +1,14 @@
 # 📱 SHORTS KLASÖRÜ — DURUM VE KURALLAR
 
-> **Son güncelleme:** 17 Ağustos 2026
+> **Son güncelleme:** 22 Ağustos 2026
 > **Üretici sistem promptu:** `../kilavuzlar_ve_sistem_dosyalari/SHORTS_SISTEM_PROMPTU.md`
-> **Denetleyen rubrik:** `../kilavuzlar_ve_sistem_dosyalari/QA_PROMPTLARI/SHORTS_QA_CRITIQUE_PROMPT.md`
+> **Denetleyen rubrik:** `../kilavuzlar_ve_sistem_dosyalari/QA_PROMPTLARI/1_KARE_QA_CRITIQUE_PROMPT.md`
+> (9:16 beyan edilince açılan 12-14. kategoriler · eski `SHORTS_QA_CRITIQUE_PROMPT.md`
+> 22.08.2026'da `ARSIV_6_MERCEK/` altına taşındı)
 
 ---
 
-## 📦 MEVCUT DOSYALAR — 12
+## 📦 MEVCUT DOSYALAR — 13
 
 | Dosya | Format | Kaynak film | Ders kilidi | Kapak | Başlık paketi | QA |
 |---|:---:|---|:---:|:---:|:---:|:---:|
@@ -22,15 +24,48 @@
 | `THE_FIRST_MORNING_DIKEY_SHORTS.md` | **9:16** | ❌ özgün | ✅ 🆕 | ✅ 🆕 | ✅ 🆕 | ❌ |
 | `THE_WRONG_SHADOW_DIKEY_SHORTS.md` | **9:16** | ❌ özgün | ✅ 🆕 | ✅ 🆕 | ✅ 🆕 | ❌ |
 | `THE_QUIET_IMPACT_DIKEY_SHORTS.md` | **9:16** | ❌ özgün | ✅ 🆕 | ✅ 🆕 | ✅ 🆕 | ❌ |
+| `THE_SHORT_WAY_DOWN_DIKEY_SHORTS.md` | **9:16** | ❌ özgün | 🆕 zombi kartı | ✅ 🆕 | ✅ 🆕 | ❌ |
 
-On ikisi de **6 sahne × 8 s = 48 saniye.**
+On üçü de **6 sahne × 8 s = 48 saniye.**
+
+> 🆕 **22.08.2026 — THE SHORT WAY DOWN eklendi.** Dikey hattın **ilk ZOMBİ
+> konsepti**, **ilk bina içi mekânı** ve **depodaki ilk gerçek KOVALAMACA**:
+> 48 saniyenin 48 saniyesi kaçıştır. Klasördeki ilk film ki altı sahnesi
+> bağımsız anlar değil **tek kesintisiz inişin parçaları** — beş kesmenin
+> beşi de gizli geçişle (perde) tasarlandı ve her sahnenin ayrıca bir **I2V
+> DEVAM sürümü** var (`TEK_CEKIM_VE_GIZLI_GECIS_KILAVUZU` §5'in dikeydeki
+> ilk uygulaması).
+> **Mekanik GÜZERGÂH EŞİTSİZLİĞİ:** kadın merdivenden iniyor, takipçiler
+> korkuluğu aşıp DÜŞEREK iniyor — 12 metre 1,56 saniye, ve düştükleri yerden
+> kalkıp devam ediyorlar. Filmin TEK fizik ihlali o kalkıştır; düşüş, çarpma
+> ve toz tamamen doğrudur (ihlalin kanıtı yanındaki normalin kusursuz
+> çalışmasıdır). Doruk: köşeye sıkışan kadın **onların yolunu kullanır** —
+> korkuluğu aşar, 5,5 metre düşer, kalkar ve sol bacağı tutmaz. Bedel aynı
+> karede, döngü aksayarak devam ediyor.
+> ⛔ **RİSK 6/12 — EŞİĞİN ÜSTÜNDE ve bu kabul edilmiş bir maliyettir.**
+> Kart kuralı açık: 5+ ise film şu anki sistemle 5/10'u geçemez. Aksiyon
+> demek HAREKETLİ canlı demektir ve tür 12.08.2026'da tam bu yüzden rafa
+> kalkmıştı [D18]. Dosya riski gizlemiyor, **bütçeliyor**: temas 0 kare
+> (en yakın mesafe 2,5 m) · yüz 0 kare (takipçiler beton tozuyla kaplı —
+> D16 morph + D20 klon zemini birlikte elenir) · takipçi YÜRÜME bütçesi
+> TOPLAM 4,5 saniye (kalan 43,5 saniyede düşüyor, iniyor, kalkıyor,
+> korkuluğu aşıyorlar) · yara/kan/silah/patlama/su 0 kare · kamera 5/6
+> tam lockoff (aksiyon kameradan değil Z ekseninden, kadrajı kesen
+> geçişten ve sesten gelir).
+> ⚠️ Gerçek bir numaralı risk yine kartlarda yok: **düşüp AYAĞA KALKAN
+> gövde** — modelin dört bozulma modu (ağır çekim · yerde bırakma ·
+> patlatma · düşüşü hiç göstermeme) dosyada tek tek yazılı.
+> Sayaç metinsiz tek kanalda: **MESAFE** 9 → 6 → 11 → 7 → 2,5 → 14 m.
+> Üretim **S0'dan** başlar; düşüş+kalkış temiz çıkmazsa film üretilmez.
+> ✅ prompt_kontrol.py: **0 BLOCK, 0 FIX — GO**; 6 video promptu
+> 2.006-2.337 karakterle hedef bandın içinde.
 
 > 📎 **DIŞ DOSYA — bu klasörde DEĞİL:** `THE SECOND SHIP — FRAGMAN`
 > (`yatay_10_20_dk_filmler/THE_SECOND_SHIP/FRAGMAN.md`). Dosya iki
 > formatlıdır — **9:16 dikey 6 × 10 s = 60 s ana teslim** + 16:9 yatay
 > 9 × 10 s = 90 s varyant — ve çapa blokları kaynak filmin
 > `REFERANS_PAKETI.md`'sinden geldiği için filmin kendi klasöründe
-> durur. **Yukarıdaki 12'lik sayıma ve 8 saniye kuralına dahil
+> durur. **Yukarıdaki 13’lük sayıma ve 8 saniye kuralına dahil
 > değildir.** İlk **10 saniyelik dikey** teslimdir; süre sapmasının
 > gerekçesi dosyanın "BİLİNÇLİ SAPMALAR" bölümünde yazılıdır.
 
@@ -189,7 +224,16 @@ düzeltildi.
 
 ---
 
-## 🧪 ÖLÇÜM DURUMU — 3 dosyanın 0'ı QA edilmiş
+## 🧪 ÖLÇÜM DURUMU — dikey denetimi hiçbir dosyaya uygulanmadı
+
+> Dosya sayısı için yukarıdaki tabloya bak; bu bölüm SAYI TUTMAZ.
+>
+> ⚠️ **22.08.2026:** rubrik klasörü altı mercekten dörde iniyor. Dikey
+> denetimi artık ayrı bir dosya değil, `1_KARE_QA_CRITIQUE_PROMPT.md`
+> merceğinin **9:16 format anahtarıdır** (beyan verilince 12-14.
+> kategoriler puanlanır). Eski `SHORTS_QA_CRITIQUE_PROMPT.md`
+> `ARSIV_6_MERCEK/` altında duruyor. Aşağıdaki liste geçiş sonrası
+> yeni mercek adıyla okunur.
 
 `SHORTS_QA_CRITIQUE_PROMPT.md` yazılmış (10 kategori, güvenli alan denetimi
 dahil) ama **hiçbir shorts'a uygulanmamış.**
@@ -207,6 +251,7 @@ hikaye, iki format. Şimdiye kadar hiç sorulamamış soruyu cevaplar:
 □ THE_SLOW_STONE dikey → SHORTS_QA
 □ NINE_MINUTES        → SHORTS_QA (16:9 olduğu için A/9:16 kategorisi N/A işaretlenir)
 □ THE_WALKING_DAY     → SHORTS_QA (aynı not)
+□ THE_SHORT_WAY_DOWN  → 1_KARE (dikey)
 ```
 
 > ⭐ **Kontrol grubu artık iki tane.** Slow Tide ve Slow Stone'un ikisi de

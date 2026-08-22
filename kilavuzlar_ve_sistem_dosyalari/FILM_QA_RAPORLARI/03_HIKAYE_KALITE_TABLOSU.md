@@ -1,4 +1,23 @@
-# 📖 HİKAYE KALİTE TABLOSU
+# 📖 HİKAYE KALİTE TABLOSU  ⛔ KAPALI
+
+> # ⛔ BU TABLO KAPALIDIR — 22.08.2026
+>
+> **Satırları `SENARYO_QA` rubriğinin ölçümüdür.** O rubrik aynı gün arşive
+> alındı: `../QA_PROMPTLARI/ARSIV_6_MERCEK/`. Yerini `④ 4_HIKAYE` aldı ve
+> yeni satırlar **başka bir paydayla** ölçülüyor.
+>
+> ```
+> YENİ SATIR BURAYA YAZILMAZ  →  T4_HIKAYE_KALITE.md
+> ```
+>
+> ⛔ **Buradaki skorlarla yeni tablonunkiler KARŞILAŞTIRILAMAZ.** Kategori
+> sayısı, kategori sınırları ve ortalamanın paydası değişti; aynı filme
+> iki sistemde verilen iki puan iki farklı ölçüdür, birinin diğerinden
+> yüksek olması bir şey söylemez.
+>
+> Tablo silinmedi ve silinmeyecek — bu depoda 11 filmin ham raporu bir kez
+> kayboldu ve geriye yalnız bu tür özet satırları kaldı. Aşağıdaki her şey
+> tarihsel kayıttır ve olduğu gibi durur.
 
 > **Kaynak prompt:** `../QA_PROMPTLARI/SENARYO_QA_CRITIQUE_PROMPT.md`
 > **Oluşturma:** 31 Temmuz 2026

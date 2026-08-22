@@ -165,7 +165,24 @@
 
 ---
 
-## 📊 KALİTE TAKİP TABLOSU
+## 📊 KALİTE TAKİP TABLOSU  ⛔ KAPALI
+
+> # ⛔ BU TABLO KAPALIDIR — 22.08.2026
+>
+> **Satırları `VIDEO_QA` rubriğinin ölçümüdür.** O rubrik aynı gün arşive
+> alındı: `QA_PROMPTLARI/ARSIV_6_MERCEK/`. Yerini `① 1_KARE` aldı.
+>
+> ```
+> YENİ SATIR BURAYA YAZILMAZ  →  FILM_QA_RAPORLARI/T1_KARE_KALITE.md
+> ```
+>
+> Bu tablonun kendi kusuru da kapanış gerekçesinin bir parçası: başlığı
+> "VIDEO_QA · 11 kategori" diyordu ama yalnız 7 sütun taşıyordu —
+> Parçacık, Diyalog-Ses, Kare Çapası ve Negatif İhlal hiç ulaşmıyordu.
+> Yeni tablo 11 kategoriyi de taşır, üstüne dikey için 3 sütun daha.
+>
+> ⛔ Buradaki skorlarla yeni tablonunkiler KARŞILAŞTIRILAMAZ.
+> Tablo tarihsel kayıt olarak olduğu gibi durur.
 
 > 📏 **BU TABLONUN ÇÖZÜNÜRLÜĞÜ ±1.3 PUAN.** Canopy World aynı rubrikle iki
 > kez ölçüldü (satır 1 ve 2): Karakter 7→5, Işık 6→4, Genel 4→3.

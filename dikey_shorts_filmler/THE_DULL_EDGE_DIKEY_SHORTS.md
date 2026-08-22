@@ -125,7 +125,7 @@ hafızasındaki sahne.
 ## 📱 GÜVENLİ ALAN HARİTASI (9:16 · 1080×1920)
 
 Kaynak: `kilavuzlar_ve_sistem_dosyalari/KAPAK_FOTOGRAFI_MIMARISI_KILAVUZU.md` §5
-· denetleyen rubrik: `QA_PROMPTLARI/SHORTS_QA_CRITIQUE_PROMPT.md` §B
+· denetleyen rubrik: `QA_PROMPTLARI/1_KARE_QA_CRITIQUE_PROMPT.md (FORMAT: DİKEY)` §B
 
 ```
 ┌──────────────────────────────┐ y=0

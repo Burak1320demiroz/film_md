@@ -20,7 +20,9 @@ Yeni bir filme başlarken **sırayla** cevapla. Her cevap bir sonrakini daraltı
 ② SÜRE?   2-4 dk / 3-5 dk / 7-9 dk                      → YAPI
 ③ TÜR?    bilimkurgu / (yeni)                           → İÇERİK
           ⏸️ zombi ve savaş RAFTA (12.08.2026 — klasörleri kaldırıldı,
-             kartları §4.2/4.3'te duruyor)
+             kartları §4.2/4.3'te duruyor). YATAY hat rafta; DİKEY hatta
+             iki kart da kullanılıyor: savaş → THE DULL EDGE,
+             zombi → THE SHORT WAY DOWN (22.08.2026)
 ④ ORTAM?  karasal türler  → Dünya atmosferi (SABİT, sorma)
           bilimkurgu      → vakum / ince atm. / Dünya    → FİZİK
 ```
@@ -102,7 +104,7 @@ Yeni bir filme başlarken **sırayla** cevapla. Her cevap bir sonrakini daraltı
 | Tür | Ek okuma |
 |---|---|
 | **Bilimkurgu** | Bölüm 4.1 + Ders 5, 23, 26, 32 + **`UZAY_SENARYO_KILAVUZU.md`** |
-| **Zombi** ⏸️ RAFTA | Bölüm 4.2 + Ders 2, 18 — 12.08.2026'da klasörü ve referans filmi kaldırıldı |
+| **Zombi** ⏸️ YATAY RAFTA · DİKEY AÇIK | Bölüm 4.2 + Ders 2, 18 — 12.08.2026'da yatay klasörü ve referans filmi kaldırıldı; kart 22.08.2026'da dikey hatta geri açıldı, referans film **`dikey_shorts_filmler/THE_SHORT_WAY_DOWN_DIKEY_SHORTS.md`** |
 | **Savaş** ⏸️ RAFTA | Bölüm 4.3 + Ders 38 + **`SAVAS_SENARYO_KILAVUZU.md`** — 12.08.2026'da klasörü ve referans filmi kaldırıldı (dikey `THE_DULL_EDGE` bu kartı kullanmaya devam eder) |
 | **Yeni tür** | Bölüm 4.4 (boş şablon) |
 
@@ -119,7 +121,7 @@ DOSYA:       Tek dosya
 KLİP:        6-8s — Veo native, extend GEREKMEZ ✅
 ÜRETİM:      text-to-video
 ŞABLON:      SHORTS_SISTEM_PROMPTU.md (hazır sistem promptu)
-QA:          QA_PROMPTLARI/SHORTS_QA_CRITIQUE_PROMPT.md ✅ 31.07.2026'da
+QA:          QA_PROMPTLARI/1_KARE_QA_... (FORMAT: DİKEY) ✅ 22.08.2026'da
              sıfırdan yazıldı — LESSONS_LEARNED dersleri, SPEC bloğu, güvenli alan, hook
              zamanlaması. Kategori 1-8 video QA ile aynı (karşılaştırılabilir).
 
@@ -382,10 +384,34 @@ SENARYO
     tuzağı, mimari psikoloji, Çehov, antagonist kanalları)
 ```
 
-## 4.2 ZOMBİ ⏸️ RAFTA (12.08.2026)
+## 4.2 ZOMBİ ⏸️ YATAY RAFTA (12.08.2026) · ✅ DİKEY AÇIK (22.08.2026)
 
-> Klasörü (`yatay_2_4_dk_filmler_zombi/`) ve referans filmi kaldırıldı;
-> tür şimdilik üretilmiyor. Kart, tür geri açılırsa diye duruyor.
+> Yatay klasörü (`yatay_2_4_dk_filmler_zombi/`) ve referans filmi kaldırıldı;
+> yatay hatta tür üretilmiyor. **Kart 22.08.2026'da DİKEY hatta geri açıldı**
+> — referans film `dikey_shorts_filmler/THE_SHORT_WAY_DOWN_DIKEY_SHORTS.md`
+> (savaş kartının THE DULL EDGE'de yaşamaya devam etmesiyle aynı emsal).
+>
+> ⭐ **Kartı geri açan kararın mekanizması, çünkü tekrarlanabilir:** türün
+> rafa kalkma sebebi olan üç kilidin (canlı anatomisi [D2] · yürüyüş
+> eklemlenmesi [D18] · sürü sayısı) üçü de **HAREKETLİ figür** sorunudur —
+> ve bir KOVALAMACA filminde bu sorun elenemez, yalnız **bütçelenebilir.**
+> THE SHORT WAY DOWN'ın yaptığı budur ve sayıları kartın parçası sayılmalı:
+> ```
+> HAREKET BİÇİMİ DEĞİŞTİRİLDİ   takipçiler merdivenden inmez, korkuluğu
+>                               aşıp DÜŞER. Düşüş balistiktir ve model
+>                               onu doğru üretir; D18 yalnız eklemli
+>                               yürüyüşte tetiklenir.
+> YÜRÜME BÜTÇESİ  4,5 sn / 48   kalan 43,5 saniyede takipçiler düşüyor,
+>                               iniyor, kalkıyor ya da korkuluğu aşıyor
+> TEMAS           0 kare        en yakın mesafe 2,5 m → D17/D28 elendi
+> YÜZ             0 kare        figürler beton tozuyla kaplı →
+>                               D16 morph + D20 klon zemini birlikte elenir
+> YARA            0 kare        kartın "2-3 KAPALI yara" bütçesi SIFIRA
+>                               indi; toz doğal sansürdür
+> ```
+> ⛔ Bunlara rağmen film **risk 6/12 ile eşiğin ÜSTÜNDEDİR** ve dosyası
+> bunu gizlemez. Tür geri açıldı ama BEDELSİZ açılmadı: aksiyon isteyen
+> her yeni zombi filmi bu altı satırı yeniden bütçelemek zorundadır.
 
 ```
 KİLİTLER
@@ -556,28 +582,28 @@ off-screen only — no mouth in frame, no invented on-screen speaker.
                    kurgu kapısı + kırpma bütçesi + tek grade/gren
                  → kapıyı geçmeyen filme koşulan QA ÖN KOŞU sayılır [D109]
 
-6. TEKNİK QA     VIDEO_QA_CRITIQUE_PROMPT.md
+6. ① KARE QA     1_KARE_QA_CRITIQUE_PROMPT.md
                  → künye bloğunu DOLDUR, yoksa rapor UNVERIFIABLE döner
                  → ⛔ STEP 0: künyeyi PROMPT DOSYASINDAN kopyala ve doğrula.
                    Uyuşmazsa rapor puanlanmadan durur.
 
-7. SENARYO QA    SENARYO_QA_CRITIQUE_PROMPT.md
+7. ④ HİKAYE QA   4_HIKAYE_QA_CRITIQUE_PROMPT.md
                  → teknik 9/10 olup dramatik olarak ölü olabilir
-                 → ⛔ PLAN DOSYASI OLMADAN ÇALIŞTIRILMAZ. Sahne sayısı, süre,
-                   diyalog sayısı plana karşı doğrulanır; tutmazsa skor GEÇERSİZ.
-                   Skor satırı FILM_QA_RAPORLARI/03_HIKAYE_KALITE_TABLOSU.md'ye
-                   yazılır — LESSONS_LEARNED teknik tablosuna DEĞİL.
+                 → PLAN verilirse MOD D (sahne sayısı · süre · diyalog plana
+                   karşı doğrulanır); plansız MOD V, satır Ⓥ ⚠️ ŞARTLI.
+                   Skor satırı FILM_QA_RAPORLARI/T4_HIKAYE_KALITE.md'ye yazılır.
 
-7b. MANTIK QA    MANTIK_VE_DEVAMLILIK_QA_CRITIQUE_PROMPT.md
-                 → yatayın üçüncü merceği: film kendi kendisiyle çelişiyor mu
+7b. ② DEVAMLILIK 2_DEVAMLILIK_QA_CRITIQUE_PROMPT.md
+                 → film VE içindeki insan kendisiyle çelişiyor mu (13 kat.:
+                   gövde 1-6 kimlik/kostüm/yıpranma/ekipman, dünya 7-13)
                  → ⛔ TERSİ KURAL: bu rubriğe DOKÜMAN VERİLMEZ, yalnız video.
                    Baseline = kendi içinde tutarlılık. Skor satırı
-                   FILM_QA_RAPORLARI/04_MANTIK_KALITE_TABLOSU.md'ye yazılır.
+                   FILM_QA_RAPORLARI/T2_DEVAMLILIK_KALITE.md'ye yazılır.
                  → ⭐ Rapor gelince FLAGS FOR DOCUMENT CHECK sorularını plan
                    dosyasından cevapla. Rubriğin ikinci yarısı bu adımdır.
                    Şimdiye kadarki en değerli bulgular oradan çıktı.
 
-7c. SES QA       SES_VE_DIYALOG_QA_CRITIQUE_PROMPT.md   🆕 09.08.2026
+7c. ③ SES QA     3_SES_QA_CRITIQUE_PROMPT.md
                  → filmde replik veya ses tasarımı varsa koşulur:
                    doğru karakter mi konuşuyor · sentetik ses damgaları ·
                    ses kimliği kayması · ortam sesi kesmede ölüyor mu · miks
@@ -852,6 +878,9 @@ QA KULLANIMI
 | THE BLUE DRIFT | 3-5 dk | 🆕 Mavi dev uydusu: azot kırağısı (0.4g, gece yüzü — yalnız MAVİ planetshine) + vakum/0g | Bilimkurgu (yanaşma/kurtarılma) | Yazıldı, üretilmedi (17.08.2026) · PLAN + PART_A + PART_B + KAPAK + REFERANS_PAKETI (5 sayfa × 4 panel; üç durum çifti aynı sayfada: bacaklar · kollar · ölü/canlı panel) · prompt_kontrol: 50/50 film promptu 0 BLOCK (FIX yalnız uzunluk, gerekçeli) · KAPAK ✅ GO · üretim KAPI 0 (referans + §4 kapısı) → S21 → S15 → S4 → S0 sırasıyla başlar · **Cold Burn + Black Cradle ailesinin MAVİ üçüncüsü — palet üçlemesi kapanır: beyaz → siyah → MAVİ** · ⭐ novum: **ÖLÜ ARACIN YAKALANIŞI** — plazma perdesinin kenarı iticileri öldürür, araç balistik elipste; depodaki beş yanaşma filminde manevrayı hep küçük araç yaptı, ilk kez aktif taraf ANA GEMİDİR ve doruk EDİLGENDİR (sahibi AI: "Tuttum.") · tehdit depoda ilk kez GÖKTEN iner: aurora perdesi (taban 90°→40°, 10 s'de tek dalga, yalnız mavi-menekşe — YEŞİL NEGATİFTE) ve öldüren ışık değil, ışığın habercisi olduğu parçacık yağmuru · 25 sahne (Hook 9 s + 24 × 10 s = 4:09) — klasör standardı, sapma yok · 0 kesme, 25/25 sabit lockoff, 4 viral ara (S4 perde · S7 kalkış · S15 NEFES · S21 yakalayış) · 16 replik / 13 sahne, 10'u MACHINE (KERTE **ana gemidedir**, S9-S11 bağlantı kopuk → atışma yapısal imkânsız [D82]) · CENTRAL CHOICE S14 = kabin havasını itki olarak harcamak (6 düz puf × 1.5 s ile despin 1°/s→0; bedel S16'da mekanik ibrede %40) · doruk S21 %84-88 · ⚠️ risk 5/9 TAM EŞİKTE (kask · 2 insan · sayaç · parçacık-dar · diyalog); su·canlı·ateş·patlama 0 · kartlarda olmayan iki risk planda: MAVİ-ÜSTÜ-MAVİ (beş mavi ton/doku skalası + amber istisna ailesi + HAZIR DÜŞÜŞ) ve AURORA KLİŞESİ · üretim S21 → S15 → S4 → S0 kapılarıyla başlar |
 | THE UPHILL DARK | 3-5 dk | 🆕 Vakum + İTKİ YERÇEKİMİ (0.220 g) | Bilimkurgu (sert gerilim / yanaşma) | Yazıldı, üretilmedi (17.08.2026) · PLAN + PART_A + PART_B + KAPAK + REFERANS_PAKETI · ⚠️ risk 4/9 (kask · 2 insan · sayaç · parçacık); iki 🔴 kart (su·canlı) SIFIR, diyalog kartı SIFIR (0 replik) · ⭐ **yeni ortam kartı: vakum + itki yerçekimi** — vakumun bütün kuralları geçerli (ses yok, gölge mutlak siyah, dolgu yok, alev düz koni) ama "her şey süzülür" GEÇERSİZ: gemi 0.220 g ile yandığı için yanındaki her serbest cisim kıça doğru 2.16 m/s² ile DÜŞER · ⭐ **D23 (sıfır-g rijitliği) yapısal olarak elendi** — filmde 0 kare sıfır-g var; prompt cümlesiyle değil KARARLA kapatıldı · novum'un taşıyıcısı üç KATI NESNE (sarkan kordon · düşen kartuş kovanı · düşen yük) — D73/D76 tuzaklarının ikisi de kapalı · 25 sahne (Hook 9 s + 24 × 10 s = 4:09), 0 kesme, 25/25 sabit lockoff, 4 viral ara (S4·S10·S19·S23), **0 replik** (Ring Light'ın panzehiri bir adım ileri: kaynak kilidi gereken tek replik bile yok → D82 yüzeyi 0) · ikisi de 25/25 sahnede KEMERLİ ve OTURUYOR → biniş/iniş 0 kare [D69 ①] · dört metinsiz sayaç (pencere merdiveni · sarkan kordon · 6→0 kartuş yuvası · 40 dolu→40 boş yük kızağı) · **aritmetik filmin kendisidir**: sabit itkili motor kısılamaz, tırmanmanın tek yolu 6 kartuş (3 çift × 40 m = 120 m), radyatör kanadı tırmanış 2'yi 12 s erken kestirir (22 m) → 16 m açık / 0 kartuş → tek çözüm 900 kg yükü atmak (0.220 g → 0.277 g) · CENTRAL CHOICE S19 %75.7, bedel AYNI KAREDE · doruk S21 temas 0.20 m/s (3:37.9 = %87.5) · turuncu TAM ÜÇ YERDE (iki skafandr · yük kayışı · atma kolu), S19'dan sonra kadrajda kalan tek turuncu iki insandır · ⭐ **REFERANS PAKETİ: varlık başına TEK SAYFA, sayfa başına TAM 4 PANEL** (5 sayfa / 20 panel; 17.08.2026'da 13 tek görselden indirildi) — iki durum çifti (yanaşma açık↔kapalı, kapsül yüklü↔boş) bilerek aynı sayfada, gerekçe ve bedeli dosyanın §0'ında · ✅ prompt_kontrol.py: 0 BLOCK, 50/50 prompt tavanın altında; tek FIX (uzunluk) gerekçesi + İLK RED PROTOKOLÜ PART_A §Üretim Notları'nda · üretim KAPI 0 (referans) → S19 → S21 → S4 → S1 sırasıyla başlar |
 | LOSS OF LIFT | 3-5 dk | 🆕 Sürekli bulut / nötr yüzerlik (Venüs 55 km: 0.53 bar CO2, 0.904 g, bağıl rüzgâr 0-2 m/s) | Bilimkurgu (hayatta kalma / devretme) | **YAZIM: PLAN + PART_A + PART_B (20.08.2026)** — 25 sahne / 50 prompt, insanlı 21 videonun 21'i I2V (karakter videoda kompakt kilit satırı, çevre çapaları birebir); tek replik S22 ("Ağırlık bende kalsın.", telsiz, ağız kadraj dışı); 7 eş kadraj çifti (S0↔S24 · S2↔S17 · S3↔S18 · S9↔S16 · S10↔S20 · S12↔S21 · S11↔S23); prompt_kontrol iki dosyada 0 BLOCK, FIX yalnız uzunluk, tavan aşımı 0 · KAPAK ✅ GO (A: yüz + varmayan yağmur · B: S24 aynası; metin 0, tipografi post'ta) · MUZIK ✅ (§17 künye · TEK TEMPO 48 BPM = 2 ölçü/sahne · skor = kaldırma gazı: katmanlar SÖKÜLEREK ilerler, yalnız CUE C'de eklenir · motif inversiyonu: alçalan iki nota S23'te yükselerek tamamlanır · 30 s sessizlik penceresi S20-S22 — doruk, bedel ve tek replik müziksiz; S20 ıslık takası çıplak [D83]) · YAZIM PAKETİ TAM (PLAN+A+B+KAPAK+MUZIK+**QA_SPEC** [D117]) · ⚡ **21.08.2026 ÜRETİLDİ + 3 QA koşusu — üçü de mod V → ÖN KOŞU [D94]**: 📖 Ⓥ7.0 ŞARTLI (diyalog **9/10**, novum tek cümlede okundu, S0↔S24 çifti paylaşılabilir an seçildi) · 🧩 iki koşu 🚨 GEÇERSİZ (aynı defter, 8/10 ve 6/10 → **D119**) · kurgu kapısı: klip sayısı ✅ süre ✅ **SIRA ⛔** (insan şeridi slot 19/20 ters — doruk yuvası şüpheli → **D118**) · 🔴 4:10-4:15 başlık kartı = ekran metni 0.0 s kilidinin ihlali [D70/72] · kilit çelişkisi defterinde 6 madde ⬜ AÇIK, içerik dersi YAZILMADI [D96] · ⭐ **LOW POWER'ın kardeşi** — aynı motor, yeni malzeme: güç yerine KALDIRMA, toz yerine ASİT, karanlık yerine AŞAĞI · 🆕 **ortam kartı önerisi §3.6** (toz YOK → D39 tetiklenemez · gölge YOK, gölgesizlik MEŞRU → D41 zemini kalkar · güneş diski YOK → D104 zayıflar · kaldırma GERÇEK → çekirdeğin "never hovering" yasağıyla çakışır, çözüm 3.4 emsali: yasak parçacıkta kalır, gövdeye POZİTİF cümle [D59]) · novum = yüzen istasyonun kendisi (katı gövde; D73/D76 kapalı) · 25 sahne × 10 s = 4:09 standart, 0 kesme, 25/25 lockoff, 4 viral ara (S5·S13·S19·S23) · **1 replik** (S22, ağız kadraj dışı) · dört metinsiz sayaç (pin yayı 24 çentik × 250 m · buğu · kaçak ıslığı · sonda feneri) · aritmetik: kaçak 322 kg/s → 30 m/s batış; son tüp 600 kg = zarfa 70 metre ya da sondayı doldurup kolonu asidin üstüne çıkarmaya tam yeter · CENTRAL CHOICE S20, bedel aynı karede · ⚠️ risk 5/9 tam eşikte; su · canlı · parçacık SIFIR (toz/ateş/patlama/egzoz 0 kare) · kartlarda olmayan iki risk planda: okra-üstü-okra tekdüzelik + hovering çakışması |
+| THE BORROWED WEIGHT | 3-5 dk | İnce atm. (adsız gri gezegen: %1.2 bar, 0.92 g, sürekli örtü — güneş diski 0 kare) | Bilimkurgu (fedakârlık / devretme) | **YAZIM PAKETİ TAM (22.08.2026): PLAN + PART_A + PART_B + KAPAK + QA_SPEC [D117]** — 25 sahne / 50 prompt + 2 kapak · 🆕 depoda ilk kez novum İNSANDA yaşıyor: yerden kesilen parça ağırlığını taşıyana devreder (fiziksel yasa tipi; kural 6 sahnede 5 katı nesneyle kanıtlanır — ONERME üç kapısı ✅) · TWIST + tohum finali [FINAL kılavuzu 3-5 dk kuralı]: hafifleyen enkaz gece rüzgârıyla gider, S24'te ova BOŞ · sayaç metinsiz İZ DERİNLİĞİ 2→23 cm + adım eş kadrajı S6↔S18 + rakamsız kantar · 4 replik hepsi MACHINE, dördü ağız-dışı kadraj (lip-sync yapısal imkânsız; HUMAN 0) · 23/23 kask kapalı · ⚠️ risk 5/9 tam eşikte (su·canlı·katman SIFIR) · prompt_kontrol 3 dosyada 0 BLOCK · üretim kapıları S0→S1(kayma)→S5→S20 |
+| THE BORROWED WEIGHT — FRAGMAN (dikey teaser) | shorts 9:16 | İnce atm. (adsız gri gezegen: 0.92 g, %1.2 bar) | Bilimkurgu (fragman/teaser) | Yazıldı, üretilmedi (22.08.2026) · ⭐ dosya kaynak filmin klasöründedir (`yatay_3_5_dk_filmler/THE_BORROWED_WEIGHT/THE_BORROWED_WEIGHT_FRAGMAN_DIKEY.md`) ve **film sayımına GİRMEZ** · kaynak filmi yeniden anlatmaz; ilk %70'ten 6 vuruş (S0·S2·S5·S14·S13·S11), **doruk S20 + kasa S21-22 + iki ışık S23 + twist S24 + kantar/ibre 0 kare** · mekanik **TERAZİ** (her vuruş kefe değiştirir: dünya hafifler ↔ adam ağırlaşır; kaldırış→sürüklenme nedensellik çifti tek vuruşta 0 — novumun görüntüsü girer, mekanizması girmez) · **0 replik** (filmin 4 MACHINE bildirimi fragmana alınmadı — D82 yüzeyi kapalı) · 6/6 tam lockoff · risk 3/9 (kask · sayaç · toz; kaynak film 5/9 — düşen kartlar diyalog ve ikinci yüzey riskleri) · gerçek riskler kartsız: kırpma tuzağı + çekirdek-kayma çakışması (V4, filmin S1 kapısıyla AYNI cümleyi test eder [D59]) + gri-üstü-gri · ekran yönü kilidi dikeyde DERİNLİK eksenine çevrildi (kaynak planın D104 basamağı — kamera hedef yanında, kameraya yürüyüş = hedefe yürüyüş) · loop: V5 ilk adım → V0 yürüyüş (kirişin belirmesi tasarım — 'nereden aldı?' sorusu ikinci izlemeyi satar) · prompt yapısı kaynak filmin **I2V hattı** (Cold Burn T2V emsalinden bilinçli ayrım: yüz-ağırlıklı çapa) · müzik tek cue 60 BPM loop-uyumlu, tek yapısal olay 32,0 s'de boşalma (V4 insansız) · ✅ prompt_kontrol: 12/12, 0 BLOCK, 0 FIX, GO (image bandı üstü gözlem — gerekçe dosyada) · üretim V4 (afiş — kayma kapısı) ile başlar |
+| THE SHORT WAY DOWN (dikey shorts) | shorts 9:16 | Dünya atm. (günümüz, kışın ortası, −4 °C — bitmemiş 14 katlı bloğun çekirdek merdiveni) | 🆕 **Zombi / kaçış aksiyonu** (rafta olan §4.2 kartı dikey hatta geri açıldı) | Yazıldı, üretilmedi (22.08.2026) · ⛔ **risk 6/12 — EŞİĞİN ÜSTÜNDE, kabul edilmiş maliyet** (canlı · ikinci figür · parçacık · katmanlı dünya · kamera · ışık mıknatısı); gerçek risk kartlarda yok: **düşüp AYAĞA KALKAN gövde** — modelin dört bozulma modu dosyada yazılı · ⭐ **depodaki ilk gerçek KOVALAMACA ve klasörün ilk DEVAM ZİNCİRLİ dosyası**: 6 sahne bağımsız an değil tek kesintisiz iniş, 5/5 kesme gizli geçişle (perde) tasarlandı, her sahnenin ayrıca I2V DEVAM sürümü var (TEK_CEKIM §5'in dikeydeki ilk uygulaması) · mekanik **GÜZERGÂH EŞİTSİZLİĞİ**: kadın merdivenden iner, takipçiler korkuluğu aşıp düşerek iner (12,0 m / 1,56 s) ve düştükleri yerden kalkar — filmin TEK fizik ihlali o kalkıştır · novum taşıyıcısı KATI (korkuluk × aşma jesti) → D73 tuzağı elendi · sayaç metinsiz tek kanalda: MESAFE 9→6→11→7→2,5→14 m · temas 0 kare · yüz sayısı 1 · takipçi yürüme bütçesi TOPLAM 4,5 sn · yara/kan/silah/patlama/su 0 kare · kamera 5/6 tam lockoff (aksiyon Z ekseninden ve kadrajı kesen geçişten) · doruk S5 = kadının onların yolunu kullanması, bedel aynı karede (5,5 m düşüş, sol bacak tutmaz) · final DÖNGÜ + TWIST · üretim S0'dan (düşüş+kalkış) başlar · ✅ prompt_kontrol.py: **0 BLOCK / 0 FIX — GO**, 6 video promptu 2.006-2.337 karakterle bandın içinde |
 
 > **Yeni film yazarken:** kendi kombinasyonuna en yakın satırı bul, o filmi
 > şablon olarak aç. Aynı format = aynı yapı. Aynı ortam = aynı fizik.
@@ -869,7 +898,7 @@ BU REHBER NE ZAMAN GÜNCELLENİR
   □ Üretimde yeni tuzak        → Bölüm 7 (en değerli bölüm, besle)
 
 BİLİNEN BORÇLAR
-  • ✅ ÇÖZÜLDÜ — SHORTS_QA_CRITIQUE_PROMPT.md yeniden yazıldı (31.07.2026).
+  • ✅ ÇÖZÜLDÜ — 1_KARE_QA_CRITIQUE_PROMPT.md (FORMAT: DİKEY) yeniden yazıldı (31.07.2026).
     Eski sürüm tek bir yapıma ("KULE 7") gömülüydü ve o film depoda yok.
   • Tür eki klasör adında (`_uzay`) — ölçeklenmiyor (12.08.2026: `_zombi`
     ve `_savas` klasörleri kaldırıldı, tür rafta)

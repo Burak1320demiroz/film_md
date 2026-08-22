@@ -349,7 +349,7 @@ AI KUSURLARI KATEGORILERI:
 □ Renk eşleştirme yapıldı mı? (önceki sahneyle karşılaştır)
 □ Ses katmanı eklendi mi? (ortam sesi + müzik)
 □ J-Cut geçişler uygulandı mı?
-□ QA Critique çalıştırıldı mı? (VIDEO_QA_CRITIQUE_PROMPT.md)
+□ QA Critique çalıştırıldı mı? (1_KARE_QA_CRITIQUE_PROMPT.md)
 □ LESSONS_LEARNED'a yeni hata eklenmesi gerekiyor mu?
 ```
 
@@ -365,5 +365,5 @@ AI KUSURLARI KATEGORILERI:
 | Prompt Terminolojisi | SINEMATOGRAFIK_TEKNIK_KILAVUZ.md | Kamera hareketleri sözlüğü |
 | Coğrafya / Ekran Yönü | UZAMSAL_HARITA_VE_EKRAN_YONU_KILAVUZU.md | Kuşbakışı harita + SPATIAL LOCK; §3 workflow'un coğrafya boyutu |
 | Hata Tespiti | LESSONS_LEARNED.md | QA sonrası ders ekleme |
-| Kalite Kontrolü | VIDEO_QA_CRITIQUE_PROMPT.md | Her render sonrası çalıştır |
+| Kalite Kontrolü | 1_KARE_QA_CRITIQUE_PROMPT.md | Her render sonrası çalıştır |
 | Ses Tasarımı | Post-prodüksiyon | J-Cut, ambient bed |

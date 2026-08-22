@@ -1233,6 +1233,6 @@ Dış kaynaklar (09.08.2026'da tarandı):
 | `DERSLER/` → DERS 87 | coğrafya bulgusu filmin önermesi mi — bulgu tabloya girmeden önceki kapı |
 | `DERSLER/` → DERS 104 | ışık mıknatısı + frontal refleks + iki yenilgi kuralı (§6.7-6.8'in kaynağı) |
 | `yatay_3_5_dk_filmler/THE_BLACK_CRADLE/` | Sürüm 3'ün ölçüm filmi — S4 V1/V2/V3 kapı kayıtları PART_A sonunda; V3 kompozisyon şablonunun dolu örneği S4 promptudur |
-| `QA_PROMPTLARI/MANTIK_VE_DEVAMLILIK_QA_CRITIQUE_PROMPT.md` | Coğrafya kategorisini ölçen rubrik |
+| `QA_PROMPTLARI/2_DEVAMLILIK_QA_CRITIQUE_PROMPT.md` | Coğrafya kategorisini ölçen rubrik |
 | `FILM_QA_RAPORLARI/04_MANTIK_KALITE_TABLOSU.md` | skorların tek kaynağı |
 | `yatay_3_5_dk_filmler/THE_THIRD_DUNE/` | depodaki ilk uygulama — SPATIAL LOCK BIBLE örneği |

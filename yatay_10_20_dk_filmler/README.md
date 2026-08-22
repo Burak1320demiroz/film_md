@@ -257,7 +257,7 @@ Karakter portresi (3 açı) → mekan master çekimleri (boş) → ışık varya
 
 ### ADIM 4 — Perde perde üretim
 Perde tamamlanmadan sonraki perdeye geçilmez. Her perde sonunda:
-kimlik denetimi + `VIDEO_QA_CRITIQUE_PROMPT.md` çalıştırılır.
+kimlik denetimi + `1_KARE_QA_CRITIQUE_PROMPT.md` çalıştırılır.
 
 ### ADIM 5 — Müzik ve Ses
 864 saniyelik yay. Ambient bed perdeler arası kesintisiz devam eder,

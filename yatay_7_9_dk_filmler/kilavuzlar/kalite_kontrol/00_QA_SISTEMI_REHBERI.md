@@ -1,6 +1,6 @@
 # 🔍 3 GEÇİŞLİ QA SİSTEMİ — 7-9 Dakikalık Filmler
 
-> **Neden 3 prompt?** 2-4 dk formatının tek dev QA promptu (`VIDEO_QA_CRITIQUE_PROMPT.md`,
+> **Neden 3 prompt?** 2-4 dk formatının tek dev QA promptu (`1_KARE_QA_CRITIQUE_PROMPT.md`,
 > 11 kategori, 511 satır) 8 saniyelik TEK klip için tasarlandı. 480 saniyelik,
 > 60 sahnelik bir filme aynı prompt uygulandığında model:
 > - ilk 60-90 saniyeden sonra detay çözünürlüğünü kaybeder,
@@ -143,4 +143,4 @@ Bu eşik olmadan ders listesi şişer ve negatif blok karakter bandını (video
 | Kesintisiz Üretim Tekniği | `../KESINTISIZ_VIDEO_URETIM_TEKNIGI.md` | Geçiş 1'in çapa ölçütü |
 | Faz Dosyası Şablonu | `../FAZ_DOSYASI_SABLONU.md` | Düzeltmelerin uygulanacağı yer |
 | Lessons Learned | `../../../kilavuzlar_ve_sistem_dosyalari/LESSONS_LEARNED.md` | 42 ders — eşleştirme kaynağı |
-| Tekil klip QA | `../../../kilavuzlar_ve_sistem_dosyalari/QA_PROMPTLARI/VIDEO_QA_CRITIQUE_PROMPT.md` | Tek 8s klip yeniden üretilince |
+| Tekil klip QA | `../../../kilavuzlar_ve_sistem_dosyalari/QA_PROMPTLARI/1_KARE_QA_CRITIQUE_PROMPT.md` | Tek 8s klip yeniden üretilince |

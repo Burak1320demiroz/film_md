@@ -1,4 +1,23 @@
-# 📱 DİKEY SHORTS KALİTE TABLOSU
+# 📱 DİKEY SHORTS KALİTE TABLOSU  ⛔ KAPALI
+
+> # ⛔ BU TABLO KAPALIDIR — 22.08.2026
+>
+> **Satırları `SHORTS_QA` rubriğinin ölçümüdür.** O rubrik aynı gün arşive
+> alındı: `../QA_PROMPTLARI/ARSIV_6_MERCEK/`. Yerini `① 1_KARE (FORMAT: DİKEY)` aldı ve
+> yeni satırlar **başka bir paydayla** ölçülüyor.
+>
+> ```
+> YENİ SATIR BURAYA YAZILMAZ  →  T1_KARE_KALITE.md
+> ```
+>
+> ⛔ **Buradaki skorlarla yeni tablonunkiler KARŞILAŞTIRILAMAZ.** Kategori
+> sayısı, kategori sınırları ve ortalamanın paydası değişti; aynı filme
+> iki sistemde verilen iki puan iki farklı ölçüdür, birinin diğerinden
+> yüksek olması bir şey söylemez.
+>
+> Tablo silinmedi ve silinmeyecek — bu depoda 11 filmin ham raporu bir kez
+> kayboldu ve geriye yalnız bu tür özet satırları kaldı. Aşağıdaki her şey
+> tarihsel kayıttır ve olduğu gibi durur.
 
 > **Kaynak prompt:** `../QA_PROMPTLARI/SHORTS_QA_CRITIQUE_PROMPT.md`
 > **Oluşturma:** 06.08.2026 — rubriğin dipnotundaki borç kapandı: "kapıları

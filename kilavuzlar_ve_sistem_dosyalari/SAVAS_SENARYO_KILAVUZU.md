@@ -654,7 +654,7 @@ FİLM REFERANSLARI
 
 BU PROJEDEKİ İLGİLİ DOSYALAR
   KILAVUZ_REHBERI.md §4.3 ......... savaş tür kartı (teknik kilitler)
-  SENARYO_QA_CRITIQUE_PROMPT.md ... üretim sonrası hikaye eleştirisi
+  4_HIKAYE_QA_CRITIQUE_PROMPT.md ... üretim sonrası hikaye eleştirisi
   LESSONS_LEARNED.md .............. Ders 1 (kesme), 2 (anatomi), 38 (hasar)
   THE_LAST_BLOCK_WAR_FILM.md ...... uygulanmış örnek
 ```

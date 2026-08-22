@@ -146,7 +146,7 @@ istasyon üstüne gelirken elleri hâlâ yanındadır.
 ## 📱 GÜVENLİ ALAN HARİTASI (9:16 · 1080×1920)
 
 Kaynak: `kilavuzlar_ve_sistem_dosyalari/KAPAK_FOTOGRAFI_MIMARISI_KILAVUZU.md` §5
-evrensel matrisi · denetleyen rubrik: `QA_PROMPTLARI/SHORTS_QA_CRITIQUE_PROMPT.md` §B
+evrensel matrisi · denetleyen rubrik: `QA_PROMPTLARI/1_KARE_QA_CRITIQUE_PROMPT.md (FORMAT: DİKEY)` §B
 
 ```
 ┌──────────────────────────────┐ y=0
@@ -1241,7 +1241,7 @@ yapıştırman yeterlidir.
 
 > `URETIM_ONCESI_ANALIZ/03_PLAN_ONCESI_KONTROL_LISTESI.md` §E gereği plan
 > dosyasına ÜRETİMDEN ÖNCE yazılır. Projede 4 rapor bu blok olmadığı için
-> şartlı ya da geçersiz oldu. `SHORTS_QA_CRITIQUE_PROMPT.md` §SPEC BLOCK'a
+> şartlı ya da geçersiz oldu. `1_KARE_QA_CRITIQUE_PROMPT.md (FORMAT: DİKEY)` §SPEC BLOCK'a
 > olduğu gibi yapıştır.
 
 ```

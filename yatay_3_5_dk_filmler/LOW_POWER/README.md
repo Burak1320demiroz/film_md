@@ -68,7 +68,7 @@ MARS'A ÖZEL 3 KRİTİK RİSK (her üretimde ilk kontrol edilecek):
 |---|---|
 | `../README.md` | 3-5 dk format kuralları |
 | `../../kilavuzlar_ve_sistem_dosyalari/LESSONS_LEARNED.md` | 38 ders — negatif blokların kaynağı |
-| `../../kilavuzlar_ve_sistem_dosyalari/QA_PROMPTLARI/VIDEO_QA_CRITIQUE_PROMPT.md` | Üretim sonrası teknik QA |
-| `../../kilavuzlar_ve_sistem_dosyalari/QA_PROMPTLARI/SENARYO_QA_CRITIQUE_PROMPT.md` | Üretim sonrası senaryo eleştirisi |
+| `../../kilavuzlar_ve_sistem_dosyalari/QA_PROMPTLARI/1_KARE_QA_CRITIQUE_PROMPT.md` | Üretim sonrası teknik QA |
+| `../../kilavuzlar_ve_sistem_dosyalari/QA_PROMPTLARI/4_HIKAYE_QA_CRITIQUE_PROMPT.md` | Üretim sonrası senaryo eleştirisi |
 | `../../kilavuzlar_ve_sistem_dosyalari/VIRAL_BASLIK_VE_ACIKLAMA_PROMPT.md` | YouTube/Instagram/TikTok paketlemesi |
 | `../../kilavuzlar_ve_sistem_dosyalari/KAPAK_FOTOGRAFI_MIMARISI_KILAVUZU.md` | Kapak tasarım kuralları |

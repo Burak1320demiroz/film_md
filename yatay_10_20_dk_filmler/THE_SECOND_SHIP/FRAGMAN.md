@@ -1746,9 +1746,9 @@ Tam film yakında.
 # 📋 BÖLÜM 6 — QA SPEC BLOĞU
 
 > Üretim bitince bu blok QA promptlarına kopyalanır (MOD D).
-> Rubrikler: `SHORTS_QA_CRITIQUE_PROMPT.md` (dikey kesim) ·
-> `VIDEO_QA_CRITIQUE_PROMPT.md` (teknik) ·
-> `KARAKTER_DEVAMLILIK_QA_CRITIQUE_PROMPT.md` (yalnız video)
+> Rubrikler: `1_KARE_QA_CRITIQUE_PROMPT.md (FORMAT: DİKEY)` (dikey kesim) ·
+> `1_KARE_QA_CRITIQUE_PROMPT.md` (teknik) ·
+> `2_DEVAMLILIK_QA_CRITIQUE_PROMPT.md` (yalnız video)
 
 ```
 SPEC — THE SECOND SHIP FRAGMAN

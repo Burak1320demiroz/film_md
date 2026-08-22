@@ -20,6 +20,9 @@
 > denetimini ekledi → §1.3c)
 > `yatay_3_5_dk_filmler/THE_BLACK_CRADLE/THE_BLACK_CRADLE_FRAGMAN.md`
 > (dikey · 6 vuruş · mekanik TERS KURALLAR)
+> `yatay_3_5_dk_filmler/THE_BORROWED_WEIGHT/THE_BORROWED_WEIGHT_FRAGMAN_DIKEY.md`
+> (dikey · 6 vuruş · mekanik TERAZİ · kaynak filmin I2V hattını fragmana
+> taşıyan ilk teslim · ⚠️ üretim BEKLİYOR, prompt kontrol GO)
 > Beşini de şablon olarak aç; bu kılavuz oradaki kararları genelleştirir.
 
 ---
@@ -152,6 +155,8 @@ Second Ship 3→ KUSUR YOK    her vuruşta hatasız yapılmış bir iş; kırıl
 Cold Burn    → KAPANAN KAPILAR  her vuruş bir kaçış yolunu siler (YOKLUK ailesi)
 Black Cradle → TERS KURALLAR    her vuruş bir beklentiyi çevirir
 Low Power    → ÖRTÜLME      her vuruşta toz bir şeyin daha üstünü kapatır
+Borrowed W.  → TERAZİ       her vuruş kefe değiştirir: dünya hafifler,
+                            adam ağırlaşır; iki serinin bağı hiç kurulmaz
 diğer adaylar→ ÖLÇEK (merdiven yukarı) · TAKVİM (sayaç ilerler)
               · YAKLAŞMA (tehdit her vuruşta yakında)
 

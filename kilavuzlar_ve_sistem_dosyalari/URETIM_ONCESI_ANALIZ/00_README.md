@@ -6,6 +6,8 @@
 > D51-119'u HİÇ ölçmedi (bilinen borç: `../KILAVUZ_REHBERI.md` §9).
 > 02'ye 10-12 kartları 21.08.2026'da eklendi; eski filmlerin `n/9` risk
 > skorları 9 kartlık sürümle ölçüldü ve yeniden yazılmaz.
+> Akış şeması 22.08.2026'da güncellendi: konsept+tema kapısı ve
+> PROMPT_KONTROL adımı işaretçi olarak eklendi (içerik kesit malıdır).
 
 > **Amaç:** Parayı harcamadan önce neyin bozulacağını bilmek.
 > **Oluşturma:** 31 Temmuz 2026
@@ -15,7 +17,8 @@
 
 ## 🎯 BU KLASÖR NEDEN VAR
 
-Projede üç mercek var ve **üçü de para harcandıktan sonra bakıyor:**
+Kesit gününde projede üç mercek vardı ve **üçü de para harcandıktan
+sonra bakıyordu** (bugünkü rubrik listesi: `../QA_PROMPTLARI/00_README.md`):
 
 ```
 PLAN → BIBLE → PROMPT → ÜRETİM ──┬── VIDEO_QA      ← para harcandı
@@ -48,6 +51,10 @@ söylemek.
    FİKİR
      │
      ▼
+  KONSEPT + TEMA KAPISI  ← ../ONERME_VE_NOVUM_KILAVUZU.md (üç kabul testi —
+     │                      geçmeyen konsept plana dönüşmez) + tema kararı:
+     │                      ../TEMA_MUHENDISLIGI_KILAVUZU.md (22.08.2026)
+     ▼
   02_RISK_KARTLARI       ← "bu filmde su + canlı + diyalog var"
      │                      → 3 risk kartı, 3 sayısal kilit, 1 uyarı
      ▼
@@ -57,7 +64,13 @@ söylemek.
   03_PLAN_ONCESI_KONTROL ← plan kendi içinde çelişiyor mu, sahne sayısı
      │                      tutuyor mu, doruk yazılmış mı
      ▼
-   PROMPT → ÜRETİM → (üç QA merceği)
+   PROMPT
+     │
+     ▼
+  ../PROMPT_KONTROL/     ← betik + rubrik · sıfır kare (12.08.2026)
+     │
+     ▼
+   ÜRETİM → QA mercekleri (güncel liste: ../QA_PROMPTLARI/00_README.md)
      │
      ▼
   01_DERS_ETKINLIK       ← QA sonucu buraya döner: ders tuttu mu tutmadı mı
