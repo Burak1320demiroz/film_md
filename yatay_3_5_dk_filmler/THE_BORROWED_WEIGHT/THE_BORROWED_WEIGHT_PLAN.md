@@ -410,8 +410,8 @@ sentetik ses insana yapışır, lip-sync çöker [D82 emsali · Cold Burn].
 
 | S# | zaman (±2 s [D115]) | konuşan | REGISTER | kanal | replik (taslak, EN) |
 |---|---|---|---|---|---|
-| S2 | 0:32 | suit AI | MACHINE | göğüs hoparlörü | "Beacon signal confirmed. Range: three hundred metres." |
-| S10 | 1:53 | suit AI | MACHINE | göğüs hoparlörü | "Cumulative load: one point one tonnes. Margin: two lifts." |
+| S2 | 0:22 | suit AI | MACHINE | göğüs hoparlörü | "Beacon signal confirmed. Range: three hundred metres." |
+| S10 | 1:43 | suit AI | MACHINE | göğüs hoparlörü | "Cumulative load: one point one tonnes. Margin: two lifts." |
 | S21 | 3:31 | suit AI | MACHINE | göğüs hoparlörü | "Load ceiling exceeded. Locomotion assist offline." |
 | S22 | 3:45 | suit AI | MACHINE | göğüs hoparlörü | "Cargo secured. Beacon elevated. Log closed." |
 

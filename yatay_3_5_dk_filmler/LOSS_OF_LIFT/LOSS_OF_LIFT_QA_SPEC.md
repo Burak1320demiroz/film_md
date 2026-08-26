@@ -6,6 +6,11 @@
 > vermiyordu. Artık SPEC bir BÖLÜM değil, bir DOSYA: rubrikle birlikte
 > yapıştırılır ve koşu mod D olur.
 
+> ⛔ **BU DOSYA RUBRİKLE BİRLİKTE YAPIŞTIRILIR [Ders 129].** Yapıştırılmadıysa
+> koşu ön koşu değil, **YAPILMAMIŞ koşudur**: ham rapor arşive düşer, T
+> tablosuna satır yazılmaz, kesme listesi ve REMOVE reçetesi uygulanmaz.
+> SPEC'i olan bir filmde `INPUT MODE: D` yazmayan rapor TEKRARLANIR.
+
 ---
 
 ## 🚦 HANGİ RUBRİĞE NE VERİLİR
@@ -16,6 +21,13 @@
 ② 🔗 DEVAMLILIK  → ⛔ HİÇBİR ŞEY (baseline: videodan sahne envanteri
                                   + karakter pasaportu)
 ③ 🔊 SES         → ⛔ HİÇBİR ŞEY (baseline: kurgudan ses defteri)
+
+⑤ 🖼️ ARKA PLAN  → C BLOĞU'nun YALNIZ şu üç kilidi: mesafe/ölçek sayacı ·
+                   ekran yönü · sabit çevre nesneleri [Ders 133]
+⑥ ⚖️ FİZİK      → C BLOĞU'nun sayısal kilitleri (g · oran · hız · süre)
+⛔ ⑤ ve ⑥'ya kimlik, kostüm ve olay kilitleri VERİLMEZ — o körlük tasarımdır.
+   Ama YAKLAŞMA filminde mesafe sayacı verilmezse ⑤ tasarlanmış yaklaşmayı
+   "geometri sürüklenmesi" yazar ve tablosunun tamamı ⑩'dan düşer [D133].
 
 ⛔ ② ve ③'e belge vermek yasaktır — eksikliği değil, TASARIMI bozar.
    O iki merceğin değeri filmin kendisiyle çelişip çelişmediğini
@@ -43,6 +55,12 @@ LOGLINE (intended):   A lone air-cycle engineer on a sinking balloon station in
                       small probe that would carry his living culture column
                       above the acid.
 THEME (intended):     For something to rise, you have to go down.
+                      ⚠️ TAKAS kalıbı (TEMA_MUHENDISLIGI §3c): "X için
+                      Y feda edilir". Kalıp arka arkaya en çok 2 filmde.
+THEME SCENES:         🚨 YAZILMAMIŞ (26.08.2026 ölçümü)
+                      §5 temayı MOTİFE, motifi SAHNEYE bağlar; burada
+                      tema tek cümle olarak var, sahne eşlemesi yok.
+                      ⛔ Sonradan türetme [03_PLAN_ONCESI B3].
 INTENDED EMOTION:     calm handover, not rescue — the viewer arrives asking
                       "will it sink?" and leaves asking "what went up?"
 ENDING TYPE:          ambiguous (his fate is never shown; the probe's is)
@@ -81,6 +99,19 @@ GRID:            sahne başlangıcı(n) = 9 s + (n−1) × 10 s
 RUNTIME:         249 s   (Hook 9 s + 24 × 10 s)
 SCREEN TEXT:     0.0 saniye — başlık kartı, jenerik, altyazı YOK
 CAMERA:          25/25 sabit lockoff
+                 ⛔ KLİP İÇİ karar; sahneler ARASI kurulumu SETUP
+                 SEQUENCE anlatır [02_RISK_KARTLARI KART 8 kapsamı]
+SETUP SEQUENCE:  PART_A (13 sahne) · 8 kurulum ölçüldü (26.08.2026)
+                 A · B · C · D · A · B · E · D · F · G · B · H · D
+                 B = 32 mm · göğüs hizası (3 sahne) · D = 32 mm (3 sahne)
+                 ⚠️ A kurulumunda (S0 · S4) kamera geometrisi promptta
+                 OKUNABİLİR biçimde yok — model seçiyor.
+                 ⚠️ PART_B ayrıca ölçülmedi; bu satır TAM DEĞİLDİR.
+ANGLE ARC:       **1 açı tipi — PROFİL (S2)**
+                 🚨 AÇIK MADDE: KAMERA_ACISI §2 en az 3 tip ister.
+                 13 sahnenin 12'sinde açı kılavuz sözlüğüyle (§6)
+                 yazılmamış; yazılmayan açıyı model seçer ve ilk 3
+                 saniyede göz hizasına döndürme eğilimindedir (§6 giriş).
 REPLİK ZAMANI:   S22 → 219 s = 3:39   (±2 s doğrulama noktası [D115])
 DORUK:           S20 → 199 s = 3:19-3:29
 ```

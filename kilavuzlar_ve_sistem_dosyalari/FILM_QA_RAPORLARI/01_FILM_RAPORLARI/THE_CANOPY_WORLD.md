@@ -1,6 +1,6 @@
 # 🔍 THE CANOPY WORLD — QA KAYDI
 
-> **Kaynak dosya:** `yatay_2_4_dk_filmler_uzay/THE_CANOPY_WORLD_PLANET_FILM.md`
+> **Kaynak dosya:** `yatay_2_4_dk_filmler_uzay/THE_CANOPY_WORLD/THE_CANOPY_WORLD_PLANET_FILM.md`
 > **Bu filmde ÜÇ ölçüm var:**
 > · **TEKNİK QA #1** (aşağıda) — 4/10 · derslerden geri çıkarım, ham rapor kayıp
 > · **TEKNİK QA #2** (31.07.2026) — **3/10** · [`../02_HAM_RAPORLAR/THE_CANOPY_WORLD_TEKNIK_HAM.md`](../02_HAM_RAPORLAR/THE_CANOPY_WORLD_TEKNIK_HAM.md)

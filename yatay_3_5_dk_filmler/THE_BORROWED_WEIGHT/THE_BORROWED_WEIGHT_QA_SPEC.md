@@ -3,6 +3,11 @@
 > **[DERS 117]:** SPEC bir DOSYADIR, bölüm değil. QA anında operatörün
 > eline rubrikle birlikte BU dosya verilir; koşu mod D olur.
 
+> ⛔ **BU DOSYA RUBRİKLE BİRLİKTE YAPIŞTIRILIR [Ders 129].** Yapıştırılmadıysa
+> koşu ön koşu değil, **YAPILMAMIŞ koşudur**: ham rapor arşive düşer, T
+> tablosuna satır yazılmaz, kesme listesi ve REMOVE reçetesi uygulanmaz.
+> SPEC'i olan bir filmde `INPUT MODE: D` yazmayan rapor TEKRARLANIR.
+
 ---
 
 ## 🚦 HANGİ RUBRİĞE NE VERİLİR
@@ -13,6 +18,13 @@
 ② 🔗 DEVAMLILIK  → ⛔ HİÇBİR ŞEY (baseline: videodan sahne envanteri
                                   + karakter pasaportu)
 ③ 🔊 SES         → ⛔ HİÇBİR ŞEY (baseline: kurgudan ses defteri)
+
+⑤ 🖼️ ARKA PLAN  → C BLOĞU'nun YALNIZ şu üç kilidi: mesafe/ölçek sayacı ·
+                   ekran yönü · sabit çevre nesneleri [Ders 133]
+⑥ ⚖️ FİZİK      → C BLOĞU'nun sayısal kilitleri (g · oran · hız · süre)
+⛔ ⑤ ve ⑥'ya kimlik, kostüm ve olay kilitleri VERİLMEZ — o körlük tasarımdır.
+   Ama YAKLAŞMA filminde mesafe sayacı verilmezse ⑤ tasarlanmış yaklaşmayı
+   "geometri sürüklenmesi" yazar ve tablosunun tamamı ⑩'dan düşer [D133].
 
 ⛔ ② ve ③'e belge vermek yasaktır — eksikliği değil, TASARIMI bozar.
    O iki merceğin değeri filmin kendisiyle çelişip çelişmediğini
@@ -41,6 +53,14 @@ LOGLINE (intended):   A lone loadmaster clearing a crashed cargo line on a
                       case, learns that everything he lightened belongs to
                       the wind, and only what is heavy stays.
 THEME (intended):     What remains is what someone carried the weight of.
+                      ⚠️ TAKAS kalıbı (TEMA_MUHENDISLIGI §3c): "X için
+                      Y feda edilir". Kalıp arka arkaya en çok 2 filmde.
+THEME SCENES:         🚨 YAZILMAMIŞ (26.08.2026 ölçümü)
+                      §5 temayı MOTİFE, motifi SAHNEYE bağlar; burada
+                      tema tek cümle olarak var, sahne eşlemesi yok.
+                      CENTRAL CHOICE (S20) tek bağlantı ve o da bedeli
+                      anlatıyor, motifi değil.
+                      ⛔ Sonradan türetme [03_PLAN_ONCESI B3].
 INTENDED EMOTION:     a willing trade, not a tragedy — the viewer arrives
                       asking "how is he this strong?", stays asking "will
                       he lift one more?", leaves rereading the strength as
@@ -89,9 +109,28 @@ RUNTIME:         249 s   (Hook 9 s + 24 × 10 s)
 RAW FOOTAGE:     250 s · TRIM BUDGET: 1 s (yalnız S0 10→9)
 SCREEN TEXT:     0.0 saniye — başlık kartı, jenerik, altyazı YOK
 CAMERA:          25/25 sabit lockoff
+                 ⛔ KLİP İÇİ karar; sahneler ARASI kurulumu SETUP
+                 SEQUENCE anlatır [02_RISK_KARTLARI KART 8 kapsamı]
+SETUP SEQUENCE:  🚨 YAZILMAMIŞ (26.08.2026 ölçümü)
+                 Video promptlarının 25'inde sahne bazlı kamera
+                 geometrisi (lens · yükseklik · mesafe) OKUNABİLİR
+                 biçimde yok; 13 sahnelik PART_A taramasında yalnız
+                 1 sahnede açı sözlüğünden bir kelime bulundu (profil).
+                 ⛔ Bu satırı sonradan TÜRETME. Kurulum kaydı plandan
+                 gelir; promptta yoksa kurulum kararı da alınmamıştır
+                 (yazılmayan kurulumu model seçer). Bu, filmin ölçülen
+                 EN BÜYÜK açığıdır ve yeniden üretim gerektirmez —
+                 sonraki filmde plana yazılır.
+                 ⚠️ Mevcut EŞ KADRAJ satırı (S0↔S24 · S4↔S16 · S6↔S18 ·
+                 S1↔S21 · S8↔S23) kasıtlı kadraj TEKRARIDIR ve kurulum
+                 ÇEŞİTLİLİĞİNİN kanıtı değildir — tersi.
+ANGLE ARC:       🚨 1 açı tipi ölçüldü (PROFİL). §2 en az 3 ister.
 REPLİK ZAMANLARI (±2 s doğrulama [D115]):
-                 S2  → 0:32   S10 → 1:53   S21 → 3:31   S22 → 3:45
-DORUK:           S20 → 3:19-3:29 (sahne başlangıcı 209 s)
+                 S2  → 0:22   S10 → 1:43   S21 → 3:31   S22 → 3:45
+                 (formülden: 9 + (n−1)×10 + prompt TIMELINE ofseti;
+                  elle yazılmaz [D122] — 24.08.2026'da S2 ve S10 bir
+                  yuva geç yazılmış hâlde bulundu ve düzeltildi)
+DORUK:           S20 → 3:19-3:29 (sahne başlangıcı 199 s)
 ```
 
 ### 🧬 İNSAN ŞERİDİ — sıra kilidi [DERS 118]

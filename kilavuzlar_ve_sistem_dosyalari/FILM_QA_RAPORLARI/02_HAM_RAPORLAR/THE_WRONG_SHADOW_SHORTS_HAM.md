@@ -4,7 +4,7 @@
 > (AGENTS kural ④). Rubrik: `../../QA_PROMPTLARI/SHORTS_QA_CRITIQUE_PROMPT.md`
 > · Koşu: **INPUT MODE V** (SPEC verilmedi) · MATERIAL MODE B iddiası.
 >
-> **Plan dosyası:** `dikey_shorts_filmler/THE_WRONG_SHADOW_DIKEY_SHORTS.md`
+> **Plan dosyası:** `dikey_shorts_filmler/THE_WRONG_SHADOW/THE_WRONG_SHADOW_DIKEY_SHORTS.md`
 > — 835 satır, 6 sahne × 8 s = 48 s planı. Depoda duruyordu (MOD V koşusu
 > geçerli; künye uydurulmadı, `FILM: (not supplied)` yazıldı ✅ Ders 60/65).
 > Aritmetik kapı tuttu: 73.0 ÷ 13 = 5.6 ✅ [Ders 62].

@@ -1,7 +1,7 @@
 # 🔎 PROMPT KONTROL — THE_TALL_SHORE_DRY_OCEAN_FILM
 
 > **Tarih:** 14.08.2026  ·  **Karar:** FIX
-> **Kaynak:** `yatay_2_4_dk_filmler_uzay/THE_TALL_SHORE_DRY_OCEAN_FILM.md`
+> **Kaynak:** `yatay_2_4_dk_filmler_uzay/THE_TALL_SHORE/THE_TALL_SHORE_DRY_OCEAN_FILM.md`
 > Bu rapor betikten üretildi, elle düzenlenmez.
 
 ## IMAGE · satır 1474 · 2382 karakter

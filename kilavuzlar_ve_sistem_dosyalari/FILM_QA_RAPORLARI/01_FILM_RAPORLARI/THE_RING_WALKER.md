@@ -1,6 +1,6 @@
 # 🔍 THE RING WALKER — QA KAYDI
 
-> **Kaynak dosya:** `yatay_2_4_dk_filmler_uzay/THE_RING_WALKER_MOON_FILM.md`
+> **Kaynak dosya:** `yatay_2_4_dk_filmler_uzay/THE_RING_WALKER/THE_RING_WALKER_MOON_FILM.md`
 > **İki QA geçişi var:**
 > - **TEKNİK (VIDEO_QA)** — 5/10 · ham rapor ❌ kayıp · veri `LESSONS_LEARNED.md` Ders 30-32'den geri çıkarıldı
 > - **SENARYO (SENARYO_QA)** — 5/10 · ham rapor ✅ `../02_HAM_RAPORLAR/THE_RING_WALKER_SENARYO_HAM.md` (31.07.2026)

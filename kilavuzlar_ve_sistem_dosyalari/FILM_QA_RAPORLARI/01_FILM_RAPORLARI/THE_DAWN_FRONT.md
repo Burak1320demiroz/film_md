@@ -1,6 +1,6 @@
 # 🔍 THE DAWN FRONT — QA KAYDI
 
-> **Kaynak dosya:** `yatay_2_4_dk_filmler_uzay/THE_DAWN_FRONT_PLANET_FILM.md`
+> **Kaynak dosya:** `yatay_2_4_dk_filmler_uzay/THE_DAWN_FRONT/THE_DAWN_FRONT_PLANET_FILM.md`
 > **Teknik QA (VIDEO_QA):** ✅ **4/10 · REGENERATE** · 05.08.2026 · ham rapor
 > `../02_HAM_RAPORLAR/THE_DAWN_FRONT_TEKNIK_HAM.md`
 > **Mantık QA (MANTIK_QA):** ✅ **3.0/10 · STRUCTURAL** · 05.08.2026 · ham rapor

@@ -50,7 +50,30 @@ gördü" o zaman bir doğrulama değil, tek raporun dört kopyasıdır.
 | Film | Ses Durumu | Atıf | Sentetik | Ses Kimliği | Aktarım | Sıra Alma | Ambiyans | SFX Senk | Miks | Müzik | Toplam |
 |---|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
 
-*(Henüz satır yok — ilk koşuyu işleyen ajan bu satırı siler.)*
+| ~~**The Iron Slope** Ⓥ ⛔ 🚨~~ | B (sessiz, tasarımlı) | — | — | — | — | — | ~~2~~ | ~~5~~ | ~~6~~ | — | ~~4,3~~ |
+
+| **The Rose Coat** ⬜ | C (ses bilgisi yok) | — | — | — | — | — | — | — | — | — | **—** |
+
+> **The Rose Coat · 26.08.2026 · `AUDIO ABSENT — RUN NOT STARTED`**
+> ⛔ Bu bir SKOR SATIRI DEĞİL, bir İZ satırıdır [D136]: stop bloğu doğru
+> çalıştı ama hiçbir tabloya satır bırakmıyordu ve "koşuldu, dosya bozuk"
+> ile "hiç koşulmadı" kayıtta aynı görünüyordu.
+> · Plan 13 sahnenin **11'inde müzik** yazıyor (`MUSIC-FREE SCENES: 2`)
+> ve S11 · 7,0 s'de iki eldiven tıklaması (ses tasarımı). Dosyada ses yok.
+> · ⬜ KAPATMA: `ffprobe -v error -select_streams a -show_entries
+> stream=codec_type -of csv=p=0 "$M"` — çıktı boşsa 🔴 TESLİM KUSURU,
+> master yeniden ihraç edilir ve DÖRT mercek yeniden koşulur.
+> · Öteki dört mercek şüpheyi görmedi: üçü `LINES HEARD: none`, biri
+> `Dialogue & Audio | UNVERIFIABLE | (no sound)` yazıp geçti.
+
+> **The Iron Slope · 25.08.2026 · 🚨 GEÇERSİZ — satır üstü çizili, ortalamaya girmez**
+> Kayıt: [`01_FILM_RAPORLARI/THE_IRON_SLOPE.md`](01_FILM_RAPORLARI/THE_IRON_SLOPE.md)
+> · Sebep: merceğin tek 🔴 BLOCKER'ı ve Ambiyans 2/10'u **hiç var olmayan bir
+> sessizliğe** dayanıyor. Master ölçümü: `silencedetect -50 dB / 0,3 s` → sıfır
+> sonuç; saniyelik RMS 0-60 s boyunca en düşük −26,8 dB, S4 (30-40 s) −19,7…−22,8 dB.
+> · "no music present" satırı da şüpheli: 0-60 s kesintisiz, düzenli vuruşlu
+> geniş bant katman var. · Altı kategori N/A — film **repliksizdir**, bu bir
+> kısıttır, eksik değil [D113]. → **DERS 125**
 
 ⛔ **Bir bulgu diğer bütün skorları ezer:** yanlış karakterden çıkan replik,
 ya da hiçbir kaynağa bağlanmayan ses → **WRONG VOICE, REGENERATE.**

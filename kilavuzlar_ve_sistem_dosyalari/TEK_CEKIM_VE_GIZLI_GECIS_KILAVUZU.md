@@ -260,7 +260,7 @@ filmin bazı bölümlerinin tek nefeste akmasıdır.
 
 > Buraya kadarki her şey sahne **sınırlarındaki** geçişi anlatıyor.
 > Bu bölüm sahnenin **içindeki** kesme içindir. Depoda ilk uygulama:
-> `yatay_2_4_dk_filmler_uzay/THE_DAWN_FRONT_PLANET_FILM.md` §0.2
+> `yatay_2_4_dk_filmler_uzay/THE_DAWN_FRONT/THE_DAWN_FRONT_PLANET_FILM.md` §0.2
 > (14 sahne × 10 s · 26 segment · 12 kesme).
 
 ```

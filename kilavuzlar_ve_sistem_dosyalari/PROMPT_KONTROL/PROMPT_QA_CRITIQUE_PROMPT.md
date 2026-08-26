@@ -116,6 +116,56 @@ olmadığını kontrol et. Kaynak: `DERSLER/` · `URETIM_ONCESI_ANALIZ/02_RISK_K
 
 ---
 
+# 3b. 🚫 YASAK LİSTESİ POLİTİKA MALİYETİ  ⭐ ÜRETİLEBİLİRLİK KAPISI
+
+> Betik bunu göremez ve göremez de: negatif çekirdeğin VARLIĞINI arar,
+> kelimelerin politika maliyetini değil. Bu kategori insan gözünün işidir
+> ve **red gelene kadar görünmez.**
+>
+> Mekanizma: `NEGATIVE:` bloğuna yazılan yasak, yasakladığı kavramı
+> promptun İÇİNE sokar. Politika sınıflandırıcısı "no" önekini değil
+> KELİMEYİ okur. Filmde hiç olmayan bir şiddet, onu yasaklayan cümle
+> yüzünden prompta girer ve üretimi durdurur.
+
+```
+□ Promptta, YASAKLAMAK İÇİN YAZILMIŞ bir şiddet/tehlike kelimesi var mı?
+     gore · blood · wound · injury · corpse · body · victim · weapon ·
+     jump scare · horror · suicide · drowning · burning
+     → VARSA: filmde o şeyin kaç karesi var?
+          0 kare  → 🚨 BULGU. Kelime SİLİNİR, yerine MALZEME TARİFİ
+                    yazılır. Yasak, koruduğu şeyi üretilemez kılıyor.
+          >0 kare → tasarım kararı; kilit satırında gerekçesi olmalı
+□ İnsan kütlesi nasıl adlandırılmış?
+     "crowd of figures" / "bodies" + kaçan-kovalanan bir insan
+     → model için KİTLESEL KAZA okuması. Filmin tasarımı figürleri
+       cansız/hareketsiz kuruyorsa promptun dili de ÖYLE olmalı.
+□ Fiiller şiddetli mi?
+     "hurls X into the chest" · "strikes his head" · "slams into her"
+     → aynı fiziği taşıyan nötr hâl var mı?
+       ("at hip height" · "against the base" · "meets the next one")
+□ Sınırlama nasıl yazılmış?
+     yasak:  "no figure falls off the bridge"      🚨 tehlikeyi adlandırır
+     kural:  "the barrier holds them; the fold stops at the concrete"  ✅
+```
+
+⛔ **ÇÖZÜM HER ZAMAN AYNI YÖNDE:** yasağı sil, malzemeyi tarif et.
+Aynı işi yapar ve daha iyi yapar — yasak yüzü YASAKLAR, tarif yüzü
+ORTADAN KALDIRIR.
+
+```
+✗  no visible faces, no eyes, no open mouths, no teeth
+✓  the head is a smooth dust shell with no readable features, like a
+   plaster cast left standing in the open
+```
+
+⚠️ **Sınıflandırıcı promptu BÜTÜN olarak okur.** Tek tek masum üç cümle
+(kalabalık + koşan insan + devrilen gövdeler) birlikte bir felaket
+sahnesi tarif eder. Bu kategoriyi cümle cümle değil, **promptun toplam
+izlenimi** üzerinden de bir kez sor: "bunu bilmeyen biri okusa ne
+anlatıldığını sanır?"
+
+---
+
 # 4. 🧱 SELF-CONTAINED MI — anlam düzeyinde
 
 ```
@@ -141,6 +191,44 @@ olmadığını kontrol et. Kaynak: `DERSLER/` · `URETIM_ONCESI_ANALIZ/02_RISK_K
 
 ---
 
+# 6. 🎥 AÇI VURUŞLA EŞLEŞİYOR MU  🆕 26.08.2026
+
+> **Bu kategorinin varlık sebebi:** betik açı SAYISINI ölçüyor (kaç kurulum,
+> kaç açı tipi, derece bandın içinde mi) ama açının DOĞRU açı olup olmadığını
+> ölçemez. Bu, modele değil insana sorulacak tek kamera sorusudur.
+
+```
+□ Sahnenin VURUŞU nedir? (keşif · tehditle yüzleşme · mutlak yenilgi ·
+  sistem çöküşü · epifani · hiçlik — SENARYO_VE_VIRAL_KAMERA §2)
+□ Promptun açısı, o vuruşun KAMERA_ACISI §3 tablosundaki karşılığı mı?
+     keşif           → OTS / MLS 35-50mm
+     tehditle yüzleşme → alt açı, bel-diz yüksekliği / MCU 24mm
+     mutlak yenilgi   → üst açı, tavan yüksekliği / LS 85mm
+     sistem çöküşü    → eğik 15-20° / CU 14-20mm
+     epifani          → göz hizası, tam profil / MS 50mm
+     hiçlik           → tepe / kuşbakışı (zenit) / XLS
+□ Değilse: bilinçli sapma mı, yoksa açı hiç seçilmemiş mi?
+     Bilinçliyse plana TEK SATIR gerekçe [D74]. Gerekçesiz sapma bulgudur.
+□ Bir önceki sahneyle arasında GÜVENLİ BANT var mı — ≥1 ölçek kademesi
+  VE ≥45° açı farkı? (ACI_YAYI §3)
+     ⚠️ Betik bunu ancak KURULUM İMZASI yazılıysa ölçebiliyor; imza
+        eksikse sayı değil bu soru karar verir.
+□ Açı, kılavuzun SÖZLÜĞÜYLE mi yazılmış? (KAMERA_ACISI §6)
+     ✅ "low angle" · "high angle" · "Dutch angle (tilted exactly 15 degrees)"
+        · "over-the-shoulder"
+     ❌ "locked-off tripod, low" — model bu biçimi tutmuyor; §6'nın
+        tamamı bunun üzerine kurulu
+□ Sabitlik emri cümle başında VE sonunda tekrarlanmış mı? (§6 kural ①)
+□ Hareket süngeri var mı — toz/sis/yansıma? (§6 kural ②)
+     Süngersiz lockoff ya fotoğraf donukluğuna ya kamera kaymasına düşer.
+```
+
+⛔ **Kamera hareketi ÖNERME.** Klip içi lockoff bu deponun ölçülmüş kalite
+kararıdır (`02_RISK_KARTLARI.md` KART 8). Bu kategoride tartışılan tek şey
+sahneler ARASINDA açının değişip değişmediğidir.
+
+---
+
 # 📤 ÇIKTI BİÇİMİ
 
 ```
@@ -162,7 +250,8 @@ KARAR: GO | FIX | BLOCK
 
 ```
 KARAR EŞİKLERİ
-  BLOCK   3+ tarih kilidi · 🔴 tetikleyici kilitsiz · A1 çelişkisi
+  BLOCK   3+ tarih kilidi · 🔴 tetikleyici kilitsiz · A1 çelişkisi ·
+          filmde 0 karesi olan bir şiddeti YASAK OLARAK yazan prompt (3b)
   FIX     kalan her bulgu
   GO      bulgu yok — üretime geç
 ```

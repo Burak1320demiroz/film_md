@@ -186,6 +186,23 @@ Kameranın iki sıçraması var ve **ikisi de prompt cümlesi değil:**
 3 → 7   Slow Stone   sahneleri ayrı üret  = kesme İHTİYACINI SİLDİ
 ```
 
+⚠️ **İKİ SAYI, İKİ ÖLÇÜ — karıştırma (26.08.2026 notu):** yukarıdaki `3 → 8`
+**ardışık** sıçramadır (Low Power'dan bir önceki film 3 aldı). Aşağıdaki
+tabloda ve `02_RISK_KARTLARI.md`'de geçen `2→8` ise **tablo min→max**
+karşılığıdır (seri: 2·3·3·4·3·3·6·4·3·**8**·**7**). İkisi de doğru, aynı
+şey değil. Tek sayıya indirilemez; hangi ölçü olduğu yazılır.
+
+⛔ **BU SIÇRAMANIN KAPSAMI KLİP İÇİDİR (26.08.2026 daraltması).** Silinen
+talep, tek klibin içindeki kamera hareketiydi — pan/tilt/zoom/track ve
+onların ürettiği gizli kesme. Sahneler ARASI açı değişimi bu sıçramaya
+hiç girmedi: Slow Stone satırının söylediği gibi sahneler zaten ayrı
+kliplerde üretiliyor, ikisini farklı açıdan çekmenin teknik riski yok.
+Karar pratikte sahneler arasına genellendi ve ölçülmediği için görünmedi
+— 26.08.2026 ölçümü: 187 film .md dosyasının 126'sı sabit-kamera kalıbı
+taşıyor, en yeni dikey filmde 6 kamera satırının 3'ü benzersiz. Bant
+`../ACI_YAYI_VE_SEKANS_KILAVUZU.md` §3-§4'te, ölçüm
+`../PROMPT_KONTROL/prompt_kontrol.py`'de (güncel sayı oradan alınır).
+
 **Genel kural:**
 
 > Bir kategori, o kategorideki **talebi kaldırabiliyorsan** düzelir.
@@ -193,7 +210,7 @@ Kameranın iki sıçraması var ve **ikisi de prompt cümlesi değil:**
 
 | Kategori | Talep kaldırılabilir mi | Sonuç |
 |---|---|---|
-| Kamera | ✅ "kamera hiç hareket etmesin" → geçerli sinematik seçim | 2→8 |
+| Kamera | ✅ "kamera KLİP İÇİNDE hiç hareket etmesin" → geçerli sinematik seçim (sahneler arası açı yayı bu talebe dahil DEĞİL) | 2→8 (min→max) |
 | Işık | ⚠️ kısmen — ama sahne aydınlatılmak zorunda | 6→4, sabit |
 | Fizik | ❌ sahnede su varsa su akmak zorunda | 2-5, sabit |
 | Canlı | ❌ canlı varsa yürümek zorunda | 2-5, sabit |

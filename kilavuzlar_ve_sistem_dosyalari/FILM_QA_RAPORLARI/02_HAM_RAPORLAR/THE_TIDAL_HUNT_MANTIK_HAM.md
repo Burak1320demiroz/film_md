@@ -29,7 +29,7 @@ Rubriğin tasarımı işe yarıyor.
 # 🔎 DOKÜMAN KONTROLÜ — raporun sorduğu 2 sorunun cevabı
 
 Rubrik bu işi rapordan sonra yapılacak iş olarak tanımlıyor. Kaynak:
-`yatay_2_4_dk_filmler_uzay/THE_TIDAL_HUNT_PLANET_FILM.md`
+`yatay_2_4_dk_filmler_uzay/THE_TIDAL_HUNT/THE_TIDAL_HUNT_PLANET_FILM.md`
 
 ### ❓ Soru 1 — "Başta ve sonda iki kâşif var, ortada bir. Yalnız mı olmalıydı?"
 

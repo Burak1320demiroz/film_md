@@ -730,3 +730,167 @@ dönüşebilir. Replikler tırnakla ve dilleriyle kilitlenir; **tarif nesri ise
 konuşulamaz biçimde yazılır.**
 
 ---
+
+## 🔴 DERS 123: YASAK, YASAKLADIĞI KAVRAMI PROMPTA SOKAR — NEGATİF BLOK POLİTİKA REDDİ ÜRETTİ
+
+**Kaynak:** THE LAST SPAN · 25.08.2026 · ilk üretim turu: 2 prompt denendi,
+2 red, 0 başarı. İkisi de aksiyon doruğu (S8 kovalamaca, S9 doruk).
+
+```
+S8 → "I can't make videos of real people in situations like that."
+S9 → "I can't make videos that could relate to dangerous situations."
+```
+
+**Sorun:** Film tasarımı gereği **0 kare** yara, kan, ceset, temas taşıyor —
+tür kartının gore bütçesi sıfıra indirilmişti ve dosya bunu satır satır
+yazıyordu. Ama prompt dosyası, o sıfırı KORUMAK için, `NEGATIVE:` bloğunda
+şu kelimeleri tekrar tekrar yazıyordu:
+
+```
+"gore"   29 kez        "wounds"  26 kez
+"blood"  26 kez        "corpse"  18 kez
+```
+
+Hepsi `no ...` önekiyle. **Politika sınıflandırıcısı öneki değil kelimeyi
+okur.** Filmde hiç olmayan bir şiddet, onu yasaklayan cümleler yüzünden
+promptun içine girdi. Aynı mekanizmanın üretim tarafı §7'de zaten yazılıydı
+(yapısal red: "yokluk listesi istek olarak okunamıyor"); bu, onun **politika
+tarafındaki** karşılığıdır ve depoda ilk kez görüldü.
+
+İki yardımcı katman:
+- **"crowd of figures" + kaçan insan = kitlesel kaza.** S8'in reddi bunu
+  birebir söylüyor ("real people"). Filmin tasarımı figürleri zaten heykel
+  gibi kuruyordu (0 yüz, 0 ses, rijit, ayak yerden kalkmaz) — prompt onları
+  yanlış adlandırıyordu.
+- **Şiddetli fiil.** "hurls the can into the CHEST" — dominoyu deviren itiş
+  her yükseklikten olur; göğüs seçimi dramatik değil, sadece riskliydi.
+
+**ÇÖZÜM — prompt'a eklenecek:** yasağı SİL, yerine MALZEMEYİ TARİF ET.
+
+```
+✗ YASAK (reddedildi):
+no visible faces, no eyes, no open mouths, no teeth, no wounds,
+no blood, no gore, no corpse staging, no jump scare
+
+✓ TARİF (aynı işi yapar, daha iyi yapar):
+Each one is sealed head to foot under a single unbroken coat of pale
+grey dust, so clothing, hair and head read as one continuous matte
+surface — the head is a smooth dust shell with no readable features,
+like a plaster cast left standing in the open. They are a still field
+of upright shapes, not a gathering.
+```
+
+```
+✗ "a dense standing crowd of dust-caked figures"
+✓ "a packed field of upright dust-coated forms"
+
+✗ "the figure topples ... hits the deck ... stays down"
+✓ "the form tips the way an upright plank tips, or a domino in a line:
+   it rotates about its base, feet staying flat on the ground, knees
+   straight, arms down at its sides"
+
+✗ "she hurls the can into the chest of the nearest figure"
+✓ "she lets the can go in a low flat swing; it strikes the outermost
+   form at hip height"
+
+✗ "no figure falls over the barrier or off the bridge"
+✓ "the barrier holds them: the fold stops at the concrete and stays
+   on the deck"        ← sınırlamayı YASAKLA değil, KURAL olarak yaz
+```
+
+**Teşhis sırası — red gelince prompt kısaltmadan ÖNCE bu üçü elenir:**
+```
+1. Yasakladığın için YAZDIĞIN bir şiddet/tehlike kelimesi var mı?
+   (gore · blood · wound · corpse · injury · jump scare · horror ·
+    weapon · victim) → varsa sebep BU. Kısaltma işe yaramaz, SİL.
+2. İnsan kütlesini nasıl adlandırıyorsun? "crowd of figures" + kaçan
+   insan = kitlesel kaza okuması.
+3. Fiil şiddetli mi? Aynı fiziği taşıyan nötr hâl var mı?
+```
+
+⛔ **prompt_kontrol.py bunu GÖREMEZ ve göremez de:** betik negatif çekirdeğin
+VARLIĞINI arar — kelimelerin politika maliyetini değil. Bu tuzağın kapısı
+insan gözüdür ve red gelene kadar görünmezdir.
+
+⚠️ **Sınıflandırıcı promptu BÜTÜN olarak okur.** Tek tek masum üç cümle
+(kalabalık + koşan insan + devrilen gövdeler) birlikte bir felaket sahnesi
+tarif eder. Reddi tek kelimede arama.
+
+⭐ Bu ders **Ders 59'un** (pozitif hâl yasaktan iyi tutar) politika
+eksenindeki tekrarıdır. 59 sadakati ölçüyordu; 123 ÜRETİLEBİLİRLİĞİ.
+İkisi aynı cümleyi söylüyor: **modele ne İSTEMEDİĞİNİ değil, ne
+İSTEDİĞİNİ yaz.**
+
+---
+
+## 🔴 DERS 128: MALZEME METAFORU MEKANİĞİ EZER — "PLASTER CAST" DOMİNOYU ÇÜRÜMEYE ÇEVİRDİ
+
+**Kaynak:** THE LAST SPAN QA · 25.08.2026 · filme özel ÖNERME KAPISI:
+C1 KURAL OKUNABİLİRLİĞİ **1/10** · A1 + A2 FAIL · karar REGENERATE.
+
+**Sorun:** Filmin novum'u bir MEKANİKTİ — formlar kendi başlarına harekete
+geçemez, tek temas devirir, devrilen kalkmaz. Ekranda o mekanikten **0 kare**
+çıktı. Bunun yerine formlar kendiliğinden toza dağıldı. İzleyicinin okuduğu
+kural ile yazılan kural iki farklı film:
+
+```
+OKUNAN:  "Dünya taşlaşmış, kül figürler kendiliğinden toza dönüşüyor."
+YAZILAN: "Kendi başlarına harekete geçemezler; tek temas devirir;
+          devrilen bir daha kalkmaz."
+```
+
+**Mekanizma:** [D123] politika reddini çözmek için yasak sözlüğü silinip
+yerine pozitif malzeme tarifi kondu — doğru karardı ve reddi çözdü. Ama
+seçilen metafor bir **fiziksel özellik** taşıyordu:
+
+```
+"...like a plaster cast left standing in the open"
+"the head is a smooth dust shell..."
+```
+
+Alçı döküm ve toz kabuğu **KIRILGANDIR**. Devrilmez, DAĞILIR. Model
+"dust shell"i gövdenin ÖRTÜSÜ değil **MALZEMESİ** okudu. Domino cümlesi
+promptta duruyordu ama malzeme tarifi onu ezdi. Kanıt, fizik merceğinin
+PREMISE REGISTER'ında modelin kendi okuması olarak yazılı:
+
+```
+"Human bodies have petrified into brittle, dry ash/dust structures that
+ hold their shape until collapsing."
+```
+
+**ÇÖZÜM — prompt'a eklenecek:** metafor seçilirken **iki soru** sorulur.
+
+```
+① Bu metaforun taşıdığı fiziksel özellik nedir?
+   plaster cast  → kırılgan, dağılır          ⛔ mekanik: devrilme İSE ters
+   mannequin     → rijit, devrilir, kalıcı    ✅
+   fence post    → rijit, tabandan döner      ✅
+   sandbag       → yarı rijit, yığılır        ⚠️ kısmi
+② O özellik filmin MEKANİĞİYLE aynı yönde mi ters mi?
+   Ters ise metafor DEĞİŞTİRİLİR — mekanik cümlesi eklenerek kurtarılmaz.
+```
+
+**Bu filmin doğru hâli:**
+
+```
+✗ "sealed head to foot under a coat of pale grey dust ... like a plaster
+   cast left standing in the open"
+✓ "sealed head to foot under a coat of pale grey dust. Under the dust each
+   one is a solid, heavy, rigid body: it does not crumble, does not shed
+   material and does not break apart. It stays whole, standing, and when it
+   goes over it goes over in one piece, like a fence post pushed at the top."
+```
+
+⭐ **Kural:** *malzemeyi tarif ederken filmin MEKANİĞİNİ de tarif et.*
+Dış görünüş cümlesi (ne renk, ne dokulu) mekanik cümlesinden (nasıl
+davranır) daha güçlüdür ve onu sessizce ezer. Mekanik cümlesi malzeme
+cümlesinin **İÇİNE** yazılır, yanına değil.
+
+⛔ **Genel mercekler bunu göremez ve göstermedi:** altı mercek 5.0-6.8
+arası "orta" skorlar verdi çünkü hepsi tutarlı, hoş görünen bir filmi
+ölçtü. Yanlış FİLM olduğunu yalnız filme özel kapı gördü. Bir mekaniği
+olan her film için o kapı [C1 KURAL OKUNABİLİRLİĞİ] tek erken uyarıdır.
+
+⚠️ **D123 ile ilişkisi:** 123 doğru sorunu çözdü ve yeni bir tane açtı.
+İkisi birlikte okunur: *yasağı sil (123), ama yerine koyduğun tarifin
+fiziğini ölç (124).*

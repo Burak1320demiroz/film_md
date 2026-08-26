@@ -89,6 +89,71 @@ yorgunluk ve ret üretir.
 
 ---
 
+## 3b. 🧾 DEPODA DOĞMUŞ ETİKETLER — dürüst kayıt (26.08.2026)
+
+Yukarıdaki sekizlinin pazar/kuşak sütunları dış araştırmadan geldi. Sahada
+İKİ etiket daha kullanıldı ve ikisi de bu tablodan gelmiyor:
+
+| Etiket | Nerede | Pazar / kuşak / tepki | Durum |
+|---|---|---|---|
+| TANIKLIK | THE NEAR PASS · THE BRIGHT TETHER | **ölçülmedi** | ⏸️ aday |
+| ZEMİN | THE STONE SKY | **ölçülmedi** | ⏸️ aday |
+
+⛔ **Boş sütunları doldurma.** Bu tablonun değeri ölçülmüş olmasıdır; bir
+etiketi tahminle doldurmak, tablonun tamamını tahmin seviyesine indirir.
+Aday etiketin tabloya TAM SATIR olarak girmesinin tek yolu kart Y'dir:
+`08_YAYIN_PERFORMANS_TABLOSU.md`'de o temayla yayınlanmış en az iki film
+ve gerçek tamamlanma/paylaşım verisi.
+
+⚠️ Aday etiket kullanmak YASAK DEĞİLDİR — plana yazılabilir, betik kapısını
+geçer. Yalnız §4'ün süre-tatmin eşleşmesi aday etiket için doğrulanmamıştır:
+"dikey-uyumlu anlık durum" gerekçesi iki filmde de ELLE yazıldı, ölçülmedi.
+
+---
+
+## 3c. ⛔ TAKAS KALIBI MORATORYUMU (26.08.2026)
+
+Yazılı temaların tek cümle testleri sayıldığında beşi AYNI kalıbın
+varyasyonu çıktı — kalıp: **"X olabilmesi için Y feda edilir / Y'den
+vazgeçilir."**
+
+```
+LOSS OF LIFT     "For something to rise, you have to go down."
+LOW POWER        "Bir şeyin yaşaması için senin yaşaman gerekmiyor."
+BORROWED WEIGHT  "What remains is what someone carried the weight of."
+THE NEAR PASS    "bir şeyi görebilmek için başka bir şeyi görmekten vazgeçmek"
+THE BRIGHT TETHER "bir şeyin içine bakabilmek için yere yatmak"
+```
+
+Kalıbın kendisi sağlamdır — §6 tema-final uyumunun ve B2 bedelli seçim
+maddesinin doğal cümlesi budur. Sorun tekrarı: aynı kalıp beş filmde
+üst üste kullanılınca tema çeşitliliği DEĞİL tema tekrarı üretiyor.
+
+```
+⛔ KURAL: Takas kalıbı arka arkaya EN ÇOK 2 filmde kullanılır.
+   Üçüncü film §3 tablosundan HENÜZ KULLANILMAMIŞ bir tema seçer.
+   26.08.2026 itibarıyla hiç kullanılmamışlar:
+      Yalnızlık · Zaman/geçicilik · Kimlik · İnsan-makine sınırı · İlk temas
+   ⚠️ Bunların dördü §4'e göre YATAY temadır (süreç ister). Dikey sırada
+      geliyorsa: ya format değişir ya Umut/Entropi'ye dönülür — ama tek
+      cümle takas kalıbıyla yazılmaz.
+```
+
+**Neden kural gerekti:** Yukarıdaki beş cümle SAYILDI — bu bir izlenim değil,
+dosya taraması (26.08.2026). Aynı kalıp beşe çıkınca tema bir SEÇİM olmaktan
+çıkıp filmin varsayılan cümlesine döner.
+
+⚠️ **Bu kuralın dayanağı KALIP SAYIMIDIR, skor değil.** Tema skorlarının zayıf
+olduğu yönündeki eğilimin tek veri tabanı ⛔ KAPALI `FILM_QA_RAPORLARI/
+03_HIKAYE_KALITE_TABLOSU.md`'dir (geçerli 13 satırın 7'sinde Tema ≤5; tam 4
+olan iki film: Stone Sky · Blind Return) ve o tablo yeni tablolarla
+KARŞILAŞTIRILAMAZ [AGENTS §1]. Teşhis cümlesi — "bedel yok → tema dekoratif
+kalıyor" — depoda **tek** film kaydında yazılıdır: THE KALEIDA CRASH.
+Kuralı skorla değil kalıp sayısıyla gerekçelendir; skor tarafı ölçülmeyi
+bekliyor.
+
+---
+
 # 4. ⏱️ SÜRE-TATMİN KURALI — tema formatı seçer, tersi değil
 
 ```

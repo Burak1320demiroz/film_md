@@ -1,6 +1,6 @@
 # 🪐 THE RING LIGHT — FİLM QA KAYDI
 
-> **Film:** THE RING LIGHT · 16:9 yatay · 2-4 dk · `yatay_2_4_dk_filmler_uzay/THE_RING_LIGHT_ORBITAL_DOCKING_FILM.md`
+> **Film:** THE RING LIGHT · 16:9 yatay · 2-4 dk · `yatay_2_4_dk_filmler_uzay/THE_RING_LIGHT/THE_RING_LIGHT_ORBITAL_DOCKING_FILM.md`
 > **Plan:** 14 sahne (S0-S13) · 140 s · 0 kesme · 14/14 lockoff · 7 replik (7/7 gövdesiz AI)
 > **Kurgu:** 144 s · 15 klip / 14 kesme — **14 sahne + 4 s jenerik kartı**
 > **QA tarihi:** 12.08.2026 — dört koşu aynı gün: üç genel mercek **mod V**,

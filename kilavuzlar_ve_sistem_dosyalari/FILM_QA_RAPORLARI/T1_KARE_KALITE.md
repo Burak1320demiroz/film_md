@@ -46,4 +46,32 @@ satırlarda 9:16 / Güvenli Alan / Kanca dolar; yatay satırlarda boş kalır.
 | Film | Format | Sahne | Karakter | Fizik | Kamera | Işık | Çevre | Canlı | Parçacık | Diyalog-Ses | Kare Çapası | Hareket | 9:16 | Güvenli Alan | Kanca | Negatif | Toplam |
 |---|:--:|---|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
 
-*(Henüz satır yok — ilk koşuyu işleyen ajan bu satırı siler.)*
+| **The Iron Slope** Ⓥ ⛔ ⚠️ | DİKEY | Derleme (6) | 4 | (2) | (10) | 10 | (6) | — | 4 | ⬜ | — | 2 | 6 | 6 | 10 | 3 | **5,5** |
+
+| **The Rose Coat** Ⓥ ⛔ ⚠️ | YATAY | Derleme (13) | ⬜ | ⬜ | ⬜ | ⬜ | — | — | ⬜ | — | — | ⬜ | | | | (5) | **—** |
+
+> **The Rose Coat · 26.08.2026 · Ⓥ mod V · ⛔ ÖN KOŞU · ⚠️ ŞARTLI**
+> Kayıt: [`01_FILM_RAPORLARI/THE_ROSE_COAT.md`](01_FILM_RAPORLARI/THE_ROSE_COAT.md)
+> · **SPEC dosyası filmin klasöründe hazırdı ve verilmedi [D129].**
+> · Raporun toplamı 5,0. **Toplam `—`**: ⑩ önerme kapısı iki 🔴'ü düşürdü
+> (0:03 hook = filmin novum'u · 1:33 "texture swimming" = filmin ana
+> mekaniği, bir fırça darbesi paneli DURUM 3'ten DURUM 0'a indirir), kalan
+> her hücre ⬜ AÇIK — ayakta, kapalı, sayı taşıyan hücre **0** [D130].
+> · Kaynaksız hücreler `—` yazıldı [D131]; Kamera'nın 10/10'u ⬜'ye döndü:
+> raporun KENDİ taban envanteri "very slow, steady push-ins" diyor, plan
+> `0 pan · 0 tilt · 0 zoom · 0 track`.
+> · **SEVERITY TALLY HATALI:** rapor 🔴 7 yazdı, kendi kayıt defterinde 8
+> var [D132]. Negatif sayım da kendi içinde çelişkili
+> (`FINDINGS WITH A MATCHING BOX: 6 · TICKED: 5 · MISSED: 0`).
+> · 🔴 KAPALI TEK MADDE: 2:10-2:15 başlık kartı — `SCREEN TEXT 0.0 s`
+> kilidinin ihlali, dört mercek aynı in-out'u verdi [D70/72/120].
+
+> **The Iron Slope · 25.08.2026 · Ⓥ mod V · ⛔ ÖN KOŞU · ⚠️ ŞARTLI**
+> Kayıt: [`01_FILM_RAPORLARI/THE_IRON_SLOPE.md`](01_FILM_RAPORLARI/THE_IRON_SLOPE.md)
+> · Parantezli hücreler ortak adım ⑩'dan (önerme kapısı) geçemedi:
+> **Fizik (2)** ve **Çevre (6)** düşüşlerinin kaynağı planda YAZILI tasarımdı
+> (0,220 g itki yerçekimi · S3'ün planlı anten latisi); **Kamera (10)** ise
+> kaynaksız değil, mercek kaymayı GÖRMEDİ — master ölçümü S2'de kamera
+> kaymasını gösteriyor. · **Diyalog-Ses 1/10** ⬜ AÇIK (vakumda ses hükmü
+> 10 sn dinleme bekliyor). · Toplam, rubriğin kendi aritmetiğidir;
+> kapı ④ düştüğü için satır ortalamalara girmez.

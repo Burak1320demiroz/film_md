@@ -25,7 +25,7 @@ Bugün tek fragman teslimi var: bu dosya.
 
 ### ⚠️ AMA BU FİLMİN BAŞKA BİR DİKEY TÜREVİ VAR — üç koşul ONA KARŞI DA koşuldu
 
-> `dikey_shorts_filmler/THE_SLOW_STONE_DIKEY_SHORTS.md` bir fragman değil,
+> `dikey_shorts_filmler/THE_SLOW_STONE/THE_SLOW_STONE_DIKEY_SHORTS.md` bir fragman değil,
 > ayrı bir dikey shorts FİLMİDİR (kendi sayım satırı var). Ama aynı kaynak
 > filmin aynı varlıklarını, aynı oranda, aynı kanalda satar. §1.3b/§1.3c'nin
 > gerekçesi ("iki teslim aynı izleyiciyi paylaşmasın") burada da geçerlidir,

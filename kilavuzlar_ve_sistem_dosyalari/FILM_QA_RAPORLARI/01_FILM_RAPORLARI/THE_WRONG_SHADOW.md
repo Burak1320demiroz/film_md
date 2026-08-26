@@ -2,7 +2,7 @@
 
 > Oluşturma: 06.08.2026 · iki mercek aynı gün, ikisi de MOD V (belgesiz)
 > koşuldu; belge cevapları aşağıda bu kayda işlendi.
-> Kaynak dosya: `dikey_shorts_filmler/THE_WRONG_SHADOW_DIKEY_SHORTS.md`
+> Kaynak dosya: `dikey_shorts_filmler/THE_WRONG_SHADOW/THE_WRONG_SHADOW_DIKEY_SHORTS.md`
 
 ---
 

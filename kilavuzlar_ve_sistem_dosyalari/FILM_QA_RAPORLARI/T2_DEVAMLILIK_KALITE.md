@@ -52,7 +52,35 @@ gördü" o zaman bir doğrulama değil, tek raporun dört kopyasıdır.
 | Film | Kimlik | Kostüm | Yıpranma | Ekipman | Çapraz Kesme | Fizik | Sayaç | Coğrafya | Zaman-Işık | Dünya Propu | Nedensellik | Nicelik+Sayı | Kurulum | Toplam |
 |---|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
 
-*(Henüz satır yok — ilk koşuyu işleyen ajan bu satırı siler.)*
+| **The Iron Slope** Ⓥ ⛔ ⚠️ | ⬜ | 3 | 10 | 5 | 9 | 8 | — | 2 | 7 | 3 | ⬜ | — | ⬜ | **5,9** |
+
+| **The Rose Coat** ⚠️ | — | ⬜ | ⬜ | ⬜ | (7) | — | ⬜ | (7) | — | ⬜ | — | — | — | **—** |
+
+> **The Rose Coat · 26.08.2026 · belgesiz koşu · ⚠️ ŞARTLI**
+> Kayıt: [`01_FILM_RAPORLARI/THE_ROSE_COAT.md`](01_FILM_RAPORLARI/THE_ROSE_COAT.md)
+> · Raporun toplamı **7,2** ve raporun kendi hükmü `STRUCTURAL PROBLEM` —
+> söz ile sayı zıt yöne bakıyordu. Sebep: 12 puanlı hücrenin **6'sı**
+> "no in-scope source · 10/10". Kaynaklı hücrelerin ortalaması **4,3**;
+> Δ = 2,9 puan, sıfır yeni gözlem [D131]. O altı hücre artık `—`.
+> · Parantezli iki hücre ⑩'dan geçemedi [D130]: **Coğrafya (7)** kaynağı
+> pada mesafe sayacıydı (S5 = 120 m ↔ S9 = 0 m — film gemiye YÜRÜYOR) ·
+> **Çapraz Kesme (7)** kaynağı SPEC'in temas bütçesiydi ("düşen figüre
+> yardım edilmemesi TASARIMDIR").
+> · **Sayaç ⬜:** rapor `no counter present` yazdı; filmde ÜÇ metinsiz
+> sayaç var ve biri filmin ana mekanizması (sırt durumu, beş görsel
+> durum, monotonik). Bu bulgu yokluğu değil ÖLÇÜM BOŞLUĞUDUR [D134].
+> · **Kostüm/Yıpranma/Ekipman ⬜:** üçü de "sırt çantası" okumasına asılı;
+> SPEC `çanta 0 · sırt DÜZ GÖMME PANEL · silüet 13/13 dümdüz` diyor.
+> · ⭐ Raporun #1 bulgusu (bot rengi) doğru yakalandı, YANLIŞ ETİKETLENDİ:
+> "kostüm sürüklenmesi" değil, iki figürü ayıran ÜÇ kanaldan biri [D134].
+
+> **The Iron Slope · 25.08.2026 · Ⓥ mod V · ⛔ ÖN KOŞU · ⚠️ ŞARTLI**
+> Kayıt: [`01_FILM_RAPORLARI/THE_IRON_SLOPE.md`](01_FILM_RAPORLARI/THE_IRON_SLOPE.md)
+> · ⬜ hücreler kapı ④ gereği **sayı taşımaz** (süre 65,0 s ≠ 48,0 ± 2 →
+> film boyuna bakan kategoriler: Kimlik sürekliliği · Nedensellik · Kurulum).
+> · Kostüm 3/10 ayakta ve **rapordan ağır**: armaların sürüklenmesi bir yana,
+> göğüsteki kırmızı/mavi arma ile yanan gösterge planın negatif bloğunda
+> yasaklıydı (`no patch, no logo`). · Coğrafya 2/10 ayakta.
 
 ⛔ **İki bulgu diğer bütün skorları ezer:**
 ```

@@ -579,3 +579,61 @@ değişmeyen, siluete dokunmayan bir yer değiştirme, üretim sırasında
 der, 90 "hareketi ÖLÇÜLEBİLİR kıl" der. Sayı küçük kalır.
 
 ---
+
+## 🔴 DERS 127: İVME PROMPT'A YAZILIR, EKRANA GELMEZ — "HER SANİYE +2,16 m/s" 12 PROMPTUN 12'SİNDE VARDI, PARÇA SABİT ~0,15 m/s SÜZÜLDÜ; KİLİTLENEBİLEN ŞEY İVME DEĞİL, KADRAJI TERK ETME SÜRESİDİR
+
+**Kaynak:** THE IRON SLOPE (dikey shorts, 25.08.2026) · ⚖️ FİZİK
+`Gravity & Free Fall 3/10 — TWO GRAVITIES` + master ölçümü:
+S0'da kopan panel 1,0-4,0 saniye arasında gövdeye göre **sabit ~0,15 m/s**
+ilerledi, yana-yukarı doğru, ve 10 saniyelik klibin sonunda **hâlâ kadrajdaydı.**
+Kilit 3. saniyede 9,7 metre istiyordu — kadrajın yaklaşık 2,5 katı.
+
+**Sorun:** Sapma tek bir sahnenin kusuru değil, **filmin varlık sebebinin
+üretilememesidir.** Bu filmin novum'u ("uzayda aşağı var — aşağısı motor")
+tamamen serbest cismin HIZLANARAK düşmesine bağlıydı; hızlanma çıkmayınca
+izleyici 60 saniye boyunca "uzayda merdiven çıkan adam" gördü. Bağımsız
+mod V hikâye merceği bunu tek cümlede söyledi: `THE ONE THING NOTHING ELSE
+DOES: none found` · `Originality 2/10`.
+
+Depoda kanıtlanmış tek mekanizma sayısal kilitti; **burada sayısal kilit
+tuttu ama sayı ölçülemez cinstendi.** Model 8-10 saniyelik bir klipte zaman
+integrali kurmuyor: "saniyede +2,16 m/s kazanır" cümlesinden bir ivme eğrisi
+türetmiyor, "uzay + serbest cisim" önseline düşüyor — sabit hızda süzülme.
+Bir izleyici de 2,16 m/s²'yi göremez; görebildiği tek şey **nesnenin kadrajdan
+ne kadar çabuk çıktığıdır.**
+
+**ÇÖZÜM — prompt'a eklenecek (ivme cümlesinin YERİNE):**
+
+```
+FALL LOCK — WRITTEN AS TIME-TO-EXIT, NOT AS ACCELERATION:
+The panel separates at second 2. By second 2.6 its lower edge has crossed
+the bottom frame line, and by second 3 it is completely gone from the shot;
+it does not return. It travels along the hull line, parallel to the ladder
+rails. At the moment it passes him it is already faster than he can climb:
+it covers its own length in a quarter of a second.
+```
+
+```
+① SÜRE YAZ, İVME YAZMA
+   ✅ "kadrajı 0,6 saniyede terk eder"      (ekranda ölçülebilir)
+   ❌ "her saniye 2,16 m/s hız kazanır"     (ekranda görünmez)
+② KENDİ BOYUNU CETVEL YAP — hız, kadraj içindeki bir uzunlukla yazılır:
+   "kendi boyunu çeyrek saniyede geçer" [D90'ın ölçen-kenar kuralının
+   hız hâli].
+③ HIZLANMA GÖSTERİLECEKSE İKİ NESNE KULLAN: model ivmeyi üretmez ama
+   FARKLI HIZLARI üretir — önce yavaş geçen bir parça, arkasından onu
+   geçen ikinci parça. Fark, ivmenin görünür temsilidir.
+④ KABUL KRİTERİ: serbest cisim kadrajda 1 SANİYEDEN UZUN KALAMAZ.
+   Kalıyorsa sahne reddedilir — ve bu ölçüm S0 kapısında yapılır:
+   ffmpeg -ss <kopuş> -i clip.mp4 -t 1.2 -vf fps=5 k_%02d.png
+   son karede parça varsa ⛔ ÜRETİM DURUR.
+⑤ NEGATİF BLOK BU İŞİ YAPMAZ: "no floating debris, no hovering,
+   no sideways drift" 12 promptun 12'sinde yazılıydı; ekranda üçü de
+   oldu [D59 — yasak, ismi kazandırır].
+```
+
+> 🔗 Ders 4 · 12 · 30 (süzülme/parçacık ailesi — bu ders onların İVME
+> tarafıdır) · Ders 44 (yerçekimi sayısı tek başına yazılmaz) · Ders 90
+> (olayı ÖLÇEN bir kenar koy — burada cetvel, kadraj sınırının kendisidir)
+> · Ders 73 (novum türetilmiş fenomene yüklenmez; bu ders "üretilemeyen
+> harekete de yüklenmez" der) · Ders 74 (S0 kapısı yazılıydı, koşulmadı).

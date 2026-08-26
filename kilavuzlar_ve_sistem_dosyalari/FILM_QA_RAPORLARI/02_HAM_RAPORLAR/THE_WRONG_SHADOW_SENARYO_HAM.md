@@ -5,7 +5,7 @@
 > · Koşu: **INPUT MODE V** (plan verilmedi) · aynı 64 s'lik kurgu üzerine,
 > SHORTS_QA koşusuyla aynı gün.
 >
-> **Plan dosyası:** `dikey_shorts_filmler/THE_WRONG_SHADOW_DIKEY_SHORTS.md`.
+> **Plan dosyası:** `dikey_shorts_filmler/THE_WRONG_SHADOW/THE_WRONG_SHADOW_DIKEY_SHORTS.md`.
 > Rapor doğru mod V davranışı gösterdi: kendi sahne haritasını kurdu, hiçbir
 > şeyi "eksik" demedi, `FILM: (not supplied)` yazdı ✅ [Ders 65], soruları
 > FLAGS'e taşıdı.

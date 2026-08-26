@@ -329,8 +329,9 @@ same defect twice.
 categories perfectly. So make the consequence explicit: a defect your
 scope list hands to another lens gets no severity tag, no deduction, no
 row in a contradiction log and no mention in a scores cell. A category
-whose ONLY source is such an observation stays at FULL score and writes
-"no in-scope source" in its issue cell.
+whose ONLY source is such an observation CARRIES NO NUMBER: it writes
+"no in-scope source" in its issue cell, takes `—` in the Score cell, and
+stays out of the mean.
 
 Reviews from different lenses are merged into one record. Scoring an
 event that belongs to another lens bills one defect several times and
@@ -499,6 +500,22 @@ generation: each clip carries its own room and nothing carries across. Log
 each drop with its in and out timecodes; a run of them is one finding, not
 twelve.
 
+```
+⛔ A SILENCE CLAIM IS A CLAIM ABOUT THE FILE, NOT AN IMPRESSION OF IT.
+
+"Absolute silence", "digital silence", "dead air" and "the floor drops
+out" mean that NOTHING is audible — no hiss, no room, no hum. Write one
+of those words only when you have listened to that stretch and heard
+nothing at all. If what you heard was the bed getting quieter, thinner
+or duller, that is what you write: "bed thins, floor still present".
+
+A stretch you are not sure about is written "level drops, floor
+uncertain" and goes to FLAGS — never a 🔴 BLOCKER. Silence is the one
+finding in this rubric that an operator can check in ten seconds with a
+meter, and a BLOCKER that a meter contradicts costs more than it ever
+saved.
+```
+
 ### 7. 🔊 SFX CAUSALITY & SYNC
 ```
 □ Every effect lands on the exact frame of the event that causes it — not
@@ -581,6 +598,25 @@ RUNTIME: [mm:ss — "measured" if read from the container's own duration,
           "~mm:ss ESTIMATED" if counted from playback; an estimated runtime
           may never be used to declare a line missing or a plan violated]
 AUDIO STATE: [A / B / C / D] · SPOKEN LINES: [n] · CUTS COUNTED: [n]
+NON-SCENE MATERIAL: [in-out + what it is, or "none"]
+LINES HEARD: [n · every spoken line VERBATIM with its timecode, or "none"]
+             When you write "none", say which none it is: "none — room tone
+             present" or "none — no audio information at all". A film with no
+             dialogue and a film with no audio track are different objects and
+             only one of them is a delivery defect.
+
+⛔ NON-SCENE MATERIAL is not a scene at ANY duration. Material that carries
+burned-in text, or is static, or bears no scene fingerprint, is a card — a
+14-second card is no more a scene than a 4-second one. Report its in and out
+timecode on that line, then EXCLUDE it from CUTS COUNTED, from the scene map,
+from the presence string and from every duration you report. Its text is never
+the film's name.
+
+⛔ LINES HEARD is a transcript, not a summary. Write each line inside quotes
+exactly as spoken, with the second it starts. If a line repeats, list BOTH
+occurrences with both timecodes — the same line twice, one clip length apart,
+is evidence about the edit and is lost the moment you collapse it into one
+entry. Write "none" for a silent film; never leave this line off.
 
 ⛔ CUTS COUNTED is not optional and not a rounded impression: it is the count
 you made in STEP 1, with its timecodes. A report that names scenes without
@@ -632,14 +668,21 @@ VERDICT: [SOUNDTRACK HOLDS / AUDIBLE DRIFT, FIXABLE IN THE MIX /
 ④ THE OVERALL SCORE IS ARITHMETIC, NOT AN IMPRESSION. Every category begins
    at 10/10 and loses only the deductions its own Issue cell lists with
    timecodes. A category whose issue cell reads "no in-scope source", "no
-   source" or the equivalent scores 10/10 — writing that phrase and a number
-   below ten in the same row is a contradiction, and the phrase wins. Then
+   source" or the equivalent CARRIES NO NUMBER: write `—` in the Score cell
+   and keep it OUT of the mean, exactly like N/A. Absence of evidence is not
+   evidence of perfection, and a full score is a claim you did not measure.
+   Writing that phrase and any number in the same row is a contradiction, and
+   the phrase wins. Then
    compute the OVERALL SCORE as the mean of the category scores you actually
    printed, and use that same number everywhere the report asks for a total.
    Before you finish, add the printed cells and check the mean against your
    overall: if they disagree, the table is right and the overall is wrong.
    Two different totals for one film is a defect, and a total that no set of
    printed cells can produce is a fabricated measurement.
+⑤ COUNT THE SEVERITY TALLY FROM THE FINDINGS, NOT FROM MEMORY. Before
+   printing it, count the 🔴, 🟠 and 🟡 tags actually written in this
+   report; the tally must equal those counts. A verdict driven by a tally
+   that does not match the findings is a fabricated verdict.
 ```
 
 | Category | Score | Critical Issue |

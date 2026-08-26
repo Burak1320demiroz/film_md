@@ -143,7 +143,222 @@ DONDURULACAK, dört yeni tablo boş açılacak.
 
 ---
 
+# ⭐⭐ 24.08.2026 — DÖRT MERCEĞİN İLK KOŞUSU: THE BORROWED WEIGHT
+
+> 22.08 notu "dört merceğin hiçbiri henüz hiçbir filme koşulmadı" diyordu.
+> Bu, o ilk koşudur — ve sistem sınandığı ilk günde **kendi kapısından
+> düştü.** Tam kayıt: `../FILM_QA_RAPORLARI/01_FILM_RAPORLARI/THE_BORROWED_WEIGHT.md`
+
+```
+MALZEME  teslim kurgusu · 264 s (② ③) / 266 s (① ④)
+MOD      dördü de V — SPEC AYRI DOSYA olarak hazırdı, hiçbirine verilmedi
+         → D94/D117'nin YEDİNCİ vakası
+OTURUM   ⬜ kayıtsız — ayrı oturum olup olmadığı bilinmiyor [D110]
+SONUÇ    ⑤ ÇAPRAZ SAYIM 🚨 GEÇERSİZ · dört skor satırının dördü de
+         T1-T4'e YAZILMADI · 00_INDEX matrisinde dört hücre ❌ kaldı
+```
+
+> 🔎 **① 1_KARE (24.08 · THE BORROWED WEIGHT):** ilk koşu. 26 kesme saydı,
+> künyeyi doğru doldurdu, aritmetiği kendi tablosuyla tuttu (7.0 = 56÷8).
+> İki kusuru: severity tally 🔴5 diyor, kendi kütüğünde 🔴6 var (skor
+> aritmetiği rubriğe yazıldı [D119], **severity aritmetiği yazılmadı** —
+> ve verdict'i o sayı sürüyor); kategori 8'i sessiz bir filmde başlık
+> kartıyla 5/10'a indirdi (yokluk `N/A` olmalıydı [D113]). ⭐ En değerli
+> çıktısı skor değil, PRESENCE STRING'i oldu — ② ile birlikte kurgunun
+> fazla ve eksik kliplerini buldu (**DERS 121**).
+> Çalıştırma kaydı: 1 kez çalıştırıldı · son 24.08.2026 · sonuç ⚠️ ön koşu,
+> parti geçersiz.
+
+> 🔎 **② 2_DEVAMLILIK (24.08 · THE BORROWED WEIGHT):** ilk koşu; 22.08'de
+> yazılan "rapor uzunluğu riski" gerçekleşmedi, 13 kategori de doldu.
+> Ama **D119'un birinci tekrarı burada çıktı**: dört hücre "no in-scope
+> source" yazıp aynı satıra 7/10 koydu; rubriğin gövdesinde D119 yaması
+> kelimesi kelimesine duruyor. Yazdığı 4.9 yerine kendi tablosu 6.0 veriyor
+> — 1.1 puan. İkinci kusur: sahne haritası 3:59'da bitiyor, künyesi 4:24
+> diyor; 25 saniye haritasız kaldı ve bunu hiçbir kapı sormuyordu.
+> Çalıştırma kaydı: 1 kez çalıştırıldı · son 24.08.2026 · sonuç 🚨 parti
+> geçersiz + D119 tekrarı.
+
+> 🔎 **③ 3_SES (24.08 · THE BORROWED WEIGHT):** ilk koşu ve **en ağır
+> ders bu mercekten çıktı.** Filmin dört MACHINE repliğinden ikisini hiç
+> duymadı, duyduğu ikisini de yanlış yazdı ("The weight is all we have
+> left." — gerçek satır "Beacon signal confirmed. Range: three hundred
+> metres."). Register'ı HUMAN okuyup "sentetik duruyor" bulgusuyla
+> Sentetik hücresini 4/10'a indirdi → kart E3 adım 2 bulguyu DÜŞÜRDÜ
+> (bu adım atlansaydı rubrik çalışan tasarımı bozmaya yönlendirecekti).
+> Turn-Taking'e tek ses bildirip puan verdi (N/A olmalıydı).
+> ⭐ Buna karşılık **aynı repliğin 0:23 ve 0:33'te — tam bir yuva arayla —
+> duyulduğunu kaydetti**; duplike klibin tek kanıtı bu satır oldu (D121).
+> Çalıştırma kaydı: 1 kez çalıştırıldı · son 24.08.2026 · sonuç 🚨 parti
+> geçersiz + defter iki eksende hatalı.
+
+> 🔎 **④ 4_HIKAYE (24.08 · THE BORROWED WEIGHT):** ilk koşu; partinin
+> AYKIRI raporu. 25 kesme sayıp 11 sahne haritası yazdı — rubriğin kendi
+> bölme kuralının ihlali, ve şeridini kullanılamaz kıldı. Yanan başlık
+> kartından film adını okudu (`FILM: THE BORROWED WEIGHT`) — yasak alanın
+> KENDİ SATIRINDA yazılı, yine ihlal edildi → **D105/D65 tekrarı**.
+> ⭐ Ama üç MACHINE repliği neredeyse birebir alıntıladı ("Cumulative load
+> 1.1 tons", "Cargo secured") — ③'ün kaçırdıklarını bu rapor duydu ve
+> kurgunun kuyruk aritmetiği bu alıntılarla kapandı (D121).
+> ⛔ "Düz duygu yayı · kriz yok · bedeli düşük final" okuması, planın S24
+> TWIST finali kurguda görünmediği için üretildi: rapor olmayan bir finali
+> eleştirdi. Kesme listesi ve REWRITE reçeteleri UYGULANMAZ.
+> Çalıştırma kaydı: 1 kez çalıştırıldı · son 24.08.2026 · sonuç 🚨 parti
+> geçersiz + D105 tekrarı.
+
+⭐ **Partinin net kazancı:** dört geçersiz skor, üç yeni ders (D120 · D121 ·
+D122), bir düzeltilmiş yazım paketi (planın replik çizelgesi) ve **teslim
+kurgusunun master açılmadan yeniden kurulması** — 26 yuva, ilk perdede +3
+fazla klip, kuyrukta −2 eksik sahne, sonda yasaklı başlık kartı.
+
+---
+
+# 🔬 24.08.2026 — DERİN TARAMA SINIFI: ⑤ ARKA PLAN + ⑥ FİZİK YAZILDI
+
+> Dört mercekli sisteme iki KONU merceği eklendi — payda /4'e DOKUNMADAN.
+> Karar mekanizması ve koşu tetikleyicileri: `00_README.md` derin tarama
+> bölümü. Görev kartları: AGENTS.md **F** ve **F2**. Skor tabloları:
+> `../FILM_QA_RAPORLARI/T5_ARKA_PLAN_KALITE.md` · `T6_FIZIK_KALITE.md`.
+
+```
+NEDEN AYRI SINIF   22.08'in ayrım ekseni ZAMAN'dı (kusur kaç sahneden
+                   okunur); bu ikisi o eksene oturmuyor. ⑤ zaman ekseninin
+                   ikisini birden tarar ama yalnız ÖZNE-DIŞI alanda;
+                   ⑥ her yerde ama yalnız SAYI taşıyan bulguda. Beşinci
+                   zorunlu mercek yapmak 6→4 kararını geri almak olurdu;
+                   opsiyonel bırakıp paydaya sokmamak yetmezdi (eski
+                   sistemin ölçülmüş dersi: opsiyonel koşulmaz — 34 kaydın
+                   5'inde ses vardı). Çözüm: RİSK TETİKLİ sınıf — koşma
+                   kararı tercihe değil, filmin risk kartlarında zaten
+                   yazılı satırlara bağlandı.
+
+⑤ 5_ARKA_PLAN      video-only · 9 kategori · baseline = STEP 1 arka plan
+                   envanteri (özne yalnız dışlamak için adlandırılır).
+                   Yeni ölçüm: kimse özne-dışı alana sistematik bakmıyordu
+                   — model sadakat bütçesini özneye harcar, insan gözü de.
+                   Verdict tavanı: SUBJECT DUPLICATE IN FIELD (arka planda
+                   özne kopyası her skoru ezer).
+
+⑥ 6_FIZIK          mod D/V · 9 kategori · tek SAYISAL mercek. Yeni ölçüm:
+                   mod D'de planın sayısal kilitleri NUMERIC LOCK LIST'e
+                   kopyalanır ve ekranda tek tek doğrulanır (PASS/FAIL/
+                   UNMEASURABLE/NOT EXERCISED) — depoda yazılı kilidi
+                   üretilmiş videoya karşı doğrulayan İLK alet. STEP 0
+                   PREMISE GATE önerme kapısını (kart eki ⑩) rubriğin
+                   içine yapısal taşır: dünya kuralı ilan edilen imkânsız
+                   fizik bulgu değildir, yalnız tutarlılığı puanlanır.
+                   Cetvel kuralı: tahmini mesafe ±%20 tolerans taşır,
+                   mahkumiyet cetvelinden ince olamaz. Verdict tavanı:
+                   TWO GRAVITIES.
+
+ORTAK ÇEKİRDEK     22.08'in sekiz kapısı ikisine de birebir kondu: MEDIA
+                   GATE · CUTS COUNTED · DECLARED ABSENCE · ARITHMETIC
+                   GATE · SCORES SUMMARY disiplin bloğu · NOT IN THIS
+                   PASS · OUT-OF-SCOPE sonuç bloğu · OUT-OF-SCOPE FLAGS.
+                   + İlk koşuların dersleri doğuştan yamalı: severity
+                   tally'nin bulgulardan SAYILMASI (①'in 24.08 kusuru)
+                   iki rubrikte de SCORES SUMMARY ⑤ maddesi olarak gövdede.
+
+BULGU SAHİPLİĞİ    D108 derin-tarama eki (kartlarda yazılı): çekirdek
+                   mercek her zaman sahiptir; ⑤/⑥ bulgusu çekirdek
+                   kapsamına oturuyorsa film kaydına o merceğin bölümüne
+                   "⑤/⑥ taraması buldu" notuyla girer. Aynı olayı iki
+                   mercek görmüşse tek satır, iki kaynak.
+```
+
+> Çalıştırma kaydı ⑤: 0 kez çalıştırıldı — henüz koşulmadı.
+> Çalıştırma kaydı ⑥: 0 kez çalıştırıldı — henüz koşulmadı.
+> ⚠️ İki rubrik de İLK koşusunu görmemiş alettir: ilk koşular ölçüm
+> sapması bandını kurana kadar skorları tek başına karar sürmez
+> (dört merceğin 24.08 ilk koşu partisi emsali).
+
+---
+
+# ⭐⭐ 25.08.2026 — ALTI MERCEĞİN İLK KOŞUSU: THE IRON SLOPE (dikey shorts)
+
+> Deponun ilk **altı mercekli** partisi (dört çekirdek + iki derin tarama) ve
+> deponun ilk **ÖLÇÜLMÜŞ** partisi: raporlar işlenmeden önce master dosya
+> ffprobe/ffmpeg ile ölçüldü. Tam kayıt:
+> `../FILM_QA_RAPORLARI/01_FILM_RAPORLARI/THE_IRON_SLOPE.md`
+
+```
+MALZEME  teslim kurgusu · ÖLÇÜLEN 65,000 s · 720×1280 · 30 fps
+MOD      altısı da V — SPEC dosyası bu kez HAZIR DEĞİLDİ (yazılmıştı,
+         depoda bulunamadı) → D94/D117'nin sekizinci vakası, mod D hâlâ 0
+OTURUM   🚨 ŞÜPHELİ — altı rapor da AYNI ve AYNI ÖLÇÜDE YANLIŞ kesme
+         listesini verdi (0:09/0:18/0:29/0:39/0:49/1:00); gerçek ızgara
+         düzgün 10 saniyelik [D110 · yeni vaka]
+SONUÇ    ⑤ ÇAPRAZ SAYIM ✅ (altısı da 6 sahne) ama kapı BU PARTİDE İŞE
+         YARAMADI: uyuşma doğruluk değildi → DERS 125
+         ④ KURGU KAPISI (b) düştü (65,0 s ≠ 48,0) → satırlar ⚠️ ŞARTLI
+         ③ SES satırı 🚨 GEÇERSİZ — 🔴 BLOCKER'ı ölçümle çürütüldü
+```
+
+> 🔎 **⑥ 6_FIZIK — ilk koşusu, ve merceğin varlık sebebi doğrulandı:** tek
+> sayısal mercek, filmin tek gerçek kusurunu (serbest cisim hızlanmıyor)
+> bağımsız olarak buldu — ama PREMISE REGISTER'ı "none" yazdığı için doğru
+> gözlemi yanlış hastalığa bağladı ve reçetesi ("zero-g locomotion yaz")
+> filmin novum'unu silecekti. Mod D koşulsaydı kilit tablosu tek satırda
+> `FAIL` verirdi. Çalıştırma kaydı: 1 kez · son 25.08.2026 · ⚠️ ön koşu.
+>
+> 🔎 **⑤ 5_ARKA_PLAN — ilk koşusu, ve mercek kendi işini ıskaladı:** altı
+> sahnenin altısında da `FAR FIELD: Black space, star field` yazdı; S2'de
+> kadrajın alt üçte birini bir gezegen kaplıyor ve gezegen planın negatif
+> bloğunda yasaklıydı → **DERS 126** + rubrik yaması. Çalıştırma kaydı:
+> 1 kez · son 25.08.2026 · ⚠️ ön koşu.
+>
+> 🔎 **③ 3_SES — deponun ilk UYDURMA çekirdek bulgusu:** "S4 complete digital
+> silence" 🔴 BLOCKER'ı ve üç satırlık AMBIENCE HOLE LOG, dosyada var olmayan
+> bir sessizliği tarif ediyor (`silencedetect -50 dB/0,3 s` → sıfır sonuç;
+> S4 tabanı −19,7…−22,8 dB). Satır 🚨 geçersiz → **DERS 125** + rubrik yaması.
+>
+> 🔎 **① 1_KARE · ② 2_DEVAMLILIK · ④ 4_HIKAYE:** üçü de ⚠️ ön koşu. ④'ün tek
+> cümlesi partinin en değerli çıktısı oldu: `THE ONE THING NOTHING ELSE DOES:
+> none found` — filmin novum'u ekrana gelmemişti ve bunu ölçüm doğruladı.
+
+---
+
 # 🧭 DERS → RUBRİK İZ DEFTERİ
+
+```
+D123 → PROMPT_KONTROL/PROMPT_QA_CRITIQUE_PROMPT.md · yeni kategori
+       "3b. YASAK LİSTESİ POLİTİKA MALİYETİ" + BLOCK eşiğine satır
+       (25.08.2026 · kaynak rubrik: bu hatayı üretimden ÖNCE
+        yakalayabilecek tek alet oydu)
+D123 → 1_KARE · GEREKMEZ — üretilmiş kareyi ölçer, prompt yazmaz
+D123 → 2_DEVAMLILIK · 3_SES · 4_HIKAYE · GEREKMEZ — aynı sebep
+D123 → 5_ARKA_PLAN · 6_FIZIK · GEREKMEZ — aynı sebep
+       ⚠️ Altı merceğin hiçbiri prompt YAZMIYOR; bu dersin ürettiği
+       hata yalnız yazım tarafında doğar. Tarama yapıldı, kapsam tek.
+
+D124 → hiçbir rubrik · GEREKMEZ — ders bir ÜRETİM ARACI ayarını (klip
+       süresi) plana bağlıyor; rubrikler süreyi ölçmez, artık operatör
+       ölçüyor (AGENTS ortak adım ⑪). Kardeş tarama yapıldı: altı
+       rubriğin altısı da bu hatayı ÜRETEMEZ.
+D125 → 3_SES · "6. AMBIENCE CONTINUITY" altına "A SILENCE CLAIM IS A
+       CLAIM ABOUT THE FILE" bloğu (kaynak rubrik — uydurma 🔴 oradan
+       çıktı)
+D125 → AGENTS.md §3 ORTAK ADIMLAR · yeni ⑪ ÖLÇÜM KAPISI (dersin asıl
+       yeri: hata rubriğin kuralında değil, ölçme aletinin yokluğundaydı)
+D125 → 1_KARE · 2_DEVAMLILIK · 4_HIKAYE · 5_ARKA_PLAN · 6_FIZIK ·
+       GEREKMEZ — altısı da CUTS COUNTED istiyor ve istemekte haklı;
+       sayının DOĞRULANMASI operatör tarafında koşuyor
+D126 → 5_ARKA_PLAN · STEP 1 envanteri, "FAR FIELD" satırına "NAME THE
+       LARGEST NON-EMPTY OBJECT + tekrarlayan satır kendi bayrağıdır"
+       (kaynak rubrik)
+D126 → 1_KARE · kategori 5 ÇEVRE'ye "NAME THE LARGEST BACKGROUND OBJECT"
+       (kardeş tarama: aynı gezegeni o da görmedi)
+D126 → 2_DEVAMLILIK · 3_SES · 4_HIKAYE · 6_FIZIK · GEREKMEZ — alanı
+       envanterleme görevi yok
+D127 → 6_FIZIK · kategori 1'e "CONSTANT-VELOCITY TEST" (kaynak rubrik:
+       ivmesizliği ölçebilecek tek alet) · ⚠️ bu ders 123 numarasını
+       alacaktı; 123 aynı gün paralel bir yazım oturumunda kullanıldı
+D127 → 1_KARE · GEREKMEZ — tek klipte parçacık davranışını zaten sorar,
+       ama İVME ölçümü sayısal merceğin işidir
+D127 → 2_DEVAMLILIK · 3_SES · 4_HIKAYE · 5_ARKA_PLAN · GEREKMEZ —
+       aynı sebep; dersin asıl yeri PROMPT tarafıdır (kilit metni
+       DERSLER/03'te)
+```
 
 > **Ne işe yarar:** "Bu ders hangi rubriğe işlendi?" sorusunun TEK cevabı.
 > Rubrikte aranacak etiket kalmadı; yeni ders işlenince kart G adım 5
@@ -197,6 +412,19 @@ D119       → MANTIK (kaynak rubrik, önce) · KARAKTER · SES · SHORTS · VID
 D110       → VIDEO · SENARYO · MANTIK · KARAKTER · SES · STEP 1 "build this
              from the media alone; a ledger from earlier in this session is
              not evidence" + operatör kuralı: her mercek TEMİZ oturumda
+D120       → ① KARE · ② DEVAMLILIK · ③ SES · ④ HİKAYE · çıktı künyesi
+             `NON-SCENE MATERIAL` satırı ("not a scene at ANY duration")
+           → operatör tarafı: AGENTS.md ortak adım ④ · kart kuralı süreden
+             İÇERİĞE çevrildi, ≤ 6 s eşiği KALDIRILDI
+D121       → ① KARE · ② DEVAMLILIK · ③ SES · ④ HİKAYE · çıktı künyesi
+             `LINES HEARD` satırı (birebir alıntı + zaman kodu; tekrarlayan
+             replik İKİ kez yazılır — kurgu kanıtı)
+           → operatör tarafı: AGENTS.md ortak adım ④ madde (c) Δ tablosu +
+             ortak adım ⑤ ikinci satır REPLİK
+D122       → HİÇBİR RUBRİĞE GİRMEZ (yazım kapısı): AGENTS.md kart A ·
+             "replik zamanları ve doruk saati hesaplanmaz, HESAPLATILIR".
+             Sebep: rubrik plan dosyasını görmüyor; bozuk olan ölçülen
+             şey değil, ÖLÇÜ ALETİYDİ
 
 VIDEO_QA — kategori içi kilitler
 D69  → kat. 1 DUPLICATE CHARACTER (araç/hava kilidi giriş-çıkış noktası)
@@ -1154,6 +1382,68 @@ NOT: SHORTS'un KNOWN AI FAILURE PATTERNS tablosundaki ders numaraları
 
 ---
 
+# FILME_OZEL/THE_LAST_SPAN_QA_CRITIQUE_PROMPT.md  ⏸️ DOSYA KALDIRILDI
+
+> **Yazıldı:** 25.08.2026 · **Çalıştırma kaydı:** 0 kez — hiç koşulmadı.
+>
+> ⏸️ **26.08.2026'da KALDIRILDI (kart H2):** filmi depodan çıktı, zombi
+> türü kapandı, depo yalnız UZAY filmleri içindir. Aşağıdaki kayıt
+> TARİHSEL olarak duruyor — rubriğin NİYE yazıldığı, uzay hattında
+> tekrar edilebilecek bir muhakemedir.
+>
+> ⭐ **Türden bağımsız yarısı KURTARILDI:** yanlış-pozitif duvarı
+> `FILME_OZEL/00_YANLIS_POZITIF_DUVARI_SABLONU.md` dosyasına damıtıldı ve
+> uzay hattına uyarlandı. Duvar depoda yalnız üç filme özel rubrikte
+> yaşıyordu ve genel rubriklerde karşılığı yoktu; bu kaldırma onu
+> yeniden kullanılabilir hâle getirdi. Kalan iki örnek: THE BLUE DRIFT ·
+> THE RING LIGHT.
+
+```
+NEDEN VAR — genel mercek bu filmde İKİ YÖNDE birden yanılıyor:
+  ① YÜRÜYEN ZOMBİ genel rubrik için HATA DEĞİLDİR — türün normalidir
+     ve geçer. Oysa bu filmde tek kare yürüyüş premisi SİLER.
+     Premis bir YAPAMAMA: formlar kendi başlarına harekete geçemez.
+     Bir yokluğu doğrulayacak alet, o yokluğu BİLMEK zorunda.
+  ② PASİF KALABALIĞI genel rubrik "tehdit yok / antagonist inert /
+     korkutucu değil" diye cezalandırır — yani çalışan tasarımı
+     bozmayı önerir. Ring Light emsalinin ("durgun film") daha
+     keskin hâli.
+
+ALETİN ÇEKİRDEĞİ — KAPALI HAREKET LİSTESİ
+  Bir form yalnız ÜÇ şeyden birini yapabilir:
+    ① durma (0 hareket) ② rijit devrilme (taban ekseninde, ayak düz,
+    diz düz, kol yanda, 1,1 s, yerde kalır) ③ ≤4 cm omuz salınımı
+  Rubrik HAREKET SAYIMI (motion census) kurdurur: her form hareketi
+  tek tek loglanır ve üçünden birine atanır. Atanamayan satır
+  PREMİS KIRILMASI'dır ve tek satır bile kapıyı düşürür.
+  ⭐ Yumuşak odak DETAYI affeder, SİLUET ve KONUMU affetmez.
+
+ÇIKTI    skor değil KARAR: ACCEPT / FIX IN EDIT / REGENERATE
+         BLOK A (6 premis kapısı, PASS/FAIL) her şeyi ezer
+         BLOK B (12 ölçülmüş kilit) · BLOK C (4 kategori, tek yer
+         zevkin bulunduğu: kural OKUNUYOR MU)
+         ⭐ C1 KURAL OKUNABİLİRLİĞİ: modele önce "bir izleyici kuralı
+         nasıl ifade ederdi" yazdırılır, SONRA gerçek kuralla
+         karşılaştırılır. Kuralı okunmayan film zayıf premisli değil,
+         PREMİSSİZ filmdir.
+
+YANLIŞ-POZİTİF DUVARI — 13 madde, hepsi tür refleksi:
+         pasiflik · kalkmama · sessizlik · yüzsüzlük · kansızlık ·
+         sabit kamera · 0 kesme · replik yok · 7 sahnede hiç devrilme
+         olmaması · kasksız kadın · tek renk · yapay ışık yok ·
+         çözümsüz final. Hepsi TASARIM; hepsi genel rubriğin
+         "eksik" diyeceği yerler.
+
+TABLOYA GİRMEZ: /4 paydası ve T1-T6 dokunulmaz. Bu bir üretim
+         kapısıdır, mercek değil; genel merceklerin ÖNÜNDE durur.
+```
+
+> ⚠️ Bu dosya Ring Light'ın bilinen borcunu TEKRARLAMADAN yazıldı:
+> gövde tamamen İngilizce, ders numarası/tarih/film-dışı depo yolu yok,
+> ortak çekirdek kapıları yerinde. Türkçe yalnız başlık satırında.
+
+---
+
 # FILME_OZEL/THE_BLUE_DRIFT_QA_CRITIQUE_PROMPT.md
 
 ```
@@ -1187,3 +1477,160 @@ KOŞU KAYITLARI (her koşu TEK SATIR):
   durdurma koşulu + ledger'da ilk/son kare karşılaştırması zorunlu.
   Kayıt: FILM_QA_RAPORLARI/01_FILM_RAPORLARI/THE_BLUE_DRIFT.md
 ```
+
+---
+
+## ⭐ 26.08.2026 — THE ROSE COAT · BEŞ MERCEK · SPEC HAZIRDI, BEŞİ DE MOD V
+
+> Kayıt: [`../FILM_QA_RAPORLARI/01_FILM_RAPORLARI/THE_ROSE_COAT.md`](../FILM_QA_RAPORLARI/01_FILM_RAPORLARI/THE_ROSE_COAT.md)
+
+```
+① KARE        Ⓥ mod V · 5,0 · REGENERATE   · SPEC VARDI, verilmedi
+② DEVAMLILIK  belgesiz  · 7,2 · STRUCTURAL  · (bu mercek zaten belgesiz koşar)
+③ SES         belgesiz  · AUDIO ABSENT — RUN NOT STARTED
+④ HİKAYE      Ⓥ mod V · 2,3 · REWRITE PREMISE · SPEC VARDI, verilmedi
+⑤ ARKA PLAN   belgesiz  · 6,0 · FIELD DRIFTS
+```
+
+> 🔎 **DERS 129 (26.08.2026 · THE ROSE COAT):** SPEC dosyası filmin
+> klasöründe hazırdı (`THE_ROSE_COAT_QA_SPEC.md`) ve beş merceğin beşi de
+> mod V koşuldu. D117'nin çözümü uygulanmıştı — erişim engeli kalkmıştı.
+> Bedeli: ④'ün kesme listesindeki beş adayın beşi de yük taşıyan sahne;
+> ikisi SPEC'te "KESİLEMEZ" yazan viral; dördüncüsü filmin DORUĞU +
+> KAPAK KARESİ. Rapor doruğu "One last redundant brush. Unnecessary."
+> diye tarif etti ve `PEAK LOCATED AT: no peak located` yazdı.
+> Çözüm rubriğe değil AGENTS ortak adım ①'e ve SPEC künyesine yazıldı.
+>
+> 🔎 **DERS 130 (26.08.2026 · THE ROSE COAT):** ⑩ önerme kapısı bulguyu
+> düşürüyor, puanı geri vermiyor. ② 7,2 ve ⑤ 6,0 — iki kapıdan sonra
+> ayakta kalan kapalı hücre sayısı ikisinde de **0.**
+>
+> 🔎 **DERS 131 (26.08.2026 · THE ROSE COAT):** ② DEVAMLILIK'ın 12 puanlı
+> hücresinden 6'sı "no in-scope source · 10/10". Kaynaklı hücrelerin
+> ortalaması 4,3; raporun yazdığı 7,2. Δ = 2,9 puan, sıfır yeni gözlem.
+> Aynı partide ⑤ kuralı TERS yönde ihlal etti (7/10 + "no in-scope source").
+>
+> 🔎 **DERS 132 (26.08.2026 · THE ROSE COAT):** aynı partide A/B kanıtı —
+> tally kuralını taşıyan ⑤ tutturdu (0/3/2 = defteri), taşımayan ① sekiz
+> 🔴'ü yedi yazdı.
+>
+> 🔎 **DERS 133 (26.08.2026 · THE ROSE COAT):** ⑤'in altı hücresinin dördü
+> tek bir tasarım kararından geldi: pada mesafe 600→0 m monotonik. SPEC
+> dağıtım tablosu ⑤ ve ⑥'yı hiç tanımıyordu (24.08'de açıldılar).
+>
+> 🔎 **DERS 134 (26.08.2026 · THE ROSE COAT):** ② "bot rengi" bulgusunu
+> #1 sıraya koydu ama "kostüm sürüklenmesi" diye tarif etti — oysa iki
+> figürü ayıran ÜÇ kanaldan biriydi. Aynı rapor filmin ANA SAYACINA
+> `Counter Logic: N/A — no counter present` dedi.
+>
+> 🔎 **DERS 135 (26.08.2026 · THE ROSE COAT):** kurgu kapısı ④c koşulamadı —
+> plan `-222222222222`, rubrik yalnız `-111111111111` üretebiliyor.
+> Ayrıca ⑤'in şeridi öteki üçüyle VE kendi envanteriyle çelişti; hiçbir
+> kapı dört şeridi yan yana koymuyor.
+>
+> 🔎 **DERS 136 (26.08.2026 · THE ROSE COAT):** ③ `AUDIO ABSENT` döndürdü;
+> plan 13 sahnenin 11'inde müzik yazıyor. Şüpheyi partide yalnız ③ dile
+> getirdi ve ③'ün stop bloğu hiçbir tabloya satır bırakmıyor.
+
+> Çalıştırma kaydı — ① KARE: son 26.08.2026 · sonuç 5,0 Ⓥ ⛔ ÖN KOŞU
+> Çalıştırma kaydı — ② DEVAMLILIK: son 26.08.2026 · sonuç 7,2 ⚠️ ŞARTLI
+> Çalıştırma kaydı — ③ SES: son 26.08.2026 · sonuç STATE C, satır yok
+> Çalıştırma kaydı — ④ HİKAYE: son 26.08.2026 · sonuç 2,3 Ⓥ ⛔ ÖN KOŞU
+> Çalıştırma kaydı — ⑤ ARKA PLAN: son 26.08.2026 · sonuç 6,0 ⚠️ ŞARTLI
+
+---
+
+### 🧭 DERS → RUBRİK İZ DEFTERİ — 129-136 eki
+
+```
+D129 → hiçbir rubrik · GEREKMEZ — hata rubriğin kuralında değil,
+       operatörün koşu ÖNCESİ adımında. Yama: AGENTS ortak adım ①
+       (kapı koşudan öncesine alındı) + 7 SPEC dosyasının künyesi.
+       Kardeş tarama yapıldı: altı rubriğin altısı da SPEC'in verilip
+       verilmediğini bilemez — bilebilecek tek yer operatördür.
+
+D130 → hiçbir rubrik · GEREKMEZ — ⑩ rapor SONRASI koşan bir operatör
+       kapısıdır. Yama: AGENTS ortak adım ⑩ · üçüncü ve dördüncü satır.
+       ⚠️ Rubrik tarafındaki eşdeğeri D131'dir ve o yamandı.
+
+D131 → 2_DEVAMLILIK · skor bloğu ④ (KAYNAK RUBRİK — 7,2 oradan çıktı)
+D131 → 1_KARE · 3_SES · 4_HIKAYE · 5_ARKA_PLAN · 6_FIZIK · skor bloğu ④
+       (kardeş tarama: altısında da aynı cümle vardı, altısı da aynı
+        hatayı üretirdi)
+D131 → altı rubriğin KAPSAM bloğu · "stays at FULL score" cümlesi de
+       değişti — yamalanmasaydı rubrik kendi ④. maddesiyle çelişecekti
+
+D132 → 1_KARE · skor bloğu ⑤ (KAYNAK RUBRİK — 8 🔴'ü 7 yazan koşu)
+D132 → 2_DEVAMLILIK · 3_SES · skor bloğu ⑤
+D132 → 4_HIKAYE · GEREKMEZ — bu mercek severity etiketi HİÇ kullanmıyor
+       (rubrikte 0 adet 🔴/🟠/🟡, SEVERITY TALLY bölümü yok). Kural bir kez
+       yazıldı, taramada sayıldı ve GERİ ALINDI: sayılacak şeyi olmayan
+       rubriğe sayım kuralı yazmak, uyulmayacak bir kural yazmaktır.
+D132 → 5_ARKA_PLAN · 6_FIZIK · GEREKMEZ — kural zaten gövdelerinde vardı
+       ve bu partide ⑤ tam da o yüzden tutturdu (A/B kanıtı)
+
+D133 → 5_ARKA_PLAN · kategori 5 (Depth, Parallax & Scale) — KAYNAK RUBRİK
+D133 → 2_DEVAMLILIK · kategori 8 (Spatial Geography) — aynı yanlış okuma
+       oradan da geldi (Coğrafya 7/10, aynı iki timecode)
+D133 → 6_FIZIK · GEREKMEZ — kategori 6 zaten "measure against same-frame
+       anchors, not memory" diyor; aletin kendi koruması var
+D133 → 1_KARE · GEREKMEZ — tek sahneye bakar, iki sahne arası ölçek
+       karşılaştırması yapmaz
+D133 → 3_SES · 4_HIKAYE · GEREKMEZ — ölçek ölçmezler
+D133 → SPEC dağıtım tablosu · dört SPEC dosyasına ⑤ ve ⑥ satırı
+
+D134 → hiçbir rubrik · GEREKMEZ — belgesiz merceğin körlüğü TASARIMDIR;
+       sıralamayı düzeltecek bilgi rubriğe verilirse tasarım bozulur.
+       Yama: AGENTS ortak adım ⑩ · beşinci satır (operatör yeniden sıralar).
+
+D135 → hiçbir rubrik · GEREKMEZ — rubriklerin çıktı biçimi DOĞRU; yanlış
+       olan planın kapıya o biçimde yazmaması. Yama: SPEC + plan (iki
+       şerit) + AGENTS ortak adım ⑤ (üçüncü satır: şerit karşılaştırması).
+
+D136 → AGENTS ortak adım ⑪ · beşinci komut (ses kanalı varlığı)
+D136 → 1_KARE · 2_DEVAMLILIK · 3_SES · 4_HIKAYE · 6_FIZIK · künye satırı
+       `LINES HEARD` — "none" iki gerçeği ayırmak zorunda
+D136 → 5_ARKA_PLAN · GEREKMEZ — künyesinde `LINES HEARD` satırı yok
+       (yerine SUBJECTS EXCLUDED var); ses ölçmez
+```
+
+---
+
+### 🧭 RUBRİK YAMASI — 26.08.2026 · TEMA VE AÇI KAPILARI (ders numarası YOK)
+
+⚠️ **Bu yama bir DERSTEN gelmiyor.** Kaynağı, 22.08'de yazılıp hiçbir kapıya
+bağlanmamış üç kılavuzdur (TEMA_MUHENDISLIGI · KAMERA_ACISI_PSIKOLOJISI ·
+ACI_YAYI_VE_SEKANS). AGENTS §8 gereği ders YAZILMADI: bu bir kural ekleme
+değil, kapı kurma işidir. Tekrarlarsa ders yazılır (kart Y sırası:
+veri → belge revizyonu → ders).
+
+```
+TEMA/AÇI → 2_DEVAMLILIK · STEP 1a sahne envanterine "Camera setup" sütunu
+       + OUTPUT FORMAT'a "SETUP INVENTORY" ölçüm satırı (KAYNAK RUBRİK).
+       ⛔ Envanter SKOR DEĞİL ÖLÇÜMDÜR: hiçbir kategoriyi düşürmez.
+       Aynı blokta lockoff koruması da yazılı — sabit kamera bulgu değildir,
+       film boyu TEK kurulum bulgudur.
+
+TEMA/AÇI → 1_KARE · GEREKMEZ — kendi kapsam testi ("bulguyu TEK sahneye
+       bakarak söyleyebiliyor musun") film-boyu kurulum tekrarını yapısal
+       olarak dışlıyor. Yazılsaydı rubrik kendi kuralıyla çelişirdi.
+
+TEMA/AÇI → 4_HIKAYE · GEREKMEZ — "DECLARED ABSENCE IS NOT A DEFICIT"
+       bloğu kamera HAREKETİ yokluğunu doğru koruyor, dokunulmadı.
+       Tema tarafı zaten kategori 5'te ölçülüyor ve niyetlenen temayı
+       SPEC'ten okuyor; eksik olan rubrik değil ŞABLONDU — THEME alanı
+       26.08'de QA_SPEC şablonuna zorunlu olarak eklendi (D117 eki).
+
+TEMA/AÇI → 3_SES · 5_ARKA_PLAN · 6_FIZIK · GEREKMEZ — kamera kurulumu da
+       tema da hiçbirinin kapsamında değil.
+
+TEMA/AÇI → PROMPT_KONTROL/PROMPT_QA_CRITIQUE_PROMPT.md · yeni kategori 6
+       "AÇI VURUŞLA EŞLEŞİYOR MU" — betiğin ölçtüğü SAYININ anlam yarısı.
+       Betik kaç açı tipi olduğunu sayar; doğru açı olup olmadığını
+       KAMERA_ACISI §3 vuruş tablosuna karşı bu kategori sorar.
+```
+
+> **Betik tarafı ayrı kayıt:** `PROMPT_KONTROL/prompt_kontrol.py` dört yeni
+> denetim aldı (kurulum çeşitliliği · açı sözlüğü · abartı eşiği · tema
+> satırı). 107 eski dosyaya koşuldu, dört yanlış-pozitif sınıfı bulunup
+> kapatıldı. Ayrıntı betiğin kendi başlık bloğunda.

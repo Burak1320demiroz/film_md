@@ -152,10 +152,31 @@ wearing two names.
 ### 1a. SCENE INVENTORY — the spine both halves hang from
 
 ```
-| # | Timecode in-out | Location | Who is present | What happens | Dialogue? |
+| # | Timecode in-out | Location | Who is present | What happens | Dialogue? | Camera setup |
 ```
 
 One row per scene, in cut order. Every later finding cites these numbers.
+
+```
+⛔ CAMERA SETUP IS A DESCRIPTION, NOT A JUDGEMENT.
+
+A setup is angle + shot scale + camera position. Write it the same way
+every time so two rows can be compared: "low angle · MS · ground level",
+"eye level · CU · frontal". Label repeated setups with the same letter —
+A, B, C — and reuse the letter whenever all three components read the
+same, however differently the shot is lit or staged.
+
+A locked-off camera is a deliberate design decision. Never report the
+absence of camera movement as a defect, never recommend a push-in, a
+pan, a tilt, a handheld feel or a drone move, and never score a scene
+down for holding still.
+
+What you MAY report is coverage: how many distinct setups the whole edit
+uses, and which scenes share one. That is a film-wide observation, so it
+belongs to this pass and not to the single-scene pass. Report it as
+numbers in SETUP INVENTORY and let the reader judge. If you cannot tell
+two setups apart, say so rather than guessing.
+```
 
 ### 1b. THE WORLD — as the film shows it
 
@@ -281,8 +302,9 @@ same defect twice.
 categories perfectly. So make the consequence explicit: a defect your
 scope list hands to another lens gets no severity tag, no deduction, no
 row in a contradiction log and no mention in a scores cell. A category
-whose ONLY source is such an observation stays at FULL score and writes
-"no in-scope source" in its issue cell.
+whose ONLY source is such an observation CARRIES NO NUMBER: it writes
+"no in-scope source" in its issue cell, takes `—` in the Score cell, and
+stays out of the mean.
 
 Reviews from different lenses are merged into one record. Scoring an
 event that belongs to another lens bills one defect several times and
@@ -449,6 +471,13 @@ Does the same location read as the same location every time it appears?
 Use the location names you assigned in STEP 1. List each one, every scene it
 appears in, and every mismatch.
 
+⛔ A PLACE SEEN FROM A NEW DISTANCE IS NOT A NEW PLACE. If the film is
+travelling toward something, every later look at it is larger, higher in
+frame and differently framed, and the ground under it is the ground the
+camera now stands on. A scale or layout finding needs TWO shots taken from
+the SAME distance — name the distance cue you used. "It was low and square,
+then huge" is an approach, not a mismatch.
+
 ### 9. 🕐 TIME & LIGHT LOGIC
 
 ```
@@ -541,6 +570,32 @@ RUNTIME: [mm:ss — "measured" if read from the container's own duration,
           "~mm:ss ESTIMATED" if counted from playback; an estimated runtime
           may never be used to declare a scene missing or a plan violated]
 SCENES OBSERVED: [n] · CUTS COUNTED: [n] · CHARACTERS TRACKED: [n]
+SETUP INVENTORY: [distinct setups: n · repeat map: which scenes share a
+          setup, e.g. "A: S0, S2, S5 · B: S1, S3 · C: S4" · distinct angle
+          types used: n, named — low, high, overhead, dutch, eye level,
+          over-the-shoulder, profile, POV]
+          This line is a measurement, not a score. It changes no category
+          and lowers nothing on its own. Write "not determinable" for any
+          part you cannot read off the image.
+NON-SCENE MATERIAL: [in-out + what it is, or "none"]
+LINES HEARD: [n · every spoken line VERBATIM with its timecode, or "none"]
+             When you write "none", say which none it is: "none — room tone
+             present" or "none — no audio information at all". A film with no
+             dialogue and a film with no audio track are different objects and
+             only one of them is a delivery defect.
+
+⛔ NON-SCENE MATERIAL is not a scene at ANY duration. Material that carries
+burned-in text, or is static, or bears no scene fingerprint, is a card — a
+14-second card is no more a scene than a 4-second one. Report its in and out
+timecode on that line, then EXCLUDE it from CUTS COUNTED, from the scene map,
+from the presence string and from every duration you report. Its text is never
+the film's name.
+
+⛔ LINES HEARD is a transcript, not a summary. Write each line inside quotes
+exactly as spoken, with the second it starts. If a line repeats, list BOTH
+occurrences with both timecodes — the same line twice, one clip length apart,
+is evidence about the edit and is lost the moment you collapse it into one
+entry. Write "none" for a silent film; never leave this line off.
 
 ⛔ CUTS COUNTED is not optional and not a rounded impression: it is the count
 you made in STEP 1, with its timecodes. A report that names scenes without
@@ -607,14 +662,21 @@ VERDICT: [HOLDS TOGETHER / DRIFTS BUT RECOVERABLE / FIXABLE IN EDIT /
 ④ THE OVERALL SCORE IS ARITHMETIC, NOT AN IMPRESSION. Every category begins
    at 10/10 and loses only the deductions its own Issue cell lists with
    timecodes. A category whose issue cell reads "no in-scope source", "no
-   source" or the equivalent scores 10/10 — writing that phrase and a number
-   below ten in the same row is a contradiction, and the phrase wins. Then
+   source" or the equivalent CARRIES NO NUMBER: write `—` in the Score cell
+   and keep it OUT of the mean, exactly like N/A. Absence of evidence is not
+   evidence of perfection, and a full score is a claim you did not measure.
+   Writing that phrase and any number in the same row is a contradiction, and
+   the phrase wins. Then
    compute the OVERALL SCORE as the mean of the category scores you actually
    printed, and use that same number everywhere the report asks for a total.
    Before you finish, add the printed cells and check the mean against your
    overall: if they disagree, the table is right and the overall is wrong.
    Two different totals for one film is a defect, and a total that no set of
    printed cells can produce is a fabricated measurement.
+⑤ COUNT THE SEVERITY TALLY FROM THE FINDINGS, NOT FROM MEMORY. Before
+   printing it, count the 🔴, 🟠 and 🟡 tags actually written in this
+   report; the tally must equal those counts. A verdict driven by a tally
+   that does not match the findings is a fabricated verdict.
 ```
 
 | # | Category | Score | Critical Issue |

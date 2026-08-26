@@ -2,7 +2,7 @@
 
 > Oluşturma: 06.08.2026 · dört mercek aynı gün, dördü de MOD V (belgesiz)
 > koşuldu — oysa filmin kendi dosyasında hazır SPEC bloğu var (§0.15).
-> Kaynak dosya: `yatay_2_4_dk_filmler_uzay/THE_STARLESS_CIRCLE_PLANET_FILM.md`
+> Kaynak dosya: `yatay_2_4_dk_filmler_uzay/THE_STARLESS_CIRCLE/THE_STARLESS_CIRCLE_PLANET_FILM.md`
 
 ---
 

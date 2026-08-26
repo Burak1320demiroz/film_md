@@ -1,7 +1,7 @@
 # 🔎 PROMPT KONTROL — THE_RING_LIGHT_ORBITAL_DOCKING_FILM
 
 > **Tarih:** 12.08.2026  ·  **Karar:** FIX
-> **Kaynak:** `yatay_2_4_dk_filmler_uzay/THE_RING_LIGHT_ORBITAL_DOCKING_FILM.md`
+> **Kaynak:** `yatay_2_4_dk_filmler_uzay/THE_RING_LIGHT/THE_RING_LIGHT_ORBITAL_DOCKING_FILM.md`
 > Bu rapor betikten üretildi, elle düzenlenmez.
 
 ## VIDEO · satır 1766 · 129 karakter  _(yedek sürüm)_

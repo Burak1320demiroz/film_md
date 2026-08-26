@@ -1,7 +1,7 @@
 # 🔎 PROMPT KONTROL — THE_HOLLOW_COUNT_SALT_TERRACE_FILM
 
 > **Tarih:** 15.08.2026  ·  **Karar:** FIX
-> **Kaynak:** `yatay_2_4_dk_filmler_uzay/THE_HOLLOW_COUNT_SALT_TERRACE_FILM.md`
+> **Kaynak:** `yatay_2_4_dk_filmler_uzay/THE_HOLLOW_COUNT/THE_HOLLOW_COUNT_SALT_TERRACE_FILM.md`
 > Bu rapor betikten üretildi, elle düzenlenmez.
 
 ## IMAGE · satır 1011 · 2493 karakter

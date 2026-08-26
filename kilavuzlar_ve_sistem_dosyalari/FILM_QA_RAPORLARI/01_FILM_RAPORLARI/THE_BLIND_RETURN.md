@@ -5,7 +5,7 @@
 > yüklenmedi** (girdisiz koşu → DERS 80). Filmin dosyasında hazır SPEC bloğu
 > vardı (§0.15) ve üç merceğin hiçbirine verilmedi — Starless Circle'la aynı
 > operatör hatası.
-> Kaynak dosya: `yatay_2_4_dk_filmler_uzay/THE_BLIND_RETURN_MARS_STORM_FILM.md`
+> Kaynak dosya: `yatay_2_4_dk_filmler_uzay/THE_BLIND_RETURN/THE_BLIND_RETURN_MARS_STORM_FILM.md`
 
 ---
 

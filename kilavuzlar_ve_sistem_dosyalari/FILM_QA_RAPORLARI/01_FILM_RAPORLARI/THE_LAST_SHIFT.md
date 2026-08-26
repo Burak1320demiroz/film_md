@@ -1,6 +1,6 @@
 # 🟫 THE LAST SHIFT — FİLM QA KAYDI
 
-> **Film:** THE LAST SHIFT · 16:9 yatay · 2-4 dk · `yatay_2_4_dk_filmler_uzay/THE_LAST_SHIFT_COLONY_FILM.md`
+> **Film:** THE LAST SHIFT · 16:9 yatay · 2-4 dk · `yatay_2_4_dk_filmler_uzay/THE_LAST_SHIFT/THE_LAST_SHIFT_COLONY_FILM.md`
 > **Plan:** 14 sahne · **24 çekim · 27 klip** · 190 s · ASL 7.9 s · 10 sahne içi kesme ·
 > 24/24 sabit kilitli kadraj · 13 replik (13/13 gövdesiz makine) · 7 viral ara
 > **Kurgu:** 174 s · **17 × 10 s klip + 4 s başlık kartı** — süreler tekdüze 10 s ızgarasında

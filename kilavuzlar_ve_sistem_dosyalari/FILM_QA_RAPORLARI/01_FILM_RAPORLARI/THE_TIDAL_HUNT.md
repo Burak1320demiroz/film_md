@@ -1,6 +1,6 @@
 # 🔍 THE TIDAL HUNT — QA KAYDI
 
-> **Kaynak dosya:** `yatay_2_4_dk_filmler_uzay/THE_TIDAL_HUNT_PLANET_FILM.md`
+> **Kaynak dosya:** `yatay_2_4_dk_filmler_uzay/THE_TIDAL_HUNT/THE_TIDAL_HUNT_PLANET_FILM.md`
 > **Bu filmde İKİ ayrı QA var:**
 > · **TEKNİK QA** (aşağıda) — `LESSONS_LEARNED.md` kalite tablosu + Ders 17-19
 > · **MANTIK QA** (31.07.2026) — **4.0/10** · [aşağıdaki bölüm](#-mantik-ve-devamlilik-qa--31-temmuz-2026) · ham çıktı: [`../02_HAM_RAPORLAR/THE_TIDAL_HUNT_MANTIK_HAM.md`](../02_HAM_RAPORLAR/THE_TIDAL_HUNT_MANTIK_HAM.md)

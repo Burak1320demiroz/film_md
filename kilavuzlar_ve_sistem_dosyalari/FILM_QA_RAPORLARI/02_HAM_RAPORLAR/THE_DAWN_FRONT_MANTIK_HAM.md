@@ -147,7 +147,7 @@ NONE
 
 # 📖 FLAGS FOR DOCUMENT CHECK — CEVAPLANDI (05.08.2026)
 
-> Plan dosyası: `yatay_2_4_dk_filmler_uzay/THE_DAWN_FRONT_PLANET_FILM.md`
+> Plan dosyası: `yatay_2_4_dk_filmler_uzay/THE_DAWN_FRONT/THE_DAWN_FRONT_PLANET_FILM.md`
 
 | Rapor sorusu | Plan dosyası ne diyor | Sonuç |
 |---|---|:---:|

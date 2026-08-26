@@ -1,6 +1,6 @@
 # 🔍 THE HERD — QA KAYDI
 
-> **Kaynak dosya:** `yatay_2_4_dk_filmler_uzay/THE_HERD_PLANET_FILM.md`
+> **Kaynak dosya:** `yatay_2_4_dk_filmler_uzay/THE_HERD/THE_HERD_PLANET_FILM.md`
 > — 3.401 satır · 15 sahne · 150 s · kalın atmosfer
 > **Teknik QA (VIDEO_QA):** ❌ **GEÇERSİZ** — künye boş, yine de 3 BLOCKER üretti
 > **Senaryo QA (SENARYO_QA):** ❌ **GEÇERSİZ** — kendi DUR kodunu yazdı, durmadı
@@ -15,7 +15,7 @@
 VIDEO_QA    "CHARACTER: UNVERIFIABLE (Prompt file missing)"
 SENARYO_QA  "SPEC BLOCK PROVIDED: no — plan document not supplied"
 
-GERÇEK      yatay_2_4_dk_filmler_uzay/THE_HERD_PLANET_FILM.md
+GERÇEK      yatay_2_4_dk_filmler_uzay/THE_HERD/THE_HERD_PLANET_FILM.md
             3.401 satır. Depoda duruyor. Aranmadı.
 ```
 

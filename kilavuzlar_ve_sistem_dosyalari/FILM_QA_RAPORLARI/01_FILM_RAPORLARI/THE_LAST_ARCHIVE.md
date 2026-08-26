@@ -1,6 +1,6 @@
 # 🔍 THE LAST ARCHIVE — QA KAYDI
 
-> **Kaynak dosya:** `yatay_2_4_dk_filmler_uzay/THE_LAST_ARCHIVE_PLANET_FILM.md`
+> **Kaynak dosya:** `yatay_2_4_dk_filmler_uzay/THE_LAST_ARCHIVE/THE_LAST_ARCHIVE_PLANET_FILM.md`
 > **Teknik QA (VIDEO_QA):** ⚠️ **4/10 ŞARTLI** · ham: [`../02_HAM_RAPORLAR/THE_LAST_ARCHIVE_TEKNIK_HAM.md`](../02_HAM_RAPORLAR/THE_LAST_ARCHIVE_TEKNIK_HAM.md)
 > **Mantık QA (MANTIK_QA):** ✅ **5.0/10** · ham: [`../02_HAM_RAPORLAR/THE_LAST_ARCHIVE_MANTIK_HAM.md`](../02_HAM_RAPORLAR/THE_LAST_ARCHIVE_MANTIK_HAM.md)
 > **Senaryo QA:** ❌ yapılmadı

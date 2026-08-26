@@ -1,6 +1,6 @@
 # 🔍 THE DEEP ROOT — QA KAYDI
 
-> **Kaynak dosya:** `yatay_2_4_dk_filmler_uzay/THE_DEEP_ROOT_PLANET_FILM.md`
+> **Kaynak dosya:** `yatay_2_4_dk_filmler_uzay/THE_DEEP_ROOT/THE_DEEP_ROOT_PLANET_FILM.md`
 > **Veri kaynağı:** `LESSONS_LEARNED.md` — kalite tablosu + Ders 1, 3, 10-12
 > ⚠️ **Orijinal QA raporu dosya olarak mevcut değil.**
 

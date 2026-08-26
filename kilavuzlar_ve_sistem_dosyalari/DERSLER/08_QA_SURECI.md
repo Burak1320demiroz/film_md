@@ -150,7 +150,7 @@ INPUT MISSING   doküman hiç gelmedi                 → ÇALIŞTIRMA durur,
 İkisi aynı kodla raporlanınca, ucuz bir iş akışı kazası pahalı bir film
 bulgusu gibi arşivleniyor.
 
-**(b) Dosya aranmadı.** `yatay_2_4_dk_filmler_uzay/THE_INVERSION_PLANET_FILM.md`
+**(b) Dosya aranmadı.** `yatay_2_4_dk_filmler_uzay/THE_INVERSION/THE_INVERSION_PLANET_FILM.md`
 depoda duruyor. Bulgu 7'nin Inversion satırında aynı hata yazılıydı:
 *"plan doc unsupplied dedi — oysa dosya depoda."* **Aynı hata üst üste ikinci
 kez.** Model dokümanın yokluğunu varsayıyor, doğrulamıyor.
@@ -517,7 +517,7 @@ Raporun son satırı:
 kaydedilmişti. Bu sefer **eşleşiyor** — ve zarar tersine döndü:
 
 ```
-dikey_shorts_filmler/THE_HALF_SKY_DIKEY_SHORTS.md   ← GERÇEK, var olan film
+dikey_shorts_filmler/THE_HALF_SKY/THE_HALF_SKY_DIKEY_SHORTS.md   ← GERÇEK, var olan film
 ```
 
 Yani 4/10 satırı boşluğa değil, **gerçek bir yapımın kaydına** yazılacaktı.
@@ -1922,6 +1922,50 @@ Başında tek tablo: hangi rubriğe NE verilir — 🧩 🧍 🔊 için "HİÇB�
 QA anında iş = iki dosya yapıştırmak (rubrik + SPEC). Bölüm aramak yok.
 ```
 
+**⭐ 26.08.2026 EKİ — ZORUNLU İKİ ALAN.** Şablon alan listesi vermediği için
+depoda İKİ AYRI YARIM biçim oluştu ve hiçbir SPEC tam değildi:
+
+```
+BORROWED_WEIGHT · ROSE_COAT · LOSS_OF_LIFT
+   THEME var  →  sahne-bazlı kamera alanları YOK ("CAMERA: 25/25 sabit lockoff")
+IRON_SLOPE · NEAR_PASS · OPEN_SEAM
+   sahne-bazlı LENS/HEIGHT/DISTANCE/MOVE var  →  THEME satırı YOK
+(26.08.2026 sayımı; LAST_SPAN ve HELD_HEAT SPEC'leri o gün zombi türüyle
+ birlikte depodan çıktı — kart H2)
+```
+
+Her iki alan da bir merceğin GİRDİSİ; eksikse mercek ölçemez:
+
+⛔ Alanın yeri BLOK HARFİYLE değil MERCEKLE tarif edilir — harfler dosyadan
+dosyaya kayıyor (bazı SPEC'te A = ① KARE, B = ④ HİKAYE; bazılarında tersi).
+Ölçüt tek soru: **bu alanı hangi mercek okuyacak?**
+
+```
+④ HİKAYE'yi besleyen bloğa (kategori 5 "THEME & MEANING" temayı SPEC'ten okur):
+   THEME (intended):   tek cümle · novum kelimesi geçmeden
+                       (TEMA_MUHENDISLIGI §3'ün sekiz temasından biri;
+                        §3b'deki aday etiketse ⏸️ işareti ile)
+   THEME SCENES:       S__, S__, S__   ← temanın MOTİFE döndüğü sahneler
+                       (§5 matrisi · en az 3 · prompt_kontrol.py bunu sayar)
+
+KAMERA ALANLARININ YANINA (② DEVAMLILIK kurulum envanterini buradan doğrular):
+   SETUP SEQUENCE:     A · C · A · C · B · A      ← sahne → kurulum harfi
+                       + her harfin tanımı (lens · yükseklik · mesafe · açı)
+   Sahne bazlı:        LENS / CAMERA HEIGHT / CAMERA DISTANCE / CAMERA MOVE
+                       (IRON_SLOPE ve NEAR_PASS'ın biçimi standarttır)
+   ANGLE ARC:          hangi vuruşta hangi açı (KAMERA_ACISI §3 tablosu)
+                       + kullanılan açı TİPİ sayısı (≥3 · §2)
+```
+
+⚠️ **Kurulum SAYISI ile açı TİPİ sayısı ayrı iki sayıdır.** Bir film
+ACI_YAYI §4'ün kurulum bandını tutup yine de tek açıdan bakıyor olabilir:
+üç kurulumun üçü de yerdeyse çeşitlilik değil MESAFE değişimi vardır.
+SPEC ikisini de yazar, betik ikisini de sayar.
+
+⛔ **Kamera satırı TEK TOPLAM olarak yazılamaz.** "25/25 sabit lockoff" bir
+kurulum kaydı değil, bir hareket kaydıdır: lockoff KLİP İÇİ karardır ve
+sahneler ARASI kurulumu hiç anlatmaz. İkisi ayrı satırdır.
+
 ⛔ **Yazım paketi artık PLAN + PART_A + PART_B + KAPAK + MUZIK + QA_SPEC'tir.**
 SPEC dosyası yoksa film "yazımı tamam" sayılmaz; plan içindeki blok kaynaktır,
 teslim biçimi değildir.
@@ -2037,3 +2081,614 @@ Tarif kilitleri bu depoda %0 tuttu.
 > rubrik önce, sonra kardeş tarama: yama beş rubriğe işlendi).
 
 ---
+## 🔴 DERS 120: SAHNE-DIŞI MALZEME KAPISI SÜREYE BAĞLI — VE KARTIN SÜRESİNİ HİÇBİR RUBRİK ÖLÇMÜYOR; ÜÇ MERCEK AYNI BAŞLIK KARTINI ÜÇ FARKLI YUTTU, PARTİ ÇAPRAZ SAYIMDAN DÜŞTÜ
+
+**Kaynak:** THE BORROWED WEIGHT · 24.08.2026 ·
+`FILM_QA_RAPORLARI/01_FILM_RAPORLARI/THE_BORROWED_WEIGHT.md` § kurgu aritmetiği
+**Sorun:** kurgunun sonunda planın `SCREEN TEXT: 0.0 saniye` kilidini ihlal
+eden bir başlık kartı var. Kart TEK. Dört mercek onu dört farklı şeye çevirdi:
+
+```
+🔧 KARE        kesme listesini 4:20'ye kadar sürdürdü        → 26 kesme
+🔗 DEVAMLILIK  haritasını 3:59'da bitirdi, künyesi 4:24      → 24 kesme, 25 s haritasız
+🔊 SES         künyede 4:24 dedi, kartı hiç ayırmadı         → 24 kesme
+📖 HİKAYE      kartı bir SAHNENİN İÇİNE aldı ("rests against
+               pod, title") ve üstündeki yazıyı filmin ADI
+               diye künyeye yazdı                            → 25 kesme, D105 tekrarı
+```
+
+Sonuç: kesme sayıları 26/24/24/25 → **fark 2 → ortak adım ⑤ partinin tamamını
+🚨 GEÇERSİZ ilan etti.** Dört rapor, dört tablo, on iki saat iş — hepsini tek
+bir kart düşürdü.
+
+**İki ayrı boşluk üst üste bindi:**
+
+```
+① KAPI SÜREYE BAKIYOR, İÇERİĞE DEĞİL. AGENTS ortak adım ④ [D93]:
+   "süresi ≤ 6 s VE ekranda metin taşıyan / statik kart". Eşik tek bir
+   örnekten (4-5 s'lik jenerik) türetilmişti. 6 saniyeyi aşan bir kart
+   kapının hiçbir dalına düşmüyor — üstelik UZUN kart, kısa karttan DAHA
+   BELİRGİN biçimde sahne değildir. Kural yanlış yöne eğimli.
+② KARTIN SÜRESİ HİÇBİR RUBRİKTE ALAN DEĞİL. Kapı "kayda TEK SATIR yazılır
+   (kart 5 s)" diyor ama o sayının geleceği yer yok: rubriklerin künyesinde
+   CUTS COUNTED var, NON-SCENE MATERIAL yok. Ölçülmeyen sayı, dört modelin
+   dört ayrı yorumuna kalıyor — ve kart, sahne haritasının içine sızıyor.
+```
+
+**ÇÖZÜM — iki taraflı, ikisi de sayı:**
+
+**a) Rubrik tarafı — dört rubriğin künyesine zorunlu satır:**
+
+```
+NON-SCENE MATERIAL: [in-out + what it is, or "none"]
+
+⛔ Material that carries burned-in text, or is static, or bears no scene
+   fingerprint, is NOT a scene — at ANY duration. Report it on this line
+   with its in and out timecode, then EXCLUDE it from CUTS COUNTED, from
+   the scene map, from the presence string and from every duration you
+   report. A title card is never a scene and its text is never the film's
+   name.
+```
+
+**b) Operatör tarafı — AGENTS ortak adım ④'ün kart kuralı süreden içeriğe:**
+
+```
+SAHNE-DIŞI MALZEME = ekranda metin taşıyan / statik / hiçbir sahnenin
+parmak izini taşımayan klip. ⛔ SÜRE ÖLÇÜT DEĞİLDİR (eski ≤ 6 s eşiği
+kaldırıldı — 14 s'lik bir kart 4 s'likten daha az sahne değildir).
+  başta/sonda → kayda TEK SATIR ("kart 4 s"), 🔴 loglanır [D70/72],
+                sayımın ve SÜRENİN dışında tutulur
+  ortada      → bu başka bir kurgudur, koşu durur
+Kartın in-out'u raporun NON-SCENE MATERIAL satırından okunur; raporlar
+çelişirse kapı koşulmaz, süre master'dan okunur.
+```
+
+⭐ **Genel kural:** bir kapı, ölçtüğü şeyi rapordan OKUYAMIYORSA koşmuyordur.
+D93 kartı gördü ve ölçümü iptal etti; D120 kartı ölçülebilir hâle getiriyor.
+
+> 🔗 Ders 93 (kartın ölçümü iptal etmesi — bu dersin doğrudan ebeveyni) ·
+> Ders 70/72 (kurgudaki başlık kartı 🔴) · Ders 105 (kart kimlik kanıtı
+> değildir; bu partide yine öyle kullanıldı) · Ders 107 (çaprazsayım kapısı —
+> bu partide onu düşüren şey kartın kendisiydi) · Ders 121 (kart ayıklandıktan
+> SONRA şerit aritmetiği çalışır).
+
+---
+
+
+## 🔴 DERS 125: MAKİNEYLE ÖLÇÜLEBİLEN SAYIYI MODELE SORMA — ALTI MERCEK AYNI YANLIŞ KESME LİSTESİNİ VERDİ, BİRİ HİÇ VAR OLMAYAN SESSİZLİKTEN 🔴 BLOCKER ÜRETTİ
+
+**Kaynak:** THE IRON SLOPE · 25.08.2026 · altı mercekli parti (🔧🔗🔊📖🖼️⚖️),
+altısı da mod V. İki bağımsız kanıt aynı koşudan çıktı:
+
+```
+KANIT 1 — KESME IZGARASI
+  altı raporun ALTISI da:  0:09 · 0:18 · 0:29 · 0:39 · 0:49 · 1:00
+  master (ffmpeg scene):   10,03 · 20,03 · 30,03 · 40,03 · 50,03 · 60,03
+  Gerçek ızgara düzgün 10 saniyelik; raporların listesi hem yanlış hem
+  DÜZENSİZ (9-9-11-10-10-11). Altı bağımsız ölçüm aynı düzensiz yanlışı
+  vermez — ya ölçüm yok, ya defter ortak [D110].
+
+KANIT 2 — SESSİZLİK
+  🔊 SES:  "S4 complete digital silence 0:30-0:39" → 🔴 BLOCKER,
+           AMBIENCE HOLE LOG'da üç satır, Ambiyans 2/10, toplam 4,3/10
+  master:  silencedetect -50 dB / 0,3 s → SIFIR sonuç
+           saniyelik RMS: 0-60 s'de en düşük −26,8 dB · S4 −19,7…−22,8 dB
+  Merceğin en ağır bulgusu ve skorunun taşıyıcısı UYDURMADIR.
+```
+
+**Sorun:** ⑤ ÇAPRAZ SAYIM kapısı [D107] "raporlar birbirini doğruluyor mu"
+diye sorar; bu partide altısı da **aynı yanlışta** anlaştı ve kapı ✅ verdi.
+**Uyuşma doğruluk değildir.** D112 aynı yerden bir kez daha geçmişti (iki
+filmin aynı künyeyi bildirmesi) ve çözümü yine rapora bakmaktı. Oysa bu
+sayıların hepsi — süre, kesme, sessizlik, en-boy — **dosyadan 30 saniyede
+ölçülür.** Bir modele, yanıtı bir komut satırında duran bir soruyu sormak,
+o soruyu cevapsız bırakmaktan kötüdür: cevap gelir ve tabloya girer.
+
+**ÇÖZÜM — ORTAK ADIM ⑪ ÖLÇÜM KAPISI (AGENTS §3'e eklendi):**
+
+```bash
+M="<master dosya>"
+ffprobe -v error -show_entries format=duration:stream=width,height,r_frame_rate "$M"
+ffmpeg -i "$M" -filter:v "select='gt(scene,0.3)',showinfo" -f null - 2>&1 \
+  | grep -oE "pts_time:[0-9.]+"
+ffmpeg -i "$M" -af "silencedetect=noise=-50dB:d=0.3" -f null - 2>&1 | grep silence_
+ffmpeg -i "$M" -af "aresample=8000,asetnsamples=8000,astats=metadata=1:reset=1,\
+ametadata=print:key=lavfi.astats.Overall.RMS_level:file=-" -f null -
+```
+
+```
+· SÜRE · KESME IZGARASI · SESSİZLİK · EN-BOY: master'dan okunur, rapordan
+  DEĞİL. Kapı ④ (kurgu) ve ⑨ (hizalama) bu sayılarla koşar.
+· Rapor ile ölçüm çelişirse ÖLÇÜM kazanır; o merceğin satırı ŞARTLI olur.
+· AMBİYANS DELİĞİ / DİJİTAL SESSİZLİK bulgusu ölçülmeden tabloya GİRMEZ.
+· ⑤ çapraz sayım kapısı ÖLÇÜMDEN SONRA koşar: raporların birbirine
+  uyması bir doğrulama değil, olsa olsa bir tutarlılıktır.
+· Kapı master açılmadan koşar ve ~30 saniye sürer.
+```
+
+⭐ **Genel kural:** bir mercek yalnız YARGI ürettiği yerde değerlidir. Sayı
+istediğimiz her yerde onu bir alet ölçmelidir — modelin sayıları, gördüğü
+şeyin değil, beklediği şeyin sayılarıdır.
+
+> 🔗 Ders 107 (çapraz sayım — bu ders onun kör noktasını kapatıyor) ·
+> Ders 110 (aynı oturum = kopya defter) · Ders 112 (mod V'de süre bir
+> çıktıdır; artık bir ölçümdür) · Ders 115 (ızgara geri alma — ölçümle
+> tek adıma iniyor) · Ders 120 (kart süresi hiçbir rubrik tarafından
+> ölçülmüyordu) · Ders 124 (klip süresi de aynı aletle ölçülür).
+
+---
+
+## 🔴 DERS 126: ARKA PLAN MERCEĞİ "ALANI ENVANTERLEDİM" DEDİ, KADRAJIN ALT ÜÇTE BİRİNDEKİ GEZEGENİ GÖRMEDİ — AYNI SATIR ALTI SAHNEDE TEKRARLIYORSA O SATIR ÖLÇÜM DEĞİL ŞABLONDUR
+
+**Kaynak:** THE IRON SLOPE · ⑤ ARKA PLAN (derin tarama, ilk koşusu) — 3,8/10,
+`FIELD COLLAPSES`. Envanterin altı sahnesinde de aynı iki satır:
+`FAR FIELD: Black space, star field` · `SKY/CEILING: Deep space void`.
+Master: **S2'de (20-30 s) bir GEZEGEN kadrajın alt üçte birini kaplıyor**
+(bulut bantları ve atmosfer kenarı seçiliyor). Planın negatif bloğu, 12
+promptun 12'sinde: `no planet, no moon`.
+
+**Sorun:** Bu mercek bir koşuyu **tamamen özne-dışı alana bakmaya** harcamak
+için açıldı; ilk koşusunda alanın en büyük nesnesini kaçırdı — üstelik o
+nesne aynı zamanda planın YAZILI bir yasağını deliyordu. Çekirdek mercekler
+de görmedi (① KARE `Environment 6/10` yazdı, gezegenden söz etmedi), ama
+onların mazereti var: özneyi izliyorlar. ⑤'in yok.
+
+Mekanizma: envanter **genel geçer bir cümleyle** doldurulabiliyor. "Black
+space, star field" her uzay sahnesi için doğrudur, hiçbiri için ölçüm
+değildir. Bir alan envanteri, sahneden sahneye DEĞİŞMEYEN bir satır
+üretiyorsa envanter yapılmamıştır.
+
+**ÇÖZÜM — ⑤ ARKA PLAN rubriğine (STEP 1 envanterine) eklendi:**
+
+```
+FAR FIELD, PER SCENE: name the LARGEST non-black object in the far field
+and the fraction of frame height it occupies — "planet limb, lower third",
+"station spine, upper quarter", or "none — empty black". A planet, moon,
+sun, ring or large vessel is never summarised as "space": name it, place
+it, size it.
+If your FAR FIELD line comes out identical in every scene of the film,
+treat that as a flag on your own inventory and look again — a repeated
+line is a template, not an observation.
+```
+
+Aynı cümlenin ① KARE karşılığı (kategori 5 ÇEVRE) da yamandı: en büyük
+arka plan nesnesi adlandırılır, yoksa "none" yazılır.
+
+> 🔗 Ders 108 (bulgu sahipliği — gezegeni ⑤ görmeliydi, ① değil) ·
+> Ders 103 (tek yönlü kutu denetimi: işaretlenmeyen kutu ihlali yutar) ·
+> Ders 59 (yasak yazmak yetmiyor — `no planet` 12 kez yazılıydı) ·
+> Ders 125 (aynı koşunun ikinci kör noktası: ölçülebilir olanı ölçmemek).
+
+---
+
+## 🔴 DERS 129: SPEC DOSYASI FİLMİN KENDİ KLASÖRÜNDE DURURKEN BEŞ MERCEK DE MOD V KOŞULDU — KESME LİSTESİ DORUĞU, KAPAK KARESİNİ VE İKİ VİRALİ KESTİ
+
+**Kaynak:** THE ROSE COAT · 26.08.2026 · beş mercek ·
+`FILM_QA_RAPORLARI/01_FILM_RAPORLARI/THE_ROSE_COAT.md`
+**Sorun:** D94 kapısının 7. vakası — **ama yeni bir vaka türü.** D117'nin
+çözümü bu filmde UYGULANMIŞTI: SPEC bir bölüm değil, planın yanında duran
+`THE_ROSE_COAT_QA_SPEC.md` dosyasıydı. Yine verilmedi.
+
+```
+D117'nin teşhisi   : "sebep bilgi değil ERİŞİM — 906 satırlık planın
+                      738. satırını bulup kopyalamak"
+Bu filmde erişim   : dosya HAZIR, klasörde, adı `_QA_SPEC.md`
+Sonuç              : beş merceğin beşi de mod V
+mod D sayısı       : hâlâ 0
+```
+
+Erişimi çözmek davranışı değiştirmedi, çünkü **hiçbir adım SPEC'in
+yapıştırıldığını doğrulamıyor.** Kapı koşudan SONRA etiket basıyor; o anda
+rapor zaten yazılmış oluyor.
+
+Bedeli bu partide ilk kez sahne sahne ölçüldü. ④ HİKAYE'nin sıralı kesme
+listesi (rapor numaralandırması plandan bir kayık: rapor S1 = plan S0):
+
+```
+1. rapor S4  = plan S3   ⭐ VİRAL 1   ⛔ SPEC: "KESİLEMEZ"
+2. rapor S6  = plan S5   ÇEHOV 4 KURULUMU (ödemesi raporun övdüğü düşüş)
+3. rapor S10 = plan S9   ⭐ ARİTMETİK — SEÇİMİN KURULUMU · ÇEHOV 5 ödemesi
+4. rapor S12 = plan S11  🎯 DORUK + ⭐ VİRAL 3 ⛔ "KESİLEMEZ" + KAPAK KARESİ
+5. rapor S3  = plan S2   ÖNCE KARESİ · ÇEHOV 5 kurulumu
+
+Raporun doruk hakkındaki cümlesi:
+   "One last redundant brush before climbing. Unnecessary."
+Raporun doruk hakkındaki künye satırı:
+   PEAK LOCATED AT: no peak located
+Planın doruk hakkındaki satırı:
+   DORUK: S11 → 110-120 s · yirmi darbe 112.0-118.0 s · boş vuruş 118.5 s
+```
+
+⭐ **Beş kesme adayının beşi de yük taşıyan sahne.** Bu bir zayıf rapor
+değil: SPEC'siz koşan bir merceğin ÜRETEBİLECEĞİ EN İYİ rapor. Model
+tekrarlayan bir fırçalama gördü ve doğru okudu — göremediği şey her
+fırçanın ÖTEKİNİN sırtında olduğuydu, yani filmin novum'u.
+
+**ÇÖZÜM — kapı koşudan ÖNCEYE alınır (AGENTS ortak adım ① yerine geçer):**
+
+```
+⛔ SPEC KAPISI KOŞUDAN ÖNCE KOŞAR — etiket değil, ÖNKOŞUL.
+
+   f=$(ls <FILM klasörü>/*_QA_SPEC.md 2>/dev/null)
+   [ -n "$f" ] && echo "SPEC VAR → mod D ZORUNLU: $f"
+
+   SPEC dosyası VARSA ve rapor `INPUT MODE: D` yazmıyorsa:
+     · rapor 02_HAM_RAPORLAR'a düşer, T tablosuna SATIR YAZILMAZ
+     · kesme listesi, REMOVE reçetesi, yeniden üretim siparişi UYGULANMAZ
+     · koşu TEKRARLANIR — etiketlenmez
+   Bir koşuyu ŞARTLI diye tabloya almak, onu yapılmış saymaktır.
+```
+
+**ÇÖZÜM — SPEC dosyasının başına (operatörün gördüğü ilk satır):**
+
+```
+⛔ Bu dosya rubrikle BİRLİKTE yapıştırılır. Yapıştırılmadıysa koşu
+   yapılmamıştır — ön koşu değil, YAPILMAMIŞ koşudur.
+```
+
+> 🔗 Ders 94 (SPEC kapısının kendisi) · Ders 117 (SPEC bir dosyadır — bu
+> ders o çözümün UYGULANDIĞINI ve YETMEDİĞİNİ ölçüyor: erişim engeli
+> kalktı, davranış değişmedi) · Ders 116 (SPEC verilse kesme listesi virali
+> zaten kesemezdi) · Ders 74 (kaydı olmayan kapı koşulmamış kapıdır).
+
+---
+
+## 🔴 DERS 130: ⑩ ÖNERME KAPISI BULGUYU DÜŞÜRÜYOR, PUANI GERİ VERMİYOR — HÜCRE PARANTEZE ALINIYOR, TOPLAM AYNI KALIYOR
+
+**Kaynak:** THE ROSE COAT · 26.08.2026 · ② ve ⑤ ·
+`FILM_QA_RAPORLARI/01_FILM_RAPORLARI/THE_ROSE_COAT.md` §ÖNERME KAPISI
+**Sorun:** Kapının metni şunu diyor: *"kaynağı planda YAZILI → bulgu DÜŞER,
+film kaydına 'önerme' yazılır."* Bulgu düşünce hücrenin kaybettiği puan ne
+oluyor sorusunun cevabı **hiçbir yerde yazılı değil** — ve pratikte cevap
+"hiçbir şey" çıkıyor. Bir önceki koşu bunu yazıyla itiraf etmiş:
+
+```
+T1_KARE_KALITE.md · The Iron Slope satır notu:
+   "Parantezli hücreler ortak adım ⑩'dan geçemedi ...
+    Toplam, rubriğin kendi aritmetiğidir."
+```
+
+Yani ⑩ tabloyu hiç değiştirmiyor: hücreyi parantez içine alıp toplamı
+olduğu gibi bırakıyor. Bu filmde bedeli:
+
+```
+② DEVAMLILIK · rapor 7,2
+   ⑩'dan düşen: Coğrafya −3 (0:50 ↔ 1:30 — plan: pada mesafe 120 m ↔ 0 m)
+                Çapraz Kesme −3 (düşene yardım yok — SPEC: temas bütçesi)
+   kalan ⬜ AÇIK: Kostüm · Yıpranma · Ekipman (üçü de "sırt çantası"
+                  okumasına asılı; SPEC: çanta 0, sırt DÜZ GÖMME PANEL)
+   → ayakta, kapalı, sayı taşıyan hücre: 0
+
+⑤ ARKA PLAN · rapor 6,0
+   ⑩'dan düşen: Ufuk −5 · Derinlik −3 · Arka Set −6'nın yarısı
+                (üçü de aynı sebep: 500 m ↔ 30 m ↔ 0 m yaklaşma)
+                Gökyüzü −4 (aynı gözlem ①'in, D108)
+   → ayakta, kapalı, sayı taşıyan hücre: 0
+
+İki tablo satırı da bir sayı taşıyor ve arkasında hiçbir şey yok.
+```
+
+⭐ **Genel kural:** bir kapı yalnız "bulgu düşer" diyorsa, o kapı bir NOT
+üretir. Puan üreten bir sistemde kapının çıktısı da PUAN olmalıdır — yoksa
+kapı çalışır, tablo değişmez, ve tabloyu okuyan kişi kapının hiç
+koşulmadığı bir dünyada yaşar.
+
+**ÇÖZÜM — AGENTS ortak adım ⑩'a üçüncü ve dördüncü satır:**
+
+```
+⑩ ... kaynağı planda YAZILI → bulgu DÜŞER
+       kaynağı yok           → bulgu ayakta
+
+   ⭐ ÜÇÜNCÜ SATIR — PUAN GERİ VERİLİR:
+      Düşen her bulgunun timecode'u, hücrenin Issue gözünden SİLİNİR ve
+      o hücre kaybettiği puanı GERİ ALIR. Issue gözü boşaldıysa hücre
+      TAM PUANDIR — parantez değil.
+   ⭐ DÖRDÜNCÜ SATIR — TOPLAM YENİDEN HESAPLANIR:
+      Raporun OVERALL'ı ARTIK GEÇERSİZDİR. Film kaydına iki sayı yazılır:
+        | mercek | raporun toplamı | ⑩ sonrası toplam | ayakta hücre |
+      T tablosuna ⑩ SONRASI sayı girer; raporun sayısı ham raporda kalır.
+   ⛔ Ayakta, kapalı, sayı taşıyan hücre sayısı 0 ise satır tabloya
+      SAYI ile girmez: `—` girer ve "ölçüm yok" demektir. Sıfır hücreli
+      bir ortalama bir ölçüm değildir.
+```
+
+> 🔗 Ders 87 + 116 (kapının kendisi ve kapsamı) · Ders 119 (rapor İÇİ
+> aritmetik yazılı olmalı — bu ders aynı kuralı rapor SONRASI işleme
+> genişletiyor) · Ders 108 (çapraz gözlem: aynı deliğin mercekler arası
+> hâli) · Ders 131 (kaynaksız hücrenin tam puan alması — ⑩ bir hücreyi
+> boşaltınca tam da o tuzağa düşürüyor).
+
+---
+
+## 🔴 DERS 131: "no in-scope source" = 10/10 — KAPSAM SINIRINA UYAN MERCEK KAYNAKSIZLIKLA ÖDÜLLENDİRİLİYOR; ÇÖKEN FİLM 4,3'TEN 7,2'YE ÇIKTI
+
+**Kaynak:** THE ROSE COAT · 26.08.2026 · ② DEVAMLILIK ·
+`FILM_QA_RAPORLARI/02_HAM_RAPORLAR/THE_ROSE_COAT_DEVAMLILIK_HAM.md`
+**Sorun:** D108 "kapsam dışı bulgu hücreyi düşürmez" dedi; D119 bunu sayıya
+çevirdi: *"A category whose issue cell reads 'no in-scope source' scores
+10/10."* İki doğru düzeltme birleşince şu çıktı:
+
+```
+② DEVAMLILIK · 13 kategori · 12'si sayı taşıyor
+
+  kaynaklı hücreler : Kostüm 1 · Yıpranma 3 · Ekipman 2 ·
+                      Çapraz Kesme 7 · Coğrafya 7 · Dünya Propu 6
+                      → 26 / 6 = 4,3
+  "no in-scope source · 10/10" hücreleri: Kimlik · Fizik · Zaman-Işık ·
+                      Nedensellik · Nicelik+Sayı · Kurulum  (6 × 10 = 60)
+  raporun yazdığı   : 86 / 12 = 7,2
+
+  Δ = 2,9 PUAN — tek bir yeni gözlem olmadan.
+```
+
+Aynı raporun kendi hükmü `VERDICT: STRUCTURAL PROBLEM`. **Sözü ve sayısı
+zıt yöne bakan bir satır tabloya girdi** ve tabloya giren sayıdır.
+
+Aynı partide kuralın TERS yönde ihlali de var — ⑤ ARKA PLAN, `Frame Edges`
+hücresine `no in-scope source` yazıp yanına **7/10** koydu; D119'un tahkim
+cümlesi ("phrase wins") uygulansaydı 10/10 olacak ve toplam 6,0 değil 6,5
+çıkacaktı. Yani aynı kural bir mercekte şişiriyor, ötekinde düşürüyor:
+**hiçbir yönde ölçüm üretmiyor.**
+
+⭐ Kökteki hata mantıksal: **kanıtın yokluğu, kusursuzluğun kanıtı değildir.**
+`10/10` bir ölçümdür ve "burada bakılacak bir şey yoktu" ile "baktım, temiz"
+aynı hücreye yazılamaz. `N/A` mekanizması bu depoda zaten var (D113) —
+kaynaksız hücre onun kardeşidir.
+
+**ÇÖZÜM — beş rubriğin skor bloğundaki ④. maddenin ikinci cümlesi
+değiştirilir (kaynak rubrik ② DEVAMLILIK önce):**
+
+```
+④ THE OVERALL SCORE IS ARITHMETIC, NOT AN IMPRESSION. Every category
+   begins at 10/10 and loses only the deductions its own Issue cell lists
+   with timecodes.
+   A category whose issue cell reads "no in-scope source", "no source" or
+   the equivalent CARRIES NO NUMBER: write `—` in the Score cell and keep
+   it OUT of the mean, exactly like N/A. Absence of evidence is not
+   evidence of perfection, and a full score is a claim you did not measure.
+   Then compute the OVERALL SCORE as the mean of the categories that
+   actually carry a number, and print how many were excluded.
+   ⛔ If fewer than half your categories carry a number, the OVERALL is
+      not a score: write `— · n of m categories measured` instead.
+```
+
+> 🔗 Ders 119 (bu cümlenin önceki hâli — düzeltilen ders) · Ders 108
+> (kaynaksızlığın sebebi: kapsam sınırı doğru çalışıyor) · Ders 113
+> (yokluk `N/A`'dır, düşük puan değil — bu ders aynı kuralın YUKARI
+> yönlü kardeşi) · Ders 130 (⑩ bir hücreyi boşaltınca tam bu tuzağa
+> düşürüyor) · Ders 53 (sıfırlar temiz film gibi okunur — tam puanlar da).
+
+---
+
+## 🔴 DERS 132: SEVERITY TALLY YALNIZ BİR RUBRİKTE SAYILMAK ZORUNDA — AYNI PARTİDE A/B KANITI: SAYAN RUBRİK TUTTURDU, SAYMAYAN 8 BLOCKER'I 7 YAZDI
+
+**Kaynak:** THE ROSE COAT · 26.08.2026 · ① KARE ↔ ⑤ ARKA PLAN
+**Sorun:** ⑤ ARKA PLAN rubriğinin skor bloğunda beşinci bir madde var:
+
+```
+⑤ COUNT THE SEVERITY TALLY FROM THE FINDINGS, NOT FROM MEMORY.
+```
+
+Bu madde ① ② ③ ④'te **yok.** Aynı gün, aynı dosyaya koşulan iki rapor:
+
+```
+⑤ ARKA PLAN (kural VAR)  tally 🔴 0 · 🟠 3 · 🟡 2
+                         çelişki defteri: 🟠 3 · 🟡 2        ✅ TUTTU
+① KARE      (kural YOK)  tally 🔴 7 · 🟠 4 · 🟡 0
+                         DETAILED ERROR LOG: 🔴 8 · 🟠 4     ❌ BİR EKSİK
+                         (0:03 · 0:12 · 0:45 · 1:05 · 1:18 ·
+                          1:25 · 1:33 · 2:02 = sekiz 🔴)
+```
+
+Tek partide temiz bir A/B. Ve tally dekoratif bir satır değil: **verdict onu
+okuyor** — "Any 🔴 BLOCKER = REGENERATE" cümlesi tally üzerinden işliyor, ve
+operatörün "kaç sahne yeniden üretilecek" tahmini de.
+
+D111'in kardeş rubrik taraması bu kural için hiç koşulmamış: kural ⑤'e
+yazıldığında ölçüt tek soruydu — *"bu rubrik aynı malzemeyi görse aynı
+hatayı yapar mıydı?"* Cevap dördü için de evet.
+
+**ÇÖZÜM — ① ② ③ rubriklerinin skor bloğuna beşinci madde (⑤'teki metnin
+aynısı; ⑤ ve ⑥ zaten taşıyor, ④ HİÇ severity etiketi kullanmadığı için
+GEREKMEZ — sayılacak şeyi olmayan rubriğe sayım kuralı yazılmaz):**
+
+```
+⑤ COUNT THE SEVERITY TALLY FROM THE FINDINGS, NOT FROM MEMORY. Before
+   printing it, count the 🔴, 🟠 and 🟡 tags actually written in this
+   report; the tally must equal those counts. A verdict driven by a tally
+   that does not match the findings is a fabricated verdict.
+```
+
+> 🔗 Ders 111 (kardeş rubrik taraması — bu ders onun atlandığı bir kural)
+> · Ders 98 (işaretlenen kutu bulguya dönmedi: aynı ailenin negatif kutu
+> hâli) · Ders 103 (tek yönlü denetim) · Ders 119 (sayı üreten her adımın
+> aritmetiği gövdede yazılı olmalı — tally de bir sayıdır).
+
+---
+
+## 🔴 DERS 133: MONOTONİK MESAFE SAYACI OLAN FİLMDE BELGESİZ MERCEK, TASARLANMIŞ YAKLAŞMAYI "GEOMETRİ SÜRÜKLENMESİ" YAZAR — ⑤'İN ALTI HÜCRESİNİN DÖRDÜ AYNI SAYAÇTAN GELDİ
+
+**Kaynak:** THE ROSE COAT · 26.08.2026 · ⑤ ARKA PLAN 6,0 · ② Coğrafya 7 ·
+`FILM_QA_RAPORLARI/01_FILM_RAPORLARI/THE_ROSE_COAT.md` §ÖNERME KAPISI
+**Sorun:** Bu film bir YAKLAŞMA filmidir: planın üç metinsiz sayacından
+biri **pada mesafe 600 → 0 m, monotonik.** Her sahne aynı gemiyi bir önceki
+sahneden daha yakından gösterir; ölçek, panel yüksekliği ve zemin dokusu
+bu yüzden HER KESMEDE değişir ve değişmesi gerekir.
+
+Belgesiz mercek bunu göremez ve gördüğünü şöyle yazar:
+
+```
+⑤ Ufuk    5/10  "0:30 düz sert zemin ↔ 1:00 yuvarlanan kumullar"
+                 gerçek: plan S3 = ova kenarı 500 m · plan S6 = pad 30 m
+⑤ Derinlik 7/10 "roket bacak ölçeği kesmeler arası şişiyor"
+                 gerçek: 120 m ↔ 30 m
+⑤ Arka Set 4/10 "panel 0:50'de alçak, 1:30'da devasa"
+                 gerçek: 120 m ↔ 0 m
+② Coğrafya 7/10 AYNI GÖZLEM, ikinci tabloya faturalanmış [D108]
+```
+
+Dört hücrenin dördü de tek bir tasarım kararından: **filme yürünüyor.**
+⑩ önerme kapısı dördünü de düşürüyor — ama kapı ancak koşudan sonra,
+operatörün elinde planla koşuyor, ve o ana kadar rapor "FIELD DRIFTS"
+hükmü + iki "Regenerate S7/S8/S10/S12" siparişi üretmiş oluyor.
+
+⭐ İkinci yarısı daha sessiz ve daha pahalı: SPEC'in `HANGİ RUBRİĞE NE
+VERİLİR` tablosunda **yalnız ① ② ③ ④ var.** ⑤ ARKA PLAN ve ⑥ FİZİK
+24.08'de açıldı; SPEC şablonu onları hiç tanımıyor. Yani "belgesiz koşan
+mercek" listesi kural değil, KAZA.
+
+**ÇÖZÜM — ① SPEC şablonuna iki satır (dağıtım tablosuna):**
+
+```
+⑤ 🖼️ ARKA PLAN  → C BLOĞU'nun YALNIZ şu üç kilidi: mesafe/ölçek sayacı ·
+                   ekran yönü · sabit çevre nesneleri.  ⛔ Kimlik, kostüm
+                   ve olay kilitleri VERİLMEZ (o merceğin körlüğü tasarım).
+⑥ ⚖️ FİZİK      → C BLOĞU'nun sayısal kilitleri (g · oran · hız · süre).
+```
+
+**ÇÖZÜM — ② ⑤ ARKA PLAN rubriğine (kategori 5 Depth/Parallax & Scale):**
+
+```
+BEFORE CALLING A SCALE OR TOPOLOGY CHANGE A DRIFT, ASK WHETHER THE CAMERA
+IS SIMPLY CLOSER. A film that travels toward a fixed object shows that
+object larger in every successive scene, and the ground under it changes
+with the ground the camera is standing on. A finding here needs TWO scenes
+shot from the SAME distance to the SAME object — state the distance cue
+you used (a figure's height against the object, a horizon position, a
+known feature). "It looks bigger later" is an approach, not a defect.
+```
+
+> 🔗 Ders 87 + 116 (önerme kapısı — bu ders onun ⑤'teki en pahalı vakası) ·
+> Ders 126 (aynı merceğin öteki kör noktası: en büyük nesneyi
+> adlandırmamak) · Ders 130 (düşen bulguların puanı geri gelmiyor) ·
+> Ders 117 (SPEC dosyası — bu ders şablonun iki merceği hiç tanımadığını
+> ekliyor).
+
+---
+
+## 🔴 DERS 134: BELGESİZ MERCEĞİN "THE THREE THAT MATTER" SIRALAMASI SONUÇ SIRALAMASI DEĞİLDİR — BOT RENGİ FİLMİN ÜÇ KİMLİK KANALINDAN BİRİYDİ, RAPOR ONU "KOSTÜM SÜRÜKLENMESİ" YAZDI
+
+**Kaynak:** THE ROSE COAT · 26.08.2026 · ② DEVAMLILIK ·
+`FILM_QA_RAPORLARI/02_HAM_RAPORLAR/THE_ROSE_COAT_DEVAMLILIK_HAM.md`
+**Sorun:** ② merceğe BELGE VERİLMEZ ve bu bilinçlidir — baseline'ı videodan
+kurulan karakter pasaportudur. Doğru tasarım. Ama sonucu şu: mercek **neyin
+ne kadar önemli olduğunu bilemez**, ve raporun en çok okunan bölümü tam
+olarak bir ÖNEM SIRALAMASIDIR.
+
+Bu filmde iki uç aynı raporda yan yana duruyor:
+
+```
+RAPOR NE DEDİ                          SPEC NE DİYOR
+──────────────────────────────────────────────────────────────────────
+"Boot and glove color flipping"        KADRO KİLİDİ — iki figürü ayıran
+🔴, "THE THREE THAT MATTER" #1,        ÜÇ kanaldan biri:
+"Fix: regenerate · Cost: High"           UZUN = koyu antrasit bot+eldiven
+   → kostüm sürüklenmesi diye            KISA = beyaz bot+eldiven
+     tarif edildi                      Kanal çökerse film iki figürü
+                                       ayırt edilemez hâle gelir [Kart 4]
+
+"Counter Logic: N/A —                  SIRT SAYACI — FİLMİN ANA SAYACI,
+ no counter present"                   beş görsel durum, monotonik,
+   → kategori boş bırakıldı            yalnız fırçayla geri gider
+                                       (+ mesafe 600→0 m + fırça kılları:
+                                        filmde ÜÇ sayaç var)
+```
+
+Yani aynı rapor, filmin en kritik kilidini doğru yakalayıp yanlış
+etiketledi ve filmin ana mekanizmasını hiç görmedi. İkisi de merceğin
+kusuru değil: **körlüğün doğal sonucu.** Kusur, o sıralamanın operatöre
+düzeltilmeden ulaşmasında.
+
+⭐ Fark pratikte şudur: "kostüm sürüklenmesi" bir cila notudur ve sıraya
+girer; "filmin iki karakteri ayırt edilemiyor" üretimi durdurur.
+
+**ÇÖZÜM — kart ②/③/⑤ işleme adımlarına yeni adım (⑩'dan hemen SONRA):**
+
+```
+⭐ SPEC'E GÖRE YENİDEN SIRALA — belgesiz merceklerin raporlarında zorunlu.
+
+   ⑩'dan sağ çıkan her bulgu, SPEC'in C BLOĞU'ndaki kilit listesiyle
+   eşlenir ve film kaydına şu tabloyla yazılır:
+
+   | bulgu (timecode) | raporun sırası | hangi kilide dokunuyor | GERÇEK sıra |
+
+   · Bir KİLİDE dokunan bulgu, dokunmayan her bulgunun ÜSTÜNE çıkar.
+   · Raporun "THE THREE THAT MATTER" / "TOP 3" listesi film kaydına
+     OLDUĞU GİBİ değil, bu tabloyla YENİDEN SIRALANMIŞ hâlde geçer.
+   · SPEC'te sayaç yazılıysa ve rapor `Counter: N/A` demişse, bu bir
+     bulgu YOKLUĞU değil bir ÖLÇÜM BOŞLUĞUDUR: kilit defterine ⬜ AÇIK
+     satırı olarak girer.
+```
+
+> 🔗 Ders 108 (bulgu sahipliği) · Ders 130 (⑩'ın puan tarafı — bu ders
+> ⑩'ın SIRA tarafı) · Ders 96 (rapor tek başına "film mi saptı" diyemez) ·
+> Ders 97 (pasaport filmin %14'ünden kuruldu — körlüğün ölçü tarafı).
+
+---
+
+## 🔴 DERS 136: PLAN 11 SAHNEDE MÜZİK YAZIYOR, TESLİM EDİLEN DOSYADA SES KANALI YOK — VE BUNU GÖREN TEK MERCEK HİÇBİR TABLOYA SATIR BIRAKMIYOR
+
+**Kaynak:** THE ROSE COAT · 26.08.2026 · ③ SES ·
+`FILM_QA_RAPORLARI/02_HAM_RAPORLAR/THE_ROSE_COAT_SES_HAM.md`
+**Sorun:** ③ SES `AUDIO ABSENT — RUN NOT STARTED` döndürdü — doğru davranış,
+STATE C bloğu tam da bunun için yazıldı. Kart E3 ② kapısı da doğru koştu:
+skor yazılmadı. Ama iki delik açık kaldı.
+
+**① Aynı dosyaya koşan diğer dört mercek şüpheyi hiç görmedi:**
+
+```
+③ SES         "one of them is a delivery defect ... re-export, re-run"
+① KARE        "Dialogue & Audio | UNVERIFIABLE | (no sound)"   → geçti
+② ④ ⑤        "LINES HEARD: none"                              → geçti
+```
+
+`LINES HEARD: none` iki ayrı gerçeği aynı kelimeyle yazıyor: *tasarım gereği
+sessiz film* ve *ses kanalı ihraçta düşmüş dosya.* Bu seride birincisi
+normaldir, bu yüzden dördü de duraksamadan geçti.
+
+**② ③'ün çıktısı hiçbir tabloya satır bırakmıyor.** Stop bloğu skor
+üretmiyor, T3'e satır girmiyor, 00_INDEX'te ③ hücresi ❌ kalıyor — yani
+"koşuldu ve dosya bozuk çıktı" ile "hiç koşulmadı" kayıtta AYNI görünüyor.
+Partinin tek gerçek teslim şüphesi, kaydedilmeden buharlaşıyor.
+
+Ve bu filmde şüphe planla doğrulanabiliyor:
+
+```
+plan §0.15  MUSIC-FREE SCENES: 2 — S0 (hook) ve S8 (fırça yetmez)
+            → 13 sahnenin 11'inde MÜZİK VAR
+plan C BLOĞU  S11 · 7,0 s: iki eldiven tıklaması (ses tasarımı)
+dosya         ses bilgisi YOK
+```
+
+⭐ Ders şu: **sessiz film ile sessiz DOSYA aynı şey değildir, ve bu ayrımı
+tek bir `ffprobe` satırı yapar.** Ortak adım ⑪ zaten ölçüyor — ama ses
+kanalının VARLIĞINI ölçmüyordu, yalnız sessizlik aralıklarını.
+
+**ÇÖZÜM — ① ortak adım ⑪'e beşinci komut:**
+
+```
+ffprobe -v error -select_streams a -show_entries stream=codec_type \
+  -of csv=p=0 "$M"
+→ çıktı BOŞ ise dosyada SES KANALI YOKTUR.
+  · plan müzik/ses tasarımı yazıyorsa: 🔴 TESLİM KUSURU, parti DURUR,
+    master yeniden ihraç edilir ve DÖRT mercek yeniden koşulur
+    (görüntü merceklerinin ölçtüğü dosya da master değildir)
+  · plan tamamen sessizse: ses kanalı yokluğu yine kayda geçer,
+    ③ satırı `— · ses kanalı yok (doğrulandı)` olur
+```
+
+**ÇÖZÜM — ② beş rubriğin künye satırına (① ② ③ ④ ⑥ — ⑤'in künyesinde
+`LINES HEARD` satırı yoktur):**
+
+```
+LINES HEARD: [n · every spoken line VERBATIM with its timecode, or
+"none"]. When you write "none", add which one you heard: "none — room
+tone / ambience present" or "none — no audio information at all". A film
+with no dialogue and a film with no audio track are different objects and
+only one of them is a delivery defect.
+```
+
+> 🔗 Ders 125 (ölçüm kapısı — bu ders ona beşinci komutu ekliyor) ·
+> Ders 107 (çapraz sayım: bu şüphe hiçbir çapraz eksende görünmüyordu) ·
+> Ders 80 (girdisiz koşu verdikt üretti — bunun tersi: doğru duran koşu
+> hiçbir iz bırakmıyor) · Ders 74 (kaydı olmayan kapı koşulmamış kapıdır).

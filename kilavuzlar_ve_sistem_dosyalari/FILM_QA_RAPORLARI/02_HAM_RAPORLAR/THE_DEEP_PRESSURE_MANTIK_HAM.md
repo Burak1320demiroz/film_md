@@ -20,7 +20,7 @@ Kostüm-Prop 1/10 → üç tablonun tamamındaki EN DÜŞÜK kategori skoru.
 Rubrik bunu rapordan sonra yapılacak iş olarak tanımlar
 (`04_MANTIK_KALITE_TABLOSU.md` §SATIR EKLEME KURALI, adım 5).
 
-Kaynak dosya: `yatay_2_4_dk_filmler_uzay/THE_DEEP_PRESSURE_GAS_GIANT_FILM.md`
+Kaynak dosya: `yatay_2_4_dk_filmler_uzay/THE_DEEP_PRESSURE/THE_DEEP_PRESSURE_GAS_GIANT_FILM.md`
 
 ### 🚨 ÖNCE: KAYNAK DOSYA 13 SAHNELİK BİR FİLMİN 2 SAHNESİ
 

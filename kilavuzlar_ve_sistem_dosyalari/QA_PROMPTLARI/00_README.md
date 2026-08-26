@@ -76,6 +76,60 @@ bakman gerekiyor?
 ④ HİKAYE      film boyu, anlatı ekseni.
 ```
 
+### 🔬 DERİN TARAMA MERCEKLERİ — 2 (24.08.2026'da açıldı)
+
+> Zaman eksenine oturmayan iki KONU merceği. ⑤ zaman ekseninin ikisini
+> birden tarar (kadraj içi VE sahneler arası) ama yalnız ÖZNE-DIŞI alanda;
+> ⑥ her yerde, ama yalnız SAYI taşıyan bulgularda. Bu yüzden ①-④'ün
+> yanına beşinci/altıncı zorunlu mercek olarak DEĞİL, ayrı bir sınıf
+> olarak eklendiler.
+
+| Dosya | Mercek | Soru | Zorunlu girdi | Kat. | Skor tablosu |
+|---|---|---|---|:--:|---|
+| `5_ARKA_PLAN_QA_CRITIQUE_PROMPT.md` | ⑤ 🖼️ ARKA PLAN | "çekimin KONUSU OLMAYAN alan yerinde duruyor mu" | tam kurgu · **yalnız video** | 9 | `../FILM_QA_RAPORLARI/T5_ARKA_PLAN_KALITE.md` |
+| `6_FIZIK_QA_CRITIQUE_PROMPT.md` | ⑥ ⚖️ FİZİK | "dünyanın davranışı ÖLÇÜMDEN sağ çıkıyor mu" | tam kurgu (+ SAYISAL KİLİTLER = MOD D) | 9 | `../FILM_QA_RAPORLARI/T6_FIZIK_KALITE.md` |
+
+```
+⑤ ARKA PLAN   kimlik testi: bulgu, çekimin KONUSU OLMAYAN bir şeyde mi?
+              Özne her sahnede yalnız DIŞLAMAK için adlandırılır. Model
+              sadakat bütçesini özneye harcar; insan gözü de özneyi izler
+              — altıncı parmak orta planda on izlemeden sağ çıkar. Bu
+              mercek bir koşuyu tamamen özneye BAKMAMAYA harcar.
+⑥ FİZİK       kimlik testi: bulgu bir ÖLÇÜM taşıyor mu ya da kırdığı
+              yasayı adlandırıyor mu? ① "toz sıvı gibi akıyor" DESENİNİN
+              sahibi kalır; ⑥ "aynı tür düşüş bir sahnede 1.1 s, diğerinde
+              2.8 s — iki ayrı yerçekimi" ARİTMETİĞİNİN sahibi.
+              ⭐ MOD D bu merceğin varlık sebebi: planların sayısal kilit
+              satırları NUMERIC LOCK LIST'e kopyalanır ve tek tek ekranda
+              doğrulanır (PASS/FAIL/UNMEASURABLE/NOT EXERCISED). Depoda
+              yazılmış kilitleri üretilmiş videoya karşı doğrulayan ilk
+              alet budur.
+              ⭐ ÖNERME KAPISI rubriğin içinde YAPISALDIR (STEP 0 PREMISE
+              GATE): filmin dünya kuralı ilan ettiği imkânsız fizik bulgu
+              değildir, yalnız TUTARLILIĞI puanlanır.
+
+⛔ /4 PAYDASINA GİRMEZLER — tamlık matrisi dört zorunlu mercekle kalır.
+   22.08 konsolidasyonu (6→4) geri alınmıyor: bu ikisi zorunlu tur değil,
+   RİSK TETİKLİ tarama. Ne zaman koşulur:
+     ⑤ → kalabalık / ikinci figür riski (kart 4) · katmanlı dünya (6b) ·
+         yoğun set — ya da bir çekirdek merceğin arka alana bıraktığı
+         OUT-OF-SCOPE FLAG'i kovalamak için
+     ⑥ → novum bir fizik iddiasıysa · plan sayısal kilit taşıyorsa (mod D)
+         · parçacık riski (kart 6) — ya da fizik kokan bir OUT-OF-SCOPE
+         FLAG'i kovalamak için
+   ⚠️ Eski sistemin ölçülmüş dersi: "opsiyonel" mercek koşulmaz (34 kaydın
+   5'inde ses vardı). Bu ikisinin farkı: tetikleyicisi belirsiz bir tercih
+   değil, filmin risk kartlarında ZATEN yazılı olan satırlardır — riski
+   yazılı filme taramayı koşmamak, kartı okumamış olmaktır.
+
+⛔ BULGU SAHİPLİĞİ (D108'in derin tarama eki): çekirdek mercek her zaman
+   sahiptir. ⑤/⑥ bulgusu bir çekirdek kapsamına da oturuyorsa film kaydına
+   ÇEKİRDEK SAHİBİN bölümüne yazılır ("⑤/⑥ taraması buldu" notuyla); T5/T6
+   skoru kendi tablosunda ayrıca durur ve T1-T4 ile toplanmaz/karşılaştırılmaz.
+   İki mercek aynı olayı gördüyse film kaydında TEK satır, iki kaynak —
+   çifte fatura değil çapraz doğrulama.
+```
+
 ### ⛔ DİKEY ARTIK AYRI BİR RUBRİK DEĞİL
 
 Eski `SHORTS_QA` 16 kategori taşıyordu ve **13'ü başka bir rubriğin
@@ -104,6 +158,8 @@ HER FİLM — yatay ve dikey fark etmez:
   TAM KURGU       ① KARE + ② DEVAMLILIK + ④ HİKAYE   ← üç zorunlu
                   + ③ SES  — kurguda ses varsa ZORUNLU, sessizse STEP 0
                              kapısı zaten N/A verir
+                  + ⑤ ⑥    — RİSK TETİKLİ derin tarama (yukarıdaki bölüm);
+                             /4 paydasına girmezler
 
 ⛔ OPSİYONEL MERCEK KALMADI. Eski sistemde karakter ve ses "opsiyonel"di
    ve bu yüzden çoğu film ölçülmeden geçti: 34 film kaydının yalnız 5'inde
@@ -161,6 +217,8 @@ MOD V — SADECE VİDEO medya + rubriğin kendisi. SPEC boş. Film KENDİSİYLE 
 | ② DEVAMLILIK | **E** | `<FILM>_DEVAMLILIK_HAM.md` | `T2_DEVAMLILIK_KALITE.md` |
 | ③ SES | **E3** | `<FILM>_SES_HAM.md` | `T3_SES_KALITE.md` |
 | ④ HİKAYE | **D** | `<FILM>_HIKAYE_HAM.md` | `T4_HIKAYE_KALITE.md` |
+| ⑤ ARKA PLAN | **F** | `<FILM>_ARKA_PLAN_HAM.md` | `T5_ARKA_PLAN_KALITE.md` (matrise girmez) |
+| ⑥ FİZİK | **F2** | `<FILM>_FIZIK_HAM.md` | `T6_FIZIK_KALITE.md` (matrise girmez) |
 
 > ⚠️ Eski ham rapor adları (`_TEKNIK_` · `_MANTIK_` · `_KARAKTER_` ·
 > `_SENARYO_` · `_SHORTS_`) **değiştirilmez** — onlar arşivlenmiş
@@ -204,11 +262,17 @@ Rubrik dosyasına YAZILMAZ (salt prompt ilkesi).
 |---|---|---|---|
 | `FILME_OZEL/THE_RING_LIGHT_QA_CRITIQUE_PROMPT.md` ⚠️ | THE RING LIGHT | aksiyon (planlı vuruş + ölü kare) ve filmin kendi sayısal kilitleri | tek klip (MOD K) veya tam kurgu (MOD F) |
 | `FILME_OZEL/THE_BLUE_DRIFT_QA_CRITIQUE_PROMPT.md` | THE BLUE DRIFT | tek klibin promptuna UYGUNLUĞU + **ATIF**: kilit prompt'ta var da model mi uymadı, yoksa kilit prompt'ta hiç yok muydu | tek klip (MOD K) + AS-BUILT prompt |
+| `FILME_OZEL/00_YANLIS_POZITIF_DUVARI_SABLONU.md` ⭐ 🆕 | — (ŞABLON) | **YANLIŞ-POZİTİF DUVARI ŞABLONU** — filme özel rubrik yazarken kopyalanır. Duvar depoda yalnız filme özel rubriklerde yaşıyordu; bu dosya onu yeniden kullanılabilir hâle getirir. Uzay hattına uyarlandı: klip içi lockoff · kesmesiz ızgara · yavaşlık · hareketsiz sahne · vizör arkası yüz · sessizlik · yarasızlık · metinsizlik · dar palet. ⛔ Duvar hiçbir ÖLÇÜMÜ susturmaz (kurulum envanteri · süre · kesme · replik sayımı muaftır) | film DEĞİL — kopyalanacak blok |
 
 ```
 ⚠️ BUNLAR MERCEK DEĞİL, ÜRETİM KAPISIDIR.
    ⚠️ RING LIGHT dosyası ortak çekirdeğe ve salt-prompt ilkesine HENÜZ
       uymuyor (Türkçe operatör kuyruğu taşıyor). Bilinen borç.
+   ✅ LAST SPAN dosyası (25.08.2026) o borcu tekrarlamadan yazıldı:
+      gövde tamamen İngilizce, ders numarası/tarih/film-dışı yol yok,
+      ortak çekirdeğin kapıları (MEDIA GATE · CUTS COUNTED · NON-SCENE
+      MATERIAL · NOT OBSERVABLE · OUT-OF-SCOPE FLAGS) yerinde.
+      Türkçe yalnız BAŞLIK satırında — üç dosyada da öyle.
    · 4'lük sayıma girmezler, skorları T1-T4 tablolarına YAZILMAZ.
    · Verdikleri şey skor değil KARARDIR: KABUL / KURGUDA DÜZELT / YENİDEN ÜRET.
    · Genel merceklerin yerine geçmezler, önlerinde dururlar.
@@ -220,6 +284,11 @@ Rubrik dosyasına YAZILMAZ (salt prompt ilkesi).
 ⭐ NE ZAMAN YAZILIR: filmin riski genel rubriklerin ölçmediği bir eksende
    yoğunlaşıyorsa (Ring Light: tasarımı gereği yavaş film — genel rubrik ya
    "durgun" diye cezalandırır ya ölü kareyi "tasarım" diye geçirir).
+   ⭐ LAST SPAN aynı boşluğun daha keskin hâli: genel mercek için YÜRÜYEN
+   BİR ZOMBİ HATA DEĞİLDİR — türün normalidir, geçer. Oysa o filmde tek
+   kare yürüyüş premisi siler. Aynı mercek, PASİF kalabalığı "tehdit yok"
+   diye cezalandırır — yani tam olarak çalışan şeyi bozmayı önerir.
+   Genel alet burada iki yönde birden yanılıyor; kapı bu yüzden yazıldı.
 ```
 
 ---
@@ -232,6 +301,8 @@ Rubrik dosyasına YAZILMAZ (salt prompt ilkesi).
 | Görsel/video promptu (üretimden önce) | ✅ **`../PROMPT_KONTROL/`** — 12.08.2026'da açıldı: betik (sayar) + rubrik (yargılar) |
 | Video — kare içi (yatay **ve** dikey) | ✅ ① KARE |
 | Video — sahneler arası, dünya **ve** karakter | ✅ ② DEVAMLILIK |
+| Video — özne-dışı alan (arka plan figürleri, ufuk, derinlik, kadraj kenarı) | ✅ ⑤ ARKA PLAN — derin tarama, risk tetikli (24.08.2026) |
+| Video — sayısal fizik doğrulaması (plan kilitleri ekranda, görünür g, hız/ölçek aritmetiği) | ✅ ⑥ FİZİK — derin tarama, mod D kilit tablosuyla (24.08.2026) |
 | Video — dikey | ✅ ① KARE `FORMAT: DİKEY` + ④ HİKAYE dikey merdiveni |
 | Video — 7-9 dk | ✅ 3 geçişli sistem (kendi klasöründe, ayrı skor evreni) |
 | Montaj bütünlüğü (planlanan sahne ekranda var mı) | ✅ kurgu kapısı [D70/72/81] + ④ HİKAYE zirve kontrolü |
@@ -261,6 +332,18 @@ YAYIN SONRASI İZLEYİCİ VERİSİ               QA değil analitik — rubrik b
 ## 📝 DEĞİŞİKLİK KAYDI
 
 ```
+24.08.2026  🔬 DERİN TARAMA SINIFI AÇILDI — ⑤ ARKA PLAN + ⑥ FİZİK
+            İki KONU merceği; 22.08'in ZAMAN eksenine oturmadıkları için
+            ①-④'ün yanına zorunlu mercek olarak değil, /4 paydasının
+            DIŞINDA risk-tetikli sınıf olarak eklendi (6→4 kararı geri
+            alınmadı). ⑤ özne-dışı alanı tarar (özne yalnız dışlamak için
+            adlandırılır); ⑥ tek sayısal mercek — mod D'de planın sayısal
+            kilitlerini ekranda doğrular (depoda ilk), önerme kapısı
+            STEP 0'da yapısal. Skor tabloları T5/T6 açıldı; bulgu
+            sahipliği kuralı (çekirdek her zaman sahiptir) yukarıda.
+            Görev kartları: AGENTS.md F ve F2.
+            Tutanak: CALISTIRMA_KAYITLARI.md
+
 22.08.2026  ⭐⭐ ALTI MERCEK → DÖRT. Ayrım ekseni konu değil ZAMAN oldu:
             ① KARE (sahne içi) · ② DEVAMLILIK (sahneler arası) ·
             ③ SES (film boyu · ses) · ④ HİKAYE (film boyu · anlatı).

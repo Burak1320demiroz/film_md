@@ -247,6 +247,29 @@ KANIT:       Low Power 8/10 (sabit lockoff) · Slow Stone 7/10 (ayrı üretim)
               → Kesme sorunu bir prompt sorunu değil, MİMARİ sorunu.
 ```
 
+```
+⛔ KAPSAM — BU KARAR KLİP İÇİDİR (26.08.2026 daraltması)
+              Yukarıdaki reçete tek klibin İÇİNİ bağlar. Sahneler ARASI
+              kurulum değişimi karardan MUAF ve ZORUNLUDUR.
+              Gerekçe yukarıdaki KANIT satırının kendisi: sahneler ayrı
+              kliplerde üretiliyor, iki klibin farklı açıdan çekilmesinin
+              gizli kesme riski SIFIR. Kamera skorunu kurtaran şey klip
+              içi sadelikti; tek kurulum değil.
+              Bant: ../ACI_YAYI_VE_SEKANS_KILAVUZU.md §3 (ardışık çift:
+              ≥1 ölçek kademesi VE ≥45° açı farkı) · §4 (kurulum sayısı)
+              Ölçen kapı: ../PROMPT_KONTROL/prompt_kontrol.py (kurulum
+              çeşitliliği · açı sözlüğü) — eşikler orada, burada değil.
+
+🚨 NEDEN DARALTILDI: karar sahneler arasına sessizce genellendi.
+              26.08.2026 ölçümü: 187 film .md dosyasının 126'sı sabit-kamera
+              kalıbı taşıyor (lockoff / no camera movement / static camera);
+              en yeni dikey filmde 6 kamera satırının yalnız 3'ü benzersiz
+              (üç sahne birebir aynı satır) ve üç kurulumun üçü de alttan
+              bakıyor. Hiçbir kapı bunu ölçmüyordu.
+              ⚠️ Bu iki sayı O GÜNÜN kesitidir; güncelini almak için
+              prompt_kontrol.py'yi film klasörlerine koş.
+```
+
 ---
 
 # 🔴 KART 9 — TEK BASKIN IŞIK + HEDEFE HAREKET (ışık mıknatısı) 🆕 21.08.2026
@@ -344,15 +367,24 @@ FİLM: ______________________
 □ Katmanlı/bölgeli dünya mı?    → varsa KART 6b — ışık takvimi şart
 □ Diyalog var mı?               → varsa KART 7
 □ Kamera hareketi var mı?       → KART 8 — kaldırabiliyor musun?
+                                   ⛔ "kaldırdım" = KLİP İÇİ; sahneler
+                                   arası açı yayı yine zorunlu (KART 8)
 □ Tek baskın ışık + hedefe hareket? → varsa KART 9 — dört kanal + iki yenilgi kuralı
 □ İnsansız sahne var mı?        → varsa KART 10 — NEGATIVE bloğu tek satıra
 □ Değişken çekim süresi / sahne içi kesme? → varsa KART 11 — kırpma bütçesi
 
-RİSK SAYISI: ___ / 9
+RİSK SAYISI: ___ / 12        ← payda YUKARIDAKİ SORU SAYISIDIR, sabit değil.
+                                Kart eklenince payda da artar (bu liste tek kaynak).
 
 ⚠️ 5 ve üstü ise: film şu anki sistemle 5/10'un üstüne çıkamaz.
    Malzeme azaltmayı düşün. Kalite, daha iyi prompttan değil,
-   DAHA AZ RİSKLİ SAHNEDEN geliyor — kanıt: Kamera 2→8.
+   DAHA AZ RİSKLİ SAHNEDEN geliyor — kanıt: Kamera 2→8 (tablo min→max;
+   ardışık sıçrama karşılığı 3→8 · 01_DERS_ETKINLIK_RAPORU §5).
+
+⚠️ EŞİK KALİBRASYONU AÇIK: "5+" bandı liste 9 SORULUYKEN ölçüldü; kart
+   6b · 9 · 10 · 11 sonradan eklendi ve payda 12'ye çıktı. Aynı film şimdi
+   mekanik olarak daha yüksek risk sayısı üretir. Bant yeniden ölçülene
+   kadar 5+ eşiği KORUNUR (yanlış tarafa hata yapar: fazla uyarır).
 ```
 
 ---

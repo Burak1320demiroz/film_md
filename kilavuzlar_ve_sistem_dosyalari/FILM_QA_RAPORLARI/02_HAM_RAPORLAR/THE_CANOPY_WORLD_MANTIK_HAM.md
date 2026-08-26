@@ -28,7 +28,7 @@ aynı hata iki kez sayılmaz."* Test sonucu:
 
 # 🔎 DOKÜMAN KONTROLÜ — raporun sorduğu 2 sorunun cevabı
 
-Kaynak: `yatay_2_4_dk_filmler_uzay/THE_CANOPY_WORLD_PLANET_FILM.md`
+Kaynak: `yatay_2_4_dk_filmler_uzay/THE_CANOPY_WORLD/THE_CANOPY_WORLD_PLANET_FILM.md`
 
 ### ❓ Soru 1 — "Sürekli doğrusal iniş mi, yoksa doğrusal olmayan keşif montajı mı?"
 

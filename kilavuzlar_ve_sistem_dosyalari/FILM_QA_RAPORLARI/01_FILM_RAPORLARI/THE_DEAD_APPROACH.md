@@ -1,6 +1,6 @@
 # 🔍 THE DEAD APPROACH — QA KAYDI
 
-> **Kaynak dosya:** `yatay_2_4_dk_filmler_uzay/THE_DEAD_APPROACH_EMERGENCY_LANDING_FILM.md`
+> **Kaynak dosya:** `yatay_2_4_dk_filmler_uzay/THE_DEAD_APPROACH/THE_DEAD_APPROACH_EMERGENCY_LANDING_FILM.md`
 > **Veri kaynağı:** `LESSONS_LEARNED.md` — kalite tablosu + Ders 34-38
 > ⚠️ **Orijinal QA raporu dosya olarak mevcut değil** — ancak timestamp'li ham
 > bulgular derslerde korunmuş.

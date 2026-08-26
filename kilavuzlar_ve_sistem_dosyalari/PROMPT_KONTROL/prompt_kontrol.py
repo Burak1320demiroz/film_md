@@ -24,6 +24,32 @@
 #
 #  ÇIKTI:  GO / FIX / BLOCK   — BLOCK ise üretme.
 #  ÇIKIŞ KODU: 0 = GO · 1 = FIX · 2 = BLOCK   (betikten zincirlenebilir)
+#
+#  ─── 26.08.2026 · DÖRT YENİ DENETİM ────────────────────────────────
+#  Sebep: TEMA_MUHENDISLIGI · KAMERA_ACISI_PSIKOLOJISI · ACI_YAYI_VE_SEKANS
+#  22.08'de yazıldı ve dört gün HİÇBİR kapıda ölçülmedi. Ölçülmeyen kural
+#  uygulanmıyor: en yeni dikey filmde 6 kamera satırının 3'ü birebir
+#  kopyaydı ve hiçbir kapı bunu görmüyordu. Sistem neyi ölçüyorsa onu
+#  optimize etti — kesmeyi ve fiziği ölçüyordu, temayı ve açıyı değil.
+#  ⚠️ Tema kapsama oranı için SAYI YAZMA: `bash ../sayac.sh` → 🎭 bloğu
+#  (kural ①). Bu yorumda tutulan her oran bir hafta içinde bayatlar.
+#     ⑩ KURULUM ÇEŞİTLİLİĞİ  ardışık ikili aynı kurulum (§3) ·
+#                            kurulum sayısı bandı (§4)
+#     ⑪ AÇI SÖZLÜĞÜ          kaç farklı açı TİPİ kullanılmış (§2)
+#     ⑫ ABARTI EŞİĞİ         dutch 35°+ · alt açı 45°+ · üst açı 45-60° (§5)
+#     ⑬ TEMA KAPISI          TEMA satırı + en az 3 sahne indeksi (§5/§9)
+#
+#  ⛔ BU DENETİMLER LOCKOFF KARARINI GERİ ALMAZ. Lockoff KLİP İÇİDİR
+#     (02_RISK_KARTLARI KART 8 kapsam bloğu, 26.08.2026 daraltması).
+#     Ölçülen tek şey sahneler ARASINDA kurulumun değişmesi — sahneler
+#     zaten ayrı kliplerde üretiliyor, teknik riski sıfır.
+#
+#  ⚠️ KALİBRASYON NOTU: yeni denetimler 107 eski dosyaya koşuldu ve dört
+#     yanlış-pozitif sınıfı bulunup kapatıldı (çanak anten eğimi ↔ kamera
+#     eğimi · karakter gövde açısı ↔ kamera pitch'i · "at 12 metres"
+#     biçiminin imzadan düşmesi · tek çekimin ikiye bölünmüş hâli).
+#     TEMA kapısı eski dosyaların çoğunda BLOCK verir — bu bir hata değil,
+#     kapı açılmadan önceki durumun ölçüsüdür.
 # ═══════════════════════════════════════════════════════════════════
 
 import re
@@ -185,6 +211,216 @@ YONELIM_IZI = re.compile(
 #    kapıyı kapattı — oysa filmin ARACININ yönelimi hiçbir yerde yazılı
 #    değil. Aracın yönelimini figürünki karşılayamaz (kılavuz §2 İLKE 4).
 YONELIM_PENCERE = 220     # karakter · araç kelimesinin iki yanı
+
+# ─── AÇI VE KURULUM KAPISI ─────────────────────────────────────────
+# Kaynak: ACI_YAYI_VE_SEKANS_KILAVUZU.md §3 (güvenli bant) · §4 (çeşitlilik
+# bandı) · KAMERA_ACISI_PSIKOLOJISI_KILAVUZU.md §2 (sekiz açı) · §5 (abartı
+# eşikleri) · §6 (açıyı Veo'da sabit tutan sözcükler).
+#
+# NEDEN VAR (26.08.2026): Bu üç kılavuz 22.08'de yazıldı ve dört gün boyunca
+# HİÇBİR kapıda ölçülmedi. Sonuç sahada göründü: deponun en yeni dikey
+# filminde 6 video promptunun kamera satırından yalnız 3'ü benzersizdi
+# (S0=S2=S5 ve S1=S3 birebir aynı cümle) ve üç kurulumun üçü de yerden
+# bakıyordu. Dosya kendi kontrol bloğunda §4 bandını "tutuyor" ilan
+# ediyordu ve HAKLIYDI — §4 ASGARİYİ ölçer, açı TİPİNİ hiç saymaz.
+#
+# ⛔ BU KAPI LOCKOFF KARARINI GERİ ALMAZ. Lockoff KLİP İÇİDİR
+#    (02_RISK_KARTLARI KART 8 kapsam bloğu). Burada ölçülen tek şey
+#    sahneler ARASINDA kurulumun değişip değişmediği; sahneler zaten ayrı
+#    kliplerde üretiliyor, iki klibi farklı açıdan çekmenin gizli kesme
+#    riski sıfır (Slow Stone dersi: kesme sorunu MİMARİ sorunuydu).
+
+# Fragman/kapak FİLM DEĞİLDİR: kendi vuruş bütçesi var (FRAGMAN_KILAVUZU §0)
+# ve temayı filmden devralır. Kurulum/açı/tema kapıları onlara koşulmaz.
+FILM_DISI = re.compile(r"FRAGMAN|KAPAK|TEASER", re.IGNORECASE)
+
+# Açı ve ölçek YALNIZ KAMERA CÜMLELERİNDE aranır.
+# ⚠️ Sebep: "she is looking down at her gloves" bir KARAKTER EYLEMİdir,
+#    üst açı değil. Cümle süzgeci olmadan her eğilen baş "üst açı" sayılır
+#    ve monoton film çeşitli görünür — kapının tam tersine çalışır.
+KAMERA_IZI = re.compile(r"\b(camera|lens|tripod|shot|framing|angle|frame)\b",
+                        re.IGNORECASE)
+
+# KAMERA_ACISI §2'nin sekizlisi. Desenler §6 reçetelerinin sözcüklerinden
+# alındı — kılavuzun "açıyı Veo'da sabit tutan" dediği kelimeler bunlar.
+# ⚠️ Kılavuz sözlüğü DIŞINDA yazılmış açı (örn. "locked-off tripod, low")
+#    bilerek sayılmaz: §6'nın tüm iddiası modelin o biçimi tutmadığı.
+ACI_TIPLERI = {
+    "alt açı":  r"low[- ]angle|pointing\s+up(?:ward)?|aimed\s+[^.;]{0,30}\bup\b|"
+                r"from\s+below|worm'?s[- ]eye|\bup\s+at\s+(?:her|him|the)\b",
+    "üst açı":  r"high[- ]angle|looking\s+down(?:ward)?|from\s+above|"
+                r"aimed\s+[^.;]{0,30}\bdown\b|\bdown\s+at\s+(?:her|him|the)\b",
+    "tepe":     r"overhead|bird'?s[- ]eye|top[- ]down|directly\s+down|zenith|"
+                r"straight\s+down",
+    "eğik":     r"\bdutch\b|tilted\s+(?:exactly\s+)?\d|\bcanted\b",
+    "göz hizası": r"eye[- ]level|eye\s+height",
+    "OTS":      r"over[- ]the[- ]shoulder|\bOTS\b|over\s+(?:her|his|their)\s+shoulder",
+    "profil":   r"\bprofile\b|side[- ]on\b",
+    "POV":      r"\bPOV\b|point[- ]of[- ]view|subjective\s+(?:shot|view)",
+}
+
+# ACI_YAYI §3 ölçek merdiveni: EWS – WS – MS – CU – ECU.
+# Sıra ÖNEMLİ: en dar kalıp önce aranır, yoksa "extreme close-up" CU'ya düşer.
+OLCEK_MERDIVENI = [
+    ("ECU", r"extreme\s+close[- ]?up|\bECU\b|\bXCU\b"),
+    ("CU",  r"close[- ]?up|\bCU\b|\bMCU\b|medium\s+close"),
+    ("MS",  r"medium\s+(?:full\s+)?shot|\bMS\b|\bMLS\b|medium\s+long|waist\s+shot"),
+    ("EWS", r"extreme\s+wide|extreme\s+long|\bEWS\b|\bXLS\b|establishing"),
+    ("WS",  r"wide\s+shot|long\s+shot|\bWS\b|\bLS\b|full\s+shot"),
+]
+
+# ⛔ DEVAM KLİBİ MUAFİYETİ: bir çekim iki klibe bölündüğünde ikinci klip
+#    AYNI kurulumu taşımak ZORUNDADIR — sürekliliğin kendisi budur
+#    (TEK_CEKIM_VE_GIZLI_GECIS_KILAVUZU). Muafiyet olmadan kapı, doğru
+#    yazılmış iki parçalı çekimi "monoton" sayıyor: bir filmde 20 saniyelik
+#    tek çekimin iki yarısı ardışık ihlal olarak raporlandı.
+DEVAM_KLIBI = re.compile(
+    r"continues?\s+the\s+previous\s+clip|from\s+its\s+exact\s+last\s+frame|"
+    r"(?:second|third|fourth|latter)\s+(?:half|part)\s+of\s+a\s+single|"
+    r"same\s+lockoff|same\s+altitude,?\s+same|picks?\s+up\s+where\s+the\s+previous",
+    re.IGNORECASE)
+
+LENS_MM = re.compile(r"(\d{1,3})\s*mm\b", re.IGNORECASE)
+# ⚠️ Yükseklik ve mesafe DÖRT ayrı biçimde yazılıyor ve dördü de imzadır.
+#    İlk sürüm yalnız "N metres above the ground" ve "N metres from" biçimini
+#    tanıdı; "locked off at 12 metres" ve "low angle at 0.8 meters height"
+#    biçimleri imzadan düştü ve İKİ FİLM haksız BLOCK yedi — mesafesi 12 m
+#    ile 5 m olan iki sahne "aynı kurulum" göründü. Kurulum imzası eksik
+#    ölçerse kapı monotonluğu değil KENDİ KÖRLÜĞÜNÜ raporlar.
+YUKSEKLIK = re.compile(
+    r"\d+(?:[.,]\d+)?\s*(?:m\b|metres?|meters?)\s+(?:above|off)\s+the\s+\w+|"
+    r"\d+(?:[.,]\d+)?\s*(?:m\b|metres?|meters?)\s+(?:height|high)\b|"
+    r"camera\s+height[:\s]+\d+(?:[.,]\d+)?|"
+    r"height\s+(?:of\s+)?\d+(?:[.,]\d+)?\s*(?:m\b|metres?|meters?)|"
+    r"(?:waist|chest|knee|eye|shoulder|ground|head|hip)[- ]height",
+    re.IGNORECASE)
+MESAFE = re.compile(
+    r"\d+(?:[.,]\d+)?\s*(?:m\b|metres?|meters?)\s+"
+    r"(?:from|away|back|behind|in\s+front)|"
+    r"(?:at|from)\s+\d+(?:[.,]\d+)?\s*(?:m\b|metres?|meters?)"
+    r"(?!\s*(?:height|high|above|off))",
+    re.IGNORECASE)
+
+# ─── ABARTI EŞİKLERİ (KAMERA_ACISI §5) ─────────────────────────────
+# ⛔ DERECE KAMERAYA AİT OLMAK ZORUNDA. İlk sürüm kamera cümlesindeki HER
+#    dereceyi kamera açısı saydı ve iki dosyaya haksız BLOCK verdi:
+#      · Starless Circle: "dish tilted at 70 degrees" — eğilen ÇANAK ANTEN,
+#        kamera değil (aynı cümlede "frame" geçtiği için kamera cümlesiydi)
+#      · Tall Shore: "angled 60 degrees to frame left" — KARAKTERİN gövde
+#        yönü; kadraj içi yerleşim, kamera pitch'i değil
+#    Bu yüzden genel desen kaldırıldı; yalnız sahibi AÇIKÇA kamera olan
+#    iki kalıp ölçülür. Yakalayamadığı biçim olabilir — haksız BLOCK'tan
+#    iyidir (kapının inandırıcılığı tek atışlık).
+# ⚠️ Pencere [^;] kullanır, [^.;] DEĞİL: kamera cümleleri ONDALIK SAYI
+#    taşıyor ("camera height 0.50 metres, pitched up 55 degrees") ve nokta
+#    dışlanınca desen tam da ölçmesi gereken cümlede kopuyordu. Cümle
+#    sınırı zaten kamera_cumleleri() tarafından çizilmiş durumda.
+DERECE_EGIK = re.compile(
+    r"(?:\bdutch\b[^;]{0,60}?|tilted\s+exactly\s+|"
+    r"\b(?:camera|lens|shot|framing)\b[^;]{0,40}?"
+    r"\b(?:tilted|canted|rolled)\s+(?:to\s+the\s+\w+\s+)?)"
+    r"(\d+(?:\.\d+)?)\s*[- ]?degrees?", re.IGNORECASE)
+DERECE_PITCH = re.compile(
+    r"\b(?:camera|lens|tripod)\b[^;]{0,60}?\bpitched\s+(up|down)\s+"
+    r"(\d+(?:\.\d+)?)\s*[- ]?degrees?", re.IGNORECASE)
+# ⚠️ Kamera cümlesinde de açı DIŞI derece geçer: görüş açısı, sıcaklık,
+#    enlem, güneşin yüksekliği. Bunlar eşik denetiminden muaf.
+DERECE_MUAF = re.compile(
+    r"field\s+of\s+view|\bFOV\b|celsius|fahrenheit|temperature|latitude|"
+    r"kelvin|minus\s+\d+\s*degrees|\bsun\b[^.;]{0,30}degrees", re.IGNORECASE)
+
+# ─── TEMA KAPISI ───────────────────────────────────────────────────
+# Kaynak: TEMA_MUHENDISLIGI_KILAVUZU.md §9 madde 1 + §5 matrisi ·
+# KILAVUZ_REHBERI §6 adım 1: "tema yoksa DURMA, film koreografi olur".
+#
+# ⚠️ SATIR BAŞI ŞART: depo "IŞIK = TEMA:" / "YAPI = TEMA:" gibi cümle içi
+#    kullanımlar da taşıyor (4 dosyada) ve onlar tema BEYANI değil.
+# ⚠️ BÜYÜK HARF ŞART ve ara sözcükler yalnız HARF: alan adı ile düz cümleyi
+#    ayıran şey bu. Gevşek desen üç şeyi tema sandı — "TEMA → MOTİF ① FIRÇA:"
+#    (matris başlığı), "Tema sayacın içinde: ..." (düz cümle) ve "**Tema:**
+#    'From Arithmetic to Release'" (MÜZİK teması). Üçü de tema beyanı değil.
+# ⚠️ "TEMAS:" (dokunma) bu desene TAKILMAZ: TEMA'dan sonra harf gelemez,
+#    yalnız boşluk/parantez/iki nokta gelebilir.
+TEMA_SATIRI = re.compile(
+    r"^[ \t>*_#·\-]*\**[ \t]*(?:TEMA|THEME)"
+    r"(?:[ \t]+[A-Za-zÇĞİÖŞÜ][A-Za-zÇĞİÖŞÜ ]{0,17}|"
+    r"[ \t]*\([A-Za-z ]{1,18}\))?[ \t]*[::]",
+    re.MULTILINE)
+SAHNE_INDEKSI = re.compile(r"\bS\d{1,2}\b")
+TEMA_PENCERE = 900        # karakter · tema satırından sonra indeks aranan alan
+
+
+def kamera_cumleleri(govde):
+    """Promptun yalnız KAMERA cümleleri (pozitif gövdeden)."""
+    poz = duzles(pozitif_govde(govde))
+    return [c.strip() for c in re.split(r"(?<=[.;])\s+", poz) if KAMERA_IZI.search(c)]
+
+
+def aci_tipleri(cumleler):
+    """Kullanılan açı TİPLERİ kümesi (KAMERA_ACISI §2)."""
+    bulunan = set()
+    for c in cumleler:
+        tepe_var = re.search(ACI_TIPLERI["tepe"], c, re.IGNORECASE)
+        for ad, kalip in ACI_TIPLERI.items():
+            # "looking straight down" hem tepe hem üst açı deseni taşır;
+            # kılavuzda tepe AYRI bir açıdır, iki kez sayılmaz.
+            if ad == "üst açı" and tepe_var:
+                continue
+            if re.search(kalip, c, re.IGNORECASE):
+                bulunan.add(ad)
+    return bulunan
+
+
+def _ilk(desen, metin):
+    m = desen.search(metin)
+    return re.sub(r"\s+", " ", m.group(0)).lower() if m else None
+
+
+def kurulum_imzasi(cumleler):
+    """Kurulum = açı + ölçek + kamera konumu (ACI_YAYI §4 tanımı).
+
+    Sahneye özel kelimeler ("from the woman" ↔ "from the lander") imzaya
+    girmez; yalnız SAYILABİLİR geometri girer. Böylece aynı kurulumun iki
+    farklı cümleyle yazılması çeşitlilik sanılmaz.
+    """
+    t = " ".join(cumleler)
+    olcek = next((ad for ad, k in OLCEK_MERDIVENI if re.search(k, t, re.IGNORECASE)),
+                 None)
+    return (_ilk(LENS_MM, t), _ilk(YUKSEKLIK, t), _ilk(MESAFE, t),
+            olcek, frozenset(aci_tipleri(cumleler)))
+
+
+def kurulum_ozet(k):
+    """İmzayı okunur tek satıra çevir — bulgunun kanıtı budur."""
+    lens, yuk, mes, olcek, acilar = k
+    parcalar = [x for x in (lens, yuk, mes, olcek) if x]
+    if acilar:
+        parcalar.append("+".join(sorted(acilar)))
+    return " · ".join(parcalar) if parcalar else "kamera geometrisi yazılmamış"
+
+
+def tema_bul(yol, metin):
+    """Tema satırını dosyada, yoksa KLASÖR KOMŞULARINDA ara.
+
+    Tema film dosyasında da, PLAN'da da, <FILM>_QA_SPEC.md'de de yazılabilir
+    (25.08.2026'dan beri her film kendi klasöründe). Betik dosya-bazlı koştuğu
+    için komşuya bakmazsa doğru yazılmış filme "tema yok" der.
+    """
+    m = TEMA_SATIRI.search(metin)
+    if m:
+        return metin, m, yol.name
+    for kardes in sorted(yol.parent.glob("*.md")):
+        if kardes == yol:
+            continue
+        try:
+            k_metin = kardes.read_text(encoding="utf-8", errors="replace")
+        except OSError:
+            continue
+        m = TEMA_SATIRI.search(k_metin)
+        if m:
+            return k_metin, m, kardes.name
+    return None, None, None
+
 
 # ─── A1 ÇELİŞKİSİ ──────────────────────────────────────────────────
 # 03_PLAN_ONCESI_KONTROL_LISTESI A1: "EN PAHALI HATA".
@@ -406,6 +642,37 @@ def prompt_denetle(p):
             "FIX", f"nesne-göreli taraf: \"{m.group(0)}\"",
             f"...{cevre}... · ekran-göreli yaz (screen-left / screen-right)."))
 
+    # ⑨ ABARTI EŞİĞİ — KAMERA_ACISI §5 · etkinin kiçe döndüğü sayılar
+    for cumle in kamera_cumleleri(govde):
+        if DERECE_MUAF.search(cumle):
+            continue          # görüş açısı / sıcaklık / enlem / güneş — açı değil
+        kisa = cumle.strip()[:110]
+
+        for m in DERECE_EGIK.finditer(cumle):
+            d = float(m.group(1))
+            if d >= 35:
+                bulgular.append(Bulgu(
+                    "BLOCK", f"eğik açı {d:g}° — KİÇ EŞİĞİ (§5: 35-45°↑)",
+                    f"...{kisa}... · parodi/amatör algısı, illüzyon çöker. "
+                    "Deponun ideal bandı 5-15°, stilize üst sınır 30°."))
+            elif d > 30:
+                bulgular.append(Bulgu(
+                    "FIX", f"eğik açı {d:g}° — stilize bandın üstünde (§5)",
+                    f"...{kisa}... · 15-30° meşru, 35°+ kiç. Bu değer sınırda."))
+
+        for m in DERECE_PITCH.finditer(cumle):
+            yon, d = m.group(1).lower(), float(m.group(2))
+            if yon == "up" and d >= 45:
+                bulgular.append(Bulgu(
+                    "BLOCK", f"kamera {d:g}° yukarı pitch — SOLUCAN BAKIŞI (§5: 45°↑)",
+                    f"...{kisa}... · karakter dev robot değilse grotesk çizgi "
+                    "roman paneli okunur. Meşru alt açı bandı 15-30°."))
+            elif yon == "down" and 45 <= d <= 60:
+                bulgular.append(Bulgu(
+                    "FIX", f"kamera {d:g}° aşağı pitch — ÖLÜ BÖLGE (§5: 45-60°)",
+                    f"...{kisa}... · ne tanrısal ne insani; \"kötü yerleştirilmiş "
+                    "güvenlik kamerası\" hissi. 15-30° ya da 90° (tepe) seç."))
+
     return bulgular
 
 
@@ -494,6 +761,102 @@ def dosya_denetle(yol):
                 f"{len(arac_gecisi)} araç geçişinin hiçbirinin yakınında saat "
                 "kadranı / burun yönü / yan tarifi yok. Herd: gemi park yeri "
                 "keyfî değişti · Holding Field: giden gemi park hâlinde döndü."))
+
+    # ─── AÇI VE KURULUM KAPISI ─────────────────────────────────────
+    # Üç denetim de SAYILABİLİR: kurulum imzası, imza sayısı, açı tipi sayısı.
+    # Fragman/kapak muaf (FILM_DISI) · 4 sahneden kısa dosyada yay ölçülmez.
+    video = [p for p in promptlar if p["tip"] == "video" and not p["yedek"]]
+    if not FILM_DISI.search(yol.name) and len(video) >= 4:
+        kurulumlar = [kurulum_imzasi(kamera_cumleleri(p["govde"])) for p in video]
+        n = len(kurulumlar)
+
+        # ① ARDIŞIK İKİLİ AYNI KURULUM (ACI_YAYI §3: "aynı kurulum arka arkaya
+        #    gelemez" · KURGU_RITMI §2 örüntü kırıcı kapısının betiğe inmişi)
+        for i in range(1, n):
+            if kurulumlar[i] != kurulumlar[i - 1]:
+                continue
+            dolu = sum(1 for x in kurulumlar[i] if x)
+            if not dolu:
+                continue      # kamera hiç yazılmamış — ③ bunu ayrıca söyler
+            if DEVAM_KLIBI.search(video[i]["govde"]):
+                continue      # tek çekimin ikinci yarısı — aynı kurulum ŞART
+            # ⚠️ Zengin imza (≥2 bileşen) tartışmasızdır: iki sahne aynı lens,
+            #    aynı yükseklik/mesafe, aynı ölçek ve aynı açı tipiyle yazılmış.
+            #    Tek bileşenli imza ölçüm zayıflığı olabilir → yalnız uyarır.
+            seviye = "BLOCK" if dolu >= 2 else "FIX"
+            sonuc["dosya_bulgulari"].append(Bulgu(
+                seviye,
+                f"ardışık iki sahne AYNI KURULUM (satır "
+                f"{video[i - 1]['satir']} ↔ {video[i]['satir']})",
+                f"{kurulum_ozet(kurulumlar[i])} · ACI_YAYI §3 güvenli bant: "
+                "ardışık çift ≥1 ölçek kademesi VE ≥45° açı farkı ister. "
+                "⛔ Klip içi lockoff korunur; değişen sahneler ARASI kurulumdur."))
+
+        # ② KURULUM SAYISI BANDI (ACI_YAYI §4)
+        benzersiz = len(set(kurulumlar))
+        asgari = 3 if n >= 6 else max(2, n // 2)
+        # ⚠️ ÜST BANT YALNIZ UZUN FORMATTA. §4 "yarısını geçmez" kuralını
+        #    12-18 sahne için yazıyor; 6 sahnelik filme yalnız ASGARİ koyar.
+        #    İlk sürüm yarı kuralını her formata uyguladı ve 6 sahnede 5
+        #    kurulum kullanan filmleri "dağınık" saydı — 57 yanlış gözlem.
+        azami = -(-n // 2) if n >= 12 else None
+        if benzersiz < asgari:
+            sonuc["dosya_bulgulari"].append(Bulgu(
+                "FIX", f"kurulum çeşitliliği {benzersiz} — {n} sahnede en az "
+                       f"{asgari} olmalı (§4)",
+                "Altı = güvenlik kamerası hissi, ritim ölür. Kurulum = açı + "
+                "ölçek + kamera konumu; yalnız mesafe değiştirmek kurulum "
+                "değiştirmek değildir."))
+        elif azami and benzersiz > azami:
+            # ⚠️ Üst bant GÖZLEM: imza sahneye özel kelimelerden değil
+            #    geometriden kurulsa da, yazım biçimi farkı sayıyı şişirebilir.
+            #    Ölçülmemiş bir üst sınırla üretim durdurulmaz (image bandı emsali).
+            sonuc["dosya_bulgulari"].append(Bulgu(
+                "NOT", f"kurulum sayısı {benzersiz} — {n} sahnede üst bant {azami} (§4)",
+                "Üstü = mekânsal algı çöker. Bilinçliyse plana tek satır "
+                "gerekçe yaz [D74]."))
+
+        # ③ AÇI TİPİ SAYISI (KAMERA_ACISI §2 sekizlisi)
+        tipler = set()
+        for p in video:
+            tipler |= aci_tipleri(kamera_cumleleri(p["govde"]))
+        if not tipler:
+            sonuc["dosya_bulgulari"].append(Bulgu(
+                "FIX", "açı HİÇ yazılmamış — kılavuz sözlüğünden tek kelime yok",
+                "KAMERA_ACISI §6: açıyı Veo'da sabit tutan sözcükler bellidir "
+                "(\"low angle\", \"high angle\", \"Dutch angle\", \"over-the-shoulder\"). "
+                "\"locked-off tripod, low\" biçimi modelin tutmadığı biçimdir."))
+        elif len(tipler) < 3 and n >= 6:
+            sonuc["dosya_bulgulari"].append(Bulgu(
+                "FIX", f"açı TİPİ {len(tipler)} — {n} sahnede en az 3 olmalı (§2)",
+                f"kullanılan: {', '.join(sorted(tipler))} · Kurulum sayısı bandı "
+                "tutsa bile üç kurulumun üçü de aynı açıdan bakıyorsa çeşitlilik "
+                "yoktur, yalnız mesafe değişir (Bright Tether vakası)."))
+
+    # ─── TEMA KAPISI ───────────────────────────────────────────────
+    # TEMA_MUHENDISLIGI §9 madde 1 · §5 matrisi
+    # KILAVUZ_REHBERI §6 adım 1: "tema yoksa DURMA, film koreografi olur"
+    if not FILM_DISI.search(yol.name):
+        t_metin, t_m, t_kaynak = tema_bul(yol, metin)
+        if not t_m:
+            sonuc["dosya_bulgulari"].append(Bulgu(
+                "BLOCK", "TEMA satırı yok (dosyada ve klasör komşularında)",
+                "TEMA_MUHENDISLIGI §3'ün sekiz temasından biri + §9: tema "
+                "novum kelimesi geçmeden tek cümleyle söylenebilmeli. "
+                "⚠️ Depodaki tema kapsama oranı: bash sayac.sh → 🎭 bloğu. "
+                "Bu kapı 26.08.2026'da açıldı; ondan önce tema hiçbir yerde "
+                "ölçülmüyordu, yani eski dosyaların çoğu BLOCK verir."))
+        else:
+            pencere = t_metin[t_m.end():t_m.end() + TEMA_PENCERE]
+            indeks = set(SAHNE_INDEKSI.findall(pencere))
+            if len(indeks) < 3:
+                sonuc["dosya_bulgulari"].append(Bulgu(
+                    "FIX", f"tema {len(indeks)} sahne indeksi taşıyor — en az 3 "
+                           f"olmalı ({t_kaynak})",
+                    "TEMA §5 matrisi temayı MOTİFE, motifi SAHNEYE bağlar. "
+                    "Sahne numarası yazılmayan tema dekoratiftir — Kaleida "
+                    "Crash kaydının tema satırı: \"bedel yok → tema dekoratif "
+                    "kalıyor\" (Tema 5/10, aynı kayıtta Karakter 4/10)."))
 
     return sonuc
 

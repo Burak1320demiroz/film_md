@@ -1,6 +1,6 @@
 # 🔍 THE ORPHAN BLOOM — QA KAYDI
 
-> **Kaynak dosya:** `yatay_2_4_dk_filmler_uzay/THE_ORPHAN_BLOOM_ROGUE_PLANET_FILM.md`
+> **Kaynak dosya:** `yatay_2_4_dk_filmler_uzay/THE_ORPHAN_BLOOM/THE_ORPHAN_BLOOM_ROGUE_PLANET_FILM.md`
 > **Veri kaynağı:** `LESSONS_LEARNED.md` — kalite tablosu + Ders 26-29
 > ⚠️ **Orijinal QA raporu dosya olarak mevcut değil** — ancak bu filmin
 > derslerinde **timestamp'li ham bulgular korunmuş.** Seride ilk kez.

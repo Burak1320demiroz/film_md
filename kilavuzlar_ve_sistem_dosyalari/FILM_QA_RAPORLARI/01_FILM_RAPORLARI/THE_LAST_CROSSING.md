@@ -1,6 +1,6 @@
 # 🔍 THE LAST CROSSING — QA KAYDI
 
-> **Kaynak dosya:** `yatay_2_4_dk_filmler_uzay/THE_LAST_CROSSING_BLACK_HOLE_FILM.md`
+> **Kaynak dosya:** `yatay_2_4_dk_filmler_uzay/THE_LAST_CROSSING/THE_LAST_CROSSING_BLACK_HOLE_FILM.md`
 > **Veri kaynağı:** `LESSONS_LEARNED.md` — Ders 33
 > 🚨 **BU FİLM KALİTE TAKİP TABLOSUNDA YOK.** QA yapıldı (Genel 4/10), ders
 > üretildi, ama tabloya hiç satır eklenmedi. Sistemin ilk kayıt kaybı.

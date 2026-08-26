@@ -386,7 +386,7 @@ Photorealistic with 35mm film grain.
 ## 🎬 SAHNE 2 (S2) — İZ VE HEDEF · 🔊 MACHINE #1
 
 > Ağız kadrajda DEĞİL (sırttan OTS) — lip-sync yapısal olarak imkânsız.
-> Replik 0:32 civarı (sahne içi 3.0s), MACHINE, göğüs hoparlörü.
+> Replik 0:22 civarı (sahne içi 3.0s), MACHINE, göğüs hoparlörü.
 
 ### 📸 IMAGE PROMPT
 
@@ -1071,7 +1071,7 @@ time. No speech, no voice, no music. No CGI aesthetic. Photorealistic with
 ## 🎬 SAHNE 10 (S10) — HESAP (orta nokta) · 🔊 MACHINE #2
 
 > Ağız kadrajda DEĞİL — göğüs-altı çerçeve (baş kadraj üstünden dışarıda).
-> Replik 1:53 civarı (sahne içi 4.0s). Kantar ibresi 9. çentikte.
+> Replik 1:43 civarı (sahne içi 4.0s). Kantar ibresi 9. çentikte.
 > Eş kadraj: S20 aynı mekânın alt-açı geniş varyantı.
 
 ### 📸 IMAGE PROMPT

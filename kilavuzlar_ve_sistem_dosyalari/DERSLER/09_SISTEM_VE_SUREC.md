@@ -254,3 +254,199 @@ A4 — YASAKLI SAHNE TİPİ DENETİMİ   (plan yazılırken, 2 dakika)
 > açıyor.
 
 ---
+## 🔴 DERS 122: KAPININ REFERANS SAYISI ELLE HESAPLANIYOR — PLANIN REPLİK ÇİZELGESİNDE DÖRT KAYDIN İKİSİ BİR YUVA GEÇ; D115 DOĞRU BİR KURGUYU "10 SANİYE KAYMIŞ" OKUYACAKTI
+
+**Kaynak:** THE BORROWED WEIGHT · 24.08.2026 ·
+`yatay_3_5_dk_filmler/THE_BORROWED_WEIGHT/THE_BORROWED_WEIGHT_PLAN.md` §replik
+çizelgesi + `..._QA_SPEC.md` A/B bloğu
+**Sorun:** yazım paketi kusursuz görünüyordu — ızgara formülü SPEC'te yazılı,
+replik ofsetleri prompt TIMELINE'larında yazılı, çizelge dolu. Ama çizelgenin
+sayıları formülden TÜRETİLMEMİŞ, elle yazılmıştı:
+
+```
+formül (SPEC'te yazılı):  başlangıç(S_n) = 9 s + (n−1) × 10 s
+prompt ofseti (PART_A/B): S2 +3.0s · S10 +4.0s · S21 +2.0s · S22 +6.0s
+
+           formülün verdiği    planda yazan     fark
+S2              0:22               0:32        +10 s  ⛔ bir yuva
+S10             1:43               1:53        +10 s  ⛔ bir yuva
+S21             3:31               3:31          ✓
+S22             3:45               3:45          ✓
+DORUK S20   199 s (3:19-3:29)   "başlangıç 209 s"  +10 s ⛔ (satır kendi
+                                                    içinde de çelişiyor)
+```
+
+Üçü de aynı hatanın kopyası: `9 + n×10` hesaplanmış, `9 + (n−1)×10` değil.
+
+**Neden ağır:** bu sayılar süs değil, **bir kapının ölçü aletidir.** Ortak adım
+⑨ HİZALAMA [D115] kurguyu tam olarak bu çizelgeyle doğrular — "|Δ| ≤ 2 s →
+sahne yerinde, |Δ| ≈ klip süresinin katı → sahne kaymış". Bu partide teslim
+kurgusunun S2 repliği 0:23'te duyuldu: formüle göre Δ = +1 s (kırpılmamış
+hook — kurgu YERİNDE), çizelgeye göre Δ = −9 s (bir yuva kaymış — kurgu
+BOZUK). Kapı, doğru bir hizalamayı hata; bir sonraki filmde bir hatayı doğru
+okuyacaktı. Ve kapı bunu kendi başına fark edemez: karşılaştırdığı iki sayıdan
+biri zaten yanlıştır.
+
+**ÇÖZÜM — sayı formülden türetilir, elle yazılmaz (kart A, SPEC adımı):**
+
+```
+⛔ REPLİK ÇİZELGESİ VE DORUK SAATİ HESAPLANMAZ, HESAPLATILIR.
+   Plan/SPEC yazılırken tek satırla üretilir ve çıktısı yapıştırılır
+   (hook 9 s · klip 10 s · ofsetler prompt TIMELINE'larından):
+
+   python3 -c "h=9;c=10
+   for n,o in [(2,3.0),(10,4.0),(21,2.0),(22,6.0)]:
+       t=h+(n-1)*c+o; print(f'S{n}: {int(t//60)}:{int(t%60):02d} ({t:g}s)')"
+
+   Aynı formülle DORUK satırı da yazılır:
+       doruk başlangıcı = h + (doruk_sahne − 1) × c
+
+⛔ YAZIM KAPISI: SPEC'in GRID satırı ile çizelgenin HER kaydı birbirini
+   doğrulamalıdır. Bir kayıt formülden ± klip süresi kadar sapıyorsa yazım
+   paketi TAM DEĞİLDİR — QA koşulmaz.
+```
+
+⭐ **Genel kural:** bir belgede aynı gerçeğin iki temsili varsa (formül +
+tablo), biri diğerinden ÜRETİLMELİDİR. Elle yazılan ikinci temsil, er geç
+birincisiyle çelişir — ve bu depoda o çelişki bir kapının ölçü aletine düştü.
+Bu ders yeni bir kural koymuyor: var olan formülü tek gerçek kaynak yapıyor.
+
+> 🔗 Ders 115 (ızgara geri alma — referansı bu ders koruyor) · Ders 74 (kaydı
+> olmayan kapı koşulmamış kapıdır; burada kapı KAYITLI ama referansı bozuk) ·
+> Ders 118 + 121 (şeridin ve repliğin Δ hesabı bu sayılara dayanır) ·
+> AGENTS §2 ① (bir sayıyı iki yerde tutmak, birini yanlış tutmaktır) —
+> bu ders o kuralın belge İÇİ karşılığıdır.
+
+---
+
+
+## 🔴 DERS 124: PLAN 8 SANİYEYE YAZILIYOR, ARAÇ 10 SANİYE ÜRETİYOR — ÜÇ FİLMDE ÜÇ KEZ; IZGARA PLANDAN DEĞİL ARAÇTAN YAZILIR
+
+**Kaynak:** THE IRON SLOPE (25.08.2026) master ölçümü —
+`ffprobe` teslim dosyası **65,000 s**, kesme ızgarası **10,03 · 20,03 ·
+30,03 · 40,03 · 50,03 · 60,03**, ve kaynak kliplerin altısı da
+**10,005 s** (`~/Downloads/Man_climbing_*.mp4`). Plan: 6 × 8 s = 48,0 s.
+Öncesi: THE FIRST MORNING **64 s / ~10 s sahneler** · THE WRONG SHADOW
+**64 s / ~10 s sahneler** [D70].
+
+**Sorun:** D70 bu sapmayı bir **kurgu** kusuru sanmış ve kurgu kapısı
+yazmıştı. Kapı üç kez koştu, üç kez GEÇ kaldı — çünkü sapma kurguda
+doğmuyor: **üretim aracının klip süresi 10 saniye.** Kurgu masasında
+"fazladan segment" yoktu; 6 sahnenin 6'sı planlıydı ve her biri iki saniye
+uzundu. Kurgunun eklediği tek şey 4,97 saniyelik başlık kartıydı.
+
+**Bedeli sürede değil, ZAMAN KODLARINDA:** 8 saniyelik ızgaraya yazılmış
+her şey geçersiz olur — müzik düşüşleri (5,0 · 26,0 · 40,8), tohum
+(0:05,8) ve karşılığı (44,4), 2,2 saniyelik yanma arası (44,4-46,6),
+48. saniyedeki döngü noktası. Film "iki saniye uzun" değildir; **beat
+haritası olmayan bir filmdir.**
+
+**ÇÖZÜM — plan yazılmadan önce (sayısal):**
+
+```
+① ARACIN KLİP SÜRESİNİ ÖLÇ, VARSAYMA:
+   ffprobe -v error -show_entries format=duration -of csv=p=0 <tek test klibi>
+   Çıkan sayı planın künyesine yazılır:  KLİP SÜRESİ = <ölçülen>
+② IZGARA O SAYIDAN ÜRETİLİR:
+   sahne_başlangıcı(n) = (n − 1) × klip_süresi        [D115 formülü]
+   toplam_süre         = klip_sayısı × klip_süresi    (kart 0,0 s)
+   ⛔ 8 saniyelik ızgara 10 saniyelik araçta YAZILMAZ.
+③ 8 SANİYE ISRARLA İSTENİYORSA KIRPMA PLANDA, SAHNE SAHNE VERİLİR:
+   "S0: 0,0-8,0 kullanılır; 8,0-10,0 atılır — kesme noktası eldivenin
+   basamağı kavradığı kare." Talimatsız kırpma yapılmıyor [D100].
+④ KURGU KAPISININ ② MADDESİ BU SAYIYLA KOŞAR: süre = klip_sayısı ×
+   klip_süresi ± 0,5 s. Iron Slope: 6 × 10,005 = 60,03 s; ekranda
+   65,00 s → fark 4,97 s = başlık kartı [D70/D120].
+```
+
+⭐ **Genel kural:** planın ızgarası bir TERCİH değil, bir ÖLÇÜMDÜR. Aracın
+ürettiği süre neyse plan odur; aksi hâlde plan, hiç var olmamış bir
+zaman çizgisine beat yazar ve bunu ancak QA'da fark ederiz.
+
+> 🔗 Ders 70 (aynı ihlalin kurgu tarafı — bu ders onun SEBEBİNİ buluyor) ·
+> Ders 100 (kırpma talimatsız plan) · Ders 101 (kapı sahne sayar, çekim
+> saymaz) · Ders 120 (kart süresi) · Ders 122 (bir gerçeğin iki temsili:
+> formül tek kaynak olmalı) · Ders 125 (bu sayıların hepsi makineyle
+> ölçülür, modele sorulmaz).
+
+---
+
+## 🟡 DERS 135: İNSAN ŞERİDİ KİLİDİ, ÖLÇME ALETİNİN ÜRETEMEYECEĞİ NOTASYONDA YAZILI — `-222222222222` İLE `-111111111111` HİÇBİR ZAMAN EŞİT OLAMAZ
+
+**Kaynak:** THE ROSE COAT · 26.08.2026 · kurgu kapısı ④c ·
+`FILM_QA_RAPORLARI/01_FILM_RAPORLARI/THE_ROSE_COAT.md` §KURGU KAPISI
+**Sorun:** D118 kurgu kapısına üçüncü maddeyi ekledi: planın insan şeridi
+ile raporun `PRESENCE STRING` çıktısı yan yana konur, aynı değilse önce
+çözülür. Bu filmin SPEC'i şeridi şöyle yazıyor:
+
+```
+PLAN:  -222222222222      ⭐ "2" = kaç GÖVDE — bu filmin sıra kilidi
+                             kaç kişi olduğudur, var olup olmadığı değil
+```
+
+Rubriklerin çıktı şartnamesi ise dördünde de birebir aynı cümle:
+
+```
+"One character per scene, in edit order, no spaces: `1` if a human figure
+ is visible anywhere in that scene, `-` if the scene has none."
+```
+
+**Rubrik "2" üretemez.** Kapı, ölçme aletinin fiziksel olarak
+veremeyeceği bir cevabı bekliyor; yani her iki-figürlü filmde otomatik
+olarak düşer ve "⛔ ÖNCE ÇÖZ, SONRA PUANLA" der. Bu filmde tam olarak bu
+oldu ve kapı okunamadan geçildi.
+
+⭐ Kilidin ÖZÜ yine de doğrulanabiliyordu, sadece başka bir sütundan:
+②'nin `APPEARANCE TABLE`'ı 12 sahnenin 12'sinde tam iki gövde sayıyor.
+Ama hiçbir kapı o sütuna bakmıyor.
+
+**İkinci delik, aynı yerde:** dört mercek de bir şerit yazıyor ve hiçbir
+kapı ikisini yan yana koymuyor. Bu partide:
+
+```
+① KARE        -111111111111
+② DEVAMLILIK  -111111111111
+④ HİKAYE      -111111111111
+⑤ ARKA PLAN   1111111111111   ← ilk yuvada İNSAN gösteriyor
+```
+
+⑤'in dizesi hem öteki üçüyle hem KENDİ envanteriyle çelişiyor (S1'in
+öznesi "sand pouring from wall slit", figür yok). Çapraz sayım kapısı ⑤
+sahne sayısı, kesme sayısı ve repliği karşılaştırıyor — şeridi
+karşılaştırmıyor. Şerit, iki modelin uydurmadan üretemeyeceği ikinci
+eksendir (birincisi replik, D121) ve boşta duruyor.
+
+**ÇÖZÜM — ① SPEC şablonunda şerit İKİ satır yazılır:**
+
+```
+### 🧬 İNSAN ŞERİDİ — sıra kilidi
+
+GÖVDE ŞERİDİ (plan)     : -222222222222   ← kaç gövde · üretim kilidi
+VARLIK ŞERİDİ (kapı)    : -111111111111   ← rubriğin ÜRETEBİLECEĞİ dize
+                                             kapı ④c BUNUNLA koşar
+
+⛔ Gövde sayısı kapıda değil, ② DEVAMLILIK'ın APPEARANCE TABLE'ından
+   doğrulanır: her sahne satırında kaç ayrı karakter etiketi var?
+   Beklenen sayı tutmuyorsa kurgu değil ÜRETİM sapmıştır.
+```
+
+**ÇÖZÜM — ② AGENTS ortak adım ⑤'e üçüncü satır:**
+
+```
+⭐ ÜÇÜNCÜ SATIR: ŞERİT. Raporların PRESENCE STRING satırları da yan yana
+  yazılır.
+    hepsi aynı        → şerit ekseni doğrulandı
+    biri farklı       → o merceğin şeridi 🚨'dir; ⛔ önce o merceğin KENDİ
+                        sahne envanteriyle karşılaştırılır — çoğu zaman
+                        rapor kendi kendisiyle çelişir ve fark oradadır
+  Parti geçersiz olsa bile şerit okunmaya devam eder [D121].
+```
+
+⭐ **Genel kural:** bir kilit, onu ölçecek aletin çıktı biçiminde
+yazılmalıdır. Aletin veremeyeceği bir cevabı bekleyen kapı, koşulmamış
+kapıdır — ve koşulmamış kapı, D74'e göre hiç var olmamış kapıdır.
+
+> 🔗 Ders 118 (şerit kapısının kendisi — bu ders onun notasyon kusuru) ·
+> Ders 121 (şerit ve replik Δ eksenleri) · Ders 122 (aynı aile: kapının
+> referans sayısı elle hesaplanıyordu) · Ders 107 (çapraz sayım kapısı —
+> şerit oraya ekleniyor) · Ders 74 (kaydı/koşulabilirliği olmayan kapı).

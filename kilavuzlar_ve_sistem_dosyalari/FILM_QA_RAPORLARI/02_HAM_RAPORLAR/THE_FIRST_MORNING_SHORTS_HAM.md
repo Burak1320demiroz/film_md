@@ -4,7 +4,7 @@
 > (AGENTS kural ④). Rubrik: `../../QA_PROMPTLARI/SHORTS_QA_CRITIQUE_PROMPT.md`
 > · Koşu: **INPUT MODE V** (SPEC verilmedi) · MATERIAL MODE B iddiası.
 >
-> **Plan dosyası:** `dikey_shorts_filmler/THE_FIRST_MORNING_DIKEY_SHORTS.md`
+> **Plan dosyası:** `dikey_shorts_filmler/THE_FIRST_MORNING/THE_FIRST_MORNING_DIKEY_SHORTS.md`
 > — 821 satır, 6 sahne × 8 s = 48 s planı. **Depoda duruyordu** (MOD V
 > koşusu geçerli; künye uydurulmadı, "not supplied" yazıldı ✅ Ders 60/65'e
 > uygun).

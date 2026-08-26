@@ -695,3 +695,83 @@ tuşuna basmadan önce metni okur. Sıra şudur — **başlık, açıklama, kurg
 > DİYECEĞİNİ kurallar) · `FRAGMAN_KILAVUZU.md` §1.2.
 
 ---
+## 🔴 DERS 121: ŞERİT VE REPLİK "TUTUYOR MU"YU DEĞİL "KAÇ YUVA KAYMIŞ"I SÖYLER — Δ EĞRİSİ FAZLA VE EKSİK KLİPLERİ MASTER AÇILMADAN YERİYLE BULUR; ÜÇ MERCEK AYNI DUPLİKE KLİBİ ÜÇ FARKLI HASTALIK SANDI
+
+**Kaynak:** THE BORROWED WEIGHT · 24.08.2026 ·
+`FILM_QA_RAPORLARI/01_FILM_RAPORLARI/THE_BORROWED_WEIGHT.md` § kurgu aritmetiği
+**Sorun:** parti ⑤'ten geçmedi, dört skor da geçersizdi — ama **iki raporun
+insan şeridi ve bir raporun replik alıntıları teslim kurgusunu saniyesine
+kadar yeniden kurdu.** D118 şeridi "aynı mı değil mi" diye soruyor ve
+"değil" deyip duruyor. Farkın KENDİSİ bir ölçümdür:
+
+```
+PLAN          1111111111111-11111-11111    25 yuva   (- = S13 · S19)
+① KARE        1111111111111111-11111-111   26 yuva
+② DEVAMLILIK  1111111111111111111111-1     24 yuva
+
+⭐ İki mercek insansız yuvanın MUTLAK YERİNDE anlaştı: 3:40-3:50.
+   S13 planda 2:09-2:19 → teslimde 2:40-2:50   Δ = +31 s ≈ +3 klip
+   S19 planda 3:09-3:19 → teslimde 3:40-3:50   Δ = +31 s ≈ +3 klip
+                                               └ iki eksen, aynı sayı
+
+ŞERİDİN BÖLÜNMESİ — fazlalık önde, eksiklik arkada
+   yuva  1-16  → planın S0-S12'si (13 sahne)   → +3 FAZLA KLİP
+   yuva  17    → S13 ✓        yuva 18-22 → S14-S18 ✓ birebir
+   yuva  23    → S19 ✓        yuva 24-26 → S20-S24 (5 sahne) → −2 EKSİK
+   26 × 10 s = 260 s + 4 s kart = 264 s  ✓ raporların ölçtüğü süre
+```
+
+**Replik ekseni aynı sonucu bağımsız verdi.** Aynı replik 0:23 ve 0:33'te —
+tam BİR YUVA arayla — duyuldu; senaryoda o replik tektir. Fazladan üç
+klipten biri, S2 klibinin ikinci kez kullanılmasıdır.
+
+**Ve asıl bedel:** tek bir kurgu kusuru üç mercekte üç farklı hastalık gibi
+göründü, üçü de YANLIŞ reçete yazdı:
+
+```
+🔊 SES     "aynı replik iki kez, matematiksel olarak birebir"
+           → reçete: "repliği sustur veya değiştir"  (miks işi)
+📖 HİKAYE  "S5-S6 gereksiz emek, ikinci dakikada yeni bilgi yok"
+           → reçete: "sahneleri KES"                 (senaryo işi)
+📖 HİKAYE  "düz duygu yayı, kriz yok, bedeli düşük final"
+           → reçete: "doruğa fiziksel çöküş EKLE"    (yeniden üretim)
+GERÇEK     kurguda plan dışı 3 klip var ve kuyrukta 2 sahne YOK —
+           bunlardan biri filmin bütün önermesini taşıyan TWIST finali.
+           Doğru eylem: kurguyu düzelt. Ne miks, ne senaryo, ne üretim.
+```
+
+**ÇÖZÜM — ortak adım ④ madde (c) "aynı mı"da durmaz, FARKI OKUR:**
+
+```
+c) SIRA — iki dize yan yana. Aynıysa doğrulandı. DEĞİLSE Δ TABLOSU YAZILIR:
+
+   ① insansız yuvaların MUTLAK saniyeleri eşlenir (plan ↔ rapor)
+        Δ = rapor saniyesi − plan saniyesi
+   ② fazla/eksik klip sayısı = Δ ÷ klip süresi
+   ③ Δ ilk insansız yuvada zaten büyükse fazlalık ÖNDE;
+      Δ iki insansız yuva arasında SABİTSE o aralık birebir;
+      son insansız yuvadan sonraki yuva sayısı planınkinden AZSA
+      kuyrukta sahne EKSİK  ⛔ önce oraya bakılır: kuyruk, filmin
+      finalidir [D62/D72].
+   ④ replikli filmde aynı hesap replik ekseninde tekrarlanır:
+        Δ(replik) = raporun duyduğu saniye − planın DIALOGUE SCHEDULE'ı
+        Δ sabit            → kurgu hizalı (sabit değer = uygulanmayan kırpma)
+        Δ iki replik arası SIÇRIYOR → kurgu tam orada malzeme kazanmış
+        aynı replik bir yuva arayla İKİ KEZ → duplike KLİP (ses bulgusu değil)
+   ⑤ iki eksen aynı sayıyı veriyorsa sonuç ÖLÇÜMDÜR, tahmin değil:
+      master'da yalnız işaret edilen yuvalar izlenir (yuva başına ~10 s).
+```
+
+⭐ **Bu, geçersiz bir partiden bile çıkan tek sağlam çıktıdır.** Skorlar
+kapılardan geçmediği için çöpe gitti; şerit ve replik alıntısı ise modelin
+yorumu değil, SAYIM'ıdır — ve iki bağımsız mercekte aynı çıktı.
+
+> 🔗 Ders 118 (insan şeridi — bu ders onun okunma biçimi) · Ders 115 (ızgara
+> geri alma; Δ eğrisi onun zaman eksenindeki genişletilmişi) · Ders 100/101
+> (kurgu kapısının klip/çekim/sahne birimleri) · Ders 72/62 (planın doruğu ve
+> son sahnesi kurguya girmeden teslim) · Ders 120 (kart ayıklanmadan şerit
+> aritmetiği koşulamaz) · Ders 122 (bu hesabın referans sayıları planda elle
+> yazılıyor — 4 kaydın 2'si bir yuva geçti).
+
+---
+

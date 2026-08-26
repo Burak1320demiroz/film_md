@@ -1,6 +1,6 @@
 # 📱 SHORTS KLASÖRÜ — DURUM VE KURALLAR
 
-> **Son güncelleme:** 22 Ağustos 2026
+> **Son güncelleme:** 23 Ağustos 2026
 > **Üretici sistem promptu:** `../kilavuzlar_ve_sistem_dosyalari/SHORTS_SISTEM_PROMPTU.md`
 > **Denetleyen rubrik:** `../kilavuzlar_ve_sistem_dosyalari/QA_PROMPTLARI/1_KARE_QA_CRITIQUE_PROMPT.md`
 > (9:16 beyan edilince açılan 12-14. kategoriler · eski `SHORTS_QA_CRITIQUE_PROMPT.md`
@@ -8,25 +8,169 @@
 
 ---
 
-## 📦 MEVCUT DOSYALAR — 13
+## 📦 MEVCUT DOSYALAR — 18
 
 | Dosya | Format | Kaynak film | Ders kilidi | Kapak | Başlık paketi | QA |
 |---|:---:|---|:---:|:---:|:---:|:---:|
-| `THE_SLOW_TIDE_DIKEY_SHORTS.md` | **9:16** | ✅ `THE_SLOW_TIDE_PLANET_FILM` (teknik 5/10) | 13 ders | ✅ | ✅ | ❌ |
-| `THE_SLOW_STONE_DIKEY_SHORTS.md` | **9:16** | ✅ `yatay_7_9_dk_filmler/THE_SLOW_STONE` (5/10) | 21 ders 🆕 | ✅ 🆕 | ✅ 🆕 | ❌ |
-| `NINE_MINUTES_ROKET_YATAY_SHORTS.md` | 16:9 | ❌ özgün | ✅ | ✅ | ✅ | ❌ |
-| `THE_WALKING_DAY_YATAY_SHORTS.md` | 16:9 | ❌ özgün | ✅ | ✅ | ✅ | ❌ |
-| `THE_SINKING_HOUR_DIKEY_SHORTS.md` | **9:16** | ❌ özgün | 16 ders 🆕 | ✅ 🆕 | ✅ 🆕 | ❌ |
-| `THE_DULL_EDGE_DIKEY_SHORTS.md` | **9:16** | ❌ özgün | 18 ders 🆕 | ✅ 🆕 | ✅ 🆕 | ❌ |
-| `THE_HALF_SKY_DIKEY_SHORTS.md` | **9:16** | ❌ özgün | 20 ders 🆕 | ✅ 🆕 | ✅ 🆕 | ❌ |
-| `THE_WINTER_LINE_DIKEY_SHORTS.md` | **9:16** | ❌ özgün | ✅ 🆕 | ✅ 🆕 | ✅ 🆕 | ❌ |
-| `THE_LOW_MOON_DIKEY_SHORTS.md` | **9:16** | ❌ özgün | ✅ 🆕 | ✅ 🆕 | ✅ 🆕 | ❌ |
-| `THE_FIRST_MORNING_DIKEY_SHORTS.md` | **9:16** | ❌ özgün | ✅ 🆕 | ✅ 🆕 | ✅ 🆕 | ❌ |
-| `THE_WRONG_SHADOW_DIKEY_SHORTS.md` | **9:16** | ❌ özgün | ✅ 🆕 | ✅ 🆕 | ✅ 🆕 | ❌ |
-| `THE_QUIET_IMPACT_DIKEY_SHORTS.md` | **9:16** | ❌ özgün | ✅ 🆕 | ✅ 🆕 | ✅ 🆕 | ❌ |
-| `THE_SHORT_WAY_DOWN_DIKEY_SHORTS.md` | **9:16** | ❌ özgün | 🆕 zombi kartı | ✅ 🆕 | ✅ 🆕 | ❌ |
+| `THE_SLOW_TIDE/THE_SLOW_TIDE_DIKEY_SHORTS.md` | **9:16** | ✅ `THE_SLOW_TIDE_PLANET_FILM` (teknik 5/10) | 13 ders | ✅ | ✅ | ❌ |
+| `THE_SLOW_STONE/THE_SLOW_STONE_DIKEY_SHORTS.md` | **9:16** | ✅ `yatay_7_9_dk_filmler/THE_SLOW_STONE` (5/10) | 21 ders 🆕 | ✅ 🆕 | ✅ 🆕 | ❌ |
+| `NINE_MINUTES/NINE_MINUTES_ROKET_YATAY_SHORTS.md` | 16:9 | ❌ özgün | ✅ | ✅ | ✅ | ❌ |
+| `THE_WALKING_DAY/THE_WALKING_DAY_YATAY_SHORTS.md` | 16:9 | ❌ özgün | ✅ | ✅ | ✅ | ❌ |
+| `THE_SINKING_HOUR/THE_SINKING_HOUR_DIKEY_SHORTS.md` | **9:16** | ❌ özgün | 16 ders 🆕 | ✅ 🆕 | ✅ 🆕 | ❌ |
+| `THE_DULL_EDGE/THE_DULL_EDGE_DIKEY_SHORTS.md` | **9:16** | ❌ özgün | 18 ders 🆕 | ✅ 🆕 | ✅ 🆕 | ❌ |
+| `THE_HALF_SKY/THE_HALF_SKY_DIKEY_SHORTS.md` | **9:16** | ❌ özgün | 20 ders 🆕 | ✅ 🆕 | ✅ 🆕 | ❌ |
+| `THE_WINTER_LINE/THE_WINTER_LINE_DIKEY_SHORTS.md` | **9:16** | ❌ özgün | ✅ 🆕 | ✅ 🆕 | ✅ 🆕 | ❌ |
+| `THE_LOW_MOON/THE_LOW_MOON_DIKEY_SHORTS.md` | **9:16** | ❌ özgün | ✅ 🆕 | ✅ 🆕 | ✅ 🆕 | ❌ |
+| `THE_FIRST_MORNING/THE_FIRST_MORNING_DIKEY_SHORTS.md` | **9:16** | ❌ özgün | ✅ 🆕 | ✅ 🆕 | ✅ 🆕 | ❌ |
+| `THE_WRONG_SHADOW/THE_WRONG_SHADOW_DIKEY_SHORTS.md` | **9:16** | ❌ özgün | ✅ 🆕 | ✅ 🆕 | ✅ 🆕 | ❌ |
+| `THE_QUIET_IMPACT/THE_QUIET_IMPACT_DIKEY_SHORTS.md` | **9:16** | ❌ özgün | ✅ 🆕 | ✅ 🆕 | ✅ 🆕 | ❌ |
+| `THE_IRON_SLOPE/THE_IRON_SLOPE_DIKEY_SHORTS.md` | **9:16** | ❌ özgün | 🆕 vakum+itki (§3.5) | ✅ | ✅ | ⛔ üretildi + 6 mercek QA (25.08) — **yayınlanmaz**, novum ekrana gelmedi |
+| `THE_NEAR_PASS/THE_NEAR_PASS_DIKEY_SHORTS.md` | **9:16** | ❌ özgün | 🆕 çok yakın uydu · D124/D127 karşı tasarımı | ✅ 🆕 | ✅ 🆕 | ❌ |
+| `THE_BRIGHT_TETHER/THE_BRIGHT_TETHER_DIKEY_SHORTS.md` | **9:16** | ❌ özgün | 🆕 erimiş uydu + akı tüpü | ✅ 🆕 | ✅ 🆕 | ❌ ⚠️ SPEC YOK |
+| `THE_OPEN_SEAM/THE_OPEN_SEAM_DIKEY_SHORTS.md` | **9:16** | ❌ özgün | 🆕 **okyanus dünyası + ÜÇ AY** · Kart 1 bütçesi | ✅ 🆕 | ✅ 🆕 | ❌ |
 
-On üçü de **6 sahne × 8 s = 48 saniye.**
+> ⏸️ **26.08.2026 — İKİ FİLM KALDIRILDI (kart H2).** Depo yalnız UZAY
+> filmleri içindir; zombi türü kapandı. Bu klasörden `THE_SHORT_WAY_DOWN`
+> ve `THE_STRAIGHT_LINE` çıktı (ikisi de "Tür: Zombi / kaçış aksiyonu").
+> ⚠️ Dersi kayda geçsin: **tür klasöre eşit değil** — zombi filmlerinin
+> yarısı zombi klasöründe değil, buradaydı. Tür kapatılırken tüm format
+> klasörleri taranmalı. Tür kartı KILAVUZ_REHBERI §4.2'de rafta duruyor.
+> Arşiv depo dışında: `film_md_ZOMBI_ARSIV_2026-08-26.tar.gz`
+> (dosyalar hiç commit'lenmemişti, git geçmişinde YOK).
+
+On beşi **6 sahne × 8 s = 48 saniye**; on altıncısı (THE NEAR PASS) **6 sahne × 10 s = 60 saniye** — ızgarası [D124] gereği aracın ÖLÇÜLEN klip süresinden (10,005 s) kurulan ilk dosya. (Ayrıca `THE_IRON_SLOPE/THE_IRON_SLOPE_QA_SPEC.md` ve `THE_NEAR_PASS/THE_NEAR_PASS_QA_SPEC.md` — film DEĞİL, D117 gereği filmin yanında duran ayrı SPEC dosyası; sayaç onu saymaz.)
+
+> 🆕 **25.08.2026 — THE NEAR PASS eklendi.** Kullanıcı talebi tek
+> cümleydi: *viral olacak, çok yakın uydusu olan bir gezegen.* Klasörün
+> **ilk 60 saniyelik** dosyası ve **D124'ten sonra ızgarası PLANDAN
+> DEĞİL ARAÇTAN yazılan ilk filmi** (klip süresi 10,005 s künyede,
+> ölçüm komutu dosyanın içinde).
+> **Mekanik ANAHTARLI GÜNDÜZ:** 52 kilometrelik tek parça kaya 150 km
+> irtifada, saniyede 4.965 metre; **batıdan doğuyor**, ufuktan ufuğa
+> 8 dakika 05 saniye, günde 19 geçiş, görünen çapı ufukta 2,63°
+> başucunda 19,67° (Dünya'nın Ay'ından 37,8 kat geniş). Yıldızdan 18 kat
+> geniş olduğu için gündüz sönmüyor, **kapanıyor: 1,2 saniyede.**
+> 19,1 saniye kapalı kalıyor ve **0,94 saniyede** geri açılıyor —
+> asimetri gerçek, çünkü uydu uzaklaşıyor. Gölge düzlüğü **saniyede
+> 5.351 metreyle (Mach 23,7)** geçtiği için önünde hiçbir şey gelmiyor
+> ve filmin en sert kararı bu: **ışık kapanırken ses hiç değişmiyor.**
+> Her sayının hesabı dosyadaki §FİZİK DEFTERİ'nde, iki girdiden
+> (gezegen yarıçapı ve yüzey çekimi) türetilmiş durumda.
+> ⭐ **BU DOSYA DERS 127'NİN İLK KARŞI TASARIMI.** IRON SLOPE'un paneli
+> "her saniye +2,16 m/s" yazılı 12 promptun 12'sinde sabit süzülmüştü;
+> burada **açısal hız hiç yazılmıyor.** Tırmanış SÜRE + PİKSEL + KENDİ
+> ENİ olarak yazılı (her sahnede kendi eninin %34→%55'i, oran monoton
+> büyür) ve kadrajda ikinci, sabit bir cetvel var: gökyüzüne çivili
+> yıldız (aralık 236 → 159 → 67 → 0 piksel). **S0 kapısı makineyle
+> koşuluyor** [D125]: 0 ve 10. saniye karelerinde uydunun alt kenarı
+> 100 pikselden az yer değiştirmişse film ÜRETİLMEZ.
+> ⭐ **RİSK 4/12 — EŞİĞİN ALTINDA.** Kart 3 · 4 · 5 · 9. **Kart 6
+> tasarımla kapatıldı**: toz bulutu, duman, alev, kıvılcım, enkaz ve
+> düşen cisim 0 kare — ilk taslaktaki toz filamenti bilerek ÇIKARILDI,
+> çünkü aynı ifşayı rijit bir yüzey detayı (çatlak ağı) taşıyabiliyordu.
+> Kart 1 (su), Kart 2 (canlı), Kart 6b, Kart 7, Kart 10 ve Kart 11
+> konseptte yok. ⚠️ Gerçek bir numaralı risk yine kartlarda değil ve
+> dosyada tanımlı: **büyük gök cisminin ekranda hareket etmesi**, ve
+> ikincisi **tutulmanın bulut gölgesi olarak üretilmesi** (fizik bunu
+> yasaklıyor: gölge Mach 23,7'de, ekranda süpüren bir kenar OLAMAZ).
+> Merkezi seçim S4: kask lambasını söndürür — yukarıdakini görmek için
+> bastığı yeri görmekten vazgeçer; bedel aynı karede, ışık dairesiyle
+> birlikte 30 metrelik yarığın çizgisi de söner. Ödül 19,1 saniye
+> yaşıyor: uydu **BAKIR** yanar (kenarda parlak, ortada koyu — ışık
+> yalnız gölge bandının dışındaki gündüzden yalayarak gelir) ve S0'ın
+> tohumu, soluk çatlak ağı, derin yarıklara açılır. Doruk S5: ışık
+> döner ve **kanıtı siler.**
+> ⚠️ **LENS SAPMASI, ve sebebi zevk değil ÖLÇÜ:** sistem promptunun
+> 32mm'i bu filmde geometrik olarak çalışmıyor — figürü y=1436'nın
+> üstünde tutarken 37,9° yükseklikteki 12,5° enindeki bir cismi
+> kadraja alamıyor. Hesap dosyanın §GÜVENLİ ALAN HARİTASI'nda; lens
+> kilidi **24mm + 75mm, ikisi de küresel.**
+> ⛔ **prompt_kontrol.py İLK KOŞUDA BLOCK VERDİ** ve bulgusu klasördeki
+> her dosya için geçerli bir derstir: 12 promptun hepsinde **dünya-uzayı
+> yön kelimesi** vardı (doğu/batı/kuzey/güney). *Model pusula bilmez.*
+> Hepsi ekran uzayına çevrildi (frame left · left to right across the
+> frame) ve pusula yalnız Camera Bible'da, insan için kaldı. İkinci
+> koşu: ✅ **GO — 0 BLOCK / 0 FIX**; 6 video promptu 2.402-2.594
+> karakterle hedef bandın içinde. ⚠️ Image promptları 5.486-5.857 —
+> tavanı emsallerin (Straight Line 5.669) 188 karakter üstünde, sebebi
+> ve kısaltma sırası dosyanın içinde.
+> ⛔ **SPEC AYRI DOSYADA** [D117]: `THE_NEAR_PASS_QA_SPEC.md` — ve bu
+> kez filmle **aynı gün** depoya indi (IRON SLOPE'un SPEC'i bulunamadığı
+> için altı mercek mod V koşmuştu).
+
+> 🆕 **26.08.2026 — THE OPEN SEAM eklendi.** Kullanıcı brief'i üç turda
+> netleşti — *çok yakın uydu → bol renkli/havalı → **okyanus gezegeni,
+> yörüngesinde üç ay, ve karakter keşif yapsın*** — ve bu dosya üçünü
+> birden tutan turdur.
+> ⭐ **Klasörün ilk OKYANUS DÜNYASI ve deponun ilk ÜÇ AYLI filmi.**
+> Karasız, 60 kilometre derinliğinde küresel bir okyanus ve üstünde
+> **60 metrelik BERRAK, tek kristal buz kabuğu** — toz ve kara
+> olmadığı için aşağıdan yavaş dondu ve cam gibi büyüdü. Kadın onun
+> üstünde yürüyor ve ayaklarının altında hiçbir şey yok.
+> ⭐ **ÜÇ IŞIK KAYNAĞI, ÜÇ GÖLGE, ÜÇ DERİNLİK.** ARDE 7,04° ve **kendi
+> lavıyla yanıyor** (Roche sınırının 166 km dışında; gelgit ısınması
+> 66 W/m² = Io'nun 26 katı) · NIVE 2,33° keskin mavi-beyaz buz ayı ·
+> VELUM 1,86° kenarsız menekşe-gül puslu ay. Her nesne **üç gölge**
+> atıyor ve hiçbir gölge nötr gri değil: her birinin içi onu
+> YAPMAYAN iki ayın renginin karışımı. Buzun içinde de üç renkli
+> kordon aşağı iniyor ve **üç ayrı derinlikte** bitiyor (turuncu 10 m,
+> menekşe 29 m, mavi-beyaz 60 metreyi geçip suya giriyor) — çünkü buz
+> kırmızıyı önce yer. Bu üç durak filmin derinlik cetvelidir [D90].
+> ⭐ **KEŞİF ÜÇ ADIMDA VE GÖZLE:** çatlaklar düz değil **YAY**
+> (sikloid — Europa'da doğrudan gözlenmiş) → üç yay ailesi bir yerde
+> kesişiyor → kesişmede kabuk 60 değil **9 metre** ve orada bir dikiş
+> **nefes alıyor.** Üç gelgit (41,4 + 5,1 + 8,2 m) hizaya girince
+> toplam 55 metreye çıkıyor ve dikiş 2,8 metre açılıyor.
+> ⛔ **VE BU DOSYA DEPONUN EN KÖTÜ ÖLÇÜLEN MALZEMESİNE GİRİYOR.**
+> Kart 1 (SU/SIVI) 🔴 EN YÜKSEK risktir: Tidal Hunt Fizik **2/10**
+> (serinin en düşüğü), Slow Tide 3/10, Hollow Station 4/10. Dosyanın
+> cevabı talebi küçültmek değil, **suyu modelin bozamayacağı hâle
+> sokmak**: okyanus film boyunca camın ALTINDA duruyor, su yalnız
+> 2 sahnede ve toplam **14,0 saniye** görünüyor, hep 1,5 metre
+> aşağıda, **kıpırdamadan** (dalga/kırışık/sprey/damla/köpük/akıntı
+> 0 kare), **temas 0 kare**, ve **suda insan yansıması 0 kare** [D20].
+> Kartın üç ölçülmüş bozulma modu da böylece KOŞULMUYOR.
+> ⭐ **KART 9 (ışık mıknatısı) YAPISAL OLARAK KAPALI** — kart tek
+> baskın ışık ister, burada ÜÇ tane var. Üç aylı gökyüzü bir renk
+> tercihi olduğu kadar bir risk çözümüdür. Kart 6 da tetiklenmiyor:
+> buz ufalanmıyor, bloklar **yanal atımla** kayıyor (1,2 m/0,5 s ·
+> 2,2 m/1,1 s) — rijit blok ötelemesi, modelin en iyi ürettiği
+> hareket tipi [D127 ①: süre yaz, ivme yazma]. **RİSK 4/12.**
+> ⚠️ Gerçek bir numaralı risk yine kartlarda yok: **berrak buzun cam
+> gibi üretilmemesi.** Model "buz" görünce buzul/kar/kırağı üretir,
+> yani OPAK; bu filmin varlık şartı ise zeminin bir PENCERE olması.
+> Beş maddelik geometrik karşı önlem yazılı ve S0 kapısı ffmpeg ile
+> koşuluyor: zeminin ortalama parlaklığı gökyüzünün %20'sinden
+> yüksekse **film üretilmez.**
+> Merkezi seçim S3: geri çekilmeyip dudağa diz çökmek — bedel aynı
+> karede (levha 6° yatıp 40 cm düşüyor, üç gölge bire iniyor). Doruk
+> S4: arada cam olmadan açık okyanus, ve durgun suyun üstünde
+> **üç ayrı renkte üç disk.** Final döngü + geri alma: dikiş
+> kapanıyor, geriye camın üstünde **süt beyazı bir şerit** kalıyor,
+> ve yelpaze TERS tarafa açılıyor — dizilim değişti.
+> ⚠️ **Film gerçek zamanlı DEĞİL** (117 dakikadan alınmış altı an) ve
+> gerekçesi fiziksel: yelpaze 96 dakikada kapanıyor. Bu yüzden sert
+> kesme sayısı 5 ve bandın üstünde — telafi olarak **beş kesmenin
+> beşi de ses köprülü (%100, depodaki en yüksek oran)**, köprü
+> malzemesi tek ve diegetik: buzdan botlara iletilen ses.
+> ⭐ **GÜVENLİ ALANDA TEK BİR KABUL EDİLMİŞ TAŞMA BİLE YOK** — klasörde
+> bir ilk. Sebep tasarım: reveal nesnesi gökyüzünde değil ZEMİNDE.
+> ✅ prompt_kontrol.py: **GO — 0 BLOCK / 0 FIX, İLK KOŞUDA**; video
+> 2.175-2.433 karakterle hedef bandın içinde. Image promptları
+> 5.742-5.965 — emsallerin ~%5 üstünde, sebebi tanımlı (iki ayrı 🔴
+> riskin kilidini aynı anda taşıyor) ve kısaltma sırası dosyanın içinde.
+> ⛔ SPEC ayrı dosyada [D117]: `THE_OPEN_SEAM_QA_SPEC.md` — filmle
+> **aynı gün** indi.
+
+> 🗂️ **26.08.2026 — AYNI BRIEF'İN ÜSTÜ ÇİZİLMİŞ İKİ TURU DURUYOR.**
+> `THE_NEAR_PASS/` (gri kaya + kemik düzlük — proje sahibi
+> "renksiz" diye reddetti) ve `THE_BRIGHT_TETHER/` (erimiş uydu +
+> akı tüpü aurorası — renk geldi ama karakter 60 saniye hareketsizdi,
+> ve brief okyanusa döndüğü için üretime girmedi). İkisi de sayaçta
+> film olarak görünüyor. ⛔ **THE BRIGHT TETHER'ın SPEC dosyası YOK,**
+> yani kart A'ya göre "yazımı tamam" sayılmaz. **Silme kararı proje
+> sahibindedir** — silinirse bu README, `KILAVUZ_REHBERI` §8 ve
+> `FILM_QA_RAPORLARI/00_INDEX.md` birlikte güncellenmelidir.
 
 > 🆕 **22.08.2026 — THE SHORT WAY DOWN eklendi.** Dikey hattın **ilk ZOMBİ
 > konsepti**, **ilk bina içi mekânı** ve **depodaki ilk gerçek KOVALAMACA**:
@@ -60,12 +204,118 @@ On üçü de **6 sahne × 8 s = 48 saniye.**
 > ✅ prompt_kontrol.py: **0 BLOCK, 0 FIX — GO**; 6 video promptu
 > 2.006-2.337 karakterle hedef bandın içinde.
 
+> 🆕 **23.08.2026 — THE STRAIGHT LINE eklendi.** Dikey hattın **ilk ZOMBİ
+> konsepti** ve **depodaki ilk gerçek KOVALAMACA**: açılmamış bir çevre
+> yolunda, düz bir hatta, 48 saniyenin 48 saniyesi kaçış. Klasördeki ilk
+> film ki altı sahnesi bağımsız anlar değil **tek kesintisiz koşunun
+> parçaları** — beş kesmenin beşi de gizli geçişle (perde) tasarlandı ve
+> her sahnenin ayrıca bir **I2V DEVAM sürümü** var
+> (`TEK_CEKIM_VE_GIZLI_GECIS_KILAVUZU` §5'in dikeydeki ilk uygulaması).
+> **Mekanik EKSİK SERBESTLİK DERECESİ:** takipçiler ondan HIZLI (5,8'e
+> karşı 4,4 m/s) ve yorulmuyorlar — ama bir kez hattı tutturunca
+> DÖNEMİYOR ve FRENLEYEMİYORLAR. Kadın onları geçemez, **ıskalatır**:
+> kenara attığı 0,9 metrelik her adım bir takipçiyi yoldan aşağı
+> süpürür. Yolda henüz dizilmemiş ÜÇ beton bariyer bloğu var; sayaç
+> metinsiz ve o bloklardır (3→3→3→2→1→**0**). Merkezi seçim S4: ikinci
+> bloğa uzanan elini **geri çeker** — bir blok bir kişiyi durdurur,
+> arkasında dört kişi vardır. Doruk S5: son ana kadar düz gider, keser,
+> **dördü birden** betona girer — ve dördünün de başı ona dönüktür
+> (S0'da ekilen tohumun karşılığı: görmek yetmiyor). Geriye tek blok
+> bile kalmaz; döngü çıplak yolda kapanır.
+> ⭐ **RİSK 4/12 — EŞİĞİN ALTINDA, ve bunu MEKÂN SEÇİMİ sağladı.** Aynı
+> konseptin bina içi (merdiven boşluğu) denemesi 6/12 ile eşiğin
+> üstündeydi; yola taşınma iki kartı birden düşürdü: **Kart 6b**
+> (katmanlı dünya — irtifa ekseni yok, ışık takvimi gerekmiyor) ve
+> **Kart 8** (kamera — düz yolda aksiyonun tamamı Z ekseninde aktığı
+> için **6/6 TAM LOCKOFF**, filmde tek kamera hareketi yok; klasörün
+> en yüksek oranı). Bu, `02_RISK_KARTLARI.md`'nin *"talebi
+> kaldırabildiğin kategori düzeliyor"* cümlesinin doğrudan kanıtıdır.
+> ⚠️ Gerçek bir numaralı risk yine kartlarda yok: **koşan figürün
+> eklemlenmesi [D18]** — türün rafa kalkma sebebi, ve bir yol
+> kovalamacasında elenemez. Bütçelendi: hepsi TAM SPRINT koşar
+> (model bunu sallanan yürüyüşten çok daha iyi üretir; "shambling"
+> 6/6 promptta yasak) · hepsi KONTRALI silüettir → **yüz 0 kare**
+> (D16 morph + D20 klon zemini birlikte elenir) · yörünge DÜZ, dönüş
+> ve yalpalama 0 kare. İkinci beklenen bozulma **hedef mıknatısı**
+> (model takipçiyi kadına döndürür) — pozitif yörünge cümlesiyle ve
+> geçiş mesafesiyle (1,2 m) kilitlendi.
+> Temas 0 kare · yara/kan/silah/patlama/su/araç 0 kare · mavi giysi
+> TAM 1 (klon karşı önlemi) · ekranda metin 0,0 sn (yol açılmamıştır:
+> kadrajda yazı üretebilecek tek nesne yok — konseptle kapatılmış yasak).
+> Üretim **S0'dan** başlar; takipçi orada kadına dönerse film üretilmez.
+> ⭐ **THE SHORT WAY DOWN SİLİNMEDİ** — ikisi de duruyor. Sebep
+> kayıtlıdır: yatay `THE_LAST_SPAN_VIADUCT_FILM.md` birincisine
+> karşılaştırma tablosu ve farklılaşma denetimi düzeyinde esaslı
+> atıf veriyor. İki film aynı türün iki ayrı çözümüdür ve tür
+> kartı (§4.2) ikisini de örnek olarak taşır: biri HAREKETİ
+> değiştirdi (düşerek inmek), diğeri YÖNÜ çıkardı (dönememek).
+> ✅ prompt_kontrol.py: **0 BLOCK, 0 FIX — GO**; 6 video promptu
+> 2.090-2.257 karakterle hedef bandın içinde. ⚠️ Image promptları
+> 5.421-5.669 karakterle depodaki en uzunlar — kayıt ve kısaltma
+> sırası dosyanın içinde.
+
+> 🆕 **24.08.2026 — THE IRON SLOPE eklendi.** Dikey hattın **ilk
+> VAKUM + İTKİ YERÇEKİMİ filmi** (`KILAVUZ_REHBERI` §3.5 — kartın
+> yatay emsali THE UPHILL DARK'tı) ve klasörün **ilk dikey TIRMANIŞ
+> aksiyonu**: 0,220 g sürekli yanmadaki bir kargo gemisinin dış
+> gövdesinde, her gevşek parçanın kıça doğru "düştüğü" bir uçurumda,
+> 48 saniyelik kesintisiz merdiven tırmanışı.
+> **Mekanik YÖN TERSİNMESİ:** izleyicinin şeması "uzayda düşüş yok"
+> der; ekran 48 saniye boyunca düşüş sayar — üç panel, bir ray
+> parçası, bir anten çubuğu ve 6 metrelik bir latis, hepsi ölü düz
+> çizgide ve hızlanarak (2,16 m/s²; her sayı ekranda). Novum
+> ALGISALDIR ve tamamen gerçek fiziktir — Quiet Impact emsalinin
+> ikinci koşusu. Sayaç metinsiz üç kanalda: banttaki gevşek parça
+> 3→0 · hava kilidi mesafesi 14→2 m · turuncu motor jantı.
+> Merkezi seçim S4: tether karabinerini açar — korunmayı zamana
+> takas eder; bedel aynı karede (runner'dan şakül gibi sarkan şerit).
+> Doruk S5: latis 1,0 m yanından geçer, sonra **motor 2,2 saniye
+> susar** — jant söner, botlar basamaktan kalkar, şakül kıvrılır:
+> filmin twist'i, S0'daki 0,4 saniyelik jant kararmasının (tohum)
+> karşılığıdır. İkinci kademe ateşlenir, döngü kinesik reset'le
+> kapanır (S5 son jest = S0 ilk jest).
+> ⭐ **RİSK 4/12 — EŞİĞİN ALTINDA; Kart 6 (parçacık/patlama)
+> TASARIMLA kapatıldı:** toz, duman, alev, kıvılcım ve çarpma anı
+> 0 kare — motor yalnız kadraj dışı turuncu ışık, düşen her şey
+> rijit tek parça, hiçbir şey ekranda bir yere çarpmaz. Kamera
+> 6/6 TAM LOCKOFF (üçü de gemiye kelepçeli — sarsıntısızlığın
+> fiziksel gerekçesi). Temas 0 kare (en yakın geçiş 0,8 m).
+> ⚠️ Gerçek bir numaralı risk yine kartlarda yok: **tırmanan
+> gövdenin eklemlenmesi** [D18 akrabası] — bir tırmanış filminde
+> elenemez, bütçelendi (tek hareket tipi · hızlar m/s · "never
+> sliding, never gliding" 12/12 · el/ayak ekstrem yakın planı yok).
+> İkinci beklenen bozulma **sıfır-g refleksi** (model uzay görünce
+> gövdeyi yüzdürür) — ortam kartı 3.5 yapısal panzehir, ağırlık her
+> promptta pozitif cümleyle.
+> ⛔ **SPEC AYRI DOSYADA** [D117]: `THE_IRON_SLOPE_QA_SPEC.md` —
+> klasörün ilk ayrı SPEC dosyası; QA'da operatöre rubrikle birlikte
+> verilir. Üretim **S0'dan** başlar; panel orada adama çarpar, kavis
+> çizer ya da süzülürse film üretilmez.
+>
+> ⛔ **25.08.2026 — ÜRETİLDİ, ÖLÇÜLDÜ, YAYINLANMIYOR.** Altı mercek
+> koşuldu (deponun ilk altı mercekli partisi) ve master ffprobe/ffmpeg
+> ile ölçüldü: teslim **65,0 s** = 6 × 10,005 s klip + 4,97 s başlık
+> kartı; S0'ın kopan paneli **sabit ~0,15 m/s** süzülüyor ve 10 saniye
+> boyunca kadrajı terk etmiyor (kilit: 3. saniyede 9,7 m). Yani
+> yukarıdaki S0 kapısı düşecekti ama **koşulmadı** [D74 tekrarı] ve
+> film novum'suz çıktı. Ayrıca S2'de yasaklı bir gezegen, göğüste
+> yasaklı arma, S2'de kamera kayması var. Dört ders çıktı:
+> **124** (ızgara araçtan yazılır) · **125** (ölçüm kapısı) ·
+> **126** (arka plan merceği) · **127** (ivme değil, kadrajı terk
+> etme süresi). Tam kayıt:
+> `../kilavuzlar_ve_sistem_dosyalari/FILM_QA_RAPORLARI/01_FILM_RAPORLARI/THE_IRON_SLOPE.md`
+> ✅ prompt_kontrol.py: **GO — 0 BLOCK / 0 FIX** (ilk koşu 1 FIX:
+> S4 videosu 2.712 karakter → kısaltıldı); 6 video promptu
+> 2.236-2.586 karakterle hedef bandın içinde. ⚠️ Image promptları
+> 5.023-5.651 karakter — Quiet Impact / Straight Line emsal bandında,
+> kayıt ve kısaltma sırası dosyanın içinde.
+
 > 📎 **DIŞ DOSYA — bu klasörde DEĞİL:** `THE SECOND SHIP — FRAGMAN`
 > (`yatay_10_20_dk_filmler/THE_SECOND_SHIP/FRAGMAN.md`). Dosya iki
 > formatlıdır — **9:16 dikey 6 × 10 s = 60 s ana teslim** + 16:9 yatay
 > 9 × 10 s = 90 s varyant — ve çapa blokları kaynak filmin
 > `REFERANS_PAKETI.md`'sinden geldiği için filmin kendi klasöründe
-> durur. **Yukarıdaki 13’lük sayıma ve 8 saniye kuralına dahil
+> durur. **Yukarıdaki 14’lük sayıma ve 8 saniye kuralına dahil
 > değildir.** İlk **10 saniyelik dikey** teslimdir; süre sapmasının
 > gerekçesi dosyanın "BİLİNÇLİ SAPMALAR" bölümünde yazılıdır.
 
@@ -251,7 +501,6 @@ hikaye, iki format. Şimdiye kadar hiç sorulamamış soruyu cevaplar:
 □ THE_SLOW_STONE dikey → SHORTS_QA
 □ NINE_MINUTES        → SHORTS_QA (16:9 olduğu için A/9:16 kategorisi N/A işaretlenir)
 □ THE_WALKING_DAY     → SHORTS_QA (aynı not)
-□ THE_SHORT_WAY_DOWN  → 1_KARE (dikey)
 ```
 
 > ⭐ **Kontrol grubu artık iki tane.** Slow Tide ve Slow Stone'un ikisi de

@@ -7,7 +7,7 @@
 >
 > 🚨 **Bu rapor SPEC DOĞRULAMA KAPISINI atladı.** Künyede *"plan doc
 > unsupplied"* yazıyor — oysa plan dosyası depoda duruyor:
-> `yatay_2_4_dk_filmler_uzay/THE_INVERSION_PLANET_FILM.md`
+> `yatay_2_4_dk_filmler_uzay/THE_INVERSION/THE_INVERSION_PLANET_FILM.md`
 > Kapı sonradan elle çalıştırıldı; sonuçlar türetilmiş kayıtta.
 >
 > ⚠️ Aşağısı raporun **birebir kopyasıdır.** Düzeltme yapılmadı.

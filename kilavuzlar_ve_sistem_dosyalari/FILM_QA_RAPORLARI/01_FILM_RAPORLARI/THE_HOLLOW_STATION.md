@@ -1,6 +1,6 @@
 # 🔍 THE HOLLOW STATION — QA KAYDI
 
-> **Kaynak dosya:** `yatay_2_4_dk_filmler_uzay/THE_HOLLOW_STATION_FILM.md`
+> **Kaynak dosya:** `yatay_2_4_dk_filmler_uzay/THE_HOLLOW_STATION/THE_HOLLOW_STATION_FILM.md`
 > **Veri kaynağı:** `LESSONS_LEARNED.md` — kalite tablosu + Ders 23-25
 > ⚠️ **Orijinal QA raporu dosya olarak mevcut değil.**
 

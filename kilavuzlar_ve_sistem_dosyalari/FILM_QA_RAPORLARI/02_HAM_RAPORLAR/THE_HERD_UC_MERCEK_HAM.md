@@ -4,7 +4,7 @@
 > kaydedildi (AGENTS kural ④). Teşhis ve belge kontrolü cevapları:
 > `../01_FILM_RAPORLARI/THE_HERD.md`
 >
-> **Plan dosyası:** `yatay_2_4_dk_filmler_uzay/THE_HERD_PLANET_FILM.md`
+> **Plan dosyası:** `yatay_2_4_dk_filmler_uzay/THE_HERD/THE_HERD_PLANET_FILM.md`
 > — 3.401 satır, 15 sahne, 150 s. **Depoda duruyordu.**
 >
 > ```

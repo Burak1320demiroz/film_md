@@ -1,6 +1,6 @@
 # 🪨 THE BANDED DEEP — FİLM QA KAYDI
 
-> **Plan:** `yatay_2_4_dk_filmler_uzay/THE_BANDED_DEEP_CANYON_PLANET_FILM.md`
+> **Plan:** `yatay_2_4_dk_filmler_uzay/THE_BANDED_DEEP/THE_BANDED_DEEP_CANYON_PLANET_FILM.md`
 > **Format:** 16:9 · 2-4 dk · bilimkurgu (keşif) · ince atmosfer (kanyon, %2)
 > **Plan özeti:** 16 sahne × 10 s = 160 s · 0 sahne içi kesme · tamamen sessiz ·
 > viral S1·S6·S15 · doruk S10 · CENTRAL CHOICE S9 · insansız S0-S2/S14-S15

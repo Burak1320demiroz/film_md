@@ -1,6 +1,6 @@
 # 🔍 THE HOLDING FIELD — QA KAYDI
 
-> **Kaynak dosya:** `yatay_2_4_dk_filmler_uzay/THE_HOLDING_FIELD_PLANET_FILM.md`
+> **Kaynak dosya:** `yatay_2_4_dk_filmler_uzay/THE_HOLDING_FIELD/THE_HOLDING_FIELD_PLANET_FILM.md`
 > **Teknik QA (VIDEO_QA):** ⛔ kapıda durdu — künye "The Shift" dedi, doküman
 > "THE HOLDING FIELD" diyor. Doğru davranış; film kimliği çözülünce yeniden.
 > **Senaryo QA (SENARYO_QA):** ⛔ kapıda durdu — künye 134 s, plan 140 s.

@@ -38,14 +38,19 @@
                                                               │
                                        ③  TÜR? ──────────────┤
                                               │
-                                        BİLİMKURGU     (⏸️ zombi · savaş RAFTA —
-                                              │         12.08.2026, klasörleri
-                                              ▼         kaldırıldı; kartlar §4'te
-                                    ④  ORTAM? (değişken)  duruyor)
-                                       ┌──────┼──────┐
-                                    vakum  ince   Dünya
-                                            atm.   atm.
+                                        │
+                                   BİLİMKURGU                (⏸️ RAFTA: zombi
+                                        │                     §4.2 ve savaş §4.3.
+                                        ▼                     Zombi 26.08.2026'da
+                                 ④  ORTAM? (seçim)            kapandı — depo
+                          ┌────────┼────────┐                 yalnız UZAY.
+                       vakum     ince     Dünya               Kartlar duruyor,
+                                 atm.      atm.               klasörler yok.)
 ```
+
+> ⚠️ **③ TÜR sorusunun bugün tek cevabı var: BİLİMKURGU.** Dal 26.08.2026'da
+> teke indi (kart H2). Karar ağacında bu adım şimdilik bir seçim değil, bir
+> doğrulama: "bu gerçekten bir uzay filmi mi?" Değilse konsept reddedilir.
 
 ### Neden bu sıra?
 
@@ -56,15 +61,16 @@
            text-to-video mi start/end frame zinciri mi.
 ③ TÜR    → İÇERİĞİ belirler: hangi kilitler, hangi kurallar iptal,
            hangi politika riski.
-④ ORTAM  → FİZİĞİ belirler. Ama ayrı bir soru değil — TÜRÜN SONUCU:
-           karasal türler (rafta olan zombi/savaş dahil) hep Dünya atmosferi.
-           Sadece bilimkurguda gerçek bir seçim var.
+④ ORTAM  → FİZİĞİ belirler. Bilimkurguda gerçek bir seçimdir (vakum /
+           ince atm. / Dünya atm.). Karasal türler (zombi · savaş) hep
+           Dünya atmosferiydi ama ikisi de RAFTA — 26.08.2026'dan beri
+           bu soru yalnız bilimkurgu içinde sorulur.
 ```
 
 > **Pratik sonuç:** Bilimkurgu ortamına göre üçe ayrılır ve fizik kuralları
 > ters dönebilir (bkz. Bölüm 6). Karasal türlerin ortak fiziği (toz çöker,
-> gölge yumuşak, ses normal) Bölüm 3.3'te durur — zombi/savaş rafa kalksa da
-> günümüz-Dünya konseptleri bu fiziği kullanmaya devam ediyor.
+> gölge yumuşak, ses normal) Bölüm 3.3'te durur — savaş rafta olsa da zombi
+> ve diğer günümüz-Dünya konseptleri bu fiziği kullanmaya devam ediyor.
 
 ---
 
@@ -77,7 +83,8 @@
 kısafilmler/
 │
 ├── dikey_shorts_filmler/          9:16 · 6 sahne × 8s · 48 sn · text-to-video
-│                                  ⚠️ içinde 16:9 "YATAY_SHORTS" dosyaları da var
+│                                  film başına KLASÖR (25.08.2026)
+│                                  ⚠️ içinde 16:9 "YATAY_SHORTS" filmleri de var
 │                                  ⛔ 3 dosya var; bu grafiğin eski sürümü 5
 │                                     sayıyordu — GLASS_WORLD ve LAST_ARCHIVE
 │                                     shorts dosyaları diskte YOK. Paletlerde
@@ -86,6 +93,13 @@ kısafilmler/
 │                                     alan kuralları: dikey_shorts_filmler/00_README.md
 │
 ├── yatay_2_4_dk_filmler_uzay/     16:9 · 12-13 sahne × 10s · ~2:00-2:10
+│                                  film başına KLASÖR (25.08.2026)
+│
+│   (yatay_2_4_dk_filmler_zombi/ — 26.08.2026'da kart H2 ile KALDIRILDI,
+│    tür de kapandı. Depo yalnız UZAY filmleri içindir. İkinci kaldırılış:
+│    12.08'de silinmiş, 23.08'de geri açılmıştı.)
+│                                     Türün açılış şartı bir BÜTÇEDİR —
+│                                     klasörün 00_README.md'sinde yazılı
 │
 ├── yatay_3_5_dk_filmler/          16:9 · 25 sahne × 10s · 4:09
 │                                  film başına KLASÖR (PLAN+PART_A+PART_B+KAPAK)
@@ -106,11 +120,15 @@ kısafilmler/
    Ölçeklenmiyor: 3-5 dk'ya ikinci bir tür eklersen yeni klasör gerekecek.
    Doğrusu tür etiketini dosya içinde tutmak. Şimdilik dokunulmadı —
    KILAVUZ_REHBERI mantıksal ayrımı zaten kuruyor. (12.08.2026: _zombi ve
-   _savas klasörleri kaldırıldı, tür rafta; borç _uzay ekinde sürüyor.)
+   _savas klasörleri kaldırıldı. 23.08.2026: _zombi geri açıldı.
+   26.08.2026: _zombi TEKRAR kaldırıldı ve tür kapandı — geriye tek tür
+   kaldığı için borç şimdilik ödendi: `_uzay` soneki artık tek türü değil
+   TÜM depoyu tarif ediyor. ⚠️ İkinci tür geri gelirse borç da geri gelir;
+   doğru çözüm hâlâ tür etiketini DOSYA İÇİNDE tutmak.)
 
 2. DOSYA vs KLASÖR TUTARSIZ
-   2-4 dk ve shorts → film başına TEK dosya
-   3-5 dk ve 7-9 dk → film başına KLASÖR
+   HER format       → film başına KLASÖR (25.08.2026: 2-4 dk ve shorts
+                      da tek dosyadan klasöre geçti — artık istisna yok)
    Kural şu: sahne sayısı 13'ü geçtiğinde klasöre geçilir. Yazılı değildi.
 ```
 
