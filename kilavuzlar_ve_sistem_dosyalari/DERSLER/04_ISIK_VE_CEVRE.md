@@ -151,3 +151,39 @@ luminous halo extending beyond any object, no waxy skin.
 > dolgu ışığı yok, ışık serttir. Ders 3 orada tam olarak geçerlidir.
 
 ---
+
+## 🔴 DERS 145: ALÇAK AÇI UFKU KADRAJDAN ATAR — KAPANAN UFKU MODEL DUVARLA DOLDURDU (DÜZ OVADAKİ GEMİ KANYONA GİRDİ)
+
+**Kaynak:** THE SKYLIGHT S26 (kurgu 4:00-4:10) — ⑤ 🟠 "canyon pop-in: rocket enclosed
+by steep rocky canyon walls"; master karesi 4:05 (iki yanda dik kaya duvarı); S25 (3:55)
+ve S28 (4:24) aynı gemi düz ovada · `FILM_QA_RAPORLARI/01_FILM_RAPORLARI/THE_SKYLIGHT.md`
+**Sorun:** 1 film, 3 sahnenin ALÇAK AÇILI olanı.
+
+S26 promptu kurulumu ("low-angle wide framing"), yeri ("rust-red plain", "the volcano's
+soft shoulder on the horizon") ve gemiyi eksiksiz yazdı — ama alçak açılı bir kadrajın
+üst üçte ikisini NEYİN doldurduğunu yazmadı. Alçak açıda ufuk kadrajın dibine iner,
+üst alan boşalır; model boş alanı Mars'ın en olası dokusuyla doldurdu: uçurum. Göz
+hizası geniş kadrajlar (S25 · S28) ovayı korudu, çünkü kadrajları ufku İÇERİYORDU.
+Arka plan merceğinin kendi kuralı ("en büyük arka plan nesnesini adlandır") inceleme
+anında uygulandı; prompt anında uygulanmalıydı.
+
+**ÇÖZÜM — her dış mekân promptu en büyük arka plan nesnesini ADLANDIRIR ve ufuk kilidi
+taşır; alçak açılı prompt GÖĞÜ yazar:**
+
+```
+HORIZON LOCK: flat open plain to the horizon in every direction — no cliffs,
+no canyon walls, no rock walls, no ridge nearer than the horizon line; nothing
+stands higher than knee height within five hundred metres of the ship except
+the ship itself.
+LOW-ANGLE FIELD: because the camera is low, the horizon sits in the bottom
+sixth of the frame and everything above it is EMPTY SKY — butterscotch,
+cloudless, featureless; the ship is silhouetted against sky, not against rock.
+LARGEST BACKGROUND OBJECT: <adı ve kadraj payı — "the sky, upper five sixths" ·
+"the volcano's soft shoulder, bottom sixth">
+```
+
+> 🔗 Ders 6 (çevre morph) · Ders 58 (tekrarlayan varlık kimliği — mekân da varlıktır) ·
+> Ders 126 (⑤ en büyük nesneyi yazmadı; bu ders aynı kuralı PROMPT tarafına taşır) ·
+> Ders 104 (ışık mıknatısı — alçak açının kardeşi: boşluk da mıknatıstır).
+
+---

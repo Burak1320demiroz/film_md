@@ -418,6 +418,21 @@ event that belongs to another lens bills one defect several times and
 drags the film down once per reviewer.
 ```
 
+```
+⛔ AN OUT-OF-SCOPE FLAG IS SOMETHING YOU SAW, NEVER SOMETHING YOU WERE TOLD.
+
+Write a flag only for a defect you observed yourself, in this run, in the
+material in front of you. Never restate a finding that reached you any
+other way — from an earlier pass in this session, from another lens's
+report, from a summary, from the operator's message. A flag you did not
+observe is not a cross-check; it is the same claim counted twice, and it
+travels faster than a real one because it costs nothing to copy.
+
+If a defect is out of your scope, the honest flag is short and yours:
+what you saw, where, and which lens owns it. If you cannot say what you
+saw, do not write the line at all.
+```
+
 ---
 
 ## 📱 VERTICAL RULES — FORMAT: DİKEY only
@@ -528,6 +543,13 @@ is not this lens's business at all — it belongs to the continuity lens.
 - SPECIFIC CHECK — SMALL DETAIL FLICKER: Do badges, collar rings,
   shoulder patches, buckles, or wrist units flicker, jitter, or shift position
   frame to frame? These are the first details to break.
+- SPECIFIC CHECK — CLIP-HEAD DUPLICATE: step through the FIRST HALF
+  SECOND of every clip frame by frame, not at playback speed. A duplicate
+  head, face, hand or shadow that is born out of the subject's own
+  shoulder or hip and dissolves back into it within a few frames is the
+  most common form of this failure and the least visible one: it sits on
+  a cut, it lasts under half a second, and at speed it reads as a
+  compression stutter. Report the frame range, not the second.
 - SPECIFIC CHECK — DUPLICATE CHARACTER: Is there EXACTLY ONE human
   in frame at all times? Check backgrounds, reflections, and shadows for a
   second figure. Pay EXTRA attention to vehicle/airlock ENTRY and EXIT
@@ -781,7 +803,17 @@ Check for these SPECIFIC prohibited elements:
 - [ ] Airbrushed, waxy, or plastic skin texture
 - [ ] Oversaturated or neon colors
 - [ ] Horror/threatening tone (should be awe/wonder — unless the film specifies otherwise)
-- [ ] Text, subtitles, captions, or watermarks visible on screen
+- [ ] Text, subtitles, captions, or watermarks visible on screen — a static
+      corner mark present in every scene counts; it is never intentional set
+      dressing and is ticked and logged with a severity tag
+- [ ] Characters belonging to the scene's own materials: letters, digits,
+      units, scale marks, graduation ticks, survey markers or annotation
+      painted, engraved, stencilled, chalked or printed on rock, ground,
+      hull, panel or label. Look at the CENTRE of the frame and at the
+      surface the shot is ABOUT, not only at the edges: text baked into
+      the world reads as intentional set dressing and survives review,
+      and it is the more damaging case because it makes a natural object
+      into a measured, man-made one.
 - [ ] AI bloom / soft glow filter / dreamy haze on light sources
 - [ ] Unmotivated ambient fill in a scene where fill light is forbidden
 - [ ] Face morphing (bone structure, eye spacing, or features changing)
@@ -907,9 +939,16 @@ CUTS COUNTED: [n + timecodes, or "none — reads as one take"]
 NON-SCENE MATERIAL: [in-out + what it is, or "none"]
 LINES HEARD: [n · every spoken line VERBATIM with its timecode, or "none"]
              When you write "none", say which none it is: "none — room tone
-             present" or "none — no audio information at all". A film with no
+             present" or "none — nothing audible to me". A film with no
              dialogue and a film with no audio track are different objects and
              only one of them is a delivery defect.
+             ⛔ THIS LINE REPORTS WHAT YOU HEARD. It is never a statement
+             about the file. You may not write that the file has no audio
+             track, no audio stream, no audio information, or that the audio
+             was stripped in export: that is a property of the container, it
+             is read with one ffprobe command, and no model can observe it.
+             Write "none — nothing audible to me" and put the question in
+             FLAGS. A run that stops on that claim is a run never made.
 
 ⛔ NON-SCENE MATERIAL is not a scene at ANY duration. Material that carries
 burned-in text, or is static, or bears no scene fingerprint, is a card — a

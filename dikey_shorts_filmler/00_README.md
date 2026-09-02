@@ -1,6 +1,6 @@
 # 📱 SHORTS KLASÖRÜ — DURUM VE KURALLAR
 
-> **Son güncelleme:** 23 Ağustos 2026
+> **Son güncelleme:** 27 Ağustos 2026
 > **Üretici sistem promptu:** `../kilavuzlar_ve_sistem_dosyalari/SHORTS_SISTEM_PROMPTU.md`
 > **Denetleyen rubrik:** `../kilavuzlar_ve_sistem_dosyalari/QA_PROMPTLARI/1_KARE_QA_CRITIQUE_PROMPT.md`
 > (9:16 beyan edilince açılan 12-14. kategoriler · eski `SHORTS_QA_CRITIQUE_PROMPT.md`
@@ -8,7 +8,7 @@
 
 ---
 
-## 📦 MEVCUT DOSYALAR — 18
+## 📦 MEVCUT DOSYALAR — 20
 
 | Dosya | Format | Kaynak film | Ders kilidi | Kapak | Başlık paketi | QA |
 |---|:---:|---|:---:|:---:|:---:|:---:|
@@ -28,6 +28,8 @@
 | `THE_NEAR_PASS/THE_NEAR_PASS_DIKEY_SHORTS.md` | **9:16** | ❌ özgün | 🆕 çok yakın uydu · D124/D127 karşı tasarımı | ✅ 🆕 | ✅ 🆕 | ❌ |
 | `THE_BRIGHT_TETHER/THE_BRIGHT_TETHER_DIKEY_SHORTS.md` | **9:16** | ❌ özgün | 🆕 erimiş uydu + akı tüpü | ✅ 🆕 | ✅ 🆕 | ❌ ⚠️ SPEC YOK |
 | `THE_OPEN_SEAM/THE_OPEN_SEAM_DIKEY_SHORTS.md` | **9:16** | ❌ özgün | 🆕 **okyanus dünyası + ÜÇ AY** · Kart 1 bütçesi | ✅ 🆕 | ✅ 🆕 | ❌ |
+| `THE_THIN_ROOF/THE_THIN_ROOF_DIKEY_SHORTS.md` | **9:16** | ❌ özgün | 🆕 **MARS** (§3.2 kartının dikey hattaki ilk filmi) · deponun ilk DRAMATİK İRONİ filmi · üç açı tipi | ✅ 🆕 | ✅ 🆕 | ❌ |
+| `THE_HEAVY_SIDE/THE_HEAVY_SIDE_DIKEY_SHORTS.md` | **9:16** | ❌ özgün | 🆕 **DÖNME YERÇEKİMİ** (§3.7 kartı bu filmle açıldı) · deponun ilk ENTROPİ temalı filmi · aksiyon kulvarı | ✅ 🆕 | ✅ 🆕 | ❌ |
 
 > ⏸️ **26.08.2026 — İKİ FİLM KALDIRILDI (kart H2).** Depo yalnız UZAY
 > filmleri içindir; zombi türü kapandı. Bu klasörden `THE_SHORT_WAY_DOWN`
@@ -38,7 +40,99 @@
 > Arşiv depo dışında: `film_md_ZOMBI_ARSIV_2026-08-26.tar.gz`
 > (dosyalar hiç commit'lenmemişti, git geçmişinde YOK).
 
-On beşi **6 sahne × 8 s = 48 saniye**; on altıncısı (THE NEAR PASS) **6 sahne × 10 s = 60 saniye** — ızgarası [D124] gereği aracın ÖLÇÜLEN klip süresinden (10,005 s) kurulan ilk dosya. (Ayrıca `THE_IRON_SLOPE/THE_IRON_SLOPE_QA_SPEC.md` ve `THE_NEAR_PASS/THE_NEAR_PASS_QA_SPEC.md` — film DEĞİL, D117 gereği filmin yanında duran ayrı SPEC dosyası; sayaç onu saymaz.)
+> ⭐ **01.09.2026 — YENİ FİLMLER TEK DOSYA DEĞİL.** Yukarıdaki tablonun her
+> satırı bir filmi TEK .md'de tutuyor (plan + Bible + 6 sahne + müzik + kapak +
+> başlık paketi; en büyüğü 1.200 satır). Bu tarihten sonra yazılan dikey film
+> yedi dosyalık klasör iskeletiyle gelir — `PLAN · BOLUM_1 · BOLUM_2 · KAPAK ·
+> MUZIK · YAYIN_PAKETI · QA_SPEC` — ve **BAŞLIK PAKETİ TAMAMEN İNGİLİZCE**
+> yazılır (01.09.2026 taraması: bu tablodaki HER filmin başlık paketi Türkçe;
+> kanal İngilizce yayınlıyor, yani o paketler yükleme anında yeniden yazılıyor
+> ve yeniden yazan şey kılavuzu okumuyor).
+> Tanım: `KILAVUZ_REHBERI.md` §2.0 · kopya: `FILM_KLASOR_SABLONU/`
+> ⛔ Buradaki eski dosyalar **yeniden bölünmez** — iskelet yalnız yeni filmler için.
+
+Eski dosyalar **6 sahne × 8 s = 48 saniye** ızgarasıyla yazıldı; **25.08.2026'dan sonraki dosyalar (THE NEAR PASS · THE OPEN SEAM · THE THIN ROOF) 6 sahne × 10,005 s = 60 saniye** — ızgara plandan değil ARAÇTAN yazılıyor [D124] — ızgarası [D124] gereği aracın ÖLÇÜLEN klip süresinden (10,005 s) kurulan ilk dosya. (Ayrıca `THE_IRON_SLOPE/THE_IRON_SLOPE_QA_SPEC.md` ve `THE_NEAR_PASS/THE_NEAR_PASS_QA_SPEC.md` — film DEĞİL, D117 gereği filmin yanında duran ayrı SPEC dosyası; sayaç onu saymaz.)
+
+> 🆕 **29.08.2026 — THE HEAVY SIDE eklendi.** Kullanıcı talebi tek
+> kelimeydi: *aksiyonlu.* Bu dosya "aksiyon" kelimesini bir tempo
+> tercihi olarak değil **bir fizik problemi** olarak okuyor ve klasörün
+> ilk **DÖNME YERÇEKİMİ** filmi: `KILAVUZ_REHBERI` **§3.7 ortam kartı
+> bu filmle açıldı** (§3.1'in alt kartı, §3.5'in emsali).
+> **Mekanik AĞIRLIK YÖNE BAĞLIDIR:** yarıçapı 9,00 metre olan bir
+> halkanın iç güvertesinde etkin ağırlık **a = (v ± u)² / R**'dir.
+> Dönme periyodu 60 saniyede 13,00 s'den 8,00 s'ye iniyor ve adamın
+> ağırlığı 202 newtondan 533 newtona çıkıyor — **filmin saati budur.**
+> Dönüşle aynı yöne 2,60 m/s koşmak ağırlığı 270 N'dan 621 N'a
+> çıkarıyor (2,30×) ve S1'de dizini katlıyor; ters yöne 3,30 m/s
+> gitmek altıda birine indiriyor ve tek itişle güverteyi bıraktırıyor
+> (1,15 saniye · 3,80 metre · tepe 8,7 santimetre).
+> ⭐ **FİLMİN EKSENİ BİR EŞİTSİZLİKTİR ve daha çok çabalamak durumu
+> KÖTÜLEŞTİRİR:** ileri sıçrayışın menzili 2wR·u/(v+u)² ve u = v'de
+> maksimum olur → **tavan wR/(2v) = 1,97 metre.** Geçilecek boşluk
+> **3,50 metre.** Hangi hızla koşarsa koşsun ileri yönde geçemez.
+> Geri sıçramak da çözüm değil: ters yöne 3,50 m/s'de aynı itiş onu
+> 16 saniye havada tutar ve 57 metre taşır. Kalan tek kontrollü rota
+> **güvertenin ALTIDIR** — üç kaburga, dört kavrama, 3,50 metre.
+> Doruk ise kaldıramayacağı ağırlığı kaldırmak değil, **kendini
+> hafifletmektir**: asılıyken kollarına 499 newton biniyor; gövdesini
+> ters yöne 3,00 m/s salladığı **0,9 saniyelik pencerede 157 newtona**
+> iniyor ve kendini o pencerede yukarı atıyor.
+> ⭐ **TEMA: ENTROPİ** — deponun ilk kez yazdığı etiket (TEMA §3c'nin
+> HİÇ KULLANILMAMIŞ listesinden; tek cümle TAKAS kalıbı DEĞİL).
+> Fiziksel karşılığı birebir: göbekteki fren volanının biriktirdiği
+> açısal momentum halkaya dağılıyor, volan durdukça halka hızlanıyor.
+> Ekrandaki karşılığı volanın tek parlak çentiği: S2'de on saniyede
+> bir buçuk tur, S4'te yarım tur, S5'te **duruyor.**
+> ⭐ **DRAMATİK İRONİ ikinci kez ve farklı bir taşıyıcıyla:** ②
+> ZEMİN OKUR, asimetri anı **0:24,6** — güvertede beş kayıp cıvata
+> var ve beşi de yuvasından 60 santimetre AYNI yöne yatmış. Zemin
+> cevabı film başlamadan önce yazmış; o kendi botlarına bakıyor.
+> İkinci görsel şok S3'te, kendi eliyle: 1,40 metreden bıraktığı
+> 62 mm'lik cıvata 0,97 saniyede düşüyor ve **62 santimetre yana**
+> iniyor. Final DÖNGÜ + TWIST: merdivene tırmandıkça Coriolis onu
+> yandan itiyor — **merdiven dümdüz, gövdesi 11,7 derece eğik**, ve
+> açı yukarı çıktıkça büyüyor. Kaçtığı şeyin içine tırmanıyor.
+> ⭐ **RİSK 4/12 — EŞİĞİN ALTINDA.** Kart 3 · 4 · 5 · 9. **Kart 6
+> tasarımla kapalı** (vakum + işlenmiş metal: toz, duman, kıvılcım,
+> enkaz, yıldız 0 kare) ve **Kart 9 YAPISAL olarak kapalı**: yıldız
+> dönme EKSENİNDE ve kadraj dışında, adamın bütün hareketi eksene
+> DİK — ışığa doğru koşmak güverteden çıkmak demek. Aynı karar altı
+> klibin ışık sürekliliğini fizikle garanti altına alıyor.
+> ⛔ **İLK TASLAKTAN ÇIKARILAN ŞEY, KARTI DEĞİL DERSİ KAPATTI.**
+> İlk tasarımda adam halkanın etrafında **altı uzun sıçrayışla**
+> dolanıyordu (her biri 1,87 saniye havada, 7,7 metre). Çıkarıldı:
+> 60 saniyenin 16'sında havada duran bir gövde D23'ün ve D12/D44'ün
+> doğrudan tetikleyicisidir. Yerine geçen güverte-altı geçiş aynı
+> dramatik yükü taşıyor ve havada geçen toplam süreyi **2,1 saniyeye**
+> indiriyor. (THE THIN ROOF'un fırçalama jestini çıkarmasının kardeşi:
+> aksiyon azalmadı, risk azaldı.)
+> ⚠️ Gerçek bir numaralı risk yine kartlarda yok ve dosyada tanımlı:
+> **güvertenin başın üstünde KAPANMASI.** Model "koridor" görünce düz
+> bir koridor üretir; bu filmde düz koridor filmin ölümüdür.
+> "corridor / tunnel / hallway / trench" kelimeleri 18 promptun
+> hiçbirinde geçmiyor ve kapanma her promptta SAYIYLA ve KANITIYLA
+> yazılı. İkinci risk gölge içine dolgu girmesi — ve **E bloğundaki
+> gölge kapısı THE THIN ROOF'un TERSİDİR:** orada YAVG < 18/255
+> reddediyordu (Mars, saçılma var), burada **YAVG > 16/255 reddediyor**
+> (vakum, dolgu yok). Eşik filmden okunur, hafızadan değil.
+> ⚠️ **LENS SAPMASI, sebebi zevk değil ÖLÇÜ:** sistem promptunun 32 mm'i
+> bu filmde geometrik olarak çalışmıyor — halkanın kapanışını ve
+> boşluğun iki dudağını aynı kadrajda tutarken figürü alt çeyreğin
+> üstünde bırakamıyor. Hesap dosyanın §GÜVENLİ ALAN HARİTASI'nda;
+> lens kilidi **24 mm + 75 mm, ikisi de küresel** (THE NEAR PASS emsali).
+> ⛔ **ÜRETİM SIRASI: S0 İLK** — güverte orada kapanmıyorsa film
+> üretilmez; sonra S4 (delikten aşağı bakan kadrajda gövde güvertenin
+> ALTINDA mı). ✅ **prompt_kontrol.py: GO — 0 BLOCK / 0 FIX** (ilk koşu
+> 1 FIX: nesne-göreli taraf + metin yasağının KAPSAMI [D138]).
+> ⭐ **PROMPT_QA rubriği üç gerçek bulgu verdi ve biri depoda YENİ bir
+> vakadır:** aksan renginin adı **"oxblood"** idi ve 18 promptun 14'ünde
+> POZİTİF tarifin içinde geçiyordu — YASAK LİSTESİ TUZAĞI'nın [REHBER §7]
+> ilk **RENK ADI** vakası. Sınıflandırıcı "no" önekini değil KELİMEYİ
+> okur; kural artık yalnız negatif bloklara değil **PALETE de** koşulur.
+> Renk "deep maroon" yapıldı, "no weapon" silindi, video promptlarına
+> açı sözlüğü (LOW-ANGLE / EYE-LEVEL / HIGH-ANGLE) eklendi.
+> ⛔ **SPEC AYRI DOSYADA** [D117]: `THE_HEAVY_SIDE_QA_SPEC.md` — filmle
+> AYNI GÜN indi.
 
 > 🆕 **25.08.2026 — THE NEAR PASS eklendi.** Kullanıcı talebi tek
 > cümleydi: *viral olacak, çok yakın uydusu olan bir gezegen.* Klasörün
@@ -540,3 +634,45 @@ NINE_MINUTES · WALKING_DAY
 □ Kayıp 2 dosya: geri mi üretilecek, YAPI_GRAFI mi düzeltilecek
 □ SHORTS_QA çalıştırılması — video dosyaları gerekiyor
 ```
+
+> 🆕 **27.08.2026 — THE THIN ROOF eklendi.** Kullanıcı talebi tek cümleydi:
+> *Mars'ta geçen baya gerçekçi bir dikey shorts.* Klasörün **ilk MARS
+> filmi** (§3.2 ince atmosfer kartının dikey hattaki ilk kullanımı) ve
+> **deponun ilk DRAMATİK İRONİ filmi** — `HOOK` §3.1 27.08'de eklenmişti
+> ve 16 dikey filmin 16'sı farkında olmadan "BİLGİ ASİMETRİSİ: YOK"
+> yazmıştı; bu dosya taşıyıcı ② (ZEMİN OKUR) ile ilk kez kullanıyor,
+> asimetri anı **0:22,4**, karakterin paniklediği kare sayısı **0**.
+> ⭐ **MEKANİK — "eğri, ancak yukarıdan eğridir":** kadın bir lav tüpü
+> tavan çöküğünün kenarında çalışıyor ve kaldırımdaki düz soğuma
+> çatlaklarının arasında **tek bir eğri çatlağın** içinde duruyor.
+> 5,8 m yarıçaplı bir yayın görebildiği 2,0 metresi yalnız **8,7 cm**
+> sapar (sagitta hesabı dosyada) — yani 0,40 m göz yüksekliğinde DÜZ,
+> 9,00 m'den KAPALI HALKA. Hiçbir uydurma fizik yok; ihlal edilen tek
+> kural izleyicinin şemasıdır.
+> ⭐ **AÇI TİPİ İLK KEZ NOVUMUN TAŞIYICISI.** THE NEAR PASS'in açık
+> maddesi (6/6 alt açı, `KAMERA_ACISI` §2 en az 3 ister) burada
+> yapısal olarak kapandı: üç kurulum = üç yükseklik = üç açı tipi —
+> **0,35 m ALT AÇI · 1,55 m GÖZ HİZASI · 9,00 m ÜST AÇI** (A-B-C-B-C-A).
+> ⭐ **GÖLGE İÇİ DOLGU ilk kez bir KAPI.** Deponun son beş filmi vakumdu
+> ve promptları "shadow interiors absolutely black" diyordu. Mars'ta bu
+> bir HATADIR — atmosferik saçılma gerçek dolgu üretir [§3.2]. SPEC'in
+> E bloğu bunu **ffmpeg ile ölçüyor**: gölge içi YAVG < 18/255 ise
+> sahne reddedilir.
+> ⛔ **KART 6 TASARIMLA KAPATILDI, ve bu bir Mars filminde kolay
+> değildi:** depodaki en düşük tek skor toz kaynaklıdır ve Mars'ta
+> ölçülmüştür (LOW POWER · Parçacık 2/10). Bu dosyada hareket eden tek
+> toz tanesi yok — zemin rüzgârın temizlediği bazalt kaldırımı, toz
+> yalnız eklemlerin içinde ve durgun. İlk taslaktaki "kayayı fırçalama"
+> jesti ÇIKARILDI ve el yuvası **düz avuç basınç testine** çevrildi;
+> risk 5/12'den **4/12**'ye indi.
+> ⛔ **ÜRETİM SIRASI NORMAL DEĞİL: S2 İLK ÜRETİLİR.** Halka orada kapalı
+> bir eğri olarak çıkmıyorsa diğer beş sahne üretilmez.
+> ⚠️ **AYNI GÜN ÇAKIŞMASI, dürüst kayıt:** bu dosya yazılırken depoda
+> eşzamanlı olarak `yatay_3_5_dk_filmler/THE_SKYLIGHT/` yazıldı ve o film
+> de Mars'ta bir lav tüpü tavan çöküğünde geçiyor. Format, mercek, novum,
+> toz bütçesi ve palet TAM AYRI (karşılaştırma tablosu film dosyasının
+> başında); karar proje sahibinindir.
+> ✅ prompt_kontrol.py **GO · 0 BLOCK / 0 FIX** (ilk koşu 1 FIX: açı TİPİ 2 +
+> nesne-göreli taraf ×4 + çapasız toward ×2 + uzunluk ×3 — kapı kaydı dosyada);
+> video 2.537-2.600 bandın TAM içinde, image 5.960-6.455.
+> ⛔ **SPEC AYRI DOSYADA** [D117]: `THE_THIN_ROOF_QA_SPEC.md` — filmle AYNI GÜN.

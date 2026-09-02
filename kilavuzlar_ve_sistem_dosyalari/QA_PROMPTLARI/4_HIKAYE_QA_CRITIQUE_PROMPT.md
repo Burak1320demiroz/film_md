@@ -56,6 +56,21 @@ event that belongs to another lens bills one defect several times and
 drags the film down once per reviewer.
 ```
 
+```
+⛔ AN OUT-OF-SCOPE FLAG IS SOMETHING YOU SAW, NEVER SOMETHING YOU WERE TOLD.
+
+Write a flag only for a defect you observed yourself, in this run, in the
+material in front of you. Never restate a finding that reached you any
+other way — from an earlier pass in this session, from another lens's
+report, from a summary, from the operator's message. A flag you did not
+observe is not a cross-check; it is the same claim counted twice, and it
+travels faster than a real one because it costs nothing to copy.
+
+If a defect is out of your scope, the honest flag is short and yours:
+what you saw, where, and which lens owns it. If you cannot say what you
+saw, do not write the line at all.
+```
+
 ---
 
 ## ⛔ STEP −2 — MEDIA GATE: IS THERE A PLAYABLE VIDEO?
@@ -429,6 +444,40 @@ share deliberate constraints. Do NOT criticise a film for obeying them:
 - Endings that hold rather than resolve. Silence over speeches.
 - No villain. The opposing force is environmental, physical, or temporal.
 
+⛔ **THE SCOPE OF THIS LIST IS NARROWER THAN IT LOOKS.**
+
+Each line above protects a PRODUCTION CONSTRAINT from being scored as a
+writing failure. None of them protects the film from the separate question
+of whether anything is at stake. Ask that question anyway, in these exact
+four places, and report the answer whatever it is:
+
+```
+- "Exactly one human character"
+    → not a flaw. STILL ASK: does anyone in this film want something from
+      anyone else — on screen, off screen, or from a person who is gone?
+      If the answer is nobody, say so. That is a finding, not a style note.
+
+- "No villain. The opposing force is environmental"
+    → not a flaw. STILL ASK: does the opposing force WANT anything from
+      the protagonist? An obstacle that wants nothing produces tension,
+      not drama. If nothing in the film wants anything, that is a finding.
+
+- "Endings that hold rather than resolve"
+    → not a flaw. STILL ASK your own existing question: does it END, or
+      does it STOP? "Holds" and "stops" are not the same event. An ending
+      that holds is a decision the film arrives at; an ending that stops
+      is the film running out.
+
+- "Silence over speeches"
+    → not a flaw. STILL ASK: is anything WITHHELD? Silence carries weight
+      when someone could speak and does not. Silence with nobody to speak
+      to is not restraint; it is absence.
+```
+
+⛔ **THESE FOUR ANSWERS ARE REPORTED EVEN WHEN EVERY ONE OF THEM IS "NO".**
+A film can obey every constraint on this list perfectly and still be about
+nothing. Saying so is inside your job, not outside it.
+
 ❌ STILL A FLAW EVEN IN THIS FORMAT:
 - A film with no question in the first 10 seconds.
 - Scenes that show something already shown, with no new information.
@@ -463,6 +512,24 @@ score the category low; write the question into FLAGS FOR DOCUMENT CHECK and
 let the operator answer it from the plan. An absence you merely suspect is
 declared is never a deduction.
 ```
+
+⛔ **N/A LEDGER — REPORT IT, ALWAYS, EVEN WHEN THE COUNT IS ZERO.**
+
+```
+N/A LEDGER: __ of 10 categories scored N/A
+            categories: ______________________
+OVERALL was computed over __ categories.
+```
+
+An N/A category stays out of the mean, and that is correct. But a reader
+who sees only the OVERALL number cannot tell whether it covers ten
+categories or six. Print the ledger line directly above the OVERALL score,
+every time.
+
+⛔ **IF MORE THAN THREE CATEGORIES ARE N/A, THE LEDGER LINE GOES IN THE
+REPORT HEADER TOO**, worded exactly as: *"This score covers __ of 10
+categories."* This is not a penalty and it does not change the arithmetic —
+it stops a heavily-exempted film from reading like a fully-measured one.
 
 ### 1. 🪝 HOOK & FIRST 10 SECONDS (Kanca)
 
@@ -778,9 +845,16 @@ CUTS COUNTED: [n + timecodes — the number from the material gate]
 NON-SCENE MATERIAL: [in-out + what it is, or "none"]
 LINES HEARD: [n · every spoken line VERBATIM with its timecode, or "none"]
              When you write "none", say which none it is: "none — room tone
-             present" or "none — no audio information at all". A film with no
+             present" or "none — nothing audible to me". A film with no
              dialogue and a film with no audio track are different objects and
              only one of them is a delivery defect.
+             ⛔ THIS LINE REPORTS WHAT YOU HEARD. It is never a statement
+             about the file. You may not write that the file has no audio
+             track, no audio stream, no audio information, or that the audio
+             was stripped in export: that is a property of the container, it
+             is read with one ffprobe command, and no model can observe it.
+             Write "none — nothing audible to me" and put the question in
+             FLAGS. A run that stops on that claim is a run never made.
 
 ⛔ NON-SCENE MATERIAL is not a scene at ANY duration. Material that carries
 burned-in text, or is static, or bears no scene fingerprint, is a card — a

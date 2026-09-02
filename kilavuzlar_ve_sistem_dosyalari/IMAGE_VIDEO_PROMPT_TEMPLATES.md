@@ -206,9 +206,15 @@ MOTION ([X] seconds, [lens]mm, [hareket tipi] at [X] meters):
 
 ### 📸 IMAGE PROMPT — Doldurulmuş Örnek
 
+> ⛔ **Bu örnek Ders 45'i UYGULAR, anlatmaz.** Karakterin özel adı hiçbir
+> blokta geçmiyor — SCENE'de "A lone suited figure", SUBJECT ve MOTION'da
+> "The figure". Adı örneğe yazarsan yeni film onu kopyalar ve ad ekrana
+> etiket olarak düşer (THE INVERSION 2:12 · dört ayrı yerde).
+> Kimlik ADLA değil FİZİKSEL TARİFLE taşınır: kostüm · rozet · yaka rengi.
+
 ```
 SCENE:
-Dr. Ada Yıldırım crouches before a small hexagonal crystal spike
+A lone suited figure crouches before a small hexagonal crystal spike
 that has just formed from the sand, studying its geometry.
 
 ENVIRONMENT:
@@ -217,7 +223,7 @@ Spires visible in the far background. The sand is fine, pale grey,
 completely still. The violet-gold sky casts even, warm light.
 
 SUBJECT:
-[CHARACTER BIBLE] Ada crouches at approximately 1 meter from the
+[CHARACTER BIBLE] The figure crouches at approximately 1 meter from
 0.3m crystal spike, her head tilted, studying the spike's facets.
 Her throat-collar resonator plate is inactive (no glow). Her wrist
 display shows a slow amber pulse. Hands empty.
@@ -246,7 +252,7 @@ no random geometry, crystal must read as acoustically precise]
 
 ```
 MOTION (10 seconds, 75mm, slow push-in from 5 to 3 meters):
-0s — Ada crouches motionless, studying the 0.3m crystal spike, her
+0s — The figure crouches motionless, studying the 0.3m spike, her
 breath fogging faintly at the visor seal.
 3s — She extends one hand toward the spike, fingers hovering above
 its surface without touching, tracing its hexagonal edges in the air.

@@ -450,3 +450,229 @@ kapıdır — ve koşulmamış kapı, D74'e göre hiç var olmamış kapıdır.
 > Ders 121 (şerit ve replik Δ eksenleri) · Ders 122 (aynı aile: kapının
 > referans sayısı elle hesaplanıyordu) · Ders 107 (çapraz sayım kapısı —
 > şerit oraya ekleniyor) · Ders 74 (kaydı/koşulabilirliği olmayan kapı).
+
+---
+
+## 🟡 DERS 142: SPEC'İN MAKİNE KAPISI KURULU OLMAYAN BİR FİLTREYE YAZILDI — YAZILMIŞ AMA KOŞULAMAYAN KAPI, KOŞULMAMIŞ KAPIDIR
+
+**Kaynak:** THE THIN ROOF QA_SPEC E bloğu, kapı ② (28.08.2026)
+**Sorun:** üç makine kapısından biri, koşturulmak istendiğinde çalışmadı
+
+SPEC'in E bloğu D125'in istediğini yaptı: üç ölçüm modele sorulmayacak,
+makineden alınacaktı. Kapı ② şöyle yazılmıştı:
+
+```
+ffmpeg -i S<n>.mp4 -vf vidstabdetect=shakiness=1:accuracy=15:result=stab_S<n>.trf -f null -
+```
+
+Yerel ffmpeg 8.1 yapısında **`vidstabdetect` yoktur** — `libvidstab`
+derlenmemiş (`ffmpeg -filters | grep vidstab` boş döner). Kapı sessizce
+hiçbir `.trf` üretmedi; betik hata bile vermedi, yalnız dosya oluşmadı.
+
+⭐ **D74 "kaydı olmayan kapı koşulmamış kapıdır" der. Bunun kardeşi:
+KOŞULAMAYAN kapı da koşulmamış kapıdır** — ve daha tehlikelidir, çünkü
+SPEC'te yazılı durur ve koşulmuş görünür.
+
+**ÇÖZÜM — ① SPEC yazılırken her makine kapısı KURU KOŞUYLA doğrulanır:**
+
+```bash
+# SPEC kapatılmadan önce, film klasöründe:
+for f in vidstabdetect signalstats deshake mestimate; do
+  ffmpeg -hide_banner -filters 2>/dev/null | grep -q " $f " \
+    && echo "✅ $f" || echo "⛔ $f YOK — kapı yeniden yazılacak"
+done
+ffprobe -version | head -1   # ve sürüm SPEC'e yazılır
+```
+
+**ÇÖZÜM — ② E bloğunun her kapısı üç satır taşır:**
+
+```
+KAPI:      <ne ölçer>
+KOMUT:     <tam komut>
+DOĞRULANDI: <ffmpeg sürümü ve tarih>   ⛔ bu satır yoksa kapı YAZILMAMIŞTIR
+İKAME:     <filtre yoksa hangi ölçüm koşulur>
+```
+
+THE THIN ROOF'ta ikame şuydu ve işe yaradı: sahnenin ilk ve son karesinin
+satır/sütun luma profilleri ±25 px çapraz korelasyonla eşlendi; 6 sahnenin
+4'ünde kayma 0-2 px çıktı (kamera kilitli ✅), 2'sinde özne örneklenen bandı
+doldurduğu için ölçülemedi. Yeterli değil ama BOŞ değil — ve boş kapının
+tersine, kaydı var.
+
+> 🔗 Ders 125 (makine kapıları) · Ders 74 (kaydı olmayan kapı) · Ders 129
+> (SPEC yazıldı ama kullanılmadı — aynı ailenin üçüncü üyesi: belge var,
+> uygulama yok).
+
+---
+
+## 🔴 DERS 144: ÜRETİM KAPISI "OKUNMALI" DİYORDU, KABUL/RET ÖLÇÜTÜ YOKTU — İKİ KAPI GÖRÜNÜR BİÇİMDE GEÇMEDİ, 31 KLİP ÜRETİLDİ
+
+**Kaynak:** THE SKYLIGHT PLAN "ÜRETİM KAPI SIRASI [D74]: S0 (delik+ışık gölü okunurluğu)
+→ S3 (sütun + toz cümlesi ÇEKİRDEK testi — geçmeden S13/S19 üretilmez) → S5 → S20";
+master kareleri 0:05/0:25 (göl beyaz, düz — ② ve ⑤ "white puddle/ice patch") · 0:35
+(toz şelalesi) · `FILM_QA_RAPORLARI/01_FILM_RAPORLARI/THE_SKYLIGHT.md`
+**Sorun:** D74'ün kardeşi — kapı yazılıydı, kaydı yoktu; ve kaydı OLAMAZDI.
+
+Kapılar amaç olarak yazıldı ("okunmalı", "testi"), ölçüt olarak değil. Sonuç: S0'ın
+gün ışığı gölü düz BEYAZ bir disk olarak çıktı; altı merceğin ikisi (ve filmi ilk
+kez gören herkes) onu su/buz okudu — filmin novum'u ("kara deliğin dibinde duran
+güneş ışığı") ekranda SU'dur. S3'ün toz cümlesi perde üretti (D143) ve S13/S19 yine
+üretildi. Hiçbir kayıt "kapı geçti" demiyordu; çünkü "geçti"nin tanımı yoktu. D74
+"kaydı olmayan kapı koşulmamış kapıdır" der; bu ders ekler: **kabul satırı olmayan
+kapının kaydı TUTULAMAZ** — his kaydedilmez, gözlem kaydedilir.
+
+**ÇÖZÜM — planın her kapı satırı üç alan taşır; cevap bir sonraki klip üretilmeden
+film dosyasına yazılır:**
+
+```
+KAPI <n> · S<k> · <ne test edilir>
+  KABUL:      <sayılabilir gözlem>   ör. "dipteki oval SICAK ve DOKULU — zemin
+              taneleri ve taşlar ovalin İÇİNDE görünüyor"
+  RET:        <yanlış okuma>         ör. "oval beyaz, düz, yansıtıcı; birikinti/
+              buz okunuyor"
+  YABANCI GÖZ: <filmi bilmeyen birine tek soru>  ör. "dipteki parlak şey ne?" —
+              cevap "güneş ışığı / gün ışığı" değilse RET
+  SONUÇ:      ✅ / ⛔ + tarih + karenin adı   ← bu satır boşsa kapı koşulmamıştır [D74]
+```
+
+**ÇÖZÜM — S0 ailesinin (delik + göl: S0 · S2 · S23 · S24) prompt cümlesi:**
+```
+the bright oval on the floor is DRY sunlit rock — warm, matte and grainy, with
+visible stones and dust inside it; it is not water, not ice, not a mirror, not a
+lake; nothing reflects in it.
+```
+
+> 🔗 Ders 74 (kaydı olmayan kapı) · Ders 143 (S3 kapısının düştüğü yer) · Ders 129
+> ve 142 (yazılı ama koşulmayan/koşulamayan kapı ailesi — dördüncü üye: ölçütsüz kapı)
+> · Ders 87 (önerme kapısı — burada önerme EKRANDA yanlış okundu, raporda değil).
+
+---
+
+## 🔴 DERS 165: ARAÇ YAZILDI, KOŞACAK KART YOKTU — QA PAKETİ FİLMİN YAZIMINDA ÜRETİLİR, QA ANINDA DEĞİL
+
+**KAPI:** BETİK · `yeni-film` Kart A §4 → `qa-isle/scripts/rubrik_paketle.sh <film klasörü>` · paket klasörü yoksa film "yazımı tamam" DEĞİLDİR [D117'nin kardeşi]
+**TEKRAR:** 1 · 02.09.2026 THE SINKING STAKE — sekiz mercek yine mod V koştu
+
+> ⛔ **02.09.2026 · İKİNCİ VAKA VE SEBEBİ BULUNDU — KAPI SATIRI ARACIN
+> KENDİSİNE İNMEMİŞTİ.** Ders 01.09'da yazıldı; ertesi gün yazılan
+> THE SINKING STAKE yine paketsiz kaldı ve sekiz merceğin sekizi mod V koştu.
+> Sebep bir ihmal değil, bir ADRES hatası: kapı satırı "yeni-film Kart A §4"
+> diyor, `AGENTS.md` Kart A gerçekten de `rubrik_paketle.sh` koşmasını
+> zorunlu tutuyor — ama **`.claude/skills/yeni-film/SKILL.md` §4 `QA_SPEC`
+> yazımında BİTİYOR ve paket adımını hiç içermiyor.** Ajan skill'i okuyor,
+> AGENTS.md'nin o satırını okumuyor.
+> ⭐ **BORÇ ÖDENDİ (02.09.2026):** adım SKILL dosyasının §4'üne eklendi.
+> Ders → araç kanalının aynı arızası: D157 "ders filme ulaşmadı" demişti,
+> bu "ders ARACA ulaşmadı" der ve daha sinsidir — kapı satırı DOLU
+> göründüğü için sayaç bu dersi "kapısı var" diye sayar.
+
+**Kaynak:** THE STILL SWARM QA (02.09.2026) — sekiz mercek, sekizi de mod V ·
+`rapor_kontrol.py` çıkış 2 · ⛔ 5 TEKRAR ·
+`FILM_QA_RAPORLARI/01_FILM_RAPORLARI/THE_STILL_SWARM.md`
+
+**Sorun:** D129'un dönüştürme borcu 01.09.2026'da ödendi: `rubrik_paketle.sh`
+yazıldı, THE COLD WELD için sekiz paket üretildi, D129'un TEKRAR satırına
+"araca çevrildi" yazıldı. **Ertesi gün aynı hata sekiz mercekle tekrarladı.**
+
+```
+01.09  THE COLD WELD  → 6 mercek mod V → araç yazıldı  → paket üretildi (GERİYE DÖNÜK)
+01.09  THE STILL SWARM yazıldı (Kart A) → SPEC ✅ · paket ✗ (kart onu koşmuyor)
+02.09  THE STILL SWARM → 8 mercek mod V → aynı hata, bir mercek DAHA GENİŞ
+```
+
+Araç kusursuz çalışıyor: koşması **1 saniye** sürdü ve sekiz paketi bastı.
+Kusur aracın değil, **koşacağı yerin** yokluğuydu. Paket, `qa-isle` skill'inin
+§2b adımında tarif edilmişti — yani ancak QA anında, ve ancak operatör o
+skill'i açarsa. Operatör QA anında skill açmaz; rubriği açar. Rubrik
+`QA_PROMPTLARI/` altında ÇIPLAK durur ve tek yapıştırılabilir dosyadır.
+
+```
+⛔ GENEL KURAL — bir aracın "kaderi" yazıldığı yer değil, KOŞULDUĞU yerdir.
+   Araç, kullanıcısının zaten yaptığı işin içine konur; kullanıcının
+   hatırlaması gereken bir adıma konursa yazılmamış sayılır.
+```
+
+**ÇÖZÜM — kart değişikliği (araç değil, SIRA değişti):**
+
+```
+Kart A §4  QA_SPEC yazıldıktan HEMEN SONRA, tek satır:
+             bash .claude/skills/qa-isle/scripts/rubrik_paketle.sh <film klasörü>
+           Çıktı: QA_PROMPTLARI/FILME_OZEL/<FILM>/PAKET_1..8
+           ⛔ Bu klasör yoksa film "yazımı tamam" sayılmaz (D117 gibi).
+Kart P     prompt_kontrol.py'den önce paket klasörü GÖZLE doğrulanır —
+           üretim başlamadan önce QA malzemesi hazırdır.
+SPEC değişirse betik yeniden koşulur (paket elle düzenlenmez).
+```
+
+> 🔗 Ders 129 (SPEC önkoşulu — bu ders onun ARACININ koşulmadığını ölçer) ·
+> Ders 117 (SPEC bir dosyadır — aynı kalıp: erişim çözüldü, davranış değişmedi) ·
+> Ders 142 (yazılı ama koşulamayan kapı) · Ders 74 (kaydı olmayan kapı) ·
+> Ders 166 (paketin İÇERİĞİ de eksikti — bu ders paketin VARLIĞINI çözer)
+
+---
+
+## 🔴 DERS 168: ÜRETİM SIRASI DRAMATİK SIRAYLA AYNIYSA, YARIDA KALAN FİLM KENDİNİ SAVUNAMAZ — 14 KLİP ÜRETİLDİ VE ÜÇÜNCÜ PERDE HİÇ VAR OLMADI
+
+**KAPI:** LİSTE · `03_PLAN_ONCESI_KONTROL_LISTESI.md` B5 (yeni madde: ÜRETİM SIRASI) — 02.09.2026
+**TEKRAR:** 1 · 02.09.2026 THE SINKING STAKE
+
+**Kaynak:** THE SINKING STAKE (02.09.2026) — üretim bir politika reddi
+yüzünden yarıda bırakıldı. Dosya sisteminden ölçüldü: 25 sahnenin ~14'ü
+üretilmiş, sırası planla birebir, **ve eksik olan 11 sahne ARDIŞIKTIR ve
+filmin SONUDUR.**
+
+```
+ÜRETİLEN     S0-S15 kuşağı — kurulum + iki BAŞARISIZ deneme + orta nokta
+ÜRETİLMEYEN  merkezi seçim S19 (3:09) · doruk S21 (3:29) ·
+             ikinci seçim S22 (3:39) · twist/final S24 (3:59)
+
+SAHİBİN DEĞERLENDİRMESİ: "ne bir mantıklı ilerleme var ne de sahneler
+arası devamlılık."
+→ İLERLEME YOK ÇÜNKÜ İLERLEME VAR OLMAYAN KISIMDA. Elde kalan şey
+  ikinci perdenin ortasında kesilmiş bir film: iki başarısız deneme
+  ve hiç ödül.
+```
+
+⭐ **MEKANİZMA — YARIDA KALMA BİR OLASILIK DEĞİL, BU HATTIN NORMALİDİR.**
+Üretim red alır, kota biter, motor değişir, gün biter. Depo bunu 15 red
+vakasıyla zaten biliyor. O hâlde soru şu değildir "film biterse nasıl
+görünür"; soru şudur: **film HERHANGİ BİR NOKTADA durursa elde ne kalır?**
+Sırayı baştan üretirsen elde hep KURULUM kalır — ve kurulum, tanımı gereği,
+kendini savunamayan malzemedir.
+
+⛔ **VE İKİNCİ ZARAR DAHA PAHALI: KONSEPT YANLIŞ YARGILANIR.** Sahip elindeki
+malzemeye bakıp filmin hikâyesi hakkında karar verir. Kurulum + iki
+başarısızlık gösteren bir kesit, planı ne kadar sağlam olursa olsun,
+"saçma sapan" okunur. Konsept, hiç ekrana gelmemiş bir doruk yüzünden
+reddedilir.
+
+**ÇÖZÜM — ÜRETİM SIRASI PLANDA YAZILIR VE DRAMATİK SIRA DEĞİLDİR:**
+
+```
+① İLK ÜRETİLEN SAHNE DORUKTUR. Filmin en pahalı, en riskli, en çok
+   şeyi kanıtlayan karesi ilk sırada üretilir.
+② İKİNCİ, MERKEZİ SEÇİM. Üçüncü, KAPANIŞ İMAJI.
+③ Ancak ondan sonra S0/hook ve kurulum kuşağı.
+④ PLANA TEK SATIR: "ÜRETİM SIRASI: S21 → S19 → S24 → S0 → …"
+   Bu satır yoksa üretim baştan başlar — varsayılan budur.
+
+⭐ EMSAL DEPODA ZATEN VAR ve bu film onu okumadı:
+   THE SLOW LIGHT  "üretim S11→S6→S9→S0 kapılarıyla başlar"
+   THE HOLLOW COUNT "dört üretim kapısı + Plan B'leri §BÖLÜM 4'te"
+   İkisi de doruktan başlıyor. THE SINKING STAKE'in planında ÜRETİM
+   KAPILARI vardı ama sırası REFERANS PAKETİ → S0 → geri kalanı idi:
+   çapa doğru, sıra yanlış.
+```
+
+⚠️ **BU DERS "REFERANS PAKETİ ÖNCE" KURALIYLA ÇELİŞMEZ.** Referans sayfaları
+(karakter · araç · olay) hâlâ ilk iştir — onlar SAHNE DEĞİLDİR. Çelişen şey
+"ilk SAHNE S0'dır" varsayımıdır. Sıra: referans paketi → doruk → seçim →
+kapanış → kurulum.
+
+⭐ **BEDAVA KAZANÇ:** doruk önce üretilirse novum'un ekrana gelip gelmediği
+ilk günde bilinir. D157/D151'in tamamı "kural ekrana hiç gelmedi"nin geç
+fark edilmesidir; bu sıra o gecikmeyi yapısal olarak kapatır.
+
+> 🔗 Ders 157 (novum ekrana gelmedi — geç fark edildi) · Ders 151 · Ders 165
+> (araç yazıldı, koşacak kart yoktu — aynı aile: sıra bilgisi araca inmedi) ·
+> 03_PLAN_ONCESI B5 · red defteri (yarıda kalmanın 15 sebebi orada).

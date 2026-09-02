@@ -215,16 +215,59 @@ KANIT:       Dead Approach 3/10 (serinin en düşüğü) — ilk diyaloglu film
 ```
 
 ```
-⛔ SAHNEDEN ÇIKAR:  Karşılıklı diyalog. Sıra alma = lip-sync çöküşü.
+⛔ SAHNEDEN ÇIKAR:  EŞZAMANLI konuşma (iki ağız aynı anda). Motor
+                    kılavuzu §8: başarı %40'ın altına düşer.
+                    ⚠️ "Karşılıklı diyalog" bundan FARKLIDIR: iki ayrı
+                    klipte, iki tek-konuşmacı planıyla, kurguda
+                    birleştirilerek yazılabilir.
 
-✅ PLANA YAZ:       Tüm replikler KAYIT (log) formatında, tek konuşmacı,
-                    cevap beklenmiyor. Low Power'ın planı bunu doğru
-                    çözmüş: "19 dakikalık gecikme nedeniyle kimse cevap
-                    veremez → teknik kazanç: lip-sync çakışması yok."
-
-💡 EN GÜVENLİ:      Sessiz film. Kaleida tamamen sessiz ve Diyalog
-                    kategorisinden hiç puan kaybetmedi (N/A).
+✅ PLANA YAZ:       DİYALOG MERDİVENİ — risk sırasına göre çık:
+                    1. KADRAJ DIŞI SES   ← ÜÇ gerekçe birden [TUR 4]
+                       (ekranda ağız yok: telsiz · kayıt · kask AI)
+                       ① lip-sync riski YAPISAL SIFIR
+                       ② AI damgasına ZIRH — "bu AI mı" tespiti dudağa
+                         bakar; ağız yoksa kanal kapalı [hakemli, 2021/2026]
+                       ③ akuzmatik OTORİTE — bedensiz ses güç taşır [Chion]
+                       ⛔ Bedenleştirme (ağzı gösterme) DORUĞA saklanır:
+                         SES_VE_DIYALOG §1a.1
+                    2. TEK YÖNLÜ KAYIT   ← cevap beklenmiyor, sıra yok
+                       Low Power: "19 dakikalık gecikme → kimse cevap
+                       veremez → lip-sync çakışması yok"
+                    3. EKRANDA TEK REPLİK ← D35'in BEŞ reçetesi birden:
+                       orta yakın · <5 sn · tırnak sentaksı · fonem
+                       cümlesi · no subtitles · tek konuşmacı
+                       ⛔ önce PROB B koşulur (PROB_KOSUSU.md)
+                    4. İKİ KİŞİ SIRAYLA  ← iki klip, kurguda birleşir
+                    5. HİBRİT SENKRON    ← VEO §9, yalnız 1-4 yetmezse
 ```
+
+> ⛔ **BU KARTTAN 02.09.2026'DA BİR SATIR KALDIRILDI:**
+> *"💡 EN GÜVENLİ: Sessiz film. Kaleida tamamen sessiz ve Diyalog
+> kategorisinden hiç puan kaybetmedi (**N/A**)."*
+>
+> **Sebep:** cümlenin kanıtı bir N/A'dır — yani sessizliğin daha iyi puan
+> almasının sebebi **sessizliğin puanlanmamasıdır.** Bu bir ölçüm değil,
+> bir döngüdür ve doğrudan YAZIM kararını yönlendiriyordu.
+> Kayıt: `06_HIKAYE_HATTI_TESHISI.md` §4b.
+>
+> ⚠️ **Sessizlik bir seçenek olarak KALIR** — kaldırılan şey sessizlik
+> değil, ölçüme dayanmayan **"en güvenli" damgasıdır.**
+>
+> ✅ **02.09.2026 · TUR 4 BU KARTI GÜÇLENDİRDİ, YUMUŞATMADI:** ekranda
+> konuşan ağız artık İKİ riski aynı anda açıyor — lip-sync çöküşü VE
+> AI damgası (tespit kanalı fonem↔vizem uyuşmazlığıdır; AI konuşan-kafa
+> duygu temelli güveni ölçülebilir biçimde düşürüyor). Yani BASAMAK 1-2
+> yalnız "güvenli" değil, **tasarım olarak daha iyi.** BASAMAK 3-4 ise
+> eskisinden daha pahalı. Kayıt: `04_ARASTIRMA_BULGULARI.md` T4.1/9-10.
+>
+> ⬜ **VE KARTIN KENDİ KANITI ZAYIFTIR, DÜRÜST KAYIT:** risk skoru TEK
+> vakaya dayanır (Dead Approach 3/10) ve `LESSONS_LEARNED` o vakayı
+> *"ilk diyaloglu **compilation** üretimi — diyalog + birleştirilmiş
+> kurgu, kesme ve senkron hatalarını **aynı anda** tetikledi"* diye
+> kaydeder. İki değişken birlikte değişti; düşüş yalnız diyaloğa
+> yüklenemez. Ayrıca yasak ~03-04.08.2026'da ölçüldü ve depo 27-28.08'de
+> motorun değiştiğini kendi kılavuzuna yazdı (VEO 3.1 §1: *"varsayılan
+> sessiz video dönemini kapatıp"*). **Yasak o günden beri sınanmadı.**
 
 ---
 
@@ -353,6 +396,73 @@ kayıp görünmez.
 
 ---
 
+# 🔴 KART 12 — POLİTİKA YÜZEYİ (üretim reddi riski) 🆕 01.09.2026
+
+```
+RİSK SKORU:  🔴 YÜKSEK — reddedilen sahne ÜRETİLMEZ; bu kartın bedeli
+             kalite düşüşü değil, filmin EKSİK KALMASIDIR
+KANIT:       09_URETIM_RED_DEFTERI · 14 vaka · 6'sı kelime · 4'ü
+             kompozisyon · 1'i yapısal · 3 parti teknik.
+             Kompozisyon reddinin biri ÇÖZÜLEMEDİ (YERCEKIMI F1 S8 iptal).
+İLGİLİ DERS: 123 · 59 · 67 · 56
+KILAVUZ:     ../POLITIKA_VE_URETILEBILIRLIK_KILAVUZU.md
+```
+
+**Ne bozulur:** Sahne hiç üretilmez. Ve daha sinsisi: **çözüm olarak
+malzeme çıkarılır** — depo bu refleksle 0 gore · 0 ateş · 0 su · 0 canlı ·
+0 patlama · 0 temasa indi ve `05_DIKEY_HAT_TESHISI §3` bunun hikâye
+maliyetini ölçtü. **Bu kart iki yönlü okunur: red riskini de, çıkarma
+refleksini de sayar.**
+
+```
+MALZEME BAŞINA RED SAYISI (defterden · 01.09.2026 kesiti)
+
+  şiddet/yara sözlüğü (yasak olarak yazılmış bile) ... 3 vaka  🔴
+  bedenden bir şeyin çıkarılması (kask/eldiven) ...... 3 vaka  🔴
+  kalabalık + kaçan/kovalanan tek kişi ............... 1 vaka  🟠
+  yüzsüz izolasyon + kısıtlanmış uzuv (kadraj) ....... 1 vaka  🔴 çözülemedi
+  milliyet ifadesi ................................... 1 vaka  🔴 doğrulandı
+  konuşan yüz + kapital kimlik kilidi ................ 1 vaka  🟠
+  insansız sahne + uzun NEGATIVE bloğu ............... 1 vaka  🟠 (= KART 10)
+
+⭐ TUR 3 · DÖRT MALZEME DAHA — ölçümümüz YOK, ama üçü bu deponun
+  VARSAYILAN malzemesi. Vaka sayısı 0 olması güvenli oldukları anlamına
+  gelmez; hiç SAYILMADIKLARI anlamına gelir [04_ARASTIRMA T3.3]:
+
+  KASK / VİZÖR / yüzü kapatan ekipman ................ ⚠️ HER filmde
+      → anonimlik/deepfake imzasına yakın okunuyor.
+      ✅ Panzehir ZATEN VAR: D79 açık vizör kilidi. O kilit artık
+         yalnız devamlılık değil, ÜRETİLEBİLİRLİK kilidi.
+  KIRMIZI TON YOĞUNLUĞU + yakın plan ................. ⚠️ yaygın
+      → `DEEP EMERGENCY RED (1900K)` deponun yerleşik kalıbı;
+        kadrajın çoğu kırmızıysa doku "gore" skoru üretiyor.
+      ✅ Panzehir: kırmızıyı KAYNAĞA bağla, kadrajda gri/mavi
+         referans yüzey bırak.
+  KALABALIK (çok yüzlü kadraj) ....................... 1 vaka  🟠
+      → her yüz ünlü/yaş/deformasyon için taranır; TEK anomali
+        TÜM videoyu düşürür. LAST SPAN'i açıklıyor.
+  DİYALOG (replik etiketi) ........................... ⚠️ ölçülmedi
+      → ayrı bir SES denetim dalı açar; çocuk sesi kısıtı katı.
+      ✅ Teşhis bedava: aynı sahneyi SESSİZ koş [POLİTİKA §5 · 2.5]
+
+✅ PLANA YAZ:  ① POLİTİKA SATIRI (03_PLAN_ONCESI B6): en red-riskli kare
+                  S___ + nötr tarifi
+               ② Her önlem için ANLAM MALİYETİ üçlüsü
+                  (ÖNLEM / MALİYET / TELAFİ — kılavuz §4.3)
+                  ⛔ TELAFİ boşsa önlem alınmamış, film KISALTILMIŞTIR
+⛔ PROMPT YAZILINCA: prompt_kontrol.py ⑯ koşulur (kelime ekseni).
+               Kompozisyon ekseni betiğe İNMEZ → PROMPT_QA rubriği.
+```
+
+> ⚠️ **Bu kart HÜCUM kartıdır, savunma kartı değil.** Diğer 11 kart
+> "bundan kaçın" der; bu kart "**aynı aksiyonu politika yüzeyi olmadan
+> nasıl yazarsın**" diye sorar. Cevap kılavuzun §4.1'indeki dört kanaldır
+> (kütle-hız · malzeme sonucu · alet tepkisi · temassız gövde tepkisi).
+> Ölçülmüş emsal: LAST SPAN bir kalabalığı HARCIYORDU (400 temas, 2 red);
+> HELD HEAT aynı kalabalığı YÖNLENDİRİYOR (0 temas, 0 red).
+
+---
+
 # 📋 RİSK TOPLAMI — planı yazmadan önce doldur
 
 ```
@@ -372,8 +482,12 @@ FİLM: ______________________
 □ Tek baskın ışık + hedefe hareket? → varsa KART 9 — dört kanal + iki yenilgi kuralı
 □ İnsansız sahne var mı?        → varsa KART 10 — NEGATIVE bloğu tek satıra
 □ Değişken çekim süresi / sahne içi kesme? → varsa KART 11 — kırpma bütçesi
+□ Gövdeye değen kuvvet · kalabalık · ateş · tehlike çerçevesi ·
+  bedenden bir şey çıkarma · ikinci insan var mı?
+                                → varsa KART 12 — politika yüzeyi
+                                   ⛔ VE anlam maliyeti satırı
 
-RİSK SAYISI: ___ / 12        ← payda YUKARIDAKİ SORU SAYISIDIR, sabit değil.
+RİSK SAYISI: ___ / 13        ← payda YUKARIDAKİ SORU SAYISIDIR, sabit değil.
                                 Kart eklenince payda da artar (bu liste tek kaynak).
 
 ⚠️ 5 ve üstü ise: film şu anki sistemle 5/10'un üstüne çıkamaz.
@@ -382,9 +496,15 @@ RİSK SAYISI: ___ / 12        ← payda YUKARIDAKİ SORU SAYISIDIR, sabit değil
    ardışık sıçrama karşılığı 3→8 · 01_DERS_ETKINLIK_RAPORU §5).
 
 ⚠️ EŞİK KALİBRASYONU AÇIK: "5+" bandı liste 9 SORULUYKEN ölçüldü; kart
-   6b · 9 · 10 · 11 sonradan eklendi ve payda 12'ye çıktı. Aynı film şimdi
-   mekanik olarak daha yüksek risk sayısı üretir. Bant yeniden ölçülene
-   kadar 5+ eşiği KORUNUR (yanlış tarafa hata yapar: fazla uyarır).
+   6b · 9 · 10 · 11 · 12 sonradan eklendi ve payda 13'e çıktı. Aynı film
+   şimdi mekanik olarak daha yüksek risk sayısı üretir. Bant yeniden
+   ölçülene kadar 5+ eşiği KORUNUR (yanlış tarafa hata yapar: fazla uyarır).
+
+⛔ VE KART 12 BU EŞİĞİN İÇİNDE ÖZEL DURUMDUR: "malzeme azalt" tavsiyesi
+   politika riskine uygulanırsa hikâye eksilir. KART 12'nin cevabı
+   malzemeyi ÇIKARMAK değil, aynı aksiyonu başka kanaldan yazmaktır
+   (POLITIKA_VE_URETILEBILIRLIK §4.1). 5+ sayarken KART 12'yi say,
+   ama malzeme kesme kararını ondan BAŞLATMA.
 ```
 
 ---

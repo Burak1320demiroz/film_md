@@ -260,6 +260,73 @@ fi
 echo
 echo
 
+# ─── DERS → KAPI ───────────────────────────────────────────────────
+# 01.09.2026 (D161/D162 · DERSLER/00_DERS_YAZIM_KONTRATI.md): dersin kapısı
+# yoksa dersin okunduğu ölçülemez. Kapı satırı olan ders sayısı, ⛔ ÇALIŞMIYOR
+# damgalılar, mod D koşusu ve rubrik hacmi burada; hiçbiri belgeye elle yazılmaz.
+# Son 5 FİLM dersi (01-07) her oturum başında görünür — bir ders sabah yazılıp
+# aynı gün yazılan filme ulaşmadı; görünmezlikten.
+echo "🧭 DERS → KAPI  (kontrat: DERSLER/00_DERS_YAZIM_KONTRATI.md)"
+# ⚠️ 00_* dosyaları (kontrat şablonu) sayıma GİRMEZ — şablonun örnek satırları ders değildir.
+KAPILI=$(cat "$K/DERSLER/"0[1-9]_*.md | grep -cE "^\*\*KAPI:\*\*")
+CALISMIYOR=$(cat "$K/DERSLER/"0[1-9]_*.md | grep -cE "^\*\*TEKRAR:\*\*.*ÇALIŞMIYOR")
+# ⚠️ AÇIK aday: "## ADAY-n". Kapanan aday "## ✅ ADAY-n" olur ve sayılmaz.
+#    grep 0 bulunca exit 1 döner; `|| echo 0` iki satır basıyordu — `|| true` ile susturulur.
+ADAY=$(grep -cE "^## ADAY-" "$K/DERSLER/GOZLEM_DEFTERI.md" 2>/dev/null || true); ADAY=${ADAY:-0}
+MODD=$(grep -lE "^INPUT MODE:[[:space:]]*D" "$Q/02_HAM_RAPORLAR/"*.md 2>/dev/null | wc -l | tr -d ' ')
+printf "   KAPI satırı olan ders         %s / %s   (geriye dönük tasnif YOK — dokununca alır)\n" "$KAPILI" "$DERS"
+printf "   ⛔ ÇALIŞMIYOR damgalı ders     %s\n" "$CALISMIYOR"
+[ "$CALISMIYOR" -gt 0 ] && cat "$K/DERSLER/"0[1-9]_*.md \
+  | awk '/^## .* DERS [0-9]+/{ if (match($0, /DERS [0-9]+/)) d = substr($0, RSTART+5, RLENGTH-5) }
+         /^\*\*TEKRAR:\*\*.*ÇALIŞMIYOR/{ sub(/^\*\*TEKRAR:\*\*/, ""); print "D" d " ·" $0 }' \
+  | cut -c1-96 | sed 's/^/      /'
+printf "   gözlem defterinde aday        %s   (kapısız — ders DEĞİL)\n" "$ADAY"
+printf "   mod D koşusu (02/ ham rapor)  %s\n" "$MODD"
+echo "   ── son 5 FİLM dersi (01-07) — yeni film yazmadan önce AÇ ──"
+cat "$K/DERSLER/"0[1-7]_*.md | grep -E "^## .{0,4} DERS [0-9]+" | cut -c1-92 \
+  | awk '{ if (match($0, /DERS [0-9]+/)) { n = substr($0, RSTART+5, RLENGTH-5) + 0; print n "\t" $0 } }' \
+  | sort -n | tail -5 | cut -f2- | sed 's/^## //; s/^/      /'
+echo "   ── rubrik hacmi (tavan 25 KB · üstü çıktı kapısına taşınır, rubriğe eklenmez) ──"
+for f in "$K"/QA_PROMPTLARI/[1-9]_*.md; do
+    b=$(wc -c < "$f"); kb=$((b / 1024)); flag=""; [ "$kb" -gt 25 ] && flag="⚠️ tavan üstü"
+    printf "      %-38s %3s KB  %s\n" "$(basename "$f" | cut -c1-38)" "$kb" "$flag"
+done
+echo
+
+# ─── 🚫 ÜRETİM REDDİ (01.09.2026) ───────────────────────────────────
+# Depo 14 redi 27 ayrı dosyaya yazmıştı, hiçbir yerde toplamamıştı.
+# Defter açıldı; bu blok onun ölçüsüdür. İki sayı önemli:
+#   ① MOTORSUZ satır — geriye dönük satırların açığı, kapanması gereken borç
+#   ② SONUÇ'suz satır — çözümü kaydedilmemiş red, yalnız bir şikâyettir
+DEFTER="$Q/09_URETIM_RED_DEFTERI.md"
+echo "🚫 ÜRETİM REDDİ  (defter: FILM_QA_RAPORLARI/09_URETIM_RED_DEFTERI.md)"
+if [ -f "$DEFTER" ]; then
+    # Defter satırı: "| 3 | 08.08 | …" — baştaki hücresi SAYI olan satırlar
+    RED=$(grep -cE "^\| *[0-9]+ *\|" "$DEFTER")
+    # MOTOR = 5. alan (baştaki boş alan + # + tarih + film + MOTOR).
+    # Sütun konumu değişirse bu sayı sessizce yalan söyler — başlık
+    # satırındaki adı doğrulayarak kullan.
+    RED_MOTORSUZ=$(awk -F'|' '/^\| *[0-9]+ *\|/ { gsub(/ /,"",$5); if ($5=="?") n++ } END{print n+0}' "$DEFTER")
+    RED_SONUCSUZ=$(grep -E "^\| *[0-9]+ *\|" "$DEFTER" | grep -c "⬜ kayıtsız" || true)
+    printf "   defterdeki red vakası          %s\n" "$RED"
+    printf "   ⛔ MOTOR sütunu boş (\`?\`)      %s   ← bugünden sonraki satırda 0 olmalı\n" "${RED_MOTORSUZ:-0}"
+    printf "   ⛔ SONUÇ sütunu boş            %s   ← çözümü kaydedilmemiş red\n" "${RED_SONUCSUZ:-0}"
+else
+    echo "   ⚠️  defter YOK — red kaydı dosyalara dağılıyor demektir"
+fi
+# ⑯ kapısının canlı ölçüsü: promptlarda kaç politika tetikleyicisi duruyor.
+# ⛔ Betik koşulur, sayı buraya yazılmaz (kural ①).
+echo "   ── ⑯ POLİTİKA SÖZLÜĞÜ · canlı tarama (prompt_kontrol) ──"
+python3 "$K/PROMPT_KONTROL/prompt_kontrol.py" \
+    dikey_shorts_filmler yatay_2_4_dk_filmler_uzay yatay_3_5_dk_filmler \
+    yatay_7_9_dk_filmler yatay_10_20_dk_filmler 2>/dev/null \
+  | grep -oE "politika sözlüğü T[12] · [0-9]+|milliyet ifadesi|gövdeye yönelmiş şiddet fiili|gerçek kurum adı|yapısal red profili" \
+  | awk '/T1 ·/{t1+=$NF; n1++} /T2 ·/{t2+=$NF; n2++} /milliyet/{m++}
+         /şiddet fiili/{f++} /kurum/{k++} /yapısal/{y++}
+         END{ printf "      T1 %d tetikleyici (%d promptta) · T2 %d (%d) · şiddet fiili %d\n", t1,n1,t2,n2,f;
+              printf "      ⛔ MİLLİYET %d  ← §7 DOĞRULANMIŞ red · kurum %d · yapısal red profili %d\n", m,k,y }'
+echo
+
 # ─── ARŞİV: KAPALI TABLOLAR ────────────────────────────────────────
 # Bunlar 22.08.2026'da kapandı. Silinmediler çünkü KANIT'tırlar; ama
 # DURUM GÖSTERGESİ DEĞİLLER ve yukarıdaki canlı sayılarla toplanmazlar.

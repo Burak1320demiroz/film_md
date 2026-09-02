@@ -123,6 +123,45 @@ EVREN DOSYASI — ikinci filmle birlikte açılır
 
 # 3. 🎨 KANAL KİMLİĞİ — kapak, ad, açıklama
 
+## 3.0 ⭐ HANGİ KİMLİK KALDIRACI ÖLÇÜLDÜ, HANGİSİ VARSAYIM
+
+> **Eklendi 27.08.2026 (araştırma 4).** Bu bölümün altındaki kurallar
+> doğru ama hepsi aynı ağırlıkta değildi. Antoloji yapısı — her filmde
+> farklı karakter, farklı dünya — tanınabilirliği kimliğe yıkar; bu
+> tablo hangi kaldıracın gerçekten ölçüldüğünü ayırır.
+
+| Kaldıraç | Durum | Ölçüm |
+|---|:--:|---|
+| **Kapak ailesi** (tutarlı iskelet + yüksek kontrast) | ✅ ÖLÇÜLDÜ | ortalama CTR'a **+%35'e kadar** katkı |
+| **Renk imzası** (evren başına sabit palet) | ✅ ÖLÇÜLDÜ | tutundurma metriklerinde iyileşme; görsel marka belleği |
+| **Ses imzası** (orijinal, kanala özgü) | ✅ ÖLÇÜLDÜ | YouTube 03/2026: **<50k abonelik kanallarda "orijinal ses bonusu"** — trend ses yerine kendi imzasını kullanan kanal ölçülebilir erişim artışı alıyor |
+| **Başlık grameri** ("THE + iki kelime") | ⚠️ VARSAYIM | SEO faydası kabul görüyor; sadakat kurduğuna dair izole test **YOK** |
+| **Açılış kadrajı** (aynı kamera grameri) | ⚠️ VARSAYIM | ilk 3 saniyenin kritikliği gerçek; belirli bir açının afinite ürettiği **ölçülmedi** |
+
+```
+KANAL AFİNİTESİ EŞİĞİ — algoritmanın "sadık izleyici" saydığı nokta
+  ~15 oturum   VEYA   7 günde dönen izleyici oranı > %15
+
+→ Bu eşik, §4'ün DEVAM HAKKI kapısından ÖNCE gelir: eşik geçilmeden
+  hiçbir filmin "seriye dönüşme" verisi okunamaz.
+```
+
+> ⛔ **VE BİR ÇELİŞKİ KAYDA GEÇİYOR — karar proje sahibinindir.**
+> `SHORTS_SISTEM_PROMPTU` viral DNA madde 4: *"Aynı paleti başka bir
+> konsept için tekrar kullanma."* Bu bölüm §3.1: *"RENK KODU: evren
+> başına 2 ana renk, tüm kapaklarda aynı."* İkisi aynı anda uygulanamaz.
+> Ölçüm renk imzasından yana ama madde 4'ün gerekçesi de gerçek
+> (16 film, 16 farklı dünya — palet tekrarı tembellik okunabilir).
+> **Önerilen çözüm — iki katmana ayır:**
+> ```
+> KANAL KATMANI   sabit: 2 imza rengi + sabit kompozisyon iskeleti
+>                 → kapakta ve filmin ilk/son karesinde görünür
+> FİLM KATMANI    özgün: kalan 2-3 renk konsepte özel, tekrar etmez
+>                 → filmin gövdesinde çalışır (madde 4 burada geçerli)
+> ```
+> Bu çözüm uygulanana kadar iki kural çelişmeye devam eder; bir sonraki
+> ajan birini sessizce silmesin.
+
 ## 3.1 KAPAK AİLE KİMLİĞİ
 
 Yüz olup olmaması küçük kanallarda CTR'ı belirlemiyor; belirleyen şey

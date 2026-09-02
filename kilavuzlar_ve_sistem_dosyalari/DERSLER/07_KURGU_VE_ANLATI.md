@@ -281,6 +281,9 @@ masasında, teslimden önce, dört maddelik bir bakışla çözülür — ve
 
 ## 🔴 DERS 70: ÜRETİM KİLİTLERİ KURGUYU BAĞLAMIYOR — 48 SANİYELİK FİLM KURGUDA 64 SANİYE OLDU, JENERİK KARTI GERİ GELDİ
 
+**KAPI:** BETİK · `olcum_kapisi.sh` KUYRUK/BAŞ KART ŞÜPHESİ (freezedetect −60dB + `son_kare.jpg`) — 01.09.2026
+**TEKRAR:** 9 · son vaka 01.09.2026 (THE PAYLOAD 4:00-4:06 · THE COLD WELD 2:30-2:35) · ⛔ ÇALIŞMIYOR → araca çevrildi: "kart ekleme" cümlesi dokuz teslimde tutmadı, kapı artık betikte
+
 **Kaynak:** THE FIRST MORNING SHORTS_QA koşusu (06.08.2026, MOD V) — 6/10,
 REGENERATE · `Negative Violations: 🔴 BLOCKER — title card presented at 1:00`
 · `Clips given: 1 joined cut (7 segments) · duration 64s` (plan: 6 × 8 s = 48 s)
@@ -357,6 +360,9 @@ HOOK REVEAL KİLİDİ (dikey shorts):
 ---
 
 ## 🔴 DERS 72: KURGU KAPISI YATAYA GENELLENİR — PLANIN DORUĞU KURGUYA GİRMEDEN FİLM TESLİM EDİLDİ
+
+**KAPI:** BETİK · `olcum_kapisi.sh` KUYRUK/BAŞ KART ŞÜPHESİ — D70 ile aynı araç — 01.09.2026
+**TEKRAR:** 9 · D70 ile ortak sayaç · ⛔ ÇALIŞMIYOR → araca çevrildi (01.09.2026)
 
 **Kaynak:** THE UNBROKEN CITY dört mercek QA (06.08.2026, dördü mod V) —
 senaryo Karakter 4/10 ("the astronaut makes zero choices") · mantık
@@ -454,6 +460,9 @@ NOVUM TAŞIYICI KURALI (plan yazılmadan):
 ---
 
 ## 🔴 DERS 78: SAHNELER ARASI ANLATIM OKUNMUYOR — DÖRT ÇEVRESEL SAYAÇ VE FİLMİN BEDELİ, TEK KAREDE KANITLANMADIĞI İÇİN GÖRÜNMEDİ
+
+**KAPI:** BETİK · `prompt_kontrol.py` A1 ÇELİŞKİSİ (yasak ↔ ekran içeriği aynı dosyada) — kapı 12.08.2026'dan beri vardı, satır 01.09.2026'da yazıldı
+**TEKRAR:** 5 (×5 — 01.09.2026 sayımı)
 
 **Kaynak:** THE STARLESS CIRCLE (06.08.2026) — MANTIK_QA
 `THE COUNTER: NONE` + `Setup & Abandonment 3/10` ("cylinder, tool wall,
@@ -775,3 +784,213 @@ yorumu değil, SAYIM'ıdır — ve iki bağımsız mercekte aynı çıktı.
 
 ---
 
+
+---
+
+## 🔴 DERS 141: KLİP VAR, VURUŞ YOK — KURGU KAPISININ ÜÇ SATIRI DA GEÇTİ, FİLMİN TWIST'İ VE DÖNGÜSÜ EKRANDA YOKTU
+
+**Kaynak:** THE THIN ROOF QA (28.08.2026) — S5 · 50,03-60,03 s ·
+④ HİKAYE "Ending 3/10 · ENDS OR STOPS: **Stops**"
+**Sorun:** kurgu kapısı klip SAYAR, vuruş sayamaz
+
+Kurgu kapısının (ortak adım ④) üç satırı da temiz geçti:
+
+```
+a) klip sayısı   6 = 6              ✅
+b) süre          60,033 = 60,03     ✅   (Δ = +0,003 s)
+c) İNSAN ŞERİDİ  111111 = 111111    ✅
+```
+
+Ve filmin finali teslim edilmedi. S5 klibi VAR, 10 saniye, kadın ayağa
+KALKIYOR (twist'in mekanizması) — ama twist'in KENDİSİ, planın
+`TOHUM → KARŞILIK` zincirinin üçüncü halkası, ekranda yok:
+
+```
+PLAN  56,53-58,03  TWIST: ovada üç çöküntü daha, ufka kadar, dümdüz bir hatta
+                   (210 m · 480 m · 790 m — yalnız ayakta göz hizasından görünür)
+EKRAN 56,50 / 58,00 / 59,50 kareleri:  düz ova + kesintisiz kaya duvarı.
+                   Çöküntü YOK. Sıfır tane.
+PLAN  60,03 → 0,00 DÖNGÜ — jest eşleşmesi, aynı kurulum, aynı ışık
+EKRAN 59,90 karesi ile 00,10 karesi: farklı kamera yüksekliği, farklı arka
+                   plan, farklı ölçek. Eşleşme yok. Döngü öldü.
+```
+
+⭐ **D62/D72 "sahne eksik" der; bu onun daha sinsi hâlidir: SAHNE VAR,
+VURUŞ YOK.** Eksik sahne aritmetikte görünür (süre tutmaz, sayı tutmaz).
+Eksik VURUŞ hiçbir aritmetikte görünmez — klip tam boyunda, doğru yuvada,
+insan içinde. Kapı ✅ verir ve filmin bütün yükünü taşıyan iki saniye
+sessizce kaybolur.
+
+⛔ Ve bunu gören tek mercek, plana hiç bakmayan ④ oldu: *"the character
+pushes up, completely ignoring the climax."* Belgesiz mercek yarayı HİSSETTİ,
+sebebini bilemedi ve reçetesinde filmin KESİLEMEZ sahnelerini kesmeyi önerdi.
+
+**ÇÖZÜM — SPEC'in B BLOĞUNA yeni zorunlu satır: FİNAL VURUŞ KANITI**
+
+```
+FİNAL VURUŞ KANITI: <tek karede ekranda BULUNAN ya da BULUNMAYAN, ADI
+KONABİLİR bir nesne> · <hangi saniyede> · <kaç tane>
+
+örnek (THE THIN ROOF):
+  FİNAL VURUŞ KANITI: ufka giden hatta ÜÇ dairesel çöküntü · 57,0 s ·
+  sayılabilir, 3 adet · yoklarsa final teslim edilmemiştir
+```
+
+```
+⛔ KURGU KAPISINA DÖRDÜNCÜ SATIR (a/b/c'den sonra):
+   d) FİNAL VURUŞ KANITI ekranda mı?
+      ffmpeg -ss <saniye> -i "$MASTER" -frames:v 1 kanit.jpg
+      → tek kare, tek bakış, ~10 saniye iş.
+      YOKSA: koşu ÖN KOŞU'dur, Final ve Duygu Yayı kategorileri SAYI
+      TAŞIMAZ, ve o klip yeniden üretilir.
+   Bu satır a/b/c gibi SAYIYLA değil, KAREYLE koşulur — çünkü ölçtüğü şey
+   sayı değil, VARLIKTIR.
+```
+
+⭐ **Kanıt seçme kuralı:** kanıt SAYILABİLİR ve ADI KONABİLİR olmalı.
+"final duygusu", "yalnızlık hissi", "ufka bakış" kanıt değildir. "Üç
+çöküntü", "ikinci kule", "sönmüş lamba", "boş kanca" kanıttır. Tek karede
+görülemeyen bir vuruş, tek karede doğrulanamaz — o zaman kanıt, vuruşun
+BAŞLANGIÇ ve BİTİŞ karesindeki fark olarak yazılır.
+
+⛔ **Ve döngü ayrı bir kanıttır.** Dikey formatta döngü zorunludur
+[FINAL §2]; kanıtı iki karedir:
+
+```
+   ffmpeg -ss 0.10 -i "$M" -frames:v 1 ilk.jpg
+   ffmpeg -ss <süre-0.15> -i "$M" -frames:v 1 son.jpg
+   → yan yana. Aynı kurulum · aynı ölçek · aynı ışık · aynı jest mi?
+   Değilse döngü yoktur; ve arkasına eklenen HER KARE (başlık kartı dâhil)
+   döngüyü zaten öldürmüştür [D70/D72].
+```
+
+> 🔗 Ders 62/72 (kuyrukta sahne eksik — bunun aritmetikte GÖRÜNEN hâli) ·
+> Ders 121 (Δ okuma prosedürü — burada Δ = 0 ve film yine eksik) ·
+> Ders 115 (kesme ızgarası) · Ders 117/129 (SPEC dosyası) · Ders 134
+> (belgesiz merceğin sıralaması sonuç sıralaması değildir).
+
+---
+
+## 🔴 DERS 157: NOVUMUN TAŞIYICISI TEK KARE TESTİNİ KENDİSİ GEÇMİYORDU — KURAL EKRANA HİÇ GELMEDİ VE İKİ MERCEK ONU "TEKRAR" SAYIP KESME LİSTESİNE YAZDI
+
+**KAPI:** BETİK · `prompt_kontrol.py` ⑭ NOVUM TAŞIYICI (taşıyıcı nesne TEK KARE satırında geçmeli) — 01.09.2026
+**TEKRAR:** 1 · 01.09.2026 THE COLD WELD: ders sabah yazıldı, aynı gün yazılan film onu okumadı, akşam 6/6 mercek novum'u adlandırmadı (⬜ AÇIK — GOZLEM_DEFTERI ADAY-1)
+
+**Kaynak:** THE PAYLOAD QA (01.09.2026) — planın novum taşıyıcısı: ön iniş
+bacağının cilalı milindeki parlak bant (iki parmak S4 → bir el S8 → iki parmak
+S12). Altı mercek, **bandı bir kez bile anmadı.** ② DEVAMLILIK: `0:40 / 1:20 —
+Hand hits strut and dust pours out exactly the same twice 🟡` · ④ HİKAYE:
+`S5 CUT (redundant pair with S9)` + `S9 CUT (shows what S5 already showed)` —
+**sıralı kesme listesinin 2. ve 3. maddesi novumun iki taşıyıcı sahnesidir.**
+**Sorun:** kural görünmedi; görünmeyince tekrar sayıldı; tekrar sayılınca
+kesilmesi önerildi.
+
+```
+PLANIN KENDİ İÇİNDEKİ ÇATLAK — yazarken görülebilirdi:
+  NOVUM TAŞIYICISI : amortisör bandı × kasa kaldırma jesti  (S4 · S8 · S12)
+  ÜÇ KAPI ① TEK KARE: "S11 · 1:52 — yük yatağında yatan adam, dört boş
+                       kelepçe yuvası"                       (BAŞKA BİR NESNE)
+  → Kuralın kanıtı ile kuralın tek-kare testi AYNI NESNE DEĞİL.
+    ONERME §4① geçmiş görünüyor, ama geçen şey novum değil DEKORDU.
+```
+
+⭐ **MEKANİZMA ÜÇ KATLI:**
+
+```
+① TAŞIYICI ÇOK KÜÇÜK. "İki parmak → bir el" bir el genişliğidir; 24mm'lik
+   geniş kadrajda görünmez, 50mm insertte bile referanssız okunmaz.
+② TAŞIYICI HAFIZA İSTİYOR. Değişim tek karede DEĞİL, 40 saniye arayla iki
+   ayrı sahne arasında. İzleyici (ve mercek) ikisini yan yana koyamaz —
+   koyabilmesi için filmin ona bunu yapmasını söylemesi gerekir; film
+   söylemiyor.
+③ AYNI PROMPTTA RAKİP OLAY VAR. S4/S8 promptları hem bandı hem "eldivenden
+   düşen toz"u tarif ediyor. Model ikisinden TANIDIK olanı üretti: toz.
+   İki mercek de tam olarak tozu yazdı, bandı değil. Bir promptta iki olay
+   varsa model soyut olanı bırakır, somut olanı çizer.
+```
+
+**ÇÖZÜM — PLAN AŞAMASINDA, ÜÇ KURAL:**
+
+```
+① TEK KARE TESTİ NOVUMUN KENDİ TAŞIYICISIYLA KOŞULUR. ONERME §4①'e
+   yazılan kare, §2'nin taşıyıcı nesnesini İÇERMEK ZORUNDADIR. Başka bir
+   nesneyle geçilen kapı, geçilmemiş kapıdır.
+② TAŞIYICI KADRAJIN EN AZ ONDA BİRİNİ KAPLAR ve değişimi TEK KLİP İÇİNDE
+   olur. Sahneler arası değişim novum DEĞİL, sayaçtır — sayaç ikinci
+   kanaldır, birinci kanal olamaz.
+③ NOVUM SAHNESİNDE İKİNCİ OLAY YOKTUR. Kuralın kanıtlandığı klipte kadrajda
+   başka hiçbir şey hareket etmez (D143'ün "zerreleri say" kuralının anlatı
+   tarafı). Rakip olay varsa kural değil rakip üretilir.
+```
+
+⛔ **VE BİR KESME LİSTESİ TESTİ:** raporların kesme listesinde novumun
+taşıyıcı sahnesi varsa, novum EKRANA GELMEMİŞTİR — listeyi tartışma, kareye
+bak [D151]. Bu, D151'in tersinden okunuşudur ve daha erken uyarır: D151
+"mercek vuruşu görmedi" der ve QA anında yakalar; bu ders "taşıyıcı
+görünecek gibi tasarlanmamıştı" der ve PLAN anında yakalar.
+
+> 🔗 Ders 151 (mercek vuruşu göremez/tersine okur — QA tarafı) · Ders 73
+> (novum türetilmiş fenomene yüklendi, 0 kare çıktı — bu dersin atası) ·
+> Ders 76 (yokluk novumu) · Ders 143 (rakip olay: sayısız toz cümlesi perdeye
+> döner) · Ders 141 (vuruş ekranda mı) · ONERME_VE_NOVUM §2/§4/§5.
+
+---
+
+## 🔴 DERS 158: BEDEL ÖDENDİKTEN SONRA KAHRAMAN 12 SAHNE BOYUNCA HİÇBİR ŞEY SEÇMEDİ — VE PLAN BUNU TEMAYLA GEREKÇELENDİRMİŞTİ; TEMA, EDİLGENLİĞİN EN İYİ SAKLANDIĞI YERDİR
+
+**Kaynak:** THE PAYLOAD QA (01.09.2026) — ④ HİKAYE 3,4/10: Karakter **2/10**,
+Duygusal Yay **2/10**, `PEAK LOCATED AT: no peak located`, `THE ONE THING
+NOTHING ELSE DOES: I could not find one`. Sahip değerlendirmesi (aynı gün):
+*"filmin hikayesi berbattı bence."*
+**Sorun:** planın kendi cümlesi savunmayı yazmıştı — *"Yanaşmayı makine yapar
+ve bu TEMANIN kendisidir"* — ve o cümle, filmin ikinci yarısında insan
+eyleminin sıfırlanmasını meşru gösterdi.
+
+```
+SAYIM (plandan, üretimden önce görülebilirdi):
+  merkezi seçim              S7-S10   (dokuz kasayı çıkarmak)
+  seçimden SONRAKİ sahne     13 adet  (S11-S23)
+  bu 13 sahnede kahramanın BEDELLİ seçimi:      0
+  bu 13 sahnede kahramanın herhangi bir eylemi: 3
+     (S11 kayışı kilitler · S15 tüpe bakar · S22 avuçlarını açar)
+  kahramanın hiç kadrajda olmadığı sahne:       6
+→ filmin ikinci yarısı bir KODADIR ve koda 13 sahnedir; kodanın tamamı,
+  gövdenin tamamı kadar uzun.
+```
+
+⭐ **MEKANİZMA — TEMA BİR ZIRHTIR VE EN ÇOK YAZARI KORUR.** "Kahraman
+edilgen çünkü tema edilgenlik hakkında" cümlesi her zaman kurulabilir ve
+her zaman doğru görünür. Ama izleyici temayı okumaz, EYLEMİ okur: bir insan
+uzanıp beklerken makine çalışıyorsa, ekranda görünen şey "insan-makine
+sınırı" değil, **bahis yokluğudur**. ④ merceğin "lack of stakes and
+friction" cümlesi tam olarak bunu ölçtü — ve mod V olduğu için bunu
+tasarımın bir sonucu olarak değil, bir kusur olarak yazdı. Haklıydı.
+
+⛔ **VE İKİNCİ EKSİK, BİRİNCİYİ BÜYÜTÜYOR: BAŞARISIZ DENEME YOK.** Aynı
+raftaki THE FROST LINE'ın omurgası bir başarısızlıktır (dış yama bir
+saniyede uçar, S5) — plan onu "ultra gerçekçilik kanıtı" diye yazar ve
+film oradan enerji alır. THE PAYLOAD'ın 24 sahnesinde kahramanın denediği
+ve TUTMAYAN tek bir şey yoktur: karar verir, uygular, kalkar, kenetlenir.
+Sürtünmesiz bir plan, kusursuz üretilse bile sürtünmesiz bir film verir.
+
+**ÇÖZÜM — PLAN KONTROL LİSTESİNE İKİ SAYIM (03_PLAN_ONCESI B2'nin altına):**
+
+```
+B2a  MERKEZİ SEÇİMDEN SONRAKİ SEÇİM SAYISI: ___
+     0 ise ikinci yarı kodadır. Koda 3-5 sahneyi geçiyorsa ya bir seçim
+     eklenir ya sahne sayısı düşer. Tema gerekçesi bu maddeyi KAPATMAZ —
+     gerekçe yazılır, sayım yine yazılır.
+B2b  BAŞARISIZ DENEME SAYISI: ___  (kahramanın yaptığı ve TUTMAYAN şey)
+     0 ise filmde sürtünme yoktur. En ucuz çözüm, mevcut bir sahneyi
+     ikiye bölmek değil, mevcut bir eylemi BİR KEZ BAŞARISIZ KILMAKTIR.
+```
+
+⚠️ **BU DERS "TEMAYI ZAYIFLAT" DEMİYOR.** Edilgenlik temanın kendisi
+olabilir — ama o zaman edilgenlik BİR SEÇİMLE kurulur: kahraman
+müdahale edebileceği bir anda müdahale ETMEMEYİ seçer ve bunu ekranda
+görürüz. Seçilmemiş edilgenlik tema değil, boşluktur.
+
+> 🔗 Ders 141 (vuruş ekranda mı — bu ders "vuruş PLANDA mı?" diye sorar) ·
+> B2 bedelli seçim maddesi (03_PLAN_ONCESI) · Ders 134 (belgesiz merceğin
+> sıralaması) · KARAKTER_VE_DUYGU §6 (tepki planı bütçesi — bu filmde bütçe
+> DOLUYDU ve yetmedi: tepki seçim değildir).

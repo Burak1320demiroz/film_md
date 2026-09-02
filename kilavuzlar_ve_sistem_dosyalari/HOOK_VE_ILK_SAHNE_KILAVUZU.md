@@ -29,11 +29,32 @@
    verisi geldiğinde §1 o veriyle revize edilir — dış sayı gerçek sayıya
    direnemez.
 
-② İKİ KANITLI AVANTAJ BİLİNÇLİ FEDA EDİLİYOR:
-   • Metin kancası (completion +%32)  → ekran metni 0,0 sn [D61/70]
-   • Hızlı açılış kesmeleri (+%36)    → tek çekim / lockoff seri kimliği
-   Bu iki açığı KOMPOZİSYON + HAREKET + SES kapatmak zorunda (§2, §5).
-   Bir sonraki ajan "araştırmada vardı" diye metin/hızlı kesme eklemesin.
+② ⭐ DÜZELTİLDİ (27.08.2026) — "İKİ KANITLI AVANTAJ FEDA EDİLİYOR"
+   KAYDI YANLIŞTI. Biri hiç feda edilmiyormuş.
+
+   • Metin kancası (+%30 bandı) → ⛔ AÇIK DEĞİL. Araştırma 2 katkıyı
+     kaynağına kadar ayrıştırdı: +%30, harflerin ekranda olmasından
+     DEĞİL, metnin üreticiye dayattığı "ilk saniyede net vaat"
+     disiplininden geliyor. Vaadi görsel taşıyan metinsiz içerik aynı
+     bandı yakalıyor (Marketing LTB · Viralish 2025 · Mishra, 46.605
+     TikTok kancası). Metin yasağı bir handikap DEĞİL, bir ödeme
+     biçimi: vaat harfle değil kadrajla yazılır.
+     ⚠️ BEDELİ VAR VE TEKTİR: yükün tamamı 0. karenin vaadi okunabilir
+     kılmasına biner → §2.1 **120 px testi artık tek taşıyıcıdır** ve
+     bugüne kadar fiilen hiç koşulmadı.
+
+   • Hızlı açılış kesmeleri (+%36) → ✅ HÂLÂ AÇIK ve bilinçli.
+     Tek çekim / lockoff seri kimliği. Bu açığı KOMPOZİSYON + HAREKET
+     + SES kapatmak zorunda (§2, §5).
+     ⚠️ Araştırma 4 bu açığın büyüklüğünü ölçtü: yüksek performans
+     gösteren AI bilim-kurgu dikey içeriğinin TAMAMI 2,5-4,0 saniyede
+     bir kesiyor. Depo 8-10 saniyede, sahne içi 0 kesmeyle çalışıyor —
+     rakip setten 2-4 KAT sapma. Bu ya deponun imzası ya mezarıdır ve
+     YAYIN OLMADAN ÇÖZÜLEMEZ. (Rakip tablosunun yapı sütunları ölçüm
+     değil çıkarımdır — yön olarak alınır, sayı olarak alınmaz.)
+
+   Bir sonraki ajan "araştırmada vardı" diye ekran metni eklemesin:
+   yasağın gerekçesi değişti ama yasak DEĞİŞMEDİ [D13/D45/D61/D70].
 
 ③ ÖLÇÜLMÜŞ PLATO: Kanca skoru bugüne kadarki tüm satırlarda 5-6 bandında
    (03_HIKAYE ve 05_SHORTS tablolarının Kanca sütunları). Bu kılavuzun
@@ -182,6 +203,11 @@ frame reveal'siz kilitlenir.
    cezalandırır. Çözüm bilgi eşitliği: KARAKTER DE BİLMİYOR olmalı.
    Karakterin bildiğini izleyiciden saklamak clickbait'tir; karakterle
    izleyicinin aynı anda öğrenmesi dramaturjidir.
+   ⭐ 27.08.2026 — SUİSTİMAL EŞİĞİ ÖLÇÜLDÜ: yapay geciktirme 25.
+   saniyede güven cezasına çarpıyor; o saniyeden sonra izleyici kancayı
+   "izlenme süresi çalma" olarak okuyup terk ediyor. Bilgi eşitliği bu
+   eşiği dakikalarca öteliyor — kuralın gerekçesi artık sayıyla duruyor.
+   ⚠️ AMA BİLGİ EŞİTLİĞİ TEK ARAÇ DEĞİL — bkz. §3.1.
 
 ③ KARAKTER EYLEM HÂLİNDE
    S1 bir tepki sahnesi değildir (bakakalma yasak). Karakter meslek
@@ -198,6 +224,97 @@ sahnesidir — yeniden yazılır.
 YATAY EK KAPISI: katalizör 0:15'i geçemez (vuruş tablosu §2.2) —
 katalizör S1'in içinde ya da sonunda patlar, S2'ye sarkmaz.
 ```
+
+---
+
+## 3.1 ⭐ İKİ AYRI ARAÇ: BİLGİ EŞİTLİĞİ ve DRAMATİK İRONİ
+
+> **Eklendi 27.08.2026 (araştırma 3).** Depo bugüne kadar bu ikisini tek
+> araç sandı ve yalnız birincisini kullandı: **16 dikey filmin 16'sı da
+> bilgi eşitliği filmidir.** İkisi zıt değil, farklı iş yapar — ve
+> ikincisi deponun kanca platosunun (5-6, §0③) en olası açıklamasıdır.
+
+**Ölçüm:** Cabañas, Senju & Smith (2023), *Frontiers in Psychology*, N=42.
+Dramatik ironi sahneleri göz izleme, fMRI ve deri iletkenliğiyle ölçüldü.
+Bulgu: **karakter sakinliğini korudukça izleyicinin fizyolojik uyarımı
+PARABOLİK olarak artıyor.** Tetikleyen mekanizma Spontan Zihin Kuramı
+(SToM): izleyici karakterin bilmediğini fark ettiği anda gerilim doğuyor.
+
+```
+┌─ BİLGİ EŞİTLİĞİ ─────────────  karakter de bilmiyor
+│  SATIN ALDIĞI     güven · ortak keşif · 25 sn Zeigarnik eşiğinin
+│                   dakikalara uzaması
+│  KORUDUĞU         izleyicinin "kandırılmıyorum" hissi
+│  ZAYIF YANI       bahis yok → orta bölümü tek başına taşıyamaz
+│
+└─ DRAMATİK İRONİ ────────────  İZLEYİCİ biliyor, karakter bilmiyor
+   SATIN ALDIĞI     orta bölüm tutundurması · parabolik fizyolojik gerilim
+   KORUDUĞU         karakterin sakinliği — panik yasağı MEKANİZMANIN
+                    KENDİSİDİR, engeli değil [SHORTS_SISTEM_PROMPTU md.5]
+   BEDELİ           reveal erken harcanır; açık döngü "bu ne?"den
+                    "ne zaman görecek?"e döner — ve o sorunun SÜRESİ var
+```
+
+### Hangisi ne zaman
+
+```
+S0-S1'de   BİLGİ EŞİTLİĞİ  → soru kurulur, güven kurulur (② aynen geçerli)
+S2-S4'te   DRAMATİK İRONİ  → izleyiciye karakterin göremediği bir şey verilir
+```
+
+⚠️ **İkisi aynı anda aynı nesne üstünde çalışmaz.** İroni ikinci bir
+nesne/olgu üstünden kurulur: karakterin çözmeye çalıştığı şey değil, onu
+çözerken FARK ETMEDİĞİ şey.
+
+### Metinsiz, diyalogsuz, lockoff bir kadrajda ironi nasıl kurulur
+
+Depo kısıtları (0 metin · 0 replik · 1 sabit çekim · vizör kilidi) ironiyi
+yasaklamaz — **sadece kadrajın karakterin görüş alanından GENİŞ olmasını
+şart koşar.** Beş meşru taşıyıcı:
+
+```
+① ARKA PLAN OKUR       değişim karakterin ARKASINDA/ÜSTÜNDE; kask periferi
+                       kapatıyor. Kamera görüyor, o görmüyor.
+② ZEMİN OKUR           karakterin BASTIĞI yüzeyin altında/içinde bir şey
+                       (Open Seam'in berrak buzu bunun hazır zeminidir)
+③ VİZÖR TERSİNE ÇALIŞIR  yansıma izleyiciye bilgi verir; karakter yansımaya
+                       değil ileriye bakıyor [DIKEY_MIKRO_DRAMA §4]
+④ CETVEL İZLEYİCİDE    ölçek/mesafe/saat kadrajda okunur, karakterin
+                       aletinde okunmaz — ölçüyü izleyici yapar
+⑤ BEDEN DİLİ GECİKMESİ  karakter hâlâ önceki duruma göre davranıyor;
+                       gecikme kinesik komutla yazılır [§4 kinesik dil]
+```
+
+```
+SAYISAL KİLİT — dramatik ironi kullanan planda
+  □ ASİMETRİ ANI     hangi saniyede izleyici karakterden ÖNE geçiyor
+  □ TAŞIYICI         yukarıdaki beşten hangisi (tek tane — ikisi bölünür)
+  □ KAPANIŞ          karakter hangi sahnede öğreniyor; öğrenmiyorsa
+                     bunun bilinçli olduğu ve neyi satın aldığı yazılır
+  □ SAKİNLİK KORUNUR  karakterin paniklediği kare sayısı = 0 (mekanizma
+                     karakterin sakinliğidir — panik ironiyi ÇÖZER)
+```
+
+### Neden bu bölüm yazıldı — bahissiz huşunun eğrisi
+
+⚠️ **Kaynaksız ama mekanik olarak tutarlı bulgu (araştırma 3):** bahis ya
+da görünür saat taşımayan saf huşu/saf merak içeriğinin tutundurma eğrisi
+**8-12. saniyede uçurum** yapıyor; görünür bir geri sayım/tehdit taşıyan
+içerik ise kademeli düşüşle **25-30. saniyeye** kadar taşıyor.
+
+> Deponun ızgarası 6 × 8 s. Bu sayı doğruysa uçurum **tam S0/S1 sınırına**
+> düşüyor — ve dikey hattın ölçülmüş en düşük hikâye skoru (Wrong Shadow
+> 3.0, Tutundurma 3) ile kanca platosu bununla hizalanıyor. Hizalanma
+> kanıt değildir; sayı ilk gerçek retention eğrisiyle sınanacaktır (§0①).
+
+### Plana yazılan satır
+
+```
+BİLGİ ASİMETRİSİ: [YOK / DRAMATİK İRONİ · taşıyıcı ① - ⑤ · asimetri anı 0:XX]
+```
+
+Satır **zorunludur**; "YOK" yazmak meşru bir karardır ama yazılmamış olması
+değildir — çünkü depo 16 filmde 16 kez farkında olmadan "YOK" yazdı.
 
 ---
 
@@ -237,6 +354,23 @@ katalizör S1'in içinde ya da sonunda patlar, S2'ye sarkmaz.
    yazılır; yazılmamış sessizlik eksik miks sanılır.)
 ④ TELEFON HOPARLÖRÜ: sub-bass tek başına duyulmaz — hook sesi 90 Hz
    üstü bir taşıyıcı ister (müzik kılavuzu §15.1 ile aynı kural).
+   ⭐ 27.08.2026 — SAYI VE TEKNİK: telefon sürücüsü 150 Hz altını
+   fiziksel olarak üretmiyor; sinematik etki için konan 20-60 Hz
+   vuruşlar telefonda YOK hükmünde ve vuruculuk ~%40 düşüyor.
+   Çözüm MISSING FUNDAMENTAL: üretilemeyen temelin üst armonikleri
+   (50 Hz için 100/150/200 Hz) sese yoğun biçimde eklenir; beyin
+   duymadığı temeli "duyduğunu" varsayar. Tam uygulama:
+   GOOGLE_FLOW_MUSIC_URETIM_KILAVUZU §15.1.
+
+⑥ SESSİZ İZLEME PAYI ÖLÇÜLDÜ: akış içi videoların ~%85'i sessiz
+   başlıyor (Manchester Digital 2025-26); TikTok istisna — orada
+   ses açık oranı %93 bandında. Yani ses tasarımı bu seride
+   İKİNCİ kanaldır, birinci değil: anlam sessiz okunmalı
+   [DIKEY_MIKRO_DRAMA §4], ses açık izleyici için ÜSTÜNE kurulur.
+   ⚠️ Erken müzik girişi ölçülen en kötü seçenek: uzun enstrümantal
+   giriş (intro buildup) izleyiciye "reklam" sinyali veriyor ve
+   3. saniyeden önce kaydırtıyor. Sıralama: tek diegetik ses >
+   mutlak sessizlik > erken müzik.
 ⑤ FEDA DENGESİ: metin kancası yasak olduğu için (bkz. §0-②) sesin
    kanca yükü bu seride ortalamadan BÜYÜKTÜR. Sessiz filmde bile ilk
    2 saniyenin ses tasarımı "yok" değil "bilinçli sessizlik" olmalı.
@@ -293,11 +427,17 @@ SIRA:
 □ S0 soru cümlesi plana YAZILDI mı? (§2.5)
 □ 0. kare tarifi: örüntü kesintisi + süren hareket + 120 px
   okunurluğu (§2.1-2.2)
+  ⛔ 120 px testi artık TEK yük taşıyıcıdır (§0②) ve GÖZLE değil
+     MAKİNEYLE koşulur: kare 120 px'e indirilir, kontrast/entropi
+     ölçülür. Koşulmadıysa madde işaretlenmez.
 □ Reveal ikili kilitte mi [D71]; 0:03'te yeni bilgi var mı? (§2.4-2.5)
 □ S1'in İKİNCİ BİLGİSİ tanımlı mı; S1 sonunda soru değişiyor mu —
   yatayda katalizör ≤0:15 mi? (§3)
+□ ⭐ BİLGİ ASİMETRİSİ satırı yazıldı mı (§3.1)?
+  [YOK / DRAMATİK İRONİ · taşıyıcı ①-⑤ · asimetri anı 0:XX]
+  "YOK" meşru karardır; yazılmamış olması değildir.
 □ İlk 2 sn ses kararı yazılı mı (diegetik tek ses / bilinçli
-  sessizlik)? (§5)
+  sessizlik)? Erken müzik girişi elendi mi? (§5)
 □ Hook sorusu ↔ kapanış imajı çifti kuruldu mu; S0, loop satırıyla
   tutarlı mı? (§6)
 ```

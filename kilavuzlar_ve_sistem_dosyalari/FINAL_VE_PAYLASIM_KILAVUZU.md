@@ -161,6 +161,35 @@ tek meşru yol kalır: **görsel ahlaki/mantıksal ikilem.**
 kaygı, öfke. Düşük uyarımlı duygular (hüzün, tatmin, sükûnet) izlettirir ama
 paylaştırmaz. İzleyici paylaşırken içeriği değil **kendi kimliğini** yayınlar.
 
+> ⭐ **27.08.2026 — DOĞRULANDI VE AYRIŞTIRILDI (araştırma 3).**
+> Bu bölümün "huşu VEYA kaygı, ikisi zıt valanstadır" kuralı ayakta.
+> Yeni olan şu: **iki kol aynı davranışı satın almıyor.** Xi vd. (2024),
+> *International Journal of Electronic Commerce*, 102.031 Douyin videosu —
+> ayrık duygular etkileşimi bölüyor:
+>
+> | Duygu | Satın aldığı davranış |
+> |---|---|
+> | **Huşu / hayranlık** | **Paylaşım** (huşu içerikleri ~%34 daha hızlı yayılıyor) |
+> | **Kaygı / gerilim** | **Kaydetme + yorum** — paylaşım DEĞİL |
+> | **Şaşkınlık** | **Yorum + tekrar izleme** |
+> | Hüzün | üçünü de birden baskılıyor (paylaşım −%16) |
+>
+> **Karar kuralı buradan çıkar:** hangi kolun seçileceği estetik değil,
+> **hangi metriğin istendiği** sorusudur.
+> ```
+> Paylaşım istiyorsan          → HUŞU yuvası (ve final tipi TWIST, §2)
+> Yorum ve kaydetme istiyorsan → KAYGI yuvası (ve final MUĞLAK, §2)
+> Tekrar izleme istiyorsan     → ŞAŞKINLIK (ve final DÖNGÜ, §2)
+> ```
+> ⚠️ **VE BERGER-MILKMAN MODELİNİN KISA VİDEODA ÇÖKEN YANI:** "düşük
+> uyarım viraliteyi öldürür" tezi kısa dikey formatta geçersiz. Düşük
+> uyarımlı içerik (ASMR sınıfı) bilişsel yükü düşürüyor, kaydırmayı
+> yavaşlatıyor, döngüye giriyor ve algoritma bunu ödüllendiriyor.
+> Yani deponun sakin kaydı erişimi öldürmüyor — **paylaşım yerine
+> tekrar izleme satın alıyor.** Bu meşru bir stratejidir ama plana
+> yazılması gerekir; farkında olunmadan seçilirse film "kimse
+> paylaşmadı" diye başarısız sanılır.
+
 ```
 SAYISAL KİLİT — her filmde en az bir PAYLAŞIM SAHNESİ
 

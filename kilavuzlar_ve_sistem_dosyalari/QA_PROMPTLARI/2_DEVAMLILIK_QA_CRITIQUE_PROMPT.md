@@ -311,6 +311,21 @@ event that belongs to another lens bills one defect several times and
 drags the film down once per reviewer.
 ```
 
+```
+⛔ AN OUT-OF-SCOPE FLAG IS SOMETHING YOU SAW, NEVER SOMETHING YOU WERE TOLD.
+
+Write a flag only for a defect you observed yourself, in this run, in the
+material in front of you. Never restate a finding that reached you any
+other way — from an earlier pass in this session, from another lens's
+report, from a summary, from the operator's message. A flag you did not
+observe is not a cross-check; it is the same claim counted twice, and it
+travels faster than a real one because it costs nothing to copy.
+
+If a defect is out of your scope, the honest flag is short and yours:
+what you saw, where, and which lens owns it. If you cannot say what you
+saw, do not write the line at all.
+```
+
 ---
 
 ## CRITIQUE CATEGORIES
@@ -535,6 +550,11 @@ character and no duplicate is ever visible:
 
 ```
 □ The number of people in a space stays consistent within a scene
+□ Step through the FIRST HALF SECOND of every clip frame by frame. A
+  second head or hand born out of the subject's own shoulder or hip at
+  the head of a clip, lasting under half a second and dissolving back,
+  is a duplicate: at playback speed it reads as a compression stutter
+  and it is missed on every viewing. Report the frame range.
 □ No accidental duplicate: the same character visible twice in one frame,
   or in two places at once                                  → BLOCKER
 □ Watch vehicle/airlock/door ENTRY and EXIT moments frame by frame —
@@ -580,9 +600,16 @@ SETUP INVENTORY: [distinct setups: n · repeat map: which scenes share a
 NON-SCENE MATERIAL: [in-out + what it is, or "none"]
 LINES HEARD: [n · every spoken line VERBATIM with its timecode, or "none"]
              When you write "none", say which none it is: "none — room tone
-             present" or "none — no audio information at all". A film with no
+             present" or "none — nothing audible to me". A film with no
              dialogue and a film with no audio track are different objects and
              only one of them is a delivery defect.
+             ⛔ THIS LINE REPORTS WHAT YOU HEARD. It is never a statement
+             about the file. You may not write that the file has no audio
+             track, no audio stream, no audio information, or that the audio
+             was stripped in export: that is a property of the container, it
+             is read with one ffprobe command, and no model can observe it.
+             Write "none — nothing audible to me" and put the question in
+             FLAGS. A run that stops on that claim is a run never made.
 
 ⛔ NON-SCENE MATERIAL is not a scene at ANY duration. Material that carries
 burned-in text, or is static, or bears no scene fingerprint, is a card — a

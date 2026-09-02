@@ -341,6 +341,53 @@ vuruşu ("bir manzara daha") fragmanı teaser'dan özete çevirir — yasak.
 
 ---
 
+## 2.3 ⭐ HUNİ PARAMETRELERİ — dikey fragman kaç tane, hangi kadansta
+
+> **Eklendi 27.08.2026 (araştırma 4).** Bu parametreler **yalnız FRAGMAN
+> hattına aittir.** Bağımsız dikey film hattına uygulanmaz — o hat
+> `DIKEY_MIKRO_DRAMA_KILAVUZU.md` §6'ya göre BAĞIMSIZ olmak zorundadır ve
+> araştırmanın huni önerisi orada bilinçli olarak reddedilmiştir. İki hat
+> karışırsa depo yarım bırakılmış dikey filmler üretmeye başlar.
+
+```
+DÖNÜŞÜM BANDI (dikey → yatay uzun form)
+  %0,5 - 5      ← 27.08.2026'da %0,1-0,5'ten revize edildi
+  ⚠️ Üst uç tek bir üreticinin paylaştığı kanal verisidir (200 izlenmelik
+     Shorts'tan uzun forma 10 tıklama). Zayıf kaynak. Alt uç bile bir
+     dağıtım stratejisi kurmaya yeter, üst uca güvenilmez.
+
+70/20/10 İÇERİK DAĞILIMI — dikey üretimin bileşimi
+  %70   uzun bir filme bağlı FRAGMAN (bu kılavuz)
+  %20   bağımsız dikey film (DIKEY_MIKRO_DRAMA — kendi kuralları)
+  %10   süreç / kamera arkası / fizik defteri anlatımı
+        ⭐ Bu %10 depoda hazır malzemedir ve AI algısına karşı da
+           çalışır [DIKEY_MIKRO_DRAMA §6.1 ①]: elle türetilmiş
+           sayıların gösterilmesi insan yazarlığının belgesidir.
+
+YAYIN KADANSI
+  Uzun form : dikey  =  1 : 2  ya da  1 : 3
+  → hibrit kanalların tek hatlı kanallara göre ~%41 daha hızlı büyüdüğü
+    ölçüldü; sadece dikey ya da sadece yatay üreten kanal geride kalıyor
+
+SABİTLENMİŞ YORUM
+  Fragmanın altına uzun form linki SABİTLENİR → toplam izlenme süresinde
+  ~%20 artış. Bu, deponun kullanmadığı en ucuz tek kaldıraçtır.
+  ⛔ Link YORUMDA durur, KAREDE değil — metin yasağı [D61/70] kareyi
+     kapsar, yorum alanını değil.
+```
+
+```
+⚠️ YANLIŞ KİTLE TUZAĞI — ölçülmüş ve deponun düşme ihtimali yüksek
+  Uzun formda ağır bir konu anlatan kanalın dikey tarafta algoritma
+  sevsin diye alakasız içerik üretmesi, geçişi SIFIRLAR: gelen kitle
+  uzun forma hiç tıklamaz, tıklarsa ilk saniyelerde çıkar ve kanalın
+  ortalama izlenme süresini AŞAĞI çeker.
+  → Dikey ve yatay hat AYNI evrenden beslenmek zorundadır
+    (SERI_VE_KANAL_STRATEJI §2 evren çatısı).
+```
+
+---
+
 # 3. 🖥️ YATAY FRAGMAN KARTI — 16:9 · 8-12 vuruş
 
 ```

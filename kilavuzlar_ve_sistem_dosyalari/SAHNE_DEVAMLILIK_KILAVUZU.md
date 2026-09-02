@@ -58,8 +58,17 @@ Karakterin fiziksel tanımı projede BİR KEZ yazılır ve tüm sahnelerde
 HİÇBİR KELİME DEĞİŞTİRİLMEDEN kopyala-yapıştır olarak kullanılır.
 
 ✅ DOĞRU: Her sahnede aynı karakter bloğu:
-   "31-year-old Turkish woman, warm olive-tan skin, visible pores,
+   "31-year-old woman, warm olive-tan skin, visible pores,
     dark brown chin-length bob, navy-blue EVA suit..."
+
+⛔ MİLLİYET YAZILMAZ — 01.09.2026 DÜZELTMESİ.
+   Bu örnek 31.08'e kadar "31-year-old TURKISH woman" yazıyordu ve
+   §7'nin DOĞRULANMIŞ red kuralıyla çelişiyordu ("Israeli-American"
+   → üretim reddi, LOW POWER). Örnek kopyalandı: üç filmin canlı
+   promptlarında milliyet ifadesi bulundu (09_URETIM_RED_DEFTERI §3).
+   Çapa milliyetten değil FİZİKSEL TANIMDAN gelir — ve fiziksel tanım
+   zaten daha iyi çapadır (model milliyeti çizemez, ten tonunu çizer).
+   → prompt_kontrol.py ⑯ bunu artık BLOCK olarak yakalar.
 
 ❌ YANLIŞ: Sahneden sahneye kelime değişikliği:
    Sahne 1: "olive-skinned woman with short dark hair"
@@ -74,7 +83,7 @@ HİÇBİR KELİME DEĞİŞTİRİLMEDEN kopyala-yapıştır olarak kullanılır.
 "Astronot bir koridorda yürüyor."
 
 ✅ GÜÇLÜ (çapalanmış):
-"A 31-year-old Turkish woman in a navy-blue EVA suit walks slowly
+"A 31-year-old woman in a navy-blue EVA suit walks slowly
 through a 5-meter-wide curved alien corridor made of dark metallic-
 green alloy. Her helmet headlamp casts a single narrow cone of cool
 white light into the darkness ahead. The camera follows her at waist

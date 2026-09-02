@@ -102,7 +102,12 @@ kısafilmler/
 │                                     klasörün 00_README.md'sinde yazılı
 │
 ├── yatay_3_5_dk_filmler/          16:9 · 25 sahne × 10s · 4:09
-│                                  film başına KLASÖR (PLAN+PART_A+PART_B+KAPAK)
+│                                  film başına KLASÖR
+│
+│   ⭐ 01.09.2026 — YENİ FİLMLERDE KLASÖR İSKELETİ HER FORMATTA AYNI:
+│      PLAN · BOLUM_1 · BOLUM_2 · KAPAK · MUZIK · YAYIN_PAKETI · QA_SPEC
+│      Tanım: KILAVUZ_REHBERI §2.0 · kopya: FILM_KLASOR_SABLONU/
+│      (eski filmler olduğu gibi kalır; yeniden bölünmez)
 │
 ├── yatay_7_9_dk_filmler/          16:9 · 60 sahne × 8s · 8:00
 │   └── kilavuzlar/                start/end frame zinciri + 3 geçişli QA
@@ -238,9 +243,15 @@ kilavuzlar_ve_sistem_dosyalari/
 │       ⚠️ Üçü de kökte duruyor ama QA promptları ayrı klasörde.
 │          Aynı ayrımın iki tarafında — birleştirilmeli.
 │
+├── 🗂️ FILM_KLASOR_SABLONU/ .............. film klasörü iskeletinin KOPYASI
+│   │                                      7 dosya taslağı · `cp -r` hedefi
+│   └──                                    tanım: KILAVUZ_REHBERI §2.0
+│
 ├── 🔬 PROMPT_KONTROL/ ................... üretimden ÖNCE koşan sıfır maliyetli kapı
 │   ├── prompt_kontrol.py ................ sayar: uzunluk · yasak kelime ·
 │   │                                      çekirdek imzası · GO/FIX/BLOCK
+│   │                                      ⭐ KLASÖR MODU: film klasörü verilir,
+│   │                                      bölümler birleşir (01.09.2026)
 │   │                                      (akıştaki yeri: REHBER §6 adım 3.5)
 │   ├── PROMPT_QA_CRITIQUE_PROMPT.md ..... yargılar: kilit SAYI mı TARİF mi
 │   └── RAPORLAR/ ........................ koşu raporları

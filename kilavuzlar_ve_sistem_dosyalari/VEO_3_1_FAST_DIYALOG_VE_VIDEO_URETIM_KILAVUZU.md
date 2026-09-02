@@ -58,7 +58,7 @@ Zarflar (`in a weary voice`, `angrily`, `softly whispers`, `excitedly`) sesin ak
 | :--- | :--- | :--- | :--- |
 | **Kamera Açısı ve Kadraj** | **Orta Yakın Çekim (Medium Close-Up)**, Omuz Çekimi, Doğrudan Bakış. | Geniş Çekim (Wide Shot), Tam Profil, Tepe Kamerası (Overhead). | Geniş çekimde ağız piksel ızgarasında küçük kalır. Yakın çekim yüz detaylarını odaklamaya zorlar. |
 | **İstenmeyen Metinler (Subtitles)** | Negatif alana veya komut sonuna `no subtitles!` veya `No subtitles` eklemek. | Alt yazıları engellemek için hiçbir önlem almamak. | Model eğitim verisinden ötürü ekrana otomatik altyazı koyabilir; altyazı dudak çizgisini bozar. |
-| **Kelime Ekonomisi ve Süre** | Diyalogları **5 saniyenin altında**, kısa ve vurucu tutmak. | 8 saniyelik klibin tamamını dolduran uzun tiratlar yazmak. | 5 saniye üstü diyaloglarda ses kesilebilir veya zamanla çerçeve kayması (frame drift) oluşur. |
+| **Kelime Ekonomisi ve Süre** | Diyalogları **5 saniyenin altında**, kısa ve vurucu tutmak. | 8 saniyelik klibin tamamını dolduran uzun tiratlar yazmak. | 5 saniye üstü diyaloglarda ses kesilebilir veya zamanla çerçeve kayması (frame drift) oluşur. Taşmanın ikinci belirtisi: konuşma doğal olmayan biçimde HIZLANIR. Ön test: repliği sesli okuyup süresini tut.† |
 | **Ses Netliği (Audio Isolation)** | Ortam seslerini sınırlamak, komuta `Clean dialogue only` eklemek. | Şiddetli yağmur, müzik ve patlamayı aynı anda talep etmek. | Çok fazla ses katmanı diyaloğu boğar. Temiz diyalog post-prodüksiyonda müzik ekleme esnekliği sağlar. |
 
 ---
@@ -100,6 +100,38 @@ Sahneler arası karakter morflanmasını önlemek için **Master Seed (Ana Tohum
 1. **Referans Portre Yaratımı:** Gemini 2.5 Flash / Dzine ile yüksek kaliteli karakter portresi üretilir (`Main-Character-Shot-1`).
 2. **Referans Yükleme:** Veo 3.1 Fast sistemine en fazla **3 adet referans görsel** (Ön görünüm, Kıyafet, Arka Plan) yüklenir.
 3. **Metin ile Çapraz Doğrulama (Cross-Validation):** Görsel referans yüklense dahi metin komutuna karakter özellikleri (`woman in matte grey suit`, `dark hair`) tekrar yazılmalıdır.
+4. **Prompt İçinde Referans Atfı:** Yüklenen referanslara metinde açıkça atıf yapılır: *"The character from reference_1 walks into the location from reference_2 holding the object from reference_3."*†
+
+---
+
+## 🎞️ 6B. İMAJDAN-VİDEOYA (FIRST FRAME) — I2V KURALLARI †
+
+Hattın akışı imaj-önce-video olduğu hâlde bu mod belgesizdi (27.08.2026'da
+eklendi). Onaylı imaj **ilk kare** olur; prompt artık sahneyi değil yalnız
+HAREKETİ yönetir.
+
+```
+I2V PROMPT KURALLARI
+  ⛔ Statik öğeyi YENİDEN TARİF ETME — imaj zaten taşıyor. Yeniden tarif,
+     modeli o öğeyi yeniden üretmeye çağırır (kayma riski).
+  □ Yalnız şunlar yazılır: hareket · kamera · ışık DEĞİŞİMİ · ses.
+  □ Kimlik koruması: prompta `maintain the subject from the first frame`
+     satırı eklenir.
+  □ İmaj ile prompt ÇELİŞEMEZ (imaj loşsa "bright sunny day" yazılmaz) —
+     iç çelişki kareyi birkaç saniyede eritir.
+```
+
+Örnek (İngilizce, hat standardı; ses ortama uyarlanır):
+
+> *Maintain the subject from the first frame. Slow push-in. She exhales,
+> her eyes shift to the left, one strand of hair falls across her forehead.
+> Warm rim light grows stronger. Audio: soft breath, low cabin hum.
+> Duration: 6 seconds.*
+
+⚠️ **§6 ile ayrım — iki modun kimlik stratejisi FARKLIDIR:** Ingredients
+modunda (çoklu referans) karakter özellikleri metne TEKRAR yazılır (§6.3).
+First Frame modunda uzun kimlik tekrarı GEREKMEZ — `maintain...` satırı +
+kısa çapa yeter. Karıştırılırsa ya kimlik kayması ya iç çelişki üretilir.
 
 ---
 
@@ -115,7 +147,7 @@ Görsel eylem ile ses `as`, `when`, `while` bağlaçlarıyla senkronize edilmeli
 * **Orta Plan (Midground):** Çevresel etki sesleri (`footsteps clicking`).
 * **Arka Plan (Background):** Ortam akustiği (`faintly`, `in the distance`, `softly`).
 
-> **Komut Etiketleri:** Metinsel girdileri ayırmak için `Audio:`, `SFX:`, `Ambient:`, `Background music:` etiketleri kullanılmalıdır.
+> **Komut Etiketleri:** Metinsel girdileri ayırmak için `Audio:`, `SFX:`, `Ambient:`, `Background music:` etiketleri kullanılmalıdır. Anlık ses olayları için üçüncü biçim satır içi parantezdir: *(a loud thunderclap)* · *(key turning in a lock)*.†
 
 ---
 
@@ -154,6 +186,9 @@ Görsel eylem ile ses `as`, `when`, `while` bağlaçlarıyla senkronize edilmeli
 | **Sessiz Video Çıktısı (No Audio)** | Kalite ayarlarının "Preview" modunda kalması veya ses emrinin metin sonuna gizlenmesi. | Ayarları **"Highest Quality"** moduna alın. Ses komutlarını (`Audio:`, `SFX:`) komutun en başına yazın. |
 | **Diyalog ve Dudak Uyuşmazlığı** | Cümlenin 8 saniyeyi aşması veya çoklu karakter olması. | Her sahnede **tek konuşmacı (Single speaker)** kullanın. Diyaloğu **<5 saniye** tutun. |
 | **Arka Plan Sesinin Diyaloğu Yutması** | Ses hiyerarşisi belirtilmeden rastgele ses yığılması. | Diyalog için `loud` zarfını kullanın, ortam sesini `faintly` yapın. Katman sayısını 3 ile sınırlayın. |
+| **Dudak Senkronu Zayıf (Sentaks)** † | Lead-in fiilden sonra virgül kullanımı. | Virgülü iki noktaya çevirin — `says: "..."` formu çoğu koşuda virgülden güvenilirdir; lead-in fiilin (says/whispers/shouts) varlığını doğrulayın. |
+| **Mood Kelimesi Nesne Rengini Değiştiriyor (Concept Bleed)** † | Atmosfer tanımı kimlik cümlesine sızıyor. | Kimlik cümlesi ile stil/atmosfer cümlesini AYIRIN; mood kelimesini kimlik cümlesinden uzak tutun, kimlik tanımını değiştirmeden yeniden sıralayın. |
+| **Kamera Yönergesi Yok Sayılıyor** † | Kamera tarifi promptun ortasına gömülü. | Prompta KAMERAYLA başlayın — baştaki "Wide aerial shot", ortadaki süslü tariften güçlüdür. |
 
 ### ⏩ Video Extensions & Zaman Damgaları (Timestamp Prompting)
 * **Kademeli Uzatma (Video Extension):** 5 saniyelik temel klip üretildikten sonra `Extend` veya *first/last frame* fonksiyonuyla video 60 saniyeye kadar uzatılabilir.
@@ -161,6 +196,33 @@ Görsel eylem ile ses `as`, `when`, `while` bağlaçlarıyla senkronize edilmeli
 
 ---
 
+## ⚖️ 11. AÇIK KAYITLAR (27.08.2026)
+
+```
+① UZUNLUK BANDI ÇELİŞKİSİ — KARAR DEĞİŞMEDİ, ÖLÇÜM BEKLİYOR
+   İki bağımsız dış kaynak (visual-skills veo referansı: 50-200 kelime ·
+   video-prompt derin araştırması: 80-120 kelime) hattın düzyazı bandından
+   (REHBER §7) belirgin biçimde KISA bant öneriyor ve "uzun prompt →
+   model seçmece yapar (cherry-picks)" diyor. Bant ölçüm yapılmadan
+   DEĞİŞTİRİLMEZ; test tarifi: aynı sahne iki bantla üretilir, deneme
+   (re-roll) sayısı kıyaslanır.
+
+② JSON KARARI — ARŞİVE EK KAYIT
+   §5'teki yasak, şablonun İÇERİĞİ yüzündeydi (yasaklı terimler + karakter
+   sınırı). İkinci bağımsız kaynak JSON'u süreklilik / concept-bleed önleme
+   için doğruluyor. Format kararı sahip tarafından yeniden
+   değerlendirilebilir; o güne dek hat DÜZYAZI kullanır.
+```
+
+---
+
 ## 📌 SONUÇ
 
 Veo 3.1 Fast; Tırnak İşareti Sentaksı, JSON komut mimarisi, Nedensel Bağlama (Causal Binding) ve ElevenLabs Sync 3 hibrit iş akışları ile birleştirildiğinde yapay zeka sinemacılığında stüdyo kalitesinde diyaloglu sahneler üretmenin en güçlü aracıdır.
+
+---
+
+> **†** işaretli maddeler ve 6B bölümü şu kaynaktan damıtılmıştır:
+> **Serge Shima — github.com/smixs/visual-skills** (CC BY 4.0, atıf zorunlu)
+> · eklenme: 27.08.2026. Örnekteki ses/lens ayrıntıları hat kurallarına
+> uyarlanmıştır (lens sayısı ve ortam-dışı sesler çıkarıldı).

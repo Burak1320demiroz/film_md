@@ -71,6 +71,56 @@ Yayın bir üretim adımıdır; kaydı tutulmayan yayın ölçülemez.
 > önce hangi üretim değişkeni sorgulanır. Eşikler dış kaynaktır (§0①).
 > ⛔ Hiçbir satır §3'teki minimum örneklem sağlanmadan işletilmez.
 
+## 2.0 ⭐ ÖNCE HİYERARŞİ — üç platform aynı şeyi ödüllendirmiyor
+
+> **Eklendi 27.08.2026 (araştırma 1).** Aşağıdaki tablolar metrikleri
+> yan yana listeliyordu ve hangisinin ÖNCELİKLİ olduğunu söylemiyordu.
+> Bu, deponun süre tartışmasını yıllarca çözemeyen sebebiydi: üç
+> algoritma üç farklı şeyi kapı olarak kullanıyor.
+
+```
+YouTube Shorts   →  VSA İLK KAPIDIR (>%70). Geçilmezse "seed" aşamasında
+                    dağıtım durur; AWT ne kadar yüksek olursa olsun.
+                    Kapı geçildikten SONRA erişimi AWT + memnuniyet belirler.
+                    ⭐ VSA süreyle ilgili DEĞİL — 0. kareyle ilgili.
+
+TikTok           →  TAMAMLANMA ORANI (CR) mutlak belirleyici. Algoritmanın
+                    ağırlığının en büyük payı sona ulaşma yüzdesinden gelir.
+                    Kısa süre yapısal avantaj.
+
+Instagram Reels  →  SENDS PER REACH (erişim başına DM gönderimi).
+                    Yeni kitleye ulaşımın tek üst sinyali. İzlenme
+                    süresinden bile güçlü. Yavaş yanan gerilim avantajlı.
+                    ⚠️ Mosseri paradoksu: "watch time en önemli sinyal"
+                    beyanı MEVCUT takipçiye (Home Feed) ulaşmak içindir;
+                    yeni kitle (Explore/Reels) sends ile açılır. İkisi
+                    çelişmez, farklı yüzeylere hizmet eder.
+```
+
+**Bu hiyerarşiden çıkan üretim kararı:**
+
+```
+□ PLATFORM ÖNCE SEÇİLİR, SÜRE ONDAN TÜRER — tersi değil.
+  48 s ızgarası TikTok'ta en kötü, Instagram'da en iyi, YouTube
+  Shorts'ta KONU DIŞI seçimdir (orada tek kapı 0. karedir).
+□ Aynı film üç platforma birden yükleniyorsa, üç farklı sayının
+  ÜÇÜNÜ DE ayrı okumak zorunludur. Tek "başarılı/başarısız" hükmü
+  verilemez.
+□ ⛔ VERİ YANILSAMASI KAYDI: TikTok 1. saniyeyi görüntülenme sayıp
+  hemen kaydıranı ağır cezalandırırken, YouTube 31.03.2025'ten beri
+  0. saniyeyi bile public view sayıyor. Aynı film iki platformda
+  YouTube'da "başarılı", TikTok'ta "başarısız" görünebilir ve ikisi
+  de doğrudur. Karşılaştırma yalnız ORANSAL metrikler üzerinden yapılır.
+```
+
+> ⭐ **İLK YAYIN İÇİN ÖNERİ:** YouTube Shorts. Sebebi tercih değil
+> ölçüm ekonomisi — orada tek kapı VSA'dır, VSA ise 0. karenin sınavıdır
+> (`HOOK` §2.1). Deponun hiç koşmadığı tek testi ilk yayında izole
+> ölçmenin en temiz yolu budur; süre tartışması o platformda hiç
+> devreye girmez.
+
+---
+
 ## 2.1 DİKEY SHORTS (9:16 · 48 s) — YouTube Shorts / Reels / TikTok
 
 | Metrik | 🔴 Tehlike | 🟢 Hedef | Karar | Önce sorgulanan değişken |
@@ -220,6 +270,18 @@ Her yayın bir KOŞUDUR ve QA koşuları gibi kaydedilir. Kayıt yeri:
 □ 48. saat  → karar satırı: BEKLE / KAPAK / BAŞLIK / YENİDEN KURGU / ÇEK
 □ 72. saat  → eğri şekli (§4.1) + terk saniyesi + çevrilen SAHNE numarası
 □ Değişken oynatıldıysa: ne değişti, ne zaman, sonraki 4 saatte ne oldu
+□ 🆕 PUBLIC VIEW ve ENGAGED VIEW **AYRI SÜTUNLARA** yazılır (YouTube
+     Analytics → Gelişmiş Mod). 31.03.2025'ten beri public view loop'ları
+     sayıyor, engaged view saymıyor; ölçülen şişme ~%30. Tek sayı yazılan
+     satır ⚠️ ŞARTLI'dır — "loop tuttu" hükmü ikisi karşılaştırılmadan
+     verilemez [SENARYO_VE_VIRAL_KAMERA §5].
+□ 🆕 AI ALGISI SAYACI: yorumlarda "AI / yapay zeka / fake / CGI"
+     kelimelerinin geçtiği yorum sayısı / toplam yorum. Deponun hiç
+     ölçülmemiş bir numaralı strateji riski budur
+     [DIKEY_MIKRO_DRAMA §6.1]. İlk üç koşuda mutlaka kaydedilir.
+□ 🆕 PLATFORM BAŞINA AYRI SATIR: aynı film üç platformdaysa üç satır
+     açılır ve her satır kendi kapı metriğiyle okunur (§2.0). Tek
+     birleşik hüküm yazılmaz.
 □ ⛔ GEÇERLİLİK İŞARETİ (QA tablolarıyla aynı dil):
      ✅ geçerli   — minimum örneklem sağlandı (§3)
      ⚠️ ŞARTLI    — örneklem altında VEYA aynı anda iki değişken oynatıldı

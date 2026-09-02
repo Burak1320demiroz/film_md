@@ -250,3 +250,236 @@ completely unmarked.
 tarafı korur, organı korumaz.
 
 ---
+
+---
+
+## 🔴 DERS 140: KLON KLİBİN İLK YARIM SANİYESİNDE DOĞUP KAYBOLUYOR — NORMAL HIZDA GÖRÜNMEZ, ALTI MERCEKTEN BİRİ GÖRDÜ VE SANİYESİNİ YANLIŞ YAZDI
+
+**Kaynak:** THE THIN ROOF QA (28.08.2026) — S3 · **30,20–30,50 s** · ① KARE
+"Character 3/10 🔴 BLOCKER" · ② DEVAMLILIK "Quantity 1/10 · IDENTITY BREAK"
+**Sorun:** klonun nerede doğduğu ilk kez ÖLÇÜLDÜ
+
+D20 ve D69 klonun ARAÇ/KAPI giriş-çıkış anlarında doğduğunu söylüyordu. Bu
+filmde araç yok, kapı yok, ikinci figür yok, ve klon yine doğdu. Ölçüm:
+
+```
+S3 klibinin ilk 0,8 saniyesi · 10 fps · sekiz kare:
+
+  30,03  ✅ tek kask, tek yüz
+  30,13  ✅ tek kask
+  30,23  ⚠️ omzun sağında kubbe biçimli gri form
+  30,33  🔴 İKİNCİ KASK — içinde İKİNCİ YÜZ
+  30,43  🔴 iki kask, iki yüz, birbirinin içine geçmiş
+  30,53  ✅ form omuza + çivit banda geri çözülüyor
+  30,63  ✅ tek kask
+  30,73  ✅ tek kask
+```
+
+**Klon 0,30 saniye yaşadı ve klibin ilk yarım saniyesinde doğdu** — yani
+I2V'nin başlangıç karesine oturma penceresinde, tam bir kesmenin üstünde.
+
+⭐ **Bu yüzden hiçbir izleme onu bulamaz.** 0,3 saniye, normal hızda bir
+göz kırpmasıdır ve tam kesmenin üstünde olduğu için izleyici onu "kesme
+titremesi" diye yutar. Altı mercekten yalnız ① gördü, ② de ondan kopyaladı;
+ikisi de saniyeyi yanlış yazdı (0:35 · "cliff edge") çünkü klibi izlediler,
+KARELERİNİ değil.
+
+**ÇÖZÜM — kurgu kapısına dördüncü satır: HER KLİBİN İLK 0,6 SANİYESİ TARANIR**
+
+```bash
+# klip başına ~1 saniye · toplam maliyet 6 klipte ~10 saniye
+for s in 0 1 2 3 4 5; do
+  t=$(echo "$s * $KLIP" | bc)
+  ffmpeg -v error -ss $t -i "$MASTER" -t 0.6 -vf "fps=10,scale=460:818" \
+         -q:v 2 giris_S${s}_%02d.jpg -y
+done
+# altı şerit, altı bakış. Aranan: ikinci kask, ikinci yüz, ikinci el,
+# ikinci gölge, omuzdan/kalçadan doğan form.
+```
+
+```
+⛔ EŞİK: klibin İLK 0,5 SANİYESİNDE beliren ve KAYBOLAN her form bir
+   üretim kusurudur — kalıcı olmaması onu hafifletmez, GİZLER.
+   Bulunursa o klip yeniden üretilir; kırpmayla ya da 3 kare kesmeyle
+   kurtarılmaz, çünkü kesme filmin ızgarasını bozar [D115].
+```
+
+**ÇÖZÜM — ① KARE rubriğinin DUPLICATE CHARACTER kontrolüne:**
+
+```
+SPECIFIC CHECK — CLIP-HEAD DUPLICATE: step through the FIRST HALF SECOND of
+every clip frame by frame, not at playback speed. A duplicate head, face,
+hand or shadow that is born out of the subject's own shoulder or hip and
+dissolves back into it within a few frames is the most common form of this
+failure and the least visible one: it sits on a cut, it lasts less than half
+a second, and at speed it reads as a compression stutter. Report the frame
+range, not the second.
+```
+
+> 🔗 Ders 20/69 (klon · giriş-çıkış sıcak noktası — bu ders yeni bir sıcak
+> nokta ekliyor: KLİP BAŞI) · Ders 18 (yürüyüş eklem artikülasyonu) ·
+> Ders 125 (cevabı bir komutta duran soru modele sorulmaz — burada komut
+> `ffmpeg -t 0.6 -vf fps=10`).
+
+---
+
+## 🔴 DERS 146: "SEAMLESS VISOR" KUBBE DAVETİYESİDİR — VİZÖR BİÇİMİ SAYIYLA YAZILMADI, BİR FİLMDE ÜÇ KASK ÇIKTI
+
+**KAPI:** BETİK · `prompt_kontrol.py` D79 kask bloğu (`\bsuit\b` → vizör cümlesi
+şart). ⚠️ **Betik cümlenin VARLIĞINI ölçer, ETKİSİNİ ölçmez** — aşağıdaki
+01.09.2026 vakasına bak.
+**TEKRAR:** 2 · son vaka 01.09.2026 (YERÇEKİMİ FAZ 2)
+
+> ⛔ **01.09.2026 · 2. VAKA — VE BU VAKA DERSİN ÇÖZÜMÜNÜ ÇÜRÜTÜYOR.**
+> YERÇEKİMİ, bu dersin reçetesini HARFİ HARFİNE uyguladı: vizör geometrisi
+> ölçüyle yazıldı (`flat rectangular front glass measuring 24 by 16
+> centimetres, held in a visible bright metal frame the width of a finger`),
+> "seamless/bubble/dome/sphere" kelimelerinin hiçbiri hiçbir prompta girmedi,
+> ve cümle FAZ 2'nin **dokuz promptunda** duruyordu. prompt_kontrol.py GO verdi.
+> **Sonuç: kubbe çıkan altı klibin BEŞİNDE tam tarif ölçüleriyle vardı.**
+> İki bağımsız denetim geçişi (biri KATALOGSUZ/kör, D164) aynı şeyi söyledi:
+> *"kesintisiz kavisli balon, sıfır düz kenar, sıfır köşe; başın önünü ve
+> yanlarını tamamen sarıyor."* Altı klipte de.
+> ⭐ Kilidin İKİ yarısı vardı ve ayrıştılar: **GEOMETRİ 0/6 tuttu, OPTİK 6/6
+> tuttu** — cam berrak, aynasız, yüz okunuyor. Dramayı taşıyan yarı kazandı,
+> dekoratif yarı kaybetti.
+> **Okunacak sonuç: vizör geometrisi METİNLE tutulamıyor.** Reçete "sayı yaz"
+> demeye devam ederse üçüncü vaka gelir. Tek aday araç: karakterin yüz CU
+> referans paneli (RA p4) üretilip seed'i yazılmadan yüz içeren klip
+> üretilmez. Ders 165 adayı GOZLEM_DEFTERI'ndedir (mod V, film-dersi yazılamaz).
+
+**Kaynak:** THE SKYLIGHT — ② 🟠 "helmet has opaque sides at 0:10, then wide clear
+transparent sides at 4:10"; master kareleri 0:25 (beyaz kabuk + ön cam) · 4:15 (tam
+saydam kubbe) · 5:05 (koyu tonlu kubbe) · `FILM_QA_RAPORLARI/01_FILM_RAPORLARI/THE_SKYLIGHT.md`
+**Sorun:** 1 film, iki üretim partisi, üç kask.
+
+CHARACTER bible vizörün OPTİĞİNİ (berrak, tonsuz, yansımasız — D95) ve kaskın SIRTINI
+(ünite yok, düz — D79) kilitledi; GEOMETRİSİNİ kilitlemedi. "closed helmet, its
+seamless visor" cümlesi vizörün nereye kadar uzandığını her klipte modele bıraktı:
+mağara partisinde beyaz kabuk içinde ön cam, kabin partisinde tam balon, son klipte
+tonlu kubbe. D95 "optik berrak vizör 'kask yok' okunuyor" demişti; cevabı görünür
+bir kabuk ÇERÇEVESİYDİ — ve çerçeveye hiç ölçü verilmedi. "Seamless" kelimesi
+çerçevesizlik ister; çerçevesizlik kubbedir.
+
+**ÇÖZÜM — vizör geometrisi sayıyla, bible'da ve her promptun kompakt kilidinde
+kelimesi kelimesine:**
+
+```
+HELMET GEOMETRY LOCK: a white hard shell covers the top, back and both sides
+of the head; the visor is ONE curved clear pane on the FRONT only, about 24 cm
+wide and 16 cm high, set into the shell with a visible dark rim all the way
+round; the sides of the helmet are opaque white, never glass; NOT a bubble,
+NOT a dome, NOT a full-face sphere; the pane is colourless — zero tint, zero
+mirror, zero reflection — the same pane in every scene.
+```
+
+"seamless", "bubble", "dome", "sphere" kelimeleri kask tarifine GİRMEZ.
+
+> 🔗 Ders 5 (vizör kaybolması) · Ders 37 (kask aniden beliriyor) · Ders 79 (olumsuz
+> kostüm kilidi çekirdeğe girmedikçe tutmuyor) · Ders 95 (optik kilit vardı, geometri
+> yoktu — bu ders o boşluğu kapatır) · Ders 57 (kare kilidi).
+
+---
+
+## 🟡 DERS 147: ÜÇ SABİT AŞINMA İZİ TOZLU ODADA TUTMADI — MODEL MAĞARADA KİRİ BİRİKTİRDİ, KABİNDE BIBLE'A DÖNDÜ, İZLEYİCİ "KİR SIFIRLANDI" OKUDU
+
+**Kaynak:** THE SKYLIGHT — ② 🟠 cat 3 "suit back heavily soiled at 2:20 → pristine at
+4:10 (−6)"; master kareleri 2:25 (sırt ve bacaklar gri tozlu) · 4:15 (kabinde
+tertemiz); bible "exactly three fixed wear marks" · `FILM_QA_RAPORLARI/01_FILM_RAPORLARI/THE_SKYLIGHT.md`
+**Sorun:** 2 film — ve D42'nin kendisi sebep. **2. vaka THE FROST LINE
+(31.08.2026):** bu dersin faz satırı ("wear state: PHASE n") 50/50 promptta
+YAZILIYKEN kırağı hem ERKEN geldi (PHASE 1 sahnesinde önkolda kırağı — kare
+t14) hem dalgalandı (t23 temiz ↔ t193 hafif ↔ t204 yoğun). Faz METNİ tek
+başına tutmuyor: fazın İLK sahnesinin onaylı karesi, aynı fazın sonraki
+sahnelerine imaj referansı olarak girer [D153 mekanizması].
+
+D42 aşınma izlerini sabitler ki her karede yeniden üretilmesinler; ortamın iz
+EKLEMEDİĞİNİ varsayar. Dört dakika boyunca diz çöküp milimetrelik tozda çalışan bir
+karakter için temiz takım OLANAKSIZ durumdur — model mağara partisinde takımı
+kirletti (fizik doğru), kabin partisinde bible'ı tekrar okudu ve temizledi (prompt
+doğru). İki parti de kendi promptuna uydu; FİLM kendisiyle çelişti. Kural sabitti,
+hikâye birikimliydi.
+
+**ÇÖZÜM — kir MONOTONİK bir sayaçtır: faz durumları yazılır, her prompt kendi faz
+satırını taşır, son faz iç mekânlar dâhil sonraki her sahneye taşınır:**
+
+```
+WEAR LADDER (monotonic — dust is only ever added, never removed):
+  PHASE 1 · surface, before entry: clean sand-white shell; only the three fixed marks.
+  PHASE 2 · first chamber scenes: fine grey dust on both knees and shins; gloves dusted; back clean.
+  PHASE 3 · deep chamber to exit: heavy grey dust on knees, shins, forearms and the lower back; boots grey to the ankle.
+  PHASE 4 · ship, cabin, orbit: PHASE 3 state, unchanged — the suit stays dusty inside the cabin; no cleaning happens; the dust never resets.
+Her sahnenin promptunda TEK satır: "wear state: PHASE n — <fazın metni>".
+```
+
+Cairn sayacı gibi: geriye gitmez, sıçramaz, faz değişimi yalnız sahneler ARASINDA.
+
+> 🔗 Ders 42 (sabit yerleşim — bu ders onu TOZLU ortamda monotonik sayaca çevirir) ·
+> Ders 58 (tekrarlayan varlık kimliği) · Ders 118 (sıra kilidi — kir de bir şerittir).
+
+---
+
+## 🔴 DERS 169: 25 SAHNELİK BİR FİZİKSEL İŞ FİLMİNDE ZORLANMA SÖZLÜĞÜ TEK SAHNEDE VARDI — DÜŞÜK YERÇEKİMİ AĞIRLIĞI AZALTIR, ATALETİ AZALTMAZ
+
+**KAPI:** BETİK · `prompt_kontrol.py` ⑳ ZORLANMA KANALI (efor sahnesinde gövde tepkisi cümlesi var mı) — 02.09.2026
+**TEKRAR:** 1 · 02.09.2026 THE SINKING STAKE
+
+**Kaynak:** THE SINKING STAKE prompt dosyaları (02.09.2026) — **kendi
+belgemizden sayıldı, rapordan değil.** 25 sahne, 25 TIMELINE, iki bölüm
+dosyası:
+
+```
+strain        0        heave           0        grip tighten   0
+tremor        0        stiff glove     0        clumsy         0
+lean into     0        braced          1  (yalnız S13)
+"working breath" 2     "shoulders low" 1  (ikisi de yalnız S13)
+forearm      19  ← ONDOKUZUNUN ONDOKUZU KOSTÜM: "a white cuff on the
+                    left forearm only". Zorlanma anlamında SIFIR.
+
+→ 25 sahnenin 24'ünde fiziksel iş yapılıyor ve gövde hiçbir şey ödemiyor.
+```
+
+⭐ **MEKANİZMA — DÜŞÜK YERÇEKİMİ YAZARI KANDIRIR.** Plan 0,40 g yazar,
+yazar "hafif" diye düşünür ve zorlanma cümlesini gereksiz sayar. Ama:
+
+```
+0,40 g'de AZALAN     ağırlık (kaldırma kuvveti)
+0,40 g'de AZALMAYAN  KÜTLE ve ATALET
+→ bir cismi başlatmak, durdurmak ve döndürmek AYNI eforu ister.
+→ ve giysi maliyeti hiç azalmaz: basınçlı eldiven kapanmaya direnir,
+  kask baş dönüşünü kısıtlar, sırt/kalça yükü ağırlık merkezini kaydırır.
+```
+
+⛔ **VE İKİNCİ TUZAK: TIMELINE KONUM YAZAR, GÖVDE YAZMAZ.** Bu deponun
+TIMELINE biçimi "0.0s — X yapar · 4.0s — Y olur" diyerek NEREDE ve NE
+sorularını cevaplıyor, NASIL sorusunu hiç sormuyor. Model de tam olarak
+yazılanı üretiyor: iş yapılıyor, kimse ödemiyor.
+
+**ÇÖZÜM — HER EFOR SAHNESİNİN TIMELINE'INDA EN AZ İKİ KANAL:**
+
+```
+Kanallar (ikisi seçilir, sahneye göre):
+  ÖNKOL     "the forearm tendons stand out through the glove"
+  KAVRAMA   "the grip slips a finger's width and is re-taken"
+  GÖVDE     "he leans into it until his shoulders are below his hips"
+  BACAK     "the rear boot loads and the knee bends before the pull"
+  NEFES     "two breaths per pull, the second one shorter"
+  KADANS    "the fourth pull is visibly slower than the first"
+  ELDİVEN   "the fingers close slowly against the glove's own stiffness"
+
+⭐ VE BEDEL SAHNEDEN SONRA DA GÖRÜNÜR: bir sonraki sahnenin ilk saniyesi
+  toparlanmayı taşır (duruş, bir nefes, geciken bir hareket) — yoksa
+  "FRESH RESET" olur ve iş hiç yapılmamış sayılır.
+
+⛔ SAYI YAZILIR, SIFAT DEĞİL: "the fourth pull is slower than the first"
+  ölçülebilir; "he strains" ölçülemez ve model onu çizmez [tarif kilidi
+  %0, sayısal kilit %100 — 01_DERS_ETKINLIK_RAPORU §4].
+```
+
+⚠️ **DAHA FAZLA ACI DAHA İYİ DEĞİLDİR.** Sebepsiz gelen yorgunluk da hatadır:
+gövde yalnız ekranda GÖSTERİLEN işin bedelini öder.
+
+> 🔗 Ders 44 (0,38 g gerçek zamanlı) · Ders 154 ③ (insanın g'si adım SAYISIYLA
+> yazılır — bu ders onu EFOR kanalına genişletir) · KARAKTER_VE_DUYGU §6
+> (el/nefes/yürüyüş bütçesi — bu ders o bütçeye ZORLANMA'yı ekler) ·
+> mercek ⑧ EFOR (bu dersin ölçüm aleti).

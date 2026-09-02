@@ -10,6 +10,93 @@
 >
 > **Ne zaman okunur:** filmde replik VEYA ses tasarımı varsa, plan
 > aşamasında — sahne haritası yazılırken.
+>
+> ⭐ **02.09.2026 · BU KILAVUZ YAZILDI VE HİÇ KULLANILMADI.** Depo ölçümü:
+> **replik olan film 0/79.** Sebep bu dosyada değil, `02_RISK_KARTLARI`
+> KART 7'nin *"💡 EN GÜVENLİ: sessiz film"* satırındaydı — kanıtı bir
+> `N/A`'ydı ve o satır kaldırıldı. Yerine **DİYALOG MERDİVENİ** kondu:
+> `URETIM_ONCESI_ANALIZ/06_HIKAYE_HATTI_TESHISI.md` §4b.
+>
+> ⛔ **BASAMAK 1'İ OKUMADAN BU DOSYAYI UYGULAMA:** ekranda ağız yoksa
+> lip-sync riski **yapısal olarak sıfırdır.** Kadraj dışı ses · telsiz ·
+> kayıt · kask AI — dördü de D35'in DIŞINDADIR ve bugün, hiçbir yasağı
+> ihlal etmeden yazılabilir. Ekranda konuşan ağız (BASAMAK 3) ise
+> `PROB_KOSUSU.md` PROB B koşulmadan filme girmez.
+
+---
+
+# 1a. 🎙️ AKUZMATİK SES — kadraj dışı sesin ÜÇ gerekçesi  🆕 02.09.2026
+
+> Kaynak: `URETIM_ONCESI_ANALIZ/04_ARASTIRMA_BULGULARI.md` TUR 4 · T4.1
+> satır 7-9-12. Bu bölüm merdivenin BASAMAK 1'inin gerekçesini üçe çıkarır.
+
+**Michel Chion, *The Voice in Cinema* (1999):** kaynağı görünmeyen ses bir
+ses efekti değil, ayrı bir **varlıktır** — *acousmêtre*. Görsel bir bedene
+hapsedilmediği için izleyici ona dört nitelik atfeder: her şeyi görme ·
+her şeye gücü yetme · her yerde olma · doğrudan aracılık.
+
+```
+BASAMAK 1'İN ÜÇ GEREKÇESİ — üçü de kaynaklı, üçü de aynı yöne bakıyor
+
+① TEKNİK    ekranda ağız yoksa lip-sync riski YAPISAL OLARAK SIFIRDIR.
+            D35'in üç sebebinden hiçbiri tetiklenemez.
+
+② ALGISAL   ⭐ "Bu AI mı" tespiti fonem ↔ vizem (dudak) uyuşmazlığına
+            kilitleniyor. Ağız kadrajda yoksa o denetim kanalı DEVRE DIŞI
+            kalır ve izleyicinin içeriği insan yapımı sayma ihtimali
+            belirgin biçimde yükselir.
+            [Weisman & Peña, Cyberpsychology Behavior & Social Networking
+             2021, hakemli · Frontiers in Psychology 2026, n=408]
+            ⛔ Bu, deponun en pahalı riskine (AI damgası) doğrudan zırhtır
+              — DIKEY_MIKRO_DRAMA §6.1 ile birlikte okunur.
+
+③ DRAMATİK  ses bedensiz kaldığı sürece OTORİTE taşır. `The Phone Call`
+            (2013, Oscar) muhatabını film boyunca yalnız ses olarak kurar
+            ve o muhatap kadraja hiç girmez.
+```
+
+## 1a.1 ⛔ BEDENLEŞTİRME KURALI (de-acousmatization)
+
+**Chion'un ikinci kuralı, ve bu deponun aradığı turnusol kâğıdı:**
+
+```
+Kamera dönüp SESİN ÇIKTIĞI AĞZI gösterdiği an, ses büyüsünü YİTİRİR.
+Otoritesini kaybeder, ete kemiğe ve mekâna hapsolur.
+
+→ BU YÜZDEN O AN BİLİNÇLİ OLARAK SEÇİLİR.
+```
+
+```
+□ Filmde bedenleştirme VAR MI?          □ yok (ses sonuna kadar bedensiz)
+                                        □ var → S___ · saniye ___
+□ VARSA: o sahne filmin DORUĞU ya da MERKEZÎ SEÇİMİ mi?
+   ⛔ Değilse bedenleştirme boşa harcanmıştır ve ses gücünü sebepsiz
+     kaybetmiştir.
+```
+
+> ⭐ **BÜTÇE KISITI İLE KONVANSİYONU AYIRAN ŞEY BUDUR.** Sesi sürekli
+> telsizin arkasına saklamak, lip-sync maliyetinden kaçmaksa bir kısıttır.
+> Aynı sesin ağzını **doruğa saklamak** bir tasarımdır. İkisi ekranda
+> aynı görünür; ayrımı yapan tek şey planda o satırın yazılı olmasıdır.
+
+## 1a.2 İLK İNSAN SESİNİN YERİ — nörolojik gerekçe
+
+```
+İnsan beyni, sessizlik içinden gelen İNSAN SESİNE görsel bir uyarandan
+DAHA HIZLI tepki verir: işitsel P300 gecikmesi görsel P300'den kısadır ve
+insan sesi P300 genliğini maksimize eder (superior temporal sulkus,
+bilateral aktivasyon).                    [EEG/ERP hakemli literatürü]
+
+→ Uzun bir sessizliğin ardından gelen İLK replik, dramatik bir tercih
+  değil BİYOLOJİK BİR ŞALTERDİR. Bu yüzden rastgele bir sahneye değil,
+  yapısal bir ana konur.
+
+□ İLK REPLİK: S___ · ___ s · öncesindeki kesintisiz sessizlik ___ s
+⛔ İlk replik hangi vuruşa denk geliyor? ______________
+```
+
+> ⬜ **DÜRÜST SINIR:** P300 ölçümleri laboratuvar uyaranlarıyla yapıldı,
+> kısa filmle değil. Mekanizma sağlam, **film üzerinde ölçülmedi.**
 
 ---
 

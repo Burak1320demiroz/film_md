@@ -22,6 +22,12 @@
 #      python3 kilavuzlar_ve_sistem_dosyalari/PROMPT_KONTROL/prompt_kontrol.py <dosya|klasör> ...
 #      ... --rapor        RAPORLAR/ altına markdown rapor da yazar
 #
+#  ⭐ FİLM KLASÖRÜNÜ VER, TEK BÖLÜMÜ DEĞİL (01.09.2026 · klasör modu):
+#      film bölüm dosyalarına ayrıldığından beri dizi kapıları dosya
+#      sınırında körleşiyor. Klasör verilince (tek dosya verilse bile onun
+#      klasörü) bölümler sahne sırasına göre BİRLEŞTİRİLİP kapılar film
+#      boyunca bir kez daha koşar. Gerekçe: aşağıdaki "KLASÖR MODU" bloğu.
+#
 #  ÇIKTI:  GO / FIX / BLOCK   — BLOCK ise üretme.
 #  ÇIKIŞ KODU: 0 = GO · 1 = FIX · 2 = BLOCK   (betikten zincirlenebilir)
 #
@@ -38,6 +44,57 @@
 #     ⑪ AÇI SÖZLÜĞÜ          kaç farklı açı TİPİ kullanılmış (§2)
 #     ⑫ ABARTI EŞİĞİ         dutch 35°+ · alt açı 45°+ · üst açı 45-60° (§5)
 #     ⑬ TEMA KAPISI          TEMA satırı + en az 3 sahne indeksi (§5/§9)
+#  ─── 01.09.2026 · İKİ DENETİM DAHA (Ders 157 · Ders 139 — ikisi de kapısızdı) ──
+#     ⑭ NOVUM TAŞIYICI       taşıyıcı nesne TEK KARE satırında geçiyor mu (ONERME §4①)
+#     ⑮ SIRT POZİTİF        kamera arkada/OTS ise pozitif sırt yüzeyi cümlesi var mı
+#  ─── 02.09.2026 · İKİ DENETİM DAHA (Ders 167 · Ders 169) ──────────────────
+#     ⚠️ NUMARA ÇAKIŞMASI: ⑰ aynı gün B5 HİKÂYE OMURGASI'na verildi
+#        (başka koşu, 15:18). Bu ikisi ⑲/⑳'ye taşındı — numara ilk gelenindir.
+#     ⑲ KİMLİK YIĞINI       tek pencerede ≥4 kişi özniteliği (boy·ten·saç·yaş·yüz)
+#                           → "ünlüyü tarif ederek isteme" kalıbı; OMNI reddetti
+#     ⑳ ZORLANMA KANALI     efor fiili var ama gövde tepkisi cümlesi yok
+#  ─── 01.09.2026 · POLİTİKA KAPISI (Ders 123 — "betik göremez" denilen yer) ──
+#     ⑯ POLİTİKA SÖZLÜĞÜ     T1/T2 tetikleyici sayımı (NEGATIVE bloğu DÂHİL) ·
+#                            gövdeye yönelmiş şiddet fiili · milliyet · kurum ·
+#                            insansız sahne + uzun NEGATIVE (yapısal red profili)
+#     ⛔ D123 "betik bunu göremez ve göremez de" diyordu. KOMPOZİSYON ekseni
+#        için doğru (YERCEKIMI S8: kelimeler temizdi, kadraj reddedildi) →
+#        o eksen PROMPT_QA_CRITIQUE'in insan yarısındadır. KELİME ekseni için
+#        yanlış: LAST SPAN'in dosyasında "gore" 29 kez geçiyordu ve iki aksiyon
+#        doruğu reddedildi. Bir sayım bunu üretimden ÖNCE yakalar.
+#     Kılavuz: ../POLITIKA_VE_URETILEBILIRLIK_KILAVUZU.md
+#     Defter:  ../FILM_QA_RAPORLARI/09_URETIM_RED_DEFTERI.md  ← bant oradan gelir
+#  ─── 02.09.2026 · HİKÂYE KAPISI (03_PLAN_ONCESI B5 · üç gün "ayrılmış" kaldı) ──
+#     ⑰ B5 HİKÂYE OMURGASI  İSTEK · ENGEL · BEDEL · MUHATAP satırları +
+#                           İSTEK niteliği ("anlamak" istek değildir) +
+#                           BEDEL niteliği (kaybın GÖRÜLDÜĞÜ sahne numarası) +
+#                           iki insanlı planda AYRILIK sahnesi (B5b)
+#     ✏️ 02.09.2026 · "ORTAM hasım değildir" denetimi GERİ ÇEKİLDİ (yazıldığı
+#        gün): insan-hasım ↔ doğa-hasım farkının izleyici tarafında ölçülmüş
+#        karşılığı yok. Yerine BEDEL sahne denetimi geldi — ölçülmüş olan o.
+#        Kayıt: ../URETIM_ONCESI_ANALIZ/04_ARASTIRMA_BULGULARI.md T4.0
+#     ⛔ NEDEN BETİĞE İNDİ: 05_DIKEY_HAT_TESHISI §5① bu satırı 30.08'de
+#        sıfır maliyetli BİRİNCİ madde olarak yazdı, listeye inmedi ve üç
+#        günde beş film yazıldı → ENGEL satırı 79 filmin 2'sinde çıktı.
+#        Deponun kendi dersi: yazılan ama koşulmayan kapı, koşulmamış kapıdır.
+#     Kaynak: ../URETIM_ONCESI_ANALIZ/06_HIKAYE_HATTI_TESHISI.md §3.1 · §4①-②
+#     ⚠️ ⑰ KALİBRASYONU · 02.09.2026 · 80 film klasörü:
+#        koştu 69 · atlandı 11 (eski sahne başlığı biçimi — ⑭ ile AYNI sınır)
+#        koşan 69'un 69'unda en az bir B5 satırı EKSİK. Bu bir hata değil,
+#        kapının açıldığı günkü durumun ölçüsüdür (TEMA kapısının 26.08
+#        tablosuyla aynı okuma). En yakın film THE LEANING ROOM: yalnız
+#        HASIM eksik — B5'i kapı inmeden kendi yazmıştı.
+#        ⛔ SAYIYI BURADA GÜNCELLEME: bayatlar. Yeniden ölçmek için
+#           prompt_kontrol'ü format klasörlerine koş ve "B5 satırı yok" say.
+#
+#  ⚠️ ⑯ KALİBRASYONU · 01.09.2026 · 5 format klasörü, 140 kayıt:
+#     60 kayıtta (%43) politika sözcüğü bulundu — T1 119 · T2 746 · şiddet
+#     fiili 7 · milliyet 32 (3 film) · kurum 1 · yapısal red profili 20.
+#     ⛔ KARARI DEĞİŞEN DOSYA: 0. Hepsi zaten başka kapıdan FIX/BLOCK'tu.
+#        Yani ⑯ bugün üretim DURDURMUYOR, BİLGİ ÜRETİYOR — ve ürettiği ilk
+#        bilgi şu: THE_DEAD_APPROACH · THE_HOLLOW_STATION · THE_KALEIDA_CRASH
+#        canlı promptlarında §7'nin DOĞRULANMIŞ red tetikleyicisini taşıyor.
+#     Dört yanlış-pozitif sınıfı kapatıldı; listesi POLITIKA_T1'in üstünde.
 #
 #  ⛔ BU DENETİMLER LOCKOFF KARARINI GERİ ALMAZ. Lockoff KLİP İÇİDİR
 #     (02_RISK_KARTLARI KART 8 kapsam bloğu, 26.08.2026 daraltması).
@@ -95,6 +152,151 @@ YASAK = {
 OLUMSUZ = re.compile(r"(?:\bno\b|\bnot\b|\bnever\b|\bzero\b|\bwithout\b)[^.]{0,40}$",
                      re.IGNORECASE)
 
+# ─── ⑯ POLİTİKA SÖZLÜĞÜ [Ders 123 · 01.09.2026] ─────────────────────
+#
+# ⛔ BU SÖZLÜK YUKARIDAKİ `YASAK` SÖZLÜĞÜNÜN MANTIKSAL TERSİDİR.
+#    D29 kelimelerinde olumsuzlama MEŞRUDUR ("no glowing" bir çözümdür).
+#    Politika kelimelerinde olumsuzlama HASTALIĞIN TA KENDİSİDİR:
+#    politika sınıflandırıcısı "no" önekini değil KELİMEYİ okur, ve
+#    yasakladığın kavram promptun İÇİNE girer [D123].
+#
+# NEDEN BETİK — D123 "betik bunu göremez ve göremez de" diyordu:
+#    Kompozisyon ekseni için doğru (YERCEKIMI S8: kelimeler temizdi,
+#    kadraj reddedildi → o eksen PROMPT_QA_CRITIQUE'in insan yarısında).
+#    KELİME ekseni için YANLIŞ ve bedeli ölçüldü: THE LAST SPAN'in
+#    prompt dosyasında "gore" 29 · "blood" 26 · "wounds" 26 · "corpse"
+#    18 kez geçiyordu, HEPSİ yasak olarak, ve iki aksiyon doruğu
+#    reddedildi. Bir `grep` bunu üretimden ÖNCE, sıfır kare harcayarak
+#    yakalardı. Ölçülmeyen kural uygulanmıyor.
+#
+# ⚠️ KAPI SAYAR, ÜRETİM DURDURMAZ — sayı ölçülene kadar.
+#    `IMAGE_BANDI_KARARA_BAGLI` ile aynı gerekçe: bu depoda "kaç
+#    tetikleyici redde yol açar" HİÇ ölçülmedi. LAST SPAN'de 99 geçiş
+#    vardı ve reddedildi; 3 geçişin ne yaptığı bilinmiyor. Ölçülmemiş
+#    bir eşikle üretim durdurmak, ölçülmemiş bir sayıyla karar vermektir.
+#    Bant RED DEFTERİ'nden gelir (FILM_QA_RAPORLARI/09_URETIM_RED_DEFTERI.md);
+#    defterde ≥5 vaka biriktiğinde bu bayrak kapanır ve T1 BLOCK'a çıkar.
+#    ⛔ İSTİSNA: MİLLİYET. O ölçüldü (§7 "doğrulandı", LOW POWER) → BLOCK.
+POLITIKA_BANDI_KARARA_BAGLI = True
+
+# ─── KALİBRASYON · 01.09.2026 · 5 format klasörü, 137 dosya ──────────
+# Dört yanlış-pozitif sınıfı bulundu ve kapatıldı:
+#   ① "wound"    → bu depo GEMİ GÖVDESİ için kullanıyor ("a still-glowing
+#                  deep-orange reactor wound in the hull", 6 geçiş tek
+#                  filmde). Yara değil delik. → T2'ye indi.
+#   ② "skeleton" → iki meşru kullanım: "the proportions follow a human
+#                  skeleton" (oran tarifi) ve yapı iskeleti. → T2'ye indi.
+#                  ⚠️ NEGATIVE'deki "no skeleton, no body, no remains"
+#                  gerçek bulgudur ve T2 yoğunluk sayacında görünür.
+#   ③ "stab"     → 24 geçişin 24'ü MÜZİK terimi ("orchestral stabs",
+#                  "string stab"). → listeden ÇIKTI; yönelmiş bıçaklama
+#                  zaten POLITIKA_FIIL'de.
+#   ④ "drives his" → "drives his boot sole against the strut" kendi
+#                  uzvudur, şiddet değil. → fiil kapısı yalnız NESNE
+#                  konumundaki kişiyi ve GÖVDE PARÇASINI arar.
+
+# T1 — bu depoda POLİTİKA DIŞI meşru kullanımı ÖLÇÜLMEMİŞ kelimeler.
+#      Kaynak: D123 teşhis listesi + THE SLOW STONE S4 sözlük kilidi.
+POLITIKA_T1 = {
+    r"\bgore\b":                    "D123 · LAST SPAN'de 29 kez",
+    r"\bblood(?:y|ied|ing)?\b":     "D123 · LAST SPAN'de 26 kez",
+    r"\bcorpses?\b":                "D123 · LAST SPAN'de 18 kez",
+    r"\bcadavers?\b":               "D123 ailesi",
+    r"\bmutilat\w*\b":              "D123 ailesi",
+    r"\bdismember\w*\b":            "D123 ailesi",
+    r"\bdecapitat\w*\b":            "D123 ailesi",
+    r"\bamputat\w*\b":              "D123 ailesi",
+    r"\bstrangl\w*\b":              "D123 ailesi",
+    r"\bsuffocat\w*\b":             "D123 ailesi",
+    r"\btortur\w*\b":               "D123 ailesi",
+    r"\bvictims?\b":                "D123 teşhis listesi",
+    r"\bjump scare\b":              "D123 teşhis listesi",
+    r"\bhorror\b":                  "D123 · SLOW STONE S4 negatif bloğu",
+    r"\bzombie\w*\b":               "SLOW STONE S4 · red aldı",
+    r"\brotting\b|\bdecompos\w*\b": "SLOW STONE S4 ailesi",
+    r"\bweapons?\b":                "D123 teşhis listesi",
+    r"\bguns?\b|\brifles?\b":       "§7 · gerçek ordu/silah",
+}
+
+# T2 — bağlama duyarlı. Tek geçiş normaldir; YOĞUNLUK bulgudur.
+#      "body" deseni deponun KENDİ çözümünü ("four body-lengths across")
+#      dışarıda bırakır — yoksa kapı en iyi uygulamayı cezalandırır.
+POLITIKA_T2 = {
+    r"\bwound(?:s|ed|ing)?\b":      "D123 · LAST SPAN'de 26 kez (kalibrasyon ①)",
+    r"\bskeletal\b|\bskeletons?\b": "SLOW STONE S4 (kalibrasyon ②)",
+    r"\bdead\b|\bdeath\b|\bdying\b":          "SLOW STONE S4 · red aldı",
+    r"\bbod(?:y|ies)\b(?!\s*[-–—]?\s*lengths?)": "SLOW STONE S4 · red aldı",
+    r"\binjur\w*\b":                          "D123 teşhis listesi",
+    r"\bkill(?:s|ed|ing)?\b":                 "D123 ailesi",
+    r"\bdanger(?:ous)?\b":                    "LAST SPAN S9 red mesajı",
+    r"\bpanic\w*\b":                          "SHORTS md.5 · panik yasağı",
+    r"\bterror\w*\b":                         "D123 ailesi",
+    r"\bscream\w*\b":                         "D123 ailesi",
+    r"\bsuffer\w*\b":                         "D123 ailesi",
+    r"\bdecay\w*\b":                          "SLOW STONE S4 · red aldı",
+    r"\bexplo(?:sion|de|des|ding|sive)\w*\b": "D56/D67 · ateş sözlüğü",
+    r"\bblasts?\b":                           "D56/D67 · ateş sözlüğü",
+    r"\bflames?\b|\bburning\b|\bablaze\b":    "D56/D67 · ateş sözlüğü",
+    r"\bsmoke\b":                             "YERCEKIMI KİLİT 8",
+    r"\btrapped\b":                           "YERCEKIMI KİLİT 8 ailesi",
+    r"\bdrown\w*\b":                          "D56 · dalış sözlüğü",
+    # TUR 3 · çift anlamlı — YALNIZ bu biri eklendi. Ölçüm (01.09.2026):
+    # naked 6 · fire 496 · strike 154 · shot 3.605 geçiş. Üçü eklenseydi
+    # depodaki her video promptu yanlış bayrak yerdi; "shot" zaten negatif
+    # çekirdeğin kendi cümlesinde ("single unbroken shot"). Bedava nötr
+    # hâli olan tek kelime bu: naked → bare (depo `bare`'i 1.048 kez
+    # kullanıyor, yani ikame zaten deponun kendi deyimi).
+    # ⚠️ "naked eye" MUAF: görme keskinliği deyimi, çıplaklıkla ilgisi yok
+    #    (kalibrasyon ⑤ · 4 dosyada geçiyor). "naked blade" muaf DEĞİL —
+    #    THE_DULL_EDGE'de 3 kez geçiyor ve o film zaten T1 taşıyor.
+    r"\bnaked\b(?!\s+eye)":                   "TUR 3 · nötr hâli bedava: bare",
+}
+
+# Şiddetli fiil GÖVDEYE yönelmiş: "debris strikes her" [YERCEKIMI KİLİT 8].
+# Aynı fiziği taşıyan nötr hâl her zaman vardır ("fragments cross the frame").
+# ⚠️ Kalibrasyon ④: "his" NESNE değil İYELİKtir — "drives his boot sole
+#    against the strut" karakterin KENDİ uzvudur ve şiddet değildir.
+#    Aranan iki imza: ① fiil + kişi zamiri NESNE konumunda ·
+#    ② fiil + (ön ek) + GÖVDE PARÇASI adı.
+GOVDE_PARCASI = (r"chest|head|face|skull|throat|torso|neck|spine|ribs?|"
+                 r"stomach|groin|armpit|jaw|temple|abdomen")
+POLITIKA_FIIL = re.compile(
+    r"\b(?:strikes?|struck|hits?|slams?|smash(?:es)?|crush(?:es)?|hurls?|rams?|"
+    r"punch(?:es)?|kicks?|stabs?|drives?)\s+"
+    r"(?:(?:her|him|them)\b"
+    rf"|(?:\w+\s+){{0,4}}?(?:into|against|through|at)\s+(?:the|his|her|its|"
+    rf"another'?s?|the\s+other'?s?)?\s*(?:\w+\s+){{0,2}}?(?:{GOVDE_PARCASI})\b)",
+    re.IGNORECASE)
+
+# Milliyet — §7'de DOĞRULANMIŞ üretim reddi ("Israeli-American", LOW POWER).
+# Yüksek isabet için: sıfat, bir İNSAN adının hemen yanında olmalı.
+MILLIYET_SIFAT = (r"American|Israeli|Palestinian|Russian|Ukrainian|Chinese|"
+                  r"Iranian|Turkish|Syrian|Afghan|Iraqi|Korean|Japanese|German|"
+                  r"French|British|English|Indian|Pakistani|Mexican|Brazilian|"
+                  r"Nigerian|Egyptian|Saudi|Polish|Italian|Spanish|Canadian|"
+                  r"Australian|Soviet")
+MILLIYET = re.compile(
+    rf"\b(?:{MILLIYET_SIFAT})[-–]\w+\b|"
+    rf"\b(?:{MILLIYET_SIFAT})\s+(?:woman|man|male|female|engineer|pilot|"
+    r"astronaut|commander|geologist|technician|crew|figure|scientist|"
+    r"officer|soldier|worker)\b")
+
+# Gerçek kurum/rütbe — §7 "gerçek ülke ordusu/polisi sembolü, bayrak, rütbe"
+KURUM = re.compile(
+    r"\b(NASA|ESA|SpaceX|Roscosmos|JAXA|ISRO|NATO|Pentagon|CIA|FBI|KGB|"
+    r"U\.?S\.? (?:Army|Navy|Air Force|Marines|Space Force))\b")
+
+# ⑯b YAPISAL RED PROFİLİ [02_RISK_KARTLARI KART 10 · Cold Burn S8]
+# İnsansız sahne + uzun NEGATIVE bloğu: yokluk listesi İSTEK olarak
+# okunamıyor. Aynı blok insanlı sahnede sorun çıkarmıyor — orada
+# istenen bir VARLIK vardır.
+INSANSIZ = re.compile(
+    r"exactly\s+(?:0|zero|no)\s+human|no\s+human\s+(?:figures?|beings?)|"
+    r"\bno\s+people\b|\bno\s+person\b|\bunmanned\b|no\s+figures?\s+in\s+frame",
+    re.IGNORECASE)
+# Bant kalibrasyonla kondu (aşağıdaki NOT'a bak); tek kaynak burasıdır.
+NEGATIF_BLOK_BANDI = 900
+
 # ─── ARANAN KİLİTLER ───────────────────────────────────────────────
 # KILAVUZ_REHBERI §5 negatif çekirdeğin ölçülebilir imzaları.
 # Çekirdeğin tam metni her promptta birebir aranmaz — filmler sahneye
@@ -116,6 +318,30 @@ KILITLER = {
     "film grain":    (r"film grain|photorealistic",
                       ("image", "video")),
 }
+
+# ─── D138 YÜZEY İŞARETİNE BİTİŞİK ÖLÇÜ ─────────────────────────────
+# Rakamla VE yazıyla yazılmış ölçüler; ikisi de ekrana etiket olarak düştü.
+OLCU_SAYISI = re.compile(
+    r"\b(?:\d+(?:[.,]\d+)?|one|two|three|four|five|six|seven|eight|nine|ten|"
+    r"eleven|twelve|twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety|"
+    r"hundred)\s*(?:point\s+\w+\s+)?"
+    r"(?:m|cm|mm|km|metres?|meters?|centimet(?:re|er)s?|millimet(?:re|er)s?)\b",
+    re.IGNORECASE)
+TEXT_YASAK_IZI = re.compile(
+    r"no readable text|no letters|no lettering|no digits|no numerals", re.IGNORECASE)
+# ⚠️ Kapsam kalıbı DAR tutulur: "on the ground" / "on the rock" gibi
+#    sıradan düzyazı ifadeleri kapsam SAYILMAZ — yoksa her film sahte geçer.
+TEXT_KAPSAM = re.compile(
+    r"on any display, surface, patch or sign|on any surface|"
+    r"anywhere in the frame|nowhere in the frame|no surface in frame|"
+    r"nothing in the frame carries|on any surface in frame", re.IGNORECASE)
+
+BOYUT_KELIMESI = re.compile(
+    r"\s*(across|wide|in width|in diameter|thick|deep|in depth|long)\b",
+    re.IGNORECASE)
+ISARET_ADI = re.compile(
+    r"\b(fracture|crack|ring|circle|arc|groove|seam|joint|marking|stripe|"
+    r"band|line|scar|score|furrow|scratch|etch)\b", re.IGNORECASE)
 
 # ─── D79 KASK BLOĞU ────────────────────────────────────────────────
 # Ders 79 (06.08.2026): Bible'da yasaklamak YETMEDİ — Unbroken City ve
@@ -349,6 +575,203 @@ TEMA_SATIRI = re.compile(
 SAHNE_INDEKSI = re.compile(r"\bS\d{1,2}\b")
 TEMA_PENCERE = 900        # karakter · tema satırından sonra indeks aranan alan
 
+# ─── ⑰ B5 HİKÂYE OMURGASI KAPISI [03_PLAN_ONCESI B5 · 02.09.2026] ──
+# Kaynak: 05_DIKEY_HAT_TESHISI §5① + 06_HIKAYE_HATTI_TESHISI §3.2 · §4①-②
+# TEMA_SATIRI ile AYNI sertlik: satır başı + büyük harf. Sebep aynı —
+# "isteksizlik", "bedeli ödendi" gibi cümle içi kullanımlar beyan değildir.
+# ⚠️ KALİBRASYON 02.09.2026 · gerçek iki plan üstünde koşuldu:
+#    · Satır "B5 □ İSTEK:" diye de yazılıyor → B5 ve □ ön ekleri opsiyonel.
+#    · ENGEL/BEDEL/HASIM İSTEK'in devam satırında SATIR ORTASINDA geçiyor
+#      ("...disk). ENGEL: yolun üstündeki kütleler") → onlarda satır başı
+#      şartı yok, İKİ NOKTA şartı var. Yanlış pozitif riski düşük: depodaki
+#      cümle içi kullanımlar iki nokta TAŞIMIYOR ("BEDEL GÖRÜNÜR ·",
+#      "SEÇİMİN BEDELİ NESNEDİR"). İSTEK ve HASIM ise TEMA sertliğinde
+#      kalır — ikisi kapının çapasıdır.
+def _b5_satiri(ad, satir_basi=True):
+    on = r"^[ \t>*_#·\-]*\**[ \t]*(?:B5[ \t]*)?(?:□[ \t]*)?" if satir_basi \
+         else r"(?:^|[\s>*_·\-(])"
+    return re.compile(on + ad + r"[ \t]*[::]", re.MULTILINE)
+
+ISTEK_SATIRI = _b5_satiri(r"[İI]STEK")
+ENGEL_SATIRI = _b5_satiri(r"ENGEL", satir_basi=False)
+BEDEL_SATIRI = _b5_satiri(r"BEDEL", satir_basi=False)
+MUHATAP_SATIRI = _b5_satiri(r"(?:MUHATAP|HASIM)")   # HASIM: 02.09 öncesi ad, kabul edilir
+AYRILIK_SATIRI = _b5_satiri(r"AYRILIK")
+B5_PENCERE = 260          # karakter · satırdan sonra içerik okunan alan
+
+# İSTEK niteliği: film başlamasa da var olan bir İŞ olmalı. Seyir değil.
+# THE THIN ROOF: kadın "bir çukura bakmaya" gelmişti → ENDS OR STOPS: Stops.
+ISTEK_SEYIR = re.compile(
+    r"\b(anla(?:mak|ma)|görmek|görme|fark\s*et(?:mek|me)|izlemek|bakmak|"
+    r"gözlemle(?:mek|me)|keşfetmek|understand|see|observe|notice|realis|realiz|watch)\b",
+    re.IGNORECASE)
+# İş fiili varsa seyir bulgusu düşer: "bakmaya geldi AMA işaret dikecek".
+ISTEK_IS = re.compile(
+    r"\b(dik(?:mek|me)|kur(?:mak|ma)|onar(?:mak|ma)|taşı(?:mak|ma)|"
+    r"getir(?:mek|me)|götür(?:mek|me)|bırak(?:mak|ma)|kurtar(?:mak|ma)|"
+    r"değiş(?:tirmek|tirme)|bağla(?:mak|ma)|kapat(?:mak|ma)|aç(?:mak|ma)|"
+    r"topla(?:mak|ma)|çıkar(?:mak|ma)|ödemek|teslim|yerleştir)\b",
+    re.IGNORECASE)
+# ✏️ 02.09.2026 · GERİ ÇEKİLEN DENETİM — kayıt: 04_ARASTIRMA_BULGULARI T4.0
+#    Burada bir HASIM_ORTAM deseni vardı ve "ORTAM hasım değildir" diye FIX
+#    veriyordu. Dış araştırma turu iki bağımsız raporu çapraz okudu: insan-hasım
+#    ile doğa-hasım arasında izleyici tarafında BELGELENMİŞ nicel fark YOK; fark
+#    çatışmanın türünden değil BEDELİN büyüklüğünden geliyor. Desen kaldırıldı.
+#    Yerine gelen denetim BEDEL'in bir SAHNE numarası taşıyıp taşımadığıdır —
+#    "umursamadım" tepkisinin üç belgelenmiş sebebinden ölçülebilir olan budur.
+BEDEL_SAHNE = re.compile(r"\bS\d{1,2}\b")
+# İki insanlı film: CHARACTER BIBLE'ın pozitif sayım cümlesi.
+IKI_INSAN = re.compile(
+    r"exactly\s+two\s+human|two\s+(?:figures|people|astronauts)\b|"
+    r"both\s+figures\b|iki\s+(?:figür|astronot|kişi)\b", re.IGNORECASE)
+
+
+# ⚠️ KURAL SATIRI PENCEREYE GİRMEZ · 02.09.2026 kalibrasyonu.
+#    Planlar kapının KENDİ uyarısını da yazıyor:
+#      "⛔ \"anlamak · görmek · fark etmek\" İSTEK DEĞİLDİR — …"
+#    Bu satır pencerede kalırsa kapı, kuralı doğru uygulayan filmi kuralın
+#    metniyle düşürür (THE LEANING ROOM'da tam olarak bu oldu). Deponun
+#    D59 dersinin betik hâli: yasağın METNİ, yasağın KONUSU değildir.
+B5_KURAL_SATIRI = re.compile(r"^[ \t]*[⛔⚠️✅❌]|DEĞİLDİR|DEGILDIR", re.MULTILINE)
+B5_SONRAKI_MADDE = re.compile(r"^[ \t]*(?:B\d|C|D|E)[ \t]*[□·]", re.MULTILINE)
+
+
+def _b5_pencere(metin, bas):
+    """Beyanın kendi içeriği — kural satırları ve sonraki madde dışarıda."""
+    p = metin[bas:bas + B5_PENCERE]
+    kesim = B5_SONRAKI_MADDE.search(p)
+    if kesim:
+        p = p[:kesim.start()]
+    return "\n".join(l for l in p.split("\n") if not B5_KURAL_SATIRI.search(l))
+
+
+def b5_bul(yol, metin, desen):
+    """B5 satırını dosyada, yoksa KLASÖR KOMŞULARINDA ara (tema_bul ile aynı
+    gerekçe: satır PLAN'da yazılır, kapı bölüm dosyasında koşar)."""
+    m = desen.search(metin)
+    if m:
+        return _b5_pencere(metin, m.end()), yol.name
+    for kardes in sorted(yol.parent.glob("*.md")):
+        if kardes == yol:
+            continue
+        try:
+            k_metin = kardes.read_text(encoding="utf-8", errors="replace")
+        except OSError:
+            continue
+        m = desen.search(k_metin)
+        if m:
+            return _b5_pencere(k_metin, m.end()), kardes.name
+    return None, None
+
+# ─── ⑭ NOVUM TAŞIYICI KAPISI [Ders 157 · 01.09.2026] ───────────────
+# ONERME §4①: tek kare testi novumun KENDİ taşıyıcısıyla koşulur. Payload'da
+# taşıyıcı "amortisör bandı"ydı, tek kare "dört boş kelepçe yuvası" — başka
+# nesne. Kural ekrana hiç gelmedi, iki mercek onu "tekrar" sayıp kesme
+# listesine yazdı. Ders 27.08-01.09 arasında hiçbir kapıda değildi ve aynı
+# gün yazılan bir sonraki film onu okumadı. Kapı: taşıyıcı satırındaki nesne
+# adı TEK KARE satırlarından en az birinde geçmeli.
+# ⚠️ Ayraç ":" YA DA en az iki boşluk — planlar bu satırı sütun hizalı da yazıyor
+#    ("NOVUM TAŞIYICISI    9 cm parlak avuç diski × …"); ilk sürüm yalnız iki
+#    nokta arıyordu ve kapıyı yazan filmin kendisini "satır yok" saydı.
+NOVUM_TASIYICI = re.compile(r"NOVUM\s+TA[ŞSşs]IYICI(?:SI|si)?\s*(?:[:：]|\s{2,})\s*([^\n×x→—–(]+)", re.IGNORECASE)
+TEK_KARE_SATIR = re.compile(r"^.*\bTEK\s+KARE\b.*$", re.IGNORECASE | re.MULTILINE)
+TASIYICI_STOP = {"the", "and", "with", "bir", "ile", "için", "olan", "olarak", "üzerinde", "cm", "mm",
+                 "metre", "metrelik", "santim", "parlak", "büyük", "küçük", "uzun", "kısa", "eski",
+                 "yeni", "tek", "her", "jest", "jesti", "yere", "into", "onto", "from"}
+
+# ─── ⑮ SIRT POZİTİF YÜZEY KAPISI [Ders 139 · 01.09.2026] ────────────
+# D79'un yokluk listesi ("no backpack") kamera özneyi ARKADAN gösterdiğinde
+# yetmez: model boş sırtı doldurmak zorundadır ve yasak ona ne KOYACAĞINI
+# söylemez (bir filmde altın sırt ünitesi doğdu, 10 s kaldı). Kamera arkada
+# ya da omuz üstündeyse aynı promptta POZİTİF yüzey tarifi aranır.
+KAMERA_ARKADA = re.compile(
+    r"from\s+behind|behind\s+(?:her|him|them)\b|back\s+to\s+(?:the\s+)?camera|"
+    r"seen\s+from\s+(?:the\s+)?(?:back|rear)|over[- ]the[- ]shoulder|\bOTS\b|rear\s+three[- ]quarter",
+    re.IGNORECASE)
+SIRT_POZITIF = re.compile(
+    r"(?:one|a\s+single|single)\s+continuous[^.]{0,60}(?:panel|surface)|continuous\s+smooth\s+panel|"
+    r"back\s+(?:of\s+(?:the|her|his|their)\s+suit\s+)?is\s+(?:one|a\s+single)[^.]{0,50}(?:panel|surface)|"
+    r"flat\s+back\s+silhouette|back\s+silhouette\s+(?:is|stays)\s+flat|carrying\s+nothing",
+    re.IGNORECASE)
+
+
+# ─── ⑲ KİMLİK YIĞINI KAPISI [Ders 167 · 02.09.2026] ────────────────
+# THE SINKING STAKE (motor OMNI) çok sahnede reddedildi:
+#   "There are a lot of people I can help with, but I can't depict some
+#    public figures. Do you have anyone else in mind?"
+# Filmde gerçek kimse yok, özel ad yok, milliyet 0, ⑯ temiz, kapı GO'ydu.
+# Tetikleyici BİÇİMDİ: tek kişide yedi kimlik özniteliği tek cümlede —
+# kesin boy + gövde + ten + saç rengi + saç biçimi + yüz işareti + yaş.
+# "Ünlüyü adını yazmadan tarif ederek isteme" kalıbının birebir şekli.
+# ⚠️ Sınıflandırıcı niyeti değil YOĞUNLUĞU okur; eşik yoğunluktadır.
+KIMLIK_OZNITELIK = {
+    "kesin boy":   r"\b(?:one|two)?\s*hundred\s+\w+(?:[- ]\w+)?\s+centimet"
+                   r"|\b\d{2,3}\s*cm\b|\bmetres?\s+tall\b|\b\d\.\d{2}\s*m\s+tall\b",
+    "ten rengi":   r"\b(?:dark|light|pale|deep|warm|olive|brown|black|white|"
+                   r"tan|freckled)[- ]?(?:brown\s+)?skin\b",
+    "saç rengi":   r"\b(?:grey|gray|black|blonde?|red|red-brown|brown|white|"
+                   r"silver|auburn|ginger)\s+hair\b",
+    "saç biçimi":  r"\b(?:close-cropped|cropped|shaved|braided|tied|knotted|"
+                   r"pulled\s+back|pressed\s+flat|shoulder-length|long|short)"
+                   r"[^.]{0,20}\bhair\b",
+    "yaş":         r"\b(?:mid|early|late)[- ](?:twenties|thirties|forties|"
+                   r"fifties|sixties)\b|\b(?:aged\s+)?\d{2}\s+years?\s+old\b"
+                   r"|\b(?:forty|fifty|sixty|thirty)[- ]\w+\b(?=,)",
+    "yüz işareti": r"\b(?:scar|mole|freckles|deep\s+lines|creases|birthmark|"
+                   r"stubble|beard)\b[^.]{0,30}\b(?:cheek|brow|eyes?|jaw|chin|"
+                   r"temple|face)\b|\bdeep\s+lines\s+at\s+the\s+outer\s+eyes\b",
+}
+KIMLIK_PENCERE = 240      # karakter · tek "kişi tarifi" bölgesi sayılır
+KIMLIK_ESIK = 4           # bu kadar öznitelik bir arada = tanımlama kalıbı
+
+
+def kimlik_yiginlari(poz):
+    """Aynı pencerede >= KIMLIK_ESIK kimlik özniteliği taşıyan bölgeler."""
+    vurus = []
+    for ad, kalip in KIMLIK_OZNITELIK.items():
+        for m in re.finditer(kalip, poz, re.IGNORECASE):
+            vurus.append((m.start(), ad))
+    vurus.sort()
+    yiginlar, i = [], 0
+    while i < len(vurus):
+        pencere = [v for v in vurus if vurus[i][0] <= v[0] < vurus[i][0] + KIMLIK_PENCERE]
+        adlar = sorted({ad for _, ad in pencere})
+        if len(adlar) >= KIMLIK_ESIK:
+            yiginlar.append((vurus[i][0], adlar))
+            i += len(pencere)
+        else:
+            i += 1
+    return yiginlar
+
+
+# ─── ⑳ ZORLANMA KANALI KAPISI [Ders 169 · 02.09.2026] ──────────────
+# THE SINKING STAKE'in 25 promptunda: strain 0 · tremor 0 · heave 0 ·
+# "grip tighten" 0 · braced 1 · "working breath" 2 — hepsi TEK sahnede.
+# 24 sahnede fiziksel iş yapılıyor ve gövde hiçbir şey ödemiyor.
+# 0,40 g AĞIRLIĞI azaltır, KÜTLE ve ATALETİ azaltmaz; giysi maliyeti de
+# hiç azalmaz. Mercek ⑧ bunu "NOBODY PAYS" diye ölçer — bu kapı önce sorar.
+EFOR_FIILI = re.compile(
+    r"\b(?:hauls?|hauling|pulls?|pulling|drags?|dragging|lifts?|lifting|"
+    r"heaves?|heaved|prises?|prised|levers?|levering)\b", re.IGNORECASE)
+# ⚠️ KALİBRASYON (02.09.2026 · 6 filme koşuldu, ÜÇ yanlış-pozitif sınıfı kapatıldı):
+#   ① "carries/carry" bu depoda TAŞIMAK değil SAHİP OLMAK demek — "the glove
+#      carries a nine-centimetre disc", "the suit carries no patch". Çıkarıldı.
+#   ② "push" kamera sözlüğüne çarpıyor: "no push-in" negatif çekirdekte. Çıkarıldı.
+#   ③ "press" saça çarpıyor: "hair pressed flat under the helmet ring". Çıkarıldı.
+#   ④ "wrench" COLD_WELD'de NESNEDİR (bir İngiliz anahtarı), fiil değil. Çıkarıldı.
+# Kalan yedi fiil tek anlamlıdır ve hepsi bir YÜKE karşı iş tarif eder.
+EFOR_PENCERE = re.compile(r"^TIMELINE:.*?(?=^[A-Z⭐][A-Z ]{2,}:|\Z)",
+                          re.IGNORECASE | re.MULTILINE | re.DOTALL)
+ZORLANMA_IZI = re.compile(
+    r"\bforearm[^.]{0,40}\b(?:tendon|stand out|tighten|cord|strain|work)|"
+    r"\b(?:grip|hands?)\b[^.]{0,40}\b(?:slips?|re-?tak|tighten|shak|tremor)|"
+    r"\bleans?\s+into\b|\bshoulders?\s+(?:below|drop|low|round)|"
+    r"\b(?:rear|back)\s+boot\s+loads?\b|\bknee\s+bends?\s+before\b|"
+    r"\bbreaths?\s+per\b|\b(?:slower|shorter)\s+than\s+the\s+first\b|"
+    r"\bworking\s+breath\b|\bagainst\s+the\s+glove'?s?\s+own\s+stiffness\b|"
+    r"\bbraced?\b[^.]{0,30}\b(?:boot|leg|hip|weight)\b",
+    re.IGNORECASE)
+
 
 def kamera_cumleleri(govde):
     """Promptun yalnız KAMERA cümleleri (pozitif gövdeden)."""
@@ -532,6 +955,29 @@ def pozitif_govde(govde):
     return parca[0]
 
 
+def negatif_govde(govde):
+    """NEGATIVE bloğunun KENDİSİ. Boşsa "".
+
+    ⑯'nın varlık sebebi: `pozitif_govde` yasağın içini KORUR (D85), ama
+    politika ekseninde korunması gereken şey tam tersidir — sınıflandırıcı
+    yasak bloğunu da okur [D123]. Bu iki fonksiyon aynı ayrımı iki zıt
+    amaçla kullanır ve ikisi de doğrudur.
+    """
+    parca = re.split(r"^NEGATIVE:", govde, maxsplit=1, flags=re.MULTILINE)
+    return parca[1] if len(parca) > 1 else ""
+
+
+def politika_say(metin, sozluk):
+    """Sözlükteki her deseni say. → {desen: (adet, kaynak, ilk_eşleşme)}"""
+    bulunan = {}
+    for desen, kaynak in sozluk.items():
+        eslesmeler = re.findall(desen, metin, re.IGNORECASE)
+        if eslesmeler:
+            ilk = re.search(desen, metin, re.IGNORECASE).group(0)
+            bulunan[desen] = (len(eslesmeler), kaynak, ilk)
+    return bulunan
+
+
 def duzles(metin):
     """Satır sarmasını kaldır.
 
@@ -617,6 +1063,41 @@ def prompt_denetle(p):
             bulgular.append(Bulgu("FIX", f"negatif çekirdek imzası eksik: {', '.join(eksik)}",
                                   "KILAVUZ_REHBERI §5 · sahneye özel kısaltma meşru, yokluk değil."))
 
+    # ⑤b YÜZEY İŞARETİNE BİTİŞİK ÖLÇÜ [Ders 138 · 28.08.2026]
+    # Kadrajdaki bir YÜZEY İŞARETİNE (çatlak, halka, çizgi, oluk, iz)
+    # bitişik yazılan ölçü, model tarafından o işaretin ÜSTÜNE BASILAN BİR
+    # ETİKET olarak çizilebiliyor: bir filmin S2 promptu halkayı iki kez
+    # "eleven point six metres across" diye tarif etti ve ekranda halkanın
+    # iç yayına "11 metres" + gradasyon çentikleri yazıldı. Diyagram,
+    # teknik çizim ve arazi ölçüm fotoğrafı eğitim verisinde tam olarak
+    # böyle görünür. Ölçü SPEC'in kilit listesinde durur; prompt gövdesi
+    # nesneyi NESNE GÖRELİ ölçekle anlatır ("four body-lengths across").
+    # ⚠️ Boy/mesafe ölçüleri (1.68 metres tall) bu denetime GİRMEZ —
+    #    aranan, ölçünün bir YÜZEY İŞARETİ adıyla aynı pencerede olması.
+    if p["tip"] == "image":
+        for m in OLCU_SAYISI.finditer(govde_d):
+            # ① ölçüden SONRA bir BOYUT kelimesi olmalı (across/wide/…);
+            #    yoksa bu bir mesafe ya da boy ölçüsüdür, etiket riski yok.
+            if not BOYUT_KELIMESI.match(govde_d[m.end():m.end() + 25]):
+                continue
+            # ② işaret adı, ölçüyle AYNI CÜMLEDE ve ÖNCESİNDE olmalı.
+            #    Cümle sınırı geriye doğru tarama penceresini kapatır —
+            #    "…fine dark lines. Her shadow is 2.83 metres long" bu
+            #    yüzden bulgu DEĞİLDİR.
+            bas = max(0, m.start() - 60)
+            geri = govde_d[bas:m.start()]
+            kesik = max(geri.rfind("."), geri.rfind("!"), geri.rfind("?"))
+            if kesik != -1:
+                geri = geri[kesik + 1:]
+            isaret = ISARET_ADI.search(geri)
+            if isaret:
+                cevre = govde_d[bas:m.end() + 45].replace("\n", " ").strip()
+                bulgular.append(Bulgu(
+                    "FIX",
+                    f"yüzey işaretine bitişik ölçü: \"{isaret.group(0)}\" → \"{m.group(0).strip()}\"",
+                    f"...{cevre}... · [D138] ölçüyü SPEC'e taşı, gövdede "
+                    f"nesne göreli ölçek yaz (\"four body-lengths across\")."))
+
     # ⑥ PUSULA KELİMESİ — modelin pusulası yok (uzamsal kılavuz §4.4)
     for m in PUSULA.finditer(poz_d):
         cevre = poz_d[max(0, m.start() - 40):m.end() + 40].strip()
@@ -673,6 +1154,104 @@ def prompt_denetle(p):
                     f"...{kisa}... · ne tanrısal ne insani; \"kötü yerleştirilmiş "
                     "güvenlik kamerası\" hissi. 15-30° ya da 90° (tepe) seç."))
 
+    # ⑯ POLİTİKA SÖZLÜĞÜ [Ders 123 · 01.09.2026]
+    # ⛔ ②'nin tersi: burada NEGATIVE bloğu MUAF DEĞİL, ağırlıklıdır.
+    neg = duzles(negatif_govde(govde))
+    t1_poz, t1_neg = politika_say(poz_d, POLITIKA_T1), politika_say(neg, POLITIKA_T1)
+    t2_poz, t2_neg = politika_say(poz_d, POLITIKA_T2), politika_say(neg, POLITIKA_T2)
+
+    def _ozet(d):
+        return " ".join(f"{v[2].strip()}×{v[0]}" for v in
+                        sorted(d.values(), key=lambda x: -x[0]))
+
+    t1_top = sum(v[0] for v in t1_poz.values()) + sum(v[0] for v in t1_neg.values())
+    t2_top = sum(v[0] for v in t2_poz.values()) + sum(v[0] for v in t2_neg.values())
+
+    if t1_top:
+        nerede = []
+        if t1_neg:
+            nerede.append(f"NEGATIVE bloğunda: {_ozet(t1_neg)}")
+        if t1_poz:
+            nerede.append(f"pozitif gövdede: {_ozet(t1_poz)}")
+        seviye = "FIX" if POLITIKA_BANDI_KARARA_BAGLI or t1_top < 3 else "BLOCK"
+        bulgular.append(Bulgu(
+            seviye, f"politika sözlüğü T1 · {t1_top} tetikleyici",
+            " · ".join(nerede) + " · [D123] sınıflandırıcı \"no\" önekini "
+            "okumaz. Yasağı SİL, yerine malzemeyi TARİF et "
+            "(POLITIKA_VE_URETILEBILIRLIK_KILAVUZU §2)."))
+
+    if t2_top >= 5:
+        nerede = []
+        if t2_neg:
+            nerede.append(f"NEGATIVE: {_ozet(t2_neg)}")
+        if t2_poz:
+            nerede.append(f"pozitif: {_ozet(t2_poz)}")
+        bulgular.append(Bulgu(
+            "FIX", f"politika sözlüğü T2 · {t2_top} tetikleyici (yoğunluk)",
+            " · ".join(nerede) + " · tek geçiş normaldir, yığılma değil. "
+            "Sınıflandırıcı promptu BÜTÜN olarak okur [D123]."))
+
+    for m in POLITIKA_FIIL.finditer(govde_d):
+        cevre = govde_d[max(0, m.start() - 45):m.end() + 30].strip()
+        bulgular.append(Bulgu(
+            "FIX", f"gövdeye yönelmiş şiddet fiili: \"{m.group(0).strip()}\"",
+            f"...{cevre}... · [YERCEKIMI KİLİT 8] aynı fiziği taşıyan nötr "
+            "hâl yaz: \"fragments cross the frame\" · \"at hip height\"."))
+
+    for m in MILLIYET.finditer(govde_d):
+        bulgular.append(Bulgu(
+            "BLOCK", f"milliyet ifadesi: \"{m.group(0).strip()}\"",
+            "§7'de DOĞRULANMIŞ üretim reddi (LOW POWER · \"Israeli-American\"). "
+            "Yalnız fiziksel tanım yazılır."))
+
+    for m in KURUM.finditer(govde_d):
+        bulgular.append(Bulgu(
+            "FIX", f"gerçek kurum adı: \"{m.group(0).strip()}\"",
+            "§7: gerçek ülke ordusu/kurumu/rütbesi yazılmaz — hem politika "
+            "yüzeyi hem D34 jenerik halüsinasyonu. (Milliyetin aksine bu "
+            "kural bu depoda ÖLÇÜLMEDİ → FIX, BLOCK değil.)"))
+
+    # ⑯b YAPISAL RED PROFİLİ [KART 10 · Cold Burn S8]
+    if p["tip"] == "video" and not p["yedek"] and INSANSIZ.search(govde_d) \
+            and len(neg) >= NEGATIF_BLOK_BANDI:
+        bulgular.append(Bulgu(
+            "FIX", f"yapısal red profili: insansız sahne + {len(neg)} karakter "
+                   f"NEGATIVE bloğu (bant {NEGATIF_BLOK_BANDI})",
+            "[KART 10 · Cold Burn S8] yokluk listesi İSTEK olarak okunamıyor. "
+            "§7 çözüm sırası: NEGATIVE'i tek pozitif Style satırına indir, "
+            "boş kadrajı VARLIK olarak tarif et."))
+
+    # ─── ⑲ KİMLİK YIĞINI KAPISI [Ders 167 · 02.09.2026] ───────────
+    # Tek pencerede >= 4 kişi özniteliği = "ünlüyü adını yazmadan tarif
+    # ederek isteme" kalıbı. THE SINKING STAKE bu biçimle reddedildi
+    # (motor OMNI, red defteri 15) — ⑯ temizdi, kapı GO vermişti.
+    for _, adlar in kimlik_yiginlari(poz_d):
+        bulgular.append(Bulgu(
+            "FIX", f"kimlik yığını: {len(adlar)} kişi özniteliği bir arada "
+                   f"({' · '.join(adlar)})",
+            "Bir ünlüyü adını yazmadan TARİF EDEREK isteme kalıbıdır ve kişi "
+            "sınıflandırıcısını tetikler [D167 · red defteri 15, OMNI]. Yığın "
+            "PLAN'da ve referans paketinde yaşar; prompta yalnız SİLUET iner. "
+            "Boy göreli yazılır ('a head taller'), yüz tarifi yalnız yüzün "
+            "KONU olduğu sahnede kalır."))
+
+    # ─── ⑳ ZORLANMA KANALI KAPISI [Ders 169 · 02.09.2026] ─────────
+    if p["tip"] == "video":
+        # ⛔ YALNIZ TIMELINE BLOĞU: efor bir OLAYDIR, kamera satırında ya da
+        #    negatif blokta geçen fiil iş değildir (kalibrasyon ②).
+        m_tl = EFOR_PENCERE.search(pk_govde := pozitif_govde(p["govde"]))
+        tl = duzles(m_tl.group(0)) if m_tl else ""
+        if tl and EFOR_FIILI.search(tl) and not ZORLANMA_IZI.search(pk_govde):
+            bulgular.append(Bulgu(
+                "NOT", "efor fiili TIMELINE'da var, gövde tepkisi yok",
+                "Çekme/kaldırma/sürükleme yazılmış ama önkol · kavrama · gövde "
+                "eğimi · bacak yüklenmesi · nefes kadansı kanallarının hiçbiri "
+                "yok. Düşük yerçekimi AĞIRLIĞI azaltır, KÜTLE ve ATALETİ "
+                "azaltmaz [D169]. Sayı yazılır, sıfat değil: 'the fourth pull "
+                "is slower than the first' ölçülebilir, 'he strains' değil. "
+                "⚠️ Bu satır GÖZLEMDİR, üretim durdurmaz: zorlanma sözlüğü "
+                "ölçülene kadar bant yok (⑯ ve image bandı emsali)."))
+
     return bulgular
 
 
@@ -682,11 +1261,41 @@ def prompt_denetle(p):
 ATLA = re.compile(r"/kilavuzlar/|SABLON|ŞABLON|TEMPLATE", re.IGNORECASE)
 
 
+def sahneli_dosyalar(klasor):
+    """Klasörde DOĞRUDAN duran, sahne başlığı taşıyan .md dosyaları."""
+    bulunan = []
+    for f in sorted(klasor.glob("*.md")):
+        if FILM_DISI.search(f.name) or ATLA.search(str(f)):
+            continue
+        try:
+            if SAHNE_BASLIK.search(f.read_text(encoding="utf-8", errors="replace")):
+                bulunan.append(f)
+        except OSError:
+            continue
+    return bulunan
+
+
+def bolunmus_film(yol):
+    """Bu dosya, sahneleri BAŞKA dosyalara da yayılmış bir filmin parçası mı?"""
+    return yol.is_file() and len(sahneli_dosyalar(yol.parent)) >= 2
+
+
 def dosya_denetle(yol):
     if ATLA.search(str(yol)):
         return None
-    metin = yol.read_text(encoding="utf-8", errors="replace")
-    promptlar = promptlari_cikar(metin)
+    return metin_denetle(yol, yol.read_text(encoding="utf-8", errors="replace"))
+
+
+def metin_denetle(yol, metin, promptlar=None):
+    """Bir METİN gövdesini denetler. `yol` yalnız ad ve komşu araması içindir.
+
+    01.09.2026'da `dosya_denetle`den ayrıldı. Sebep: film artık klasöre
+    bölünüyor (PLAN + BOLUM_1 + BOLUM_2 + …) ve DİZİ kapıları dosya
+    sınırında KÖRLEŞİYOR — gövde tek satır değişmedi, yalnız girdisi
+    dosyadan metne çevrildi. Birleştirilmiş koşu: klasor_denetle().
+    """
+    if promptlar is None:
+        promptlar = promptlari_cikar(metin)
     if not promptlar:
         return None
 
@@ -700,6 +1309,22 @@ def dosya_denetle(yol):
     tum_prompt = duzles(" ".join(p["govde"] for p in promptlar))
     poz_tum = duzles(" ".join(pozitif_govde(p["govde"]) for p in promptlar))
 
+    # METİN YASAĞININ KAPSAMI [Ders 138 · 28.08.2026] — DOSYA BAŞINA TEK SATIR
+    # "metin yasağı" imzası KELİMEYİ arıyor, KAPSAMI değil: depodaki her
+    # filmin metin yasağı bir GİYSİ ya da GÖVDE listesidir ("no patch, no
+    # flag, no lettering, no digits and no symbol anywhere"). O cümle
+    # kostümü korur; zemini, kayayı, gökyüzünü korumaz. Bir filmde model
+    # kaldırımdaki çatlağın iç yayına "11 metres" + gradasyon çentikleri
+    # yazdı ve altı QA merceğinin altısı görmedi.
+    # ⚠️ Bulgu DOSYA BAŞINA BİR KEZ yazılır: her prompta bir satır yazan
+    #    kilit, kilit değil duvardır (AGENTS §8).
+    if TEXT_YASAK_IZI.search(tum_prompt) and not TEXT_KAPSAM.search(tum_prompt):
+        sonuc["dosya_bulgulari"].append(Bulgu(
+            "FIX", "metin yasağı KAPSAMSIZ — yalnız kostümü/gövdeyi koruyor",
+            "[D138] KILAVUZ_REHBERI §5'in kapsam biçimini kullan: "
+            "\"No readable text, letters, digits, numbers or symbols on any "
+            "display, surface, patch or sign\" — zemin ve kaya da kadrajdadır."))
+
     # A1 — yasak ↔ anlatım çelişkisi (en pahalı hata)
     if A1_YASAK.search(tum_prompt):
         icerik = A1_ICERIK.search(poz_tum)
@@ -710,11 +1335,19 @@ def dosya_denetle(yol):
                 f"...{cevre.strip()}... · Tidal Hunt: sayaç ekrana hiç çıkmadı (D50)"))
 
     # Scene N of X — iddia edilen sahne sayısı dosyayla tutuyor mu
+    # ⚠️ BÖLÜNMÜŞ FİLMDE DOSYA MODUNDA KOŞMAZ [01.09.2026]: BOLUM_1'de 3 sahne
+    #    başlığı vardır ama promptlar DOĞRU biçimde "Scene 1 of 6" der. Bu kapı
+    #    o filmde parçanın tamamını gören KLASÖR MODUNDA koşar; dosya modunda
+    #    koşarsa her bölünmüş filme iki uydurma FIX yazar ve gerçek bulguyu
+    #    gürültüye gömer. Aynı DOSYA içindeki çelişki (iddialar > 1) her hâlde
+    #    ölçülür — o, parçalanmadan bağımsızdır.
     sahne_sayisi = len(SAHNE_BASLIK.findall(metin))
     iddialar = {int(x) for _, x in SCENE_N_OF_X.findall(tum_prompt)}
     if len(iddialar) > 1:
         sonuc["dosya_bulgulari"].append(Bulgu(
             "FIX", f"\"Scene N of X\" tutarsız — dosyada {sorted(iddialar)} birden geçiyor"))
+    elif bolunmus_film(yol):
+        pass
     elif iddialar and sahne_sayisi and sahne_sayisi not in iddialar:
         sonuc["dosya_bulgulari"].append(Bulgu(
             "FIX", f"\"Scene N of {iddialar.pop()}\" ama dosyada {sahne_sayisi} sahne başlığı var",
@@ -741,7 +1374,11 @@ def dosya_denetle(yol):
             sonuc["dosya_bulgulari"].append(Bulgu(
                 "FIX", f"D79 bloğu eksik: {', '.join(eksik79)}",
                 "Bible'da yasaklamak YETMEDİ — iki filmde de sırt ünitesi üretildi. "
-                "⛔ Vizör tasarım gereği renkli/aynalıysa bu bulgu DÜŞER."))
+                "⛔ Vizör tasarım gereği renkli/aynalıysa bu bulgu DÜŞER. "
+                "⭐ 01.09.2026 [TUR 3]: vizör şeffaflığı artık YALNIZ devamlılık "
+                "kilidi değil, ÜRETİLEBİLİRLİK kilidi — yüzü kapatan ekipman "
+                "anonimlik/deepfake imzasına yakın okunuyor "
+                "(POLİTİKA §3 imza ⑥). Açık vizör red riskini de düşürür."))
 
     # YÖN KAPISI ④ — araçlı filmde yönelim hiç yazılmamış
     # Uzamsal kılavuz §5.1 soru ①: "hangi uç önde?" cevapsızsa gemi
@@ -858,7 +1495,174 @@ def dosya_denetle(yol):
                     "Crash kaydının tema satırı: \"bedel yok → tema dekoratif "
                     "kalıyor\" (Tema 5/10, aynı kayıtta Karakter 4/10)."))
 
+    # ─── ⑰ B5 HİKÂYE OMURGASI KAPISI [03_PLAN_ONCESI B5 · 02.09.2026] ──
+    # 06_HIKAYE_HATTI_TESHISI §3.2: engel parkuru gerilim üretir, hikâye
+    # üretmez. Fizik kuralı hiçbir şey İSTEMEZ — istemeyen bir engel bir
+    # engeldir, bir hasım değildir.
+    if not FILM_DISI.search(yol.name) and sahne_sayisi >= 6:
+        i_metin, i_kaynak = b5_bul(yol, metin, ISTEK_SATIRI)
+        b_metin, b_kaynak = b5_bul(yol, metin, BEDEL_SATIRI)
+        eksik = [ad for ad, d in (("İSTEK", ISTEK_SATIRI), ("ENGEL", ENGEL_SATIRI),
+                                  ("BEDEL", BEDEL_SATIRI), ("MUHATAP", MUHATAP_SATIRI))
+                 if b5_bul(yol, metin, d)[0] is None]
+        if eksik:
+            sonuc["dosya_bulgulari"].append(Bulgu(
+                "BLOCK", f"B5 satırı yok: {' · '.join(eksik)}",
+                "03_PLAN_ONCESI B5 — İSTEK (film başlamasa da var olan bir iş) · "
+                "ENGEL (bunu ne engelliyor) · BEDEL (alırsa ne kaybediyor + SAHNE no) · "
+                "MUHATAP (eylemin yankısı nerede görünüyor: ikinci insan / kendi geçmiş "
+                "kararı / kendi bedeni / ortamın kalıcı değişen parçası). "
+                "⚠️ Bu kapı 02.09.2026'da açıldı; ondan önceki dosyaların çoğu "
+                "BLOCK verir — depo ölçümü: İSTEK 8/79 · ENGEL 2/79 "
+                "(06_HIKAYE_HATTI_TESHISI §1.1)."))
+        if i_metin and ISTEK_SEYIR.search(i_metin) and not ISTEK_IS.search(i_metin):
+            sonuc["dosya_bulgulari"].append(Bulgu(
+                "FIX", f"İSTEK bir SEYİR gibi yazılmış ({i_kaynak})",
+                "\"anlamak\" · \"görmek\" · \"fark etmek\" İSTEK DEĞİLDİR [05 §5①]. "
+                "İstek, film başlamasa da var olan bir iştir. THE THIN ROOF: kadın "
+                "\"bir çukura bakmaya\" gelmişti → ④ merceği ENDS OR STOPS: Stops yazdı."))
+        if b_metin and not BEDEL_SAHNE.search(b_metin):
+            sonuc["dosya_bulgulari"].append(Bulgu(
+                "FIX", f"BEDEL satırı SAHNE numarası taşımıyor ({b_kaynak})",
+                "Kaybın GÖRÜLDÜĞÜ sahne yazılmazsa bedel bir cümledir, bir olay değil "
+                "(B2 ile çapraz oku). İzleyici tarafında ölçülmüş olan budur: "
+                "\"umursamadım\" tepkisinin üç sebebinden biri bedelin yokluğu, "
+                "\"güzel ama boş\" şikâyeti ise insanî bedelin görsele yenildiği "
+                "filmlerde çıkıyor [04_ARASTIRMA_BULGULARI TUR 4]."))
+        if IKI_INSAN.search(metin) and b5_bul(yol, metin, AYRILIK_SATIRI)[0] is None:
+            sonuc["dosya_bulgulari"].append(Bulgu(
+                "FIX", "iki insanlı film ama AYRILIK sahnesi yazılmamış",
+                "İki figürün AYNI FİKİRDE OLMADIĞI sahne (jest · duraklama · yön · "
+                "temas reddi) plana yazılır; ikisi de aynı anda aynı şeyi yapıyorsa "
+                "kadroda iki gövde vardır, tek kişi. THE SINKING STAKE 25 sahne "
+                "boyunca iki insanı yan yana tuttu, merkezî seçimi \"biri onaylar, "
+                "öteki karar verir\" oldu (06_HIKAYE_HATTI_TESHISI §1.5)."))
+
+    # ─── ⑭ NOVUM TAŞIYICI KAPISI [Ders 157] ───────────────────────
+    # Yalnız film dosyaları (fragman/kapak muaf) ve 6+ sahne.
+    if not FILM_DISI.search(yol.name) and sahne_sayisi >= 6:
+        m_t = NOVUM_TASIYICI.search(metin)
+        if m_t:
+            nesne = m_t.group(1).strip()
+            kelimeler = [w for w in re.findall(r"[a-zçğıöşü]{4,}", nesne.lower()) if w not in TASIYICI_STOP]
+            # ⚠️ Plan nesri ~72 sütunda SARILIR (duzles() ile aynı sebep): "…7,0 s
+            #    karesi: mat karanlık\nbir avuç ve…" — nesne alt satıra düşer. Satır
+            #    + izleyen iki satır tek parça okunur; ilk sürüm kapıyı yazan filmi
+            #    bu yüzden düşürdü.
+            satirlar = metin.split("\n")
+            tek_kare = [" ".join(satirlar[i:i + 3]) for i, s in enumerate(satirlar)
+                        if TEK_KARE_SATIR.search(s) and not NOVUM_TASIYICI.search(s)]
+            if kelimeler and tek_kare:
+                if not any(w in s.lower() for w in kelimeler for s in tek_kare):
+                    sonuc["dosya_bulgulari"].append(Bulgu(
+                        "FIX", f"novum taşıyıcısı TEK KARE testinde geçmiyor: \"{nesne[:60]}\" [D157]",
+                        "ONERME §4①'e yazılan kare §2'nin taşıyıcı nesnesini İÇERMEK zorunda; başka "
+                        "nesneyle geçilen kapı geçilmemiş kapıdır. Payload: taşıyıcı bant, tek kare "
+                        "kelepçe yuvası → kural ekrana gelmedi, iki mercek kesme listesine yazdı."))
+            elif kelimeler and not tek_kare:
+                sonuc["dosya_bulgulari"].append(Bulgu(
+                    "FIX", "NOVUM TAŞIYICISI yazılmış ama TEK KARE satırı yok (ONERME §4①) [D157]"))
+        else:
+            sonuc["dosya_bulgulari"].append(Bulgu(
+                "NOT", "NOVUM TAŞIYICISI satırı yok (ONERME §2 · 22.08.2026 sonrası filmlerde zorunlu)",
+                "Eski dosyalarda gözlemdir; yeni filmde <nesne> × <jest> → <ihlal> satırı plana yazılır."))
+
+    # ─── ⑮ SIRT POZİTİF YÜZEY KAPISI [Ders 139] ───────────────────
+    # ⚠️ Bulgu DOSYA BAŞINA TEK SATIR (kalibrasyon 01.09.2026: prompt başına yazınca
+    #    80 dosyada satır yağmuru — kilit değil duvar, AGENTS §8). Karar değişmez.
+    if KASK_IZI.search(metin) and not FILM_DISI.search(yol.name):
+        arkada = []
+        for p in promptlar:
+            if p["yedek"]:
+                continue
+            kam = " ".join(kamera_cumleleri(p["govde"]))
+            if KAMERA_ARKADA.search(kam) and not SIRT_POZITIF.search(duzles(p["govde"])):
+                arkada.append(str(p["satir"]))
+        if arkada:
+            sonuc["dosya_bulgulari"].append(Bulgu(
+                "FIX", f"{len(arkada)} promptta kamera ARKADA/omuz üstünde, sırt için POZİTİF yüzey "
+                       f"tarifi yok [D139] (satır {', '.join(arkada[:8])}{'…' if len(arkada) > 8 else ''})",
+                "\"the back of the suit is one continuous smooth panel from collar to hip, "
+                "carrying nothing\" — yokluk listesi arkadan çekimde tutmaz; model boş sırtı "
+                "doldurur (altın sırt ünitesi, 10 s)."))
+
     return sonuc
+
+
+# ─── KLASÖR MODU [01.09.2026] ──────────────────────────────────────
+# NEDEN VAR: film klasöre bölününce (PLAN + BOLUM_1 + BOLUM_2 + KAPAK +
+# MUZIK + YAYIN_PAKETI) bu betiğin DOSYA SEVİYESİ kapılarının üçü sessizce
+# kapanıyor — üçü de dosya sınırını göremediği için:
+#
+#   · AÇI VE KURULUM KAPISI  eşiği `len(video) >= 4`. 6 sahnelik dikey film
+#     ikiye bölününce dosya başına 3 video promptu kalır → kapı HİÇ koşmaz.
+#   · BÖLÜM SINIRINDAKİ ARDIŞIK ÇİFT (S2↔S3 · 3-5 dk'da S13↔S14) hiçbir
+#     dosyada yan yana gelmez → "aynı kurulum" denetimi o çiftte kördür.
+#   · ⑭ NOVUM TAŞIYICI  satırı PLAN'da, TEK KARE satırı da PLAN'da; bölüm
+#     dosyasında ikisi de yok → kapı "satır yok" der. Bu depoda ZATEN oluyor:
+#     THE_BLUE_DRIFT (PART_A/PART_B) iki dosyada da "NOVUM TAŞIYICISI satırı
+#     yok" aldı, oysa satır PLAN'da yazılıydı.
+#
+# Bu mod klasördeki bölüm dosyalarını SAHNE SIRASINA göre birleştirip aynı
+# denetimleri film boyunca bir kez daha koşar. Prompt seviyesi bulgular
+# dosya modunda zaten yazıldığı için burada TEMİZLENİR — aynı bulgu iki kez
+# raporlanmaz (AGENTS §8: "kilit değil duvar" olmasın).
+#
+# ⚠️ DÜRÜST SINIR: birleştirme klasörün DOĞRUDAN altındaki .md'leri kapsar.
+#    7-9 ve 10-20 dk formatının FAZ ALT KLASÖRLERİ birleşmez (THE_SECOND_SHIP:
+#    faz başına tek dosya × 10 sahne). O formatlarda dosya modu zaten tam
+#    koşuyor; kör kalan tek yer FAZ SINIRINDAKİ ardışık çifttir. Format dizini
+#    (dikey_shorts_filmler gibi) bilerek birleştirilmez — 18 filmi tek film
+#    saymak ölçüm değil gürültü üretir.
+def ilk_sahne(metin):
+    """Dosyadaki en küçük sahne numarası — birleştirme sırası budur."""
+    nolar = [int(n) for n in re.findall(r"^##\s+.*\bSAHNE\s+(\d+)", metin,
+                                        re.IGNORECASE | re.MULTILINE)]
+    return min(nolar) if nolar else -1
+
+
+def klasor_denetle(klasor):
+    """Bir FİLM klasörünü tek gövde gibi denetler. Film değilse None."""
+    # Bölüm dosyası tek ise film zaten tek gövdedir; dosya modu tamdır.
+    if len(sahneli_dosyalar(klasor)) < 2:
+        return None
+    # Sahnesiz dosyalar (PLAN · REFERANS) da gövdeye girer: TEMA, ⑭ NOVUM ve
+    # TEK KARE satırları orada durur ve bölüm dosyasında hiç yoktur.
+    dosyalar = [f for f in sorted(klasor.glob("*.md"))
+                if not ATLA.search(str(f)) and not FILM_DISI.search(f.name)]
+
+    parcalar, promptlar, sahneli = [], [], 0
+    for f in sorted(dosyalar, key=lambda p: (ilk_sahne(
+            p.read_text(encoding="utf-8", errors="replace")), p.name)):
+        metin = f.read_text(encoding="utf-8", errors="replace")
+        parcalar.append(metin)
+        if SAHNE_BASLIK.search(metin):
+            sahneli += 1
+            # Satır numarası DOSYASIYLA birlikte taşınır: birleşik koşuda
+            # çıplak "satır 990" hiçbir dosyada bulunamaz, operatör aramayı
+            # bırakır ve bulgu ölür.
+            kisa = f.stem.replace(klasor.name + "_", "") or f.stem
+            for p in promptlari_cikar(metin):
+                p["satir"] = f"{kisa}:{p['satir']}"
+                promptlar.append(p)
+    if not promptlar:
+        return None
+
+    sonuc = metin_denetle(klasor, "\n\n".join(parcalar), promptlar)
+    if not sonuc:
+        return None
+    sonuc["klasor"] = True
+    sonuc["parca"] = sahneli
+    for p in sonuc["promptlar"]:
+        p["bulgular"] = []
+    return sonuc
+
+
+def klasorleri_bul(kok):
+    """Ağaçta doğrudan ≥2 sahneli .md taşıyan her klasör bir film adayıdır."""
+    adaylar = [kok] + [d for d in sorted(kok.rglob("*")) if d.is_dir()]
+    return [d for d in adaylar
+            if not ATLA.search(str(d)) and len(sahneli_dosyalar(d)) >= 2]
 
 
 def karar(sonuc):
@@ -878,6 +1682,9 @@ def yazdir(sonuc):
 
     print(f"\n{'═' * 67}")
     print(f"{isaret} {k}  ·  {sonuc['yol']}")
+    if sonuc.get("klasor"):
+        print(f"   📁 FİLM KLASÖRÜ · {sonuc['parca']} bölüm dosyası birleşik · "
+              "yalnız DİZİ ve DOSYA seviyesi kapıları")
     print(f"   {len(asil)} prompt" + (f" (+{len(yedek)} yedek sürüm, sayıma girmez)" if yedek else ""))
     print("═" * 67)
 
@@ -943,19 +1750,27 @@ def main():
         print("KULLANIM: python3 prompt_kontrol.py <dosya|klasör> ... [--rapor]")
         return 1
 
-    hedefler = []
+    hedefler, klasorler = [], []
     for a in argv:
         y = Path(a)
         if y.is_dir():
             hedefler += sorted(y.rglob("*.md"))
+            klasorler += klasorleri_bul(y)
         elif y.is_file():
             hedefler.append(y)
+            # Tek dosya verildiyse de filmin KLASÖRÜ birleşik koşulur —
+            # bölünmüş filmde tek bölüme bakmak dizi kapılarını kör bırakır.
+            klasorler += klasorleri_bul(y.parent)
         else:
             print(f"⚠️  bulunamadı: {a}")
 
     sonuclar = []
     for y in hedefler:
         s = dosya_denetle(y)
+        if s:
+            sonuclar.append(s)
+    for k in dict.fromkeys(klasorler):
+        s = klasor_denetle(k)
         if s:
             sonuclar.append(s)
 
@@ -968,8 +1783,10 @@ def main():
         yazdir(s)
 
     kararlar = [karar(s) for s in sonuclar]
+    n_klasor = sum(1 for s in sonuclar if s.get("klasor"))
     print(f"\n{'═' * 67}")
-    print(f"  TOPLAM {len(sonuclar)} dosya · "
+    print(f"  TOPLAM {len(sonuclar) - n_klasor} dosya"
+          + (f" + {n_klasor} film klasörü (birleşik)" if n_klasor else "") + " · "
           f"⛔ {kararlar.count('BLOCK')} BLOCK · "
           f"⚠️  {kararlar.count('FIX')} FIX · "
           f"✅ {kararlar.count('GO')} GO")

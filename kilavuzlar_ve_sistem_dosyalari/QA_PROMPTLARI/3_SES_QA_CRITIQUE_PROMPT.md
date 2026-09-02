@@ -100,6 +100,14 @@ STATE C — TOTAL DIGITAL SILENCE not one sound in the entire runtime, no
                                 room tone, no hiss, no floor
                                 → ⛔ STOP. Output the block below and score
                                   nothing.
+                                ⛔ YOU MAY DECLARE STATE C ONLY IF the
+                                  operator has pasted the file's own audio
+                                  stream probe above and it came back EMPTY.
+                                  Without that line, what you have is STATE B
+                                  with nothing audible to you: run categories
+                                  6-9 and say so in one line. The stop block
+                                  is reserved for a MEASURED absence, never
+                                  for one you inferred from listening.
 
 STATE D — AUDIO STARTS/STOPS    sound exists in some stretches and is
                                 DEAD elsewhere (absolute silence, not quiet)
@@ -336,6 +344,21 @@ stays out of the mean.
 Reviews from different lenses are merged into one record. Scoring an
 event that belongs to another lens bills one defect several times and
 drags the film down once per reviewer.
+```
+
+```
+⛔ AN OUT-OF-SCOPE FLAG IS SOMETHING YOU SAW, NEVER SOMETHING YOU WERE TOLD.
+
+Write a flag only for a defect you observed yourself, in this run, in the
+material in front of you. Never restate a finding that reached you any
+other way — from an earlier pass in this session, from another lens's
+report, from a summary, from the operator's message. A flag you did not
+observe is not a cross-check; it is the same claim counted twice, and it
+travels faster than a real one because it costs nothing to copy.
+
+If a defect is out of your scope, the honest flag is short and yours:
+what you saw, where, and which lens owns it. If you cannot say what you
+saw, do not write the line at all.
 ```
 
 ---
@@ -601,9 +624,16 @@ AUDIO STATE: [A / B / C / D] · SPOKEN LINES: [n] · CUTS COUNTED: [n]
 NON-SCENE MATERIAL: [in-out + what it is, or "none"]
 LINES HEARD: [n · every spoken line VERBATIM with its timecode, or "none"]
              When you write "none", say which none it is: "none — room tone
-             present" or "none — no audio information at all". A film with no
+             present" or "none — nothing audible to me". A film with no
              dialogue and a film with no audio track are different objects and
              only one of them is a delivery defect.
+             ⛔ THIS LINE REPORTS WHAT YOU HEARD. It is never a statement
+             about the file. You may not write that the file has no audio
+             track, no audio stream, no audio information, or that the audio
+             was stripped in export: that is a property of the container, it
+             is read with one ffprobe command, and no model can observe it.
+             Write "none — nothing audible to me" and put the question in
+             FLAGS. A run that stops on that claim is a run never made.
 
 ⛔ NON-SCENE MATERIAL is not a scene at ANY duration. Material that carries
 burned-in text, or is static, or bears no scene fingerprint, is a card — a
@@ -646,6 +676,11 @@ VERDICT: [SOUNDTRACK HOLDS / AUDIBLE DRIFT, FIXABLE IN THE MIX /
           WRONG VOICE — REGENERATE]
          A line from the wrong character, or a voice that never resolves to
          a source, = WRONG VOICE, regardless of other scores.
+         ⛔ If every category reads N/A or UNVERIFIABLE — nothing was
+         measured — the VERDICT line reads NO VERDICT — NOTHING MEASURED.
+         Never pick a verdict for a soundtrack no category of which carries
+         a number, and never score a category from a silence you could not
+         verify against the file.
 
 ## AUDIO LEDGER
 [the full STEP 1 ledger: dialogue table, voice passports, ambience map,

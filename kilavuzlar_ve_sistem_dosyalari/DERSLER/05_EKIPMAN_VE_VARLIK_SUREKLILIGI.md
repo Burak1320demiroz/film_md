@@ -449,8 +449,10 @@ yaz.** Bu depoda kilit tam tersi dağılmıştı ve bedeli bir blocker oldu.
 
 **Kaynak:** THE RING LIGHT · 12.08.2026 · 🧍 KARAKTER_QA pasaportu + 🔧 VIDEO_QA
 baseline'ı — iki bağımsız mercek aynı yanlışı okudu
-**Sorun:** D79'un POZİTİF hâlinin ters etkisi; ilk vaka, ama D88 ("sınırlı izin
-tam izindir") ile aynı aileden
+**Sorun:** D79'un POZİTİF hâlinin ters etkisi; D88 ("sınırlı izin tam izindir")
+ile aynı aileden. **2 vaka:** 2.si THE FROST LINE (31.08.2026) — C kilidi yine
+"optik berrak, renksiz, YANSIMASIZ" yazdı; ② vizör hâlini "unreadable/erratic"
+okudu, master karelerinde cam yalnız S21'de (t204, çerçeve + spekülar) okunuyor
 
 Ders 79 aynalı vizörü yasaklattı, çünkü yüz okunmuyordu. Ring Light bunu en uç
 biçimde uyguladı (§0.12):
@@ -506,5 +508,142 @@ environment reflected in the visor.
 ekranda **ayırt edici bir işaret** taşımıyorsa, o kilit ölçülemez. Kilidi
 yazarken sor: *bu durumun tersi ekranda nasıl görünürdü?* İki durum aynı
 görünüyorsa kilit değil, temennidir.
+
+---
+
+## 🔴 DERS 139: DÜZ SIRT KİLİDİ YALNIZ SIRT GÖRÜNMEZKEN TUTUYOR — KAMERA ARKAYA GEÇEN TEK SAHNEDE SIRT ÇANTASI DOĞDU (6/6 → 5/6)
+
+**KAPI:** BETİK · `prompt_kontrol.py` ⑮ SIRT POZİTİF YÜZEY (kamera arkada/OTS ise pozitif sırt cümlesi aranır) — 01.09.2026
+
+**Kaynak:** THE THIN ROOF QA (28.08.2026) — S2 · 20,03-30,03 s, on saniyenin
+altı karesinde de · ② DEVAMLILIK "Equipment 6/10"
+**Sorun:** D79'un pozitif adlandırma çözümü uygulandığı hâlde bir sahnede düştü.
+**2. vaka THE FROST LINE (31.08.2026):** "flat back / no back-mounted unit"
+beyanı 50/50 prompttaydı ama bu dersin YAZIM KAPISI koşulmamıştı — kamera
+arkayı gören iç sahnelerden birinde (yuva 13, kare t134) beyaz sırt ünitesi +
+omuz kayışları doğdu; öteki arkadan sahnede (t155) sırt düz kaldı (1/2)
+
+Kilit altı promptun altısında, D79'un istediği gibi prompt GÖVDESİNDE yazılıydı:
+
+```
+"... and a completely FLAT back — no backpack, no tank, no hose, no cable,
+ no rear housing of any kind."
+```
+
+**Sonuç: 6 sahnenin 5'inde tuttu. Düştüğü tek sahne, kameranın kadının
+ARKASINA geçtiği tek sahnedir.** S2'de (üst açı, azimut 200°) sırtında altın
+renkli altıgen bir ünite ve iki omuz kayışı belirdi; on saniye boyunca kaldı.
+② DEVAMLILIK bunu gördü ama teşhisi TERS kurdu ("çanta S5'te kayboluyor") —
+çünkü belgesiz mercek için ilk görülen hâl doğru hâldir.
+
+⭐ **Mekanizma:** yokluk kilidi, o yüzey KADRAJIN KONUSU olmadığı sürece
+çalışır. Yüzey kadrajın konusu olunca model orayı **doldurmak** zorundadır
+ve "no backpack" cümlesi ona ne KOYACAĞINI söylemez. Boş bir sırt, eğitim
+verisinde astronot sırtı değildir.
+
+**ÇÖZÜM — kamera özneyi ARKADAN ya da TEPEDEN gören her sahnede, yokluk
+listesi o sahnenin promptunda POZİTİF yüzey tarifine çevrilir:**
+
+```
+Her back is turned to the camera in this shot and it is fully visible: the
+back of the suit is one continuous smooth chalk-grey soft-shell panel from
+collar to hip, unbroken, with a single matt indigo band running straight
+across the shoulder blades. The panel carries nothing: no pack, no tank, no
+housing, no strap, no buckle, no hose, no cable, no hard-point, no seam
+other than the two shoulder seams. It is a plain surface, and the plain
+surface is what this shot shows.
+```
+
+```
+⛔ YAZIM KAPISI — sahne-kurulum dizisi yazılırken koşulur:
+   Her kurulumun azimutu için sor: "kamera hangi yüzeyi görüyor?"
+   O yüzeyde bir YOKLUK kilidi varsa (düz sırt · boş el · takısız yaka ·
+   yamasız omuz), o sahnenin promptunda kilit POZİTİF TARİFE çevrilir.
+   Yokluk cümlesi kalır; yerine geçmez, yanına eklenir.
+```
+
+⭐ Genel biçim: **yokluk kilidi görünmeyen yüzeyde beyandır, görünen yüzeyde
+tariftir.** Aynı cümleyi iki yerde de kullanmak, kadrajın hangi yüzeyi
+gösterdiğini prompta hiç söylememektir.
+
+> 🔗 Ders 79 (düz sırt + berrak vizör prompt GÖVDESİNE) · Ders 59 (pozitif
+> adlandırma) · Ders 42/58 (varlık sürekliliği) · Ders 134 (belgesiz mercek
+> ilk gördüğü hâli doğru sanar — burada teşhisi tam ters kurdu).
+
+---
+
+## 🔴 DERS 152: ELDEKİ KÜÇÜK ALET KLİPTE BUHARLAŞIYOR, YÜKLÜ JEST NÖTR DURUŞA İNİYOR — "STAYS IN HIS HAND" KİLİDİ İKİ SAHNENİN İKİSİNDE DE TUTMADI
+
+**Kaynak:** THE FROST LINE (31.08.2026) — S24: video promptu "the folding brush
+stays in his hand" + imaj "mid-stroke, brushing" yazıyordu; karelerde (t222/t227)
+fırça YOK, elde koyu bir panel var → FİNAL VURUŞ KANITI (fırçalı figür) FAIL ·
+S20: "kelepçe çubuğunu ÇARPAR" yazıyordu; t193/t198'de çubuk 8 saniye boyunca
+iki elde HAVADA tutuluyor, çarpma/mühürleme yok → DORUK VURUŞU FAIL · S11:
+"yatak çerçevesinde, eli yamada, tepki planı" → boş elle koridor yürüyüşü
+(t115/t118) · `FILM_QA_RAPORLARI/01_FILM_RAPORLARI/THE_FROST_LINE.md`
+**Sorun:** 1 filmde 3 sahne (+S0'ın süpürme jesti örnek karelerde yok).
+
+Mekanizma: I2V modeli 10 saniyelik klipte SÜREKLİ ve NÖTR hareketi (yürümek,
+durmak, tutmak) TEK SEFERLİK ve YÜKLÜ jestten (çarpmak, fırçalamak, çömelip
+basmak) daha ucuza üretir; start frame jestin ortasını göstermiyorsa jest hiç
+gelmez, elde kalması istenen küçük alet de kadrajdan silinir. "X stays in his
+hand" bir YOKLUK KİLİDİ gibi davranır [D139 mekanizması]: modele neyi
+GÖSTERECEĞİNİ söylemez.
+
+**ÇÖZÜM — üç kilit birden:**
+
+```
+① START FRAME JESTİN ORTASINDA DONAR: imaj promptu aleti TEMAS hâlinde yazar —
+   "the short folding brush mid-stroke ON the crown, bristles bent against the
+   film, his wrist turned" (elde-duran değil, İŞ GÖREN alet).
+② TIMELINE JESTİ EN AZ ÜÇ KEZ TEKRARLAR, her vuruş zaman damgalı:
+   "0.0s stroke one · 3.0s stroke two · 6.0s stroke three" — tek fiil, tek
+   nesne; klipte jestten başka hiçbir eylem yazılmaz.
+③ ALET-JEST SAHNESİ ÜRETİM KAPISIDIR [D144 biçimi]: kabul ölçütü sayılır —
+   "fırça 10/10 saniyede elde ve görünür · vuruş ≥3 kez okunur"; geçmeden
+   komşu/ayna sahneler üretilmez.
+```
+
+> 🔗 Ders 139 (yokluk kilidi görünen yüzeyde POZİTİF tarife çevrilir — bu ders
+> onu JESTE uygular) · Ders 42/58 (varlık sürekliliği) · Ders 144 (kapı biçimi) ·
+> Ders 141/151 (vuruş kanıtı — teslim tarafı).
+
+---
+
+## 🔴 DERS 153: EŞ KADRAJ ÇİFTİ AYNI METİNLE AYNI SETİ ÜRETMİYOR — KELİMESİ KELİMESİNE AYNI ÜS PARAGRAFI İKİ UÇTA FARKLI MİMARİ; "LOOSE FOLDS" TARİFİ AYRI BİR BRANDA NESNESİ DOĞURDU
+
+**Kaynak:** THE FROST LINE (31.08.2026) — S0 ve S24 imaj promptlarında ÜS+GEMİ
+paragrafı birebir aynıydı; karelerde (t4 ↔ t222) yerleşim sınıfı aynı (gemi
+solda · çanaklı düğüm · panel tarlası) ama modül dizilimi/sayısı ve panel
+yerleşimi farklı — ② ve ⑤ kaymayı bağımsız yazdı. Daha ağırı: S24'ün "its film
+fallen in loose folds over the shapes of the beds, crusted white with frost"
+tarifi, kırağılı çökük TÜNEL FİLMİ yerine tünelin üstüne atılmış ayrı bir GRİ
+ÖRTÜ/BRANDA üretti — dört mercek finali "pulling a massive tarp" diye okudu ·
+`FILM_QA_RAPORLARI/01_FILM_RAPORLARI/THE_FROST_LINE.md`
+**Sorun:** 1 film ölçüldü; eş kadraj çifti kullanan her filmde aynı risk
+(SKYLIGHT S0↔S24 çifti üretimde bu gözle ölçülmedi).
+
+Mekanizma: metin tarifi, serbestlik derecelerini (dizilim, sayı, ölçek, kıvrım)
+her üretimde YENİDEN atar; "aynı kadraj" vaadi metinle taşınamaz. Malzeme
+tarifi de en yakın eğitim-verisi nesnesine yuvarlanır: "loose folds of film" →
+tarp [D128 akrabası — metafor değil, düz tarif bile dönüşüyor].
+
+**ÇÖZÜM — ayna sahnesinin imajı, kaynak sahnenin ONAYLI karesinden türetilir:**
+
+```
+① ÜRETİM SIRASI: önce S0 üretilir ve ONAYLANIR; S24'ün imajı S0'ın onaylı
+   karesini referans/başlangıç görseli alarak üretilir (image-edit).
+② FARK LİSTESİ ≤3 MADDE, yalnız FARKLAR yazılır: "same frame as the approved
+   S0 still; ONLY these change: the jet is gone · the far third of the tunnel
+   film has sagged onto the bed frames — the SAME translucent milk-white film,
+   now crusted white, NOT a separate cover, NOT a tarp, nothing was thrown
+   over the tunnel · the man now stands mid-stroke with the same brush."
+③ DEĞİŞEN MALZEME KENDİ ADIYLA + "ayrı nesne değil" negatifiyle yazılır;
+   arka plan seti (üs · gemi · panel) fark listesine GİRMEZ = aynen kalır.
+```
+
+> 🔗 Ders 58 (tekrarlayan varlık kimliği) · Ders 128 (malzeme tarifi başka
+> nesneye yuvarlanır) · Ders 139 · Ders 154 (aynı mekanizmanın OLAY hâli) ·
+> SAHNE_DEVAMLILIK_KILAVUZU (karakter çapalama — bu ders SETİ çapalar).
 
 ---

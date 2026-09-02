@@ -637,3 +637,159 @@ it covers its own length in a quarter of a second.
 > (olayı ÖLÇEN bir kenar koy — burada cetvel, kadraj sınırının kendisidir)
 > · Ders 73 (novum türetilmiş fenomene yüklenmez; bu ders "üretilemeyen
 > harekete de yüklenmez" der) · Ders 74 (S0 kapısı yazılıydı, koşulmadı).
+
+---
+
+## 🔴 DERS 143: "SÜREKLİ DÜŞÜŞ" TOZ CÜMLESİ YOĞUNLUK SAYISI TAŞIMIYORDU — IŞIK SÜTUNU TOZ ŞELALESİ OLDU, KAPI SAHNESİ GEÇMEDİ, ÜRETİM DURMADI
+
+**Kaynak:** THE SKYLIGHT (29.08.2026) — master kareleri 0:35 (S3) · 1:05 (S6) · 2:07 (S13);
+⑤ envanteri "massive vertical dust waterfall, full height"; ⑥ ledger L1/L3 "dust waterfall
+· steady flow" ve verdiği hüküm "accept it" · `FILM_QA_RAPORLARI/01_FILM_RAPORLARI/THE_SKYLIGHT.md`
+**Sorun:** 1 film, 3 sahne — ve plan bu riski ÖNGÖRMÜŞTÜ ("sütun tozu ↔ çekirdek").
+
+Plan, çekirdeğin "never swirl / never billow" yasağını bilerek, sütuna POZİTİF bir
+sürekli-düşüş cümlesi yazdı: *"fine dust drifts steadily down through the beam and
+settles, new dust entering from above as old dust lands — never hovering, never
+swirling."* Model "steadily … new dust entering from above" ifadesini bir TEDARİK
+olarak okudu ve ışını dolduran, kıvrılan, 60 metrelik beyaz bir toz/duman perdesi
+üretti. Pozitif cümle SAYISIZDI (kaç zerre, ne yoğunluk, ne hız); havuzdaki D39
+kilidi ("never … as a connected mass") pozitif cümleye yenildi — D59'un bildiği
+şey: pozitif isim negatif yasaktan güçlüdür, o hâlde pozitif isim ölçülü olmalı.
+
+Üstüne kapı: planın üretim sırası *"S3 (toz cümlesi ÇEKİRDEK testi — geçmeden
+S13/S19 üretilmez)"* diyordu. S3 perde çıktı; S6 ve S13 aynı perdeyle üretildi.
+Kapı yazılıydı, koşulmadı [D74] — ölçütü de yoktu [D144].
+
+**ÇÖZÜM — pozitif toz cümlesi YOĞUNLUK SAYISIYLA yazılır (ince atmosfer sütunu):**
+
+```
+DUST DENSITY LOCK: the beam is CLEAR AIR made visible by a sparse scatter of
+motes — at any moment no more than a few dozen motes are visible in the whole
+column, each one a separate point, falling straight down at about half a metre
+per second and landing; the beam never reads as a sheet, curtain, veil,
+waterfall, smoke, mist or fog; the column is brightest where it hits the floor
+and faint in mid-air; the far wall stays visible through it.
+```
+
+**ÇÖZÜM — kapı satırı (plan):**
+```
+KAPI ② · S3 · toz cümlesi
+  KABUL: ışın içinde zerreler TEK TEK sayılabilir; duvar ışının ARDINDAN görünür
+  RET:   perde · şelale · duman · sis · kıvrım — biri varsa S6/S13/S19 üretilmez
+```
+
+> 🔗 Ders 10 (donmuş toz) · Ders 39 (toz sıvı gibi — bu dersin PERDE hâli) · Ders 59
+> (pozitif isim negatif yasağı yener; o hâlde pozitif isim SAYI taşır) · Ders 74 ·
+> Ders 144 (kapıda ölçüt yoktu) · Ders 41 (ışık sütunu "lit dust" — dozu bu ders verir).
+
+---
+
+## 🔴 DERS 148: KALKIŞ KLİBİNDE "BACAKLAR KATLANIR" YAZILDI — HAREKET EDEN BACAK ALEVİN İÇİNDEN GEÇTİ; "NEREDEYSE ŞEFFAF" ALEV OPAK BEYAZ-MAVİ ÇIKTI
+
+**Kaynak:** THE SKYLIGHT S28 (kurgu 4:20-4:30) — ① 🔴 4:24 "exhaust flames clip entirely
+through the solid metal landing legs"; master karesi 4:24 (üç opak mavi-beyaz koni,
+bacaklarla çakışık) · `FILM_QA_RAPORLARI/01_FILM_RAPORLARI/THE_SKYLIGHT.md`
+**Sorun:** 1 film, ilk kalkış klibi — iki tasarım boşluğu aynı saniyede.
+
+① Prompt ateşlemeyle AYNI saniyelerde bacakları hareket ettirdi ("legs folding").
+Aynı ekran bölgesinde iki hareketli hacim (alev konisi + katlanan bacak) → model
+birini ötekinin içinden geçirdi. D127 ivmeyi "kadrajı terk süresi"ne çevirmişti;
+bacaklar için karşılığı yazılmamıştı: bacak HİÇ hareket etmez.
+② "nearly transparent blue-violet" bir sayı değil, bir sıfattır; model üç opak
+beyaz-mavi koni çizdi. Şeffaflığın cetveli "arkasındaki şey görünüyor mu"dur.
+
+**ÇÖZÜM — kalkış geometrisi kilidi (video promptu):**
+
+```
+LAUNCH GEOMETRY LOCK: the three landing legs stay fully extended and completely
+still for the whole clip — they never fold, retract, swing or bend; they leave
+the ground with the ship exactly as they stand. The three plumes exit BELOW the
+hull in the open space BETWEEN the legs and never touch a leg. Each plume is a
+faint translucent blue-violet cone: the ground, the legs and the far horizon
+stay visible THROUGH it — no white flame, no yellow flame, no opaque fire, no
+fireball.
+```
+
+Kurulum kuralı: kalkış klibinde açı, bacakların alevle 2B'de ÇAKIŞMADIĞI açıdır
+(üç-çeyrek alçak açı) — ya da cümleyle: "the plume is seen between the legs; no leg
+crosses in front of the plume".
+
+> 🔗 Ders 36 (vakum/ince atmosfer egzozu) · Ders 127 (ivme yazılmaz — bu ders aynı
+> kuralı BACAĞA uygular: hareket yazılmaz) · Ders 23 · §3.5 kartı.
+
+---
+
+## 🟡 DERS 149: 0g'DE KEMERLİ İNSANIN KOLLARI DA YÜZER — "İNSAN SÜZÜLMEZ, NESNE KANIT" TASARIMI DONMUŞ HEYKEL OKUNDU; ADSIZ "TOZ ZERRESİ" CIVATA OLDU
+
+**Kaynak:** THE SKYLIGHT S31 (kurgu 4:50-5:00) — ① 🟠 4:52 "perfectly rigid in the
+seat with zero limb drift", ⑥ 🟠 cat 9; ② ve ⑤ "bolts float" (olgu olarak); master
+karesi 4:55 · `FILM_QA_RAPORLARI/01_FILM_RAPORLARI/THE_SKYLIGHT.md`
+**Sorun:** D23 doğruydu ve yetmedi.
+
+D23: süzülen insan bedeni rijit çıkar → insanı kemerli tut, 0g'yi NESNEYLE kanıtla.
+Ama kemerli insan da 0g'de bir bedendir: kollar nötr duruşa yükselir (dirsek bükük,
+önkol havada), omuzlar gevşek kemere karşı koltuktan kalkar, baş başlığa basmaz.
+Prompt 3,5 saniye boyunca "gloves rest open on the armrests" yazdı, sonra "a few
+centimetres" kaldırdı — 10 saniyelik klipte az ve geç; iki mercek heykel okudu.
+Kanıt nesnesi "two dust motes" idi — modelin gösteremeyeceği boyut; model onun
+yerine CIVATA koydu (mühürlü kabinde gevşek donanım = halüsinasyon).
+
+**ÇÖZÜM — kemerli 0g beden kilidi (ilk kareden):**
+
+```
+ZERO-G BODY LOCK (strapped in): from the first frame her forearms float five to
+eight centimetres above the armrests, elbows bent, fingers half-curled and
+slowly drifting; her shoulders sit one to two centimetres off the seat back
+against the slack straps; her head hovers a finger's width from the headrest
+and turns slowly; nothing about the pose is stiff — every limb drifts a little,
+continuously. The only free object in the cabin is the loose end of one
+harness strap, twenty centimetres long, floating level — nothing else: no
+bolts, no screws, no tools, no debris, no dust in the air.
+```
+
+Kural: 0g kanıt nesnesi ADLANDIRILIR ve BOYUTLANDIRILIR (≥ 10 cm). Adsız, boyutsuz
+"zerre" modelde donanıma dönüşür.
+
+> 🔗 Ders 23 (süzülen beden rijit — bu ders kemerli bedenin de yüzen KOLLARI olduğunu
+> ekler) · Ders 44 · Ders 12 · §3.5 kartı.
+
+---
+
+## 🔴 DERS 154: TEKRARLAYAN DOĞA OLAYI BİR VARLIKTIR — DÖRT KLİPTE DÖRT JET BİÇİMİ, AYNI FİLMDE İKİ YERÇEKİMİ; SAYILI CÜMLE KLİBİN İÇİNİ KİLİTLER, KLİPLER ARASINI KİLİTLEMEZ
+
+**Kaynak:** THE FROST LINE (31.08.2026) — aynı kar jeti dört klipte dört biçim:
+S0 kıvrımlı DUMAN (kare t4) · S3 eğik çift bıçak + iri pul kristal (t34) ·
+S5 düz ince sütun ✓ (t51) · S6 ince duman (t63). ⑥ FİZİK: kristal düşüşü
+g ≈ 11,1 m/s² ↔ koşu askı süresi g ≈ 4,0 m/s² → verdikt "TWO GRAVITIES"
+(adım ölçümü planın 0,38 g'sini DOĞRULADI; sapan kristal ve koşunun süzülmesi
+[① "moonwalk" ×2]) · `FILM_QA_RAPORLARI/01_FILM_RAPORLARI/THE_FROST_LINE.md`
+**Sorun:** 2 film (SKYLIGHT toz şelalesi [D143] · FROST LINE jeti) — ve bu kez
+D143'ün istediği SAYILI jet cümlesi ("crystals fall in straight lines and lie
+on the berm within three seconds... never curls, never reads as smoke")
+25/25 promptta YAZILIYDI. Sayı yazmak yetmedi.
+
+Mekanizma: her klip kendi jetini ve kendi yerçekimini atar. Prompt metni klip
+İÇİ davranışı düzeltir ama klipler ARASI kimliği taşıyamaz — jet S5'te doğru
+üretildiyse bu S0'a hiçbir şey kazandırmaz. İnsan ile parçacık aynı filmde ayrı
+kliplerde yaşıyorsa model ikisine ayrı g verir ve izleyici bunu tek bakışta
+"dünyanın ağırlığı değişiyor" diye hisseder.
+
+**ÇÖZÜM — üç kilit:**
+
+```
+① OLAY VARLIĞI İMAJLA ÇAPALANIR: olayın (jet, şelale, toz cephesi) İLK ONAYLI
+   karesi, olayın göründüğü SONRAKİ her sahnenin imaj üretimine referans
+   görsel olarak girer — jet bir prop'tur, her seferinde yeniden tarif edilmez.
+② KAPI ÖLÇÜTÜ HER OLAY SAHNESİNE KOPYALANIR: "düz sütun · tek tek kristal ·
+   3 s'de yerde · kıvrılma 0" kabul/ret satırı yalnız kapı sahnesine (S3)
+   değil, olayın göründüğü HER sahnenin kapı kaydına yazılır [D144 biçimi] —
+   S3'ün onayı S0/S5/S6'yı KORUMAZ.
+③ KOŞU/YÜRÜYÜŞ SAHNESİNE KADANS SAYISI: "real time, no slow motion" tariftir,
+   sayı değildir. "Two strides per second, each boot planted and loaded before
+   the next lifts, zero float" — insanın g'si adım SAYISIYLA, parçacığın g'si
+   düşüş SÜRESİYLE, mümkünse AYNI cümle bölgesinde.
+```
+
+> 🔗 Ders 143 (sayılı toz cümlesi — bu ders onu OLAY KİMLİĞİNE genişletir) ·
+> Ders 44 (0,38 g gerçek zamanlı) · Ders 153 (aynı mekanizmanın SET hâli) ·
+> Ders 144 (kapı biçimi).

@@ -49,18 +49,46 @@
 |---|:--:|:--:|---|:--:|
 | **Fiziksel yasa** (yerçekimi, sürtünme, entropi) | çok yüksek | > %60 | modelin fizik direnci (§0④) | ✅ **BİRİNCİ TERCİH** |
 | **Ölçek** (makro/mikro çarpıtma) | yüksek | %50-60 | uzamsal tutarlılık kayması | ✅ **İKİNCİ TERCİH** |
+| **İlişki** (birinin ötekinden istediği şey) 🆕 | yüksek | ⬜ ölçülmedi | ikinci insan/replik yasakları hiç sınanmadı | ✅ **ÜÇÜNCÜ TERCİH** |
 | **Zaman** (asimetri, döngü, duraksama) | orta | %30-40 | entropi taşıyıcısı olmadan görünmez | ⚠️ **ŞARTLI** |
 | **Algı** (simülasyon, yansıma, boyut) | düşük | %20-30 | senkron hatası "glitch" okunur | ⛔ **KAÇIN** |
 | **Toplum** (distopya, teknokrasi) | çok düşük | < %15 | tek karakterde toplum gösterilemez | ⛔ **YASAK** |
 
+> 🆕 **İLİŞKİ TİPİ — 02.09.2026'da eklendi, sahibin kararıyla.**
+> **Neden eklendi (ölçüm):** bu tablo beş tip taşıyordu ve **beşi de
+> insan-dışıydı**; novum tipi yazılmış 13 filmin 12'si "fiziksel yasa"
+> dedi. İnsanın insana yaptığı bir şeyin novum olabileceği **seçenek
+> olarak listede yoktu** — yani depo yapısal olarak insan hikâyesi
+> yazamıyordu. Kayıt: `URETIM_ONCESI_ANALIZ/06_HIKAYE_HATTI_TESHISI.md`
+> §1.2 · §4④.
+>
+> ⛔ **VE "Toplum" satırının gerekçesi bu satırla ÇAKIŞIR:** o satır
+> *"tek karakterde toplum gösterilemez"* diyordu — yani bir yasak (tek
+> insan) ikinci bir yasağı doğuruyordu. Toplum ⛔ YASAK olarak KALIR
+> (bir toplum tek filmde gösterilemez), ama İLİŞKİ toplum değildir:
+> **iki kişi bir toplum değil, bir ilişkidir.**
+>
+> ⬜ **DÜRÜST SINIR:** bu satırın thumb-stop sütunu BOŞ ve öyle kalacak.
+> Depoda ikinci insanlı ya da replikli ölçülmüş tek bir film yok
+> (`06` §1.1: replik 0/79). Elimizde bulgu değil, **karar** var.
+> İlk ölçüm `URETIM_ONCESI_ANALIZ/PROB_KOSUSU.md`'nin iki probudur;
+> ikisi de koşulmadı. Prob koşulunca bu sütun doldurulur ve satırın
+> kararı gerekirse DEĞİŞİR.
+
 ```
 SAYISAL KİLİT
-  □ SEÇİLEN TİP     fiziksel yasa VEYA ölçek (varsayılan)
+  □ SEÇİLEN TİP     fiziksel yasa VEYA ölçek VEYA ilişki
   □ ZAMAN NOVUMU    yalnız yüksek entropili SOMUT süreçle
                     (yanan / dökülen / ufalanan / paslanan bir şey)
                     — "karakterin durması" zamanı göstermez, hareketsizliktir
   □ TOPLUM NOVUMU   bu seride yapısal olarak imkânsız; arka plandaki
                     yıkıntı novum değil SET TASARIMIDIR
+  □ İLİŞKİ NOVUMU   taşıyıcısı §2'ye göre yine SOMUT olmak zorundadır:
+                    isteğin geçtiği NESNE + iki kişinin ona yaptığı
+                    FARKLI jest. "Aralarında gerilim var" taşıyıcı DEĞİLDİR.
+                    ⛔ İkinci insan kadrajdaysa POZİTİF ayrım yazılır
+                      (boy · duruş · farklı yüz), yasak cümlesi değil —
+                      yasak kopyayı yasaklar, TARİF kopyayı ortadan kaldırır.
 ```
 
 ---
@@ -87,6 +115,17 @@ NOVUM TAŞIYICISI: <somut nesne> × <karakterin jesti> → <görünen ihlal>
           kendi boyunun on katına çıkar     (ölçek)
 örnek ⛔  atmosfer × yok                    → "havada dalgalanan zaman"
           (taşıyıcı yok — model bunu ışığa çevirir, D73)
+
+🆕 İLİŞKİ TİPİNDE TAŞIYICI — aynı kural, iki jest:
+
+NOVUM TAŞIYICISI: <somut nesne> × <A'nın jesti> ↔ <B'nin FARKLI jesti>
+                  → <görünen ayrılık>
+
+örnek ✅  tek yedek hücre × biri onu beşiğe geri koyar ↔ öteki
+          onu zemine bırakır → ikisi aynı anda uzanır, eller
+          çarpışır, biri çeker                  (ilişki)
+örnek ⛔  iki kişi × "gerginler"           → taşıyıcı yok; gerginlik
+          bir NESNEDE görünmüyorsa ekranda iki kişi yan yana durur
 ```
 
 **Depodaki kanıt:** D73'te novum çift gölge setiydi; taşıyıcı türetilmiş bir

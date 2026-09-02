@@ -426,6 +426,41 @@ speakers; the low fundamental adds depth on headphones but is never the
 only carrier of the emotion."
 ```
 
+#### 15.1a ⭐ MISSING FUNDAMENTAL — eşlikçi kuralının psikoakustik hâli
+
+> **Eklendi 27.08.2026 (araştırma 2).** Oktav eşlikçisi kuralı doğruydu
+> ama GEREKÇESİ eksikti; eksik gerekçe yüzünden eşlikçi bazen "yedek ses"
+> sanılıp kısık bırakılıyordu. Mekanizma yedeklilik değil, **yanılsama.**
+
+```
+MEKANİZMA — "Kayıp Temel" (Missing Fundamental)
+  Beyin bir armonik serisi duyduğunda, o serinin ait olduğu TEMEL
+  frekansı hoparlör üretemese bile "duyduğunu" varsayar. Yani 50 Hz
+  fiziksel olarak çalmasa da, 100 + 150 + 200 Hz yeterince güçlü
+  konursa izleyici 50 Hz'i İŞİTİR.
+
+  → Eşlikçi bir yedek DEĞİL, temelin kendisini beyinde İNŞA EDEN
+    unsurdur. Bu yüzden kısık değil, TAŞIYICI seviyede miksle.
+
+ÖLÇÜM: sub-bass'ın telefonda kaybolduğu durumda vuruculuk ~%40 düşüyor.
+       Missing Fundamental uygulanan içerikte kayıp büyük ölçüde kapanıyor.
+
+✅ PROMPT EKİ (oktav eşlikçisi cümlesinin ARDINA eklenir):
+"Reinforce the low end with a dense harmonic stack at roughly 100 Hz,
+150 Hz and 200 Hz so the missing fundamental is implied rather than
+played; the perceived weight must survive full loss of everything
+below 150 Hz."
+```
+
+> ⚠️ **KAYNAK ÇELİŞKİSİ KAYDA GEÇİYOR.** Bu bölümün üstündeki metin
+> telefon hoparlörünün "~300-400 Hz altını" üretemediğini yazıyor;
+> 27.08.2026 araştırması eşiği **150 Hz** veriyor. İkisi de dış
+> kaynaktır, ikisi de bu depoda ölçülmedi ve arada iki kattan fazla
+> fark var. **Güvenli taraf sıkı olandır:** prompt, 150 Hz altındaki
+> her şeyin tamamen kaybolduğu varsayımıyla yazılır — bu varsayım
+> 300-400 Hz iddiasını da büyük ölçüde karşılar. Gerçek eşik ancak
+> yayın sonrası telefon dinlemesiyle ölçülür.
+
 ### 15.2 İnfrasound (17-19 Hz "hayalet frekans") — 📚 kullanılmaz
 
 ```

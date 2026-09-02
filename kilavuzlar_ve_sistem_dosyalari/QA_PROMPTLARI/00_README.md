@@ -130,6 +130,66 @@ bakman gerekiyor?
    çifte fatura değil çapraz doğrulama.
 ```
 
+### 🏃 AKSİYON MERCEKLERİ — 2 (01.09.2026'da açıldı)
+
+> Fiziksel olayın İKİ ayrı ekseni. ⑥ FİZİK "sayı doğru mu" diye sorar;
+> bu ikisi sayıyı hiç sormaz. ⑦ **izleyicinin olayı OKUYABİLİP okuyamadığını**
+> ölçer, ⑧ **işin bedene neye mal olduğunu**. Bir dövüş aritmetik olarak
+> kusursuz, okunabilirlik olarak sıfır olabilir — o bulgunun sahibi yoktu.
+
+| Dosya | Mercek | Soru | Zorunlu girdi | Kat. | Skor tablosu |
+|---|---|---|---|:--:|---|
+| `7_AKSIYON_QA_CRITIQUE_PROMPT.md` | ⑦ 🎯 AKSİYON | "izleyici ne olduğunu anlatabilir mi" | tam kurgu (+ A/C blokları = MOD D) | 9 | `../FILM_QA_RAPORLARI/T7_AKSIYON_KALITE.md` |
+| `8_EFOR_QA_CRITIQUE_PROMPT.md` | ⑧ 💪 EFOR | "iş bedene neye mal oldu, faturası ekranda mı" | tam kurgu (+ A/C blokları = MOD D) | 9 | `../FILM_QA_RAPORLARI/T8_EFOR_KALITE.md` |
+
+```
+⑦ AKSİYON     kimlik testi: ANLATIM CÜMLESİ yazılabiliyor mu? Her beat için
+              izleyicinin söyleyeceği cümle yazılır ("boot'unu payandaya
+              dayar, kolu iki kez çeker, kıpırdamaz, üçüncüde eldiveni
+              yırtılır"). Cümle "sanırım / galiba" olmadan bitmiyorsa beat
+              OKUNMUYOR demektir. Bulgu bu cümledir.
+              ⭐ En pahalı deseni ④ AKSİYON ELİZYONU: kesme hamlenin
+              başında düşüp sonrasında açılır — beat hiç üretilmemiştir,
+              kurgu üreticinin yapamadığını saklar. Kesme başına bakılır.
+⑧ EFOR        kimlik testi: FATURA CÜMLESİ — "bu işten SONRA bu bedende ne
+              değişti?" Cevap "hiçbir şey" ise bulgu odur. Yalnız çekim
+              anındaki zorlanma değil, borcun BİRİKMESİ ölçülür: COST CURVE
+              sahne başına bir hane, her düşüş RESET LOG'da gerekçelenir.
+              ⭐ Düşük yerçekimi düşük efor DEĞİLDİR: ağırlık azalır, kütle
+              ve atalet azalmaz. "0.12g'de kolay olur" mazereti bulgudur.
+              ⭐ Pattern ⑭ ters hatayı da cezalandırır: sebepsiz gelen
+              yorgunluk, ödenmeyen fatura kadar sahtedir.
+
+⛔ /4 PAYDASINA GİRMEZLER — ⑤/⑥ ile aynı sınıf: risk tetikli tarama.
+   ⚠️ README'nin kendi dersi burada da geçerlidir: "opsiyonel mercek
+   koşulmaz". Bu ikisinin tetikleyicisi de tercih değil, filmin risk
+   kartlarında ZATEN yazılı satırlardır:
+     ⑦ → KART 11 (sahne içi kesme / değişken süre — elizyon riski doğrudan
+         buradan doğar) · KART 4 (ikinci figür → temas) · KART 2 (canlı ile
+         temas) · KART 6 (parçacık: kuvvetin dünyada cevabı) · KART 8
+         (kamera aksiyonu gizliyor mu) — ya da bir çekirdek merceğin
+         "ne olduğunu anlamadım" diye bıraktığı OUT-OF-SCOPE FLAG'i kovalamak
+     ⑧ → KART 3 (kask / vizör / ekipman — eldiven direnci, kısıtlı baş
+         dönüşü) · planın YÜK, SÜRE ya da YARALANMA kilidi taşıması ·
+         ortamın bedensel bedeli olması (soğuk · ısı · ince hava · basınç)
+   📌 **Dürüst açık:** "sürekli fiziksel iş / yük" için ayrılmış bir risk
+   kartı YOKTUR. ⑧ bugün KART 3 ve plan kilitleri üzerinden tetiklenir;
+   yeni bir kart açılırsa (KART 13 — SÜREKLİ İŞ / YÜK) tetikleyici oraya
+   taşınır. Kart yokluğu tetikleyici yokluğu sayılmaz, ama yazılı kalır.
+
+⛔ BULGU SAHİPLİĞİ: ⑤/⑥ kuralının aynısı. Çekirdek mercek her zaman sahiptir;
+   ⑦/⑧ bulgusu bir çekirdek kapsamına da oturuyorsa film kaydına ÇEKİRDEK
+   SAHİBİN bölümüne yazılır ("⑦/⑧ taraması buldu" notuyla). T7/T8 skoru kendi
+   tablosunda durur, T1-T4 ile toplanmaz.
+
+⛔ ⑥ İLE SINIRI — bu üçü sık karıştırılır, ayrım tek cümlelik:
+     ⑥ "bu düşüş 1,1 s, öteki 2,8 s → iki yerçekimi"      → ARİTMETİK
+     ⑦ "vuruşun bağlanıp bağlanmadığını göremedim"        → OKUMA
+     ⑧ "80 kg'ı kaldırdı ama eli hiç sıkılmadı"           → BEDEL
+   Aynı olay üçünü birden üretebilir; her mercek KENDİ türünü yazar,
+   ötekinin türünü yazmaz. Çifte fatura değil, çapraz doğrulama.
+```
+
 ### ⛔ DİKEY ARTIK AYRI BİR RUBRİK DEĞİL
 
 Eski `SHORTS_QA` 16 kategori taşıyordu ve **13'ü başka bir rubriğin

@@ -134,6 +134,18 @@ maddesinin doğal cümlesi budur. Sorun tekrarı: aynı kalıp beş filmde
    Üçüncü film §3 tablosundan HENÜZ KULLANILMAMIŞ bir tema seçer.
    26.08.2026 itibarıyla hiç kullanılmamışlar:
       Yalnızlık · Zaman/geçicilik · Kimlik · İnsan-makine sınırı · İlk temas
+   ⭐ 29.08.2026 güncelleme: ZAMAN → THE SKYLIGHT (27.08) · KİMLİK →
+      THE FROST LINE (29.08, ilk kullanım). Hâlâ kullanılmamış:
+      Yalnızlık · İnsan-makine sınırı · İlk temas.
+   ⛔ 01.09.2026 DÜZELTME — YUKARIDAKİ SATIR YAZILDIĞI GÜN BİLE YANLIŞTI:
+      YALNIZLIK'ı THE THIN ROOF (dikey shorts) 27.08'de kullanmıştı ve
+      29.08 güncellemesi onu atladı; İNSAN-MAKİNE SINIRI'nı da THE PAYLOAD
+      (yatay 3-5 dk) 31.08'de kullandı. Kalan tek kullanılmamış tema:
+      **İLK TEMAS**. (01.09: YALNIZLIK'ın ikinci ve ilk YATAY kullanımı
+      THE COLD WELD.)
+   ⭐ BU LİSTE ARTIK ELLE TUTULMAZ — kural ①: sayı kaynağa işaret eder.
+      Güncel dağılım: `bash kilavuzlar_ve_sistem_dosyalari/sayac.sh`
+      → 🎭 TEMA DAĞILIMI bloğu. Yukarıdaki iki satır TARİHSEL KAYITTIR.
    ⚠️ Bunların dördü §4'e göre YATAY temadır (süreç ister). Dikey sırada
       geliyorsa: ya format değişir ya Umut/Entropi'ye dönülür — ama tek
       cümle takas kalıbıyla yazılmaz.

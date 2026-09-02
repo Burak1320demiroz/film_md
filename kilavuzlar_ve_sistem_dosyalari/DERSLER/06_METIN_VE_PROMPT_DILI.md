@@ -821,6 +821,21 @@ eksenindeki tekrarıdır. 59 sadakati ölçüyordu; 123 ÜRETİLEBİLİRLİĞİ.
 İkisi aynı cümleyi söylüyor: **modele ne İSTEMEDİĞİNİ değil, ne
 İSTEDİĞİNİ yaz.**
 
+**KAPI:** BETİK · `prompt_kontrol.py ⑯ POLİTİKA SÖZLÜĞÜ` (01.09.2026 ·
+NEGATIVE bloğu DÂHİL sayar) + LİSTE · `03_PLAN_ONCESI B6`
+**TEKRAR:** 0
+
+✅ **DIŞ DOĞRULAMA — 01.09.2026 · TUR 3.** Bu ders depo dışından, bağımsız
+olarak doğrulandı **ve mekanizmasının adı bulundu**: sağlayıcı filtreleri
+zararın ŞİDDETİNE değil, metnin o kategoriye girme **OLASILIĞINA** göre
+puanlıyor. *"Robot beni yumrukladı"* ile *"robot beni parçaladı"* aynı
+kefeye girebiliyor. **Olumsuzlama olasılığı düşürmez; kelimenin VARLIĞI
+yükseltir.** D123'ün 25.08'de gözlemlediği davranışın nedeni budur.
+Ayrıntı: `URETIM_ONCESI_ANALIZ/04_ARASTIRMA_BULGULARI.md` T3.3 ·
+kural metni: `POLITIKA_VE_URETILEBILIRLIK_KILAVUZU.md` §1.0①
+⚠️ Aynı turda ters yönde bir anekdot da geldi ("isteme `no celebrities`
+ön bloğu ekle"); **depo kuralı korundu**, çelişki T3.4 ①'de açık duruyor.
+
 ---
 
 ## 🔴 DERS 128: MALZEME METAFORU MEKANİĞİ EZER — "PLASTER CAST" DOMİNOYU ÇÜRÜMEYE ÇEVİRDİ
@@ -894,3 +909,284 @@ olan her film için o kapı [C1 KURAL OKUNABİLİRLİĞİ] tek erken uyarıdır.
 ⚠️ **D123 ile ilişkisi:** 123 doğru sorunu çözdü ve yeni bir tane açtı.
 İkisi birlikte okunur: *yasağı sil (123), ama yerine koyduğun tarifin
 fiziğini ölç (124).*
+
+---
+
+## 🔴 DERS 138: METİN YASAĞI KOSTÜME YAZILDI, ÖLÇÜ ZEMİNE YAZILDI — MODEL ÖLÇÜYÜ ZEMİNE BASTI: HALKANIN İÇİNE "11 metres"
+
+**Kaynak:** THE THIN ROOF QA (28.08.2026) — S2 · 21,0-23,0 s · ① KARE 7,2 · ⑤ ARKA PLAN 7,3
+**Sorun:** deponun "sayı yaz, tarif yazma" doktrininin ilk ölçülmüş ters etkisi —
+ve prompt kapısının imza denetiminde bir kör nokta
+
+Filmin novum'u tek bir nesnedir: kaldırımdaki doğal soğuma çatlağı, 9 metre
+yükseklikten **kapalı bir halka** olarak okunur. Halka kapısı geçti — daire
+ekranda, kusursuz. Ama halkanın içine **yazı düştü**:
+
+```
+22,41 s karesinde, halkanın iç yayı boyunca:
+  beyaz harflerle "11 metres"  +  bir sıra beyaz kertikli gradasyon yayı
+  (ölçek çentikleri) + okunamayan ikinci bir etiket
+21,0 s'te belirir, 23,0 s'te söner — filmin ASİMETRİ ANI'nın tam üstünde.
+```
+
+**Zincir üç halkalıdır ve üçü de belgede yazılıdır:**
+
+```
+① YASAK KOSTÜME YAZILDI
+   promptun negatif cümlesi:
+     "The suit carries no patch, no flag, no lettering, no digits and
+      no symbol anywhere."
+   → yasağın öznesi SUIT'tir. Zemin, kaya, gökyüzü yasaksızdır.
+   KILAVUZ_REHBERI §5'in kapsamlı biçimi ("...on any display, surface,
+   patch or sign") bu filmin promptlarına HİÇ yapıştırılmamıştı.
+
+② ÖLÇÜ ZEMİNE YAZILDI — iki kez, görünür nesne cümlesinin içinde
+     "a single continuous CURVED fracture, eleven point six metres across"
+     "it is a closed ring, eleven point six metres across, and she is inside it"
+     "a smooth unbroken arc, six to nine millimetres wide"
+   → kadrajdaki bir yüzey işaretine bitişik ölçü. Diyagram, teknik çizim
+     ve arazi ölçüm fotoğrafı eğitim verisinde TAM OLARAK böyle görünür.
+
+③ KAPI GEÇİRDİ
+   prompt_kontrol.py'nin "metin yasağı" imzası `no digits` kalıbını arıyor.
+   Kostüme yazılmış cümlede `no digits` VARDIR. İmza eşleşti, dosya
+   0 BLOCK / 0 FIX ile GO aldı. İmza KELİMEYİ arıyordu, KAPSAMI değil.
+```
+
+**İki ayrı zarar, aynı cümleden:**
+
+```
+① EKRANDA YAZI  — negatif çekirdeğin OTOMATİK BLOCKER kutusu
+                  (filmin kendi C bloğu: "ekran metni = 0,0 s")
+② NOVUM ÖLDÜ    — çentikli, metrajı yazılmış bir halka DOĞAL ÇATLAK
+                  değildir; ölçülmüş bir saha işaretidir. "Kadın bilmiyor,
+                  biz biliyoruz" dramatik ironisi çöker: halkayı biri
+                  zaten ölçmüş ve işaretlemiştir.
+```
+
+⭐ **Kural: SAYI KİLİTTİR, TARİF DEĞİLDİR — ve kilit prompt GÖVDESİNDE
+DURMAZ.** Ölçü SPEC'in D bloğunda ve planın fizik defterinde yaşar; image
+prompt kadrajdaki nesneyi **nesne göreli ölçekle** anlatır.
+
+```
+✗ "a single continuous CURVED fracture, eleven point six metres across"
+✓ "a single hairline fracture, no wider than a pencil line, packed with
+   rust-coloured dust, curving in one unbroken sweep that closes on itself
+   about four body-lengths out from her on every side"
+```
+
+⚠️ **Bu, AGENTS §8'in "tarif yerine sayısal kilit" kararını ÇÜRÜTMEZ, SINIRINI
+ÇİZER:** sayı SPEC'te ve fizik defterinde kalır — orada ölçülür, orada
+denetlenir. Prompt gövdesine indiği anda, kadrajdaki bir nesneye bitişikse,
+model onu o nesnenin ÜSTÜNE basabilir.
+
+**ÇÖZÜM — ① metin yasağı KAPSAMLI yazılır (KILAVUZ_REHBERI §5 biçimi):**
+
+```
+No readable text, letters, digits, numbers or symbols on any display,
+surface, patch or sign — not on the suit, not on the equipment, and not on
+the ground, the rock, the ice or any natural surface in the frame. Nothing
+in this world has been measured, labelled, marked out or annotated by
+anyone: no scale marks, no graduation ticks, no survey markers.
+```
+
+**ÇÖZÜM — ② prompt_kontrol.py'ye iki denetim eklendi (28.08.2026):**
+
+```
+DOSYA SEVİYESİ · "metin yasağı KAPSAMSIZ" (FIX, dosya başına TEK satır)
+  metin yasağı imzası var + kapsam ifadesi yok  →  FIX
+  (Depodaki filmlerin TAMAMI bu denetimden düşüyor: hiçbirinin metin
+   yasağı kadraja değil, giysiye yazılmış. Bu yüzden bulgu prompt başına
+   değil DOSYA BAŞINA yazılır — her prompta bir satır yazan kilit,
+   kilit değil duvardır.)
+
+PROMPT SEVİYESİ · "yüzey işaretine bitişik ölçü" (FIX, yalnız image)
+  <işaret adı: fracture|crack|ring|arc|groove|seam|line|marking|…>
+  aynı cümlede ve ÖNCESİNDE  +  <ölçü>  +  <boyut kelimesi: across|wide|
+  in diameter|thick|deep>   →  FIX
+  ⚠️ Boy ve mesafe ölçüleri ("1.68 metres tall", "2.83 metres long",
+     "one metre from it") bu denetime GİRMEZ — 24 dosyalık taramada
+     yalnız 4 dosya tetikledi.
+```
+
+⛔ **Ve altı QA merceği bunu görmedi.** ① KARE'nin negatif listesinde bu kutu
+vardır ("Text, subtitles, captions, or watermarks visible on screen") ve
+işaretlenmedi; ⑤ ARKA PLAN'ın 9. kategorisi bu hatayı adıyla arar
+("No readable text, digits or symbols emerge anywhere in the field") ve
+8/10 verdi. Sebep okunabilir: iki rubrik de metni **bindirme ya da kenar
+artefaktı** olarak arıyor. Bu metin kadrajın ORTASINDA, sahnenin öznesinin
+üstünde ve sahnenin kendi malzemesine gömülüydü.
+
+**ÇÖZÜM — ③ ① ve ⑤ rubriklerine, metin kutusunun yanına:**
+
+```
+Emergent text is not only an overlay and not only an edge artifact. Look for
+characters that belong to the scene's own materials — painted on a wall,
+engraved in rock, stencilled on a hull, chalked on the ground, printed on a
+label. Check the CENTRE of the frame and the surface the shot is ABOUT, not
+only the edges. Text baked into the world reads as intentional set dressing
+and survives review, and it is the more damaging case: a number with a unit
+next to a natural object turns that object into a measured, man-made one.
+```
+
+> 🔗 Ders 34 (jenerik metni) · Ders 40 (diyalog tetikli altyazı) · Ders 50/A1
+> (metin yasağı ↔ ekran içeriği çelişkisi) · Ders 70/72 (başlık kartı) ·
+> Ders 73 (somut novum taşıyıcısı — burada taşıyıcının KENDİSİ bozuldu) ·
+> Ders 124 (görünüş cümlesi mekanik cümlesini sessizce ezer — burada ölçü
+> cümlesi yasak cümlesini ezdi) · Ders 139 (aynı desen, sırt yüzeyinde).
+
+---
+
+## 🔴 DERS 155: PROMPTUN KENDİ DEFTER ETİKETİ GİYSİYE BASILDI — "PHASE 1" GÖĞÜSTE, "EVA" SIRTTA; KAPSAMLI METİN YASAĞI VARDI VE YETMEDİ
+
+**Kaynak:** THE PAYLOAD QA (01.09.2026) — ① KARE 4,5 (`0:10 🔴 Text "PHASE 1"
+clearly printed on chest plate` · `1:18 🔴 Text "EVA" printed on suit back`) ·
+② DEVAMLILIK karakter pasaportu: `Right chest reads "PHASE 1" (S1)` ·
+`"EVA" on back (S7)` — **iki mercek birbirinden bağımsız olarak AYNI İKİ
+DİZGEYİ yazdı.**
+**Sorun:** D138'in reçetesi uygulanmıştı ve arıza tersine döndü — yasak
+kapsamlıydı, dizge POZİTİF GÖVDEDEYDİ.
+
+```
+PROMPTTA NE VARDI (bu depoda ölçüldü, 01.09.2026):
+  PART_A + PART_B'de  "Wear state: PHASE 1|2|3|4 — ..."   33 kez
+  PART_A + PART_B'de  "matte slate-grey EVA shell"        25 kez
+  Ve AYNI promptların negatif bloğunda, D138'in istediği kapsamla:
+     "No readable text, letters or digits on any surface in frame"
+
+EKRANDA NE ÇIKTI:
+  göğüs plakasında  "PHASE 1"      (kir merdiveninin faz sayacı)
+  sırtta            "EVA"          ("EVA shell" tamlamasının kısaltması)
+```
+
+⭐ **MEKANİZMA — YASAK DİZGEYİ SİLMEZ, GÖRÜNÜRLÜĞÜNÜ AZALTMAZ.** Model
+promptu okur ve BÜYÜK HARFLİ bir simgeyi bir GİYSİ İSMİNİN yanında görür.
+Eğitim verisinde büyük harfli kısa dizge + giysi = **o giysinin üstündeki
+baskıdır**: NASA yamaları, itfaiye ceketi, kargo tulumu. "No readable text"
+cümlesi bu eşleşmeyi bozmaz; çünkü yasak SAYFANIN BAŞKA BİR YERİNDEDİR ve
+dizge hâlâ oradadır. Yasak "yazma" der, gövde "PHASE 1" der — model ikisini
+birden yapar: yazıyı küçültür, giysiye basar.
+
+⚠️ **VE TAŞIYICI BİZİM KENDİ DEFTERİMİZDİR.** `Wear state: PHASE n` bir
+SAHNE TARİFİ değildir; D147'nin yazım aracıdır — kirin monotonik artışını
+yazarın takip etmesi için icat edilmiş bir sayaçtır. Prompt gövdesine
+kelimesi kelimesine indiği anda kadrajdaki bir nesnenin ETİKETİNE dönüştü.
+Aynı şey `EVA shell` için geçerli: EVA bir kısaltmadır, tarif değil.
+
+```
+KAPSAM — bu iki dizge depodaki HEMEN HER FİLMDE var:
+  · "EVA shell" ya da "EVA suit" — uzay filmlerinin ortak sözlüğü
+  · "Wear state: PHASE n" — D147'den (27.08.2026) sonra yazılan her film
+Bu ders tek filmin değil, YAZIM STANDARDININ düzeltmesidir.
+```
+
+**ÇÖZÜM — ÜÇ SATIR, ÜÇÜ DE YAZIM TARAFINDA:**
+
+```
+① FAZ SATIRI PROMPT GÖVDESİNE GİRMEZ. Kir merdiveni PLANDA ve SPEC'in
+   C bloğunda yaşar. Prompta yalnız o fazın TARİFİ iner, etiketi değil:
+   ✗ "Wear state: PHASE 3 — an even film of red dust covers the whole
+      screen-left side of the suit"
+   ✓ "an even film of red dust covers the whole screen-left side of the
+      suit and both forearms, the three wear marks reading through it"
+② KISALTMA YOK. Giysi, araç ve ekipman adlarında büyük harfli kısaltma
+   kullanılmaz — model onu marka/baskı sanır:
+   ✗ "matte slate-grey EVA shell"      ✗ "the EVA suit"    ✗ "MAV"
+   ✓ "matte slate-grey surface suit"   ✓ "the pressure suit"
+③ PROMPT GÖVDESİNDE BÜYÜK HARFLİ DİZGE = BASKI ADAYI. Vurgu için
+   kullanılan kapitaller (NEVER, EXACTLY, PHASE) yalnız NEGATİF blokta
+   ve TIMELINE fiillerinde kalır; giysi/gövde/nesne tarif eden cümlede
+   büyük harfli tek kelime bulunmaz.
+```
+
+⛔ **BETİK TARAFINA ÖNERİ (henüz kodda yok):** `prompt_kontrol.py` pozitif
+gövdede `\b[A-Z]{2,}\b|\bPHASE \d\b` arar ve giysi/gövde ismine 60 karakter
+mesafede duruyorsa FIX verir. D138'in denetimi KELİMEYİ arıyordu; bu denetim
+BİÇİMİ arar.
+
+> 🔗 Ders 138 (metin yasağının KAPSAMI — reçetesi buradaydı ve yetmedi:
+> kapsam gerekli, yeterli değil) · Ders 147 (faz satırının kendisi — bu ders
+> onu prompt gövdesinden ÇIKARIR) · Ders 45/34 (özel ad yazılmaz — aynı
+> ailenin ilk üyesi) · Ders 13 (ekrana anlamsız yazı) · Ders 59 (pozitif
+> tarif) · Ders 124 (görünüş cümlesi mekanik cümlesini ezer).
+
+---
+
+## 🔴 DERS 167: YEDİ KİMLİK ÖZNİTELİĞİ ÜST ÜSTE = "BİR ÜNLÜYÜ TARİF EDEREK İSTEME" KALIBI — VE AÇIK VİZÖR KİLİDİ O KALIBI BÜYÜTÜYOR
+
+**KAPI:** BETİK · `prompt_kontrol.py` ⑲ KİMLİK YIĞINI (aynı cümle bölgesinde ≥4 kişi özniteliği) — 02.09.2026
+**TEKRAR:** 1 · 02.09.2026 THE SINKING STAKE (motor OMNI, red defteri vaka 15)
+
+**Kaynak:** THE SINKING STAKE üretimi (02.09.2026) — sahibin bildirdiği red,
+çok sahnede tekrarladı ve üretimi durdurdu:
+`"There are a lot of people I can help with, but I can't depict some public
+figures. Do you have anyone else in mind?"`
+**Sorun:** filmde gerçek hiç kimse yok, hiçbir özel ad geçmiyor, milliyet 0,
+`prompt_kontrol ⑯` T1/T2 temiz ve kapı GO vermişti. Yine de reddedildi.
+
+```
+PROMPTTA NE VARDI — tek kişide YEDİ kimlik özniteliği, tek cümlede:
+
+  "THE TALLER ONE is about one hundred eighty-eight centimetres,
+   broad-shouldered, dark brown skin, close-cropped grey hair,
+   deep lines at the outer eyes, mid-fifties."
+   ① kesin boy  ② gövde  ③ ten rengi  ④ saç rengi  ⑤ saç biçimi
+   ⑥ yüz işareti  ⑦ yaş
+
+VE BU YIĞIN:  İKİ kişide × 25 imaj promptunun 25'inde, kelimesi kelimesine.
+```
+
+⭐ **MEKANİZMA — SINIFLANDIRICI NİYETİ DEĞİL BİÇİMİ OKUR.** "Şu ünlüyü çiz"
+isteğinin bilinen kaçamağı, adı yazmayıp kişiyi TARİF ETMEKTİR: boy + ten +
+saç + yaş + yüz işareti. Bu depo tam olarak o biçimi yazıyor — masum bir
+sebeple (D34 özel adı yasaklıyor, o yüzden kimlik tarife taşınıyor) ama
+sınıflandırıcı sebebi görmez, kalıbı görür. Öznitelik sayısı arttıkça
+"belirli bir gerçek insan" olasılığı yükselir.
+
+⛔ **VE PANZEHİR TETİKLEYİCİYİ BÜYÜTÜYOR — İKİ KİLİT TERS YÖNE ÇEKİYOR:**
+
+```
+D79 (06.08.2026)  her prompta yazdırıyor:
+   "the face is fully readable through it in every frame, at every head angle"
+   Sebep sağlam: aynalı vizör iki filmde üretildi, yokluk kilidi tutmadı.
+
+KART 12 (01.09.2026) diyor ki:
+   "KASK/VİZÖR → anonimlik/deepfake imzasına yakın okunuyor.
+    ✅ Panzehir ZATEN VAR: D79 açık vizör kilidi."
+   ve AYNI kart, üç satır aşağıda:
+   "KALABALIK → her yüz ÜNLÜ/yaş/deformasyon için TARANIR."
+
+⭐ AÇIK VİZÖR BİRİNCİ RİSKİ DÜŞÜRÜR, İKİNCİSİNİ YÜKSELTİR.
+  Kart birinci yönü biliyor, ikinci yönü bilmiyor, ve panzehir olarak
+  yazdığı şey ikinci yönün tetikleyicisi. Bu filmde ikisi çarpıştı:
+  iki okunur yüz × 25 prompt × yedi öznitelik.
+```
+
+**ÇÖZÜM — YÜZ GÖRÜNÜRLÜĞÜ İLE KİMLİK TARİFİ AYRILIR (dört satır):**
+
+```
+① VİZÖR AÇIK KALIR. D79 iptal edilmez — risk vizörde değil TARİFTEDİR.
+② KİMLİK YIĞINI PROMPT GÖVDESİNDEN ÇIKAR, PLAN'da ve REFERANS
+   PAKETİNDE kalır. Prompta yalnız SİLUET iner.
+   ✗ "one hundred eighty-eight centimetres, broad-shouldered, dark brown
+      skin, close-cropped grey hair, deep lines at the outer eyes,
+      mid-fifties"
+   ✓ "the taller of the two, broad through the shoulders"
+③ BOY GÖRELİ YAZILIR, SAYIYLA DEĞİL: "a head taller than the other".
+   Kesin boy hem kimlik özniteliğidir hem D138'in ölçü-etiket riskidir —
+   tek cümlede iki ayrı kapıya takılır.
+④ YÜZ TARİFİ YALNIZ YÜZÜN KONU OLDUĞU SAHNEDE. Göz bütçesi kaç sahne
+   istiyorsa o kadar (KARAKTER_VE_DUYGU §6: 3-5 dk'da 3-4). Kalan
+   sahnelerde vizör "optically clear" der ve DURUR.
+```
+
+⭐ **VE ASIL ÖLÇÜM ŞU:** bu filmde ayırt etme yükü zaten GEOMETRİDEYDİ
+(göğüs boyunduruğu ↔ düz göğüs · dört cep ↔ sarılı halat). Yüz tarifi
+25 sahnenin 21'inde **hiçbir iş yapmadan** sınıflandırıcı yüzeyi üretiyordu.
+Kaldırılan şey filmden hiçbir şey götürmez.
+
+> 🔗 Ders 34/45 (özel ad yazılmaz — kimliği tarife İTEN ders; bu ders o
+> tarifin sınırını koyar) · Ders 79 (açık vizör — korunur, daraltılmaz) ·
+> Ders 138 (ölçü prompt gövdesinde etikete döner) · Ders 123 (yasak
+> kelimeyi prompta sokar — aynı aile: niyet değil biçim ölçülür) ·
+> KART 12 · POLITIKA_VE_URETILEBILIRLIK §1 · red defteri vaka 15.

@@ -85,7 +85,7 @@ Yeni bir filme başlarken **sırayla** cevapla. Her cevap bir sonrakini daraltı
 
 | Format                                     | Ek okuma                                                                                                                                                             |
 | ------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **dikey shorts**                           | **`DIKEY_MIKRO_DRAMA_KILAVUZU.md`** (9:16 dramaturjisi — sistem promptundan ÖNCE) + `SHORTS_SISTEM_PROMPTU.md` + Bölüm 2.1                                           |
+| **dikey shorts**                           | **`DIKEY_MIKRO_DRAMA_KILAVUZU.md`** (9:16 dramaturjisi — sistem promptundan ÖNCE; §4.1 vizör döngüsü · §4.2 vekil nesneler · **§6.1 AI algısı kapısı, konsept seçilirken**) + `HOOK_VE_ILK_SAHNE_KILAVUZU.md` **§3.1 (dramatik ironi — 27.08.2026'da eklendi, dikey hattın en yeni zorunlu bölümü)** + `SHORTS_SISTEM_PROMPTU.md` + Bölüm 2.1 |
 | **fragman (dikey 3-6 / yatay 8-12 vuruş)** | **`FRAGMAN_KILAVUZU.md`** + kaynak filmin format kartı · emsal: `THE_COLD_BURN/THE_COLD_BURN_FRAGMAN_DIKEY.md` (dikey) · `THE_SECOND_SHIP/FRAGMAN.md` (çift format)  |
 | **2-4 dk**                                 | Bölüm 2.2 + referans film: `THE_DEAD_APPROACH`                                                                                                                       |
 | **3-5 dk**                                 | Bölüm 2.3 + `yatay_3_5_dk_filmler/README.md` + referans: `LOW_POWER/` · çok varlıklı filmde referans paketi örneği: `THE_COLD_BURN/THE_COLD_BURN_REFERANS_PAKETI.md` |
@@ -101,6 +101,8 @@ Yeni bir filme başlarken **sırayla** cevapla. Her cevap bir sonrakini daraltı
 | **Dünya atmosferi**                  | Bölüm 3.3 + Ders 39, 41                                              |
 | **Kalın atmosfer**                   | Bölüm 3.4 + Ders 36, 39 (ikisi de TERS çalışır)                      |
 | **Sürekli bulut / nötr yüzerlik** 🆕 | Bölüm 3.6 + Ders 41, 59; Ders 39 tetiklenemez (toz yok)              |
+| **Vakum + dönme yerçekimi** 🆕       | Bölüm 3.7 + Ders 30, 31, 127; Ders 23 burada ELENİR (hiçbir kare sıfır-g değil) |
+| **Vakum + temiz metal (soğuk kaynak)** 🆕 | Bölüm 3.8 + Ders 24, 30, 31, 127, 138; Ders 23 burada ELENİR (sıçrama 0 kare) |
 
 ### Türe göre ek okuma
 
@@ -111,9 +113,87 @@ Yeni bir filme başlarken **sırayla** cevapla. Her cevap bir sonrakini daraltı
 | **Savaş** ⏸️ RAFTA                | Bölüm 4.3 + Ders 38 + **`SAVAS_SENARYO_KILAVUZU.md`** — 12.08.2026'da klasörü ve referans filmi kaldırıldı (dikey `THE_DULL_EDGE` bu kartı kullanmaya devam eder)                                                                                                                                                                                                                   |
 | **Yeni tür**                      | Bölüm 4.4 (boş şablon)                                                                                                                                                                                                                                                                                                                                                              |
 
+### Politika yüzeyine göre ek okuma 🆕 01.09.2026
+
+| Tetikleyici (filmde varsa) | Ek okuma |
+| --- | --- |
+| gövdeye değen kuvvet · kalabalık + kaçan kişi · ateş/duman · tehlike çerçevesi · bedenden bir şey çıkarma · yüzsüz izolasyon + kısıtlanmış uzuv | **`POLITIKA_VE_URETILEBILIRLIK_KILAVUZU.md`** (kapı kartı 20 satır; gövde yalnız tetikleyici varsa) + `URETIM_ONCESI_ANALIZ/02_RISK_KARTLARI.md` **KART 12** |
+| bir prompt RED aldı | aynı kılavuz **§1 sınıflandırma → §5 merdiven** + `FILM_QA_RAPORLARI/09_URETIM_RED_DEFTERI.md` satır aç |
+
 ---
 
 # 2. 📐 FORMAT KARTLARI
+
+## 2.0 ⭐ FİLM KLASÖRÜ İSKELETİ — her formatta aynı (01.09.2026)
+
+> Kartların `DOSYA:` satırları buraya işaret eder. **Yedi dosya, yedi ayrı iş.**
+> Kopyalanabilir hâli: `FILM_KLASOR_SABLONU/` — tarif değil, `cp -r`.
+
+```
+<FORMAT_KLASORU>/<FILM_ADI>/
+├── <FILM>_PLAN.md          konsept · TEMA + sahne indeksleri · vuruş tablosu ·
+│                           hook · sahne haritası · Bible'lar · sayısal kilitler
+│                           ⛔ PROMPT YOK
+├── <FILM>_BOLUM_1.md       sahne bloğu 1 — yalnız ## SAHNE + 📸 + 🎥
+├── <FILM>_BOLUM_2.md       sahne bloğu 2
+├── <FILM>_KAPAK.md         kapak anı + prompt + 120 px testi + Plan B
+├── <FILM>_MUZIK.md         §17 künyesi + tek global tema + ses yatağı
+├── <FILM>_YAYIN_PAKETI.md  ⭐ TAMAMEN İNGİLİZCE · YouTube + Shorts + IG + TikTok
+└── <FILM>_QA_SPEC.md       A/B/C/E blokları — ad DEĞİŞMEZ (üç betik arar)
+    (+ <FILM>_REFERANS_PAKETI.md — iki insandan/araçtan fazlası varsa ZORUNLU)
+```
+
+**Neden yedi dosya:** her dosyanın tüketicisi ve saati farklı. Müzik promptu
+Suno'ya, kapak promptu imaj modeline, yayın paketi platform formuna gider;
+bölüm dosyaları video modeline. Hepsi tek dosyadaysa operatör 1.200 satır
+kaydırıp doğru bloğu arıyor. **Ve D117'nin ölçtüğü şey:** planın *içindeki*
+SPEC bloğu dokuz filmde bir kez bile koşulmadı, ayrı dosyaya çıkınca koşuldu.
+Blok okunmuyor, dosya okunuyor.
+
+```
+ADLANDIRMA   <FILM>_<ROL>.md — film adı ÖNDE.
+             Sebep D160/⑪.0: aynı adı taşıyan beş dosyanın ikisi başka bir
+             filmdi. Dosya klasörden çıktığında (QA'ya yapıştırılınca, indirilince)
+             adı tek kimliğidir. Numara öneki KULLANILMAZ.
+             BUYUK_HARF_ALT_CIZGI · Türkçe karakter yok.
+             ⚠️ BOLUM_1/BOLUM_2 = eski PART_A/PART_B. Eski filmler
+             YENİDEN ADLANDIRILMAZ; yeni filmler BOLUM yazar.
+
+BÖLÜM SAYISI formattan gelir, tercih değil:
+  dikey shorts   2   (S0-S2 · S3-S5)
+  yatay 2-4 dk   2   (ortadan)
+  yatay 3-5 dk   2   (13 + 12 — bugünkü PART_A/PART_B'nin aynısı)
+  yatay 7-9 dk   faz sayısı kadar (BOLUM_1..n) — ikiye ZORLANMAZ
+  yatay 10-20    faz alt klasörleri korunur (THE_SECOND_SHIP emsali)
+
+⛔ FORMAT KLASÖRÜNÜN KÖKÜNE .md BIRAKMA — orada yalnız 00_README durur;
+   sayaç kökteki her girdiyi BİR FİLM sayar.
+⛔ BOŞ DOSYA SİLİNMEZ, `⬜ BEKLİYOR` satırıyla durur. Var olan boş dosya
+   görünür borçtur; olmayan dosya borç değil, unutmadır.
+```
+
+### ⚠️ Bölmenin bedeli — ve ödendiği yer
+
+Sahneleri iki dosyaya ayırmak `prompt_kontrol.py`'nin **dizi kapılarını dosya
+sınırında körleştirir**: 6 sahnelik dikey film ikiye bölününce dosya başına 3
+video promptu kalır ve `len(video) >= 4` eşiği yüzünden AÇI VE KURULUM KAPISI
+hiç koşmaz; bölüm sınırındaki ardışık çift (S2↔S3) hiçbir dosyada yan yana
+gelmez; ⑭ NOVUM satırı PLAN'da kaldığı için bölüm dosyasında "satır yok" der.
+Üçü de **bu depoda zaten oluyordu** — THE_BLUE_DRIFT iki bölüm dosyasında da
+"NOVUM TAŞIYICISI satırı yok" aldı, oysa satır PLAN'da yazılıydı.
+
+Bedel 01.09.2026'da betiğe ödendi: **klasör modu** bölüm dosyalarını sahne
+sırasına göre birleştirip kapıları film boyunca bir kez daha koşar.
+
+```
+⛔ ARTIK FİLM KLASÖRÜ VERİLİR, TEK BÖLÜM DEĞİL:
+   python3 kilavuzlar_ve_sistem_dosyalari/PROMPT_KONTROL/prompt_kontrol.py \
+           <FORMAT_KLASORU>/<FILM_ADI>
+   Çıktıda `📁 FİLM KLASÖRÜ · n bölüm dosyası birleşik` satırı YOKSA
+   dizi kapıları koşmamıştır.
+```
+
+---
 
 ## 2.1 DİKEY SHORTS (9:16)
 
@@ -130,7 +210,10 @@ YAPI:        6 sahne (Hook + 5) × KLİP SÜRESİ
              planda sahne sahne yazılır [Ders 100]; yazılmazsa kurgu
              kırpmaz ve 48 saniyeye yazılmış bütün zaman kodları
              (müzik düşüşleri · tohum · karşılık · döngü noktası) kayar.
-DOSYA:       Tek dosya
+DOSYA:       §2.0 iskeleti · BÖLÜM 2 (S0-S2 · S3-S5)
+             ⚠️ 01.09.2026'ya kadar TEK dosyaydı (plan + Bible + 6 sahne +
+             müzik + kapak + başlık paketi, ~1.200 satır). Eski filmler
+             OLDUĞU GİBİ kalır; yeni filmler klasör iskeletiyle yazılır.
 İMAJ:        6
 KLİP:        araçtan ÖLÇÜLEN süre (Veo native, extend GEREKMEZ ✅)
 ÜRETİM:      text-to-video
@@ -159,6 +242,45 @@ KRİTİK FARK: Dikey sadakat — karakter ALT kısımda, kozmik ölçek ÜST kı
              mekanizması + S1 tırmandırma + hook tipolojisi (09.08.2026)
 ```
 
+### ⭐ 27.08.2026 — DİKEY KARTA EKLENEN ÜÇ ZORUNLU PLAN SATIRI
+
+> Kaynak: dört dış araştırma turu ve süzme kaydı →
+> `URETIM_ONCESI_ANALIZ/04_ARASTIRMA_BULGULARI.md`
+
+```
+① BİLGİ ASİMETRİSİ: [YOK / DRAMATİK İRONİ · taşıyıcı ①-⑤ · anı 0:XX]
+   Depo 16 dikey filmin 16'sında farkında olmadan "YOK" yazdı.
+   Karakter sakin kaldıkça izleyici uyarımının parabolik arttığı
+   ölçüldü (Cabañas, Senju & Smith 2023, N=42) — panik yasağı
+   engel değil MEKANİZMADIR, ama izleyicinin karakterden fazla
+   bilmesi şarttır.  → HOOK §3.1
+   ⛔ SHORTS_SISTEM_PROMPTU md.5'ten "TEHLİKE YOKTUR" cümlesi
+      KALDIRILDI; panik yasağı kaldı. Görünür saat/geri sayım meşru.
+
+② EL YUVASI: [hangi sahne · kadraj payı ≥%25]
+   Yüz kask ardındayken izleyicinin empati kurduğu organ eldir; el/POV
+   yüzün ölçülmüş birincil vekilidir. Character Bible'ın "eller her
+   zaman boş" kuralı gevşetildi: 6 sahnenin ≥1'inde fiziksel temas.
+   → DIKEY_MIKRO_DRAMA §4.2
+
+③ VİZÖR BEKLENTİ SATIRI: [§4.1'in ①-④'ünden hangisi · hangi sahne]
+   Kask/maske açık döngü aracıdır (+%22 sona kadar bekleme) ama depo
+   yalnız maskeyi taşıyıp döngüyü kullanmadı. Vizör durumu 6 sahnede
+   de DEĞİŞMEZ [D37·D57] — değişen izleyicinin beklentisidir.
+   → DIKEY_MIKRO_DRAMA §4.1
+
+⚠️ AYRICA — SÜRE KARARI ARTIK TEK BAŞINA ALINMAZ:
+   platform önce seçilir, süre ondan türer. Shorts=VSA (süre konu dışı,
+   tek kapı 0. kare) · TikTok=CR (kısa avantajlı) · IG=sends (uzun
+   avantajlı). 48 s ızgarası KIRILMADI, ama artık gerekçesi yazılıyor.
+   → YAYIN_VE_PERFORMANS §2.0
+
+⚠️ AI ALGISI KAPISI (konsept seçilirken): "kırılgan insan duygusu +
+   fotogerçekçi insan" kutusu ölçülen en ağır cezayı alıyor (güven
+   ~%50 düşüyor, gerçekten AI olması gerekmiyor).
+   → DIKEY_MIKRO_DRAMA §6.1
+```
+
 ## 2.2 YATAY 2-4 DK
 
 ```
@@ -167,7 +289,8 @@ YAPI:        12-18 sahne × 10s = 2:00-3:00
              insansız ayrılış kodası — örnek: UNBROKEN_CITY S14-S15,
              STARLESS_CIRCLE S14-S17. Viral ara süreyle ölçeklenir:
              ~2:00'de 2 → 3:00'te 4)
-DOSYA:       Tek dosya
+DOSYA:       §2.0 iskeleti · BÖLÜM 2 (ortadan; 15 sahnede 8 + 7)
+             ⚠️ eski filmler tek dosya — yeniden bölünmez
 İMAJ:        sahne sayısı kadar (12-18)
 KLİP:        10s → Veo'da 8s üret + 2s extend ⚠️
 ÜRETİM:      im-to-video
@@ -194,7 +317,9 @@ ALT DALLAR:  bilimkurgu — TEK DAL, sayılar: bash sayac.sh
 
 ```
 YAPI:        25 sahne × 10s = 4:09  (Hook 9s + 24 × 10s)
-DOSYA:       PLAN + PART_A (13 sahne) + PART_B (12 sahne) + KAPAK
+DOSYA:       §2.0 iskeleti · BÖLÜM 2 (BOLUM_1 13 sahne + BOLUM_2 12 sahne)
+             — bu format iskeleti zaten yaşıyordu; 01.09.2026'da yalnız
+             MUZIK + YAYIN_PAKETI eklendi ve PART_A/PART_B adı BOLUM oldu
              (+ REFERANS_PAKETI — iki insandan veya iki araçtan fazlası
               varsa ZORUNLU sayılır; THE_COLD_BURN'de metin çapası tek
               başına aracı sabitlemedi, 07.08.2026)
@@ -212,7 +337,9 @@ KRİTİK FARK: Part A tüm Bible'ları taşır; Part B sadece referans verir
 
 ```
 YAPI:        60 sahne × 8s = 8:00  (5 faz × 12 sahne)
-DOSYA:       README + 5 faz + MUZIK + REFERANS_PAKETI = 8 dosya
+DOSYA:       §2.0 iskeleti · BÖLÜM = FAZ SAYISI kadar (BOLUM_1..n)
+             + REFERANS_PAKETI (bu formatta EN BAŞTA hazırlanır)
+             ⚠️ ikiye ZORLANMAZ: 48-60 sahne iki dosyada okunmaz
 İMAJ:        75 (3 çapa + 12 bitiş karesi) × 5 faz
 KLİP:        8s — Veo native, extend GEREKMEZ ✅
 ÜRETİM:      START/END FRAME ZİNCİRİ (text-to-video DEĞİL)
@@ -254,7 +381,7 @@ Lens             KÜRESEL — anamorfik yatay parlama YASAK (sinematografik §11
                  vakumda atmosferik saçılma yok, parlama fiziksel olarak yanlış
 Hareket          yerçekimine göre: 0.0004g halat çekme / 0.12g temaslı adım
 İlgili ders      30 (parçacık), 31 (çarpma), 36 (vakum dumanı), 39 (sıvı toz)
-Referans film    THE_DEAD_APPROACH, THE_WAKING_GROUND
+Referans film    THE_DEAD_APPROACH, THE_COLD_WELD
 ```
 
 ## 3.2 İNCE ATMOSFER (Mars, %0.6 basınç)
@@ -266,8 +393,11 @@ Dolgu ışığı      VAR ve motivasyonlu (atmosferik saçılma)
 Ses              boğuk, zayıf, yüksek frekanslar yok (240 m/s)
 Rüzgar           hiçbir şeyi deviremez — kumaş çırpmaz, kimse savrulmaz
 Gökyüzü          kahve-tarçın; gün batımında güneşin ÇEVRESİ mavi
-İlgili ders      39 (toz yönü), 41 (yumuşak ışık ≠ bloom)
-Referans film    LOW_POWER
+İlgili ders      39 (toz yönü), 41 (yumuşak ışık ≠ bloom), ⭐ 143 (ışık sütunu
+                 tozu ZERRE SAYISIYLA yazılır — perde/şelale yasak), 145 (alçak
+                 açıda ufuk kilidi — ova kanyona dönmesin), 147 (tozlu odada
+                 kir MONOTONİK merdiven, faz satırı her prompta)
+Referans film    LOW_POWER · THE_SKYLIGHT (üretildi 29.08.2026 — D143-150'nin kaynağı)
 ```
 
 ## 3.3 DÜNYA ATMOSFERİ ⏸️ ŞU AN KULLANIMDA DEĞİL (26.08.2026)
@@ -364,7 +494,11 @@ KANIT NESNELERİ  Durum ekranda kanıtlanmazsa ölçülemez [D95 mantığı].
    da düştü: şakül şeridi kıvrıldı.
 İlgili ders      36 (alev · geçerli) · 23 (elenir) · 30/39 (parçacık) ·
                  ⭐ 127 (ivme yazılmaz, kadrajı terk etme süresi yazılır —
-                 bu kartın tersine dönen kuralının prompt hâli)
+                 bu kartın tersine dönen kuralının prompt hâli) ·
+                 ⭐ 148 (kalkışta bacak HİÇ hareket etmez; alev bacakların
+                 ARASINDA ve arkası görünür — "legs folding" yazılmaz) ·
+                 149 (0g'de kemerli insanın kolları da yüzer: önkol 5-8 cm
+                 havada; kanıt nesnesi ADLI ve ≥ 10 cm, "toz zerresi" cıvata olur)
 Referans film    THE UPHILL DARK (yatay_3_5_dk_filmler/) · ölçülmüş
                  karşı-örnek: THE IRON SLOPE (dikey_shorts_filmler/)
 ```
@@ -406,6 +540,151 @@ Referans film    LOSS OF LIFT (yatay_3_5_dk_filmler/)
 
 ---
 
+## 3.7 VAKUM + DÖNME YERÇEKİMİ (dönen bir halkanın iç güvertesi) 🆕
+
+> 🆕 THE HEAVY SIDE ile açıldı (29.08.2026). Bu kart, **dönerek kendi
+> ağırlığını üreten** bir gövdenin içinde geçen her sahnenin ön şartıdır.
+> 3.1'in (vakum) alt kartıdır — oradaki her kural geçerlidir — ama
+> §3.5'ten (itki yerçekimi) farklı biçimde **iki kural birden** tersine
+> döner ve ikisi de aynı denklemden çıkar: **a = (v ± u)² / R.**
+
+```
+Toz              vakumdaki gibi: kaldıracak hava yok, 0 kare
+Gölge            MUTLAK SİYAH, jilet keskin (3.1 ile aynı)
+Dolgu ışığı      YOK. Metal bir yapıda model ikincil yansıma üretmeye
+                 çok yatkındır — pozitif cümle her prompta yazılır
+Ses              dışarıda yok; ama YAPI bir ÇANDIR: alüminyumda 5.100 m/s,
+                 her temas çevreyi milisaniyelerde dolaşıp çok yansımalı
+                 uzun bir kuyrukla geri gelir. Duyulan her şey TEMASTIR
+Rüzgar           yok · egzoz/alev/kıvılcım yok
+
+⭐ TERSİNE DÖNEN KURAL 1 — AĞIRLIK YÖNE BAĞLIDIR
+   Etkin ağırlık gövdenin MERKEZE GÖRE toplam teğetsel hızından gelir:
+     a = (v_çember ± u)² / R
+   Dönüşle aynı yöne koşmak ağırlığı ARTIRIR, ters yöne koşmak
+   AZALTIR; ters yöne v_çember hızıyla koşan gövde ağırlıksızdır.
+   → Aynı güvertede, aynı adım, iki farklı ağırlık. Süreklilik
+     hatası DEĞİL, ortamın kuralıdır.
+   → İLERİ SIÇRAYIŞIN MATEMATİKSEL TAVANI VAR: menzil = 2wR·u/(v+u)²
+     ve u = v'de maksimumdur → menzil_max = wR / (2v). Bir insanın
+     ileri sıçrayışı bu sayıyı GEÇEMEZ, ne kadar hızlı koşarsa koşsun.
+
+⭐ TERSİNE DÖNEN KURAL 2 — BIRAKILAN ŞEY YANA İNER
+   Serbest cisim atalet çerçevesinde DÜZ gider; güverte altından
+   döner. Sapma dönüşün TERSİNEDİR ve h yüksekliğinden bırakılan
+   cisim için tam olarak hesaplanır (kiriş/atalet yöntemi):
+     r0 = R − h · kiriş d = √(R²−r0²) · v0 = ω·r0 · t = d/v0
+     sapma = R · (ω·t − arctan(d/r0))
+   Örnek (R = 9,00 m · T = 9,90 s · h = 1,40 m): t = 0,97 s,
+   sapma = 0,62 m. ⭐ Ortamın en ucuz ve en okunaklı KANITIDIR.
+
+⭐ ÜÇÜNCÜ SONUÇ — İÇERİ TIRMANMAK YANA İTER
+   Merkeze doğru v hızıyla tırmanan gövdeye 2ωv Coriolis ivmesi
+   biner; yerel ağırlık a = ω²r yükseldikçe düştüğü için yalpalama
+   açısı YUKARI ÇIKTIKÇA BÜYÜR. Merdiven düz, gövde değil.
+
+KANIT NESNELERİ  Durum ekranda kanıtlanmazsa ölçülemez [D95 mantığı].
+                 Üç ucuz kanıt: (a) bırakılan küçük bir KATI cismin
+                 yana inmesi — SÜRE ve MESAFE ile yazılır [D127],
+                 (b) aynı gövdenin iki yönde iki farklı ağırlıkta
+                 görünmesi (katlanan diz / yerden kesilen adım),
+                 (c) sarkan bir halatın SARKMA DERİNLİĞİ — doğrudan
+                 bir gravimetredir ve metinsiz bir sayaçtır [Kart 5].
+
+COĞRAFYA         Halkanın içinde OKLÜZYON YOKTUR: güverte içbükeydir,
+                 karakterin önü ve arkası yukarı kıvrılır ve başının
+                 üstünde kapanır. "Tavan" alttan görülen AYNI
+                 güvertedir. ⛔ Bu yüzden kadrajın üst bandında her
+                 zaman ikinci bir güverte görünür ve model oraya
+                 İKİNCİ BİR İNSAN koymaya yatkındır: "no one is
+                 standing on it" cümlesi Kart 4'ün bu ortamdaki
+                 zorunlu hâlidir.
+                 ⚠️ VE SABİT KAMERA MENZİLİ SINIRLIDIR: güverte
+                 düzeyindeki bir mercek halkanın ancak üçte birini
+                 görür. Uzun mesafeli hareket planlanırken kadraj
+                 menzili ÖNCE hesaplanır, sonra sahne yazılır.
+IŞIK             Dönme ekseni yıldıza bakıyorsa ışık eksene paralel
+                 gelir ve güverteyi YALAYARAK aydınlatır; bu geometri
+                 halkanın dönüşüyle DEĞİŞMEZ. ⭐ Altı klibin ışık
+                 sürekliliği böylece fizikle garanti altına alınır —
+                 bu kartın bedava kazancıdır ve tasarımda tercih edilir.
+İlgili ders      30/39 (parçacık · geçerli) · 23 (gövde hiçbir karede
+                 sıfır-g'de değilse ELENİR) · 26 (halat) · 127 (ivme
+                 yazılmaz, süre ve mesafe yazılır) · 104 (ışık eksende
+                 ise mıknatıs yapısal olarak zayıflar) · 79 · 138
+Referans film    THE HEAVY SIDE (dikey_shorts_filmler/) — yazıldı,
+                 üretilmedi (29.08.2026)
+```
+
+---
+
+## 3.8 VAKUM + TEMİZ METAL — SOĞUK KAYNAK (havasız bir ayda metal enkaz) 🆕
+
+> 🆕 THE COLD WELD ile açıldı (01.09.2026). §3.1'in (vakum) alt kartıdır —
+> oradaki her kural geçerlidir — ve §3.5/§3.7 gibi **tek bir kuralı**
+> tersine çevirir. Kartın ön şartı basittir: kadrajın zemini **oksitsiz,
+> çıplak metal** olmalıdır.
+
+```
+Toz              vakumdaki gibi kaldıracak hava yok — ⭐ AMA BU KARTTA
+                 ZEMİN METALDİR ve göktaşı bombardımanı onu temizlemiştir:
+                 metalin üstünde 0 kare toz. Toz yalnız metalin DIŞINDAKİ
+                 regolitte görünür.
+Gölge            MUTLAK SİYAH, jilet keskin (3.1 ile aynı)
+Dolgu ışığı      YOK. ⚠️ Metal bir yapıda model ikincil yansıma üretmeye
+                 çok yatkındır — pozitif cümle her prompta yazılır
+Ses              dışarıda yok; YAPI bir PLAKADIR: duyulan her şey temastır,
+                 gövdeden iletilir, kuru ve kısa
+Rüzgâr           yok · egzoz/alev/kıvılcım yok · pas 0 kare (oksijen yok)
+
+⭐ TERSİNE DÖNEN KURAL — DEĞEN ŞEY BİRLEŞİR
+   Oksit ve adsorbe gaz katmanı olmayan iki metal yüzey temas ettiği anda
+   ATOMİK olarak birleşir: ısı yok, kaynak yayı yok, temas KAYNAKTIR. Bu
+   uydurma değil, belgelenmiş bir uzay mühendisliği sorunudur (kilitlenen
+   menteşeler, açılmayan mekanizmalar; yüzeyler bu yüzden kaplanır).
+   → Bu ortamda "gevşek parça" YOKTUR. Düşen alet düştüğü yerde KALIR.
+   → Yıllar içinde bir enkaz enkaz olmaktan çıkar: parçalar birbirine
+     kaynayıp TEK GÖVDEYE dönüşür.
+   ⛔ Bağ ATOMİKTİR, GEOMETRİK DEĞİL: iki yüzey ayrı ayrı görünür kalır ve
+     aralarında net bir sınır vardır. "El metale eriyor / batıyor" bir
+     ÜRETİM HATASIDIR [D24 temas bütünlüğü], kartın kuralı değil.
+
+⭐ İKİNCİ KURAL (BİRİNCİNİN SONUCU) — IŞIK KAYNAĞI BOZAR
+   Gölgede ~100 K'de duran bir levha ışığa girince ~370 K'ye çıkar ve
+   metrede yaklaşık 1,3 mm uzar. Karşı taraf hâlâ gölgedeyse dikiş bunu
+   kaldıramaz ve KOPAR. → Işık çizgisi ilerledikçe yıllardır tek parça
+   olan şey saniyeler içinde ayrı parçalara ayrılır. Kopuş SOĞUKTUR:
+   kıvılcım 0 · ısı parlaması 0 · duman 0 · erimiş metal 0.
+   ⚠️ Maya eşiği korunur [ONERME §3]: film başına 1 ihlal; bu ikinci
+     kural birincinin SONUCUDUR, bağımsız ikinci kural değildir.
+
+ASİMETRİ ŞART    Kaynak yalnız TEMİZ metal-metal temasında olur. Seramik
+                 kaplı yüzey, kumaş ve cam kaynamaz. ⭐ Bu asimetri
+                 karakterin bütün hareket dilbilgisini kurar (botla
+                 yürünür, avuçla tutulmaz) ve her prompta POZİTİF hâlde
+                 yazılır [D59]; yazılmazsa model ya her şeyi yapıştırır
+                 ya hiçbir şeyi.
+KANIT NESNELERİ  Durum ekranda kanıtlanmazsa ölçülemez [D95 mantığı].
+                 Üç ucuz kanıt: (a) uçan bir levhanın üstünde DİK duran
+                 bir alet — gevşek değil, kaynamış; (b) bir avucun
+                 kalkmaması ve kalkınca YERDE bir iz bırakması;
+                 (c) tekmelenen bir parçanın düştüğü yerde SAPLANIP
+                 kalması, kaymaması.
+⚠️ METİN RİSKİ   Bu kartın zemini İŞLENMİŞ METALDİR ve model metal yüzeye
+                 numara, seri işareti, ölçü çentiği ve uyarı damgası
+                 basmaya en yatkın olduğu yer burasıdır [D138]. Karşı
+                 önlem POZİTİFTİR: "bilgi taşıyan tek şey dikiş, perçin
+                 ve göktaşı çukurudur".
+İlgili ders      30/39 (parçacık) · 23 (gövde sıfır-g'de değilse ELENİR) ·
+                 24 (temas bütünlüğü) · 26 · 31 · 59 (pozitif isim) ·
+                 104 (tek baskın ışık) · 127 (ivme yazılmaz, süre ve
+                 mesafe yazılır) · 138 (metin yasağının KAPSAMI) · 79 · 139
+Referans film    THE COLD WELD (yatay_2_4_dk_filmler_uzay/) — yazıldı,
+                 üretilmedi (01.09.2026)
+```
+
+---
+
 # 4. 🎭 TÜR KARTLARI
 
 ## 4.1 BİLİMKURGU
@@ -416,7 +695,12 @@ KİLİTLER
   Gemi ölçek kilidi [D32]    kapı/kanat/ayak geometrisi sahneler arası sabit
   Sıfır-g mikro hareket [D23] süzülen beden rijit değil — eksen dönüşü, uzuv sürüklenmesi
   Halat fiziği [D26]         gergin halat düz, katı cisim çarpışmasına uyar
-KARAKTER    Tek kâşif, hep yalnız. Diyalog varsa AI sesi veya kayıt.
+KARAKTER    VARSAYILAN tek kâşif, yalnız. Diyalog varsa AI sesi veya kayıt.
+            İkinci figür YASAK DEĞİL, BÜTÇELİ: ancak novum onu gerektiriyorsa
+            ve plana altı satırlık ayrım bütçesi yazıldıysa gelir — üç kanal
+            (siluet · kostüm · hareket), yüze bağlı OLMAYAN.
+            Emsal: THE_ROSE_COAT §0.8b (12 sahne iki figür, kadraj kilidi tuttu).
+            Gerekçesiz ikinci figür = iki yarım karakter [Kart 4 · D20 · D69].
             YETKİNLİK KURALI: hata bilgi eksikliğinden, aptallıktan değil.
 TON         Huşu ve varoluşsal huzur ("Overview Effect"). Korku değil.
 SENARYO
@@ -642,7 +926,11 @@ skin, no face morphing, identical bone structure throughout. Equipment and
 clothing identical to the description — no drift, no gear appearing or
 disappearing mid-shot. Dirt and wear staining stays fixed and never shifts.
 No readable text, letters, digits, numbers or symbols on any display,
-surface, patch or sign. No subtitles, no captions, no burned-in dialogue
+surface, patch or sign — not on the suit, not on the equipment, and not
+on the ground, the rock, the ice or any natural surface in the frame.
+Nothing in this world has been measured, labelled, marked out or
+annotated by anyone: no scale marks, no graduation ticks, no survey
+markers, no engraved or painted characters of any kind. No subtitles, no captions, no burned-in dialogue
 text, no title card, no end card, no credits, no watermark. All hand-surface
 contacts keep a clear structural boundary — no merging, no phasing, no extra
 fingers, rigid-body collision throughout. All particles obey the stated
@@ -652,6 +940,24 @@ melting terrain, no warping topology, no swimming texture. No Unreal Engine
 look, no CGI aesthetic, no video game aesthetic. Photorealistic with 35mm
 film grain.
 ```
+
+> ⛔ **METİN YASAĞININ KAPSAMI, YASAĞIN KENDİSİ KADAR ÖNEMLİDİR [Ders 138].**
+> Depodaki filmlerin tamamı bu cümleyi KISALTARAK yazdı ve kısaltırken
+> öznesini değiştirdi: *"The suit carries no patch, no flag, no lettering,
+> no digits and no symbol anywhere."* O cümle KOSTÜMÜ korur; zemini, kayayı
+> ve gökyüzünü korumaz. Bir filmde model kaldırımdaki halka çatlağın iç
+> yayına **"11 metres" + gradasyon çentikleri** yazdı; prompt kapısı
+> `no digits` kalıbını görüp geçirmişti (imza KELİMEYİ arıyordu, KAPSAMI
+> değil) ve altı QA merceğinin altısı da görmedi. `prompt_kontrol.py`
+> 28.08'de dosya başına tek satırlık bir **"metin yasağı KAPSAMSIZ"**
+> denetimi aldı.
+>
+> ⛔ **VE ÖLÇÜ PROMPT GÖVDESİNDE DURMAZ [Ders 138].** Kadrajdaki bir yüzey
+> işaretine (çatlak, halka, çizgi, oluk) bitişik yazılan ölçü — *"a curved
+> fracture, eleven point six metres across"* — model tarafından o işaretin
+> ÜSTÜNE basılan bir ETİKET olarak çizilebiliyor. Ölçü SPEC'in kilit
+> listesinde yaşar; gövde nesneyi NESNE GÖRELİ ölçekle anlatır
+> (*"about four body-lengths out from her on every side"*).
 
 **Kaskı/skafandrı olan her filmde ayrıca [DERS 79 · 06.08.2026]:**
 
@@ -669,6 +975,16 @@ every frame, at every head angle.
 > sırt ünitesi + aynalı vizör üretildi** — model prompt gövdesini çiziyor,
 > referans belgeyi okumuyor. Pozitif hâl ("flat back silhouette", "face
 > fully readable") yasak cümlesinden daha iyi tutar (Ders 59).
+> ⛔ **VE KAMERA ARKAYA GEÇEN SAHNEDE BU DA YETMEZ [Ders 139].** Yokluk
+> kilidi, o yüzey kadrajın KONUSU olmadığı sürece çalışır. Bir filmde
+> aynı blok altı promptun altısında gövdedeydi ve 6 sahnenin 5'inde
+> tuttu; düştüğü tek sahne, kameranın kadının ARKASINA geçtiği tek
+> sahnedir — orada altın renkli bir sırt ünitesi doğdu ve on saniye
+> kaldı. Model boş bir sırtı DOLDURMAK zorundadır ve "no backpack"
+> ona ne KOYACAĞINI söylemez. Kurulum azimutu özneyi arkadan ya da
+> tepeden gösteriyorsa, o sahnenin promptunda yokluk listesi POZİTİF
+> YÜZEY TARİFİNE çevrilir: *"the back of the suit is one continuous
+> smooth panel from collar to hip, unbroken, carrying nothing"*.
 > ⛔ Filmin vizörü tasarım gereği renkli/aynalıysa bu blok EKLENMEZ —
 > o zaman da bible'daki karşıt cümle silinir; ikisinin arası hata üretir.
 
@@ -708,7 +1024,8 @@ off-screen only — no mouth in frame, no invented on-screen speaker.
                  → Üçü de ✅ değilse KONSEPT REDDEDİLİR, plan yazılmaz.
                    Kapı ③ paketlemede ikinci kez koşar (PAKETLEME §1).
 
-1. PLAN          konsept, tema, farklılaşma gerekçesi, sahne haritası
+1. PLAN          → `<FILM>_PLAN.md`  (klasör iskeleti: §2.0)
+                 konsept, tema, farklılaşma gerekçesi, sahne haritası
                  → tema yoksa DURMA, film koreografi olur — tema seçimi,
                    format-süre uyumu, tema→motif→sahne matrisi:
                    TEMA_MUHENDISLIGI_KILAVUZU.md (22.08.2026)
@@ -742,13 +1059,19 @@ off-screen only — no mouth in frame, no invented on-screen speaker.
                    (B4) sahne-kurulum dizisi + güvenli bant + kurulum
                         sayısı + AÇI TİPİ sayısı (≥3) yazılı mı
 
-3. PROMPT        image + video, self-contained, ~2.500 karakter
+3. PROMPT        → `<FILM>_BOLUM_1.md` · `<FILM>_BOLUM_2.md`  (§2.0)
+                 image + video, self-contained, ~2.500 karakter
                  → [BIBLE] atfı YASAK, her prompt tek başına çalışmalı
+                 → bölüm SINIRI da ardışık bir çifttir: son sahne ↔ ilk sahne
+                   ≥1 ölçek kademesi VE ≥45°
 
 3.5 PROMPT QA    PROMPT_KONTROL/   ✅ 12.08.2026'da açıldı
                  → ÜRETİMDEN ÖNCE çalışır, maliyeti sıfır
                  → İKİ ADIM, ikisi de gerekir:
-                   ① python3 .../PROMPT_KONTROL/prompt_kontrol.py <dosya>
+                   ① python3 .../PROMPT_KONTROL/prompt_kontrol.py <FİLM KLASÖRÜ>
+                      ⛔ KLASÖR verilir, tek bölüm değil (01.09.2026 klasör
+                        modu — §2.0). Çıktıda `📁 FİLM KLASÖRÜ · n bölüm
+                        dosyası birleşik` satırı yoksa dizi kapıları koşmadı.
                       sayar: uzunluk · yasak kelime · çekirdek imzası ·
                       "Scene N of X" tutarlılığı · yön kapısı ·
                       ⭐ kurulum çeşitliliği · açı sözlüğü · abartı eşiği ·
@@ -773,6 +1096,16 @@ off-screen only — no mouth in frame, no invented on-screen speaker.
                  → birim sözlüğü (SAHNE ≠ ÇEKİM ≠ KLİP) + 10 maddelik
                    kurgu kapısı + kırpma bütçesi + tek grade/gren
                  → kapıyı geçmeyen filme koşulan QA ÖN KOŞU sayılır [D109]
+
+5.7 QA PAKETİ    ⛔ QA'DAN ÖNCE, iki betik  🆕 01.09.2026
+                 ① bash .claude/skills/qa-isle/scripts/olcum_kapisi.sh <master>
+                   süre · ızgara · ses kanalı · köşe · KUYRUK KART (freezedetect)
+                   · son kare        [⑪ · D125 · D136 · D150 · D70/72]
+                 ② bash .claude/skills/qa-isle/scripts/rubrik_paketle.sh <film> <master>
+                   mercek başına rubrik + SPEC TEK dosya →
+                   QA_PROMPTLARI/FILME_OZEL/<FILM>/PAKET_n_*.md
+                   Operatör PAKETİ yapıştırır. Mod D artık VARSAYILANDIR —
+                   "SPEC'i ver" cümlesi dokuz filmde tutmadı [D129].
 
 6. ① KARE QA     1_KARE_QA_CRITIQUE_PROMPT.md
                  → künye bloğunu DOLDUR, yoksa rapor UNVERIFIABLE döner
@@ -811,7 +1144,19 @@ off-screen only — no mouth in frame, no invented on-screen speaker.
                  → İlk koşu (Cold Burn): ATIF tuttu (9), YATAK tutmadı (3)
                    — bulguların çoğu miks seansı, yeniden üretim değil.
 
+7d. RAPOR KONTROL RAPOR_KONTROL/rapor_kontrol.py  🆕 01.09.2026
+                 → HER rapor işlenmeden önce, elle değil betikle:
+                   n·Σ·ort yeniden hesap · tally · şerit · ⑨ ızgara ·
+                   ④ harita↔kesme · ② sayaç boşluğu · çoklu raporda ⑤
+                   (kesme · sahne · şerit · replik · SUSKUNLUK)
+                 → GEÇERSİZ / TEKRAR → T tablosuna satır YAZILMAZ [D161 · D162]
+                 → İlk koşu (01.09.2026): iki partinin on iki raporundan
+                   dokuzu düştü — üçü fabrike/yuvarlama, altısı mod V.
+
 8. YENİ DERS     QA yeni hata bulduysa DERSLER/ tematik dosyasına ekle
+                 → ⛔ KAPI satırı olmayan ders YAZILMAZ — dört kader (BETİK ·
+                   LİSTE · KARAR · ARŞİV): DERSLER/00_DERS_YAZIM_KONTRATI.md
+                   (01.09.2026). Kapısız aday → DERSLER/GOZLEM_DEFTERI.md
                  + LESSONS_LEARNED.md dizin tablosuna satır (AGENTS.md kart G)
                  → DERSLER/00_HIZLI_REFERANS.md kilit havuzunu ve ilgili QA rubriğini
                    güncelle (iz: QA_PROMPTLARI/CALISTIRMA_KAYITLARI.md)
@@ -819,7 +1164,8 @@ off-screen only — no mouth in frame, no invented on-screen speaker.
                    cümlesiyle çözülmüyor: kurguda, planda veya sahne
                    haritasında çözülüyor (bkz. DERSLER/07_KURGU_VE_ANLATI.md)
 
-9. MÜZİK         GOOGLE_FLOW_MUSIC_URETIM_KILAVUZU.md §7-19
+9. MÜZİK         → `<FILM>_MUZIK.md`
+                 GOOGLE_FLOW_MUSIC_URETIM_KILAVUZU.md §7-19
                  → ÖNCE §17 künyesi: "izleyici bu novum'u ___ olarak
                    okumalı" cümlesi yazılmadan müzik promptu yazılmaz
                  → tempo sahne uzunluğuna hizalanır (§14: 10s sahne →
@@ -827,15 +1173,32 @@ off-screen only — no mouth in frame, no invented on-screen speaker.
                    eşlikçisi eklenir (§15.1 — telefon hoparlörü)
                  → her filmde EN AZ BİR müziksiz sahne seçilir (§10)
 
-10. KAPAK        KAPAK_FOTOGRAFI_MIMARISI_KILAVUZU.md
+10. KAPAK        → `<FILM>_KAPAK.md`
+                 KAPAK_FOTOGRAFI_MIMARISI_KILAVUZU.md
                  → metinsiz üret, tipografi post-prodüksiyonda
                  → elle 120 px posta pulu testi: yüz, duygu, eylem okunuyor mu
                    okunmuyorsa geri kalan hiçbir şey kapağı kurtarmaz
                    (KAPAK_QA rubriği 12.08.2026'da kaldırıldı — hiç
                     çalıştırılmamıştı; test manuel yapılır)
 
-11. PAKETLEME    VIRAL_BASLIK_VE_ACIKLAMA_PROMPT.md
-                 → YouTube + Instagram + TikTok ayrı ayrı
+11. PAKETLEME    → `<FILM>_YAYIN_PAKETI.md`  ⭐ TAMAMEN İNGİLİZCE
+                 VIRAL_BASLIK_VE_ACIKLAMA_PROMPT.md (kural) +
+                 apexaic/<platform>/PAKETLEME_SABLONU.md (kanalın doldurulmuş
+                 hâli: sabit bloklar · hashtag kademeleri · yükleme listesi) +
+                 apexaic/CAPRAZ_YAYIN.md §7 (çapraz kontrol)
+                 ⛔ Sabit blok per-film dosyaya KOPYALANMAZ, oradan
+                   birebir yapıştırılır — ikinci kopya ikinci sürümdür
+                 → YouTube + Shorts + Instagram + TikTok ayrı ayrı —
+                   üç platforma aynı metin yazıldıysa iş yapılmamıştır
+                 → ⛔ DİL: kanal §3.3 kararı "her şey İngilizce". Türkçe
+                   yazılıp yükleme anında çevrileceği varsayılan paket
+                   çevrilmiyor: 01.09.2026 taramasında dikey hattın her
+                   filminin başlık paketi TÜRKÇE yazılmıştı, oysa kanaldaki
+                   başlıkların hepsi İngilizce (apexaic §1). Yani o paketler
+                   yükleme anında yeniden yazılıyor — ve yeniden yazan şey
+                   kılavuzu okumuyor.
+                 → ⬜ AFTER THE CUT alanları (RUNTIME · paylaşılabilir an ·
+                   dikey kesit) yazımda BOŞ bırakılır, uydurulmaz
                  → ⭐ seri/evren kararı ve başlık mimarisi:
                    SERI_VE_KANAL_STRATEJI_KILAVUZU.md §3 (bölüm numarası
                    başlığın BAŞINA yazılmaz · kapak aile kimliği)
@@ -862,6 +1225,15 @@ off-screen only — no mouth in frame, no invented on-screen speaker.
 
 > Bu bölüm hiçbir kılavuzda yok — üretim denemelerinden çıktı.
 > Rehberin en pahalı bilgisi burada.
+>
+> ⭐ **01.09.2026 — POLİTİKA TARAFI AYRI DOSYAYA TAŞINDI.**
+> Aşağıdaki `HATA MESAJLARI AYRIMI` · `YASAK LİSTESİ TUZAĞI` · `YAPISAL RED`
+> blokları **kaynak** olarak burada durur; işleyen hâli, sözlüğü,
+> kompozisyon ekseni ve kurtarma merdiveni artık tek yerde:
+> **`POLITIKA_VE_URETILEBILIRLIK_KILAVUZU.md`**
+> Red SAYILARI hiçbirinde değil, tek defterde:
+> **`FILM_QA_RAPORLARI/09_URETIM_RED_DEFTERI.md`** (14 vaka).
+> Kelime ekseni artık bir KAPIDIR: `prompt_kontrol.py ⑯`.
 
 ```
 PROMPT UZUNLUĞU
@@ -896,6 +1268,27 @@ PROMPTTA YAZILMAYACAKLAR
   ✗ "cinematic lighting" → mumsu cilt ve bloom [D33]
   ✗ "swirl" → toz sıvı gibi akıyor [D39]
   ✗ "glowing / ethereal / radiant / shimmering" → bloom [D29]
+  ✗ "seamless visor" / "bubble" / "dome"  → kask geometrisi serbest, kubbe [D146]
+  ✗ "legs folding" (kalkış klibinde)      → bacak alevin içinden geçer [D148]
+  ✗ sayısız "new dust entering from above" → toz şelalesi [D143]
+
+TOZ ŞELALESİ — POZİTİF CÜMLE SAYISIZSA PERDE OLUR  [Ders 143 · Skylight S3/S6/S13, 29.08.2026]
+  "fine dust drifts steadily down … new dust entering from above" → 60 m'lik ışın
+  beyaz toz/duman perdesi oldu, kıvrıldı; çekirdeğin "never swirling" yasağı
+  pozitif cümleye yenildi (D59'un bilinen yüzü).
+  → Zerre SAYISI + hız yazılır: "no more than a few dozen motes visible … each a
+    separate point … falling at about half a metre per second … the far wall
+    stays visible through it". Kapı ②: zerreler tek tek sayılamıyorsa RET.
+
+ALÇAK AÇI = BOŞ ÜST ALAN = MODEL DOLDURUR  [Ders 145 · Skylight S26, 29.08.2026]
+  Düz ovadaki gemi, alçak açılı klipte iki yanı dik kanyon duvarıyla çıktı; göz
+  hizası kadrajlar (S25 · S28) ovayı korudu — ufku içeriyorlardı.
+  → HORIZON LOCK + "above the ship there is only sky" + en büyük arka plan
+    nesnesi PROMPTA yazılır (⑤ merceğinin kuralı prompt tarafına taşındı).
+
+FİLİGRAN — RUBRİK DEĞİŞİM ARAR, FİLİGRAN DEĞİŞMEZ  [Ders 150 · Skylight, 315/315 s]
+  Üretici ikonu her karede duruyordu; altı mercek görmedi (⑤ "EDGES: Clean" ×31).
+  → ⑪ köşe testi (olcum_kapisi.sh) TESLİMDEN ÖNCE; filigranlı master master değildir.
 
 IŞIK MIKNATISI — YÖN TERSLENMESİ  [Ders 104 · Black Cradle S4, 16.08.2026]
   Kadrajda TEK BASKIN ışık kaynağı varken (şafak, patlama, projektör)
@@ -940,9 +1333,15 @@ KURGU / TESLİM  → TEK KAYNAK: KURGU_VE_TESLIM_KILAVUZU.md (21.08.2026'da
     TRIM BUDGET satırları; yoksa kurgu kırpmaz, KLİP DÜŞÜRÜR [D100]
 
 HATA MESAJLARI AYRIMI
+  ⛔ 01.09.2026 [TUR 3] · AŞAĞIDAKİ "TEKNİK" ETİKETLERİ TEK BAŞINA YETMİYOR.
+     Ayırt edici soru MESAJ DEĞİL, DAVRANIŞ: üretim GÖRÜNÜR ŞEKİLDE
+     ilerleyip sonda mı düştü? İlerlediyse bu MASKELİ ÇIKTI REDDİDİR
+     (görüntü üretildi ve silindi) — tekrar denemek işe yaramaz.
+     Tam ağaç: ../POLITIKA_VE_URETILEBILIRLIK_KILAVUZU.md §1 · §1.0②
   "I can't generate that video"        → POLİTİKA reddi (içerik/ifade)
-  "Sorry, something went wrong"        → TEKNİK/geçici (önce tekrar dene)
-  "I encountered an error"             → TEKNİK/geçici
+  "Sorry, something went wrong"        → TEKNİK/geçici VEYA maskeli
+                                         ÇIKTI reddi (yukarıdaki soruyla ayır)
+  "I encountered an error"             → TEKNİK/geçici (aynı soru)
   "I seem to be encountering an error. Can I try something else
    for you?"                           → TEKNİK/geçici (Starless
                                          Circle S12, 06.08.2026)
@@ -989,6 +1388,7 @@ HATA MESAJLARI AYRIMI
                                          yaramaz — çözüm SÖZLÜK
 
 YASAK LİSTESİ TUZAĞI — negatif blok politika reddi ÜRETİYOR 🆕 25.08.2026
+  ⭐ TAM İŞLEYİŞ + SÖZLÜK: ../POLITIKA_VE_URETILEBILIRLIK_KILAVUZU.md §2
   Ne demek: `NEGATIVE:` bloğuna yazılan yasak, yasakladığı kavramı
   PROMPTUN İÇİNE SOKAR. Politika sınıflandırıcısı "no" önekini değil
   KELİMEYİ okur. Filmde hiç olmayan bir şiddet, onu yasaklayan cümle
@@ -1014,9 +1414,16 @@ YASAK LİSTESİ TUZAĞI — negatif blok politika reddi ÜRETİYOR 🆕 25.08.20
                features, like a plaster cast left standing in the open"
       İkincisi hem sınıflandırıcıyı tetiklemez hem DAHA İYİ çalışır:
       yasak yüzü yasaklar, tarif yüzü ORTADAN KALDIRIR.
-  ⚠️ prompt_kontrol.py BUNU GÖREMEZ ve göremez de: betik negatif
-     çekirdeğin VARLIĞINI arar, kelimelerin politika maliyetini değil.
-     Bu tuzağın kapısı insan gözüdür — ve red gelene kadar görünmez.
+  ✅ 01.09.2026 DÜZELTMESİ — bu satır artık YALNIZ YARISI DOĞRU.
+     Eski hâli: "prompt_kontrol.py bunu göremez ve göremez de."
+     KELİME ekseni için YANLIŞTI ve bedeli ölçüldü: LAST SPAN'in
+     dosyasında "gore" 29 kez geçiyordu — bir SAYIM bunu üretimden
+     önce yakalar. Kapı açıldı: `prompt_kontrol.py ⑯ POLİTİKA SÖZLÜĞÜ`
+     (T1/T2 sayımı · NEGATIVE bloğu DÂHİL · şiddet fiili · milliyet).
+     Açılış ölçümü: 140 kaydın 60'ında politika sözcüğü var.
+     KOMPOZİSYON ekseni için hâlâ DOĞRU (YERCEKIMI S8: kelimeler
+     temizdi, kadraj reddedildi) — o eksenin kapısı insan gözüdür:
+     PROMPT_QA_CRITIQUE_PROMPT.md · POLİTİKA §3.
   ⚠️ Sınıflandırıcı promptu BÜTÜN olarak okur: tek tek masum üç
      cümle (kalabalık + koşan insan + devrilen gövdeler) birlikte
      bir felaket sahnesi tarif eder. Reddi tek kelimede arama.
@@ -1054,11 +1461,18 @@ YAPISAL RED — "having a hard time fulfilling your request"
         hiçbir yeniden yazım işe yaramaz, kısaltmayı bırak.
         Prob geçiyorsa → sorun promptun yapısı/uzunluğudur; revize
         sürümle devam et, o da batarsa MİNİMAL sürüme in.
-   5. Son çare I2V: image promptu üret, start frame ver, video
-      promptunu yalnız HAREKET cümlelerine indir
+   5. ⛔ I2V — 01.09.2026'da YENİDEN YAZILDI [TUR 3]. Eski satır
+      "son çare I2V: kurtarır" diyordu; YANLIŞTI.
+      Start frame vermek metin denetimini KALDIRMAZ, üstüne PARALEL
+      BİR GÖRÜNTÜ DENETİMİ EKLER (kare hash'lenip ünlü/telif/çocuk
+      veri tabanlarıyla eşleşir). I2V bir kurtarma değil, RİSK TAKASI:
+      metin riski ↓ · yüz/kadraj riski ↑.
+        ✅ dene   → red KELİME ekseninden geldiyse ve karede yüz yoksa
+        ⛔ deneme → red KOMPOZİSYON ekseninden geldiyse (reddedilen
+                    kadrajı start frame yapmak onu ikinci denetime sokar)
+      → tam reçete: POLITIKA_VE_URETILEBILIRLIK_KILAVUZU.md §5 basamak 6
       → teknik tarif: yatay_7_9_dk_filmler/kilavuzlar/
-        KESINTISIZ_VIDEO_URETIM_TEKNIGI.md (start/end frame zinciri —
-        7-9 formatına yazıldı ama I2V kurtarmasının tek belgesi budur)
+        KESINTISIZ_VIDEO_URETIM_TEKNIGI.md (start/end frame zinciri)
 
 QA KULLANIMI
   Künye bloğu boşsa rapor "UNVERIFIABLE" döner ve işe yaramaz.
@@ -1118,15 +1532,27 @@ QA KULLANIMI
 | THE BLUE DRIFT | 3-5 dk | 🆕 Mavi dev uydusu: azot kırağısı (0.4g, gece yüzü — yalnız MAVİ planetshine) + vakum/0g | Bilimkurgu (yanaşma/kurtarılma) | Yazıldı, üretilmedi (17.08.2026) · PLAN + PART_A + PART_B + KAPAK + REFERANS_PAKETI (5 sayfa × 4 panel; üç durum çifti aynı sayfada: bacaklar · kollar · ölü/canlı panel) · prompt_kontrol: 50/50 film promptu 0 BLOCK (FIX yalnız uzunluk, gerekçeli) · KAPAK ✅ GO · üretim KAPI 0 (referans + §4 kapısı) → S21 → S15 → S4 → S0 sırasıyla başlar · **Cold Burn + Black Cradle ailesinin MAVİ üçüncüsü — palet üçlemesi kapanır: beyaz → siyah → MAVİ** · ⭐ novum: **ÖLÜ ARACIN YAKALANIŞI** — plazma perdesinin kenarı iticileri öldürür, araç balistik elipste; depodaki beş yanaşma filminde manevrayı hep küçük araç yaptı, ilk kez aktif taraf ANA GEMİDİR ve doruk EDİLGENDİR (sahibi AI: "Tuttum.") · tehdit depoda ilk kez GÖKTEN iner: aurora perdesi (taban 90°→40°, 10 s'de tek dalga, yalnız mavi-menekşe — YEŞİL NEGATİFTE) ve öldüren ışık değil, ışığın habercisi olduğu parçacık yağmuru · 25 sahne (Hook 9 s + 24 × 10 s = 4:09) — klasör standardı, sapma yok · 0 kesme, 25/25 sabit lockoff, 4 viral ara (S4 perde · S7 kalkış · S15 NEFES · S21 yakalayış) · 16 replik / 13 sahne, 10'u MACHINE (KERTE **ana gemidedir**, S9-S11 bağlantı kopuk → atışma yapısal imkânsız [D82]) · CENTRAL CHOICE S14 = kabin havasını itki olarak harcamak (6 düz puf × 1.5 s ile despin 1°/s→0; bedel S16'da mekanik ibrede %40) · doruk S21 %84-88 · ⚠️ risk 5/9 TAM EŞİKTE (kask · 2 insan · sayaç · parçacık-dar · diyalog); su·canlı·ateş·patlama 0 · kartlarda olmayan iki risk planda: MAVİ-ÜSTÜ-MAVİ (beş mavi ton/doku skalası + amber istisna ailesi + HAZIR DÜŞÜŞ) ve AURORA KLİŞESİ · üretim S21 → S15 → S4 → S0 kapılarıyla başlar |
 | THE UPHILL DARK | 3-5 dk | 🆕 Vakum + İTKİ YERÇEKİMİ (0.220 g) | Bilimkurgu (sert gerilim / yanaşma) | Yazıldı, üretilmedi (17.08.2026) · PLAN + PART_A + PART_B + KAPAK + REFERANS_PAKETI · ⚠️ risk 4/9 (kask · 2 insan · sayaç · parçacık); iki 🔴 kart (su·canlı) SIFIR, diyalog kartı SIFIR (0 replik) · ⭐ **yeni ortam kartı: vakum + itki yerçekimi** — vakumun bütün kuralları geçerli (ses yok, gölge mutlak siyah, dolgu yok, alev düz koni) ama "her şey süzülür" GEÇERSİZ: gemi 0.220 g ile yandığı için yanındaki her serbest cisim kıça doğru 2.16 m/s² ile DÜŞER · ⭐ **D23 (sıfır-g rijitliği) yapısal olarak elendi** — filmde 0 kare sıfır-g var; prompt cümlesiyle değil KARARLA kapatıldı · novum'un taşıyıcısı üç KATI NESNE (sarkan kordon · düşen kartuş kovanı · düşen yük) — D73/D76 tuzaklarının ikisi de kapalı · 25 sahne (Hook 9 s + 24 × 10 s = 4:09), 0 kesme, 25/25 sabit lockoff, 4 viral ara (S4·S10·S19·S23), **0 replik** (Ring Light'ın panzehiri bir adım ileri: kaynak kilidi gereken tek replik bile yok → D82 yüzeyi 0) · ikisi de 25/25 sahnede KEMERLİ ve OTURUYOR → biniş/iniş 0 kare [D69 ①] · dört metinsiz sayaç (pencere merdiveni · sarkan kordon · 6→0 kartuş yuvası · 40 dolu→40 boş yük kızağı) · **aritmetik filmin kendisidir**: sabit itkili motor kısılamaz, tırmanmanın tek yolu 6 kartuş (3 çift × 40 m = 120 m), radyatör kanadı tırmanış 2'yi 12 s erken kestirir (22 m) → 16 m açık / 0 kartuş → tek çözüm 900 kg yükü atmak (0.220 g → 0.277 g) · CENTRAL CHOICE S19 %75.7, bedel AYNI KAREDE · doruk S21 temas 0.20 m/s (3:37.9 = %87.5) · turuncu TAM ÜÇ YERDE (iki skafandr · yük kayışı · atma kolu), S19'dan sonra kadrajda kalan tek turuncu iki insandır · ⭐ **REFERANS PAKETİ: varlık başına TEK SAYFA, sayfa başına TAM 4 PANEL** (5 sayfa / 20 panel; 17.08.2026'da 13 tek görselden indirildi) — iki durum çifti (yanaşma açık↔kapalı, kapsül yüklü↔boş) bilerek aynı sayfada, gerekçe ve bedeli dosyanın §0'ında · ✅ prompt_kontrol.py: 0 BLOCK, 50/50 prompt tavanın altında; tek FIX (uzunluk) gerekçesi + İLK RED PROTOKOLÜ PART_A §Üretim Notları'nda · üretim KAPI 0 (referans) → S19 → S21 → S4 → S1 sırasıyla başlar |
 | LOSS OF LIFT | 3-5 dk | 🆕 Sürekli bulut / nötr yüzerlik (Venüs 55 km: 0.53 bar CO2, 0.904 g, bağıl rüzgâr 0-2 m/s) | Bilimkurgu (hayatta kalma / devretme) | **YAZIM: PLAN + PART_A + PART_B (20.08.2026)** — 25 sahne / 50 prompt, insanlı 21 videonun 21'i I2V (karakter videoda kompakt kilit satırı, çevre çapaları birebir); tek replik S22 ("Ağırlık bende kalsın.", telsiz, ağız kadraj dışı); 7 eş kadraj çifti (S0↔S24 · S2↔S17 · S3↔S18 · S9↔S16 · S10↔S20 · S12↔S21 · S11↔S23); prompt_kontrol iki dosyada 0 BLOCK, FIX yalnız uzunluk, tavan aşımı 0 · KAPAK ✅ GO (A: yüz + varmayan yağmur · B: S24 aynası; metin 0, tipografi post'ta) · MUZIK ✅ (§17 künye · TEK TEMPO 48 BPM = 2 ölçü/sahne · skor = kaldırma gazı: katmanlar SÖKÜLEREK ilerler, yalnız CUE C'de eklenir · motif inversiyonu: alçalan iki nota S23'te yükselerek tamamlanır · 30 s sessizlik penceresi S20-S22 — doruk, bedel ve tek replik müziksiz; S20 ıslık takası çıplak [D83]) · YAZIM PAKETİ TAM (PLAN+A+B+KAPAK+MUZIK+**QA_SPEC** [D117]) · ⚡ **21.08.2026 ÜRETİLDİ + 3 QA koşusu — üçü de mod V → ÖN KOŞU [D94]**: 📖 Ⓥ7.0 ŞARTLI (diyalog **9/10**, novum tek cümlede okundu, S0↔S24 çifti paylaşılabilir an seçildi) · 🧩 iki koşu 🚨 GEÇERSİZ (aynı defter, 8/10 ve 6/10 → **D119**) · kurgu kapısı: klip sayısı ✅ süre ✅ **SIRA ⛔** (insan şeridi slot 19/20 ters — doruk yuvası şüpheli → **D118**) · 🔴 4:10-4:15 başlık kartı = ekran metni 0.0 s kilidinin ihlali [D70/72] · kilit çelişkisi defterinde 6 madde ⬜ AÇIK, içerik dersi YAZILMADI [D96] · ⭐ **LOW POWER'ın kardeşi** — aynı motor, yeni malzeme: güç yerine KALDIRMA, toz yerine ASİT, karanlık yerine AŞAĞI · 🆕 **ortam kartı önerisi §3.6** (toz YOK → D39 tetiklenemez · gölge YOK, gölgesizlik MEŞRU → D41 zemini kalkar · güneş diski YOK → D104 zayıflar · kaldırma GERÇEK → çekirdeğin "never hovering" yasağıyla çakışır, çözüm 3.4 emsali: yasak parçacıkta kalır, gövdeye POZİTİF cümle [D59]) · novum = yüzen istasyonun kendisi (katı gövde; D73/D76 kapalı) · 25 sahne × 10 s = 4:09 standart, 0 kesme, 25/25 lockoff, 4 viral ara (S5·S13·S19·S23) · **1 replik** (S22, ağız kadraj dışı) · dört metinsiz sayaç (pin yayı 24 çentik × 250 m · buğu · kaçak ıslığı · sonda feneri) · aritmetik: kaçak 322 kg/s → 30 m/s batış; son tüp 600 kg = zarfa 70 metre ya da sondayı doldurup kolonu asidin üstüne çıkarmaya tam yeter · CENTRAL CHOICE S20, bedel aynı karede · ⚠️ risk 5/9 tam eşikte; su · canlı · parçacık SIFIR (toz/ateş/patlama/egzoz 0 kare) · kartlarda olmayan iki risk planda: okra-üstü-okra tekdüzelik + hovering çakışması |
+| THE SKYLIGHT | 3-5 dk | İnce atm. (Mars 0.38 g · Arsia lav tüpü odası: 180 m çap / 60 m tavan / 40 m gök deliği) | Bilimkurgu (keşif / zaman) | **YAZIM TAMAM (27.08.2026): PLAN + PART_A + PART_B + KAPAK + QA_SPEC [D117] · ⭐ 28.08: PART_C AYRILIŞ eklendi (S25-S32, 16 prompt + SHIP BIBLE) → 33 sahne / 5:29 — ⚠️ FORMAT SAPMASI kayıtlı [D74]: sahip talebi, 3-5 dk bandı 29 s aşılır; çift kapanış (S24 oda · S32 gezegen — S0'ın ölçek aynası) · kalkış fiziği sayıyla: T+2 kalkış · 8 s'de kadraj-terk · toz düz balistik ≤2 s · metalox şeffaf mavi-mor geniş koni · biniş 0 kare · S31 0g nesneyle (insan kemerli) · 6 viral (S28 kalkış · S30 Tharsis+limb eklendi) · risk 5→6/12 (S28 tek insansız) · ⭐ KAPAK ANI S30'a TAŞINDI (sahip kararı 28.08 — ⚠️ PAKETLEME §1 sapması kayıtlı: 0:00-0:10 bandı dışı; S0 Plan B kapağı [KAPAK §7.2]; yayın-sonrası karar kuralı KAPAK dosyasında) · 🎵 MUZIK ✅ 28.08 (§17 künye · 2 cue: CUE A "SAAT" 48 BPM S3-S19 — anempatik nabız 2,5 s hiç değişmez, yalnız ton kararır = gün çekilir · CUE B "AYRILIŞ" 120 BPM S25-S30 — kalkış downbeat 4:41 = ölçü 16, S30 manzarada davullar düşer/akor GENİŞLER yükselmez [§7.1], MECO'da tam kesiş, S32 koda = tek çözülme · 3 sessizlik: hook 0:29 · 3:14-4:09 doruk+oda kapanışı (55 s, deponun en uzunu — yedek CUE A kuyruğu) · 5:09-5:19 MECO · §15.1a yığın cümlesi ilk uygulama · gürleme dükme kuralı) · ⚡ **29.08 ÜRETİLDİ + 6 MERCEK MOD V — hepsi ÖN KOŞU [D129, 8. film], SPEC verilmedi, tablo satırı YOK.** Teslim 31 klip + 5 s KAPAK kartı = 315 s (plan 33 / 329: 2 oda sahnesi eksik, aday S11+S14 · hook 9'a kırpılmamış) · ⑪ ölçüm: ses VAR (AAC 253 kbit/s · −17,0 LUFS · tepe −0,0 dBTP — ihraç kilidi dışı) ama 6/6 mercek "nothing audible" [D137 · 3. vaka] · 🔴 üretici filigranı 315/315 s, altı mercek görmedi [D150] · kareyle doğrulanan: klon S13 (2:07) · toz şelalesi S3/S6 · kanyon S26 · alev/bacak S28 · üç kask · kir sıfırlanması · cıvata S31 · ✅ S20 sönüş EKRANDA (④ "no peak" = rapor) · ✅ S32 final ekranda · ⑥ g≈3,8 m/s² Mars'ı doğruladı → **DERS 143-150** · kayıt `FILM_QA_RAPORLARI/01_FILM_RAPORLARI/THE_SKYLIGHT.md` · sonraki tur: filigransız/kartsız/−14 LUFS master → yeniden üretim (sahip onayı; önce bible'a kask geometrisi + kir merdiveni) → MOD D** — yatay hattın ilk yeraltı filmi (⚠️ ÇAKIŞMA KAYDI 27.08: aynı gün dikey hatta THE THIN ROOF bağımsız olarak aynı lav tüpü olgusunu seçti; üç eksende tam ayrım — format · kamera konumu · novum — tablo THE THIN ROOF dosyasının başında, karar sahibin) · novum ÖLÇEK, fizik ihlali yok (fener 25 m / duvar 90 m — ışın duvara ulaşamaz · taş 1,2 m → 0,8 s [0.38 g]) · TEMA: ZAMAN (⛔ takas kalıbı değil [TEMA §3c]) — ışık sütunu odanın tek saati: dik → eğik → kopuk → S20 klip İÇİNDE söner, monotonik · 25 × 10 s = 4:09 · 0 kesme · 25/25 lockoff · TAM SESSİZ (replik 0 · MACHINE 0 — kart 7 yapısal düşer) · insansız 0 sahne (25/25 insanlı — kart 10 düşer) · sayaçlar metinsiz: sütun eğimi · cairn 1→4 · RAKAMSIZ pusula (iğne hiç durmaz — Mars'ta kuzey yok, gerçek) · 4 viral (S3·S13·S19·S20) + S0 eski kapak anı (→ Plan B, 28.08) · eş kadraj S0↔S24 (ışığın sahibi değişir: göğün ışığı → insanın bıraktığı) · S2↔S23 · S6↔S18 (9↔5 adım, tek değişken saat) · CENTRAL CHOICE S20: son taş KARANLIKTA konur, bedel aynı karede, panik yok · ⚠️ risk 5/12 (eski 9'luk ölçekle 3/9 — eşik kalibrasyonu açık); su · canlı · diyalog · ekran · insansız SIFIR · kartlarda olmayan üç risk çözümlü: karanlık pozlama (true black MEŞRU cümlesi) · sütun tozu ↔ çekirdek (pozitif sürekli-düşüş cümlesi, S3 üretim kapısı) · oda geometrisi (üç sabit çapa + sayılar) · ✅ prompt_kontrol: PART_A 26 + PART_B 24 prompt — **2× GO · 0 BLOCK** (image bant-dışı sapmalar gerekçeli [D74]) · ⛔ SPEC AYRI DOSYA (`THE_SKYLIGHT_QA_SPEC.md`) — MOD D koşulacak · üretim kapı sırası: S0 → S3 → S5 → S20 |
+| THE FROST LINE | 3-5 dk | İnce atm. (Mars 0.38 g · Arcadia Planitia, 39° K · şişirilebilir sera tüneli 32 m, 3 bölüm, İÇİ 30 kPa hipobarik — kask içeride de kapalı) | Bilimkurgu (hayatta kalma AKSİYONU / kimlik) | **YAZIM TAMAM (29.08.2026): PLAN + PART_A + PART_B + KAPAK + QA_SPEC [D117 · D142 E bloğu 9 makine kapısı, kuru koşu ffmpeg 8.1]** — 25 sahne / 50 prompt, 25/25 I2V · sahip talebi: *"daha aksiyonlu · yemek yetiştiren, uzun zamandır Mars'ta hayatta kalan adam · ultra gerçekçi"* · novum GERÇEK FİZİK (NEAR PASS sınıfı): kaçak KAR yağdırır (nemli sera havası 0.7 kPa'ya fışkırınca buz kristaline döner), havasız kalan yaprak saniyeler içinde BEYAZLAR — taşıyıcılar dikiş×avuç (S4) · dış yama×basınç (S5: 1 s'de kadraj dışı — dıştan yama TUTMAZ, içten tutar S10) · yaprak×mühür (S15·S19·S20); 7 sahne · 4 nesne · TEMA: KİMLİK ("Kazazede günleri sayar; bahçıvan sıraları." — ⛔ takas kalıbı değil; depoda ilk Kimlik filmi [TEMA §3c]) · sahne indeksleri S2·S8·S9·S13·S20·S21·S22·S24 · üç METİNSİZ sayaç: kar sütunu boyu · tavan sarkması (basınç saati, S6→S20 monotonik, S20'de bir karış GERİLİR) · yeşil sıra 9→6 / kırağı hattı · doruk S20 (3:19-3:29): kelepçe + zar ŞİŞER + son yeşil beyazlar + tavan gerilir AYNI klipte [B1/B2] · her şeyin kaybı S19 (kırağı hattı kendi bölümüne girer) · orta nokta S10 (iç yama tutar, dikiş yamanın ötesinde açılır: delik değil HAT) · hook YANLIŞLIK KOMPOZİSYONU (S0: adam tozu süpürürken 2.5 s'de dikiş yarılır; katalizör 0:02.5) · ⭐ KAPAK ANI S0 · 0:07 — PAKETLEME §1 bandının İÇİNDE · dramatik ironi ① arka plan (0:37 yarık ucu uzar, S6'da görür; panik 0 kare) · final MUĞLAK + tohum (kaygı hattı → yorum/kaydetme; görsel ikilem: en eski bitkileri kesti — tohum S3 bölüm bandı → S24 yeşil/beyaz sınırı) · S0↔S24 aynı kadraj, aynı fırça, sütun yok, üçte bir beyaz · 25 × 10 s = 4:09 · 0 kesme · 25/25 lockoff · TAM SESSİZ (replik 0) · insansız 0 · 12 kurulum / 5 açı tipi · ölçek merdiveni her kesmede tam 1 kademe, 2 şok (S0→S1 · S12→S13) · ⚠️ risk 7/12 (su-yarım: buz/kırağı KATI, sıvı 0 · kask · figür · parçacık · katmanlı · kamera · mıknatıs) — EŞİĞİN ÜSTÜNDE, kabul edilmiş maliyet (aksiyon talebi); azaltım listesi + kartlarda olmayan 4 risk (jet→duman · bitki dokusu · suit kırağısı · yaprağın klip içi beyazlaması) planda; üretim kapıları D144 biçiminde KABUL/RET/SONUÇ (S3 jet → S8 kırağı → S0 3 hook varyantı → S15 yaprak → S20 doruk) · KİR MERDİVENİ 4 faz [D147] · kask geometrisi [D146] · D143/D145 dersleri promptlarda (sayılı jet cümlesi, ufuk/gök) · ✅ prompt_kontrol.py: **0 BLOCK**, video 25/25 bandın içinde (2.35-2.60k), image gözlem; kurulum/açı/tema kapıları geçti · LOW POWER'dan ayrışma tablosu (aynı gezegen, aynı sera — ani/gür kriz ↔ yavaş toz; budama kararı ↔ fedakârlık; erkek 52 ↔ kadın 44; hipobarik) + THE MARTIAN'dan ayrışma (koli bandı şeması ters kanıtla kırılır) · 🏗️ **29.08 GÜNCELLEME (sahip talebi "modern Mars üssü + modern uzay gemisi"):** höyük yerine MODERN ÜS (4 beyaz yatay modül + 6 m düğüm, regolit setli, pencere şeridi, radyatörler, çanak anten, güneş tarlası) ve 120 m ötede 24 m'lik dik MÜRETTEBAT İNİŞ ARACI (kargo kapağı ekran-sağa — yönelim kilidi) — yalnız S0·S2·S24 arka planında, hiç yaklaşılmaz, biniş 0; tematik: gemi = kazazedenin nesnesi, S2'de ona sırtını dönüp yaraya koşar · 🎵 **MUZIK ✅ 29.08** (§17 künye · CUE A "BASINÇ" 72 BPM S1-S12: nabız hiç değişmez, yalnız üst band kapanır = incelen hava · CUE B "MÜHÜR" 120 BPM S13-S18 aksiyon sürüşü, 3:07'de STOP DEAD, S19 müziksiz, 3:24.0'ta TEK damped darbe = kelepçe ve uğultuyla birlikte kesilir, koda S22-S24 motif 3:59'da tamamlanır — tek çözülme · 3 sessizlik · §15.1a yığın · uğultu dükme kuralı · 3 sahip kararı ⬜) · ⚡ **31.08 ÜRETİLDİ + 6 MERCEK MOD V [D129 · 9. film] — tablo satırı YOK.** Master 235,2 s · **720p** · ses VAR −21,5 LUFS (6/6 mercek "duymadım" [D137 · 4. vaka]) · 23 klip + 5 s kapak kartı: **S12 + S23 EKSİK**, hook kırpılmamış, filigran "▷" 235/235 [D150 · 2. vaka] · kareyle doğrulanan: S5 yama uçuşu + S15/S19 klip içi beyazlama EKRANDA (mercekler görmedi/ters okudu → D151) · ⛔ S20 doruk vuruşu YOK (E7-b) · S24 fırçasız, çökük film BRANDA (E6) → D152/D153 · S6 erken tam çöküş · sırt ünitesi yuva 13 [D139] · kırağı iki yönde dalgalı [D147] · iki yerçekimi → D154 · üretim kapıları yazılı, SONUÇ ⬜×5 [D144] · **DERS 151-154** · kayıt: `FILM_QA_RAPORLARI/01_FILM_RAPORLARI/THE_FROST_LINE.md` · sonraki tur: S12/S23 üretimi + S20·S24·S6·S0 yeniden + filigransız/kartsız/−14 LUFS/≥1440p master → MOD D |
 | THE BORROWED WEIGHT | 3-5 dk | İnce atm. (adsız gri gezegen: %1.2 bar, 0.92 g, sürekli örtü — güneş diski 0 kare) | Bilimkurgu (fedakârlık / devretme) | **YAZIM PAKETİ TAM (22.08.2026): PLAN + PART_A + PART_B + KAPAK + QA_SPEC [D117]** — 25 sahne / 50 prompt + 2 kapak · 🆕 depoda ilk kez novum İNSANDA yaşıyor: yerden kesilen parça ağırlığını taşıyana devreder (fiziksel yasa tipi; kural 6 sahnede 5 katı nesneyle kanıtlanır — ONERME üç kapısı ✅) · TWIST + tohum finali [FINAL kılavuzu 3-5 dk kuralı]: hafifleyen enkaz gece rüzgârıyla gider, S24'te ova BOŞ · sayaç metinsiz İZ DERİNLİĞİ 2→23 cm + adım eş kadrajı S6↔S18 + rakamsız kantar · 4 replik hepsi MACHINE, dördü ağız-dışı kadraj (lip-sync yapısal imkânsız; HUMAN 0) · 23/23 kask kapalı · ⚠️ risk 5/9 tam eşikte (su·canlı·katman SIFIR) · prompt_kontrol 3 dosyada 0 BLOCK · üretim kapıları S0→S1(kayma)→S5→S20 |
 | THE BORROWED WEIGHT — FRAGMAN (dikey teaser) | shorts 9:16 | İnce atm. (adsız gri gezegen: 0.92 g, %1.2 bar) | Bilimkurgu (fragman/teaser) | Yazıldı, üretilmedi (22.08.2026) · ⭐ dosya kaynak filmin klasöründedir (`yatay_3_5_dk_filmler/THE_BORROWED_WEIGHT/THE_BORROWED_WEIGHT_FRAGMAN_DIKEY.md`) ve **film sayımına GİRMEZ** · kaynak filmi yeniden anlatmaz; ilk %70'ten 6 vuruş (S0·S2·S5·S14·S13·S11), **doruk S20 + kasa S21-22 + iki ışık S23 + twist S24 + kantar/ibre 0 kare** · mekanik **TERAZİ** (her vuruş kefe değiştirir: dünya hafifler ↔ adam ağırlaşır; kaldırış→sürüklenme nedensellik çifti tek vuruşta 0 — novumun görüntüsü girer, mekanizması girmez) · **0 replik** (filmin 4 MACHINE bildirimi fragmana alınmadı — D82 yüzeyi kapalı) · 6/6 tam lockoff · risk 3/9 (kask · sayaç · toz; kaynak film 5/9 — düşen kartlar diyalog ve ikinci yüzey riskleri) · gerçek riskler kartsız: kırpma tuzağı + çekirdek-kayma çakışması (V4, filmin S1 kapısıyla AYNI cümleyi test eder [D59]) + gri-üstü-gri · ekran yönü kilidi dikeyde DERİNLİK eksenine çevrildi (kaynak planın D104 basamağı — kamera hedef yanında, kameraya yürüyüş = hedefe yürüyüş) · loop: V5 ilk adım → V0 yürüyüş (kirişin belirmesi tasarım — 'nereden aldı?' sorusu ikinci izlemeyi satar) · prompt yapısı kaynak filmin **I2V hattı** (Cold Burn T2V emsalinden bilinçli ayrım: yüz-ağırlıklı çapa) · müzik tek cue 60 BPM loop-uyumlu, tek yapısal olay 32,0 s'de boşalma (V4 insansız) · ✅ prompt_kontrol: 12/12, 0 BLOCK, 0 FIX, GO (image bandı üstü gözlem — gerekçe dosyada) · üretim V4 (afiş — kayma kapısı) ile başlar |
 | THE SHORT WAY DOWN (dikey shorts) | shorts 9:16 | Dünya atm. (günümüz, kışın ortası, −4 °C — bitmemiş 14 katlı bloğun çekirdek merdiveni) | 🆕 **Zombi / kaçış aksiyonu** (rafta olan §4.2 kartı dikey hatta geri açıldı) | Yazıldı, üretilmedi (22.08.2026) · ⛔ **risk 6/12 — EŞİĞİN ÜSTÜNDE, kabul edilmiş maliyet** (canlı · ikinci figür · parçacık · katmanlı dünya · kamera · ışık mıknatısı); gerçek risk kartlarda yok: **düşüp AYAĞA KALKAN gövde** — modelin dört bozulma modu dosyada yazılı · ⭐ **depodaki ilk gerçek KOVALAMACA ve klasörün ilk DEVAM ZİNCİRLİ dosyası**: 6 sahne bağımsız an değil tek kesintisiz iniş, 5/5 kesme gizli geçişle (perde) tasarlandı, her sahnenin ayrıca I2V DEVAM sürümü var (TEK_CEKIM §5'in dikeydeki ilk uygulaması) · mekanik **GÜZERGÂH EŞİTSİZLİĞİ**: kadın merdivenden iner, takipçiler korkuluğu aşıp düşerek iner (12,0 m / 1,56 s) ve düştükleri yerden kalkar — filmin TEK fizik ihlali o kalkıştır · novum taşıyıcısı KATI (korkuluk × aşma jesti) → D73 tuzağı elendi · sayaç metinsiz tek kanalda: MESAFE 9→6→11→7→2,5→14 m · temas 0 kare · yüz sayısı 1 · takipçi yürüme bütçesi TOPLAM 4,5 sn · yara/kan/silah/patlama/su 0 kare · kamera 5/6 tam lockoff (aksiyon Z ekseninden ve kadrajı kesen geçişten) · doruk S5 = kadının onların yolunu kullanması, bedel aynı karede (5,5 m düşüş, sol bacak tutmaz) · final DÖNGÜ + TWIST · üretim S0'dan (düşüş+kalkış) başlar · ✅ prompt_kontrol.py: **0 BLOCK / 0 FIX — GO**, 6 video promptu 2.006-2.337 karakterle bandın içinde |
 | THE IRON SLOPE (dikey shorts) | shorts 9:16 | 🆕 Vakum + itki yerçekimi (§3.5 — kartın DİKEY hattaki ilk filmi; 0,220 g sürekli yanma) | Bilimkurgu (hayatta kalma aksiyonu) | ⛔ **ÜRETİLDİ VE ÖLÇÜLDÜ (25.08.2026) — YAYINLANMAZ:** altı mercekli QA + master ölçümü; teslim 65,0 s (6 × 10,005 s klip + 4,97 s başlık kartı) ve **serbest parça hızlanmıyor** (sabit ~0,15 m/s) → novum ekrana gelmedi. Kartın tersine dönen kuralı ilk kez ölçüldü ve tutmadı → **DERS 124 · 125 · 126 · 127**; kayıt: `FILM_QA_RAPORLARI/01_FILM_RAPORLARI/THE_IRON_SLOPE.md` · yazım 24.08.2026 · risk 4/12 (Kart 3·4·5·9; Kart 6 TASARIMLA kapatıldı: toz/duman/alev/çarpma 0 kare) · novum ALGISAL ve gerçek fizik (Quiet Impact emsalinin ikincisi): "uzayda aşağı var — aşağısı motor"; her gevşek parça kıça doğru 2,16 m/s² ile düşer · aksiyon: 48 saniyelik kesintisiz merdiven tırmanışı + ölçülü geçişler (1,4/1,2/1,1/1,0/0,8 m — temas 0 kare) · 6/6 TAM LOCKOFF, üç kurulum gemiye kelepçeli · sayaç metinsiz üç kanal: gevşek parça 3→0 · hava kilidi 14→2 m · turuncu motor jantı · merkezi seçim S4: karabineri açar, korunmayı zamana takas eder (bedel aynı karede: şakül gibi asılı şerit) · doruk S5: 6 m latis 1,0 m yanından geçer, sonra MOTOR SUSAR (2,2 s yanma arası = twist; tohum S0 0:05,8 jant kararması) · final DÖNGÜ + TWIST, kinesik reset (S5 son jest = S0 ilk jest) · gerçek risk kartlarda yok: TIRMANAN GÖVDENİN EKLEMLENMESİ [D18 akrabası], bütçelendi · üretim S0'dan başlar · ✅ prompt_kontrol.py: GO, 0 BLOCK / 0 FIX; video 2.236-2.586 bandın içinde · SPEC ayrı dosyada [D117] |
 | THE NEAR PASS (dikey shorts) | shorts 9:16 | 🆕 İnce atmosferli kayalık gezegen yüzeyi, gündüz (9 kPa · 0,62 g · saçılma yok) | Bilimkurgu (keşif — huşu) | 🆕 25.08.2026 · **ÇOK YAKIN UYDU** — kullanıcı talebi. **6 × 10 s = 60 s: ızgara D124'ten sonra ilk kez ARAÇTAN yazıldı** (klip süresi 10,005 s ölçümü künyede) · novum ALGISAL ve tamamen gerçek yörünge mekaniği (Quiet Impact / Iron Slope emsallerinin üçüncüsü): **"gün batmaz, KAPANIR"** — 52 km'lik uydu 150 km irtifada, 4.965 m/s, batıdan doğuyor, ufuktan ufuğa 8 dk 05 sn, günde 19 geçiş; yıldızdan 18 kat geniş olduğu için gündüz **1,2 saniyede kapanıyor**, **19,1 saniye** kapalı kalıyor, **0,94 saniyede** açılıyor (asimetri gerçek: uydu uzaklaşıyor) · gölge düzlüğü 5.351 m/s = **Mach 23,7** ile geçtiği için önünde hiçbir şey gelmiyor ve **ışık kapanırken SES HİÇ DEĞİŞMİYOR** · ⭐ **D127'nin İLK KARŞI TASARIMI:** açısal hız hiç yazılmadı; tırmanış SÜRE + PİKSEL + KENDİ ENİ olarak yazıldı (her sahnede kendi eninin %34-55'i, oran monoton büyüyor) ve ikinci sabit cetvel gökyüzüne çivili yıldızdır (aralık 236→159→67→0 px) · S0 kapısı MAKİNEYLE koşuluyor [D125]: 0 ve 10. saniye karelerinde alt kenar farkı <100 px ise film üretilmez · 6/6 TAM LOCKOFF, üç kurulum da yere oturuyor; 2 kurulum sıkıntısı yok, ölçek Z ekseninden geliyor (S2'de 8 m yürüyüş) · lens 24mm + 75mm KÜRESEL — 32mm GEOMETRİK OLARAK ÇALIŞMIYOR ve hesabı dosyada · sayaç metinsiz ÜÇ kanal: PALL'ın boyu/yüksekliği · yıldız aralığı · ışık seviyesi (ikili, tam iki geçiş) · risk 4/12 (Kart 3·4·5·9); **Kart 6 TASARIMLA kapatıldı** — toz/duman/enkaz/düşen cisim 0 kare, ilk taslaktaki toz filamenti ÇIKARILDI · merkezi seçim S4 42,8-43,2: kask lambasını söndürür, bedel aynı karede (ışık dairesi ve yarık çizgisi birlikte söner) · doruk S5: ışık 0,94 s'de dönüp KANITI SİLER (bakır gider, çatlak ağı soluk lekeye iner) · final DÖNGÜ + GERİ ALMA, kinesik reset · ⭐ **prompt_kontrol.py ilk koşuda BLOCK verdi:** 12 promptta dünya-uzayı yön kelimesi (pusula) — hepsi ekran uzayına çevrildi; ikinci koşu **GO — 0 BLOCK / 0 FIX**, video 2.402-2.594 bandın içinde, image 5.486-5.857 (emsal bandının 188 karakter üstünde, gerekçesi dosyada) · SPEC ayrı dosyada [D117] |
 | THE OPEN SEAM (dikey shorts) | shorts 9:16 | 🆕 **OKYANUS DÜNYASI** — karasız, 60 km derinliğinde küresel okyanus, üstünde 60 metrelik BERRAK (tek kristal) buz kabuğu; ince N₂+CO₂, 8 kPa, 232 K, 1,08 g | Bilimkurgu (keşif — huşu) | 🆕 26.08.2026 · kullanıcı talebi üç turda netleşti (yakın uydu → bol renk → **okyanus + üç ay + keşif**) · **6 × 10 s = 60 s**, ızgara araçtan [D124] · ⭐ **DEPONUN İLK ÜÇ AYLI FİLMİ ve ilk ÜÇ IŞIK KAYNAKLI kadranı:** ARDE 7,04° kendi lavıyla yanan turuncu (Roche'un 166 km dışında, gelgit ısınması 66 W/m² = Io'nun 26 katı) · NIVE 2,33° keskin mavi-beyaz buz ayı · VELUM 1,86° kenarsız menekşe-gül puslu ay · güç oranı 5:3:1 · novum ALGISAL, ZEMİN TERSİNMESİ: *"üstünde durduğun şey bir tavan"* — taşıyıcı KATI ve BİRİNCİL (60 m'lik cam kabuk) [D73 tuzağı elendi] · sayaç metinsiz ÜÇ kanal: **üç gölgenin yelpazesi** (35°→3°→−4°, ortadaki 2,52 m ile 6/6 sabit referans) · **üç kordonun derinliği** (turuncu 10 m · menekşe 29 m · mavi-beyaz 60 m'yi geçip suya girer — buz kırmızıyı önce yer) · **dikişin genişliği** (0,15→1,4→2,8 m) · keşif üç adımda ve gözle: çatlaklar düz değil YAY (sikloid) → üç yay ailesi kesişiyor → kesişmede kabuk 9 m ve dikiş NEFES ALIYOR · üç gelgit 41,4+5,1+8,2 m, hizalı toplam 54,7 m · ⛔ **KART 1 (SU/SIVI · 🔴 deponun en kötü ölçülen malzemesi: Tidal Hunt 2/10) DOSYANIN MERKEZİNDE ve SAYIYLA BÜTÇELENDİ:** su 6 sahnenin 2'sinde ve toplam 14,0 s görünüyor · temas 0 kare · en yakın 1,5 m · dalga/kırışık/sprey/damla/köpük/akıntı 0 kare (ölü durgun ayna) · **suda insan yansıması 0 kare** [D20] · donma yalnız S5'te ve bir YÜZEY değişimi olarak [D14] · ⭐ **KART 9 YAPISAL OLARAK KAPALI** — kadranda tek baskın ışık yok, ÜÇ tane var; üç aylı gökyüzü bir renk tercihi olduğu kadar bir risk çözümü · Kart 6 tetiklenmiyor (toz/sprey/kırıntı/duman 0 kare; buz ufalanmıyor, bloklar YANAL ATIMLA kayıyor: 1,2 m/0,5 s · 2,2 m/1,1 s) · risk **4/12** · merkezi seçim S3: geri çekilmeyip dudağa diz çökmek (bedel aynı karede: levha 6° yatıp 40 cm düşüyor, üç gölge bire iniyor) · doruk S4: arada cam olmadan açık okyanus ve suda ÜÇ RENKLİ DİSK · final DÖNGÜ + GERİ ALMA (dikiş kapanıyor, geriye süt beyazı şerit kalıyor; yelpaze TERS tarafa açılıyor) · ⚠️ gerçek 1 numaralı risk kartlarda yok: **berrak buzun cam gibi üretilmemesi** — beş maddelik geometrik karşı önlem + S0 kapısı makineyle · ⚠️ film gerçek zamanlı DEĞİL (117 dakikadan altı an; gerekçe dosyada) · sert kesme 5 (bandın üstünde, bilinçli) ama **5/5 ses köprülü — depodaki en yüksek oran** · ✅ prompt_kontrol.py: **GO — 0 BLOCK / 0 FIX, İLK KOŞUDA**; video 2.175-2.433 bandın içinde, image 5.742-5.965 (emsallerin ~%5 üstünde, gerekçesi dosyada) · SPEC ayrı dosyada [D117], filmle aynı gün |
+| THE THIN ROOF (dikey shorts) | shorts 9:16 | 🆕 **MARS** — ince atmosfer (610 Pa · 0,379 g · 243 K), toz sıyrılmış kömür grisi bazalt kaldırımı, geç ikindi (§3.2 kartının DİKEY hattaki ilk filmi) | Bilimkurgu (keşif — huşu) | 🆕 27.08.2026 · kullanıcı talebi: *"Mars'ta geçen baya gerçekçi bir dikey shorts"* · **6 × 10 s = 60,03 s**, ızgara araçtan [D124] · ⭐ **deponun İLK DİKEY MARS FİLMİ ve İLK DRAMATİK İRONİ FİLMİ** — HOOK §3.1 27.08'de eklendi ve 16 dikey filmin 16'sı farkında olmadan "YOK" yazmıştı; bu dosya taşıyıcı ② (ZEMİN OKUR) ile ilk kez kullanıyor, asimetri anı **0:22,4** · novum ALGISAL ve tamamen gerçek jeoloji/geometri (Quiet Impact · Iron Slope · Near Pass emsallerinin DÖRDÜNCÜSÜ): **"eğri, ancak yukarıdan eğridir"** — 5,8 m yarıçaplı halka çatlağın görünen 2,0 m'lik yayı yalnız **8,7 cm** sapar (sagitta hesabı dosyada), yani 0,40 m göz yüksekliğinde DÜZ, 9,00 m'den KAPALI HALKA · ⭐ **açı TİPİ novumun taşıyıcısıdır** ve THE NEAR PASS'in açık maddesini (6/6 alt açı) yapısal olarak kapatır: üç kurulum üç yükseklik ve üç açı tipi — **0,35 m ALT AÇI · 1,55 m GÖZ HİZASI · 9,00 m ÜST AÇI** (A-B-C-B-C-A) · pit 74 × 61 m, taban 46 m ve **hiçbir kurulumdan görünmez** (ışın hesapları dosyada: A 2,57 m · B 25,5 m · C 41,4 m) · ⭐ **GÖLGE İÇİ DOLGU** ilk kez bir KAPI: Mars saçılma yapar, gölgeler yumuşak kenarlı ve İÇİ DOLUDUR [§3.2] — deponun son beş filmi vakumdu ve "mutlak siyah" yazıyordu; E bloğunda ffmpeg ile ölçülüyor (YAVG < 18/255 → sahne reddedilir) · sayaç metinsiz ÜÇ kanal: kenara mesafe 3,4→1,1→0,9→0,7→1,9→7,4 m · 62 mm'lik çakıl (durur → sallanır 25° → 0,40 m / 3,6 s / 0,060 m/s² yuvarlanır → çatlağa girer) · halkanın kadrajda okunabilirliği · risk **4/12** (Kart 3·4·5·9); **Kart 6 TASARIMLA kapatıldı** — Mars filmi olmasına rağmen hareket eden tek toz tanesi yok (zemin rüzgârın temizlediği kaldırım, toz yalnız eklemlerin içinde ve durgun); ilk taslaktaki "kayayı fırçalama" jesti ÇIKARILDI ve el yuvası düz avuç basınç testine çevrildi, risk 5/12'den 4/12'ye indi · gerçek 1 numaralı risk kartlarda yok ve dosyada tanımlı: **kavisin üretilmesi** (A/B promptlarında DÜZ, C promptlarında KAPALI HALKA — zıt talimat aynı prompta girmiyor) ve **gölge içi dolgunun kaybolması** · ⛔ **ÜRETİM SIRASI NORMAL DEĞİL: S2 İLK ÜRETİLİR** — halka orada kapanmıyorsa film üretilmez · tema **YALNIZLIK** (§3c moratoryumundan sonra HİÇ KULLANILMAMIŞ listeden ilk seçim; tek cümle TAKAS kalıbı DEĞİL) · merkezi seçim S4 48,1-49,3: yüzükoyun uzanma — bedel aynı karede, göğüs konsolu kayaya kapanır ve yüz tek sıcak çene kenarına iner (vizör beklenti satırı ④, vizör durumu 6/6 aynı) · doruk S5 56,5-58,0: **AYAĞA KALKAR** ve gördüğü şeyin sebebi ışık değil KENDİ GÖZ YÜKSEKLİĞİDİR (0,40 → 1,62 m); ovada aynı hatta üç çöküntü daha (210 · 480 · 790 m), ufuk 3,31 km · final DÖNGÜ + TWIST, kinesik reset (60,03 = 0,00) · ✅ prompt_kontrol.py: **GO — 0 BLOCK / 0 FIX** (ilk koşu 1 FIX: açı tipi 2 + ekran uzayı + uzunluk — kapı kaydı dosyada); video 2.537-2.600 bandın TAM içinde, image 5.960-6.455 (emsallerin üstünde, sebebi ve kısaltma sırası dosyada) · ⛔ **SPEC AYRI DOSYADA: `THE_THIN_ROOF_QA_SPEC.md`** [D117] — filmle AYNI GÜN indi |
+| THE HEAVY SIDE (dikey shorts) | shorts 9:16 | 🆕 **VAKUM + DÖNME YERÇEKİMİ** — yarıçapı 9,00 m olan, hiç basınçlandırılmamış bir dönme modülünün iç güvertesi; dönme periyodu 60 saniyede 13,00 s → 8,00 s (§3.7 kartının İLK filmi, kart bu dosyayla açıldı) | Bilimkurgu (keşif — **aksiyon kulvarı**) | 🆕 29.08.2026 · kullanıcı talebi tek kelimeydi: ***aksiyonlu*** · **6 × 10,005 s = 60,03 s**, ızgara araçtan [D124] · ⭐ **deponun İLK DÖNME YERÇEKİMİ filmi ve ilk ENTROPİ temalı filmi** (sayac.sh tema dağılımında ENTROPİ satırı yoktu; §3c'nin HİÇ KULLANILMAMIŞ listesinden, tek cümle TAKAS kalıbı DEĞİL: *"biriktirilmiş her şeyin er geç dağılması"* — göbekteki fren volanının açısal momentumu halkaya dağılıyor, volan durdukça halka hızlanıyor) · novum FİZİKSEL YASA ve tamamen gerçek mekanik (Quiet Impact · Iron Slope · Thin Roof emsallerinin BEŞİNCİSİ): **a = (v ± u)² / R** — dönüşle aynı yöne 2,60 m/s koşmak ağırlığı 270 N'dan 621 N'a çıkarıyor (2,30×), ters yöne 3,30 m/s gitmek altıda birine indiriyor ve tek itişle güverteyi bıraktırıyor (1,15 s · 3,80 m · tepe 8,7 cm) · ⭐ **filmin ekseni bir EŞİTSİZLİK**: ileri sıçrayışın matematiksel tavanı wR/(2v) = **1,97 m**, boşluk **3,50 m** — hangi hızla koşarsa koşsun ileri yönde geçemez, ve daha hızlı koşmak durumu KÖTÜLEŞTİRİR · çözüm güvertenin ALTINDAN el ele geçiş, doruk ise **kendini hafifletmek**: asılıyken kollarına 499 N biniyor, gövdesini ters yöne 3,00 m/s salladığı 0,9 saniyelik pencerede 157 N'a iniyor ve kendini o pencerede yukarı atıyor · sayaç metinsiz ÜÇ kanal: adım boyu/gövde çöküşü · emniyet halatının SARKMA DERİNLİĞİ (doğrudan gravimetre) · göbekteki volanın parlak çentiği (S2'de 1,5 tur / 10 s, S4'te yarım tur, S5'te DURUYOR) · dramatik ironi taşıyıcı **② ZEMİN OKUR**, asimetri anı **0:24,6** (güvertede beş kayıp cıvata, beşi de yuvasından 60 cm AYNI yöne yatmış; o kendi botlarına bakıyor) · ikinci görsel şok S3: kendi bıraktığı cıvata 0,97 s'de düşüp **62 cm yana** iniyor · merkezi seçim S4 40,4-41,6: emniyet halatını açmak — bedel aynı karede (serbest uç 58 cm yana iner ve artık hiçbir şeye bağlı değil) · final DÖNGÜ + TWIST: merdivene tırmandıkça Coriolis onu yandan itiyor, **merdiven dümdüz, gövdesi 11,7° eğik** · risk **4/12** (Kart 3·4·5·9); **Kart 6 tasarımla kapalı** (vakum + işlenmiş metal: toz/duman/kıvılcım/enkaz 0 kare) ve **Kart 9 YAPISAL olarak kapalı** (yıldız dönme EKSENİNDE, kadraj dışı; adamın bütün hareketi eksene DİK — ışığa doğru koşmak güverteden çıkmak demek) · ⛔ **İLK TASLAKTAN ÇIKARILAN ŞEY DERSİ KAPATTI**: halkanın etrafında altı uzun sıçrayış (her biri 1,87 s havada) ÇIKARILDI, çünkü 60 saniyenin 16'sında havada duran gövde D23 + D12/D44'ün doğrudan tetikleyicisidir; yerine güverte altı el ele geçiş kondu ve havada geçen toplam süre **2,1 saniyeye** indi · ⚠️ gerçek 1 numaralı risk kartlarda yok ve dosyada tanımlı: **güvertenin başın üstünde KAPANMASI** (model "koridor" görünce düz koridor üretir; "corridor/tunnel/hallway/trench" kelimeleri 18 promptun hiçbirinde geçmiyor, kapanma her promptta SAYIYLA ve KANITIYLA yazılı) ve **gölge içine dolgu girmesi** (vakum: mutlak siyah, E bloğunda ffmpeg ile ölçülüyor — YAVG > 16/255 → sahne reddedilir; ⚠️ bu eşik THE THIN ROOF'un TERSİDİR) · lens kilidi **24 mm + 75 mm küresel** (32 mm geometrik olarak yetmiyor, hesap dosyada) · kurulum A-B-C-B-C-A, 3 açı tipi, ölçek merdiveni WS·MS·WS·CU·WS·EWS · ⛔ **ÜRETİM SIRASI: S0 İLK** (halka kapanmıyorsa film üretilmez), sonra S4 · ✅ prompt_kontrol.py: **GO — 0 BLOCK / 0 FIX** (ilk koşu 1 FIX: nesne-göreli taraf + metin yasağının KAPSAMI [D138] — kapı kaydı dosyada); video 2.474-2.580 bandın TAM içinde, image 6.438-6.670 (**depodaki en yüksek değer**; sebebi ve kısaltma sırası dosyada) · ⭐ **PROMPT_QA rubriği üç GERÇEK bulgu verdi ve biri depoda YENİ bir vakadır:** aksan renginin adı **"oxblood"** idi ve 18 promptun 14'ünde POZİTİF tarifin içinde geçiyordu — YASAK LİSTESİ TUZAĞI'nın [REHBER §7] ilk **RENK ADI** vakası; sınıflandırıcı "no" önekini değil KELİMEYİ okur, renk **"deep maroon"** yapıldı. Ayrıca karakter bloğundaki **"no weapon"** silindi (0 kare silah taşıyan bir yasak, koruduğu şeyi üretilemez kılar) ve video promptlarına **açı sözlüğü** (LOW-ANGLE / EYE-LEVEL / HIGH-ANGLE) eklendi — imaj promptlarında vardı, videolarda yalnız YÜKSEKLİK yazılıydı ve model kelimeyi okur · ⛔ **SPEC AYRI DOSYADA: `THE_HEAVY_SIDE_QA_SPEC.md`** [D117] — filmle AYNI GÜN indi |
 | THE STRAIGHT LINE (dikey shorts) | shorts 9:16 | Dünya atm. (günümüz, kış ikindisi, −2 °C — henüz açılmamış çevre yolu; güneş ufkun 4° üstünde ve kadraj DIŞINDA) | 🆕 **Zombi / kaçış aksiyonu** (rafta olan §4.2 kartı dikey hatta geri açıldı) | Yazıldı, üretilmedi (23.08.2026) · ⭐ **risk 4/12 — EŞİĞİN ALTINDA, ve bunu MEKÂN SEÇİMİ sağladı**: aynı konseptin bina içi denemesi 6/12'ydi, açık yola taşınınca Kart 6b (katmanlı dünya) ve Kart 8 (kamera) düştü · ⭐ **depodaki ilk gerçek KOVALAMACA ve klasörün ilk DEVAM ZİNCİRLİ dosyası**: 6 sahne tek kesintisiz koşu, 5/5 kesme gizli geçişle (perde), her sahnenin ayrıca I2V DEVAM sürümü var · ⭐ **6/6 TAM LOCKOFF — depodaki en yüksek oran**, filmde tek kamera hareketi yok; aksiyon Z ekseninden ve kadrajı kesen geçişten gelir · mekanik **EKSİK SERBESTLİK DERECESİ**: takipçiler daha hızlı (5,8'e karşı 4,4 m/s) ama DÖNEMEZ ve FRENLEYEMEZ; kadın onları geçmez, 0,9 m'lik yanal adımla ıskalatır · novum taşıyıcısı KATI (beton bariyer bloğu × etrafından dönme jesti) → D73 tuzağı elendi · sayaç metinsiz ve KALAN BLOK sayısıdır: 3→3→3→2→1→**0** · gerçek risk kartlarda yok: **koşan figürün eklemlenmesi [D18]** — elenemez, bütçelendi (tam sprint + kontra ışık + düz yörünge; shambling 6/6 yasak, yüz 0 kare) · temas 0 kare (en yakın 1,2 m) · araç/su/yara/kan/silah/patlama 0 kare · ekranda metin 0,0 sn KONSEPTLE kapatıldı (yol açılmamış: şerit çizgisi, levha, reflektör yok) · merkezi seçim S4 (uzanan elin geri çekilmesi, bedel aynı karede) · doruk S5 = dördü birden son bloğa, hepsinin başı ona dönük (S0 tohumunun karşılığı) · final DÖNGÜ + TWIST, çıplak yolda · üretim S0'dan (ıskalama) başlar · ✅ prompt_kontrol.py: **0 BLOCK / 0 FIX — GO**, 6 video promptu 2.090-2.257 karakterle bandın içinde; image promptları 5.421-5.669 ile depodaki en uzunlar (kayıt ve kısaltma sırası dosyada) |
 | **THE ROSE COAT** | 2-4 dk | İnce atm. (🆕 GÜL RENGİ TOZ OVASI: %1,2 basınç, 0,40 g, 40 saatlik gün — yıldız 6,0°→10,2°, EKRAN-SOLDA) | Bilimkurgu (keşif / bakım işi) | Yazıldı, üretilmedi (25.08.2026) · 13 × 10 s = 2:10 · 0 kesme · 13/13 sabit lockoff · 0 replik · risk 5/12 · ⭐ **deponun İKİ FİGÜRLÜ ikinci uzay filmi ve §4.1'in "tek kâşif" kilidini BİLEREK kıran ilk film**: novum "kendi sırtına ulaşamamak"tır ve tek kişiyle kurulamaz; bedeli §0.8b'de altı satırlık İKİ FİGÜR BÜTÇESİ (kadro kanalı · kadraj ayrımı · ortak yüz bütçesi · temas · biniş/koşu · yüz sayısı) · ⭐ palet = sayaç (tek doygun renk iki giysi) · SPEC ayrı dosyada [D117] |
 
+| **YERÇEKİMİ** | 10-20 dk | Vakum (alçak yörünge 410 km · L1-L6 ışık takvimi gündüz→terminatör→gece→şafak→giriş) + F10 Dünya atm. zemin (kuru göl yatağı, SU 0) | Bilimkurgu (**sert uzay gerilimi** — novum yok, DURUM; §1 karar noktası bilinçli) | 🆕 28.08.2026 · 00_PLAN (ADIM 1) + README (ADIM 2) yazıldı; REFERANS_PAKETI → fazlar TEK TEK → SPEC sırada · 120 × 8 s = 16:00 · 3 perde × 10 faz (3-4-3) — format varsayılanı, Second Ship'in 10 s sapması ALINMADI · yapı kaynağı: Gravity (2013) dört raporlu yapı sökümü (`URETIM_ONCESI_ANALIZ/04_ARASTIRMA_BULGULARI.md` §TUR 2 — oran seti · bayrak yarışı iskeleti · sayaç kadansı · zaman sıkıştırması dersi) · ⭐ **formatın ilk İKİ KARAKTERLİ→TEK KARAKTERLİ filmi**: feda S43 (5:36 = %35,0; gövdenin son karesi S45), sonra tek insan; kadro "2" sahnesi 14/120 · TEMA FEDAKÂRLIK (S30 · S43 · S84 · S117) · 39 replik (sayının tek yeri film README §REPLİK LİSTESİ), A yalnız kask kapalıyken (6), kasksız replik 0, sayılar MACHINE'de, ekranda ağız 0 · ⚠️ altı bilinçli sapma planda yazılı: iki karakter (tür kartı) · B'nin MMU sırt çerçevesi (D79) · iç fazlarda kasksızlık (YANASMA §2.2⑤) · kapalı final bedeli · sert kulvar · kapak anı S1 · ⚠️ **Gravity'nin ölçülmüş fizik ihlali KOPYALANMADI**: feda gerilimi istasyonun **6°/s** dönüşünden (merkezkaç) + sökülen halat demeti sayacıyla (3→2, üçüncü düşüş YOK) kurulur — ⭐ 29.08'de F4 yazılırken hesap yapıldı ve ilk sayı (2°/s) reddedildi: 12 m halatın ucundaki 120 kg'a ~2 N düşüyordu, halat katını sökmez, yani o sayıyla sahne kopyalanmayacağı yazılan ihlalin kendisi olurdu; 6°/s ~16 N verir ve aynı kuvvet gövdeye yakın olan A'ya ~2 N düşer → **feda karakterden değil KONUMDAN doğar**; kalan iki katın TUTMASI (S46) hesabın kanıtıdır · su 0 · ateş 0 (yangın → basınç kaybı; atmosfere giriş içeriden) · canlı 0 · patlama 0 · risk 7/12 tetiklendi (Kart 3·4·5·6·7·9·10) → Kart 9 tasarımla kapalı (kamera hedefte), Kart 10 prompt kuralı → çekirdek 5/12 TAM EŞİK (Blue Drift profili) · kartlarda olmayan 1 numaralı riskler planda: iki gövdeli sıfır-g (tek vektör) · D23 rijitlik · dalga anı · politika sözlüğü · doruk S94-96 rampası, imza S102 YERÇEKİMİ YAĞMURU (8 varyasyon), tek Overview S68, final S120 held frame |
+| **THE PAYLOAD** | 3-5 dk | İnce atm. (Mars 0.38 g · Acidalia güney kenarı, düz ova, geç ikindi · BÖLGESEL TOZ FIRTINASI CEPHESİ 2 km · 40 km/s) + vakum/0g (alçak Mars yörüngesi) | Bilimkurgu (ayrılış / insan-makine sınırı) | **YAZIM TAMAM (31.08.2026): PLAN + PART_A + PART_B + KAPAK + QA_SPEC [D117 · D142 E bloğu 11 makine kapısı, kuru koşu ffmpeg 8.1]** — sahip talebi: *"Mars'ta geçsin, 24 sahne; ilk partta fırtına çıksın, adam hızlıca üsse gidip hazırlansın, part 2'de uzay gemisiyle çıkıp yıldızlararası gemiye bağlansın"* · ⚠️ **SAHNE SAYISI 24 (12+12), klasör README'sinin sayısı** — §2.3 kartı 25/4:09 der, ikisi çelişir ve çelişki depoda duruyor; bu film README'yi izler: 9 s + 23 × 10 s = **239 s = 3:59**, orta nokta (S12 · 1:59) filmin matematiksel ortası · novum FİZİKSEL YASA, gerçek mühendislik (NEAR PASS / FROST LINE sınıfı): **kütle bütçesi korunur** — insansız örnek-dönüş teknesi kişi değil KÜTLE taşır; taşıyıcı ön iniş bacağının CİLALI MİLİ × kaldırma jesti: iki parmak (S4) → bir el (S8, dokuz kasa çıktı) → yine iki parmak (S12, adam yattı); 6 sahne · 3 nesne (amortisör · kasa · beden) · TEMA: **İNSAN-MAKİNE SINIRI** — depoda İLK (§3c'nin hiç kullanılmamış listesinden; §4'e göre YATAY/süreç teması) · cümle *"Makine kimi taşıdığını bilmez; yalnız ne kadar taşıdığını bilir."* ⛔ takas kalıbı değil, SINIR cümlesi · sahne indeksleri S5·S6·S10·S11·S12·S17·S21·S23 · motif: ÖZDEŞ TEKRAR EDEN BİRİM (12 panel sırası → 4 kelepçe yuvası → mastın 3 eşit adımı → 12 rıhtım) + STAKATO(makine) ↔ SÜREKLİ(insan) + ETİKETSİZ DÜNYA (metin yasağının POZİTİF hâli: raf içeriğini YERİNDEN bilir [D59]) · üç METİNSİZ sayaç: gölge cephesi (12 panel sırası sırayla söner, geri yanan 0) · mastın üç eşit adımı · amortisörün parlak bandı (tek TERSİNE DÖNEN sayaç, dönüşü kanıt) · cihaz ekranı/gösterge 0 → KART 5 düşer · ⭐ fizik imzası **FIRTINA İTEMEZ**: %0.6 basınçta kuvvet yok — S3 kanıt sahnesi (masttan sarkan ip akan gökyüzünün önünde DİK ve HAREKETSİZ), dokuz kasa kalkışın altında bile devrilmez; THE BLIND RETURN'ün kuralı burada NOVUMUN yanındaki kanıt olarak sahneleniyor · CENTRAL CHOICE S7-S10: dokuz yıllık numune kasasını kendi eliyle çıkarıp toza dizer — **kendini işin yerine koyar** (LOW POWER'ın fedakârlık kalıbının TERSİ; kamera yargısız) · bedel S10'da ve S12'de ateşin altında görünür · doruk S20 (3:19-3:29): TEMAS T+6.0 · 0.2 m/s · 2 cm oturma · sekme 0 · dış ses SIFIR · tutulan nefes bırakılır [YANAŞMA §1.2 V5, kamera RIHTIMDA · D104 panzehri] · kenet S21: TAM 4 kelepçe, üçüncüsü yarım saniye duraksar · yanaşma seti V1-V6 uygulandı ve **iki gövde tek karede yalnız S18'de** (oran cümlesi + hangi-uç-önde + kesir merdiveni; tekne 1/29 — güve ve katedral duvarı) · kalkış S12 [D127 · ⛔ D148]: ateşleme T+3.5 · kesilme T+4.5 · kadrajı üstten terk T+9 · **bacaklar HİÇ kıpırdamaz, alev aralarından geçer** (SKYLIGHT S28'in ölçülmüş hatası yapısal olarak kapatıldı) · aynı karede İKİ TOZ REJİMİ (balistik yay ≤2 s ↔ yatay laminer akış) · 0 g nesneyle [D23·D149]: kargo kayışı ucu + çekirdek tüpü süzülür, BEDEN kayışlı kalır · hook ÖRÜNTÜ KESİNTİSİ + YAKLAŞAN KÜTLE (katalizör 0:02.5 gölge hattı) · KAPAK ANI S0 · 0:07 (PAKETLEME §1 bandının İÇİNDE) · dramatik ironi ① arka plan, asimetri anı 0:04 · tohum S3 (0:29-0:39 açık yük kapağı + kasa rafı → final o kapağın lombozu) · final MUĞLAK + tohum, huşu S18'de ödenir (⚠️ §2'nin 3-5 dk için önerdiği TWIST bilinçli olarak alınmadı, gerekçe planda [D74]) · S0↔S23 ölçek aynası (kadrajı dolduran kahverengi kütle ↔ kara gövde; tek insan işareti = lomboz) · 24 × lockoff · 0 kesme · TAM SESSİZ (insan 0 · makine 0 · TELSİZ 0) · **insansız 6 sahne** (S12·S16·S18·S20·S21·S23 — ikinci yarıda insan/makine sahne sahne almaşır; KART 10'un bu filmdeki maliyeti kayıtlı) · 13 kurulum / 4 açı tipi / 2 bilinçli şok (S0→S1 · S20→S21) · eş kadraj S11↔S13↔S15↔S22 · S17↔S19 · S16↔S18↔S23 · S4↔S8 · ⚠️ risk 7/12 (kask · figür · parçacık · katmanlı · kamera · mıknatıs · insansız) — EŞİĞİN ÜSTÜNDE, kabul edilmiş maliyet (talebin kendisi bu malzeme); su · canlı · diyalog · ekran · değişken süre SIFIR; kartlarda olmayan 6 risk çözümlü (amortisör render'lanmama · cephe dalgalaşması · fırtınanın itmesi · D148 bacak · dört boş yuvada ikinci figür · gemi ölçeği) · ✅ **prompt_kontrol.py: 3 dosya · 0 BLOCK · 0 FIX · 3 GO** — video 24/24 bandın içinde (2.414-2.600), image gözlem; tek gözlem kurulum sayısı (dosya başına 8 ve 7, bant 6) ve gerekçesi PART dosyalarının ⑫ maddesinde [D74] · ⛔ SPEC AYRI DOSYADA (`THE_PAYLOAD_QA_SPEC.md`) — MOD D koşulacak · 🎵 **İKİ MÜZİK ✅ 31.08** (sahip talebi "iki müzik, viral olacak" — kurguya TEK skor girer, ikisi AYNI ızgarada, A/B karşılaştırması bedava): **A-SKOR** `THE_PAYLOAD_MUZIK.md` — ⭐ deponun ilk TAM ANEMPATİK skoru [§9]: sayan tık hiçbir olaya tepki vermez, ateşleme bile BİLEREK ızgara dışı; 72 BPM'de her sahne 12 vuruş ve **on ikincisi hiç çalınmaz** (filmin 12 panel sırası ↔ 12 rıhtım düzinesi), 96 BPM B1/B2, ızgarasız koda; üç sessizlik: hook · MECO 2:26.5-2:39 · **doruk 3:06.5-3:39 (32.5 s — temas ve dört kelepçe müziksiz** [YANAŞMA §2.1]); tek çözülme 3:55.0 = on ikinci vuruş, lombozun yandığı kare · **V2 VİRAL** `THE_PAYLOAD_MUZIK_V2_VIRAL.md` — 120 BPM tek grid (ızgara sıfırı 1.0 s, bütün sahne sınırları ölçü çizgisi), 12'lik ostinato kesmeye karşı kayar ve üç sahnede bir hizalanır (7 kez), katman EKLER, **tek hit point 2:03.0 ateşleme düşüşü** [§13'ün izin verilen tek istisnası], MECO tek ölçü, doruk sessizliği 22 s, koda A ile birebir + **dikey/kısa kesit penceresi ×3** (1:59-2:09 kalkış · 3:19-3:29 temas · 0:00-0:09 hook) · ⚠️ "ne satın alıyor" tablosu dış araştırmadır [FINAL §5], bu depoda ölçülmedi · ⏳ üretim yok |
+
+| **THE COLD WELD** | 2-4 dk | 🆕 **VAKUM + TEMİZ METAL (soğuk kaynak)** — havasız ay yüzeyi (0,30 g · atmosfer yok · gölge içi mutlak siyah · yıldız 4,2° EKRAN-SOLDA sabit · krater gölgesinin kenarı 0,40 m/s ile ilerler) → §3.8 | Bilimkurgu (keşif / aksiyon) | Yazıldı, üretilmedi (01.09.2026) · 15 × 10 s = 2:30 · 0 kesme · 15/15 sabit lockoff · 0 replik · risk 5/12 · ⭐ **deponun EN YÜKSEK AÇI ÇEŞİTLİLİĞİ: 8 kurulum / 7 AÇI TİPİ** (önceki en yüksek 4'tü; 26.08 taramasında 107 dosyanın 43'ü 3'ün altındaydı) · ⭐ **YALNIZLIK** temasının depodaki ilk YATAY kullanımı (dikey THE THIN ROOF'tan sonra ikinci film), takas kalıbı kullanılmadan · novum SOĞUK KAYNAK: değen temiz metal tek parça olur, batık gemi tek bir metal resife dönüşmüştür · sayaç 2 avuç → 0 · SPEC ayrı dosyada [D117] · prompt_kontrol: 0 BLOCK |
+| **THE STILL SWARM** | 2-4 dk | Vakum (§3.1) — açık boşluk, serbest düşüş 0 g · atmosfer yok · TEK baskın yıldız kadrajın sağ üst köşesi DIŞINDA, hedefle AYNI yönde (→ KART 9 ışık mıknatısı yapısal olarak elendi) | Bilimkurgu (aksiyon / ilk temas) | Yazıldı, üretilmedi (01.09.2026) · 14 × 10 s = 2:20 · 0 kesme · 14/14 sabit lockoff · 0 replik · risk **4/13** (eski skalada 4/9) · ⭐ **İLK TEMAS temasının depodaki İLK kullanımı** — §3c'nin "hiç kullanılmamış" listesinde kalan tek tema; §4 süre-tatmin kuralına BİLİNÇLİ SAPMA (dikey tema, yatay film), gerekçe ve panzehir planda · ⭐ deponun **ilk 0 g / serbest düşüş** 2-4 dk filmi · novum FİZİKSEL YASA: kabuğa giren her katı cisim hızının tamamını 0,15 s'den kısa sürede kaybeder ve asılı kalır — etki-tepki çalışmaya devam eder, o yüzden ilerlemenin tek yolu kütle atmaktır · NOVUM TAŞIYICISI 30 cm çelik kelepçe × geriye fırlatma jesti, TEK KARE S6 · 1:04 (taşıyıcı kadrajın 1/7'si, rakip olay 0) [D157] · metinsiz sayaç 8 kelepçe → 0 (monotonik) · doruk S11 = geldiği şeyi fırlatmak, bedel aynı karede · final TWIST + LOOP, S0 ↔ S13 eş kadraj çifti D153 protokolüyle (S13 imajı S0'ın ONAYLI karesinden türetilir) · **uzaylı ANATOMİ olarak 0 kare** — KART 2 (canlı 🔴) ve uzay operası yasağı birlikte elendi; varlık yalnız kuralla ve S13'teki yönle vardır · 7 kurulum / **6 açı tipi** · 2 bilinçli ölçek şoku (S6→S7 orta nokta · S10→S11 doruk) · SPEC ayrı dosyada [D117] · ✅ prompt_kontrol.py: **0 BLOCK**, iki FIX uzunluk bandı, gerekçesi planın PROMPT KAPISI bloğunda |
+
+| **THE SINKING STAKE** | 3-5 dk | 🆕 **AZOT KARI OVASI · YILDIZSIZ DÜNYA** — süper kütleli bir kara deliğin çevresinde, deliğin yarıçapının ~30 katında; zemin katı azot 44 K, atmosfer azot buharı ~15 µbar (§3.2 türevi: SES/GÖLGE satırları geçerli, TOZ satırı DEĞİL — toz yok, KAR var) · 0,40 g · **RÜZGÂR 0 · SIVI 0 kare** (azotun bu basınçta sıvı fazı yok) · TEK ışık: kara deliğin çevresindeki mercekli halka, 000° azimut / 34° yükseklik, 25/25 sahnede AYNI (ışık takvimi trivial sabit → KART 6b elendi) · yığılma diski YOK (olsaydı gezegen donmuş olamazdı) | Bilimkurgu (süreç / zaman-geçicilik) | Yazıldı, üretilmedi (02.09.2026) · sahip talebi: *"karadeliğe yakın karla kaplı bir gezegen, iki astronot, full beyaz bol donanımlı kıyafet, beyaz modern uzay gemisi, bağlandıkları yıldızlararası gemi de beyaz"* · 25 sahne = 9 s + 24 × 10 s = **249 s = 4:09** · 0 kesme · 25/25 sabit lockoff · **0 replik** (KART 7'nin "en güvenli" satırı) · risk **7/13**, altısı malzeme çıkararak sıfırlandı (su fizikle imkânsız · canlı 0 · ekran/gösterge CİHAZI 0 · katmanlı dünya yok · diyalog 0 · sabit süre) · ⭐ **depoda İKİ İNSANLI ilk 3-5 dk filmi** ve ayırt etme kanalı RENK DEĞİL GEOMETRİ: sahip "full beyaz" istedi, o yüzden fark boy (188↔165), göğüs (boyunduruk↔düz) ve kalça (dört cep↔sarılı halat) — REFERANS_PAKETI bu yüzden yazıldı (kural harfiyen tetiklenmiyor, gerekçe §0'da) · novum **FİZİKSEL YASA** (§1 birinci tercih): zemine bırakılan sıcak her şey karı gaza çevirip kendi çukurunu kazar ve iner — hiçbir şey durduğu yerde kalmaz · **NOVUM TAŞIYICISI beyaz kazık ayağı × iki eldivenle bastırma jesti**, TEK KARE S0 · 0:04 (taşıyıcı ECU'da kadrajın ~%40'ı, değişim TEK KLİP içinde, rakip olay 0) [D157'nin üç kuralı da sahnede] · kural 7 sahnede 6 farklı nesneyle kanıtlanır (kazık · plaka · kasa · bot izi · iniş bacağı · çekirdek) · TEMA **ZAMAN** — *"Burada hiçbir iz kendi başına kalmaz; kalan her iz, biri onu orada bırakmayı SEÇTİĞİ içindir."* ⛔ takas kalıbı değil, SEBEP cümlesi [§3c] · motif sahneleri S3 · S12 · S21 · S24 (nesne / kinesik / kamera / ışık) · metinsiz sayaç: iniş bacağında GÖRÜNEN teleskopik kademe **3 (S4) → 2 (S11) → 1 (S18)**, rakam 0 · çentik 0 (filmde ekran/kadran/gösterge HİÇ YOK → A1 çelişkisi yapısal olarak imkânsız) · ⭐ **D158'in iki sayımı planda**: merkezi seçim S19 (çekirdeği beşikten kaldırma — bedel geminin tek yedeği) · **seçimden SONRAKİ seçim S22** (kazığı bilerek yatırıp sütunu gösteren hendek bırakma) · koda 5 sahne (3-5 bandının içinde) · **başarısız deneme 2** (S5-S6 basınç plakası tutmaz · S12 dikilen kazık devrilir) · hook YANLIŞLIK KOMPOZİSYONU, katalizör **0:14** (≤0:15) · tohum S3 · 0:31-0:33 (ufukta ince dikey çizgi, TAM 2 s, bakışla vurgulanmadan) → geri dönüş S16 ve S24 · final **TWIST + tohum** (3-5 dk bandının önerdiği kombinasyon): son karede İKİ sütun — ilk gelenler onlar değildi · ⭐ FİNAL VURUŞ KANITI **BULUNAN** nesnedir [D141 · D76]: işaret bir DELİK değil, delikten çıkan DİKEY GAZ SÜTUNU — 2 sütun + 1 hendek, 4:05'te sayılabilir · **14 kurulum / 5 açı tipi** · ölçek merdiveni 25 sahnede hiç duraklamaz, 2 bilinçli şok (S19→S20 · S20→S21) · ardışık her çift ≥1 kademe VE ≥45° azimut (tepe kurulumunda fark PITCH taşır) · eş kadraj çifti **YOK — bilinçli** [D153: metinle taşınamayan vaat kurulmadı] · kir merdiveni **0 kademe** (bu dünyada toz yok → D147 tetiklenmez → D155'in faz etiketi riski yapısal olarak sıfır) · ⚠️ **beyaz üstüne beyaz** filmin kendi riski: giysi/kar/araç/gaz beyaz, tek kontrast siyah gök — QA_SPEC E bloğuna bu filme özel **KAPI ③ kontrast kapısı** yazıldı (her karede YMAX−YMIN ≥ 120, signalstats ile ölçülür) ve 120 px kapak testi HARD gate · ⭐ E bloğu 4 makine kapısı **ffmpeg 8.1 ile 02.09.2026'da fiilen sınandı**; `vidstabdetect` bu makinede KURULU DEĞİL → kapı YAZILMADI ve İKAME yazıldı [D142'nin tam olarak ölçtüğü arıza] · ✅ **prompt_kontrol.py klasör modu: 50 prompt · 0 BLOCK · 0 FIX · GO** — koşuda çıkan 9 bulgu düzeltildi (D123 `dead`/`blast`/`explosion` yığılması · D39 `swirl` · araç yönelim kilidi ×10 · çapasız `toward` ×4 · insan sayısı imzası ×30+); iki bilinçli sapma planın KAPI KOŞUSU bloğunda: kurulum 14 (bant 13, üçü kapı zorunluluğu) ve video uzunluk bandı (1.704-3.374, tavan 4.300 aşılmadı — aritmetik gerekçe + ilk-red protokolü yazılı) · SPEC ayrı dosyada [D117] · 🎵 MUZIK ✅ (72 BPM, 10 s = tam 3 ölçü; üç müziksiz sahne S0 · S16 · S24) · 📣 YAYIN_PAKETI ✅ tamamen İngilizce · ⏳ üretim yok · 🔧 **REVİZYON 1 (02.09.2026, sahip geri bildirimi: "sahne 4 ve sonrasında uzay mekiği çok kötü"):** araç tasarımı değişti ve **bedeli sıfır oldu** — üretilmiş dört sahnenin (S0-S3) hiçbirinde araç yoktu. İNİŞ ARACI dört bacaklı 9 m dikey araçtan **taşıyıcı gövde (lifting body) mekiğe** çevrildi: 14,0 × 9,0 m, kuyrukta yalnız 4,2 m, kanat ayrı parça DEĞİL — gövdenin kendisi kanat; küt burun, üç camlı dar pencere şeridi, iki yatık kanatçık, iki gömük sönük lüle, karından dört kısa strut (üç teleskopik kademeli sayaç KORUNDU). YILDIZLARARASI GEMİ 140 m omurgadan **kapalı halkaya**: kenar kenara on iki özdeş modül, 64 m çember, dördü radyatörlü ve 12/3/6/9 saat konumunda (yönelim kilidi). S4 kamerası 9 m → 4 m'ye indi, araç artık üçte iki profilden TAM BOY kadrajda. ⛔ **kopya sınırı korundu [MESHUR_SAHNE §4]:** sahibin referansı bir filmdi; film adı/marka/tescilli tasarım adı hiçbir prompta yazılmadı, tasarım GEOMETRİYE çevrildi ve gerçek donanıma bağlandı (NASA X-24A/X-24B · HL-10 · Dream Chaser · von Braun 1952 tekerlek · NASA Nautilus-X 2011) — kanalın "gerçek kural" tezi bozulmadı, YAYIN_PAKETI VERIFIED SCIENCE'a iki satır eklendi. ⚠️ dürüst kayıt: 15 µbar'da kanat işe yaramaz; bu bir çelişki değil, mekik seferin ATMOSFERLİ dünyalara da inen çok amaçlı aracıdır ve burada kanatları ölü ağırlıktır — filmin kuralıyla aynı cümle (hiçbir şey burada tasarlandığı işi yapamıyor); gerekçe planda, PROMPTTA AÇIKLANMAZ. ⭐ bedava kazanç **ÜÇ ÇEMBER MOTİFİ**: kara deliğin parlak halkası · geminin beyaz halkası · çekirdeğin açtığı yuvarlak ağız (10^11 : 10^2 : 10^-1; ilk ikisi S4 ve S23'te aynı karede). Yeni negatif kilitleri her araç sahnesinde: `the hull IS the wing — no bolted-on wings, no propellers, no rocket fins, not a tall vertical rocket` · `the distant ship stays a closed unbroken ring — no spine, no cylinder, no broken arc`. REFERANS_PAKETI RA 4→5 panel yeniden yazıldı (kabul sınavı: yandan oran 14:4,2 · üstten kanat gövdeden ayrı DEĞİL), RB 1→2 panel ve öncelik 🟡→🟠. ⛔ RA/RB onaylanmadan S4 üretilmez. ✅ revizyon sonrası prompt_kontrol.py klasör modu yine **0 BLOCK · GO**; koşuda ayrıca planın kendi başlığındaki bir arıza yakalandı (`### … VİDEO PROMPT …` başlığı betiğe planı prompt dosyası sandırıyordu — başlık yeniden adlandırıldı) · 🛑 **02.09.2026 · ÜRETİM YARIDA DURDU — FİLM KAPANDI.** 25 sahnenin ~14'ü üretildi; eksik 11 sahne ARDIŞIK ve filmin SONU (merkezi seçim S19 · doruk S21 · ikinci seçim S22 · twist S24 hiç üretilmedi). Durduran olay: 🔴 **yeni politika reddi** — motor **OMNI** · `"…can't depict some public figures"` · red defteri **vaka 15**. Tetikleyici ölçüldü: karakter bloğunda kişi başına YEDİ kimlik özniteliği (kesin boy · gövde · ten · saç rengi · saç biçimi · yüz işareti · yaş), iki kişide, 25 imaj promptunun 25'inde → "ünlüyü adını yazmadan tarif ederek isteme" kalıbı. ⛔ **8 mercek koşuldu ve 8'i de MOD V** → parti T tablolarına GİRMEDİ [D129]; sebep `QA_PROMPTLARI/FILME_OZEL/` paketinin hiç üretilmemesi [D165 · 2. vaka]. Mod V'nin bedeli ölçüldü: FİZİK ⑥ Ölçek **2/10** ve DEVAMLILIK ② Dünya Durumu **2/10** — ikisi de **filmin NOVUM'unu** (kazık kısalıyor) en büyük kusur diye puanladı [D166 · 2. vaka]. Mod V'yi SAĞ ATLATAN gerçek kusurlar: EFOR ⑧ **1,6/10 "NOBODY PAYS"** (4 efor olayı, 4'ünde de zorlanma sıfır — yazım kusuru, kendi belgemizden doğrulandı) · göğüs paketi S13'te değişti (referans paketi hiç üretilmedi) · S4/S10'da sabit kamerada İMKÂNSIZ yıldız izleri · iki yerçekimi [D154'ün öngördüğü arıza]. Sahip değerlendirmesi: *"hikayesi saçma sapan, ne mantıklı ilerleme var ne sahneler arası devamlılık"* — kaydedildi, skorla çürütülmedi [D158 emsali]. ⭐ **BU FİLMDEN ÜÇ DERS ÇIKTI: D167** (kimlik yığını → kapı ⑲) **· D168** (üretim sırası dramatik sıra değildir: doruk önce üretilir) **· D169** (0,40 g ağırlığı azaltır, ATALETİ azaltmaz → kapı ⑳). Ayrıca D165'in 2. vakası kapandı: kapı satırı AGENTS.md'de vardı, `yeni-film` SKILL dosyasında yoktu — eklendi. ⚠️ Film artık başka bir koşunun eklediği **⑰ B5 HİKÂYE OMURGASI** kapısından BLOCK alıyor (69 filmin 69'u alıyor) — o kapı bu koşunun ürünü değildir, susturulmadı. Kayıt: `01_FILM_RAPORLARI/THE_SINKING_STAKE.md` |
+| **THE LEANING ROOM** | 2-4 dk | 🆕 **VAKUM + İTKİ YERÇEKİMİ — KABİN İÇİ DALI** (§3.5): dışarısı vakum (§3.1 aynen geçerli, toz/duman/alev/rüzgâr 0 kare), içerisi basınçlı bir salon; ağırlık YALNIZ itkiden gelir → **D23 yapısal olarak tetiklenemez** (hiçbir kare sıfır-g değil). Işık kaynağı her sahnede DEĞİŞİR çünkü kaynak yolun üstündeki kütledir → KART 6b ışık takvimi zorunlu ve yazıldı | Bilimkurgu (sürüş / süreç) | Yazıldı, üretilmedi (02.09.2026) · sahip talebi: *"12 sahne, lüks uzay gemisi, modern ve lüks giyimli kadın, karadelik ve gezegen yakın geçişleri, sadece seyahat, hep içeriden sürüş kamerası"* · 12 × 10 s = **120 s = 2:00** · 0 kesme · 12/12 sabit lockoff · **0 replik** · **kamera 12/12 sahnede geminin İÇİNDE** — depoda dış mekânı 0 kare olan ilk film · risk **7/13**, dördü sabit kart (ikinci figür · kamera · insansız · politika), üçü filmin omurgası; iki 🔴 kart (su · canlı) ve **ölçülmüş en net başarısızlık kartı KART 3 (kask/vizör) SIFIR** · ⭐ **depodaki İLK KASKSIZ uzay filmi** → D5 · D79 · KART 3 tetiklenemez; açtığı yeni risk (120 s boyunca fotogerçekçi yüz) planda dürüstçe kayıtlı ve karşı önlem DUYGU REGISTERİDİR (yetkin, kırılgan değil) · novum **FİZİKSEL YASA** (§1 birinci tercih): bu gemide "aşağı" zemin değil sürücünün ittiği yöndür — dönmek yana itmektir, yana itmek odayı yatırmaktır · **NOVUM TAŞIYICISI tavandan sarkan pirinç sarkaç lamba × kadının onu eliyle düşeye itip bırakması**, TEK KARE cümlesi taşıyıcının ADINI içerir [D157①]; taşıyıcı ECU kurulumunda kadrajın tamamı, değişim TEK KLİP içinde, kanıt sahnelerinde (S4 · S9) rakip olay 0 [D157②③] · kural 6 sahnede 3 nesneyle kanıtlanır (lamba · pirinç anahtar · kadının kendi ağırlığı) · θ = arctan(yanal/eksenel): **0° → 4° → 22° → 68° → 3°**, dördü de aritmetikle doğrulandı (0,17/2,45 · 0,99/2,45 · 6,07/2,45) ve 68°'de ağırlık seyrin **2,67 katı** · ⛔ ivme değil SÜRE ve MESAFE yazıldı [D127]: S8'de anahtar göğüs hizasından camdan 2,0 m uzakta bırakılır, cama **0,8 s**'de ulaşır, yolda **0,8 m** alçalır · TEMA **ENTROPİ** — *"Bir oda bir kez düzeltilir; ikinci kez tam düzelmez."* ⛔ §3c takas kalıbı DEĞİL, geri alınamazlık cümlesi · motif sahneleri S2 · S8 · S10 · S11 (nesne / nesne / kinesik / nesne+ışık) · metinsiz sayaç ÜÇ KANAL, gemide 0 ekran · 0 kadran · 0 gösterge: **sarkacın dinlenme açısı 0°→0°→0°→3° MONOTONİK ve geri dönmez** · masadaki gevşek eşya 6→6→5→3→0→4 (iki eşya kalıcı kayıp) · pruva camındaki halkalı varış nokta→disk · ⭐ **D158'in iki sayımı planda**: merkezi seçim **S7 · 1:12** (dümeni sonuna açar) · **seçimden SONRAKİ seçim 2** (S10 geniş hattı sürer · S10 sarkacı düzeltmemeyi seçer, elini altından geçirir) · koda 4 sahne (3-5 bandının içinde) · **başarısız deneme 2** (S6 lambayı eliyle düz tutar, bırakınca geri döner · S8 eşyaları toplamaya uzanır, parmak ucu yetişmez) · hook GÖRSEL ANOMALİ, ihlal 0. karede [D71: saklanan ihlal değil SEBEBİ], katalizör **0:13** (≤0:15) · tohum S2 · 0:22 (lambanın gövdesindeki ESKİ ezik, ≤2 s, bakışla vurgulanmadan) → geri dönüş S11'de YENİSİYLE yan yana: final "bir kez bozdu" değil **"her seferinde bozuyor"** der · final **MUĞLAK** + görsel ikilem (oda düzeldi, gösterge düzelmedi) · FİNAL VURUŞ KANITI **BULUNAN**: 1:53'te kadrajda **2 ezik** sayılabilir [D141] · **6 kurulum / 5 açı tipi**, dizi A-D-B-F-E-F-B-A-C-B-F-E · 1 bilinçli şok (S6→S7, MS→EWS) · ⛔ **EKRAN YÖNÜ 12/12 TEK KİLİT**: kamera hiçbir sahnede kıça bakmaz, sancak penceresi 12/12 SCREEN-RIGHT, yatma 12/12 screen-right, ters dönüş 0 · eş kadraj **S2 ↔ S6 ↔ S9** ve [D153] gereği S6/S9 imajları S2'nin ONAYLI karesinden ≤3 maddelik fark listesiyle türetilir · ✅ **prompt_kontrol.py klasör modu: 24 prompt · 0 BLOCK · iki bölüm dosyası da GO** — video 24/24 bantta (2.206-2.603); tek FIX klasör seviyesinde D79 ve **YANLIŞ POZİTİFTİR** (film 0 kask taşır; kapı `kask/vizör` dizgesini yalnız PLAN'ın Türkçe "YOK" satırlarında görüyor — bölüm dosyalarında 0 kez), gerekçe planın KAPI BETİĞİ bloğunda ve kapıya "0 kask" kaçışı gerektiği GOZLEM_DEFTERI adayı · SPEC ayrı dosyada [D117] + **QA paketi SPEC ile birlikte üretildi** [D165] · 🎵 MUZIK ✅ (72 BPM, 10 s = tam 3 ölçü; S9 tamamen sessiz + S6'da 1:01'de müzik kesilir) · 📣 YAYIN_PAKETI ✅ tamamen İngilizce · ⏳ üretim yok |
 > **Yeni film yazarken:** kendi kombinasyonuna en yakın satırı bul, o filmi
 > şablon olarak aç. Aynı format = aynı yapı. Aynı ortam = aynı fizik.
 

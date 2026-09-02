@@ -73,6 +73,53 @@ notu ister.
    konduğunda değişim okunmuyorsa film daha yazılmamıştır.
 ```
 
+## 2.4 ⭐ VİRAL KARE KAPISI — `⭐VİRAL` etiketi bir ÖLÇÜT taşır  🆕 02.09.2026
+
+> **Neden var:** depodaki planlarda `⭐VİRAL #1`…`#4` işaretli sahneler var
+> (tek bir planda dört tane) ve **etiketin ölçütü yoktu** — sahne "viral"
+> sayılıyordu çünkü yazar öyle işaretlemişti. Dış araştırma turu ölçütü
+> getirdi. Kayıt: `URETIM_ONCESI_ANALIZ/04_ARASTIRMA_BULGULARI.md` T4.1.
+
+**Ölçüm (iki bağımsız hakemli kaynak):** Uzun bir eserden koparılıp tek
+başına dolaşan anların iki sürücüsü vardır —
+
+```
+① İNSAN YÜZÜ ve yüzdeki belirgin DUYGU DEĞİŞİMİ
+② YÜKSEK HAREKET ENERJİSİ (kareden kareye hızlı piksel değişimi)
+
+Kaynak: ACM CHI 2016 (Tumblr korpusu, hakemli) ·
+        IEEE Trans. Affective Computing 2015 (700M kare, hakemli)
+Viral anın kas imzası FACS ile adlandırıldı:
+        AU2 kaş kaldırma · AU4 kaş çatma · yüksek tepeli gülümseme
+
+⛔ NESNE DURUM DEĞİŞİMİ ve ÖLÇEK ŞOKU bu ikisinin GERİSİNDE kalıyor.
+   Depo bugüne kadar yalnız bu ikisini yazdı.
+```
+
+**KAPI — `⭐VİRAL` işaretli her sahne iki satır taşır:**
+
+```
+⭐VİRAL S__ · YÜZ:    vizörün ardında hangi ifade DEĞİŞİYOR + kaç saniyede
+              HAREKET: kadrajda ne hızlanıyor / kopuyor / savruluyor
+
+⛔ İkisinden biri boşsa etiket DÜŞER. Etiketsiz sahne meşrudur;
+   ölçütsüz etiket meşru değildir.
+⛔ "Yüz" satırı VİZÖR ARDINDA okunur olmak zorunda — D79'un pozitif
+   cümlesi (aynasız, tentesiz, yüz her açıdan okunur) bu kapının
+   ÖN KOŞULUDUR, yoksa ① kanalı fiziksel olarak kapalıdır.
+```
+
+> ⚠️ **VE BURADA SERİYLE GERÇEK BİR GERİLİM VAR — dürüst kayıt.**
+> Bu serinin estetiği kilitli kamera · geniş çekim · yavaş tempo ·
+> sakin yüzdür; ölçülen iki sürücünün ikisi de bunun tersini söyler.
+> **Estetik değişmiyor.** Bu kapı yalnız `⭐VİRAL` işaretli sahneler için
+> geçerlidir — film başına 1-4 sahne. Filmin geri kalanı bu kapıya
+> girmez. Sert seçenek (ASL düşürme · hareketli kamera) sahibin kararıdır
+> ve alınmadı [`04_ARASTIRMA_BULGULARI.md` T4.5②].
+>
+> ⬜ **ÖLÇÜLMEDİ:** bu kapıyla yazılmış bir sahnenin gerçek paylaşılma
+> verisi YOK — depoda yayınlanmış film 0. Kaynaklar dış korpustur.
+
 ---
 
 # 3. 🎥 KAMERA AÇISI PSİKOLOJİSİ — karar tablosu
@@ -109,12 +156,35 @@ değil — kesme hakkımız yok. Güç el değiştiren filmde alt/üst açı çi
 
 ---
 
-# 5. 🔁 KUSURSUZ DÖNGÜ (SEAMLESS LOOP) — bedava tutundurma
+# 5. 🔁 KUSURSUZ DÖNGÜ (SEAMLESS LOOP) — ucuz, ama bedava değil
 
 Araştırmanın depoya en doğrudan katkısı. Rubrik §15 loop'u zaten ölçüyor;
 bu bölüm onu ÜRETİM tarafında tasarlatır. Loop, izleyiciye videonun
 bittiğini fark ettirmeden 0:00'a dönmektir — her tekrar izleme algoritmaya
 "olağanüstü içerik" sinyalidir.
+
+> ⚠️ **27.08.2026 — BAŞLIK DÜZELTİLDİ: "bedava tutundurma" → "ucuz, ama
+> bedava değil".** Araştırma 1'in en keskin bulgusu loop'u iki yarıya
+> ayırdı ve depo yalnız birini biliyordu:
+>
+> ```
+> ✅ DAĞITIM TARAFI GERÇEK
+>    Tekrar izleme, yorumdan ~%84 güçlü bir algoritmik itiş sinyali.
+>    31.03.2025'ten beri her tekrar ayrı PUBLIC VIEW sayılıyor.
+>    Loop'lu kısa videolarda ölçülen görüntülenme şişmesi: ~%30.
+>
+> ⛔ GELİR VE GERÇEK ERİŞİM TARAFI SAYMIYOR
+>    YouTube, YPP uygunluğunu ve RPM'i hâlâ ENGAGED VIEWS üstünden
+>    hesaplıyor — ve o metrik loop'ları dışlıyor. Yani loop, deponun
+>    kutlayacağı sayıyı şişirir; önemli olan sayıyı şişirmez.
+>    Analytics'te Gelişmiş Mod → Engaged Views'a bakılmadan
+>    "loop tuttu" denemez.
+> ```
+>
+> **Karar değişmedi: loop ZORUNLU kalıyor** (dikeyde §1 S5 · dağıtım
+> sinyali gerçek). Değişen tek şey, hangi sayıya bakılacağı —
+> `08_YAYIN_PERFORMANS_TABLOSU`'na koşu yazılırken **public view ve
+> engaged view AYRI sütunlara** girer; tek sayı yazılan satır ⚠️ ŞARTLI'dır.
 
 ```
 PLAN KURALI — her shorts planına bir LOOP SATIRI yazılır:

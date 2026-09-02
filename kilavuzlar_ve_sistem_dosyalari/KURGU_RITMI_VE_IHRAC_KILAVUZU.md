@@ -291,6 +291,8 @@ KURGU MASASINDA
  □ Çözünürlük 1440p+ (kaynak 1080p olsa bile ölçeklendi)
  □ Bitrate bandında · BT.709 · kare hızı kaynağa sadık
  □ Ses: 48 kHz · AAC 384 kbps · −14 LUFS · −1,0 dBTP
+ □ Filigran: 0 kare — köşe testi (`olcum_kapisi.sh` · AGENTS ⑪) [D150] ·
+   başlık/kapak kartı 0 kare [D70/72] · hook kırpma tablodaki değer [D100]
  □ Kulakla dinlendi: doruk ve temas bölgesi (KURGU_VE_TESLIM §4)
 
 YAYINDAN SONRA

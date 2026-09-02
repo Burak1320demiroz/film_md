@@ -118,14 +118,18 @@ olmadığını kontrol et. Kaynak: `DERSLER/` · `URETIM_ONCESI_ANALIZ/02_RISK_K
 
 # 3b. 🚫 YASAK LİSTESİ POLİTİKA MALİYETİ  ⭐ ÜRETİLEBİLİRLİK KAPISI
 
-> Betik bunu göremez ve göremez de: negatif çekirdeğin VARLIĞINI arar,
-> kelimelerin politika maliyetini değil. Bu kategori insan gözünün işidir
-> ve **red gelene kadar görünmez.**
+> ⭐ **01.09.2026 · KAPSAM DARALDI.** Bu kategorinin KELİME yarısı artık
+> betiğe indi: `prompt_kontrol.py ⑯ POLİTİKA SÖZLÜĞÜ` T1/T2 tetikleyicileri
+> NEGATIVE bloğu DÂHİL sayıyor. **Betik koşulmadan bu kategori okunmaz** —
+> aşağıdaki sayım soruları betiğin çıktısını YORUMLAR, tekrarlamaz.
 >
 > Mekanizma: `NEGATIVE:` bloğuna yazılan yasak, yasakladığı kavramı
 > promptun İÇİNE sokar. Politika sınıflandırıcısı "no" önekini değil
 > KELİMEYİ okur. Filmde hiç olmayan bir şiddet, onu yasaklayan cümle
 > yüzünden prompta girer ve üretimi durdurur.
+>
+> Sözlük ve kurtarma merdiveni:
+> `../POLITIKA_VE_URETILEBILIRLIK_KILAVUZU.md` §2 · §5
 
 ```
 □ Promptta, YASAKLAMAK İÇİN YAZILMIŞ bir şiddet/tehlike kelimesi var mı?
@@ -163,6 +167,44 @@ ORTADAN KALDIRIR.
 sahnesi tarif eder. Bu kategoriyi cümle cümle değil, **promptun toplam
 izlenimi** üzerinden de bir kez sor: "bunu bilmeyen biri okusa ne
 anlatıldığını sanır?"
+
+---
+
+# 3c. 🎞️ KOMPOZİSYON YÜZEYİ  ⭐ 🆕 01.09.2026 · BETİĞİN GÖREMEDİĞİ TEK EKSEN
+
+> **Varlık sebebi:** YERCEKIMI F1 S8 (31.08.2026). Promptun kelimeleri
+> TEMİZDİ. Reddedilen şey KADRAJDI: yan yana iki ön kol + tepeden makro +
+> yüzsüz izolasyon. Önce yalnız sözcükler değiştirildi (bilek→ön kol,
+> kayış→bant) — **yetmedi.** Kadraj değişince geçti. Depo bu vakada bir
+> sahneyi kaybetti.
+>
+> ⛔ Bu eksende betik hiçbir zaman yardım edemez: `⑯` kelime sayar,
+> kadrajı okumaz. Buradaki dört soru **insan gözünün tek işidir.**
+
+```
+□ Kadrajda ① yüz YOK ② bir uzuv/gövde parçası kadrajın KONUSU ③ kamera
+  TEPEDEN ya da MAKRO — üçü birden var mı?
+     → 🚨 BULGU. Kamerayı nesne HİZASINA al; parçaları yan yana değil
+       ARD ARDA, farklı derinlikte diz. (YERCEKIMI S8 çözümü — ve kadraj
+       ANLATIYI da iyileştirdi: hangisinin konu olduğu artık kadrajla
+       söyleniyor.)
+
+□ Sahnede bedenden BİR ŞEY ÇIKARILIYOR mu (kask · eldiven · bant · maske)?
+     → 🚨 BULGU. COLD BURN S28 bu eylemle İKİ KEZ reddedildi ve sözcük
+       değişimi çözmedi. Çözüm: nesne sahneye ZATEN ÇIKMIŞ olarak girer.
+
+□ Kadrajda insan KÜTLESİ + kaçan/kovalanan/düşen tek kişi birlikte mi?
+     → 🚨 BULGU. "real people in situations like that" reddi bu imzadan
+       geldi (LAST SPAN S8). Kütle heykel gibi adlandırılır ve HAREKETSİZ olur.
+
+□ Aynı promptta ① konuşan yüz ② kapital kimlik bloğu (`44-YEAR-OLD MAN`,
+  `LIP-SYNC REQUIRED`) ③ tehlike çerçevesi — üçü birden var mı?
+     → 🚨 BULGU. RISING SNOW S2 tam bu üçlüyle reddedildi.
+       Üçü aynı prompta konmaz; kimlik düz cümleye iner.
+
+□ ⛔ İKİ YENİLGİ KURALI: bu kare daha önce İKİ KEZ reddedildiyse
+  üçüncü SÖZCÜK denemesi bulgu DEĞİL, İHLALDİR. Değişecek olan KAMERADIR.
+```
 
 ---
 

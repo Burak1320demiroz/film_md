@@ -154,7 +154,12 @@ FAR FIELD:  the deep background: terrain, skyline, structures, crowd
 SKY/CEILING: sky state, cloud shapes, sun/light-source position if
             visible, or the ceiling/upper bound of an interior
 FOCUS:      where the focal plane sits, what is sharp, what is soft
-EDGES:      anything touching the four frame edges and the corners
+EDGES:      anything touching the four frame edges and the corners.
+            A mark that sits in the same place in every scene is a
+            watermark or a UI remnant — name it and log it. "Clean" may
+            not be written for an edge while a static mark stands on it;
+            a line that reads the same in every scene is a template, not
+            an observation.
 ```
 
 ```
@@ -282,6 +287,21 @@ event that belongs to another lens bills one defect several times and
 drags the film down once per reviewer.
 ```
 
+```
+⛔ AN OUT-OF-SCOPE FLAG IS SOMETHING YOU SAW, NEVER SOMETHING YOU WERE TOLD.
+
+Write a flag only for a defect you observed yourself, in this run, in the
+material in front of you. Never restate a finding that reached you any
+other way — from an earlier pass in this session, from another lens's
+report, from a summary, from the operator's message. A flag you did not
+observe is not a cross-check; it is the same claim counted twice, and it
+travels faster than a real one because it costs nothing to copy.
+
+If a defect is out of your scope, the honest flag is short and yours:
+what you saw, where, and which lens owns it. If you cannot say what you
+saw, do not write the line at all.
+```
+
 ---
 
 ## CRITIQUE CATEGORIES
@@ -401,10 +421,19 @@ What the figures DO — measured against what the shot establishes:
   limbs, smears or unresolved geometry hugging the frame line
 □ Objects entering or leaving frame do so continuously — no pop-in,
   no pop-out, no object "born" at the edge mid-shot
-□ No readable text, digits or symbols emerge anywhere in the field —
+□ Emergent text is not only an overlay and not only an edge artifact.
+     Look for characters that belong to the scene's own materials — painted
+     on a wall, engraved in rock, stencilled on a hull, chalked on the
+     ground, printed on a label — and look at the CENTRE of the frame and
+     at the surface the shot is about, not only at the edges. A number with
+     a unit next to a natural object turns that object into a measured,
+     man-made one, and that is the damage.
+   □ No readable text, digits or symbols emerge anywhere in the field —
   on signage, plates, labels, screens — unless the film clearly and
   deliberately dressed them (garbled pseudo-text is a finding too)
-□ No watermark-like ghosts, logo shapes or UI remnants in the field
+□ No watermark-like ghosts, logo shapes or UI remnants in the field — a
+  static mark in the same corner in every scene IS a watermark, however
+  small; it is never set dressing, and it is logged with a severity tag
 ```
 
 ---

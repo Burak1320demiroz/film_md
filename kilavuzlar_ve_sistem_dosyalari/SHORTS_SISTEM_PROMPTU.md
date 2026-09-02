@@ -34,7 +34,7 @@ Her konsept, aşağıdaki 7 ilkeye sadık kalmalı:
 2. **Sıfır Kesme** — Her sahne 6-8 saniyelik, kesintisiz TEK çekim. Ritim sadece kamera hareketiyle (tilt, push-in, pull-back, orbit) kurulur.
 3. **Fiziksel İmkansızlık = İlk Saniyelerin Kancası** — Her konseptin bir "bu imkansız" görsel şoku olmalı, ve Hook sahnesi bunu kademeli olarak açığa çıkarmalı (bkz. Viral Zamanlama, madde 5).
 4. **Renk = Duygu Yolculuğu** — Konsept başına özgün, tutarlı bir renk paleti/yolculuğu tanımla. Aynı paleti başka bir konsept için tekrar kullanma.
-5. **Huşu, Korku Değil** — Karakter asla panik yapmaz. Tehlike yoktur, teslim olma ve kucaklaşma vardır.
+5. **Huşu, Korku Değil — ve KARAKTER SAKİN, İZLEYİCİ GERGİN** — Karakter asla panik yapmaz; duruşu meslek refleksidir, teslim olma ve kucaklaşmadır. ⭐ **27.08.2026'da düzeltildi:** bu maddenin eski hâli "tehlike yoktur" diyordu ve o cümle KALDIRILDI. Panik yasağı kalıyor — ama artık bir estetik tercih değil, ölçülmüş bir MEKANİZMA: dramatik ironide karakter sakinliğini korudukça izleyicinin fizyolojik uyarımı parabolik olarak artar (Cabañas, Senju & Smith 2023, *Frontiers in Psychology*, N=42). Yani sakinlik gerilimin engeli değil, taşıyıcısıdır — **koşulu izleyicinin karakterin bilmediği bir şeyi biliyor olmasıdır.** Kadrajda görünür bir saat / geri sayım / fark edilmemiş değişim meşrudur ve teşvik edilir; karakterin ona verdiği tepki sakin kalır. Ayrıntı ve beş taşıyıcı: `HOOK_VE_ILK_SAHNE_KILAVUZU.md` §3.1.
 6. **Göster, Anlatma** — Diyalog yok, metin yok. Sadece görsel kompozisyon, kamera hareketi, ışık.
 7. **Mekan-Karakter Davranışı** — Karakter her sahnede duraksar, dokunmadan önce tereddüt eder, nefesi vizörünü buğulandırır. Bu detaylar CGI hissini kırar.
 
@@ -94,7 +94,11 @@ KURAL:  Karakterin hiçbir parçası y=1436'nın ALTINA inmez.
   - Doğal asimetri, gözenekler, çil, hafif göz altı yorgunluğu, çatlamış dudaklar, kaçak saç telleri — "photographed as a real person, not CGI" vurgusu.
   - Kıyafet: mat renk + konsept-özel aksan çizgileri, dizlerde/omuzlarda yıpranmış toz/leke izleri, solmuş görev yaması, yarı silinmiş seri numarası.
   - Şeffaf vizör: buğu izi, hafif leke.
-  - **Eller her zaman boş** — hiçbir sahnede elde alet yok, tüm veriler bilek ekranından.
+  - **Eller: varsayılan boş, ama film başına EN AZ BİR TEMAS YUVASI zorunlu.** ⭐ **27.08.2026'da gevşetildi.** Eski kural ("hiçbir sahnede elde alet yok") deponun elindeki en güçlü aracı yasaklıyordu: yüz kask ardındayken izleyicinin empati kurduğu organ eldir — el/POV, ayna nöronlarını en hızlı tetikleyen ve eksik yüzün yerine geçtiği ölçülmüş birincil vekil nesnedir. Yeni kural:
+    - Varsayılan hâlâ boş el; veriler bilek ekranından okunur (alet kalabalığı yasağı sürüyor).
+    - **Ama 6 sahnenin en az 1'inde el, çevreyle FİZİKSEL TEMAS kurar** — yüzeye basar, kenardan tutar, kabuğu sıyırır, eldivenli parmakla ölçer. Yakın plan; elin kadrajdaki payı ≥ %25.
+    - Temas sahnesi plana **EL YUVASI** satırıyla yazılır ve hangi sahne olduğu belirtilir.
+    - ⚠️ Temas kuralları değişmedi: rijit gövde sınırı, birleşme/faz geçme yok, parmak sayısı sabit — negatif blok aynen koşar.
   - Hareket imzası: yavaş, saygılı, dokunmadan önce tereddüt eden bir yürüyüş/duruş imzası tanımla (konsepte özgü — su altı ağırlığı, gel-git gerilmesi, manyetik sis içinde yürüyüş gibi).
 - **ÖNEMLİ:** Bu tam açıklamayı her SAHNE görsel promptunda **yeniden, eksiksiz yaz** — kısaltma/köşeli parantez referansı ("[CHARACTER BIBLE]") KULLANMA. Görsel üretim modelleri hafızasızdır; her prompt kendi başına yeterli olmalıdır. (Video promptlarında ise karakter açıklaması gerekmez — bkz. madde 3.5.)
 
@@ -187,8 +191,13 @@ karedir. Üç dokümanın üçünde de eksikti; artık şablonun parçası.
 - Metin YOK (başlık platformda yazılır, karede değil)
 ```
 
-> Kapak yazıldıktan sonra 120 px posta pulu testi ELLE yapılır — yayından
+> Kapak yazıldıktan sonra 120 px posta pulu testi yapılır — yayından
 > önceki tek ücretsiz kontrol odur (KAPAK_QA rubriği 12.08.2026'da kaldırıldı).
+> ⭐ **27.08.2026 — BU TEST ARTIK MAKİNEYLE KOŞULUR VE İKİ YERE BAKAR.**
+> Metin yasağının bedeli ölçüldü: vaadin okunabilirliğinin TEK taşıyıcısı
+> 0. karedir (`HOOK` §0②). Yani test hem kapağa hem **S0'ın ilk karesine**
+> koşar — ikisi ayrı görüntüdür ve ikisi de 120 px'te tek şekil vermelidir.
+> Elle "bence okunuyor" demek bu testi geçmek sayılmaz.
 
 ### 3.7 📣 Başlık ve Açıklama Paketi (ZORUNLU) 🆕
 
@@ -237,6 +246,17 @@ Kapanışta konsept başlığı + tagline'ı tekrar et.
 - [ ] Diyalog, metin, altyazı, marka/telifli öğe hiçbir promptta yok mu?
 - [ ] Hook sahnesi Viral Zamanlama kuralına (0-2 / 2-5 / 5-7 / 7-8) uyuyor mu?
 - [ ] Negative Bible ve Master Cinema Lock her promptun sonunda mevcut mu?
+- [ ] 🆕 **BİLGİ ASİMETRİSİ satırı** yazıldı mı — `[YOK / DRAMATİK İRONİ ·
+      taşıyıcı ①-⑤ · asimetri anı 0:XX]`? Dramatik ironi seçildiyse
+      karakterin paniklediği kare sayısı 0 mı? (Kural 5 · `HOOK` §3.1)
+- [ ] 🆕 **EL YUVASI satırı** yazıldı mı — 6 sahnenin hangisinde el
+      çevreyle fiziksel temas kuruyor, elin kadraj payı ≥ %25 mi?
+      (Character Bible · yüzsüz içerikte birincil vekil nesne)
+- [ ] 🆕 **İLK 2 SANİYE SES KARARI** yazılı mı — tek diegetik ses mi,
+      bilinçli mutlak sessizlik mi? Erken müzik girişi (uzun enstrümantal
+      intro) elendi mi? (`HOOK` §5)
+- [ ] 🆕 **120 PX MAKİNE KAPISI** hem kapağa hem S0'ın ilk karesine
+      koşuldu mu? (§3.6 — metin yasağının bedeli burada ödenir)
 
 ---
 

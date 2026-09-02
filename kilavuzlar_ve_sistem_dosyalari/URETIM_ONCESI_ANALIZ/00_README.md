@@ -42,6 +42,22 @@ söylemek.
 | `01_DERS_ETKINLIK_RAPORU.md` | kesit dersleri (01.08.2026) hangisi işe yarıyor — kanıtla | ders eklerken / çıkarırken |
 | `02_RISK_KARTLARI.md` | "Filmde su var" → ne bozulacak, ne yapılmalı | **plan yazmadan önce** |
 | `03_PLAN_ONCESI_KONTROL_LISTESI.md` | Yazılmış planı üretime sokmadan tara | plan bitti, üretim başlamadan |
+| `04_ARASTIRMA_BULGULARI.md` 🆕 | Dış araştırma turlarının süzme kaydı: hangi bulgu hangi kılavuza indi, hangisi **girmedi ve neden** | dış araştırma geldiğinde · bir kuralın gerekçesi sorulduğunda |
+| `05_DIKEY_HAT_TESHISI.md` 🆕 | **Dikey hattın neden "anlamsız" hissettirdiği** — 18 filmin makine taraması, dört üretim önleminin hikâye formatına dönüşme mekanizması, maliyete göre sıralı altı çözüm ve iki prob | dikey film yazmadan önce · "neden hepsi aynı film?" sorulduğunda |
+| `06_HIKAYE_HATTI_TESHISI.md` 🆕 | **Bütün deponun neden "saçma" hissettirdiği** — 79 filmin taraması, üç halkalı kapalı döngü (yasaklar türü kurdu · kapılar yalnız üretimi ölçtü · **tür kendini ölçen rubriğe "bu kusur değildir" diye yazıldı**), maliyete göre sıralı çözüm + sahibin iki editoryal kararı | **her film yazmadan önce** · "hikâye neden zayıf?" sorulduğunda · rubrik/novum kuralı tartışılırken |
+| `08_SENARYO_ARASTIRMA_PROMPTLARI.md` 🆕 | Hikâye tarafı için dört derin araştırma promptu (çıkarılabilir an · sözsüz istek-hasım · az replikli senaryo · uzay kısa film rakip seti) — altışar cümle, salt prompt, kapanışları aynı | 06'nın açık sorularını dış bilgiyle kapatırken · araştırma turu koşulacağında |
+| `PROB_KOSUSU.md` + `prob_olcum.sh` 🆕 | 05 §5④'ün koşu sayfası: yapıştırmaya hazır iki prob, adım adım koşu, boş sonuç tablosu ve **makineyle ölçüm betiği** (gerçek master üstünde doğrulandı) | dört yasak (ikinci insan · replik · isim · kesme) sınanacağında |
+
+> ⚠️ **04, diğer üçünden farklıdır ve kesit uyarısına tabi değildir.**
+> Diğer üçü 01.08.2026 kesitinden konuşur; 04 tarih tarih büyüyen bir
+> kayıttır ve ilk turu 27.08.2026'dır. Kural 04'ten okunmaz — 04, kuralın
+> NEREDEN geldiğini tutar.
+
+> ⚠️ **05 de kesit uyarısına tabi değildir (30.08.2026).** Kendi taramasını
+> kendi içindeki betikle yapar (§9.1) ve istendiği an yeniden koşulabilir.
+> ⭐ **05, bu klasörün ilk TERS YÖNLÜ dosyasıdır:** 01/02/03 "bu film
+> nerede kırılacak" diye sorar; 05 "yazdığımız her filmin AYNI yerde
+> kırılmasının sebebi ne" diye sorar. Tek filme değil, HATTA bakar.
 
 ---
 
@@ -54,6 +70,13 @@ söylemek.
   KONSEPT + TEMA KAPISI  ← ../ONERME_VE_NOVUM_KILAVUZU.md (üç kabul testi —
      │                      geçmeyen konsept plana dönüşmez) + tema kararı:
      │                      ../TEMA_MUHENDISLIGI_KILAVUZU.md (22.08.2026)
+     ▼
+  06_HIKAYE_HATTI_TESHISI ← ⛔ HER FORMAT: İSTEK/ENGEL/BEDEL/HASIM'ın
+     │                      GEREKÇESİ. Kapı 03_PLAN_ONCESI B5'tedir ve
+     │                      prompt_kontrol ⑰ olarak KOŞAR (02.09.2026)
+     ▼
+  05_DIKEY_HAT_TESHISI   ← ⛔ DİKEY FİLM YAZILACAKSA: dört yasağın
+     │                      birikme mekanizması + final vuruş kanıtı
      ▼
   02_RISK_KARTLARI       ← "bu filmde su + canlı + diyalog var"
      │                      → 3 risk kartı, 3 sayısal kilit, 1 uyarı

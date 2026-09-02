@@ -1,8 +1,11 @@
 # ✅ TEMA VE AÇI KAPILARI — UYGULAMA KAYDI
 
-> **Durum (26.08.2026):** A · B · C · D fazları UYGULANDI. Geriye yalnız
-> **E fazı (pilot film + geri besleme)** kaldı ve o üretim gerektiriyor.
-> Bu dosya E bitince silinir; kalıcı bilgi zaten ilgili kılavuzlara taşındı.
+> **Durum (01.09.2026 · KAPANDI):** A · B · C · D fazları UYGULANDI.
+> **E fazı DEVREDİLDİ** → `TODO_DERS_KILAVUZ_QA_KAPILARI.md` Faz 1.
+> Gerekçe: E'nin istediği şey (pilot film + mod D geri beslemesi) yeni
+> kaydın Faz 1'iyle AYNI iştir; iki dosyada iki ayrı kutu tutmak, ikisinin
+> de sahipsiz kalmasıdır. Bu dosya artık TARİHSEL KAYITTIR — A-D fazlarının
+> ne yaptığı burada durur, açık iş burada TUTULMAZ.
 >
 > **Teşhis neydi:** Tema ve kamera-açısı kuralları 22.08.2026'da yazıldı
 > (`TEMA_MUHENDISLIGI` · `KAMERA_ACISI_PSIKOLOJISI` · `ACI_YAYI_VE_SEKANS`)
@@ -128,31 +131,32 @@ teknik riski sıfır (Slow Stone dersi).
 
 ---
 
-## ⬜ E — PİLOT + GERİ BESLEME (tek kalan faz · üretim gerektirir)
+## ➡️ E — PİLOT + GERİ BESLEME · **DEVREDİLDİ**
 
-- [ ] **E.1** Sonraki dikey filmi şu üçlüyle yaz:
-      · `ACI_YAYI §8.1` şablonu (A-B-C-B-D-A: tepe → alt açı → ECU vizör →
-        alt açı → dutch 15° → tepe loop) — **depoda hiç denenmedi**
-      · §3 tablosundan hiç kullanılmamış tema (Yalnızlık · Zaman · Kimlik ·
-        İnsan-makine · İlk temas) + §5 matris satırı plana işlenmiş
-      · yeni betik denetimlerinden ve 14 maddeden geçmiş
-- [ ] **E.2** Üret ve dört mercekten geçir — SPEC hazır olduğu için **mod D**
-      (depoda mod D sayısı hâlâ 0; AGENTS §6 "ÖLÇÜM DURMUŞ" açığını küçültür)
-- [ ] **E.3** Kıyas — ⚠️ kural ⑥: <1,5 puan fark GÜRÜLTÜDÜR
-- [ ] **E.4** Sonuca göre belge revizyonu; ancak TEKRARLARSA ders (kart Y sırası)
+Dört madde de `TODO_DERS_KILAVUZ_QA_KAPILARI.md` **Faz 1**'e taşındı
+(01.09.2026). Orada sahibi var, burada yoktu.
 
-### ⚠️ E fazına girmeden bilinmesi gerekenler
+- [→] **E.1** pilot film · devir · ⚠️ **taşınırken bir hata düzeltildi:**
+      bu madde "hiç kullanılmamış tema" diye beş tema sayıyordu
+      (Yalnızlık · Zaman · Kimlik · İnsan-makine · İlk temas). İkisi
+      artık kullanılıyor — `sayac.sh` 01.09: **YALNIZLIK 3** (THE THIN
+      ROOF · THE COLD WELD · +1), **İNSAN-MAKİNE 1**. Gerçekten
+      kullanılmamış olanlar: **ZAMAN · KİMLİK · İLK TEMAS**.
+      Ders: elle yazılmış "hiç kullanılmamış" listesi dört günde bayatlar
+      — sayıyı `sayac.sh` verir, kutu vermez [kural ①].
+- [→] **E.2** mod D koşusu · devir · depoda mod D sayısı **hâlâ 0**
+- [→] **E.3** kıyas (kural ⑥: <1,5 puan farkı GÜRÜLTÜ) · devir
+- [→] **E.4** sonuca göre revizyon; TEKRARLARSA ders (kart Y) · devir
+
+### 📌 Devirle birlikte taşınan uyarılar
 
 ```
-· THE NEAR PASS henüz ÜRETİLMEDİ ve 6/6 sahnesi ALT AÇI (1 tip).
-  Pilot bu film olacaksa açı yayı önce düzeltilmeli — SPEC'ine
-  🚨 AÇIK MADDE olarak yazıldı.
-· THE OPEN SEAM'in doruğu (S4, dikişin açıldığı sahne) açısız yazılmış;
-  ACI_YAYI §9 doruğa en yüksek kontrast sıçramasını şart koşuyor.
-· ⏸️ THE HELD HEAT (4 açı tipi, depodaki en yüksekti) ve THE LAST SPAN
-  26.08.2026'da zombi türüyle birlikte kaldırıldı — yay şablonu olarak
-  artık kullanılamaz. Kalan en yüksek çeşitlilik uzay hattından
-  ölçülmeli; pilot filmin hedefi ≥3 açı tipidir.
+· THE NEAR PASS üretilmedi, 6/6 sahnesi ALT AÇI (1 tip) — pilot o film
+  olacaksa açı yayı ÖNCE düzeltilir; SPEC'inde 🚨 AÇIK MADDE olarak duruyor.
+· THE OPEN SEAM'in doruğu (S4) açısız yazılmış; ACI_YAYI §9 doruğa en
+  yüksek kontrast sıçramasını şart koşar.
+· ⏸️ THE HELD HEAT ve THE LAST SPAN 26.08.2026'da zombi türüyle kaldırıldı
+  — yay şablonu olarak kullanılamaz. Pilotun hedefi ≥3 açı tipidir.
 ```
 
 ---

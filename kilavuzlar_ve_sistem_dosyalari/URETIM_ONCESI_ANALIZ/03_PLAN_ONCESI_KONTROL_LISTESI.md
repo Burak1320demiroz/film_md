@@ -2,11 +2,17 @@
 
 > **Ne zaman:** Plan ve Bible yazıldı, **tek kare üretilmedi.**
 > **Süre:** ~20 dakika. Maliyeti sıfır.
-> **Neden:** Aşağıdaki 14 maddenin **11'i gerçek filmlerde gerçekten oldu** ve
+> **Neden:** Aşağıdaki 17 maddenin **11'i gerçek filmlerde gerçekten oldu** ve
 > hepsi üretimden SONRA, para harcandıktan sonra bulundu.
 > **26.08.2026:** B3 (tema indeksi) ve B4 (açı yayı) eklendi — ikisi de
 > yazılı kuralı olan ama hiçbir kapıda ölçülmeyen alanlardı; liste 12'den
 > 14 maddeye çıktı.
+> **01.09.2026:** B6 (politika satırı) eklendi → 15.
+> **02.09.2026:** B5 (İSTEK/ENGEL/BEDEL) eklendi → 16; aynı gün dış
+> araştırma turuyla B5b (AYRILIK) ayrıldı → 17. B5'in dördüncü satırı
+> HASIM'dan MUHATAP'a düzeltildi ve "ORTAM hasım değildir" kapısı
+> **geri çekildi** — gerekçe `04_ARASTIRMA_BULGULARI.md` T4.0.
+> Teşhis: `06_HIKAYE_HATTI_TESHISI.md` §3.1.
 > **Ek katman (06.08.2026):** `SENARYO_VE_VIRAL_KAMERA_KILAVUZU.md` §7'nin
 > 6 senaryo/kamera maddesi bu listeyle BİRLİKTE koşulur — bu listenin
 > yerine geçmez, üstüne eklenir.
@@ -199,6 +205,111 @@ Liste maddesi betiğin göremediği tek şeyi sorar: dizinin VURUŞLA eşleşmes
 
 ---
 
+### B5 — İSTEK · ENGEL · BEDEL · MUHATAP ⭐ 🆕 02.09.2026 · ✏️ aynı gün düzeltildi
+
+> **Gerekçe (TUR 4 ile DEĞİŞTİ):** madde ilk olarak `05_DIKEY_HAT_TESHISI`
+> §5①'den geldi. Dış araştırma turu, maddenin ÜÇ satırını kaynakladı ve
+> DÖRDÜNCÜ satırın gerekçesini düşürdü — ikisi birden aşağıda.
+>
+> ✅ **Kaynaklanan:** izleyicinin *"hiçbir şey olmuyor / umursamadım"*
+> tepkisinin **üç belgelenmiş sebebi** vardır ve üçü bu maddenin üç
+> satırıdır: **isteğin yokluğu · bedelin yokluğu · muhatabın yokluğu**
+> [`04_ARASTIRMA_BULGULARI.md` TUR 4 · T4.1 satır 6].
+
+```
+□ İSTEK:   karakter buraya NE YAPMAYA geldi — film BAŞLAMADAN önce
+□ ENGEL:   bu isteği NE engelliyor
+□ BEDEL:   isteğini alırsa neyi kaybediyor    ⭐ ASIL SATIR — aşağıya bak
+□ MUHATAP: eylemin yankısı NEREDE görünüyor
+           □ ikinci insan (kadrajda VEYA kadraj dışında)
+           □ karakterin film başlamadan verdiği kendi kararı
+           □ karakterin kendi bedeni / dayanma sınırı
+           □ ortamın KALICI olarak değişen bir parçası
+
+⛔ KAPI 1 — "anlamak", "görmek", "fark etmek" İSTEK DEĞİLDİR.
+   İstek, film başlamasa da var olan bir iştir.                [05 §5①]
+⛔ KAPI 2 — BEDEL bir SAHNE numarası taşımak zorundadır (B2 ile çapraz).
+   Bedeli görünmeyen istek, izleyicide "güzel ama boş" karşılığı buluyor
+   ve bu şikâyet kalıbı yorum korpusunda ölçüldü.       [TUR 4 · T4.1/13]
+```
+
+> ✏️ **GERİ ÇEKİLEN MADDE — 02.09.2026, yazıldığı gün** (kayıt:
+> `04_ARASTIRMA_BULGULARI.md` T4.0):
+>
+> Bu maddenin ilk hâlinde bir KAPI 2 vardı: *"ORTAM bir hasım değildir…
+> fizik kuralı hiçbir şey istemez."* **Geri çekildi.** İki bağımsız rapor
+> çapraz okundu: insan-hasım ile doğa-hasım arasında izleyici
+> tutundurması veya hatırlanma açısından **belgelenmiş nicel bir fark
+> YOK**; fark çatışmanın türünden değil **bedelin büyüklüğünden** geliyor
+> (Raskin · McKee/Cowgill kıyaslaması + DUST yorum korpusu). Ortam meşru
+> bir karşı güçtür. Değişmeyen şey **BEDEL** satırıdır — ölçülmüş olan o.
+>
+> 🚨 **Gerçek olay (bu satırlar duruyor):** THE THIN ROOF'ta kadın *"bir
+> çukura bakmaya"* gelmişti — bu seyirdir, istek değil; ④ merceği
+> `ENDS OR STOPS: Stops` yazdı. THE SINKING STAKE (02.09) 25 sahne boyunca
+> iki insanı yan yana tuttu ve merkezî seçimi *"biri onaylar, öteki karar
+> verir"* oldu — **iki gövde, tek kişi.**
+>
+> ⚠️ **DÜRÜST KAYIT:** bu maddeyle yazılmış bir filmin skoru henüz YOK.
+> Ölçülmüş boşluk: İSTEK 8/79 · ENGEL 2/79 (`06` §1.1).
+
+### B5b — AYRILIK (yalnız iki insanlı planlarda)
+
+```
+□ İki figürün AYNI FİKİRDE OLMADIĞI sahne = S___
+  · farkı taşıyan kanal: jest / duraklama / yön / temas reddi
+  · ⛔ ikisi de aynı anda aynı şeyi yapıyorsa satır BOŞTUR
+```
+
+> **Kaynak:** kısa filmde çatışma ZORUNLU değildir [Raskin] — ama iki kişi
+> kadraja girdiyse aralarındaki fark **etkileşimin kendisidir**, ve
+> etkileşimin yokluğu "umursamadım"ın üçüncü sebebidir [TUR 4 · T4.1/6].
+
+---
+
+### B6 — POLİTİKA SATIRI ve ANLAM MALİYETİ ⭐ 🆕 01.09.2026
+
+> **Gerekçe:** depoda 14 üretim reddi var (`FILM_QA_RAPORLARI/09_URETIM_RED_DEFTERI.md`)
+> ve biri bir sahneyi **iptal ettirdi**. Bunu ÖNCEDEN yazan tek film
+> YERCEKIMI'dir (00_PLAN risk ④ + F2 KİLİT 8) — ve redleri önceden gören
+> tek film odur. Maliyeti sıfır, iki satır.
+
+```
+□ POLİTİKA SATIRI yazıldı mı?
+     "Bu filmin en red-riskli karesi S___; nötr tarifi: ______________"
+     ⛔ "riskli sahne yok" cevabı geçerli DEĞİLDİR — en riskli kare
+        her filmde vardır, sıralamanın en üstündeki karedir.
+
+□ Filmde şunlardan biri varsa KART 12 açılmış mı?
+     gövdeye değen kuvvet · kalabalık + kaçan kişi · ateş/duman ·
+     tehlike çerçevesi · bedenden bir şey çıkarma · yüzsüz izolasyon +
+     kısıtlanmış uzuv · konuşan yüz + kapital kimlik bloğu
+
+□ Alınan HER politika önlemi üç satır taşıyor mu?  [POLİTİKA §4.3]
+     ÖNLEM:   ______________  (ne kaldırıldı)
+     MALİYET: ______________  (hikâyeden ne gitti)
+     TELAFİ:  ______________  (hangi kanala taşındı — §4.1'in dördü:
+                               kütle-hız · malzeme sonucu · alet tepkisi ·
+                               temassız gövde tepkisi)
+     ⛔ TELAFİ boşsa önlem ALINMAMIŞTIR, film KISALTILMIŞTIR.
+
+□ Milliyet · gerçek kurum · gerçek kişi adı planın hiçbir yerinde yok mu?
+     ⛔ §7'de DOĞRULANMIŞ red. Ve şu an üç filmin CANLI promptlarında
+        duruyor (defter §3) — kopyalayarak yayılıyor.
+```
+
+> 🚨 **Gerçek olay:** THE LAST SPAN (25.08.2026). Film tasarımı gereği
+> **0 kare** yara/kan/ceset taşıyordu ve dosya bunu satır satır yazıyordu.
+> Ama o sıfırı KORUMAK için `NEGATIVE:` bloğuna `gore` 29 · `blood` 26 ·
+> `wounds` 26 · `corpse` 18 kez yazılmıştı. **İki aksiyon doruğu
+> reddedildi.** Yasak, yasakladığı kavramı prompta sokar [D123].
+
+**Düzeltme:** Kelime ekseni artık betikte ölçülüyor
+(`prompt_kontrol.py` ⑯ · NEGATIVE bloğu DÂHİL). Bu liste maddesi betiğin
+göremediği iki şeyi sorar: **kompozisyon riski** ve **anlam maliyeti**.
+
+---
+
 # 🟠 C. SAYISAL KİLİTLER YAZILDI MI
 
 > Ölçülmüş tek gerçek: **tarif kilidi %0 tuttu, sayısal kilit %100 tuttu.**
@@ -289,11 +400,22 @@ B3 □ TEMA: ___________ · motife döndüğü sahneler: S___, S___, S___
 B4 □ kurulum dizisi: _______________ · kurulum sayısı ___ · açı tipi ___
      ardışık çiftler güvenli bantta (≥1 kademe + ≥45°) · şok sayısı ___/2
      derece satırları abartı bandında               [ACI_YAYI §3-4 · KAMERA §5]
+B5 □ İSTEK: ______________ (anlamak/görmek/fark etmek DEĞİL)
+     ENGEL: ______________ · BEDEL: ____________ S___ ⭐ (B2 ile çapraz)
+     MUHATAP: □ ikinci insan  □ kendi geçmiş kararı  □ kendi bedeni
+              □ ortamın KALICI değişen parçası
+     ⛔ BEDEL sahne numarası taşımıyorsa madde BOŞ    [05 §5① · TUR 4 T4.1]
+B5b □ iki insanlı plansa → AYRILIK sahnesi S___ (aynı fikirde OLMADIKLARI an)
+B6 □ POLİTİKA SATIRI: en red-riskli kare S___ · nötr tarifi yazıldı
+     her önlem ÖNLEM/MALİYET/TELAFİ üçlüsü taşıyor · TELAFİ boş DEĞİL
+     milliyet · gerçek kurum · gerçek kişi adı planda YOK   [POLİTİKA §4.3 · KART 12]
 C  □ 6 sayısal kilit yazıldı (insan · kask · ölçü · yerçekimi · sıvı · canlı)
 D  □ risk sayımı yapıldı: ___/___  (payda: 02_RISK_KARTLARI soru sayısı)
 E  □ QA SPEC bloğu plan dosyasına yazıldı
 
-İMZA: bu 14 madde işaretlenmeden üretim başlamaz.
+İMZA: bu 17 madde işaretlenmeden üretim başlamaz.
+✅ B5 İNDİ (02.09.2026) — 05_DIKEY_HAT_TESHISI §5① üç gün "ayrılmış"
+   kaldı; teşhis 06_HIKAYE_HATTI_TESHISI §3.1'de.
 ```
 
 ---
@@ -310,5 +432,7 @@ Bu listedeki her madde bir gerçek olaydan çıktı:
 | B2 | Kaleida · Ring Walker | `../FILM_QA_RAPORLARI/03_HIKAYE_KALITE_TABLOSU.md` |
 | B3 | The Kaleida Crash | `../FILM_QA_RAPORLARI/01_FILM_RAPORLARI/THE_KALEIDA_CRASH.md` · Tema 5/10 "bedel yok → tema dekoratif kalıyor" · eğilim: ⛔ KAPALI `03_HIKAYE_KALITE_TABLOSU.md` 7/13 ≤5 · kural: `../TEMA_MUHENDISLIGI_KILAVUZU.md` §5/§9 |
 | B4 | The Bright Tether (26.08.2026) | 6 kamera satırının 3'ü benzersiz · `../ACI_YAYI_VE_SEKANS_KILAVUZU.md` §3-4 · `../KAMERA_ACISI_PSIKOLOJISI_KILAVUZU.md` §2/§5 |
+| B5 | The Thin Roof · The Sinking Stake | `05_DIKEY_HAT_TESHISI.md` §5① (İSTEK 2/18 · `ENDS OR STOPS: Stops`) · `06_HIKAYE_HATTI_TESHISI.md` §1.1 (İSTEK 8/79 · ENGEL 2/79) · §1.5 (iki gövde, tek kişi) · §3.2 (hasım yok) |
+| B6 | The Last Span · Cold Burn · Yerçekimi F1 S8 | 14 üretim reddi · `../FILM_QA_RAPORLARI/09_URETIM_RED_DEFTERI.md` · kural: `../POLITIKA_VE_URETILEBILIRLIK_KILAVUZU.md` · kart: `02_RISK_KARTLARI.md` KART 12 |
 | C | Slow Stone vs Inversion/Kaleida | `01_DERS_ETKINLIK_RAPORU.md` §4 |
 | E | Low Power · Ring Walker · Kaleida | 4 şartlı/geçersiz QA raporu |

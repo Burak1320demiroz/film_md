@@ -1634,3 +1634,381 @@ TEMA/AÇI → PROMPT_KONTROL/PROMPT_QA_CRITIQUE_PROMPT.md · yeni kategori 6
 > denetim aldı (kurulum çeşitliliği · açı sözlüğü · abartı eşiği · tema
 > satırı). 107 eski dosyaya koşuldu, dört yanlış-pozitif sınıfı bulunup
 > kapatıldı. Ayrıntı betiğin kendi başlık bloğunda.
+
+---
+
+## ⭐ 28.08.2026 — THE THIN ROOF · ALTI MERCEK · SPEC HAZIRDI, ALTISI DA MOD V
+
+```
+MALZEME   dikey shorts teslim kurgusu · 65,030 s · 720×1280 · 30 fps · AAC ses
+MERCEK    ① KARE · ② DEVAMLILIK · ③ SES · ④ HİKAYE · ⑤ ARKA PLAN · ⑥ FİZİK
+MOD       altısı da V   ⛔ SPEC dosyası VARDI ve verilmedi → mod V sayısı 7. filme çıktı
+KAYIT     ../FILM_QA_RAPORLARI/01_FILM_RAPORLARI/THE_THIN_ROOF.md
+HAM       ../FILM_QA_RAPORLARI/02_HAM_RAPORLAR/THE_THIN_ROOF_*_HAM.md
+TABLO     ⛔ HİÇBİR T TABLOSUNA SATIR YAZILMADI [D129]
+```
+
+**Bu koşunun bulgusu skor değil, ÖLÇÜ:**
+
+```
+18 severity etiketli bulgu  →   4'ü gerçek (kareden doğrulandı)
+                                6'sı ⑩ önerme kapısında ya da ölçümde düştü
+                                5'i ⬜ AÇIK
+filmin ölçülmüş 6 gerçek ihlali  →  6'sı da raporlarda YOK
+```
+
+Görülmeyen altı ihlalin dördü TEK KAREDEN okunur ve ikisi rubriklerin kendi
+OTOMATİK BLOCKER kutusudur: halkanın içine yazılmış "11 metres" (S2, 2 s) ·
+sırt ünitesi (S2, 10 s) · klon (S3, 0,30 s) · havada çakıl (S4) · üretilmemiş
+twist (S5) · ölmüş döngü + 4,997 s başlık kartı.
+
+⛔ ① KARE rubriği başlık kartını, kendi metninin AÇIKÇA YASAKLADIĞI biçimde
+`FLAGS`'e SORU olarak yazdı ("is this burned-in text intentional?") ve negatif
+kutusunu işaretlemedi.
+
+### 🧭 DERS → RUBRİK İZ DEFTERİ — 137-142 eki
+
+```
+D137 → 1_KARE · 2_DEVAMLILIK · 3_SES · 4_HIKAYE · 6_FIZIK · künye
+       `LINES HEARD` satırı: "no audio information at all" ifadesi
+       KALDIRILDI, yerine "nothing audible to me" + rubriğin dosya
+       hakkında hüküm veremeyeceği ⛔ satırı.
+D137 → 3_SES · STATE C bloğu: stop bloğu artık ÖNKOŞULLU — operatörün
+       yapıştırdığı ses akışı probu boş değilse STATE C ilan edilemez.
+D137 → 5_ARKA_PLAN · GEREKMEZ — künyesinde `LINES HEARD` satırı yok,
+       ses ekseni kapsamında değil.
+
+D138 → 1_KARE · negatif kutu listesine "sahnenin kendi malzemesine gömülü
+       karakterler" maddesi (kadrajın ORTASI ve öznenin YÜZEYİ).
+D138 → 5_ARKA_PLAN · kategori 9'a aynı madde (emergent text yalnız
+       bindirme ve kenar artefaktı değildir).
+D138 → 2_DEVAMLILIK · 3_SES · 4_HIKAYE · 6_FIZIK · GEREKMEZ — ekranda
+       metin hiçbirinin kapsamında değil (② ④ zaten →🔧 işaretçisiyle
+       ①'e yolluyor).
+D138 → PROMPT_KONTROL/prompt_kontrol.py · İKİ yeni denetim:
+       dosya seviyesi "metin yasağı KAPSAMSIZ" (FIX, dosya başına tek
+       satır) + prompt seviyesi "yüzey işaretine bitişik ölçü" (FIX,
+       yalnız image). 24 dosyalık taramada ikincisi 4 dosya tetikledi.
+
+D139 → HİÇBİR RUBRİK · GEREKMEZ — bu bir YAZIM dersidir (prompt gövdesi),
+       ölçüm dersi değil. ② DEVAMLILIK bulguyu zaten gördü; yanlış olan
+       teşhisiydi ve onu düzelten şey rubrik değil SPEC'in mod D'de
+       verilmesidir [D129].
+D139 → KILAVUZ_REHBERI §5 · D79 bloğunun altına kapsam notu.
+
+D140 → 1_KARE · DUPLICATE CHARACTER kontrolünün üstüne "CLIP-HEAD
+       DUPLICATE": her klibin İLK YARIM SANİYESİ kare kare taranır,
+       bulgu SANİYE değil KARE ARALIĞI olarak yazılır.
+D140 → 2_DEVAMLILIK · kategori 12'ye aynı madde.
+D140 → 5_ARKA_PLAN · GEREKMEZ — klon ÖZNENİN üstünde doğdu, özne-dışı
+       alanda değil; rubriğin kapsam testi bunu dışarıda bırakıyor
+       ve doğru bırakıyor.
+D140 → 3_SES · 4_HIKAYE · 6_FIZIK · GEREKMEZ.
+
+D141 → HİÇBİR RUBRİK · GEREKMEZ — kurgu kapısı bir OPERATÖR kapısıdır,
+       rubrik değil. Yama AGENTS ortak adım ④'e (dördüncü satır) ve
+       QA_SPEC şablonunun B bloğuna (FİNAL VURUŞ KANITI) yazıldı.
+       ⚠️ ④ HİKAYE zaten "ENDS OR STOPS" soruyor ve bu filmde DOĞRU
+       cevabı verdi; eksik olan rubrik değil, cevabın PLANLA
+       karşılaştırılmasıydı.
+
+D142 → HİÇBİR RUBRİK · GEREKMEZ — SPEC yazım dersi. Yama AGENTS Kart A'ya
+       (E bloğu kapıları kuru koşuyla doğrulanır + İKAME satırı).
+
+D143 → HİÇBİR RUBRİK · GEREKMEZ — prompt/plan dersi (toz yoğunluk sayısı).
+       Yama: REHBER §3.2 "İlgili ders" + §7 tuzak; ⑥ FİZİK zaten "dust
+       waterfall" ölçtü, hüküm ("accept it") planla düzeltilir, rubrikle değil.
+D144 → HİÇBİR RUBRİK · GEREKMEZ — üretim kapısı (operatör) dersi. Yama:
+       09_SISTEM + Skylight PLAN üretim notları (KABUL/RET/YABANCI GÖZ/SONUÇ).
+D145 → HİÇBİR RUBRİK · GEREKMEZ — prompt dersi. ⑤ ARKA PLAN kanyonu DOĞRU
+       yakaladı; ders rubrikteki "en büyük nesne" kuralını PROMPTA taşır.
+       Yama: 04_ISIK + REHBER §3.2 + §7 tuzak.
+D146 → HİÇBİR RUBRİK · GEREKMEZ — bible dersi (kask geometrisi). ② DEVAMLILIK
+       üç kaskı doğru yakaladı. Yama: 02_KARAKTER + REHBER §7 tuzak.
+D147 → HİÇBİR RUBRİK · GEREKMEZ — bible dersi (kir merdiveni). ② doğru yakaladı.
+       Yama: 02_KARAKTER + REHBER §3.2.
+D148 → HİÇBİR RUBRİK · GEREKMEZ — prompt dersi (kalkış geometrisi). ① KARE
+       doğru yakaladı. Yama: 03_FIZIK + REHBER §3.5 + §7 tuzak.
+D149 → HİÇBİR RUBRİK · GEREKMEZ — tasarım dersi (0g kemerli beden). ①⑥ rijit
+       bedeni yakaladı; bulgu ⑩'da tasarım çıktı ama tasarımın kendisi eksikti.
+       Yama: 03_FIZIK + REHBER §3.5.
+D150 → 5_ARKA_PLAN · STEP 1 EDGES satırı + kategori 9 filigran kutusu
+       ("static mark in the same corner in every scene IS a watermark").
+D150 → 1_KARE · kategori 10 negatif liste, watermark kutusu (aynı kural).
+D150 → 2_DEVAMLILIK · 3_SES · 4_HIKAYE · 6_FIZIK · GEREKMEZ — filigran kadraj
+       kenarı bulgusudur (① ve ⑤'in kapsamı); ölçümü zaten makineye taşındı:
+       AGENTS ⑪ köşe testi + olcum_kapisi.sh + KURGU_RITMI §6 ihraç listesi.
+⚠️ 3_SES · YAMA ÖNERİSİ (ders değil): rapor "SCORED CATEGORIES: N/A" yazıp yine
+       de VERDICT bastı ("AUDIBLE DRIFT, FIXABLE IN THE MIX"). Hiçbir kategori
+       sayı taşımıyorsa VERDICT satırı "NO VERDICT — nothing measured" olmalı;
+       bir sonraki 3_SES düzenlemesinde eklenir.
+```
+
+### 🔧 RUBRİK KOŞU SAYILARI — 28.08.2026 sonrası
+
+```
+1_KARE          son koşu 28.08 · THE THIN ROOF · mod V · ön koşu
+2_DEVAMLILIK    son koşu 28.08 · THE THIN ROOF · mod V · ön koşu
+3_SES           son koşu 28.08 · THE THIN ROOF · STATE C stop bloğu ·
+                ⛔ ÖLÇÜM ÇÜRÜTTÜ (dosyada AAC 253 kbit/s ses var) → D137
+4_HIKAYE        son koşu 28.08 · THE THIN ROOF · mod V · ön koşu
+5_ARKA_PLAN     son koşu 28.08 · THE THIN ROOF · mod V · ön koşu
+6_FIZIK         son koşu 28.08 · THE THIN ROOF · mod V · 24 fps varsaydı (gerçek 30)
+```
+
+### 🔧 RUBRİK KOŞU SAYILARI — 29.08.2026 sonrası (THE SKYLIGHT partisi)
+
+```
+1_KARE          son koşu 29.08 · THE SKYLIGHT · mod V · ön koşu [D129] · şerit 🚨
+                (insansız yuva yok, kendi 4:24 bulgusuyla çelişir) · filigran kutusu boş → D150
+2_DEVAMLILIK    son koşu 29.08 · THE SKYLIGHT · mod V · ön koşu · şerit 30/31 (1 kısa) ·
+                üç kask + kir sıfırlanması DOĞRU yakalandı (D146/D147 kaynağı)
+3_SES           son koşu 29.08 · THE SKYLIGHT · STATE B "nothing audible" · ölçüm satırı
+                yapıştırılmadı → ses ekseni ÖLÇÜLMEDİ [D137 · 3. vaka]; master −17,0 LUFS
+4_HIKAYE        son koşu 29.08 · THE SKYLIGHT · mod V · ön koşu · şerit 31/31 ✅ · "no peak
+                located" — doruk 3:03→3:07 ekranda (kareyle) · kesme listesi UYGULANMADI
+5_ARKA_PLAN     son koşu 29.08 · THE SKYLIGHT · mod V · ön koşu · ④'ün künye satırlarını
+                taşıyor (oturum 🚨 D110) · "EDGES: Clean" ×31, filigran 315/315 s → D150
+6_FIZIK         son koşu 29.08 · THE SKYLIGHT · mod V · 24 fps varsaydı (gerçek 30) ·
+                g ≈ 3,8 m/s² planın 0,38 g'sini DOĞRULADI · "dust waterfall: accept it" → D143
+⑪ ÖLÇÜM         29.08 · ilk TAM koşu (süre · fps · ses · LUFS · tepe · sessizlik · ızgara
+                ikamesi · köşe şeridi · 18 kare) — kesme dedektörü karanlık filmde kör (1/33)
+```
+
+---
+
+## ⭐ 31.08.2026 — THE FROST LINE · ALTI MERCEK (+⑥ İKİNCİ KOŞU) · SPEC HAZIRDI, ALTISI DA MOD V — 9. FİLM
+
+```
+MALZEME   yatay 3-5 dk teslim kurgusu · 235,201 s · 1280×720 · 30 fps · AAC ses
+MERCEK    ① KARE · ② DEVAMLILIK · ③ SES · ④ HİKAYE · ⑤ ARKA PLAN · ⑥ FİZİK ×2 koşu
+MOD       altısı da V  ⛔ SPEC dosyası VARDI ("bu film 9. olmasın" uyarısıyla) ve
+          verilmedi → SPEC'li mod V sayısı 9. filme çıktı
+KAYIT     ../FILM_QA_RAPORLARI/01_FILM_RAPORLARI/THE_FROST_LINE.md
+HAM       ../FILM_QA_RAPORLARI/02_HAM_RAPORLAR/THE_FROST_LINE_*_HAM.md (7 dosya — ⑥ iki koşu)
+TABLO     ⛔ HİÇBİR T TABLOSUNA SATIR YAZILMADI [D129]
+```
+
+**Bu koşunun bulgusu skor değil, ÖLÇÜ VE KARE:** 2 eksik sahne (S12 · S23) +
+kırpılmamış hook · ses kanalı VAR, −21,5 LUFS — 6/6 mercek "nothing audible"
+[D137 · 4. vaka], ③'ün 4 🔴'ı ölçümle çürüdü · üç novum vuruşu (S5 yama uçuşu ·
+S15/S19 klip içi beyazlama) EKRANDAYDI, mercekler görmedi/tersine okudu → D151 ·
+S20 doruk vuruşu ekranda yok · filigran "▷" 235/235 [D150 2. vaka — ① ve ⑤
+Thin Roof yamaları sayesinde bu kez GÖRDÜ ✅].
+
+### 🧭 DERS → RUBRİK İZ DEFTERİ — 151-154 eki
+
+```
+D151 → HİÇBİR RUBRİK · GEREKMEZ — ① KARE'nin SUB-MILLIMETRE EVENT kuralı ZATEN
+       VAR ve model yine kaçırdı: hata örnekleme doğasında, ilaç operatör
+       karesidir. Yama: 08_QA + AGENTS ⑪ (a/b kare çifti) + QA_SPEC şablonu
+       E bloğu pratiği (E7/E8 çiftleri her kapı sahnesine).
+D152 → HİÇBİR RUBRİK · GEREKMEZ — yazım/üretim dersi; ② alet kaybını zaten
+       görüyor (brush/tape satırları), yanılan üretimdi. Yama: 05_EKIPMAN +
+       üretim kapıları [D144].
+D153 → HİÇBİR RUBRİK · GEREKMEZ — üretim dersi; ⑤ mimari kaymayı DOĞRU yakaladı
+       (rubrik çalıştı). Yama: 05_EKIPMAN.
+D154 → HİÇBİR RUBRİK · GEREKMEZ — ⑥ iki yerçekimini ve adım/kristal ayrımını
+       DOĞRU ölçtü; kaynak üretim. Yama: 03_FIZIK.
+⚠️ 3_SES · Thin Roof kaydındaki bekleyen YAMA ÖNERİSİ bu koşuda TEKRARLADI
+       (kategoriler N/A'yken verdikt basıldı; üstüne ölçülemez "mutlak
+       sessizlik"ten 4 🔴 skorlandı) → kural gövdeye İŞLENDİ: bütün kategoriler
+       N/A/UNVERIFIABLE ise VERDICT satırı "NO VERDICT — NOTHING MEASURED".
+```
+
+### 🔧 RUBRİK KOŞU SAYILARI — 31.08.2026 sonrası (THE FROST LINE partisi)
+
+```
+1_KARE          son koşu 31.08 · THE FROST LINE · mod V · ön koşu [D129] · filigranı
+                TOP-3'e yazdı (D150 yaması İŞLEDİ ✅) · S4'ü "yama basıyor" okudu
+                (avuç sahnesiydi) · S15 beyazlamayı görmedi → D151
+2_DEVAMLILIK    son koşu 31.08 · THE FROST LINE · mod V · ön koşu · sırt ünitesi +
+                kırağı dalgasını DOĞRU yakaladı (D139/D147 2. vakaların kaynağı) ·
+                "dış çökük ↔ iç sağlam" 🔴'ının kökü tek klip (S6 erken çöküş)
+3_SES           son koşu 31.08 · THE FROST LINE · "absolute digital silence" + 4 🔴 ·
+                ⛔ ÖLÇÜM ÇÜRÜTTÜ (AAC 253 kbit/s · −21,5 LUFS · tek sessizlik = kart)
+                [D137 · 4. vaka] → NO VERDICT kuralı gövdeye işlendi
+4_HIKAYE        son koşu 31.08 · THE FROST LINE · mod V · ön koşu · S19'u TERSİNE
+                okudu ("healthy leaf payoff" — kare: yeşil→beyaz) → D151 · kesme
+                listesi UYGULANMADI (S6'yı ve üretimde vuruşu eksik S20'yi kesiyordu)
+5_ARKA_PLAN     son koşu 31.08 · THE FROST LINE · mod V · ön koşu · filigranı her
+                EDGES satırına yazdı (D150 yaması İŞLEDİ ✅) · üs kaymasını DOĞRU
+                yakaladı (D153 kaynağı) · "plume = hata" okuması düştü (t56 yama uçuşu)
+6_FIZIK         son koşu 31.08 · THE FROST LINE · mod V · İKİ KEZ koşuldu [D110 ⚠️] ·
+                24 fps varsaydı (gerçek 30) · iki yerçekimini DOĞRU ölçtü (kristal
+                11,1 ↔ adım 4,0 m/s² — adım planın 0,38 g'sini doğruladı) → D154 ·
+                2. koşuda Ölçek/Işık kaynaksız düşürüldü (kendi kural ④ ihlali)
+⑪ ÖLÇÜM         31.08 · ikinci TAM koşu (süre · fps · ses · LUFS · tepe · sessizlik ·
+                kesme ızgarası · köşe şeridi · 33 kare + a/b çiftleri) — a/b çiftleri
+                üç "rapor tersine okudu" vakasını yakaladı [D151'in doğuşu]
+```
+
+---
+
+## ⭐ 01.09.2026 — THE FROST LINE · **İKİNCİ PARTİ** · ALTI MERCEK · SPEC YİNE VERİLMEDİ
+
+```
+MALZEME   aynı kurgu · 235,201 s · 23 klip + 5,1 s kart · 30 fps · AAC ses
+          ⭐ bu kez 4K ihraç da var (3840×2160) — 1. partinin 720p kusuru düzeldi
+MERCEK    ① KARE · ② DEVAMLILIK · ③ SES · ④ HİKAYE · ⑤ ARKA PLAN · ⑥ FİZİK
+MOD       altısı da V  ⛔ SPEC dosyası VARDI ve İKİNCİ KEZ verilmedi
+          (film sayısı 9'da kalır — aynı film; ama bu filmde mod V PARTİ sayısı 2)
+KAYIT     ../FILM_QA_RAPORLARI/01_FILM_RAPORLARI/THE_FROST_LINE.md · "2. PARTİ" bölümü
+HAM       ../FILM_QA_RAPORLARI/02_HAM_RAPORLAR/THE_FROST_LINE_{KARE_2,DEVAMLILIK_2,
+          SES_2,HIKAYE_2,ARKA_PLAN_2,FIZIK_3}_HAM.md
+TABLO     ⛔ HİÇBİR T TABLOSUNA SATIR YAZILMADI [D129 · aynı filmde 2. kez]
+```
+
+**Üç sonuç:**
+① **Master yolu verilmedi ve ölçüm bir kimlik arızası buldu:** `~/Downloads`
+içinde "the frost lıne" adlı BEŞ dosya var; ikisi (245,120 s · 720p + 4K)
+başka bir filmin gövdesini taşıyor ve üstüne BU filmin kapak kartı eklenmiş.
+Ad farkı bir boşluk. → **D160**
+② **③ SES bu kez ses kanalını DUYDU** (AUDIO STATE B · 8,0 "SOUNDTRACK HOLDS").
+1. partinin "mutlak dijital sessizlik + 4 🔴"ı ölçümle çürümüştü [D137 · 4. vaka];
+eksen düzeldi. ⛔ Ama ⑪ ölçüm satırı künyeye YİNE yapıştırılmadı → ses ekseni
+bu koşuda da ÖLÇÜLMEMİŞ sayılır.
+③ **Dört mercek aynı YANLIŞ bulguyu birebir aynı cümleyle yazdı**
+(`3:23 fingers phase through the glass visor`). 4K master'dan t202/t203/t204:
+el vizörün ÖNÜNDE, cam çerçevesi ve pane kenarı okunur — füzyon YOK. Yanlış 🔴,
+①'in REGENERATE hükmünü taşıyan dört 🔴'dan biriydi. → **D159**
+
+**Kareyle KAPANAN iki yeni ihlal:** plan S5'te de sırt harness'ı (t52/t57 —
+D139 · 3. vaka, yeni yuva) · plan S22'de tohum EKİLMEDEN önce yatakta çimlenmiş
+filiz sırası (t217/t219 — SPEC "filiz 0 kare", D156 · 2. vaka).
+**Belgeyle açılan bir ihlal:** iç sahnelerde PEMBE LED yetiştirme şeridi
+(a_t104 · ⑤ envanterinde S11/S17) — SPEC "yapay lamba/LED 0 kare"; ⑤ envantere
+yazdı ama belgesiz olduğu için bulgu yapamadı.
+
+### 🧭 DERS → RUBRİK İZ DEFTERİ — 159-160 eki
+
+```
+D159 → 1_KARE (KAYNAK RUBRİK — yanlış bulgunun doğduğu yer) · 2_DEVAMLILIK ·
+       3_SES · 4_HIKAYE · 5_ARKA_PLAN · 6_FIZIK · ALTISI DA YAMANDI:
+       kapsam bloğunun hemen ardına "AN OUT-OF-SCOPE FLAG IS SOMETHING YOU
+       SAW, NEVER SOMETHING YOU WERE TOLD" bloğu. Kardeş taraması ölçütü
+       ("bu rubrik aynı malzemeyi görse aynı hatayı yapar mıydı?") altısında
+       da EVET: altısının da OUT-OF-SCOPE mekanizması var ve hiçbiri
+       "gözlemlediğin" demiyordu.
+D159 → AGENTS ⑤ ÇAPRAZ SAYIM KAPISI · DÖRDÜNCÜ SATIR: METİN ÇAKIŞMASI
+       (aynı saniye+nesne+fiil → sahibi dışındakilerden SİL; işaretçi ≥2 →
+       oturum 🚨 KOPYA, kareyle doğrulanmadan tabloya girmez)
+D160 → HİÇBİR RUBRİK · GEREKMEZ — dosya kimliği bir KONTEYNER özelliğidir;
+       hiçbir mercek hangi dosyayı izlediğini gözlemleyemez. D137'nin ses
+       kanalı için söylediğinin aynısı burada dosya adı için geçerli.
+       Yama: AGENTS ⑪ → ⑪.0 KİMLİK KARESİ (kurgunun ORTASINDAN) + aynı addan
+       hepsini ölç + künyeye master yolu · qa-isle SKILL.md adım 1.
+```
+
+### 🔧 RUBRİK KOŞU SAYILARI — 01.09.2026 sonrası (2. FROST LINE partisi)
+
+```
+1_KARE          son koşu 01.09 · THE FROST LINE (2) · mod V · ön koşu [D129] ·
+                kesme sayısı 21 (ölçüm 22) → şerit ekseni 🚨 · `Camera 10/10` +
+                "no in-scope source" (kendi ④ kuralı ihlali; düzeltilmiş 5,7) ·
+                3:23 vizör füzyonu 🔴 KAREYLE ÇÜRÜDÜ → D159'un kaynağı ·
+                filigranı yine GÖRDÜ ✅ · 1:30 doku kaynamasını DOĞRU yakaladı
+2_DEVAMLILIK    son koşu 01.09 · THE FROST LINE (2) · mod V · ön koşu ·
+                ⭐ partinin en verimli merceği: sırt harness'ı (yeni yuva) ve
+                S22 filizi KAREYLE DOĞRULANDI · gölge 180° kilit ihlali ·
+                ⛔ `Counter Logic: N/A` — SPEC'te ÜÇ sayaç var → ölçüm boşluğu [D134]
+3_SES           son koşu 01.09 · THE FROST LINE (2) · **AUDIO STATE B — sesi DUYDU** ✅
+                (1. partinin arızası düzeldi) · ama duyduğu "high-altitude wind"
+                SPEC'in "rüzgâr 0" kilidine aykırı ve ledger'ı üç müziksiz
+                pencerenin üçünü de göremiyor · ⑪ satırı künyede YOK [D137]
+4_HIKAYE        son koşu 01.09 · THE FROST LINE (2) · mod V · ön koşu · kesme
+                listesindeki 7 adayın 7'si yük taşıyor (biri ORTA NOKTA, biri
+                "MAY NOT BE CUT" viral, biri karakterin tek tereddüdü) →
+                UYGULANMADI [D129] · ⭐ tek cümlelik izleyici okumasında SEÇİM
+                ve BEDEL yok — sebebi yazım değil, S20/S12/S23'ün teslim edilmemesi
+5_ARKA_PLAN     son koşu 01.09 · THE FROST LINE (2) · mod V · özne kapısı ✅ ·
+                `Focus 10/10` + "no in-scope source" (kendi ④ kuralı ihlali;
+                düzeltilmiş 6,0) · filigran sorusunu FLAGS'e yazdı (otomatik-
+                BLOCKER kutusu soruya çevrilemez) · PEMBE LED'i envantere yazdı,
+                bulgu yapamadı (belgesiz mercek — mod D görürdü)
+6_FIZIK         son koşu 01.09 · THE FROST LINE (2) · mod V (mod kapısı düştü:
+                plan sayısal kilit taşıyor) · **24 fps varsaydı, ölçüm 30 der —
+                üç koşunun üçünde de aynı hata** · `Impact: —` kuralını
+                ALTIDAN TEK DOĞRU UYGULAYAN mercek ✅ · L1/L6 g ölçümleri planın
+                0,38 g'sine oturdu → partinin tek gerçek sayısal PASS'i
+⑪ ÖLÇÜM         01.09 · üçüncü TAM koşu · ⭐ ilk kez KİMLİK adımıyla: master yolu
+                verilmedi, aynı ada uyan 5 dosya ölçüldü, 2'si başka film çıktı
+                [D160] · 4K ihraç doğrulandı (720p kusuru düzeldi) · filigran ve
+                kart 4K'da da duruyor · −21,2 LUFS / tepe −0,1 (kilit dışı)
+```
+
+---
+
+## 📅 02.09.2026 · THE STILL SWARM — DEPONUN İLK SEKİZ MERCEKLİ PARTİSİ
+
+⛔ Sekizi de **mod V** · SPEC dosyası VARDI · master ÖLÇÜLMEDİ →
+`rapor_kontrol.py` çıkış **2** · ⛔ 5 TEKRAR · ⚠️ 2 ŞARTLI · ✅ 1 GO.
+Hiçbir satır T tablosuna girmedi. Film kaydı:
+`FILM_QA_RAPORLARI/01_FILM_RAPORLARI/THE_STILL_SWARM.md`
+
+```
+1_KARE          son koşu 02.09 · mod V · ⛔ TEKRAR · 3,9 · tally 6/4/3 yazdı,
+                etiketler 5/5/2 · BAŞLIK KARTINI gördü ✅ ama FLAGS'e SORU
+                olarak yazdı — kendi rubriği ekran metnini otomatik BLOCKER
+                sayar ve FLAGS'i YASAKLAR (⑤'in 3. vakası) · 0:59'daki SAHNE
+                SINIRINI "gizli kesme 🔴" saydı (compilation kuralını okumadı)
+2_DEVAMLILIK    son koşu 02.09 · mod V (tasarım) · ⚠️ ŞARTLI · 7,8 ·
+                ⛔ `Counter Logic: N/A` — SPEC'te 8→0 kelepçe sayacı var →
+                ölçüm boşluğu [D134 · 2. vaka, ardışık iki filmde]
+                · SETUP INVENTORY "11 kurulum / 4 açı tipi" dedi, SPEC 7/6 der
+3_SES           son koşu 02.09 · mod V (tasarım) · ✅ GO — **partinin tek temiz
+                aritmetiği** · `LINES HEARD: none — nothing audible to me`
+                doğru biçimde yazıldı [D136/D137 tuttu] · 1:59'da "absolute
+                silence 🔴" — rubriğin kendi kuralı ölçülmemiş sessizliğe
+                BLOCKER yasaklıyor; ⑪ koşmadığı için ⬜ AÇIK
+4_HIKAYE        son koşu 02.09 · mod V · ⛔ TEKRAR · 2,7 · kesme listesindeki
+                4 adayın 4'ü yük taşıyor (biri **S6 = NOVUM TAŞIYICISI + TEK
+                KARE**) → UYGULANMADI [D129] · "no peak located" + "I could not
+                find one" → novumu adlandıramadı [D166'nın kaynağı]
+5_ARKA_PLAN     son koşu 02.09 · mod V + üç kilit · ⚠️ ŞARTLI · 4,3 ·
+                ⭐ **partinin en değerli ölçümü**: COUNT LOG S8-S9'da "5 floating
+                hand tools in a row" — SPEC'in sayacı da o iki sahnede 5 der
+                (kimlik kapısının 3. çapası) · SCENES 13 = CUTS 13 (kendi
+                kuralına göre kartsız kurguda sahne = kesme + 1)
+6_FIZIK         son koşu 02.09 · mod V · ⛔ TEKRAR · 6,2 · **PREMISE REGISTER'a
+                filmin TÜRÜNÜ yazdı ("zero-gravity orbital environment"),
+                KURALINI değil** → tek olaydan (planda YAZILI gaz konisi) üç
+                kategoride 13 puan düşürdü → **D166'nın kaynağı** ·
+                24 fps varsaydı (ölçüm yok, doğrulanamadı)
+7_AKSIYON       son koşu 02.09 · mod V · ⛔ TEKRAR · 7,7 (2 kaynaksız hücre
+                `—` oldu) · ⭐ **BEAT STRING'de S6 yuvası `-`** = "bu sahnede
+                vuruş yok"; S6 filmin NOVUM TAŞIYICISI ve TEK KARE sahnesidir
+                · vuruş defterinde TEK BİR ATIŞ yok (film KÜTLE ATARAK ilerler)
+8_EFOR          son koşu 02.09 · mod V · ⛔ TEKRAR · 3,6 (1 kaynaksız hücre) ·
+                tally 0/8/4 yazdı, etiketler 0/5/3 · COST CURVE'de 1 düşüş,
+                RESET LOG'da 0 satır (betik yakaladı) · "weightless work"
+                hükmü — oysa filmde efor KÜTLE ATMAKTIR ve register onu
+                hiç kaydetmedi [D166]
+⑪ ÖLÇÜM         ⛔ KOŞULAMADI — master depoda yok, operatör yol vermedi.
+                ffmpeg kurulu; engel araç değil DOSYA [D125 · 3. vaka]
+```
+
+### 🧭 DERS → RUBRİK İZ DEFTERİ — 165-166 eki
+
+```
+D165 → hiçbir rubriğe işlenmedi · GEREKMEZ · ders rubrik metnine değil
+       KART SIRASINA dokunuyor (AGENTS Kart A + yeni-film SKILL §4);
+       rubrik operatörün gördüğü tek dosyadır, orada karşılığı yok
+D165 → .claude/skills/yeni-film/SKILL.md §4  · "SPEC yazılır yazılmaz paket"
+D165 → AGENTS.md Kart A · YAZ bloğu son maddesi
+
+D166 → 6_FIZIK_QA_CRITIQUE_PROMPT.md   · STEP 0 PREMISE GATE
+       ("NAMING THE MEDIUM IS NOT NAMING A RULE" + boş register uyarısı)
+D166 → 7_AKSIYON_QA_CRITIQUE_PROMPT.md · STEP 0 PREMISE GATE
+       (+ "beat string'e `-` yazmadan önce o sahne kuralın gösterildiği
+        sahne mi diye sor")
+D166 → 8_EFOR_QA_CRITIQUE_PROMPT.md    · STEP 0 PREMISE GATE
+       (+ "itilecek şeyin olmadığı dünyada KÜTLE ATMAK eforun kendisidir")
+D166 → 1_KARE · 2_DEVAMLILIK · 3_SES · 4_HIKAYE · 5_ARKA_PLAN · GEREKMEZ ·
+       bu beş rubrikte PREMISE REGISTER / premise gate YOKTUR (5c taraması
+       koşuldu: "aynı malzemeyi görse aynı hatayı yapar mıydı?" → hayır,
+       çünkü kural kaydı istenmiyor)
+D166 → rubrik_paketle.sh ⑥ enjeksiyonu (süzgeç SATIR değil KAYIT seçer)
+D166 → rapor_kontrol.py ①.6 NOVUM KAPISI (⑥⑦⑧ · ateşleme doğrulandı:
+       THE STILL SWARM 3/3, THE COLD WELD 0/6)
+```

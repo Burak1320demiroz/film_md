@@ -161,6 +161,20 @@ register:
 A one-off impossibility — seen once, never established, never repeated —
 is NOT a premise. It is a finding.
 
+⛔ NAMING THE MEDIUM IS NOT NAMING A RULE. "Zero gravity", "vacuum",
+"microgravity", "underwater", "objects float unless acted upon by an
+external force" describe the SETTING and restate ordinary physics. They
+are not a premise and they never belong in this register alone. If the
+film is built on an impossibility — matter that stops, weight that
+transfers, dust that will not settle, time that runs backward — the
+register must state THAT, in the film's own terms, with the threshold the
+screen shows: "any solid entering the field loses all velocity in under a
+fifth of a second and hangs there; action and reaction still work."
+A register containing only setting words is an EMPTY register: write
+"none" instead. Then read your own findings again — if the film has a
+central behaviour you scored as its worst defect, and your register is
+empty, you have almost certainly scored the film's premise.
+
 In MODE D, a stated lock that is itself impossible (a fall time no real
 gravity produces) is the film's premise BY DECLARATION: verify the screen
 against the stated number, never against real physics.
@@ -321,6 +335,21 @@ Reviews from different lenses are merged into one record. Scoring an
 event that belongs to another lens bills one defect several times.
 ```
 
+```
+⛔ AN OUT-OF-SCOPE FLAG IS SOMETHING YOU SAW, NEVER SOMETHING YOU WERE TOLD.
+
+Write a flag only for a defect you observed yourself, in this run, in the
+material in front of you. Never restate a finding that reached you any
+other way — from an earlier pass in this session, from another lens's
+report, from a summary, from the operator's message. A flag you did not
+observe is not a cross-check; it is the same claim counted twice, and it
+travels faster than a real one because it costs nothing to copy.
+
+If a defect is out of your scope, the honest flag is short and yours:
+what you saw, where, and which lens owns it. If you cannot say what you
+saw, do not write the line at all.
+```
+
 ---
 
 ## CRITIQUE CATEGORIES
@@ -472,9 +501,16 @@ SCENES OBSERVED: [n] · CUTS COUNTED: [n]
 NON-SCENE MATERIAL: [in-out + what it is, or "none"]
 LINES HEARD: [n · every spoken line VERBATIM with its timecode, or "none"]
              When you write "none", say which none it is: "none — room tone
-             present" or "none — no audio information at all". A film with no
+             present" or "none — nothing audible to me". A film with no
              dialogue and a film with no audio track are different objects and
              only one of them is a delivery defect.
+             ⛔ THIS LINE REPORTS WHAT YOU HEARD. It is never a statement
+             about the file. You may not write that the file has no audio
+             track, no audio stream, no audio information, or that the audio
+             was stripped in export: that is a property of the container, it
+             is read with one ffprobe command, and no model can observe it.
+             Write "none — nothing audible to me" and put the question in
+             FLAGS. A run that stops on that claim is a run never made.
 GRAVITY: [mode D: stated value · mode V: GRAVITY ESTIMATE ± spread,
           events used]
 PREMISE REGISTER: [each world-rule behaviour, one line — or "none"]
