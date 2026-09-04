@@ -4,6 +4,18 @@
 > · kapsam: dikey shorts hattı (9:16) — aşağıda §1-6
 > **2. tur — 27.08.2026:** dört rapor (Gravity 2013 yapı sökümü)
 > · kapsam: yatay 10-20 dk hattı + yazılacak YERÇEKİMİ filmi — aşağıda §TUR 2
+> **3. tur — 01.09.2026:** dört rapor (politika yüzeyi · dört motor) — aşağıda §TUR 3
+> **4. tur — 02.09.2026:** dört rapor (hikâye tarafı) — aşağıda §TUR 4
+> **5. tur — 03.09.2026:** dört rapor (astronot donanımı: amblem · eşya ·
+> saat/bilek · yaşam destek) · kapsam: uzay filmlerinin Character Bible'ı
+> — aşağıda §TUR 5
+> **6. tur — 03.09.2026:** dört rapor (diyalog içeriği · `10_DIYALOG_...`
+> promptları) · ham raporlar `TUR6_HAM_RAPORLAR/` altına iniyor —
+> süzmesi AYRI koşuda işleniyor, §TUR 6 bölümü oraya eklenecek
+> **7. tur — 03.09.2026:** dört rapor (uzaylı varlık: tasarım · viral ·
+> AI motoru · astrobiyoloji) · kapsam: filmlere TEK uzaylı varlık ekleme
+> → yeni `UZAYLI_VARLIK_TASARIM_KILAVUZU.md` — aşağıda §TUR 7
+> (⚠️ takvim gereği §TUR 6'nın süzmesinden ÖNCE işlendi)
 > **Bu dosya ne değildir:** kılavuz değildir. Kural buradan okunmaz —
 > kural, aşağıdaki tablonun gösterdiği dosyadan okunur. Bu dosya
 > **bulgunun nereden geldiğini ve neden geçtiğini/geçmediğini** tutar.
@@ -581,4 +593,478 @@ Bulgu şudur: **o %78 hikâyenin YERİNE geçmemeli.** İki sayı aynı bütçed
 · Rapor ④'ün örneklemi tek bir kanaldır (DUST) ve o kanalın kendi
   editoryal seçimi bir ön elemedir.
 · PROB A ve PROB B hâlâ koşulmadı. İç ölçüm yok.
+```
+
+---
+
+# TUR 5 — 03.09.2026 · ASTRONOT DONANIMI (dört derin araştırma)
+
+> **Girdi:** `09_KARAKTER_DONANIM_ARASTIRMA_PROMPTLARI.md`'nin dört
+> promptu, koşuldu.
+> **Kapsam:** amblem/rozet/şerit · kişisel eşya · saat/bilek düzeni ·
+> yaşam destek dış anatomisi — uzay filmlerinin Character Bible'ı.
+> **Tetikleyici:** sahibin isteği — "astronotlar daha detaylı olsun:
+> rozet, karaktere özel eşya, saat, hava ünitesi".
+> **Ham metin:** `TUR5_HAM_RAPORLAR/` — TAM metin + kaynak listeleri.
+> T4'ün "iddia düzeyinde arşiv" kısayolu bu turda ALINMADI (T4'ün kendi
+> şerhi gereği).
+> **İndiği yer:** bulguların neredeyse tamamı TEK yeni dosyaya indi:
+> `../ASTRONOT_DONANIM_VE_KIMLIK_KILAVUZU.md` (03.09.2026'da açıldı).
+
+```
+⚠️ BU TURUN KAYNAK PROFİLİ ÖNCEKİLERDEN FARKLI
+   Tur 4 hakemli çalışma arıyordu; bu tur TARİHSEL DONANIM görselliği
+   arıyor. Kaynaklar ağırlıkla ansiklopedik/ikincil: Wikipedia, müze ve
+   koleksiyoncu siteleri (russianspaceweb · collectSPACE · Kizzi/
+   seb12100030), NASA halk sayfaları, birkaç NTRS dokümanı, saat
+   blogları. Donanımın NEYE BENZEDİĞİ için kabul edilebilir taban;
+   SAYISAL iddialar bağlayıcı değil ve çoğu kılavuza indirilmedi.
+```
+
+---
+
+## T5.0 ⭐ ÇAPRAZ OKUMA — iki çelişki, bir etiket ayrımı
+
+```
+① BİLEK KONTROL LİSTESİ SAYFA BOYUTU — raporlar çelişti:
+   Rapor ② (eşya): "3.5 inç kare (9x9 cm)"
+   Rapor ③ (saat): "3.5 x 2.5 inç (9x6 cm)"
+   → SAYI KILAVUZA İNMEDİ. Kılavuz "avuç içi boyu spiral defter" yazar.
+   (Kayış uzunlukları — ② 19 inç vs ③ 21.5 inç — çelişki DEĞİL:
+   biri liste bandı, öteki saat kayışı.)
+
+② KOMUTAN ŞERİDİ KONUMU — tarih ile öneri ayrıştı:
+   Tarihsel kayıt (rapor ① ve ②): şerit İKİ kola + İKİ diz altına +
+   vizör üstüne dikilir (çift taraflı).
+   Rapor ①'in tasarım önerisi: yalnız SAĞ tarafta asimetrik.
+   → İkisi ayrı etiketle indi: kılavuz tarihî hâli "belgeli", tek-taraf
+   asimetriyi "⭐ öneri" olarak yazar ve öneriyi seçer (asimetri hem
+   karakter ayırır hem ayna/flip hatasını ölçülebilir kılar).
+
+③ GENEL ETİKET AYRIMI: bu turun raporları belgeli ÖLÇÜ ile kendi
+   KURGUSAL TASARIMINI (amblem seti, cm değerleri, renk paletleri) aynı
+   tablolarda verdi. Kılavuzda ikisi ayrılır: tarihsel satır "belgeli",
+   raporun icadı "⭐ öneri". Önerinin cm değerleri BAĞLAYICI DEĞİLDİR.
+```
+
+---
+
+## T5.1 ✅ DEPOYA GİREN BULGULAR
+
+| # | Bulgu | Kaynak · tür | İndiği yer | Tip |
+|:-:|---|---|---|:--:|
+| 1 | **Komutan şeridi geleneği:** ilk Ay yürüyüşlerinde iki beyaz giysi ayırt edilemedi → Apollo 13'ten itibaren komutana kırmızı şeritler; Rus ekolünde ikili sistem (komutan KIRMIZI · mühendis MAVİ şeritli giysi), şerit uzva geniş sarılır | Wikipedia · russianspaceweb (VKD kayıtları) · ikincil | `ASTRONOT_DONANIM` §2 rol→renk→konum sistemi | ⭐ yeni |
+| 2 | **Metinsiz sayılabilir semboloji gelenekleri:** mürettebat sayısı kadar yıldız · altı kişilik ekip için altıgen form · yörünge eğimi kadar açı (Soyuz TMA-15M 51°) — yama bilgiyi SAYIYLA taşıyabiliyor | ESA/ajans sayfaları · ikincil | `ASTRONOT_DONANIM` §3 (sayılabilir öğe = QA kilidi) | ⭐ yeni |
+| 3 | **Yama yerleşim standardı:** sol göğüs görev yaması · sağ göğüs ajans+isimlik · sol omuz bayrak; görev yaması ~10 cm bandı | müze/koleksiyon kaynakları · ikincil | `ASTRONOT_DONANIM` §3 konum tablosu | ✅ belgeli |
+| 4 | **Sırt ünitesi dış anatomisi:** dikdörtgen prizma sırt bloğu (~66×46×24 cm) · altına asılı yuvarlak hatlı yedek O2 modülü · U-profil acil itki paketi + 24 sayılabilir lüle · göğüste açılı metalik kontrol kutusu · altın vizör + 4 lamba + tek kamera | Wikipedia/NASA sayfaları · ikincil | `ASTRONOT_DONANIM` §4 | ⭐ yeni |
+| 5 | **Siluet → hikâye eşlemesi:** modüler+dev çanta=rutin operasyon · yekpare kask-gövde=izole uzun EVA · atletik eklemli=gezegen yüzeyi · sırt çantasız hortumlu=kabin/klostrofobi | rapor ④ yorum katmanı | `ASTRONOT_DONANIM` §4 tablo | ⭐ öneri |
+| 6 | **Gösterge konvansiyonu:** O2 basıncı ANALOG ibre (güç kesilse de çalışır, yeşil/sarı/kırmızı dilim) · kalan süre segmentli soluk yeşil ekran · panel yazıları TERS basılı → sağ bilekte AYNA ile okunur | NASA/EMU dokümanları (scribd kopyaları) · ikincil | `ASTRONOT_DONANIM` §5, §6 | ⭐ yeni |
+| 7 | **Alarm imzası "warble":** dalgalanan frekanslı elektronik ötme; sarı yanıp sönen=ikaz, kırmızı yanıp sönen=kritik; kritiklik arttıkça tizleşir | C&W sistem tarifi · ikincil | `ASTRONOT_DONANIM` §5 AUDIO kalıbı (MACHINE register) | ⭐ yeni |
+| 8 | **Arıza görselliği üç belgeli vaka:** vizör buğusu/körlük (Gemini 9A) · kask içinde su kütlesi (2013 EVA-23) · süblimatör buhar jeti (~1 m görünür bulut, NTRS) | görev kayıtları · NTRS · ikincil | `ASTRONOT_DONANIM` §5 arıza tablosu | ⭐ yeni |
+| 9 | **Saatin durma fiziği:** mekanik→vakumda yağ buharlaşması (outgassing) + termal kilitlenme · LCD→gölge soğuğunda donar/kararır · elektronik→radyasyonla bit kayması/kalıcı arıza. YERÇEKİMİ'nin "its hands stopped" çapası fiziksel olarak meşrulaştı | triboloji/NTRS + saat kaynakları · karışık | `ASTRONOT_DONANIM` §6 | ⭐ gerekçe |
+| 10 | **Bilek düzeni:** sol kol=iş+zaman (liste dirseğe yakın, kronograf bileğe yakın, giysi ÜZERİNE uzun kayışla) · sağ kol=okuma+ölçüm (ayna, basınç göstergesi, dozimetre) | Apollo/EMU kaynakları · ikincil | `ASTRONOT_DONANIM` §6 | ⭐ yeni |
+| 11 | **Saatin dramatik işlevi:** yörüngede güneş ~45 dk'da bir doğar/batar; saat gece-gündüz geçişini, kalan O2'yi ve görev fazını sayar — "kalan süre" sahnesi kadranla kurulur, rakamla değil | görev pratiği · ikincil | `ASTRONOT_DONANIM` §6 | ⭐ yeni |
+| 12 | **Kişisel eşya gelenekleri:** kişisel kit (PPK) · kordonlu peluş "yerçekimi göstergesi" (Gagarin'den bugüne, belgeli vaka listesi hamda) · kontrol listesi karikatürleri · D-ring tılsımı · ilk uzay müziği (mızıka+çanlar) | Wikipedia/collectSPACE · ikincil | `ASTRONOT_DONANIM` §8 eşya→vuruş tablosu | ⭐ yeni |
+| 13 | **Eşya fizik kuralları:** basınçlı EVA eldiveni ince eşyayı TUTAMAZ (ince motor beceri ~0 → duygusal eşya sahnesi kabin içi/eldivensiz) · serbest eşya havalandırma akımıyla menfeze sürüklenir (her eşya bağlı YA DA gidişi sahne olayı) | giysi mühendislik kaynakları · ikincil | `ASTRONOT_DONANIM` §8 iki kural | ⭐ yeni |
+| 14 | **Üç eşya tasarım ilkesi:** karakter başına ≤2 eşya · yüksek kontrast · asimetrik konum | rapor ② derlemesi | `ASTRONOT_DONANIM` §1, §8 | ⭐ yeni |
+| 15 | **AI devamlılık risk sınıfları:** düşük=küre/prizma/360° şerit · orta=sayılı küçük öğeler (lamba, nokta — sayı halüsinasyonu) · yüksek=serbest hortum ucu, küçük metin. Deponun D34/D45/D138 metin dersleriyle ve "no pack/hose" negatif çapa pratiğiyle örtüşüyor | raporların kendi çıkarımı (kaynakları blog/forum) | `ASTRONOT_DONANIM` §0③, §7 | ⚠️ pratik kural |
+| 16 | **Kurgusal metinsiz amblem seti** (şevron rozet · altıgen yama + altın noktalar · köşegen iki renkli sancak · sırtta parlayan üçgen) + jenerik saat tanım tablosu (marka yerine) | raporların kendi tasarımı | `ASTRONOT_DONANIM` §3, §6 | ⭐ öneri |
+
+---
+
+## T5.2 ⭐ BU TURUN EN NET SATIRI
+
+```
+Deponun mevcut bible pratiği (YERÇEKİMİ) araştırmadan BAĞIMSIZ yazılmıştı
+ve dört katmanın üçünü zaten minimal taşıyordu:
+  şerit rengi (ORANGE/NAVY) · durmuş çelik saat · altı segmentli halka ·
+  "no pack, tank, hose or cable" negatif çapası.
+Tur 5 bunların hiçbirini kurmadı — GEREKÇESİNİ ve SİSTEMİNİ kurdu:
+şerit artık rol koduna, durmuş saat vakum fiziğine, negatif çapa risk
+sınıfına bağlı. Yeni olan bilgi değil, SEÇİM TABLOSU.
+```
+
+---
+
+## T5.3 🔧 UYGULANAN DÜZELTMELER (03.09.2026, aynı gün)
+
+```
+① ASTRONOT_DONANIM_VE_KIMLIK_KILAVUZU.md AÇILDI (yeni dosya) —
+   dört katman modeli · rol şeridi · metinsiz amblem · sırt silueti ·
+   gösterge/alarm/arıza · bilek+saat · risk sınıfları · eşya sistemi ·
+   bible'a indirme reçetesi. Belgeli/⭐ öneri etiketleri içeride.
+② KILAVUZ_REHBERI §1 "Türe göre ek okuma" Bilimkurgu satırına eklendi
+   (kadrajda basınç giysili karakter varsa · bible'dan ÖNCE).
+③ AGENTS.md §1 depo haritasına satır eklendi.
+④ SAHNE_DEVAMLILIK §2'ye, KARAKTER_VE_DUYGU §4.4'e ve UZAY_SENARYO
+   başlığına tek satırlık işaretçi kondu (içerik kopyalanmadı).
+⑤ Dört promptun kendisi 09_KARAKTER_DONANIM_ARASTIRMA_PROMPTLARI.md
+   olarak donduruldu (07/08 geleneği); ham raporlar TUR5_HAM_RAPORLAR/.
+```
+
+---
+
+## T5.4 ⛔ DEPOYA GİRMEYENLER — dürüst kayıt
+
+| Bulgu | Neden girmedi |
+|---|---|
+| **Müzayede/koleksiyon fiyatları** (Ay'da takılan saatin satış fiyatı vb.) ve marka pazarlama tarihi (MoonSwatch, NASA×G-Shock sürümleri) | Kurala çevrilemez trivia; marka adı zaten prompta giremez. Jenerik tanım tablosu alındı, marka tarihi alınmadı. |
+| **Kişisel kit skandal/idari tarihi** (posta zarfı vakası, onay süreleri, kütle limitleri) | İdari veri — görsel/dramaturjik karşılığı yok. Kitin KENDİSİ (kese + kapaklı cep) ve eşya vakaları alındı. |
+| **Mühendislik basınç/eşik sayıları** (4.3/5.8 psi, CO2 mmHg eşikleri, lüle itki değerleri, 11 sertifikasyon testinin parametre tablosu) | Kaynaklar ikincil kopyalar; ve sayı prompta da plana da inmiyor — görsel karşılığı olan KONVANSİYON (renk dilimi, alarm tipi, siluet sertliği) alındı, sayının kendisi hamda kaldı. |
+| **"AI difüzyon uzayı küreleri/küpleri iyi taşır" mekanizma anlatımı** | Kaynakları blog/forum/pazarlama (Seedance rehber siteleri, reddit). Mekanizma İDDİASI alınmadı; risk SINIFLARI, deponun kendi ders kayıtlarıyla örtüştüğü için ⚠️ pratik kural olarak alındı (T5.1 #15). |
+| **Rapor ①'in kurgusal amblem cm değerleri** (8.5 cm rozet vb.) | Ölçüm değil tasarım icadı; set ⭐ öneri olarak indi ama cm değerleri BAĞLAYICI DEĞİL etiketiyle. |
+| **Kask içi HUD** (yeni nesil giysi tanıtımları) | Deponun retro-analog görsel diliyle çelişir; ekran+metin çift riski. İhtiyaç doğarsa ayrı karar. |
+| **Bilek listesi sayfa boyutu** (9×9 vs 9×6 cm) | Raporlar arası çelişki [T5.0①] — sayı yerine tarif indi. |
+| **First Man bileklik sahnesinin "gerçek" olduğu iması** | Raporun kendisi varsayım (conjecture) olduğunu yazıyor; kılavuza KURGU etiketiyle indi, belgeli benzer jest (yüzeye bırakılan aile fotoğrafı) ayrıca işaretlendi. |
+
+---
+
+## T5.5 📌 SAHİBE İKİ NOT — bu turun DIŞINDA kalan iki karar
+
+```
+① AMBLEM SETİ = SERİ KİMLİĞİ Mİ?
+   §3'ün kurgusal amblem dili tek filme de yazılabilir, kanalın üç
+   hesabının ortak imzası da olabilir (KANAL_KIMLIGI palet/Λ ile
+   hizalanır). Seri imzası yapılacaksa renkler kanal paletinden
+   türetilmeli — karar senin (SERI_VE_KANAL_STRATEJI §3).
+② ESKİ FİLMLERE GERİYE DÖNÜK UYGULANMAZ.
+   Kelimesi kelimesine kural gereği üretimi başlamış/bitmiş filmlerin
+   bible'ları değiştirilmez; kılavuz yeni filmde ilk kez tam koşulur
+   ve T1/T2 skorlarıyla sınanır.
+```
+
+---
+
+## T5.6 ⬜ BU TURUN SINIRI
+
+```
+· Dört raporun dördü de DIŞ bilgidir; depoda yayınlanmış film HÂLÂ 0.
+· Kaynak profili ansiklopedik/ikincil — tarihsel görsellik için yeterli,
+  sayısal iddialar için değil. Hakemli tek bir çalışma yok.
+· "Siluet → hikâye" eşlemesi ve risk sınıfları raporların YORUMUDUR;
+  ölçülmüş izleyici/üretim verisi değildir.
+· Kılavuzun hiçbir çapası üretimde denenmedi. İlk yeni filmde
+  prompt_kontrol + ① KARE + ② DEVAMLILIK bu turun gerçek sınavıdır;
+  sayı halüsinasyonu (lamba/nokta/yıldız) özellikle izlenecek.
+```
+
+---
+---
+
+# TUR 7 — 03.09.2026 · UZAYLI VARLIK (dört derin araştırma)
+
+> **Girdi:** dört rapor (yaratık tasarımı · viral dinamikler · AI motoru ·
+> astrobiyoloji/ilk temas). Ham metinler `TUR7_HAM_RAPORLAR/` altında TAM
+> hâliyle korundu (Tur 4'ün "bir sonraki turda kısayol alınmaz" sözü
+> tutuldu). **Çıktı:** yeni `UZAYLI_VARLIK_TASARIM_KILAVUZU.md`.
+> **Tetikleyici:** sahip kararı (03.09.2026) — "filmlere uzaylı canlılar
+> eklemek istiyorum, viral olacak."
+
+```
+⚠️ KOŞU KAYDI SAPMASI — dürüst sınır
+   `11_UZAYLI_TASARIM_ARASTIRMA_PROMPTLARI.md` bu tur için DÖRT FARKLI
+   prompt rezerve etmişti (görkem mekanizması · güvenli morfoloji ·
+   dolaylı varlık · temas dramaturjisi) ve o promptlar HÂLÂ KOŞULMADI.
+   Koşulan, oturumda yazılmış dört başka prompttur; metinleri ham rapor
+   dosyalarının başında birebir korunur. 11'in dört sorusundan üçü bu
+   turun raporlarınca KISMEN kapandı (aşağıda T7.1); "görkem ölçütleri"
+   sorusu tam kapanmadı — 11 istenirse ayrı tur olarak koşulabilir.
+
+⚠️ EN ÖNEMLİ KAYIT — DEĞİŞMEDİ
+   Yayınlanmış film sayısı hâlâ 0. Bu turun bütün satırları dış
+   hipotezdir; üstelik depo uzaylıyı bugüne dek yalnız GÖSTERMEDEN
+   kullandı — kılavuzun tamamı ilk uygulamada sınanacak.
+```
+
+---
+
+## T7.1 🎯 DÖRT SORU, DÖRT HÜKÜM
+
+| # | Sorulan | Hüküm |
+|:-:|---|---|
+| 1 | İkonik yaratığı ne ikonik yapıyor? | ✅ MEKANİZMA GELDİ: kategori ihlali (Carroll) + siluet önceliği + göz kararı (var=empati/yok=dehşet) + asimetri ve hareket dili. Küçük ekran bulgusu net: sıkıştırma ince dokuyu siler, hayatta kalan SİLUET + KONTRAST. → kılavuz §2-3 |
+| 2 | Reveal zamanlaması ve viral eksen? | ✅ İKİ RAPOR AYNI YÖNÜ verdi: az göster / kademeli reveal; HADD + merak boşluğu mekanizması. Duygu→davranış eşlemesi Tur 1'in Xi (2024) satırını BAĞIMSIZ doğruladı (huşu=paylaşım · kaygı=yorum). Platform yüzdeleri ELENDİ (T7.2). → kılavuz §1, §5 |
+| 3 | AI motorları insan-dışı formu taşıyor mu? | ⚠️ YARIM: motor kıyas tablosu ve puanları ELENDİ (motor seti bizim değil, kaynak SEO). Motor-BAĞIMSIZ mekanikler sağlam ve deponun kendi dersleriyle örtüşüyor: oklüzyon halüsinasyonu · insan-anatomisi yamama · kamera taşır/özne mikro-hareket · sayılabilir pozitif anatomi. → kılavuz §3-4 |
+| 4 | Bilimsel temel inandırıcılığı artırır mı? | ✅ EN SAĞLAM RAPOR: azotozom (Cornell) · D. radiodurans/manganez · M-cüce abiyotik O2 · red edge (NAOJ) · pSTS biyolojik hareket algısı · Tandy 19 Hz — hepsi gerçek literatür. ÖLÇÜM/SPEKÜLASYON çift satırlı tasarım kartı formatı kılavuza alındı. İlk temas 5'lisinden kısa formata uyanlar: sessiz gözlem · iletişim çabası · kalıntı keşfi. → kılavuz §6, §9 |
+
+---
+
+## T7.2 🚨 DEPOYA GİRMEYENLER — dürüst kayıt
+
+| Bulgu | Neden GİRMEDİ |
+|---|---|
+| **Platform yüzde blokları** (ilk 3 sn = tutundurmanın %65-84'ü · iyi kanca +%340 etkileşim · merak boşluğu +%22 viral · TikTok %78 / Shorts %73 / IG %65 tutundurma tablosu · "%92 = 3x çarpan" · "yorum beğeniden 15 kat ağır") | Kaynaklar SEO/pazarlama siteleri (virvid, socialync, bigmotion, swiftia…). Tur 1'in "rakip kanal tablosu" vakasıyla aynı sınıf: ölçülmemiş, çıkarılmış. MEKANİZMALAR (örüntü kırıcı · merak boşluğu · orta-video kancası) zaten Tur 1'den beri HOOK'ta; sayılar alınmadı. |
+| **Motor kıyas tablosu + fizik puanları** (Sora 9.8 · Kling 9.5 · "Kling 3.0" · "Sora 2 4K/60 sn" sürüm iddiaları) | Motor seti deponunki değil (NBP/NB2/OSMI/VEO); kaynaklar motor pazarlama/SEO siteleri; puanlar metodolojisiz. Motor-bağımsız MEKANİKLER alındı (T7.3), tablo alınmadı. |
+| **"50-80 kelime kısa prompt" kuralı** | ⛔ DEPONUN KENDİ ÖLÇÜMÜYLE ÇELİŞİYOR: zorunlu bloklar ~1.900 karakter, tavan 4.300 (prompt_kontrol sözlüğü); düzinelerce video bu bantla üretildi. "Tek ana eylem/klip" çekirdeği zaten depo kuralı — o alındı, kelime sayısı alınmadı. |
+| **Negatif anatomi listesi** ("deformed limbs, extra limbs, missing fingers…" negatif prompta) | ⛔ D123 ile çelişir: yasak kelime promptun içine girer, sınıflandırıcı "no" okumaz; "deformed" ayrıca politika yüzeyi açar. Yerine POZİTİF SAYILABİLİR kilit standardı yazıldı (kılavuz §4) — deponun CREATURE ANATOMY LOCK geleneğinin genelleştirilmişi. |
+| **Bodycam/found-footage estetiği önerisi** ("kusurlu görüntü inandırıcılık satın alır") | Mekanizma belgeli ama deponun KİMLİĞİYLE çelişir: negatif çekirdek fotogerçekçi-sinematik, bodycam UI okunur metin ister (yasak), kanal kimliği tek estetik. Karar sahibine → T7.4 ①. |
+| **"Görsel hata/easter egg gizle, yorum avla"** | ⑤ ARKA PLAN merceğiyle çelişir: yazılmamış anomali QA'da HATA sayılır ve skoru düşürür. Ancak SPEC'e kilit olarak yazılırsa meşru olabilir → T7.4 ③. FINAL_VE_PAYLASIM'ın tohum bilgi %10-15 kuralı zaten aynı işi görür. |
+| **JSON/yapılandırılmış prompt formatı** | Tek kaynak (Higgsfield pazarlaması + Discord anekdotu); deponun V2 iskeleti (IMAGE_VIDEO_PROMPT_TEMPLATES) zaten blok yapılı. Format değişikliği ölçüm olmadan yapılmaz. |
+| **Kling "grab→romantik" anekdotu, Raine vs. OpenAI dava iması, kredi/İadeler** | Anekdot/doğrulanamaz; motorlar kapsam dışı. (Kredi iadesi yok kuralı zaten T3'ten kayıtlı.) |
+| **Akustik levitasyon = biyolojik uçuş** köprüsü | Fizik gerçek (BAW/ARF), köprü raporun KENDİ İCADI — kılavuza ⭐ ilham etiketiyle indi, mekanizma iddiası olarak inmedi. |
+| **"18-19 Hz infrasound izleyiciyi ürpertir" uygulaması** | Mekanizma belgeli (Tandy · NASA 19770013810) ama Tur 1 ölçümüyle ÇELİŞİR: 150 Hz altı telefonda YOK. Telefon-birincil hatlarda kullanılamaz → T7.4 ② ve kılavuz §8'e yasak+ikame olarak yazıldı. |
+| **"Emperor Sea Strider 190 m" tipi kurgu-içi sayılar** | Kurgu eserinin iç verisi; ilham havuzunda kaldı, kural üretmedi. |
+
+**✅ Sağlam kabul edilenler:** Carroll *The Philosophy of Horror* (1990) ·
+Mori uncanny valley · Clasen tehdit simülasyonu + pandemi dayanıklılık
+çalışması · Scrivner morbid merak ölçeği (4 boyut) · Loewenstein bilgi
+boşluğu (Tur 1'le aynı) · Berger & Milkman uyarım modeli (Tur 1'de
+kısmen çürüyen sınırıyla birlikte) · Aarhus Recreational Fear Lab
+ters-U eğrisi · Giger/Huante/Weta/Dabiri tasarım röportajları (birincil
+ağız) · Cornell azotozom simülasyonu · ALMA akrilonitril tespiti ·
+D. radiodurans literatürü · NAOJ red edge analizi · pSTS/hMT+ biyolojik
+hareket algısı literatürü · Tandy & Lawrence (1998) 18.98 Hz vakası ·
+Arrival/Annihilation ses tasarımı vaka anlatımları (birinci ağız) ·
+Barlowe *Expedition* · Bisson *They're Made Out of Meat*.
+
+---
+
+## T7.3 📍 BULGU → HANGİ DOSYA (uygulama kaydı, 03.09.2026)
+
+| Bulgu | İşlendiği yer | Tip |
+|---|---|:--:|
+| Niyet ekseni (huşu/dehşet/empati) + duygu→davranış eşlemesi Tur 1'i bağımsız doğruladı | `UZAYLI_VARLIK` §1 **(yeni kılavuz)** · `FINAL_VE_PAYLASIM` §5 doğrulama kaydı bu satırdır | ✅ çapraz doğrulama |
+| Siyah leke testi · tek şablon + tek ihlal · overdesign yasağı · sıkıştırma → siluet/kontrast bütçesi | `UZAYLI_VARLIK` §2 | ⭐ yeni |
+| Göz kararı: yok=dehşet · memeli=empati · yüzsüz=huşu | `UZAYLI_VARLIK` §2 | ⭐ yeni |
+| Dikeyde ölçek dikey eksende kurulur (sarkan/yükselen) | `UZAYLI_VARLIK` §2 | ⭐ yeni — dikey hat için |
+| Canlı okutan hareket imzaları (eşitsiz ivme · öncü organ · yavaş nötr) ↔ mekanik okutan hatalar (loop · snap-back) | `UZAYLI_VARLIK` §3 | ⭐ yeni — AI ALGISI'nın yaratık karşılığı |
+| Kütle kanıtı zorunlu (toz · gölge · zemin) — AI slop üç ifşacısının karşı-çapaları | `UZAYLI_VARLIK` §3 | ⭐ yeni |
+| Hareket bandı sentezi: ne çılgın aksiyon ne tam donma → ambiyant mikro hareket + kamera taşır | `UZAYLI_VARLIK` §3 — T2.3 minimal-motion kaydıyla SENTEZLENDİ | ⭐ sentez |
+| Oklüzyon halüsinasyonu + insan-anatomisi yamama → orbit yasağı (yay ≤ 90°) + üç görünümlü referans + I2V | `UZAYLI_VARLIK` §4 | ⭐ yeni — mekanizma deponun start/end tekniğini doğruluyor |
+| POZİTİF sayılabilir anatomi kilidi standardı (KART 2 lock'unun genelleştirilmesi) | `UZAYLI_VARLIK` §4 · `02_RISK_KARTLARI` KART 2 işaret satırı | ✅ güçlendirme |
+| Reveal merdiveni K0-K4 + VARLIK ŞERİDİ (plana yazılan yeni dize) | `UZAYLI_VARLIK` §5 | ⭐ yeni — ⚠️ az-göster hâlâ hipotez |
+| ÖLÇÜM+SPEKÜLASYON çift satırlı VARLIK KARTI formatı + 3 ilham kartı | `UZAYLI_VARLIK` §6 | ⭐ yeni |
+| Klişe→alternatif tablosu (gri uzaylı · insansı · salyalı çene · ışınlanma · theremin) | `UZAYLI_VARLIK` §6, §8 | ⭐ yeni |
+| Varlık kelime sözlüğü (tentacle · gore/flesh · mutant/deformed · IP adları) — ⚠️ HİPOTEZ, betiğe İNMEDİ | `UZAYLI_VARLIK` §7 · `POLİTİKA` §2.5 **(yeni blok)** | ⚠️ hipotez |
+| Islak iç doku + kırmızı ışık = gore imzası BİLEŞİK riski | `UZAYLI_VARLIK` §7 — T3 imza ⑦'nin yaratık hâli | ⭐ genişletme |
+| Organik ses kaynağı zorunluluğu + nötr insan izi gömme (çığlıksız) + sessizlik bıçağı | `UZAYLI_VARLIK` §8 | ⭐ yeni |
+| İnfrasound ↔ telefon çelişkisi → missing-fundamental ikamesi | `UZAYLI_VARLIK` §8 · çelişki T7.4 ② | ⚠️ çelişki çözümü |
+| İlk temas 5'lisi → kısa format uygunluk tablosu (sessiz gözlem · iletişim · kalıntı ✅) | `UZAYLI_VARLIK` §9 | ⭐ yeni |
+| Ontolojik sarsıntı > fiziksel tehdit (Meat mekanizması) — gerçek novum tanımına bağlandı | `UZAYLI_VARLIK` §9 · `ONERME_VE_NOVUM` ile uyumlu | ⭐ yeni |
+| Uzay operası yasağı KORUNDU; tek varlık istisnası netleşti | `UZAY_SENARYO` §3 işaret satırı · `UZAYLI_VARLIK` §0① | ✅ sınır çizimi |
+
+---
+
+## T7.4 ⚖️ AÇIK ÇELİŞKİLER — 03.09.2026 sahip kararlarıyla durum
+
+> ✅ **03.09.2026 — ① · ③ · ④ proje sahibince KARARA BAĞLANDI** (aynı gün):
+> ① kusurlu estetik "gerekirse bazı filmlerde" · ③ bilinçli tohum SERBEST
+> (SPEC kilidi şartıyla, rubrik DEĞİŞMEDİ) · ④ görkem promptları
+> KOŞULACAK (TUR 8 olarak, odak: büyüklük/asillik). ② itiraz gelmedi,
+> kılavuz kararı yürürlükte.
+
+```
+① ESTETİK KİMLİK ↔ KUSURLU GÖRÜNTÜ — ✅ KARARA BAĞLANDI
+   Sahip: "gerekirse bazı filmlerde olabilir." Uygulama koşulları
+   UZAYLI_VARLIK §9'a yazıldı: film başına bilinçli karar + plana
+   yazılır · METİNSİZ kusur (timestamp/REC yazısı yasak kalır) ·
+   kanal ana kimliği sinematik kalır.
+
+② İNFRASOUND ↔ TELEFON HOPARLÖRÜ — yürürlükte
+   Dikey hatta yasak; his 150 Hz üstü missing-fundamental ikamesiyle
+   (UZAYLI_VARLIK §8). Yatay/TV hattında ancak yayın verisiyle denenir.
+
+③ BİLİNÇLİ TOHUM ↔ ⑤ MERCEK — ✅ KARARA BAĞLANDI (rubrik değişmedi)
+   İlk çözüm adayı (rubriğe SPEC okutmak) ⑤'in video-only tasarımını
+   bozacaktı — rubrik SPEC almaz ve almamalı. Kalıcı çözüm mevcut
+   mimariyle: SPEC C bloğuna PLANTED DETAIL kilidi; ⑤ tohumu bulursa
+   bu fark-edilebilirlik ÖLÇÜMÜdür, kilit çelişkisi defterinde
+   "BİLİNÇLİ TOHUM — film sapmadı" olarak kapatılır. Kilitsiz tohum
+   hâlâ hata. Ayrıntı: UZAYLI_VARLIK §5.
+
+④ GÖRKEM PROMPTLARI — ✅ KOŞULACAK
+   Sahip odağı: "büyüklüğü veya asilliği tarzı." 11'in dört promptu
+   TUR 8 olarak koşulacak; ham metinler TUR8_HAM_RAPORLAR/ altına,
+   süzme §TUR 8'e. 11'deki eski TUR 7 hedef adresleri düzeltildi.
+```
+
+---
+
+## T7.5 🚦 BU TURDAN ÇIKAN SIRA
+
+```
+1. İLK UZAYLI FİLMİ yazılırken: Kart A akışına UZAYLI_VARLIK kılavuzu
+   girer (risk kartlarıyla aynı adım) → §1 niyet satırı + §6 varlık
+   kartı + §5 VARLIK ŞERİDİ plana yazılır.
+2. Varlık K0-K2 kademeleriyle SINIRLI bir ilk film en ucuz sınavdır:
+   KART 2 riski asgari, kılavuzun yarısı yine test edilir (iz · çevre
+   tepkisi · ses · anlatı) — tam form (K4) ikinci filme bırakılabilir.
+3. Promptlar yazılınca Kart P aynen; varlık bloğunda §7 sözlüğü elle
+   taranır (betiğe inmedi, ölçüm yok).
+4. İlk red → 09_URETIM_RED_DEFTERI satırı MOTOR ile; tetik §7
+   tablosundaki kelimeyse ⚠️ etiketi ölçüme döner.
+5. İlk QA skorları geldiğinde bu bölüm yeniden okunur; tutmayan kural
+   kılavuzdan DÜŞÜRÜLÜR, kaydı buraya yazılır.
+```
+
+---
+
+## T7.6 ⬜ BU TURUN SINIRI
+
+```
+· Dört raporun dördü de DIŞ bilgidir; yayınlanmış film 0, üretilmiş
+  uzaylı karesi 0. Kılavuzun tamamı hipotez statüsündedir.
+· Rapor 2'nin bütün sayıları ve rapor 3'ün motor tablosu ELENDİ;
+  bu turdan hiçbir platform yüzdesi hiçbir kılavuza inmedi.
+· Rapor 4 en sağlam kaynak profiline sahip (hakemli + birincil ağız);
+  rapor 2 en zayıfına (SEO ağırlıklı). Süzme buna göre asimetrik koştu.
+· "Az göster" deponun eski hipoteziydi; iki rapor aynı yönü verdi ama
+  ÖLÇÜM hâlâ yok — ilk yayın verisi gelene kadar ⚠️ etiketi kalkmaz.
+```
+
+# TUR 6 — 03.09.2026 · DİYALOG (dört derin araştırma)
+
+> **Girdi:** `10_DIYALOG_ARASTIRMA_PROMPTLARI.md`'nin dört promptu, koşuldu.
+> **Kapsam:** replik kalitesi ölçütleri · alt metin/bilgi yükü · konuşma
+> İngilizcesi + telsiz/makine registerı · hakem güvenilirliği.
+> **Tetikleyici:** sahibin isteği — "filmlere hikâyeyle uyumlu, tamamen
+> İngilizce, planlı diyalog; önce eleştiriyi nasıl yapacağımızı kur."
+> **Ham metin:** `TUR6_HAM_RAPORLAR/` — TAM metin + kaynak listeleri.
+> **İndiği yerler:** ⭐ YENİ KAPI `../PROMPT_KONTROL/DIALOGUE_CRITIQUE_PROMPT.md`
+> (yazım anı diyalog eleştirisi, Kart P 2b) · `../SES_VE_DIYALOG_URETIM_KILAVUZU.md`
+> §2a (içerik/doğallık kuralları) · `../FILM_KLASOR_SABLONU/FILM_PLAN.md`
+> (replik tablosu + B5 bloğu).
+
+```
+⚠️ BU TURUN KAYNAK PROFİLİ İKİYE BÖLÜNÜYOR
+   Rapor 1/2/4 ağırlıkla hakemli (korpus dilbilimi · fMRI/psikoloji ·
+   NLP meta-değerlendirme) + kuram kitabı ve stüdyo/yarışma kılavuzu.
+   Rapor 3'ün İLK yarısı hakemli korpus (LGSWE · BNC · CROWDED ·
+   translationese); İKİNCİ yarısı (telsiz sayıları · makine sesi ·
+   TTS/prosodi) raporun KENDİ beyanıyla KAYNAKSIZ hipotezdir.
+   Rapor 4'ün sayılarının bir kısmı arXiv ön baskı / kurum raporu —
+   TASARIM KARARLARI indi, sayıların kendisi hiçbir belgeye İNMEDİ.
+```
+
+---
+
+## T6.0 ⭐ ÇAPRAZ OKUMA — planlanan iki çift + bir depo çaprazı
+
+```
+① 1↔4 (ölçüt ↔ ölçütün güvenilirliği) — ÇELİŞKİ DEĞİL, KISIT ÜRETTİ:
+   Rapor 1'in endüstri pratiği diyaloğu 1-10 puanlıyor (Black List).
+   Rapor 4 tam bu pratiğin tabanını çürütüyor: öznel eksende insan
+   uyuşması 0.14-0.39 · mutlak Likert LLM'de ±1-2 puan gürültü ·
+   "puanlayıcı değil ETİKETLEYİCİ" mimarisi (DramaBench) insan
+   doğrulamasından geçmiş tek yaklaşım.
+   → HÜKÜM: yeni diyalog kapısı SAYI ÜRETMEZ. Satır başına kategorik
+     etiket + üçlü film hükmü (GO / REWRITE). Rapor 1'in MEKANİK
+     testleri (silme · swap · duygu-kelime taraması) rubriğin omurgası
+     oldu — rapor 4'e göre uyuşma tam da böyle ikili/yapısal testlerde
+     yüksek. 1-10 diyalog puanı hiçbir belgeye inmedi.
+
+② 2↔3 (alt metin ↔ telsiz kısalığı) — ÇELİŞKİ YOK, MEKANİZMA BİRLEŞTİ:
+   2 "duyguyu söyleme, sakla" der; 3'ün telsiz registerı zaten kısalık
+   dayatır VE kendi mekanizmasını verir: gerçek kayıtlarda duygu
+   KELİMEYE değil PROTOKOLE sızar (readback atlanır, filler girer,
+   ritim bozulur). Kısalık alt metnin engeli değil TAŞIYICISIDIR.
+   → HÜKÜM: "duygu = protokol sapması" §2a'ya ⬜ HİPOTEZ etiketiyle
+     indi (3'ün o yarısı kaynaksız); replik düzeyinde on-the-nose
+     yasağı (2, kaynaklı) aynı davranışı kaynaklı taraftan kilitler.
+
+③ DEPO ÇAPRAZI — Mayer gereksizlik ilkesi ↔ D78 çift kanal kuralı:
+   İlk bakışta çelişir ("aynı bilgiyi iki kanaldan verme" ↔ "görsel
+   kanal ile sesli kanal aynı sayıyı söyler"). ÇÖZÜM: Mayer'in ölçtüğü
+   şey SÖZ + EKRAN METNİ birebir tekrarıdır (altyazı bottom-up okumayı
+   zorlar, dikkat böler); D78 ise söz + GÖRSEL OLAY (gösterge değil,
+   ekranda metin hiç yok). Depo metni zaten yasaklıyor [D40: "heard
+   only — never shown as text"] → TUR 6, D40'ın DIŞ DOĞRULAMASI oldu.
+   D78 ayakta; sınır notu §2a.3'e yazıldı.
+```
+
+---
+
+## T6.1 ✅ DEPOYA GİREN BULGULAR
+
+| # | Bulgu | Kaynak · tür | İndiği yer | Tip |
+|:-:|---|---|---|:--:|
+| 1 | **Üçlü karar ölçeği** (Pass/Consider/Recommend) — diyalog kararının endüstri biçimi sayı değil hüküm; Recommend dilimi ~%3-5 | stüdyo/platform kılavuzları · yazar söyleşileri · ikincil | `DIALOGUE_CRITIQUE` verdict tasarımı (GO/REWRITE) | ✅ |
+| 2 | **On-the-nose kanonik tanımı:** alt metnin metne çökmesi; "melodramın sorunu aşırı ifade değil yetersiz motivasyon" | McKee *Dialogue* 2016 · Weiland · kuram kitabı/danışman | `DIALOGUE_CRITIQUE` T2 · `SES_VE_DIYALOG` §2a.2 | ⭐ yeni |
+| 3 | **Beş mekanik test:** replik SİLME testi · karakter SWAP testi (karakter-nötr dil) · soyut kelime yasağı · sesli-kendi-kendine-konuşma = infodump · duygu-adlandıran kelime taraması | danışman yayını · atölye kılavuzu · yazar blogu | `DIALOGUE_CRITIQUE` T1/T2/T4 prosedürleri | ⭐ yeni |
+| 4 | **Korpus bantları:** senaryo repliği ort ~13 token · diyalog başına ~4 tur · GERÇEK konuşma ~6.9 kelime/tur ve birimlerin 1/3'ü cümlecik-değil (ort 2 kelime) → senaryo dili konuşmadan UZUN yazılıyor, doğala çekmek = kısaltmak | Cornell 2011 · Movie-DiC 2012 · LGSWE 1999 · hakemli | `SES_VE_DIYALOG` §2a.5 (tarif olarak; sayılar burada kaldı) | ✅ |
+| 5 | **Övülen/eleştirilen diyalog sayısal ayrışıyor:** düşük duygu-değerlik (mesafeli üslup) + dengeli söz dağılımı ↑ puanla ilişkili; salt diyalog metninden başarı tahmini mümkün | PLOS One vb. hakemli NLP | on-the-nose yasağının ölçüm gerekçesi (§2a.2) · iki insanlı filmde sıra dengesi notu (§2a.4) | ✅ |
+| 6 | **Alt metin = Zihin Kuramı ağı:** dolaylı ifade mPFC/TPJ'yi düz anlamdan güçlü aktive eder — düz söylenen replikte izleyicinin çıkarım işi ELİNDEN ALINIR | Uchiyama 2006/12 · Abraham 2008 · hakemli fMRI | `SES_VE_DIYALOG` §2a.2 gerekçe satırı | ⭐ yeni |
+| 7 | **Bilgi = SİLAH:** exposition çatışmaya gömülür, "As you know" yasak; sıkıcı bilgi güçlü görsel eylemle eşzamanlı verilir (Pope in the Pool); replik başına tek yeni bilgi (beat) | McKee 1997/2016 · Snyder 2005 · Swain · kuram | `DIALOGUE_CRITIQUE` T3 · `SES_VE_DIYALOG` §2a.3 | ⭐ yeni |
+| 8 | **Gereksizlik ilkesi:** söz + ekranda AYNI METİN = bölünmüş dikkat/ekstra yük; ekran metni bottom-up kaçınılmaz okunur | Mayer 2001-14 · Kruger 2015 · Szarkowska 2016 · hakemli | D40 "heard only — never shown as text" DIŞ DOĞRULAMA · D78 sınır notu (§2a.3) | ⭐ doğrulama |
+| 9 | **Yalan/çelişki kuralı:** izleyici ahlaki gözlemcidir; söz-eylem çelişkisi FEDAKÂRLIĞA dayanıyorsa bağı artırır, salt bencillikse koparır → çelişkinin ahlaki yükü B5 BEDEL'e bağlanır | Zillmann/Cantor 1976 · Oliver & Bartsch 2011 · hakemli | `SES_VE_DIYALOG` §2a.6 | ⭐ yeni |
+| 10 | **İroni penceresinde replik NÖTRLEŞİR:** izleyici karakterden fazlasını bilirken sıradan cümle ikili anlam kazanır; hidden-fact'i söyleyen replik pencereyi öldürür | Hitchcock/Truffaut 1966 · söyleşi/kuram | `DIALOGUE_CRITIQUE` T8 · `SES_VE_DIYALOG` §2a.7 · HOOK §3.1 köprüsü | ⭐ yeni |
+| 11 | **HUMAN register doğallık kiti:** kısaltmalar + that-düşümü konuşmada organik; konuşma fiil/zarf ağırlıklı, kısa birimli; çeviri metinde kısaltma AZALIR | LGSWE 1999 · Kaatari & Larsson 2019 · TEC 2003 · DeVito · hakemli | `SES_VE_DIYALOG` §2a.5 · `DIALOGUE_CRITIQUE` T6 | ⭐ yeni |
+| 12 | **Akıcısızlık doğaldır:** filled pause native konuşmada %7 (L2'den YÜKSEK); false start bir tamir mekanizması; kusursuz akıcılık = sentetik damganın metin tarafı | CROWDED · Caines 2020 · hakemli | `SES_VE_DIYALOG` §2a.5 planlı tereddüt satırı | ⭐ yeni |
+| 13 | **Çeviri kokusu belirteç listesi:** hiper-formalite ("I apologize for the inconvenience") · yanlış eşdizim ("needle and string") · "since 5 years" · birebir deyim çevirisi · relative clause/copula/analitik pasif/jenerik zamir fazlalığı | Kunilovskaya 2020/23 hakemli + sektör 2024 | `DIALOGUE_CRITIQUE` T6 (yazar L2 — deponun en yüksek riskli ekseni) · §2a.5 ⛔ listesi | ⭐ yeni |
+| 14 | **İnsan hakem uyuşması eksene göre çöker:** yapısal 0.79 · öznel 0.14-0.39; analitik MADDELİ rubrik uyuşmayı 0.79'a çıkarır | 2015-2025 ölçme/NLP · karışık (hakemli + ön baskı) | rubrik mimarisi: madde + etiket, holistik puan yok | ⭐ yeni |
+| 15 | **LLM hakem yanlılıkları ölçülü:** uzunluk primi · biçim/stil illüzyonu · kendi üslubunu kayırma · mutlak Likert gürültüsü; çare: gerekçe-önce · çapa örnekli rubrik · etiketleyici mimarisi · (karşılaştırmada) konum takası | NeurIPS 2023 Zheng · FairEval · meta 2024-26 · karışık | `DIALOGUE_CRITIQUE` "JUDGING RULES" bloğu (uzunluk/biçim körlüğü · gerekçe-önce · etiket) | ⭐ yeni |
+| 16 | **DramaBench mimarisi:** LLM'i puanlayıcı değil YAPILANDIRILMIŞ ETİKETLEYİCİ olarak kullan; boyutlar ortogonal tutulur; insan doğrulaması bu mimaride κ 0.42-0.53 | 2025 ön baskı + FED 2020 hakemli | rubrik LEDGER tasarımı (satır satır etiket; hükmü kurallar türetir) — deponun rapor_kontrol felsefesiyle aynı | ⭐ yeni |
+| 17 | **En çok ayrışan eksen:** otomatik hakem akıcı-uzun metinde MANTIK kusurunu kaçırır; insan anında cezalandırır | FED/SummEval meta · karışık | rubriğe "fluent ≠ correct" satırı + operatör tarafında kritik kararda ikinci koşu önerisi | ⭐ yeni |
+
+---
+
+## T6.2 ⭐ BU TURUN EN NET SATIRI
+
+```
+Depo diyalog YAZIMINI zaten kısıtlamıştı (D35 <5 s · D82 sayı makineye ·
+D40 metin yasağı · §1a akuzmatik) — TUR 6 bu kısıtların hiçbirini
+devirmedi, üçünü DIŞ kaynakla doğruladı (D40 ← Mayer · D82 ← makine
+konvansiyonu · §1a ← lip-sync/algı). Yeni olan şey İÇERİK katmanı:
+"replik NE söyler" sorusunun ölçütleri (işlev · alt metin · doğallık ·
+çeviri kokusu) ve o ölçütleri güvenilir kılan eleştiri mimarisi
+(etiket, sayı değil; gerekçe, hüküm önce değil). Kapı artık üç katlı:
+biçim (prompt_kontrol betiği) → kilit/ders (PROMPT_QA) → içerik
+(DIALOGUE_CRITIQUE).
+```
+
+---
+
+## T6.3 🔧 UYGULANAN DÜZELTMELER (03.09.2026, aynı gün)
+
+```
+① PROMPT_KONTROL/DIALOGUE_CRITIQUE_PROMPT.md AÇILDI (yeni kapı) —
+   salt İngilizce · girdi: B5 omurgası + replik tablosu + bölüm
+   promptları · satır başına etiket · GO/REWRITE · çapa örnekli.
+② SES_VE_DIYALOG_URETIM_KILAVUZU.md §2a eklendi (replik İÇERİĞİ:
+   işlev · on-the-nose · bilgi=silah · doğallık/çeviri kokusu ·
+   yalan/BEDEL · ironi · ⬜ hipotez bloğu) + §1 replik tablosuna
+   İŞLEV sütunu + §7 kontrol listesi genişledi.
+③ FILM_KLASOR_SABLONU/FILM_PLAN.md'ye REPLİK TABLOSU bloğu ve
+   B5 OMURGASI + ÜRETİM SIRASI blokları eklendi (D117 ilkesi:
+   kopyalanabilir yapı; ⑰ kapısının aradığı satırlar artık şablonda).
+④ AGENTS.md Kart P'ye adım 2b (replikli filmde ikinci rubrik) +
+   prompt-kontrol ve yeni-film skill'lerine aynı satır işlendi.
+⑤ Dört promptun dosyası 10_DIYALOG_ARASTIRMA_PROMPTLARI.md koşu
+   kaydıyla işaretlendi; ham raporlar TUR6_HAM_RAPORLAR/.
+```
+
+---
+
+## T6.4 ⛔ DEPOYA GİRMEYENLER — dürüst kayıt
+
+| Bulgu | Neden girmedi |
+|---|---|
+| **1-10 diyalog puanı** (Black List modeli) | T6.0① — öznel eksende insan uyuşması 0.14-0.39, LLM Likert ±1-2 gürültü; hüküm+etiket mimarisi seçildi. Sayı ölçmüyor. |
+| **Telsiz register SAYILARI** (3-7 kelime · COPY/WILCO listesi · readback düzeni · "sinema readback'i siler") | Rapor 3'ün KENDİ hipotez listesinde — kaynak bulunamadı. Mekanizma (kısalık + protokol sapması = duygu) §2a'ya ⬜ HİPOTEZ etiketiyle indi; sayılar ve kod listesi İNMEDİ. |
+| **TTS yazım iddiaları** (virgül=200ms · rakam-yazı vurgu farkı · nefes/dinamik aralık) | Rapor 3 hipotez listesi — kaynaksız. Sınama yolu ucuz ve içeride: tek klip A/B probu (aynı replik, rakam vs yazı) — PROB_KOSUSU ailesine aday, kural olarak inmedi. |
+| **"Recommend = 8-12 kelime bandı"** ve benzeri eşikler | Rapor 1'in kendi hipotez listesi — korelasyon verisi yok. |
+| **Amigdala aktivasyonu · dramatik ironi %30 recall · yüz fiksasyon süreleri** | Rapor 2'nin kendi hipotez listesi — ölçüm yok. |
+| **Temsiliyet testleri** (Bechdel · DuVernay · Vito Russo · Mako Mori) | Ölçüt olarak meşru ama bu deponun yüzeyine oturmuyor: tek/iki kişilik, isimsiz-karakterli uzay serisi. Kayda geçti, kurala çevrilmedi. |
+| **HHI endeksi formülü** | Mekanizması (söz tekelini cezalandır) iki insanlı filmde "sıra dengesi" notuna indi; endeksin kendisi 1-2 konuşmacıda anlamsız. |
+| **LLM yanlılık YÜZDELERİ** (%5 konum · 0.94→0.98 · %3-8 self-bias) | Kaynaklar ağırlıkla arXiv ön baskı/kurum raporu; ve sayının kılavuzda işi yok — tasarım kararları (gerekçe-önce, çapa, etiket) indi, sayılar burada kaldı. |
+| **Konum takası / çift koşu protokolü** | İkili karşılaştırma yanlılığı — bizim kapı tek metin okur, konum yok. Kayda geçti: ileride iki taslak replik seti KARŞILAŞTIRILACAKSA A-B ve B-A iki koşu şart. |
+| **Makine sesi konvansiyonlarının dış kanıtı** | Rapor 3 hipotez işaretledi; AMA kuralın kendisi depoda İÇ kanıtla zaten var [D82 · Cold Burn ölçülmüş vaka]. Kural D82 kanıtıyla duruyor; dış rapor yalnız "uyumlu konvansiyon" notu oldu (§2a.5). |
+
+---
+
+## T6.5 ⬜ BU TURUN SINIRI
+
+```
+· Dört raporun dördü DIŞ bilgidir; depoda REPLİKLİ üretilmiş film 0,
+  yayınlanmış film 0. Bu turdan inen her kural ilk replikli üretimde
+  ve ilk gerçek yayında yeniden sınanacak hipotezdir.
+· Korpus sayıları Batı uzun-form sineması ve günlük konuşma
+  üzerinden; 8-10 s'lik kliplerle kurulan sessiz-ağırlıklı formata
+  birebir taşınmaz — bantlar yön gösterir, bağlamaz.
+· DIALOGUE_CRITIQUE hiç koşulmadı. İlk koşu kalibrasyondur:
+  yanlış-pozitifleri PROMPT_QA'nın "yanlış pozitif duvarı" geleneğiyle
+  rubriğe işlenir. İlk hedef: depodaki tek diyalog-yoğun paket
+  (39 replikli 10-20 dk filmi) üzerinde pilot.
+· Ekranda konuşan ağız (merdiven BASAMAK 3) bu turla AÇILMADI —
+  PROB B koşulmadan replikler kadraj dışı/telsiz kalır.
 ```

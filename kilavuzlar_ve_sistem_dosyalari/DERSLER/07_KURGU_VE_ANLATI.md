@@ -994,3 +994,85 @@ görürüz. Seçilmemiş edilgenlik tema değil, boşluktur.
 > B2 bedelli seçim maddesi (03_PLAN_ONCESI) · Ders 134 (belgesiz merceğin
 > sıralaması) · KARAKTER_VE_DUYGU §6 (tepki planı bütçesi — bu filmde bütçe
 > DOLUYDU ve yetmedi: tepki seçim değildir).
+
+---
+
+## 🔴 DERS 172: TAŞIYICIYI ASAN KORDON, FİLMİN MEKANİZMASI SANILDI — RAKİP OLAY DEĞİL, TAŞIYICININ KENDİ ASKI DÜZENEĞİ NOVUM'UN YERİNE GEÇTİ
+
+**KAPI:** ⬜ AÇIK — plan tarafı. `03_PLAN_ONCESI` ⑩'a "TAŞIYICININ ASKISI
+ERİŞİLEBİLİR Mİ?" maddesi gerekiyor.
+**TEKRAR:** 0 · 02.09.2026 THE LEANING ROOM
+
+**Kaynak:** THE LEANING ROOM QA (02.09.2026) — sekiz merceğin **SEKİZİ** filmi
+aynı cümleyle özetledi ve cümle filmin cümlesi değildi:
+
+```
+④ HİKAYE, "THE FILM IN ONE SENTENCE (as a first-time viewer would say it)":
+   "A woman ... PULLS ROPES and turns dials to shift the cosmos outside
+    her window."
+
+⑦ AKSİYON, altı vuruşun dördü:  B1 "pulls a hanging rope" · B2 "pulls the
+   rope again" · B5 "pushes the hanging lamp" · B6 "presses the stones"
+⑧ EFOR, dört efor olayının ikisi:  "pulling thick hanging rope downward"
+⑥ FİZİK, L1: "rope pull · low tension"   ② ⑤ ①: "rope clips through the
+   brass lamp housing"
+
+PLANDA HALAT YOKTUR. Filmde çekilen bir halat yoktur.
+Olan şey: SARKAÇ LAMBAYI TAVANA ASAN ÖRGÜ KORDON.
+```
+
+⭐ **MEKANİZMA — ASKI DÜZENEĞİ BOŞ BİR EYLEM YUVASIDIR VE MODEL ONU DOLDURUR.**
+Prompt kordonu üç kez tarif etti ve üçünde de yalnız NE OLDUĞUNU söyledi
+("braided cord", "taut and perfectly straight"), hiçbirinde NE OLMADIĞINI ve
+KİMİN ERİŞEMEYECEĞİNİ söylemedi. Kadrajda aynı anda bir KONSOL ve bir EL vardı.
+Model üçünü birleştirdi:
+
+```
+S3 · 0:35  kordon lambada BİTMİYOR — konsola kadar iniyor, ucu kadının elinde
+S5 · 0:55  aynı, çapraz ve gevşek — "çekme halatı" okuması pekişiyor
+S8 · 1:25  kordona PİRİNÇ KARŞI AĞIRLIKLAR takılmış — model mekanizmayı
+           tamamlamış: artık bu bir kaldıraç düzeneği
+```
+
+Ve zincir kapanıyor: kordon bir kumanda olunca, **novum bir kurala değil bir
+KUMANDAYA dönüşüyor.** ⑦ AKSİYON'un sorusu tam olarak bunu söylüyor: *"why
+does a stone drop cause an eclipse, but a rope pull summons Saturn?"* — mercek
+filmin fiziğini değil, filmin hiç var olmayan arayüzünü sorguluyor.
+
+⛔ **BU D157 DEĞİL, D157'NİN AKRABASI.** D157'de kadrajda RAKİP BİR OLAY vardı
+(banda karşı eldivenden düşen toz) ve model tanıdık olanı üretti. Burada rakip
+olay yok: **rakip, taşıyıcının kendi askısı.** Novum'un var olabilmesi için
+gereken parça, novum'un yerine geçti. Bu yüzden "novum sahnesinde ikinci olay
+yoktur" kuralı bu arızayı yakalamaz — ikinci olay yok, ikinci NESNE de yok;
+olan tek şey birinci nesnenin üst yarısı.
+
+**ÇÖZÜM — ÜÇ SATIR:**
+
+```
+① ASKI NEREDE BİTTİĞİNİ SÖYLER, HER PROMPTTA.
+   ✗ "a heavy brass pendant lamp hangs from a ceiling rail on a braided cord"
+   ✓ "a heavy brass pendant lamp hangs on a braided cord that runs from the
+      lamp straight up to the ceiling rail and ends there; nothing else hangs
+      from it, nothing is attached to it, and it carries no weights, no
+      handle and no loop"
+
+② ERİŞİLEMEZLİK YAZILIR — ve ELİN NEREDE OLDUĞU SÖYLENİR.
+   "the cord stays out of her reach at all times; her hands are on the table
+    and never come near it"
+   Kadrajda aynı anda bir kumanda varsa bu cümle ZORUNLUDUR.
+
+③ PLAN KONTROLÜNE MADDE: TAŞIYICININ ASKISI.
+   "Taşıyıcı neyle duruyor? O askı kadrajda görünüyor mu? Karakterin eli ona
+    değebilir mi? Değebiliyorsa model onu bir kumandaya çevirir."
+   ⛔ Sarkan her şey — kordon, kayış, halat, zincir, kablo, kolon — bu
+     maddeye girer. Sarkmak, çekilmeyi davet eder.
+```
+
+⚠️ **VE MALİYETİ ÖLÇÜLDÜ:** bu filmde novum EKRANA GELDİ (lamba yattı, oda
+yattı, bedel ödendi, iki ezik finalde sayılabilir hâlde duruyor) ve buna
+rağmen sekiz merceğin sekizi filmi başka bir film sandı. **Görünen novum,
+yanında daha tanıdık bir mekanizma varsa okunmaz.**
+
+> 🔗 Ders 157 (rakip OLAY) · Ders 151 (mercek vuruşu göremez) · Ders 73
+> (taşıyıcı türetilmiş fenomen) · Ders 174 (aynı filmde yönün yuvarlanması) ·
+> ONERME_VE_NOVUM §2 (A nesnesi × B jesti)

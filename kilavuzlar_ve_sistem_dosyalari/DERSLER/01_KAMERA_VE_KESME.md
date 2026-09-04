@@ -186,3 +186,81 @@ onayı). Ders, UZAMSAL_HARITA_VE_EKRAN_YONU_KILAVUZU'na **Sürüm 3**
 olarak işlendi — mekanizmalar §6.7 (ışık mıknatısı) ve §6.8 (frontal
 refleks + iki yenilgi kuralı + V3 kompozisyon şablonu); kanıt zinciri
 §0.1 ve §11'de. Tam denetim maddeleri kılavuz §10.1-10.2'de.
+
+---
+
+## 🔴 DERS 174: NOVUM GELDİ, İŞARETİ YUVARLANDI — "SCREEN-RIGHT" MODELDE BİR REFERANS DEĞİLDİR; YÖN BİR KOORDİNATA DEĞİL, KADRAJDAKİ BİR NESNEYE BAĞLANIR
+
+**KAPI:** ⬜ AÇIK — betik tarafı yok. `prompt_kontrol.py`'nin yön kapıları
+KONUMU arar, YÖNELİMİN İŞARETİNİ aramaz (D104'ün "betik göremez" satırının
+aynısı, bu kez yatma ekseninde).
+**TEKRAR:** 0 · 02.09.2026 THE LEANING ROOM
+
+**Kaynak:** THE LEANING ROOM QA (02.09.2026) — kare 2280-2340 (1:16-1:18)
+çıkarıldı ve BAKILDI. Filmin novum'u ekrana GELDİ: tavandan sarkan pirinç
+sarkaç lamba altı karede kesintisiz, tek yönde, salınmadan yatıyor ve duruyor.
+Prompt ne istediyse o oldu — **yönü hariç.**
+
+```
+PLAN (Camera Bible + SPEC C bloğu, 12/12 sahnede geçerli):
+   "SANCAK bant penceresi HER kadrajda SCREEN-RIGHT'tadır.
+    YATMA HER ZAMAN SCREEN-RIGHT'a doğrudur. Ters dönüş YOKTUR."
+
+EKRAN:
+   S7 · 1:18  siyah daire SCREEN-RIGHT ✅   lamba SCREEN-LEFT'e yatıyor ✗
+   S9 · 1:35  gevşek eşyalar SCREEN-RIGHT korkulukta ✅
+
+   → Aynı film, iki sahne, iki zıt "aşağı". Novum bir YÖNDÜR; yönü
+     yuvarlanınca izleyici onu yön değil SALINIM olarak okur — nitekim
+     sekiz merceğin dördü lambayı "swinging lamp" diye yazdı.
+```
+
+⭐ **MEKANİZMA — "SCREEN-RIGHT" BİR NESNE DEĞİL, BİR KOORDİNATTIR.** Model
+kadrajı koordinatla değil, İÇİNDEKİ ŞEYLERLE kurar. Aynı promptta iki cümle
+vardı ve model ikisine iki farklı sadakat gösterdi:
+
+```
+✅ "a perfect black circle ... holds in the right third of the frame"
+   → NESNE + konum. TUTTU, göründüğü her sahnede.
+✗ "the lamp lies far over toward screen-right"
+   → yalnız KOORDİNAT, referans nesne YOK. İşaret yazı-tura.
+```
+
+Yatma DAVRANIŞI (tek yönlü, salınımsız, durup kalan) kusursuz üretildi çünkü
+o cümle FİZİKSEL bir tarifti. Yatma YÖNÜ üretilmedi çünkü o cümle bir kroki
+koordinatıydı. **Model davranışı öğrenir, koordinatı öğrenmez.**
+
+⛔ **VE BU D104'ÜN TERSİ, AYNI AİLEDEN.** D104'te model özneyi en parlak ışığa
+ÇEVİRİYORDU — yönü bir NESNE belirliyordu, yanlış nesne. Burada hiçbir nesne
+belirlemiyor, o yüzden işaret serbest kalıyor. İkisinin ortak dersi: **yönü hep
+bir nesne belirler; onu sen seçmezsen model seçer.**
+
+**ÇÖZÜM — ÜÇ SATIR, ÜÇÜ DE PROMPT TARAFINDA:**
+
+```
+① YÖN CÜMLESİ HEDEF NESNEYİ AYNI CÜMLEDE ADLANDIRIR.
+   ✗ "the lamp leans over toward screen-right, sixty-eight degrees off vertical"
+   ✓ "the lamp leans toward the window that carries the black circle — the
+      same side of the frame the black circle is on — sixty-eight degrees off
+      vertical, and its lower edge points at that circle"
+   Nesne kadrajda görünmüyorsa yön cümlesi de yazılmaz: görünmeyen hedefe
+   yön verilemez.
+
+② İKİNCİ BİR CİSİM AYNI YÖNÜ TEYİT EDER, AYNI KLİPTE.
+   Tek gösterge tek yazı-turadır. "every loose object on the table slides the
+   same way the lamp leans, toward that same window" — iki bağımsız nesne
+   aynı yöne giderse model işareti tek seferde çözer.
+
+③ NEGATİF KOORDİNATLA DEĞİL NESNEYLE YAZILIR.
+   ✗ "no direction reversal"        (neyin tersi belli değil)
+   ✓ "nothing ever leans or slides away from that window; the lamp never
+      points at the panelled wall"
+```
+
+⚠️ **PLAN TARAFI YETMEZ.** Bu filmde yön kilidi Camera Bible'da, SPEC'in C
+bloğunda ve sahne haritasında YAZILIYDI — üç yerde. Model üçünü de okumaz;
+okuduğu tek şey o sahnenin prompt gövdesidir [kural ③].
+
+> 🔗 Ders 104 (ışık mıknatısı — yönü yanlış nesne belirler) · Ders 157 (novumun
+> taşıyıcısı) · Ders 172 (aynı filmde taşıyıcının kordonu) · Ders 127 ·
+> UZAMSAL_HARITA_VE_EKRAN_YONU_KILAVUZU §6.1

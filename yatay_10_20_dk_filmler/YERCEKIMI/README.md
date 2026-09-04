@@ -850,6 +850,133 @@ KURULUM DİZİSİ (KUR sütunu, 120): ardışık çiftlerin tamamı farklı
       ölçek yayı düşer** (S7 MS → S9 MS, ACI_YAYI §3 ihlali, betik
       BLOCK verir) · ✅ TEMA etkilenmiyor (motifler S30·S43·S84·S117).
       📌 Karar bekleyen tek soru: yuvaya ne konacak.
+   ✅ **02.09 · FAZ 7 ÜRETİM ÖNCESİ DÜZELTİLDİ — ses satırları kaldırıldı.**
+      Sebep: F5'te 2, **F6'da 3 GÖMÜLÜ ALTYAZI** çıktı — ve F6'nın
+      üçüncüsü **promptta tırnaklı cümle OLMAYAN** S66'daydı: model bir
+      cümle uydurup bastı (*"Contact confirmed. Please maintain
+      trajectory."*) ve o cümle sahnenin anlamını tersine çeviriyordu.
+      → tırnağı silmek yetmiyor, **sesi ANLATAN satır** tetikliyor.
+      🔴 F7'de bedeli en ağır olurdu: KİLİT 30 halüsinasyonun
+      meşruiyetini üç kanaldan işaretliyor (ses hoparlörden gelmez ·
+      S77'de kaynak BOŞ · B ekranda 0 kare) ve **altyazı üçünü birden
+      yok eder** — ölünün sesi gerçek bir telsiz çağrısı olur, S77'nin
+      boş ızgarası anlamsızlaşır, S84'ün CENTRAL CHOICE'u "karar verdi"
+      değil "talimatı uyguladı" olur. ✅ Dört beat satırı (S76 1s ·
+      S78 2s · S81 4s · S84 5s) **yalnız kameranın gördüğünü** anlatacak
+      şekilde yeniden yazıldı → F7'de tırnaklı cümle **0**, sesi anlatan
+      beat **0**. ⚠️ Ses kaybolmadı: `Audio:` satırları dokunulmadan
+      duruyor ve zaten cümleyi tırnaklamıyorlardı. ⭐ Bu aynı zamanda
+      **tek değişkenli bir deney** [GOZLEM ADAY-7]: altyazı çıkmazsa
+      sebep prompt, yine çıkarsa sebep araçtır — o yüzden F7 üretilirken
+      **başka hiçbir şey değiştirilmemeli.** (0 BLOCK dışı FIX yok;
+      video 2031-2575 bant içi; 12/12/12 tam.)
+   ✅ **03.09 · F8-F9-F10 ÜRETİME HAZIRLANDI — F7 emsali kalan fazlara
+      uygulandı** (sahip talebi: "1-6 hazır, kalan fazları güncelle").
+      **F8:** üç MACHINE anons beat'i (S90 2s · S95 4s · S96 5s)
+      kameranın gördüğüyle değiştirildi — tırnaklı cümle 0, sesi anlatan
+      beat 0; `Audio:` satırları ve REPLİK DEFTERİ dokunulmadı, üç anons
+      post'ta defterden girer. S96 gerekçesi ağırdı: oksijen zincirinin
+      son halkası (→3) rakamsız-sayaç tasarımıyla yaşıyor, gömülü
+      altyazı sayıyı ekrana basardı; üstelik sahne İNSANSIZ — kaynaksız
+      kabin sesi altyazıyla "ekran metnine" dönerdi. **F9/F10:** tarama
+      TEMİZ çıktı (tırnak 0 · ses-beat 0 · replik 0) ve tarama kaydı
+      faz dosyalarına blok olarak düşüldü [D74: kaydı olmayan denetim].
+      📌 Şok bandı işaretçileri F8/F9 bloklarına kondu: S68→S71 kabul
+      edilirse S94 ve S102 kronolojik sırada birer kayar — etiketler
+      değiştirilmedi, karar sahibinde. ⚠️ ADAY-7 deneyi bozulmadı:
+      deneyin değişkeni F7 makarası; F8-10 temizliği deneyi kirletmez.
+   ⛔ **02.09 · S69 ve S70 İPTAL EDİLDİ — politika reddi, ısrarla.**
+      S69'da üç deneme (özgün kadraj → sözlük düzeltmesi → kadraj
+      değişikliği: kol hiç yükselmiyor, el baştan beri kolçakta), üçü de
+      reddedildi. S70 aynı sebeple. **Promptlar silinmedi, yanlarına not
+      düşüldü** [S8 emsali]. 🔴 **En ağır sonuç ölçek yayında:** ikisi
+      birlikte gittiği için komşu çift **S68 WS → S71 ECU = ÜÇ KADEME**
+      oluyor — bu bir ŞOK BANDIDIR ve filmin bütçesindeki iki bandın
+      ikisi de harcanmıştı (S93→S94 ve F9). ⭐ Maliyeti net: bu üçüncü
+      bant **9:04'te, ikisinden de ÖNCE** düşüyor → S94 geldiğinde
+      filmin ilk üç-kademeli sıçraması olmaktan çıkıyor, ikincisi
+      oluyor. Karar proje sahibinin; ben ölçtüm. ✅ Çehov 2 (saat)
+      KOPMUYOR — saat S81·S84·S99·S103·S111-S117'de var, ödeme S117'de;
+      ama F6'da saat hiç görünmüyor → S48-S81 arası **33 sahnelik
+      saatsiz aralık**. ✅ Halka sayacı sağlam (S54 kurdu, S71 kendi
+      içinde 2→1). Boş yuva sayısı **4** (S8·S15·S69·S70) = 32 s →
+      16:00 yerine 15:28. **F6 teslimi 10/12.** Rubrik eşitlendi:
+      katalog 12 girdi, makara 10 klip; ⭐ denetçiye hangi ikisinin
+      eksik olduğu SÖYLENMEDİ — MISSING listesine tam iki harf yazması
+      isteniyor (F2'de yanlış klip atlanmıştı, bu onun kapısı).
+      📌 Depoya aday ders: **GOZLEM ADAY-6** — iki bilek yan yana,
+      tepeden makro (S8 ve S70, iki bağımsız vaka) bu modelde
+      üretilemiyor; betiğin ilk KOMPOZİSYON kapısı adayı.
+   ⭐ **02.09 · FAZ_06_QA_PROMPT.md — F6 üretildi. Deponun en zor kataloğu.**
+      12 girdi (A-L = S61-S72) ve on ikisi de **aynı küçük kapsülde,
+      aynı kişiyle, birbirine benzer ışıkta.** Dördünde yalnız EL/BİLEK
+      var, tek geniş plan **H (S68) = filmin TEK Overview sahnesi**, tek
+      hareketli plan da o. Katalog bu yüzden ölçeğe göre değil
+      **ELİN NEYE DOKUNDUĞUNA ve IŞIĞIN NE YAPTIĞINA** göre kuruldu.
+      ⭐ Depoda ilk kez rubrik **denetçinin teşhis güvenini** ölçüyor:
+      iki karıştırılabilir çift önden işaretlendi ve ayrı bir bölüm
+      yazdırılıyor — **F↔L** (iki cephe yüz CU'su; F'te yeşil güçlü ve
+      gözler açık, L'de yeşil üç aşamada ölür ve gözler bir daha
+      açılmaz) · **A↔K** (panelde el + halka; A'da halka PANELDE ve
+      büyük, hepsi sönük — K'da BİLEKTE ve küçük, 2→1 düşer).
+      ⛔ "İki halkayı karıştırma" ayrı bir kilit: hangisinden söz
+      ettiğini her seferinde yazması isteniyor. Faza özgü diğer üç
+      ölçüt: ⭐ **B'de kollar kendi kendine kalkıyor mu** (0g'de bırakılan
+      kol düşmez; eller kucakta kalırsa fazın fiziksel fikri ölür) ·
+      "omuz düşmesi / baş sarkması" ayrı çapraz kontrol, ikisi de 0g'de
+      okunmaz · ⭐ **H'de kadın kıpırdamamalı** — kadrajda hareket eden
+      tek şey duvardaki ışık ovali; kıpırdarsa Overview'un tamamı gider.
+      ⚠️ Sıra skorunun DÜŞÜK çıkması beklenir ve bu kusur değil: fazın
+      yalnız üç saati var, dört klip bağlamsız. Işık zinciri doğru
+      okunduysa görsel anlatım çalışıyordur.
+      🔍 **Dosyada bir sayı tutmuyor:** başlık "on biri CU ya da daha
+      yakın" diyor; sahne başlıklarından sayınca **8** çıkıyor
+      (ECU 3 · CU 5 · MS 3 · WS 1). "En dar faz" iddiası doğru, sayı
+      yanlış — kural ① gereği düzeltilmeli. Düzeltmedim, bildiriyorum.
+   ⭐ **02.09 · FAZ_05_QA_PROMPT.md — F5 üretildi. Rubrik KOPYALANMADI,
+      YENİDEN YAZILDI.** Sebebi: F5 önceki dört fazın dünyasında geçmiyor.
+      On ikisi de **iç mekân** · **kask YOK** (film boyunca bir daha
+      takmaz) · **12/12 kilitli kamera, sıfır hareket** · **A'nın repliği
+      sıfır** · ikinci insan yok · ve ⭐ **filmde ilk kez HAVA var**.
+      ⛔ En büyük tuzak açıkça tersine çevrildi: F1-F4'te mutlak siyah
+      jilet kenarlı gölge ZORUNLUYDU; burada **yumuşak gölge DOĞRU**,
+      sert gölge kusurdur — rubriği bilen bir denetçi aksi hâlde bir
+      sayfa yanlış bulgu yazar. Faza özgü dört ölçüt: ① ⭐ **YÜZ MASTERİ**
+      — S49-S120 arası 72 sahne kasksız ve RF paneli yok, bu makara
+      filmin geri kalanının fiilî yüz referansı olacak; kör geçişten
+      "cast direktörü eşleştirecekmiş gibi" tarif isteniyor ·
+      ② ⭐ **görünmez kaçak** — tek kanıt G'deki kayış ucu; ekranda
+      buhar/duman/parçacık çıkarsa sahnenin tek fikri ölür, iki geçişte
+      de ayrı madde · ③ ⭐ **iki cam karıştı mı** (biri gece Dünya'sına,
+      biri ölü modüle bakar; kör geçişe ayrı ayrı sorduruluyor) ·
+      ④ ⭐ **son kare zafer mi** — S60 SAHTE zaferdir ve "gülümsemez"
+      yazılıdır; kör geçişe "başarı mı, duraklama mı, devamını bekliyor
+      musun?" diye soruluyor. ⚠️ Bu fazın **saatleri zayıf** (dört tane,
+      ikisi tek klipte; ayrıca dört klip yalnız EL, bağlamsız) → düşük
+      sıra skoru bu sefer kusur değil tasarım sonucu olabilir, ayrımı
+      raporda yapacağım. Kör geçiş sızıntı taraması: ✅ temiz.
+   ⭐ **02.09 · FAZ_04_QA_PROMPT.md — F4 üretildi, aynı iki mühürlü geçiş.**
+      12 girdilik katalog (A-L = S37-S48). Rubriğe üç yeni yapı girdi,
+      üçü de bu faza özgü: ① **kadro sayısı kalıcı düşüyor** — iki figür
+      A·G·H·I'de, tek figür kalan sekizde; sıra karışık olduğu için
+      konumdan bilinemez, her girdi kendi sayısını beyan ediyor ·
+      ② ⭐ **bilerek çekilmiş neredeyse-aynı bir çift** (C ve E, aynı
+      botun aynı makro kadrajı) — F2'de kopya GERÇEK kusurdu, burada
+      benzerlik ZORUNLU; ayırt edici tek şey sayaç (C üçte sabit kalır,
+      E'de üç→iki ekranda düşer). Katalog geçişine ayrı bir **"C VERSUS
+      E"** bölümü yazdırılıyor · ③ **son klip iç mekân** (L/S48: güneş
+      yok, vakum yok, kask yok) — kalan on biri dışarıda.
+      ⭐ **Fazın TEMA testi kör geçişe doğrudan soruluyor:** *"bir şey
+      ayrılıyor, kopuyor ya da bırakılıyor mu — KAZA gibi mi göründü,
+      KASITLI mı?"* "Halat koptu" cevabı gelirse feda ekrana hiç
+      gelmemiştir ve G yeniden üretilir. ⭐ Ayrıca **hiçbir itki
+      ateşlenmez** (şerit 0/4) — tek bir puf bile maksimum ciddiyette
+      kusur, çünkü adam kendini itmiyor, dönen yapı onu savuruyor ·
+      **çapraz kontrol 3** denetimin en önemli maddesi: on bir dış
+      girdinin her biri için tek tek "kask var mı" (F3'ün S28'i tam
+      bunu düşürmüştü) · **istasyon dönüşü dört girdide** (D·G·H·I) ve
+      fedanın SEBEBİ o — F3'te hiç kurulmamıştı.
+      Kör geçiş sızıntı taramasından geçti: ✅ temiz.
    ✅ **02.09 · FAZ 4 ÜRETİM ÖNCESİ DÜZELTİLDİ — F3'ün iki kusuru doğmadan kapatıldı.**
       Yalnız `FAZ_04_FEDA.md` düzenlendi; **F1 · F2 · F3'e dokunulmadı**
       (proje sahibi kararı). ① **saç-kask komşuluğu 4 geçiş silindi**
@@ -968,6 +1095,14 @@ KURULUM DİZİSİ (KUR sütunu, 120): ardışık çiftlerin tamamı farklı
       koşusu bu sayıyı üretecek)
    ⛔ Üretimden önce üç sayfa: RF (kasksız A) · RG (istasyon içi,
       dört panel) · RH (kapsül içi) — üçü de artık F5'te kullanılıyor.
+   ✅ **03.09 · YERCEKIMI_FRAGMAN_YATAY.md yazıldı — resmî yatay trailer.**
+      14 vuruş × 8 s sıfırdan üretim · master 2:00.000 (logo blokları
+      dahil, gövde 100 s) · mekanik EKSİLME (filmin verme/azalma motifi) ·
+      kaynaklar filmin ilk %70'i (S1-S83), feda/doruk/final 0 kare ·
+      2 replik POST'ta (F6 gömülü altyazı dersi) · prompt kontrol **GO**
+      (28 prompt · 0 BLOCK · 0 FIX). ⭐ SAHNE 1 üretimi filmin BOŞ S15
+      yuvasına aday — trailer çekimi filmin viral #1 eksiğini kapatır.
+      Kılavuz sicili: FRAGMAN_KILAVUZU §1.3 → EKSİLME.
 3. Sonraki fazlar sırayla; her faz sonunda prompt_kontrol.py.
 4. MUZIK_VE_SES.md · YERCEKIMI_QA_SPEC.md (son parça). KAPAK.md ✅
 ```

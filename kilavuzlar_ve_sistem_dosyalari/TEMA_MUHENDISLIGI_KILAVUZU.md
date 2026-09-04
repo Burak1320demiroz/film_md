@@ -77,7 +77,7 @@ o dosya BÜTÇESİNİ.
 | Zaman / geçicilik | Küresel (yaşla artar) | Y+ | Gençte FOMO, yaşlıda nostalji | Tekrar izleme |
 | Kimlik | Batı (K. Amerika) | Z | Ontolojik kriz, huşu | Yüksek yorum/tartışma |
 | İnsan-makine sınırı | APAC (yarı-dini derinlik) + Batı (güncel korku) | Z | Korku + huşu karışımı | Yüksek yorum/tartışma |
-| İlk temas | Kültürden bağımsız | Tümü | Tekinsiz merak (uncanny) | Kilitlenme, tamamlama |
+| İlk temas | Kültürden bağımsız | Tümü | Tekinsiz merak (uncanny) | Kilitlenme, tamamlama — varlık kadraja girecekse ⭐ UZAYLI_VARLIK_TASARIM_KILAVUZU.md zorunlu (03.09.2026 · TUR 7) |
 | Entropi | Küresel | Tümü | Kaçınılmazlığın kabulü | Yüksek tamamlanma |
 | Umut | Küresel | Y+Z | Katarsis, rahatlama | Yüksek döngü (loop/replay) |
 

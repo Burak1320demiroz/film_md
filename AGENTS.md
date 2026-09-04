@@ -77,6 +77,17 @@ kısafilmler/
 │   ├── IMAGE_VIDEO_PROMPT_TEMPLATES.md    V2 prompt iskeleti
 │   ├── VEO_3_1_FAST_DIYALOG_VE_VIDEO_URETIM_KILAVUZU.md
 │   ├── UZAY_SENARYO_KILAVUZU.md · SAVAS_SENARYO_KILAVUZU.md
+│   ├── ASTRONOT_DONANIM_VE_KIMLIK_KILAVUZU.md 🆕 03.09.2026 · giysi
+│   │                                  kimliği: rol şeridi · metinsiz amblem ·
+│   │                                  bilek/saat · sırt silueti · eşya + AI
+│   │                                  risk sınıfları (kaynak: TUR 5)
+│   ├── UZAYLI_VARLIK_TASARIM_KILAVUZU.md 🆕 03.09.2026 · TEK uzaylı
+│   │                                  varlık: niyet (huşu/dehşet/empati) ·
+│   │                                  siluet/hareket · ANATOMY LOCK ·
+│   │                                  reveal merdiveni K0-K4 + VARLIK
+│   │                                  ŞERİDİ · varlık kelime sözlüğü
+│   │                                  (kaynak: TUR 7 · uzay operası
+│   │                                  yasağı SÜRER — ırk/filo yok)
 │   ├── SHORTS_SISTEM_PROMPTU.md           dikey 9:16 hazır sistem promptu
 │   │                                      ⚠️ 27.08.2026: md.5'ten "tehlike yoktur" KALKTI · "eller her zaman boş" GEVŞEDİ
 │   ├── GOOGLE_FLOW_MUSIC_URETIM_KILAVUZU.md
@@ -377,6 +388,13 @@ commit'lenmemişti; 18 commit tarandı, tek iz yok.)*
      → ⭐ §3c KOMPOZİSYON YÜZEYİ (01.09.2026): betik kelime sayar,
        KADRAJI okumaz. YERCEKIMI F1 S8 kelimeleri temizken reddedildi
        ve sahne İPTAL EDİLDİ — bu dört soru o vakadan doğdu.
+
+2b. REPLİKLİ FİLMDE İKİNCİ RUBRİK (03.09.2026 · TUR 6)
+     PROMPT_KONTROL/DIALOGUE_CRITIQUE_PROMPT.md
+     → girdi: B5 omurgası + replik tablosu (İŞLEV sütunlu) + bölüm
+       promptları · satır başına ETİKET üretir, SAYI üretmez
+     → CUT / UNCLEAR register / MONOLOGUE bulgusu varken GO YOK
+     → kural tarafı: SES_VE_DIYALOG_URETIM_KILAVUZU.md §2a
 
 3. KARAR
      GO    → üretime geç (önce imaj, onaylanınca video)

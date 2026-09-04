@@ -912,6 +912,19 @@ fiziğini ölç (124).*
 
 ---
 
+**TEKRAR (02.09.2026 · THE LEANING ROOM):** aynı yuvarlanma, bu kez bir
+KUMANDA yüzeyinde. Prompt 12 sahnenin hepsinde *"a brass hand wheel set into
+the near edge of the table and one row of unmarked brass levers"* dedi ve
+S0/S1/S3/S5'te tam olarak o üretildi: masaya gömülü DÜZ pirinç disk.
+S7 ve S10'da aynı tarif **klasik parmaklıklı GEMİ DÜMENİNE** döndü.
+Sebep D128'in kendisi: ceviz kaplama + pirinç + yıldız penceresi bir SETTİR,
+ve o sette "wheel" kelimesinin en yakın eğitim-verisi nesnesi gemi dümenidir.
+⛔ Reçete: jenerik adı GEOMETRİYLE ve ARKETİPİN NEGATİFİYLE yaz —
+*"a flat brass disc set flush into the table edge, turned with the
+fingertips; not a spoked ship's wheel, no spokes, no rim handles, nothing
+standing upright above the table"*. Tema güçlüyse jenerik ad tek başına
+tarif değildir, DAVETTİR.
+
 ## 🔴 DERS 138: METİN YASAĞI KOSTÜME YAZILDI, ÖLÇÜ ZEMİNE YAZILDI — MODEL ÖLÇÜYÜ ZEMİNE BASTI: HALKANIN İÇİNE "11 metres"
 
 **Kaynak:** THE THIN ROOF QA (28.08.2026) — S2 · 21,0-23,0 s · ① KARE 7,2 · ⑤ ARKA PLAN 7,3

@@ -1,6 +1,6 @@
 # 🌍 YERÇEKİMİ — FAZ 9 / DÜŞÜŞ
 
-## S97–S108 PROMPTLARI | 12:48 – 14:24 | Perde III | 16:9 Yatay
+## S97–S108 PROMPTLARI | 16:00 – 18:00 | Perde III | 16:9 Yatay
 ### _"Filmin adını taşıyan kare."_
 
 > **Bu dosya ADIM 4'tür.** Plan: `../00_PLAN.md` · Bible + harita:
@@ -22,7 +22,7 @@
 > anlatılır: **RENK ve TİTREŞİM.**
 >
 > ⛔ **REPLİK 0/12.** Filmin son insan sesi S96'daki MACHINE anonsuydu.
-> Buradan sonra film sonuna kadar (S97-S120, 24 sahne, 3:12) hiçbir
+> Buradan sonra film sonuna kadar (S97-S120, 24 sahne, 4:00) hiçbir
 > replik yoktur — 00_PLAN §kart-dışı anlatı riski ② olarak beyan edildi.
 
 ---
@@ -30,15 +30,71 @@
 # 🔗 FAZ GİRİŞ BAĞLANTISI
 
 ```
-Önceki fazın son karesi (S96 · 12:48): kapsül EKRAN-SOLA hızlanır, dört
-lüle düz beyaz koni; istasyon EKRAN-SAĞDA üç parça hâlinde ayrılır;
-halka 1/6 SABİT; ışık L4 sert beyaz; kabin tonu + yanma titreşimi.
-Köprü: S96'nın ayrılan konisi S97'de İÇERİDEN, lombozdan görülür —
-dış geniş (J) → iç orta (I), WS → MS.
+Önceki fazın son karesi (S96 · 16:00): ⭐ kapsül kadrajı TERK ETMİŞTİR
+(10 s ızgarası kararı, F8 kaydı ②); kadrajda YALNIZ istasyon kalmıştır —
+EKRAN-SAĞDA üç parça hâlinde ayrılır; halka 1/6 SABİT; ışık L4 sert
+beyaz; kabin tonu + yanma titreşimi.
+Köprü: S96 kapsülü kadrajdan ÇIKARIR, S97 aynı kapsülün İÇİNDEN açılır —
+dış geniş (J) → iç orta (I), WS → MS. Gideni son karede görmeyiz,
+sonraki karede İÇİNDE buluruz.
 ⛔ İSTASYON BİR DAHA GÖRÜNMEZ. S97'den itibaren kadrajda enkaz yok;
    pencerede yalnız Dünya ve büyüyen kavis vardır.
 ⛔ HALKA 1/6 SABİT: bu fazda hiç değişmez, hiç yanıp sönmez. Sayaç
    S96'da bitti; gerilim artık sayaçtan değil GÖVDEDEN gelir.
+```
+
+# ⏱️ 03.09.2026 · IZGARA 8 s → 10 s ÇEVRİLDİ (sahip kararı)
+
+```
+⭐ SEBEP: sahip üretime 10 SANİYELİK kliplerle başladı. Klip süresi bir
+   tercih değil ARACIN AYARIDIR [D124]; belge araca uyar, tersi değil.
+
+✅ HER SAHNEDE YAPILAN — 12/12:
+   · `MOTION — 8 seconds` → `10 seconds` · sahne kartı `8,0 s` → `10,0 s`
+   · beat MUTLAK SANİYELERİ KORUNDU (0s-7s aynen) — hızlar ve sayısal
+     kilitler "per second / within a second / in about half a second"
+     biçiminde yazılıydı, bu yüzden 10 s'de kendiliğinden geçerli kalır
+   · eski `8s` SON DURUM beat'i `10s`'e taşındı, araya sahneye ÖZGÜ bir
+     `8s` devam beat'i yazıldı — dolgu değil: her biri o sahnenin kendi
+     malzemesini iki saniye daha sürdürür (sürüklenme · titreme · ışık ·
+     sayaç · nefes). Lockoff + "hiçbir şey yerleşmiyor" estetiği bu iki
+     saniyeyi zaten talep ediyordu.
+
+📐 IZGARA — bu fazın bütün zamanları buradan HESAPLANDI, elle yazılmadı:
+   sahne n başlangıcı = (n−1) × 10 s
+   FAZ 9: S97 16:00 → S108 18:00 · film NOMİNAL 120 × 10 s = 20:00 (Second Ship ızgarası)
+   ⚠️ GERÇEK KURGU 19:20 — dört yuva boş (S8 · S15 · S69 · S70);
+     116 klip × 10 s. Nominal ızgara PROMPT zamanıdır, kurgu değil.
+
+⛔ ÖLÇÜM BORCU — TEK AÇIK SAYI [D125 · ortak adım ⑪]:
+   F1-F6 makaralarının klip süresi bu depoda HİÇ ÖLÇÜLMEDİ. F6 rubriği
+   "roughly 8 seconds" yazar ama o satır PLANDAN geldi, ölçümden değil.
+   Üretilmiş fazlar 8 s çıkarsa film İKİ IZGARALI olur ve buradaki
+   MUTLAK zamanlar kayar (sahne sırası, beat'ler ve kilitler etkilenmez).
+   Cevabı bir komut veriyor, modele sorulmaz:
+     ffprobe -v error -show_entries format=duration -of csv=p=0 <makara>
+   Ölçülünce bu blok kapanır ve kurgu kapısı (④) O sayıyla koşar.
+
+🔧 BU FAZDA AYRICA:
+   · S102 (imza çekim) push-in'i 0,2 m ve 6 s'de TAMAMLANIP DURUYOR —
+     10 s'de creep daha yavaş, mesafe aynı, son 4 saniye tam sabit.
+   · Titreşim genlik takvimine dokunulmadı (S98 1/200 → S104 1/50 TEPE
+     → S106 1/150); eklenen 8s beat'leri takvimi İZLER, kırmaz.
+   · Giriş notundaki S96 son karesi F8'in kadraj kararıyla güncellendi:
+     kapsül kadrajdan çıkmıştır, kadrajda yalnız istasyon kalır.
+```
+
+# 🔧 03.09.2026 · ÜRETİM ÖNCESİ TARAMA — TEMİZ (kayıt)
+
+```
+✅ F5/F6 gömülü-altyazı dersi bu faza tarandı [F7/F8 kayıt blokları]:
+   tırnaklı cümle 0 · sesi anlatan beat satırı 0 · replik 0/12 (defter
+   gereği — filmin son insan sesi S96'daki MACHINE anonsuydu).
+   Değişiklik GEREKMEDİ; kaydı olmayan denetim koşulmamış sayılır
+   diye bu blok yazıldı [D74].
+📌 ŞOK BANDI BİLGİSİ [FAZ_06 iptal kaydı ②]: bu fazdaki S102 "ikinci
+   bant" olarak planlandı; S68→S71 üçüncü sıçraması kabul edilirse
+   S102 kronolojik ÜÇÜNCÜ olur. Etiket değiştirilmedi, karar sahibinde.
 ```
 
 # 🔒 BU FAZIN KİLİTLERİ
@@ -167,7 +223,7 @@ S104-S106'da tepe yapar — F7'nin sessizliğinden sonra ilk müzik.
 
 ```
 ⛔ BU FAZDA REPLİK YOKTUR — 0/12.
-Filmin son sözlü anı S96'daki MACHINE anonsuydu (12:45).
+Filmin son sözlü anı S96'daki MACHINE anonsuydu (15:55).
 S97'den S120'ye kadar 24 sahne ve 3 dakika 12 saniye boyunca hiçbir
 replik, hiçbir anons, hiçbir insan sesi yoktur.
 ⚠️ Bu bilinçli bir bahistir ve 00_PLAN §kart-dışı anlatı riski ②'de
@@ -180,7 +236,7 @@ replik, hiçbir anons, hiçbir insan sesi yoktur.
 
 ## 🎬 SAHNE 97 — UFUK DÜZLEŞİR
 
-`12:48 – 12:56` · 35mm · kadro A · sırt üç-çeyrek, göz hizası, MS · fixed lockoff
+`16:00 – 16:10` · 35mm · kadro A · sırt üç-çeyrek, göz hizası, MS · fixed lockoff
 
 > 🎯 **REFERANS** · YÜKLE: **RF** + **RH** · ÇAPA: **RH p2** (lomboz) +
 > RF p2 · DURUM: KASKSIZ · kemer BAĞLI · halka 1/6 SABİT ·
@@ -191,7 +247,7 @@ _"Kavis düzleşiyor."_
 
 ```
 ⚙️ SAHNE KARTI
-  Tek çekim, 0 kesme, 8,0 s. Kamera sabit, omzunun arkasından.
+  Tek çekim, 0 kesme, 10,0 s. Kamera sabit, omzunun arkasından.
   İŞLEV: YÖN DEĞİŞTİ. On altı dakikadır Dünya bir MANZARAYDI; burada
   bir HEDEF oluyor. Kavis büyüdükçe düzleşir — geometri, gidiş
   yönünü sözsüz söyler.
@@ -276,13 +332,13 @@ Photorealistic, 35mm film grain.
 Output: 16:9, 4K, no text, no watermark.
 ```
 
-### 🎥 VIDEO PROMPT — 8 saniye, tek kesintisiz çekim
+### 🎥 VIDEO PROMPT — 10 saniye, tek kesintisiz çekim
 
 ```
 Maintain the subject, the cabin, the round window and Earth beyond it
 from the first frame.
 
-MOTION — 8 seconds, 35mm, medium shot, fixed lockoff 1.3 metres behind
+MOTION — 10 seconds, 35mm, medium shot, fixed lockoff 1.3 metres behind
 her right shoulder, over-the-shoulder, at eye-level with her head, deep
 focus, no cuts, absolutely no camera movement:
 
@@ -301,9 +357,10 @@ yet, just less blue. The patch it lays on the padded wall warms with
 it.
 6s — She does not move. The empty seats' straps drift a finger's width
 and stop. Nothing in the cabin shakes.
-8s — Earth fills more of the opening than it did, its curve a shallower
+8s — The curve flattens by a shade more and the warm patch on the padded
+wall widens with it. Nothing in the cabin shakes yet.
+10s — Earth fills more of the opening than it did, its curve a shallower
 arc, the light a shade warmer. No cuts.
-
 Audio: air, not vacuum — a small dry cabin tone: a close fan hum, a
 soft hiss, the faint tick of the hull, and her breathing, deep and
 even. Under all of it, very low and only just present, a slow pulse of
@@ -327,7 +384,7 @@ watermark. Photorealistic, 35mm film grain.
 
 ## 🎬 SAHNE 98 — İLK TİTREŞİM
 
-`12:56 – 13:04` · 85mm · kadro A · cephe, göz hizası, CU · fixed lockoff
+`16:10 – 16:20` · 85mm · kadro A · cephe, göz hizası, CU · fixed lockoff
 
 > 🎯 **REFERANS** · YÜKLE: **RF** · ÇAPA: **RF p3** (yüz CU) · DURUM:
 > KASKSIZ · ⛔ REPLİK 0 · ⭐ IŞIK: cam TURUNCUYA döner · ⭐ TİTREŞİM
@@ -338,7 +395,7 @@ _"Gövde önce duyar."_
 
 ```
 ⚙️ SAHNE KARTI
-  Tek çekim, 0 kesme, 8,0 s. Kamera sabit, yüze tam karşıdan.
+  Tek çekim, 0 kesme, 10,0 s. Kamera sabit, yüze tam karşıdan.
   İŞLEV: GİRİŞ BAŞLAR — ve önce gövde haber verir. Titreşim öyle
   küçüktür ki izleyici emin olamaz: kirpiklerde, kayışın dokusunda,
   saç uçlarında. Emin olmadığı için rahatsız olur; doğru tepki budur.
@@ -419,13 +476,13 @@ film grain.
 Output: 16:9, 4K, no text, no watermark.
 ```
 
-### 🎥 VIDEO PROMPT — 8 saniye, tek kesintisiz çekim
+### 🎥 VIDEO PROMPT — 10 saniye, tek kesintisiz çekim
 
 ```
 Maintain the subject, her face, the harness strap and the warm light
 from the first frame.
 
-MOTION — 8 seconds, 85mm, close-up, fixed lockoff 0.7 metres in front
+MOTION — 10 seconds, 85mm, close-up, fixed lockoff 0.7 metres in front
 of her, square to her and at eye-level, shallow depth of field, no
 cuts, absolutely no camera movement:
 
@@ -446,9 +503,10 @@ texture of the strap are where it reads first.
 toward the window.
 6s — Her jaw sets harder and she takes one long breath. Her hair still
 lifts and holds away from her head.
-8s — Her face is still and level, the vibration unchanged, the light a
+8s — The orange deepens once more, on her face and on the wall behind her.
+The vibration holds at the same fine amplitude.
+10s — Her face is still and level, the vibration unchanged, the light a
 deeper orange. No cuts.
-
 Audio: air, not vacuum — the cabin tone now carries a low continuous
 structural hum that was not there before, steady and unchanging; the
 fan hum and hiss under it, and her breathing, deep. A slow pulse of
@@ -473,7 +531,7 @@ caption, no watermark. Photorealistic, 35mm film grain.
 
 ## 🎬 SAHNE 99 — KOLÇAK
 
-`13:04 – 13:12` · 100mm · kadro A (yalnız el) · üst açı 30°, ECU · fixed lockoff
+`16:20 – 16:30` · 100mm · kadro A (yalnız el) · üst açı 30°, ECU · fixed lockoff
 
 > 🎯 **REFERANS** · YÜKLE: **RF** + **RH** · ÇAPA: RH p1 (kolçak) ·
 > DURUM: KASKSIZ · ⛔ YÜZ YOK · ⛔ REPLİK 0 · ⭐ TİTREŞİM ~1/150 ·
@@ -484,7 +542,7 @@ _"Aynı el, aynı kolçak."_
 
 ```
 ⚙️ SAHNE KARTI
-  Tek çekim, 0 kesme, 8,0 s. Kamera sabit, kolçağa tepeden.
+  Tek çekim, 0 kesme, 10,0 s. Kamera sabit, kolçağa tepeden.
   İŞLEV: TEKRAR EDEN KADRAJ BİR SAYAÇ OLUR. S93'te bu el kolçağı
   dışarıdaki dalga için kavramıştı; şimdi aynı el, aynı kolçak, ama
   tehdit artık gövdenin İÇİNDE. Aynı jest, farklı sebep.
@@ -559,13 +617,13 @@ caption, no watermark. Photorealistic, 35mm film grain.
 Output: 16:9, 4K, no text, no watermark.
 ```
 
-### 🎥 VIDEO PROMPT — 8 saniye, tek kesintisiz çekim
+### 🎥 VIDEO PROMPT — 10 saniye, tek kesintisiz çekim
 
 ```
 Maintain the hand, the armrest, the watch and the warm light from the
 first frame.
 
-MOTION — 8 seconds, 100mm macro, extreme close-up, fixed lockoff 0.3
+MOTION — 10 seconds, 100mm macro, extreme close-up, fixed lockoff 0.3
 metres above the armrest, high-angle, camera pitched down 30 degrees,
 shallow depth of field, no cuts, absolutely no camera movement:
 
@@ -585,9 +643,10 @@ under them; the dimple stays.
 scratched crystal.
 6s — The strap end drifts a millimetre or two and settles, still clear
 of the wrist. It does not fall.
-8s — The hand is locked over the edge, the strap end still floating,
-the vibration unchanged. No cuts.
-
+8s — The floating strap end turns over once and settles again, still clear
+of the wrist. The hand does not shift its grip.
+10s — The hand is locked over the edge, the strap end still floating, the
+vibration unchanged. No cuts.
 Audio: air, not vacuum — the cabin tone with a low continuous
 structural hum, slightly stronger than before; the creak of padding
 under the grip at 4 seconds; her breathing, off-screen, deep and even.
@@ -612,7 +671,7 @@ grain.
 
 ## 🎬 SAHNE 100 — ASILI
 
-`13:12 – 13:20` · 85mm · kadro A (yalnız omuz) · yanal, göz hizası, CU · fixed lockoff
+`16:30 – 16:40` · 85mm · kadro A (yalnız omuz) · yanal, göz hizası, CU · fixed lockoff
 
 > 🎯 **REFERANS** · YÜKLE: **RH** · ÇAPA: RH p1 (kabin, omuz hizası) ·
 > DURUM: ⛔ YÜZ YOK · ⛔ REPLİK 0 · ⭐ TİTREŞİM ~1/100 ·
@@ -623,7 +682,7 @@ _"Hâlâ havada."_
 
 ```
 ⚙️ SAHNE KARTI
-  Tek çekim, 0 kesme, 8,0 s. Kamera sabit, omzunun yanından.
+  Tek çekim, 0 kesme, 10,0 s. Kamera sabit, omzunun yanından.
   İŞLEV: SON AĞIRLIKSIZ KARE. Filmin yüz sahnesidir nesneler havada
   duruyor ve izleyici buna alıştı. Bu sahne alışkanlığı bilinçli
   olarak TAZELER: üç nesne, hiçbir desteği yok, hepsi kendi hızında
@@ -704,13 +763,13 @@ watermark. Photorealistic, 35mm film grain.
 Output: 16:9, 4K, no text, no watermark.
 ```
 
-### 🎥 VIDEO PROMPT — 8 saniye, tek kesintisiz çekim
+### 🎥 VIDEO PROMPT — 10 saniye, tek kesintisiz çekim
 
 ```
 Maintain the three floating objects, the shoulder, the wall and the
 orange light from the first frame.
 
-MOTION — 8 seconds, 85mm, close-up, fixed lockoff 0.8 metres to the
+MOTION — 10 seconds, 85mm, close-up, fixed lockoff 0.8 metres to the
 side of her shoulder, at eye-level, square across the cabin, shallow
 depth of field, no cuts, absolutely no camera movement:
 
@@ -729,9 +788,10 @@ drifts less than its own width and does not fall.
 amplitude of about a hundredth of frame height; the three objects
 tremble with the wall and the seat, not against them.
 6s — The orange light deepens by a shade on all three.
-8s — All three are still hanging, still unsupported, still nowhere near
-any surface. Nothing has fallen. No cuts.
-
+8s — All three keep trembling with the wall at the same amplitude, and not
+one of them drifts toward a surface.
+10s — All three are still hanging, still unsupported, still nowhere near any
+surface. Nothing has fallen. No cuts.
 Audio: air, not vacuum — the cabin tone with a low structural hum, a
 shade stronger than before; the fan hum and hiss under it, and her
 breathing, off-screen, deep. The slow pulse of music without percussion
@@ -755,7 +815,7 @@ watermark. Photorealistic, 35mm film grain.
 
 ## 🎬 SAHNE 101 — KIZIL GÖZ ⚡ ŞOK BANDININ İLK YARISI
 
-`13:20 – 13:28` · 100mm · kadro A (yalnız gözler) · cephe, göz hizası, ECU · fixed lockoff
+`16:40 – 16:50` · 100mm · kadro A (yalnız gözler) · cephe, göz hizası, ECU · fixed lockoff
 
 > 🎯 **REFERANS** · YÜKLE: **RF** · ÇAPA: **RF p3** (yüz CU'nun göz
 > bölgesi) · DURUM: KASKSIZ · ⛔ REPLİK 0 · ⭐ IŞIK: cam KIZIL —
@@ -767,7 +827,7 @@ _"En yakın kadraj, en son kez."_
 
 ```
 ⚙️ SAHNE KARTI
-  Tek çekim, 0 kesme, 8,0 s. Kamera sabit, gözlere.
+  Tek çekim, 0 kesme, 10,0 s. Kamera sabit, gözlere.
   İŞLEV: FİLMİN EN YAKIN KADRAJI ve bir sonraki sahnenin fırlatma
   rampası. Kızıl ışık gözün ıslak yüzeyinde ve kirpiklerde durur;
   gözbebeği kasılır. Dışarıda ne olduğunu görmüyoruz — yalnız bir
@@ -842,13 +902,13 @@ no caption, no watermark. Photorealistic, 35mm film grain.
 Output: 16:9, 4K, no text, no watermark.
 ```
 
-### 🎥 VIDEO PROMPT — 8 saniye, tek kesintisiz çekim
+### 🎥 VIDEO PROMPT — 10 saniye, tek kesintisiz çekim
 
 ```
 Maintain the eyes, the lashes, the red light and the framing from the
 first frame.
 
-MOTION — 8 seconds, 100mm macro, extreme close-up, fixed lockoff 0.3
+MOTION — 10 seconds, 100mm macro, extreme close-up, fixed lockoff 0.3
 metres in front of her, square to her and at eye-level, shallow depth
 of field, no cuts, absolutely no camera movement:
 
@@ -867,9 +927,9 @@ do not blur.
 edge as they close and lift.
 6s — Her brows draw a little closer together. The eyes do not move
 from level.
-8s — Both eyes open, level, red on the wet surface, pupils small. No
-cuts.
-
+8s — The lids stay open. The red on the wet surface deepens by a shade and
+the pupils do not widen.
+10s — Both eyes open, level, red on the wet surface, pupils small. No cuts.
 Audio: air, not vacuum — the cabin tone with a strong low structural
 hum; her breathing, close and shortening. The pulse of music without
 percussion has grown but still carries no drums. No voice at any point.
@@ -893,7 +953,7 @@ subtitles, no caption, no watermark. Photorealistic, 35mm film grain.
 
 ## 🎬 SAHNE 102 — YERÇEKİMİ YAĞMURU ⚡⭐ İMZA ÇEKİM · ŞOK BANDI 2
 
-`13:28 – 13:36` · 24mm · kadro A · üst açı 25°, WS · yavaş push-in (2,8 → 2,6 m)
+`16:50 – 17:00` · 24mm · kadro A · üst açı 25°, WS · yavaş push-in (2,8 → 2,6 m)
 
 > 🎯 **REFERANS** · YÜKLE: **RF** + **RH** · ÇAPA: **RH p1** (kabin tam
 > boy) · DURUM: KASKSIZ · ⭐ **FİLMİN ADINI TAŞIYAN KARE** ·
@@ -905,10 +965,10 @@ _"Süzülen her şey, aynı anda."_
 
 ```
 ⚙️ SAHNE KARTI
-  Tek çekim, 0 kesme, 8,0 s. TEK hareket: çok yavaş push-in (≤%10) —
+  Tek çekim, 0 kesme, 10,0 s. TEK hareket: çok yavaş push-in (≤%10) —
   fazın tek hareketli sahnesi (README 8 hareket listesi).
   İŞLEV: ⭐ İMZA ÇEKİM (%84,2). Filmin adı bir kavram değil, bir
-  OLAYDIR ve o olay burada sekiz saniye sürer.
+  OLAYDIR ve o olay burada on saniye sürer.
   ⭐ KURAL: yerçekimi bir kuvvet olarak gösterilmez, bir SONUÇ olarak
      gösterilir. Kadrajdaki her serbest nesne AYNI KAREDE, AYNI YÖNE
      düşmeye başlar — gecikme yok, sıra yok.
@@ -1002,13 +1062,13 @@ film grain.
 Output: 16:9, 4K, no text, no watermark.
 ```
 
-### 🎥 VIDEO PROMPT — 8 saniye, tek kesintisiz çekim
+### 🎥 VIDEO PROMPT — 10 saniye, tek kesintisiz çekim
 
 ```
 Maintain the cabin, the woman, the falling objects and the red light
 from the first frame.
 
-MOTION — 8 seconds, 24mm, wide shot, from 2.8 metres above and behind
+MOTION — 10 seconds, 24mm, wide shot, from 2.8 metres above and behind
 her, high-angle, camera pitched down 25 degrees, one very slow push-in
 of no more than twenty centimetres, deep focus, no cuts, no other camera
 movement:
@@ -1028,10 +1088,11 @@ dust comes down as a thin curtain and does not hover. 3s — Her shoulders press
 down onto the armrests and stay. Her chin drops. 4s — Her hair falls. It
 has lifted away from her head in every frame until now; it comes down
 against her scalp and stays there. 5s — The fabric scrap reaches the
-floor a second after the pen and lies flat. Nothing bounces back up. 6s — The camera has crept in. The last dust settles on the floor. 8s —
-Nothing is left hanging anywhere in the cabin. She is pressed into the
+floor a second after the pen and lies flat. Nothing bounces back up. 6s — The camera has crept in. The last dust settles on the floor.
+8s — Nothing rises again. A last few grains come down at the edge of frame
+and stay where they land.
+10s — Nothing is left hanging anywhere in the cabin. She is pressed into the
 seat, hair down, arms down. No cuts.
-
 Audio: air — the structural hum at its strongest; under it the small
 hard knock of the pen at 2 seconds and a scatter of tiny impacts as the
 dust lands. Her breathing, forced and short. The music is at its
@@ -1053,7 +1114,7 @@ Photorealistic, 35mm film grain.
 
 ## 🎬 SAHNE 103 — SARKAN KAYIŞ
 
-`13:36 – 13:44` · 50mm · kadro A · üç-çeyrek cephe, göz hizası, MS · fixed lockoff
+`17:00 – 17:10` · 50mm · kadro A · üç-çeyrek cephe, göz hizası, MS · fixed lockoff
 
 > 🎯 **REFERANS** · YÜKLE: **RF** + **RB** · ÇAPA: RF p1 (gövde) +
 > RB p1 (saat) · DURUM: KASKSIZ · ⭐ **AĞIRLIĞIN İKİNCİ KANITI**
@@ -1065,7 +1126,7 @@ _"Bir kayış ucu kadar."_
 
 ```
 ⚙️ SAHNE KARTI
-  Tek çekim, 0 kesme, 8,0 s. Kamera sabit, üç-çeyrek cepheden.
+  Tek çekim, 0 kesme, 10,0 s. Kamera sabit, üç-çeyrek cepheden.
   İŞLEV: YAĞMURUN İNSAN ÖLÇEĞİNDEKİ KARŞILIĞI. Geniş planda bütün
   kabin düştü; burada tek bir ayrıntı bunu doğruluyor: kardeşinin
   saatinin serbest kayış ucu, filmin başından beri havada duran o
@@ -1151,13 +1212,13 @@ no watermark. Photorealistic, 35mm film grain.
 Output: 16:9, 4K, no text, no watermark.
 ```
 
-### 🎥 VIDEO PROMPT — 8 saniye, tek kesintisiz çekim
+### 🎥 VIDEO PROMPT — 10 saniye, tek kesintisiz çekim
 
 ```
 Maintain the subject, her fallen hair, the hanging strap end and the
 red light from the first frame.
 
-MOTION — 8 seconds, 50mm, medium shot, fixed lockoff 1.6 metres in
+MOTION — 10 seconds, 50mm, medium shot, fixed lockoff 1.6 metres in
 front of her, three-quarter front, at eye-level with her head, no cuts,
 absolutely no camera movement:
 
@@ -1177,9 +1238,10 @@ finger's width and falls straight down again; it does not float.
 5s — Her eyes lower to the watch and stay there. Her lips stay closed.
 6s — Her forearm presses a little harder into the armrest. Her hair
 does not move away from her face.
-8s — The strap still hangs, the hair still lies flat, the settled dust
+8s — The hanging strap end swings a few millimetres away from her wrist and
+comes back down to plumb. Nothing on the padding lifts.
+10s — The strap still hangs, the hair still lies flat, the settled dust
 still on the padding. Nothing has lifted. No cuts.
-
 Audio: air — a strong low structural hum with a rattle now inside it;
 her breathing, short and forced against the weight on her chest. The
 pulse of music continues, still without percussion. No voice at any
@@ -1202,7 +1264,7 @@ subtitles, no caption, no watermark. Photorealistic, 35mm film grain.
 
 ## 🎬 SAHNE 104 — TEPE
 
-`13:44 – 13:52` · 85mm · kadro A · cephe, göz hizası, CU · fixed lockoff
+`17:10 – 17:20` · 85mm · kadro A · cephe, göz hizası, CU · fixed lockoff
 
 > 🎯 **REFERANS** · YÜKLE: **RF** · ÇAPA: **RF p3** (yüz CU) · DURUM:
 > KASKSIZ · ⛔ REPLİK 0 · ⭐ **TİTREŞİM TEPESİ ~1/50** (KİLİT 45) ·
@@ -1213,7 +1275,7 @@ _"Tepe."_
 
 ```
 ⚙️ SAHNE KARTI
-  Tek çekim, 0 kesme, 8,0 s. Kamera sabit, yüze tam karşıdan.
+  Tek çekim, 0 kesme, 10,0 s. Kamera sabit, yüze tam karşıdan.
   İŞLEV: FİZİKSEL ZİRVE. Titreşim en yükseğinde, kızıl en doygun,
   müzik en dolu. Ama yüz hâlâ bir şey YAPMIYOR — bu bir dayanma
   sahnesidir, bir mücadele sahnesi değil.
@@ -1290,13 +1352,13 @@ anywhere; no caption, no watermark. Photorealistic, 35mm film grain.
 Output: 16:9, 4K, no text, no watermark.
 ```
 
-### 🎥 VIDEO PROMPT — 8 saniye, tek kesintisiz çekim
+### 🎥 VIDEO PROMPT — 10 saniye, tek kesintisiz çekim
 
 ```
 Maintain the subject, her face, the headrest and the red light from the
 first frame.
 
-MOTION — 8 seconds, 85mm, close-up, fixed lockoff 0.7 metres in front
+MOTION — 10 seconds, 85mm, close-up, fixed lockoff 0.7 metres in front
 of her, square to her and at eye-level, shallow depth of field, no
 cuts, absolutely no camera movement:
 
@@ -1314,9 +1376,10 @@ slightly under the pressure; her hair does not move from her scalp.
 5s — Her eyelids lower a second time and lift again, more slowly.
 6s — The vibration begins to ease, by about a fifth. Her chin comes
 down a fraction from the headrest.
-8s — Her eyes are half open, her lips closed, the red still deep and
-the vibration a shade less than at its peak. No cuts.
-
+8s — The vibration eases by another fifth. Her eyelids stay half open and do
+not close.
+10s — Her eyes are half open, her lips closed, the red still deep and the
+vibration a shade less than at its peak. No cuts.
 Audio: air — the structural hum and rattle at their loudest, filling
 everything; her breathing barely audible under them, short and even.
 The music is at its fullest here and still has no percussion. She makes
@@ -1341,7 +1404,7 @@ subtitles, no caption, no watermark. Photorealistic, 35mm film grain.
 
 ## 🎬 SAHNE 105 — RENK GEÇİDİ
 
-`13:52 – 14:00` · 35mm · kadro A · sırt üç-çeyrek, göz hizası, MS · fixed lockoff
+`17:20 – 17:30` · 35mm · kadro A · sırt üç-çeyrek, göz hizası, MS · fixed lockoff
 
 > 🎯 **REFERANS** · YÜKLE: **RF** + **RH** · ÇAPA: **RH p2** (lomboz) ·
 > DURUM: KASKSIZ · ⛔ REPLİK 0 · ⭐ **L5'İN ÜÇ RENGİ TEK ÇEKİMDE**:
@@ -1352,8 +1415,8 @@ _"Kızıl gitti."_
 
 ```
 ⚙️ SAHNE KARTI
-  Tek çekim, 0 kesme, 8,0 s. Kamera sabit, omzunun arkasından.
-  İŞLEV: GİRİŞ BİTTİ. Üç renk sekiz saniyede sırayla geçer ve
+  Tek çekim, 0 kesme, 10,0 s. Kamera sabit, omzunun arkasından.
+  İŞLEV: GİRİŞ BİTTİ. Üç renk on saniyede sırayla geçer ve
   sonuncusu bir MÜJDEDİR: gök mavisi, yani atmosfer, yani aşağısı.
   On altı dakikadır siyahtan başka bir gök yoktu.
   ⭐ S97'nin kardeş kadrajı (aynı omuz, aynı cam): orada Dünya
@@ -1434,13 +1497,13 @@ caption, no watermark. Photorealistic, 35mm film grain.
 Output: 16:9, 4K, no text, no watermark.
 ```
 
-### 🎥 VIDEO PROMPT — 8 saniye, tek kesintisiz çekim
+### 🎥 VIDEO PROMPT — 10 saniye, tek kesintisiz çekim
 
 ```
 Maintain the subject, the cabin, the round window and the colour beyond
 it from the first frame.
 
-MOTION — 8 seconds, 35mm, medium shot, fixed lockoff 1.3 metres behind
+MOTION — 10 seconds, 35mm, medium shot, fixed lockoff 1.3 metres behind
 her right shoulder, over-the-shoulder, at eye-level with her head, deep
 focus, no cuts, absolutely no camera movement:
 
@@ -1461,9 +1524,10 @@ sky blue, the first blue sky in the film. The cast on the padded wall
 and on her hair turns with it.
 7s — The vibration eases further, to about a hundredth of frame height.
 Her shoulders stay down and heavy.
-8s — The window is pale blue, even and open; the cabin is lit blue; her
+8s — The blue steadies and stops changing. It has reached the whole opening
+and does not shift again.
+10s — The window is pale blue, even and open; the cabin is lit blue; her
 hair still lies flat. No cuts.
-
 Audio: air — the structural hum and rattle drop away steadily across
 the shot, from loud to a rough rumble; her breathing comes back through
 them, short. The music holds at its fullest and still has no
@@ -1489,7 +1553,7 @@ no caption, no watermark. Photorealistic, 35mm film grain.
 
 ## 🎬 SAHNE 106 — KIYI
 
-`14:00 – 14:08` · 24mm · kadro A · üst açı 25°, WS · fixed lockoff
+`17:30 – 17:40` · 24mm · kadro A · üst açı 25°, WS · fixed lockoff
 
 > 🎯 **REFERANS** · YÜKLE: **RF** + **RH** · ÇAPA: **RH p1** (kabin tam
 > boy) · DURUM: KASKSIZ · ⛔ REPLİK 0 · ⭐ **KAMERA ONDAN UZAKLAŞIR**:
@@ -1500,7 +1564,7 @@ _"Kamera onu bırakıyor."_
 
 ```
 ⚙️ SAHNE KARTI
-  Tek çekim, 0 kesme, 8,0 s. Kamera sabit, kabine tepeden.
+  Tek çekim, 0 kesme, 10,0 s. Kamera sabit, kabine tepeden.
   İŞLEV: BİLİNCİN KIYISI — ve filmin en cesur biçimsel kararı.
   Bir karakter kendini bırakırken kamera ona yaklaşmaz, UZAKLAŞIR.
   İzleyici onunla değil, ondan biraz uzakta kalır; yalnızlık son
@@ -1586,13 +1650,13 @@ grain.
 Output: 16:9, 4K, no text, no watermark.
 ```
 
-### 🎥 VIDEO PROMPT — 8 saniye, tek kesintisiz çekim
+### 🎥 VIDEO PROMPT — 10 saniye, tek kesintisiz çekim
 
 ```
 Maintain the cabin, the seated woman, the fallen objects and the pale
 blue light from the first frame.
 
-MOTION — 8 seconds, 24mm, wide shot, fixed lockoff 2.8 metres above and
+MOTION — 10 seconds, 24mm, wide shot, fixed lockoff 2.8 metres above and
 behind her, high-angle, camera pitched down 25 degrees, deep focus, no
 cuts, absolutely no camera movement:
 
@@ -1612,9 +1676,10 @@ moves.
 5s — Her eyes close. They do not open again in this shot.
 6s — Her head settles a little further to one side against the
 headrest. Her hair stays flat against her scalp.
-8s — She sits small and still in the blue cabin, eyes closed, and
+8s — The vibration is not felt anywhere in the frame now. Her closed eyes do
+not move and nothing on the floor stirs.
+10s — She sits small and still in the blue cabin, eyes closed, and
 everything that fell is still on the floor. No cuts.
-
 Audio: air — the structural hum has dropped to a distant rumble; a new
 thin whistle of air past the hull has come in under it. Her breathing
 thins to a single quiet layer and stays there — no gasp, no rasp, no
@@ -1639,7 +1704,7 @@ watermark. Photorealistic, 35mm film grain.
 
 ## 🎬 SAHNE 107 — PARAŞÜT ⭐ İNSANSIZ (KART 10)
 
-`14:08 – 14:16` · 24mm · kadro 0 · yanal, göz hizası, EWS · fixed lockoff
+`17:40 – 17:50` · 24mm · kadro 0 · yanal, göz hizası, EWS · fixed lockoff
 
 > 🎯 **REFERANS** · YÜKLE: **RE** + **RI** · ÇAPA: RE p4 (kapsül konisi)
 > + **RI p1** (kuru göl yatağı, çok aşağıda) · DURUM: ⛔ KADRODA KİMSE
@@ -1651,7 +1716,7 @@ _"Mavi."_
 
 ```
 ⚙️ SAHNE KARTI
-  Tek çekim, 0 kesme, 8,0 s. Kamera sabit, iniş eksenine dik.
+  Tek çekim, 0 kesme, 10,0 s. Kamera sabit, iniş eksenine dik.
   İŞLEV: TAHLİYE. Doksan saniyelik en yüksek basınçtan sonra filmin
   ilk nefes alma anı — ve bunu bir insan değil, bir kumaş yapıyor.
   ⭐ **ORTAM DEĞİŞTİ VE IŞIK BUNU SÖYLER**: on altı dakikadır her
@@ -1731,13 +1796,13 @@ subjects, no figures anywhere.
 Output: 16:9, 4K, no text, no watermark.
 ```
 
-### 🎥 VIDEO PROMPT — 8 saniye, tek kesintisiz çekim
+### 🎥 VIDEO PROMPT — 10 saniye, tek kesintisiz çekim
 
 ```
 Maintain the canopy, the lines, the capsule, the sky and the ground
 below from the first frame.
 
-MOTION — 8 seconds, 24mm, extreme wide shot, fixed lockoff 120 metres
+MOTION — 10 seconds, 24mm, extreme wide shot, fixed lockoff 120 metres
 to the side of the descent axis, at eye-level with the capsule, deep
 focus, no cuts, absolutely no camera movement:
 
@@ -1758,9 +1823,10 @@ flaps; only its skirt breathes slightly.
 height every second against the sky.
 7s — The ground below has not visibly grown; only the sky above the
 canopy has lost a little of its band at the top of frame.
-8s — The canopy is still full, the capsule still plumb beneath it,
-still descending. No cuts.
-
+8s — The assembly keeps dropping at the same rate and the canopy does not
+luff or spill. The band of sky at the top of frame narrows a little more.
+10s — The canopy is still full, the capsule still plumb beneath it, still
+descending. No cuts.
 Audio: atmosphere — for the first time in the film there is air outside:
 a steady wind rush past the canopy and lines, a low rhythmic creak of
 webbing under load, and the distant hollow note of a hanging metal
@@ -1787,7 +1853,7 @@ subjects, no figures anywhere.
 
 ## 🎬 SAHNE 108 — ASILI GÖVDE ⭐ FAZ KAPANIŞI
 
-`14:16 – 14:24` · 24mm · kadro A · yanal, göz hizası, WS · fixed lockoff
+`17:50 – 18:00` · 24mm · kadro A · yanal, göz hizası, WS · fixed lockoff
 
 > 🎯 **REFERANS** · YÜKLE: **RF** + **RH** · ÇAPA: RH p1 (kabin, yandan)
 > · DURUM: KASKSIZ · ⛔ REPLİK 0 · ⭐ **ANİ YAVAŞLAMA**: gövde kemerde
@@ -1798,7 +1864,7 @@ _"Kemerde asılı."_
 
 ```
 ⚙️ SAHNE KARTI
-  Tek çekim, 0 kesme, 8,0 s. Kamera sabit, kabine yandan.
+  Tek çekim, 0 kesme, 10,0 s. Kamera sabit, kabine yandan.
   İŞLEV: FAZ KAPANIŞI. Paraşüt açıldığında kapsül aniden yavaşlar ve
   gövde öne, kemerlere doğru savrulur; orada asılı kalır. Bu, filmin
   ilk "bir şeye asılmak" anıdır — 0g'de asılmak yoktur, çünkü ağırlık
@@ -1881,13 +1947,13 @@ film grain.
 Output: 16:9, 4K, no text, no watermark.
 ```
 
-### 🎥 VIDEO PROMPT — 8 saniye, tek kesintisiz çekim
+### 🎥 VIDEO PROMPT — 10 saniye, tek kesintisiz çekim
 
 ```
 Maintain the cabin, the woman in the harness, the gathered objects and
 the blue daylight from the first frame.
 
-MOTION — 8 seconds, 24mm, wide shot, fixed lockoff 2.4 metres to the
+MOTION — 10 seconds, 24mm, wide shot, fixed lockoff 2.4 metres to the
 side of the seat, at eye-level with her shoulders, square across the
 cabin, deep focus, no cuts, absolutely no camera movement:
 
@@ -1909,9 +1975,10 @@ nothing repeats.
 6s — Her fingers curl once. Her head lifts a few degrees against the
 weight of it.
 7s — Her eyes open. They do not search; they hold, level and unfocused.
-8s — She hangs in the harness with her eyes open, the cabin still and
-blue around her, the vibration gone. No cuts.
-
+8s — Her head stays lifted where she got it to. Her eyes stay open and do
+not search the cabin.
+10s — She hangs in the harness with her eyes open, the cabin still and blue
+around her, the vibration gone. No cuts.
 Audio: atmosphere — the structural hum is gone. One heavy structural
 thud at 1 second as the deceleration arrives, then webbing creaking
 under load, the wind rush outside the hull and a slow rhythmic sway.
@@ -1939,7 +2006,7 @@ grain.
 # 🔗 FAZ SONU BAĞLANTI NOTU
 
 ```
-Bu fazın son karesi (S108 · 14:24): A kemerde öne asılı, gözleri AÇIK;
+Bu fazın son karesi (S108 · 18:00): A kemerde öne asılı, gözleri AÇIK;
 saç aşağıda; yerdeki nesneler taban kenarına toplanmış; kabin mavi
 gün ışığında; titreşim bitmiş; dışarıda rüzgâr ve salınım.
 Sonraki faz (`../FAZ_10_ZEMIN/FAZ_10_ZEMIN.md` · S109-S120): S109
@@ -2000,7 +2067,7 @@ Işık: L6 SABAH ZEMİN F10 boyunca (S109-S120).
   2.709-4.020 · betik NOT: "kurulum sayısı 10 — üst bant 6", bilinçli
   İlk koşuda iki kapı kapandı ve ikisi de aynı şeyi söyledi:
    ① **S102 video 3.158 — filmin EN UZUN promptuydu.** İmza çekim,
-     çünkü sekiz saniyede on iki nesnenin ve bir insanın aynı anda
+     çünkü on saniyede on iki nesnenin ve bir insanın aynı anda
      düşüşünü yazmak uzun sürüyor. Beş turda 2.598'e indi ve hiçbir
      KİLİT düşmedi: düşenlerin listesi, "aynı anda" şartı, saçın
      düşüşü, sıvı yasağı ve yavaş çekim yasağı korundu.

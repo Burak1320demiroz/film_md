@@ -231,6 +231,20 @@ O örnek düzeltilmelidir — kural iki yerde duruyor ve biri yanlış tutuyor.*
    `strike`→`cross the frame`). Yoksa DOKUNMA.
 ```
 
+## 2.5 ⚠️ VARLIK/YARATIK KELİMELERİ — HİPOTEZ, KURAL DEĞİL  🆕 TUR 7
+
+> ⛔ **Bu blok da betiğe İNMEDİ** (2.4 ile aynı statü): dış kaynaklı,
+> bu depoda ölçülmüş red YOK — depo henüz tek uzaylı karesi üretmedi.
+> Uygulama tarafı: `UZAYLI_VARLIK_TASARIM_KILAVUZU.md` §7.
+> İlk ölçülmüş red gelirse satır defter kanıtıyla 2.2'ye taşınır.
+
+| kelime | dış iddia | bedava nötr hâl |
+|---|---|---|
+| `tentacle` | NSFW yanlış-pozitifi (tek kaynak, topluluk bildirimi) | `elongated organic appendages` · `prehensile limbs` |
+| `mutant` · `deformed` | şiddet/deformasyon filtresi + modele anatomi bozma telkini | formu POZİTİF say: `exactly four jointed limbs` |
+| `xenomorph` · `Alien` (film) · tanınmış yaratık IP'leri | IP filtresi anında blok + telif | `an unrecognized biological form` |
+| ıslak iç doku tarifi (`flesh`, `raw`, `oozing`) | tek başına değil; `DEEP EMERGENCY RED` ışıkla BİRLEŞİNCE §3 imza ⑦ (gore) bileşiği | doku İŞLEVLE: `a translucent membrane that flexes` — ve o sahnede kırmızı ışık kullanma |
+
 ## 2.3 ⚠️ SÖZLÜK NE ZAMAN ÇALIŞMAZ
 
 > Sınıflandırıcı promptu **BÜTÜN olarak** okur. Tek tek masum üç cümle

@@ -1,6 +1,6 @@
 # 🌍 YERÇEKİMİ — FAZ 7 / SES
 
-## S73–S84 PROMPTLARI | 9:36 – 11:12 | Perde II SONU | 16:9 Yatay
+## S73–S84 PROMPTLARI | 12:00 – 14:00 | Perde II SONU | 16:9 Yatay
 ### _"Ölünün sesini bırakmak."_
 
 > **Bu dosya ADIM 4'tür.** Plan: `../00_PLAN.md` · Bible + harita:
@@ -33,13 +33,94 @@
 # 🔗 FAZ GİRİŞ BAĞLANTISI
 
 ```
-Önceki fazın son karesi (S72 · 9:36): A kapsül koltuğunda, gözleri
+Önceki fazın son karesi (S72 · 12:00): A kapsül koltuğunda, gözleri
 KAPALI, başı koltukta; kabinde yalnız BİR amber lamba; halka 1/6;
 vana kısık; oda tonu en ince hâlinde.
 Köprü: IŞIK KÖPRÜSÜ — S72'nin tek amber lambası S73'ün tek kaynağıdır,
 kesintisiz. Kadraj CU → MS, açı cepheden PROFİLE (≥45°).
 ⛔ S72'de gözler kapandı ve KAPALI KALDI. S73 kapalı gözle açılır;
    ilk açılış S76'dadır ve onu B'nin sesi açar.
+```
+
+# ⏱️ 03.09.2026 · IZGARA 8 s → 10 s ÇEVRİLDİ (sahip kararı)
+
+```
+⭐ SEBEP: sahip üretime 10 SANİYELİK kliplerle başladı. Klip süresi bir
+   tercih değil ARACIN AYARIDIR [D124]; belge araca uyar, tersi değil.
+
+✅ HER SAHNEDE YAPILAN — 12/12:
+   · `MOTION — 8 seconds` → `10 seconds` · sahne kartı `8,0 s` → `10,0 s`
+   · beat MUTLAK SANİYELERİ KORUNDU (0s-7s aynen) — hızlar ve sayısal
+     kilitler "per second / within a second / in about half a second"
+     biçiminde yazılıydı, bu yüzden 10 s'de kendiliğinden geçerli kalır
+   · eski `8s` SON DURUM beat'i `10s`'e taşındı, araya sahneye ÖZGÜ bir
+     `8s` devam beat'i yazıldı — dolgu değil: her biri o sahnenin kendi
+     malzemesini iki saniye daha sürdürür (sürüklenme · titreme · ışık ·
+     sayaç · nefes). Lockoff + "hiçbir şey yerleşmiyor" estetiği bu iki
+     saniyeyi zaten talep ediyordu.
+
+📐 IZGARA — bu fazın bütün zamanları buradan HESAPLANDI, elle yazılmadı:
+   sahne n başlangıcı = (n−1) × 10 s
+   FAZ 7: S73 12:00 → S84 14:00 (Perde II kapanışı) · film NOMİNAL 120 × 10 s = 20:00 (Second Ship ızgarası)
+   ⚠️ GERÇEK KURGU 19:20 — dört yuva boş (S8 · S15 · S69 · S70);
+     116 klip × 10 s. Nominal ızgara PROMPT zamanıdır, kurgu değil.
+
+⛔ ÖLÇÜM BORCU — TEK AÇIK SAYI [D125 · ortak adım ⑪]:
+   F1-F6 makaralarının klip süresi bu depoda HİÇ ÖLÇÜLMEDİ. F6 rubriği
+   "roughly 8 seconds" yazar ama o satır PLANDAN geldi, ölçümden değil.
+   Üretilmiş fazlar 8 s çıkarsa film İKİ IZGARALI olur ve buradaki
+   MUTLAK zamanlar kayar (sahne sırası, beat'ler ve kilitler etkilenmez).
+   Cevabı bir komut veriyor, modele sorulmaz:
+     ffprobe -v error -show_entries format=duration -of csv=p=0 <makara>
+   Ölçülünce bu blok kapanır ve kurgu kapısı (④) O sayıyla koşar.
+
+🔧 BU FAZDA AYRICA:
+   · REPLİK DEFTERİ formülle YENİDEN HESAPLANDI [D122] ve eski bir hata
+     düzeldi: S76 satırı 3 s ofsetle yazılmıştı, oysa `Audio:` satırı ve
+     beat 1 s diyor → 12:31. Diğer üç satır formülle birebir tuttu.
+   · Sahne kartlarındaki "Sekiz saniyede bir olay olur: bir nefes"
+     → "On saniyede" (fazın DİP sahnesi S73'ün kendi ölçütü).
+```
+
+# 🔧 02.09.2026 · ÜRETİM ÖNCESİ DÜZELTME — SES SATIRLARI KALDIRILDI
+
+```
+⛔ SEBEP: F5 ve F6 makaralarında GÖMÜLÜ ALTYAZI çıktı.
+   F5: 2 altyazı / 2 tırnaklı sahne
+   F6: 3 altyazı / 2 tırnaklı sahne  ← biri UYDURULMUŞ bir cümleydi
+      (S66, promptunda tırnaklı cümle YOKTU; model
+       "Contact confirmed. Please maintain trajectory." uydurup bastı —
+       ve o cümle sahnenin anlamını TERSİNE ÇEVİRİYORDU)
+   → tırnağı silmek YETMİYOR; sesi ANLATAN satırın kendisi tetikliyor.
+
+🔴 VE BU FAZDA BEDELİ EN AĞIR OLURDU:
+   KİLİT 30 halüsinasyonun meşruiyetini üç kanaldan işaretliyor —
+   ses hoparlörden gelmez · S77'de kaynak BOŞTUR · B ekranda 0 kare.
+   ⛔ Gömülü altyazı üçünü birden yok eder: altyazı bir filmin ekrana
+     koyabileceği EN BELGESEL nesnedir ("bu söylendi, işte dökümü").
+     Ölünün sesi GERÇEK bir telsiz çağrısı olarak okunur, S77'nin boş
+     ızgarası anlamsızlaşır ve S84'ün CENTRAL CHOICE'u "karar verdi"
+     değil "talimatı uyguladı" olur.
+
+✅ YAPILAN: video promptlarındaki DÖRT beat satırı, YALNIZ KAMERANIN
+   GÖRDÜĞÜNÜ anlatacak şekilde yeniden yazıldı.
+     S76 1s  ses satırı → çenesinde tek istemsiz hareket
+     S78 2s  ses satırı → elin sürüklenmesi yavaşlar
+     S81 4s  ses satırı → el kımıldamaz, baş dönmez
+     S84 5s  ses satırı → el çarkta bir vuruş daha kilitli kalır
+   Sonuç: F7'de tırnaklı cümle 0 · sesi anlatan beat 0.
+
+⚠️ SES KAYBOLMADI. Audio: satırları DOKUNULMADAN duruyor ve zaten
+   cümleyi tırnaklamıyorlardı ("speaking one short line" · S84'te
+   "heard only and never shown as text"). Replikler post'ta,
+   REPLİK DEFTERİ'ndeki zamanlarıyla girer.
+
+⭐ BU AYNI ZAMANDA BİR DENEYDİR [GOZLEM ADAY-7]:
+   tek değişken değişti (beat satırı). Negatif blok, uzunluk, kadraj,
+   ışık — hiçbiri değişmedi.
+     altyazı ÇIKMAZSA → sebep prompt · kapı BETİK'e yazılır
+     altyazı YİNE ÇIKARSA → sebep ARAÇ; çözüm prompt değil ayardır
+   ⛔ Bu yüzden F7 üretilirken başka hiçbir şey değiştirilmemeli.
 ```
 
 # 🔒 BU FAZIN KİLİTLERİ
@@ -146,14 +227,14 @@ MUZIK_VE_SES.md'nin en teknik maddesi orasıdır.
 ⛔ MÜZİK 0/12 — bu fazda hiçbir sahneye müzik konmaz.
 ```
 
-## 🗣️ REPLİK DEFTERİ — (n−1) × 8 + ofset [D122]
+## 🗣️ REPLİK DEFTERİ — (n−1) × 10 + ofset [D122]
 
 | S# | saniye | konuşan | REGISTER | kanal | replik |
 |:--:|:--:|---|:--:|---|---|
-| S76 | 10:03 | B ⚠️ HALÜSİNASYON | HUMAN | ⛔ hoparlör DEĞİL — her yönden, filtresiz | "Told you. Half of it's storytelling." |
-| S78 | 10:18 | B ⚠️ HALÜSİNASYON | HUMAN | her yönden, filtresiz | "Landing rockets are rockets, engineer. Point them the wrong way." |
-| S81 | 10:44 | B ⚠️ HALÜSİNASYON | HUMAN | her yönden, filtresiz | "Go home. Take the watch with you." |
-| S84 | 11:09 | SUIT AI | MACHINE | göğüs bağlantısı, yakın ve kuru | "OXYGEN SIX PERCENT. RECOVERING." |
+| S76 | 12:31 | B ⚠️ HALÜSİNASYON | HUMAN | ⛔ hoparlör DEĞİL — her yönden, filtresiz | "Told you. Half of it's storytelling." |
+| S78 | 12:52 | B ⚠️ HALÜSİNASYON | HUMAN | her yönden, filtresiz | "Landing rockets are rockets, engineer. Point them the wrong way." |
+| S81 | 13:24 | B ⚠️ HALÜSİNASYON | HUMAN | her yönden, filtresiz | "Go home. Take the watch with you." |
+| S84 | 13:55 | SUIT AI | MACHINE | göğüs bağlantısı, yakın ve kuru | "OXYGEN SIX PERCENT. RECOVERING." |
 
 ⚠️ A'nın repliği 0 (kasksız). Üç halüsinasyon repliği de A'ya SORU
 SORMAZ ve cevap için duraklama BIRAKMAZ (KİLİT 30).
@@ -169,7 +250,7 @@ S78'in fikri, ve o da bir mühendisin kendi çıkarabileceği bir fikirdir.
 
 ## 🎬 SAHNE 73 — KARANLIK YÜZ
 
-`9:36 – 9:44` · 50mm · kadro A · tam profil, göz hizası, MS · fixed lockoff
+`12:00 – 12:10` · 50mm · kadro A · tam profil, göz hizası, MS · fixed lockoff
 
 > 🎯 **REFERANS** · YÜKLE: **RF** · ÇAPA: **RF p2** (profil) · DURUM:
 > KASKSIZ · halka 1/6 (kadrajda değil) · gözler KAPALI (S72'den) ·
@@ -180,8 +261,8 @@ _"Klipte tek bir nefes."_
 
 ```
 ⚙️ SAHNE KARTI
-  Tek çekim, 0 kesme, 8,0 s. Kamera sabit, tam profilden.
-  İŞLEV: DİP. Sekiz saniyede bir olay olur: bir nefes. Filmin en az
+  Tek çekim, 0 kesme, 10,0 s. Kamera sabit, tam profilden.
+  İŞLEV: DİP. On saniyede bir olay olur: bir nefes. Filmin en az
   hareketli sahnesi ve "her şey kaybedildi" yuvasının kapısı
   [KARAKTER §5.3].
   ⛔ Gözler bu sahnede AÇILMAZ. İlk açılış S76'dadır ve onu bir ses
@@ -253,13 +334,13 @@ Photorealistic, 35mm film grain. Output: 16:9, 4K, no text, no
 watermark.
 ```
 
-### 🎥 VIDEO PROMPT — 8 saniye, tek kesintisiz çekim
+### 🎥 VIDEO PROMPT — 10 saniye, tek kesintisiz çekim
 
 ```
 Maintain the subject, her profile, the cabin, framing and lighting from
 the first frame.
 
-MOTION — 8 seconds, 50mm, medium shot, fixed lockoff 1.6 metres to her
+MOTION — 10 seconds, 50mm, medium shot, fixed lockoff 1.6 metres to her
 side, full profile, at eye-level with her head, no cuts, absolutely no
 camera movement:
 
@@ -278,9 +359,10 @@ only movement in the shot.
 6s — The blue is almost gone; only the narrow amber edge is left along
 her profile. Her hair lifts and holds.
 7s — Her eyes stay closed. Her lips stay closed.
-8s — She is exactly as she was, lit by one warm edge in an almost black
+8s — The last of the blue goes off the back of her hair and does not come
+back. Only the amber edge is left, and it does not move.
+10s — She is exactly as she was, lit by one warm edge in an almost black
 cabin. No cuts.
-
 Audio: air, not vacuum — the lowest room tone in the capsule: a distant
 fan hum, one faint hiss, and two soft structural ticks from the hull.
 One long slow breath at 4 seconds. There is never absolute silence and
@@ -303,7 +385,7 @@ apply throughout]
 
 ## 🎬 SAHNE 74 — GEVŞEK GÖVDE
 
-`9:44 – 9:52` · 24mm · kadro A · üst açı 25°, WS · fixed lockoff
+`12:10 – 12:20` · 24mm · kadro A · üst açı 25°, WS · fixed lockoff
 
 > 🎯 **REFERANS** · YÜKLE: **RF** + **RH** · ÇAPA: **RH p1** (kabin) +
 > RF p1 (tam boy) · DURUM: KASKSIZ · ⛔ REPLİK 0 · ⭐ S62'nin AYNASI:
@@ -314,7 +396,7 @@ _"Artık bastırmıyor."_
 
 ```
 ⚙️ SAHNE KARTI
-  Tek çekim, 0 kesme, 8,0 s. Kamera sabit, kabine tepeden.
+  Tek çekim, 0 kesme, 10,0 s. Kamera sabit, kabine tepeden.
   İŞLEV: TESLİMİYETİN GÖVDE HÂLİ. S62'de aynı fizik bir mücadeleydi:
   eller kalkıyordu, o bastırıyordu. Burada aynı eller kalkıyor ve
   kimse bastırmıyor. Fizik değişmedi, insan değişti.
@@ -390,13 +472,13 @@ caption, no watermark. Photorealistic, 35mm film grain. Output: 16:9,
 4K, no text, no watermark.
 ```
 
-### 🎥 VIDEO PROMPT — 8 saniye, tek kesintisiz çekim
+### 🎥 VIDEO PROMPT — 10 saniye, tek kesintisiz çekim
 
 ```
 Maintain the cabin, the slack figure, the empty seats, framing and
 lighting from the first frame.
 
-MOTION — 8 seconds, 24mm, wide shot, fixed lockoff 2.6 metres behind and
+MOTION — 10 seconds, 24mm, wide shot, fixed lockoff 2.6 metres behind and
 above her, high-angle, camera pitched down 25 degrees, deep focus, no
 cuts, absolutely no camera movement:
 
@@ -417,9 +499,10 @@ chest rises once, slowly.
 her sleeve, then drifts away again. She does not react.
 7s — The faint blue wash at the screen-left has weakened almost to
 nothing; only the amber pool remains.
-8s — She is still slack in the seat, arms floating, head back. Nothing
-in the cabin has settled. No cuts.
-
+8s — One floating forearm drifts a few millimetres further and holds there.
+The loose strap comes to rest without touching her again.
+10s — She is still slack in the seat, arms floating, head back. Nothing in
+the cabin has settled. No cuts.
 Audio: air, not vacuum — the lowest room tone: a distant fan hum, a
 faint hiss, three soft structural ticks from the hull, the dry brush of
 a webbing strap against a sleeve at 5 seconds, and her breathing, slow
@@ -441,7 +524,7 @@ apply throughout]
 
 ## 🎬 SAHNE 75 — ÇATIRTI
 
-`9:52 – 10:00` · 50mm · kadro A · sırt üç-çeyrek, göz hizası, MS · fixed lockoff
+`12:20 – 12:30` · 50mm · kadro A · sırt üç-çeyrek, göz hizası, MS · fixed lockoff
 
 > 🎯 **REFERANS** · YÜKLE: **RF** + **RH** · ÇAPA: RH p1 (hoparlör
 > ızgarası, koltuğun EKRAN-SAĞ omuz hizasında) + RF p2 · DURUM:
@@ -452,7 +535,7 @@ _"Bir şey açıldı ve o duymadı."_
 
 ```
 ⚙️ SAHNE KARTI
-  Tek çekim, 0 kesme, 8,0 s. Kamera sabit, omzunun arkasından.
+  Tek çekim, 0 kesme, 10,0 s. Kamera sabit, omzunun arkasından.
   İŞLEV: SES KAPISI AÇILIR. Kadrajda hem dinleyen hem kaynak var —
   ve dinleyen tepki VERMİYOR. Bu, izleyicide sahnenin asıl sorusunu
   kurar: o mu duymuyor, yoksa ortada duyulacak bir şey mi yok?
@@ -524,13 +607,13 @@ Photorealistic, 35mm film grain. Output: 16:9, 4K, no text, no
 watermark.
 ```
 
-### 🎥 VIDEO PROMPT — 8 saniye, tek kesintisiz çekim
+### 🎥 VIDEO PROMPT — 10 saniye, tek kesintisiz çekim
 
 ```
 Maintain the subject, the seat, the speaker grille, framing and lighting
 from the first frame.
 
-MOTION — 8 seconds, 50mm, medium shot, fixed lockoff 1.2 metres behind
+MOTION — 10 seconds, 50mm, medium shot, fixed lockoff 1.2 metres behind
 her left shoulder, over-the-shoulder, at eye-level with her head,
 shallow depth of field, no cuts, absolutely no camera movement:
 
@@ -549,9 +632,10 @@ not tense.
 5s — A second crackle, longer, breaking into two parts, then a thin band
 of static that stays. Still nothing lights on the grille.
 6s — Her hair drifts and settles. Her breathing does not change.
-8s — She is exactly as she was, eyes closed, unmoved; the thin static
+8s — The thin static holds at the same level, with nothing in it shaped like
+a word. Her eyelid does not flicker.
+10s — She is exactly as she was, eyes closed, unmoved; the thin static
 continues out of the grille. No cuts.
-
 Audio: air, not vacuum — the lowest room tone underneath: a distant fan
 hum, a faint hiss, soft structural ticks. From the speaker grille: one
 short dry crackle at 2 seconds, a longer broken crackle at 5 seconds,
@@ -573,10 +657,10 @@ film grain. [PHYSICS + NEGATIVE bibles apply throughout]
 
 ## 🎬 SAHNE 76 — ESKİ ESPRİ ⚠️ HALÜSİNASYON BAŞLAR
 
-`10:00 – 10:08` · 85mm · kadro A · tam cephe, göz hizası, CU · fixed lockoff
+`12:30 – 12:40` · 85mm · kadro A · tam cephe, göz hizası, CU · fixed lockoff
 
 > 🎯 **REFERANS** · YÜKLE: **RF** · ÇAPA: **RF p3** (yüz CU) · DURUM:
-> KASKSIZ · replik 10:03, **B — HALÜSİNASYON** · ⛔ B'nin gövdesi
+> KASKSIZ · replik 12:31, **B — HALÜSİNASYON** · ⛔ B'nin gövdesi
 > kadrajda YOK ve olmayacak (S45'ten beri 0 kare) · ⛔ ses hoparlörden
 > GELMEZ: her yönden, filtresiz, yakın (KİLİT 30 ①) · ⛔ A CEVAP VERMEZ
 > · ⭐ IŞIK: mavi bitti, yalnız amber (S76-S80) · göz bütçesi
@@ -585,7 +669,7 @@ _"Told you. Half of it's storytelling."_
 
 ```
 ⚙️ SAHNE KARTI
-  Tek çekim, 0 kesme, 8,0 s. Kamera sabit, yüze tam karşıdan.
+  Tek çekim, 0 kesme, 10,0 s. Kamera sabit, yüze tam karşıdan.
   İŞLEV: GÖZLER AÇILIR — ve onları açan şey bir cümledir. Sekiz
   sahnedir kapalı olan gözler bir ölünün esprisiyle açılır.
   ⭐ Cümle YENİ BİLGİ TAŞIMAZ: S7'de aynı adam "bu tankın yarısı
@@ -657,13 +741,13 @@ patch or sign; no caption, no watermark. Photorealistic, 35mm film
 grain. Output: 16:9, 4K, no text, no watermark.
 ```
 
-### 🎥 VIDEO PROMPT — 8 saniye, tek kesintisiz çekim
+### 🎥 VIDEO PROMPT — 10 saniye, tek kesintisiz çekim
 
 ```
 Maintain the subject, her face, the dark cabin, framing and lighting
 from the first frame.
 
-MOTION — 8 seconds, 85mm, close-up, fixed lockoff 0.7 metres in front of
+MOTION — 10 seconds, 85mm, close-up, fixed lockoff 0.7 metres in front of
 her, square to her and at eye-level, shallow depth of field, no cuts,
 absolutely no camera movement:
 
@@ -674,17 +758,18 @@ deep shadow, her eyelids beginning to lift.
 
 0s — Her eyes are almost closed; her face is slack; her breathing is
 shallow and slow.
-1s — Under the thin static, a man's voice, low and easy: "Told you. Half
-of it's storytelling."
+1s — Her jaw shifts once, a small involuntary movement, and settles.
+Nothing else in the frame changes.
 3s — Her eyes open fully. They do not search the cabin; they hold still
 and level, looking at nothing.
 5s — Her lips part a fraction and close again without a sound. She does
 not answer.
 6s — Her breathing changes pattern once, then steadies. The warm edge on
 her face does not move.
-8s — Her eyes stay open, level and unfocused; her lips closed; the cabin
+8s — She blinks once, slowly. Her eyes come back to exactly the same nothing
+and stay level.
+10s — Her eyes stay open, level and unfocused; her lips closed; the cabin
 still dark around her. No cuts.
-
 Audio: air, not vacuum — the lowest room tone and a thin band of static
 underneath. At 1 second a man's voice, low and easy, speaking one short
 line — and it does not come from the speaker: it is close, dry and
@@ -709,7 +794,7 @@ bibles apply throughout]
 
 ## 🎬 SAHNE 77 — HER YÖNDEN ⭐ HALÜSİNASYONUN KANITI
 
-`10:08 – 10:16` · 100mm · kadro A (kadrajda insan yok, yalnız ızgara) · alt açı 20°, ECU · fixed lockoff
+`12:40 – 12:50` · 100mm · kadro A (kadrajda insan yok, yalnız ızgara) · alt açı 20°, ECU · fixed lockoff
 
 > 🎯 **REFERANS** · YÜKLE: **RH** · ÇAPA: RH p1 (hoparlör ızgarası) ·
 > DURUM: ⛔ REPLİK 0 · ⭐ **KANIT SAHNESİ**: kamera sesin kaynağına
@@ -723,7 +808,7 @@ _"Kamera kaynağa gitti; kaynak boştu."_
 
 ```
 ⚙️ SAHNE KARTI
-  Tek çekim, 0 kesme, 8,0 s. Kamera sabit, ızgaraya alttan.
+  Tek çekim, 0 kesme, 10,0 s. Kamera sabit, ızgaraya alttan.
   İŞLEV: ⭐ FİLMİN EN SESSİZ İDDİASI. İzleyici bir ses duydu ve
   şimdi o sesin çıkması gereken deliğe bakıyor. Delikten yalnız
   cızırtı geliyor. Kimse "bu halüsinasyon" demiyor; kadraj söylüyor.
@@ -786,13 +871,13 @@ no watermark. Photorealistic, 35mm film grain. Output: 16:9, 4K, no
 text, no watermark.
 ```
 
-### 🎥 VIDEO PROMPT — 8 saniye, tek kesintisiz çekim
+### 🎥 VIDEO PROMPT — 10 saniye, tek kesintisiz çekim
 
 ```
 Maintain the speaker grille, the rim, the padded wall, framing and
 lighting from the first frame.
 
-MOTION — 8 seconds, 100mm macro, extreme close-up, fixed lockoff 0.25
+MOTION — 10 seconds, 100mm macro, extreme close-up, fixed lockoff 0.25
 metres below the grille, low-angle, camera pitched up 20 degrees,
 shallow depth of field, no cuts, absolutely no camera movement:
 
@@ -809,9 +894,10 @@ does not move; the two lamps stay black.
 pattern. Still nothing on the grille lights, blinks or vibrates.
 6s — One long structural tick runs through the wall and the grille takes
 it without ringing. The raking amber light does not change.
-8s — The grille is exactly as it was: cold, dark, still, with only the
-thin static coming out of it. No cuts.
-
+8s — The static continues out of the dark holes at the same level. Not one
+hole lights and the two lamps beside the rim stay matte black.
+10s — The grille is exactly as it was: cold, dark, still, with only the thin
+static coming out of it. No cuts.
 Audio: air, not vacuum — room tone and, from this grille, one thin even
 band of radio static that continues for the whole shot and never becomes
 a voice. Off-screen, close, a woman's breathing, faster than it was. No
@@ -835,10 +921,10 @@ throughout]
 
 ## 🎬 SAHNE 78 — ROKETLER DE ROKETTİR ⭐ ÇEHOV 6 İŞARET EDİLİR
 
-`10:16 – 10:24` · 85mm · kadro A (yalnız el) · üst açı 30°, CU · fixed lockoff
+`12:50 – 13:00` · 85mm · kadro A (yalnız el) · üst açı 30°, CU · fixed lockoff
 
 > 🎯 **REFERANS** · YÜKLE: **RF** + **RH** · ÇAPA: **RH p4** (kırmızı
-> menteşeli kapak, KAPALI) · DURUM: KASKSIZ · replik 10:18, **B —
+> menteşeli kapak, KAPALI) · DURUM: KASKSIZ · replik 12:52, **B —
 > HALÜSİNASYON** · ⛔ YÜZ YOK · ⛔ Kapak AÇILMAZ (açılış S84'te) ·
 > ⭐ S58'in AYNI NESNESİ, ikinci ziyaret: orada el üstünden geçip
 > gitmişti, burada üstünde DURUR
@@ -847,7 +933,7 @@ _"Landing rockets are rockets, engineer."_
 
 ```
 ⚙️ SAHNE KARTI
-  Tek çekim, 0 kesme, 8,0 s. Kamera sabit, panele tepeden.
+  Tek çekim, 0 kesme, 10,0 s. Kamera sabit, panele tepeden.
   İŞLEV: ⭐ ÇEHOV 6 İŞARETLENİR. S58'de aynı kapağın üstünden bir el
   geçmiş ve gitmişti — vurgusuz ekim. Burada aynı el aynı kapağın
   üstünde DURUYOR, çünkü biri ona ne işe yaradığını söyledi.
@@ -919,13 +1005,13 @@ watermark. Photorealistic, 35mm film grain. Output: 16:9, 4K, no text,
 no watermark.
 ```
 
-### 🎥 VIDEO PROMPT — 8 saniye, tek kesintisiz çekim
+### 🎥 VIDEO PROMPT — 10 saniye, tek kesintisiz çekim
 
 ```
 Maintain the panel, the closed red cover, the hand, framing and lighting
 from the first frame.
 
-MOTION — 8 seconds, 85mm, close-up, fixed lockoff 0.5 metres above the
+MOTION — 10 seconds, 85mm, close-up, fixed lockoff 0.5 metres above the
 panel, high-angle, camera pitched down 30 degrees, shallow depth of
 field, no cuts, absolutely no camera movement:
 
@@ -937,16 +1023,17 @@ screen-right raking low.
 
 0s — The hand moves slowly across the panel from the screen-left,
 fingers open, drifting rather than reaching.
-2s — Under a thin band of static, a man's voice, low and level: "Landing
-rockets are rockets, engineer. Point them the wrong way."
+2s — The hand slows as it crosses the middle of the panel, its drift
+shortening, and keeps moving.
 4s — The hand stops. Its index and middle fingers come to rest across
 the closed red cover and stay there, flat, without gripping it.
 6s — The fingers do not lift the cover and do not find the recess at its
 edge. They press down very slightly and hold.
 7s — The tendons along the back of the hand tighten once and release.
-8s — The hand is still resting flat across the closed red cover; nothing
+8s — The fingers slide a fraction along the cover without finding its edge.
+They do not hook and they do not lift.
+10s — The hand is still resting flat across the closed red cover; nothing
 has been opened. No cuts.
-
 Audio: air, not vacuum — room tone and a thin band of static underneath.
 At 2 seconds a man's voice, low and level, speaking one line — close,
 dry and unfiltered, with no radio band on it and no direction, and
@@ -969,7 +1056,7 @@ apply throughout]
 
 ## 🎬 SAHNE 79 — KARAR ÖNCESİ
 
-`10:24 – 10:32` · 50mm · kadro A · üç-çeyrek cephe, göz hizası, MS · fixed lockoff
+`13:00 – 13:10` · 50mm · kadro A · üç-çeyrek cephe, göz hizası, MS · fixed lockoff
 
 > 🎯 **REFERANS** · YÜKLE: **RF** · ÇAPA: RF p1 (3/4) · DURUM: KASKSIZ ·
 > ⛔ REPLİK 0 · ⭐ TİK BİRİNCİ GÖRÜNÜŞ (KİLİT 32): parmaklar bacakta
@@ -980,7 +1067,7 @@ _"Bir şey hesaplıyor."_
 
 ```
 ⚙️ SAHNE KARTI
-  Tek çekim, 0 kesme, 8,0 s. Kamera sabit, üç-çeyrek cepheden.
+  Tek çekim, 0 kesme, 10,0 s. Kamera sabit, üç-çeyrek cepheden.
   İŞLEV: DÜŞÜNME. Fazın ikinci turu burada başlar (KİLİT 35) ve
   aynı biçim ikinci kez, biraz daha yakından döner. A artık uyanık
   ve bir şey hesaplıyor; ne olduğunu söylemiyor.
@@ -1052,13 +1139,13 @@ Photorealistic, 35mm film grain. Output: 16:9, 4K, no text, no
 watermark.
 ```
 
-### 🎥 VIDEO PROMPT — 8 saniye, tek kesintisiz çekim
+### 🎥 VIDEO PROMPT — 10 saniye, tek kesintisiz çekim
 
 ```
 Maintain the subject, her face, her tapping hand, framing and lighting
 from the first frame.
 
-MOTION — 8 seconds, 50mm, medium shot, fixed lockoff 1.5 metres in front
+MOTION — 10 seconds, 50mm, medium shot, fixed lockoff 1.5 metres in front
 of her, three-quarter front, at eye-level with her head, no cuts,
 absolutely no camera movement:
 
@@ -1076,9 +1163,10 @@ The tapping continues, still irregular.
 6s — Her breathing quickens again. Her jaw sets; her lips stay closed.
 7s — The tapping falters and does not stop; her fingertips keep
 returning to the same place on her thigh.
-8s — Her eyes are open, her jaw set, her fingers still tapping unevenly.
-No cuts.
-
+8s — The tapping slows for one beat and loses its pattern again. Her eyes
+stay on nothing at the screen-left.
+10s — Her eyes are open, her jaw set, her fingers still tapping unevenly. No
+cuts.
 Audio: air, not vacuum — room tone and a thin band of static underneath,
 quieter than before: a distant fan hum, a faint hiss, one structural
 tick, the small dry sound of fingertips on a suit thigh, and her
@@ -1100,7 +1188,7 @@ NEGATIVE bibles apply throughout]
 
 ## 🎬 SAHNE 80 — DOĞRULUŞ
 
-`10:32 – 10:40` · 24mm · kadro A · göz hizası, yanal, WS · fixed lockoff
+`13:10 – 13:20` · 24mm · kadro A · göz hizası, yanal, WS · fixed lockoff
 
 > 🎯 **REFERANS** · YÜKLE: **RF** + **RH** · ÇAPA: **RH p1** (kabin) +
 > RF p1 (tam boy) · DURUM: KASKSIZ · ⛔ REPLİK 0 · ⭐ S74'ün TERSİ:
@@ -1111,7 +1199,7 @@ _"Gövdesi karardan önce karar verdi."_
 
 ```
 ⚙️ SAHNE KARTI
-  Tek çekim, 0 kesme, 8,0 s. Kamera sabit, kabine yandan.
+  Tek çekim, 0 kesme, 10,0 s. Kamera sabit, kabine yandan.
   İŞLEV: DÖNÜM — ve kararın kendisinden ÖNCE gelir. Filmde beden
   akıldan önce davranır: S74'te kollar serbestti, burada gövde
   toplanıyor. İzleyici kararı S84'te duyar ama BURADA görür.
@@ -1185,13 +1273,13 @@ panel, surface, patch or sign; no caption, no watermark. Photorealistic,
 35mm film grain. Output: 16:9, 4K, no text, no watermark.
 ```
 
-### 🎥 VIDEO PROMPT — 8 saniye, tek kesintisiz çekim
+### 🎥 VIDEO PROMPT — 10 saniye, tek kesintisiz çekim
 
 ```
 Maintain the cabin, the figure, the seats, framing and lighting from the
 first frame.
 
-MOTION — 8 seconds, 24mm, wide shot, fixed lockoff 2.4 metres to the
+MOTION — 10 seconds, 24mm, wide shot, fixed lockoff 2.4 metres to the
 side of the seat, at eye-level with her shoulders, square across the
 cabin, deep focus, no cuts, absolutely no camera movement:
 
@@ -1212,9 +1300,10 @@ armrest. Nothing overshoots and nothing rebounds; she does not drift
 past the position.
 6s — Her head comes level and turns a few degrees toward the panel at
 the screen-left, where the valve wheel and the closed red cover are.
-8s — She holds herself upright and still, facing the panel, hand locked
-on the handhold. No cuts.
-
+8s — The last of the movement leaves her: her hair settles against her head
+and she does not drift back from the position.
+10s — She holds herself upright and still, facing the panel, hand locked on
+the handhold. No cuts.
 Audio: air, not vacuum — room tone and a thin static band underneath:
 fan hum, faint hiss, one structural tick, the dry sound of a palm
 closing on a metal handhold at 1 second, the creak of a suit under
@@ -1238,11 +1327,11 @@ apply throughout]
 
 ## 🎬 SAHNE 81 — TEREDDÜT
 
-`10:40 – 10:48` · 35mm · kadro A · sırt üç-çeyrek, göz hizası, MS · fixed lockoff
+`13:20 – 13:30` · 35mm · kadro A · sırt üç-çeyrek, göz hizası, MS · fixed lockoff
 
 > 🎯 **REFERANS** · YÜKLE: **RF** + **RH** · ÇAPA: **RH p3** (vana) +
 > RH p4 (kapalı kırmızı kapak, aynı panelde — KİLİT 34) · DURUM:
-> KASKSIZ · halka 1/6 · replik 10:44, **B — HALÜSİNASYON, SON** ·
+> KASKSIZ · halka 1/6 · replik 13:24, **B — HALÜSİNASYON, SON** ·
 > ⛔ YÜZ okunmaz (sırt üç-çeyrek) · ⭐ IŞIK: lombozdan mavi GERİ GELİR
 > (S81-S84) — dönüşün sonucu, olay değil
 
@@ -1250,7 +1339,7 @@ _"Go home. Take the watch with you."_
 
 ```
 ⚙️ SAHNE KARTI
-  Tek çekim, 0 kesme, 8,0 s. Kamera sabit, omzunun arkasından.
+  Tek çekim, 0 kesme, 10,0 s. Kamera sabit, omzunun arkasından.
   İŞLEV: B'NİN SON CÜMLESİ — ve ilk kez bir EMİR değil, bir VEDA.
   "Eve git. Saati de yanında götür." Cümle A'nın kendi anlattığı
   şeyi (S30-S31: kardeşinin saati) onun sesiyle geri verir; icat
@@ -1331,13 +1420,13 @@ any surface; no caption, no watermark. Photorealistic, 35mm film grain.
 Output: 16:9, 4K, no text, no watermark.
 ```
 
-### 🎥 VIDEO PROMPT — 8 saniye, tek kesintisiz çekim
+### 🎥 VIDEO PROMPT — 10 saniye, tek kesintisiz çekim
 
 ```
 Maintain the subject, the panel, the valve wheel, the closed red cover,
 framing and lighting from the first frame.
 
-MOTION — 8 seconds, 35mm, medium shot, fixed lockoff 1.4 metres behind
+MOTION — 10 seconds, 35mm, medium shot, fixed lockoff 1.4 metres behind
 her right shoulder, over-the-shoulder, at eye-level with her shoulders,
 no cuts, absolutely no camera movement:
 
@@ -1352,16 +1441,17 @@ screen-right, a faint returned blue wash from the window behind.
 turns.
 2s — Her fingers curl a little around the rim and stop. The wheel does
 not move.
-4s — Under the static, a man's voice, low and warm: "Go home. Take the
-watch with you." It leaves no pause for a reply.
+4s — Her hand does not move and her head does not turn. The fingers on
+the rim neither tighten nor let go.
 6s — Her hand stays exactly where it is. On her left wrist the stopped
 watch turns a few degrees into the light and the single lit ring segment
 holds steady.
 7s — Her shoulders rise and fall once. She does not turn her head toward
 the sound.
-8s — Her hand is still on the wheel, uncommitted; the red cover a
-forearm away, still closed. No cuts.
-
+8s — Her fingers loosen a fraction and close again on the same place. The
+wheel still does not turn.
+10s — Her hand is still on the wheel, uncommitted; the red cover a forearm
+away, still closed. No cuts.
 Audio: air, not vacuum — room tone and a thin band of static underneath.
 At 4 seconds a man's voice, low and warm, speaking one line — close, dry
 and unfiltered, with no radio band on it and no direction, leaving no
@@ -1385,7 +1475,7 @@ apply throughout]
 
 ## 🎬 SAHNE 82 — KAPALI DUDAKLAR ⭐ CEVAP BEDENDEN GELİR
 
-`10:48 – 10:56` · 85mm · kadro A · cephe, hafif alttan, CU · fixed lockoff
+`13:30 – 13:40` · 85mm · kadro A · cephe, hafif alttan, CU · fixed lockoff
 
 > 🎯 **REFERANS** · YÜKLE: **RF** · ÇAPA: **RF p3** (yüz CU) · DURUM:
 > KASKSIZ · ⛔ **REPLİK 0 VE BU SAHNENİN KONUSU BUDUR** (KİLİT 31):
@@ -1396,7 +1486,7 @@ _"Konuşmuyor. Sayıyor."_
 
 ```
 ⚙️ SAHNE KARTI
-  Tek çekim, 0 kesme, 8,0 s. Kamera sabit, yüze yakın ve hafif alttan.
+  Tek çekim, 0 kesme, 10,0 s. Kamera sabit, yüze yakın ve hafif alttan.
   İŞLEV: ⭐ FAZIN EN İYİ SAHNESİ VE BİR KURALIN ÜRÜNÜ. Kask takvimi
   kasksız sahnede replik 0 der; A ölüyle konuşamaz. Bu bir kısıt
   değil, doğru karardır: ölüyle konuşan bir karakter halüsinasyonu
@@ -1471,13 +1561,13 @@ Photorealistic, 35mm film grain. Output: 16:9, 4K, no text, no
 watermark.
 ```
 
-### 🎥 VIDEO PROMPT — 8 saniye, tek kesintisiz çekim
+### 🎥 VIDEO PROMPT — 10 saniye, tek kesintisiz çekim
 
 ```
 Maintain the subject, her face, the dark cabin, framing and lighting
 from the first frame.
 
-MOTION — 8 seconds, 85mm, close-up, fixed lockoff 0.7 metres in front of
+MOTION — 10 seconds, 85mm, close-up, fixed lockoff 0.7 metres in front of
 her, near frontal, camera at chin height and angled very slightly up,
 shallow depth of field, no cuts, absolutely no camera movement:
 
@@ -1495,9 +1585,10 @@ beats, a gap, four beats. It is even and deliberate, like counting.
 6s — Her eyes narrow slightly and do not move from the screen-left. The
 tapping continues at the same measured rate.
 7s — Her jaw sets harder. Her lips do not part again.
-8s — Her face is still, lips closed, eyes fixed to the screen-left, the
+8s — Below the frame the tapping completes another group of four and the gap
+after it. Her lips stay closed.
+10s — Her face is still, lips closed, eyes fixed to the screen-left, the
 measured tapping still going below frame. No cuts.
-
 Audio: air, not vacuum — room tone and a thin band of static underneath;
 the small dry sound of fingertips tapping a suit thigh from 4 seconds
 onward, even and measured, in groups of four. Her breathing, deep and
@@ -1522,7 +1613,7 @@ throughout]
 
 ## 🎬 SAHNE 83 — SIKILAN PARMAKLAR ⭐ TİK DORUĞU
 
-`10:56 – 11:04` · 100mm · kadro A (yalnız el) · üst açı 35°, ECU · fixed lockoff
+`13:40 – 13:50` · 100mm · kadro A (yalnız el) · üst açı 35°, ECU · fixed lockoff
 
 > 🎯 **REFERANS** · YÜKLE: **RH** + **RB** · ÇAPA: **RH p3** (vana
 > çarkı) · DURUM: halka 1/6 (kadraj kenarında) · ⛔ YÜZ YOK ·
@@ -1534,7 +1625,7 @@ _"Ritim durdu."_
 
 ```
 ⚙️ SAHNE KARTI
-  Tek çekim, 0 kesme, 8,0 s. Kamera sabit, çarka tepeden.
+  Tek çekim, 0 kesme, 10,0 s. Kamera sabit, çarka tepeden.
   İŞLEV: ⭐ TİKİN ÖLÜMÜ. S18'de kurulan jest üç sahnedir dönüyordu:
   zayıf (S79), sayar gibi (S82), ve burada — ritim son kez vurur,
   DURUR, ve aynı parmaklar vana çarkını kavrar. Bir alışkanlık bir
@@ -1602,13 +1693,13 @@ sign; no caption, no watermark. Photorealistic, 35mm film grain. Output:
 16:9, 4K, no text, no watermark.
 ```
 
-### 🎥 VIDEO PROMPT — 8 saniye, tek kesintisiz çekim
+### 🎥 VIDEO PROMPT — 10 saniye, tek kesintisiz çekim
 
 ```
 Maintain the valve wheel, the hand, the panel, framing and lighting from
 the first frame.
 
-MOTION — 8 seconds, 100mm macro, extreme close-up, fixed lockoff 0.3
+MOTION — 10 seconds, 100mm macro, extreme close-up, fixed lockoff 0.3
 metres above the valve wheel, high-angle, camera pitched down 35
 degrees, shallow depth of field, no cuts, absolutely no camera movement:
 
@@ -1628,9 +1719,10 @@ once. The tendons come up hard along the back of the hand and the
 knuckles pale where the grip bites.
 7s — The grip holds. The wheel does not turn. The hand does not tremble
 and does not adjust.
-8s — The hand is locked closed on the wheel, tendons standing, the wheel
+8s — The grip closes a fraction harder and the knuckles go paler still. The
+wheel does not turn.
+10s — The hand is locked closed on the wheel, tendons standing, the wheel
 exactly where it was. No cuts.
-
 Audio: air, not vacuum — room tone and a thin band of static underneath.
 The dry measured tapping continues from the first frame, moves onto
 metal at 2 seconds — four small hard taps on the knurled rim — and then
@@ -1654,12 +1746,12 @@ subtitles, no caption, no watermark. Photorealistic, 35mm film grain.
 
 ## 🎬 SAHNE 84 — VANA AÇILIR ⭐ CENTRAL CHOICE · PERDE DÖNÜŞÜ 2 · TEMA
 
-`11:04 – 11:12` · 85mm · kadro A (yalnız el) · alt açı 20°, CU · fixed lockoff
+`13:50 – 14:00` · 85mm · kadro A (yalnız el) · alt açı 20°, CU · fixed lockoff
 
 > 🎯 **REFERANS** · YÜKLE: **RH** + **RB** + RF · ÇAPA: **RH p3 + RH p4
 > AYNI KADRAJDA** (vana çarkı ve kırmızı kapak, bir önkol aralıkla —
 > KİLİT 34) · DURUM: halka **1/6, YANIP SÖNMEYE başlar** (dolmaz) ·
-> replik 11:09, MACHINE · ⛔ YÜZ YOK · ⛔ KESİLEMEZ
+> replik 13:55, MACHINE · ⛔ YÜZ YOK · ⛔ KESİLEMEZ
 > ⭐ **ÜÇ İŞ TEK ÇEKİMDE:** vana açılır (seçim) · hoparlör ANINDA
 > susar (bedel) · kırmızı kapak açılır (perde dönüşü)
 
@@ -1667,7 +1759,7 @@ _"OXYGEN SIX PERCENT. RECOVERING."_
 
 ```
 ⚙️ SAHNE KARTI
-  Tek çekim, 0 kesme, 8,0 s. Kamera sabit, panele alttan.
+  Tek çekim, 0 kesme, 10,0 s. Kamera sabit, panele alttan.
   İŞLEV: ▶ CENTRAL CHOICE + ▶ PERDE DÖNÜŞÜ 2 + ⭐ TEMA SAHNESİ.
   A yaşamayı seçer ve BEDEL AYNI KAREDE ödenir: vana açıldığı anda
   halüsinasyonun cızırtısı KESİLİR. Ölünün sesini bırakmak, yaşamayı
@@ -1749,13 +1841,13 @@ panel or any surface; no caption, no watermark. Photorealistic, 35mm
 film grain. Output: 16:9, 4K, no text, no watermark.
 ```
 
-### 🎥 VIDEO PROMPT — 8 saniye, tek kesintisiz çekim
+### 🎥 VIDEO PROMPT — 10 saniye, tek kesintisiz çekim
 
 ```
 Maintain the panel, the valve wheel, the hand and the red cover from the
 first frame.
 
-MOTION — 8 seconds, 85mm, close-up, fixed lockoff 0.5 metres below the
+MOTION — 10 seconds, 85mm, close-up, fixed lockoff 0.5 metres below the
 panel, low-angle, camera pitched up 20 degrees, holding both the valve
 wheel and the red cover in frame, no cuts, no camera movement:
 
@@ -1773,15 +1865,16 @@ continuous movement, and stops.
 rate. No other segment lights.
 4s — The static cuts off. It does not fade or trail away: one frame it
 is there, the next it is gone.
-5s — A flat, thin synthetic voice, close and dry, says: "OXYGEN SIX
-PERCENT. RECOVERING."
+5s — The hand stays locked on the wheel one beat longer, unmoving.
 6s — The hand comes off the wheel, travels a forearm across the panel to
 the screen-right, and hooks a finger into the cover's recess.
 7s — The cover lifts and folds flat against the panel on its hinge.
 Underneath, one short black lever sits in its recess.
-8s — The hand is beside the open cover, not on the lever; the segment is
+8s — The hand does not travel back toward the lever. Nothing else on the
+panel moves; the only change left in the frame is the slow flash of the
+single segment.
+10s — The hand is beside the open cover, not on the lever; the segment is
 still flashing. No cuts.
-
 Audio: air, not vacuum — room tone throughout. A low mechanical scrape
 as the wheel turns between 1 and 3 seconds. The static stops dead at 4
 seconds, with no fade and no tail, and never returns. One flat synthetic
@@ -1806,7 +1899,7 @@ film grain. [PHYSICS + NEGATIVE bibles apply throughout]
 # 🔗 FAZ SONU BAĞLANTI NOTU
 
 ```
-Bu fazın son karesi (S84 · 11:12 · PERDE II KAPANDI): panelde açık
+Bu fazın son karesi (S84 · 14:00 · PERDE II KAPANDI): panelde açık
 kırmızı kapak ve altında dokunulmamış tek kol; vana açık; halka 1/6
 YANIP SÖNÜYOR; hoparlör SESSİZ ve bir daha ses vermeyecek; kabinde
 tek amber lamba + lombozdan dönen soluk mavi.
@@ -1883,7 +1976,7 @@ takvimlenecek.
      ⚠️ Fazın en uzun promptu perdeyi çeviren sahneydi: tek çekimde
      üç iş yapan bir sahne, üç işi de yazmayı gerektiriyor.
    ③ S73 video 1.952 karakter — bandın ALTINDA (depoda ilk kez).
-     Fazın en sessiz sahnesiydi: sekiz saniyede tek bir nefes.
+     Fazın en sessiz sahnesiydi: on saniyede tek bir nefes.
      Kısa prompt kilit taşımıyor olabilir uyarısı haklıydı — 0g
      durağanlık kilidi (hiçbir şey çökmez, oturmaz) eksikti, eklendi.
 ```

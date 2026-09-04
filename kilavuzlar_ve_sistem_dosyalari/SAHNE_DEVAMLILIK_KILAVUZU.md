@@ -76,6 +76,11 @@ HİÇBİR KELİME DEĞİŞTİRİLMEDEN kopyala-yapıştır olarak kullanılır.
    → Model bunları FARKLI KİŞİLER olarak algılayabilir.
 ```
 
+> ⭐ 03.09.2026: Astronot karakterlerde çapa ENVANTERİ (rol şeridi ·
+> sırt silueti · bilek/saat · kişisel eşya + hazır İngilizce kalıplar):
+> `ASTRONOT_DONANIM_VE_KIMLIK_KILAVUZU.md` — blok oradan derlenir,
+> buradaki kelimesi kelimesine kuralıyla dondurulur.
+
 ### 2.2 Zayıf vs. Güçlü Prompt Karşılaştırması
 
 ```

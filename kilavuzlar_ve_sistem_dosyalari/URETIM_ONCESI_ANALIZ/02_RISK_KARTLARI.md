@@ -70,6 +70,13 @@ yürür (Ders 18), parlayan canlıya temasta geometri erir (Ders 28).
 
 💡 ALTERNATİF:      Kaleida'nın Prizma Hayalet'i çözümü buldu: canlıyı
                     "neredeyse görünmez" yaz. Görünmeyen anatomi bozulmaz.
+
+⭐ UZAYLI VARLIK (03.09.2026 · TUR 7): filme uzaylı varlık eklenecekse
+   bu kartın kilitleri UZAYLI_VARLIK_TASARIM_KILAVUZU.md'de
+   standartlaştı — §4 pozitif sayılabilir ANATOMY LOCK · §5 reveal
+   merdiveni (K0-K4; her kademe aynı zamanda bu kartın risk-azaltma
+   basamağıdır) · §3 hareket bandı. Varlık risk SAYIMINDA bu kartın
+   canlısı olarak sayılır.
 ```
 
 ---

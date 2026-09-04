@@ -1279,6 +1279,64 @@ grain. [PHYSICS + NEGATIVE bibles apply throughout]
 _"Pencereden dönüyor."_
 
 ```
+⛔⛔ 02.09.2026 · PROJE SAHİBİ BU SAHNEYİ İPTAL ETTİ — ÜRETİLMEYECEK
+════════════════════════════════════════════════════════════════
+Sebep: ÜÇ kadraj denemesi de görsel modelin politika filtresini
+geçmedi. Sırasıyla: ① özgün kadraj (sol kol kadrajın altından
+kalkar, bilekte siyah kayış) · ② sözlük düzeltmesi (bare/rising/
+deep silindi, özne "saat" yapıldı) · ③ kadraj değişikliği (kol
+yükselmiyor, el baştan beri kolçakta). Üçü de reddedildi.
+⚠️ Prompt AŞAĞIDA DURUYOR, silinmedi — üçüncü sürümdür.
+
+TANI (kayda geçsin): sinyal kelimede değil, KOMPOZİSYONDAYDI —
+loş kapalı kabinde yalnız kadın + gözler aşağı + gövdeye/boğaza
+yakın kol + kayış. S8 ile aynı aile [GOZLEM ADAY-4 çevresi].
+⭐ Üçüncü denemede kol tamamen kaldırıldığı hâlde reddedilmesi,
+   tetikleyicinin geri kalan yığında olduğunu gösteriyor: yalnız
+   + loş + gözler aşağı + açık boğaz. Bu, S8'den DAHA GENİŞ bir
+   tetikleyici sınıfıdır ve dördüncü deneme boğazı da kaldırmalıydı.
+
+═══ İPTALİN BEŞ SONUCU ═══
+① FİLM 120 SAHNE KALIR — yuva boş bırakılır, sahne SİLİNMEZ.
+   Boş yuva: S8 · S15 · S69 · S70 = 4 × 8 s = 32 s
+   → 16:00 yerine 15:28 (kurguda karar verilecek)
+
+② 🔴 ÖLÇEK YAYI KIRILIYOR — S69 VE S70 BİRLİKTE GİTTİĞİ İÇİN
+   komşu çift S68 → S71 oluyor:
+     S68  WS(2)  · üst açı 25°     ┐
+     S69  MS(3)                    │ ← YOK
+     S70  CU(4)                    │ ← YOK
+     S71  ECU(5) · alt açı 20°     ┘
+   ölçek farkı 3 KADEME  → ŞOK BANDI (2+ kademe)
+   açı farkı  ~45°       → §3'ün açı şartını GEÇER
+   ⛔ Ama film bütçesinde ŞOK BANDI 2 ADETTİR ve İKİSİ DE HARCANDI:
+      S93→S94 (üç kademe) ve F9'daki ikincisi.
+   ⭐ MALİYET NET: bu üçüncü bant 9:04'te, yani ikisinden de ÖNCE
+     düşer. S94 geldiğinde artık filmin İLK üç-kademeli sıçraması
+     olmaz — ikincisi olur. S94'ün etkisi seyrelir.
+   📌 KARAR PROJE SAHİBİNİN: (a) üçüncü bandı kabul et (Overview'dan
+     vana makrosuna sert kesme dramatik olarak savunulabilir), ya da
+     (b) kurguda araya bir şey koy. Ben karar vermiyorum, ölçüyorum.
+
+③ ✅ ÇEHOV 2 (SAAT) KOPMUYOR. Saat S1-S48 arası her promptta
+   manşette duruyor ve S81 · S84 · S99 · S103 · S111-S117'de geri
+   geliyor; ödeme S117'de. S70 zincirin ORTA vuruşuydu, kilidi değil.
+   ⚠️ Ama F6'da saat artık HİÇ görünmüyor → S48 ile S81 arasında
+     33 sahnelik saatsiz aralık oluşuyor. Zincir kapanır, gerilir.
+
+④ ✅ SAYAÇ ETKİLENMİYOR. Halka 2/6 zaten S54'te (F5) kuruldu ve
+   S71 kendi ilk karesinde 2 ile başlayıp sahne içinde 1'e düşüyor.
+   Neden-sonuç tek karede okunmaya devam ediyor.
+
+⑤ ⚠️ OVERVIEW'UN ÇIKIŞI KAYBOLUYOR. S68 kadın pencereye dönük ve
+   hareketsiz biterdi; S69 "pencereden dönüş"tü. Artık Overview'dan
+   doğrudan vana makrosuna geçiliyor — dünya kapanmıyor, kesiliyor.
+   Kurgu kararı: bu sertlik ② ile aynı kararın parçasıdır.
+
+⛔ FAZ 6 TESLİMİ: 10/12 klip.
+```
+
+```
 ⚙️ SAHNE KARTI
   Tek çekim, 0 kesme, 8,0 s. Kamera sabit, üç-çeyrek cepheden.
   İŞLEV: KUTUYA DÖNÜŞ. Overview bir armağandı ve bitti; ölçek bir
@@ -1294,12 +1352,13 @@ _"Pencereden dönüyor."_
 
 ```
 SCENE:
-Medium shot of a bare-headed woman in a capsule seat, three-quarter
+Medium shot of a woman with no helmet seated in a capsule, three-quarter
 front, turning her face away from a window at the screen-left and
-raising her own left wrist toward her chest.
+looking down at the mechanical watch on the cuff of her hand where it
+rests on the armrest beside her.
 
 ENVIRONMENT:
-The inside of a small conical capsule cabin, dim: curved padded
+The inside of a small conical capsule cabin, low-lit: curved padded
 off-white wall panels behind her, the edge of the padded seat and
 headrest at the screen-right, and at the screen-left edge of frame, out
 of focus, the bright rim of a round window with the blue-white light of
@@ -1315,34 +1374,37 @@ visible pores, thin straight nose, dark hazel eyes, a short vertical
 pale scar on her LEFT temple near the hairline, dark chestnut jaw-length
 hair loose and lifting away from her head. Warm off-white pressure suit
 with ORANGE reinforcement stripes at the shoulders, its collar ring open
-and bare at her throat; nothing on her head; her back silhouette is
+at her throat; nothing on her head; her back silhouette is
 flat: smooth off-white shell fabric with one vertical seam down the
 spine and a low webbing waist belt, and no pack, no tank, no hose and no
 back-mounted unit of any kind. Her face has just come away from the
-screen-left and her eyes are lowering; her bare LEFT forearm is rising
-into the lower part of frame, carrying a steel mechanical watch on a
-black strap at the wrist and, above it, a slim ring of six square amber
-segments with two lit and four matte black.
+screen-left and her eyes are travelling down toward her own left hand,
+which rests exactly where it already was on the padded armrest at the
+lower screen-left, palm down and fingers relaxed. On the sleeve cuff of
+that hand, turned up and plainly in view, a steel mechanical wristwatch
+on a black strap over the cuff, and beside it, set into the same cuff, a
+slim ring of six square amber segments with two lit and four matte
+black.
 
 CAMERA:
 Shot on a 35mm lens, medium shot, from a fixed position 1.5 metres in
 front of her, three-quarter front, at eye-level with her head. Moderate
-depth of field: her face and the rising forearm sharp; the wall soft.
+depth of field: her face and the watch sharp; the wall soft.
 
 COMPOSITION: 16:9 horizontal. Her face fills the screen-right half,
 collar ring at ten percent and crown at eighty-five percent of frame
-height; her rising forearm crosses the lower screen-left between fifteen
-and forty percent of frame height. The window edge glows at the
-screen-left edge. LIGHTING: Blue-white spill from the window at the
-screen-left as the key along her cheek, her jaw and the top of the
-rising forearm; a faint cool green wash from the screen-right; a low
-cold white cabin lamp above giving a thin rim on her hair. Deep soft
-shadows. No haze, no lens flare.
+height; her resting hand and the watch sit in the lower screen-left
+corner between five and twenty percent of frame height. The window edge
+glows at the screen-left edge. LIGHTING: Blue-white spill from the
+window at the screen-left as the key along her cheek, her jaw and the
+back of the resting hand; a faint cool green wash from the
+screen-right; a low cold white cabin lamp above giving a thin rim on her
+hair. Soft shadows throughout. No haze, no lens flare.
 
 PHYSICS:
-Zero gravity in still air. Her hair lifts and holds; the rising forearm
-travels without weight; the watch strap's free end floats a few
-millimetres off the wrist instead of hanging.
+Zero gravity in still air. Her hair lifts and holds; her hand stays
+where it is on the armrest; the watch strap's free end floats a few
+millimetres off the cuff instead of hanging.
 
 NEGATIVE:
 Exactly one human figure, no second person, no reflection of a person.
@@ -1358,31 +1420,33 @@ no watermark.
 ### 🎥 VIDEO PROMPT — 8 saniye, tek kesintisiz çekim
 
 ```
-Maintain the subject, her face, the rising forearm, framing and lighting
+Maintain the subject, her face, the resting hand, framing and lighting
 from the first frame.
 
 MOTION — 8 seconds, 35mm, medium shot, fixed lockoff 1.5 metres in front
 of her, three-quarter front, at eye-level with her head, no cuts,
 absolutely no camera movement:
 
-SETUP: the camera is locked off on a bare-headed woman in a capsule
+SETUP: the camera is locked off on a woman with no helmet in a capsule
 seat, three-quarter front, blue-white light spilling in from a window
 out of focus at the screen-left, a faint green wash from the
-screen-right, her left forearm beginning to rise into the lower frame
-with a steel watch and a six-segment ring on it.
+screen-right, her left hand resting on the padded armrest in the lower
+screen-left corner with a steel watch and a six-segment ring on its cuff.
 
 0s — Her face is still turned to the screen-left, into the window light,
 her eyes open and unfocused.
 2s — Her head turns away from the window, slowly, and comes square to
 the cabin. The blue-white key slides off her cheek and leaves half her
 face in shadow.
-4s — Her eyes lower. They do not go to the window again.
-5s — Her left forearm rises further into frame and turns over, bringing
-the watch face upward toward her.
+4s — Her eyes lower toward the armrest. They do not go to the window
+again.
+5s — Her fingers on the armrest tighten a little and then relax; as her
+head clears the window light the narrow highlight on the watch crystal
+shifts along it.
 7s — Her eyes reach the watch and stop there. Her lips stay closed; her
 chest lifts once.
-8s — Her forearm is held up in front of her, wrist turned, her eyes down
-on it. The shot ends before she reads it. No cuts.
+8s — Her eyes are down on the watch, her hand still flat on the armrest
+where it started. The shot ends before she reads it. No cuts.
 
 Audio: air, not vacuum — a small dry cabin tone: a close fan hum, a soft
 hiss, the faint tick of the hull, and, very quietly, still coming from
@@ -1390,10 +1454,10 @@ the speaker, the last of the distant melody thinning back into static.
 Her breathing, slow. No music of any kind from outside the speaker.
 
 She never speaks and her lips stay closed. Her face turns away from the
-window first and only then does her wrist come up — the order never
-reverses, and she never looks back at the window. Her hair lifts and
-holds. The watch dial stays plain with no numerals and the ring carries
-no numerals. Exactly one human figure, human count 1, no second person.
+window first and only then do her eyes go down to the watch — the order
+never reverses, and she never looks back at the window. Her hand stays
+on the armrest for the whole shot. Her hair lifts and holds. The watch
+dial stays plain with no numerals and the ring carries no numerals. Exactly one human figure, human count 1, no second person.
 Single unbroken take, no cuts, no zoom, no camera shake. 0% bloom, no
 glow filter, no lens flare. No readable text, letters, digits or symbols
 on any display, panel, surface, patch or sign; no subtitles, no caption,
@@ -1413,6 +1477,35 @@ bibles apply throughout]
 > başparmak camın üstünden bir kez geçer (eşya bütçesi · TEMA zinciri)
 
 _"Hâlâ duruyor."_
+
+```
+⛔⛔ 02.09.2026 · PROJE SAHİBİ BU SAHNEYİ İPTAL ETTİ — ÜRETİLMEYECEK
+════════════════════════════════════════════════════════════════
+Sebep: S69 ile aynı politika reddi, ısrarla tekrarladı.
+⚠️ Prompt AŞAĞIDA DURUYOR, silinmedi.
+
+TANI: bu kadraj S8'in BİREBİR aynısıdır ve S8 de aynı sebeple
+iptal edilmişti — ⭐ İKİ BİLEK YAN YANA, tepeden makro, gövdeden
+kopuk, birinde siyah kayış. Depoda bu kadraj tipi artık İKİ KEZ
+reddedildi (S8 · S70).
+📌 ÇIKARILACAK KURAL (F7-F10 için): iki bileği/eli aynı kadrajda
+   tepeden makroya almak bu modelde ÜRETİLEMEZ. Aynı bilgi tek
+   bilekle, yandan ve gövdeye bağlı olarak verilmelidir.
+   → GOZLEM_DEFTERI'ne aday olarak yazıldı.
+
+═══ SONUÇLARI ═══
+① Ölçek yayı sonucu S69'un notunda TEK BLOK olarak yazıldı
+   (ikisi birlikte gittiği için etki birleşiktir) — oraya bak.
+② Bu sahne TEMA zincirinin bir vuruşuydu: S30'daki jest (başparmak
+   camın üstünden bir kez geçer) burada birebir tekrar edecekti.
+   ⚠️ Tekrar gidiyor; kurulum (S30) ve ödeme (S117) duruyor.
+③ Halka 2/6'nın ikinci okuması gidiyor — ama S54 kurdu, S71 kendi
+   içinde 2→1 gösteriyor. Sayaç zinciri sağlam.
+④ Durmuş saatin F6'daki tek yakın okuması buydu. Saat S81'e kadar
+   bir daha vurgulanmıyor.
+
+⛔ Bu sahne ve S69 birlikte: FAZ 6 TESLİMİ 10/12 klip.
+```
 
 ```
 ⚙️ SAHNE KARTI

@@ -322,6 +322,34 @@ Bu ders yeni bir kural koymuyor: var olan formülü tek gerçek kaynak yapıyor.
 
 ## 🔴 DERS 124: PLAN 8 SANİYEYE YAZILIYOR, ARAÇ 10 SANİYE ÜRETİYOR — ÜÇ FİLMDE ÜÇ KEZ; IZGARA PLANDAN DEĞİL ARAÇTAN YAZILIR
 
+**KAPI:** LİSTE · `03_PLAN_ONCESI_KONTROL_LISTESI.md` — plan yazılmadan
+`KLİP SÜRESİ = ____` satırı ffprobe çıktısıyla DOLDURULUR.
+⚠️ Bu kapı YERÇEKİMİ'nde AÇIK BIRAKILDI ve dördüncü vaka oradan geldi.
+**TEKRAR:** 4 · son vaka 02.09.2026 (YERÇEKİMİ FAZ 4) · ⛔ ÇALIŞMIYOR
+
+> ⛔ **02.09.2026 · 4. VAKA — VE İLK KEZ FİLMİN ORTASINDA.**
+> YERÇEKİMİ 120 × 8 s = 16:00 olarak yazıldı. `00_PLAN.md`'deki
+> `KLİP SÜRESİ = ____` satırı 30.08'de açıldı ve **hiç doldurulmadı**;
+> üretim 31.08'de o satır boşken başladı. Sonuç, iki mühürlü QA
+> koşusunun ilk satırında ortaya çıktı:
+> ```
+> FAZ 1 · 96 s / 12 parça →  8,0 s   (iki bağımsız geçiş)
+> FAZ 2 · 96 s / 12 parça →  8,0 s   (iki bağımsız geçiş)
+> FAZ 3 · 96 s / 12 parça →  8,0 s   (iki bağımsız geçiş)
+> FAZ 4 · 120 s / 12 parça → 10,0 s  ⛔ (iki bağımsız geçiş)
+> ```
+> ⭐ **Önceki üç vaka "plan 8, araç 10" idi — biri baştan yanlıştı.**
+> Bu vaka farklı ve daha kötü: **aynı filmin üç fazı 8 s, dördüncüsü
+> 10 s.** Yani ızgara üretim ortasında DEĞİŞTİ ve tek uyarı QA
+> raporunun ilk satırı oldu. Film şu an **iki ızgaralı**.
+> Bedeli: F4'ün bütün replik zamanları [D122 formülü] geçersiz;
+> müzik ölçü hesabı (240 × ölçü ÷ sahne saniyesi) F4 bandında tutmuyor;
+> toplam süre artık 16:00 değil.
+> ⭐ **DÖNÜŞTÜRME BORCU (TEKRAR ≥3):** cümle ve liste maddesi yetmedi.
+> Kapı ARACA çevrilmeli — her fazın İLK klibi üretilir üretilmez
+> ffprobe'dan geçer ve süresi bir önceki fazınkiyle karşılaştırılır;
+> fark varsa faz üretilmez. Ölçüm faz başına bir kez, on saniye sürer.
+
 **Kaynak:** THE IRON SLOPE (25.08.2026) master ölçümü —
 `ffprobe` teslim dosyası **65,000 s**, kesme ızgarası **10,03 · 20,03 ·
 30,03 · 40,03 · 50,03 · 60,03**, ve kaynak kliplerin altısı da

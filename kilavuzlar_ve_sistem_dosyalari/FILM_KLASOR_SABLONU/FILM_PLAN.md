@@ -39,6 +39,21 @@ KİNETİK BAĞIMSIZLIK: ⬜ kural replik/dış ses/ekran metni olmadan kanıtlan
 BAŞLIK ŞEMASI:       ⬜ ≤5 kelimelik başlık (paketlemede ikinci kez koşar)
 ```
 
+## 🧭 B5 — HİKÂYE OMURGASI (her formatta · `03_PLAN_ONCESI` B5 · kapı: prompt_kontrol ⑰)
+
+```
+B5 □ İSTEK:   ⬜ film başlamadan da var olan bir İŞ
+              ⛔ "anlamak / görmek / fark etmek" İSTEK DEĞİLDİR
+   □ ENGEL:   ⬜ bu isteği ne engelliyor
+   □ BEDEL:   ⬜ isteğini alırsa neyi kaybediyor · S⬜  ⭐ sahne numarasız bedel BOŞTUR
+   □ MUHATAP: ⬜ [ikinci insan / kendi geçmiş kararı / kendi bedeni /
+                 ortamın KALICI değişen parçası]
+B5b □ AYRILIK (yalnız iki insanlı planda): S⬜ — aynı fikirde OLMADIKLARI an
+
+ÜRETİM SIRASI [D168 — dramatik sıra DEĞİLDİR; üretim her an durabilir]:
+  ⬜ referans paketi → DORUK → merkezî seçim → kapanış imajı → S0 → kalanı
+```
+
 ## 📱 DİKEY FİLMSE — ÜÇ ZORUNLU SATIR (KILAVUZ_REHBERI §2.1)
 
 ```
@@ -46,8 +61,8 @@ BAŞLIK ŞEMASI:       ⬜ ≤5 kelimelik başlık (paketlemede ikinci kez koşa
 ② EL YUVASI:        ⬜ [hangi sahne · kadraj payı ≥%25]
 ③ VİZÖR BEKLENTİSİ: ⬜ [DIKEY_MIKRO_DRAMA §4.1 ①-④ · hangi sahne]
 ⛔ Bu üçü yazılmadan sahne haritası yazılmaz.
-   Ayrıca: 05_DIKEY_HAT_TESHISI §5① İSTEK / ENGEL / BEDEL satırı —
-   "anlamak · görmek · fark etmek" İSTEK DEĞİLDİR.
+   B5 OMURGASI (yukarıda) her formatta zorunludur — dikeyde teşhis
+   kaynağı: 05_DIKEY_HAT_TESHISI + 06_HIKAYE_HATTI_TESHISI.
 ```
 
 ---
@@ -87,6 +102,24 @@ AÇI TİPİ SAYISI: ⬜ ≥3   (KAMERA_ACISI §2 sekizlisi — üç kurulumun ü
                  alttan bakıyorsa çeşitlilik yok, yalnız mesafe değişiyor)
 KURULUM SAYISI:  ⬜ (ACI_YAYI §4 bandı; üstündeyse plana tek satır gerekçe [D74])
 BÖLÜM KESİĞİ:    S⬜ ile S⬜ arasında — ⛔ bölüm sınırı da ardışık bir ÇİFTTİR
+```
+
+---
+
+## 🎙️ REPLİK TABLOSU (yalnız replikli filmde · `SES_VE_DIYALOG_URETIM` §1-§2a)
+
+| # | S | saniye | konuşan | REGISTER | kanal | İŞLEV (B5 satırı / vuruş) |
+|---|---|---|---|---|---|---|
+| ⬜ | | | H/M | | | |
+
+```
+İLK REPLİK:     S⬜ · ⬜ s · öncesindeki kesintisiz sessizlik ⬜ s · vuruş: ⬜
+BEDENLEŞTİRME:  □ yok  □ S⬜ (yalnız doruk / merkezî seçim) [§1a.1]
+⛔ UNCLEAR register yazımda yasak · sayı söyleyen replik MACHINE'de [D82]
+⛔ İŞLEV sütunu boş replik yazılmadan silinir (§2a.1 silme testi) ·
+   replik <5 s, tek konuşmacı [D35] · duygu ADLANDIRILMAZ (§2a.2)
+KAPI: promptlar bitince PROMPT_KONTROL/DIALOGUE_CRITIQUE_PROMPT.md
+      (Kart P 2b) — CUT/UNCLEAR varken üretime geçilmez
 ```
 
 ---

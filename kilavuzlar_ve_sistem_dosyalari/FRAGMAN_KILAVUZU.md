@@ -23,6 +23,10 @@
 > `yatay_3_5_dk_filmler/THE_BORROWED_WEIGHT/THE_BORROWED_WEIGHT_FRAGMAN_DIKEY.md`
 > (dikey · 6 vuruş · mekanik TERAZİ · kaynak filmin I2V hattını fragmana
 > taşıyan ilk teslim · ⚠️ üretim BEKLİYOR, prompt kontrol GO)
+> `yatay_10_20_dk_filmler/YERCEKIMI/YERCEKIMI_FRAGMAN_YATAY.md`
+> (yatay trailer · 2:00 · **14 vuruş sıfırdan üretim, 8 s klip** · mekanik
+> EKSİLME · logo blokları + replikler POST'ta [F6 gömülü altyazı vakası] ·
+> ⚠️ üretim BEKLİYOR, prompt kontrol GO)
 > Beşini de şablon olarak aç; bu kılavuz oradaki kararları genelleştirir.
 
 ---
@@ -157,6 +161,9 @@ Black Cradle → TERS KURALLAR    her vuruş bir beklentiyi çevirir
 Low Power    → ÖRTÜLME      her vuruşta toz bir şeyin daha üstünü kapatır
 Borrowed W.  → TERAZİ       her vuruş kefe değiştirir: dünya hafifler,
                             adam ağırlaşır; iki serinin bağı hiç kurulmaz
+YERÇEKİMİ    → EKSİLME      her vuruş bir şeyi eksiltir (cıvata → rutin →
+                            platform → halat → cevap → yakıt → ışık →
+                            ritim); butonda kalan tek şey camdaki gezegen
 diğer adaylar→ ÖLÇEK (merdiven yukarı) · TAKVİM (sayaç ilerler)
               · YAKLAŞMA (tehdit her vuruşta yakında)
 

@@ -3364,7 +3364,15 @@ bulması, saatlerin ekranda okunup okunmadığının testidir.
 ## 🔴 DERS 166: NOVUM'U OLAN FİLM MOD V'DE ÖLÇÜLEMEZ — MERCEK FİLMİN TÜRÜNÜ YAZAR, KURALINI KUSUR SAYAR
 
 **KAPI:** BETİK · `rapor_kontrol.py` ①.6 NOVUM kapısı (SPEC'te `NOVUM` varken ⑥⑦⑧'in `PREMISE REGISTER`'ı yalnız ORTAMI yazıyorsa ⚠️ ŞARTLI + ⑩ zorunlu) · `rubrik_paketle.sh` ⑥ enjeksiyonu NOVUM'u AYNEN taşır
-**TEKRAR:** 0
+**TEKRAR:** 1 · 02.09.2026 THE LEANING ROOM — aynı arıza, YENİ MERCEKTE de:
+⑥ FİZİK `PREMISE REGISTER: Earth-normal gravity (1g)` ve ⑧ EFOR
+`Earth-normal 1g inside a pressurized wooden room` yazdı. Filmin novum'u tam
+olarak budur: ağırlık YALNIZ itkiden gelir, "aşağı" sürücünün ittiği yöndür.
+Üç mercek (① ③ ⑥) novum'un kendisini 🔴 BLOCKER saydı: *"an object falls
+diagonally UPWARDS, defying the established 1g"*. Kare 2280-2340 çıkarıldı:
+cisim yukarı düşmüyor, lambanın yattığı yöne kayıyor — kural çalışıyor.
+⛔ `rapor_kontrol.py` ①.6 NOVUM kapısı bu partide ATEŞLEDİ ve DOĞRU ateşledi;
+kapı çalışıyor, kart koşulmuyor
 
 **Kaynak:** THE STILL SWARM QA (02.09.2026) — ⑥ FİZİK 6,2 · ⑦ AKSİYON 7,7 ·
 ④ HİKAYE 2,7. Filmin novum'u bir FİZİK İHLALİDİR: *kabuğun içine giren her
@@ -3426,3 +3434,222 @@ skor satırı yazılmaz; koşu tekrarlanır.
 > İÇERİĞİ) · Ders 87/116/130 (önerme kapısı — düşen bulgunun puanı geri
 > verilir) · Ders 157 (novum taşıyıcısı tek karede ölçülür — ⑦ tam orada
 > "vuruş yok" dedi) · Ders 151 (mercek vuruşu göremez)
+
+---
+
+## 🔴 DERS 170: EKSİK OLAN NEDEN, RAPORDA "EKSİK" DİYE GÖRÜNMEZ — KÖR DENETÇİ YANINDAKİ NESNEDEN BİR NEDEN UYDURUR VE ONU YÜKSEK GÜVENLE YAZAR
+
+**KAPI:** KARAR · GEÇİŞ C'ye zorunlu adım: kör raporun her GÜVENLİ NEDEN
+cümlesi, katalog geçişinin **MISSING** listesine karşı okunur. Nedeni
+taşıyan girdi MISSING ise, kör raporun o açıklaması gözlem değil
+ARTEFAKTTIR ve bulgu listesinden çıkarılır.
+**TEKRAR:** 0
+
+**Kaynak:** YERÇEKİMİ FAZ 4 (02.09.2026), iki mühürlü geçiş —
+`02_HAM_RAPORLAR/YERCEKIMI_FAZ04_{KOR,KATALOG}_HAM.md`
+
+**Sorun:** Fazın adı FEDA'dır ve tek meselesi şudur: adam halatın
+kancasını KENDİ ELİYLE açar; bu bir kaza değil bir SEÇİMDİR. Rubriğin
+kör geçişine bu yüzden doğrudan soruldu:
+
+> *"Bir şey ayrılıyor, gevşiyor ya da bırakılıyor mu? KAZA gibi mi
+> göründü, KASITLI mı? Kararını görüntüde ne verdirdi?"*
+
+Kör denetçi cevap verdi ve **hiç tereddüt etmedi**:
+
+> *"This looks ACCIDENTAL. The deciding factor in the picture is the
+> massive, jagged hole torn into the station hull directly behind them,
+> indicating a violent, unplanned structural failure."*
+
+⭐ **Ama o patlama filmde YOK.** Kadrajdaki delik önceki fazdan kalma
+eski hasardır. Ve asıl önemlisi: **kancayı açan çekim hiç üretilmemişti**
+— katalog geçişi onu MISSING listesine yazdı (girdi G).
+
+**Mekanizma:** kör denetçi "burada bir neden eksik" demez. Ayrılmayı
+görür, bir neden arar, ve **kadrajda duran en yakın büyük nesneyi neden
+yapar.** Sonra bunu yüksek güvenle raporlar. Eksiklik, raporda bir
+BOŞLUK olarak değil, **fazladan bir OLAY** olarak görünür.
+
+⚠️ **İkinci vaka aynı gün, aynı filmde (FAZ 3):** kadının kaskının
+düştüğü ve adamın vizörünün açık okunduğu iki kusurdan denetçi
+*"Survivability: helmets sealed → helmets removed. Confidence: HIGH"*
+diye bir SAAT uydurdu ve iki klibi fazın SONUNA koydu — filmin
+karakterleri 4:48'de ölmüş göründü. Aynı kalıp: eksik/bozuk bilgi,
+raporda uydurulmuş bir nedensellik olarak çıkıyor.
+
+**ÇÖZÜM — GEÇİŞ C'YE ÜÇ SATIR:**
+
+```
+① Kör raporun "X yüzünden Y oldu" biçimindeki her cümlesini işaretle.
+② X'i taşıyan katalog girdisini bul.
+     girdi MATCHED  → açıklama gözlemdir, işlenir
+     girdi MISSING  → ⛔ AÇIKLAMA ARTEFAKTTIR; bulgu değil, EKSİĞİN
+                       KANITIDIR. Bulgu listesine değil, "üretilmemiş
+                       çekim" listesine yazılır.
+③ Kör raporun YÜKSEK GÜVENLE yazdığı bir saat/neden, katalog geçişinde
+   karşılığı yoksa: güven ne kadar yüksekse şüphe o kadar büyür.
+   Kör geçiş emin olduğunda değil, ÇELİŞTİĞİNDE haklıdır.
+```
+
+⭐ **Yan sonuç — bu ders kör geçişin değerini ARTIRIYOR, azaltmıyor:**
+uydurulmuş nedensellik, "izleyici bu boşluğu nasıl dolduracak"
+sorusunun birebir cevabıdır. F4'ün izleyicisi fedayı bir patlama kazası
+sanacaktı; bunu başka hiçbir kapı gösteremezdi.
+
+> ⛔ **3. VAKA — 02.09.2026 · YERÇEKİMİ FAZ 6.** Kör denetçi sıralamasını
+> **iki RENDER KUSURU üzerine** kurdu ve ikisine de "High confidence" dedi:
+> *"Hand injury: Clean (1, 9) → Cut (5)"* ve *"Face injury: Clean (6, 7) →
+> Scratched (10)"*. Filmde ne el yarası ne yüz çiziği vardır; ikisi de
+> süreklilik kusurudur. ⭐ Yeni bilgi: kusur yalnız KAFA KARIŞTIRMIYOR,
+> izleyicinin zaman algısını **ÖRGÜTLÜYOR** — geri döndürülemez görünen
+> her fark bir saat olarak kullanılıyor. Sıra skoru 2/10'a bu yüzden
+> düştü. → GEÇİŞ C'de kör raporun her SAATİ de MISSING/kusur listesine
+> karşı okunur, yalnız nedenleri değil.
+
+> 🔗 Ders 164 (iki mühürlü geçiş — bu ders o mimarinin ilk büyük
+> yan ürünü) · Ders 151 (mercek vuruşu göremez) · Ders 125 (komut
+> satırında cevabı duran soru modele sorulmaz) · Ders 118 (insan şeridi).
+
+---
+
+## 🔴 DERS 171: "ŞU YERLERE İYİ BAK" DİYEN KİLİT, İHLALİ O YERLERİN DIŞINDA GİZLER — KATALOG GEÇİŞİ METİNE 10/10 VERDİ, KÖR GEÇİŞ AYNI MAKARADA İKİ ALTYAZI SAYDI
+
+**KAPI:** KARAR · GEÇİŞ C'ye zorunlu adım: katalog geçişinin **TAM PUAN**
+verdiği her kategori, kör geçişin ilgili pasaport maddesiyle karşılaştırılır.
+Kör geçiş orada bir ihlal saymışsa katalog geçişinin puanı DÜŞER ve o
+kategori ⛔ ÖLÇÜLMEDİ olarak işaretlenir. Tam puan bir kanıt değildir.
+**TEKRAR:** 0
+
+**Kaynak:** YERÇEKİMİ FAZ 5 (02.09.2026), iki mühürlü geçiş —
+`02_HAM_RAPORLAR/YERCEKIMI_FAZ05_{KOR,KATALOG}_HAM.md`
+
+**Sorun:** Rubriğin metin kilidi şöyleydi ve bilerek sert yazılmıştı:
+
+> *"TEXT — ZERO CHARACTERS... This is an interior full of wall panels,
+> indicator banks, buttons and hatches, and NONE of them carries a letter...
+> ⭐ **you must check every panel, indicator bank, button, hatch and cover
+> in every entry.** This is the hardest lock in this phase."*
+
+**Katalog geçişi paneleri denetledi ve doğru cevap verdi:**
+`TEXT DISCIPLINE: 10 · "Zero characters found."`
+`WHAT WORKED: "no rogue characters generated on the heavily detailed panels."`
+
+**Kör geçiş aynı makarada, aynı gün, ayrı sohbette:**
+```
+ANY READABLE CHARACTER ANYWHERE:
+  Seg 9  (1:24): caption "Cabin pressure falling, seal the hatch."
+  Seg 12 (1:54): caption "Capsule power nominal."
+```
+
+⛔ **İhlal panelde değildi — KAREYE GÖMÜLMÜŞ ALTYAZIYDI.** Rubrik nereye
+bakılacağını sayarak söyledi; denetçi oraya baktı ve **yalnız oraya**
+baktı. Liste, dışında kalanı görünmez yaptı.
+
+**Mekanizma:** yer sayan bir kontrol listesi, kapsamı daraltır.
+"Her paneli kontrol et" cümlesi, denetçinin zihninde "ihlal panellerde
+olur" önermesine dönüşüyor. Bu, D164'ün (yankı) ve D170'in (uydurulmuş
+neden) üçüncü kardeşi: **bilgilendirilmiş denetçi, bilgilendirildiği
+YERDE körleşir.**
+
+⚠️ İkinci kanıt aynı raporda: kör geçiş D girdisinde **camı kapatan siyah
+bir panjur** gördü (spec'te böyle bir şey yok); katalog geçişi aynı
+segmenti "D | YELLOW | Earth lights are visible" diye geçti ve panjuru
+hiç anmadı. Yine: tarif edilen şeye bakıldı, tarif edilmeyen görülmedi.
+
+**ÇÖZÜM — İKİ SATIR:**
+
+```
+① RUBRİK TARAFI: yer sayan her kilidin sonuna kapanış cümlesi konur —
+   "...and anywhere else in the frame, including burned-in text, captions,
+    subtitles, overlays and anything the renderer may have added on top
+    of the picture."
+   Yer listesi ÖRNEKTİR, kapsam DEĞİLDİR.
+
+② GEÇİŞ C TARAFI (asıl kapı): katalog geçişinin 10/10 verdiği her
+   kategori, kör geçişin karşılık gelen maddesine karşı okunur.
+   Çelişki varsa KÖR GEÇİŞ KAZANIR — çünkü ona nereye bakacağı
+   söylenmedi.
+```
+
+⭐ **Bu, iki mühürlü geçişin şimdiye kadarki en net kazancı.** Tek geçişli
+bir denetimde bu ihlal RAPORDA HİÇ GÖRÜNMEZDİ — üstelik "10/10" ve
+"kusursuz tutuldu" diye kayda geçecekti.
+
+> 🔗 Ders 164 (yankı — söylenen geri gelir) · Ders 170 (eksik neden
+> uydurulur) · Ders 151 (mercek vuruşu göremez) · Ders 138 (metin
+> yasağının KAPSAMI).
+
+---
+
+## 🔴 DERS 173: ⑤ ÇAPRAZ KAPISI ÇOĞUNLUĞU DOĞRU SAYDI VE TEK DOĞRU MERCEĞİ SAPAN İLAN ETTİ — ODAK DIŞI FİGÜRDE ÇOĞUNLUK ORTAK KÖR NOKTAYI PAYLAŞIR
+
+**KAPI:** BETİK · `rapor_kontrol.py` ⑤ ŞERİT kapısı — çoğunluktan sapan mercek
+🚨 alıyor. Bu ders o kapıya bir TİE-BREAK ekletir: sapma OYLA değil KAREYLE
+çözülür.
+**TEKRAR:** 0 · 02.09.2026 THE LEANING ROOM
+
+**Kaynak:** THE LEANING ROOM QA (02.09.2026) — sekiz mercekli parti,
+`rapor_kontrol.py --olcum-kesme 11 --olcum-sahne 12`:
+
+```
+⑤ ÇAPRAZ KAPI çıktısı:
+   ⚠️ ŞERİT — çoğunluk `1111-1111-1-` (4 mercek); sapan: ① KARE
+      "sapan merceğin şeridi 🚨"
+
+ÖLÇÜM (1:55 karesi çıkarıldı ve BAKILDI):
+   S11'de kadın KADRAJDA — koltukta, arkada, odak dışı, kımıltısız.
+   Plan da öyle diyor: "Far back and well out of focus, a woman ... sits in
+   the deep armchair, a soft charcoal shape."
+
+   ① KARE'nin şeridi:  1111-1111-11   ✅ DOĞRU
+   Çoğunluğun şeridi:  1111-1111-1-   ✗ YANLIŞ (4 mercek, aynı hata)
+```
+
+⭐ **MEKANİZMA — ÇOĞUNLUK BAĞIMSIZ DEĞİLDİR.** Sekiz mercek aynı dosyayı
+izliyor, aynı aileden modellerle koşuyor ve aynı algısal kısayolu kullanıyor:
+**odak dışı, hareketsiz, arka plandaki bir insan "sahne insansız" diye
+kodlanır.** Bu bir oylama hatası değil, ORTAK KÖR NOKTADIR — ve çoğunluk
+kuralı ortak kör noktayı DOĞRULAMA olarak okur.
+
+```
+Kapının varsayımı:  n bağımsız gözlemci → çoğunluk gerçeğe yakınsar
+Gerçek:             n bağımlı gözlemci → çoğunluk ORTAK ÖNYARGIYA yakınsar
+
+Ve sonuç tersine döner: filmi DOĞRU okuyan tek mercek, kapının kendi
+çıktısında 🚨 damgası alır. Bir sonraki koşuda o mercek "sapan" diye
+zayıflatılırsa depo, tek doğru ölçümünü atmış olur.
+```
+
+⛔ **VE BU ŞERİDİN NEDEN ZATEN ZAYIF OLDUĞUYLA BİRLEŞİYOR [D163]:** tek
+figürlü filmde şerit neredeyse sabittir (`1111…`) ve dört sahnelik blok takası
+onu hiç bozmadan geçer. D163 şeridin SIRA eksenini ölçmediğini söylemişti;
+bu ders şeridin VARLIK eksenini de tek başına ölçemediğini ekliyor. Şerit,
+kendisi doğrulanmadıkça hiçbir şeyi doğrulamaz.
+
+**ÇÖZÜM — İKİ SATIR, BİRİ BETİKTE:**
+
+```
+① ŞERİT SAPMASI OYLA DEĞİL KAREYLE ÇÖZÜLÜR.
+   `rapor_kontrol.py` ⑤ ŞERİT kapısı sapan merceği 🚨 damgalamaz; ÇÖZÜLMEMİŞ
+   ilan eder ve o sahnenin ortasının karesini isteyen tek satırı basar:
+      ⚠️ ŞERİT ÇATIŞMASI · sahne n · çoğunluk `-` · sapan `1`
+         ⛔ ÇÖZÜLMEDİ — kareyi çıkar ve BAK:
+            ffmpeg -ss <sahne ortası> -i "$M" -frames:v 1 serit_S<n>.jpg
+   Çözülene kadar hiçbir merceğin şeridi 🚨 almaz ve parti bu eksenden düşmez.
+
+② ⑪ ÖLÇÜM KAPISI ŞERİDİ DE ÜRETİR.
+   `olcum_kapisi.sh` zaten sahne ortası karelerini basıyor (sahne_izgarasi.jpg).
+   O ızgaraya bakıp şeridi OPERATÖR yazar ve hakem şerit O olur — tıpkı kesme
+   ve sahne sayısında olduğu gibi. Mercek şeritleri ona karşı ölçülür,
+   birbirlerine karşı değil.
+```
+
+⚠️ **DÜRÜST KAYIT:** bu partide çoğunluk kuralı kesme (11) ve sahne (12)
+eksenlerinde DOĞRU çalıştı — ikisi de ⑪ ölçümüyle bağımsız olarak
+doğrulandı. Kural her yerde değil, ORTAK KÖR NOKTANIN olduğu yerde çöküyor:
+odak dışı figür, düşük kontrastlı arka plan, tek karelik olaylar. Kapıyı
+söküp atmak değil, tie-break eklemek gerekiyor.
+
+> 🔗 Ders 163 (şerit sıra eksenini ölçmez) · Ders 135 (sapan mercek önce kendi
+> envanteriyle karşılaştırılır) · Ders 162 (⑤ mutabakatı ölçer, suskunluğu
+> ölçmez) · Ders 125 (komut satırında cevabı duran soru modele sorulmaz)

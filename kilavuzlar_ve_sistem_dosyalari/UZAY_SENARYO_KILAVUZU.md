@@ -10,6 +10,10 @@
 > bize ne söylüyor, nerede eksik kalmışız?"**
 >
 > Bölüm 12'de mevcut üç film bu çerçeveye göre dürüstçe denetlenir.
+>
+> ⭐ 03.09.2026: Karakterlerin GİYSİ kimliği (rol şeridi · amblem ·
+> saat/bilek · sırt ünitesi · kişisel eşya) ayrı kılavuza indi:
+> `ASTRONOT_DONANIM_VE_KIMLIK_KILAVUZU.md` — Character Bible'dan önce.
 
 ---
 
@@ -111,6 +115,10 @@ ima edilebilir** (bkz. Bölüm 4).
    Kalabalık kadro, galaktik politika, uzaylı ırklar, savaş filoları —
    hepsi çoklu karakter ve kesme gerektirir. Ders 1 ve Ders 2 buna
    izin vermez. Denenmesin.
+   ⭐ İSTİSNANIN SINIRI (03.09.2026 · TUR 7): bu yasak uzaylı IRKLARI
+   yasaklar, TEK VARLIĞI yasaklamaz. Filme tek uzaylı varlık
+   eklenecekse → UZAYLI_VARLIK_TASARIM_KILAVUZU.md (plan öncesi
+   zorunlu; ikinci varlık yine yasak).
 
 ✅ YUMUŞAK BİLİMKURGU AZ KULLANILMIŞ BİR FIRSAT
    29 filmin neredeyse tamamı sert kulvarda. Oysa yumuşak bilimkurgu

@@ -1,6 +1,6 @@
 # 🌍 YERÇEKİMİ — FAZ 10 / ZEMİN
 
-## S109–S120 PROMPTLARI | 14:24 – 16:00 | Perde III · SON FAZ | 16:9 Yatay
+## S109–S120 PROMPTLARI | 18:00 – 20:00 | Perde III · SON FAZ | 16:9 Yatay
 ### _"Ağırlık artık zafer."_
 
 > **Bu dosya ADIM 4'ün SONUNCUSUDUR.** Plan: `../00_PLAN.md` · Bible +
@@ -30,7 +30,7 @@
 # 🔗 FAZ GİRİŞ BAĞLANTISI
 
 ```
-Önceki fazın son karesi (S108 · 14:24): A kemerde öne asılı, gözleri
+Önceki fazın son karesi (S108 · 18:00): A kemerde öne asılı, gözleri
 AÇIK; saç aşağıda; yerdeki nesneler taban kenarına toplanmış; kabin
 mavi gün ışığında; titreşim bitmiş; dışarıda rüzgâr ve salınım.
 Köprü: S109 DIŞTAN açılır — iç orta (G) → dış çok geniş (J), WS → EWS.
@@ -38,6 +38,62 @@ Köprü: S109 DIŞTAN açılır — iç orta (G) → dış çok geniş (J), WS �
 ⛔ AĞIRLIĞIN ÜÇ KANITI GERİ ALINMAZ (F9 KİLİT 46): saç aşağıda ·
    saat kayışının ucu sarkık · kollar nötr 0g duruşuna bir daha
    kalkmaz. Bu üçü S120'ye kadar her karede geçerlidir.
+```
+
+# ⏱️ 03.09.2026 · IZGARA 8 s → 10 s ÇEVRİLDİ (sahip kararı)
+
+```
+⭐ SEBEP: sahip üretime 10 SANİYELİK kliplerle başladı. Klip süresi bir
+   tercih değil ARACIN AYARIDIR [D124]; belge araca uyar, tersi değil.
+
+✅ HER SAHNEDE YAPILAN — 12/12:
+   · `MOTION — 8 seconds` → `10 seconds` · sahne kartı `8,0 s` → `10,0 s`
+   · beat MUTLAK SANİYELERİ KORUNDU (0s-7s aynen) — hızlar ve sayısal
+     kilitler "per second / within a second / in about half a second"
+     biçiminde yazılıydı, bu yüzden 10 s'de kendiliğinden geçerli kalır
+   · eski `8s` SON DURUM beat'i `10s`'e taşındı, araya sahneye ÖZGÜ bir
+     `8s` devam beat'i yazıldı — dolgu değil: her biri o sahnenin kendi
+     malzemesini iki saniye daha sürdürür (sürüklenme · titreme · ışık ·
+     sayaç · nefes). Lockoff + "hiçbir şey yerleşmiyor" estetiği bu iki
+     saniyeyi zaten talep ediyordu.
+
+📐 IZGARA — bu fazın bütün zamanları buradan HESAPLANDI, elle yazılmadı:
+   sahne n başlangıcı = (n−1) × 10 s
+   FAZ 10: S109 18:00 → S120 20:00 (filmin sonu) · film NOMİNAL 120 × 10 s = 20:00 (Second Ship ızgarası)
+   ⚠️ GERÇEK KURGU 19:20 — dört yuva boş (S8 · S15 · S69 · S70);
+     116 klip × 10 s. Nominal ızgara PROMPT zamanıdır, kurgu değil.
+
+⛔ ÖLÇÜM BORCU — TEK AÇIK SAYI [D125 · ortak adım ⑪]:
+   F1-F6 makaralarının klip süresi bu depoda HİÇ ÖLÇÜLMEDİ. F6 rubriği
+   "roughly 8 seconds" yazar ama o satır PLANDAN geldi, ölçümden değil.
+   Üretilmiş fazlar 8 s çıkarsa film İKİ IZGARALI olur ve buradaki
+   MUTLAK zamanlar kayar (sahne sırası, beat'ler ve kilitler etkilenmez).
+   Cevabı bir komut veriyor, modele sorulmaz:
+     ffprobe -v error -show_entries format=duration -of csv=p=0 <makara>
+   Ölçülünce bu blok kapanır ve kurgu kapısı (④) O sayıyla koşar.
+
+🔧 BU FAZDA AYRICA — BİR SAYISAL KİLİT ÖLÇEKLENDİ:
+   ⭐ S117 ÇEHOV 2 (saat kurulur) kabul ölçütü KLİBE bağlıydı:
+     "saniye ibresi SEKİZ saniyede en az BEŞ sayılabilir adım"
+     → "ON saniyede en az YEDİ" (adım hızı aynı, klip uzadı).
+     Üç yerde birden güncellendi: üretim sırası kabul kapısı · sahnenin
+     kendi beat'i · teslim kontrolü. ⛔ Ölçüt kliple ölçeklenmezse
+     ödeme sahnesi "yavaş" görünür ve Çehov zinciri kanıtsız kalır —
+     bu, klip süresi değiştiğinde ilk kırılan kilit sınıfıdır.
+   · S120 held frame iki saniye daha uzun. Filmin SON KARESİ aynı;
+     döngü kanıtı (ilk kare ↔ son kare) etkilenmez, güçlenir.
+```
+
+# 🔧 03.09.2026 · ÜRETİM ÖNCESİ TARAMA — TEMİZ (kayıt)
+
+```
+✅ F5/F6 gömülü-altyazı dersi bu faza tarandı [F7/F8 kayıt blokları]:
+   tırnaklı cümle 0 · sesi anlatan beat satırı 0 · replik 0.
+   Değişiklik GEREKMEDİ; kaydı olmayan denetim koşulmamış sayılır
+   diye bu blok yazıldı [D74].
+✅ S69/S70 iptali bu fazı ETKİLEMİYOR [FAZ_06 kaydı ③]: saat zinciri
+   S111-S117 ödemesiyle burada kapanıyor; S70 zincirin orta vuruşuydu,
+   kilidi değil.
 ```
 
 # 🔒 BU FAZIN KİLİTLERİ
@@ -87,7 +143,7 @@ KİLİT 52 — ALT AÇI FİLMDE İLK KEZ (S118)
 
 KİLİT 53 — FİNAL: HELD FRAME (S120)
   ⛔ Kesme yok · kart yok · yazı yok · müzik yok · kamera hareketi yok.
-  ⛔ Kadraj sekiz saniye boyunca DEĞİŞMEZ ve son karede de değişmez:
+  ⛔ Kadraj on saniye boyunca DEĞİŞMEZ ve son karede de değişmez:
      film bir hareketle değil, bir SÜREYLE biter.
   ⭐ AÇIK KALAN TEK SORU: gökte ince, soluk, paralel çizgiler HÂLÂ
      akıyor. S15'te ilk kez oradaydılar, S91'de geri geldiler, burada
@@ -127,7 +183,7 @@ S109–S120 = 12 imaj (start frame) · 12 video (I2V) · 2 insansız
 
 ÖNERİLEN SIRA — her kapı SAYISAL kabul/ret taşır [D144]:
   1) S117  SAAT KURULUR · filmin son Çehov ödemesi · TEMA motifi
-     KABUL: saniye ibresi sekiz saniyede en az beş kez, gözle
+     KABUL: saniye ibresi on saniyede en az yedi kez, gözle
             sayılabilir biçimde ilerliyor · kadranda rakam/marka 0 ·
             kayış ucu SARKIK.
      RET:   ibre kaymıyor ya da sürekli akıyor · kadranda herhangi
@@ -136,7 +192,7 @@ S109–S120 = 12 imaj (start frame) · 12 video (I2V) · 2 insansız
             "Bilmiyorum" cevabı RET'tir.
      SONUÇ: geçmezse S118-S120 üretilmez; film finalsiz kalır.
   2) S120  HELD FRAME · filmin son karesi
-     KABUL: sekiz saniye boyunca kadrajda DEĞİŞEN tek şey gökteki
+     KABUL: on saniye boyunca kadrajda DEĞİŞEN tek şey gökteki
             çizgiler ve paraşüt kumaşının kenarı · figür kadraj
             yüksekliğinin %20-25'i · gölge gövde boyunun ~3 katı ·
             metin/kart 0.
@@ -164,14 +220,14 @@ yazacak: müzik S119'un sonunda biter, S120 boyunca 0).
 
 ```
 ⛔ BU FAZDA REPLİK YOKTUR — 0/12. Film sessiz biter.
-Toplam: filmin son 24 sahnesi (S97-S120 · 3:12) repliksizdir.
+Toplam: filmin son 24 sahnesi (S97-S120 · 4:00) repliksizdir.
 ```
 
 ---
 
 ## 🎬 SAHNE 109 — İNİŞ ⭐ İNSANSIZ (KART 10)
 
-`14:24 – 14:32` · 24mm · kadro 0 · yanal, göz hizası, EWS · fixed lockoff
+`18:00 – 18:10` · 24mm · kadro 0 · yanal, göz hizası, EWS · fixed lockoff
 
 > 🎯 **REFERANS** · YÜKLE: **RI** + RE · ÇAPA: **RI p1** (kuru göl
 > yatağı) + RE p4 (kapsül konisi) · DURUM: ⛔ KADRODA KİMSE YOK ·
@@ -183,7 +239,7 @@ _"Sert temas."_
 
 ```
 ⚙️ SAHNE KARTI
-  Tek çekim, 0 kesme, 8,0 s. Kamera sabit, iniş noktasına yandan.
+  Tek çekim, 0 kesme, 10,0 s. Kamera sabit, iniş noktasına yandan.
   İŞLEV: DÖNÜŞ. On altı dakikadır hiçbir şey bir yere ÇARPMADI;
   burada bir şey yere çarpıyor ve toz kalkıyor. Toz, yerçekiminin
   ilk dış kanıtıdır.
@@ -268,13 +324,13 @@ and the dust are the only subjects, no figures anywhere.
 Output: 16:9, 4K, no text, no watermark.
 ```
 
-### 🎥 VIDEO PROMPT — 8 saniye, tek kesintisiz çekim
+### 🎥 VIDEO PROMPT — 10 saniye, tek kesintisiz çekim
 
 ```
 Maintain the lake bed, the capsule, the canopy and the low morning sun
 from the first frame.
 
-MOTION — 8 seconds, 24mm, extreme wide shot, fixed lockoff 60 metres
+MOTION — 10 seconds, 24mm, extreme wide shot, fixed lockoff 60 metres
 from the point of contact, at eye-level with the ground plane, deep
 focus, no cuts, absolutely no camera movement:
 
@@ -295,9 +351,10 @@ visible and each one drops straight down; nothing curls, nothing drifts
 sideways and nothing hangs.
 6s — The last of the dust is on the ground. The air above the capsule
 is clear and stays clear; no second cloud rises.
-8s — The capsule lies on its side, the canopy spread across the clay
-behind it, the dust settled, the long soft shadows unchanged. No cuts.
-
+8s — One last grain drops from the edge of the canopy and lands. The air
+above the capsule stays clear.
+10s — The capsule lies on its side, the canopy spread across the clay behind
+it, the dust settled, the long soft shadows unchanged. No cuts.
 Audio: atmosphere — one heavy dull impact through the ground at 0
 seconds with a short flat tail and no ring; then the dry rasp of fabric
 dragging over clay, a light morning wind across open ground, and the
@@ -323,7 +380,7 @@ and the dust are the only subjects, no figures anywhere.
 
 ## 🎬 SAHNE 110 — SESSİZLİK ⭐ İNSANSIZ (KART 10)
 
-`14:32 – 14:40` · 35mm · kadro 0 · yanal, göz hizası, WS · fixed lockoff
+`18:10 – 18:20` · 35mm · kadro 0 · yanal, göz hizası, WS · fixed lockoff
 
 > 🎯 **REFERANS** · YÜKLE: **RI** · ÇAPA: **RI p2** (yatık kapsül +
 > paraşüt — on bir sahnenin arka planı burada donar) · DURUM:
@@ -334,7 +391,7 @@ _"Toz oturdu."_
 
 ```
 ⚙️ SAHNE KARTI
-  Tek çekim, 0 kesme, 8,0 s. Kamera sabit, kapsüle yandan.
+  Tek çekim, 0 kesme, 10,0 s. Kamera sabit, kapsüle yandan.
   İŞLEV: NEFES ALMA. On altı dakikadır ilk kez ekranda hiçbir tehdit,
   hiçbir sayaç, hiçbir alarm yok. Yalnız yatık bir kapsül, yerde bir
   paraşüt ve rüzgâr. İzleyicinin de dinlenmesi gerekiyor.
@@ -412,13 +469,13 @@ the canopy are the only subjects, no figures anywhere.
 Output: 16:9, 4K, no text, no watermark.
 ```
 
-### 🎥 VIDEO PROMPT — 8 saniye, tek kesintisiz çekim
+### 🎥 VIDEO PROMPT — 10 saniye, tek kesintisiz çekim
 
 ```
 Maintain the lake bed, the capsule on its side, the spread canopy and
 the low morning sun from the first frame.
 
-MOTION — 8 seconds, 35mm, wide shot, fixed lockoff 18 metres from the
+MOTION — 10 seconds, 35mm, wide shot, fixed lockoff 18 metres from the
 capsule, at eye-level with the ground plane, deep focus, no cuts,
 absolutely no camera movement:
 
@@ -436,9 +493,10 @@ the wind and settles back onto the clay. It does not leave the ground.
 Nothing on the outside moves.
 6s — A second small stir passes along the canopy edge and dies. The
 settled dust does not lift anywhere.
-8s — The capsule is exactly as it was, hatch closed, canopy spread, the
+8s — A third faint stir moves the canopy edge and dies before it travels a
+hand's width. The settled dust stays down.
+10s — The capsule is exactly as it was, hatch closed, canopy spread, the
 shadows unchanged. No cuts.
-
 Audio: atmosphere — a light steady morning wind across open flat
 ground, the dry rustle of fabric edge at 2 and 6 seconds, and the
 irregular tick and pop of cooling metal from inside the capsule. There
@@ -463,7 +521,7 @@ capsule and the canopy are the only subjects, no figures anywhere.
 
 ## 🎬 SAHNE 111 — İÇ KİLİT
 
-`14:40 – 14:48` · 50mm · kadro A · sırt üç-çeyrek, göz hizası, MS · fixed lockoff
+`18:20 – 18:30` · 50mm · kadro A · sırt üç-çeyrek, göz hizası, MS · fixed lockoff
 
 > 🎯 **REFERANS** · YÜKLE: **RF** + **RH** · ÇAPA: RH p1 (kabin, yatık)
 > · DURUM: KASKSIZ · kemer AÇILMIŞ · saç aşağıda · ⛔ REPLİK 0 ·
@@ -474,7 +532,7 @@ _"Kilit."_
 
 ```
 ⚙️ SAHNE KARTI
-  Tek çekim, 0 kesme, 8,0 s. Kamera sabit, omzunun arkasından.
+  Tek çekim, 0 kesme, 10,0 s. Kamera sabit, omzunun arkasından.
   İŞLEV: KABİN YATIK VE O AYAKTA DEĞİL. Kapsül yan yattığı için
   "yukarısı" artık yan taraftır; A dizlerinin üstünde, eğik bir
   dünyada. Yerçekimi burada bir yön olarak ilk kez içeride hissedilir.
@@ -556,13 +614,13 @@ Photorealistic, 35mm film grain.
 Output: 16:9, 4K, no text, no watermark.
 ```
 
-### 🎥 VIDEO PROMPT — 8 saniye, tek kesintisiz çekim
+### 🎥 VIDEO PROMPT — 10 saniye, tek kesintisiz çekim
 
 ```
 Maintain the tilted cabin, the woman at the hatch handle and the
 morning daylight from the first frame.
 
-MOTION — 8 seconds, 50mm, medium shot, fixed lockoff 1.4 metres behind
+MOTION — 10 seconds, 50mm, medium shot, fixed lockoff 1.4 metres behind
 her left shoulder, over-the-shoulder, at eye-level with her shoulders,
 no cuts, absolutely no camera movement:
 
@@ -583,9 +641,10 @@ heavy metallic clunk that runs through the whole shell. The hatch
 itself does not move.
 7s — Her hands stay on the handle a moment longer, then come off it one
 at a time. Her forearms are still trembling.
-8s — She kneels with her hands at her sides, the hatch closed in front
-of her, the handle at its stop. No cuts.
-
+8s — Her forearms tremble twice more and go still. Her hands stay at her
+sides and the hatch stays closed.
+10s — She kneels with her hands at her sides, the hatch closed in front of
+her, the handle at its stop. No cuts.
 Audio: atmosphere — the light wind is audible through the shell now,
 thinner than outside; the dry creak of the handle mechanism under load
 at 2 and 4 seconds, one heavy metallic clunk at 6 seconds, the tick of
@@ -611,7 +670,7 @@ Photorealistic, 35mm film grain.
 
 ## 🎬 SAHNE 112 — TOPRAK
 
-`14:48 – 14:56` · 24mm · kadro A · yerden göz hizası, WS · fixed lockoff
+`18:30 – 18:40` · 24mm · kadro A · yerden göz hizası, WS · fixed lockoff
 
 > 🎯 **REFERANS** · YÜKLE: **RF** + **RI** · ÇAPA: **RI p2** (yatık
 > kapsül, arkada) + RF p1 · DURUM: KASKSIZ · ⛔ REPLİK 0 ·
@@ -623,7 +682,7 @@ _"Yer."_
 
 ```
 ⚙️ SAHNE KARTI
-  Tek çekim, 0 kesme, 8,0 s. Kamera YERDE, kilin hemen üstünde.
+  Tek çekim, 0 kesme, 10,0 s. Kamera YERDE, kilin hemen üstünde.
   İŞLEV: TEMAS. On altı dakikadır hiçbir gövde hiçbir şeye
   YASLANMADI — 0g'de yaslanmak yoktur. Burada bir insan yerde
   yüzüstü yatıyor ve yer onu tutuyor.
@@ -631,7 +690,7 @@ _"Yer."_
      seviyesinde, kilin üstünde.
   ⛔ Kapsülden çıkış kadrajda YOK [D69]: sahne açıldığında o zaten
      orada. Kapsül arkada, kapağı açık.
-  ⛔ Hiç kalkmıyor. Sekiz saniyede tek olay: parmakların kili
+  ⛔ Hiç kalkmıyor. On saniyede tek olay: parmakların kili
      avuçlaması.
 ```
 
@@ -709,13 +768,13 @@ grain.
 Output: 16:9, 4K, no text, no watermark.
 ```
 
-### 🎥 VIDEO PROMPT — 8 saniye, tek kesintisiz çekim
+### 🎥 VIDEO PROMPT — 10 saniye, tek kesintisiz çekim
 
 ```
 Maintain the lake bed, the prone woman, the capsule behind her and the
 low morning sun from the first frame.
 
-MOTION — 8 seconds, 24mm, wide shot, fixed lockoff 3 metres from her
+MOTION — 10 seconds, 24mm, wide shot, fixed lockoff 3 metres from her
 and 0.2 metres above the ground, at eye-level with the clay surface,
 deep focus, no cuts, absolutely no camera movement:
 
@@ -735,9 +794,10 @@ still on the ground.
 stays where it fell across her face and the clay.
 7s — Behind her the outermost edge of the canopy stirs in the wind and
 settles.
-8s — She is still prone, hand open on the clay, the capsule and canopy
+8s — Her open hand presses a little further into the clay and stays. Her
+breathing does not quicken.
+10s — She is still prone, hand open on the clay, the capsule and canopy
 unchanged behind her. No cuts.
-
 Audio: atmosphere — a light steady morning wind across open ground, the
 fine grate of clay dust under her closing hand at 2 seconds, the
 distant tick of cooling metal, and her breathing, deep, working and
@@ -761,7 +821,7 @@ caption, no watermark. Photorealistic, 35mm film grain.
 
 ## 🎬 SAHNE 113 — DÜZLÜK ⭐ ÖLÇEK 1:10
 
-`14:56 – 15:04` · 24mm · kadro A · üst açı 25°, EWS · yavaş pull-back (70 → 77 m)
+`18:40 – 18:50` · 24mm · kadro A · üst açı 25°, EWS · yavaş pull-back (70 → 77 m)
 
 > 🎯 **REFERANS** · YÜKLE: **RI** + RF · ÇAPA: **RI p1** (kuru göl
 > yatağı, ufka kadar) + RI p2 · DURUM: KASKSIZ · ⛔ REPLİK 0 ·
@@ -775,7 +835,7 @@ _"Kurtuldu ve hiçbir şey."_
 
 ```
 ⚙️ SAHNE KARTI
-  Tek çekim, 0 kesme, 8,0 s. TEK hareket: çok yavaş pull-back (≤%10) —
+  Tek çekim, 0 kesme, 10,0 s. TEK hareket: çok yavaş pull-back (≤%10) —
   fazın tek hareketli sahnesi (README 8 hareket listesi).
   İŞLEV: ⭐ ÖLÇEK KARŞITLIĞI — filmin üçüncü ve son 1:10 karesi
   (S1 · S45 · S113). Üçünün de anlamı farklıdır: S1'de bir işçiydi,
@@ -860,13 +920,13 @@ watermark. Photorealistic, 35mm film grain.
 Output: 16:9, 4K, no text, no watermark.
 ```
 
-### 🎥 VIDEO PROMPT — 8 saniye, tek kesintisiz çekim
+### 🎥 VIDEO PROMPT — 10 saniye, tek kesintisiz çekim
 
 ```
 Maintain the plain, the horizon, the capsule, the canopy and the tiny
 prone figure from the first frame.
 
-MOTION — 8 seconds, 24mm, extreme wide shot, from 70 metres from her
+MOTION — 10 seconds, 24mm, extreme wide shot, from 70 metres from her
 and 30 metres above the ground, high-angle, camera pitched down 25
 degrees, one single very slow pull-back of no more than seven metres
 over the whole shot, deep focus, no cuts, no other camera movement:
@@ -888,9 +948,10 @@ wider than the figure's hand at this distance, and settles.
 scale. She does not get up.
 7s — The camera has crept back its full distance. The three objects are
 smaller and the empty plain around them is wider.
-8s — One tiny pale figure, one tipped capsule, one spread canopy and a
+8s — The figure's back rises once more, barely readable. Nothing crosses the
+plain and nothing enters the frame.
+10s — One tiny pale figure, one tipped capsule, one spread canopy and a
 plain running to a level horizon. Nothing has changed. No cuts.
-
 Audio: atmosphere — a light steady wind across a wide open surface,
 thinner and further away than in the closer shots, with no other sound
 in it: no birds, no insects, no engines and no voices. Her breathing is
@@ -916,7 +977,7 @@ grain.
 
 ## 🎬 SAHNE 114 — DİZ
 
-`15:04 – 15:12` · 35mm · kadro A · alt açı 20°, WS · fixed lockoff
+`18:50 – 19:00` · 35mm · kadro A · alt açı 20°, WS · fixed lockoff
 
 > 🎯 **REFERANS** · YÜKLE: **RF** + **RI** · ÇAPA: RF p1 (tam boy) +
 > RI p3 (çatlak kil) · DURUM: KASKSIZ · ⛔ REPLİK 0 · ⭐ **KAS TİTREMESİ
@@ -927,7 +988,7 @@ _"Yerçekimi bacakları tutmuyor."_
 
 ```
 ⚙️ SAHNE KARTI
-  Tek çekim, 0 kesme, 8,0 s. Kamera alçakta, kile yakın.
+  Tek çekim, 0 kesme, 10,0 s. Kamera alçakta, kile yakın.
   İŞLEV: BAŞARISIZ DENEME. Ayağa kalkış bir sahne değil, üç sahnelik
   bir yaydır: burada dizler, S118'de ayaklar. Aradaki fark saattir.
   ⭐ Yerçekimi bu filmde bir DÜŞMAN olarak bitmiyor; ama önce düşman
@@ -1009,13 +1070,13 @@ watermark. Photorealistic, 35mm film grain.
 Output: 16:9, 4K, no text, no watermark.
 ```
 
-### 🎥 VIDEO PROMPT — 8 saniye, tek kesintisiz çekim
+### 🎥 VIDEO PROMPT — 10 saniye, tek kesintisiz çekim
 
 ```
 Maintain the lake bed, the woman on hands and knees, the capsule and
 the low morning sun from the first frame.
 
-MOTION — 8 seconds, 35mm, wide shot, fixed lockoff 4 metres from her
+MOTION — 10 seconds, 35mm, wide shot, fixed lockoff 4 metres from her
 and 0.4 metres above the ground, low-angle, camera pitched up 20
 degrees, deep focus, no cuts, absolutely no camera movement:
 
@@ -1035,9 +1096,10 @@ her palms falls straight back down within a second.
 width, holds, and drops.
 7s — Her elbows bend and her chest lowers toward the clay. She does not
 lie flat; she holds just above it.
-8s — She is on hands and knees, head down, arms trembling, still not
+8s — Her arms take the weight for two seconds longer and keep trembling. She
+does not straighten and she does not go down.
+10s — She is on hands and knees, head down, arms trembling, still not
 standing. No cuts.
-
 Audio: atmosphere — a light steady morning wind across open ground, the
 grate of clay under a shifting palm at 2 and 5 seconds, the creak of
 suit fabric under load, and her breathing, hard, working and audible as
@@ -1063,7 +1125,7 @@ watermark. Photorealistic, 35mm film grain.
 
 ## 🎬 SAHNE 115 — AVUÇ
 
-`15:12 – 15:20` · 50mm · kadro A · üst açı 30°, MS · fixed lockoff
+`19:00 – 19:10` · 50mm · kadro A · üst açı 30°, MS · fixed lockoff
 
 > 🎯 **REFERANS** · YÜKLE: **RF** + **RI** · ÇAPA: **RI p3** (çatlak kil
 > CU) + RB p1 (saat) · DURUM: KASKSIZ · ⛔ REPLİK 0 · ⭐ EL BÜTÇESİNİN
@@ -1075,7 +1137,7 @@ _"Kuru."_
 
 ```
 ⚙️ SAHNE KARTI
-  Tek çekim, 0 kesme, 8,0 s. Kamera sabit, ellere tepeden.
+  Tek çekim, 0 kesme, 10,0 s. Kamera sabit, ellere tepeden.
   İŞLEV: DOKUNMA. Filmin ilk sahnesinden beri her el eldivenliydi ya
   da metale değdi. Burada çıplak bir avuç toprağı kavrıyor — ve
   toprak KURU. Su bu filmde 0 karedir ve bu sahne o kararın en
@@ -1158,13 +1220,13 @@ caption, no watermark. Photorealistic, 35mm film grain.
 Output: 16:9, 4K, no text, no watermark.
 ```
 
-### 🎥 VIDEO PROMPT — 8 saniye, tek kesintisiz çekim
+### 🎥 VIDEO PROMPT — 10 saniye, tek kesintisiz çekim
 
 ```
 Maintain the two hands, the cracked clay, the watch and the low morning
 sun from the first frame.
 
-MOTION — 8 seconds, 50mm, medium shot, fixed lockoff 1.2 metres above
+MOTION — 10 seconds, 50mm, medium shot, fixed lockoff 1.2 metres above
 her hands, high-angle, camera pitched down 30 degrees, deep focus, no
 cuts, absolutely no camera movement:
 
@@ -1186,9 +1248,10 @@ them settle.
 6s — The right wrist turns a few degrees and the scratched crystal of
 the watch takes one hard highlight; the strap end stays lying flat and
 does not lift.
-8s — Both palms are flat on the dry clay, dust in every crease, the
-watch face turned up and its hands still stopped. No cuts.
-
+8s — The dust in the creases of her palms does not move. The stopped hands
+of the watch do not move either.
+10s — Both palms are flat on the dry clay, dust in every crease, the watch
+face turned up and its hands still stopped. No cuts.
 Audio: atmosphere — a light steady morning wind, the fine dry grate of
 clay under a pressing palm at 3 seconds, the whisper of falling dust at
 1 second, and her breathing, deep and working, close to the microphone.
@@ -1213,7 +1276,7 @@ any surface; no subtitles, no caption, no watermark. Photorealistic,
 
 ## 🎬 SAHNE 116 — YÜZ TOPRAKTA
 
-`15:20 – 15:28` · 85mm · kadro A · yerden göz hizası, CU · fixed lockoff
+`19:10 – 19:20` · 85mm · kadro A · yerden göz hizası, CU · fixed lockoff
 
 > 🎯 **REFERANS** · YÜKLE: **RF** · ÇAPA: **RF p3** (yüz CU) · DURUM:
 > KASKSIZ · ⛔ REPLİK 0 · ⭐ Filmin son yüz yakın planı · ⛔ Gözyaşı 0,
@@ -1224,7 +1287,7 @@ _"Yanağı kilde."_
 
 ```
 ⚙️ SAHNE KARTI
-  Tek çekim, 0 kesme, 8,0 s. Kamera yerde, yanağının hizasında.
+  Tek çekim, 0 kesme, 10,0 s. Kamera yerde, yanağının hizasında.
   İŞLEV: FİLMİN SON YÜZÜ. S49'da bu yüzü ilk kez kasksız görmüştük,
   loşta ve temiz. Burada sert sabah ışığında ve toz içinde.
   Arasında on altı dakika ve iki ölü var.
@@ -1304,13 +1367,13 @@ anywhere; no caption, no watermark. Photorealistic, 35mm film grain.
 Output: 16:9, 4K, no text, no watermark.
 ```
 
-### 🎥 VIDEO PROMPT — 8 saniye, tek kesintisiz çekim
+### 🎥 VIDEO PROMPT — 10 saniye, tek kesintisiz çekim
 
 ```
 Maintain the face, the dust on her skin, the near clay and the low
 morning sun from the first frame.
 
-MOTION — 8 seconds, 85mm, close-up, fixed lockoff 0.6 metres from her
+MOTION — 10 seconds, 85mm, close-up, fixed lockoff 0.6 metres from her
 face and 0.1 metres above the ground, at eye-level with the clay
 surface, shallow depth of field, no cuts, absolutely no camera
 movement:
@@ -1329,9 +1392,10 @@ far as it goes, and stop.
 stays on it.
 6s — Her gaze lifts a few degrees, off the ground and toward her own
 wrist, out of frame at the bottom edge. It stops there.
-8s — Her cheek is still on the clay, her eyes now fixed toward her own
+8s — Her gaze stays where it stopped, off frame at the bottom edge. Her
+cheek does not lift off the clay.
+10s — Her cheek is still on the clay, her eyes now fixed toward her own
 hand, her lips closed. No cuts.
-
 Audio: atmosphere — a light steady morning wind, very close now, moving
 over the ground beside her ear; the fine dry sound of a few grains
 shifting at 2 seconds; and her breathing, deep, close and unfiltered.
@@ -1353,7 +1417,7 @@ caption, no watermark. Photorealistic, 35mm film grain.
 
 ## 🎬 SAHNE 117 — SAAT KURULUR ⭐ TEMA · ÇEHOV 2 ÖDENİR
 
-`15:28 – 15:36` · 100mm · kadro A (yalnız bilek) · üst açı 35°, ECU · fixed lockoff
+`19:20 – 19:30` · 100mm · kadro A (yalnız bilek) · üst açı 35°, ECU · fixed lockoff
 
 > 🎯 **REFERANS** · YÜKLE: **RB** + RF · ÇAPA: **RB p1** (bilekler,
 > sağda saat) · DURUM: KASKSIZ · ⛔ REPLİK 0 · ⭐ **TEMA MOTİF SAHNESİ
@@ -1365,7 +1429,7 @@ _"Saniye ibresi yürüyor."_
 
 ```
 ⚙️ SAHNE KARTI
-  Tek çekim, 0 kesme, 8,0 s. Kamera sabit, bileğe tepeden.
+  Tek çekim, 0 kesme, 10,0 s. Kamera sabit, bileğe tepeden.
   İŞLEV: ⭐ FİLMİN SON ÇEHOV ÖDEMESİ VE TEMANIN SON İNDEKSİ.
   S8'de iki bilek yan yanaydı ve saat durmuştu — hiç kimse ona
   bakmadı. Yüz on dokuz sahne sonra aynı saat kuruluyor.
@@ -1447,13 +1511,13 @@ surface; no caption, no watermark. Photorealistic, 35mm film grain.
 Output: 16:9, 4K, no text, no watermark.
 ```
 
-### 🎥 VIDEO PROMPT — 8 saniye, tek kesintisiz çekim
+### 🎥 VIDEO PROMPT — 10 saniye, tek kesintisiz çekim
 
 ```
 Maintain the wrist, the watch, the turning fingers and the low morning
 sun from the first frame.
 
-MOTION — 8 seconds, 100mm macro, extreme close-up, fixed lockoff 0.25
+MOTION — 10 seconds, 100mm macro, extreme close-up, fixed lockoff 0.25
 metres above her wrist, high-angle, camera pitched down 35 degrees,
 shallow depth of field, no cuts, absolutely no camera movement:
 
@@ -1474,9 +1538,11 @@ change and the hands do not move yet.
 separate, countable steps and never sweeps.
 7s — It has advanced five clear steps since it started and continues at
 the same rate. The hour and minute hands do not move.
-8s — The second hand takes another step. The watch is running; the
-fingers are still; the strap end still hangs on the clay. No cuts.
-
+8s — The second hand takes another step, and another after it, each one
+separate and countable.
+10s — The second hand has advanced at least seven clear steps since it
+started and is still stepping. The watch is running; the fingers are still;
+the strap end still hangs on the clay. No cuts.
 Audio: atmosphere — the wind has dropped to almost nothing here and the
 microphone is very close: the dry ratcheting of the crown at 1 and 3
 seconds, each click separate, and from 5 seconds the small regular tick
@@ -1503,7 +1569,7 @@ grain.
 
 ## 🎬 SAHNE 118 — AYAĞA KALKIŞ ⭐ ALT AÇI · FİLMDE İLK
 
-`15:36 – 15:44` · 85mm · kadro A · alt açı, kamera YERDE, CU · fixed lockoff
+`19:30 – 19:40` · 85mm · kadro A · alt açı, kamera YERDE, CU · fixed lockoff
 
 > 🎯 **REFERANS** · YÜKLE: **RF** · ÇAPA: RF p1 (tam boy) · DURUM:
 > KASKSIZ · ⛔ REPLİK 0 · ⭐ **H AİLESİ FİLMDE İLK KEZ** (KİLİT 52):
@@ -1515,7 +1581,7 @@ _"Ağırlık artık zafer."_
 
 ```
 ⚙️ SAHNE KARTI
-  Tek çekim, 0 kesme, 8,0 s. Kamera YERDE ve orada kalır.
+  Tek çekim, 0 kesme, 10,0 s. Kamera YERDE ve orada kalır.
   İŞLEV: ⭐ FİLMİN DORUK DUYGUSU — doruk OLAYI S102'ydi, doruk
   DUYGUSU burada. Kamera onun az önce yattığı yerde duruyor ve o
   kalkarken kameradan uzaklaşıyor. Yükseklik bir zaferdir ve onu
@@ -1599,13 +1665,13 @@ anywhere; no caption, no watermark. Photorealistic, 35mm film grain.
 Output: 16:9, 4K, no text, no watermark.
 ```
 
-### 🎥 VIDEO PROMPT — 8 saniye, tek kesintisiz çekim
+### 🎥 VIDEO PROMPT — 10 saniye, tek kesintisiz çekim
 
 ```
 Maintain the ground-level viewpoint, the rising woman, the pale sky and
 the low morning sun from the first frame.
 
-MOTION — 8 seconds, 85mm, close-up, fixed lockoff 1.2 metres from her
+MOTION — 10 seconds, 85mm, close-up, fixed lockoff 1.2 metres from her
 and 0.1 metres above the ground, low-angle, camera pitched up 30
 degrees, no cuts, absolutely no camera movement:
 
@@ -1628,9 +1694,10 @@ slower.
 shoulders are still shaking but they are above the frame's centre now.
 7s — She reaches full height. Her head has gone out of the top of
 frame; only her body and the sky are left in it.
-8s — She stands, still, her hands empty at her sides. She makes no
-gesture. No cuts.
-
+8s — She takes the weight fully on her legs. Her shoulders shake once more
+and steady.
+10s — She stands, still, her hands empty at her sides. She makes no gesture.
+No cuts.
 Audio: atmosphere — a light steady wind, the grate of clay under a boot
 at 3 and 5 seconds, the creak of suit fabric under load, and her
 breathing, hard. Under it the film's single crescendo builds, entering
@@ -1656,7 +1723,7 @@ Photorealistic, 35mm film grain.
 
 ## 🎬 SAHNE 119 — İLK ADIMLAR
 
-`15:44 – 15:52` · 35mm · kadro A · sırttan, göz hizası, MS · fixed lockoff
+`19:40 – 19:50` · 35mm · kadro A · sırttan, göz hizası, MS · fixed lockoff
 
 > 🎯 **REFERANS** · YÜKLE: **RF** + **RI** · ÇAPA: RF p1 (sırt, düz
 > silüet) + RI p1 · DURUM: KASKSIZ · ⛔ REPLİK 0 · ⭐ Filmde ilk kez
@@ -1667,7 +1734,7 @@ _"İlk adımlar."_
 
 ```
 ⚙️ SAHNE KARTI
-  Tek çekim, 0 kesme, 8,0 s. Kamera sabit, arkasından.
+  Tek çekim, 0 kesme, 10,0 s. Kamera sabit, arkasından.
   İŞLEV: YÜRÜYÜŞ. On altı dakika boyunca hiçbir gövde yürümedi:
   süzüldü, itildi, çekildi, düştü. Burada bir insan adım atıyor ve
   her adım ayrı ayrı zor.
@@ -1756,13 +1823,13 @@ no caption, no watermark. Photorealistic, 35mm film grain.
 Output: 16:9, 4K, no text, no watermark.
 ```
 
-### 🎥 VIDEO PROMPT — 8 saniye, tek kesintisiz çekim
+### 🎥 VIDEO PROMPT — 10 saniye, tek kesintisiz çekim
 
 ```
 Maintain the walking woman, the lake bed, the capsule behind her and
 the low morning sun from the first frame.
 
-MOTION — 8 seconds, 35mm, medium shot, fixed lockoff 5 metres behind
+MOTION — 10 seconds, 35mm, medium shot, fixed lockoff 5 metres behind
 her, at eye-level with her shoulders, square to her line of travel,
 deep focus, no cuts, absolutely no camera movement:
 
@@ -1782,9 +1849,10 @@ rhythm. Dust from each footfall drops straight back down within a
 second.
 6s — She is a little further away and a little smaller in frame. She
 does not turn around and does not look back at the capsule.
-8s — She is still walking away toward the horizon, her shadow long to
-the screen-left, her steps still uneven. No cuts.
-
+8s — Two more uneven steps. The dust from each one drops straight back down
+within a second.
+10s — She is still walking away toward the horizon, her shadow long to the
+screen-left, her steps still uneven. No cuts.
 Audio: atmosphere — a light steady morning wind across open ground, and
 under it each footfall separately: the crunch of dry clay, the creak of
 suit fabric, and her breathing, deep and working. The single crescendo
@@ -1811,7 +1879,7 @@ film grain.
 
 ## 🎬 SAHNE 120 — HELD FRAME ⭐ FİLMİN SON KARESİ
 
-`15:52 – 16:00` · 24mm · kadro A · üst açı 20°, WS · fixed lockoff
+`19:50 – 20:00` · 24mm · kadro A · üst açı 20°, WS · fixed lockoff
 
 > 🎯 **REFERANS** · YÜKLE: **RI** + RF · ÇAPA: **RI p1** (düzlük, ufka
 > kadar) · DURUM: KASKSIZ · ⛔ REPLİK 0 · ⛔ **MÜZİK 0** — yalnız rüzgâr
@@ -1822,7 +1890,7 @@ _"Kesme yok. Kart yok."_
 
 ```
 ⚙️ SAHNE KARTI
-  Tek çekim, 0 kesme, 8,0 s. Kamera sabit ve öyle kalır.
+  Tek çekim, 0 kesme, 10,0 s. Kamera sabit ve öyle kalır.
   İŞLEV: ⭐ FİNAL — KAPALI (kurtuluş) + HELD FRAME + AÇIK KALAN
   TEK SORU [UZAY_SENARYO §15 · FINAL §2].
   ⭐ Kapalı olan: o hayatta ve ayakta. Açık kalan: gökte hâlâ akan
@@ -1830,7 +1898,7 @@ _"Kesme yok. Kart yok."_
      S91'de geri gelmişlerdi (ve kadrajda kimse yoktu), burada
      duruyorlar ve o onlara bakmıyor. Kurtulan kişi kurtulmuş bir
      dünyaya dönmedi.
-  ⛔ Film bir HAREKETLE değil, bir SÜREYLE biter: sekiz saniye boyunca
+  ⛔ Film bir HAREKETLE değil, bir SÜREYLE biter: on saniye boyunca
      kadraj değişmez ve son karede de değişmez.
   ⛔ Kart, yazı, jenerik, logo, fade 0 kare. Kesme yok.
   ⛔ Müzik 0: yalnız rüzgâr.
@@ -1912,13 +1980,13 @@ frame. Photorealistic, 35mm film grain.
 Output: 16:9, 4K, no text, no watermark.
 ```
 
-### 🎥 VIDEO PROMPT — 8 saniye, tek kesintisiz çekim
+### 🎥 VIDEO PROMPT — 10 saniye, tek kesintisiz çekim
 
 ```
 Maintain the plain, the horizon, the standing figure, the capsule and
 the thin pale lines in the sky from the first frame.
 
-MOTION — 8 seconds, 24mm, wide shot, fixed lockoff 12 metres behind her
+MOTION — 10 seconds, 24mm, wide shot, fixed lockoff 12 metres behind her
 and 3 metres above the ground, high-angle, camera pitched down 20
 degrees, deep focus, no cuts, absolutely no camera movement of any
 kind:
@@ -1940,10 +2008,11 @@ frame width across the whole shot. She does not look up at them.
 plain is otherwise completely still.
 7s — She stays exactly where she is. Nothing approaches and nothing
 leaves.
-8s — The frame is unchanged: one small standing figure, one long
-shadow, one level horizon, and the lines still crossing the sky above
-her. The shot ends here, on the held frame. No cuts.
-
+8s — Nothing moves anywhere in the frame. The lines above her hold their
+places against the sky.
+10s — The frame is unchanged: one small standing figure, one long shadow,
+one level horizon, and the lines still crossing the sky above her. The shot
+ends here, on the held frame. No cuts.
 Audio: atmosphere — wind only. A light, steady, unbroken morning wind
 across open ground, with nothing else in it at any point: no music, no
 score, no swell, no voice, no engine, no bird. The wind does not rise or
@@ -1968,7 +2037,7 @@ digits or symbols anywhere in frame. Photorealistic, 35mm film grain.
 # 🔗 FİLMİN SON KARESİ — BAĞLANTI YOK
 
 ```
-S120 · 16:00 · YERÇEKİMİ BİTER.
+S120 · 20:00 · YERÇEKİMİ BİTER.
 Sonraki faz yoktur. Kesme yoktur. Kart yoktur.
 
 📌 SIRADAKİ ÜÇ DOSYA (ADIM 5-6-7):
@@ -2003,7 +2072,7 @@ Sonraki faz yoktur. Kesme yoktur. Kart yoktur.
 □ [BIBLE] 0 · Türkçe gövde 0 · özel ad 0 · **REPLİK 0/12** ✅
 □ Ekranda okunan ağız 0/12 · rakam 0 · kart/yazı 0
 □ ⭐ ÇEHOV 2 ÖDENDİ (S117): S8'de ekilen durmuş saat kuruldu, saniye
-  ibresi sekiz saniyede en az beş sayılabilir adım attı
+  ibresi on saniyede en az yedi sayılabilir adım attı
 □ ⭐ TEMA MOTİFİ TAMAMLANDI: S30 · S43 · S84 · **S117** — dördü de
   yazıldı; temanın dört yüzü (yara · bedel · vazgeçiş · sürdürme)
 □ Ağırlığın kanıtları: saç aşağıda 12/12 · saat kayışı sarkık ·

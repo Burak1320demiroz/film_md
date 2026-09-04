@@ -216,6 +216,10 @@ kask, eldivendeki kurumuş iz, bırakılmayan analog bir alet.
   birden fazla sahnede görünür ve her sahnede aynı sayısal kimlik
   kartıyla yazılır (renk, boyut, doku, hasarın YERİ)
 □ Yıpranma sabittir, göç etmez [D42]
+□ ⭐ Eşyanın KENDİSİ (ne olduğu, giysinin neresinde, fizik kuralları,
+  İngilizce kalıbı, hangi vuruşu taşıdığı):
+  ASTRONOT_DONANIM_VE_KIMLIK_KILAVUZU.md §8 (03.09.2026) —
+  burası BÜTÇEYİ verir, orası ENVANTERİ
 ```
 
 ---

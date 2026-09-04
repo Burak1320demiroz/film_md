@@ -60,9 +60,12 @@ Sahne haritası yazılırken dağıtılır, üretimden SONRA eklenemez:
 - ⭐ `⭐VİRAL` işaretli her sahne İKİ satır taşır [SENARYO_VE_VIRAL_KAMERA §2.4]:
   `YÜZ` (vizör ardında hangi ifade değişiyor) + `HAREKET` (kadrajda ne hızlanıyor).
   Ölçütsüz VİRAL etiketi düşer — koparılabilirliğin iki sürücüsü budur (hakemli).
-- ⭐ Replik varsa `SES_VE_DIYALOG_URETIM_KILAVUZU.md` §1a ÖNCE okunur:
+- ⭐ Replik varsa `SES_VE_DIYALOG_URETIM_KILAVUZU.md` §1a + §2a okunur:
   kadraj dışı sesin üç gerekçesi + bedenleştirmenin (ağzı gösterme) doruğa
   saklanması. Ekranda konuşan ağız İKİ riski birden açar: lip-sync + AI damgası.
+  Replik tablosu **İŞLEV sütunu** taşır (her replik B5'in bir satırına
+  bağlanır; işlevsiz replik silinir) ve promptlar bitince Kart P 2b'de
+  `PROMPT_KONTROL/DIALOGUE_CRITIQUE_PROMPT.md` koşulur [TUR 6 · 03.09.2026].
 - Sahne-kurulum dizisi: `ACI_YAYI_VE_SEKANS_KILAVUZU.md` §3 güvenli bant
   (ardışık çift: ≥1 ölçek kademesi VE ≥45°) · §4 kurulum sayısı · açı TİPİ sayısı ≥3.
 - Her prompt self-contained (kural ③) — "BIBLE'a bak" atfı yasak.

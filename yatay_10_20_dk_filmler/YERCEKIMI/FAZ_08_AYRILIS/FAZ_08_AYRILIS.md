@@ -1,6 +1,6 @@
 # 🌍 YERÇEKİMİ — FAZ 8 / AYRILIS
 
-## S85–S96 PROMPTLARI | 11:12 – 12:48 | Perde III | 16:9 Yatay
+## S85–S96 PROMPTLARI | 14:00 – 16:00 | Perde III | 16:9 Yatay
 ### _"Sessizce parçalanan bir şeyden ayrılmak."_
 
 > **Bu dosya ADIM 4'tür.** Plan: `../00_PLAN.md` · Bible + harita:
@@ -31,7 +31,7 @@
 # 🔗 FAZ GİRİŞ BAĞLANTISI
 
 ```
-Önceki fazın son karesi (S84 · 12:48'e 96 s kala): panelde AÇIK kırmızı
+Önceki fazın son karesi (S84 · 14:00 · PERDE II KAPANDI): panelde AÇIK kırmızı
 kapak ve altında dokunulmamış tek kol; vana açık; halka 1/6 YANIP
 SÖNÜYOR; hoparlör SESSİZ; kabinde tek amber lamba.
 Köprü: S85 aynı sessiz hoparlörün MAKROSU ile açılır — bedel görülür.
@@ -40,6 +40,97 @@ Kadraj CU → ECU (D → E), açı alttan tepeye.
    kalanında B'nin sesi yoktur, ne gerçek ne halüsinasyon.
 ⛔ KIRMIZI KAPAK AÇIK KALIR. Her kabin kadrajının kenarında durur ve
    bir daha kapanmaz; kol S95'te çekilir (Çehov 6 ödenir).
+```
+
+# ⏱️ 03.09.2026 · IZGARA 8 s → 10 s ÇEVRİLDİ (sahip kararı)
+
+```
+⭐ SEBEP: sahip üretime 10 SANİYELİK kliplerle başladı. Klip süresi bir
+   tercih değil ARACIN AYARIDIR [D124]; belge araca uyar, tersi değil.
+
+✅ HER SAHNEDE YAPILAN — 12/12:
+   · `MOTION — 8 seconds` → `10 seconds` · sahne kartı `8,0 s` → `10,0 s`
+   · beat MUTLAK SANİYELERİ KORUNDU (0s-7s aynen) — hızlar ve sayısal
+     kilitler "per second / within a second / in about half a second"
+     biçiminde yazılıydı, bu yüzden 10 s'de kendiliğinden geçerli kalır
+   · eski `8s` SON DURUM beat'i `10s`'e taşındı, araya sahneye ÖZGÜ bir
+     `8s` devam beat'i yazıldı — dolgu değil: her biri o sahnenin kendi
+     malzemesini iki saniye daha sürdürür (sürüklenme · titreme · ışık ·
+     sayaç · nefes). Lockoff + "hiçbir şey yerleşmiyor" estetiği bu iki
+     saniyeyi zaten talep ediyordu.
+
+📐 IZGARA — bu fazın bütün zamanları buradan HESAPLANDI, elle yazılmadı:
+   sahne n başlangıcı = (n−1) × 10 s
+   FAZ 8: S85 14:00 → S96 16:00 · film NOMİNAL 120 × 10 s = 20:00 (Second Ship ızgarası)
+   ⚠️ GERÇEK KURGU 19:20 — dört yuva boş (S8 · S15 · S69 · S70);
+     116 klip × 10 s. Nominal ızgara PROMPT zamanıdır, kurgu değil.
+
+⛔ ÖLÇÜM BORCU — TEK AÇIK SAYI [D125 · ortak adım ⑪]:
+   F1-F6 makaralarının klip süresi bu depoda HİÇ ÖLÇÜLMEDİ. F6 rubriği
+   "roughly 8 seconds" yazar ama o satır PLANDAN geldi, ölçümden değil.
+   Üretilmiş fazlar 8 s çıkarsa film İKİ IZGARALI olur ve buradaki
+   MUTLAK zamanlar kayar (sahne sırası, beat'ler ve kilitler etkilenmez).
+   Cevabı bir komut veriyor, modele sorulmaz:
+     ffprobe -v error -show_entries format=duration -of csv=p=0 <makara>
+   Ölçülünce bu blok kapanır ve kurgu kapısı (④) O sayıyla koşar.
+
+🔧 BU FAZDA AYRICA — ÜÇÜ DE KAYDA DEĞER:
+   ① REPLİK DEFTERİ yeniden hesaplandı [D122]; S90 satırı 3 s ofsetle
+     yazılmıştı, `Audio:` ve beat 2 s diyor → 14:52.
+   ② 🔴 S96'NIN SON KARESİ DEĞİŞTİ. Kapsül 8 s'de sol kenara YAKINDI ve
+     hâlâ hızlanıyordu; 10 s'de kenarı GEÇER. Fizik eğilmedi, KADRAJ
+     kararı verildi: kapsül 8-9 s arasında kadrajı TERK EDER ve son
+     ~1,5 saniye kadrajda YALNIZ İSTASYON kalır. Faz kapanışı bununla
+     güçlenir (giden görünmez, geride kalan görünür) ve sahne zaten
+     İNSANSIZ (Kart 10) olduğu için "özne kadrajı boşalttı" riski yok.
+     ⛔ İki bağlantı notuna işlendi: bu dosyanın FAZ SONU notu +
+       `../FAZ_09_DUSUS` FAZ GİRİŞ notu.
+   ③ ⚠️ BELGE SENKRONU (bu turda bulundu): iki dosya "S96'nın ayrılan
+     konisi S97'de lombozdan görülür" diyordu; F9'un kendi giriş kilidi
+     ise "⛔ İSTASYON BİR DAHA GÖRÜNMEZ · pencerede yalnız Dünya" diyor.
+     Çelişki F9'un kilidi yönünde çözüldü: köprü artık DIŞTAN İÇE bir
+     kesmedir — gideni son karede görmeyiz, sonraki karede içinde
+     buluruz. (Kural ①: aynı olayı iki yerde farklı anlatan iki satır.)
+```
+
+# 🔧 03.09.2026 · ÜRETİM ÖNCESİ DÜZELTME — SES SATIRLARI KALDIRILDI [F7 EMSALİ]
+
+```
+⛔ SEBEP: F5/F6 makaralarında GÖMÜLÜ ALTYAZI çıktı ve teşhis netti:
+   tırnağı silmek yetmiyor, sesi ANLATAN beat satırının kendisi
+   tetikliyor [F7 kayıt bloğu · GOZLEM ADAY-7]. Bu fazda ÜÇ sahne aynı
+   deseni taşıyordu — üçü de MACHINE anonsu:
+     S90 2s  "PROXIMITY WARNING. DEBRIS FIELD."
+     S95 4s  "LANDING ROCKETS ARMED."
+     S96 5s  "OXYGEN THREE PERCENT. DESCENT RESERVE ENGAGED."
+
+🔴 BEDELİ BU FAZDA İKİ KATMANLI OLURDU:
+   · S96 filmin OKSİJEN ZİNCİRİNİN son halkasıdır (62→41→23→11→6→3,
+     rakam ekranda 0 — yalnız ses). Gömülü altyazı sayıyı EKRANA basar
+     ve zincirin "rakamsız sayaç" tasarımını tek karede öldürür.
+   · S96 İNSANSIZ dış sahnedir: ses kabinden gelir, kadrajda kaynak
+     yoktur. Altyazı, kaynaksız sesi belgesel ekran metnine çevirir.
+
+✅ YAPILAN: üç beat satırı YALNIZ KAMERANIN GÖRDÜĞÜNÜ anlatacak
+   şekilde yeniden yazıldı:
+     S90 2s  anons satırı → göz çevresi kaslarında tek gerilme
+     S95 4s  anons satırı → çene milimetrik kalkar, kol stopta kilitli
+     S96 5s  anons satırı → kapsül kadraj ortasını geçer, üç kesit ayrışır
+   Sonuç: F8'de tırnaklı cümle 0 · sesi anlatan beat 0.
+
+⚠️ SES KAYBOLMADI. Audio: satırları DOKUNULMADAN duruyor ("one flat
+   synthetic announcement at N seconds, heard only and never shown as
+   text") ve üç replik zamanlarıyla bu dosyanın REPLİK DEFTERİ'nde —
+   post'ta oradan girer.
+
+⚠️ ADAY-7 DENEYİ BOZULMADI: deneyin tek değişkeni F7 makarasındadır.
+   F8'in temizliği deneyi kirletmez; F7 sonucu ne çıkarsa çıksın bu
+   desen artık hiçbir faza yazılmayacak.
+
+📌 ŞOK BANDI BİLGİSİ [FAZ_06 iptal kaydı ②]: S69/S70 iptali S68→S71'de
+   ÜÇÜNCÜ bir üç-kademeli sıçrama yarattı (9:04 — S94'ten ÖNCE). Sahip
+   (a) kabul ederse buradaki S94 "ŞOK BANDI 1" etiketi kronolojik
+   olarak İKİNCİ sıçrama olur; etiket DEĞİŞTİRİLMEDİ, karar bekleniyor.
 ```
 
 # 🔒 BU FAZIN KİLİTLERİ
@@ -148,13 +239,13 @@ SES: on iki sahne SESSİZ üretilir. ⭐ S93→S94→S95 ses köprüsü post'ta
 tek parça hazırlanır (KİLİT 38); S94'te olay sesi 0, kabin tonu sürer.
 ```
 
-## 🗣️ REPLİK DEFTERİ — (n−1) × 8 + ofset [D122]
+## 🗣️ REPLİK DEFTERİ — (n−1) × 10 + ofset [D122]
 
 | S# | saniye | konuşan | REGISTER | kanal | replik |
 |:--:|:--:|---|:--:|---|---|
-| S90 | 11:55 | CAPSULE AI | MACHINE | kabin içi, kuru | "PROXIMITY WARNING. DEBRIS FIELD." |
-| S95 | 12:36 | CAPSULE AI | MACHINE | kabin içi, kuru | "LANDING ROCKETS ARMED." |
-| S96 | 12:45 | CAPSULE AI | MACHINE | kabin içi, dışarıdan duyulmaz | "OXYGEN THREE PERCENT. DESCENT RESERVE ENGAGED." |
+| S90 | 14:52 | CAPSULE AI | MACHINE | kabin içi, kuru | "PROXIMITY WARNING. DEBRIS FIELD." |
+| S95 | 15:44 | CAPSULE AI | MACHINE | kabin içi, kuru | "LANDING ROCKETS ARMED." |
+| S96 | 15:55 | CAPSULE AI | MACHINE | kabin içi, dışarıdan duyulmaz | "OXYGEN THREE PERCENT. DESCENT RESERVE ENGAGED." |
 
 ⚠️ **ÜÇ replik, üçü de MACHINE.** A konuşmaz (kasksız). İnsan sesi bu
 fazda yoktur ve filmin geri kalanında da olmayacaktır.
@@ -167,7 +258,7 @@ gelir, kadrajda kaynak yoktur (insansız sahne + kabin sesi).
 
 ## 🎬 SAHNE 85 — SESSİZ HOPARLÖR
 
-`11:12 – 11:20` · 100mm · kadro A (kadrajda insan yok) · alt açı 20°, ECU · fixed lockoff
+`14:00 – 14:10` · 100mm · kadro A (kadrajda insan yok) · alt açı 20°, ECU · fixed lockoff
 
 > 🎯 **REFERANS** · YÜKLE: **RH** · ÇAPA: RH p1 (hoparlör ızgarası) ·
 > DURUM: hoparlör S84'te SUSTU ve bir daha ses vermez · ⛔ REPLİK 0 ·
@@ -178,13 +269,13 @@ _"Bedelin sahnesi."_
 
 ```
 ⚙️ SAHNE KARTI
-  Tek çekim, 0 kesme, 8,0 s. Kamera sabit, ızgaraya alttan.
+  Tek çekim, 0 kesme, 10,0 s. Kamera sabit, ızgaraya alttan.
   İŞLEV: KAYIP GÖRÜLÜR. S77'de kamera aynı ızgaraya bakmış ve oradan
   cızırtı gelmişti — halüsinasyonun kanıtıydı. Şimdi aynı kadraj,
   aynı açı, aynı mesafe: ve hiçbir şey gelmiyor.
   ⭐ Eşleştirilmiş kadraj çifti [KURGU §B4]: iki sahne arasındaki tek
      değişken SESTİR. Bedel bir görüntüyle değil, bir yoklukla ödenir.
-  ⛔ Izgara TİTREMEZ, lamba YANMAZ. Hiçbir şey olmaz — sekiz saniye.
+  ⛔ Izgara TİTREMEZ, lamba YANMAZ. Hiçbir şey olmaz — on saniye.
   ⛔ Bu, S84'te verilen kararın faturasıdır; müzik YOKTUR.
 ```
 
@@ -244,13 +335,13 @@ caption, no watermark. Photorealistic, 35mm film grain.
 Output: 16:9, 4K, no text, no watermark.
 ```
 
-### 🎥 VIDEO PROMPT — 8 saniye, tek kesintisiz çekim
+### 🎥 VIDEO PROMPT — 10 saniye, tek kesintisiz çekim
 
 ```
 Maintain the speaker grille, the rim, the padded wall, framing and
 lighting from the first frame.
 
-MOTION — 8 seconds, 100mm macro, extreme close-up, fixed lockoff 0.25
+MOTION — 10 seconds, 100mm macro, extreme close-up, fixed lockoff 0.25
 metres below the grille, low-angle, camera pitched up 20 degrees,
 shallow depth of field, no cuts, absolutely no camera movement:
 
@@ -266,9 +357,10 @@ shadow. Nothing lights.
 in the cabin and the grille takes it without ringing.
 6s — Still nothing. The raking amber light does not change and no lamp
 on the rim lights.
-8s — The grille is exactly as it was: cold, dark, still and silent. No
+8s — A second tick passes through the wall from further off and the grille
+takes that one without ringing either. Still no lamp lights.
+10s — The grille is exactly as it was: cold, dark, still and silent. No
 cuts.
-
 Audio: air, not vacuum — a small dry cabin tone only: a close fan hum,
 a soft hiss, one structural tick at 4 seconds. Off-screen, close, a
 woman's breathing, slow and even. Nothing at all comes from the grille
@@ -292,7 +384,7 @@ grain.
 
 ## 🎬 SAHNE 86 — KEMER
 
-`11:20 – 11:28` · 85mm · kadro A (yalnız eller) · üst açı 35°, CU · fixed lockoff
+`14:10 – 14:20` · 85mm · kadro A (yalnız eller) · üst açı 35°, CU · fixed lockoff
 
 > 🎯 **REFERANS** · YÜKLE: **RF** + **RH** · ÇAPA: RH p1 (koltuk +
 > kemer) · DURUM: KASKSIZ · halka 1/6 yanıp sönüyor (kadraj kenarında) ·
@@ -303,7 +395,7 @@ _"Sıra biliyor."_
 
 ```
 ⚙️ SAHNE KARTI
-  Tek çekim, 0 kesme, 8,0 s. Kamera sabit, kucağa tepeden.
+  Tek çekim, 0 kesme, 10,0 s. Kamera sabit, kucağa tepeden.
   İŞLEV: KARAKTER GERİ DÖNER — ve bunu yüz değil ELLER söyler.
   S62'de aynı eller kucağa bastırılıp geri kalkıyordu; S82'de bacakta
   sayıyordu. Burada bir işi doğru sırayla yapıyorlar: alt kayış, üst
@@ -373,13 +465,13 @@ watermark. Photorealistic, 35mm film grain.
 Output: 16:9, 4K, no text, no watermark.
 ```
 
-### 🎥 VIDEO PROMPT — 8 saniye, tek kesintisiz çekim
+### 🎥 VIDEO PROMPT — 10 saniye, tek kesintisiz çekim
 
 ```
 Maintain the lap, the harness, the buckle, the hands, framing and
 lighting from the first frame.
 
-MOTION — 8 seconds, 85mm, close-up, fixed lockoff 0.6 metres above her
+MOTION — 10 seconds, 85mm, close-up, fixed lockoff 0.6 metres above her
 lap, high-angle, camera pitched down 35 degrees, shallow depth of
 field, no cuts, absolutely no camera movement:
 
@@ -400,9 +492,10 @@ buckle.
 with a heavier click.
 6s — Both hands pull outward on the shoulder straps in one steady test
 and the whole harness draws tight against the suit chest.
-8s — The hands come off the buckle and rest open on the armrests. The
-strap ends drift out and hold. No cuts.
-
+8s — The drifting strap ends stop where they are. Her open hands stay on the
+armrests and do not close.
+10s — The hands come off the buckle and rest open on the armrests. The strap
+ends drift out and hold. No cuts.
 Audio: air, not vacuum — a small dry cabin tone: a close fan hum, a
 soft hiss, the dry rasp of webbing through metal, two light clicks at 0
 and 2 seconds, one heavier click at 5 seconds, and her breathing, deep
@@ -425,7 +518,7 @@ caption, no watermark. Photorealistic, 35mm film grain.
 
 ## 🎬 SAHNE 87 — SEMBOLLER
 
-`11:28 – 11:36` · 100mm · kadro A (yalnız el) · üst açı 30°, ECU · fixed lockoff
+`14:20 – 14:30` · 100mm · kadro A (yalnız el) · üst açı 30°, ECU · fixed lockoff
 
 > 🎯 **REFERANS** · YÜKLE: **RH** · ÇAPA: RH p3 (panel) · DURUM:
 > KASKSIZ · ⛔ REPLİK 0 — arayüz SESSİZ çözülür (KİLİT 40) ·
@@ -436,7 +529,7 @@ _"Okumuyor. Sırayı kuruyor."_
 
 ```
 ⚙️ SAHNE KARTI
-  Tek çekim, 0 kesme, 8,0 s. Kamera sabit, panele tepeden.
+  Tek çekim, 0 kesme, 10,0 s. Kamera sabit, panele tepeden.
   İŞLEV: Gravity'nin "yabancı dildeki panel" işlevi — ama SESSİZ.
   A konuşamaz (kasksız), o yüzden çözüm sözle değil PARMAKLA olur:
   ikonları sırayla dokunmadan izler, bir kez geri döner, sonra
@@ -506,13 +599,13 @@ sign; no caption, no watermark. Photorealistic, 35mm film grain.
 Output: 16:9, 4K, no text, no watermark.
 ```
 
-### 🎥 VIDEO PROMPT — 8 saniye, tek kesintisiz çekim
+### 🎥 VIDEO PROMPT — 10 saniye, tek kesintisiz çekim
 
 ```
 Maintain the panel, the four engraved keys, the hand, framing and
 lighting from the first frame.
 
-MOTION — 8 seconds, 100mm macro, extreme close-up, fixed lockoff 0.3
+MOTION — 10 seconds, 100mm macro, extreme close-up, fixed lockoff 0.3
 metres above the panel, high-angle, camera pitched down 30 degrees,
 shallow depth of field, no cuts, absolutely no camera movement:
 
@@ -532,10 +625,10 @@ second. Nothing on the panel changes.
 travels a few millimetres and returns; it does not light.
 6s — The hand moves one key to the screen-left and presses the two
 parallel bars, in the same unhurried rhythm.
-8s — The hand lifts clear of the row and holds above it, fingers
-relaxed. Neither key is lit and nothing on the panel has changed
-appearance. No cuts.
-
+8s — The hand stays above the row without coming down again. Not one of the
+four icons lights.
+10s — The hand lifts clear of the row and holds above it, fingers relaxed.
+Neither key is lit and nothing on the panel has changed appearance. No cuts.
 Audio: air, not vacuum — a small dry cabin tone: a close fan hum, a
 soft hiss, two soft mechanical key presses at 5 and 6 seconds, and her
 breathing, slow and even. She makes no vocal sound at all, not even a
@@ -557,7 +650,7 @@ caption, no watermark. Photorealistic, 35mm film grain.
 
 ## 🎬 SAHNE 88 — GÜNEŞ DOĞAR ⭐ L4 GEÇİŞİ
 
-`11:36 – 11:44` · 85mm · kadro A (yalnız el) · cephe, göz hizası, CU · fixed lockoff
+`14:30 – 14:40` · 85mm · kadro A (yalnız el) · cephe, göz hizası, CU · fixed lockoff
 
 > 🎯 **REFERANS** · YÜKLE: **RH** · ÇAPA: **RH p2** (lomboz) · DURUM:
 > ⛔ REPLİK 0 · ⭐ **IŞIK TAKVİMİ L3 → L4, SAHNE İÇİNDE** (KİLİT 36):
@@ -569,7 +662,7 @@ _"Işık yükselmedi. Vardı."_
 
 ```
 ⚙️ SAHNE KARTI
-  Tek çekim, 0 kesme, 8,0 s. Kamera sabit, cama dik.
+  Tek çekim, 0 kesme, 10,0 s. Kamera sabit, cama dik.
   İŞLEV: FİLMİN IŞIK EKSENİ DÖNER. Yörüngede atmosfer yoktur, yani
   saçılma yoktur, yani ŞAFAK YOKTUR — yalnız bir kenar ve onun
   geçişi. Bu, filmin en ucuz ve en doğru bilimkurgu anıdır: bir
@@ -647,13 +740,13 @@ sign; no caption, no watermark. Photorealistic, 35mm film grain.
 Output: 16:9, 4K, no text, no watermark.
 ```
 
-### 🎥 VIDEO PROMPT — 8 saniye, tek kesintisiz çekim
+### 🎥 VIDEO PROMPT — 10 saniye, tek kesintisiz çekim
 
 ```
 Maintain the porthole, the rim, the hand and the star field from the
 first frame.
 
-MOTION — 8 seconds, 85mm, close-up, fixed lockoff 0.5 metres in front
+MOTION — 10 seconds, 85mm, close-up, fixed lockoff 0.5 metres in front
 of the porthole, square to the glass and at eye-level, no cuts,
 absolutely no camera movement:
 
@@ -678,9 +771,10 @@ sharp white light with absolutely black shadows beside them and no fill
 between the two.
 6s — The hand on the rim does not move and does not withdraw. Its
 shadow lies hard-edged across the padding.
-8s — The frame holds in hard white light, the star field washed out of
-the glass, the hand still on the rim. No cuts.
-
+8s — The hard-edged shadow of her hand shifts by less than its own width as
+the geometry turns, and nothing softens between the white and the black.
+10s — The frame holds in hard white light, the star field washed out of the
+glass, the hand still on the rim. No cuts.
 Audio: air, not vacuum — a small dry cabin tone throughout: a close fan
 hum, a soft hiss, one structural tick. Her breathing, off-screen, takes
 one sharp intake as the light arrives and then steadies. No voice. There
@@ -702,7 +796,7 @@ no caption, no watermark. Photorealistic, 35mm film grain.
 
 ## 🎬 SAHNE 89 — KONİ ⭐ İNSANSIZ (KART 10)
 
-`11:44 – 11:52` · 50mm · kadro 0 · yanal, göz hizası, MS · fixed lockoff
+`14:40 – 14:50` · 50mm · kadro 0 · yanal, göz hizası, MS · fixed lockoff
 
 > 🎯 **REFERANS** · YÜKLE: **RE** · ÇAPA: **RE p4** (kapsül konisi) +
 > RE p2 (hasarlı gövde) · DURUM: L4 sert güneş · ⛔ KADRODA KİMSE YOK
@@ -713,7 +807,7 @@ _"Gidilecek şey, ilk kez ışıkta."_
 
 ```
 ⚙️ SAHNE KARTI
-  Tek çekim, 0 kesme, 8,0 s. Kamera sabit, koniye yandan.
+  Tek çekim, 0 kesme, 10,0 s. Kamera sabit, koniye yandan.
   İŞLEV: HEDEF GÖRÜLÜR. İzleyici kapsülü S32'de uzaktan bir beyaz koni
   olarak, S56'da içeriden bir kapı olarak gördü. İlk kez tam ışıkta,
   tam boyunda ve kenetli hâlde görüyor — yedi sahne sonra ondan
@@ -721,7 +815,7 @@ _"Gidilecek şey, ilk kez ışıkta."_
   ⛔ Kart 10: karakter çapa bloğu YAZILMAZ; kadrajda insan, el, gölge,
      yansıma YOK.
   ⛔ Bu sahne SAKİN olmalı: hiçbir şey olmaz, hiçbir şey hareket etmez.
-     Sekiz saniye boyunca yalnız ışık ve biçim. Sonrası için sessizlik
+     On saniye boyunca yalnız ışık ve biçim. Sonrası için sessizlik
      biriktirir.
 ```
 
@@ -785,13 +879,13 @@ are the only subjects, no figures anywhere.
 Output: 16:9, 4K, no text, no watermark.
 ```
 
-### 🎥 VIDEO PROMPT — 8 saniye, tek kesintisiz çekim
+### 🎥 VIDEO PROMPT — 10 saniye, tek kesintisiz çekim
 
 ```
 Maintain the capsule, the docking collar, the station flank, framing
 and lighting from the first frame.
 
-MOTION — 8 seconds, 50mm, medium shot, fixed lockoff 6 metres out from
+MOTION — 10 seconds, 50mm, medium shot, fixed lockoff 6 metres out from
 the capsule's flank, at eye-level with its long axis, deep focus, no
 cuts, absolutely no camera movement:
 
@@ -813,9 +907,10 @@ shot, and the capsule does not move with it — it is clamped.
 6s — One small highlight travels along the ORANGE handrail on the
 station flank as the geometry turns. Nothing detaches and nothing
 drifts.
-8s — The capsule sits exactly where it started, still clamped, still
-half brilliant and half black. No cuts.
-
+8s — The star field keeps sliding to the screen-left at exactly the same
+rate. The capsule has still not moved against the structure.
+10s — The capsule sits exactly where it started, still clamped, still half
+brilliant and half black. No cuts.
 Audio: hard vacuum — no exterior sound at all. Under it, carried
 through from the cabin, a very low room tone and one faint structural
 tick; no voice and no music.
@@ -838,10 +933,10 @@ anywhere.
 
 ## 🎬 SAHNE 90 — YAKINLIK
 
-`11:52 – 12:00` · 85mm · kadro A · cephe, göz hizası, CU · fixed lockoff
+`14:50 – 15:00` · 85mm · kadro A · cephe, göz hizası, CU · fixed lockoff
 
 > 🎯 **REFERANS** · YÜKLE: **RF** · ÇAPA: **RF p3** (yüz CU) · DURUM:
-> KASKSIZ · L4 sert beyaz ışık yüzde · replik 11:55, MACHINE ·
+> KASKSIZ · L4 sert beyaz ışık yüzde · replik 14:52, MACHINE ·
 > ⛔ A KONUŞMAZ · ⭐ Filmin ilk kez SERT ışıkta okunan yüzü —
 > S49'dan beri hep loştu · göz bütçesi
 
@@ -849,7 +944,7 @@ _"PROXIMITY WARNING. DEBRIS FIELD."_
 
 ```
 ⚙️ SAHNE KARTI
-  Tek çekim, 0 kesme, 8,0 s. Kamera sabit, yüze tam karşıdan.
+  Tek çekim, 0 kesme, 10,0 s. Kamera sabit, yüze tam karşıdan.
   İŞLEV: TEHDİT GERİ DÖNER — ve makine onu ADIYLA söyler. Doksan
   dakikalık hesap (S22, Çehov 5) burada ödenmeye başlar.
   ⭐ Işık tersine döndü: bu yüzü kırk sahnedir loşta gördük; şimdi
@@ -924,13 +1019,13 @@ grain.
 Output: 16:9, 4K, no text, no watermark.
 ```
 
-### 🎥 VIDEO PROMPT — 8 saniye, tek kesintisiz çekim
+### 🎥 VIDEO PROMPT — 10 saniye, tek kesintisiz çekim
 
 ```
 Maintain the subject, her face, the hard light and the framing from the
 first frame.
 
-MOTION — 8 seconds, 85mm, close-up, fixed lockoff 0.7 metres in front
+MOTION — 10 seconds, 85mm, close-up, fixed lockoff 0.7 metres in front
 of her, square to her and at eye-level, shallow depth of field, no
 cuts, absolutely no camera movement:
 
@@ -940,17 +1035,18 @@ face into a brilliant half and a black half, her eyes open.
 
 0s — Her face is still and her breathing is even. The hard edge between
 the lit and the black halves of her face does not move.
-2s — A flat, dry synthetic voice, close in the small cabin, says:
-"PROXIMITY WARNING. DEBRIS FIELD."
+2s — The small muscles around her eyes tighten once; her stillness
+sharpens without any other part of her moving.
 3s — Her eyes move once to the screen-left, toward the porthole off
 frame, and stop there. Her head does not turn.
 5s — Her breathing shortens. Her jaw sets and the muscle at its hinge
 tightens once.
 6s — Her eyes come back to level, ahead of her, and stay open. She does
 not blink for a long moment.
-8s — Her face is still, lit hard on one side, her lips closed and her
-eyes level. No cuts.
-
+8s — She blinks once and her eyes stay level, still not turning toward the
+porthole. The hard edge on her face does not move.
+10s — Her face is still, lit hard on one side, her lips closed and her eyes
+level. No cuts.
 Audio: air, not vacuum — a small dry cabin tone: a close fan hum, a
 soft hiss; one flat synthetic announcement at 2 seconds, heard only and
 never shown as text; her breathing, even then short. She makes no vocal
@@ -972,7 +1068,7 @@ caption, no watermark. Photorealistic, 35mm film grain.
 
 ## 🎬 SAHNE 91 — GÖK YENİDEN AKIYOR ⭐ İNSANSIZ (KART 10)
 
-`12:00 – 12:08` · 35mm · kadro 0 · yanal, göz hizası, MS · fixed lockoff
+`15:00 – 15:10` · 35mm · kadro 0 · yanal, göz hizası, MS · fixed lockoff
 
 > 🎯 **REFERANS** · YÜKLE: **RH** · ÇAPA: **RH p2** (lomboz) · DURUM:
 > ⛔ KADRODA KİMSE YOK (Kart 10) · ⛔ REPLİK 0 · ⭐ **S15'İN KAFİYESİ**:
@@ -983,7 +1079,7 @@ _"Doksan dakika doldu."_
 
 ```
 ⚙️ SAHNE KARTI
-  Tek çekim, 0 kesme, 8,0 s. Kamera sabit, cama yandan.
+  Tek çekim, 0 kesme, 10,0 s. Kamera sabit, cama yandan.
   İŞLEV: HESAP TUTTU. S22'de B "her yörüngede geri gelir" demişti;
   S15'te gök ilk kez akmıştı. Şimdi aynı çizgiler camın ardında ve
   KADRAJDA KİMSE YOK — izleyici görüyor, karakter görmüyor.
@@ -1054,13 +1150,13 @@ no figures anywhere.
 Output: 16:9, 4K, no text, no watermark.
 ```
 
-### 🎥 VIDEO PROMPT — 8 saniye, tek kesintisiz çekim
+### 🎥 VIDEO PROMPT — 10 saniye, tek kesintisiz çekim
 
 ```
 Maintain the porthole, the wall, the empty seat and the streaks beyond
 the glass from the first frame.
 
-MOTION — 8 seconds, 35mm, medium shot, fixed lockoff 1.8 metres from
+MOTION — 10 seconds, 35mm, medium shot, fixed lockoff 1.8 metres from
 the wall, at eye-level with the porthole, angled about thirty degrees
 to the glass, deep focus, no cuts, absolutely no camera movement:
 
@@ -1081,9 +1177,10 @@ still parallel, still crossing in about a second and a half each.
 harness straps drift a hand's width and stop.
 7s — The streaks keep coming at exactly the same rate. The hard edge of
 sunlight on the padded wall has not moved.
-8s — The band is still crossing the glass and nothing in the cabin has
+8s — The streaks keep coming at the same rate, none of them changing
+direction. The empty harness straps hold where they stopped.
+10s — The band is still crossing the glass and nothing in the cabin has
 changed. No cuts.
-
 Audio: hard vacuum beyond the glass — nothing at all from the streaks,
 not one impact, not one hiss. Inside, a small dry cabin tone only: a
 close fan hum, a soft hiss, one structural tick. Off-screen and far
@@ -1107,7 +1204,7 @@ anywhere.
 
 ## 🎬 SAHNE 92 — KOLDA BEKLEYİŞ
 
-`12:08 – 12:16` · 85mm · kadro A (yalnız el) · alt açı 20°, CU · fixed lockoff
+`15:10 – 15:20` · 85mm · kadro A (yalnız el) · alt açı 20°, CU · fixed lockoff
 
 > 🎯 **REFERANS** · YÜKLE: **RH** · ÇAPA: **RH p4** (kırmızı kapak AÇIK
 > + tek kol) · DURUM: kapak S84'ten beri AÇIK, kol dokunulmamış ·
@@ -1118,7 +1215,7 @@ _"Tercih cesaret değil, zamanlama."_
 
 ```
 ⚙️ SAHNE KARTI
-  Tek çekim, 0 kesme, 8,0 s. Kamera sabit, kola alttan.
+  Tek çekim, 0 kesme, 10,0 s. Kamera sabit, kola alttan.
   İŞLEV: BEKLEME BİR KARARDIR. El kolun üstünde durur ve ÇEKMEZ.
   Çünkü erken ateşleme kapsülü enkazın içine sokar; doğru an dalganın
   istasyonu vurduğu andır. İzleyici bunu S22'den (doksan dakika) ve
@@ -1195,13 +1292,13 @@ film grain.
 Output: 16:9, 4K, no text, no watermark.
 ```
 
-### 🎥 VIDEO PROMPT — 8 saniye, tek kesintisiz çekim
+### 🎥 VIDEO PROMPT — 10 saniye, tek kesintisiz çekim
 
 ```
 Maintain the panel, the open red cover, the lever and the hand from the
 first frame.
 
-MOTION — 8 seconds, 85mm, close-up, fixed lockoff 0.5 metres below the
+MOTION — 10 seconds, 85mm, close-up, fixed lockoff 0.5 metres below the
 panel, low-angle, camera pitched up 20 degrees, no cuts, absolutely no
 camera movement:
 
@@ -1221,9 +1318,10 @@ than half a second and stops. The hand does not react.
 6s — The hard shadow of the open cover lies unchanged across the
 recess. The grip holds. The lever has not moved a millimetre.
 7s — One finger flexes once against the grip and settles.
-8s — The hand is still closed on the lever, ready and unmoved; the
-lever is exactly where it started. No cuts.
-
+8s — The tendons on the back of the hand stand a little harder and the wrist
+does not turn. The lever has still not moved a millimetre.
+10s — The hand is still closed on the lever, ready and unmoved; the lever is
+exactly where it started. No cuts.
 Audio: air, not vacuum — a small dry cabin tone: a close fan hum, a
 soft hiss; at 4 seconds one low structural groan carried through the
 hull and a light rattle from the open cover, then nothing. Her
@@ -1246,7 +1344,7 @@ watermark. Photorealistic, 35mm film grain.
 
 ## 🎬 SAHNE 93 — İLK SARSINTI
 
-`12:16 – 12:24` · 100mm · kadro A (yalnız el) · üst açı 30°, ECU · fixed lockoff
+`15:20 – 15:30` · 100mm · kadro A (yalnız el) · üst açı 30°, ECU · fixed lockoff
 
 > 🎯 **REFERANS** · YÜKLE: **RF** + **RH** · ÇAPA: RH p1 (kolçak) ·
 > DURUM: KASKSIZ · ⛔ YÜZ YOK · ⛔ REPLİK 0 · ⭐ **ŞOK BANDININ İLK
@@ -1257,7 +1355,7 @@ _"Kolçağı kavradı."_
 
 ```
 ⚙️ SAHNE KARTI
-  Tek çekim, 0 kesme, 8,0 s. Kamera sabit, kolçağa tepeden.
+  Tek çekim, 0 kesme, 10,0 s. Kamera sabit, kolçağa tepeden.
   İŞLEV: FELAKETİN İLK TEMASI — ve onu bir el taşır. Kabin sarsılır,
   parmaklar kolçağın kenarını kavrar, deri gerilir. Yüz yoktur:
   gövde tepkisi yüz ifadesinden daha güvenilir bir kanaldır [D23].
@@ -1330,13 +1428,13 @@ grain.
 Output: 16:9, 4K, no text, no watermark.
 ```
 
-### 🎥 VIDEO PROMPT — 8 saniye, tek kesintisiz çekim
+### 🎥 VIDEO PROMPT — 10 saniye, tek kesintisiz çekim
 
 ```
 Maintain the hand, the armrest, the harness webbing and the hard light
 from the first frame.
 
-MOTION — 8 seconds, 100mm macro, extreme close-up, fixed lockoff 0.3
+MOTION — 10 seconds, 100mm macro, extreme close-up, fixed lockoff 0.3
 metres above the armrest, high-angle, camera pitched down 30 degrees,
 shallow depth of field, no cuts, absolutely no camera movement:
 
@@ -1356,9 +1454,10 @@ under them.
 everything in frame together. The grip does not slip.
 6s — The webbing at the lower screen-left swings a finger's width and
 comes back against the seat.
-8s — The hand is locked over the edge, deeper in the padding than it
-was, tendons hard. No cuts.
-
+8s — Nothing jolts again. Her hand stays exactly where the second one drove
+it, fingers deeper in the padding than they were.
+10s — The hand is locked over the edge, deeper in the padding than it was,
+tendons hard. No cuts.
 Audio: air, not vacuum — the cabin tone begins to carry structure: a
 close fan hum, a soft hiss, and at 2 and 5 seconds two low structural
 impacts felt through the frame rather than heard, each with a long dull
@@ -1382,7 +1481,7 @@ caption, no watermark. Photorealistic, 35mm film grain.
 
 ## 🎬 SAHNE 94 — DALGA İKİ ⭐ ŞOK BANDI 1 · İNSANSIZ · MUTLAK SESSİZLİK
 
-`12:24 – 12:32` · 24mm · kadro 0 · üst açı 25°, WS · yavaş push-in (40 → 37 m)
+`15:30 – 15:40` · 24mm · kadro 0 · üst açı 25°, WS · yavaş push-in (40 → 37 m)
 
 > 🎯 **REFERANS** · YÜKLE: **RE** · ÇAPA: **RE p2** (hasarlı istasyon,
 > tam boy) · DURUM: parçalanma — referans sayfası YOK, tarif promptta
@@ -1395,11 +1494,11 @@ _"Sessizce."_
 
 ```
 ⚙️ SAHNE KARTI
-  Tek çekim, 0 kesme, 8,0 s. TEK hareket: çok yavaş push-in (≤%10) —
+  Tek çekim, 0 kesme, 10,0 s. TEK hareket: çok yavaş push-in (≤%10) —
   fazın tek hareketli sahnesi (README 8 hareket listesi).
   İŞLEV: ⭐ DORUK RAMPASININ BAŞI (%77,5). Altmış metrelik bir yapı
-  sekiz saniyede parçalanır ve HİÇ SES ÇIKARMAZ. Filmin bütün ses
-  tasarımı bu sekiz saniye için biriktirildi.
+  on saniyede parçalanır ve HİÇ SES ÇIKARMAZ. Filmin bütün ses
+  tasarımı bu on saniye için biriktirildi.
   ⛔ Sessizlik DİEGETİKTİR, dijital değil [D83]: olaydan sıfır ses
      gelir ama S93'ten S95'e uzanan çok düşük kabin tonu altta sürer.
      Biz hâlâ onun kulaklarının içindeyiz (KİLİT 38).
@@ -1479,13 +1578,13 @@ subject, no figures anywhere.
 Output: 16:9, 4K, no text, no watermark.
 ```
 
-### 🎥 VIDEO PROMPT — 8 saniye, tek kesintisiz çekim
+### 🎥 VIDEO PROMPT — 10 saniye, tek kesintisiz çekim
 
 ```
 Maintain the station, the three sections, the freed wing, the fragments
 and the clamped capsule from the first frame.
 
-MOTION — 8 seconds, 24mm, wide shot, from 40 metres above the station,
+MOTION — 10 seconds, 24mm, wide shot, from 40 metres above the station,
 high-angle, camera pitched down 25 degrees, one single very slow
 push-in of no more than three metres over the whole shot, deep focus,
 no cuts, no other camera movement:
@@ -1506,10 +1605,11 @@ it, each on its own straight line, each taking four to eight seconds
 edge to edge.
 6s — A third break opens in the lattice, clean and rigid. No flash, no
 spark, no light comes from it. 7s — The capsule at the screen-right
-stays clamped and completely still. 8s — Three sections, one turning
-wing, twelve fragments on their straight lines, the structure still
-recognisable as one station. No cuts.
-
+stays clamped and completely still.
+8s — The turning wing carries on at the same constant rate and every
+fragment holds its straight line. Nothing new breaks.
+10s — Three sections, one turning wing, twelve fragments on their straight
+lines, the structure still recognisable as one station. No cuts.
 Audio: hard vacuum — the event makes absolutely no sound at any point:
 no impact, no tearing, no rumble, no rush. Underneath, carried unbroken
 from the previous shot into the next, one very low cabin tone with a
@@ -1533,10 +1633,10 @@ separating structure is the only subject, no figures anywhere.
 
 ## 🎬 SAHNE 95 — KOL ÇEKİLİR ⭐ ÇEHOV 6 ÖDENİR
 
-`12:32 – 12:40` · 50mm · kadro A · üç-çeyrek cephe, göz hizası, MS · fixed lockoff
+`15:40 – 15:50` · 50mm · kadro A · üç-çeyrek cephe, göz hizası, MS · fixed lockoff
 
 > 🎯 **REFERANS** · YÜKLE: **RF** + **RH** · ÇAPA: **RH p4** (açık kapak
-> + kol) + RF p1 · DURUM: KASKSIZ · kemer BAĞLI (S86) · replik 12:36,
+> + kol) + RF p1 · DURUM: KASKSIZ · kemer BAĞLI (S86) · replik 15:44,
 > MACHINE · ⛔ A KONUŞMAZ · ⭐ **ÇEHOV 6 ÖDENİR**: S58 ekildi ·
 > S78 işaretlendi · S84 kapak açıldı · burada ÇEKİLİR
 
@@ -1544,7 +1644,7 @@ _"LANDING ROCKETS ARMED."_
 
 ```
 ⚙️ SAHNE KARTI
-  Tek çekim, 0 kesme, 8,0 s. Kamera sabit, üç-çeyrek cepheden.
+  Tek çekim, 0 kesme, 10,0 s. Kamera sabit, üç-çeyrek cepheden.
   İŞLEV: ⭐ ZİNCİRİN KAPANIŞI. Otuz yedi sahne önce bir el bir kapağın
   üstünden vurgusuzca geçmişti; şimdi aynı kol çekiliyor. Çehov'un
   kuralı burada tamamlanır ve fikir A'nın değil, ölmüş bir adamın
@@ -1623,13 +1723,13 @@ no watermark. Photorealistic, 35mm film grain.
 Output: 16:9, 4K, no text, no watermark.
 ```
 
-### 🎥 VIDEO PROMPT — 8 saniye, tek kesintisiz çekim
+### 🎥 VIDEO PROMPT — 10 saniye, tek kesintisiz çekim
 
 ```
 Maintain the subject, the cabin, the open red cover and the lever from
 the first frame.
 
-MOTION — 8 seconds, 50mm, medium shot, fixed lockoff 1.6 metres in
+MOTION — 10 seconds, 50mm, medium shot, fixed lockoff 1.6 metres in
 front of her, three-quarter front, at eye-level with her head, no cuts,
 absolutely no camera movement:
 
@@ -1644,15 +1744,16 @@ whole frame jolts once, briefly, and settles.
 2s — She pulls the lever back through the width of two fingers in one
 steady movement, without hurrying, until it meets its stop with a
 heavy mechanical clunk.
-4s — A flat, dry synthetic voice, close in the small cabin, says:
-"LANDING ROCKETS ARMED."
+4s — Her chin lifts a few millimetres and stops; her eyes stay level
+ahead, and the lever holds hard against its stop under her hand.
 5s — She does not let go of the lever. Her left hand flattens harder on
 the armrest and the harness draws tight across her chest.
 6s — A low vibration builds through the seat and the padding; her hair
 lifts and trembles with it. Nothing in the cabin lights up.
-8s — She holds the lever at its stop, braced, eyes open and level, the
+8s — The vibration keeps building through the seat and her hair trembles
+harder with it. Her hand does not come off the lever.
+10s — She holds the lever at its stop, braced, eyes open and level, the
 vibration still building. No cuts.
-
 Audio: air, not vacuum — the cabin tone continues unbroken from the
 previous shot: fan hum, hiss, one low structural jolt at 0 seconds; a
 heavy mechanical clunk as the lever seats at 2 seconds; one flat
@@ -1677,11 +1778,11 @@ caption, no watermark. Photorealistic, 35mm film grain.
 
 ## 🎬 SAHNE 96 — AYRILIŞ ⭐ FAZ KAPANIŞI · İNSANSIZ (KART 10)
 
-`12:40 – 12:48` · 24mm · kadro 0 · yanal, göz hizası, WS · fixed lockoff
+`15:50 – 16:00` · 24mm · kadro 0 · yanal, göz hizası, WS · fixed lockoff
 
 > 🎯 **REFERANS** · YÜKLE: **RE** · ÇAPA: **RE p4** (kapsül konisi,
 > S89'un AYNI konisi) · DURUM: dört lüle ateşlenir · halka **1/6 SABİT**
-> (yanıp sönme DURUR — iniş rezervi) · replik 12:45, MACHINE, kabin
+> (yanıp sönme DURUR — iniş rezervi) · replik 15:55, MACHINE, kabin
 > içinden · ⛔ KADRODA KİMSE YOK (Kart 10) · ⛔ YÖNELİM: kapsül
 > EKRAN-SOLA, istasyon EKRAN-SAĞDA (KİLİT 41)
 
@@ -1689,7 +1790,7 @@ _"OXYGEN THREE PERCENT. DESCENT RESERVE ENGAGED."_
 
 ```
 ⚙️ SAHNE KARTI
-  Tek çekim, 0 kesme, 8,0 s. Kamera sabit, ayrılış eksenine dik.
+  Tek çekim, 0 kesme, 10,0 s. Kamera sabit, ayrılış eksenine dik.
   İŞLEV: FAZ KAPANIŞI ve doruk rampasının tepesi (%79). Yedi sahne
   önce aynı koniyi kenetli ve sakin görmüştük (S89); şimdi ayrılıyor
   ve arkasında bıraktığı şey parçalanmaya devam ediyor.
@@ -1768,13 +1869,13 @@ the separating station are the only subjects, no figures anywhere.
 Output: 16:9, 4K, no text, no watermark.
 ```
 
-### 🎥 VIDEO PROMPT — 8 saniye, tek kesintisiz çekim
+### 🎥 VIDEO PROMPT — 10 saniye, tek kesintisiz çekim
 
 ```
 Maintain the capsule, the four exhaust cones, the separating station
 and the framing from the first frame.
 
-MOTION — 8 seconds, 24mm, wide shot, fixed lockoff 30 metres out, at
+MOTION — 10 seconds, 24mm, wide shot, fixed lockoff 30 metres out, at
 eye-level with the separation axis, deep focus, no cuts, absolutely no
 camera movement:
 
@@ -1792,12 +1893,15 @@ thinning to nothing within about two capsule lengths.
 4s — The capsule is travelling faster; the gap to the open docking
 collar is about a fifth of frame width. Behind it the three sections
 keep separating.
-5s — A flat, dry synthetic voice, heard as if from inside the capsule,
-says: "OXYGEN THREE PERCENT. DESCENT RESERVE ENGAGED."
+5s — The capsule crosses the middle of the frame, its four exhaust
+cones holding their sharp straight edges; behind it the three station
+sections drift further apart.
 7s — Two fragments cross the gap on straight lines, well clear of both.
-8s — The capsule is near the screen-left edge and still accelerating;
-the station holds at the screen-right, still coming apart. No cuts.
-
+8s — The capsule reaches the screen-left edge and leaves the frame; it does
+not slow, does not turn and does not come back.
+10s — The frame holds on the station alone at the screen-right: three
+sections still separating, the turning wing, the fragments on their straight
+lines. The capsule is gone from frame. No cuts.
 Audio: hard vacuum — the burn itself makes no sound at all in the
 frame. Underneath, carried unbroken from the previous shot, the cabin
 tone with its fan hum and the low vibration of the burn felt through
@@ -1823,12 +1927,15 @@ the separating station are the only subjects, no figures anywhere.
 # 🔗 FAZ SONU BAĞLANTI NOTU
 
 ```
-Bu fazın son karesi (S96 · 12:48): kapsül EKRAN-SOLA hızlanarak gider,
-dört lüle düz beyaz koni; istasyon EKRAN-SAĞDA üç parça hâlinde
-ayrılmaya devam eder; halka **1/6 SABİT** (yanıp sönme durdu — iniş
-rezervi); ışık L4 sert beyaz; kabin tonu + yanma titreşimi.
-Sonraki faz (`../FAZ_09_DUSUS/FAZ_09_DUSUS.md` · S97-S108): S96'nın
-ayrılan konisi S97'de İÇERİDEN, lombozdan görülür (J → I).
+Bu fazın son karesi (S96 · 16:00): ⭐ **KAPSÜL KADRAJDAN ÇIKMIŞTIR** —
+8-9 s arasında sol kenarı geçer ve son ~1,5 saniye kadrajda YALNIZ
+istasyon kalır: EKRAN-SAĞDA üç parça hâlinde ayrılmaya devam eder,
+dönen kanat, düz çizgilerdeki parçalar; halka **1/6 SABİT** (yanıp
+sönme durdu — iniş rezervi); ışık L4 sert beyaz; kabin tonu + yanma
+titreşimi sürer — ses kapsülden gelir, kaynağı kadrajda YOKTUR.
+Sonraki faz (`../FAZ_09_DUSUS/FAZ_09_DUSUS.md` · S97-S108): kapsül
+kadrajdan çıktıktan sonra S97 onun İÇİNDEN açılır (J → I) — pencerede
+istasyon YOKTUR, yalnız Dünya vardır (F9 giriş kilidi).
 ⚠️ Ölçek yayı: S96 WS(2) → S97 MS(3) ya da EWS(1). README'de S97 "I"
 (MS lomboz) ✅ yay tutar.
 ⚠️ F9 GİRDİLERİ — bu fazdan devralınan altı kilit:

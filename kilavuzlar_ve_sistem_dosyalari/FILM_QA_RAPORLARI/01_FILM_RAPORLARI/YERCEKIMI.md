@@ -664,3 +664,497 @@ Karşılaştırma için: F2 = 6,69. Ama iki koşunun rubriği FARKLI
  ⚠️ Ama sırt ünitesi ve istasyon F4-F10 boyunca DEVAM EDİYOR;
    RC ve RE panelleri üretilmedikçe her fazda tekrarlar.
 ```
+
+---
+---
+
+# 📋 KOŞU 4 — FAZ 4 MAKARASI · 02.09.2026 · İKİ MÜHÜRLÜ GEÇİŞ
+
+```
+Ham    02_HAM_RAPORLAR/YERCEKIMI_FAZ04_{KOR,KATALOG}_HAM.md
+Rubrik FAZ_04_FEDA/FAZ_04_QA_PROMPT.md — A (kör) + B (katalog), ayrı sohbetler
+Mod    ⚠️ V — SPEC yok [D129] · master yok [⑪] · T tablolarına GİRMEZ
+```
+
+## § ⑪ ÖLÇÜM — 🔴🔴 IZGARA DEĞİŞTİ. BU KOŞUNUN EN BÜYÜK BULGUSU BU.
+
+```
+FAZ 1 · 96 s / 12 →  8,0 s    (iki bağımsız geçiş)
+FAZ 2 · 96 s / 12 →  8,0 s    (iki bağımsız geçiş)
+FAZ 3 · 96 s / 12 →  8,0 s    (iki bağımsız geçiş)
+FAZ 4 · 120 s / 12 → 10,0 s   ⛔ (iki bağımsız geçiş, ayrı sohbetler)
+
+Film 120 × 8 s = 16:00 yazıldı. F4 bu ızgarada DEĞİL.
+⛔ FİLM ŞU AN İKİ IZGARALI.
+```
+
+**Bedeli:** F4'ün sekiz repliğinin zamanları [D122 formülü] geçersiz ·
+müzik ölçü hesabı (240 × ölçü ÷ sahne saniyesi) F4 bandında tutmuyor ·
+toplam süre artık 16:00 değil · S43'ün %35,0 konumu kayıyor.
+
+⛔ **BU, 30.08'DE AÇILAN VE HİÇ DOLDURULMAYAN KAPININ FATURASIDIR:**
+`00_PLAN.md` · `KLİP SÜRESİ = ____`. Dört koşuda dört kez uyardım;
+satır boş kaldı, üretim onsuz başladı. → **D124'ün 4. vakası**, ve
+öncekilerden farkı: bu ilk kez **film ortasında** oldu.
+
+⚠️ İki beyan ölçüm değildir. Kapatan tek şey:
+```
+ffprobe -v error -show_entries format=duration -of csv=p=0 <F4 klibi>.mp4
+ffprobe -v error -show_entries format=duration -of csv=p=0 <F3 klibi>.mp4
+```
+
+## § KİMLİK KAPISI ③ — ✅ GEÇTİ · ON YANKISIZ ÇAPA
+
+```
+① turuncu şerit kadında, omuz/kol/bacak   ② adamda turuncu YOK
+③ beyaz kapitone silindirik gövde + turuncu tutamaklar
+④ iki uçta koyu güneş paneli               ⑤ Dünya kavisi altta
+⑥ sert ışık üst SAĞDAN, derin siyah gölge  ⑦ berrak vizör, yüz okunur
+⑧ iç mekân: kapitone beyaz silindirik oda, kask serbest süzülüyor,
+   dizler göğüste                          ⑨ dışarıda HER karede kask
+⑩ ⭐ SIRT ÜNİTESİ: "katı, kapalı, dikdörtgen, düz beyaz paneller,
+   yuvarlak köşeler, alt köşelerden iki konik nozul"
+   → F2 ve F3'ün kör geçişleriyle AYNI AİLE. ÜÇ FAZ, ÜÇ KÖR GEÇİŞ.
+```
+
+## § SIRA SKORU — 4/10 · AMA BU SEFER SAYIYI OKUMA
+
+```
+Eşleşen 10 klibin kör sıralaması : I · A · C · D · H · F · E · K · B · L
+Gerçek sıra                       : A · B · C · D · E · F · H · I · K · L
+Doğru konum                       : C · D · F · L = 4/10
+```
+
+⛔ **BU SAYI GÖRSEL ZİNCİRİ ÖLÇMÜYOR — çünkü makarada KATALOGDA OLMAYAN
+İKİ KLİP var ve kataloğun İKİ KLİBİ yok.** Kör denetçi hikâyeyi
+üretilmemiş bir nedene ve olmayan bir "kurtarma halatına" göre kurdu.
+Bozuk malzemeyle ölçülen okunabilirlik, okunabilirlik değildir.
+
+## § 🔴🔴 ASIL BULGU — FEDA ÇEKİLMEDİ, YERİNE BAŞKA ŞEY ÇEKİLDİ
+
+```
+MISSING   : G (S43 · FEDA ⭐ TEMA · %35,0)  ·  J (S46 · TUTAMAKLAR)
+UNMATCHED : Segment 7  — adam elinde SERT TURUNCU BİR SIRIKLA kadına
+                          uzanıyor. Böyle bir sahne katalogda YOK.
+            Segment 10 — kadın SAĞLAM gövde boyunca EMEKLEYEREK kalın
+                          beyaz bir halat çekiyor. Katalogda YOK.
+```
+
+⭐ **G filmin tematik merkeziydi.** Rubriğe tam bu yüzden şunu yazmıştım:
+*"'Halat koptu' cevabı gelirse feda ekrana hiç gelmemiştir."*
+Kör denetçinin cevabı geldi ve tereddütsüzdü:
+
+> *"This looks ACCIDENTAL. The deciding factor is the massive, jagged
+> hole torn into the station hull directly behind them, indicating a
+> violent, unplanned structural failure."*
+
+⛔ **O patlama filmde YOK** — kadrajdaki delik F2'den kalma eski hasar.
+Kör denetçi, olmayan nedenin yerine **yanındaki en büyük nesneyi neden
+yaptı.** → bu **DERS 170** olarak yazıldı (08_QA).
+
+## § SAĞLAM / ŞÜPHELİ / ÖLÇÜSÜZ
+
+```
+✅ SAĞLAM (iki geçiş de bağımsız):
+   · G ve J ÜRETİLMEDİ; iki senaryo-dışı klip üretildi        🔴
+   · OKSİJEN HALKASI HİÇBİR KLİPTE YOK — kör: "giysilerde 0 ışık"
+     katalog: "ring entirely absent in all segments"           🔴
+     ⛔ Filmin ana sayacı bu fazda hiç var olmadı.
+   · İlmek sayısı 3 değil DÖRT, ve C'de de E'de de DÜŞMÜYOR    🔴
+   · C ve E FARKLI MALZEME sarıyor (ince gri kordon ↔ kalın
+     beyaz halat) — "aynı çekim, tek fark sayaç" kilidi çöktü  🔴
+   · İSTASYON HASARI ÇELİŞİYOR: Seg 8'de dev delik, Seg 1·9·10·11'de
+     KUSURSUZ gövde                                            🔴
+   · Kadının sırtında SIRT ÇANTASI (Seg 8)                     🔴
+   · GÖK HİÇBİR GİRDİDE KAYMIYOR → Çehov 7 F3'te de F4'te de
+     kurulmadı; üstelik fedanın SEBEBİ oydu                     🔴
+   · Adamın şeridi LACİVERT değil gri/siyah                    🟡
+   · Eldiven manşetleri klipler arası değişiyor                🟡
+   · ⭐ BAYRAK YAMASI (kör geçiş, Seg 4) — F2'de de kör geçiş
+     bayrak görmüştü. İKİ FAZ, İKİ KÖR GEÇİŞ, aynı yasak nesne 🔴
+
+⚠️ ŞÜPHELİ (yalnız katalog geçişi):
+   · F'te ağız oynuyor (kör geçiş dudaktan söz etmedi)
+   · A'da çarpma/sekme yok · B'de kask darbesi yok
+   · K'de kol dönmüyor · L'de saat yok, amber leke yok
+
+🔵 YALNIZ KÖR GEÇİŞ (gerçek ama ölçüsüz):
+   · yüzde ÇİLLER var ve SOL şakak yarası ANILMIYOR
+     → yüz masteri kayması adayı; F5/F6 raporlarıyla çaprazlanacak
+   · Seg 12'de göğüste yuvarlak ve dikdörtgen YAMALAR
+```
+
+## § ✅ TUTAN — VE BİRİ FİLMİ KURTARDI
+
+```
+⭐ DIŞARIDA HER KAREDE KASK VAR. Çapraz kontrol 3'ü F3'ün S28
+   felaketinden sonra "denetimin en önemli maddesi" diye işaretlemiştim.
+   İki geçiş de tek tek saydı ve TEMİZ çıktı. F3'ün kusuru TEKRARLAMADI.
+✅ VİZÖR ŞEFFAFLIĞI 10/10 — optik yarı üçüncü fazda da tuttu.
+✅ İTKİ YOK: hiçbir klipte puf yok (şerit 0/4 kilidi tuttu).
+✅ Gövde her dış girdide EKRAN-SOLDA ya da altta.
+✅ Işık: alçak güneş üst sağdan, jilet kenarlı siyah gölge.
+✅ L'de kıvrılma dönüş hızını değiştirmiyor — 0g fiziği doğru.
+```
+
+## § ⑩ ÖNERME — düşen iki bulgu
+
+```
+① "Segments 7 ve 10 REGENERATION gerektirir, G ve J olmak üzere."
+   ⛔ DÜŞER. O iki segment G ve J'ye dönüştürülemez; onlar BAŞKA
+   sahnelerdir. G ve J hiç üretilmedi — yapılacak iş dönüştürme değil,
+   ÜRETİM. Denetçi eksikliği bir düzeltme işi sandı.
+② "TEXT AND DELIVERY HYGIENE: 3" — kör geçiş yalnız bayrak ve yama
+   gördü, HARF/RAKAM görmedi ("no letters, digits, text, labels").
+   Yasak gerçek ama sınıf farklı: bu bir SİMGE ihlali, metin değil.
+   Kategori adı ikisini birleştirdiği için puan yanıltıcı.
+```
+
+## § SKOR — ⛔ KAYDA GEÇMİYOR
+
+```
+B geçişinin ortalaması 4,7. ⛔ T tablolarına girmez (mod V + master yok).
+⚠️ Ayrıca bu skor BOZUK MALZEME üzerinden alındı: iki klip yanlış,
+   iki klip eksik. Fazlar arası kıyaslanamaz.
+```
+
+## 🔧 FAZ 4 AKSİYON
+
+```
+🔴 ÖNCE ÖLÇ — üretmeden, yeniden üretmeden, hiçbir şey yapmadan:
+   iki ffprobe satırı. Film 8 s'de mi 10 s'de mi devam edecek?
+   Bu karar verilmeden F4 hakkında hiçbir üretim kararı verilemez.
+
+🔴 SONRA ÜRET (yeniden değil, İLK KEZ):
+   · G (S43 FEDA) — filmin tematik merkezi, %35,0
+   · J (S46) — iki sayacın birlikte düştüğü tek sahne
+
+🟠 KARAR BEKLEYEN
+   · Segment 7 (turuncu sırık) ve Segment 10 (emekleme) ne olacak?
+     Katalogda yoklar. Kurguda kullanılacaksa plana yazılmalı;
+     kullanılmayacaksa iki yuva daha boşalır.
+   · Oksijen halkası F4'te hiç yok → F5/F6'da da yoksa sayaç
+     zinciri filmin ortasında kopmuş demektir.
+
+🔵 KABUL EDİLEBİLİR ("geri dönüş yok" kapsamında, F2-F3 gibi)
+   · istasyon hasarı çelişkisi · sırt çantası · şerit rengi ·
+     eldiven manşeti · ilmek sayısı
+   ⚠️ Ama bayrak yaması İKİNCİ kez çıktı ve mutlak metin/simge
+     kilidini deliyor — bu ayrı bir karar.
+```
+
+---
+---
+
+# 📋 KOŞU 5 — FAZ 5 MAKARASI · 02.09.2026 · İKİ MÜHÜRLÜ GEÇİŞ
+
+```
+Ham    02_HAM_RAPORLAR/YERCEKIMI_FAZ05_{KOR,KATALOG}_HAM.md
+Mod    ⚠️ V — SPEC yok · master yok · T tablolarına GİRMEZ
+```
+
+## § ⑪ ÖLÇÜM — IZGARA SAPMASI TEK SEFERLİK DEĞİL, REJİM
+
+```
+F1 · F2 · F3 →  8,0 s      F4 · F5 → 10,0 s
+```
+İki fazda üst üste, dört bağımsız geçişte. **D124'ün 5. vakası.**
+⭐ Bu artık "bir faz kaydı" değil: **araç F3 ile F4 arasında değişti.**
+   Ve aynı sınırda ikinci bir şey daha başladı → aşağıya bak.
+
+## § KİMLİK KAPISI ③ — ✅ GEÇTİ
+
+```
+Kör geçişin yankısız çapaları: turuncu şerit (omuz/kol) · beyaz kapitone
+koridor + turuncu tutamaklar · yuvarlak lomboz + gece Dünya'sı ·
+mühürlü kapak + gözlem camı + ölü modül · kırmızı kapak · yeşil gösterge ·
+kask serbest süzülüyor · dizler göğüste · yalnız · 12/12 kask YOK.
+⚠️ ÇAPA DEĞİL, KUSUR: yara SOL şakakta değil **SAĞ kaşın üstünde** —
+   iki geçiş de aynı yeri söyledi. Yüz masteri kaymış.
+```
+
+## § ⭐⭐ BU KOŞUNUN EN DEĞERLİ BULGUSU — İKİ GEÇİŞ ÇELİŞTİ
+
+```
+KATALOG GEÇİŞİ : "TEXT DISCIPLINE: 10 · Zero characters found."
+                 "no rogue characters generated on the panels."
+KÖR GEÇİŞ      : Seg 9  (1:24) caption "Cabin pressure falling, seal the hatch."
+                 Seg 12 (1:54) caption "Capsule power nominal."
+```
+
+⛔ **Makarada iki GÖMÜLÜ ALTYAZI var** ve filmin mutlak metin kilidi
+"no subtitle, no caption" diyor — maksimum ciddiyet.
+Katalog geçişi göremedi çünkü rubrik ona **nereye bakacağını saydı**
+("her paneli, gösterge bankasını, düğmeyi, kapağı kontrol et"). İhlal
+panelde değildi; **karenin üstündeydi.** → **DERS 171 yazıldı.**
+
+⭐ Tek geçişli bir denetimde bu ihlal rapora HİÇ girmezdi — üstelik
+"10/10, kusursuz tutuldu" diye kayda geçecekti.
+
+## § 🔍 VE ALTYAZININ SEBEBİ ÖLÇÜLDÜ
+
+```
+F5'in 12 sahnesinden YALNIZ İKİSİNİN video promptu tırnak içinde replik
+taşıyor: S57 (STATION AI) · S60 (CAPSULE AI).
+Altyazı çıkan iki segment: tam olarak o ikisi. → 2/2.
+Yasak promptta VARDI: "no subtitles/caption" F5'te 24 kez.
+
+FİLMİN TOPLAM MARUZİYETİ: video promptunda tırnaklı replik = 33/120
+   F1 5 · F2 4 · F3 6 · F4 7 · F5 2 · F6 2 · F7 4 · F8 3
+   ÜRETİLMEMİŞ: F7 4 + F8 3 = 7 sahne ← ücretsiz düzeltme penceresi
+```
+→ `GOZLEM ADAY-7`. ⭐ Çözüm filmin içinde zaten var: F6 KİLİT 27
+(*"promptta cümle yazılmaz, sesin tonu tarif edilir"*).
+
+## § SIRA SKORU — 3/12 · VE SEBEBİ TONUN TERS DÖNMESİ
+
+```
+Kör : A · B · E · I · C · D · F · J · H · K · G · L
+Doğru: A · B · C · D · E · F · G · H · I · J · K · L
+Doğru konum: A · B · L = 3/12   (F2 8/12 · F3 5/12 · F4 4/10)
+```
+
+⛔ **Ama asıl bulgu sayı değil, kör denetçinin ANLATTIĞI HİKÂYE:**
+
+> *"...flooding the corridor with flashing orange lights and a warning
+> that cabin pressure is falling. **Hit by a violent decompression wind**,
+> she fights to lock down the vessel... she flees down the corridor...
+> **closing her eyes in relief**."*
+
+```
+TASARLANAN : filmin EN SESSİZ fazı. Görünmez kaçak. Kimse cevap vermiyor.
+             Sonu SAHTE zafer — "gülümsemez" yazılı.
+ÇIKAN      : alarm + rüzgâr + panjur + tuş takımı + kaçış + rahatlama.
+```
+
+⭐ **Fazın tek fikri — GÖRÜNMEZ KAÇAK — hiç görünmedi**; kör denetçi
+kaçağı üç YANLIŞ kanaldan öğrendi: altyazıdan, saçı savuran rüzgârdan,
+yanıp sönen turuncudan. Kilit *"tek kanıt kayış ucudur"* diyordu —
+kör geçişin "kendiliğinden hareket eden şeyler" listesinde **kayış yok.**
+
+## § SAĞLAM / ŞÜPHELİ
+
+```
+✅ SAĞLAM (iki geçiş de bağımsız):
+   · S51'de SAÇ RÜZGÂRDA savruluyor (0g + durgun hava kilidi)     🔴
+   · S51'de bilekte SİYAH SAAT (bu fazda görünmemeli)              🔴
+   · S51'de YÜZ BAŞKA: daha genç, pürüzsüz, yara YOK               🔴
+   · S54'te halka DEĞİL: kalın bant, 5 yanık kare (2/6 olmalı)     🔴
+     ⛔ Filmin sayacı bu fazda YANLIŞ PROP.
+   · S54 paneli ÖLÜ değil, ÇALIŞAN tuş takımı                      🔴
+   · S58'de KIRMIZI KAPAĞA DOKUNULUYOR ve çekiliyor                🔴
+     ⛔ ÇEHOV 6, 47 sahne erken harcandı.
+   · S59'da kadın KORİDORDA, kapsülün İÇİNDE değil                 🔴
+   · S60'ta yeşil ARKADAN geliyor, alttan değil                    🔴
+   · S60'ta GÜLÜMSÜYOR — "gülümsemez" kilidi                       🔴
+     ⛔ SAHTE zafer GERÇEK zafer okundu; orta nokta ters döndü.
+   · yara SOL şakak değil SAĞ kaş üstü                             🟡
+   · S49'da yüz/S60'ta yüz tutarlı ama S51 kopuk                   🔴
+
+🔵 YALNIZ KÖR GEÇİŞ (gerçek ama ölçüsüz):
+   · ⭐ S52'de camı kapatan SİYAH PANJUR — spec'te böyle bir şey yok;
+     katalog geçişi bu segmenti "YELLOW, Earth lights visible" diye
+     geçti ve panjuru hiç anmadı (D171'in ikinci kanıtı)
+   · S60'ta SAÇ DÜMDÜZ, yerçekimi varmış gibi
+   · S60'ta koltuğa KEMERLE bağlı
+   · S57'de ışık STEP DEĞİL, YANIP SÖNÜYOR (katalog "doğru" dedi)
+```
+
+## § ✅ TUTAN
+
+```
+⭐ KAPSAM 12/12 — eksik yok, kopya yok, katalog dışı yok. F3'ten beri ilk.
+⭐ İKİ CAM AYRIMI TUTTU — lombozda gezegen, kapak camında ölü modül.
+   Rubriğin bu faza özel kurduğu testi geçti.
+✅ 12/12 KASK YOK · 12/12 YALNIZ · boş koltuklar boş
+✅ 12/12 KAMERA KİLİTLİ, sıfır hareket
+✅ EKRAN YÖNÜ tutarlı (hep ekran-sola) · koridor B·H·I'de aynı koridor
+✅ GÖRÜNÜR GAZ YOK · süzülen nesneler düz çizgide, hiçbiri oturmuyor
+✅ E (ölü modül) iki geçişte de övüldü
+```
+
+## § SKOR — ⛔ KAYDA GEÇMİYOR
+
+```
+Katalog geçişi 5,38 verdi. ⛔ T'ye girmez (mod V + master yok).
+⚠️ Üstelik METİN 10/10 puanı GEÇERSİZ (D171) → gerçek ortalama daha düşük.
+```
+
+## 🔧 FAZ 5 AKSİYON
+
+```
+🔴 ÖNCE: ALTYAZI. Master'da gömülüyse kurguda silinemez — o iki klip
+   yeniden üretilir ya da altyazı bandı kırpılır.
+   ffmpeg -ss 84 -i <makara>.mp4 -frames:v 1 altyazi_57.jpg
+   ffmpeg -ss 114 -i <makara>.mp4 -frames:v 1 altyazi_60.jpg
+
+🔴 IZGARA KARARI hâlâ verilmedi (KOŞU 4'ten devrediyor). İki fazın
+   ölçüsü artık aynı: 10 s. Film 8'de mi 10'da mı devam edecek?
+
+🟠 F7 ÜRETİLMEDEN BEDAVA: 7 sahnenin tırnaklı repliği kaldırılır
+   (F7 4 · F8 3). Teknik F6 KİLİT 27'de zaten yazılı.
+
+🔵 KABUL EDİLEBİLİR (önceki fazlardaki karar kapsamında)
+   · yara yeri · S51'in yüzü/rüzgârı/saati · S54'ün propu · S59'un odası
+   · S60'ın yeşili
+   ⚠️ AMA İKİSİ AYRI KARAR İSTER:
+     ① S60'ta GÜLÜMSEME — orta noktanın anlamını tersine çeviriyor
+     ② S58'de KIRMIZI KAPAĞA DOKUNMA — Çehov 6'yı erken harcıyor
+```
+
+---
+---
+
+# 📋 KOŞU 6 — FAZ 6 MAKARASI · 02.09.2026 · İKİ MÜHÜRLÜ GEÇİŞ
+
+```
+Ham  02_HAM_RAPORLAR/YERCEKIMI_FAZ06_{KOR,KATALOG}_HAM.md
+     100 s / 10 parça / 10,0 s · Mod ⚠️ V · T tablolarına GİRMEZ
+```
+
+## § ⭐⭐ EKSİK-İKİ TESTİ GEÇTİ — RUBRİK TASARIMININ KANITI
+
+```
+Denetçiye HANGİ İKİ girdinin iptal edildiği SÖYLENMEDİ.
+Yalnız "tam iki harf yaz, fazla ya da eksik çıkarsa YÜKSEK SESLE söyle" dendi.
+    MISSING: I, J        UNMATCHED: yok
+→ DOĞRU İKİ KLİP DÜŞMÜŞ. Operatör yanlış sahne atlamamış.
+⭐ F2'de tam bunun tersi olmuştu (C atlanıp B iki kez üretilmişti) ve o
+  zaman ancak katalog 12 beklediği için yakalanmıştı. Kapı iki yönde de
+  çalışıyor.
+```
+
+## § ⭐ İKİ KARIŞTIRILABİLİR ÇİFT DE AYRILDI
+
+```
+F ↔ L : "F'de yeşil sabit, gözler açık · L'de ışık üç aşamada ölür,
+        gözler kapanır" → doğru ayrıldı
+A ↔ K : "A'da halka PANELDE ve sönük · K'da BİLEKTE" → doğru ayrıldı
+```
+Depoda ilk kez rubrik denetçinin teşhis güvenini ölçtü ve ölçüm tuttu.
+
+## § 🔴🔴 ALTYAZI — VE HİPOTEZ ÇÜRÜDÜ
+
+```
+İKİ GEÇİŞ DE GÖRDÜ (F5'te yalnız kör geçiş görmüştü — D171 işledi):
+   Seg 1 (A/S61)  "Main propellant, empty. Orbital burn unavailable."
+   Seg 6 (F/S66)  "Contact confirmed. Please maintain trajectory."
+   Seg 9 (K/S71)  "Oxygen 11%. Warning."
+   Seg 5 (E/S65)  kadranda okunur çentik/rakamlar
+```
+
+⛔ **S66'DA PROMPTTA TIRNAKLI CÜMLE YOKTU.** O sahne tam olarak KİLİT 27'ye
+göre yazılmıştı — ses anlaşılmaz, ona hitap etmez. **Model bir cümle
+UYDURDU ve bastı.** Ve uydurduğu cümle sahnenin anlamını tersine
+çeviriyor: "sana hitap ediyorum, rotanı koru."
+
+```
+F6: tırnaklı sahne 2  ·  çıkan altyazı 3
+ZAMAN ÇİZGİSİ  F1-F3 (8 s) altyazı 0 · F4 (10 s) 0 · F5 2 · F6 3
+→ oran ARTIYOR ve tırnak sayısını AŞTI. → GOZLEM ADAY-7 revize edildi.
+```
+
+## § SIRA SKORU 2/10 — VE SEBEBİ ÜÇÜNCÜ KEZ AYNI
+
+```
+Kör : F · C · G · D · H · A · K · B · E · L
+Doğru: A · B · C · D · E · F · G · H · K · L      → 2/10 (D · L)
+```
+
+⛔ **Kör denetçi sıralamasını İKİ RENDER KUSURU üzerine kurdu:**
+> *"Hand injury: Clean → Cut. **High confidence**"*
+> *"Face injury: Clean → Scratched. **High confidence**"*
+
+Filmde ne el yarası ne yüz çiziği var; ikisi de süreklilik kusuru.
+⭐ **D170'in 3. vakası** — ve yeni bilgi: kusur yalnız kafa karıştırmıyor,
+izleyicinin zaman algısını **örgütlüyor.** (F3: kask → "ölüm saati" ·
+F4: delik → "kaza" · F6: yaralar → "yaralanma saati".)
+
+## § SAĞLAM (iki geçiş de bağımsız gördü)
+
+```
+· H (OVERVIEW) BOZUK — kadın koltukta değil, ORTADA BAĞDAŞ KURMUŞ
+  havada; pencere ORTADA (ekran-sol olmalı); iki koltuk pencereye
+  SIRTI dönük; push-in YOK.                                     🔴🔴
+  ⛔ Filmin TEK Overview sahnesi ve kilidi "kıpırdamaz"dı.
+· B'de kollar AŞAĞI HİÇ BASTIRILMIYOR — yalnız havada titriyor.  🔴
+  ⛔ Fazın fiziksel fikri ("çökmek ister, bedeni izin vermez") YOK.
+· K'da halka SAĞ bilekte ve 4 yanık (SOL, 2→1 olmalı)            🔴
+· L'de SAĞ alında kırmızı çizik (F ve G'de yok)                  🔴
+· SOL şakak yarası HİÇBİR karede yok                             🔴
+· E'de sağ elde açıklanamayan kesik + kadranda okunur rakamlar   🔴
+· L tam karanlıkla bitiyor — tek amber lamba kalmıyor            🔴
+· E ve K'da SERT KENARLI gölge (yumuşak kaynak kilidi)           🟡
+· C'de camın ardında uydu/panel var, dönen mavi parça değil      🟡
+· A'da parmak yay çizmiyor, ortaya basıp kenara vuruyor          🟡
+```
+
+## § ✅ TUTAN
+
+```
+⭐ 10/10 kapsam · MISSING tam olarak I ve J · UNMATCHED sıfır
+⭐ İki karıştırılabilir çift de doğru ayrıldı
+✅ 10/10 yalnız · boş koltuklar boş · kask yok · eller çıplak
+✅ 10/10 dudak kapalı · hiçbir lamba yanıp sönmüyor
+✅ D (boş koltuk) KUSURSUZ — iki geçiş de övdü: kayışlar süzülüyor,
+   hiçbiri mindere oturmuyor
+✅ Saç kalkıp duruyor (C·F·G·L) · yerçekimi beden dili YOK
+✅ L'nin üç aşamalı ışık ölümü tuttu ve tek yönlü kaldı
+```
+
+## § SKOR — ⛔ KAYDA GEÇMİYOR
+
+```
+Katalog geçişi 3,7 verdi (film içindeki en düşük). Mod V + master yok.
+```
+
+## 🔧 AKSİYON
+
+```
+🔴 H (S68 OVERVIEW) — filmin tek Overview'u ve tamamen bozuk. Yeniden
+   üretilirse ilk sırada bu.
+🔴 ALTYAZI — A · F · K karesi. Gömülüyse kurguda silinemez.
+🟠 B (S62) — fazın fiziksel fikri hiç görünmedi.
+🔵 KABUL EDİLEBİLİR: yara/çizik · halka yeri · sert gölge · C'nin uydusu
+```
+
+---
+
+# 🔎 FAZ 7 ÜRETİM ÖNCESİ KONTROL · 02.09.2026
+
+```
+✅ 12 sahne · 24 prompt · 12/12 KİLİTLİ KAMERA (hiç hareket yok)
+✅ politika sözlüğü uyarısı YOK · uzunluklar bant/tavan içinde
+⚠️ D139: 2 promptta sırt için pozitif tarif yok (satır 527, 1334)
+⚠️ kurulum sayısı 12 (bant 6) — belgeli sapma ailesi
+⛔ B5 BLOCK — depo geneli, F1-F7'nin yedisinde de aynı; plan seviyesi
+
+🔴🔴 AMA BİR ŞEY VAR VE FİLMİN GERİ KALANINDAKİ EN BÜYÜK RİSK BU:
+
+F7 HALÜSİNASYON FAZIDIR. KİLİT 30, ölmüş adamın sesinin meşruiyetini
+ÜÇ KANALDAN işaretliyor:
+   ① MİKS  — ses hoparlörden gelmez, filtresizdir, her yöndendir
+   ② GÖRÜNTÜ — S77 hoparlör ızgarasının makrosudur ve KAYNAK BOŞTUR
+   ③ GÖVDE — B ekranda 0 kare
+
+⛔ GÖMÜLÜ ALTYAZI BU ÜÇÜNÜ BİRDEN YOK EDER.
+   Altyazı, bir filmin ekrana koyabileceği EN BELGESEL nesnedir:
+   "bu söylendi, resmen, ve işte dökümü" der.
+   → halüsinasyon GERÇEK bir telsiz çağrısı olarak okunur
+   → S77'nin boş ızgarası (fazın kanıtı) anlamsızlaşır
+   → S84'ün CENTRAL CHOICE'u "karar verdi" değil "talimatı uyguladı" olur
+
+F7'de tırnaklı replik taşıyan DÖRT sahne var ve ÜÇÜ halüsinasyon:
+   S76  "Told you. Half of it's storytelling."
+   S78  "Landing rockets are rockets, engineer. Point them the wrong way."
+   S81  "Go home. Take the watch with you."
+   S84  "OXYGEN SIX PERCENT. RECOVERING."   (makine)
+
+⭐ VE DÜZELTME KÜÇÜK: video promptlarında sesi anlatan TOPLAM DÖRT
+   BEAT SATIRI var, o dördü de yukarıdaki sahnelerde.
+   Öneri: beat satırı YALNIZ KAMERANIN GÖRDÜĞÜNÜ anlatsın.
+   "2s — ses şunu der: ..."  →  "2s — gözleri bir kez oynar ve durur."
+   Ses zaten post'ta; filmin kendi kuralı bunu söylüyor.
+   ⚠️ F6 kanıtladı ki tırnağı silmek TEK BAŞINA yetmiyor (S66) —
+     ses SATIRINI silmek gerekiyor.
+```

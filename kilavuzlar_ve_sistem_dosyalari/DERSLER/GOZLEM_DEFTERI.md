@@ -253,3 +253,160 @@ klibi ÜRETİLDİ mi?" · ya da ARŞİV, hipotez çürürse.
 > 🔗 ADAY-1 (THE COLD WELD, aynı şekil — kapandı: kusur okumaydı) ·
 > Ders 166 (bu partiden çıkan ALET dersi) · Ders 157 (novum taşıyıcısı) ·
 > Ders 62/72 (kuyruk = filmin finali) · Ders 141 (final vuruş kanıtı kareyle)
+
+---
+
+## ADAY-6 — İKİ BİLEK YAN YANA, TEPEDEN MAKRO: BU KADRAJ ÜRETİLEMİYOR
+
+**Tarih / kaynak:** 02.09.2026 · YERÇEKİMİ · **iki bağımsız vaka**, aynı
+kadraj tipi, aynı sonuç:
+```
+S8  (FAZ 1, 31.08) — iki eldivenli bilek, tepeden makro, rayda
+                     → üç deneme, üçü de politika reddi → İPTAL
+S70 (FAZ 6, 02.09) — iki çıplak bilek yan yana, tepeden makro,
+                     sağda siyah kayışlı saat → ısrarla red → İPTAL
+```
+
+**Gözlem:** ortak geometri şu: **gövdeden kopmuş iki bilek/el, aynı
+kadrajda, tepeden makro, en az birinde bir kayış.** İkisinde de içerik
+tamamen masumdu (bir rayda tutunma · durmuş bir saate bakma) ve ikisinde
+de kelime düzeltmesi YETMEDİ; kadraj değişikliği de yetmedi.
+
+**Hipotez:** sınıflandırıcı bu geometriyi bedenden ayrılmış bilek + bağ
+olarak okuyor. Tek tek hiçbir öğe yasak değil; birleşimleri üretilemiyor.
+
+⚠️ **S69 vakası hipotezi GENİŞLETİYOR:** orada kol tamamen kaldırıldı
+(el baştan beri kolçakta, hiçbir şey yükselmiyor) ve YİNE reddedildi.
+Demek ki kalan yığın da yetiyor: **yalnız + loş + gözler aşağı + açık
+boğaz.** Yani tetikleyici tek bir kadraj tipi değil, bir ATMOSFER
+BİLEŞİMİ olabilir. Üçüncü vaka bunu ayıracak.
+
+**Kapatma (bedava, F7-F10 üretilmeden):** aynı bilgiyi taşıyan kadrajı
+tek bilekle, YANDAN ve gövdeye bağlı olarak yaz; bir kez üret.
+```
+geçerse  → hipotez DOĞRU (geometri) → kapı: LİSTE · 03_PLAN_ONCESI'ye
+   "aynı kadrajda gövdeden kopuk iki bilek/el var mı?" sorusu
+geçmezse → hipotez EKSİK; sorun atmosfer bileşimi → ayrı aday
+```
+
+**Olası kapı:** BETİK · `prompt_kontrol.py` — bir promptta "both wrists /
+two wrists / two gloves" + "macro/extreme close-up" + "from above/
+high-angle" birlikte geçiyorsa **FIX** (üretilemeyecek kadraj uyarısı).
+⚠️ Bu, betiğin ilk KOMPOZİSYON kapısı olurdu; şimdiye kadar hep kelime
+ölçtü. Politika reddi veren üç vakanın üçü de kelimeyle yakalanamadı.
+
+---
+
+## ADAY-7 — VİDEO PROMPTUNDA TIRNAK İÇİNDE YAZILAN REPLİK, KAREYE ALTYAZI OLARAK GÖMÜLÜYOR
+
+**Tarih / kaynak:** 02.09.2026 · YERÇEKİMİ FAZ 5 · iki mühürlü geçiş · mod V
+(film-dersi yazılamaz; prompt dili dersi 06'ya girerdi → aday).
+
+**Gözlem:** F5'in on iki sahnesinden **YALNIZ İKİSİNDE** video promptu
+tırnak içinde bir replik taşıyor — S57 (STATION AI) ve S60 (CAPSULE AI).
+Kör geçiş makarada **tam iki altyazı** saydı ve ikisi de o iki sahnede:
+```
+Seg 9  (S57) → "Cabin pressure falling, seal the hatch."
+Seg 12 (S60) → "Capsule power nominal."
+```
+**2/2.** Ve yasak promptta AÇIKÇA vardı: F5 dosyasında `no subtitles` /
+`no caption` **24 kez** geçiyor, iki sahnenin ikisinde de `heard only —
+never shown as text` yazılı.
+
+**Hipotez:** modelin altyazı üretmesini tetikleyen şey yasağın yokluğu
+değil, **promptta tırnak içinde duran cümlenin kendisi.** Yasak
+sayılabilir bir engel değil; cümle bir içerik talebi.
+
+**Ölçü — filmin toplam maruziyeti:**
+```
+Video promptunda tırnak içinde replik taşıyan sahne: 33 / 120
+  F1 5 · F2 4 · F3 6 · F4 7 · F5 2 · F6 2 · F7 4 · F8 3
+ÜRETİLMEMİŞ olanlar: F7 4 + F8 3 = 7 sahne  ← ücretsiz düzeltme penceresi
+```
+
+⭐ **Filmin kendi içinde çözümü zaten var:** F6 KİLİT 27, çobanın sesi
+için *"Promptta yabancı dilde CÜMLE YAZILMAZ: 'a man's voice speaking
+calmly in a language she does not know' denir"* diyor. Aynı teknik
+altyazıyı da engeller — orada D34 için yazılmıştı.
+
+⚠️ **İkinci hipotez, aynı kanıttan:** F1-F3'te altyazı YOKTU ve o üç
+makara 8,0 s ızgaradaydı; F4-F5 10,0 s ızgarada ve altyazı F5'te çıktı.
+**Izgara değişimi ile altyazı aynı sebepten olabilir: üretim aracı
+F3 ile F4 arasında değişti.** Bu tek bir soruyla kapanır (aşağıda).
+
+**Kapatma (bedava, F7 üretilmeden):**
+```
+① Proje sahibine tek soru: F3 ile F4 arasında üretim aracında/modelinde/
+   ayarında ne değişti? (ızgara 8→10 s ve altyazı aynı anda başladı)
+② F7'nin dört replikli sahnesinden BİRİNDE tırnaklı cümle silinir,
+   yerine "a flat synthetic voice makes a short announcement" yazılır;
+   sahne üretilir.
+     altyazı ÇIKMAZSA → hipotez DOĞRU → kapı: BETİK
+        (prompt_kontrol: video promptunda tırnak içinde cümle → FIX)
+     altyazı YİNE ÇIKARSA → sebep araçtadır, prompt değil → ayar sorusu
+```
+
+**Olası kapı:** BETİK · `prompt_kontrol.py` — video promptunda `"..."`
+içinde bir cümle varsa **FIX** ("replik tırnakla yazılmaz; söyleyeni ve
+tonu tarif et, cümleyi post'a bırak").
+
+---
+
+## 📌 02.09.2026 · ADAY-7 GÜNCELLEME — HİPOTEZ YARISINDAN ÇÜRÜDÜ (YERÇEKİMİ FAZ 6)
+
+```
+ADAY-7 diyordu ki: "altyazıyı tetikleyen şey promptta TIRNAK İÇİNDE
+duran cümledir." F5'te kanıt 2/2 idi.
+
+FAZ 6 ÖLÇÜMÜ — hipotez YETMİYOR:
+  F6'da tırnaklı replik taşıyan sahne: 2   (S61 · S71)
+  Makarada çıkan altyazı:              3   (Seg 1=S61 · Seg 6=S66 · Seg 9=S71)
+
+⛔ ÜÇÜNCÜSÜ S66 — VE O SAHNEDE TIRNAKLI CÜMLE YOKTU.
+   S66 tam olarak KİLİT 27'ye göre yazılmıştı: "a man's voice speaking
+   calmly in a language she does not know... The voice never becomes
+   intelligible and never addresses her."
+   Model o sahneye BİR CÜMLE UYDURDU ve altyazı olarak bastı:
+      "Contact confirmed. Please maintain trajectory."
+   ⭐⭐ Uydurduğu cümle sahnenin ANLAMINI TERSİNE ÇEVİRİYOR: sahnenin
+      tek fikri sesin ANLAŞILMAMASI ve ona HİTAP ETMEMESİDİR. Altyazı
+      "sana hitap ediyorum, rotanı koru" diyor.
+```
+
+**REVİZE HİPOTEZ:** tetikleyici tırnak değil, **video promptunda BİR SESİN
+ANLATILMASI.** Tırnağı kaldırmak gerekli ama YETERLİ DEĞİL.
+
+**Ölçü — filmin gerçek maruziyeti çok daha büyük:**
+```
+Video promptunda SES TARİF EDİLEN sahne: 115 / 120
+  (tırnaklı olan yalnız 33'ü)
+```
+⚠️ Ama F1-F4'ün 48 sahnesinin hepsinde de ses tarifi vardı ve altyazı
+ÇIKMADI. Yani sesin tarifi tek başına da yetmiyor.
+
+**ZAMAN ÇİZGİSİ — asıl değişken burada:**
+```
+F1 · F2 · F3   8,0 s ızgara   altyazı 0
+F4            10,0 s ızgara   altyazı 0
+F5            10,0 s ızgara   altyazı 2   (tırnaklı sahne sayısı 2)
+F6            10,0 s ızgara   altyazı 3   (tırnaklı sahne sayısı 2)
+```
+→ Izgara F4'te değişti, altyazı F5'te başladı ve **F6'da tırnak sayısını
+AŞTI.** Oran artıyor. Bu bir prompt kusuru değil, **araç davranışı**
+gibi görünüyor.
+
+**Kapatma — tek soru + tek üretim:**
+```
+① Proje sahibine: F3→F4 ve F4→F5 arasında araçta/modelde/ayarda ne
+   değişti? (ızgara F4'te, altyazı F5'te başladı — iki ayrı eşik olabilir)
+② F7'nin dört sesli beat'inden BİRİNDE ses satırı TAMAMEN silinir
+   (yalnız kadında görülen tepki yazılır) ve sahne üretilir.
+     altyazı ÇIKMAZSA → kapı: BETİK (video promptunda ses anlatan
+        beat satırı → FIX; ses zaten post'ta)
+     altyazı YİNE ÇIKARSA → sebep araçtadır; çözüm prompt değil ayar
+```
+
+**Olası kapı:** KARAR · video promptunun beat satırları YALNIZ KAMERANIN
+GÖRDÜĞÜNÜ anlatır. Ses post'tadır ve filmin kendi kuralı zaten bunu
+söylüyor ("on iki sahne SESSİZ üretilir"). Beat "3s — ses şunu der"
+değil, "3s — gözleri bir kez oynar ve durur" olur.

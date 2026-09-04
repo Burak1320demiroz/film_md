@@ -35,6 +35,16 @@ python3 kilavuzlar_ve_sistem_dosyalari/PROMPT_KONTROL/prompt_kontrol.py $1
 Oku ve uygula: `kilavuzlar_ve_sistem_dosyalari/PROMPT_KONTROL/PROMPT_QA_CRITIQUE_PROMPT.md`
 → kilit SAYI mı TARİF mi · sahne hangi dersi tetikliyor · A1.
 
+## 2b. Replikli filmde ikinci rubrik (03.09.2026 · TUR 6)
+
+Filmde replik varsa (plan replik tablosu taşıyorsa) oku ve uygula:
+`kilavuzlar_ve_sistem_dosyalari/PROMPT_KONTROL/DIALOGUE_CRITIQUE_PROMPT.md`
+— girdi B5 omurgası + replik tablosu (İŞLEV sütunlu) + bölüm promptları;
+çıktı satır başına etiket + GO/REWRITE (sayı yok). ⛔ CUT, UNCLEAR
+register ya da MONOLOGUE bulgusu varken GO verilmez — önce diyalog
+düzeltilir, rubrik yeniden koşulur. Kural tarafı:
+`SES_VE_DIYALOG_URETIM_KILAVUZU.md` §2a.
+
 ## 3. Karar
 
 - **GO** → üretime geçilebilir (önce imaj; imaj onaylanınca video).

@@ -209,6 +209,11 @@
 | 164 | 🔴 | RUBRİĞİN KENDİ ANLATTIĞI TARİF RAPORDA GERİ GELİNCE ÇAPA SANILDI — DÖRT ÇAPANIN DÖRDÜ DE YANKIYDI → FAZ RUBRİĞİ İKİYE BÖLÜNÜR (A KÖR / B KATALOG, AYRI SOHBET); ③ YALNIZ KÖR GEÇİŞTEN KOŞULUR + KARIŞIK SIRA "SIRA SKORU" ÖLÇÜSÜNE DÖNER | [08_QA_SURECI.md](DERSLER/08_QA_SURECI.md) |
 | 165 | 🔴 | ARAÇ YAZILDI, KOŞACAK KART YOKTU — D129'un aracı 01.09'da doğdu, ertesi gün yazılan filmin paketi hiç üretilmedi ve SEKİZ mercek mod V koşuldu → PAKET, QA ANINDA DEĞİL FİLMİN YAZIMINDA ÜRETİLİR (Kart A §4); paket klasörü yoksa film "yazımı tamam" değildir | [09_SISTEM_VE_SUREC.md](DERSLER/09_SISTEM_VE_SUREC.md) |
 | 166 | 🔴 | NOVUM'U OLAN FİLM MOD V'DE ÖLÇÜLEMEZ — ⑥ PREMISE REGISTER'a filmin TÜRÜNÜ yazdı ("zero-g"), KURALINI değil, ve kuralı üç kategoride kusur saydı; paketin ⑥ süzgeci de NOVUM'u düşürüyordu (Türkçe birim sözcüğü + satır bazlı grep) → SÜZGEÇ KAYIT SEÇER + rapor_kontrol ①.6 NOVUM KAPISI | [08_QA_SURECI.md](DERSLER/08_QA_SURECI.md) |
+| 167 | 🔴 | YEDİ KİMLİK ÖZNİTELİĞİ ÜST ÜSTE = "BİR ÜNLÜYÜ TARİF EDEREK İSTEME" KALIBI — VE AÇIK VİZÖR KİLİDİ O KALIBI BÜYÜTÜYOR | [02_KARAKTER_VE_CANLI.md](DERSLER/02_KARAKTER_VE_CANLI.md) |
+| 168 | 🔴 | ÜRETİM SIRASI DRAMATİK SIRAYLA AYNIYSA, YARIDA KALAN FİLM KENDİNİ SAVUNAMAZ — 14 KLİP ÜRETİLDİ VE ÜÇÜNCÜ PERDE HİÇ VAR OLMADI | [09_SISTEM_VE_SUREC.md](DERSLER/09_SISTEM_VE_SUREC.md) |
+| 169 | 🔴 | 25 SAHNELİK BİR FİZİKSEL İŞ FİLMİNDE ZORLANMA SÖZLÜĞÜ TEK SAHNEDE VARDI — DÜŞÜK YERÇEKİMİ AĞIRLIĞI AZALTIR, ATALETİ AZALTMAZ | [03_FIZIK_VE_HAREKET.md](DERSLER/03_FIZIK_VE_HAREKET.md) |
+| 170 | 🔴 | EKSİK OLAN NEDEN, RAPORDA "EKSİK" DİYE GÖRÜNMEZ — KÖR DENETÇİ YANINDAKİ NESNEDEN BİR NEDEN UYDURUR VE ONU YÜKSEK GÜVENLE YAZAR → GEÇİŞ C'de her "X yüzünden Y" cümlesi MISSING listesine karşı okunur | [08_QA_SURECI.md](DERSLER/08_QA_SURECI.md) |
+| 171 | 🔴 | "ŞU YERLERE İYİ BAK" DİYEN KİLİT, İHLALİ O YERLERİN DIŞINDA GİZLER — KATALOG GEÇİŞİ METNE 10/10 VERDİ, KÖR GEÇİŞ AYNI MAKARADA İKİ ALTYAZI SAYDI → yer listesi ÖRNEKTİR kapsam DEĞİL + GEÇİŞ C'de her 10/10 kör geçişe karşı okunur | [08_QA_SURECI.md](DERSLER/08_QA_SURECI.md) |
 
 > ⚠️ 01.09.2026: 161-163 dizine hiç işlenmemişti (dosyalarda vardı, tabloda
 > yoktu) — 164 yazılırken eklendi. Numara otoritesi `sayac.sh` 🧭'dır.

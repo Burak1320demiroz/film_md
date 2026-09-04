@@ -22,6 +22,13 @@
 > kayıt · kask AI — dördü de D35'in DIŞINDADIR ve bugün, hiçbir yasağı
 > ihlal etmeden yazılabilir. Ekranda konuşan ağız (BASAMAK 3) ise
 > `PROB_KOSUSU.md` PROB B koşulmadan filme girmez.
+>
+> ⭐ **03.09.2026 · TUR 6 İNDİ — İÇERİK KATMANI AÇILDI.** Bu kılavuz
+> bugüne kadar repliğin NEREDE ve NASIL söyleneceğini biliyordu; §2a
+> artık NE söyleneceğini de ölçüyor (işlev · alt metin · doğallık ·
+> çeviri kokusu). Kapısı: `PROMPT_KONTROL/DIALOGUE_CRITIQUE_PROMPT.md`
+> (Kart P adım 2b — replikli filmde üretimden önce koşulur). Kaynak
+> süzmesi: `URETIM_ONCESI_ANALIZ/04_ARASTIRMA_BULGULARI.md` §TUR 6.
 
 ---
 
@@ -116,7 +123,10 @@ MACHINE   film bunu SENTETİK ses olarak sunar (suit AI · bilgisayar ·
 
 ```
 □ PLANA YAZILIR: her replik için tek satır —
-    | S# | saniye | konuşan | REGISTER | kanal (telsiz/AI/oda) |
+    | S# | saniye | konuşan | REGISTER | kanal (telsiz/AI/oda) | İŞLEV |
+□ İŞLEV sütunu (03.09.2026 · TUR 6): replik B5 omurgasının hangi
+  satırına hizmet ediyor — İSTEK / ENGEL / BEDEL / MUHATAP — ya da
+  hangi vuruşu ÇEVİRİYOR. Boş kalan İŞLEV = silme testi adayı (§2a.1).
 □ UNCLEAR yazım tarafında YASAKTIR: planda register'ı belirsiz replik
   kalamaz. (UNCLEAR yalnız QA merceğinin sözlüğünde vardır — film
   register'ı EKRANDA okutamadıysa bulgu yazar.)
@@ -156,6 +166,132 @@ kanal aynı sayıyı söyler ve birbirini doğrular (D78 çift kanal kuralı).
 ③ EKRANDA KONUŞAN AĞIZ                              ⚠️ EN RİSKLİ
    (yalnız medium+ kadraj, <5 s replik, tam lip-sync bloğuyla; başka
     çare yoksa)
+```
+
+---
+
+# 2a. 🧠 REPLİK İÇERİĞİ — işlev, alt metin, doğallık  🆕 03.09.2026 · TUR 6
+
+> §1 repliğin KİM tarafından hangi kanaldan söyleneceğini, §2 kaç saniye
+> süreceğini kilitler. Bu bölüm NE söyleneceğini kilitler. Denetleyen
+> kapı: `PROMPT_KONTROL/DIALOGUE_CRITIQUE_PROMPT.md` (Kart P 2b) —
+> satır başına etiket üretir, sayı üretmez. Kaynaklar: `04` §TUR 6.
+
+## 2a.1 İŞLEV KURALI — silme testi
+
+```
+□ Her replik B5'in bir satırına (İSTEK/ENGEL/BEDEL/MUHATAP) hizmet eder
+  ya da bir vuruşu çevirir. Testi: repliği SİL — sahne ne kaybediyor?
+  HİÇBİR ŞEY → replik yazılmadan silinir. Görüntünün zaten gösterdiğini
+  söyleyen replik ("It is so quiet out here") ilk silinecek sınıftır.
+□ Replik başına TEK yeni bilgi. İki bilgi taşıyan satır bölünür ya da
+  biri görsel kanala devredilir.                    [McKee · Swain/beat]
+```
+
+## 2a.2 ON-THE-NOSE YASAĞI — duygu adlandırılmaz
+
+```
+□ Konuşan KENDİ duygusunu/niyetini ADLANDIRAMAZ: afraid · scared ·
+  worried · angry · alone · "I hate/love" (durum beyanı) · "I feel".
+  Duygu eyleme, duraklamaya, kelime SEÇİMİNE sızar; kelimenin kendisine
+  değil. ("Hope the seal holds this time." — korku 'this time'da.)
+□ Gerekçe ölçülü: düz söylenen replikte izleyicinin çıkarım işi elinden
+  alınır [fMRI: dolaylı ifade zihin-kuramı ağını düz anlamdan güçlü
+  çalıştırır]; ve duygu-yoğun/melodramatik diyalog metin analizlerinde
+  DÜŞÜK puanla ilişkili çıktı [hakemli NLP].
+□ TEK İSTİSNA — DORUK DOĞRUDANLIĞI: merkezî seçim sahnesinde bir (1)
+  motive edilmiş doğrudan cümleye izin var; plana işaretlenir.
+□ Tek başına karaktere SESLİ DÜŞÜNME yazılmaz — on vakanın dokuzunda
+  bilgi yığınıdır; zaten 0-replik hattımızda meşru kanalı yok.
+```
+
+## 2a.3 BİLGİ = SİLAH — exposition kuralı
+
+```
+□ "As you know" YASAK: iki kişinin ikisinin de bildiği şey birbirine
+  anlatılmaz. Ortak geçmiş İMA edilir ("Again?"), anlatılmaz.
+□ Bilgi dirençle gelir: suçlama, itiraz, pazarlık ya da bedel içinde —
+  ders verir gibi değil. ("You said the winch would hold.")
+□ Sıkıcı ama zorunlu bilgi, güçlü bir GÖRSEL eylemle aynı ana bindirilir
+  (izleyicinin gözü eylemde, kulağı bilgide) — bizim karşılığımız:
+  bilgi repliği en watchable jest/olay sahnesine yerleştirilir.
+□ ⛔ SINIR NOTU [D78 ↔ gereksizlik ilkesi]: "söz + ekranda AYNI METİN"
+  bölünmüş dikkat üretir ve zaten yasak [D40: heard only — never shown
+  as text]. D78'in çift kanalı METİN değil GÖRSEL OLAYDIR (sayı seste,
+  sonucu kadrajda) — bu ayrım korunur, üçüncü kanal (yazı) açılmaz.
+```
+
+## 2a.4 SES AYRIŞMASI — swap testi
+
+```
+□ Her konuşan çifti için: bu replik öteki konuşana aynen taşınsa
+  sırıtır mı? SIRITMIYORSA ses nötrdür — satır yeniden yazılır.
+□ İnsan↔makine takası HER ZAMAN sırıtmalıdır (§1 register sözlüğü).
+□ İki insanlı filmde söz TEKELLEŞMEZ: sıra dengesi plana yazılır
+  (dengesizlik bilinçliyse gerekçesiyle) [söz dağılımı bulgusu].
+```
+
+## 2a.5 DOĞALLIK KİTİ — konuşma İngilizcesi + çeviri kokusu taraması
+
+```
+HUMAN register şunları İSTER (kusur değil, doğanın kendisi):
+□ Kısaltmalar: I'm · can't · that's — kısaltmasız insan repliği yazı
+  kokar [korpus: kısaltma+that-düşümü konuşmada organik; çeviride azalır]
+□ Kısa parçalar: konuşma birimlerinin üçte biri ~2 kelimelik
+  cümlecik-değildir; fiil ağırlıklı, isim yığınsız [LGSWE]
+□ Em-tire kesilmesi (—) · elips (...) · film başına 1-2 PLANLI tereddüt
+  ("I— no. Leave it.") — kusursuz akıcılık sentetik damganın metin
+  tarafıdır [doğal konuşmada dolgu sesi ölçülü bir gerçek]
+
+⛔ ÇEVİRİ KOKUSU TARAMASI — L2 yazarın beş tuzağı [translationese]:
+□ Hiper-formalite: "I apologize for the inconvenience" ≠ "Sorry."
+□ Yanlış eşdizim: hiçbir ana dil konuşurunun kurmadığı çiftler
+□ Calque: "since 5 years" → "for 5 years" · birebir deyim çevirisi ·
+  sayılamayan ismin çoğulu
+□ Yazı sözdizimi insan ağzında: ilgi tümcesi zinciri · analitik pasif ·
+  kısaltmasızlık
+□ Sesli okuma vekili: satır 5 saniyede RAHAT söylenemiyorsa uzundur
+  [D35 ile aynı kapı — buradaki fark SÖYLENEBİLİRLİK, süre değil]
+
+MACHINE register tam tersini ister [D82 iç kanıt + dış konvansiyon]:
+□ Tam formlar (I am unable) · kısaltma yok · dolgu yok · edilgen/öznesiz
+  ("Tether load at forty percent" · "Pressure has dropped")
+□ Sayı, birim, süre, yüzde YALNIZ buradadır — insana geçen her sayı
+  MISPLACED-NUMBER bulgusudur [D82]
+```
+
+## 2a.6 YALAN VE ÇELİŞKİ — söz ≠ eylem
+
+```
+□ Karakterin sözüyle eylemi ÇELİŞEBİLİR (yalan · inkâr · kendini
+  kandırma) — bu bağ KURAR, bozmaz. Şartı: çelişkinin ahlaki yükü
+  fedakârlığa dayanır ve BEDEL sahnesine bağlanır; salt bencil yalan
+  empatiyi koparır [izleyici ahlaki gözlemcidir — ADT].
+□ Plana yazımı: yalan repliği İŞLEV sütununda BEDEL'e işaret eder.
+```
+
+## 2a.7 İRONİ PENCERESİ — nötr replik kuralı
+
+```
+□ BİLGİ ASİMETRİSİ penceresi açıkken (izleyici karakterden fazlasını
+  biliyor — dikey zorunlu satır ①) o penceredeki replikler NÖTR yazılır:
+  sıradan cümle ikili anlamı kendiliğinden kazanır ("Plenty of time.").
+□ Gizli gerçeği ADLANDIRAN ya da göz kırpan replik pencereyi öldürür.
+□ Dış ses/anlatıcı zaten yok; bu kural diegetik replik için de geçerli.
+                                        [gerilim/sürpriz ayrımı · HOOK §3.1]
+```
+
+## 2a.8 ⬜ HİPOTEZ BLOĞU — kaynaksız ama makul, tasarım seçeneği
+
+```
+Aşağıdakiler TUR 6 raporunda KAYNAKSIZ kaldı; kural değil seçenek:
+· Telsiz kısalık düzeni (3-7 kelimelik eksiltili söz · readback) ve
+  "duygu kelimeye değil PROTOKOL SAPMASINA yazılır" mekanizması
+  (readback atlanır, dolgu girer, ritim bozulur = kriz vuruşu).
+  Kullanılacaksa plana SAPMA ANI sahne numarasıyla yazılır.
+· TTS yazım tercihleri (kısa cümle · noktalama=duraklama · sayının
+  rakam/yazı biçimi) — sınaması ucuz: aynı replik iki biçimde tek
+  klip A/B probu. Prob koşulmadan kural yazılmaz.
 ```
 
 ---
@@ -244,10 +380,10 @@ edilemez hata sınıfıdır.
 
 ---
 
-# 7. ✅ PLAN KONTROLÜ — bu kılavuzun 7 maddesi
+# 7. ✅ PLAN KONTROLÜ — bu kılavuzun maddeleri
 
 ```
-□ 1  Replik tablosu var mı? (S# · saniye · konuşan · REGISTER · kanal)
+□ 1  Replik tablosu var mı? (S# · saniye · konuşan · REGISTER · kanal · İŞLEV)
 □ 2  Sayı söyleyen her replik MACHINE register'da mı? [D82]
 □ 3  Her replik <5 s ve tek konuşmacı mı? [D35]
 □ 4  Ekranda ağız gerektiren replik sayısı kaç — ①/② yerleşimine
@@ -256,6 +392,14 @@ edilemez hata sınıfıdır.
      hacme taşı)
 □ 6  Yatak envanteri yazıldı mı — "müziksiz" hiçbir sahne SESSİZ değil? [D83]
 □ 7  Her AUDIO cümlesi "heard only — never shown as text" taşıyor mu? [D40]
+□ 8  İŞLEV sütunu boş replik var mı? (varsa silme testi — §2a.1)
+□ 9  Duygu-adlandıran kelime taraması yapıldı mı? (afraid/scared/... —
+     §2a.2; doruk doğrudanlığı kullanıldıysa işaretli mi?)
+□ 10 Swap testi: repliği öteki konuşana taşı — sırıtıyor mu? (§2a.4)
+□ 11 Çeviri kokusu taraması: hiper-formalite · calque · eşdizim ·
+     kısaltmasız insan repliği (§2a.5)
+□ 12 DIALOGUE_CRITIQUE koşuldu mu? (Kart P 2b — CUT/UNCLEAR varken
+     üretime geçilmez)
 ```
 
 ---
@@ -268,5 +412,7 @@ YANASMA_VE_KENETLENME_KILAVUZU.md                 §2 ses/dramaturji (üç filmd
 GOOGLE_FLOW_MUSIC_URETIM_KILAVUZU.md              §10 sessizlik · §14-17 tempo/frekans/künye
 KURGU_VE_TESLIM_KILAVUZU.md §4                    miks/kurgu tarafı
 QA_PROMPTLARI/3_SES_QA_CRITIQUE_PROMPT.md ölçüm merceği (register sözlüğünün kaynağı)
+PROMPT_KONTROL/DIALOGUE_CRITIQUE_PROMPT.md        ⭐ yazım anı içerik kapısı (Kart P 2b · §2a'nın denetleyicisi)
+URETIM_ONCESI_ANALIZ/04_ARASTIRMA_BULGULARI.md    §TUR 6 — §2a'nın kaynak süzmesi (giren/girmeyen)
 DERSLER                                            D35 · D40 · D78 · D82 · D83 tam metin
 ```
