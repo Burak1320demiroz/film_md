@@ -187,3 +187,63 @@ LARGEST BACKGROUND OBJECT: <adı ve kadraj payı — "the sky, upper five sixths
 > Ders 104 (ışık mıknatısı — alçak açının kardeşi: boşluk da mıknatıstır).
 
 ---
+
+---
+
+## 🔴 DERS 176: KONTRAST GARANTİSİ ZEMİNİ İKİNCİ KEZ TARİF ETTİ — AYNI PROMPTTA İKİ CÜMLE ZEMİNE İKİ RENK VERDİ VE FİLM ORTASINDA BİYOM DEĞİŞTİRDİ
+
+**KAPI:** BETİK · `prompt_kontrol.py` YÜZEY RENK KAPISI — bir promptun
+bütün blokları taranır; aynı yüzey adı (`floor` · `ground` · `wall` · `sky`
+· `hull`) **birden çok renk sıfatı** taşıyorsa BLOCK. Kontrast garantisi
+yüzeyin RENGİNİ değil, ÖZNENİN OKUNURLUĞUNU söyler.
+**TEKRAR:** 0 · 04.09.2026 THE UPWARD FALL
+
+**Kaynak:** THE UPWARD FALL · ⑪ ölçüm kapısı, 22 sahnenin ızgara şeridi
+(`grid10s.jpg`) — 0-160 s zemin KAHVERENGİ lif, 160-220 s SOLUK GRİ/KÜL.
+**Sorun:** Üç mercek (④ ⑤ ⑥) bunu "ani biyom sıçraması / ash-snow biome /
+geography break" diye 🟠 MAJOR yazdı ve üçü de **S20/S21'i kesmeyi** önerdi.
+Kusur sahnede değildi: **promptun kendi içindeydi ve 25 promptun 25'inde
+vardı.**
+
+```
+AYNI PROMPT, İKİ CÜMLE, İKİ ZEMİN:
+
+WORLD bloğu :  "The floor is a deep dry mat of fallen fibre."      → renk YOK
+LIGHT bloğu :  "The black suit reads as a clean dark silhouette
+                against the PALE GREY FLOOR; the light rims his
+                shoulders so the figure never merges with the
+                background."                                        → renk VAR
+
+→ Model ilk yarıda WORLD'e, ikinci yarıda LIGHT'a sadık kaldı.
+  İki cümle iki sadakat; kurgu ortasında dünya değişti.
+```
+
+⭐ **MEKANİZMA — KAPININ KENDİSİ KUSURU ÜRETTİ.** O LIGHT cümlesi bir QA
+önlemidir: SPEC'in `KAPI ⑦ KONTRAST` maddesi, mat siyah giysinin karanlıkta
+kaybolmasını engellemek için yazıldı (Blind Berth "iki siyah gövde" emsali).
+Önlem doğruydu; **yazıldığı yer yanlıştı.** Kontrastı garantilemek için
+zemine bir renk verildi, ve o renk WORLD bloğunun tarifiyle çarpıştı.
+Bir kalite kapısı, koruduğu filmde bir devamlılık kusuru üretti.
+
+⛔ Bu [[D174]]'ün kardeşidir: orada aynı promptta iki cümle **yöne** iki
+farklı sadakat üretti, burada **renge**. Ortak kural: *bir promptta bir
+şeyin iki tarifi varsa, model ikisini de üretir — sırayla.*
+
+**ÇÖZÜM — KONTRAST GARANTİSİ ÖZNEYİ TARİF EDER, ZEMİNİ DEĞİL:**
+
+```
+✗  "The black suit reads as a clean dark silhouette against the pale
+    grey floor; the light rims his shoulders..."
+
+✅ "A low rim light separates his shoulders and helmet from whatever is
+    behind him; his silhouette never merges with the background."
+       → aydınlatma iddiası. Hiçbir yüzeye renk atamıyor.
+
+✅ Zeminin rengi TEK yerde, WORLD bloğunda, TEK cümlede durur ve
+   SPEC C bloğuna da o cümleyle yazılır:
+       "The floor is a deep dry mat of fallen fibre, pale grey-brown."
+```
+
+⭐ **VE QA TARAFI:** kontrast KAPISI promptla değil ÖLÇÜMLE koşulur —
+`olcum_kapisi.sh` KAPI ⑦ (YMAX − YMIN ≥ 110). Promptta yazılan kontrast
+garantisi bir ölçüm değil, bir renk ataması olur.

@@ -220,6 +220,20 @@ KADEMELER (her biri hem dramaturji basamağı hem KART 2 risk basamağı):
        bilinçliydi" savunması geçersiz (geriye dönük kayıt kuralı).
   Tohum film başına EN FAZLA 1; ana vuruşu gölgelememeli (FINAL'in
   tohum bilgi %10-15 bandı burada da geçerli).
+□ ⛔ KADRAJIN GÖRMEDİĞİNİ TARİF ETME — K0-K2 SAHNELERİNDE ANATOMİ SAYISI
+  YAZILMAZ (04.09.2026 · THE UPWARD FALL, kılavuzun ilk ölçülmüş vakası).
+  Bir sahnenin NEGATIVE'i "no second limb · no body · no head" diyorsa,
+  AYNI promptun WORLD ya da CHARACTER bloğu varlığın TAM anatomisini
+  veremez. Model kadraj dışını tarif eden cümleyi yasak değil ENVANTER
+  olarak okur ve envanterden çizer.
+    ✗ WORLD: "it has one body and FOUR long limbs, it never comes to
+              the ground"   +  SCENE: "ONE single limb comes down"
+       → ekranda İKİ sütun uzuv, tabanları zemine BASIYOR (bacak okunur)
+    ✅ WORLD: "something large lives in that canopy; it moves only down
+              and up."      ← davranış var, SAYI yok
+    ✅ Uzuv/göz/baş/diş SAYISI yalnız K4 sahnesinde yazılır; K0-K3'te
+       yalnız KADRAJIN GÖRDÜĞÜ parça tarif edilir.
+  🔗 Aynı aile: aynı promptta iki cümle → iki sadakat [D174 · D176].
 ```
 
 ---

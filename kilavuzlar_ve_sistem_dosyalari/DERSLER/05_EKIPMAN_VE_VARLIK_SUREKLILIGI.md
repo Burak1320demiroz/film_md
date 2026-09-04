@@ -647,3 +647,70 @@ tarp [D128 akrabası — metafor değil, düz tarif bile dönüşüyor].
 > SAHNE_DEVAMLILIK_KILAVUZU (karakter çapalama — bu ders SETİ çapalar).
 
 ---
+
+---
+
+## 🔴 DERS 175: MÜHRÜ D169'UN KENDİ CÜMLESİ DELDİ — "THROUGH THE GLOVE" MODELE DERİYİ ÇİZDİRDİ, VE ÇIPLAK-DERİ YASAĞI YALNIZ YAKANIN ÜSTÜNÜ KAPATIYORDU
+
+**KAPI:** BETİK · `prompt_kontrol.py` MÜHÜR KAPISI — mühürlü giysili filmde
+her prompt taranır: gövde adı (`forearm` · `wrist` · `arm` · `neck` · `ankle`
+· `shoulder`) geçen her cümlede **±12 kelime içinde** bir örtü adı
+(`sleeve` · `cuff` · `suit` · `glove` · `seal`) ZORUNLU; ayrıca çıplak-deri
+negatifi **üç bölge birden** yazılmadan geçmez (`above the collar` +
+`at the wrist` + `at the ankle`). Tek bölge yazan negatif BLOCK.
+**TEKRAR:** 0 · 04.09.2026 THE UPWARD FALL
+
+**Kaynak:** THE UPWARD FALL · ⑪ ölçüm kapısı, 195-198 s'nin dört karesi
+(`kol_195..198.jpg`) — S22 FIVE CUTS, filmin **MERKEZİ SEÇİM** sahnesi.
+**Sorun:** 3,2 atm solunamaz atmosferde, kaskı 25/25 kapalı bir adamın
+**önkolu bilekten yukarısı çıplak deri** olarak üretildi. Sekiz merceğin
+sekizi de gördü ve hiçbiri yazmadı — ① rubriğinin `SEAL COUNT` maddesi
+("report any bare skin that appears with the second it appears") o sahnede
+hiç işletilmedi; ① aynı kareye yalnız "el bıçak sapıyla eriyor" yazdı.
+
+⭐ **MEKANİZMA — DERSİN KENDİ REÇETESİ ARIZAYI ÜRETTİ.** [[D169]] efor
+kanalı sözlüğünün ÖNKOL satırı şudur ve S22'de **birebir** kullanıldı:
+
+```
+D169 · ÖNKOL kanalı:   "the forearm tendons stand out through the glove"
+S22 video promptu:     "the forearm tendons stand out through the glove"
+```
+
+`through the glove` bir eldiven tarifi değil, bir **saydamlık** tarifidir.
+Model tendonu görünür kılmak için eldiveni değil DERİYİ çizdi. Yanına da
+görsel promptun şu iki cümlesi düştü:
+
+```
+"In this frame only his two gloved hands and forearms are in shot."
+      → `gloved` yalnız HANDS'e bağlı; `forearms` örtüsüz kaldı
+"the left forearm carries a thin pale scratch along its outer side"
+      → YIPRANMA KİLİDİ gövdeye yazıldı. Çizik bir DERİ işaretidir;
+        giysi yüzeyine yazılsaydı ("a thin pale scratch on the left
+        SLEEVE of the suit") aynı kilit mühre dokunmazdı.
+```
+
+Üç cümle de tek başına masum; üçü bir arada mühürsüz bir kol tarif ediyor.
+
+⛔ **VE YASAK NEDEN TUTMADI:** depodaki çıplak-deri negatifi tek bölgeliydi —
+`no bare skin above the collar`. İhlal **bilekte** oldu. Bu [[D171]]'in
+mekanizmasının ekipman tarafındaki hâlidir: *"şu yerlere iyi bak" diyen
+kilit, ihlali o yerlerin dışında gizler.*
+
+**ÇÖZÜM — ÜÇ SATIR:**
+
+```
+① D169'un ÖNKOL kanal cümlesi mühürlü filmde DEĞİŞİR — zorlanma
+   ELDİVENİN ÜSTÜNDE okunur, derinin üstünde değil:
+      ✗  "the forearm tendons stand out through the glove"
+      ✅ "the glove's ribbed segments tighten and lift over the tendons"
+      ✅ "the sleeve's fabric draws taut along the forearm on each stroke"
+
+② YIPRANMA KİLİDİ GİYSİ YÜZEYİNE YAZILIR, GÖVDEYE DEĞİL:
+      ✗  "a thin pale scratch on the left forearm"
+      ✅ "a thin pale scratch on the left forearm SLEEVE of the suit"
+
+③ ÇIPLAK-DERİ NEGATİFİ ÜÇ BÖLGELİDİR, her insanlı promptta:
+      NEGATIVE: no bare skin anywhere — none above the collar, none at
+      the wrists between glove and sleeve, none at the ankles between
+      boot and leg; every seam is closed and every seal ring is visible.
+```

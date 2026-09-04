@@ -422,7 +422,7 @@ Cairn sayacı gibi: geriye gitmez, sıçramaz, faz değişimi yalnız sahneler A
 ## 🔴 DERS 169: 25 SAHNELİK BİR FİZİKSEL İŞ FİLMİNDE ZORLANMA SÖZLÜĞÜ TEK SAHNEDE VARDI — DÜŞÜK YERÇEKİMİ AĞIRLIĞI AZALTIR, ATALETİ AZALTMAZ
 
 **KAPI:** BETİK · `prompt_kontrol.py` ⑳ ZORLANMA KANALI (efor sahnesinde gövde tepkisi cümlesi var mı) — 02.09.2026
-**TEKRAR:** 1 · 02.09.2026 THE SINKING STAKE
+**TEKRAR:** 2 · 02.09.2026 THE SINKING STAKE · ⚠️ 04.09.2026 THE UPWARD FALL — ters yönde: efor sözlüğü UYGULANDI (8 sahnede 2 kanal) ama ÖNKOL kanal cümlesi (`the forearm tendons stand out through the glove`) mühürlü giysili filmde **çıplak deri** ürettirdi → cümle [[D175]] ile değişti
 
 **Kaynak:** THE SINKING STAKE prompt dosyaları (02.09.2026) — **kendi
 belgemizden sayıldı, rapordan değil.** 25 sahne, 25 TIMELINE, iki bölüm

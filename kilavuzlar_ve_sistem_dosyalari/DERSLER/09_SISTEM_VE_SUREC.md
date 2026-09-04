@@ -579,7 +579,7 @@ lake; nothing reflects in it.
 ## 🔴 DERS 165: ARAÇ YAZILDI, KOŞACAK KART YOKTU — QA PAKETİ FİLMİN YAZIMINDA ÜRETİLİR, QA ANINDA DEĞİL
 
 **KAPI:** BETİK · `yeni-film` Kart A §4 → `qa-isle/scripts/rubrik_paketle.sh <film klasörü>` · paket klasörü yoksa film "yazımı tamam" DEĞİLDİR [D117'nin kardeşi]
-**TEKRAR:** 1 · 02.09.2026 THE SINKING STAKE — sekiz mercek yine mod V koştu
+**TEKRAR:** 2 · 02.09.2026 THE SINKING STAKE (paket YOKTU) · ⭐ 04.09.2026 THE UPWARD FALL — **paket VARDI** (`FILME_OZEL/THE_UPWARD_FALL/PAKET_1..8`) ve sekiz mercek yine mod V koştu. → Arıza yer DEĞİŞTİRDİ: "paket yok" değil, **"paket var ama operatör rubriği açıyor"**. Bir sonraki dönüşüm paketi rubriğin YERİNE koymalıdır (çıplak rubrik dosyası operatörün göreceği yerde durdukça yapıştırılacak olan odur)
 
 > ⛔ **02.09.2026 · İKİNCİ VAKA VE SEBEBİ BULUNDU — KAPI SATIRI ARACIN
 > KENDİSİNE İNMEMİŞTİ.** Ders 01.09'da yazıldı; ertesi gün yazılan
@@ -642,7 +642,7 @@ SPEC değişirse betik yeniden koşulur (paket elle düzenlenmez).
 ## 🔴 DERS 168: ÜRETİM SIRASI DRAMATİK SIRAYLA AYNIYSA, YARIDA KALAN FİLM KENDİNİ SAVUNAMAZ — 14 KLİP ÜRETİLDİ VE ÜÇÜNCÜ PERDE HİÇ VAR OLMADI
 
 **KAPI:** LİSTE · `03_PLAN_ONCESI_KONTROL_LISTESI.md` B5 (yeni madde: ÜRETİM SIRASI) — 02.09.2026
-**TEKRAR:** 1 · 02.09.2026 THE SINKING STAKE
+**TEKRAR:** 2 · 02.09.2026 THE SINKING STAKE · 04.09.2026 THE UPWARD FALL — ⭐ bu vakada ÜRETİM SIRASI **plana yazılmıştı** ("1. DORUK S24") ve S24 yine teslim edilmedi. Liste maddesi PLANI bağlıyor, ÜRETİMİ bağlamıyor: kapı plan tarafında koşuyor, teslim tarafında hiçbir şey S24'ün varlığını sormuyor → ④ KURGU KAPISI'nın FİNAL VURUŞ KANITI satırı [[D141]] bunun tek ölçüm aleti
 
 **Kaynak:** THE SINKING STAKE (02.09.2026) — üretim bir politika reddi
 yüzünden yarıda bırakıldı. Dosya sisteminden ölçüldü: 25 sahnenin ~14'ü

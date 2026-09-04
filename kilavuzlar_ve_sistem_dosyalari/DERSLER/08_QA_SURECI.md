@@ -1577,6 +1577,13 @@ rebuild yours from the footage and say so.
 
 ## 🔴 DERS 111: DERS BİR RUBRİĞE YAMANDI, KARDEŞLERİ TARANMADI — AYNI HATA AYNI GÜN İKİNCİ RUBRİKTE TEKRARLADI; ÜSTELİK YASAK KILAVUZDA YAZILIYDI VE MODEL O KILAVUZU HİÇ GÖRMÜYOR
 
+**KAPI:** BETİK · `rapor_kontrol.py` MERCEK YOKLAMASI [[D178]] — partide hangi
+mercekler var, hangi ZORUNLU mercek eksik (FİLM ①②③④ · FRAGMAN ①) — 04.09.2026
+**TEKRAR:** 1 · 04.09.2026 YERÇEKİMİ FRAGMAN — bu kez rubrik fragmanı film
+sanmadı; **fragmanın zorunlu merceği (①) HİÇ KOŞMADI** ve onun yerinde başka bir
+filmin raporu duruyordu. Kapı "yanlış mercek koşuldu"yu görüyor, "mercek hiç
+koşmadı"yı görmüyordu.
+
 **Kaynak:** THE COLD BURN — FRAGMAN DİKEY · 17.08.2026 · SENARYO_QA mod V ·
 `FILM_QA_RAPORLARI/02_HAM_RAPORLAR/THE_COLD_BURN_FRAGMAN_SENARYO_HAM.md`
 **Sorun:** D106 aynı gün yazıldı, TEK rubriğe (SHORTS) işlendi; hata ertesi
@@ -2270,7 +2277,7 @@ arka plan nesnesi adlandırılır, yoksa "none" yazılır.
 ## 🔴 DERS 129: SPEC DOSYASI FİLMİN KENDİ KLASÖRÜNDE DURURKEN BEŞ MERCEK DE MOD V KOŞULDU — KESME LİSTESİ DORUĞU, KAPAK KARESİNİ VE İKİ VİRALİ KESTİ
 
 **KAPI:** KARAR · `rubrik_paketle.sh` (QA_PROMPTLARI/FILME_OZEL/<FILM>/) + `rapor_kontrol.py` ① SPEC kapısı (mod V → TEKRAR) — 01.09.2026
-**TEKRAR:** **11 film** · son vaka 02.09.2026 (THE SINKING STAKE, **sekiz mercek** — sebep: FILME_OZEL paketi yoktu [D165]) · ⛔ ÇALIŞMIYOR → araca çevrildi ama araç KOŞULMADI: paket ancak QA anında, `qa-isle` açılırsa üretiliyordu; film 01.09'da yazıldı, paketi hiç doğmadı, ertesi gün operatörün elinde yapıştıracak paket yoktu → **[[D165]]** aracı filmin YAZIMINA bağlar
+**TEKRAR:** **12 film** · son vaka 04.09.2026 (THE UPWARD FALL, **sekiz mercek** — bu kez paket VARDI, bkz. [[D165]]) · önceki 02.09.2026 (THE SINKING STAKE, **sekiz mercek** — sebep: FILME_OZEL paketi yoktu [D165]) · ⛔ ÇALIŞMIYOR → araca çevrildi ama araç KOŞULMADI: paket ancak QA anında, `qa-isle` açılırsa üretiliyordu; film 01.09'da yazıldı, paketi hiç doğmadı, ertesi gün operatörün elinde yapıştıracak paket yoktu → **[[D165]]** aracı filmin YAZIMINA bağlar
 
 **Kaynak:** THE ROSE COAT · 26.08.2026 · beş mercek ·
 `FILM_QA_RAPORLARI/01_FILM_RAPORLARI/THE_ROSE_COAT.md`
@@ -2709,7 +2716,7 @@ only one of them is a delivery defect.
 ## 🔴 DERS 137: SES KANALI VAR, ALTI MERCEĞİN ALTISI "HİÇ SES BİLGİSİ YOK" DEDİ — D136'NIN YAMASI TAKILIYDI VE ARIZA TERSİNE DÖNDÜ
 
 **KAPI:** BETİK · `olcum_kapisi.sh` SES KANALI + `rapor_kontrol.py` (AUDIO STATE bir beyandır, ölçüm sayılmaz) — 01.09.2026
-**TEKRAR:** 4 · araç zaten vardı; rapor beyanı ölçümün yerine geçmesin diye künye kuralı eklendi (rubrik_paketle künyesi)
+**TEKRAR:** 5 · son vaka 04.09.2026 THE UPWARD FALL — AAC 48 kHz, −16,1 LUFS, sessizlik aralığı YOK; **sekiz merceğin sekizi** "nothing audible to me" yazdı ve ③ hiçbir kategoriye sayı koymadı. Araç zaten vardı, koşulmadı → [[D177]] ölçümü rapor işlemenin ÖNKOŞULU yaptı
 
 **Kaynak:** THE THIN ROOF QA (28.08.2026) — altı mercek, altısı da mod V
 **Sorun:** D136'nın tam TERSİ, aynı yamayla, bir sonraki filmde
@@ -2784,7 +2791,7 @@ ekseni ölçülmedi` olur.
 ## 🔴 DERS 150: ÜRETİCİ FİLİGRANI 315 SANİYENİN 315'İNDE DURUYORDU — ⑤ 31 SAHNEDE "EDGES: CLEAN" YAZDI, ① KUTUYU İŞARETLEMEDİ; KÖŞE TESTİ MAKİNE KAPISINA
 
 **KAPI:** BETİK · `olcum_kapisi.sh` KÖŞE TESTİ (kose_SA.png) + `rapor_kontrol.py` ⑤ SUSKUNLUK — 01.09.2026
-**TEKRAR:** 2 · 01.09.2026 THE COLD WELD ÖLÇÜLDÜ ve filigran DOĞRULANDI (sağ alt çeyrek, 6/6 örnek, cyan üçgen; merkez 4K'da ≈3450,1800 — köşeden %10/%17 içeride). ⚠️ Kapının ilk sürümü SABİT 360×240 kırpıyordu ve KAÇIRDI; 01.09.2026'da DÖRT ÇEYREĞE çevrildi (`olcum_kapisi.sh`). ⛔ %3 crop yetmez: temizlik kadraj genişliğinin %12'sini götürür.
+**TEKRAR:** **3** · ⛔ ÇALIŞMIYOR → dönüştürme borcu [[D177]] ile ÖDENDİ (ölçüm sonucu artık `rapor_kontrol.py`'ye bayrakla girer; verilmezse eksen "ÖLÇÜLMEDİ" yazar). 3. vaka 04.09.2026 THE UPWARD FALL: cyan "▷" sağ alt çeyrekte 7/7 örnek, 225/225 saniye — **sekiz merceğin sekizinde bulgu 0**, ⑤ 20 sahneye `EDGES: Clean` yazdı; ⑤ SUSKUNLUK kapısı sıfır iddiada ateşlenemedi. 2. vaka 01.09.2026 THE COLD WELD ÖLÇÜLDÜ ve filigran DOĞRULANDI (sağ alt çeyrek, 6/6 örnek, cyan üçgen; merkez 4K'da ≈3450,1800 — köşeden %10/%17 içeride). ⚠️ Kapının ilk sürümü SABİT 360×240 kırpıyordu ve KAÇIRDI; 01.09.2026'da DÖRT ÇEYREĞE çevrildi (`olcum_kapisi.sh`). ⛔ %3 crop yetmez: temizlik kadraj genişliğinin %12'sini götürür.
 
 **Kaynak:** THE SKYLIGHT (29.08.2026) — master köşe şeridi (`crop=360:240:iw-360:ih-240,
 fps=1/30,tile=6x2`): 11 örneğin 11'inde sağ altta aynı "▷" ikonu; altı raporun
@@ -3653,3 +3660,147 @@ söküp atmak değil, tie-break eklemek gerekiyor.
 > 🔗 Ders 163 (şerit sıra eksenini ölçmez) · Ders 135 (sapan mercek önce kendi
 > envanteriyle karşılaştırılır) · Ders 162 (⑤ mutabakatı ölçer, suskunluğu
 > ölçmez) · Ders 125 (komut satırında cevabı duran soru modele sorulmaz)
+
+---
+
+## 🔴 DERS 177: SUSKUNLUK KAPISI SIFIR İDDİADA ATEŞLENMEZ — SEKİZ MERCEK BİRDEN SUSTU VE 225 SANİYELİK FİLİGRAN HEM SEKİZ MERCEKTEN HEM BETİKTEN ÇIKTI
+
+**KAPI:** BETİK · `rapor_kontrol.py` yeni bayrak `--olcum-filigran VAR|YOK`
+(+ `--olcum-lufs`) — ⑪ ölçümünün KÖŞE TESTİ sonucu verilmezse **her satır**
+⚠️ alır ve "filigran ekseni ÖLÇÜLMEDİ" yazar; `VAR` verilirse parti
+🔴 TESLİM KUSURU olur ve hiçbir mercek yeniden koşulmadan master yeniden
+ihraç edilir. Kesme/sahne sayısı için zaten var olan hakemliğin aynısı.
+**TEKRAR:** 0 · 04.09.2026 THE UPWARD FALL
+
+**Kaynak:** THE UPWARD FALL QA (04.09.2026) — sekiz mercek, tek oturum.
+`olcum_kapisi.sh` KÖŞE TESTİ: sağ alt çeyrekte cyan "▷" ikonu, 0→210 s
+arası **yedi örneğin yedisinde** aynı yerde (`q_filigran.png`).
+**Sorun:** Sekiz raporun sekizinde filigran bulgusu **0**. ⑤ ARKA PLAN
+21 sahnenin 20'sine `EDGES: Clean` yazdı — kendi rubriği "a static mark in
+the same corner in every scene IS a watermark; 'Clean' may not be written
+for an edge while a static mark stands on it" derken.
+
+⭐ **MEKANİZMA — [[D162]]'NİN KAPISININ SORUSU YOKTU.** SUSKUNLUK kapısı
+şunu sorar:
+
+```
+"Bir mercek film boyu bir ihlal İDDİA ETTİ mi? Ettiyse SAHİBİ ne dedi?"
+   iddia var + sahip sustu  → 🚨 SUSKUNLUK, kareyle çözülür
+   iddia var + sahip aynı   → doğrulandı
+   İDDİA YOK                → kapı hiç çalışmaz  ← BURASI
+```
+
+Kapı **mutabakatsızlığı** ölçüyor. Sekizi birden susunca ortada
+mutabakatsızlık yok, sadece sessizlik var — ve sessizlik kapının girdisi
+değil. [[D150]] bu yüzden üçüncü kez tekrarladı: aynı arıza Skylight'ta
+altı mercekten, Frost Line'da bir kez daha, burada sekiz mercekten çıktı.
+
+⛔ **VE ARIZA TEK BAŞINA DEĞİL:** aynı koşuda ölçümün gördüğü, sekiz
+merceğin hiçbirinin görmediği ÜÇ eksen daha vardı:
+
+```
+FİLİGRAN   7/7 örnekte aynı köşede            → 8/8 mercek: yok
+SES        AAC 48 kHz · −16,1 LUFS ·          → 8/8 mercek: "nothing
+           sessizlik aralığı YOK                 audible to me" [[D137]] 5. vaka
+LOUDNESS   peak 0,0 dBFS (kilit −1,0 dBTP)    → hiçbir mercek ölçemez
+KUYRUK     220,13 s'den sona donuk kart       → 8/8 gördü ama FLAGS'a
+                                                 soru olarak yazdı, ihlal olarak değil
+```
+
+Dördü de **DOSYA ÖZELLİĞİDİR**; hiçbir mercek onları gözlemleyemez. Modele
+"daha dikkatli bak" demek, [[D137]]'nin yazdığı gibi, aynı hatanın kibar
+hâlidir. Çözüm modele değil, **girdiye** yazılır.
+
+**ÇÖZÜM — ÜÇ SATIR:**
+
+```
+① rapor_kontrol.py'ye DÖRT ölçüm bayrağı: --olcum-kesme · --olcum-sahne
+   (var) + --olcum-filigran VAR|YOK · --olcum-lufs <I>/<peak> (yeni).
+   Verilmeyen eksen "ÖLÇÜLMEDİ" yazar; UYDURULMAZ.
+② qa-isle §1: olcum_kapisi.sh çıktısı film kaydına yapıştırılmadan
+   ①.5 betiği KOŞULMAZ. Ölçüm, raporların ÖNKOŞULUDUR — yan bilgi değil.
+③ TESLİM KUSURU ≠ RAPOR BULGUSU. Filigran · kuyruk kartı · LUFS/tepe:
+   üçü de master'ı geçersiz kılar. Master yeniden ihraç edilmeden
+   mercekler yeniden koşulmaz; koşulan mercek o master'ı ÖLÇMEMİŞTİR.
+```
+
+---
+
+## 🔴 DERS 178: ÖLÇÜM HAKEMLİĞİ, BAŞKA BİR FİLMİN RAPORUNU "SAPAN MERCEK" DİYE KURTARDI — 21↔13 BİR SAYIM HATASI DEĞİL, KİMLİK HATASIDIR
+
+**KAPI:** BETİK · `rapor_kontrol.py` iki yeni denetim — ⑤'e **BÜYÜKLÜK TESTİ**
+(ölçümden sapma > %25 ya da > 5 kesme → rapor `⚠️ ŞARTLI` değil
+**🚨 UNATTRIBUTED**: "başka bir malzemeye koşulmuş olabilir → ③ kimlik
+kapısını koş") ve **MERCEK YOKLAMASI** (partide hangi mercekler var, hangi
+ZORUNLU mercek eksik — fragmanda ①, filmde ①②③④). — 04.09.2026
+**TEKRAR:** 0 · 04.09.2026 YERÇEKİMİ FRAGMAN
+
+**Kaynak:** YERÇEKİMİ YATAY FRAGMAN QA (04.09.2026) — operatör **yedi rapor**
+yapıştırdı; **beşi bir önceki filmin (THE UPWARD FALL) raporuydu**, ikisi
+gerçekten fragmanındı. İkisi de künyesinde film adını yazıyordu
+(`FILM: the upward fall.mp4`).
+**Sorun:** Kapı beşini de kurtardı ve partiyi ayakta tuttu.
+
+```
+ÖLÇÜM (olcum_kapisi.sh):  145,00 s · 14 sahne · 13 kesme
+RAPORLAR:                  ⑤ 13 · ⑥ 13  │  ① 21 · ② 21 · ③ 21 · ⑦ 21 · ⑧ 21
+                                          └─ hepsi 226 s'lik BAŞKA bir filmin
+
+rapor_kontrol.py çıktısı:
+  ⚠️ ⑤ ölçümden sapan mercek(ler): ① 21 · ② 21 · ③ 21 · ⑧ 21 · ⑦ 21
+       parti AYAKTA — anlaşmazlık ölçümle çözüldü; yalnız sapan mercek şartlıdır
+  TOPLAM 7 rapor · 🚨 1 GEÇERSİZ · ⛔ 0 TEKRAR · ⚠️ 6 ŞARTLI · ✅ 0 GO
+```
+
+⭐ **MEKANİZMA — D107'NİN YERİNE GEÇEN D125 FAZLA İYİ ÇALIŞTI.** [[D107]]
+"fark > 1 → parti GEÇERSİZ" diyordu ve bu KABA idi: bir merceğin iki kesme
+şaşması bütün partiyi düşürüyordu. [[D125]] ölçümü hakem yaptı ve kuralı
+yumuşattı: *"rapor ile ölçüm çelişirse ÖLÇÜM kazanır; yalnız o merceğin
+satırı ŞARTLI olur."* Doğru düzeltmeydi — ama **BÜYÜKLÜKTEN habersiz**:
+
+```
+2 kesme fark   = mercek yanlış saydı        → ŞARTLI, parti ayakta   ✅
+8 kesme fark   = mercek BAŞKA FİLME baktı   → ŞARTLI, parti ayakta   ✗✗✗
+```
+
+Kapı ikisini aynı kelimeyle yazıyor. Ve "ŞARTLI" bir raporu ARŞİVE değil
+TABLOYA yakın tutar: düzeltilmiş ortalamayla girmeye adaydır.
+
+⛔ **VE İKİNCİ DELİK: HİÇBİR KAPI HANGİ MERCEKLERİN KOŞTUĞUNU SAYMIYOR.**
+[[D111]] fragmanın merceğini ① KARE diye kilitler. Bu partide ①'in yerinde
+başka bir filmin raporu vardı → **fragmanın zorunlu merceği hiç koşmadı** ve
+hiçbir satır bunu söylemedi. Bedeli ölçüldü:
+
+```
+84 s'de ÜÇÜNCÜ ASTRONOT — 81 s'de 2 figür, 84 s'de 3, 88 s'de yine 2.
+Klip İÇİNDE doğan ve sönen bir duplike; filmde insan sayısı 2, plan
+KART 4 "kadro 2" yazıyor.
+⑤ ARKA PLAN bunu GÖRDÜ ve kendi `SUBJECTS EXCLUDED` satırına yazdı:
+    "S9: Three tethered astronauts floating."
+Sonra — kapsamı gereği DOĞRU davranarak — özneyi puanlamadı.
+Sahibi ① KARE (klip içi duplike) ve ② (karakter sayımı) hiç koşmadı.
+→ 🔴 bir duplike, tam da kontaminasyonun açtığı boşluktan çıktı.
+```
+
+**ÇÖZÜM — ÜÇ SATIR, ÜÇÜ DE BETİKTE:**
+
+```
+① BÜYÜKLÜK TESTİ (⑤ çapraz kapısına): |rapor − ölçüm| / ölçüm > 0,25
+   VEYA |fark| > 5 kesme → o rapor ŞARTLI DEĞİL, 🚨 UNATTRIBUTED.
+   Satır: "başka bir malzemeye koşulmuş olabilir — ③ KİMLİK KAPISI koş".
+   Skor satırı yazılmaz, bulgudan ders yazılmaz, tabloya girmez.
+② MERCEK YOKLAMASI: betik partideki mercekleri sayar ve ZORUNLU olanı
+   eksikse basar — FİLM: ①②③④ · FRAGMAN: ① [D111].
+   "7 rapor geldi" ile "7 merceğin 7'si koştu" aynı cümle DEĞİLDİR.
+③ ⑤'İN ÖZNE SAYIMI OKUNUR: `SUBJECTS EXCLUDED` satırı sahne başına bir
+   özne yazar ve içinde SAYI geçebilir ("two/three astronauts"). Betik
+   bu sayıyı SPEC'in insan sayısıyla karşılaştırır; büyükse ② ve ①'e
+   ⬜ AÇIK madde açar. ⑤ o satırı puanlayamaz — ama yazdığı sayıyı
+   başka bir kapı okuyabilir.
+```
+
+⚠️ **VE OPERATÖR TARAFI, TEK CÜMLE:** bir partinin raporları TEK sohbette
+arka arkaya üretiliyorsa, önceki filmin çıktısı sohbette DURUYOR demektir;
+kopyalama sırasında bloklar karışır. Paket başına AYRI sohbet [D110'un
+bağımsızlık kuralı] bu arızayı da kapatır — D110 "kopya ölçüm" derdiyle
+yazılmıştı, bu vaka onun ikinci gerekçesidir.

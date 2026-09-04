@@ -282,7 +282,7 @@ masasında, teslimden önce, dört maddelik bir bakışla çözülür — ve
 ## 🔴 DERS 70: ÜRETİM KİLİTLERİ KURGUYU BAĞLAMIYOR — 48 SANİYELİK FİLM KURGUDA 64 SANİYE OLDU, JENERİK KARTI GERİ GELDİ
 
 **KAPI:** BETİK · `olcum_kapisi.sh` KUYRUK/BAŞ KART ŞÜPHESİ (freezedetect −60dB + `son_kare.jpg`) — 01.09.2026
-**TEKRAR:** 9 · son vaka 01.09.2026 (THE PAYLOAD 4:00-4:06 · THE COLD WELD 2:30-2:35) · ⛔ ÇALIŞMIYOR → araca çevrildi: "kart ekleme" cümlesi dokuz teslimde tutmadı, kapı artık betikte
+**TEKRAR:** 10 · son vaka 04.09.2026 (THE UPWARD FALL 220,13-225,11 · kart üstelik KAPAK görselidir: kahverengi ceket + baloncuk kask, filmin mat siyah kostümüyle çelişir) · önceki 01.09.2026 (THE PAYLOAD 4:00-4:06 · THE COLD WELD 2:30-2:35) · ⛔ ÇALIŞMIYOR → araca çevrildi: "kart ekleme" cümlesi dokuz teslimde tutmadı, kapı artık betikte
 
 **Kaynak:** THE FIRST MORNING SHORTS_QA koşusu (06.08.2026, MOD V) — 6/10,
 REGENERATE · `Negative Violations: 🔴 BLOCKER — title card presented at 1:00`
@@ -362,7 +362,7 @@ HOOK REVEAL KİLİDİ (dikey shorts):
 ## 🔴 DERS 72: KURGU KAPISI YATAYA GENELLENİR — PLANIN DORUĞU KURGUYA GİRMEDEN FİLM TESLİM EDİLDİ
 
 **KAPI:** BETİK · `olcum_kapisi.sh` KUYRUK/BAŞ KART ŞÜPHESİ — D70 ile aynı araç — 01.09.2026
-**TEKRAR:** 9 · D70 ile ortak sayaç · ⛔ ÇALIŞMIYOR → araca çevrildi (01.09.2026)
+**TEKRAR:** 10 · D70 ile ortak sayaç · 04.09.2026 THE UPWARD FALL: planlı DORUK S24 kurguya hiç girmedi (⑪ + kare ile doğrulandı) · ⛔ ÇALIŞMIYOR → araca çevrildi (01.09.2026)
 
 **Kaynak:** THE UNBROKEN CITY dört mercek QA (06.08.2026, dördü mod V) —
 senaryo Karakter 4/10 ("the astronaut makes zero choices") · mantık

@@ -410,3 +410,44 @@ gibi görünüyor.
 GÖRDÜĞÜNÜ anlatır. Ses post'tadır ve filmin kendi kuralı zaten bunu
 söylüyor ("on iki sahne SESSİZ üretilir"). Beat "3s — ses şunu der"
 değil, "3s — gözleri bir kez oynar ve durur" olur.
+
+---
+
+## ADAY-8 — WORLD BLOĞU CANLIYI BÜTÜN OLARAK TARİF EDİNCE, TEK-UZUV KADRAJI İKİ BACAK ÜRETTİ
+
+**Kaynak:** THE UPWARD FALL · ⑪ ölçüm kapısı, 186 s karesi (`q_canli.jpg`)
+**Vaka:** 1 (04.09.2026) — kural: 3 vaka olmadan belge revizyonu, ders değil.
+**KAPI:** ⬜ yok — bu yüzden ADAY. Aday kapı: `prompt_kontrol.py` KISMİ
+REVEAL KAPISI — NEGATIVE'inde `no second limb` / `no body` / `no head`
+geçen bir sahnenin WORLD ya da CHARACTER bloğu **uzuv SAYISI yazamaz**.
+
+```
+S21 promptu, aynı dosyada, üç yerde:
+
+WORLD    "One large animal lives in that canopy: it has one body and
+          FOUR LONG LIMBS, it moves only down and up, and it NEVER
+          COMES TO THE GROUND."                          ← bütün anatomi
+SCENE    "ONE SINGLE grey-green limb ... comes down out of the top of
+          the frame and ends level with his chest"       ← tek uzuv
+NEGATIVE "Only one limb is in frame: no body, no head, ... no second
+          limb ... Nothing touches him"                  ← yasak
+
+EKRAN (186 s): İKİ kalın sütun uzuv, tabanları kütüğe/zemine BASIYOR,
+               ayak gibi genişleyen uçlarla — yani BACAK okunuyor.
+               SPEC C: ANATOMY LOCK `0 bacak · 0 baş · YÜRÜME 0 adım`.
+```
+
+**Hipotez:** reveal merdiveni (K0-K4) SAHNE bloğunda kurulurken, WORLD
+bloğu aynı promptta canlının TAM anatomisini veriyor. Model kadraj dışını
+tarif eden cümleyi bir yasak değil bir **envanter** olarak okuyor ve
+envanterden çiziyor. Negatif listesi "no second limb" dese de, sayı zaten
+promptun içinde yazılı.
+
+**Belge tarafı (önce bu, ders sonra):**
+`UZAYLI_VARLIK_TASARIM_KILAVUZU.md` reveal merdiveni bölümüne tek kural —
+*K0-K2 sahnelerinde WORLD bloğu canlıdan yalnız KADRAJIN GÖRDÜĞÜ kadarını
+tarif eder; uzuv/göz/baş SAYISI yalnız K4 sahnesinde yazılır.*
+Kılavuz 03.09.2026'da açıldı; bu onun ilk ölçülmüş vakası.
+
+🔗 [[D175]] (mühür) ve [[D176]] (zemin rengi) ile aynı aile: **aynı promptta
+iki cümle, iki sadakat** — [[D174]]'ün mekanizması, bu kez anatomide.
