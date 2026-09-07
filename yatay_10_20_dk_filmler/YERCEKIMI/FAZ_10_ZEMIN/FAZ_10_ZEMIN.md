@@ -63,14 +63,16 @@ Köprü: S109 DIŞTAN açılır — iç orta (G) → dış çok geniş (J), WS �
    ⚠️ GERÇEK KURGU 19:20 — dört yuva boş (S8 · S15 · S69 · S70);
      116 klip × 10 s. Nominal ızgara PROMPT zamanıdır, kurgu değil.
 
-⛔ ÖLÇÜM BORCU — TEK AÇIK SAYI [D125 · ortak adım ⑪]:
-   F1-F6 makaralarının klip süresi bu depoda HİÇ ÖLÇÜLMEDİ. F6 rubriği
-   "roughly 8 seconds" yazar ama o satır PLANDAN geldi, ölçümden değil.
-   Üretilmiş fazlar 8 s çıkarsa film İKİ IZGARALI olur ve buradaki
-   MUTLAK zamanlar kayar (sahne sırası, beat'ler ve kilitler etkilenmez).
-   Cevabı bir komut veriyor, modele sorulmaz:
+✅ 06.09.2026 · ÖLÇÜM BORCUNUN BU YARISI KAPANDI [D125 · ortak adım ⑪]:
+   F7 makarası ölçüldü — **12 segment · 120 s · klip 10,0 s**, hepsi
+   0,3 s bandında. Bu dosyanın 10 s ızgarası DOĞRULANDI.
+   ⭐ VE BU, S117'NİN ÖLÇEKLENMİŞ KABUL ÖLÇÜTÜNÜ (aşağıda) DOĞRULAR:
+     klip gerçekten 10 s, dolayısıyla "on saniyede en az yedi adım"
+     doğru sayıdır ve sekiz saniyelik eski ölçüt geçersizdir.
+   Kaynak: ../FAZ_07_SES/FAZ_07_QA_DERSLER.md
+⚠️ AÇIK KALAN YARISI: F1-F6 makaraları hâlâ ölçülmedi. 8 s çıkarlarsa
+   filmin toplam süresi ve kurgu kapısı (④) o sayıyla koşar:
      ffprobe -v error -show_entries format=duration -of csv=p=0 <makara>
-   Ölçülünce bu blok kapanır ve kurgu kapısı (④) O sayıyla koşar.
 
 🔧 BU FAZDA AYRICA — BİR SAYISAL KİLİT ÖLÇEKLENDİ:
    ⭐ S117 ÇEHOV 2 (saat kurulur) kabul ölçütü KLİBE bağlıydı:
@@ -84,16 +86,25 @@ Köprü: S109 DIŞTAN açılır — iç orta (G) → dış çok geniş (J), WS �
      döngü kanıtı (ilk kare ↔ son kare) etkilenmez, güçlenir.
 ```
 
-# 🔧 03.09.2026 · ÜRETİM ÖNCESİ TARAMA — TEMİZ (kayıt)
+# 🔴 03.09.2026 TARAMASI ÇÜRÜDÜ — 06.09.2026 ÖLÇÜMÜ
 
 ```
-✅ F5/F6 gömülü-altyazı dersi bu faza tarandı [F7/F8 kayıt blokları]:
-   tırnaklı cümle 0 · sesi anlatan beat satırı 0 · replik 0.
-   Değişiklik GEREKMEDİ; kaydı olmayan denetim koşulmamış sayılır
-   diye bu blok yazıldı [D74].
+03.09'da bu dosyaya "tırnaklı cümle 0 · sesi anlatan beat 0 · replik 0
+→ değişiklik GEREKMEDİ" yazmıştım.
+⛔ F7 makarası tam olarak bu üç şartı sağlıyordu ve **yedi gömülü
+  altyazı** çıkardı; yedisi de uydurma cümleydi, ikisi repliksiz
+  sahnedeydi. Prompt temizliği altyazıyı ÖNLEMİYOR [K1].
+⚠️ "Replik 0" hâlâ doğru ve hâlâ değerli, ama bir garanti değil.
 ✅ S69/S70 iptali bu fazı ETKİLEMİYOR [FAZ_06 kaydı ③]: saat zinciri
    S111-S117 ödemesiyle burada kapanıyor; S70 zincirin orta vuruşuydu,
    kilidi değil.
+🔴 AMA S8 ETKİLİYOR VE YENİ BİR ŞEY ÖĞRENİLDİ: saatin ilk kurulumu
+   S8'di ve S8 İPTAL EDİLDİ; halkanın kendisi ise F7'de 12 klipte,
+   F8'de 10 klipte OKUNMADI. Yani S117'ye gelindiğinde izleyici
+   **durmuş saati yalnız S30 · S48 · S103'te** görmüş olacak ve
+   **oksijen halkasını hiç görmemiş** olacak. S117 saatin ödemesidir,
+   halkanın değil — zincir ayakta. Halka zinciri ise ekranda yok
+   sayılmalıdır [F7 DERSLERİ · halka bölümü].
 ```
 
 # 🔒 BU FAZIN KİLİTLERİ
@@ -151,6 +162,79 @@ KİLİT 53 — FİNAL: HELD FRAME (S120)
      dönmedi.
   ⛔ Çizgiler kadrajın ÜST ÜÇTE BİRİNDE ve figüre değmez; kimse
      onlara bakmaz.
+```
+
+# 🔴 06.09.2026 · F7 + F8 ÖLÇÜMÜNDEN GELEN ALTI KAPI
+
+```
+Kaynak: ../FAZ_07_SES/FAZ_07_QA_DERSLER.md · ../FAZ_08_AYRILIS/FAZ_08_QA_DERSLER.md
+Bunlar KİLİT değildir — kilitler fazın kendi tasarımıdır. Bunlar
+ÖLÇÜLMÜŞ kusurların kapılarıdır ve filmin SON fazına uygulanır.
+```
+
+```
+K1 ⛔ ALTYAZI: SEBEP ARAÇ, PROMPT DEĞİL — kapı YAZILMAZ
+   F5 2 · F6 3 · F7 **7** altyazı. F7'de tırnaklı cümle 0, sesi
+   anlatan beat 0'dı. Hipotez çürüdü; model kendi diyaloğunu yazıyor.
+   ⛔ Bu faza altyazı önleyici hiçbir cümle EKLENMEZ.
+   ✅ Makara gelince altyazı SAYILIR ve birebir alıntılanır.
+   ⭐ Deneyin son adımı F9/S107'de koşuluyor (`Audio:` paragrafı
+     silinerek). ⛔ **F9 SONUCU GELMEDEN BU FAZDA HİÇBİR `Audio:`
+     SATIRINA DOKUNULMAZ** — iki fazda birden değiştirilirse deneyin
+     tek değişkeni bozulur ve ikisi de ölçülemez olur.
+
+K2 ⛔ BİR BİLEĞE İKİ NESNE YAZILMAZ — ve bu fazda TEK ihlal noktası vardı
+   F7'de S81 ve S84 halkayı ve saati AYNI (SOL) bileğe yazdı; model
+   ikisini birleştirdi, saat kaldı, **halka 12 klipte 0 kez göründü**.
+   ✅ BU FAZ TARANDI: halka yalnız **S115**'te kadrajda ve orada saatle
+     birlikte. İkisi zaten AYRI bileklerde yazılıydı (saat SAĞ, halka
+     SOL — Bible doğru) ama ayrım VURGUSUZDU.
+     → S115'in SUBJECT ve NEGATIVE bloklarına ayırıcı cümle EKLENDİ
+       (bu turda): iki nesne asla aynı bilekte olmaz.
+   ⛔ Halka başka hiçbir sahneye eklenmez. S117 saatin ödemesidir.
+
+K3 ⛔ YERÇEKİMİ KİLİDİ POZİTİF EYLEMLE YAZILIR
+   F7'nin AÇILIŞ karesinde saç, promptta "lifts and holds ... instead
+   of pressing flat" yazılı olmasına rağmen AŞAĞI SARKTI — ve o kusur
+   kör denetçinin bir numaralı saati oldu.
+   → "X yerine Y" kalıbı zayıf; nesnenin NE YAPTIĞI yazılır.
+   ✅ BU FAZDA TERS YÖN GEÇERLİ ve filmin önermesini taşır (F9 KİLİT
+     46): saç aşağıda · saat kayışının ucu sarkık · kollar bir daha
+     nötr 0g duruşuna kalkmaz. ⛔ "hangs" tek başına yetmez; her
+     sahnede "lies flat / rests on the ground / does not lift at any
+     point" biçiminde POZİTİF ve SÜREKLİ yazılır. Bu üçünden birinin
+     havaya dönmesi filmin son fazında önermeyi çökertir.
+
+K4 ⛔ "DÖNMEZ / KİLİTLİ / KIMILDAMAZ" YASAĞI TEK BAŞINA TUTMUYOR
+   F7'de üç kilit aynı biçimde kırıldı (baş döndü · gözler gezindi ·
+   çark döndü) — üçü de yasak cümlesiyle korunuyordu.
+   ✅ YAZIM: önce NE YAPTIĞI pozitif olarak, yasak SONRA ve TEK KEZ.
+   ⛔ Bu faza uygulanır: S116 (yüz toprakta, hareketsizlik) · S118
+     (ayağa kalkış — F7'de S80'de kadın koltuktan ÇIKTI, oysa
+     "koltukta doğrulur" yazılıydı; bu fazın kalkışı da fazla ya da
+     eksik gidebilir, hareketin BAŞLANGIÇ ve BİTİŞ pozisyonu ayrı ayrı
+     yazılır) · S120 (held frame — hiçbir şey olmamalı).
+
+K5 ⛔ DURUM DEĞİŞTİREN SAHNE İKİ KEZ YAZILIR — İLK KARE ve SON KARE
+   F7'nin perde dönüşü (S84) TERSİNE DÖNDÜ: açılacak kapak ekranda
+   KAPANDI. Kör okuma "bir kapağı kapatıyor" diye bitti.
+   ⭐ **BU FAZIN EN KIRILGAN SAHNESİ AYNI SINIFTAN: S117.** Durmuş bir
+     saat çalışmaya başlıyor — filmin son Çehov ödemesi ve tema
+     motifi. Ters dönerse "yürüyen saati durduruyor" okunur.
+   ✅ KALIP: İLK KARE durumu SUBJECT'te · yön ve süre beat'te · SON
+     KARE durumu kapanış NEGATIVE'inde, AYNI kelimelerle.
+     → S117'nin kapanış paragrafı bu turda düzeltildi (aşağıda).
+   ⛔ Diğer durum değiştiren sahneler: S109 (iniş) · S112 (toprak) ·
+     S118 (yatay → dikey) · S119 (ilk adımlar). Dördü de bu kalıpla
+     okunur.
+
+K6 ⛔ SAHNENİN KONUSU OLAN JEST KENDİ ÖLÇEĞİNİ ALIR
+   F7'de S79'un tik eli COMPOSITION'da yüzdeyle yazılıydı ve ekranda
+   kadraj DIŞINDA kaldı: sahnenin tek olayı görülmedi.
+   ✅ BU FAZ TEMİZ: S117'nin kurma jesti zaten 100mm ECU'da ve
+     kadrajın merkez yarısında; S115'in avuç jesti MS'te ama iki el
+     kadrajın merkez üçte ikisini dolduruyor. Değişiklik gerekmedi —
+     kayıt için yazıldı [D74].
 ```
 
 # 📎 REFERANS (lejand `../FAZ_01_GOREV/FAZ_01_GOREV.md` başında)
@@ -1175,10 +1259,12 @@ creases of both palms. The cuffs of a warm off-white pressure suit with
 ORANGE stripes sit above both wrists. On the RIGHT wrist a steel
 mechanical watch on a worn black leather strap, its crystal scratched,
 its dial plain with no numerals and its hands stopped, the free end of
-the strap lying flat on the clay. On the LEFT wrist a slim ring of six
-square amber segments with one lit and five matte black. The right hand
-is closed around a handful of dry dust and lifting; the left lies flat
-on the ground.
+the strap lying flat on the clay. On the LEFT wrist, and only on the
+left wrist, a slim ring of six square amber segments with one lit and
+five matte black. The two objects are on OPPOSITE wrists and neither
+wrist carries both: the watch is on the right wrist alone and the ring
+on the left wrist alone. The right hand is closed around a handful of
+dry dust and lifting; the left lies flat on the ground.
 
 CAMERA:
 Shot on a 50mm lens, f/5.6, medium shot, from a fixed position 1.2
@@ -1213,7 +1299,9 @@ person. The clay is completely dry: no water, no mud, no damp patch, no
 dark wet mark, no dew, no droplet and no liquid of any kind. The dust
 never curls, never drifts sideways, never hangs and never rises. The
 watch hands never move and the dial carries no numerals, letters or
-brand. No bird, insect, animal, root or plant in the clay. No
+brand. The watch never appears on the left wrist and the ring never
+appears on the right; neither wrist carries two objects and neither
+object is missing. No bird, insect, animal, root or plant in the clay. No
 absolutely black shadows. 0% bloom, no glow filter, no lens flare. No
 readable text, letters, digits, numbers or symbols on any surface; no
 caption, no watermark. Photorealistic, 35mm film grain.
@@ -1261,8 +1349,9 @@ The clay is completely dry for every frame: no water, no mud, no damp
 patch, no dark wet mark, no dew, no droplet and no liquid appears. The
 falling dust travels straight down and is on the ground within about a
 second: it never curls, never drifts sideways, never hangs and never
-rises again. The watch hands never move. Nothing floats or lifts: the
-strap end stays flat. No bird, insect, animal, root or plant appears.
+rises again. The watch hands never move. The watch stays on the right wrist and the
+ring on the left; neither wrist carries both. Nothing floats or lifts:
+the strap end stays flat. No bird, insect, animal, root or plant appears.
 No shadow anywhere is absolutely black. Exactly one human figure, human
 count 1, hands and forearms only; no face, no second person. Single
 unbroken take, no cuts, no zoom, no camera shake. 0% bloom, no glow
@@ -1465,8 +1554,9 @@ pressure suit with an ORANGE stripe above it, skin with visible pores
 and pale clay dust in every crease. On that wrist a steel mechanical
 watch on a worn black leather strap: a plain circular case, a scratched
 crystal, a plain matte dial carrying no numerals, no letters and no
-brand of any kind, two slim hands and one very fine second hand, and a
-small knurled crown at the side of the case. The free end of the strap
+brand of any kind, two slim hands and one very fine second hand which
+is STOPPED and motionless at the first frame, and a small knurled crown
+at the side of the case. The free end of the strap
 hangs down over the edge of the wrist and rests on the clay. The
 thumb and forefinger of her left hand, also dusty, are closed on the
 crown, mid-turn.
@@ -1550,10 +1640,10 @@ of the movement, the first mechanical rhythm in the entire film. Her
 breathing, quiet, behind it. No voice and no music at any point. There
 is never absolute silence.
 
-The second hand starts from stillness and advances in separate countable
-steps for the rest of the shot: it never sweeps smoothly, never runs
-backwards and never stops again. At least five steps are visible. The
-hour and minute hands do not move. The dial carries no numerals,
+The second hand STARTS STOPPED and is STILL STEPPING at the last frame —
+stopped to running, never the reverse. It advances in separate countable
+steps, never sweeps, never runs backwards and never stops again; at least
+SEVEN steps are visible. The hour and minute hands do not move. The dial carries no numerals,
 letters, brand or date window. Nothing floats or lifts; the strap end stays on the clay. No
 water, no mud, no damp mark, no dew, no droplet. No shadow anywhere is
 absolutely black. Exactly one human figure, human count 1, wrist and
@@ -2100,6 +2190,41 @@ Sonraki faz yoktur. Kesme yoktur. Kart yoktur.
   imkânsız. S115 makrodan MS'e indi (kil dokusu 50mm'de hâlâ okunur).
   1:10 listesi: S1 · S45 · **S113** (S120 WS'ye indi) — üç kare,
   kılavuz asgarisi 1-2 ✅
+
+🔴 06.09.2026 KAPILARI — F7/F8 ölçümünden (yukarıdaki ALTI KAPI bloğu)
+□ K1 ⛔ **F9/S107 DENEYİNİN SONUCU GELMEDEN bu fazda hiçbir `Audio:`
+  satırına DOKUNULMADI** ✅ — iki fazda birden değişirse deneyin tek
+  değişkeni bozulur.
+□ K1 Makara geldiğinde altyazı SAYILDI ve birebir alıntılandı mı?
+□ K2 ✅ YAPILDI (06.09): S115 bu fazın TEK iki-nesneli kadrajıydı;
+  SUBJECT ve iki NEGATIVE bloğuna ayırıcı cümle eklendi — saat SAĞ
+  bilekte, halka SOL bilekte, hiçbir bilek ikisini birden taşımaz.
+  ⛔ Halka başka hiçbir sahneye eklenmez.
+□ K3 Ağırlığın üç kanıtı (saç aşağıda · kayış ucu sarkık · kollar
+  yükselmez) 12/12 sahnede POZİTİF ve SÜREKLİ yazılı mı?
+□ K4 S116 · S118 · S120'de hareketsizlik/eylem kilidi önce POZİTİF
+  eylem, yasak sonra ve tek kez mi? ⚠️ S118: F7'de "koltukta doğrulur"
+  yazılıyken kadın koltuktan ÇIKTI — kalkışın BAŞLANGIÇ ve BİTİŞ
+  pozisyonu ayrı ayrı yazılı mı?
+□ K5 ✅ YAPILDI (06.09): **S117** filmin en kırılgan durum değişimi.
+  Kapanış paragrafı düzeltildi — ibre İLK KAREDE DURMUŞ, SON KAREDE
+  HÂLÂ ADIM ATIYOR, yön tek: "stopped to running, never the reverse".
+  Adım sayısı da 10 s ızgarasına göre BEŞ'ten YEDİ'ye çekildi (eski
+  sayı kapanış paragrafında kalmıştı — 8 s dönüşümünün kaçırdığı
+  dördüncü yer).
+□ K5 Diğer durum değiştiren sahneler (S109 · S112 · S118 · S119) aynı
+  kalıpla okundu mu?
+□ K6 ✅ TARANDI: sahnenin konusu olan jestler kendi ölçeğinde
+  (S117 ECU merkez yarı · S115 iki el merkez üçte iki). Değişiklik
+  gerekmedi.
+□ 🔴 QA: makaraya ÖNCE `FAZ_10_QA_PROMPT.md` koşulur (iki mühürlü,
+  ayrı sohbetler). ⛔ Genel sekiz mercek TAM KURGUYA koşulur, faza değil.
+
+☑ prompt_kontrol.py yeniden koşuldu (06.09.2026, K2+K5 düzenlemesinden
+  sonra): BLOCK yalnız fazlar arası ortak "B5 satırı yok" kapısı
+  (F1-F10'un onunda da var, plan seviyesi eksik). Video bandı
+  2.208-2.778 — S117 tek yön kilidi için +37 karakter aldı ve fazın
+  en uzun promptu oldu; tavanın (4.300) çok altında.
 ☑ prompt_kontrol.py koşuldu (30.08.2026): **GO** — 24 prompt,
   ⛔ 0 BLOCK · ⚠️ 0 FIX · video 2.101-2.593 bandın TAM içinde · image
   3.064-3.567 · betik NOT: "kurulum sayısı 12 — üst bant 6", bilinçli

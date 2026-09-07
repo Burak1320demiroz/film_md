@@ -527,7 +527,19 @@ frame edges the top and sides of the image, a faint breath fog pulses at
 the lower edge with each exhale, gloved hands entering frame from below."
 
 KURAL: Film başına EN FAZLA BİR POV sahnesi ve asla doruk sahnesinde
-değil — POV karakteri kadrajdan siler, doruk anında yüz gerekir.
+değil. ⭐ GEREKÇE DEĞİŞTİ — SAHİBİN KARARI, 04.09.2026:
+eski gerekçe "doruk anında yüz gerekir"di ve arkasında hiçbir ders, QA
+raporu ya da film skoru yoktu; Aviezer, Trope & Todorov 2012 (Science)
+tersini ölçtü — doruk yoğunluğunda pozitif ile negatif durum izole
+YÜZDEN ayırt edilemiyor, ayrımı GÖVDE yapıyor. Yasak yerinde duruyor,
+gerekçesi şu: POV kameranın karakterin gözüne geçmesidir ve bu serinin
+gözlemci lockoff dilini bozar; dahası POV yüzü değil GÖVDEYİ siler —
+doruk yuvasında duygu yükü omuz, gövde ve ele yazılır
+[KARAKTER_VE_DUYGU §4.3 · kayıt: URETIM_ONCESI_ANALIZ/
+04_ARASTIRMA_BULGULARI.md §TUR 11 · T11.5②].
+⚠️ Yukarıdaki "vizör içi POV" prompt kalıbındaki NEFES BUĞUSU öğesi
+04.09.2026 kararıyla onaylı kanal olmaktan çıktı (T11.5④); kalıp
+kullanılacaksa buğu satırı silinir.
 ```
 
 ### 13.2 Kubrick Bakışı — ⚠️ YÜZ KİLİDİYLE ÇATIŞIR

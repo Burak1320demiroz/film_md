@@ -282,7 +282,7 @@ masasında, teslimden önce, dört maddelik bir bakışla çözülür — ve
 ## 🔴 DERS 70: ÜRETİM KİLİTLERİ KURGUYU BAĞLAMIYOR — 48 SANİYELİK FİLM KURGUDA 64 SANİYE OLDU, JENERİK KARTI GERİ GELDİ
 
 **KAPI:** BETİK · `olcum_kapisi.sh` KUYRUK/BAŞ KART ŞÜPHESİ (freezedetect −60dB + `son_kare.jpg`) — 01.09.2026
-**TEKRAR:** 10 · son vaka 04.09.2026 (THE UPWARD FALL 220,13-225,11 · kart üstelik KAPAK görselidir: kahverengi ceket + baloncuk kask, filmin mat siyah kostümüyle çelişir) · önceki 01.09.2026 (THE PAYLOAD 4:00-4:06 · THE COLD WELD 2:30-2:35) · ⛔ ÇALIŞMIYOR → araca çevrildi: "kart ekleme" cümlesi dokuz teslimde tutmadı, kapı artık betikte
+**TEKRAR:** 11 · son vaka 04.09.2026 (THE HEALING GROUND 140,10-145,09 · 4,99 s · kart yine KAPAK görselidir ve filmin dünyasıyla çelişir: turuncu gök + ufku kaplayan dev gezegen + SİYAH giysi, filmin kendi paleti soluk kum + kehribar pus, gezegen 0 kare, giysi arduvaz grisi · üstelik kart **DÖNGÜ KANITINI öldürdü**: SPEC S0 ↔ S13 eş kadraj çifti istiyordu, izleyici son kare olarak kartı görüyor) · önceki 04.09.2026 (THE UPWARD FALL 220,13-225,11 · kart üstelik KAPAK görselidir: kahverengi ceket + baloncuk kask, filmin mat siyah kostümüyle çelişir) · önceki 01.09.2026 (THE PAYLOAD 4:00-4:06 · THE COLD WELD 2:30-2:35) · ⛔ ÇALIŞMIYOR → araca çevrildi: "kart ekleme" cümlesi dokuz teslimde tutmadı, kapı artık betikte
 
 **Kaynak:** THE FIRST MORNING SHORTS_QA koşusu (06.08.2026, MOD V) — 6/10,
 REGENERATE · `Negative Violations: 🔴 BLOCKER — title card presented at 1:00`
@@ -362,7 +362,7 @@ HOOK REVEAL KİLİDİ (dikey shorts):
 ## 🔴 DERS 72: KURGU KAPISI YATAYA GENELLENİR — PLANIN DORUĞU KURGUYA GİRMEDEN FİLM TESLİM EDİLDİ
 
 **KAPI:** BETİK · `olcum_kapisi.sh` KUYRUK/BAŞ KART ŞÜPHESİ — D70 ile aynı araç — 01.09.2026
-**TEKRAR:** 10 · D70 ile ortak sayaç · 04.09.2026 THE UPWARD FALL: planlı DORUK S24 kurguya hiç girmedi (⑪ + kare ile doğrulandı) · ⛔ ÇALIŞMIYOR → araca çevrildi (01.09.2026)
+**TEKRAR:** 12 · D70 ile ortak sayaç · **05.09.2026 THE STANDING WIRE: kuyruk kartı GERİ GELDİ** — 240,1-245,1 s arası 5,0 s'lik başlık kartı (freezedetect 241,9-244,9 donma + son_kare.jpg'de "THE STANDING WIRE" yazısı). SPEC `SCREEN TEXT: 0 saniye` diyordu; **yasak filmin kendi KAPAK.md dosyasında da yazılıydı** (*"⛔ KLİP ZİNCİRİNE KARIŞMAZ [D70/D72]"*) ve kart tam da o KAPAK çıktısının kendisiydi. İkinci zarar: kart planlı AÇILIŞ-KAPANIŞ KAFİYESİNİ öldürdü — SPEC ilk kare 6,0 s ↔ son kare 247,0 s diyordu, 247,0 s artık kartın içinde ve izleyici filmden S24 ile değil bir afişle çıkıyor. Kart, filmin kendi kompozisyonunu taşıdığı için "yabancı kart" gibi de okunmuyor. · 04.09.2026 THE HEALING GROUND: planlı DORUK S12 kurguya GİRDİ ama **sessizlik bıçağı girmedi** — 2 s mutlak sessizlik yerine ölçüm 125-128 s'de −20,4 dB (filmin SESLİ seviyesi) gösteriyor, sessizlik doruktan 5 s SONRA geliyor [[D180]] · önceki 04.09.2026 THE UPWARD FALL: planlı DORUK S24 kurguya hiç girmedi (⑪ + kare ile doğrulandı) · ⛔ ÇALIŞMIYOR → araca çevrildi (01.09.2026)
 
 **Kaynak:** THE UNBROKEN CITY dört mercek QA (06.08.2026, dördü mod V) —
 senaryo Karakter 4/10 ("the astronaut makes zero choices") · mantık
@@ -1076,3 +1076,70 @@ yanında daha tanıdık bir mekanizma varsa okunmaz.**
 > 🔗 Ders 157 (rakip OLAY) · Ders 151 (mercek vuruşu göremez) · Ders 73
 > (taşıyıcı türetilmiş fenomen) · Ders 174 (aynı filmde yönün yuvarlanması) ·
 > ONERME_VE_NOVUM §2 (A nesnesi × B jesti)
+
+---
+
+## 🔴 DERS 180: PLANLI MUTLAK SESSİZLİK VİDEO MODELİNDEN İSTENDİ — İKİ FİLM ÜST ÜSTE DORUĞUNU KAYBETTİ
+
+**KAPI:** BETİK · `olcum_kapisi.sh` SESSİZLİK satırı → `rapor_kontrol.py --olcum-sessizlik`
+**TEKRAR:** 2 · son vaka **05.09.2026 THE STANDING WIRE — dersin YAZILDIĞI günün ilk ÖLÇÜLMÜŞ vakası, ve DÜŞTÜ.** SPEC bu kez doğru yazılmıştı (`KURGUDA HARD MUTE: sn 214,0-239,0`, üç eşik + komut). Ölçüm: −50 dB'de aralık DÖRT parçaya bölünmüş, en büyük delik 220,1→230,1 (10,0 s); −40 dB'de delik duruyor; ancak −30 dB'de kesintisiz. Yani aralık **sessiz değil, kısık.** ⭐ Sebep dersin kendi cümlesinin ötesinde: bu dosyada **hiç kurgu yapılmamıştı** — bıçağı kurguya taşımak, kurgu adımı olmayan bir hatta yetmiyor [[D181]]. · öncesi 04.09.2026 (THE HEALING GROUND; THE UPWARD FALL, aynı gün)
+
+**Kaynak:** ⑪ ÖLÇÜM KAPISI, iki film (rapordan DEĞİL — sekiz ve yedi
+merceğin hiçbiri görmedi).
+· THE UPWARD FALL 04.09: *"sessizlik (−50 dB / 0,3 s): TEK ARALIK YOK ·
+  S21 MUTLAK SESSİZLİK planlı"*
+· THE HEALING GROUND 04.09: −50 / −40 / **−30 dB**'de bile tek aralık yok.
+
+**Sorun:** THE HEALING GROUND'ın doruğu (S12) **2 saniye mutlak sessizlik**
+üstüne kuruluydu. MUZIK dosyası bunu *"filmin en pahalı iki saniyesi"*
+diye yazmış ve KESİLEMEZ listesine koymuştu; SPEC bunu **KAPI ④** yapmıştı.
+Ama bıçak yalnız tek bir yerde duruyordu: **S12'nin video promptunun AUDIO
+satırında** — `From 5.5s to 7.5s absolute silence`.
+
+Veo'nun yerel sesi mutlak sessizlik teslim etmiyor. 300-3400 Hz bandında
+saniyelik RMS ölçümü:
+
+```
+planlı sessizlik penceresi 125-128 s → −20,4 · −20,6 · −20,2 dB
+filmin medyanı                        → −22,4 dB
+filmin gerçek sessiz dibi 130-141 s   → −26,8 … −34,7 dB
+```
+
+⛔ Sessizlik yalnız EKSİK değil: **doruk, filmin gürültülü anlarından biri
+oldu, ve sessizlik doruktan BEŞ SANİYE SONRA geldi** — yani kapanış
+sahnesine. ④ HİKAYE merceğinin "no peak located" cümlesi tam olarak budur;
+mercek mod V koşmasına rağmen doruğun yerini doğru boş buldu.
+
+**Neden hiçbir mercek görmedi:** hiçbir rubrikte "planlı sessizlik geldi
+mi" diye bir kutu yok. Mercekler **duydukları** şeyi denetler, duymaları
+gereken **yokluğu** değil. Bir yokluk ancak ölçümle bulunur.
+
+**ÇÖZÜM:**
+
+```
+① SESSİZLİK BIÇAĞI KURGU İŞİDİR, ÜRETİM İŞİ DEĞİL.
+   MUZIK dosyası SESSİZLİK KARARI bloğuna zorunlu satır alır:
+     KURGUDA HARD MUTE: sn <başlangıç> – <bitiş>  (ızgaradan hesaplatılır)
+   Video promptundaki `absolute silence` cümlesi KALIR ama yedektir;
+   kapı kurgudadır.
+
+② BETİK HAKEMDİR. `olcum_kapisi.sh` zaten silencedetect basıyor.
+   SPEC'te planlı sessizlik varsa ⑪ çıktısındaki SESSİZLİK satırı
+   `rapor_kontrol.py --olcum-sessizlik <başlangıç>-<bitiş>` ile
+   karşılaştırılır; aralık yoksa 🔴 TESLİM KUSURU — master yeniden ihraç.
+
+③ −50 dB YETMEZ, ÜÇ EŞİKTE BAKILIR.
+   Rüzgâr yatağı ve müzik −50'nin üstünde kalabilir; bıçağın gelmediği
+   −30 dB'de görülür. Ölçüm üç eşikte koşar: −50 / −40 / −30.
+
+④ SESSİZLİK VARSA NEREDE OLDUĞU DA YAZILIR.
+   "sessizlik yok" ile "sessizlik var ama beş saniye geç" farklı
+   kusurlardır ve ikincisi kurguda bedava düzelir. Ölçüm, filmin
+   sessiz DİBİNİ de raporlar (saniye + dB).
+```
+
+> 🔗 Ders 70 / 72 (kuyruk kartı — aynı aile: teslim kusuru, mercek görmez) ·
+> Ders 150 (filigran) · Ders 177 (ölçüm bayrakları rapor_kontrol.py'ye) ·
+> Ders 179 (bedel yazıldı, sebebi üretilmedi) ·
+> `UZAYLI_VARLIK_TASARIM_KILAVUZU §8` SESSİZLİK BIÇAĞI ·
+> `KURGU_RITMI_VE_IHRAC §6`.

@@ -1158,3 +1158,414 @@ F7'de tırnaklı replik taşıyan DÖRT sahne var ve ÜÇÜ halüsinasyon:
    ⚠️ F6 kanıtladı ki tırnağı silmek TEK BAŞINA yetmiyor (S66) —
      ses SATIRINI silmek gerekiyor.
 ```
+
+---
+---
+
+# 📋 KOŞU 7 — FAZ 7 MAKARASI · 06.09.2026 · ⚠️ TEK GEÇİŞ (yalnız KÖR)
+
+```
+Ham    ../02_HAM_RAPORLAR/YERCEKIMI_FAZ07_KOR_HAM.md
+Ders   ../../../yatay_10_20_dk_filmler/YERCEKIMI/FAZ_07_SES/FAZ_07_QA_DERSLER.md
+Mod    ⚠️ V — SPEC yok [D129] · master yok
+⛔ KATALOG GEÇİŞİ KOŞULMADI → D164: "GERÇEK ama ÖLÇÜSÜZ".
+   Kategori skoru YOK, katalog eşleşmesi YOK. Kimlik ve sıra geçerli.
+```
+
+## § ÖLÇÜM KAPISI ⑪ — ⭐ İLK KEZ GEÇTİ
+
+```
+12 segment · 120 s · klip 10,0 s · hepsi 0,3 s bandında.
+⭐ F7-F10 ızgarası DOĞRULANDI; o dört dosyanın mutlak zamanları kaymıyor.
+⚠️ F1-F6 hâlâ ölçülmedi — filmin toplam süresi için ffprobe gerekli.
+```
+
+## § KİMLİK KAPISI ③ — ✅ GEÇTİ
+
+```
+"It is the same face in every segment where visible."
+Sol şakak izi Seg 3 ve Seg 11'de bağımsız görüldü. Düz sırt 3/3.
+Tek kişi 12/12 · duplike 0 · boş koltukta kimse 0.
+```
+
+## § SIRA SKORU — 3/12 (F2 8/12 · F3 5/12) · sebep bir KUSUR
+
+```
+Kör sıra   : 1·2·3·11·7·6·4·5·8·10·12·9
+Gerçek sıra: 1·2·4·3·5·6·7·8·9·11·10·12
+⭐ TEŞHİS 12/12 TUTTU — dört karıştırılabilir grubun dördü de doğru
+  ayrıldı. Rubriğin ayırt edicileri çalıştı.
+🔴 DÜŞÜŞÜN SEBEBİ SAHTE SAAT: S73'te saç AŞAĞI SARKTI (0g kusuru) ve
+  kör denetçi onu "yerçekimi var → yok" tek yönlü saati sandı.
+  ⭐ F3'ün kask vakasının ikinci tekrarı → GOZLEM_DEFTERI ADAY-4.
+```
+
+## § 🔴🔴 ASIL BULGU — ADAY-7 KAPANDI, SEBEP ARAÇ
+
+```
+F5 altyazı 2 · F6 3 · F7 **7** — ve F7'de tırnaklı cümle 0, sesi
+anlatan beat satırı 0'dı. Tek değişken değişti, sonuç TERS YÖNDE
+ikiye katlandı.
+⭐ YEDİSİ DE UYDURMA: hiçbiri REPLİK DEFTERİ'nde yok. İkisi repliksiz
+  sahnede (S77 · S82), ikisi anlamsız cümle, biri aynı klipte iki kez.
+⛔ SONUÇ: prompt_kontrol'e altyazı kapısı YAZILMAZ. Çözüm araç ayarı
+  ya da üretim sonrası maskeleme.
+⭐ DENEYİN SON ADIMI F9/S107'ye yazıldı: `Audio:` paragrafı silinerek
+  tek sahne üretilir.
+```
+
+## § 🔴 SEKİZ KİLİT EKRANDA TUTMADI — en ağırı PERDE DÖNÜŞÜ
+
+```
+S73 saç sarktı 🔴 · S75 baş döndü 🔴 · S79 tik eli kadraj dışı 🔴 ·
+S80 koltuktan çıktı 🔴 · S83 çark döndü 🔴 · S82 gözler gezindi 🟠 ·
+S81 yanlış el 🟠
+🔴🔴 S84 — kırmızı kapak AÇILACAKTI, ekranda İTİLİP KAPANDI.
+   Perde dönüşü 2 ekranda yok; Çehov 6 açılmadı; ve F8 makarası
+   kapağın AÇIK olduğunu varsayarak üretildi → iki makara çelişiyor.
+🔴 HALKA 12 KLİPTE 0 KEZ GÖRÜLDÜ. Sebep belgede duruyordu: S81 ve S84
+   halkayı ve saati AYNI bileğe yazmıştı; model ikisini birleştirdi.
+```
+
+## § SKOR — ⛔ KAYDA GEÇMİYOR (tek geçiş · mod V · master yok)
+
+---
+---
+
+# 📋 KOŞU 8 — FAZ 8 MAKARASI · 06.09.2026 · ⛔ YANLIŞ ALETLE
+
+```
+Ham    ../02_HAM_RAPORLAR/YERCEKIMI_FAZ08_8MERCEK_HAM.md
+Ders   ../../../yatay_10_20_dk_filmler/YERCEKIMI/FAZ_08_AYRILIS/FAZ_08_QA_DERSLER.md
+Mod    ⚠️ V · ÇIPLAK RUBRİK [D129] → T tablolarına GİREMEZ
+⛔ FAZ_08_QA_PROMPT.md koşulmadı; genel sekiz mercek koşuldu.
+🔴 DERS 110 İHLALİ: sekizi de AYNI SOHBETTE. Kanıt: ⑥ fizik "ses yok"
+   dedi, ① kare üç replik duydu, kalan beşi aynı cümleleri kopyaladı.
+   → sekiz ölçüm değil, bir ölçüm ve yedi kopya.
+```
+
+## § 🔴🔴 BİRİNCİ BULGU — MAKARA 10 KLİP, İKİ SAHNE ÜRETİLMEMİŞ
+
+```
+EKSİK: S93 (İLK SARSINTI) · S94 (DALGA İKİ)
+⛔ S94 fazın TAŞIYICISI: doruk rampasının başı · Çehov 5'in ödemesi ·
+  ŞOK BANDI 1 · mutlak sessizlik bıçağı. Dördü de ekranda yok.
+⛔ Dosyanın kendi kapısı "çıkmazsa S95-S96 üretilmez" diyordu.
+  S95 ve S96 üretildi. Kapı belgede durdu, üretimde bağlamadı.
+⭐ TEK İYİ HABER: şok bandı harcanmadı; S102 hâlâ ikisini de taşıyabilir.
+```
+
+## § ⚠️ İKİNCİ BULGU — ÜÇ REPLİK İDDİASI, DOĞRULANMADI
+
+```
+"Trajectory confirmed." · "Sequence initiated." · "Trajectory nominal…"
+HUMAN register · A'nın ağzı ekranda oynuyor.
+⛔ Doğruysa dört şey kırılmış olur: kask takvimi · MACHINE register ·
+  defter metni · oksijen zincirinin son halkası.
+⚠️ Ama ⑥ fizik aynı oturumda "nothing audible to me" demişti.
+   ffprobe -select_streams a … koşulmadan ders yazılamaz.
+```
+
+## § 🔴 ÜÇÜNCÜ BULGU — HALKA YİNE OKUNMADI
+
+```
+F7: 12 klipte 0 · F8: 10 klipte 1 belirsiz ("turuncu göstergeli siyah
+bilek bandı", 0:30'da var, 1:10'da yok).
+⛔ Filmin en uzun sayacı (S8→S96, altı adım) ekranda YOK.
+```
+
+## § 🔴 DÖRDÜNCÜ BULGU — YANLIŞ ALETİN ÖLÇÜLEBİLİR BEDELİ
+
+```
+ÜÇ YANLIŞ POZİTİF — üçü de belgede yazılı tasarımı kusur yazdı:
+  ① "thruster plumes render as RIGID SOLID CONES" → D36 tam da bunu ister
+  ② "bare-hand dexterity in thick pressurized GLOVES" → A eldivensiz
+  ③ "debris hangs without momentum" → sabit hız doğru (⑥ fizik doğru okudu)
+HİÇ ÖLÇÜLMEYEN — fazın en kırılgan karesi:
+  ⛔ S88 ışık geçişi (bir saniyeden kısa, ara ton 0 kare) sekiz merceğin
+    hiçbirinde sorulmadı. FAZ_08_QA_PROMPT.md üç ayrı yerde soruyor.
+⛔ Ve ④ hikâye merceği bir FAZ makarasını FİLM sanıp 3,5/10 verdi.
+⭐ SONUÇ: faz makarasına faza özgü rubrik koşulur; genel sekiz mercek
+  TAM KURGUYA koşulur ve her biri TEMİZ OTURUMDA [DERS 110].
+```
+
+## § SKOR — ⛔ KAYDA GEÇMİYOR (çıplak rubrik · mod V · kontamine oturum)
+
+## § 🔧 F9/F10'A YAZILAN ALTI KAPI
+
+```
+K1 altyazı (sebep araç, kapı yazılmaz + S107 deneyi) · K2 bir bileğe
+iki nesne yasağı · K3 yerçekimi kilidi pozitif eylemle · K4 "dönmez"
+yasağı tek başına tutmuyor · K5 durum değişimi iki kez yazılır ·
+K6 sahnenin konusu olan jest kendi ölçeğini alır.
+Ek: F9'a TAŞIYICI SAHNE KAPISI (S102 sonucu yazılmadan devam yok).
+```
+
+---
+
+# 📋 KOŞU 9 — FAZ 9 / DÜŞÜŞ MAKARASI · 06.09.2026 · ⭐ ON İKİ MERCEK
+
+```
+Makara  "faz 9.mp4" · 12 segment · 120 s · 11 kesme (rapor beyanı)
+Mercek  ① ② ③ ④ ⑤ ⑥ ⑦ ⑧ ⑨ ⑩ ⑪ ⑫ — on ikisi de mod V
+        ⭐ ⑨ KADRAJ · ⑩ OYUNCULUK · ⑪ IŞIK · ⑫ HOOK depoda İLK koşuları [D184]
+Ham     ../02_HAM_RAPORLAR/YERCEKIMI_FAZ09_12MERCEK_HAM.md
+Faz     ../../../yatay_10_20_dk_filmler/YERCEKIMI/FAZ_09_DUSUS/FAZ_09_QA_DERSLER.md
+        ⭐ BULGULARIN TAMAMI ORADA — bu bölüm yalnız kapı defteridir
+Skor    ⛔ KAYDA GEÇMİYOR (mod V · çıplak rubrik · faz ölçeği)
+```
+
+## § ÖLÇÜM KAPISI ⑪ — ⛔ KOŞULMADI (sahip kararı)
+
+```
+Master ~/Downloads altında bulundu; betik başlatıldı ve SAHİP DURDURDU:
+"sen videoya dokunma, repodan niye dışarı çıkıyorsun".
+→ Aşağıdaki her süre/kesme sayısı RAPORUNKİDİR, ölçüm değildir.
+⭐ Ama bu partide ölçüme İHTİYAÇ da olmadı — bir sonraki kapıya bak.
+```
+
+## § ÇAPRAZ SAYIM KAPISI ⑤ — ✅ DEPODA İLK KEZ SIFIR SAPMA [D107]
+
+```
+12 rapor · 12 sahne · 11 kesme · 120 s · şerit 1111111111-1
+                                                   ↑ 11. hane
+Plan: S107 PARAŞÜT ⭐ İNSANSIZ (KART 10) — 11. sırada. TUTUYOR.
+→ kurgu plan sırasındadır, 12/12 sahne teslim edilmiştir, insansız sahne
+  tam yerindedir. F8'in iki eksik sahnesi gibi bir arıza F9'da YOK.
+```
+
+## § SPEC KAPISI ① — ⛔ TEKRAR [D129 · 15. film]
+
+```
+YERCEKIMI_QA_SPEC.md YOK (README'de açık borç [D117]) · FILME_OZEL paketi YOK
+⛔ AMA BU HATTA SPEC'İN ADRESİ FAZ RUBRİĞİDİR: FAZ_09_QA_PROMPT.md.
+   Üretilmiş dokuz fazın TEK rubriksizi bu → operatör genel merceği açtı.
+   F8'de aynı karar "YANLIŞ ALET" diye kaydedilmişti; kayıt kapı üretmedi,
+   ertesi faz aynısını yaptı → [D185]
+```
+
+## § FAZ KAPISI ①.8 — 🆕 [D185] · dokuz kategori sayı taşımaz
+
+```
+FAZ 9 = 16:00-18:00, 20 dakikalık filmin %80-90 bandı.
+④ Hook · Yapı · Final · Tutundurma  →  `—`
+⑫ Hook Question · Stakes · Plato · Doruk · Çıkış  →  `—`
+⑨ Rhyme Pair  →  `—`  (film kafiyesi F1↔F10'dur, F9 içi değil)
+⛔ ④'ün kesme listesi ve ⑫'nin yeniden sıralama reçetesi UYGULANMAZ.
+```
+
+## § ÖNERME KAPISI ⑩ — 🔴 ÜÇ KİLİT KUSUR YAZILDI
+
+```
+① ⑥ FİZİK "TWO GRAVITIES" 🔴 → DÜŞER
+   00_PLAN SAYISAL KİLİTLER: "F9: ivme rampası". Fazın KONUSU budur.
+   ⑥'nın iki ölçümü (0,1 → 3,2 m/s²) rampanın iki ucudur = fazın
+   ÇALIŞTIĞININ kanıtı. Reçetesi "crop the objects out" — kırpılması
+   istenen şey filmin adını taşıyan olay. [D166 TEKRAR 2]
+② ⑪ IŞIK renk takvimi (KİLİT 44) 3/10 → DÜŞER
+   Gözlemi Neutral→Amber→Neutral→Red→Cool = takvimin ta kendisi.
+③ ② DEVAMLILIK "2 red seats vs 3 white seats" 🔴 → DÜŞER
+   Aynı koltuklar, iki ayrı ışık. ⑤ ikisinde de 2 saydı; yalnız renk değişti.
+⬜ AÇIK: ⑤ S108'de "1 empty white seat" yazdı — sabit 3'e karşı. Kareyle.
+```
+
+## § ARİTMETİK KAPISI ①.5 — 🟠 [D186]
+
+```
+⑤ ARKA PLAN  5 hücre "none" → 7/10 · ortalama 6,5 → düzeltilmiş 4,0 (n=1)
+⑨ KADRAJ     3 hücre "flawless…mapped to 7" → ortalama 5,8 → ~4-5
+Betik yazıldı ve gerçek veride doğrulandı (06.09).
+```
+
+## § 🔴 FAZIN İMZA ÇEKİMİ — ON İKİ RAPORDA YOK
+
+```
+S102 YERÇEKİMİ YAĞMURU = "filmin adını taşıyan kare".
+Altı mercek düşen KURU toz perdesini "steam / smoke / gas venting" okudu.
+④'ün önerme cümlesi: "An astronaut sits in a capsule during a turbulent
+re-entry, passes out, and wakes up safely on the ground." — YERÇEKİMİ YOK.
+⭐ Novum ekrana ulaşmadı ya da ulaştı ve on iki mercek onu buhar sandı.
+  Ayrım TEK KAREYLE çözülür (0:52 · toz mu duman mı) → sahibin işi.
+```
+
+## § 🔴 AĞIRLIĞIN ÜÇ KANITI — 0/3 ÖLÇÜLDÜ [D187]
+
+```
+KİLİT 46: ① SAÇ (S102'den sonra başa yapışık) ② SAAT KAYIŞI (S103'te sarkar)
+③ KOLLAR (0g duruşuna dönmez). On iki mercek, üç kanıt, sıfır ölçüm.
+⑥ saçı defterinin İLK satırına yazdı (L1 "hair floats") ve bir daha bakmadı.
+Sebep: üçü de hiçbir merceğin kapsamına düşmüyor → kapı PLAN tarafında.
+```
+
+## § SAĞLAM BULGULAR → üretime gider
+
+```
+🔴 S99 KOLÇAK 0:20 erkek eli · 🔴 S103 1:01 kaynaşmış parmak ·
+🔴 S100 0:35 kalem lastik gibi büküldü · 🔴 S107 1:45 paraşüt ipleri koptu ·
+🔴 S108 1:51 kayış omuzdan geçiyor · 🔴 S102 insan düşmüyor (⑩ + ⑧)
+🟠 S102 sesi yok (③) · 🟠 11 kesmenin 11'inde ambiyans inceliyor (③)
+```
+
+## § SKOR — ⛔ KAYDA GEÇMİYOR
+
+```
+mod V · çıplak rubrik · faz ölçeği · ölçüm yok → T tablolarına satır YAZILMAZ.
+Sisteme: D185 · D186 · D187 · D129 TEKRAR 15 · D166 TEKRAR 2
+```
+
+---
+
+# 🎞️ KOŞU 10 — FAZ 10 / ZEMİN · ON İKİ MERCEK · 07.09.2026
+
+```
+Malzeme  "faz 10.mp4" · raporların ölçtüğü süre 109–111 s
+Faz      S109–S120 · 18:00–20:00 · Perde III · FİLMİN SON FAZI
+Mod      ⚠️ V ×12 · SPEC yok · FAZ_10_QA_PROMPT.md YOK
+Ham      ../02_HAM_RAPORLAR/YERCEKIMI_FAZ10_12MERCEK_HAM.md
+Dersler  ../../../yatay_10_20_dk_filmler/YERCEKIMI/FAZ_10_ZEMIN/FAZ_10_QA_DERSLER.md
+Betik    ../../RAPOR_KONTROL/RAPORLAR/FAZ_10_ZEMIN_20260907_RAPOR_KONTROL.md
+KARAR    🚨 PARTİ GEÇERSİZ [D188]
+```
+
+## § ⑪ ÖLÇÜM KAPISI — KOŞULMADI
+
+```
+Sahibin 06.09.2026 kararı yürürlükte: depo dışına çıkılmaz, videoya
+dokunulmaz. Bütün sayılar RAPOR beyanıdır. Bu koşuda ölçümün eksikliği
+BİR KEZ pahalıya mal oldu ve nerede olduğu aşağıda yazılı.
+```
+
+## § ①.9 TESLİM KAPISI — 🚨 PARTİYİ DÜŞÜRDÜ [D188 · yeni]
+
+```
+PLAN     FAZ_10_ZEMIN.md · 12 sahne (S109–S120) · ızgara (n−1) × 10 s
+BEKLENEN 12 × 10,0 = 120 s
+MAKARA   109–111 s · on mercek 10 kesme (① ve ② zaman kodlarını AYRI AYRI
+         listeledi, ikisi de tam 10 s katlarında) → 11 KLİP
+FARK     bir klip.
+
+⭐ Şeridin başı `--` : S109 ve S110 (iki insansız sahne) TESLİM EDİLMİŞ.
+⭐ Eksik olan sona yakın: altı mercek bağımsız olarak son sahnede
+  YÜRÜYEN bir figür gördü = S119 İLK ADIMLAR.
+  S120 HELD FRAME'in tarifi (20° üst açı · WS · figür DURUYOR · gökte
+  paralel çizgiler) hiçbir raporda YOK.
+⇒ FİLMİN SON KARESİ HİÇBİR RAPORDA GÖRÜNMÜYOR.
+
+KONTROL: aynı hat, önceki faz — F9 planı da 12 sahne, F9 teslimi 12 sahne
+         · 11 kesme · 120 s ✅. Hat geçen faz 12 klip verdi, bu faz 11.
+```
+
+⛔ **KAPI HÜKÜM VERMEZ, ŞIKLARI AYIRIR.** Üç okuma var ve rapor tarafından
+ayrılamazlar: (a) S120 teslim edilmedi · (b) S119+S120 tek klipte birleşti ·
+(c) mercekler yanlış saydı, makarada 12 klip var.
+⚠️ (c) için aritmetik zayıf — 12 × 10 s = 120 s, oysa on iki rapor 109–111 s
+ölçtü ve süre konteynerden okunur — ama elenmiş değil: aynı kapı THE KEPT
+LIGHT'ta da ateşledi (plan 25, raporlar 20) ve orada doğru şık (c)'ydi,
+ölçüm 25 klip buldu, teslim TAMDI.
+⇒ Hakem ölçümdür: `olcum_kapisi.sh <master>` → `--olcum-sahne <n>`.
+Cevap gelmeden kesme listesi / REMOVE reçetesi / yeniden üretim UYGULANMAZ.
+
+## § ①.5 BETİK KOŞUSU — düzeltilmiş ortalamalar
+
+```
+mercek        iddia →  betik      not
+① KARE         7,3  →  6,9        1 hücre kaynaksız [D186]
+② DEVAMLILIK   8,6  →  6,0        8 hücre "none" 10/10 [D186]
+③ SES          9,0  →  8,5
+④ HİKAYE       6,0  →  6,0 (n 9→5) Hook·Structure·Ending·Retention [D185]
+⑤ ARKA PLAN    6,0  →  6,0 (n=1)   altı hücre "no in-scope source" [D131]
+⑥ FİZİK       10,0  →  —          YEDİ hücrenin YEDİSİ "no deductions"
+⑦ AKSİYON      6,3  →  4,0        7 hücre kaynaksız
+⑧ EFOR         5,4  →  5,4        COST CURVE 3 düşüş, RESET LOG 0 satır
+⑨ KADRAJ       4,5  →  5,3 ⭐      Rhyme Pair düştü → skor YÜKSELDİ [D185]
+⑩ OYUNCULUK    5,6  →  5,7
+⑪ IŞIK         9,2  →  9,2        1 hücre kaynaksız
+⑫ HOOK         7,5  →  🚨          aritmetik fabrike (Σ 60 iddia, hücreler 62)
+```
+
+## § ⑦ ORTAK DEFTER KAPISI — ⑦ + ⑧ [D110 · ilk betik kapısı]
+
+```
+İkisinin künyesi BİREBİR aynı: 109 s · 11 kesme · 12 sahne · `--1111111111`
+ve İKİSİ DE kesme ZAMAN KODLARINI basmadı (rubrik ⛔ zorunlu kılıyor).
+⇒ azınlık İKİ oy değil, BİR oydur. Sayım yapılmamış, devralınmıştır.
+   ⚠️ 12 sayısının plana uyması tesadüftür: 12 sahne 109 saniyeye sığmaz.
+```
+
+## § 🔴 VAR OLMAYAN BİR KESME, DÖRT RAPOR [D110]
+
+```
+⑦'nin tek 🔴'sı ve verdict'inin TAMAMI: "01:36'da bir kesme".
+Kesmeler 10 s ızgarasında — 1:30 ve 1:40. 1:36'da kesme YOK.
+⛔ Gizli kesme ①'in işidir; ① o klipte Camera 10/10 verdi.
+⑧ saniyeyi devraldı · ⑨ ve ⑩ kapsam-dışı bayrağa kopyaladı
+(⑨'unki kelimesi kelimesine "The cut at 01:36").
+⚠️ Düşen: "kesme var" iddiası. Duran: ⑧'in ayrı gözlemi (kalkışta bedel yok).
+```
+
+## § 🔴 BİR KAPSÜL, DÖRT FATURA [D189 · yeni]
+
+```
+① Environment 7/10 · ② World State 5/10 · ⑤ Set&Props 6/10 · ⑨ Geometry 4/10
+— hepsi AYNI kapsül/paraşüt yerleşimi için.
+✅ ⑥ ⑦ ⑪ doğru davrandı: bayrak yazdı, sayı yazmadı.
+Kök: ② "a thing never touched stays put" ↔ ⑤ "untouched ones are yours"
+     — iki rubrik aynı nesneyi ters yönde sahipleniyordu. Dördü de yamandı.
+```
+
+## § 🔴 ⑥ FİZİK 10,0/10 — CETVELİN ALTINDA
+
+```
+Yerçekimi tahmini iki olaya dayanıyor: 0,05 m / 0,1 s (24 fps'de 2,4 KARE)
+ve 0,5 m / 0,3 s. İkisi de ölçülemez; hata payı ölçülen büyüklükten büyük.
+⑥ F9'da aynı kökten TWO GRAVITIES ilan etmişti — zıt sonuç, aynı cetvel.
+⛔ Ve fazın TEK sayısal kilidi ölçülmedi: KİLİT 48 "toz DÖRT SANİYEDE çöker".
+   ⑥ toz perdesini defterinin İLK satırına (L1) yazdı, süreyi hiç ölçmedi,
+   sonra Particles & Atmosphere'e 10/10 verdi.
+✅ ⑥ rubriğine CETVEL TABANI eklendi: 0,3 s / 0,5 m altı olay sayı üretmez.
+```
+
+## § 🟠 KİLİT 49 — AĞIRLIĞIN BEŞ KANITI: EN FAZLA 1/5 [D187 TEKRAR 1]
+
+```
+① saç aşağıda        → hiçbir mercek
+② saat kayışı sarkık → ② kayışı KİMLİK olarak gördü, DURUM olarak değil
+③ kollar yükselmiyor → hiçbir mercek
+④ nefes göğsü kaldırıyor → ⑧ 8/10 verdi ama göğsü ölçmedi
+⑤ kas titremesi (S114·S118) → ⑧ YOKLUĞUNU buldu (S117'de) · ⑩ bayrak yazdı
+F9'da 3 kanıt → 0 ölçüm. F10'da 5 kanıt → 1. Kapı hâlâ PLAN tarafında.
+```
+
+## § 🟠 SES — İKİ TANIK, ON ÇEKİMSER [D137 TEKRAR 6]
+
+```
+③ ve ① "room tone present" yazdı ve BAĞIMSIZ olarak aynı saniyede aynı
+kusuru bildirdi (1:22 · saat kurma Foley senkronu). Sekiz mercek
+"nothing audible to me". Plan ③'ü destekliyor (REPLİK 0/12 · S120 rüzgâr).
+⬜ AÇIK — tek ffprobe komutuyla kapanır; depo dışı, sahibin kararı.
+```
+
+## § SAĞLAM BULGULAR → üretime gider
+
+```
+🔴 1:20 S117 SAAT KURULUR — başparmak kurma kolunun İÇİNE geçiyor (①)
+   ⛔ EN PAHALI: S117 ÇEHOV 2'nin ödemesi, KİLİT 51 bu karede duruyor
+🟠 0:30↔1:00 alındaki kırmızı çizik kayboluyor (②)
+🟡 1:00↔1:30 fermuar kendiliğinden kapanıyor (②)
+🟠 1:12 düşen toprak topak hâlinde, zerre ayrışması yok (①) — KİLİT 48
+🟠 1:20 kaba efordan sonra titremesiz ince motor kontrolü (⑧) — KİLİT 49 ⑤
+🟠 1:40 yürüyüşte bedel yok; plan "düzensiz · bir kez sendeler" diyor (⑧)
+🟡 0:20 kapsül içi ambiyans dış karakterde (③) · 🟡 1:22 Foley senkron (③+①)
+⭐ DOĞRU ÇIKAN: ⑪ iki bölgede sıfır ışık sıçraması · ⑤ zemin dokusu
+  kaynamıyor, ufuk sabit · ⑨ S10'u `ground level` okudu = KİLİT 52'nin
+  alt açısı kadrajda.
+```
+
+## § SKOR — ⛔ KAYDA GEÇMİYOR
+
+```
+🚨 parti GEÇERSİZ [D188] → T tablolarına satır YAZILMAZ.
+Sisteme: D188 · D189 yeni · D185 TEKRAR 2 (kapı bağlamıyordu, düzeltildi) ·
+D186 TEKRAR 1 · D187 TEKRAR 1 (+ şablona adreslendi) · D110 TEKRAR 3
+(ilk betik kapısı) · D137 TEKRAR 6
+```

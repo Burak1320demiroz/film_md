@@ -31,8 +31,10 @@ cd <FORMAT_KLASORU>/<FILM_ADI> && rm 00_SABLON_README.md
 for f in FILM_*.md; do mv "$f" "<FILM_ADI>${f#FILM}"; done
 ```
 - Yedi dosya: `PLAN · BOLUM_1 · BOLUM_2 · KAPAK · MUZIK · YAYIN_PAKETI · QA_SPEC`
-  (+ `REFERANS_PAKETI` — iki insandan/araçtan fazlası varsa zorunlu).
-- Bölüm sayısı formattan gelir: dikey/2-4/3-5 → 2 · 7-9 ve 10-20 → faz sayısı kadar.
+  (+ `REFERANS_PAKETI` — `REFERANS_PAKETI_KILAVUZU.md` §1'in ALTI
+  tetikleyicisinden biri doğruysa zorunlu; ⛔ "iki insandan/araçtan fazlası"
+  sayımı 06.09.2026'da ÖLDÜ, bkz. §3b).
+- Bölüm sayısı formattan gelir: dikey/2-4/3-5 → 2 · 7-20 dk → faz sayısı kadar.
 - ⛔ Format klasörünün köküne .md bırakma — sayaç kökteki her girdiyi BİR FİLM sayar.
 - ⛔ Eski filmler yeniden bölünmez/adlandırılmaz; iskelet YENİ filmler içindir.
 - Adlandırma `<FILM>_<ROL>.md` · `BUYUK_HARF_ALT_CIZGI` · Türkçe karakter yok.
@@ -68,7 +70,35 @@ Sahne haritası yazılırken dağıtılır, üretimden SONRA eklenemez:
   `PROMPT_KONTROL/DIALOGUE_CRITIQUE_PROMPT.md` koşulur [TUR 6 · 03.09.2026].
 - Sahne-kurulum dizisi: `ACI_YAYI_VE_SEKANS_KILAVUZU.md` §3 güvenli bant
   (ardışık çift: ≥1 ölçek kademesi VE ≥45°) · §4 kurulum sayısı · açı TİPİ sayısı ≥3.
+- ⭐ **KURULUM İSKELETİ satırı PLAN'a YAZILIR** (05.09.2026 · sahip kararı).
+  Harf dizisi, sahne sayısı kadar harf: `A A B C B C D E E C D A`.
+  12+ sahnede iki sayı aranır — **KÜME ≥2** (ardışık 2-3 klip aynı kurulumda,
+  tek vuruş sürerken) ve **DÖNÜŞ ≥%40** (dönüş = kaynağından ≤3 sahne sonra
+  gelen tekrar). 6-11 sahne ve dikey shorts muaf. [ACI_YAYI §3 🕰️ · §4b]
+  ⛔ Aynı harfin kamera metni BİREBİR kopyalanır ve işaret satırını taşır —
+  model iskeleti görmez, metni görür [§7 ⑥]. Bu satır yoksa kapı KOŞMAZ:
+  yeni filmde eksik bırakma.
 - Her prompt self-contained (kural ③) — "BIBLE'a bak" atfı yasak.
+
+## 3b. REFERANS PAKETİ — KAPI 0, promptlardan ÖNCE [D146 · 06.09.2026]
+`REFERANS_PAKETI_KILAVUZU.md` §1 tablosu okunur. **Altı tetikleyiciden BİRİ**
+doğruysa `<FILM>_REFERANS_PAKETI.md` yazılır (şablon klasörden geldi):
+`T1` kask/vizör/basınç giysisi · `T2` biçim kilidi metinle tutulmayan varlık ·
+`T3` oranı sözle yazılamayan nesne · `T4` insan dışı canlı · `T5` tekrar eden
+insan dışı olay · `T6` bir varlık tekrar tekrar dönüyor.
+⛔ **Eski "iki insandan/araçtan fazlası" sayımı ÖLDÜ.** THE STANDING WIRE tek
+insanlıydı, kuralı hiç tetiklemiyordu ve D146'nın 3. vakası oldu (24 klibin
+ezici çoğunluğunda kubbe vizör). THE SINKING STAKE tam iki insan / tam iki
+araç taşıyordu, kural harfiyen tetiklenmiyordu ve paketi YİNE yazdı.
+⭐ T1 bu deponun neredeyse her filminde doğrudur → **paket varsayılandır.**
+⛔ Tetikleyici yoksa dosya SİLİNMEZ, `⬜ BEKLİYOR` satırıyla durur.
+⛔ **Bir varlığın sayfası ONAYLI olmadan ve seed'i yazılmadan o varlığın
+geçtiği hiçbir sahne üretilmez.** Sıra: PAKET → DORUK → merkezî seçim → hook
+→ gerisi [D168] — aşağıdaki ÜRETİM SIRASI satırının ilk halkası budur.
+⛔ Paket klasörde yoksa film "yazımı tamam" DEĞİLDİR (SPEC ile aynı ağırlıkta).
+⚠️ Paket dosyasında İngilizce prompt, `### 📸 IMAGE PROMPT` başlığından sonraki
+**İLK** çitli blok olmalı; künye araya girerse `prompt_kontrol.py` yanlış bloğu
+ölçer ve anlamsız BLOCK verir (06.09.2026'da ölçüldü).
 
 ## 4. QA_SPEC — yazım paketinin son parçası
 `<FILM>_QA_SPEC.md` film klasörüne yazılır (A/B/C blokları + TARGET ASL satırları).
@@ -80,7 +110,7 @@ Yazılan her kayıt formülle doğrulanır; sapma varsa paket TAM DEĞİLDİR.
 ⛔ **VE SPEC TEK BAŞINA YETMEZ — QA PAKETİ DE BURADA ÜRETİLİR [D165]:**
 ```bash
 bash .claude/skills/qa-isle/scripts/rubrik_paketle.sh <film klasörü>
-  → kilavuzlar_ve_sistem_dosyalari/QA_PROMPTLARI/FILME_OZEL/<FILM>/PAKET_1..8
+  → kilavuzlar_ve_sistem_dosyalari/QA_PROMPTLARI/FILME_OZEL/<FILM>/PAKET_1..12
 ```
 Paket klasörü yoksa operatörün eline ÇIPLAK RUBRİK kalır, çıplak rubrik
 **mod V koşar**, ve mod V koşusu T tablolarına giremez [D129].
@@ -103,7 +133,7 @@ gelmemiş bir doruk yüzünden reddeder. THE SINKING STAKE tam böyle durdu:
 ```bash
 bash .claude/skills/qa-isle/scripts/rubrik_paketle.sh <FORMAT_KLASORU>/<FILM_ADI>
 ```
-Çıktı `kilavuzlar_ve_sistem_dosyalari/QA_PROMPTLARI/FILME_OZEL/<FILM>/PAKET_1..8`.
+Çıktı `kilavuzlar_ve_sistem_dosyalari/QA_PROMPTLARI/FILME_OZEL/<FILM>/PAKET_1..12`.
 ⛔ Bu klasör yoksa film "yazımı tamam" DEĞİLDİR. Sebep: paket yalnız `qa-isle`
 §2b'de tarif edilmişti; operatör QA anında skill değil RUBRİK açıyor ve çıplak
 rubrik yapıştırıyor → THE STILL SWARM'da sekiz merceğin sekizi mod V koştu ve

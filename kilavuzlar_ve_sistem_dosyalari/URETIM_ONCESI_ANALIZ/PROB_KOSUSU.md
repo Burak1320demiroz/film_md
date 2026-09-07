@@ -175,3 +175,87 @@ ve PROB dışında da kullanılabilir.
 `cv2` YOK. Bu yüzden **insan sayımı makineyle yapılamıyor**; betik
 yalnız bakılacak kareyi hazırlıyor. "İki figür aynı yüz mü" sorusu
 insan gözüne kalıyor ve bu, bu koşunun tek ölçülemeyen yeridir.
+
+---
+
+# 5. 🆕 TUR 11 PROBLARI — iki ucuz A/B (04.09.2026)
+
+> **Neden burada:** TUR 11'in dördüncü raporu deponun beş zorunlu bloğu
+> için "SİLİNEBİLİR" hükmü verdi ve hükümlerini "Ölçülmüş Etkisi"
+> başlığıyla sundu. Denetimde beşi için de ablation bulunmadı — beş karar
+> da ÖNERİ çıktı. Aşağıdaki iki prob, o hükümlerden deponun kendi
+> parasıyla sınayabileceği ikisini kapatır.
+> Kayıt: `04_ARASTIRMA_BULGULARI.md` §TUR 11 · T11.4.
+>
+> ⛔ İkisi de A/B'dir: **tek değişken, aynı tohum, aynı sahne.** Prob
+> yeni bir film DEĞİLDİR; mevcut bir filmin tek sahnesi iki kez üretilir.
+
+## PROB C — "35mm film grain" var / yok
+
+```
+SORU     Negatif çekirdeğin kapanış cümlesi ("Photorealistic with 35mm
+         film grain") sabit planda TİTREME üretiyor mu?
+
+GEREKÇE  Deponun bu konuda HİÇ ölçümü yok. Mekanizma doğrulandı
+         (3D nedensel VAE sıkıştırması → yüksek frekanslı ince detay
+         kodlamada kayboluyor; sıkıştırma oranları ve kaynak tek yerde:
+         `../KILAVUZ_REHBERI.md` §5④), ETKİ doğrulanmadı.
+
+DEĞİŞKEN Tek kelime öbeği: cümlenin son beş kelimesi var / yok.
+         Başka HİÇBİR şey değişmez.
+
+ÖRNEKLEM Aynı sahne, aynı tohum, 2 × 5 klip = 10 üretim.
+         Sahne seçimi: içinde ince çizgi ya da tekrar eden birim OLAN
+         bir sahne (korkuluk, ızgara, çit, panel dizisi) — çünkü
+         mekanizma tam orada iş görecek.
+
+ÖLÇÜT    ① Ardışık kareler arası fark: iki klipte de sabit bölge
+           (arka plan paneli) seçilip kare-kare piksel farkı toplanır.
+           `prob_olcum.sh` kare çıkarabiliyor; fark toplamı ffmpeg ile
+           alınır. Gren varsa fark toplamı ANLAMLI ölçüde yüksek olmalı.
+         ② Göz: 10 klip karıştırılıp körlemesine izlenir, "hangisinde
+           yüzey kaynıyor" diye işaretlenir.
+         ③ Doku kaybı karşı kontrolü: grensiz klipte cilt gözeneği ve
+           kumaş dokusu KAYBOLDU mu — çünkü çekirdeğin gren cümlesi
+           aynı zamanda bir DAMGA ÖNLEMİDİR [DIKEY §6.1(a): pürüzsüzlük
+           "bu AI" suçlamasını tetikliyor].
+
+KARAR    ①+② gren aleyhine VE ③ temiz çıkarsa satır silinir.
+         ③ kirliyse satır KALIR — titreme bedeli, damga bedelinden ucuzdur.
+         ⛔ Tek yönlü okuma yapılmaz: bu prob iki riski aynı anda tartar.
+```
+
+## PROB D — kilit konumu: ilk cümle mi, son çeyrek mi
+
+```
+SORU     Sahneye özel bir kilit promptun BAŞINDA mı daha iyi tutuyor,
+         SONUNDA mı?
+
+GEREKÇE  Ölçüldü (04.09.2026): depodaki zorunlu kilitlerin tamamı
+         prompt gövdesinin son çeyreğinde duruyor — sayım ve yöntem
+         `../KILAVUZ_REHBERI.md` §5②'de. Difüzyon
+         kodlayıcılarında erken konumun daha güçlü bağladığı yönü
+         ölçülmüştür; deponun kendi hattında sınanmadı.
+
+DEĞİŞKEN Tek kilit cümlesinin YERİ. Metin birebir aynı, yalnız taşınıyor:
+         A) gövdenin ilk cümlesi   B) mevcut yeri (son çeyrek)
+         Kilit seçimi: o sahnede DÜŞMESİ ölçülebilen bir kilit —
+         örn. düz sırt silüeti [D79/D139] ya da tek insan kilidi.
+
+ÖRNEKLEM Aynı sahne, aynı tohum, 2 × 5 klip = 10 üretim.
+
+ÖLÇÜT    Kilit tuttu mu / tutmadı mı — ikili sayım, 5'te kaç.
+         Sayım gözle yapılır ve karar YAZILIR (D74: kaydı olmayan kapı
+         koşulmamış kapıdır).
+
+KARAR    A anlamlı biçimde üstünse IMAGE_VIDEO_PROMPT_TEMPLATES'e tek
+         satır eklenir: "o sahnenin tutması gereken tek kilit ilk
+         cümlededir." Fark yoksa mevcut sıra korunur ve bu kayda geçer.
+```
+
+```
+⚠️ İKİSİNİN DE SINIRI: N=5 küçüktür ve tek sahnedir. Bu problar bir
+   hükmü KANITLAMAZ; hangi yönde çalışılacağını söyler. Deponun kendi
+   dürüstlük kuralı burada da geçerli — sonuç "ölçüldü" değil
+   "bir sahnede şu çıktı" diye yazılır.
+```

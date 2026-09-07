@@ -2,7 +2,7 @@
 
 > **Son güncelleme:** 27 Ağustos 2026
 > **Üretici sistem promptu:** `../kilavuzlar_ve_sistem_dosyalari/SHORTS_SISTEM_PROMPTU.md`
-> **Denetleyen rubrik:** `../kilavuzlar_ve_sistem_dosyalari/QA_PROMPTLARI/1_KARE_QA_CRITIQUE_PROMPT.md`
+> **Denetleyen rubrik:** `../kilavuzlar_ve_sistem_dosyalari/QA_PROMPTLARI/_KAYNAK/1_KARE_QA_CRITIQUE_PROMPT.md`
 > (9:16 beyan edilince açılan 12-14. kategoriler · eski `SHORTS_QA_CRITIQUE_PROMPT.md`
 > 22.08.2026'da `ARSIV_6_MERCEK/` altına taşındı)
 
@@ -13,7 +13,7 @@
 | Dosya | Format | Kaynak film | Ders kilidi | Kapak | Başlık paketi | QA |
 |---|:---:|---|:---:|:---:|:---:|:---:|
 | `THE_SLOW_TIDE/THE_SLOW_TIDE_DIKEY_SHORTS.md` | **9:16** | ✅ `THE_SLOW_TIDE_PLANET_FILM` (teknik 5/10) | 13 ders | ✅ | ✅ | ❌ |
-| `THE_SLOW_STONE/THE_SLOW_STONE_DIKEY_SHORTS.md` | **9:16** | ✅ `yatay_7_9_dk_filmler/THE_SLOW_STONE` (5/10) | 21 ders 🆕 | ✅ 🆕 | ✅ 🆕 | ❌ |
+| `THE_SLOW_STONE/THE_SLOW_STONE_DIKEY_SHORTS.md` | **9:16** | ✅ `yatay_10_20_dk_filmler/THE_SLOW_STONE` (5/10) | 21 ders 🆕 | ✅ 🆕 | ✅ 🆕 | ❌ |
 | `NINE_MINUTES/NINE_MINUTES_ROKET_YATAY_SHORTS.md` | 16:9 | ❌ özgün | ✅ | ✅ | ✅ | ❌ |
 | `THE_WALKING_DAY/THE_WALKING_DAY_YATAY_SHORTS.md` | 16:9 | ❌ özgün | ✅ | ✅ | ✅ | ❌ |
 | `THE_SINKING_HOUR/THE_SINKING_HOUR_DIKEY_SHORTS.md` | **9:16** | ❌ özgün | 16 ders 🆕 | ✅ 🆕 | ✅ 🆕 | ❌ |

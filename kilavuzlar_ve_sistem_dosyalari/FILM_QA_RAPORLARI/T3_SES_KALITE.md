@@ -1,6 +1,6 @@
 # 🔊 T3 — SES KALİTE TABLOSU (film boyu · ses)
 
-> **Kaynak rubrik:** `../QA_PROMPTLARI/3_SES_QA_CRITIQUE_PROMPT.md`
+> **Kaynak rubrik:** `../QA_PROMPTLARI/_KAYNAK/3_SES_QA_CRITIQUE_PROMPT.md`
 > **Açılış:** 22.08.2026 — dört mercekli sisteme geçişle birlikte
 > **Selefi:** `07_SES_KALITE_TABLOSU.md` — aynı gün KAPANDI.
 >
@@ -53,6 +53,10 @@ gördü" o zaman bir doğrulama değil, tek raporun dört kopyasıdır.
 | ~~**The Iron Slope** Ⓥ ⛔ 🚨~~ | B (sessiz, tasarımlı) | — | — | — | — | — | ~~2~~ | ~~5~~ | ~~6~~ | — | ~~4,3~~ |
 
 | **The Rose Coat** ⬜ | C (ses bilgisi yok) | — | — | — | — | — | — | — | — | — | **—** |
+| **The Payload** Ⓥ ⛔ ⚠️ | A | 10 | 8 | 10 | 8 | — | 7 | 7 | 9 | 8 | **8,4** |
+| **The Skylight** Ⓥ ⛔ | B | — | — | — | — | — | — | — | — | — | **—** |
+| **The Still Swarm** Ⓥ ⛔ | B | — | — | — | — | — | 6 | 7 | 9 | 8 | **7,5** |
+| **The Upward Fall** Ⓥ ⛔ | B | — | — | — | — | — | — | — | — | — | **—** |
 
 > **The Rose Coat · 26.08.2026 · `AUDIO ABSENT — RUN NOT STARTED`**
 > ⛔ Bu bir SKOR SATIRI DEĞİL, bir İZ satırıdır [D136]: stop bloğu doğru

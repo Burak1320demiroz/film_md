@@ -98,8 +98,8 @@ KELİMESİ KELİMESİNE TAŞINIR (kopyala-yapıştır, değiştirme)
 
 YENİDEN YAZILIR (aynı evren, farklı hikaye)
   □ Karakter — aynı ROL tipi, farklı kişi. Aynı yüzü ikinci filmde
-    taşımak isteniyorsa REFERANS PAKETİ zorunludur (yalnız 3-5 dk ve
-    7-9 dk formatlarında emsali var)
+    taşımak isteniyorsa REFERANS PAKETİ zorunludur (emsali yalnız 3-5 dk
+    ve 7-20 dk hattında var)
   □ Mekan, olay, sayaç, çatışma
 
 ⛔ TAŞINMAZ

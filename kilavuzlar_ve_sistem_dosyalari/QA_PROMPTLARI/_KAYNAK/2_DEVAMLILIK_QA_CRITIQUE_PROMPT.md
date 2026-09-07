@@ -519,6 +519,20 @@ what belongs to the place.
 □ A thing moved on screen stays moved; a thing never touched stays put
 □ Surfaces that accumulate — dust, frost, scoring, wet — do not reset
 ```
+
+```
+⛔ THE NAMED OBJECT IS YOURS, WHOEVER ELSE COULD CLAIM IT.
+
+A large object the film attends to — a vehicle, a capsule, a parachute, a
+door the story uses — changing position, orientation or state between two
+scenes IS THIS CATEGORY, and no other lens may also score it. The
+background lens owns the ANONYMOUS field (texture, tiling, crowd density,
+dressing nobody names); it hands you every named object [D189].
+
+So: write it here, write it ONCE, and expect to see it repeated as an
+out-of-scope flag in three other reports. That repetition is the system
+working — one deduction, three flags — not three confirmations.
+```
 An object's state history is monotonic unless the film shows it changing.
 
 ### 11. 🔗 CAUSALITY & KNOWLEDGE LOGIC

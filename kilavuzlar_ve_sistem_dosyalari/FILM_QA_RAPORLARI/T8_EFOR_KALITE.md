@@ -1,6 +1,6 @@
 # 💪 T8 — EFOR KALİTE TABLOSU (risk tetikli tarama)
 
-> **Kaynak rubrik:** `../QA_PROMPTLARI/8_EFOR_QA_CRITIQUE_PROMPT.md`
+> **Kaynak rubrik:** `../QA_PROMPTLARI/_KAYNAK/8_EFOR_QA_CRITIQUE_PROMPT.md`
 > **Açılış:** 01.09.2026 — aksiyon mercekleri sınıfının ikinci yarısı
 >
 > **Ne ölçer:** "İş bedene neye mal oldu ve faturası ekranda mı." Tek

@@ -471,9 +471,40 @@ olarak yazılır ve her çekimde bir öncekinden BÜYÜK olur:**
 
 ```
 S3 (geniş, 120 m)   : ship spans 1/8 of frame height
-S5 (orta, 40 m)     : ship spans 1/3 of frame height
-S7 (rampa, 8 m)     : ramp and hull fill the right half of frame
-S8 (temas, 2 m)     : hatch frame spans 2/3 of frame height
+S5 (orta,   40 m)   : ship spans 3/8 of frame height      ← 04.09.2026 düzeltmesi
+S7 (rampa,   8 m)   : the hull fills the frame top to bottom
+S8 (temas,   2 m)   : hatch frame spans 2/3 of frame height
+```
+
+```
+⭐ 04.09.2026 · ÜÇ DÜZELTME (TUR 9 denetimi)
+
+① DİZİ ÇAPALANIR, ELLE YAZILMAZ.
+   kesir = (nesne yüksekliği × odak) ÷ (mesafe × sensör dikeyi)
+   sensör dikeyi:  16:9 → 20,25 mm    ·    9:16 → 36,00 mm
+   Nesne yüksekliği ve lens PLAN'da yazılır, prompta GİRMEZ [D138].
+   ⚠️ Eski dizi çapasızdı: 120 m'de 1/8 yazan bir dizi 40 m'de 3/8
+      vermeliydi, 1/3 yazıyordu (%11 eksik) — kesir 1/mesafe ile
+      ölçeklenir, elle seçilmez.
+
+② TÜM KESİRLER AYNI NESNEYİ ve AYNI EKSENİ ölçer.
+   Eski dizide S3/S5 gemiyi, S7 rampa+gövdeyi, S8 kapağı ölçüyordu;
+   üstelik S7 kare GENİŞLİĞİNİ söylüyordu, diğerleri kare yüksekliğini.
+   Üç ayrı merdiven tek merdiven diye sunulunca "her çekimde büyür"
+   kuralı denetlenemez hâle geliyordu. Özne değişiyorsa YENİ MERDİVEN
+   başlar ve iki merdiven ayrı satırda tutulur.
+
+③ KESİR 1/1'İ GEÇERSE KESİR YAZILMAZ, TAŞMA YAZILIR.
+   "the hull edge runs out of frame on two sides; no part of the
+    structure's outline is visible"
+   Taşma da yönelim sabitliği kuralına tabidir.
+   ⚠️ Yakın bantta taşma İSTİSNA DEĞİL ZORUNLULUKTUR: 2 m'de kapak
+      dışında hiçbir yapı kadraja sığmaz.
+
+⛔ BU DİZİ BİR GEMİ İÇİNDİR. Kesirleri geriye çözüldüğünde ~11 m'lik
+   bir nesne verir. İstasyon MODÜLÜ 4,2-4,5 m'dir; aynı merdiven
+   kopyalanırsa modül 3,5 kat büyük yazılır. İstasyon/üs için kendi
+   tablosu vardır: UZAY_USSU_VE_ISTASYON_MIMARISI_KILAVUZU.md §5.2.
 ```
 
 Kesirler PLAN'da sahne haritasının yanına yazılır; prompt kendi
@@ -1233,6 +1264,6 @@ Dış kaynaklar (09.08.2026'da tarandı):
 | `DERSLER/` → DERS 87 | coğrafya bulgusu filmin önermesi mi — bulgu tabloya girmeden önceki kapı |
 | `DERSLER/` → DERS 104 | ışık mıknatısı + frontal refleks + iki yenilgi kuralı (§6.7-6.8'in kaynağı) |
 | `yatay_3_5_dk_filmler/THE_BLACK_CRADLE/` | Sürüm 3'ün ölçüm filmi — S4 V1/V2/V3 kapı kayıtları PART_A sonunda; V3 kompozisyon şablonunun dolu örneği S4 promptudur |
-| `QA_PROMPTLARI/2_DEVAMLILIK_QA_CRITIQUE_PROMPT.md` | Coğrafya kategorisini ölçen rubrik |
+| `QA_PROMPTLARI/_KAYNAK/2_DEVAMLILIK_QA_CRITIQUE_PROMPT.md` | Coğrafya kategorisini ölçen rubrik |
 | `FILM_QA_RAPORLARI/04_MANTIK_KALITE_TABLOSU.md` | skorların tek kaynağı |
 | `yatay_3_5_dk_filmler/THE_THIRD_DUNE/` | depodaki ilk uygulama — SPATIAL LOCK BIBLE örneği |

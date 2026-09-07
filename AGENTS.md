@@ -62,6 +62,18 @@ kısafilmler/
 │   ├── LESSONS_LEARNED.md            ders DİZİNİ + teknik kalite tablosu
 │   ├── DERSLER/                      ders metinleri — 9 tematik dosya + hızlı
 │   │                                 referans bloğu (07.08.2026'da bölündü)
+│   ├── DIS_FILM_ANALIZI/          🎞️ 05.09.2026 · ⛔ HAT KAPALI — film_analizleri/
+│   │                                 kaldırıldı, iki şey buraya kurtarıldı:
+│   │                                 · NOBODY_WAS_ALIVE ders seçkisi ⭐ CANLI —
+│   │                                   kart H2 ③ (dışarıdan atıf alan dosya
+│   │                                   taşınır): THE_LAST_SHIFT ve
+│   │                                   THE_HOLLOW_COUNT §0.19 tabloları
+│   │                                   buradan devraldı
+│   │                                 · dört analiz promptu (KAMERA·OLAY·TEMA·
+│   │                                   SENTEZ) — dış atfı YOKTU; H2'nin
+│   │                                   "bilgi ucuz, yeniden yazmak pahalı"
+│   │                                   gerekçesiyle korundu
+│   │                                 Skor üretmez, T tablosuna girmez, sayaç saymaz.
 │   ├── sayac.sh                      sayıları dosya sisteminden hesaplar
 │   ├── FILM_KLASOR_SABLONU/          🆕 01.09.2026 · film klasörü iskeletinin
 │   │                                 KOPYALANABİLİR hâli (7 dosya taslağı).
@@ -71,6 +83,19 @@ kısafilmler/
 │   │
 │   ├── SINEMATOGRAFIK_TEKNIK_KILAVUZ.md   lens/ışık/kamera + §17 karar tablosu
 │   ├── SAHNE_DEVAMLILIK_KILAVUZU.md       karakter çapalama, seed
+│   ├── REFERANS_PAKETI_KILAVUZU.md 🆕 06.09.2026 · KAPI 0 — biçim
+│   │                                  kilidi metinle tutulmuyor [D146]:
+│   │                                  §1 altı tetikleyici (eski "iki
+│   │                                  insan/araç" sayımı ÖLDÜ) · §2
+│   │                                  envanter (belgede kalan ↔ görselde
+│   │                                  kilitlenen) · §3 durum merdiveni ·
+│   │                                  §4 sayfa kanonu + yükleme kuralı ·
+│   │                                  §5 sahne→referans eşleme · §6 kabul
+│   │                                  kapısı · §7 geçersizlik
+│   │                                  KAPI: LİSTE <FILM>_REFERANS_PAKETI.md
+│   │                                        §0/§7 · BETİK ⑲ (FIX) · ⑳b
+│   │                                  ⛔ paketin VARLIĞINI ölçen betik
+│   │                                     kapısı HENÜZ YOK (TUR 12 · T12.4①)
 │   ├── UZAMSAL_HARITA_VE_EKRAN_YONU_KILAVUZU.md  kuşbakışı harita, ekran yönü, ölçek kilidi
 │   ├── YANASMA_VE_KENETLENME_KILAVUZU.md  yanaşma vuruş seti + ses/dramaturji kalıbı
 │   ├── TEK_CEKIM_VE_GIZLI_GECIS_KILAVUZU.md
@@ -88,6 +113,34 @@ kısafilmler/
 │   │                                  ŞERİDİ · varlık kelime sözlüğü
 │   │                                  (kaynak: TUR 7 · uzay operası
 │   │                                  yasağı SÜRER — ırk/filo yok)
+│   ├── UZAY_USSU_VE_ISTASYON_MIMARISI_KILAVUZU.md 🆕 04.09.2026 ·
+│   │                                  kadrajda istasyon/üs/büyük yapı
+│   │                                  varsa ZORUNLU: ölçek birimi
+│   │                                  (1H = kasklı gövde) · anatomi
+│   │                                  kartı · mesafe-kesir tablosu
+│   │                                  (16:9 ve 9:16 ayrı) · ölçek
+│   │                                  şahidi merdiveni · yörünge ve
+│   │                                  yüzey için İKİ AYRI negatif blok
+│   │                                  (kaynak: TUR 9 · ⭐ Ders 32'yi
+│   │                                  nesne-göreli birime çevirdi)
+│   ├── ACILIS_KAPANIS_CIFTI_KILAVUZU.md 🆕 04.09.2026 · ilk kare ile
+│   │                                  son kare TEK karar: kafiye mi
+│   │                                  döngü mü · tek değişken kuralı ·
+│   │                                  konum kilidi · ÇİFT KARTI
+│   │                                  ⛔ kanca tipini (HOOK §4) ve final
+│   │                                  tipini (FINAL §2) SEÇMEZ; ikisinin
+│   │                                  BAĞINI yazar (kaynak: TUR 10)
+│   ├── SAHNE_ZINCIRI_VE_SINIR_KILAVUZU.md 🆕 04.09.2026 · iki sahnenin
+│   │                                  ARASI: beş soru tipi · dört cevap
+│   │                                  tipi · ardışık aynı cevap yasağı ·
+│   │                                  sınır satırı (End/Start) · hangi
+│   │                                  cevap kesilebilir (ara halka /
+│   │                                  açıklama / terminal bedel)
+│   │                                  ⛔ DURUM DEĞİŞİMİ klibe değil
+│   │                                  SINIRA yazılır (dynamic attribute
+│   │                                  binding en zayıf eksen —
+│   │                                  sayı: KILAVUZ_REHBERI §7)
+│   │                                  (kaynak: TUR 11 · 06 §0'ın hedefi)
 │   ├── SHORTS_SISTEM_PROMPTU.md           dikey 9:16 hazır sistem promptu
 │   │                                      ⚠️ 27.08.2026: md.5'ten "tehlike yoktur" KALKTI · "eller her zaman boş" GEVŞEDİ
 │   ├── GOOGLE_FLOW_MUSIC_URETIM_KILAVUZU.md
@@ -111,6 +164,11 @@ kısafilmler/
 │   ├── TEMA_MUHENDISLIGI_KILAVUZU.md      tema seçimi + tema→motif→sahne matrisi + süre-tatmin kuralı (22.08.2026)
 │   ├── KAMERA_ACISI_PSIKOLOJISI_KILAVUZU.md  8 açının anlam sözlüğü + vuruş→açı tablosu + abartı eşikleri (22.08.2026)
 │   ├── ACI_YAYI_VE_SEKANS_KILAVUZU.md     açı/ölçek sıçrama bandı + kurulum sayısı + yay şablonları (22.08.2026)
+│   │                                      🆕 05.09.2026 · §3 🕰️ KÜME · §4b DÖNÜŞ HEDEFİ · §7 ⑥ birebir yazım
+│   ├── DIS_REFERANS_OLCUMU.md 🆕 05.09.2026 · dış referans ölçümü (tek seferlik):
+│   │                                      §2 süre/kurulum tablosu — ACI_YAYI §4b'nin saha kanıtı
+│   │                                      §3 ölçek şahidi sözlüğü — UZAY_USSU §5.3'e 10 vaka
+│   │                                      ⛔ ANALİZ HATTI DEĞİL · klip/kare/ham rapor depoya GİRMEZ
 │   ├── MESHUR_SAHNE_KALIPLARI_KILAVUZU.md 20 ikonik sahne kalıbı + taşınabilirlik + homage/telif sınırı (22.08.2026)
 │   ├── SKILL_KULLANIM_KILAVUZU.md         ajan skill envanteri + akış eşlemesi + öncelik kuralı (27.08.2026)
 │   ├── POLITIKA_VE_URETILEBILIRLIK_KILAVUZU.md 🆕 01.09.2026 · ÜRETİM REDDİ:
@@ -144,8 +202,20 @@ kısafilmler/
 │   │   ├── 4_HIKAYE_QA_CRITIQUE_PROMPT.md       ④ film boyu anlatı · (+PLAN)
 │   │   ├── 5_ARKA_PLAN_QA_CRITIQUE_PROMPT.md    ⑤ 🔬 derin tarama · özne-dışı
 │   │   │                                        alan · risk tetikli · /4'e girmez
-│   │   └── 6_FIZIK_QA_CRITIQUE_PROMPT.md        ⑥ 🔬 derin tarama · sayısal
-│   │                                            fizik (+KİLİT LİSTESİ = mod D)
+│   │   ├── 6_FIZIK_QA_CRITIQUE_PROMPT.md        ⑥ 🔬 derin tarama · sayısal
+│   │   │                                        fizik (+KİLİT LİSTESİ = mod D)
+│   │   ├── 7_AKSIYON_QA_CRITIQUE_PROMPT.md      ⑦ 🎯 okunurluk · risk tetikli
+│   │   ├── 8_EFOR_QA_CRITIQUE_PROMPT.md         ⑧ 💪 bedel · risk tetikli
+│   │   ├── 9_KADRAJ_QA_CRITIQUE_PROMPT.md       ⑨ 🎯 PLAN SADAKATİ · kamera planın
+│   │   │                                        koyduğu yerde mi (06.09.2026 · D184)
+│   │   ├── 10_OYUNCULUK_QA_CRITIQUE_PROMPT.md   ⑩ 🎭 plan sadakati · niyet/seçim/bedel
+│   │   │                                        BEDENDE okunuyor mu
+│   │   ├── 11_ISIK_QA_CRITIQUE_PROMPT.md        ⑪ 💡 plan sadakati · ışık klipten
+│   │   │                                        klibe · yalnız planlı sınırda değişir
+│   │   └── 12_HOOK_QA_CRITIQUE_PROMPT.md        ⑫ 🪝 plan sadakati · açılış/paylaşım/
+│   │                                            çıkış + üç saniyelik düşüş TAHMİNİ
+│   │                                            ⛔ ⑨-⑫ SPEC'siz koşulmaz; mod V satırı
+│   │                                            tabloya girmez · ölçümden SONRA koşulur
 │   │
 │   ├── FILM_QA_RAPORLARI/         📊 SONUÇLAR (çıktı) — buraya YAZILIR
 │   │   ├── 00_INDEX.md               ⭐ PROJEDEKİ TEK SAYAÇ + tamlık matrisi
@@ -157,6 +227,11 @@ kısafilmler/
 │   │   ├── T4_HIKAYE_KALITE.md       ④ skorları        ⭐ CANLI
 │   │   ├── T5_ARKA_PLAN_KALITE.md    ⑤ skorları · derin tarama, matrise girmez
 │   │   ├── T6_FIZIK_KALITE.md        ⑥ skorları · derin tarama, matrise girmez
+│   │   ├── T7_AKSIYON · T8_EFOR      ⑦⑧ skorları · risk tetikli, matrise girmez
+│   │   ├── T9_KADRAJ · T10_OYUNCULUK · T11_ISIK · T12_HOOK
+│   │   │                             ⑨-⑫ skorları · plan sadakati (06.09.2026 ·
+│   │   │                             D184) · koşul tetikli · matrise girmez ·
+│   │   │                             mod V satırı YOK
 │   │   ├── 03_ · 04_ · 05_ · 06_ · 07_   ⛔ KAPALI (22.08) — eski 6 mercekli
 │   │   │                             sistemin skorları; yeni satır YAZILMAZ,
 │   │   │                             yenilerle KARŞILAŞTIRILAMAZ
@@ -184,6 +259,11 @@ kısafilmler/
 │                                     GİRMEDİ ve neden (27.08.2026, 1. tur)
 │                                     ⛔ kural buradan okunmaz — kuralın
 │                                        NEREDEN geldiği buradan okunur
+│       ├── TUR9_HAM_RAPORLAR/ · TUR10_HAM_RAPORLAR/ 🆕 04.09.2026 ·
+│       │                             uzay üssü ve giriş/final turlarının
+│       │                             HAM raporları — düzeltilmez,
+│       │                             kısaltılmaz; her dosyanın başında
+│       │                             koşulan prompt birebir durur
 │       └── 05_DIKEY_HAT_TESHISI.md ⭐ 30.08.2026 · HAT TEŞHİSİ (tek filme
 │                                     değil, 18 filme birden bakar): dikey
 │                                     hattın neden aynı filmi 18 kez yazdığı
@@ -200,16 +280,22 @@ kısafilmler/
 │    Depo yalnız UZAY filmleri içindir; zombi türü de kapandı. Tür kartı
 │    KILAVUZ_REHBERI §4.2'de ⏸️ RAFTA duruyor, silinmedi.)
 ├── yatay_3_5_dk_filmler/          16:9 · FİLM KLASÖRÜ (PLAN + PART_A/B + KAPAK)
-├── yatay_7_9_dk_filmler/          16:9 · FİLM KLASÖRÜ + kendi kilavuzlar/ dizini
-│   └── kilavuzlar/kalite_kontrol/    ⚠️ bu formatın AYRI 3 geçişli QA sistemi
-├── yatay_10_20_dk_filmler/        16:9 · 3 PERDE · FİLM KLASÖRÜ
-│   └── THE_SECOND_SHIP/              120 sahne × 10s = 20:00 (8s'den sapma)
-│
-└── film_analizleri/               🎞️ DIŞ FİLM ANALİZLERİ — bizim yapmadığımız
-    │                                 filmler, 20 parça × 3 mercek (KAMERA·OLAY·
-    │                                 TEMA) + SENTEZ · film sayımına GİRMEZ
-    ├── ANALIZ_QA_PROMPTLARI/         salt promptlar (video + tek dosya)
-    └── ANALIZ_EDILEN_FILMLER/        film başına klasör (KUNYE + raporlar)
+└── yatay_10_20_dk_filmler/        16:9 · 3 PERDE · FİLM KLASÖRÜ · bant 7-20 dk
+    ├── THE_SECOND_SHIP/              120 sahne × 10s = 20:00 (8s'den sapma)
+    └── THE_SLOW_STONE/               48 sahne × 10s = 8:00 — bandın KISA UCU
+    (yatay_7_9_dk_filmler/ — 04.09.2026'da sahip kararıyla KALDIRILDI.
+     Tek filmi THE_SLOW_STONE buraya taşındı; kendi kilavuzlar/ dizini
+     kilavuzlar_ve_sistem_dosyalari/'na çıktı ve format-bağımsız oldu.
+     Format kartı KILAVUZ_REHBERI §2.4'te ⏸️ KAPANDI notuyla duruyor.)
+
+    (film_analizleri/ — 05.09.2026'da sahip kararıyla KALDIRILDI. Dış film
+     analiz hattı kapandı; zaten film sayımına girmiyordu. İki şey kurtarıldı
+     ve merkeze taşındı → kilavuzlar_ve_sistem_dosyalari/DIS_FILM_ANALIZI/ :
+     NOBODY_WAS_ALIVE ders seçkisi (kart H2 ③ — iki canlı film adresliyor) ve
+     dört analiz promptu (dış atfı yoktu; pahalı metodoloji olduğu için).
+     Analiz edilmiş film klasörü git'te durur — `git show e9bcf36:film_analizleri/…`
+     ⛔ DIKEY_4_PARCA/ ve CORAK_TOPRAKLAR analizi HİÇBİR COMMIT'TE YOKTU,
+        geri alınamaz — bkz. kart H2, beşinci tur.)
 ```
 
 **Format seçimi, tür kilitleri, fizik kuralları → hepsi `KILAVUZ_REHBERI.md`'de.
@@ -280,7 +366,7 @@ YAZ
             <FORMAT_KLASORU>/<FILM_ADI>
    Yedi dosya: PLAN · BOLUM_1 · BOLUM_2 · KAPAK · MUZIK ·
                YAYIN_PAKETI (TAMAMEN İNGİLİZCE) · QA_SPEC
-   Bölüm sayısı formattan gelir; 7-9 ve 10-20 dk'da faz sayısı kadardır.
+   Bölüm sayısı formattan gelir; 7-20 dk hattında faz sayısı kadardır.
    ⛔ Format klasörünün köküne .md BIRAKMA — orada yalnız 00_README
       durur; sayaç kökteki her girdiyi BİR FİLM sayar.
    ⛔ Eski filmler YENİDEN BÖLÜNMEZ/ADLANDIRILMAZ. İskelet YENİ filmler
@@ -291,6 +377,20 @@ YAZ
  □ Sahne başlıkları ## ile (kural ②) — ve YALNIZ bölüm dosyalarında
       (plandaki örnek bir prompt sahne dizisine karışır)
  □ PLAN → BIBLE → PROMPT sırası (KILAVUZ_REHBERI §6)
+ □ ⭐ REFERANS PAKETİ — KAPI 0, PROMPT'tan ÖNCE [D146 · 06.09.2026]
+      `REFERANS_PAKETI_KILAVUZU.md` §1'in ALTI tetikleyicisi okunur; BİRİ
+      doğruysa `<FILM>_REFERANS_PAKETI.md` YAZILIR (şablon klasörde hazır).
+      ⛔ Eski "iki insandan/araçtan fazlası" sayımı ÖLDÜ — T1 (kask · vizör ·
+      basınç giysisi) bu deponun neredeyse her filminde doğrudur.
+      ⛔ Tetikleyici yoksa dosya SİLİNMEZ, `⬜ BEKLİYOR` ile durur.
+      ⛔ Bir varlığın sayfası ONAYLI olmadan ve seed'i yazılmadan o varlığın
+      geçtiği hiçbir sahne üretilmez; üretim sırası PAKET → DORUK → merkezî
+      seçim → hook [D168].
+      Gerekçe: D146 ⛔ ÇALIŞMIYOR — biçim kilidi METİNLE tutulmuyor, üç
+      ölçülmüş vaka (SKYLIGHT 1 filmde 3 kask · YERÇEKİMİ F2 · STANDING
+      WIRE). Bedel: SINKING STAKE'in QA kaydı "referans paketi HİÇ
+      ÜRETİLMEDİ → çapa yok" + "göğüs paketi S13'te değişiyor".
+      ⛔ Paket yoksa film "yazımı tamam" DEĞİLDİR — SPEC ile aynı ağırlıkta.
  □ ⭐ SAHNE HARİTASI YAZILIRKEN İKİ BÜTÇE DAĞITILIR (22.08.2026) —
       ikisi de üretimden SONRA eklenemez:
       · KARAKTER_VE_DUYGU_KILAVUZU.md §6 — göz · tepki planı · el ·
@@ -303,12 +403,23 @@ YAZ
       sahne numaraları plana yazılır; yazılmayan tema dekoratiftir
       (Kaleida Crash kaydı: "bedel yok → tema dekoratif kalıyor").
       Betik TEMA satırını ve sahne indekslerini arar.
- □ ⭐ SAHNE-KURULUM DİZİSİ (26.08.2026)
+ □ ⭐ SAHNE-KURULUM DİZİSİ (26.08.2026 · 🆕 genişletildi 05.09.2026)
       ACI_YAYI_VE_SEKANS_KILAVUZU.md §3 güvenli bant (ardışık çift:
       ≥1 ölçek kademesi VE ≥45°) · §4 kurulum sayısı bandı · §9 kontrol.
       Açı TİPİ sayısı ≥3 (KAMERA_ACISI §2) — üç kurulumun üçü de alttan
       bakıyorsa çeşitlilik yok, yalnız mesafe değişiyor.
       ⛔ Bu, KART 8'in lockoff kararıyla ÇELİŞMEZ: lockoff KLİP İÇİDİR.
+ □ ⭐ KURULUM İSKELETİ satırı PLAN'a yazılır 🆕 05.09.2026 (sahip kararı)
+      Harf dizisi, sahne sayısı kadar harf: A A B C B C D E E C D A.
+      ⛔ BU SATIR KAPIYI AÇAR — prompt_kontrol ⑩④ yalnız onu beyan eden
+      dosyada koşar (eski dosyalar bilinçli olarak muaf).
+      12+ sahnede: KÜME ≥2 (ardışık 2-3 klip aynı kurulumda, tek vuruş
+      sürerken) · DÖNÜŞ ≥%40 (dönüş = kaynağından ≤3 sahne sonra gelen
+      tekrar) [ACI_YAYI §3 🕰️ · §4b]. 6-11 sahne ve dikey shorts MUAF.
+      Aynı harfin kamera metni BİREBİR kopyalanır + işaret satırını taşır
+      [§7 ⑥] — model harf iskeletini görmez, yalnız metni görür.
+      Teşhis: depoda 1.406 sahne / 1.287 kesme, kesmelerin neredeyse
+      tamamı yeni bakış noktasına; hiçbir film DİNLENMİYORDU.
  □ ⭐ <FILM>_QA_SPEC.md yazılır — yazım paketinin son parçası [Ders 117]
       A bloğu ④ HİKAYE alanları · B kurgu geometrisi + İNSAN ŞERİDİ ·
       C belgesiz merceklerin FLAGS sorularını cevaplayan kilitler
@@ -335,7 +446,7 @@ YAZ
  □ ⭐ SPEC YAZILIR YAZILMAZ QA PAKETİ ÜRETİLİR — burada, QA anında DEĞİL
       [Ders 165 · 02.09.2026]
         bash .claude/skills/qa-isle/scripts/rubrik_paketle.sh <film klasörü>
-      → QA_PROMPTLARI/FILME_OZEL/<FILM>/PAKET_1..8 (koşması 1 saniye)
+      → QA_PROMPTLARI/FILME_OZEL/<FILM>/PAKET_1..12 (koşması 1 saniye)
       ⛔ Bu klasör yoksa film "yazımı tamam" DEĞİLDİR.
       Sebep: paket yalnız qa-isle §2b'de tarif edilmişti; operatör QA anında
       skill değil RUBRİK açar ve çıplak rubriği yapıştırır. D129'un aracı
@@ -443,6 +554,11 @@ commit'lenmemişti; 18 commit tarandı, tek iz yok.)*
       bash .claude/skills/qa-isle/scripts/rubrik_paketle.sh <film klasörü> <master>
                                                                              → QA_PROMPTLARI/FILME_OZEL/<FILM>/ (mod D paketleri)
       Operatör PAKETİ yapıştırır, çıplak rubriği değil [D129 · 9 film mod V koştu]
+      ⛔ olcum_kapisi.sh TESLİM SINIFI: 🚨 HAM ZİNCİR basarsa HİÇBİR mercek
+        koşulmaz — önce kurgu, sonra ölçüm, sonra mercek [D181]
+      ⑨ KADRAJ · ⑩ OYUNCULUK · ⑪ IŞIK · ⑫ HOOK KOŞUL TETİKLİDİR [D184]:
+        koşullar 00_PAKET_README.md tablosunun son sütununda; dördü de MOD D
+        (SPEC'siz koşusu boş). ⑫ yayından ÖNCE koşulur → kart Y
  □ 00_INDEX.md → filmin durumunu "üretildi" olarak işaretle
  □ Yayınlanacaksa → görev kartı Y
  □ commit
@@ -464,6 +580,9 @@ DIŞ ARAŞTIRMA hipotezidir ve bu kart koşulmadan test edilmez.)*
    hatırlanarak yazılamaz (kimlik kapısının yayın karşılığı).
 
 YAYINDAN ÖNCE
+ □ ⑫ HOOK koşuldu mu (kart F8) — DROP-OFF PREDICTION üç saniyesi
+   08_YAYIN_PERFORMANS_TABLOSU §1 "⑫ tahmin" hücresine OLDUĞU GİBİ kopyalandı
+   mı [D184]. Tahminsiz açılan satırın eğrisi neyi kalibre edeceğini bilmez.
  □ 08_YAYIN_PERFORMANS_TABLOSU.md → §1 kimlik satırı doldur
  □ Paketleme: apexaic/<platform>/PAKETLEME_SABLONU.md (kanal için doldurulmuş
    VIRAL_BASLIK) + apexaic/CAPRAZ_YAYIN.md §7 çapraz liste
@@ -476,6 +595,9 @@ YAYINDAN ÖNCE
  □ §2 metrik satırı · §3 eğri teşhisi · §4 karar satırı
  □ ⭐ Terk saniyesi IZGARA ARİTMETİĞİYLE SAHNEYE çevrilir —
       hizalama kapısıyla (ortak adım ⑨) aynı formül
+ □ ⭐ Gerçek eğrinin üç düşüş saniyesi ⑫'nin tahmininin YANINA yazılır:
+      |Δ| ≤ 10 s tutan tahmin, ötesi tutmayan. Üç filmde 0/9 tutarsa
+      yanlış olan ⑫'dir → 01_DERS_ETKINLIK_RAPORU (aleti izleyici kalibre eder)
  □ Suçlu değişken eleme sırası: paketleme → kurgu → ses → sahne →
       plan → format (ucuzdan pahalıya, kılavuz §4.2)
 
@@ -520,7 +642,7 @@ BİTİŞ
       SPEC hazır olduğu hâlde mod V koşulan film sayısı **10**, mod D sayısı 0
       (son vaka 02.09.2026 · THE STILL SWARM · SEKİZ mercek birden).
    ⛔ AMA ARTIK OPERATÖRE İKİ DOSYA VERİLMEZ, TEK PAKET VERİLİR [Ders 165]:
-      `QA_PROMPTLARI/FILME_OZEL/<FILM>/PAKET_1..8` — rubrik + SPEC'in ilgili
+      `QA_PROMPTLARI/FILME_OZEL/<FILM>/PAKET_1..12` — rubrik + SPEC'in ilgili
       bloğu tek dosyada, mod D gömülü. Paket FİLMİN YAZIMINDA üretilir
       (Kart A §4), QA anında değil: paket yoksa operatör çıplak rubriği
       yapıştırır ve koşu daha başlamadan mod V olur.
@@ -556,6 +678,25 @@ BİTİŞ
    KENDİSİYLE karşılaştırır ve ⑤'ten geçen bir fabrike toplamı yakalar.
    ⛔ Betik BULGUNUN DOĞRULUĞUNU ölçmez (o iş ⑪ + ② defteri); raporun kendi
       içinde tutup tutmadığını ölçer.
+
+   ⭐ ①.9 TESLİM KAPISI [D188 · 07.09.2026] — `--film` verildiğinde betik
+   PLANIN `## 🎬 SAHNE n` başlıklarını sayar ve raporların ÇOĞUNLUK sahne
+   sayısıyla karşılaştırır. Fark varsa parti GEÇERSİZ.
+   ⛔ **Merceklerin birbirini doğrulaması TESLİMİ doğrulamaz.** ⑤ çapraz
+   sayım kapısı raporları BİRBİRİNE bakar; hepsi aynı makarayı izler ve
+   EKSİK MAKARA OYBİRLİĞİYLE ONAYLANIR — mutabakat ne kadar güçlüyse kayıt
+   o kadar ikna edici görünür. Parti dışındaki tek referans plandır.
+   Vaka: YERÇEKİMİ F10 · plan 12 sahne · makara 11 klip · eksik olan
+   FİLMİN SON KARESİYDİ (S120) ve on iki merceğin on ikisi onayladı.
+   ⛔ Kapı ateşlerse: kesme listesi · REMOVE reçetesi · yeniden üretim
+   UYGULANMAZ. Önce hangi sahnenin makarada olmadığı ADIYLA yazılır ve
+   soru QA masasından ÜRETİM masasına geçer.
+
+   ⭐ ⑦ ORTAK DEFTER KAPISI [D110 · 07.09.2026] — künyesi (kesme · sahne ·
+   şerit) BİREBİR aynı olan ve çoğunluktan sapan mercek grubu işaretlenir:
+   *azınlık İKİ oy değil, BİR oydur.* Aynı oturumda arka arkaya koşulan iki
+   mercek tek ölçümün iki kılıfı olabilir. Doğrulama: kesme ZAMAN KODLARI
+   basılmış mı? Basılmamışsa sayım yapılmamış, devralınmıştır.
 
 ② KİLİT ÇELİŞKİSİ DEFTERİ [Ders 96]
    Raporun, planda YAZILI bir kilide aykırı her bulgusu — bulgu listesinden
@@ -782,6 +923,18 @@ BİTİŞ
       yokluğu değil ÖLÇÜM BOŞLUĞUDUR → kilit defterine ⬜ AÇIK.
       Sebep: "bot rengi sürüklenmesi" cila notu gibi okunur; oysa filmin
       iki figürü ayıran ÜÇ kanaldan biriydi.
+   ⭐ ALTINCI SATIR — SINIR SORULUR, YALNIZ DÜŞÜRÜLMEZ [Ders 183].
+      Bir bulgu SPEC'in NOVUM'u yüzünden düştüyse kapı BİTMEDİ: NOVUM bloğu
+      kuralın nerede BİTTİĞİNİ de yazar (SPEC'te `⛔` ile başlayan cümle).
+      O cümle KAREYLE sınanmadan ⑩ kapanmaz:
+        | novum sınır cümlesi (SPEC) | sınandığı saniye | tutuyor mu |
+      Sebep: THE KEPT LIGHT'ta ⑥'nın "TWO GRAVITIES" hükmü haklı olarak
+      düştü — ve düşerken altındaki GERÇEK ihlali de götürdü: SPEC "kapağın
+      ÜSTÜNDE bırakılan alet güverteye ÇARPAR" diyordu, ekranda bırakılan
+      kesici üç saniye havada kalıp güverteye hiç çarpmadan ağza kayıyordu.
+      Sekiz merceğin hiçbiri yazmadı; ⑥ en yakınına geldi ve yönü ters yazdı.
+      → BETİK: rapor_kontrol.py ①.7 sınır cümlesini basar, elle aranmaz.
+
    ⛔ Bulguyu getiren merceğin adı bu kararı değiştirmez. Kapı 12.08'de
       yalnız kart E'ye yazıldı; 20.08'de aynı yanlış okuma dört mercekten
       geldi ve biri filmin PLANLI FİNALİNİ kesmeyi önerdi.
@@ -836,6 +989,12 @@ BİTİŞ
        | grep -oE "freeze_(start|end): [0-9.]+"           → KUYRUK/BAŞ KART ŞÜPHESİ
        + son_kare.jpg (son 1 s)                            [D70/D72 · 9 vaka · 01.09.2026]
      ⭐ Hepsi tek koşuda: bash .claude/skills/qa-isle/scripts/olcum_kapisi.sh <master>
+       ⛔ BETİK SONA "TESLİM SINIFI" SATIRI BASAR [Ders 181]: LUFS sapması
+          > 3 LU · kuyrukta ≥1,5 s donma → 🚨 HAM ZİNCİR. Filigran ve klip
+          sayısı GÖZLE/SPEC'le kapanır. HAM ZİNCİR çıkarsa MERCEK KOŞULMAZ,
+          rapor OKUNMAZ, satır YAZILMAZ — sıra: KURGU → ÖLÇÜM → MERCEK.
+          Sebep: iki filmde de teslim edilen dosya kurgu değil, üreticinin
+          ham zinciri + bir kart'tı; sekiz mercek onu "film" sanıp puanladı.
        ⛔ Aynı köşede aynı şekil her örnekte duruyorsa FİLİGRAN VAR [Ders 150]:
           🔴 teslim kusuru — master filigransız yeniden ihraç edilir, koşu ona
           yapılır; dört köşe için crop x/y değiştirilir. Altı mercek 315
@@ -858,7 +1017,10 @@ BİTİŞ
 
 ## 🔧 C — ① KARE RAPORU GELDİ
 
-**Rubrik:** `QA_PROMPTLARI/1_KARE_QA_CRITIQUE_PROMPT.md` · girdi: video (+ SPEC)
+**Rubrik:** `QA_PROMPTLARI/FILME_OZEL/<FILM>/PAKET_1_KARE.md` · girdi: video (+ SPEC)
+⛔ **ÇIPLAK RUBRİK YAPIŞTIRILMAZ** [D129 · 13 film]. Paket yoksa önce üret:
+`bash .claude/skills/qa-isle/scripts/rubrik_paketle.sh <film klasörü>`
+Kaynak rubrik `QA_PROMPTLARI/_KAYNAK/` altındadır ve yalnız BETİK okur.
 
 ```
 ⛔ FORMAT KAPISI (22.08.2026): raporun ilk satırında `FORMAT:` var mı?
@@ -909,7 +1071,10 @@ BİTİŞ
 
 ## 📖 D — ④ HİKAYE RAPORU GELDİ
 
-**Rubrik:** `QA_PROMPTLARI/4_HIKAYE_QA_CRITIQUE_PROMPT.md` · girdi: video (+ PLAN)
+**Rubrik:** `QA_PROMPTLARI/FILME_OZEL/<FILM>/PAKET_4_HIKAYE.md` · girdi: video (+ PLAN)
+⛔ **ÇIPLAK RUBRİK YAPIŞTIRILMAZ** [D129 · 13 film]. Paket yoksa önce üret:
+`bash .claude/skills/qa-isle/scripts/rubrik_paketle.sh <film klasörü>`
+Kaynak rubrik `QA_PROMPTLARI/_KAYNAK/` altındadır ve yalnız BETİK okur.
 
 ```
 ⛔ İKİ MOD VAR (05.08.2026'dan beri):
@@ -941,7 +1106,10 @@ BİTİŞ
 *(22.08.2026'da eski E + E2 kartları birleşti — rubrikler birleştiği için.
 Karakter artık opsiyonel derin mercek DEĞİL, bu merceğin gövde yarısıdır.)*
 
-**Rubrik:** `QA_PROMPTLARI/2_DEVAMLILIK_QA_CRITIQUE_PROMPT.md` · girdi: **yalnız video**
+**Rubrik:** `QA_PROMPTLARI/FILME_OZEL/<FILM>/PAKET_2_DEVAMLILIK.md` · girdi: **yalnız video**
+⛔ **ÇIPLAK RUBRİK YAPIŞTIRILMAZ** [D129 · 13 film]. Paket yoksa önce üret:
+`bash .claude/skills/qa-isle/scripts/rubrik_paketle.sh <film klasörü>`
+Kaynak rubrik `QA_PROMPTLARI/_KAYNAK/` altındadır ve yalnız BETİK okur.
 
 ```
 ⛔ TERSİ KURAL: Bu rubriğe DOKÜMAN VERİLMEZ. Baseline STEP 1'de videodan
@@ -997,7 +1165,10 @@ Karakter artık opsiyonel derin mercek DEĞİL, bu merceğin gövde yarısıdır
 
 ## 🔊 E3 — ③ SES RAPORU GELDİ
 
-**Rubrik:** `QA_PROMPTLARI/3_SES_QA_CRITIQUE_PROMPT.md` · girdi: **yalnız video**
+**Rubrik:** `QA_PROMPTLARI/FILME_OZEL/<FILM>/PAKET_3_SES.md` · girdi: **yalnız video**
+⛔ **ÇIPLAK RUBRİK YAPIŞTIRILMAZ** [D129 · 13 film]. Paket yoksa önce üret:
+`bash .claude/skills/qa-isle/scripts/rubrik_paketle.sh <film klasörü>`
+Kaynak rubrik `QA_PROMPTLARI/_KAYNAK/` altındadır ve yalnız BETİK okur.
 *(22.08.2026: artık OPSİYONEL DEĞİL — kurguda ses varsa zorunlu dört
 mercekten biri. Eski karakter merceğinin ses/performans yarısı da buraya
 geldi: ses bu merceğin, beden ②'nin.)*
@@ -1057,7 +1228,10 @@ geldi: ses bu merceğin, beden ②'nin.)*
 
 ## 🖼️ F — ⑤ ARKA PLAN RAPORU GELDİ (derin tarama)
 
-**Rubrik:** `QA_PROMPTLARI/5_ARKA_PLAN_QA_CRITIQUE_PROMPT.md` · girdi: **yalnız video (tam kurgu)**
+**Rubrik:** `QA_PROMPTLARI/FILME_OZEL/<FILM>/PAKET_5_ARKA_PLAN.md` · girdi: **yalnız video (tam kurgu)**
+⛔ **ÇIPLAK RUBRİK YAPIŞTIRILMAZ** [D129 · 13 film]. Paket yoksa önce üret:
+`bash .claude/skills/qa-isle/scripts/rubrik_paketle.sh <film klasörü>`
+Kaynak rubrik `QA_PROMPTLARI/_KAYNAK/` altındadır ve yalnız BETİK okur.
 *(24.08.2026'da açıldı — DERİN TARAMA sınıfı: /4 paydasına girmez,
 risk tetikli koşulur. Ne zaman koşulacağı QA_PROMPTLARI/00_README.md
 derin tarama bölümünde.)*
@@ -1096,7 +1270,10 @@ derin tarama bölümünde.)*
 
 ## ⚖️ F2 — ⑥ FİZİK RAPORU GELDİ (derin tarama)
 
-**Rubrik:** `QA_PROMPTLARI/6_FIZIK_QA_CRITIQUE_PROMPT.md` · girdi: tam kurgu
+**Rubrik:** `QA_PROMPTLARI/FILME_OZEL/<FILM>/PAKET_6_FIZIK.md` · girdi: tam kurgu
+⛔ **ÇIPLAK RUBRİK YAPIŞTIRILMAZ** [D129 · 13 film]. Paket yoksa önce üret:
+`bash .claude/skills/qa-isle/scripts/rubrik_paketle.sh <film klasörü>`
+Kaynak rubrik `QA_PROMPTLARI/_KAYNAK/` altındadır ve yalnız BETİK okur.
 (+ planın SAYISAL KİLİTLERİ = **MOD D**, bu merceğin varlık sebebi)
 *(24.08.2026'da açıldı — DERİN TARAMA sınıfı: /4 paydasına girmez.)*
 
@@ -1146,7 +1323,10 @@ derin tarama bölümünde.)*
 
 ## 🎯 F3 — ⑦ AKSİYON RAPORU GELDİ (risk tetikli tarama)
 
-**Rubrik:** `QA_PROMPTLARI/7_AKSIYON_QA_CRITIQUE_PROMPT.md` · girdi: tam kurgu
+**Rubrik:** `QA_PROMPTLARI/FILME_OZEL/<FILM>/PAKET_7_AKSIYON.md` · girdi: tam kurgu
+⛔ **ÇIPLAK RUBRİK YAPIŞTIRILMAZ** [D129 · 13 film]. Paket yoksa önce üret:
+`bash .claude/skills/qa-isle/scripts/rubrik_paketle.sh <film klasörü>`
+Kaynak rubrik `QA_PROMPTLARI/_KAYNAK/` altındadır ve yalnız BETİK okur.
 (+ SPEC A ve C blokları = **MOD D**)
 *(01.09.2026'da açıldı — /4 paydasına girmez.)*
 
@@ -1175,7 +1355,10 @@ derin tarama bölümünde.)*
 
 ## 💪 F4 — ⑧ EFOR RAPORU GELDİ (risk tetikli tarama)
 
-**Rubrik:** `QA_PROMPTLARI/8_EFOR_QA_CRITIQUE_PROMPT.md` · girdi: tam kurgu
+**Rubrik:** `QA_PROMPTLARI/FILME_OZEL/<FILM>/PAKET_8_EFOR.md` · girdi: tam kurgu
+⛔ **ÇIPLAK RUBRİK YAPIŞTIRILMAZ** [D129 · 13 film]. Paket yoksa önce üret:
+`bash .claude/skills/qa-isle/scripts/rubrik_paketle.sh <film klasörü>`
+Kaynak rubrik `QA_PROMPTLARI/_KAYNAK/` altındadır ve yalnız BETİK okur.
 (+ SPEC A ve C blokları = **MOD D**)
 *(01.09.2026'da açıldı — /4 paydasına girmez.)*
 
@@ -1200,6 +1383,136 @@ derin tarama bölümünde.)*
    ("sayısal olarak mümkün, ama beden ödemedi") — çelişki DEĞİLDİR.
 4. FİLM KAYDINI GÜNCELLE  01_FILM_RAPORLARI/<FILM>.md · 💪 EFOR bölümü
 5. SKOR SATIRI            FILM_QA_RAPORLARI/T8_EFOR_KALITE.md
+```
+
+## 🎯 F5 — ⑨ KADRAJ RAPORU GELDİ (plan sadakati · koşul tetikli)
+
+**Rubrik:** `QA_PROMPTLARI/FILME_OZEL/<FILM>/PAKET_9_KADRAJ.md` · girdi: tam kurgu
+⛔ **ÇIPLAK RUBRİK YAPIŞTIRILMAZ** [D129]. Paket yoksa önce üret:
+`bash .claude/skills/qa-isle/scripts/rubrik_paketle.sh <film klasörü>`
+(+ SPEC B bloğu + C'den EŞ KADRAJ · EKRAN YÖNÜ = **MOD D** · mod V koşusu tanım gereği BOŞ)
+*(06.09.2026'da açıldı [D184] — /4 paydasına girmez. Koşul: SPEC'te KURULUM İSKELETİ satırı.)*
+
+```
+⛔ KARE-ÖNCE KAPISI: SETUP LEDGER'ın her satırında gözlenen boyut/açı/konum
+   YAZILI mı, yoksa yalnız harf mi? Yalnız harf yazan ledger planı kopyalamıştır.
+   SETUP STRING plan iskeletiyle birebirse rapor_kontrol.py NOT basar — üç
+   sahne seç, kareyi çıkar, harfi kendin ata, karşılaştır.
+
+⛔ KAFİYE KAPISI: RHYME PAIR satırı her koşuda okunur. PAIR FAILS ise hüküm
+   RHYME BROKEN'dır ve son sahne yeniden üretim listesinin BAŞINA yazılır —
+   kurguda düzelmez, kamera post'ta taşınmaz.
+
+1. ORTAK ADIMLAR ①-⑩ koşulur
+2. HAM RAPORU KAYDET      02_HAM_RAPORLAR/<FILM>_KADRAJ_HAM.md
+3. SETUP STRING DOĞRULA   uzunluk = kesme + 1; plan iskeletiyle FARK listesini
+   rapor_kontrol.py basar — elle kıyaslama yok; her fark ⑪ tek kareyle KAPANIR
+   (FİLM SAPTI / RAPOR UYDURDU), kapanmadan skor satırı yazılmaz
+4. FİLM KAYDINI GÜNCELLE  01_FILM_RAPORLARI/<FILM>.md · 🎯 KADRAJ bölümü
+   ⭐ BULGU SAHİPLİĞİ: kameranın KONUMU ⑨'un · karenin İÇİ ①'in ·
+      ışığı ⑪'in · arkası ⑤'in · nesnelerin aynılığı ②'nin
+5. SKOR SATIRI            FILM_QA_RAPORLARI/T9_KADRAJ_KALITE.md
+6. MISS sahne → ÜRETİM notu: prompt CAMERA satırı DOĞRUYSA (çoğu vakada öyle —
+   Kept Light S24'te S0 ile birebir aynıydı) yama prompta değil, yeniden
+   üretime yazılır; depo kurguyu üstlenmez
+```
+
+## 🎭 F6 — ⑩ OYUNCULUK RAPORU GELDİ (plan sadakati · koşul tetikli)
+
+**Rubrik:** `QA_PROMPTLARI/FILME_OZEL/<FILM>/PAKET_10_OYUNCULUK.md` · girdi: tam kurgu
+⛔ **ÇIPLAK RUBRİK YAPIŞTIRILMAZ** [D129]. Paket yoksa önce üret:
+`bash .claude/skills/qa-isle/scripts/rubrik_paketle.sh <film klasörü>`
+(+ SPEC A bloğu + C'den İNSAN · KASK · EKRAN YÖNÜ = **MOD D** · mod V koşusu tanım gereği BOŞ)
+*(06.09.2026'da açıldı [D184] — /4 paydasına girmez. Koşul: replik 0 ya da SPEC'te CENTRAL CHOICE.)*
+
+```
+⛔ KANAL KAPISI: CHANNEL REGISTER'da yüz "unavailable" ise kategori 1 N/A
+   olmalı; 1/10 yazan rapor kask kapalı filmi yüz göstermediği için
+   cezalandırmıştır — o puan geri verilir, ortalama yeniden hesaplanır.
+
+⛔ CÜMLE KAPISI: PERFORMANCE LEDGER'daki cümleler SPEC'in sahne haritasıyla
+   birebir örtüşüyorsa rapor planı okuyup ekrana yansıtmıştır — bir çapa vuruş
+   seç (SEÇİM · BEDEL · FİNAL), öncesi/sonrası karesini kendin çıkar, farkı
+   kendin yaz. "Hiçbir şey" ise raporun LEGIBLE'ı düşer.
+
+⛔ SINIR: ⑧ bedeni ÖDEDİ mi, ⑩ bedeni NİYET etti mi. Aynı sahne ikisinde de
+   düşebilir; çifte fatura değil, iki eksen.
+
+1. ORTAK ADIMLAR ①-⑩ koşulur
+2. HAM RAPORU KAYDET      02_HAM_RAPORLAR/<FILM>_OYUNCULUK_HAM.md
+3. GAZE STRING DOĞRULA    uzunluk = kesme + 1 (rapor_kontrol.py basar);
+   dizinin U/D'si SPEC EKRAN YÖNÜ'yle okunur — "yukarı bakıyor" dediği yerde
+   plan yukarıyı kaya tavanı yapmışsa bulgu, yapmamışsa uydurma
+4. ④ İLE ÇAPRAZ OKU       ④ HİKAYE "doruk yok / bedel yok" yazdıysa ⑩'un
+   SEÇİM ve BEDEL satırları yanına konur: ⑩ "bedende var" + ④ "sayfada yok"
+   = ④'ün harita hatası (Kept Light: 25 sahne 7 blok) · ⑩ "bedende yok" +
+   ④ "sayfada var" = ÜRETİM hatası, regen
+5. FİLM KAYDINI GÜNCELLE  01_FILM_RAPORLARI/<FILM>.md · 🎭 OYUNCULUK bölümü
+6. SKOR SATIRI            FILM_QA_RAPORLARI/T10_OYUNCULUK_KALITE.md
+```
+
+## 💡 F7 — ⑪ IŞIK RAPORU GELDİ (plan sadakati · koşul tetikli)
+
+**Rubrik:** `QA_PROMPTLARI/FILME_OZEL/<FILM>/PAKET_11_ISIK.md` · girdi: tam kurgu
+⛔ **ÇIPLAK RUBRİK YAPIŞTIRILMAZ** [D129]. Paket yoksa önce üret:
+`bash .claude/skills/qa-isle/scripts/rubrik_paketle.sh <film klasörü>`
+(+ SPEC C'den IŞIK TAKVİMİ · ATMOSFER · YAPI ANATOMİSİ · KASK + ızgara = **MOD D**)
+*(06.09.2026'da açıldı [D184] — /4 paydasına girmez. Koşul: SPEC'te IŞIK TAKVİMİ ya da ≥12 klip.)*
+
+```
+⛔ ORTAM KAPISI: ZONE REGISTER "medium: vacuum" yazıp pus/bloom/kaldırılmış
+   gölgeyi bulgu YAPMAMIŞSA rapor kendi yasasını okumamıştır — kategori 8
+   şartlı. Tersi: vakumda sert siyah gölgeyi "harsh lighting" diye düşüren
+   rapor filmin kuralını kusur saymıştır → ⑩ ÖNERME KAPISI, puan geri verilir.
+
+⛔ SINIR KAPISI: LIGHT JUMP LOG'daki her satır SPEC'in "değişim SINIRDA olur"
+   listesine karşı okunur; planlı sınırdaki değişim PASS'tır, rapor 🔴 yazdıysa
+   düşer. Planlı sınır DIŞINDAKİ her sıçrama kareyle kapanır (komşu çift).
+
+⛔ GRADE / REGEN AYRIMI: ısı · pozlama · doygunluk → kurgu masası (grade);
+   yön · dolgu · sönük lamba · klip içi dimmer · vakumda pus → yeniden üretim.
+   Rapor "fixable in the grade" dediyse hangi sütunda olduğuna BAK.
+
+1. ORTAK ADIMLAR ①-⑩ koşulur
+2. HAM RAPORU KAYDET      02_HAM_RAPORLAR/<FILM>_ISIK_HAM.md
+3. KEY DIRECTION STRING DOĞRULA  uzunluk = kesme + 1 (rapor_kontrol.py basar);
+   bölge içinde değişen her hane LIGHT JUMP LOG'da satır ister
+4. ⑤ İLE ÇAPRAZ OKU       lambanın VARLIĞI ⑤/②'nin, YANIP yanmadığı ⑪'in —
+   Kept Light S4 lamba montajı ⑤'in bulgusudur, S4'ün ışık YÖNÜ ⑪'in
+5. FİLM KAYDINI GÜNCELLE  01_FILM_RAPORLARI/<FILM>.md · 💡 IŞIK bölümü
+6. SKOR SATIRI            FILM_QA_RAPORLARI/T11_ISIK_KALITE.md
+```
+
+## 🪝 F8 — ⑫ HOOK RAPORU GELDİ (plan sadakati · yayın öncesi)
+
+**Rubrik:** `QA_PROMPTLARI/FILME_OZEL/<FILM>/PAKET_12_HOOK.md` · girdi: tam kurgu
+⛔ **ÇIPLAK RUBRİK YAPIŞTIRILMAZ** [D129]. Paket yoksa önce üret:
+`bash .claude/skills/qa-isle/scripts/rubrik_paketle.sh <film klasörü>`
+(+ SPEC A + B blokları + KAPAK ANI = **MOD D**)
+*(06.09.2026'da açıldı [D184] — /4 paydasına girmez. Koşul: film yayınlanacak (kart Y); yayından ÖNCE koşulur.)*
+
+```
+⛔ KESME KAPISI: bu mercek KESME ÖNERMEZ. Rapor "cut S-n" yazdıysa o satır
+   düşer — ④'ün kesme listesi de ⑩ ÖNERME KAPISI'ndan geçmeden uygulanmıyor;
+   ⑫'nin işi saniye söylemek, sahne kesmek değil.
+
+⛔ TAHMİN KAPISI: DROP-OFF PREDICTION üç saniye + sabit listeden sebep
+   (rapor_kontrol.py sayar). Aralık, "civarı", "muhtemelen" → ŞARTLI; tahmin
+   yayın tablosuna girmez, kıyaslanamaz.
+
+⛔ KART KAPISI: kuyruk kartı varsa ⑫'nin "Exit & Return" 🔴'sı ÖLÇÜMÜN
+   bulgusudur (freezedetect + son_kare.jpg) — raporun keşfi değil; kart
+   kesildikten sonra ⑫ yeniden koşulur, çünkü çıkış penceresi değişmiştir.
+
+1. ORTAK ADIMLAR ①-⑩ koşulur
+2. HAM RAPORU KAYDET      02_HAM_RAPORLAR/<FILM>_HOOK_HAM.md
+3. TAHMİNİ KOPYALA        DROP-OFF PREDICTION bloğu OLDUĞU GİBİ →
+   08_YAYIN_PERFORMANS_TABLOSU.md "⑫ tahmin" sütunu — yayından ÖNCE.
+   Yayından SONRA kart Y gerçek eğrinin üç düşüş saniyesini yanına yazar;
+   |Δ| ≤ 10 s tutan tahmin, ötesi tutmayan. Bu depoda aleti izleyiciye karşı
+   kalibre eden TEK satır budur (08 tablosu bugüne kadar 0 satır).
+4. FİLM KAYDINI GÜNCELLE  01_FILM_RAPORLARI/<FILM>.md · 🪝 HOOK bölümü
+5. SKOR SATIRI            FILM_QA_RAPORLARI/T12_HOOK_KALITE.md
 ```
 
 ## 📚 G — YENİ DERS ÇIKTI
@@ -1291,13 +1604,40 @@ derin tarama bölümünde.)*
 > devam etti. Bir klasör silinince AYNI dört nokta güncellenir:
 
 ```
+⛔ SİLME BAŞLAMADAN ÖNCE — bu üçü koşulmadan tek dosya silinmez
+   (kural ② üç kez atlandı: 26.08 üç zombi filmi, 05.09 üç içerik daha;
+    ikincisinde arşiv de yoktu, kayıp KALICI — beşinci tur)
+
+ □ git ls-files <klasör> | wc -l              → 0 ise DUR, hiçbir şey git'te yok
+ □ git status --porcelain <klasör> | grep '^??'  → listelenen her satır
+      GERİ ALINAMAZ. Sahibe SÖYLE, varsayma. Değerliyse depo dışına arşiv:
+      tar czf ~/film_md_<KLASOR>_ARSIV_<tarih>.tar.gz <klasör>
+ □ klasörün içinde FİLM DIŞI ne varsa listele ve her birine depo çapında
+      grep at (kural ③). Dışarıdan atıf alan dosya SİLİNMEZ, TAŞINIR —
+      hedef kilavuzlar_ve_sistem_dosyalari/ altıdır, format-bağımsız olur.
+      ⚠️ Sayıma girmeyen bir klasör, sayıma giren filmlerin GEREKÇESİNİ
+         tutabilir (05.09: iki canlı filmin ders kaynağı oradaydı).
+
+SONRA — bir klasör silinince AYNI noktalar güncellenir
+
  □ AGENTS.md §1 haritasından satırı sil
  □ YAPI_GRAFI.md → karar ağacındaki dal + klasör ağacındaki satır
- □ sayac.sh içindeki klasör listesinden çıkar
+ □ sayac.sh içindeki klasör listelerinden çıkar
+      ⚠️ TEK liste değil: 05.09'da dört ayrı listede geçiyordu (grep -n ile
+         hepsini bul, biri kalırsa betik olmayan klasörü saymaya devam eder)
  □ FILM_QA_RAPORLARI/00_INDEX.md → o klasörün bölümü/satırları kaldırılır
+      + SAYIM defterine tarihli −n kaydı (kural ①: sayı tek yerde durur)
+ □ Silinen filmin TÜREVLERİ: QA_PROMPTLARI/FILME_OZEL/<FILM>/ paketi,
+      01_FILM_RAPORLARI, 02_HAM_RAPORLAR, T tablosu satırları
+      ⚠️ ÖLÇÜLMÜŞ rapor SİLİNMEZ (⏸️ METODOLOJİ kaydına çevrilir);
+         hiç koşulmamış paket öksüz kalır, sahibe sorulur
  □ KILAVUZ_REHBERI.md → tür/format kartı SİLİNMEZ, başına ⏸️ RAFTA yazılır
       (kılavuz bilgisi ucuz, yeniden yazmak pahalı)
+      ⚠️ İstisna: sahip "iz bırakma" derse kart hiç girmez — bu KARARDIR,
+         sorulur (kural ④). 05.09'da dikey 20-25 bandı böyle kapandı.
  □ bash sayac.sh → toplam, 00_INDEX ile tutuyor mu
+ □ ölü adres süpürmesi: grep -rn "<klasör adı>" — kalan her isabet ya
+      tarihli kaldırma notudur ya da ölü adrestir; üçüncü ihtimal yok
  □ commit (tip: bakim)
 ```
 
@@ -1307,6 +1647,65 @@ derin tarama bölümünde.)*
 > ⏸️ RAFTA satırı kaldırılır ve yerine **açılış şartı** yazılır. Bu
 > depoda o şart bir bütçedir (KILAVUZ_REHBERI §4.2'nin altı satırı) —
 > klasörü geri açmak, türü bedava geri getirmez.
+>
+> ⭐ **DÖRDÜNCÜ TUR — FORMAT BİRLEŞMESİ (04.09.2026):** `yatay_7_9_dk_filmler/`
+> sahip kararıyla kaldırıldı; tek filmi `yatay_10_20_dk_filmler/`'e taşındı ve
+> o kartın bandı 10 dk'dan 7 dk'ya açıldı. Bu tur kartın ÜÇÜNCÜ eksiğini
+> gösterdi:
+>
+> ```
+> ③ FORMAT KLASÖRÜ DEPO ÇAPINDA KILAVUZ TAŞIYABİLİR.
+>    yatay_7_9_dk_filmler/kilavuzlar/ yalnız kendi formatına ait DEĞİLDİ:
+>    start/end zinciri, faz şablonu, 5 faz mimarisi ve 3 geçişli QA sistemi
+>    10-20 dk kartından, POLITIKA'dan, TEK_CEKIM'den, YAPI_GRAFI'ndan ve
+>    FILM_QA_RAPORLARI'ndan adresleniyordu. Klasörle birlikte silinseydi
+>    CANLI bir hat üretim tekniğini kaybederdi.
+>    ⛔ H2 koşulmadan ÖNCE: klasörün içinde film DIŞI ne varsa listele ve
+>       her birine grep at. Dışarıdan atıf alan her dosya SİLİNMEZ, TAŞINIR.
+>       (Bu turda dördü merkeze taşındı ve format-bağımsız oldu.)
+> ④ BANDIN ADRESİ DE BİR ATIFTIR. Kaldırılan format bir SÜRE BANDIydı ve
+>    komşu kart "10 dk'nın altı şu klasöre aittir" diyordu. Klasör gidince
+>    o cümle boşluğa bakar. Bandın nereye gittiği KARARDIR — sahibe sorulur,
+>    varsayılmaz.
+> ```
+>
+> ⭐ **BEŞİNCİ TUR — İKİ KLASÖR BİRDEN (05.09.2026):** `film_analizleri/`
+> (dış film analiz hattı) ve `dikey_20_25_dk_filmler/` (açıldığı gün kapanan
+> dikey 20-25 dk bandı) sahip kararıyla kaldırıldı. Bu tur kartın DÖRDÜNCÜ
+> eksiğini gösterdi ve ikinci kuralının ÜÇÜNCÜ ihlalini kaydetti:
+>
+> ```
+> ⑤ ⛔ KURAL ② YAZILI OLMAK YETMİYOR — ÜÇÜNCÜ KEZ İHLAL EDİLDİ.
+>    "SİLMEDEN ÖNCE git ls-files" 26.08.2026'da yazıldı, çünkü üç zombi
+>    filmi izlenmiyordu ve arşiv alınmıştı. 05.09.2026'da AYNI ŞEY üç
+>    içerikte tekrar oldu, bu kez arşiv YOK:
+>      · dikey_20_25_dk_filmler/THE_OWED_AIR/ — bandın tek filmi. 05.09'da
+>        yazıldı, 05.09'da gitti; hiç commit edilmedi.
+>      · film_analizleri/…/CORAK_TOPRAKLAR_HAREMININ_HUKUMDARIYIM/ — 16 rapor,
+>        THE OWED AIR'in "dört vuruşlu sistem çevrimi" motorunun ÖLÇÜM kaynağı.
+>      · film_analizleri/ANALIZ_QA_PROMPTLARI/DIKEY_4_PARCA/ — 4 parça × tek
+>        kapsamlı prompt paketi.
+>    ⛔ Kural bir CÜMLE olarak çalışmıyor. Kaldırma kararı DUYULUR DUYULMAZ,
+>       tek bir şey daha silinmeden önce:
+>          git ls-files <klasör> | wc -l     # 0 çıkarsa DUR
+>          git status --porcelain <klasör> | grep '^??'   # bunlar geri gelmez
+>       Çıktı sıfırdan farklıysa depo dışına tar alınır (26.08 emsali:
+>       film_md_ZOMBI_ARSIV_2026-08-26.tar.gz). Sahip "sil" dediğinde
+>       silinecek şeyin GERİ ALINABİLİR Mİ olduğu sahibin değil, ajanın
+>       söylemesi gereken şeydir.
+> ⑥ ANALİZ HATTI DA "FİLM DIŞI" TAŞIR — ama kurtarma gerekçesi İKİ AYRI
+>    kuraldır; karıştırılırsa depoya yanlış kayıt düşer:
+>      · NOBODY_WAS_ALIVE ders seçkisi → kural ③ (DIŞARIDAN ATIF ALIYORDU:
+>        THE_LAST_SHIFT + THE_HOLLOW_COUNT §0.19 tablolarının kaynağı).
+>        Sayıma girmeyen bir klasör, sayıma giren filmlerin GEREKÇESİNİ tutar.
+>      · dört analiz promptu → kural ③ DEĞİL. HEAD'de depoda hiçbir yerden
+>        atıf ALMIYORLARDI (git grep ile doğrulandı). Kurtarılma sebepleri
+>        H2'nin kılavuz maddesindeki gerekçe: "bilgi ucuz, yeniden yazmak
+>        pahalı" — üç mercekli hattın tek yazılmış metodolojisiydiler.
+>    ⛔ Ders: "atıf alıyordu" gerekçesi YAZILMADAN ÖNCE grep'le kanıtlanır.
+>       Bu turda ikisi tek cümlede birleştirildi, denetimde yanlış çıktı ve
+>       düzeltildi — kaydın kendisi de bir kurala tabidir.
+> ```
 >
 > ⭐ **ÜÇÜNCÜ TUR — TÜR KAPANIŞI (26.08.2026):** aynı klasör ikinci kez H2
 > ile kaldırıldı, bu kez klasör değil TÜRÜN KENDİSİ kapandı: depo yalnız
@@ -1435,9 +1834,12 @@ tipler:  film    yeni/güncellenen film dokümanı
    THE_GLASS_WORLD_SHORTS.md · THE_LAST_ARCHIVE_SHORTS.md
 
 🟡 QA sistemi çatallı
-   QA_PROMPTLARI/ (yatay, 8-11 kategori) ve
-   yatay_7_9_dk_filmler/kilavuzlar/kalite_kontrol/ (3 geçişli) ayrı sistemler.
+   QA_PROMPTLARI/_KAYNAK/ (4 mercek, 8-11 kategori) ve
+   QA_PROMPTLARI/UC_GECISLI_QA/ (3 geçiş) ayrı sistemler.
    İki sistemden gelen skorlar aynı tabloda karşılaştırılamaz.
+   ⚠️ 04.09.2026'da ikisi AYNI klasörün altına geldi (üç geçişli sistem
+      kapanan yatay_7_9_dk_filmler/'den taşındı) — çatal KAPANMADI,
+      yalnız GÖRÜNÜR oldu. Hangisinin koşulacağı hâlâ yazılı değil.
 
 ✅ araştırmalar/ açığı — KAPATILDI (26.08.2026, sahip kararı)
    Dokuz kılavuzun atıf verdiği araştırma dosyaları depoda ve git'te hiç
@@ -1447,8 +1849,19 @@ tipler:  film    yeni/güncellenen film dokümanı
    tarihsel etikettir, dosya beklentisi değil — silinmez, yeni atıf da
    yazılmaz. Kılavuz gövdesinin doğrulaması artık tek yoldan yapılır:
    gerçek yayın verisi (kart Y geri beslemesi → 01_DERS_ETKINLIK_RAPORU).
-   (Kardeşi film_analizleri/ 22.08'de sessizce silinmişti — 25.08.2026'da
-   `git checkout 15f3d3e^ -- film_analizleri` ile geri alındı, duruyor.)
+   (Kardeşi film_analizleri/ 22.08'de sessizce silinmişti, 25.08.2026'da
+   `git checkout 15f3d3e^ -- film_analizleri` ile geri alınmıştı —
+   05.09.2026'da sahip kararıyla bu kez BİLEREK kaldırıldı, kart H2 koşuldu.
+   Kurtarılan metodoloji: kilavuzlar_ve_sistem_dosyalari/DIS_FILM_ANALIZI/)
+
+⛔ 05.09.2026'DA ÜÇ İÇERİK GERİ ALINAMAZ BİÇİMDE GİTTİ — hepsi izlenmiyordu:
+   dikey_20_25_dk_filmler/THE_OWED_AIR/ (film + QA_SPEC + kapak · 25 parça ×
+   60 s planı, PART 01 yazılıydı) · film_analizleri/…/DIKEY_4_PARCA/ ·
+   film_analizleri/ANALIZ_EDILEN_FILMLER/CORAK_TOPRAKLAR_HAREMININ_HUKUMDARIYIM/
+   (16 rapor · 16:32 — THE OWED AIR'in motorunun ölçüm kaynağı).
+   Üçü de hiçbir commit'te, çöp kutusunda ve arşivde yok. Kart H2 ②
+   ("SİLMEDEN ÖNCE git ls-files") ÜÇÜNCÜ KEZ ihlal edildi — 26.08'de üç zombi
+   filmi, 05.09'da bu üçü. Kural işlemiyor demek değil; kural KOŞULMUYOR.
 
 🟡 KILAVUZ_REHBERI §8 film matrisi bayat — depodaki filmlerin çoğu listede yok.
 🟡 dikey_shorts_filmler/ içinde 16:9 YATAY filmler var (klasör adı yanıltıyor).

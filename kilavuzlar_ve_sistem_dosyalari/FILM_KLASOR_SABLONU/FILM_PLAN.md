@@ -5,7 +5,7 @@
 > başlıktan sayar; plana konan örnek bir prompt sahne dizisine karışır.
 
 ```
-FORMAT:        [dikey shorts 9:16 / yatay 2-4 / 3-5 / 7-9 / 10-20]
+FORMAT:        [dikey shorts 9:16 / yatay 2-4 / 3-5 / 7-20]
 ORTAM:         [KILAVUZ_REHBERI §3 kart numarası]
 TÜR:           bilimkurgu   (tek açık dal — §4.1)
 KLİP SÜRESİ:   ⬜ ARAÇTAN ÖLÇÜLDÜ [D124]:
@@ -101,6 +101,15 @@ S1 İKİNCİ BİLGİ: ⬜
 AÇI TİPİ SAYISI: ⬜ ≥3   (KAMERA_ACISI §2 sekizlisi — üç kurulumun üçü de
                  alttan bakıyorsa çeşitlilik yok, yalnız mesafe değişiyor)
 KURULUM SAYISI:  ⬜ (ACI_YAYI §4 bandı; üstündeyse plana tek satır gerekçe [D74])
+KURULUM İSKELETİ: ⬜ sahne sahne harf dizisi (örn. A A B C B C D E E C D A)
+                 ⭐ BU SATIR KAPIYI AÇAR — prompt_kontrol ⑩④ yalnız bunu
+                   beyan eden dosyada koşar. 12+ sahnede iki sayı aranır:
+                   KÜME ≥2 · DÖNÜŞ ≥%40 (ACI_YAYI §4b). 6-11 sahne muaf.
+                 ⛔ Aynı harf AYNI kurulumdur ve kamera metni BİREBİR
+                   kopyalanır + işaret satırını taşır (ACI_YAYI §7 ⑥):
+                     dönüş → "— the same position, height and lens as Scene N."
+                     küme  → "continues the previous clip from its exact last
+                              frame — the same position, height and lens as Scene N."
 BÖLÜM KESİĞİ:    S⬜ ile S⬜ arasında — ⛔ bölüm sınırı da ardışık bir ÇİFTTİR
 ```
 

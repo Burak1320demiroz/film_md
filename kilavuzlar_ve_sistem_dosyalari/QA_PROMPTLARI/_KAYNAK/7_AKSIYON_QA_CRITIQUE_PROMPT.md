@@ -108,6 +108,14 @@ it is then the film's MOST important beat, not a scene with no beat in it.
 Before you write `-` in the beat string for any scene, ask whether that
 scene is where the film's rule is demonstrated.
 
+⛔ EVERY REGISTERED RULE CARRIES ITS BOUNDARY. A world rule holds inside a
+region, a medium, a side of a threshold — write that boundary on the register
+line ("below the lip, not above it") and then look for one beat on the
+ORDINARY side of it. If ordinary behaviour did not return there, the rule has
+leaked past its own boundary and that IS a beat: name it, and say what a
+viewer could not recover from it. If the boundary is not stated, say so in
+FLAGS; never assume the rule covers the whole frame.
+
 ⛔ Absence of an antagonist figure is not absence of action. In this repo
 most films have no second person: the resisting force is vacuum, cold,
 a countdown, a mass, a mechanism. **Those are action beats and they are

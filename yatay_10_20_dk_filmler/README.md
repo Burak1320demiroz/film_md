@@ -1,9 +1,18 @@
-# 🎬 Yatay 10-20 Dakika Filmler — Veo Üretim Formatı
+# 🎬 Yatay 7-20 Dakika Filmler — Veo Üretim Formatı
 
-> **3 Perde Mimarisi | Değişken Faz Sayısı | 8 Saniyelik Sahne Standardı | Start/End Frame Zinciri**
-> Bu format `yatay_7_9_dk_filmler/` formatının **üstüne** kurulmuştur.
+> **Faz Mimarisi (+ 7 fazın üstünde PERDE) | 8 Saniyelik Sahne Standardı | Start/End Frame Zinciri**
 > 5 faz mimarisi 8 dakikada doyuma ulaşır; 15 dakikada faz sayısını artırmak yetmez —
-> fazların ÜSTÜNE bir katman (PERDE) gerekir.
+> fazların ÜSTÜNE bir katman (PERDE) gerekir. Bu kart iki ucu birden tarif eder:
+> **kısa uç** düz fazdır (perdesiz, 7-10 dk), **uzun uç** 3 perdelidir (10-20 dk).
+
+> ⚠️ **04.09.2026 — BANT AŞAĞI AÇILDI (sahip kararı).** `yatay_7_9_dk_filmler/`
+> klasörü kaldırıldı; tek filmi **THE_SLOW_STONE** buraya taşındı, kendi
+> `kilavuzlar/` dizini `kilavuzlar_ve_sistem_dosyalari/`'na çıktı ve
+> format-bağımsız oldu. Alt sınır 10 dk → **7 dk**.
+> ⛔ **KLASÖR ADI DEĞİŞMEDİ** (`yatay_10_20_dk_filmler/`) — ad ile bant
+> artık örtüşmüyor. Bilinçli: yeniden adlandırma depoda ~40 adres daha
+> kırardı ve ölçülmüş hiçbir sorunu çözmezdi.
+> Kapanan kartın dürüst kaydı: `KILAVUZ_REHBERI.md` §2.4.
 
 ---
 
@@ -11,15 +20,15 @@
 
 | Özellik | Değer |
 |---|---|
-| **Süre** | 10-20 dakika (600-1200 saniye) |
+| **Süre** | 7-20 dakika (420-1200 saniye) |
 | **Oryantasyon** | 16:9 yatay (widescreen) |
-| **Üst katman** | **3 perde (sabit)** |
-| **Orta katman** | **6-12 faz (değişken — süreyi bu belirler)** |
+| **Üst katman** | **3 perde** — yalnız 7 faz ve üstünde. Altında perde YOKTUR |
+| **Orta katman** | **4-12 faz (değişken — süreyi bu belirler)** |
 | **Alt katman** | Faz = 3 sekans × 4 sahne = 12 sahne |
 | **Klip süresi** | **8 saniye / sahne** (Veo native — extend gerekmez) ⚠️ **ÖLÇÜM ATFI YOK — D124 ile ÇELİŞİYOR**, aşağıdaki dürüst kayda bak |
-| **Toplam sahne** | 72-144 sahne (hedef: 108) |
+| **Toplam sahne** | 48-144 sahne (kısa uçta hedef 60 · uzun uçta hedef 108) |
 | **Tek çekim kuralı** | Her sahne ayrı, kesintisiz tek çekim |
-| **Görsel üretim** | Start/End Frame zinciri (7-9 dk formatıyla aynı) |
+| **Görsel üretim** | Start/End Frame zinciri — iki uçta da aynı |
 | **Referans paketi** | **EN BAŞTA — pazarlıksız** |
 
 ### ⏱️ Süre Matematiği
@@ -35,7 +44,9 @@ SÜRE TABLOSU (faz sayısına göre):
 
 | Faz | Perde dağılımı | Sahne | Saniye | Süre  | Ne zaman              |
 |-----|----------------|-------|--------|-------|-----------------------|
-|  6  | 2-2-2          |  72   |  576   | 9:36  | ⚠️ alt sınırın altında |
+|  4  | ⛔ perde YOK    |  48   |  384   | 6:24  | ⛔ bandın ALTINDA (8 s'de) |
+|  5  | ⛔ perde YOK    |  60   |  480   | 8:00  | **KISA UÇ — düz faz**  |
+|  6  | ⛔ perde YOK    |  72   |  576   | 9:36  | Kısa uç, geniş         |
 |  7  | 2-3-2          |  84   |  672   | 11:12 | Sıkı, tek mekan       |
 |  8  | 3-3-2          |  96   |  768   | 12:48 | Tek karakter, tek arc |
 |  9  | 3-3-3          | 108   |  864   | 14:24 | **VARSAYILAN**        |
@@ -88,19 +99,92 @@ THE HEAVY SIDE 29.08) ızgarasını ölçümden kurdu ve künyesine
    48/72/96/120/144 BPM tam ölçü verir (müzik kılavuzu §14).
 ```
 
-> **Alt sınır kuralı:** 6 faz (9:36) bu formatın süre bandına girmez.
-> **En az 7 faz** kullanılır; 10 dakikanın altına inen bir hikaye
-> `yatay_7_9_dk_filmler/` formatına aittir — zorlamayın.
+> **Alt sınır kuralı (04.09.2026'da yeniden yazıldı):** bant 7 dakikada
+> başlar = **420 saniye**. 8 saniyelik ızgarada bunu tutturan en küçük
+> yapı **5 fazdır** (480 s); 4 faz 6:24'te kalır ve banda girmez.
+> 10 saniyelik ızgarada 4 faz 8:00 verir ve girer — bandın tek üretilmiş
+> filmi THE_SLOW_STONE tam olarak budur (4 kısım × 12 × 10 s).
+>
+> **PERDE EŞİĞİ:** perde katmanı **7 fazın altında kullanılmaz.**
+> 5-6 fazlık film düz fazdır; perde katmanı 5 fazlık yayı bölerek
+> zayıflatır (aşağıdaki bölüm bunu tersinden anlatıyor).
 >
 > **Üst sınır kuralı:** 12 faz / 144 sahne kesin tavandır. Post-prodüksiyon
 > köprüleri (J-cut, ses köprüsü) ile ~20 dakikaya oturur. 20 dakika aşılmaz.
 
 ---
 
+---
+
+## ⏱️ 15 FAZ / 30 DAKİKA — BANDIN ÜSTÜNE AÇILAN SATIR (07.09.2026, sahip kararı)
+
+```
+⛔ BU BANDIN DIŞIDIR VE BİLİNÇLİDİR.
+   Yukarıdaki 10 s tablosu faz tavanını 10 (120 sahne · 20:00) yazar;
+   11 faz "formatı aşar" satırındadır. 07.09.2026'da sahip 15 faz
+   istedi ve bant AŞAĞIYA değil YUKARIYA açıldı:
+
+   15 faz × 12 sahne × 10 s = 180 sahne = 1.800 s = 30:00
+```
+
+⚠️ **RAPORUN İTİRAZI KAYDA GEÇTİ, SUSTURULMADI.** TUR 13'ün üçüncü
+raporu 15 birimi ÖNERMEDİ: *"her faz 12 planla (2 dakika) sınırlı
+kaldığında karakterin eylemi sindirmesine ve bedel ödeme anlarının
+dramatik ağırlığına zaman kalmaz"* — **parçalanma riski (fragmentation
+risk)**. Raporun kendi alternatifi 4 sekans + 8 kırılma noktasıydı.
+Sahip 15 fazda ısrar etti; rapor bu durumda uygulanacak matematiği de
+verdi ve **aşağıdaki üst katman ondan kuruldu.**
+
+### 📐 15 FAZ İÇİN ÜST KATMAN — dört katman, üç perde
+
+```
+1. PERDE  (KURULUŞ · %20)      FAZ 1-3    ·  S1-S36    ·  0:00-6:00
+2A PERDE  (YENİ DÜNYA · %33)   FAZ 4-8    ·  S37-S96   ·  6:00-16:00
+2B PERDE  (KUŞATMA · %27)      FAZ 9-12   ·  S97-S144  ·  16:00-24:00
+3. PERDE  (ÇÖZÜM · %20)        FAZ 13-15  ·  S145-S180 ·  24:00-30:00
+
+SABİT KONUMLAR — kaydırılamaz [TUR 13 · rapor 3]:
+  ORTA NOKTA        → FAZ 8   (S85-S96   · 14:00-16:00)  %50
+  EN BÜYÜK KAYIP    → FAZ 12  (S133-S144 · 22:00-24:00)  %75
+  DORUK             → FAZ 14  (S157-S168 · 26:00-28:00)
+```
+
+### 🔁 FAZIN İÇ YAPISI — fraktal, on beşinde de aynı
+
+```
+Her faz 12 sahnedir ve dört çeyreğe bölünür:
+  S1-S3   KUR      (durumu göster)
+  S4-S6   DENE     (müdahale)
+  S7-S9   BAŞARISIZ OL / KUSURLU BAŞAR
+  S10-S12 BEDEL ÖDE (kaynak, gövde ya da zaman kaybı görünür olur)
+
+⛔ PARÇALANMA KARŞI ÖNLEMİ: fazın son çeyreği (S10-S12) BEDELE ayrılır.
+   Raporun uyarısı tam buradaydı — 2 dakikada bir ritim değişirse
+   karakterin kaybı sindirmesine yer kalmaz. Bedel çeyreği o yeri
+   zorunlu kılar ve fazı bir görev listesi olmaktan çıkarır.
+```
+
+### 📉 BAŞARISIZLIK BÜTÇESİ — 15 faz için
+
+```
+Hedef oran ~%66 [TUR 13 · rapor 3, ÖNERİ].
+  BAŞARISIZ ya da KUSURLU BAŞARI :  10 faz
+  TEMİZ BAŞARI                   :   5 faz
+⛔ İKİ EŞİK: art arda 3 bedelsiz başarı → risk algısı sıfırlanır.
+             art arda 4 ağır yenilgi   → öğrenilmiş çaresizlik, terk.
+   En geç üçüncü başarısızlıktan sonra bir "göstermelik zafer" konur.
+```
+
+⛔ **BU SATIR BİR FORMAT DEĞİL, BİR VAKADIR.** Üretilmiş tek 30 dakikalık
+film yok; 15 fazın izleyicide parçalanma üretip üretmediği **ölçülmedi.**
+İlk film (`THE_SCOURED_GLASS`) bu satırın sınavıdır; sonucu buraya döner.
+
+
 ## 🏛️ NEDEN PERDE KATMANI — 5 FAZ NEDEN YETMİYOR
 
-7-9 dk formatının 5 fazı (KURULUŞ → DERİNLEŞME → DÖNÜM → ZİRVE → ÇÖZÜLME)
-**tam bir dramatik yaydır**. Faz sayısını 9'a çıkarmak o yayı bozar:
+Kısa ucun 5 fazı (KURULUŞ → DERİNLEŞME → DÖNÜM → ZİRVE → ÇÖZÜLME)
+**tam bir dramatik yaydır** — perde katmanının 7 fazın altında
+kullanılmamasının sebebi budur. Faz sayısını 9'a çıkarmak o yayı bozar:
 
 ```
 YANLIŞ:  9 faz = 9 ayrı dramatik işlev
@@ -161,9 +245,9 @@ PERDE III — ZİRVE VE KAPANIŞ
 
 ---
 
-## 🔗 START/END FRAME ZİNCİRİ — 7-9 DK İLE AYNI
+## 🔗 START/END FRAME ZİNCİRİ — İKİ UÇTA DA AYNI
 
-Üretim tekniği birebir aynıdır: `../yatay_7_9_dk_filmler/kilavuzlar/KESINTISIZ_VIDEO_URETIM_TEKNIGI.md`
+Üretim tekniği birebir aynıdır: `../kilavuzlar_ve_sistem_dosyalari/KESINTISIZ_VIDEO_URETIM_TEKNIGI.md`
 
 ```
 Formül:  x. İmaj  →  (x+1). İmaj  =  x. Video
@@ -180,15 +264,15 @@ Sekanslar arası: zincir kırılır, yeni çapa (anchor) imajı
 12 fazlık üst sınır = 180 imaj / 144 video
 ```
 
-> ⚠️ **Bu formatın gerçek maliyeti imaj üretimidir.** 135 imaj, 7-9 dk
-> formatının (75 imaj) **1.8 katıdır** ve karakter kayması riski doğrusal
+> ⚠️ **Bu formatın gerçek maliyeti imaj üretimidir.** 135 imaj, kısa ucun
+> (5 faz = 75 imaj) **1,8 katıdır** ve karakter kayması riski doğrusal
 > değil, birikimlidir. Aşağıdaki kimlik yenileme protokolü zorunludur.
 
 ---
 
 ## 🔒 KİMLİK YENİLEME PROTOKOLÜ (bu formata özel, yeni)
 
-7-9 dk formatında tek referans portre 75 imaj boyunca yeterliydi.
+Kısa uçta (75 imaj) tek referans portre yeterlidir.
 135+ imajda yeterli **değildir** — 5. fazdan sonra yüz sürüklenir.
 
 ```
@@ -275,7 +359,7 @@ yatay_10_20_dk_filmler/
 | **MUZIK_VE_SES.md** | Suno/Udio promptu + Google Flow zaman kodlu prompt (864s yay), perde bazlı enstrümantasyon matrisi |
 
 > **Faz dosyası iskeleti birebir 7-9 dk şablonundan alınır:**
-> `../yatay_7_9_dk_filmler/kilavuzlar/FAZ_DOSYASI_SABLONU.md`
+> `../kilavuzlar_ve_sistem_dosyalari/FAZ_DOSYASI_SABLONU.md`
 > Tek değişiklik: başlıkta perde bilgisi (`PERDE II | FAZ 5`) ve
 > faz giriş bağlantısında "referans portreye dönüş" notu.
 
@@ -342,18 +426,20 @@ Gerçekçi senaryo (sahne başına ~3 deneme) =  ~$390 / film
 
 ## 📏 DİĞER FORMATLARLA KARŞILAŞTIRMA
 
-| Özellik | 2-4dk | 3-5dk | 7-9dk | **10-20dk** |
+Son iki sütun **aynı formatın iki ucudur** — ayrı klasör değil.
+
+| Özellik | 2-4dk | 3-5dk | **kısa uç 7-10dk** | **uzun uç 10-20dk** |
 |---|---|---|---|---|
-| Sahne sayısı | 13 | 24 | 60 | **72-144 (hedef 108)** |
-| Klip süresi | 10s | 10s | 8s | **8s** |
-| Yapı | Tek dosya | 2 bölüm | 5 faz | **3 perde × 6-12 faz** |
-| Dosya sayısı | 1 | 2 | 8 | **13-16** |
-| Üretim tekniği | Text-to-video | Text-to-video | Start/End zinciri | **Start/End zinciri** |
-| İmaj sayısı | 13 | 24 | 75 | **135** |
-| Referans paketi | Sonda | Sonda | Başta | **Başta + faz başı yenileme** |
-| Devamlılık denetimi | — | — | Faz sonu QA | **Faz + perde sonu ledger** |
-| Anlatı derinliği | Tek katman | Çift katman | 5 katmanlı yay | **3 perde / 9 alt yay** |
-| Mid-roll reklam | ✗ | ✗ | ✓ | **✓✓** |
+| Sahne sayısı | 13 | 24 | **48-72 (hedef 60)** | **72-144 (hedef 108)** |
+| Klip süresi | 10s | 10s | **8s** | **8s** |
+| Yapı | Tek dosya | 2 bölüm | **düz 4-6 faz** | **3 perde × 7-12 faz** |
+| Dosya sayısı | 1 | 2 | **8** | **13-16** |
+| Üretim tekniği | Text-to-video | Text-to-video | **Start/End zinciri** | **Start/End zinciri** |
+| İmaj sayısı | 13 | 24 | **75** | **135** |
+| Referans paketi | Sonda | Sonda | **Başta** | **Başta + faz başı yenileme** |
+| Devamlılık denetimi | — | — | **Faz sonu QA** | **Faz + perde sonu ledger** |
+| Anlatı derinliği | Tek katman | Çift katman | **5 katmanlı yay** | **3 perde / 9 alt yay** |
+| Mid-roll reklam | ✗ | ✗ | **✓ (8 dk üstü)** | **✓✓** |
 
 ---
 
@@ -361,14 +447,15 @@ Gerçekçi senaryo (sahne başına ~3 deneme) =  ~$390 / film
 
 | Kılavuz | Konum | Ne için |
 |---|---|---|
-| Kesintisiz Video Üretim Tekniği | `../yatay_7_9_dk_filmler/kilavuzlar/` | Start/End frame zinciri (aynen geçerli) |
-| Faz Dosyası Şablonu | `../yatay_7_9_dk_filmler/kilavuzlar/` | Sahne prompt şablonları (aynen geçerli) |
-| 5 Faz Mimarisi | `../yatay_7_9_dk_filmler/kilavuzlar/` | Faz işlev mantığı — **perde katmanı için uyarlanır** |
+| Kesintisiz Video Üretim Tekniği | `../kilavuzlar_ve_sistem_dosyalari/` | Start/End frame zinciri (aynen geçerli) |
+| Faz Dosyası Şablonu | `../kilavuzlar_ve_sistem_dosyalari/` | Sahne prompt şablonları (aynen geçerli) |
+| 5 Faz Mimarisi | `../kilavuzlar_ve_sistem_dosyalari/` | Faz işlev mantığı — **perde katmanı için uyarlanır** |
 | Veo 3.1 Diyalog Kılavuzu | `../kilavuzlar_ve_sistem_dosyalari/` | Tırnak sentaksı, lip-sync, ses katmanları |
 | Sahne Devamlılık Kılavuzu | `../kilavuzlar_ve_sistem_dosyalari/` | Karakter çapalama, seed yönetimi |
 | Lessons Learned | `../kilavuzlar_ve_sistem_dosyalari/` | Negatif blok kaynağı |
 | Sinematografik Teknik Kılavuz | `../kilavuzlar_ve_sistem_dosyalari/` | Kamera sözlüğü, görünmez geçişler |
 | Tek Çekim ve Gizli Geçiş | `../kilavuzlar_ve_sistem_dosyalari/` | Klipler arası geçiş tasarımı |
+| **3 Geçişli QA Sistemi** | `../kilavuzlar_ve_sistem_dosyalari/QA_PROMPTLARI/UC_GECISLI_QA/` | Bitmiş uzun filmin eleştirisi — 3 ayrı prompt. ⛔ `_KAYNAK/`'taki dört merceğin skorlarıyla karşılaştırılamaz |
 
 ---
 
@@ -393,6 +480,7 @@ Gerçekçi senaryo (sahne başına ~3 deneme) =  ~$390 / film
 
 | Film | Faz | Sahne | Sahne süresi | Toplam | Durum |
 |---|:--:|:--:|:--:|:--:|---|
+| [THE SLOW STONE](THE_SLOW_STONE/) | 4 kısım · ⛔ perde yok | 48 | **10s** ⚠️ sapma | 8:00 planlı / **7:35 gerçek** | 🪨 **BANDIN KISA UCU** · 04.09.2026'da kapanan `yatay_7_9_dk_filmler/`'den taşındı · ✅ **ÜRETİLDİ** — bu formatın tek üretilmiş filmi · QA **5/10** (`QA_RAPORU.md`, ayrıca `kilavuzlar_ve_sistem_dosyalari/FILM_QA_RAPORLARI/01_FILM_RAPORLARI/THE_SLOW_STONE.md`) · ⚠️ kartın üç tanımlayıcı kuralından **üçünde de gerekçeli saptı**: 4 kısım (5 faz değil) · 10 s + extend (8 s native değil) · start/end zinciri REDDEDİLDİ, düz text-to-video (gerekçeler `THE_SLOW_STONE/README.md`) · dikey türevi: `dikey_shorts_filmler/THE_SLOW_STONE/` |
 | [THE SECOND SHIP](THE_SECOND_SHIP/) | 10 (3-4-3) | 120 | **10s** ⚠️ sapma | 20:00 | Plan + Bible + senaryo + kapak + müzik + referans paketi ✅ · Faz 1 TAM + Faz 2 S13-S20 promptu ✅ · S21-S120 ve üretim ❌ |
 | [YERÇEKİMİ](YERCEKIMI/) | 10 (3-4-3) | 120 | **8s** ✅ standart | 16:00 | 🆕 28.08.2026 · 00_PLAN (ADIM 1) + README (Bible'lar + 120 sahne haritası) ✅ · ⭐ **31.08: 120/120 SAHNE YAZILDI (S1-S120 TAM) — FAZ_01_GOREV (S1-S12) ✅ + FAZ_02_DALGA (S13-S24) ✅ + FAZ_03_HALAT (S25-S36, perde dönüşü 1) ✅ + FAZ_04_FEDA (S37-S48, feda %35,0 + viral #2 + ilk kasksız kare) ✅ + FAZ_05_ISTASYON (S49-S60, ORTA NOKTA %50 sahte zafer) ✅ + FAZ_06_KAPSUL (S61-S72, **tek Overview sahnesi S68** + teslimiyet) ✅ + FAZ_07_SES (S73-S84, halüsinasyon + **CENTRAL CHOICE ve perde dönüşü 2**) ✅ + FAZ_08_AYRILIS (S85-S96, dalga 2 + **şok bandı 1** + ayrılış) ✅ + FAZ_09_DUSUS (S97-S108, **imza çekim S102 YERÇEKİMİ YAĞMURU** + şok bandı 2) ✅ + FAZ_10_ZEMIN (S109-S120, **Çehov 2 ödendi: S117 durmuş saat kurulur** · S118 tek alt açı · S120 held frame, kesme/kart/müzik yok) ✅ — **onu da prompt_kontrol GO (0 BLOCK · 0 FIX)**; 240 prompt (120 imaj + 120 video) · REFERANS_PAKETI ✅ **yazıldı** (9 sayfa RA-RI × 4 panel + 7 sayısal kabul/ret kapısı; RG p4 F4'ten önce — takvim düzeltildi, S48 iç mekândır) ⛔ **ama 0/15 panel ÜRETİLDİ — seed kutuları boş, 7 kapının hiçbiri koşulmadı** · ⭐ klasör düzeni FAZ_NN_AD/ (Second Ship emsali; format kartının PERDE_N/ düzeninden bilinçli sapma [D74], gerekçe 00_PLAN)** · ⚠️ **F4'te fizik düzeltmesi: istasyon dönüşü 2°/s → 6°/s** (2°/s'de 12 m halatın ucuna düşen merkezcil kuvvet ~2 N; halat katını sökmez → feda Gravity'nin ölçülmüş ihlalini kopyalardı); hiçbir prompt değişmedi, sayı yalnız Türkçe belgelerdeydi · ⚠️ **F5'te bir PLAN ÇELİŞKİSİ kapandı**: plan S55'te "A çağrı yapar" diyordu, kask takvimi ise "kasksız sahnede replik 0" — A kasksızdır. Çağrı kaldı, ses gitti: telsiz düğmesine iki tık · ⚠️ **F6'da bir FİZİK hatası fikre döndü**: taslak S62'de "eller kucağa düşer" diyordu; 0g'de el düşmez, kollar nötr duruşa yükselir → A çökmek ister, bedeni izin vermez (filmin adı YERÇEKİMİ ve burada eksikliği bir duyguyu imkânsız kılıyor) · ⚠️ **F7'de README ile Bible çelişti ve Bible kazandı** (kural ①): tablo S84'te "halka yanıp sönerek DOLAR" diyordu, Equipment Bible takvimi ise S84 = 1/6 ve MACHINE zinciri %6 — halka dolamaz; açılan akıştır, seviye değil · ✅ **KAPAK.md yazıldı** (31.08 · iki alternatif A/B + piksel-ölçülü tipografi; emsal Second Ship kapağının "seamless visor"ı D146 gereği kopyalanmadı) · ✅ **MUZIK_ALTERNATIFLERI.md yazıldı** (31.08 · beş alternatif; ⭐ tarama S61-S96 = 36 ardışık müziksiz sahneyi ortaya çıkardı, orta noktada başlıyor; sub-bass↔telefon çelişkisi kapandı) · ⛔ Kalan iki dosya: MUZIK_VE_SES (seçim sonrası) · KAPAK · **YERCEKIMI_QA_SPEC** (bu olmadan film "yazımı tamam" sayılmaz [D117]) · ⛔ ve hepsinden önce **D124 kapısı**: 00_PLAN'daki `KLİP SÜRESİ = ____` ffprobe ile doldurulmalı · ⚠️ iki bilinçli sapma faz dosyası KİLİT 1/3'te: start/end zinciri yerine sahne = kendi start frame'i (I2V; açı yayı kuralıyla çelişki) · F1 kurulum dizisi 1 kademe adımlarıyla yeniden dizildi · sert uzay gerilimi (Gravity 2013 yapı sökümü, 04_ARASTIRMA §TUR 2) · iki karakter → feda S43 (%35,0) → tek karakter · su 0 · ateş 0 |
 

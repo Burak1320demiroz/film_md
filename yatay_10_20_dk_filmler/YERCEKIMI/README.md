@@ -793,7 +793,7 @@ KURULUM DİZİSİ (KUR sütunu, 120): ardışık çiftlerin tamamı farklı
 2. FAZ_NN_AD/FAZ_NN_AD.md — faz başına klasör, faz başına dosya
    (Second Ship emsali; format kartından bilinçli sapma [D74],
    gerekçe 00_PLAN §Üretilecek dosyalar). Şablon:
-   yatay_7_9_dk_filmler/kilavuzlar/FAZ_DOSYASI_SABLONU.md
+   kilavuzlar_ve_sistem_dosyalari/FAZ_DOSYASI_SABLONU.md
    ✅ FAZ_01_GOREV (S1-S12) · ✅ FAZ_02_DALGA (S13-S24) ·
    ✅ FAZ_03_HALAT (S25-S36) · ✅ FAZ_04_FEDA (S37-S48) ·
    ✅ FAZ_05_ISTASYON (S49-S60, ORTA NOKTA) ·

@@ -41,7 +41,7 @@ kaldırmadı. Bu, kanalın **ölçülmüş tek hunisi.**
 
 ```
 AYAK 1 — YATAY FİLM                 ⭐ kanalın ürünü
-   16:9 · 2-4 / 3-5 / 7-9 / 10-20 dk · YouTube'da yaşar
+   16:9 · 2-4 / 3-5 / 7-20 dk · YouTube'da yaşar
    Görevi: izlenme saati (YPP uzun form yolu — DIS_SAYILAR §1), arşiv, arama
 
 AYAK 2 — FRAGMAN + DİKEY KESİM      ⭐ kanalın hunisi

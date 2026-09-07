@@ -3,7 +3,7 @@
 Dikey YouTube Shorts / Reels Production Document — **FRAGMAN (teaser)**
 Format: **9:16 (DİKEY)** | Vuruş: 6 (V0 hook + V1-V5) | Süre: her vuruş 8 saniye, toplam 48 saniye
 Prompt yapısı: her vuruş için **1 görsel promptu + 1 video promptu** (tek versiyon, T2V)
-Kaynak film: `yatay_7_9_dk_filmler/THE_SLOW_STONE/` — 48 sahne · 8:00 planlı / 7:35 gerçek · 16:9 · ✅ **üretildi** · QA **5/10**
+Kaynak film: `yatay_10_20_dk_filmler/THE_SLOW_STONE/` — 48 sahne · 8:00 planlı / 7:35 gerçek · 16:9 · ✅ **üretildi** · QA **5/10**
 Kılavuz: `kilavuzlar_ve_sistem_dosyalari/FRAGMAN_KILAVUZU.md` §1 · §2
 _"Kabuk kalınlığı bir süredir. Bu gezegende saat okumak öğrenilir."_
 
@@ -63,7 +63,7 @@ Bugün tek fragman teslimi var: bu dosya.
 
 ```
 Bu fragman ÜRETİLMİŞ ve ÖLÇÜLMÜŞ bir filmden yazıldı — Low Power emsalinin
-tersine. Kaynak: yatay_7_9_dk_filmler/THE_SLOW_STONE/QA_RAPORU.md
+tersine. Kaynak: yatay_10_20_dk_filmler/THE_SLOW_STONE/QA_RAPORU.md
 (235 satır, 4 rapor birleştirilmiş — projedeki TEK tam QA belgesi).
 
   Film genel 5/10 · Teknik Bütünlük 4/10 · Devamlılık 7/10* · Anlatı 7/10*
@@ -1475,7 +1475,7 @@ any panel, hook or surface, at any moment.
 
 ```
 FILM: THE SLOW STONE — FRAGMAN (dikey shorts · "Saat")
-KAYNAK FİLM: yatay_7_9_dk_filmler/THE_SLOW_STONE/ (48 sahne · 455 s gerçek /
+KAYNAK FİLM: yatay_10_20_dk_filmler/THE_SLOW_STONE/ (48 sahne · 455 s gerçek /
      480 s planlı · 16:9 · ✅ ÜRETİLDİ · QA 5/10 · 4 rapor, SPEC boş)
 FORMAT: 9:16 · 6 vuruş × 8 s = 48 s · vuruş başına 1 kesintisiz çekim, 0 kesme
 TİP: FRAGMAN — filmin ilk %55'inden altı vuruş; novum sahnesi (S9), keşif
@@ -1627,7 +1627,7 @@ L  ⚠️ Kaynak filmin AÇIK QA soruları bu fragmanı bağlıyor mu?
 
 ✅ GÖREV KARTI P — BETİK KOŞULDU [AGENTS.md kart P adım 1]
      python3 kilavuzlar_ve_sistem_dosyalari/PROMPT_KONTROL/prompt_kontrol.py \
-            yatay_7_9_dk_filmler/THE_SLOW_STONE/FRAGMAN_DIKEY.md
+            yatay_10_20_dk_filmler/THE_SLOW_STONE/FRAGMAN_DIKEY.md
      İLK KOŞU: ⚠️ FIX · 0 BLOCK. Dört bulgu, dördü de düzeltildi:
        ① "swirl" V0 ve V2'nin POZİTİF gövdesindeydi [D39] — o cümleler
           yeniden yazıldı; kelime artık yalnız yasak bloğunda.

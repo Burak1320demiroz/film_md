@@ -11,12 +11,19 @@
 # 🧭 BÖLÜM 0 — PLAN
 
 > ⭐ **BU FİLM BİR DIŞ FİLM ANALİZİNİN HİKÂYE DEVRİDİR.**
-> Kaynak: `film_analizleri/ANALIZ_EDILEN_FILMLER/NOBODY_WAS_ALIVE_WHEN_WE_LANDED`
+> Kaynak: `kilavuzlar_ve_sistem_dosyalari/DIS_FILM_ANALIZI/NOBODY_WAS_ALIVE_DERS_SECKISI.md`
 > (69 dk · 20 parça · 66 rapor). Önceki deneme (THE HOLLOW COUNT)
 > seçkinin **yöntemini** devraldı ama **konusunu** devralmadı. Bu dosya
 > tersini yapıyor: kaynak filmin dramatik omurgası — ölü koloni, adli
 > kanıt, çevirmenden gelen ifşa, geri çekilme, çözülmeyen final — 2:20'ye
 > sıkıştırılıyor; teknik dersler zaten bu omurganın içinde duruyor.
+>
+> ⛔ **05.09.2026 — KAYNAK KLASÖR KALDIRILDI.** `film_analizleri/` depodan
+> çıktı (kart H2); ders seçkisi kurtarılıp yukarıdaki adrese taşındı.
+> Bu dosyanın başka yerlerde adını andığı `50_TAM_FILM_ANALIZI.md` (§0.9b ve
+> CAMERA BIBLE ölçümlerinin kaynağı) ile 66 ham parça raporu **DEPODA YOKTUR**;
+> git geçmişinde durur:
+> `git show e9bcf36:film_analizleri/ANALIZ_EDILEN_FILMLER/NOBODY_WAS_ALIVE_WHEN_WE_LANDED/50_TAM_FILM_ANALIZI.md`
 
 ## 0.1 DÖRT SORU
 
@@ -737,7 +744,8 @@ TEK CÜMLELİK ÖNCÜL:
 
 ## 0.19 ⭐ DEVRALINAN DERSLER — dış film analizinden, sahne sahne
 
-> **Kaynak:** `film_analizleri/.../60_DERS_SECKISI.md`
+> **Kaynak:** `kilavuzlar_ve_sistem_dosyalari/DIS_FILM_ANALIZI/NOBODY_WAS_ALIVE_DERS_SECKISI.md`
+> (05.09.2026'da kurtarıldı; kaynak klasör `film_analizleri/` kaldırıldı — §0'daki kutu)
 > ⛔ Dersler hâlâ ADAYDIR: film üretilip ölçülmeden kart G'ye taşınmaz.
 
 | Ders | Kaynak filmdeki hâli | Bu filmdeki hâli | Sahne |

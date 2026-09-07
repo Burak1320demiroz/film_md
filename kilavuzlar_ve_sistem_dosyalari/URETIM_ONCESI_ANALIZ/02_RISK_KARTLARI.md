@@ -7,7 +7,7 @@
 > Kart 9-11: 21.08.2026'da eklendi (D104 · yapısal red vakaları ·
 > D70/72/100/101). Tahmin yok, hepsi ölçülmüş.
 > ⚠️ Eski filmlerin `n/9` skorları 9 kalemlik sürümle ölçüldü ve YENİDEN
-> YAZILMAZ; 21.08.2026 sonrası filmler `n/12` yazar.
+> YAZILMAZ; 04.09.2026 sonrası filmler `n/14` yazar.
 
 ---
 
@@ -17,7 +17,8 @@
 1. Filmin malzeme listesini çıkar:  su · canlı · diyalog · parçacık ·
                                     sıfır-g · patlama · kask · sayaç · ikinci figür ·
                                     tek baskın ışık + hedefe hareket ·
-                                    insansız sahne · değişken çekim süresi
+                                    insansız sahne · değişken çekim süresi ·
+                                    büyük yapı (istasyon · üs · gemi · iniş aracı)
 2. Karşılık gelen kartları oku
 3. Her kartın "PLANA YAZ" bloğunu plan dosyasına KOPYALA
 4. "SAHNEDEN ÇIKAR" uyarısı olan malzemeyi gerçekten çıkarmayı düşün
@@ -53,7 +54,7 @@ toz suyun altındaymış gibi süzülür (Ders 39).
 ```
 RİSK SKORU:  🔴 EN YÜKSEK
 KANIT:       Canlı kategorisi 11 filmin yalnız 5'inde ölçüldü,
-             ortalama 3.90, hiç 5'i geçmedi
+             ortalama 3,90, hiç 5'i geçmedi
 İLGİLİ DERS: 2 · 18 · 28
 ```
 
@@ -461,12 +462,63 @@ MALZEME BAŞINA RED SAYISI (defterden · 01.09.2026 kesiti)
                Kompozisyon ekseni betiğe İNMEZ → PROMPT_QA rubriği.
 ```
 
-> ⚠️ **Bu kart HÜCUM kartıdır, savunma kartı değil.** Diğer 11 kart
+> ⚠️ **Bu kart HÜCUM kartıdır, savunma kartı değil.** Diğer 13 kart
 > "bundan kaçın" der; bu kart "**aynı aksiyonu politika yüzeyi olmadan
 > nasıl yazarsın**" diye sorar. Cevap kılavuzun §4.1'indeki dört kanaldır
 > (kütle-hız · malzeme sonucu · alet tepkisi · temassız gövde tepkisi).
 > Ölçülmüş emsal: LAST SPAN bir kalabalığı HARCIYORDU (400 temas, 2 red);
 > HELD HEAT aynı kalabalığı YÖNLENDİRİYOR (0 temas, 0 red).
+
+---
+
+# 🟠 KART 13 — YAPI ÖLÇEĞİ VE TEKRAR EDEN BİRİM 🆕 04.09.2026
+
+```
+RİSK SKORU:  🟠 ORTA-YÜKSEK — ölçülmüş, tek vakada belgeli
+KANIT:       The Ring Walker QA · Ölçek 4/10 [Ders 32]:
+             "Lander staircase angle and door proportions alter relative
+              to 0:01 setup."
+             THE COLD BURN: dok kapısı geniş çekimde dev, kilitlenme
+             yakınında oyuncak (UZAMSAL_HARITA §4 hata tablosu).
+İLGİLİ DERS: 32 (yapı oranı) · 58 (çoklu varlık) · 138 (ölçü gövdeye
+             yazılmaz) · 45 (dizge riski)
+KILAVUZ:     ../UZAY_USSU_VE_ISTASYON_MIMARISI_KILAVUZU.md §1 · §5
+```
+
+**Ne bozulur:** kadrajda büyük bir yapı (istasyon, üs, gemi, iniş aracı)
+varsa iki ayrı şey birden kayar. ① **Oran:** kapı yüksekliği, merdiven
+açısı, pencere oranı sahneden sahneye değişir ve karakter yapıya göre
+büyüyüp küçülür. ② **Sayı:** tekrar eden birim (panel, raf, tutamak,
+kiriş gözü) her karede yeniden sayılır ve sayı tutmaz. İkisi de tek
+planda görünmez, ancak sahneler yan yana gelince ortaya çıkar — yani
+**QA'da değil, kurguda patlar.**
+
+```
+⛔ SAHNEDEN ÇIKAR
+   · Yüzlerce ince tekrar eden öğe (tutamak ormanı, kablo demeti,
+     anten kümesi) uzak bantta kadrajdan ÇIKARILIR.
+   · "hundreds of…", "thousands of…" gibi sayısız çoğul HİÇBİR bantta
+     yazılmaz — model saymaz, doldurur.
+   · Metreli ölçü prompt gövdesinden çıkar [D138].
+
+✅ PLANA YAZ
+   · ANATOMİ KARTI: modül n · kanat n · radyatör n · port n · pencere n
+     (film boyu SABİT, tek sayı)
+   · ÖLÇEK MERDİVENİ: her yaklaşma sahnesinin kadraj kesri, aynı nesne
+     ve aynı eksen (kare yüksekliği) üzerinden, monotonik
+   · ÖLÇEK ŞAHİDİ: her yapı planında en az biri — ön planda figür /
+     tekrar eden birim / kadrajı taşan kenar
+   · SPEC'te metre, PROMPTTA gövde boyu (1H = 1,90 m, kasklı)
+
+🚨 KONTROL
+   □ İki geniş çekim yan yana konduğunda karakter-yapı oranı aynı mı?
+   □ Kesir dizisi monotonik mi ve tek nesneyi mi ölçüyor?
+   □ Prompt gövdesinde tek bir metre/derece/f-sayısı var mı? (varsa GEÇMEZ)
+   □ Yakın bantta taşma yazıldı mı? (2 m'de kapak dışında her yapı taşar)
+```
+
+> ⭐ Tam tablolar ve nesne-göreli birim sözlüğü:
+> `../UZAY_USSU_VE_ISTASYON_MIMARISI_KILAVUZU.md` §1 ve §5.
 
 ---
 
@@ -493,8 +545,11 @@ FİLM: ______________________
   bedenden bir şey çıkarma · ikinci insan var mı?
                                 → varsa KART 12 — politika yüzeyi
                                    ⛔ VE anlam maliyeti satırı
+□ Kadrajda büyük bir YAPI var mı (istasyon · üs · gemi · iniş aracı)?
+                                → varsa KART 13 — anatomi kartı + ölçek
+                                   merdiveni + ölçek şahidi şart
 
-RİSK SAYISI: ___ / 13        ← payda YUKARIDAKİ SORU SAYISIDIR, sabit değil.
+RİSK SAYISI: ___ / 14        ← payda YUKARIDAKİ SORU SAYISIDIR, sabit değil.
                                 Kart eklenince payda da artar (bu liste tek kaynak).
 
 ⚠️ 5 ve üstü ise: film şu anki sistemle 5/10'un üstüne çıkamaz.
@@ -503,7 +558,7 @@ RİSK SAYISI: ___ / 13        ← payda YUKARIDAKİ SORU SAYISIDIR, sabit değil
    ardışık sıçrama karşılığı 3→8 · 01_DERS_ETKINLIK_RAPORU §5).
 
 ⚠️ EŞİK KALİBRASYONU AÇIK: "5+" bandı liste 9 SORULUYKEN ölçüldü; kart
-   6b · 9 · 10 · 11 · 12 sonradan eklendi ve payda 13'e çıktı. Aynı film
+   6b · 9 · 10 · 11 · 12 · 13 sonradan eklendi ve payda 14'e çıktı. Aynı film
    şimdi mekanik olarak daha yüksek risk sayısı üretir. Bant yeniden
    ölçülene kadar 5+ eşiği KORUNUR (yanlış tarafa hata yapar: fazla uyarır).
 

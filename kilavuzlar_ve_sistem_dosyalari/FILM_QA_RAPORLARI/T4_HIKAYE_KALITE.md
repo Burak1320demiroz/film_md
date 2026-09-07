@@ -1,6 +1,6 @@
 # 📖 T4 — HİKAYE KALİTE TABLOSU (film boyu · anlatı)
 
-> **Kaynak rubrik:** `../QA_PROMPTLARI/4_HIKAYE_QA_CRITIQUE_PROMPT.md`
+> **Kaynak rubrik:** `../QA_PROMPTLARI/_KAYNAK/4_HIKAYE_QA_CRITIQUE_PROMPT.md`
 > **Açılış:** 22.08.2026 — dört mercekli sisteme geçişle birlikte
 > **Selefi:** `03_HIKAYE_KALITE_TABLOSU.md` — aynı gün KAPANDI.
 >

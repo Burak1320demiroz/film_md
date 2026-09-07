@@ -371,6 +371,20 @@ stating it requires TWO scenes — "it was clean here and dirty there" — it is
 not yours. Drift between scenes belongs to another lens, and this rubric can
 be run on a single clip precisely because it never needs a second one.
 
+```
+⛔ THE MECHANICAL FORM OF THAT TEST: COUNT THE TIMECODES IN YOUR OWN LINE.
+
+A finding of yours carries ONE timecode. The moment you write a second one
+— "the hatch faces right at 0:10 and left at 0:50", "shrinks compared to
+the 0:50 master shot" — you have written a CONTINUITY finding in this
+report's voice. Delete the number, move the line to OUT-OF-SCOPE FLAGS.
+
+This is not a style rule. Four lenses deducted for one capsule layout on
+07.09.2026, and this lens was one of them — with both timecodes printed in
+its own error log, in a category whose scope list hands cross-scene props
+to continuity [D189].
+```
+
 ## ═══ NOT IN THIS PASS ═══
 
 ```

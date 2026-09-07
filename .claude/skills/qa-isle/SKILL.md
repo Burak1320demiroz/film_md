@@ -14,7 +14,10 @@ film kaydına yazılmış olmalıdır.
 ## 0. Mercek tespiti
 Raporun başlık/kategori yapısından hangi mercek olduğunu belirle:
 ① KARE · ② DEVAMLILIK · ③ SES · ④ HİKAYE · ⑤ ARKA PLAN · ⑥ FİZİK ·
-⑦ AKSİYON · ⑧ EFOR. (①-④ zorunlu; ⑤-⑧ risk tetikli — 00_README)
+⑦ AKSİYON · ⑧ EFOR · ⑨ KADRAJ · ⑩ OYUNCULUK · ⑪ IŞIK · ⑫ HOOK.
+(①-④ zorunlu; ⑤-⑧ risk tetikli; ⑨-⑫ KOŞUL tetikli plan sadakati — 00_README.
+⛔ ⑨-⑫ SPEC'siz koşulmaz, mod V satırı tabloya girmez; ölçüm HAM ZİNCİR
+dediyse HİÇBİR mercek koşulmaz [D181 · D184])
 Malzeme FRAGMAN ise → kapı ⑧: mercek yalnız ①, satır film tablolarına girmez.
 
 ## 1. ⑪ ÖLÇÜM KAPISI — sıraca en önce, master eldeyse
@@ -40,6 +43,11 @@ bash .claude/skills/qa-isle/scripts/olcum_kapisi.sh "<master_yolu>"        # son
   ihraç edilir, dört mercek yeniden koşulur [D136].
 - Rapor ile ölçüm çelişirse ÖLÇÜM kazanır; o merceğin satırı ŞARTLI olur.
 - Ölçüm, film kaydına "§ÖLÇÜM KAPISI" tablosu olarak yazılır.
+- ⛔ Betik SONA **TESLİM SINIFI** satırı basar [D181]: LUFS sapması > 3 LU ya da
+  kuyrukta ≥1,5 s donma → 🚨 **HAM ZİNCİR**. Filigran ve klip sayısı `⬜ GÖZ`/`⬜ SPEC`
+  olarak açık kalır; biri 🔴 ise sınıf zaten HAM ZİNCİR'dir.
+  **HAM ZİNCİR çıkarsa MERCEK KOŞULMAZ, rapor OKUNMAZ, satır YAZILMAZ.**
+  Sıra: KURGU → ÖLÇÜM → MERCEK.
 - Betik KUYRUK/BAŞ KART ŞÜPHESİ (freezedetect) ve `son_kare.jpg` de basar [D70/72 · 9 vaka];
   şüphe varsa kart kesilir ve ⑪ yeniden koşulur — kart S0↔son sahne eş kadraj çiftini öldürür.
 - Betik ayrıca LUFS/true peak (ihraç kilidi −14 / −1,0) ve KÖŞE TESTİ (`kose_SA.png`)
@@ -78,6 +86,14 @@ python3 kilavuzlar_ve_sistem_dosyalari/RAPOR_KONTROL/rapor_kontrol.py \
 ⭐ **⑪ ölçümü hakemdir.** Ölçüm bayrakları verilmezse kesme yayılımı > 1 partiyi
 toptan düşürür [D107]; ölçüm verilince parti ayakta kalır, yalnız sapan mercek
 şartlı olur. Ölçüm yoksa bayrağı UYDURMA.
+⛔ **①.9 TESLİM KAPISI [D188]** — `--film` verildiğinde betik planın
+`## 🎬 SAHNE n` başlıklarını SAYAR ve raporların çoğunluk sahne sayısıyla
+karşılaştırır. Fark varsa parti GEÇERSİZ: **merceklerin birbirini doğrulaması
+teslimi doğrulamaz**, hepsi aynı makarayı izler ve eksik makara oybirliğiyle
+onaylanır. O zaman kesme listesi / REMOVE reçetesi / yeniden üretim UYGULANMAZ;
+önce hangi sahnenin makarada olmadığı adıyla yazılır ve soru ÜRETİM masasına
+geçer (YERÇEKİMİ F10: plan 12, makara 11, eksik olan filmin son karesiydi).
+
 n·Σ·ort · tally · şerit · ⑨ ızgara · ④ harita↔kesme · ② sayaç boşluğu · çoklu
 raporda ⑤'in beş satırı (SUSKUNLUK dahil). **GEÇERSİZ / TEKRAR → T tablosuna
 satır YAZILMAZ; ŞARTLI → düzeltilmiş ortalama Ⓥ ⚠️ girer.** Betik çıktısı film
@@ -104,18 +120,25 @@ koşu ÖN KOŞU olur, film boyu kategoriler sayı taşımaz.
 
 ## 6. Merceğe özel kart
 AGENTS.md'de ilgili kartı AÇ ve uygula: C(①) · D(④) · E(②) · E3(③) · F(⑤) ·
-F2(⑥) · F3(⑦) · F4(⑧).
+F2(⑥) · F3(⑦) · F4(⑧) · F5(⑨) · F6(⑩) · F7(⑪) · F8(⑫).
 Kartların ⛔ ön satırları: ① FORMAT kapısı · ② iki yarı + doküman verilmez ·
 ③ AUDIO STATE + register doğrulaması · ⑤ özne kapısı · ⑥ mod kapısı +
-cetvelsiz FAIL düşer. ⑩ ÖNERME KAPISI her mercekte: bulgu planın logline +
+cetvelsiz FAIL düşer · ⑨ kare-önce + kafiye çifti · ⑩ kanal kaydı (kask
+kapalı → yüz N/A) + cümle kapısı · ⑪ ortam yasası + planlı sınır PASS ·
+⑫ kesme ÖNERMEZ + üç saniye tahmin → 08 yayın tablosu. ⑩ ÖNERME KAPISI her mercekte: bulgu planın logline +
 sahne haritası + kilit listesine karşı okunur; düşen bulgunun puanı geri verilir,
 toplam yeniden hesaplanır, kalanlar SPEC C-bloğuna göre yeniden sıralanır.
+⛔ **⑩ DÜŞÜRDÜKTEN SONRA SINIRI SORAR [D183].** Novum yüzünden düşen her bulgu
+için SPEC'in NOVUM bloğundaki `⛔` cümlesi (kuralın nerede BİTTİĞİ) okunur ve
+KAREYLE sınanır — `rapor_kontrol.py` ①.7 o cümleyi ekrana basar. Kept Light'ta
+düşen "TWO GRAVITIES" hükmünün altında sınanmamış bir SINIR İHLALİ duruyordu.
 
 ## 7. Kayıt zinciri — sırası değişmez
 1. HAM rapor OLDUĞU GİBİ → `kilavuzlar_ve_sistem_dosyalari/FILM_QA_RAPORLARI/02_HAM_RAPORLAR/` (kural ④).
 2. Film kaydı → `.../FILM_QA_RAPORLARI/01_FILM_RAPORLARI/<FILM>.md` (kapı defterleri buraya).
-3. ⛔ `rapor_kontrol.py` GEÇERSİZ/TEKRAR dediyse bu adım ATLANIR. Skor satırı DOĞRU tabloya: ① → LESSONS_LEARNED teknik tablo · ② → T2 ·
-   ③ → T3 · ④ → T4 · ⑤ → T5 · ⑥ → T6. Geçerlilik işareti: ✅ / ⚠️ ŞARTLI / 🚨.
+3. ⛔ `rapor_kontrol.py` GEÇERSİZ/TEKRAR dediyse bu adım ATLANIR. Skor satırı DOĞRU tabloya: ① → T1 · ② → T2 ·
+   ③ → T3 · ④ → T4 · ⑤ → T5 · ⑥ → T6 · ⑦ → T7 · ⑧ → T8 · ⑨-⑫ → T9-T12
+   (⑨-⑫'de mod V satırı YOKTUR). Geçerlilik işareti: ✅ / ⚠️ ŞARTLI / 🚨.
 4. `.../FILM_QA_RAPORLARI/00_INDEX.md` sayım + tamlık matrisi.
 5. Yeni ders çıktıysa → AGENTS.md Kart G.
 6. Commit ATILMAZ — "commit'e hazır" diye raporla.

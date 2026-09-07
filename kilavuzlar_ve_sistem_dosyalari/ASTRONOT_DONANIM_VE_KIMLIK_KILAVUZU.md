@@ -194,8 +194,8 @@ AUDIO: a harsh, fast, high-pitched warble alarm; a red light blinks
 
 | Arıza | Dıştan görünen | İngilizce kalıp |
 |---|---|---|
-| Soğutma çöküşü / aşırı efor (Gemini 9A) | vizör içi süt beyazı buğu, damlacıklar; yüz silik gölge | `the inside of the visor fogs into an opaque milky layer; the face becomes a dim silhouette` |
-| Soğukta yoğunlaşma | vizör iç yüzünde ince kırağı | `a thin crystalline frost creeps across the inside of the visor` |
+| Soğutma çöküşü / aşırı efor (Gemini 9A) | vizörün KENARINDA süt beyazı buğu bandı; yüz merkezde okunur kalır | `a milky fog band creeps in from the lower rim of the visor; the centre of the glass stays clear and the face reads through it` |
+| Soğukta yoğunlaşma | vizörün ALT KENARINDA ince kırağı hattı | `a thin crystalline frost line sits along the bottom edge of the visor, the eye line above it untouched` |
 | Su kaçağı (2013 EVA vakası) | kask içinde titrek, ışığı büken su kütlesi | `a wobbling blob of water clings inside the helmet, bending the light like a lens` |
 | Isı tahliyesi / venting | sırt ünitesinden ~1 m'ye uzanan beyaz buz kristali jeti | `a fine white vapor jet of ice crystals vents from the backpack and slowly dissipates` |
 
@@ -203,7 +203,15 @@ AUDIO: a harsh, fast, high-pitched warble alarm; a red light blinks
 □ Arıza görseli SAYILABİLİR yazılır ("a single white vapor jet") —
   ⑥ FİZİK merceği kilit ister
 □ Arıza + panik ayrımı: görsel arıza tırmanırken karakter SAKİN
-  kalabilir (dramatik ironi, HOOK §3.1) — buğu oyuncudan ucuzdur
+  kalabilir (dramatik ironi, HOOK §3.1) — arıza görseli oyuncudan ucuzdur
+□ ⛔ 04.09.2026 · SAHİBİN KARARI [T11.5③]: hiçbir arıza kalıbı YÜZÜ
+  KAPATAMAZ. Buğu ve kırağı yalnız vizörün KENARINDA durur; göz hattı
+  ve yüz merkezi her karede okunur kalır [D79 · D95 · POLITIKA §3 ⑥].
+  Yüzü tamamen kapatan arıza, ekipman devamlılığı skorunu düşürüyor
+  (STARLESS CIRCLE Ekipman 4/10) ve mercek "kask çıkarılmış" okuyabiliyor.
+□ ⛔ Ve arıza bir DURUM DEĞİŞİMİ olarak yazılamaz: buğu tek klip içinde
+  BİRİKİP ÇÖZÜLMEZ. Temiz durum bir klipte, buğulu durum sonrakinde
+  [KILAVUZ_REHBERI §7 · SAHNE_ZINCIRI_VE_SINIR §1].
 □ Buhar jeti YÖN taşır: vakumda itki üretir — sahnede jet varsa
   gövde tepkisi ORTAM kartıyla (KILAVUZ_REHBERI §3.1) tutarlı olmalı
 ```

@@ -55,6 +55,49 @@ SAHNE 19  — FINAL: Geniş çekim, evrensel perspektif
 
 ---
 
+## ⚠️ DURUM NOTU — bu dosya BAYAT (04.09.2026)
+
+> Bu not bir sayı taşımaz, bir ÇELİŞKİYİ kaydeder. Kural ①: sayı tek yerde
+> durur; burada duran sayılar aşağıdaki iki kaynakla çakışıyor ve düzeltme
+> kararı sahibindir.
+
+```
+① İSKELET DEĞİŞTİ (01.09.2026): bu dosya hâlâ PART_A / PART_B diyor.
+   Geçerli iskelet KILAVUZ_REHBERI §2.0'dır: SEKİZ dosya —
+   PLAN · BOLUM_1 · BOLUM_2 · KAPAK · MUZIK · YAYIN_PAKETI · QA_SPEC ·
+   REFERANS_PAKETI.
+   ⛔ 06.09.2026 DÜZELTMESİ: bu satır "REFERANS_PAKETI, iki insandan veya
+     iki araçtan fazlası varsa" diyordu ve o SAYIM KURALI ÖLDÜ. Tetikleyici
+     artık REFERANS_PAKETI_KILAVUZU §1'in ALTI koşuludur ve T1 (kask/vizör/
+     basınç giysisi) bu deponun neredeyse her filminde doğrudur → paket
+     İSTİSNA DEĞİL VARSAYILANDIR.
+   THE_SINKING_STAKE · THE_UPWARD_FALL · THE_WHITE_FLOOD · THE_STANDING_WIRE ·
+   THE_KEPT_LIGHT bu iskeletle yazıldı; THE_OPEN_CIRCUIT (07.09.2026) sekiz
+   dosyanın sekizini birden taşıyan İLK filmdir.
+
+② SAHNE SAYISI ÇELİŞKİSİ, HÂLÂ AÇIK:
+   bu dosya            → 24 sahne / 2 × 12
+   KILAVUZ_REHBERI §2.3 → 25 sahne / 4:09 (13 + 12)
+   Hangi filmin hangisini izlediği kendi PLAN'ında yazılıdır:
+     THE PAYLOAD        → bu README
+     THE SINKING STAKE  → §2.3
+     THE UPWARD FALL    → §2.3
+     THE WHITE FLOOD    → §2.3, ve sahne sayısını sahibin açık izniyle
+                          30'a çıkardı (299 s = 4:59; 40 sahne 6:39 eder
+                          ve 3-5 dk BANDININ DIŞINA çıkardı)
+     THE STANDING WIRE  → §2.3
+     THE KEPT LIGHT     → §2.3  (06.09.2026)
+     THE OPEN CIRCUIT   → §2.3  (07.09.2026 · 25 sahne / 4:09)
+   ⛔ İki kaynaktan biri düzeltilene kadar her yeni film hangisini
+     izlediğini PLAN'ına YAZAR.
+
+③ SÜRE HESABI BLOĞU (aşağıda) da bu çelişkiyi taşıyor: 23 sahne ve
+   19 + 4 sahne diye iki ayrı aritmetik veriyor, ikisi de 239 s çıkıyor.
+   Bandın kendisi (180-300 s) doğrudur; içindeki sahne sayısı değil.
+```
+
+---
+
 ## 📁 Dosya Yapısı
 
 Her film için 2 dosya oluşturulur:

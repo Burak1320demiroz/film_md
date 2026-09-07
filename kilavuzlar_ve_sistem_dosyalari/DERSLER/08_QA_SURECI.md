@@ -1531,6 +1531,22 @@ dosya filmin teslim kurgusu değil.** Her iki hâlde de kurgu kapısı (26 klip 
 
 ## 🟡 DERS 110: AYNI OTURUMDA ARKA ARKAYA KOŞULAN MERCEKLER BAĞIMSIZ ÖLÇÜM DEĞİLDİR — ORTAK DEFTER
 
+**KAPI:** BETİK · `rapor_kontrol.py` ⑦ ORTAK DEFTER — künyesi (kesme · sahne ·
+şerit) BİREBİR aynı olan ve çoğunluktan sapan mercek grubu işaretlenir:
+*"azınlık İKİ oy değil, BİR oydur."* — 07.09.2026. Bu ders 17.08.2026'dan beri
+yalnız operatör kuralıydı; ilk betik kapısı bugün takıldı [[D74]].
+**TEKRAR:** 3 · 07.09.2026 YERÇEKİMİ FAZ 10 — ⑦ ve ⑧ künyeleri birebir aynı
+(109 s · 11 kesme · 12 sahne · `--1111111111`) ve **ikisi de rubriğin ⛔ zorunlu
+kıldığı kesme ZAMAN KODLARINI basmadı**: sayım yapılmamış, devralınmıştır.
+⭐ Aynı partide ikinci kanıt: ⑦'nin `01:36'da bir kesme` iddiası — o saniyede
+kesme YOK (ızgara 10 s) ve gizli kesmenin sahibi ① o klipte Camera 10/10 verdi.
+⑦'nin bütün verdict'i (`ACTION NEVER RENDERED`) o hayalî kesmeye dayanıyordu;
+⑧ saniyeyi devraldı, ⑨ ve ⑩ kapsam-dışı bayrak olarak kopyaladı — ⑨'unki
+kelimesi kelimesine *"The cut at 01:36"*. Dört rubrikte de "kopyaladığın bayrak
+çapraz kontrol değildir" cümlesi YAZILIYDI ve bağlamadı
+· 2 · 06.09.2026 FAZ 8 (üç replik iddiası: bir mercek duymadı, sonraki altısı
+aynı cümleleri aynı zaman kodlarıyla tekrarladı)
+
 **Kaynak:** THE BLACK CRADLE · 17.08.2026 · beş mercek tek sohbet oturumunda
 **Sorun:** ilk kez belgelendi; sistemin "dört mercek birbirini doğruluyor"
 varsayımının altını oyuyor
@@ -2277,7 +2293,10 @@ arka plan nesnesi adlandırılır, yoksa "none" yazılır.
 ## 🔴 DERS 129: SPEC DOSYASI FİLMİN KENDİ KLASÖRÜNDE DURURKEN BEŞ MERCEK DE MOD V KOŞULDU — KESME LİSTESİ DORUĞU, KAPAK KARESİNİ VE İKİ VİRALİ KESTİ
 
 **KAPI:** KARAR · `rubrik_paketle.sh` (QA_PROMPTLARI/FILME_OZEL/<FILM>/) + `rapor_kontrol.py` ① SPEC kapısı (mod V → TEKRAR) — 01.09.2026
-**TEKRAR:** **12 film** · son vaka 04.09.2026 (THE UPWARD FALL, **sekiz mercek** — bu kez paket VARDI, bkz. [[D165]]) · önceki 02.09.2026 (THE SINKING STAKE, **sekiz mercek** — sebep: FILME_OZEL paketi yoktu [D165]) · ⛔ ÇALIŞMIYOR → araca çevrildi ama araç KOŞULMADI: paket ancak QA anında, `qa-isle` açılırsa üretiliyordu; film 01.09'da yazıldı, paketi hiç doğmadı, ertesi gün operatörün elinde yapıştıracak paket yoktu → **[[D165]]** aracı filmin YAZIMINA bağlar
+**TEKRAR:** **15 film** · son vaka 06.09.2026 (YERÇEKİMİ FAZ 9, **on iki mercek** —
+bu hatta SPEC'in adresi FAZ RUBRİĞİDİR ve FAZ 9'unki hiç yazılmamıştı, bkz. [[D185]]) ·
+önceki 06.09.2026 (THE KEPT LIGHT, **sekiz mercek** — SPEC ve PAKET ikisi de VARDI) ·
+önceki 04.09.2026 (THE HEALING GROUND, **yedi mercek** — paket VARDI, film ve paket aynı gün 05:00'te doğdu, operatör yine çıplak rubriği açtı; THE UPWARD FALL ile **AYNI GÜN, arka arkaya** — sorun artık "paket yok" değil, **paketin operatöre ulaşmaması**) · önceki 04.09.2026 (THE UPWARD FALL, **sekiz mercek** — bu kez paket VARDI, bkz. [[D165]]) · önceki 02.09.2026 (THE SINKING STAKE, **sekiz mercek** — sebep: FILME_OZEL paketi yoktu [D165]) · ⛔ ÇALIŞMIYOR → araca çevrildi ama araç KOŞULMADI: paket ancak QA anında, `qa-isle` açılırsa üretiliyordu; film 01.09'da yazıldı, paketi hiç doğmadı, ertesi gün operatörün elinde yapıştıracak paket yoktu → **[[D165]]** aracı filmin YAZIMINA bağlar
 
 **Kaynak:** THE ROSE COAT · 26.08.2026 · beş mercek ·
 `FILM_QA_RAPORLARI/01_FILM_RAPORLARI/THE_ROSE_COAT.md`
@@ -2716,7 +2735,14 @@ only one of them is a delivery defect.
 ## 🔴 DERS 137: SES KANALI VAR, ALTI MERCEĞİN ALTISI "HİÇ SES BİLGİSİ YOK" DEDİ — D136'NIN YAMASI TAKILIYDI VE ARIZA TERSİNE DÖNDÜ
 
 **KAPI:** BETİK · `olcum_kapisi.sh` SES KANALI + `rapor_kontrol.py` (AUDIO STATE bir beyandır, ölçüm sayılmaz) — 01.09.2026
-**TEKRAR:** 5 · son vaka 04.09.2026 THE UPWARD FALL — AAC 48 kHz, −16,1 LUFS, sessizlik aralığı YOK; **sekiz merceğin sekizi** "nothing audible to me" yazdı ve ③ hiçbir kategoriye sayı koymadı. Araç zaten vardı, koşulmadı → [[D177]] ölçümü rapor işlemenin ÖNKOŞULU yaptı
+**TEKRAR:** 6 · 07.09.2026 YERÇEKİMİ FAZ 10 — ilk kez **YARIK**: ① ve ③ "none —
+room tone present" yazıp bağımsız olarak AYNI saniyede aynı kusuru bildirdi
+(1:22 · saat kurma Foley'inin senkronu); ③ tam bir ambiyans haritası çıkardı
+(rüzgâr · ayak sesi · kumaş · tıkırtı). Diğer SEKİZİ "nothing audible to me".
+⛔ Bu bir çelişki değil, **iki TANIK ve on ÇEKİMSER**: çapraz kapı `LINES HEARD`
+satırlarını oy gibi okuyor, oysa sesi hiç açmamış merceğin sessizliği gözlem
+değildir. Plan ③'ü destekliyor (REPLİK 0/12 · S120 "yalnız rüzgâr")
+· 5 · son vaka 04.09.2026 THE UPWARD FALL — AAC 48 kHz, −16,1 LUFS, sessizlik aralığı YOK; **sekiz merceğin sekizi** "nothing audible to me" yazdı ve ③ hiçbir kategoriye sayı koymadı. Araç zaten vardı, koşulmadı → [[D177]] ölçümü rapor işlemenin ÖNKOŞULU yaptı
 
 **Kaynak:** THE THIN ROOF QA (28.08.2026) — altı mercek, altısı da mod V
 **Sorun:** D136'nın tam TERSİ, aynı yamayla, bir sonraki filmde
@@ -2791,7 +2817,7 @@ ekseni ölçülmedi` olur.
 ## 🔴 DERS 150: ÜRETİCİ FİLİGRANI 315 SANİYENİN 315'İNDE DURUYORDU — ⑤ 31 SAHNEDE "EDGES: CLEAN" YAZDI, ① KUTUYU İŞARETLEMEDİ; KÖŞE TESTİ MAKİNE KAPISINA
 
 **KAPI:** BETİK · `olcum_kapisi.sh` KÖŞE TESTİ (kose_SA.png) + `rapor_kontrol.py` ⑤ SUSKUNLUK — 01.09.2026
-**TEKRAR:** **3** · ⛔ ÇALIŞMIYOR → dönüştürme borcu [[D177]] ile ÖDENDİ (ölçüm sonucu artık `rapor_kontrol.py`'ye bayrakla girer; verilmezse eksen "ÖLÇÜLMEDİ" yazar). 3. vaka 04.09.2026 THE UPWARD FALL: cyan "▷" sağ alt çeyrekte 7/7 örnek, 225/225 saniye — **sekiz merceğin sekizinde bulgu 0**, ⑤ 20 sahneye `EDGES: Clean` yazdı; ⑤ SUSKUNLUK kapısı sıfır iddiada ateşlenemedi. 2. vaka 01.09.2026 THE COLD WELD ÖLÇÜLDÜ ve filigran DOĞRULANDI (sağ alt çeyrek, 6/6 örnek, cyan üçgen; merkez 4K'da ≈3450,1800 — köşeden %10/%17 içeride). ⚠️ Kapının ilk sürümü SABİT 360×240 kırpıyordu ve KAÇIRDI; 01.09.2026'da DÖRT ÇEYREĞE çevrildi (`olcum_kapisi.sh`). ⛔ %3 crop yetmez: temizlik kadraj genişliğinin %12'sini götürür.
+**TEKRAR:** **5** · 5. vaka 05.09.2026 THE STANDING WIRE: camgöbeği "▷" sağ alt çeyrekte 6/6 örnek + 25 sahne karesinin 25'inde — **sekiz merceğin sekizinde bulgu 0**; ① "no watermark" kutusunu boş bıraktı, ⑤ 18 sahneye `EDGES: Clean` yazdı. ⭐ **AMA BU SEFER PARTİ DÜŞTÜ:** [[D177]]'nin ödediği borç ilk kez ATEŞLEDİ — `rapor_kontrol.py --olcum-filigran VAR` sekiz raporu da mercek okumadan 🚨 GEÇERSİZ yaptı. Rubrik tarafı hâlâ %0; **betik tarafı artık %100.** Kapı gözde değil, ölçümdedir — rubriğin filigran kutusu emekli edilir, kutuyu işaretleyen tek şey `olcum_kapisi.sh`'dir. 4. vaka 04.09.2026 THE HEALING GROUND: beyaz dört uçlu ✦ sağ altta, 5/5 gövde örneği (5·30·60·90·120 s), 140/140 saniye — **yedi merceğin yedisinde bulgu 0**, ⑤ 14 sahneye `EDGES: Clean` yazdı ve Kenarlar hücresine 10/10 verdi; ① "no watermark" kutusunu boş bıraktı. **THE UPWARD FALL ile aynı gün, arka arkaya iki film** → kusur film başına değil **İHRAÇ HATTINA** aittir. · ⛔ ÇALIŞMIYOR → dönüştürme borcu [[D177]] ile ÖDENDİ (ölçüm sonucu artık `rapor_kontrol.py`'ye bayrakla girer; verilmezse eksen "ÖLÇÜLMEDİ" yazar). 3. vaka 04.09.2026 THE UPWARD FALL: cyan "▷" sağ alt çeyrekte 7/7 örnek, 225/225 saniye — **sekiz merceğin sekizinde bulgu 0**, ⑤ 20 sahneye `EDGES: Clean` yazdı; ⑤ SUSKUNLUK kapısı sıfır iddiada ateşlenemedi. 2. vaka 01.09.2026 THE COLD WELD ÖLÇÜLDÜ ve filigran DOĞRULANDI (sağ alt çeyrek, 6/6 örnek, cyan üçgen; merkez 4K'da ≈3450,1800 — köşeden %10/%17 içeride). ⚠️ Kapının ilk sürümü SABİT 360×240 kırpıyordu ve KAÇIRDI; 01.09.2026'da DÖRT ÇEYREĞE çevrildi (`olcum_kapisi.sh`). ⛔ %3 crop yetmez: temizlik kadraj genişliğinin %12'sini götürür.
 
 **Kaynak:** THE SKYLIGHT (29.08.2026) — master köşe şeridi (`crop=360:240:iw-360:ih-240,
 fps=1/30,tile=6x2`): 11 örneğin 11'inde sağ altta aynı "▷" ikonu; altı raporun
@@ -3371,7 +3397,14 @@ bulması, saatlerin ekranda okunup okunmadığının testidir.
 ## 🔴 DERS 166: NOVUM'U OLAN FİLM MOD V'DE ÖLÇÜLEMEZ — MERCEK FİLMİN TÜRÜNÜ YAZAR, KURALINI KUSUR SAYAR
 
 **KAPI:** BETİK · `rapor_kontrol.py` ①.6 NOVUM kapısı (SPEC'te `NOVUM` varken ⑥⑦⑧'in `PREMISE REGISTER`'ı yalnız ORTAMI yazıyorsa ⚠️ ŞARTLI + ⑩ zorunlu) · `rubrik_paketle.sh` ⑥ enjeksiyonu NOVUM'u AYNEN taşır
-**TEKRAR:** 1 · 02.09.2026 THE LEANING ROOM — aynı arıza, YENİ MERCEKTE de:
+**TEKRAR:** 2 · 06.09.2026 YERÇEKİMİ FAZ 9 — ⑥ `PREMISE REGISTER: none` yazdı ve
+fazın KONUSUNU (`00_PLAN` SAYISAL KİLİTLER: *"F9: ivme rampası"*) `TWO GRAVITIES`
+diye 🔴 ilan etti; reçetesi *"crop the objects out"* — kırpılması istenen şey filmin
+adını taşıyan olaydı. ⛔ Rubriğin STEP 0'ındaki öz-denetim cümlesi (*"if the film has
+a central behaviour you scored as its worst defect, and your register is empty, you
+have almost certainly scored the film's premise"*) AYNI DOSYADAYDI ve ateşlemedi —
+prose öz-denetim kapı değildir. Kapı ancak SPEC/faz rubriği varsa koşabilir [[D185]].
+· önceki 1 · 02.09.2026 THE LEANING ROOM — aynı arıza, YENİ MERCEKTE de:
 ⑥ FİZİK `PREMISE REGISTER: Earth-normal gravity (1g)` ve ⑧ EFOR
 `Earth-normal 1g inside a pressurized wooden room` yazdı. Filmin novum'u tam
 olarak budur: ağırlık YALNIZ itkiden gelir, "aşağı" sürücünün ittiği yöndür.
@@ -3804,3 +3837,564 @@ arka arkaya üretiliyorsa, önceki filmin çıktısı sohbette DURUYOR demektir;
 kopyalama sırasında bloklar karışır. Paket başına AYRI sohbet [D110'un
 bağımsızlık kuralı] bu arızayı da kapatır — D110 "kopya ölçüm" derdiyle
 yazılmıştı, bu vaka onun ikinci gerekçesidir.
+
+---
+
+## 🔴 DERS 182: SAYILABİLİR NESNE DİZİSİ "KALABALIK" DEĞİLDİR — FİLMİN TWIST'İ KADRAJIN ÜÇTE BİRİNİ KAPLIYORDU, SEKİZ MERCEK SAYMADI, BİRİ ONU KUSUR SANIP SİLMEYİ ÖNERDİ
+
+**KAPI:** BETİK · `rapor_kontrol.py` — SPEC'in B bloğunda `FİNAL VURUŞ KANITI`
+satırı varsa, o satırdaki **nesne adı** bütün ham raporlarda aranır. Hiçbir
+rapor geçirmiyorsa parti ⚠️ ŞARTLI olur ve gerekçe yazılır: *"planın saydığı
+nesneyi hiçbir mercek saymadı."* (+ KARAR: ⑤ rubriğinin 3. kategorisi
+`CROWD Count & Density` → `SAYILABİLİR DİZİ — kalabalık VE nesne`.)
+**TEKRAR:** 0
+
+**Kaynak:** THE STANDING WIRE (05.09.2026) · ⑪ ölçüm kapısı, 236 s karesi
+(`s24_askilar.jpg` → BAKILDI). Sekiz ham rapor, sıfır isabet.
+
+**Sorun:** filmin tersine dönüşü tek bir sayılabilir dizidir — **duvarda askılar,
+biri boş.** SPEC B bloğu bunu D141 formatında yazmıştı:
+
+```
+FİNAL VURUŞ KANITI: nesne ASKI · saniye 244,0 · kaç tane 6 (5 dolu + 1 BOŞ)
+                    BULUNAN mı BULUNMAYAN mı: BULUNMAYAN — altıncı askı BOŞ
+```
+
+Ekranda: **5 askı · 4 dolu · 1 BOŞ.** Sayı sapmış, şekil tam tutmuş. Nesne
+parlak bir iç mekânda, kadrajın sol üçte birini kaplıyor, on saniye duruyor,
+filmin SON sahnesinde. Küçük değil, kenarda değil, kısa değil.
+
+```
+sekiz raporda "hook" / "bracket" / "coil on the wall" / boş askı: 0 kez
+⑤ ARKA PLAN — merceğin İŞİ zaten özne-dışı alandır — S24 satırı:
+     "MIDGROUND: Interior walls, hooks"        ← GÖRDÜ ve ADLANDIRDI
+     COUNT LOG: "None | N/A | N/A | N/A"       ← ve HİÇ SAYMADI
+     kategori 3: "Crowd Count & Density — N/A — No crowds"
+```
+
+⭐ **Mekanizma:** ⑤'in sayma kategorisinin adı **KALABALIK**. Beş askı bir
+kalabalık değil, o yüzden kategori `N/A` alıyor ve dizinin sayılması gereken
+bir şey olduğu hiçbir yerde sorulmuyor. Mercek nesneyi gördü, yazdı, ve kendi
+sayaç kutusunun adı yüzünden saymadı.
+
+⛔ **İkinci ve daha pahalı yarısı:** ② DEVAMLILIK aynı nesneyi **ters okudu.**
+Kadının S17'de bıraktığı halkayı `OPEN THREADS` diye yazdı — *"Carried to the
+edge of space, never attached or used, abandoned at the cage"* — ve reçetesi
+şu oldu:
+
+> *"Insert a shot of her attaching/dropping it before grabbing cage"*
+
+Yani **filmin bedelini bir devamlılık hatası sanıp, twist'i yok etmeyi önerdi.**
+Halka bilerek bırakılır (merkezî seçim, S17) ve karşılığı S24'teki boş askıdır.
+Mercek ikisini de gördü, ikisini birleştiremedi, ve aradaki bağı silmeyi yazdı.
+Bulgu ⑩ ÖNERME KAPISI'nda düşer — ama kapı ancak birileri SPEC'i açarsa koşar,
+ve bu koşuda SPEC hiç verilmemişti [D129].
+
+**ÇÖZÜM:**
+
+```
+① rapor_kontrol.py: SPEC'te FİNAL VURUŞ KANITI nesnesi varsa, adı raporlarda
+   aranır. 0 isabet → ⚠️ ŞARTLI + "planın saydığı nesneyi kimse saymadı".
+   ⭐ Bu, ⑩ ÖNERME KAPISI'nın makineleşebilen tek parçasıdır: kapının geri
+     kalanı okuma ister, bu satır string araması.
+② ⑤ rubriği, kategori 3'ün adı ve ilk maddesi:
+   "SAYILABİLİR DİZİ — kalabalık VE nesne. İki ya da daha çok benzer nesne
+    bir sırada/dizide duruyorsa SAYILIR (askı, kanca, kelepçe, panel, ışık).
+    'Kalabalık yok' bu kategoriyi N/A yapmaz."
+③ D141 yazan SPEC'e tek satır: nesne adı İNGİLİZCE de yazılır — arama
+   Türkçe "askı" ile değil, raporun dilindeki "hook/bracket" ile koşar.
+```
+
+🔗 [[D141]] (final vuruş kanıtı — sayılabilir ve adı konabilir olmalı; bu onun
+ÖLÇÜM tarafı) · [[D151]] · [[D166]] (mercek vuruşu görmez / tersine okur) ·
+[[D173]] (çoğunluk ortak kör noktayı paylaşır) · [[D129]] (SPEC verilmediği için
+⑩ kapısı hiç koşmadı) · [[D181]] (aynı partinin teslim tarafı)
+
+---
+
+## 🔴 DERS 183: ⑩ ÖNERME KAPISI YALNIZ DÜŞÜRÜR, SINIRI SORMAZ — DÜŞEN NOVUM BULGUSUNUN ALTINDAKİ SINIR İHLALİ ONUNLA BİRLİKTE GÖMÜLDÜ
+
+**KAPI:** BETİK · `rapor_kontrol.py` ①.7 NOVUM SINIR KAPISI — NOVUM kapısı
+ateşlendiğinde SPEC'in NOVUM bloğundaki `⛔` cümlesi (kuralın nerede BİTTİĞİNİ
+yazan satır) ekrana basılır ve kareyle sınanması istenir.
+**TEKRAR:** 0
+
+**Kaynak:** THE KEPT LIGHT ⑥ FİZİK 5,1/10 — `PREMISE REGISTER: none` ·
+`VERDICT: TWO GRAVITIES` · `L3 1:06 pliers released, drift up` (06.09.2026)
+
+**Sorun:** D166 kapıyı doğru kurdu — SPEC'te NOVUM yazılıyken merceğin
+`PREMISE REGISTER`'ı onu taşımıyorsa, mercek **filmin kuralını kusur olarak
+puanlar** ve ⑩ o bulguları DÜŞÜRÜR. Kept Light'ta tam bu oldu: ⑥'nın
+`TWO GRAVITIES` hükmü, iki yerçekimi ölçümü ve üç kategorisi ⑩'da düştü.
+
+⛔ **Ama ⑩ düşürdükten sonra duruyor.** SPEC'in NOVUM bloğu yalnız kuralı
+yazmaz, kuralın **NEREDE BİTTİĞİNİ** de yazar:
+
+> ⛔ İhlal DIŞINDA her şey normal fizikle: kapağın ÜSTÜNDE bırakılan alet
+> güverteye ÇARPAR.
+
+Ve film o sınırı kırmıştı. 65,0 → 69,9 s kare adımlaması:
+
+```
+66,0  kesici kesiyor, modül ağzın altında inmeye başlıyor
+67,0  kesici BIRAKILIYOR — güvertenin ÜSTÜNDE, göğüs hizasında ASILI
+68,0  hâlâ havada, yatayda sağa kayıyor
+69,0  ağzın dudağı hizasında, devriliyor
+69,9  ağzın İÇİNE girmiş
+→ ~3 s havada; güverteye HİÇ çarpmıyor. 0,40 g'de ~1 m'lik düşüş ~0,7 s.
+→ SPEC'in "İHLAL SAYISI: 1" kilidi kırık: ekranda İKİ ihlal var.
+```
+
+⭐ **Bunu sekiz merceğin hiçbiri yazmadı.** ⑥ en yakınına geldi ve
+**yönü ters** yazdı (`drift up` — kesici yukarı gitmiyor, yatayda kayıyor).
+Yön yanlış olduğu için bulgu "uydurma" damgası yedi; önerme yanlış olduğu için
+kardeş bulguları ⑩'da düştü; ve **gerçek ihlal ikisiyle birlikte gömüldü.**
+Kapı çalıştı, doğru şeyi düşürdü, ve tam da bu yüzden altındakini görmedi.
+
+**ÇÖZÜM — BETİK:**
+
+```
+rapor_kontrol.py ①.7 (uygulandı 06.09.2026):
+
+  NOVUM kapısı ateşlendiğinde SPEC'in NOVUM bloğundaki ⛔ satırları
+  (satır başında DEĞİL, satır İÇİNDE de aranır — Kept Light'ta cümle
+  "tamamlanması. ⛔ İhlal DIŞINDA…" diye ortadan başlıyordu) toplanır
+  ve şu NOT basılır:
+
+    ⑩ SINIR SORUSU — novum nerede BİTİYOR? [D183]
+       SPEC: "<sınır cümlesi>" · ⑩ bu cümle KAREYLE sınanmadan KAPANMAZ
+
+  SPEC'in NOVUM bloğunda ⛔ satırı yoksa kapı SESSİZDİR — uydurulmuş bir
+  sınır sorusu, sorulmamış bir sorudan kötüdür.
+```
+
+⛔ **Ve SPEC tarafına tek kural:** novumu yazan her SPEC, kuralın
+**sınırını da ⛔ ile yazar.** Sınır cümlesi olmayan bir novum, ⑩'un yalnız
+düşürebildiği ama sınayamadığı bir kuraldır — ve o filmde bu kapı ateşlemez.
+
+🔗 [[D166]] (kapının ilk yarısı — düşürme; bu onun ikinci yarısı) ·
+[[D130]] (düşen bulgunun puanı geri verilir) · [[D116]] (kapı hangi mercekten
+gelirse gelsin koşar) · [[D129]] (mod V koşuda SPEC hiç açılmıyor, kapı hiç
+koşmuyor) · [[D181]] (aynı partinin teslim tarafı) · [[D127]] (ivme prompta
+yazılmaz, SÜRE ve MESAFE yazılır — sınır cümlesi de o dilde yazılır)
+
+---
+
+## 🔴 DERS 184: SEKİZ MERCEK PLANI EKRANA KARŞI OKUMUYORDU — 8 GERÇEK KUSURUN 2'Sİ YAZILDI; KAÇAN ÜÇ ÜRETİM HATASININ ÜÇÜ DE "PLAN X DEDİ, EKRAN Y GÖSTERDİ"YDİ
+
+**KAPI:** BETİK · `rubrik_paketle.sh` PAKET_9..12 (planın ilgili kayıtları
+gömülü) + `rapor_kontrol.py` MERCEK_IMZA / MOD_D_MERCEKLER (+4) · SETUP /
+GAZE / KEY DIRECTION STRING uzunluk kapısı · ⑨ SETUP STRING ↔ KURULUM İSKELETİ
+fark listesi · ⑫ üç saniye + sabit sebep listesi · LİSTE · `00_README`
+"hangi filme hangi mercekler" koşul satırları (⑨ iskelet · ⑩ replik 0 /
+CENTRAL CHOICE · ⑪ IŞIK TAKVİMİ / ≥12 klip · ⑫ kart Y)
+**TEKRAR:** 0
+
+**Kaynak:** THE KEPT LIGHT · sekiz mercek · 06.09.2026 — ⑪ ölçüm + kare
+adımlama 8 gerçek kusur buldu (5 teslim + 3 üretim); sekiz rapor 2'sini yazdı
+(① filigran · ⑤ kaya duvar).
+
+**Sorun:** Kaçan üç üretim hatası:
+
+```
+S24  prompt: `50mm spherical lens, fixed 0.6 m above the lip of the hatch`
+     — S0'ın CAMERA satırıyla BİREBİR aynı. Ekran: ağzın ALTINDAN alt açı.
+     Kafiye çifti kırık. Kamerayı plana karşı okuyan mercek YOK.
+S6   prompt: `a tool let go from his glove strikes the deck in about one
+     second`. Ekran: ~3 s havada, güverteye hiç çarpmıyor. ⑥ gördü, yönü
+     ters yazdı (D183); planı görmediği için "kural mı ihlal mi" bilemedi.
+S4   kaya duvar + tek koni lamba. ⑤ yazdı — üçünün tek yakalananı, ve ⑤
+     planı GÖRMEDEN yazdı (tasarım gereği mod V).
+```
+
+Ortak yapı: plan bir cümle yazmış, üretim modeli dinlememiş, QA modeli planı
+hiç görmemiş. Sekiz merceğin altısı (①②③⑤⑦⑧) tasarım gereği ya da fiilen
+planı okumaz; ④ hikayeyi, ⑥ sayıyı okur. **Kamera · beden · ışık · açılış
+için planın bir satırını alıp kareye bakan mercek yoktu.**
+
+İkinci bulgu, aynı partiden: **sayı MODELE SORULUYORDU.** 24 kesme → 20
+(dört mercek), 25 sahne → 7 blok (④), 20 sahneye 19 karakter şerit (⑧).
+Izgara SPEC'te `9 s hook + (n−1) × 10 s` diye yazılıydı; sayan model her
+seferinde farklı saydı ve ④'ün "doruk yok / bedel yok" cümleleri o ezilmiş
+haritadan çıktı.
+
+**ÇÖZÜM — BETİK + LİSTE (uygulandı 06.09.2026):**
+
+```
+DÖRT MERCEK — plan sadakati sınıfı, koşul tetikli, /4 paydasına girmez:
+  ⑨ KADRAJ     kurulum sadakati · lockoff · dönüş · küme dikişi · KAFİYE ÇİFTİ
+               makine çıktısı: SETUP STRING (kare önce, harf sonra)
+  ⑩ OYUNCULUK  niyet / seçim / bedel / final BEDENDE · kanal kaydı (kask
+               kapalı → yüz N/A) · makine çıktısı: GAZE STRING + üç önce/sonra
+  ⑪ IŞIK       komşu çift testi · bölge sınırları · ortam yasası (vakumda pus
+               bulgudur) · makine çıktısı: KEY DIRECTION STRING + JUMP LOG
+  ⑫ HOOK       açılış sorusu · kapak saniyesi · paylaşım anları tek başına ·
+               çıkış · makine çıktısı: DROP-OFF PREDICTION (üç saniye) →
+               08_YAYIN_PERFORMANS_TABLOSU — KESME ÖNERMEZ
+Dördü de MOD D'ye bağlı: SPEC'siz koşusu tanım gereği boş, mod V satırı
+tabloya girmez.
+SAYI VERİLİR: paket ızgarayı ve iskeleti gömer; rapor CUTS OFF GRID ile
+sapmayı bildirir, sahneyi yeniden numaralandırmaz.
+HACİM: her rubrik ~350 satır (eskiler 497-1.186).
+SIRA: KURGU → ÖLÇÜM → (HAM ZİNCİR değilse) MERCEK — ⑨-⑫ dahil [D181].
+```
+
+⛔ **Ölçülen sınır — bu dört mercek yeni filmde hatayı AZALTMAZ, BULUR.**
+Kept Light'ın prompt tarafı temizdi (prompt_kontrol 0 BLOCK · sınır cümlesi
+yazılı · S0/S24 CAMERA satırı birebir); üç üretim hatasının üçü modelin
+promptu dinlememesiydi ve tek çaresi yeniden üretim. Derslerin işi o yeniden
+üretimin İLK QA turunda istenmesidir — sekiz rapor ve bir "hikayesi berbat"
+hükmünden sonra değil. Prompt kapıları doygun; kaçak üretim-ile-QA arasında.
+
+🔗 [[D129]] (mod V = boş koşu; ⑨-⑫'de tanım gereği) · [[D181]] (HAM ZİNCİR'e
+mercek koşulmaz — ⑨-⑫ de) · [[D183]] (⑥ S6'yı gördü ve ters yazdı) ·
+[[D153]] (aynı harfin ikinci imajı ≤3 farkla türetilir — ⑨'un DÖNÜŞ kategorisi
+bunu ekranda sınar) · [[D107]] (kesme yayılımı — sayı sorulunca yayılır) ·
+[[D165]] (paket SPEC ile doğar; PAKET_9..12 de) · [[D163]] (tek figürlü
+filmde şerit az şey kanıtlar — GAZE/SETUP/KEY dizileri şeridin kanıtlamadığı
+sırayı kanıtlar)
+
+---
+
+## 🔴 DERS 185: FAZ FİLM DEĞİLDİR — ON İKİ MERCEK BİR ORTA SEGMENTİ BAĞIMSIZ KISA FİLM SANIP HOOK'UNU, FİNALİNİ VE TUTUNDURMASINI PUANLADI
+
+**KAPI:** BETİK · `rapor_kontrol.py` ①.8 FAZ KAPISI — girdi bir faz ise
+(`--faz`, ya da film klasörünün adı/alt klasörleri `FAZ_*`) ④'ün Hook ·
+Structure · Ending · Retention, ⑫'nin Hook Question · Stakes · Plateau ·
+Peak · Exit, ⑨'un Rhyme Pair hücreleri SAYI TAŞIMAZ ve kesme listesi
+UYGULANMAZ · LİSTE · `QA_PROMPTLARI/00_README.md` "hangi filme hangi
+mercekler" → FAZ satırı
+**TEKRAR:** 2 · 07.09.2026 YERÇEKİMİ FAZ 10 — kapı ateşledi ve doğru hücreleri
+adlandırdı (④ 4 · ⑫ 5 · ⑨ 1) ama **ortalamadan DÜŞÜRMÜYORDU**: metin "hücreler
+`—` olur, ortalama yeniden hesaplanır" diyordu, kod yalnız uyarı basıyordu —
+yazılı ama bağlamayan kapı [[D74]]. Düzeltildi; etkisi ⑫ 7,5 → GEÇERSİZ ve
+⑨ 4,5 → 5,3 (faz, sahip olmadığı bir kafiye çifti yüzünden cezalandırılıyordu).
+F10'un kendi rubriği de yoktu → iki fazda üst üste aynı karar
+· 1 · 06.09.2026 FAZ 8 (aynı gün, önceki faz — orada "YANLIŞ ALET"
+diye kaydedilmişti; kayıt bir kapı üretmediği için ertesi faz aynısını yaptı)
+
+**Kaynak:** YERÇEKİMİ FAZ 9 / DÜŞÜŞ · on iki mercek · 06.09.2026 —
+④ HİKAYE 4,0/10 `REVISE STRUCTURE` · ⑫ HOOK 5,8/10 `HOOK MISSING`
+
+**Sorun:** FAZ 9, 20 dakikalık bir filmin **16:00–18:00** bandıdır. Perde
+III'ün ortasıdır. Hook 16 dakika önce (F1) atılmıştır, final F10'dadır.
+
+On iki genel mercek koşuldu ve ikisi bunu bağımsız bir kısa film sandı:
+
+```
+④  Hook 4/10 · Yapı 4/10 · Final 5/10 · Tutundurma 4/10
+    "0:00-0:40 · Delayed Start — 40 saniye boyunca hiçbir şey riskte değil"
+    kesme listesi: 3 sahne · kalan süre 90 s · "BELOW FORMAT FLOOR"
+⑫  "NO QUESTION" · terk tahmini 0:10 · 0:25 · 0:35
+    reçete: "S1'i flashback yap, S5'ten S6'ya çarp"
+```
+
+⛔ ⑫'nin üç saniyelik terk tahmini gerçekte **16:10 · 16:25 · 16:35**
+demektir; izleyici o saniyelerde on altı dakikadır içeridedir. Ve iki reçete
+de fazın omurgasını keser: ④'ün kestiği S100 ASILI, imza çekim S102'nin
+KURULUMUDUR — nesneler ancak asılı oldukları için düşebilir.
+
+⭐ **KÖK SEBEP BİR DOSYA EKSİĞİ.** Bu hatta QA birimi FAZDIR ve her fazın
+kendi rubriği vardır (`FAZ_0n_QA_PROMPT.md`, 761-1.674 satır, fazın kendi
+kilitleriyle). Üretilmiş dokuz fazın sekizinde o dosya VAR. **FAZ 9'da YOK.**
+Operatörün elinde yapıştıracak faz rubriği olmayınca `_KAYNAK/` altındaki
+genel mercekler açıldı — tıpkı D129'un "paket yoksa çıplak rubrik" zinciri.
+
+**ÇÖZÜM — BETİK + LİSTE (uygulandı 06.09.2026):**
+
+```
+rapor_kontrol.py ①.8:
+  faz_mi()  → film klasörü FAZ_* mi, altında FAZ_*/ var mı, raporun FILM
+              satırı "faz 9" mu
+  ateşlerse → başlıkta   FAZ: <sebep> → ④/⑨/⑫ film ölçekli kategoriler
+              SAYI TAŞIMAZ
+              her raporda ⛔ "FAZ'ın kendi rubriği var mı?" NOT'u
+  ⚠️ Kapı DÜŞÜRMEZ, hücreyi `—` yapar ve kesme listesini durdurur:
+     faz ölçeğinde geçerli kalan kategoriler (kapak saniyesi, paylaşım
+     anı, kare içi her şey) sayı taşımaya devam eder.
+```
+
+⛔ **VE FAZ RUBRİĞİ OLMAYAN FAZ DENETLENMEZ.** Rubrik önce yazılır; genel
+mercek faz rubriğinin YEDEĞİ değildir, farklı ölçekte başka bir alettir.
+
+🔗 [[D129]] (paket yoksa çıplak rubrik — aynı zincirin film ölçeği) ·
+[[D165]] (paket filmin YAZIMINDA doğar; faz rubriği de fazın yazımında
+doğmalı) · [[D184]] (⑫'nin terk tahmini — faz ölçeğinde anlamsız) ·
+[[D111]] (mercek yoklaması: yanlış mercek koşuldu ↔ mercek hiç koşmadı) ·
+[[D75]] (bir filme koşulan bütün merceklere AYNI dosya verilir)
+
+---
+
+## 🔴 DERS 186: "KUSUR BULAMADIM" HÜCRESİNE 7/10 YAZILDI — TEMİZ EKSEN CEZALANDIRILDI VE ÖLÇÜLMEMİŞ EKSEN ÖLÇÜLMÜŞ GÖRÜNDÜ
+
+**KAPI:** BETİK · `rapor_kontrol.py` ①.5 — issue hücresi boş / "none" /
+"flawless … mapped to 7" olan SAYILI hücre `—`'ye çevrilir ve ortalamadan
+çıkar; ayrıca kaynak izi (zaman kodu · S-no · defter satırı) taşımayan her
+10 altı kesinti ŞARTLI bulgu olur
+**TEKRAR:** 1 · 07.09.2026 YERÇEKİMİ FAZ 10 · ⑥ FİZİK — bu kez ters uçtan:
+"kusur bulamadım" 7/10'a değil **10,0/10'a** yazıldı. Dokuz kategorinin
+yedisinde issue hücresi birebir `no deductions`. Kapının kalıp listesi `none`
+ve `flawless`'ı görüyordu, bunu görmüyordu → genişletildi (`no deductions` ·
+`no issues` · `holds exceptionally`), ⑥'nın 10,0'ı `—`'ye düştü: sayı taşıyan
+hücre kalmadı. ⭐ Altındaki kök CETVELDİ — ⑥ yerçekimini 0,1 s / 5 cm'lik bir
+düşüşten hesaplamıştı (24 fps'de 2,4 kare); ⑥ rubriğine CETVEL TABANI eklendi
+
+**Kaynak:** YERÇEKİMİ FAZ 9 · ⑤ ARKA PLAN 6,5/10 · ⑨ KADRAJ 5,8/10
+(06.09.2026)
+
+**Sorun:** İki rapor, kusur bulamadığı kategorilere 7/10 yazdı:
+
+```
+⑤  Horizon & Topology      7/10  │ issue: "none"
+    Depth, Parallax & Scale 7/10  │ issue: "none"
+    Focus Honesty           7/10  │ issue: "none"
+    Sky & Atmospherics      7/10  │ issue: "none"
+    Frame Edges             7/10  │ issue: "none"
+⑨  Lockoff Integrity       7/10  │ "flawless lockoffs mapped to 7"
+    Return Consistency      7/10  │ "no distinct returns attempted/failed"
+    Screen Geometry         7/10  │ "geometry stable mapped to 7"
+```
+
+⭐ **"flawless … mapped to 7"** cümlesi mekanizmayı açık ediyor: model
+kusursuzu gördü ve onu ORTAYA eşledi. Bu bir yargı değil, ortalamaya dönüş.
+
+⛔ Kural iki rubrikte de YAZILI: *"Absence of evidence is not evidence of
+perfection… A category with no listed source carries no number."* Yazılı
+kural davranışı değiştirmedi — ①.5 betiği de o yüzden var [D161].
+
+**İki ayrı zarar, ikincisi daha pahalı:**
+
+```
+① TEK YÖNLÜ CEZA — yalnız TEMİZ eksen aşağı çekilir. Kusurlu eksen zaten
+   kaynağını yazdığı için dokunulmaz. Üretim hattı "arka planı düzelt"
+   emrini alır; arka planda düzeltilecek bir şey yoktur.
+② SAHTE ÖLÇÜM — 7/10 "ölçtüm ve orta buldum" der. Gerçekte ⑤ dokuz
+   kategorinin sekizinde HİÇBİR ŞEY ölçmedi. Düzeltilmiş sayı 6,5 değil
+   4,0'dır (n=6 → n=1): makarada ölçülen tek şey kapsül topolojisidir.
+```
+
+**ÇÖZÜM — BETİK (uygulandı 06.09.2026):**
+
+```
+rapor_kontrol.py ①.5 · üç desen:
+  BOS_ISSUE    ^(none|yok|—|-|n/a|\s)*$        → hücre `—` [D186]
+  TEMIZ_ISSUE  flawless|mapped to \d|stable|no distinct|clean|nothing found
+                                               → hücre `—` [D186]
+  KAYNAK_IZI   yoksa ve değer < 10             → ŞARTLI: "kesintinin
+                                                  KAYNAĞI yazılı değil"
+Koşu doğrulaması: ⑤'in beş hücresi de yakalandı, ortalama 6,5 → 4,0.
+Üçüncü desen ④'ün en süpürücü iki kesintisini de yakaladı
+("protagonist makes zero choices" · "repeats standard re-entry tropes" —
+ikisi de tek zaman kodu taşımıyor).
+```
+
+🔗 [[D131]] (kaynaksız hücre `—`'dir — bu dersin ilk yarısı; D186 onu
+"none"/boş/"flawless" hâllerine genişletir) · [[D161]] (yazılı kural kapı
+değildir) · [[D107]] (ortalamaya dönüş, kesme sayısında da görülmüştü)
+
+---
+
+## 🔴 DERS 187: PLANIN "EN UCUZ VE EN KESİN GÖSTERGESİ" DEDİĞİ KİLİT, ON İKİ MERCEĞİN ARASINDAN DÜŞTÜ — HİÇBİRİNİN KAPSAMINA GİRMİYORDU
+
+**KAPI:** LİSTE · `kilavuzlar_ve_sistem_dosyalari/FAZ_DOSYASI_SABLONU.md`
+§BU FAZIN KİLİTLERİ — her taşıyıcı kilidin yanına **ÖLÇEN MERCEK** yazılır
+(`KİLİT 46 ① SAÇ → ② DEVAMLILIK cat.1`). Şablona yazıldı ki yeni fazlar
+doğarken alsın; `QA_SPEC` C bloğu aynı eşleştirmeyi taşır.
+Mercek adı yazılmayan kilit ölçülmemiş sayılır.
+⬜ İkinci yarısı BETİK olarak açık: mercek adı taşımayan kilit için
+`rapor_kontrol.py` "bu kilidi ölçecek mercek koşmadı" bassın.
+**TEKRAR:** 1 · 07.09.2026 YERÇEKİMİ FAZ 10 · **KİLİT 49 — beş kanıt, en fazla
+1/5.** Kanıtlar büyüdü (saç · saat kayışı · kollar · nefes · kas titremesi) ama
+sonuç aynı: dördü hiçbir merceğin kapsamına girmiyor. ② kayışı gördü ve KİMLİK
+olarak yazdı ("weathered leather strap"), SARKIK olup olmadığını değil — F9'daki
+saç arızasının birebir aynısı. Yalnız ⑤ (kas titremesi) tutuldu, o da kilidin
+yazdığı sahnede değil komşusunda. BETİK yarısı hâlâ ⬜ AÇIK
+
+**Kaynak:** YERÇEKİMİ FAZ 9 · KİLİT 46 "AĞIRLIĞIN ÜÇ KANITI" · on iki
+mercek · 0/3 ölçüm (06.09.2026)
+
+**Sorun:** Faz dosyası üç kanıtı adıyla, sahnesiyle ve gerekçesiyle yazmıştı:
+
+```
+① SAÇ    101 sahnedir havadaydı; S102'den itibaren başa yapışık.
+         "Saç filmin en ucuz ve en kesin yerçekimi göstergesidir."
+② SAAT KAYIŞININ SERBEST UCU  S103'te ilk kez AŞAĞI SARKAR.
+③ KOLLAR nötr 0g duruşuna bir daha yükselmez.
+```
+
+**On iki mercek koştu. Üçü de ölçülmedi.** ⑥ FİZİK saçı defterinin İLK
+satırına yazdı (`L1 · woman's hair floats in cabin`, 0:00-0:10) ve bir daha
+hiç bakmadı — düşüp düşmediği on iki raporda YOK.
+
+⛔ **Sebep kapsam haritasıdır, dikkatsizlik değil.** Saç:
+
+```
+bir ARTEFAKT değil          → ①'in değil
+ÖZNE-DIŞI alan değil        → ⑤'in değil
+bir SAYI taşımıyor          → ⑥'nın değil
+bir BEAT değil              → ⑦'nin değil
+bir BEDEL değil             → ⑧'in değil
+KAMERA değil                → ⑨'un değil
+bir NİYET değil             → ⑩'un değil
+IŞIK değil                  → ⑪'in değil
+"aynı mı" sorusu            → ②'nin OLMALIYDI; ama ② saçı KİMLİK olarak
+                              izler (renk · boy · ayrım yönü), DURUM
+                              olarak değil — pasaportunda "chin-length
+                              bob" yazıyor, "havada mı yerde mi" yazmıyor
+```
+
+⭐ Aynı boşluk S103'te tekrar açıldı: sahnenin ADI SARKAN KAYIŞ'tır, işi
+kayışın ucunun sarkmasıdır, ve kayış hakkında tek satır yoktur.
+
+⛔ **DERS BU DEĞİL:** "merceklere saç kategorisi ekle". Kilit her filmde
+başkadır — saç, kayış ucu, bir cıvatanın gölgesi, bir bayrağın ucu. Kapsam
+haritası genel kalmalıdır. **Değişmesi gereken PLAN tarafıdır:** taşıyıcı
+kilidi yazan kişi onu ölçecek merceğin adını da yazar. Yazmazsa kilit
+kimsenin işi olmaz ve on iki rapor onu görmeden döner.
+
+🔗 [[D141]] (FİNAL VURUŞ KANITI — sayılabilir kanıt kilidi; bu onun ölçüm
+tarafı) · [[D157]] (tek kare testi taşıyıcının kendi nesnesini adlandırır) ·
+[[D108]] (bulgu sahipliği: çekirdek mercek her zaman sahiptir — burada
+sahibi OLMAYAN bir bulgu var) · [[D184]] (dört yeni mercek de bu boşluğu
+kapatmadı: eksen eklemek kapsam boşluğunu kapatmıyor)
+
+---
+
+## 🔴 DERS 188: ON İKİ MERCEK EKSİK TESLİMİ **OYBİRLİĞİYLE ONAYLADI** — RAPORLAR BİRBİRİNİ DOĞRULAR, TESLİMİ DOĞRULAMAZ
+
+**KAPI:** BETİK · `kilavuzlar_ve_sistem_dosyalari/RAPOR_KONTROL/rapor_kontrol.py`
+①.9 TESLİM KAPISI — plan dosyalarındaki `## 🎬 SAHNE n` başlıklarının BİRLEŞİMİ
+sayılır (çok bölümlü filmde BOLUM_1 + BOLUM_2) ve `--olcum-sahne` verilmişse
+ÖLÇÜME, verilmemişse raporların çoğunluğuna karşı okunur. Fark varsa parti
+GEÇERSİZ; kesme listesi ve yeniden üretim UYGULANMAZ. — 07.09.2026
+**TEKRAR:** 0 · önceki vaka F8 (iki sahne üretilmemişti) ELLE yakalanmıştı,
+kapı yoktu
+
+**Kaynak:** YERÇEKİMİ FAZ 10 / ZEMİN · on iki mercek · 07.09.2026 ·
+`FAZ_10_ZEMIN/FAZ_10_QA_DERSLER.md`
+
+**Sorun:** Plan 12 sahne yazıyordu (S109–S120, 10 s ızgara, 120 s). Makara
+110 saniyeydi ve on iki merceğin onu 11 klip saydı. **Bir klip eksikti ve
+on iki raporun hiçbiri bunu yazmadı** — hiçbiri bir sahnenin eksik olduğunu
+bile SORAMAZDI. İçerik eşlemesi eksiği fazın sonuna koyuyor: altı mercek
+bağımsız olarak son sahnede YÜRÜYEN bir figür gördü (= S119 İLK ADIMLAR) ve
+S120 HELD FRAME'in tarifini (20° üst açı · figür DURUYOR · gökte paralel
+çizgiler) hiçbir rapor yazmadı. S120 filmin son karesidir ve ⛔ KESİLEMEZ
+diye işaretlidir.
+
+Hiçbiri yazamazdı da:
+
+```
+· mod V'de "eksik" demek YASAK — plan yok, ne planlandığı bilinemez
+· ⑤ çapraz sayım kapısı raporları BİRBİRİNE bakar: 8 mercek 11 dedi,
+  2 mercek 12 dedi → kapı AZINLIĞI şüpheli ilan etti
+· ④ HİKAYE'nin "CHECK 1 — THE LAST SCENE" kapısı MODE D ONLY'dir;
+  mod V'de yerine geçen iki satır "ends or stops?" diye sorar ve
+  ④ "ends — earned ending" diye cevapladı
+```
+
+⛔ **ASIL CÜMLE:** *merceklerin birbirini doğrulaması TESLİMİ doğrulamaz.*
+Hepsi aynı makarayı izler. Eksik makara oybirliğiyle onaylanır ve mutabakat
+ne kadar güçlüyse kayıt o kadar ikna edici görünür — F10'da dokuz mercek
+aynı şeridi (`--111111111`) yazdı ve o şerit bir klip eksikti.
+
+Parti dışındaki TEK referans plandır, ve `rapor_kontrol.py` film klasörünü
+zaten okuyordu — sahne başlıklarını saymıyordu, o kadar.
+
+```
+✅ KAPI (ilk koşuşunda ateşledi):
+   PLAN: 12 sahne (FAZ_10_ZEMIN.md) → ①.9 teslim kapısı koşacak
+   🚨 TESLİM ŞÜPHESİ — plan 12 sahne yazıyor, 8 mercek 11 sahne saydı
+   → parti GEÇERSİZ · fark +1 sahne (≈ 1 klip)
+⭐ KONTROL: aynı hattın F9'u aynı kapıdan geçti — plan 12, raporlar 12 ✅
+```
+
+⛔ **KAPI HÜKÜM VERMEZ, ŞIKLARI AYIRIR — VE BU TASARIMIN KENDİSİDİR.**
+Fark iki şeyden gelebilir ve rapor tarafından ayrılamazlar:
+
+```
+(a) makara EKSİK teslim edildi      → ÜRETİM/İHRAÇ sorusu
+(b) mercekler YANLIŞ saydı           → rapor sorunu
+```
+
+İkisi de aynı görünür, çünkü **her ikisi de oybirliğiyle onaylanır.** Kapı
+şüpheyi yazar ve hakemi çağırır: `olcum_kapisi.sh` → `--olcum-sahne <n>`.
+Ölçüm verilmişse plan ONA karşı okunur ve kapı kesin konuşur.
+
+⭐ **İKİ VAKA, İKİ FARKLI ŞIK — kapı ikisini de yakaladı:**
+
+```
+YERÇEKİMİ F10   plan 12 · raporlar 11 · ölçüm YOK  → şık açık
+                (a) lehine: 12 × 10 s = 120 s, oysa on iki rapor 109–111 s
+                ölçtü; (b) için on ikisinin SÜREYİ de aynı yönde ~10 s
+                yanlış okuması gerekir ve süre konteynerden okunur
+THE KEPT LIGHT  plan 25 · raporlar 20 · ölçüm 25   → şık (b)
+                teslim TAMDI; beş mercek yanlış saydı. Kapı geriye dönük
+                koşturulduğunda ateşledi ve ölçüm verilince temiz geçti.
+```
+
+Yani kapı "eksik teslim dedektörü" değil, **plan ile parti arasındaki her
+sayı ayrışmasının dedektörüdür** — ve o ayrışmanın hangi tarafta olduğunu
+tek bir ölçüm komutu söyler.
+
+🔗 [[D46]] (süre muhasebesi: planlanan sahne × klip = beklenen süre — bu
+dersin atası; o KURGU masasındaydı, bu QA masasına takılan hâli) ·
+[[D107]] (çapraz sayım kapısı — raporlar arası mutabakat; bu ders onun kör
+noktası) · [[D110]] (ortak defter: mutabakat delil değildir) · [[D185]]
+(faz film değildir — aynı partide, aynı hatta) · [[D74]] (kaydı olmayan
+kapı koşulmamış kapıdır)
+
+---
+
+## 🔴 DERS 189: BİR KAPSÜL, DÖRT FATURA — İKİ RUBRİK AYNI NESNEYİ **TERS YÖNDE** SAHİPLENİYORDU
+
+**KAPI:** LİSTE · `kilavuzlar_ve_sistem_dosyalari/QA_PROMPTLARI/_KAYNAK/5_ARKA_PLAN_QA_CRITIQUE_PROMPT.md` cat.6 ve kardeşleri — dört rubriğe sınır cümlesi yazıldı:
+"bir sahnede ÖZNE olan nesne başka sahnede ARKA PLAN değildir (kendi
+SUBJECTS EXCLUDED listene bak)" · `2_DEVAMLILIK_QA_CRITIQUE_PROMPT.md` cat.10: "adı olan nesne SENİNDİR, adsız
+alan ⑤'in" · `9_KADRAJ_QA_CRITIQUE_PROMPT.md` cat.7: "çapa bir DÖNÜŞÜN
+cetvelidir; dönüş yoksa kategori 4 ve 7 N/A" · `1_KARE_QA_CRITIQUE_PROMPT.md`
+kapsam testi: "kendi satırındaki zaman kodlarını say". — 07.09.2026
+**TEKRAR:** 0
+
+**Kaynak:** YERÇEKİMİ FAZ 10 · kapsül+paraşüt yerleşimi · 07.09.2026
+
+**Sorun:** Sahneler arasında yer değiştiren kapsül ve paraşüt TEK olaydı.
+Dört mercek dördü de puan düşürdü:
+
+```
+① KARE        Environment           7/10  −3  "1:40 … from the 0:50 master shot"
+② DEVAMLILIK  World State & Props   5/10  −5  iki 🟠
+⑤ ARKA PLAN   Background Set&Props  6/10  −4  "0:10 vs 0:50"
+⑨ KADRAJ      Screen Geometry       4/10  −6  "anchor object jumps left→right"
+
+✅ DOĞRU DAVRANAN ÜÇ: ⑥ ⑦ ⑪ → kapsam-dışı bayrak, sayı YOK
+```
+
+Her rubrikte ⛔ "AN OUT-OF-SCOPE FINDING CARRIES NO NUMBER" bloğu yazılıydı.
+Bağlamadı — çünkü **dördü de kendini haklı sanmakta haklıydı:**
+
+```
+② kat.10  "a thing never touched stays put"                → dokunulmamış nesne ②'nin
+⑤ kat.6   "untouched set dressing … untouched ones are yours" → dokunulmamış nesne ⑤'in
+```
+
+İki cümle aynı nesne sınıfını ters yönde sahipleniyor; ikisini de ben
+yazdım. ⑨ ise nesneyi kendi **çapası** yaptı — oysa on bir sahnenin on
+birinde kamera farklıydı ve dönüşü olmayan bir filmde çapa hiçbir şey
+ölçmez. ① kendi kapsam testini çiğnedi: bulgusunda **iki zaman kodu** vardı
+ve rubriği tam bunu yasaklıyor.
+
+⛔ **ÇÖZÜM NESNE SINIFI DEĞİL, "FİLM ONA BAKIYOR MU" SORUSUDUR.** Adı olan,
+planın andığı, bir sahnenin ÖZNESİ olan nesne ②'nindir. Adsız alan — doku,
+döşeme, kalabalık yoğunluğu, kimsenin adlandırmadığı dekor — ⑤'indir.
+⑤'in kendi envanteri zaten cevabı taşıyordu: kapsül, `SUBJECTS EXCLUDED`
+listesinde S1 ve S2'nin öznesi olarak yazılıydı.
+
+⭐ **VE TEKRAR SİSTEMİN ÇALIŞMASIDIR:** bir kusur bir yerde puan düşürür,
+üç raporda bayrak olarak görünür. Üç bayrak üç DOĞRULAMA değildir — [[D110]]
+tam olarak bunu söylüyor ve bu ders onun puan tarafıdır.
+
+🔗 [[D108]] (aynı gözlemin dört tabloya faturalanması — bu dersin atası;
+orada sebep kopya defterdi, burada rubrik metninin kendisi) · [[D110]] ·
+[[D184]] (mercek eklemek kapsam boşluğunu kapatmıyor — bu ders tersini
+gösteriyor: mercek eklemek kapsam ÇAKIŞMASI da açıyor) · [[D188]]

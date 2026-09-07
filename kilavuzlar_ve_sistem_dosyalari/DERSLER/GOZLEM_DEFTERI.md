@@ -164,6 +164,33 @@ ADAY-4 (dönüm anı kadraj kenarında, görülmüyor) → 2. VAKA
      onun yerini alıyor ve izleyici için asıl an o oluyor.
   Üçüncü vakada ders olur; kapı adayı LİSTE (plan aşamasında jest ölçüsü).
 
+## 📌 06.09.2026 · ADAY-4'E İKİNCİ VAKA — RENDER KUSURU SAHTE SAAT OLDU
+
+**Kaynak:** YERÇEKİMİ FAZ 7 · kör geçiş · sıra skoru 3/12
+
+```
+VAKA 1 (F3) : D(S28) ve J(S34)'te kask düştü → kör denetçi bunu
+              "hayatta kalma saati" sayıp fazın SONUNA koydu → 8/12'den 5/12'ye
+VAKA 2 (F7) : C(S73)'te SAÇ AŞAĞI SARKTI (0g kusuru) → kör denetçi
+              bunu bir numaralı tek yönlü saati yaptı:
+              "Gravity state: Normal gravity in Seg 1, zero-gravity in
+               Seg 2. Confidence: HIGH."
+              → fazın tamamı ona göre hizalandı → 3/12
+```
+
+**Örüntü:** bir 0g/kimlik/donanım render kusuru, kör denetçinin
+kurabileceği EN NET ikili karşıtlığı üretir (var/yok · takılı/çıkmış) —
+yani gerçek anlatı saatlerinden daha güçlü görünür ve onları ezer.
+
+```
+⭐ ÖLÇÜM SONUCU: sıra skoru düştüğünde ilk sorulacak soru "faz
+  bağlamsız mı" DEĞİL, "kör denetçi hangi saati kullandı ve o saat
+  GERÇEK Mİ" olmalıdır. Rubrikte cevabı zaten var (STEP 4/c CLOCKS).
+⚠️ İki vaka. Üçüncüsünde ders yazılır [00_DERS_YAZIM_KONTRATI].
+```
+
+---
+
 ## ADAY-5 — VİVİD KÜÇÜK AYRINTI, KAPSAYAN NESNEYİ EZİYOR
 
 **Tarih / kaynak:** 01.09.2026 · YERÇEKİMİ FAZ 3 · iki mühürlü geçiş · mod V.
@@ -413,6 +440,58 @@ değil, "3s — gözleri bir kez oynar ve durur" olur.
 
 ---
 
+## 🔴 06.09.2026 · ADAY-7 KAPANDI — HİPOTEZ TAMAMEN ÇÜRÜDÜ, SEBEP ARAÇ
+
+**Kaynak:** YERÇEKİMİ FAZ 7 makarası · kör geçiş · mod V
+`FILM_QA_RAPORLARI/02_HAM_RAPORLAR/YERCEKIMI_FAZ07_KOR_HAM.md`
+
+```
+DENEY KOŞULDU VE TEK DEĞİŞKEN DEĞİŞTİ:
+  F7'de tırnaklı cümle 0 · sesi anlatan beat satırı 0 · replik 0 yazıldı.
+  Negatif blok, uzunluk, kadraj, ışık — hiçbiri değişmedi.
+
+SONUÇ:
+  F5  tırnaklı 2 · sesi anlatan beat VAR  → altyazı 2
+  F6  tırnaklı 2 · sesi anlatan beat VAR  → altyazı 3
+  F7  tırnaklı 0 · sesi anlatan beat 0    → altyazı 7   ⛔⛔
+
+⭐ SAYI DÜŞMEDİ, İKİYE KATLANDI. Ve yedisi de UYDURMA:
+   hiçbiri REPLİK DEFTERİ'ndeki cümle değil · ikisi repliksiz sahnede
+   (S77 · S82) · ikisi anlamsız ("Officially decisions and" ·
+   "Singing have a timed") · biri aynı klipte iki kez basıldı.
+```
+
+**SONUÇ — üç hipotez de öldü:**
+
+| hipotez | çürüten |
+|---|---|
+| tetikleyici TIRNAK | F6 (tırnaksız S66 altyazı bastı) |
+| tetikleyici SESİ ANLATAN BEAT | F7 (beat 0, altyazı 7) |
+| tetikleyici promptta HERHANGİ BİR ŞEY | F7 |
+
+```
+⛔ KAPI YAZILMAZ. prompt_kontrol.py'ye altyazı kapısı eklenirse depo,
+  düzeltemeyeceği bir şeyi her fazda kontrol etmiş gibi yapar.
+✅ ÇÖZÜM HATTI: ① araç/ayar tarafı  ② üretim sonrası maskeleme/kırpma
+✅ ÖLÇÜM SÜRER: her makarada altyazı SAYILIR ve BİREBİR alıntılanır —
+  uydurma cümle ile promptta yazılı cümle ancak metin karşılaştırmasıyla
+  ayrılır.
+```
+
+⭐ **SON AÇIK DEĞİŞKEN — F9/S107'de koşuluyor:** F7'de beat satırları
+temizlendi ama `Audio:` PARAGRAFLARI dokunulmadan kaldı ve her biri sesi
+uzun uzun anlatıyor. F9'un S107'si (insansız · replik 0 · fazın en
+risksiz sahnesi) `Audio:` paragrafı TAMAMEN SİLİNEREK üretilecek; kalan
+on bir sahne dokunulmayacak.
+
+```
+altyazı S107'de de çıkarsa → sebep kesin ARAÇ, dosya kapanır
+altyazı S107'de ÇIKMAZSA  → tetikleyici `Audio:` bloğudur ve kapı
+                            BETİĞE ilk kez meşru olarak yazılır
+```
+
+---
+
 ## ADAY-8 — WORLD BLOĞU CANLIYI BÜTÜN OLARAK TARİF EDİNCE, TEK-UZUV KADRAJI İKİ BACAK ÜRETTİ
 
 **Kaynak:** THE UPWARD FALL · ⑪ ölçüm kapısı, 186 s karesi (`q_canli.jpg`)
@@ -451,3 +530,144 @@ Kılavuz 03.09.2026'da açıldı; bu onun ilk ölçülmüş vakası.
 
 🔗 [[D175]] (mühür) ve [[D176]] (zemin rengi) ile aynı aile: **aynı promptta
 iki cümle, iki sadakat** — [[D174]]'ün mekanizması, bu kez anatomide.
+
+---
+
+## ADAY-9 — KOLU YAZILMAYAN ELDİVEN **KOPUK** DOĞDU, VE TEK İNSANLI FİLMDE İKİNCİ MÜRETTEBAT GİBİ OKUNDU
+
+**Vaka:** 1 (ders için ≥2 bekleniyor) · **KAPI:** aday — muhtemel BETİK
+(`prompt_kontrol.py`, tek-uzuv kadrajında süreklilik cümlesi araması)
+
+**Kaynak:** THE HEALING GROUND S4 · 04.09.2026 · prompt dosyası + kare 45 s.
+(② DEVAMLILIK raporu bunu "The Magic Glove" diye yakaladı ama o rapor
+🚨 GEÇERSİZ — bulgunun kanıtı rapordan değil PROMPTTAN ve KAREDEN geliyor.)
+
+```
+İMAJ  "Only one glove and forearm are in shot ... The glove rests open
+       on the floor at the bottom edge of frame."
+VİDEO "Only one glove and forearm are in shot ... The glove rests open on
+       the floor at the bottom edge of frame." · "0.0s — ... the open
+       glove rests on the crust at the bottom edge" · "8.0s — The glove
+       has not moved."
+
+EKRAN (45 s): zeminde SAHİBİ OLMAYAN, boş bir eldiven. Kol yok, bilek yok.
+              HUMAN COUNT LOCK: 1 × 14.
+```
+
+**Hipotez:** *"the glove rests on the floor"* modelde bir NESNE cümlesidir,
+bir BEDEN cümlesi değil. "forearm" kadrajın içinde sayılıyor ama fiil
+eldivene ait olduğu için model kolu düşürüyor. Sonuç: tek insanlı bir
+filmde zeminde duran boş eldiven **ikinci bir insanın bıraktığı ekipman**
+gibi okunuyor — ④ HİKAYE onu "Disconnected Stakes / threat vector"
+sandı, ② "ikinci mürettebat mı?" diye belgeye soru yazdı. **Filmin en
+yüksek sesli cevapsız sorusu bir KAZAYDI.**
+
+**Denenecek kalıp (bir sonraki tek-uzuv kadrajında):**
+```
+✗ "The glove rests open on the floor at the bottom edge of frame."
+✓ "The glove rests on the crust, the wrist and forearm continuing
+   unbroken out of the bottom edge of frame."
+```
+Kural adayı: **kadrajda bir uzuv varsa, o uzvun GÖVDEYE GİDEN YOLU
+yazılır.** Kesilmiş uzuv tarif edilirse model kesilmiş uzuv çizer.
+
+🔗 [[ADAY-8]] ile aynı aile (kadraj dışı beden), ters yönden: orada WORLD
+bloğu fazla anatomi verdi, burada SCENE bloğu eksik verdi.
+[[D179]] ile aynı film.
+
+---
+
+## 📌 05.09.2026 · THE STANDING WIRE — ADAY-2 ve ADAY-7 GÜNCELLEMESİ
+
+Parti 🚨 GEÇERSİZ (sekiz mercek mod V + master filigranlı) → **film-dersi
+yazılamaz** [KONTRAT §4]. Aşağıdakilerin kanıtı rapordan değil **ölçümden ve
+prompt dosyasından** geliyor; yine de biri kulakla, biri tek üretimle kapanır.
+
+```
+ADAY-2 (biçim kilidi referans paneli olmadan tutmuyor) → 2. ÖLÇÜLMÜŞ FİLM
+  YERÇEKİMİ FAZ 2 : vizör ölçüsüyle yazılı, prompt_kontrol GO, ekranda KUBBE
+  THE STANDING WIRE: aynısı, 24 klipte, REFERANS_PAKETI 0 panel
+  → [[D146]] TEKRAR 3'e çıktı ve ⛔ ÇALIŞMIYOR aldı; dönüştürme borcu
+    ADAY-2'nin önerdiği araçtır. Aday artık kapanmayı değil YAPILMAYI bekliyor.
+```
+
+---
+
+## ADAY-10 — SIFIR REPLİKLİ FİLMDE DÖRT CÜMLE KONUŞULDU; PROMPTTA NE TIRNAK VAR NE SES TARİFİ (ADAY-7'nin 3. VAKASI, KULAKLA KAPANACAK)
+
+**Kaynak:** THE STANDING WIRE · 05.09.2026 · ⑤ çapraz kapı + bant ölçümü.
+**KAPI:** aday — muhtemel BETİK (`prompt_kontrol.py`: video promptunda AUDIO
+bloğu → FIX). **Vaka:** ADAY-7 ailesinin 3.'sü, ama **kulakla doğrulanmadı.**
+
+```
+SPEC       DIALOGUE LINES: 0 · SILENT SCENES: 25/25 · film TAMAMEN SESSİZ
+PROMPT     tırnak içinde cümle: 0    ·   "No voice, no music" defalarca yazılı
+           AUDIO bloğu ise HER promptta var: "two calm helmet breaths…"
+
+RAPORLAR   ② ③ ④ üçü de AYNI dört cümleyi AYNI saniyelerde yazdı:
+           0:50 "Just a little further."      0:52 "The wire is still holding."
+           0:55 "Made it this far."           0:58 "Almost at the top."
+           ① tek satırda aynı metni yazdı · ⑤ ⑥ ⑦ ⑧ "hiçbir şey duymadım"
+
+ÖLÇÜM      300-3400 Hz pencere RMS:
+             40-50 s −41,1 │ 50-60 s −32,4 │ 60-70 s −42,8 │ 100-110 s −44,8
+             150-160 s −43,7 │ 200-210 s −62,9
+           → 50-60 s filmin TEK konuşma-bandı zirvesi, +9…+10 dB
+           −30 dB eşiğinde o pencerede DÖRT ayrık patlama, her biri ~1,2 s:
+             51,2-52,3 · 53,1-54,3 · 55,3-56,5 · 58,0-59,4
+           → raporların dört zaman kodunun DÖRDÜ de tutuyor
+KADRAJ     50-60 s SIRTTAN çekim — ağız hiç görünmüyor, lip-sync ile
+           çürütülemez; ses "kaynaksız" kalıyor
+```
+
+**Hipotez:** tetikleyici ne tırnak (0) ne de tarif edilmiş bir ses (yok) —
+**promptta AUDIO bloğunun var olmasının kendisi.** Yerli sesi olan bir modele
+"şu sesler duyulsun, ses YOK" demek, "altyazı yok" ×24 yazmakla aynı yere
+düşüyor: yasak sayılabilir bir engel değil, blok bir içerik talebi.
+
+⛔ **BU ADAY DERS DEĞİL, ÇÜNKÜ KULAK YOK.** Ölçüm güçlü ama konuşma duymadı;
+üç merceğin ortak transkripti de tek bir oturumdan geliyor [D110].
+
+**KAPATMA — 10 saniye, proje sahibi yapar:**
+```
+0:50-1:00 arası DİNLE.
+  KONUŞMA VAR  → aday DERS olur; kapı: video promptu AUDIO bloğu TAŞIMAZ
+                 (ses post'tadır; filmin kendi kuralı zaten "25/25 sessiz")
+  KONUŞMA YOK  → üç mercek aynı halüsinasyonu paylaştı → [[D151]]/[[D173]]
+                 ailesinin yeni vakası, ve ⑤ replik ekseni bu partide
+                 çoğunluğu değil AZINLIĞI doğrular
+```
+🔗 [[ADAY-7]] (aynı aile, iki YERÇEKİMİ vakası) · [[D110]] · [[D181]]
+
+---
+
+## ADAY-11 — YAZILAN ZORLANMA KANALI EKRANDA YOK; PROMPT TAM, BEDEN BOŞ
+
+**Kaynak:** THE STANDING WIRE · 05.09.2026 · 50-60 s kare şeridi (BAKILDI).
+**KAPI:** aday. **Vaka:** 1 (ölçülmüş) — ders için ≥2 bekleniyor.
+
+```
+SPEC C  ZORLANMA · kanal ELDİVEN YÜZEYİ [D175] · dokuz sahne:
+        S1·S3·S4·S7·S9·S16·S17·S18·S20
+        ✅ "the glove's ribbed segments tighten and lift over the knuckles"
+        ✅ "the sleeve's fabric draws taut along the forearm"
+        prompt_kontrol.py ⑧ EFOR kapısı bu cümleleri ARADI ve BULDU → GO
+
+EKRAN   50-60 s (dik kaya duvarı tırmanışı, 20 kare, 0,5 s aralık):
+        yürüyüş kadar düzgün, sarsıntısız, tereddütsüz bir tırmanış;
+        omuz düşmesi yok, duraklama yok, ağırlık aktarımı okunmuyor
+```
+
+**Hipotez:** ⑧ EFOR kapısı [D169] cümlenin VARLIĞINI ölçer, hareketin
+GERÇEKLEŞTİĞİNİ değil — [[D146]]/[[ADAY-2]] ile **birebir aynı mekanizma**,
+ama BİÇİM yerine HAREKET ekseninde. Biçim tarafında dönüştürme borcu doğdu
+(referans paneli); hareket tarafında karşılığı ne olur, bilinmiyor —
+hareketin referansı bir panel değildir.
+
+⚠️ ⑧ EFOR raporu bu filme `1,4/10 · NOBODY PAYS` verdi ve gözlem yönü aynı —
+**ama o rapor mod V, tally'si tutmuyor ve ham zincir ölçtü [[D181]]**, o yüzden
+buradaki kanıt rapor değil KARE.
+
+**Kapatma:** master kurgulanıp yeniden ihraç edildikten sonra aynı şerit
+tekrar çıkarılır; efor hâlâ yoksa aday 2. vakasını alır ve ders olur.
+🔗 [[D169]] (efor kanalları) · [[D175]] (kanal eldiven yüzeyi) · [[ADAY-2]] · [[D181]]

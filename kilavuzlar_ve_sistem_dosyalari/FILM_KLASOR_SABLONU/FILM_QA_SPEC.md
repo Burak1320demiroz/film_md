@@ -60,6 +60,9 @@ RAW FOOTAGE:     ⬜ · TRIM BUDGET: ⬜
 SCREEN TEXT:     ⬜ saniye
 CAMERA:          ⬜ / ⬜ sabit lockoff
 SETUP SEQUENCE:  ⬜ sahne sahne kurulum imzası
+KURULUM İSKELETİ: ⬜ harf dizisi (PLAN'daki ile AYNI olmak zorunda)
+KÜME:            ⬜ kaç küme · hangi sahneler (12+ sahnede ≥2 · ACI_YAYI §4b)
+DÖNÜŞ:           ⬜ %⬜ (12+ sahnede ≥%40; dönüş = kaynağından ≤3 sahne sonra)
 ANGLE ARC:       ⬜ kaç açı TİPİ (§2 en az 3 ister)
 DORUK:           S⬜ → ⬜ (sahne başlangıcı ⬜ s)
 

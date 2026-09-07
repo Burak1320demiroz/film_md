@@ -477,4 +477,4 @@ PLAN:
 | `SINEMATOGRAFIK_TEKNIK_KILAVUZ.md` §10 | Rolling shutter — whip pan geçişinde zorunlu |
 | `SAHNE_DEVAMLILIK_KILAVUZU.md` | Karakter/ışık çapaları — §6'daki üç şartın altyapısı |
 | `1_KARE_QA_CRITIQUE_PROMPT.md` | Gizli geçiş denetimi QA'ya madde olarak eklenmeli |
-| `yatay_7_9_dk_filmler/kilavuzlar/KESINTISIZ_VIDEO_URETIM_TEKNIGI.md` | Start/end frame zinciri — 7-9 dk formatına özel, bu kılavuzla çakışmaz |
+| `KESINTISIZ_VIDEO_URETIM_TEKNIGI.md` | Start/end frame zinciri — faz mimarisi kullanan hatta özel (10-20 dk), bu kılavuzla çakışmaz |

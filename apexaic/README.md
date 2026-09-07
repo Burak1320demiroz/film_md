@@ -8,7 +8,7 @@ tutar. Burası dördüncü soruyu tutar: **film QA'dan geçtikten sonra ne oluyo
 Kanal:   Apex AI Cinema
 Handle:  @apexaic   ← hedef, üçünde de aynı (bugün: @apex_aic · @apex_aic ·
                        apex_aic/apexaic — geçiş: KANAL_KIMLIGI §7.2)
-Ürün:    16:9 uzay bilimkurgu kısa filmi (2-4 · 3-5 · 7-9 · 10-20 dk)
+Ürün:    16:9 uzay bilimkurgu kısa filmi (2-4 · 3-5 · 7-20 dk)
          + 9:16 dikey kesim / dikey shorts
 Tez:     ⭐ HER FİLM BİR GERÇEK FİZİK KURALIYLA HESAPLAŞIR   (KANAL_KIMLIGI §2)
 Durum:   ⚠️ CANLI KANAL — 225 video · 14.09.2025'ten beri · ölçülmemiş

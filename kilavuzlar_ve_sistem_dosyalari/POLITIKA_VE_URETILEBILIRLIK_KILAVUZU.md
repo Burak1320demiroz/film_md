@@ -345,8 +345,17 @@ Aynı kural görsel olmayan eksende de var: UZAMSAL §6.8 (ışık mıknatısı)
    ⭐ Sayı ekranda DEĞİL (metin yasağı): doluluk, renk, ses.
 
 ④ GÖVDE TEPKİSİ — temassız
-   nefes ritmi ve vizör buğusu · kavrayışın sıkılaşması · omuzların
-   çökmesi · bir saniyelik tam durgunluk · duruşun bozulması
+   nefes ritmi (GÖRÜNÜR hâli: giysinin omuz ve göğüs kafesinin
+   periyodik yükselişi) · kavrayışın sıkılaşması · omuzların çökmesi ·
+   bir saniyelik tam durgunluk · duruşun bozulması
+   ⛔ "VİZÖR BUĞUSU" BU LİSTEDEN ÇIKARILDI — SAHİBİN KARARI, 04.09.2026
+     (kayıt: ../URETIM_ONCESI_ANALIZ/04_ARASTIRMA_BULGULARI.md §TUR 11 ·
+     T11.5④). İki gerekçe: (a) ekipman durum kilidi mutlaktır — vizör
+     açılmaz, kapanmaz, TONLANMAZ, kaybolmaz [D37 · D57 ·
+     KARAKTER_VE_DUYGU §0②] ve D79 yüzün her karede okunmasını istiyor;
+     (b) buğunun birikip çözülmesi bir DURUM DEĞİŞİMİDİR ve ölçülmüş en
+     zayıf eksendir [KILAVUZ_REHBERI §7 · dynamic attribute binding].
+     Kanalın karşılığı: KARAKTER_VE_DUYGU §4.2 GÖRÜNÜR NEFES.
    ⭐ Bu kanal KARAKTER_VE_DUYGU §6'nın bütçesiyle aynı yeri kullanır;
       iki bütçe çakışmaz, ÜST ÜSTE BİNER.
 ```
@@ -452,7 +461,7 @@ redleri önceden gören tek film odur. Genelleşir → 03_PLAN_ONCESI B6.
                          olsa bile "ünlü kişi" yanlış-pozitifi bu
                          katmanda doğuyor (§6 · Omni'de daha ağır)
 
-      teknik: yatay_7_9_dk_filmler/kilavuzlar/KESINTISIZ_VIDEO_URETIM_TEKNIGI.md
+      teknik: kilavuzlar_ve_sistem_dosyalari/KESINTISIZ_VIDEO_URETIM_TEKNIGI.md
       ⚠️ Defterde image reddi 1, video reddi 13 — bu bir ORAN DEĞİLDİR,
          depo zaten çoğunlukla T2V üretiyor. Payda bilinmiyor [defter §4③].
 

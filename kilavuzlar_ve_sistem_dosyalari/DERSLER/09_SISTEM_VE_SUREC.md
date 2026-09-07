@@ -704,3 +704,93 @@ fark edilmesidir; bu sıra o gecikmeyi yapısal olarak kapatır.
 > 🔗 Ders 157 (novum ekrana gelmedi — geç fark edildi) · Ders 151 · Ders 165
 > (araç yazıldı, koşacak kart yoktu — aynı aile: sıra bilgisi araca inmedi) ·
 > 03_PLAN_ONCESI B5 · red defteri (yarıda kalmanın 15 sebebi orada).
+
+---
+
+## 🔴 DERS 181: HAM ZİNCİR MASTER DEĞİLDİR — KURGU HİÇ YAPILMADAN KOŞAN SEKİZ MERCEK, FİLMİ DEĞİL ÜRETİCİYİ ÖLÇTÜ
+
+**KAPI:** BETİK · `olcum_kapisi.sh` — ölçümün sonuna **TESLİM SINIFI** satırı:
+zaten bastığı dört sayıdan (LUFS · filigran · kuyruk kart · klip sayısı) bir
+karar üretir. `HAM ZİNCİR` çıkarsa `rapor_kontrol.py` partiyi mercek okumadan
+🚨 GEÇERSİZ yapar — `--olcum-filigran VAR` bayrağının yaptığının aynısı,
+tek eksenle değil dört eksenle.
+**TEKRAR:** 1 · son vaka **06.09.2026 THE KEPT LIGHT** — ve bu vakada
+**kapı ARTIK KODDA**: `olcum_kapisi.sh` sona `== TESLİM SINIFI [D181] ==`
+bloğunu basıyor, iki ekseni ölçüyor (LUFS eşiği 3 LU · kuyrukta ≥1,5 s donma)
+ve ikisini `⬜ GÖZ` / `⬜ SPEC` diye AÇIK bırakıyor. Kept Light'ta ilk koşuda
+**🚨 HAM ZİNCİR** verdi.
+
+```
+THE KEPT LIGHT · 06.09.2026 — aynı desen, ikinci film
+ölçülen                          plan                        fark
+LUFS (I)    −16,4                −14                         2,4 LU  ✅ eşik altı
+true peak   +0,9 dBFS            −1,0 dBTP                   KIRPIYOR 🔴
+filigran    VAR (6/6 örnek)      0 kare                              🔴
+kuyruk kart 5,0 s "THE KEPT LIGHT" + kapak görseli · ekran metni 0 s 🔴
+klip        25                   25                          ✅ (eksik klip YOK)
+hook        10,03 s              9,0 s (1 s kırpma)          kırpılmamış ⛔
+hard mute   yok (üç eşikte de)   209,0-219,0 s                       🔴
+```
+
+⭐ **Standing Wire'dan farkı ve dersin asıl kanıtı burada:** bu dosyada klip
+sayısı DOĞRU (25=25) ve LUFS eşiğin ALTINDA. Yani "eksik klip" ve "çok kısık"
+gibi göze batan iki eksen TEMİZ — ve dosya yine ham zincir. Kurgu masasında
+yapılacak DÖRT iş (kart kes · hook kırp · hard mute · peak) yapılmamış, ve
+sekiz mercek yine bu dosyayı "film" sanıp puanladı. Tek eksenli bir kapı bunu
+kaçırırdı; kapı dört eksenli olduğu için tuttu.
+
+**Kaynak:** THE STANDING WIRE ⑪ ölçüm kapısı (05.09.2026) — rapordan DEĞİL.
+Sekiz mercek de bu dosyayı "film" sanarak puanladı.
+
+**Sorun:** teslim edilen dosya bir kurgu değil, **24 klibin uç uca eklenmesi +
+bir kart**tı. Planın EDİTÖRDEN istediği her işlem yapılmamış, üreticinin
+bıraktığı her artık yerinde kalmıştı — ve altı ölçüt de tek tek ölçülebilirdi:
+
+```
+ölçülen                          plan                    fark
+LUFS (I)   −35,5                 −14 (ihraç kilidi)      21,5 LU  ⛔
+filigran   VAR (6/6 örnek)       0                                🔴
+kuyruk kart 5,0 s "THE STANDING WIRE"  ekran metni 0 s            🔴
+klip       24                    25                      bir klip eksik ⛔
+hook       10,03 s               9,0 s (1 s kırpma)      kırpılmamış ⛔
+hard mute  yok (−50/−40 dB'de delik)  214,0-239,0 s              ⚠️
+```
+
+Altısı da **kurgu masasında** yapılacak işlerdi; hiçbiri yeniden üretim
+gerektirmiyor. Yani sekiz mercek, hiç kurgulanmamış bir malzemeye "REGENERATE"
+ve "regenerate the climbing scenes wholesale" yazdı.
+
+⭐ **Asıl maliyet burada:** ⑧ EFOR bu dosyaya **1,4/10 · NOBODY PAYS** verdi ve
+reçetesi *"the film requires wholesale regeneration of the climbing scenes"*
+oldu. −35,5 LUFS'luk, filigranlı, bir klibi eksik bir ham zincire bakarak
+24 klibin yeniden üretimini önermek, ölçülmemiş bir şeye verilen en pahalı
+hükümdür. Aynı dosya kurgulandıktan sonra o hüküm hâlâ doğru olabilir — ama
+o zaman **ölçülmüş** olur.
+
+**ÇÖZÜM — KARAR + BETİK:**
+
+```
+⑪ ölçüm kapısı, sayıları bastıktan sonra TEK SATIR daha basar:
+
+  TESLİM SINIFI: MASTER      dördü de temiz
+  TESLİM SINIFI: HAM ZİNCİR  aşağıdakilerden EN AZ BİRİ:
+       · |I − (−14 LUFS)| > 3 LU
+       · köşe testi: aynı köşede aynı şekil ≥ 4/6 örnek
+       · freezedetect kuyrukta ≥ 1,5 s donma + son karede yazı
+       · klip sayısı ≠ SPEC CLIP COUNT
+
+HAM ZİNCİR ise: mercek koşulmaz, rapor okunmaz, satır yazılmaz.
+Önce kurgu yapılır. Sıra bu: KURGU → ÖLÇÜM → MERCEK.
+```
+
+⛔ **Ders "master kontrol edilsin" demiyor** — o zaten yazılıydı ve tutmadı
+(`YAYIN_PAKETI` § BEFORE PUBLISHING'de altı ⬜ kutu, `KAPAK.md`'de kartın
+zincire karışmama yasağı, SPEC E bloğunda yedi makine kapısı). Ders şu:
+**kontrol listesi bir kapı değildir; sayıyı okuyup PARTİYİ DURDURAN betik
+kapıdır.** D177 filigran ekseninde bunu zaten yaptı ve bu filmde ATEŞLEDİ —
+D181 aynı mekanizmayı kalan üç eksene genişletir.
+
+🔗 [[D177]] (bayrak mekanizması — ödenmiş borç, bu filmde çalıştı) ·
+[[D150]] (filigran, 5. vaka) · [[D180]] (planlı sessizlik, ilk ölçülmüş vaka) ·
+[[D136]] (ses kanalı YOK → parti durur; bu onun "kanal var ama 21 LU kısık" kardeşi) ·
+[[D129]] (mod V) · [[D142]] (yazılmış ama koşulamayan kapı, koşulmamış kapıdır)

@@ -1,6 +1,6 @@
 # 🔧 T1 — KARE KALİTE TABLOSU (sahne içi)
 
-> **Kaynak rubrik:** `../QA_PROMPTLARI/1_KARE_QA_CRITIQUE_PROMPT.md`
+> **Kaynak rubrik:** `../QA_PROMPTLARI/_KAYNAK/1_KARE_QA_CRITIQUE_PROMPT.md`
 > **Açılış:** 22.08.2026 — dört mercekli sisteme geçişle birlikte
 > **Selefleri:** `../LESSONS_LEARNED.md` · KALİTE TAKİP (yatay teknik) ve
 > `05_SHORTS_KALITE_TABLOSU.md` (dikey) — ikisi de aynı gün KAPANDI.

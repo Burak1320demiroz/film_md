@@ -66,14 +66,15 @@ sonraki karede İÇİNDE buluruz.
    ⚠️ GERÇEK KURGU 19:20 — dört yuva boş (S8 · S15 · S69 · S70);
      116 klip × 10 s. Nominal ızgara PROMPT zamanıdır, kurgu değil.
 
-⛔ ÖLÇÜM BORCU — TEK AÇIK SAYI [D125 · ortak adım ⑪]:
-   F1-F6 makaralarının klip süresi bu depoda HİÇ ÖLÇÜLMEDİ. F6 rubriği
-   "roughly 8 seconds" yazar ama o satır PLANDAN geldi, ölçümden değil.
-   Üretilmiş fazlar 8 s çıkarsa film İKİ IZGARALI olur ve buradaki
-   MUTLAK zamanlar kayar (sahne sırası, beat'ler ve kilitler etkilenmez).
-   Cevabı bir komut veriyor, modele sorulmaz:
+✅ 06.09.2026 · ÖLÇÜM BORCUNUN BU YARISI KAPANDI [D125 · ortak adım ⑪]:
+   F7 makarası ölçüldü — **12 segment · 120 s · klip 10,0 s**, hepsi
+   0,3 s bandında. Bu dosyanın 10 s ızgarası DOĞRULANDI ve buradaki
+   mutlak zamanlar KAYMIYOR.
+   Kaynak: FAZ_07_SES/FAZ_07_QA_DERSLER.md
+⚠️ AÇIK KALAN YARISI: F1-F6 makaraları hâlâ ölçülmedi. 8 s çıkarlarsa
+   film İKİ IZGARALI olur; F7-F10 kendi içinde tutar ama filmin toplam
+   süresi ve kurgu kapısı (④) o sayıyla koşar. Cevabı bir komut verir:
      ffprobe -v error -show_entries format=duration -of csv=p=0 <makara>
-   Ölçülünce bu blok kapanır ve kurgu kapısı (④) O sayıyla koşar.
 
 🔧 BU FAZDA AYRICA:
    · S102 (imza çekim) push-in'i 0,2 m ve 6 s'de TAMAMLANIP DURUYOR —
@@ -84,17 +85,23 @@ sonraki karede İÇİNDE buluruz.
      kapsül kadrajdan çıkmıştır, kadrajda yalnız istasyon kalır.
 ```
 
-# 🔧 03.09.2026 · ÜRETİM ÖNCESİ TARAMA — TEMİZ (kayıt)
+# 🔴 03.09.2026 TARAMASI ÇÜRÜDÜ — 06.09.2026 ÖLÇÜMÜ
 
 ```
-✅ F5/F6 gömülü-altyazı dersi bu faza tarandı [F7/F8 kayıt blokları]:
-   tırnaklı cümle 0 · sesi anlatan beat satırı 0 · replik 0/12 (defter
-   gereği — filmin son insan sesi S96'daki MACHINE anonsuydu).
-   Değişiklik GEREKMEDİ; kaydı olmayan denetim koşulmamış sayılır
-   diye bu blok yazıldı [D74].
-📌 ŞOK BANDI BİLGİSİ [FAZ_06 iptal kaydı ②]: bu fazdaki S102 "ikinci
-   bant" olarak planlandı; S68→S71 üçüncü sıçraması kabul edilirse
-   S102 kronolojik ÜÇÜNCÜ olur. Etiket değiştirilmedi, karar sahibinde.
+03.09'da bu dosyaya şunu yazmıştım:
+  "✅ tırnaklı cümle 0 · sesi anlatan beat 0 · replik 0/12.
+   Değişiklik GEREKMEDİ."
+⛔ O TARAMA DOĞRUYDU AMA KORUMUYOR. F7 makarası tam olarak bu üç
+  şartı sağlıyordu ve **yedi gömülü altyazı** çıkardı — F5'in üç
+  buçuk katı. Yedisi de UYDURMA cümlelerdi; ikisi repliksiz sahnedeydi.
+  → Prompt temizliği altyazıyı önlemiyor. Sebep araçtadır [K1].
+⚠️ Bu dosyanın "replik 0/12" durumu hâlâ doğru ve hâlâ değerli —
+  ama artık bir GARANTİ değil, yalnız bir başlangıç koşuludur.
+📌 ŞOK BANDI BİLGİSİ [FAZ_06 iptal kaydı ② + F8 ölçümü]: S102 "ikinci
+   bant" olarak planlanmıştı. ⛔ **S94 ÜRETİLMEDİ**, yani ŞOK BANDI 1
+   ekranda YOK. Bu fazın S102'si şu an filmin **TEK** şok bandıdır.
+   S94 sonradan üretilirse etiket geçerli kalır; üretilmezse S102
+   birinci ve tek banttır ve bütçe aşılmamış, eksik kalmıştır.
 ```
 
 # 🔒 BU FAZIN KİLİTLERİ
@@ -160,6 +167,93 @@ KİLİT 47 — A KONUŞMAZ VE BİLİNCİNİ KAYBETMEZ
      iner ve orada kalır.
 ```
 
+# 🔴 06.09.2026 · F7 + F8 ÖLÇÜMÜNDEN GELEN ALTI KAPI
+
+```
+Kaynak: FAZ_07_SES/FAZ_07_QA_DERSLER.md · FAZ_08_AYRILIS/FAZ_08_QA_DERSLER.md
+Bunlar KİLİT değildir — kilitler fazın kendi tasarımıdır. Bunlar
+ÖLÇÜLMÜŞ kusurların kapılarıdır ve bu fazın promptlarına uygulanır.
+```
+
+```
+K1 ⛔ ALTYAZI: SEBEP ARAÇ, PROMPT DEĞİL — kapı YAZILMAZ
+   F5 altyazı 2 · F6 3 · F7 **7**. F7'de tırnaklı cümle 0 ve sesi
+   anlatan beat satırı 0'dı; sayı yine de ikiye katlandı ve YEDİSİ DE
+   UYDURMA çıktı (ikisi repliksiz sahnede, ikisi anlamsız cümle).
+   → ADAY-7 hipotezi ÇÜRÜDÜ. Model klibe kendi diyaloğunu yazıyor.
+   ⛔ Bu faza altyazı önleyici hiçbir cümle EKLENMEZ: eklenirse depo,
+     düzeltemeyeceği bir şeyi düzeltmiş gibi yapar.
+   ✅ YAPILACAK OLAN: ① makara gelince altyazı SAYILIR ve birebir
+     alıntılanır ② çözüm araç ayarı ya da üretim sonrası maskeleme.
+   ⭐ DENEYİN SON ADIMI — bu fazda koşulacak, TEK SAHNEDE:
+     **S107** (insansız · replik 0 · fazın en risksiz sahnesi) video
+     promptundan `Audio:` paragrafı TAMAMEN silinir ve öyle üretilir.
+     Kalan 11 sahne dokunulmadan üretilir; tek değişken budur.
+       altyazı S107'de de çıkarsa → sebep kesin ARAÇ, dosya kapanır
+       altyazı S107'de ÇIKMAZSA → tetikleyici `Audio:` bloğudur ve
+         o zaman kapı BETİĞE yazılır (ilk kez meşru olarak)
+   ⛔ Ses kaybolmaz: post'ta zaten giriyor, `Audio:` satırı yalnız
+     üretim promptundan çıkar.
+
+K2 ⛔ BİR BİLEĞE İKİ NESNE YAZILMAZ
+   F7'de S81 ve S84 promptları halkayı ve saati AYNI (SOL) bileğe
+   yazdı. Model ikisini birleştirdi, saat hayatta kaldı, **halka 12
+   klipte 0 kez göründü.** F8'de bir kez belirsiz göründü ve kayboldu.
+   → Equipment Bible doğruydu: halka SOL, saat SAĞ, her zaman ayrı.
+   ✅ BU FAZIN DURUMU: taranıp doğrulandı — kadrajda yalnız SAAT var,
+     halka hiçbir promptta yok. Bu bir avantajdır, korunur.
+   ⛔ Halka bu faza SONRADAN eklenmez.
+
+K3 ⛔ 0g / 1g KİLİDİ POZİTİF EYLEMLE YAZILIR
+   F7'nin AÇILIŞ karesinde (S73) saç AŞAĞI SARKTI — promptta
+   "lifts and holds ... instead of pressing flat" yazılı olmasına
+   rağmen. Ve o kusur kör denetçinin BİR NUMARALI tek yönlü saati
+   oldu: fazın sırası ondan bozuldu (3/12).
+   → "X yerine Y" kalıbı zayıf. Yazım: nesne NE YAPIYOR, kaç saniyede,
+     ne kadar yol.
+   ✅ BU FAZDA TERSİ GEÇERLİ ve daha da kritik: **saç S102'den sonra
+     BAŞA YAPIŞIK kalır** (KİLİT 46 ①). Aynı kural, ters yön —
+     "hangs" tek başına yetmez, "lies flat against her head and does
+     not lift at any point" yazılır.
+
+K4 ⛔ "DÖNMEZ / KİLİTLİ / KIMILDAMAZ" YASAĞI TEK BAŞINA TUTMUYOR
+   F7'de üç kilit aynı biçimde kırıldı:
+     G (S75) "⛔ baş DÖNMEZ, maksimum ciddiyet"  → başını çevirdi
+     D (S82) "gözler ekran-sola KİLİTLİ"          → gözler gezindi
+     H (S83) "⛔ çark BİR DERECE dönmez"          → çark döndü
+   → Yasak cümlesi modelin gördüğü son şey olduğunda eylemi ÇAĞIRIYOR.
+   ✅ YAZIM: önce gözün/başın/elin NE YAPTIĞI pozitif olarak yazılır
+     ("her eyes hold on the same point for the whole shot"), yasak
+     ondan SONRA ve TEK KEZ gelir.
+   ⛔ Bu faza uygulanır: S106 (gözler kapanır), S108 (gözler açılır),
+     S101 (göz ECU'su) ve titreşim sahnelerinin "kamera sallanmaz"
+     satırları bu kalıpla okunur.
+
+K5 ⛔ DURUM DEĞİŞTİREN SAHNE İKİ KEZ YAZILIR — İLK KARE ve SON KARE
+   F7'nin perde dönüşü (S84) TERSİNE DÖNDÜ: kırmızı kapak açılacaktı,
+   ekranda duvara İTİLİP KAPANDI. Kör okuma "bir kapağı kapatıyor"
+   diye bitti — filmin "geri dönüş yolu kapandı" eşiği yok.
+   ✅ YAZIM KALIBI, bundan sonra her durum değişimi için:
+     · SUBJECT bloğunda İLK KARE durumu ("closed", "stopped", "dark")
+     · beat listesinde değişimin YÖNÜ ve süresi
+     · kapanış NEGATIVE paragrafında SON KARE durumu, AYNI kelimelerle
+     Üçü de aynı kelimeyi kullanır; biri eksikse yön belirsizdir.
+   ⛔ BU FAZIN DURUM DEĞİŞTİREN SAHNELERİ: S102 (her serbest nesne
+     düşer) · S103 (kayış ucu ilk kez sarkar) · S105 (renk geçidi) ·
+     S106 (gözler kapanır) · S108 (gözler açılır). Beşi de bu kalıpla
+     okunur; eksik olan varsa üretimden önce tamamlanır.
+
+K6 ⛔ SAHNENİN KONUSU OLAN JEST KENDİ ÖLÇEĞİNİ ALIR
+   F7'de S79'un tik eli COMPOSITION bloğunda %40 genişlik / %20
+   yükseklikte yazılıydı ve ekranda **kadraj dışında kaldı** — yani
+   sahnenin tek olayı görülmedi. Yüzde yazmak yetmiyor.
+   ✅ KURAL: bir jest sahnenin İÇERİĞİ ise, o jest kadrajın kenarına
+     yüzdeyle yerleştirilmez; ya kadraj ona göre daraltılır ya da jest
+     kadrajın merkez yarısına yazılır.
+   ⛔ Bu faza uygulanır: küçük ve tek olaylı sahnelerde (S103 kayış
+     ucu · S99 kolçak) jestin kadrajdaki yeri MERKEZ yarıdadır.
+```
+
 # 📎 REFERANS (lejand `../FAZ_01_GOREV/FAZ_01_GOREV.md` başında)
 
 ```
@@ -217,7 +311,28 @@ S97–S108 = 12 imaj (start frame) · 12 video (I2V) · 1 insansız (S107)
 SES: on iki sahne SESSİZ üretilir. ⭐ Titreşim ve gövde sesi post'ta
 tek yaydan çıkar; müzik bu fazda GERİ GELİR (nabız, perküsyonsuz) ve
 S104-S106'da tepe yapar — F7'nin sessizliğinden sonra ilk müzik.
+⭐ S107 ÜRETİLİRKEN `Audio:` PARAGRAFI SİLİNİR [K1 deneyi]. Diğer on
+bir sahnede dokunulmaz; tek değişken budur.
 ```
+
+```
+🔴 06.09.2026 · TAŞIYICI SAHNE KAPISI — F8'DEN ÖĞRENİLDİ, BAĞLAYICIDIR
+   F8'in üretim sırası da bu dosyanınki gibi yazıyordu:
+     "1) S94 DALGA İKİ ... SONUÇ: çıkmazsa S95-S96 üretilmez; faz durur."
+   ⛔ S94 ÜRETİLMEDİ. S95 ve S96 ÜRETİLDİ. Kapı belgede durdu,
+     üretimde bağlamadı; faz 10/12 klip olarak teslim edildi ve
+     Çehov 5 ödenmeden kaldı.
+   ✅ BU FAZDA KAPI ŞÖYLE BAĞLAR:
+     ① S102 sekiz varyasyonuyla üretilir ve sonucu — GEÇTİ / KALDI —
+       bu dosyaya TEK SATIR olarak yazılır. Yazılmadan sıradaki sahne
+       üretilmez.
+     ② KALDI ise kadraj daraltılır (WS → MS) ve yeniden bütçelenir.
+       Faz durur demek "bekle" demektir, "atla" demek değildir.
+     ③ Makara teslim edildiğinde klip sayısı 12 DEĞİLSE, teslim
+       kontrolündeki "12 sahne" satırı işaretlenmez ve eksik harfler
+       adıyla yazılır.
+```
+
 
 ## 🗣️ REPLİK DEFTERİ
 
@@ -2062,6 +2177,32 @@ Işık: L6 SABAH ZEMİN F10 boyunca (S109-S120).
   f-stop + Output satırı · üretim kapıları sayısal kabul/ret [D144]
 □ ⚠️ BELGE SENKRONU: **RI referans sayfası "F10'dan önce"den "F9'dan
   önce"ye çekildi** — S107'de paraşütün altında zemin görünüyor
+
+🔴 06.09.2026 KAPILARI — F7/F8 ölçümünden (yukarıdaki ALTI KAPI bloğu)
+□ K1 ⭐ **S107 `Audio:` PARAGRAFI SİLİNEREK üretildi mi?** Diğer on bir
+  sahne dokunulmadan üretildi mi? (deneyin tek değişkeni budur)
+□ K1 ⭐ Makara geldiğinde ALTYAZI SAYILDI ve birebir alıntılandı mı?
+  Karşılaştırma: F5 2 · F6 3 · F7 7. ⛔ Prompta altyazı kapısı eklenmez.
+□ K2 ✅ TARANDI: halka bu fazın hiçbir promptunda kadrajda YOK; saat
+  yalnız SAĞ bilekte. Bir bileğe iki nesne yazılmamış.
+□ K3 Ağırlığın üç kanıtı POZİTİF eylemle mi yazılı ("lies flat / rests
+  / does not lift at any point"), yalnız "hangs" ile değil?
+□ K4 S101 · S106 · S108'de göz/baş kilidi önce POZİTİF eylem, yasak
+  sonra ve tek kez mi?
+□ K5 Durum değiştiren beş sahne (S102 · S103 · S105 · S106 · S108) —
+  her birinde İLK KARE durumu SUBJECT'te, yön beat'te, SON KARE durumu
+  kapanış NEGATIVE'inde ve üçü de AYNI kelimelerle mi?
+□ 🔴 TAŞIYICI KAPISI: S102'nin sekiz varyasyon sonucu (GEÇTİ/KALDI) bu
+  dosyaya TEK SATIR yazılmadan sıradaki sahne üretilmedi mi?
+  ⛔ F8'de bu kapı belgede vardı ve bağlamadı: S94 üretilmeden S95-S96
+    üretildi ve faz 10/12 klip teslim edildi.
+□ 🔴 MAKARA GELDİĞİNDE: klip sayısı 12 mi? Değilse eksik harfler adıyla
+  yazılır ve bu satır İŞARETLENMEZ.
+□ 🔴 QA: makaraya ÖNCE `FAZ_09_QA_PROMPT.md` koşulur (iki mühürlü,
+  ayrı sohbetler). ⛔ Genel sekiz mercek faz makarasına koşulmaz —
+  F8'de üç yanlış pozitif üretti ve fazın taşıyıcı kilidini hiç
+  ölçmedi [FAZ_08_QA_DERSLER §YANLIŞ ALET].
+
 ☑ prompt_kontrol.py koşuldu (30.08.2026): **GO** — 24 prompt,
   ⛔ 0 BLOCK · ⚠️ 0 FIX · video 2.147-2.598 bandın TAM içinde · image
   2.709-4.020 · betik NOT: "kurulum sayısı 10 — üst bant 6", bilinçli

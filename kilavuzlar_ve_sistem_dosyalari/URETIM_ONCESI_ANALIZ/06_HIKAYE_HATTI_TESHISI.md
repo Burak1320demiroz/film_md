@@ -196,7 +196,7 @@ tema ve açıyı da ölçüyor. **Hikâyeyi ölçmüyor.**
 
 ## HALKA 3 — ⭐ YENİ BULGU: tür, kendisini ölçen aleti de yazdı
 
-`QA_PROMPTLARI/4_HIKAYE_QA_CRITIQUE_PROMPT.md` — deponun hikâye kalitesini
+`QA_PROMPTLARI/_KAYNAK/4_HIKAYE_QA_CRITIQUE_PROMPT.md` — deponun hikâye kalitesini
 ölçen **tek** aleti. §"THE SERIES' STORY DNA" bloğu, rubriğe **neyi kusur
 saymayacağını** söyler:
 
@@ -648,7 +648,8 @@ ASLA
 python3 - <<'PY'
 import os,glob,re
 roots=['dikey_shorts_filmler','yatay_2_4_dk_filmler_uzay','yatay_3_5_dk_filmler',
-       'yatay_7_9_dk_filmler','yatay_10_20_dk_filmler']
+       'yatay_10_20_dk_filmler']   # 7-9 klasörü 04.09.2026'da kapandı;
+                                   # THE_SLOW_STONE 10-20'ye taşındı, film kümesi AYNI
 tot=pos=neg=dia=0; novum={}
 for r in roots:
     for d in sorted(os.listdir(r)):
@@ -694,7 +695,7 @@ PY
 ```
 05_DIKEY_HAT_TESHISI.md                   §2.1 dört sıfır · §3 dört önlem · §5① · §9.2 problar
 03_PLAN_ONCESI_KONTROL_LISTESI.md         imza bloğu · B5 "ayrılmış" satırı (30.08→02.09)
-QA_PROMPTLARI/4_HIKAYE_QA_CRITIQUE_PROMPT.md  §STORY DNA · §DECLARED ABSENCE · §6 N/A
+QA_PROMPTLARI/_KAYNAK/4_HIKAYE_QA_CRITIQUE_PROMPT.md  §STORY DNA · §DECLARED ABSENCE · §6 N/A
 ONERME_VE_NOVUM_KILAVUZU.md §1            beş novum tipi · "BİRİNCİ TERCİH"
 02_RISK_KARTLARI.md KART 7                "EN GÜVENLİ: sessiz film" · kanıtı N/A
 DERSLER/02_KARAKTER_VE_CANLI.md D35       tek vaka · beş reçete · sıfır uygulama

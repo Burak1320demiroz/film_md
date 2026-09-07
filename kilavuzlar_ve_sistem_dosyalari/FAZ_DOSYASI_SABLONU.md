@@ -56,6 +56,28 @@ SEKANS SONU:  zincir kırılır, yeni çapa imajı
 
 ---
 
+## 🔒 BU FAZIN KİLİTLERİ
+
+⛔ **HER TAŞIYICI KİLİDİN YANINA ONU ÖLÇECEK MERCEĞİN ADI YAZILIR** [D187].
+Mercek adı taşımayan kilit ölçülmemiş sayılır — kimsenin kapsamına girmez ve
+on iki rapor onu görmeden döner. Kilit her filmde başkadır (saç, kayış ucu,
+bir cıvatanın gölgesi); kapsam haritası genel kalır, **eşleştirmeyi kilidi
+yazan kişi yapar.**
+
+```
+KİLİT n — [AD]
+  ① [kanıt]                              → ÖLÇEN: ② DEVAMLILIK cat.3
+  ② [kanıt]                              → ÖLÇEN: ⑧ EFOR cat.1
+  ③ [kanıt]                              → ÖLÇEN: ⑥ FİZİK cat.5 (sayı + süre)
+```
+
+⚠️ Eşleştirilemeyen kanıt bir UYARIDIR, kilidin kendisine karşı: on iki merceğin
+hiçbirinin ölçemediği bir kanıt, ekranda da kimsenin göremeyeceği kanıttır.
+YERÇEKİMİ F9 (3 kanıt → 0 ölçüm) ve F10 (5 kanıt → 1 ölçüm) bu satırın
+sebebidir.
+
+---
+
 ## 🎬 SEKANS 1A — [SEKANS ADI] (Sahne X-X+3)
 
 ### 🖼️ ÇAPA İMAJI 1 — Sekans Başlangıç Karesi

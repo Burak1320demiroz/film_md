@@ -54,6 +54,9 @@ SAYISAL KİLİT
   □ TEK GÖZ PLANI    ≥ 1,5 s kesintisiz — daha kısası kaydolmaz
   □ YERLEŞİM         en yüksek duygusal kırılma yuvalarına:
                      orta nokta (midpoint) ve "her şey kayboldu" anı
+                     ⚠️ 04.09.2026 — yuvanın DORUK ANINDA değil,
+                     hemen ÖNCESİNDE ve SONRASINDA: doruk yoğunluğunda
+                     yüz pozitifi negatiften ayırt ettirmiyor (§4.3)
 ```
 
 **Prompta girecek blok** (vizör kilidini bozmadan göz açan tek yol):
@@ -189,6 +192,55 @@ olur: hızlanan nefes kalp ritmini yükseltir, yavaşlayan nefes rahatlatır.
          diegetiktir ve duyulur. İkisi aynı sahnede çelişmez.
 ```
 
+### 🆕 04.09.2026 · YUKARIDAKİ BÜTÇE BİR **SES** BÜTÇESİDİR — ve akış içi videoların ~%85'i SESSİZ BAŞLIYOR
+
+> Kayıt: `URETIM_ONCESI_ANALIZ/04_ARASTIRMA_BULGULARI.md` §TUR 11 ·
+> T11.3. Bu, TUR 11'in bu dosyaya inen en sert satırıdır ve dış
+> rapordan değil, deponun KENDİ iki sayısının yan yana konmasından çıktı.
+
+```
+⛔ ÇAKIŞMA: §4.2'nin ≥%20 nefes bütçesi yalnız SESLE taşınıyor
+   ("NET ve YALITILMIŞ bir katman olarak DUYULUR"). Ama akış içi
+   videoların büyük çoğunluğu SESSİZ BAŞLIYOR — sayı ve kaynak
+   tek yerde: HOOK §5⑥ (TikTok istisnasıyla birlikte).
+   → Deponun en güçlü ikinci duygu kanalı, açılışta izleyicilerin
+     çoğunda HİÇ YOK.
+
+□ GÖRÜNÜR NEFES ZORUNLU EŞLİKÇİDİR: nefes bütçesi ayrılan her sahnede
+  giysinin omuz hattı ve göğüs kafesi periyodik olarak YÜKSELİP ALÇALIR
+  ve bu plana yazılır. Ses katmanı kalır; görünür karşılığı ona eklenir.
+□ RİTİM SESLE AYNI OLMAK ZORUNDA: panik = sığ ve hızlı · çaresizlik =
+  derin ve yavaş · katarzis = §4.2'nin dakikada 6 nefes kilidi
+  (10 saniyede tek yükseliş — tam bir klipte tek nefes).
+□ İngilizce kalıp gövde satırıdır, duygu adı değil [D169 · DIKEY §4]:
+    "the suit's shoulders and chest rise and fall in a slow, even rhythm"
+    "her chest rises in short, shallow pulls, shoulders lifting each time"
+```
+
+```
+⛔ VE VİZÖR BUĞUSU BU İŞİ YAPAMAZ — İKİ AYRI GEREKÇEYLE.
+   ① Ders 79: vizör "optically clear … face fully readable in every
+     frame, at every head angle". Buğu bu kilidi doğrudan deler ve
+     deponun ÖLÇÜMÜ bu yönde: THE STARLESS CIRCLE'da yüz 14 sahnenin
+     yalnız 3'ünde okundu (Ekipman 4/10); ters yönde D95'te vizör
+     görünmez kılınınca iki bağımsız mercek "kask çıkarılmış" okudu.
+   ② Buğunun BİRİKİP ÇÖZÜLMESİ bir durum DEĞİŞİMİDİR ve ölçülmüş en
+     zayıf eksendir — tek klipte üretilmesi beklenmez.
+     Sayı ve kaynak: `KILAVUZ_REHBERI.md` §7 ("DEĞİŞEN NİTELİK").
+                                                         [ÖLÇÜLMÜŞ]
+   → BU DOSYA BUĞUYA İZİN VERMİYOR. §0② mutlak: "vizör açılmaz,
+     kapanmaz, TONLANMAZ, kaybolmaz" [D37 · D57] ve §1'in VISOR
+     INTERIOR LIGHT bloğu "sealed, in place and unchanged for the
+     whole take" diyor. Görünür nefes yukarıdaki GİYSİ hareketiyle
+     taşınır, camla değil.
+   ✅ ÇELİŞKİ KAPANDI — 04.09.2026 sahip kararı: `POLITIKA_VE_
+     URETILEBILIRLIK` §4.1④'ün ONAYLI kalemler listesinden "vizör
+     buğusu" ÇIKARILDI. Ekipman durum kilidi mutlak kalıyor; gövde
+     tepkisi kanalının nefes ayağı bu dosyadaki GÖRÜNÜR NEFES'tir.
+     Kayıt: `URETIM_ONCESI_ANALIZ/04_ARASTIRMA_BULGULARI.md` §TUR 11 ·
+     T11.5④.
+```
+
 ## 4.3 YÜRÜYÜŞ / DURUŞ — %84 doğrulukla okunan beden dili (≥ %10)
 
 İzleyici, yalnız eklem hızına ve postüre bakarak duyguyu %84 doğrulukla
@@ -203,6 +255,74 @@ yapamadığı hareketi yapar.
      BAŞ YÖNÜ       kask yere mi, hedefe mi bakıyor [D104 ile aynı kural]
 □ Z ekseni tercih edilir (kadraj derinliğine yürüme): lockoff'ta ölçek
   değişimini bedava üretir
+```
+
+### 🆕 04.09.2026 · HER DUYGU BEDENDEN AYNI GÜÇTE OKUNMAZ
+
+> Kayıt: `URETIM_ONCESI_ANALIZ/04_ARASTIRMA_BULGULARI.md` §TUR 11 ·
+> T11.3. ⚠️ TUR 11'in raporu bu sıralamayı TERS verdi (neşeyi en zayıf
+> gösterdi) ve dört aralığının hiçbirini kaynağa bağlayamadı; aşağıdaki
+> yön birincil kaynaktan düzeltilerek indi.
+
+Yukarıdaki %84 tek sayıdır ve duygudan bağımsızdır. Duruş literatürünün
+ölçtüğü şey ise bir **hiyerarşidir** — ve bu hattın yuva kararlarını
+doğrudan değiştirir:
+
+```
+BEDENDEN İYİ OKUNAN      öfke · üzüntü · MUTLULUK
+                         (statik duruşta en iyi postürlerde %90 üstü
+                          uzlaşma — Coulson 2004, J Nonverbal Behav)
+BEDENDEN ZAYIF OKUNAN    iğrenme (<%50, bazı postürlerde sıfır)
+                         korku (%15-26 bandı — Front Psychol 2020,
+                         "Body Matters in Emotion: Restricted Body
+                          Movement and Posture")           [ÖLÇÜLMÜŞ]
+
+⛔ VE BASINÇ GİYSİSİ KAYBI EŞİT DAĞITMAZ.
+   Hareket kısıtı, genel doğruluğu bir miktar düşürüyor ama kaybı
+   BASKINLIK bildiren duygularda (iğrenme, öfke) yoğunlaştırıyor.
+   [Front Psychol 2020 · "Body Matters in Emotion: Restricted Body
+    Movement and Posture" · denekler engelsiz katılımcılar]
+
+→ YUVA KURALI: EVA / basınç giysili bir sahneye ÖFKE ya da İĞRENME
+  vuruşu tek taşıyıcıyla yazılmaz. O vuruş alete devredilir
+  (`POLITIKA_VE_URETILEBILIRLIK` §4.1③ ekipman tepkisi) ya da
+  ikinci bir taşıyıcı zorunlu olur.
+→ ÜZÜNTÜ ve MUTLULUK omuz hattı + gövde açıklığıyla güvenle taşınır;
+  bu iki duygu bu hattın en ucuz kanalıdır.
+→ ⚠️ KORKU AYRI DURUYOR VE BU HATTIN EN SIK TAŞIDIĞI DUYGUDUR:
+  bedenden ZAYIF okunur, ama kaybı basınç giysisi YOĞUNLAŞTIRMAZ
+  (kayıp baskınlık duygularında toplanıyor). Korku vuruşu bedende
+  kalabilir; ÇİFT kanaldan taşınır — §1 bakış yönü (kaçırılmış bakış)
+  + §4.2 görünür nefes (kısa, sığ, omuz her seferinde kalkıyor).
+```
+
+```
+⭐ BEDEN SİNYALİ YÜZDEN ÖNCE VE YÜZÜN ÜSTÜNE OKUNUR.
+   Uyaranın belirmesinden ~115 ms sonra oksipital P1 bileşeni artıyor;
+   yüz ile beden ZIT duygu gösterdiğinde tanıma doğruluğu %81'den
+   %67'ye düşüyor — yani izleyici çelişkiyi bedenden çözüyor.
+   [Meeren, van Heijnsbergen & de Gelder 2005 · PNAS 102(45):16518 ·
+    n=12 · korku/öfke fotoğrafları]                       [ÖLÇÜLMÜŞ]
+   → Bu, §4'ün tamamının gerekçesidir: beden yüzün YEDEĞİ değil,
+     çelişki hâlinde KAZANAN kanaldır. Gövde satırı yazılmayan sahnede
+     yüz tek başına ne söylerse söylesin, izleyici gövdenin sessizliğini
+     okur.
+
+⭐ VE DORUKTA YÜZ AYIRT EDİCİ DEĞİLDİR.
+   Doruk yoğunluğunda pozitif ile negatif durum İZOLE YÜZDEN ayırt
+   EDİLEMİYOR; ayrımı yalnız gövde yapıyor — belirleyici değişken
+   ellerin açık mı yumruk mu olduğu.
+   [Aviezer, Trope & Todorov 2012 · Science 338(6111):1225 ·
+    uyaran: sayı kazanan/kaybeden profesyonel tenisçi fotoğrafları]
+                                                          [ÖLÇÜLMÜŞ]
+   → Doruk/kırılma yuvasında duygu yükü OMUZ + GÖVDE + ELE yazılır.
+     Göz bütçesi (§1) doruğa değil, kırılmanın ÖNCESİNE ve SONRASINA
+     dağıtılır.
+   ✅ 04.09.2026 sahip kararı: `SINEMATOGRAFIK_TEKNIK_KILAVUZ.md`
+     §13.1'in POV yasağı YERİNDE DURUYOR ama gerekçesi değişti —
+     artık "doruk anında yüz gerekir" değil, "POV lockoff gözlemci
+     dilini bozar ve GÖVDEYİ siler". Doruk yuvasında duygu yükü
+     omuz/gövde/eldedir. Kayıt: §TUR 11 · T11.5②.
 ```
 
 ## 4.4 KİŞİSEL EŞYA — otobiyografik hafıza protezi (≥ %5)
@@ -297,10 +417,14 @@ bu serinin kısıtlarıyla ÇATIŞMAZ; üçü de lockoff'un doğal ürünüdür.
 | "Güçlü diyalogla desteklenen açılış" | Replik bütçesi ve register haritası ayrı kısıt (SES_VE_DIYALOG_URETIM). İsim-istek-bedel bu seride GÖRSEL kodlanır (§3). |
 | Doğrudan kameraya bakış (direct gaze to lens) | Kararlılık için TEHDİDE bakış kullanılır; merceğe bakmak dördüncü duvarı kırar ve bu serinin gözlemci kamera dilini bozar. |
 | "Kuleshov için POV planı" | POV, kameranın karakterin gözüne geçmesidir; lockoff gözlemci dilini bozar. B planı POV DEĞİL, aynı uzamsal mantıkta ayrı kadrajdır (§2). |
+| 🆕 Yüzü vizör yansımaları/gölge ile PERDELEMEK, kadraj payını küçültmek, "kameraya 4 saniyeden fazla tutmamak" | Ders 79 tam tersini emrediyor ve deponun ÖLÇÜMÜ o yönde (THE STARLESS CIRCLE · UNBROKEN CITY · BLIND RETURN; ters yönde D95). Raporun dayanağı olan "5 saniye eşiği" doğrulanamadı — izlenebilen tek kaynak yalnız "birkaç saniye sonra fark oluştu" diyor; "sağ göz bölgesi" ve "4 saniye kuralı" raporun icadı. TUR 11 · T11.3. |
+| 🆕 "Neşe/umut bedenden en zayıf okunan duygudur (~%44-65)" | Kaynağı yok ve literatürün yönü TERS: mutluluk statik duruşta en iyi okunan üçlüdedir (Coulson 2004). Raporun tablosundaki dört aralığın hiçbiri bir çalışmaya bağlanamadı. Düzeltilmiş hiyerarşi §4.3'e indi. |
+| 🆕 "Yüzü tamamen kapatmak izleyici bağını KOPARIR" — belgelenmiş vaka olarak | Rapor tek çalışma, tek izleyici ölçümü, tek yapım notu vermedi; Darth Vader / Judge Dredd / Master Chief isimlerini sayıp sonucu ilan etti — ve o figürler sinemanın en güçlü karakter bağları arasında. Deponun opak vizör yasağının gerekçesi bu değil, D79'un ölçülmüş devamlılık/üretilebilirlik kilididir. |
+| 🆕 Solunum "parmak izi" %96,8 ve IR-UWB radar %76 duygu sınıflaması | İkisi de gerçek ama bu dosyanın işine yaramaz: %96,8 KİMLİK tanımadır ve 24 saatlik burun içi akış sensörüyle ölçüldü (Current Biology 2025); %76 makine sınıflamasıdır (şans %33) ve "IR" kızılötesi değil *Impulse Radio*. İkisi de kadrajdan okunabilecek bir şey ölçmüyor. Ayrıca raporun "1,8 bpm" satırı nabız değil, dakikadaki NEFES sayısıdır. |
 
 ---
 
-# 8. ✅ PLAN KONTROLÜ — bu kılavuzun 8 maddesi
+# 8. ✅ PLAN KONTROLÜ — bu kılavuzun 10 maddesi
 
 ```
 □ 1. Karakterin ROLÜ kostüm/ekipmanla ilk %10'da okunuyor mu
@@ -313,6 +437,11 @@ bu serinin kısıtlarıyla ÇATIŞMAZ; üçü de lockoff'un doğal ürünüdür.
 □ 7. "Her şey kayboldu" yuvası belirlendi mi — müziğin sustuğu, nefesin
      kaldığı sahne bu mu
 □ 8. Final/doruk yuvasında 1:10 ölçek kontrastı ve ≥10 s'lik tam klip var mı
+□ 9. 🆕 Nefes bütçesi ayrılan her sahnede GÖRÜNÜR nefes satırı yazıldı mı
+     (omuz + göğüs yükselişi) — ses tek başına küçük bir paya ulaşır
+     (sayı: HOOK §5⑥)
+□ 10. 🆕 Basınç giysili sahnede ÖFKE ya da İĞRENME vuruşu tek taşıyıcıya
+     bırakılmadı mı; doruk yuvasında duygu yükü omuz/gövde/elde mi (§4.3)
 ```
 
 ---

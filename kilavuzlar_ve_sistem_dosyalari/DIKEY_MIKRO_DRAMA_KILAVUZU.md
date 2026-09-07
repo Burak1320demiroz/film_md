@@ -21,6 +21,17 @@
    Araştırmanın 8 sahnelik vuruş tablosu §1'de 6 sahneye SIKIŞTIRILDI —
    düşen iki vuruş "yalancı rahatlama" ve ayrı bir "kriz" sahnesidir.
 
+   ⚠️ **04.09.2026 — BU SATIR BUGÜN KENDİ KAYNAĞIYLA ÇELİŞİYOR.**
+   Atıf verdiği `KILAVUZ_REHBERI` §2.1 artık "klip süresi bir TERCİH
+   değil ARACIN AYARI" diyor ve ölçülmüş üç teslim 10,005 s klip verdi
+   (64 · 64 · 65 s — D124). Yani "toplam 48,0 s" bugün ölçüme
+   dayanmıyor. Aynı ölü sayı `FINAL` §2 ve §3'ten bugün SİLİNDİ ve
+   yerine yüzde + format kartı adresi kondu; burada SİLİNMEDİ, çünkü
+   ızgarayı 6×8'de tutmak ya da ölçüme çekmek EDİTORYAL bir karardır
+   ve sahibindir. Karar verilene dek: **süre bu dosyadan değil format
+   kartından okunur**, ve 48 s'ye çapalanmış her zaman kodu (müzik
+   düşüşü · tohum · karşılık · döngü noktası) yeniden hesaplanır.
+
 ② KOMPOZİSYON ÇATIŞMASI KAYITLIDIR. Format kartı diyor ki: karakter ALT
    kısımda, kozmik ölçek ÜST kısımda. Araştırma diyor ki: dikkat çapası
    ekranın orta üçte birinde olmalı (göz sıçraması minimum). İkisi de
@@ -418,7 +429,7 @@ kalite işareti değil, **bir suçlama tetikleyicisidir.**
 
 ---
 
-# 8. ✅ PLAN KONTROLÜ — bu kılavuzun 8 maddesi
+# 8. ✅ PLAN KONTROLÜ — bu kılavuzun 12 maddesi
 
 ```
 □ 1. Altı sahnenin altısı da olay taşıyor mu — boş vuruş 0 mı (§1)
@@ -457,6 +468,6 @@ KARAKTER_VE_DUYGU_KILAVUZU.md          §1 göz bütçesi · §4 vekil kanallar
 FINAL_VE_PAYLASIM_KILAVUZU.md          §2 dikeyde döngü zorunlu · tohum bilgi penceresi
 FRAGMAN_KILAVUZU.md                    dikey fragman ayrı iş — bu kılavuz onu kapsamaz
 KAPAK_FOTOGRAFI_MIMARISI_KILAVUZU.md   §5 dikey güvenli alan
-QA_PROMPTLARI/1_KARE_QA_CRITIQUE_PROMPT.md (FORMAT: DİKEY)  dikey ölçüm merceği
+QA_PROMPTLARI/_KAYNAK/1_KARE_QA_CRITIQUE_PROMPT.md (FORMAT: DİKEY)  dikey ölçüm merceği
 DERSLER/07_KURGU_VE_ANLATI.md          D70 · D71 · D72 tam metin
 ```

@@ -1,6 +1,6 @@
 # 🖼️ T5 — ARKA PLAN KALİTE TABLOSU (derin tarama)
 
-> **Kaynak rubrik:** `../QA_PROMPTLARI/5_ARKA_PLAN_QA_CRITIQUE_PROMPT.md`
+> **Kaynak rubrik:** `../QA_PROMPTLARI/_KAYNAK/5_ARKA_PLAN_QA_CRITIQUE_PROMPT.md`
 > **Açılış:** 24.08.2026 — DERİN TARAMA sınıfının ilk iki merceğiyle birlikte
 >
 > **Ne ölçer:** "Ön plan sahneyi taşırken arka alan yerinde duruyor mu."
@@ -60,6 +60,12 @@ farkı burada da fark sayma.
 | **The Iron Slope** Ⓥ ⚠️ | 25.08.2026 | — | — | — | 3 | 3 | 3 | 4 | (6) | 4 | **3,8** | FIELD COLLAPSES |
 
 | **The Rose Coat** ⚠️ | 26.08.2026 | — | — | — | (5) | (7) | ⬜ | ⬜ | (6) | — | **—** | ⑩'DAN GEÇMEDİ |
+| **The Payload** Ⓥ ⛔ ⚠️ | 01.09 | 2 | — | — | 4 | 8 | 4 | 9 | 7 | 10 | **6,3** | ⬜ |
+| **The Skylight** Ⓥ ⛔ | 29.08 | — | — | — | 5 | 10 | 6 | 10 | 8 | 10 | **8,2** | ⬜ |
+| **The Still Swarm** Ⓥ ⛔ ⚠️ | 02.09 | 3 | 4 | — | 4 | 5 | 5 | — | — | 5 | **4,3** | ⬜ |
+| **The Thin Roof** Ⓥ ⛔ ⚠️ | 28.08 | — | — | — | 7 | — | 7 | — | — | 8 | **7,3** | ⬜ |
+| **The Upward Fall** Ⓥ ⛔ ⚠️ | 04.09 | 6 | 5 | 6 | 3 | 5 | 4 | 5 | 6 | 6 | **5,1** | ⬜ |
+| **The Healing Ground** Ⓥ ⛔ ⚠️ | 04.09 | — | — | — | 10 | 10 | 4 | 10 | 10 | 10 | **9,0** | ⬜ |
 
 > **The Rose Coat · 26.08.2026 · belgesiz koşu · ⚠️ ŞARTLI · matrise girmez**
 > Kayıt: [`01_FILM_RAPORLARI/THE_ROSE_COAT.md`](01_FILM_RAPORLARI/THE_ROSE_COAT.md)

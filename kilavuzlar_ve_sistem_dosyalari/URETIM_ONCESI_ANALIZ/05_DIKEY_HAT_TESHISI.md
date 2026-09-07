@@ -172,6 +172,14 @@ ilgilendirir, çünkü kadrajda ve kadraj dışında başka kimse yoktur*
 ⭐ Bir final "iyi" ya da "kötü" değildir — **birine ait** olmak
 zorundadır. On sekizinde de ait olacağı ikinci bir kişi yok.
 
+> 🆕 **04.09.2026 — bu hükmün ÇÖZÜM SATIRI artık var.** Kural bu dosyada
+> değil (burası teşhis dosyasıdır): muhatap `03_PLAN_ONCESI_KONTROL_LISTESI.md`
+> §B5'te dört seçenekle seçilir ve `prompt_kontrol` ⑰ kapısı olarak koşar.
+> Finale bakan yüzü `FINAL_VE_PAYLASIM_KILAVUZU.md` §4.1'dedir ve tek soru
+> sorar: B5'te seçilen muhatap SON KAREDE görünüyor mu? — Tek insan
+> kısıtında en ucuz muhatap **ortamın kalıcı değişen parçasıdır**
+> (B5 seçenek 4). Bu on sekiz film B5 kapısından ÖNCE yazıldı.
+
 ---
 
 # 3. SEBEP — dört üretim önlemi sessizce hikâye formatına dönüştü

@@ -45,9 +45,16 @@ Final cümlesi: gezegen onları sakladı, o onları TAŞIDI.
 
 ## ⚙️ FORMAT KARARLARI VE SAPMALAR
 
+> ⚠️ **04.09.2026 — BU FİLM KLASÖR DEĞİŞTİRDİ.** `yatay_7_9_dk_filmler/`
+> kapatıldı ve film `yatay_10_20_dk_filmler/`'e taşındı; o kartın bandı
+> aynı gün 10 dk'dan **7 dk'ya** açıldı, yani filmin 8:00'ı banda oturuyor.
+> Aşağıdaki üç sapma **değişmedi ve hâlâ geçerlidir** — yeni kartta bu
+> film bandın "kısa uç" emsalidir. Kapanan kartın dürüst kaydı:
+> `KILAVUZ_REHBERI.md` §2.4.
+
 ```
 1. 4 KISIM × 12 SAHNE (5 faz değil)
-   Klasör standardı 5 faz × 12 sahne. Bu film senin belirlediğin
+   Kart standardı 5 faz × 12 sahne. Bu film senin belirlediğin
    4 kısım yapısında. Dramatik olarak da uygun: düşüş / barınma /
    keşif / çıkış klasik bir hayatta kalma yayı.
 
@@ -59,7 +66,7 @@ Final cümlesi: gezegen onları sakladı, o onları TAŞIDI.
      sil; film 6:24'e iner, extend gerekmez.
 
 3. ÜRETİM: TEXT-TO-VIDEO (start/end frame zinciri DEĞİL)
-   7-9 dk klasörünün imza tekniği zincirleme. Ama 48 sahne için ~60
+   Kartın imza tekniği zincirleme. Ama 48 sahne için ~60
    çapa imajı gerekir ve bu, mevcut üretim sorunları (prompt uzunluğu,
    politika reddi) üstüne fazla yük. Bu film düz text-to-video.
    → Zincir tekniği THE_WAKING_GROUND'da kalıyor.

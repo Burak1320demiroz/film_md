@@ -14,11 +14,17 @@
 > Sıralama: PLAN → BIBLE → PLAN KONTROL → PROMPT.
 >
 > ⭐ **Bu filmin kaynağı depo içi değil DIŞ BİR FİLM ANALİZİDİR:**
-> `film_analizleri/ANALIZ_EDILEN_FILMLER/NOBODY_WAS_ALIVE_WHEN_WE_LANDED`
+> `kilavuzlar_ve_sistem_dosyalari/DIS_FILM_ANALIZI/NOBODY_WAS_ALIVE_DERS_SECKISI.md`
 > (69 dk · 20 parça · 66 rapor). Devralınan derslerin hangi sahneye
 > girdiği §0.19'da satır satır yazılıdır. Dersler hâlâ ADAYDIR —
 > LESSONS_LEARNED'a ancak kart G ile ve bu film ÜRETİLİP ölçüldükten
 > sonra girer.
+>
+> ⛔ **05.09.2026 — KAYNAK KLASÖR KALDIRILDI.** `film_analizleri/` depodan
+> çıktı (kart H2); ders seçkisi kurtarılıp yukarıdaki adrese taşındı.
+> 66 ham parça raporu ve `50_TAM_FILM_ANALIZI.md` **DEPODA YOKTUR**; git
+> geçmişinde durur:
+> `git show e9bcf36:film_analizleri/ANALIZ_EDILEN_FILMLER/NOBODY_WAS_ALIVE_WHEN_WE_LANDED/50_TAM_FILM_ANALIZI.md`
 
 ## 0.1 DÖRT SORU
 
@@ -576,7 +582,8 @@ TEK CÜMLELİK ÖNCÜL:
 
 ## 0.19 ⭐ DEVRALINAN DERSLER — dış film analizinden, sahne sahne
 
-> **Kaynak:** `film_analizleri/ANALIZ_EDILEN_FILMLER/NOBODY_WAS_ALIVE_WHEN_WE_LANDED/60_DERS_SECKISI.md`
+> **Kaynak:** `kilavuzlar_ve_sistem_dosyalari/DIS_FILM_ANALIZI/NOBODY_WAS_ALIVE_DERS_SECKISI.md`
+> (05.09.2026'da kurtarıldı; kaynak klasör `film_analizleri/` kaldırıldı — §0'daki kutu)
 > Bu tablo, seçkideki her dersin bu filmde NEREYE indiğini gösterir.
 > ⛔ Dersler hâlâ ADAYDIR: film üretilip ölçülmeden kart G'ye taşınmaz
 > ("bir dersin işe yarayıp yaramadığını ancak üretim gösterir").

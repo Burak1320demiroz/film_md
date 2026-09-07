@@ -1,4 +1,8 @@
-# 🏛️ 5 FAZ MİMARİSİ — 7-9 Dakikalık Filmler İçin Dramatik Yay
+# 🏛️ 5 FAZ MİMARİSİ — Faz Mimarisi Kullanan Filmler İçin Dramatik Yay
+
+> 04.09.2026: bu dosya `yatay_7_9_dk_filmler/kilavuzlar/`'daydı; o klasör
+> kapanınca buraya alındı. Yay 5 faz / ~8 dakika üzerine kuruludur; 10-20 dk
+> hattı bunu PERDE katmanının altına alır (format kartı §2.5).
 
 > 60 sahnelik bir filmi 5 eşit faza bölmek yeterli değildir.
 > Her fazın **kendi işlevi, kendi tempo imzası ve kendi görsel dili** olmalıdır.

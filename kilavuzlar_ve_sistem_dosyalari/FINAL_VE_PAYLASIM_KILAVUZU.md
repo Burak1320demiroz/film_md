@@ -83,17 +83,98 @@ bu yüzden en pahalı ve en değerli sinyaldir.
 ```
 KARAR KURALI — plana "FİNAL TİPİ" satırı yazılır
 
-  dikey shorts (48 s)   DÖNGÜ zorunlu · üzerine TWIST eklenebilir
+  dikey shorts          DÖNGÜ zorunlu · üzerine TWIST eklenebilir
+                        (süre KILAVUZ_REHBERI §2.1'den okunur — araçtan
+                         ÖLÇÜLÜR [D124]; bu dosya süre yazmaz)
   2-4 dk                TWIST veya MUĞLAK · döngü opsiyonel
   3-5 dk                TWIST + tohum bilgi (en yüksek getiri)
   7-9 dk                MUĞLAK — uzun formda twist'in bedeli, izleyicinin
                         7 dakikalık yatırımının boşa çıkma riskidir
+  10-20 dk              KAPALI 🆕 04.09.2026 — bu tek bantta kapalı final
+                        BEDELLİ DEĞİL, VARSAYILANDIR: 16 dakikalık yatırımın
+                        sonucu görülmeden kesilirse tatminsizlik kanalın
+                        sonraki filmlerine biner. Üzerine tohum bilgi
+                        eklenir; twist opsiyoneldir.
+                        ⛔ DÖNGÜ bu bantta varsayılan DEĞİLDİR — ölçülmedi.
   fragman               hiçbiri — fragmanın işi çözmemektir (FRAGMAN §1.2)
 ```
 
 > ⚠️ **Kapalı final yasak değil, bedelli.** Seride bir filmin kapanması
 > gerekiyorsa (seri kapanışı, tematik zorunluluk) kapalı final yazılır ve
 > plana bedeli not edilir: bu film paylaşım değil, güven satın alır.
+> 🆕 **Tek istisna 10-20 dk bandıdır** (yukarıdaki karar kuralı): orada
+> bedel ters yöne biner.
+
+---
+
+## 2.1 🆕 KAPANIŞ BÜTÇESİ — doruktan son kareye (04.09.2026)
+
+> **Kaynak:** TUR 10 süzme kaydı + deponun kendi ölçümleri.
+> Açılış tarafı `HOOK_VE_ILK_SAHNE_KILAVUZU.md` §1.1'dedir ve burada
+> tekrarlanmaz.
+
+**Kapanış bütçesi** = doruk BİTTİKTEN sonra son kareye kadar kalan
+sürenin toplam süreye oranı — yani çözülme payı.
+
+| Band | Kapanış bütçesi | Sahne karşılığı | Dayanak |
+|---|:--:|:--:|---|
+| dikey shorts | **ayrı sahne YOK** · S5'in içinde ~2-5 s | 0 ek sahne | DIKEY §1 (S5 = doruk + döngü kurulumu) · SENARYO §5② (son karede hareket durmaz) |
+| yatay 2-4 dk | koda YOK **%8-13** · koda VAR **%17** | 1-2 · 3 | KILAVUZ_REHBERI §2.2 koda hükmü · THE STARLESS CIRCLE S15-S17 (ölçüm) |
+| yatay 3-5 dk | **%8-12** | 2-3 | THE BLUE DRIFT · THE BLACK CRADLE planları: "doruk sonrası yalnız 3 sahne (30 s, %12)" (ölçüm) |
+| yatay 7-9 dk | **%5-7** | 3-4 | TUR 2 oran seti: çözülme %93+ |
+| yatay 10-20 dk | **%7-10** | 8-12 | TUR 2 oran seti + YERÇEKİMİ FAZ 10 ZEMIN = 96 s = %10 (ölçüm) |
+
+```
+⭐ YÜZDE SÜREYLE DÜŞER, SAHNE SAYISI DÜŞMEZ.
+   Çözülmenin taban birimi bir sahnedir ve o birim sabittir; bu yüzden
+   kısa bantta tek sahne %17, uzun bantta tek sahne %1 eder. Bütçe
+   YÜZDEYLE yazılır, sahne sayısı format kartından TÜRETİLİR.
+
+⛔ AYRI ÇÖZÜLME SAHNESİ AÇMA KURALI — dikeyde 7. sahne yoktur.
+   Kapanış S5'in ikinci yarısıdır; ayrı bir sahne açmak ızgarayı kırar.
+```
+
+```
+⛔ TUR 10'UN KAPANIŞ TABLOSU İNMEDİ — dürüst kayıt:
+   ① Rapor sabit SANİYE verdi (7-9 dk: 30-40 s · 10-20 dk: 45-60 s).
+      Sabit saniye ile sabit yüzde aynı bantta duramaz: 45-60 s,
+      10 dk'da %7,5-10, 20 dk'da %3,75-5 eder. Raporun kendi kuralı
+      ("%5'in altına çekilmeli") kendi tablosunun hiçbir yerinde
+      sağlanmıyordu.
+   ② 10-20 dk için verdiği 45-60 s, deponun TUR 2'de zaten kabul ettiği
+      oran setiyle ve tek 10-20 dk filmiyle (YERÇEKİMİ) çelişti.
+      13_ dosyasının "4 ↔ 1/2 çelişkisi" kapısı bu satırı düşürdü.
+   ③ Tip başına verilen yüzdeler (%0 · %0,5 · %1 · %5 · %10+) hiçbir
+      banda çapalanmamıştı; aynı yüzde 60 s'lik ve 960 s'lik filmde
+      16 kat farklı saniye demek.
+   ④ Raskin ve Cooper-Dancyger'in adı "çözülme gereksizdir" gerekçesi
+      olarak kullanıldı ama tek bir sayfa, alıntı ya da ölçü verilmedi.
+      Kuramcı adı kılavuza GEREKÇE olarak yazılmaz.
+```
+
+---
+
+## 2.2 🆕 SON PLAN TİPOLOJİSİ — kısıt filtresinden geçenler (04.09.2026)
+
+> Plana **"SON PLAN TİPİ"** satırı yazılır. Final TİPİ (§2) *ne söylediğini*
+> seçer; son plan TİPİ *nasıl bittiğini* seçer. İkisi ayrı kararlardır.
+
+| Son plan tipi | Ne yapar | Kısıtlı formatta | Not |
+|---|---|:--:|---|
+| **İlk kadraja dönüş** | Çember kapanır; değişimin imkânsızlığı ya da döngü | ✅ **en uygun** | Döngünün doğal hâli. Çift kartıyla birlikte yazılır. |
+| **Nesne eki** | Figür kadrajı terk eder, anlam geride kalan nesneye biner | ✅ | Odak figürden nesneye kayar; nesne `ONERME_VE_NOVUM` §2 novum taşıyıcısıyla çakışmamalı. |
+| **Pratik karartma** | Diegetik ışığın kendisi söner (fener, panel, güç) | ✅ | Optik kararma DEĞİL — mekânın ışığı biter. Döngüde karanlık kareye akar. |
+| **Donma** | Hareketin zirvesinde kinetik enerji askıya alınır | ⚠️ | Dikeyde döngüyü kırar (hareket durur). Yalnız yatayda. |
+| **Tutulan geniş plan** | Figür mekânın içinde yutulur; izleyici anlam arar | ⚠️ | Mekanizması SÜREdir; 8-10 s'lik tek planda etkisi sıkışır. |
+| **Çıkıp giden figür** | Karakter kadrajı terk eder, boş kadraj kalır | ⚠️ | İlk kare boş DEĞİLSE döngüyü kırar. |
+| **Kadraj dışına bakış** | Dördüncü duvara yönelme | ⛔ | Vizör kapalıyken yüz yok; yalnız postürle ikame edilir ve zayıf kalır. |
+
+```
+⛔ SÜRE İNMEDİ. Raporun tip başına verdiği tutma süreleri (5-7 sn,
+   8-12 sn, 150 sn…) ölçüm değildi: aynı filmin AYNI son planı iki
+   ayrı tipe bölünüp iki farklı süreyle yazılmıştı. Son planın süresi
+   format kartından gelir — bu tablo süre yazmaz.
+```
 
 ---
 
@@ -114,12 +195,29 @@ SAYISAL KİLİT
   □ GERİ DÖNÜŞ   final, tohumun BULUNDUĞU yere görsel olarak geri döner
 ```
 
-| Format | Toplam | Tohum penceresi | Not |
-|---|:--:|:--:|---|
-| dikey shorts | 48 s | **5-7 sn** (S0 sonu / S1 başı) | hook kapandıktan hemen sonra |
-| 2-4 dk | ~150 s | **15-22 sn** | ~S2 |
-| 3-5 dk | ~250 s | **25-38 sn** | ~S3 |
-| 7-9 dk | ~480 s | **48-72 sn** | faz 1 içinde |
+| Format | Tohum penceresi | Nerede |
+|---|:--:|---|
+| dikey shorts | **%10-15** | S0 sonu / S1 başı — hook kapandıktan hemen sonra |
+| 2-4 dk | **%10-15** | ~S2 |
+| 3-5 dk | **%10-15** | ~S3 |
+| 7-9 dk | **%10-15** | faz 1 içinde |
+| 10-20 dk 🆕 | **%10-15** | faz 1-2 içinde |
+
+> ⛔ **SANİYE KARŞILIĞI BURADA YAZILMAZ.** Pencere, `HOOK` §1.1'in açılış
+> bütçesiyle AYNI aralıktır ve saniye tablosu orada durur. Bir sayı tek
+> dosyada yaşar; burası pencerenin NEREDE olduğunu söyler, KAÇ SANİYE
+> olduğunu değil.
+
+> ⚠️ **04.09.2026 DÜZELTMESİ — "48 s" SİLİNDİ.** Bu tablo dikey filmi
+> 48 saniye sayıyordu; `KILAVUZ_REHBERI` §2.1 ve D124 ise ızgaranın
+> ARAÇTAN ölçüldüğünü ve ölçülmüş üç teslimin 64/64/65 s verdiğini
+> yazıyor. 48 s'ye çapalanmış her saniye o gün ölmüştü. Pencere artık
+> yüzdeyle durur; saniye toplam süreden hesaplanır ve toplam süre TEK
+> yerde yazılıdır: format kartı.
+>
+> ⭐ **VE PENCERE KATALİZÖRLE AYNIDIR** (`HOOK` §1.1): tohum katalizörden
+> hemen ÖNCE ekilir, katalizör onu görünmez kılar. İkisi aynı planlama
+> anında yazılır.
 
 > Çalışma belleği 40-50 saniye sonra o kareyi net hatırlamaz — tekrar izleme
 > tam olarak bu hatırlayamamadan doğar. Tohum çok net verilirse izleyici
@@ -152,6 +250,43 @@ tek meşru yol kalır: **görsel ahlaki/mantıksal ikilem.**
 > S11: görüşü nefese takas). O sahne zaten bir ikilemdi; skoru düşüren şey
 > ikilemin yokluğu değil, **bedelin taşıyıcı kodasının kurguda bozuk blokta
 > kalmasıydı.** İkilem kurulur, bedel GÖRÜLÜR, ikisi de kurguya girer.
+
+## 4.1 🆕 FİNALİN MUHATABI — nerede seçilir (04.09.2026)
+
+**Mekanizma:** kazanılan ya da kaybedilen şeyin izleyicide karşılık
+bulması için değişime şahitlik eden bir muhatap gerekir. `05_DIKEY_HAT_TESHISI`
+§2.5 bunu ölçtü: on sekiz dikey finalin on sekizinde de kazanılan şey
+**yalnız o tek kişiyi** ilgilendiriyor, çünkü kadrajda ve kadraj dışında
+başka kimse yok. Bir final "iyi" ya da "kötü" değildir — **birine ait**
+olmak zorundadır.
+
+```
+⛔ MUHATAP BU DOSYADA SEÇİLMEZ — kapısı zaten kurulu:
+   03_PLAN_ONCESI_KONTROL_LISTESI.md §B5 (İSTEK · ENGEL · BEDEL · MUHATAP)
+   ve prompt_kontrol ⑰ kapısı olarak koşuyor. Dört seçenek oradadır.
+
+FİNALE BAKAN YÜZÜ ŞUDUR — ve tek soru sorar:
+   □ B5'te seçilen muhatap SON KAREDE görünür mü?
+     Görünmüyorsa final o muhataba ait değildir; ya son kare ya B5 yanlış.
+
+⭐ Tek insan kısıtında en ucuz muhatap ORTAMIN KALICI DEĞİŞEN PARÇASIDIR
+   (B5 seçenek 4): yerde kalan iz, vizördeki buğu, düşen ve yuvarlanan
+   nesne, silinmeyen patika. Son kare bu izi GÖSTERİR.
+```
+
+```
+⛔ TUR 10'UN MUHATAP TABLOSU İNMEDİ — dürüst kayıt:
+   Raporun "Mekânın Hafızası" çözümü B5'in dördüncü seçeneğinin aynısıydı
+   → ikinci kez inmedi. "Antropomorfik nesne" (topa yüz çizmek) D13/D45
+   metin-yüz yasaklarına çarptı. "Belirsiz fail (uzanan el)" satırında
+   rapor kendi kendisiyle çelişti: gövde metni "ikinci insan uzvu yok,
+   geçersiz" derken tablo "kurulabilir" yazıyordu — yalnız tablo
+   okunsaydı 18/18 ölçülmüş sıfır-ikinci-insan kuralı tek satırda
+   delinirdi. Gerçekten yeni tek öneri "seyircinin şahitliği (postür)"
+   idi ve raporun kendi etiketiyle ölçümsüz bir sentezdir; B5'e beşinci
+   seçenek olarak eklenmesi SAHİBİN KARARIDIR (kapı betiğe inmiştir,
+   seçenek eklemek betiği de değiştirir).
+```
 
 ---
 
@@ -239,10 +374,14 @@ SONUÇ ZİNCİRİ
 | Twist için ani renk/palet kırılması | Novum taşıyıcı kuralı (ONERME_VE_NOVUM §2) — twist somut nesne/ölçek değişimiyle verilir, palet kaymasıyla değil. |
 | Muğlaklığı "hiç cevaplamayarak" büyütmek | §1: açık kalan soru sayısı 1. İki ve üzeri, aldatılma hissi ve paylaşım kaybı demektir. |
 | Yorumları okurken videonun arkada dönmesine güvenmek | Bu bir dağıtım davranışı; plana yazılabilir bir tasarım kararı değil. Ölçümü YAYIN_VE_PERFORMANS'ta. |
+| 🆕 3-5 dk bandında final tipini KAPALI'ya çevirmek | §2 tablosu kapalı finali "tek başına kullanılmaz" diye işaretliyor ve 3-5 dk için TWIST + tohum diyor; gerekçesi §5'teki Xi vd. 2024 ölçümü (102.031 video). Ölçümlü bir kural, ölçümsüz bir tasarım önerisiyle değiştirilmez. (TUR 10) |
+| 🆕 "TikTok %70 tamamlanma eşiği zorunlu" | Raporun kendi tablosu deponun süre bandına %40-50 diyordu; aynı rapor iki farklı sayı verdi. Ayrıca eşikler bu dosyada değil YAYIN_VE_PERFORMANS §2'de durur (§0①). (TUR 10) |
+| 🆕 "Döngü 10-20 dk'da abonelik oranlarını sıfırlar" | Vaka yok, ölçüm yok, kaynak yok. Bandın döngü kararı "ölçülmedi" gerekçesiyle yazıldı; raporun cümlesi alıntılanmadı. (TUR 10) |
+| 🆕 Son plan tiplerine tutma süresi yazmak | Aynı filmin AYNI son planı iki tipe bölünüp iki farklı süreyle verilmişti; ölçüm değildi (§2.2). (TUR 10) |
 
 ---
 
-# 8. ✅ PLAN KONTROLÜ — bu kılavuzun 8 maddesi
+# 8. ✅ PLAN KONTROLÜ — bu kılavuzun 12 maddesi
 
 ```
 □ 1. FİNAL TİPİ satırı plana yazıldı mı (§2 karar kuralı)
@@ -253,6 +392,13 @@ SONUÇ ZİNCİRİ
 □ 6. İKİLEM üç şartı da sağlıyor mu — bedel kadrajda görünüyor mu (§4)
 □ 7. PAYLAŞIM SAHNESİ belirlendi mi: huşu mu kaygı mı (ikisi değil)
 □ 8. Final sahnesi kurgu kapısının KESİLEMEZ listesinde mi [D62]
+□ 9. 🆕 KAPANIŞ BÜTÇESİ bandına uyuyor mu (§2.1) — dikeyde ayrı çözülme
+     sahnesi açılmadı mı?
+□ 10. 🆕 SON PLAN TİPİ satırı yazıldı mı ve kısıt filtresinden geçiyor
+     mu (§2.2)?
+□ 11. 🆕 B5'te seçilen MUHATAP son karede görünüyor mu (§4.1)?
+□ 12. 🆕 ÇİFT KARTI dolduruldu mu — son kare ilk kareyle aynı koordinatta
+     mı (ACILIS_KAPANIS_CIFTI_KILAVUZU.md §5)?
 ```
 
 ---

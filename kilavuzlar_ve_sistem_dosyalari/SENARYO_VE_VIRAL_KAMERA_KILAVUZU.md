@@ -199,7 +199,7 @@ PLAN KURALI — her shorts planına bir LOOP SATIRI yazılır:
    katmana iner ya da 1 sn mutlak sessizlikle keser — sessizlik de
    loop'lanır. GOOGLE_FLOW_MUSIC kılavuzuyla birlikte karar verilir.
 ④ JENERİK KARTI = LOOP KATİLİ: karta harcanan saniye hem metin ihlali
-   hem 0:48→0:00 bağlantısının ölümüdür [Ders 70 zaten yasaklıyor].
+   hem son kare → 0:00 bağlantısının ölümüdür [Ders 70 zaten yasaklıyor].
 ⑤ Işık sürekliliği loop'la ÇELİŞEBİLİR: gün batımına ilerleyen film
    (örn. Wrong Shadow S5 akşam ↔ S0 öğle) kadrajla değil KOMPOZİSYONLA
    loop'lanır — son kare siluet/geometri olarak ilk kareye benzer,

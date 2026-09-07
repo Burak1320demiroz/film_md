@@ -1,6 +1,6 @@
 # 🎯 T7 — AKSİYON KALİTE TABLOSU (risk tetikli tarama)
 
-> **Kaynak rubrik:** `../QA_PROMPTLARI/7_AKSIYON_QA_CRITIQUE_PROMPT.md`
+> **Kaynak rubrik:** `../QA_PROMPTLARI/_KAYNAK/7_AKSIYON_QA_CRITIQUE_PROMPT.md`
 > **Açılış:** 01.09.2026 — aksiyon mercekleri sınıfının ilk yarısı
 >
 > **Ne ölçer:** "İzleyici ne olduğunu anlatabilir mi." Tek yöntemi ANLATIM

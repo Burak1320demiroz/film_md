@@ -41,6 +41,15 @@
 #  (kural ①). Bu yorumda tutulan her oran bir hafta içinde bayatlar.
 #     ⑩ KURULUM ÇEŞİTLİLİĞİ  ardışık ikili aynı kurulum (§3) ·
 #                            kurulum sayısı bandı (§4)
+#  ─── 05.09.2026 · ⑩'A DÖRDÜNCÜ AYAK (sahip kararı — dört soru onaylandı) ──
+#  Teşhis sahibin: "durmadan 10 saniyede bir bambaşka bir kamera açısına
+#  geçmesi kafa karıştırıyor." Ölçüm: 1.406 sahne / 1.287 kesme, kesmelerin
+#  neredeyse tamamı YENİ bakış noktasına; 87 uzun dosyanın 63'ü §4 üst
+#  bandının üstünde ve hiçbiri durmuyor (üst bant NOT'tu). Üç kapı
+#  çeşitliliğe itiyordu, dönüşe iten sıfır kapı vardı.
+#     ⑩④ KURULUM İSKELETİ    küme ≥2 · dönüş ≥%40 · işaret satırları ·
+#                            aynı harf = aynı ölçülen kurulum (§3 🕰️ · §4b · §7 ⑥)
+#                            ⛔ YALNIZ 'KURULUM İSKELETİ:' beyan eden dosyada koşar
 #     ⑪ AÇI SÖZLÜĞÜ          kaç farklı açı TİPİ kullanılmış (§2)
 #     ⑫ ABARTI EŞİĞİ         dutch 35°+ · alt açı 45°+ · üst açı 45-60° (§5)
 #     ⑬ TEMA KAPISI          TEMA satırı + en az 3 sahne indeksi (§5/§9)
@@ -53,6 +62,13 @@
 #     ⑲ KİMLİK YIĞINI       tek pencerede ≥4 kişi özniteliği (boy·ten·saç·yaş·yüz)
 #                           → "ünlüyü tarif ederek isteme" kalıbı; OMNI reddetti
 #     ⑳ ZORLANMA KANALI     efor fiili var ama gövde tepkisi cümlesi yok
+#     ⑳b DEĞİŞİM KAPISI     imaj promptu değişimin SONRASINI yazıyor (I2V'de
+#                           imaj t=0'dır) — 05.09.2026 [D179]
+#     ㉑ MÜHÜR KAPISI       mühürlü filmde uzva ANATOMİ ayrıntısı yazılıyor ama
+#                           ±12 kelimede örtü adı yok · çıplak-deri negatifi
+#                           üç sınırı birden yazmıyor — 05.09.2026 [D175]
+#     ㉒ YÜZEY RENK KAPISI  IŞIK bloğu biyom düzlemine (floor/ground/wall) RENK
+#                           atıyor; renk ENVIRONMENT'ın işidir — 05.09.2026 [D176]
 #  ─── 01.09.2026 · POLİTİKA KAPISI (Ders 123 — "betik göremez" denilen yer) ──
 #     ⑯ POLİTİKA SÖZLÜĞÜ     T1/T2 tetikleyici sayımı (NEGATIVE bloğu DÂHİL) ·
 #                            gövdeye yönelmiş şiddet fiili · milliyet · kurum ·
@@ -339,9 +355,17 @@ TEXT_KAPSAM = re.compile(
 BOYUT_KELIMESI = re.compile(
     r"\s*(across|wide|in width|in diameter|thick|deep|in depth|long)\b",
     re.IGNORECASE)
+# ⚠️ 04.09.2026 (TUR 9 denetimi): sözlüğe YAPI ADLARI eklendi.
+#    Sebep ölçülmüş bir kör noktaydı: Ders 32 image prompta
+#    "door height = 2.1m · ramp angle = 25 degrees" yazdırıyordu ve bu
+#    dizge sözlükte OLMADIĞI için kapıdan 0 FIX ile geçiyordu — D138'in
+#    kendi anlattığı "imza KELİMEYİ arıyordu, KAPSAMI değil" arızasının
+#    tekrarı. Ders 32 aynı gün nesne-göreli birime çevrildi.
 ISARET_ADI = re.compile(
     r"\b(fracture|crack|ring|circle|arc|groove|seam|joint|marking|stripe|"
-    r"band|line|scar|score|furrow|scratch|etch)\b", re.IGNORECASE)
+    r"band|line|scar|score|furrow|scratch|etch|"
+    r"hatch|hull|door|ramp|panel|truss|module|port|handrail|handhold|"
+    r"window|airlock|radiator|strut|mast|antenna|berm)\b", re.IGNORECASE)
 
 # ─── D79 KASK BLOĞU ────────────────────────────────────────────────
 # Ders 79 (06.08.2026): Bible'da yasaklamak YETMEDİ — Unbroken City ve
@@ -769,9 +793,95 @@ ZORLANMA_IZI = re.compile(
     r"\b(?:rear|back)\s+boot\s+loads?\b|\bknee\s+bends?\s+before\b|"
     r"\bbreaths?\s+per\b|\b(?:slower|shorter)\s+than\s+the\s+first\b|"
     r"\bworking\s+breath\b|\bagainst\s+the\s+glove'?s?\s+own\s+stiffness\b|"
-    r"\bbraced?\b[^.]{0,30}\b(?:boot|leg|hip|weight)\b",
+    r"\bbraced?\b[^.]{0,30}\b(?:boot|leg|hip|weight)\b|"
+    # 04.09.2026 · TUR 11 — GÖRÜNÜR NEFES (KARAKTER_VE_DUYGU §4.2):
+    # giysinin omuz/göğüs kafesinin periyodik yükselişi de bir gövde
+    # tepkisidir; kılavuz bu kalıbı emrediyordu, sözlük tanımıyordu.
+    r"\b(?:chest|shoulders?)\b[^.]{0,40}\b(?:rise|rises|rising|lift|lifts|lifting)\b",
     re.IGNORECASE)
 
+
+
+# ─── ㉑ MÜHÜR KAPISI [Ders 175 · 05.09.2026] ────────────────────────
+# THE UPWARD FALL S22: 3,2 atm solunamaz atmosferde, kaskı 25/25 kapalı
+# adamın ÖNKOLU bilekten yukarısı ÇIPLAK DERİ üretildi. Sekiz merceğin
+# sekizi gördü, hiçbiri yazmadı.
+# ⭐ MEKANİZMA: dersin kendi reçetesi arızayı üretti. D169 efor sözlüğünün
+#    ÖNKOL satırı "the forearm tendons stand out THROUGH THE GLOVE" —
+#    bu bir eldiven tarifi değil, bir SAYDAMLIK tarifidir. Model tendonu
+#    görünür kılmak için eldiveni değil DERİYİ çizdi.
+MUHUR_BAGLAM = re.compile(
+    r"\b(?:sealed|pressuris|pressuriz|unbreathable|vacuum|"
+    r"surface suit|pressure suit|helmet)\b", re.IGNORECASE)
+# ⚠️ KALİBRASYON (05.09.2026 · üç hatta koşuldu, 720 → 12 vaka):
+#   ① shoulder/arm/neck ÇIKARILDI — kadraj ve ışık cümlelerinin sabit
+#      malzemesi ("the light rims his shoulders"), mühürle ilgisi yok: 411 vaka.
+#   ② Kalan üç uzuv MÜHÜR SINIRIDIR: eldiven↔kol, yaka↔boyun, bot↔ayak.
+#   ③ Tetik uzvun ADI değil, uzva yazılan ANATOMİ AYRINTISIDIR — D175'in
+#      mekanizması tam buydu: "tendons stand out" modele DERİYİ çizdirdi.
+#      Anatomi ayrıntısı olmayan uzuv adı ("his wrist turns") deri üretmez.
+GOVDE_ADI = re.compile(r"\b(forearms?|wrists?|ankles?)\b", re.IGNORECASE)
+ANATOMI_IZI = re.compile(
+    r"\b(?:tendons?|skin|veins?|muscles?|flesh|knuckles?|pores?|hairs?|"
+    r"bare|naked|freckle|scar|goose|sinew)\b", re.IGNORECASE)
+ORTU_ADI = re.compile(
+    r"\b(?:sleeves?|cuffs?|suits?|gloves?|gloved|seals?|sealed|"
+    r"ring|collar|fabric|shell)\b", re.IGNORECASE)
+# çıplak-deri negatifinin ÜÇ sınırı — biri eksikse mühür delinir
+DERI_BOLGELERI = {
+    "yaka":  re.compile(r"above the collar|at the collar|neck seal", re.IGNORECASE),
+    "bilek": re.compile(r"at the wrist|wrist seal|between glove and sleeve", re.IGNORECASE),
+    "bilek_ayak": re.compile(r"at the ankle|ankle seal|boot cuff", re.IGNORECASE),
+}
+SAYDAMLIK_TUZAGI = re.compile(
+    r"\bthrough the (?:glove|sleeve|suit|shell|fabric)\b", re.IGNORECASE)
+
+
+# ─── ㉒ YÜZEY RENK KAPISI [Ders 176 · 05.09.2026] ───────────────────
+# THE UPWARD FALL: WORLD bloğu zemini renksiz bıraktı, LIGHTING bloğu
+# "the PALE GREY FLOOR" dedi. Model ilk yarıda birine, ikinci yarıda
+# ötekine sadık kaldı — film ortasında biyom değişti. Kusur 25 promptun
+# 25'indeydi ve üç mercek bunu SAHNE kusuru sanıp S20/S21'i kesmeyi önerdi.
+# ⭐ Kontrast garantisi yüzeyin RENGİNİ değil, ÖZNENİN OKUNURLUĞUNU söyler.
+YUZEY_ADI = re.compile(r"\b(floor|ground|wall|walls|sky|hull|ceiling)\b", re.IGNORECASE)
+# ⚠️ KALİBRASYON (05.09.2026): "aynı yüzey iki renk taşıyorsa BLOCK" kuralı
+#   D176'NIN KENDİ VAKASINI KAÇIRIYOR — orada renk cümlesi TEKTİ (WORLD
+#   zemini renksiz bıraktı, LIGHTING "PALE GREY FLOOR" dedi). Yakalanabilir
+#   olan asıl kural BLOK YETKİSİDİR: yüzeyin rengi ENVIRONMENT/WORLD'ün
+#   işidir; LIGHTING bloğu ışığı tarif eder, yüzeye RENK ATAMAZ.
+#   Ayrıca renk çatışmasında DEĞER kelimeleri (dark/pale/bright) sayılmaz —
+#   bir duvar hem "pale grey" hem gölgede "dark" olabilir; çatışma HUE ister.
+ISIK_BLOGU = re.compile(r"^(?:LIGHTING|LIGHT|ISIK|IŞIK)\s*:.*?(?=^[A-Z⭐][A-Z ]{2,}:|\Z)",
+                        re.IGNORECASE | re.MULTILINE | re.DOTALL)
+DEGER_KELIMESI = {"pale", "dark", "bright", "light", "deep"}
+BIYOM_YUZEYI = re.compile(r"\b(floor|ground|walls?)\b", re.IGNORECASE)
+RENK_SIFATI = re.compile(
+    r"\b(black|white|grey|gray|brown|red|blue|green|amber|ochre|rust|"
+    r"pale|dark|bright|charcoal|slate|ash|sand|copper|golden|silver|"
+    r"olive|violet|crimson|umber|beige|ivory|tan)\b", re.IGNORECASE)
+
+
+# ─── ⑳b DEĞİŞİM KAPISI [Ders 179 · 05.09.2026] ─────────────────────
+# THE HEALING GROUND: sahnenin VIDEO promptu değişimi doğru yazdı
+# (0.0s "a short white vapour plume stands at his hip" → 2.0s "the plume
+# thins, drops and goes out"). Aynı sahnenin İMAJ promptu ise
+# "There is no vapour plume at his hip" diyordu — yani değişimin
+# SONRASINI. I2V hattında imaj t=0'dır: modelden başlangıç karesinde
+# BULUNMAYAN bir tüyü söndürmesi istendi. Göğüs kapağı hiç açılmadı,
+# bedel hiç ekrana gelmedi, film "kamera taşıyıcı" olarak okundu.
+IMAJ_YOKLUK = re.compile(
+    r"\bthere is no ([a-z][a-z \-]{2,28}?)\b|"
+    r"\bno ([a-z][a-z \-]{2,28}?) (?:at|on|under|around) (?:his|her|their|the)\b",
+    re.IGNORECASE)
+# ⚠️ KALİBRASYON (05.09.2026): kapı AYRIK NESNE arar. Soyut adlar
+#   ("no fill light" · "the ground" · "the surface") sönen bir şey değildir
+#   ve 26 ateşlemenin 9'unu üretiyordu.
+SOYUT_AD = {"fill", "light", "ground", "surface", "shadow", "sound", "air",
+            "wind", "motion", "movement", "colour", "color", "detail", "texture",
+            "background", "foreground", "space", "area", "edge", "line"}
+SONME_FIILI = re.compile(
+    r"\b(?:goes? out|go out|went out|thins?|dies?|fades?|drops? and|"
+    r"stops?|closes?|shuts?|seals?|empties|drains?|clears?)\b", re.IGNORECASE)
 
 def kamera_cumleleri(govde):
     """Promptun yalnız KAMERA cümleleri (pozitif gövdeden)."""
@@ -799,6 +909,84 @@ def _ilk(desen, metin):
     return re.sub(r"\s+", " ", m.group(0)).lower() if m else None
 
 
+# ─── SAYI NORMALİZASYONU (yalnız kurulum imzası için) ──────────────
+# ⛔ 05.09.2026 · ÖLÇÜLMÜŞ ARIZA. Depo mesafeyi/yüksekliği İKİ biçimde
+#    yazıyor: "3 metres away" ve "three meters away". YUKSEKLIK/MESAFE
+#    desenleri yalnız RAKAM tanıyor, yazıyla yazılanı görmüyor. Sonuç:
+#    THE SECOND SHIP FAZ_03'te dört metreden ve üç metreden çekilmiş iki
+#    sahne "aynı kurulum" göründü ve BLOCK yedi; FAZ_07'de sabit bir plan
+#    ile bir push-in aynı sayıldı. İmza karşılaştırmadan önce sayılar
+#    rakama çevrilir — "two and a half metres" ile "2.5 m" aynı yerdir
+#    [ACI_YAYI §7 ⑥: dönüş ancak geometri BİREBİR aynıysa dönüştür].
+_SAYI_BIRIM = {
+    "zero": 0, "one": 1, "two": 2, "three": 3, "four": 4, "five": 5, "six": 6,
+    "seven": 7, "eight": 8, "nine": 9, "ten": 10, "eleven": 11, "twelve": 12,
+    "thirteen": 13, "fourteen": 14, "fifteen": 15, "sixteen": 16,
+    "seventeen": 17, "eighteen": 18, "nineteen": 19, "twenty": 20,
+    "thirty": 30, "forty": 40, "fifty": 50, "sixty": 60, "seventy": 70,
+    "eighty": 80, "ninety": 90, "hundred": 100,
+}
+_SAYI_KELIME = "|".join(sorted(_SAYI_BIRIM, key=len, reverse=True))
+_SAYI_OBEGI = re.compile(
+    rf"\b(?:{_SAYI_KELIME})(?:[-\s]+(?:point|{_SAYI_KELIME}))*"
+    rf"(?:\s+and\s+a\s+half)?\b", re.IGNORECASE)
+
+
+def _obek_degeri(s):
+    """"twenty-five" → 25 · "one point two" → 1.2 · "two and a half" → 2.5"""
+    yarim = bool(re.search(r"\s+and\s+a\s+half$", s, re.IGNORECASE))
+    s = re.sub(r"\s+and\s+a\s+half$", "", s, flags=re.IGNORECASE)
+    parcalar = re.split(r"\s+point\s+", s, maxsplit=1, flags=re.IGNORECASE)
+
+    def topla(bolum):
+        toplam = 0
+        for kelime in re.split(r"[-\s]+", bolum.strip().lower()):
+            if kelime not in _SAYI_BIRIM:
+                return None
+            deger = _SAYI_BIRIM[kelime]
+            toplam = toplam * deger if deger == 100 and toplam else toplam + deger
+        return toplam
+
+    tam = topla(parcalar[0])
+    if tam is None:
+        return None
+    if len(parcalar) == 2:                       # ondalık: "one point two"
+        kesir = topla(parcalar[1])
+        if kesir is None:
+            return None
+        return float(f"{tam}.{kesir}")
+    return tam + 0.5 if yarim else tam
+
+
+def sayilari_rakama(metin):
+    """Yazıyla yazılmış sayıları rakama çevir (imza karşılaştırması için)."""
+    def degistir(m):
+        v = _obek_degeri(m.group(0))
+        return m.group(0) if v is None else f"{v:g}"
+    return _SAYI_OBEGI.sub(degistir, metin)
+
+
+def geometri_cumleleri(cumleler):
+    """Kamera GEOMETRİSİNİ taşıyan cümleler (lens · yükseklik · mesafe).
+
+    ⛔ 05.09.2026 · ÖLÇÜLMÜŞ ARIZA. `kamera_cumleleri` pozitif gövdedeki
+    kamera kelimesi geçen HER cümleyi döndürüyor — aksiyon cümleleri dahil.
+    Aksiyon metnindeki bir kamera ifadesi imzaya AÇI TİPİ olarak sızıyor ve
+    özdeş iki kurulumu ikiye bölüyordu:
+      THE THIN ROOF S0 ↔ S5 — geometri BİREBİR aynı (32mm · 0.35 m · 9.0 m,
+      prompt ayrıca "the same position, height and lens as Scene 0" diyor),
+      ama S5'in aksiyon satırındaki "side on to the lens" imzaya "profil"
+      ekledi ve iki sahne İKİ KURULUM sayıldı. Filmin gerçek kurulum sayısı
+      3'tü, betik 5 ölçtü.
+    ⚠️ Bu daraltma YALNIZ İMZA içindir. ⑪ açı SÖZLÜĞÜ denetimi geniş kümeyi
+      kullanmaya devam eder: orada aranan şey "açı kelimesi yazılmış mı",
+      hangi cümlede yazıldığı önemli değil.
+    """
+    g = [c for c in cumleler
+         if LENS_MM.search(c) or YUKSEKLIK.search(c) or MESAFE.search(c)]
+    return g or cumleler
+
+
 def kurulum_imzasi(cumleler):
     """Kurulum = açı + ölçek + kamera konumu (ACI_YAYI §4 tanımı).
 
@@ -806,11 +994,17 @@ def kurulum_imzasi(cumleler):
     girmez; yalnız SAYILABİLİR geometri girer. Böylece aynı kurulumun iki
     farklı cümleyle yazılması çeşitlilik sanılmaz.
     """
+    cumleler = [sayilari_rakama(c) for c in cumleler]
     t = " ".join(cumleler)
-    olcek = next((ad for ad, k in OLCEK_MERDIVENI if re.search(k, t, re.IGNORECASE)),
+    # ⚠️ ÖLÇEK de geometri cümlelerinden okunur (05.09.2026). Tam metinden
+    #    okununca aksiyon satırındaki ölçek kelimesi imzaya giriyordu:
+    #    THIN ROOF S3'ün "its gas bubbles ... readable close up" cümlesi
+    #    imzaya CU ekledi ve S1 ile özdeş olması gereken kurulumu ayırdı.
+    g = " ".join(geometri_cumleleri(cumleler))
+    olcek = next((ad for ad, k in OLCEK_MERDIVENI if re.search(k, g, re.IGNORECASE)),
                  None)
     return (_ilk(LENS_MM, t), _ilk(YUKSEKLIK, t), _ilk(MESAFE, t),
-            olcek, frozenset(aci_tipleri(cumleler)))
+            olcek, frozenset(aci_tipleri(geometri_cumleleri(cumleler))))
 
 
 def kurulum_ozet(k):
@@ -843,6 +1037,48 @@ def tema_bul(yol, metin):
         if m:
             return k_metin, m, kardes.name
     return None, None, None
+
+
+# ─── KURULUM İSKELETİ [ACI_YAYI §3 🕰️ · §4b · 05.09.2026] ──────────
+# ⛔ TETİK — SAHİP KARARI 05.09.2026: küme ve dönüş kapıları YALNIZ
+#    iskeletini BEYAN EDEN dosyada koşar. Gerekçe: kural yeni, eski 119
+#    dosya onunla yazılmadı; hepsine uygulamak 118 FIX demekti ve sahip
+#    "eskiler dokunulmadan kalsın" dedi. Yeni filmler alanı FILM_PLAN /
+#    FILM_QA_SPEC şablonundan alır → kapı kendiliğinden açılır.
+# ⚠️ Tetik SETUP SEQUENCE DEĞİL: o alan bugün 32 dosyada var ve hiçbiri
+#    küme kuralıyla yazılmadı. Ayrı bir satır olması, kapının yalnız
+#    yeni sözleşmeyi kabul etmiş dosyalarda koşmasını garanti eder.
+ISKELET_SATIRI = re.compile(
+    r"^[^\S\n]*(?:[⬜✅🔁]\s*)?KURULUM\s+İSKELET[İI]\s*:(.*)$", re.MULTILINE)
+
+
+def iskelet_bul(yol, metin):
+    """KURULUM İSKELETİ harflerini dosyada, yoksa klasör komşularında ara."""
+    adaylar = [(yol.name, metin)]
+    for kardes in sorted(yol.parent.glob("*.md")):
+        if kardes == yol:
+            continue
+        try:
+            adaylar.append((kardes.name,
+                            kardes.read_text(encoding="utf-8", errors="replace")))
+        except OSError:
+            continue
+    for ad, k_metin in adaylar:
+        m = ISKELET_SATIRI.search(k_metin)
+        if m:
+            harfler = re.findall(r"\b([A-Z])\b", m.group(1))
+            if harfler:
+                return harfler, ad
+    return None, None
+
+
+# ⭐ DÖNÜŞ İŞARETİ (ACI_YAYI §7 ⑥): dönen sahne geometriyi birebir
+#    kopyalar ve bu satırı taşır. Küme klibi AYRICA devam cümlesini
+#    (DEVAM_KLIBI) taşır — ikisi farklı iş yapar, §3 🕰️.
+DONUS_ISARETI = re.compile(
+    r"same\s+position,?\s+height\s+and\s+lens\s+as\s+scene|"
+    r"same\s+(?:position|setup|camera|framing)\b[^.;]{0,60}\bas\s+scene\s+\d+",
+    re.IGNORECASE)
 
 
 # ─── A1 ÇELİŞKİSİ ──────────────────────────────────────────────────
@@ -1252,6 +1488,77 @@ def prompt_denetle(p):
                 "⚠️ Bu satır GÖZLEMDİR, üretim durdurmaz: zorlanma sözlüğü "
                 "ölçülene kadar bant yok (⑯ ve image bandı emsali)."))
 
+    # ─── ㉒ YÜZEY RENK KAPISI [Ders 176 · 05.09.2026] ──────────────
+    # Aynı yüzey iki ayrı yerde İKİ AYRI renk taşıyorsa model ikisine de
+    # sadık kalır: ilk yarıda birine, ikinci yarıda ötekine.
+    poz_yr = duzles(pozitif_govde(p["govde"]))
+    m_isik = ISIK_BLOGU.search(p["govde"])
+    if m_isik:
+        isik = duzles(m_isik.group(0))
+        # ⚠️ KALİBRASYON (05.09.2026): sky · hull · ceiling ÇIKARILDI —
+        #   gökyüzü zaten bir IŞIK KAYNAĞIDIR, gövdeye vuran ışığın rengiyle
+        #   tarif edilmesi meşrudur (52 yanlış-pozitif). Kalanlar BİYOMU
+        #   TANIMLAYAN düzlemdir: D176'nın kırdığı yüzey tam olarak `floor`du.
+        for m in BIYOM_YUZEYI.finditer(isik):
+            pen = isik[max(0, m.start() - 45): m.end() + 25]
+            hue = [r.group(1).lower() for r in RENK_SIFATI.finditer(pen)
+                   if r.group(1).lower() not in DEGER_KELIMESI]
+            if hue:
+                bulgular.append(Bulgu(
+                    "BLOCK", f"IŞIK bloğu yüzeye renk atıyor: {m.group(1)} = {'/'.join(sorted(set(hue)))}",
+                    "Yüzeyin rengi ENVIRONMENT/WORLD'ün işidir; IŞIK bloğu "
+                    "ışığı tarif eder [D176]. İki blok aynı yüzeyi tarif "
+                    "edince model ilk yarıda birine, ikinci yarıda ötekine "
+                    "sadık kalır ve film ortasında dünya değişir. Kontrast "
+                    "garantisini renk vermeden yaz: 'reads as a clean dark "
+                    "silhouette against the floor'."))
+                break
+    # ⛔ İKİNCİ ALT-DENETİM SİLİNDİ (05.09.2026, kalibrasyonda düştü):
+    #   "aynı yüzey iki ayrı HUE taşıyorsa BLOCK" denendi ve üç hatta ~180 kez
+    #   ateşledi; ezici çoğunluğu MEŞRU (gövdenin bir yanı amber, gölgede siyah;
+    #   gökyüzü uzun promptta birkaç renkle tarif edilir). Kaldı ki D176'nın
+    #   mekanizması bu DEĞİLDİ — orada renk cümlesi TEKTİ, sorun yazıldığı BLOKTU.
+    #   Ölçüm geçmeyen denetim kapıya girmez [00_DERS_YAZIM_KONTRATI §2].
+
+    # ─── ㉑ MÜHÜR KAPISI [Ders 175 · 05.09.2026] ───────────────────
+    if MUHUR_BAGLAM.search(p["govde"]):
+        if SAYDAMLIK_TUZAGI.search(poz_yr):
+            bulgular.append(Bulgu(
+                "FIX", "saydamlık tuzağı: 'through the glove' mühürü deler",
+                "Bu bir eldiven tarifi değil, bir SAYDAMLIK tarifidir; model "
+                "tendonu görünür kılmak için eldiveni değil DERİYİ çizer "
+                "[D175 · THE UPWARD FALL S22, önkol bilekten yukarısı çıplak]. "
+                "Yerine gövde tepkisini ÖRTÜNÜN ÜSTÜNDE yaz: 'the glove's "
+                "fabric draws tight over the tendons'."))
+        for c in re.split(r"(?<=[.;])\s+", poz_yr):
+            m = GOVDE_ADI.search(c)
+            if not m:
+                continue
+            kelimeler = c.split()
+            idx = len(c[:m.start()].split())
+            pencere = " ".join(kelimeler[max(0, idx - 12): idx + 12])
+            if not ANATOMI_IZI.search(pencere):
+                continue                      # uzuv adı var ama deri riski yok
+            if not ORTU_ADI.search(pencere):
+                bulgular.append(Bulgu(
+                    "FIX", f"mühürlü filmde örtüsüz gövde adı: '{m.group(1)}'",
+                    "Solunamaz atmosferde geçen filmde bir uzuv adı, ±12 kelime "
+                    "içinde bir ÖRTÜ adı (sleeve · cuff · suit · glove · seal) "
+                    "olmadan yazılmaz — yoksa model uzvu çıplak çizer [D175]. "
+                    f"Cümle: “{c[:90]}…”"))
+                break
+        neg_yr = p["govde"][len(pozitif_govde(p["govde"])):]
+        if re.search(r"\b(?:bare|exposed|uncovered)\s+skin\b", neg_yr, re.IGNORECASE):
+            var = [ad for ad, kalip in DERI_BOLGELERI.items() if kalip.search(neg_yr)]
+            if len(var) < 3:
+                eksik = [ad for ad in DERI_BOLGELERI if ad not in var]
+                bulgular.append(Bulgu(
+                    "BLOCK", f"çıplak-deri negatifi {len(var)}/3 bölge yazıyor",
+                    "Mühür ÜÇ SINIRDA birden delinir; tek bölge yazan negatif "
+                    "yalnız yakanın üstünü kapatır ve önkol açıkta kalır "
+                    f"[D175]. Eksik bölge(ler): {', '.join(eksik)}. Üçü de "
+                    "yazılır: 'above the collar' + 'at the wrist' + 'at the ankle'."))
+
     return bulgular
 
 
@@ -1470,6 +1777,122 @@ def metin_denetle(yol, metin, promptlar=None):
                 "tutsa bile üç kurulumun üçü de aynı açıdan bakıyorsa çeşitlilik "
                 "yoktur, yalnız mesafe değişir (Bright Tether vakası)."))
 
+        # ④ KURULUM İSKELETİ — KÜME · DÖNÜŞ · BİREBİR YAZIM
+        #    [ACI_YAYI §3 🕰️ · §4b · §7 ⑥ · sahip kararı 05.09.2026]
+        # Teşhis: depoda 1.406 sahne / 1.287 kesme vardı ve kesmelerin
+        # neredeyse tamamı YENİ bir bakış noktasına geçiyordu. Üç kapı
+        # çeşitliliğe itiyordu (⑩① BLOCK · ⑩② az kurulum · ⑪ açı tipi),
+        # dönüşe iten SIFIR kapı vardı — üst bant "NOT"tu, 87 uzun dosyanın
+        # 63'ü onu aşıyordu ve hiçbiri durmuyordu. Bu blok o boşluğu kapatır.
+        iskelet, i_kaynak = iskelet_bul(yol, metin)
+        if iskelet and len(iskelet) != n:
+            sonuc["dosya_bulgulari"].append(Bulgu(
+                "FIX", f"KURULUM İSKELETİ {len(iskelet)} harf ↔ dosyada {n} "
+                       f"video promptu ({i_kaynak})",
+                "İskelet sahne sahne okunur; harf sayısı sahne sayısına EŞİT "
+                "olmalı. Eşit değilse hangi sahnenin hangi kuruluma döndüğü "
+                "ölçülemez ve küme/dönüş kapıları kör kalır [ACI_YAYI §4b]."))
+        elif iskelet:
+            # küme = ardışık aynı harf öbeği (≥2 klip)
+            kumeler, i = [], 1
+            while i < n:
+                if iskelet[i] == iskelet[i - 1]:
+                    bas = i - 1
+                    while i < n and iskelet[i] == iskelet[bas]:
+                        i += 1
+                    kumeler.append((bas, i - 1))
+                else:
+                    i += 1
+            kume_klipleri = {j for bas, son in kumeler
+                             for j in range(bas + 1, son + 1)}
+            # DÖNÜŞ = kaynağından EN ÇOK 3 sahne sonra gelen tekrar (§3).
+            # Daha uzağı YENİDEN TANITIMDIR: izleyicinin kısa süreli görsel
+            # belleği o kadar beklemez, kurulum yeni gibi okunur.
+            donusler = [j for j in range(1, n)
+                        if iskelet[j] in iskelet[max(0, j - 4):j]]
+
+            if n >= 12:
+                # ⛔ 6-11 sahne ve dikey shorts MUAF (§4b): kısa formatta iki
+                #    küme filmin üçte ikisini iki kuruluma bağlar, §4 alt bandı
+                #    ile çakışır.
+                if len(kumeler) < 2:
+                    sonuc["dosya_bulgulari"].append(Bulgu(
+                        "FIX", f"KÜME {len(kumeler)} — {n} sahnede en az 2 olmalı "
+                               f"(ACI_YAYI §4b)",
+                        "Küme = tek vuruş sürerken ardışık 2-3 klibin AYNI "
+                        "kurulumda kalması; sahne sayısını ve süreyi değiştirmez, "
+                        "yalnız kesme sayısını düşürür. Kümesiz film hiç "
+                        "DİNLENMEZ — depoda 1.287 kesmenin tamamı yeni bakış "
+                        "noktasına geçiyordu. İskelet: " + " ".join(iskelet)))
+                oran = len(donusler) / n
+                if oran < 0.40:
+                    sonuc["dosya_bulgulari"].append(Bulgu(
+                        "FIX", f"DÖNÜŞ oranı %{oran * 100:.0f} — {n} sahnede en az "
+                               f"%40 olmalı ({len(donusler)}/{n}, hedef "
+                               f"{-(-n * 2 // 5)}) [ACI_YAYI §4b]",
+                        "Sıçrama kalkanı verir, DÖNÜŞ haritayı verir. Dönüş = "
+                        "kaynağından en çok 3 sahne sonra gelen tekrar; daha "
+                        "uzağı yeniden tanıtımdır ve sayılmaz. Üst banda uymak "
+                        "yetmez: A B C D E F A B C D E F 12 sahnede 6 kurulum "
+                        "kullanır, tavana uygundur ve dönüş oranı %0'dır. "
+                        "İskelet: " + " ".join(iskelet)))
+
+            for bas, son in kumeler:
+                if son - bas + 1 > 3:
+                    sonuc["dosya_bulgulari"].append(Bulgu(
+                        "FIX", f"KÜME {son - bas + 1} klip uzunluğunda "
+                               f"({bas + 1}-{son + 1}. video promptu) — tavan 3",
+                        "3 klipten (~30 s) uzun küme güvenlik kamerası hissine "
+                        "döner [ACI_YAYI §3 🕰️ · §4 alt bandıyla aynı gerekçe]."))
+
+            # ⭐ İŞARET, bilinçli beklemeyi monotonluktan ayıran TEK şeydir.
+            isaretsiz = [j for j in sorted(kume_klipleri)
+                         if not DEVAM_KLIBI.search(video[j]["govde"])]
+            if isaretsiz:
+                sonuc["dosya_bulgulari"].append(Bulgu(
+                    "BLOCK", f"küme klibinde DEVAM işareti yok: "
+                             + ", ".join(f"satır {video[j]['satir']}"
+                                         for j in isaretsiz[:4]),
+                    "Küme bir kesme değil BÖLÜNMÜŞ TEK ÇEKİMDİR. İşaretsiz iki "
+                    "benzer klip yan yana konursa §3'ün kalkanı TERSİNE döner: "
+                    "mikro farklar tam kesme anında görünür (jump cut). Şart: "
+                    "\"continues the previous clip from its exact last frame — "
+                    "the same position, height and lens as Scene N.\""))
+
+            isaretsiz_donus = [j for j in donusler if j not in kume_klipleri
+                               and not DONUS_ISARETI.search(video[j]["govde"])]
+            if isaretsiz_donus:
+                sonuc["dosya_bulgulari"].append(Bulgu(
+                    "FIX", f"dönüş işareti yok ({len(isaretsiz_donus)} sahne): "
+                           + ", ".join(f"satır {video[j]['satir']}"
+                                       for j in isaretsiz_donus[:4]),
+                    "Model SPEC'teki harf iskeletini GÖRMEZ, yalnız metni görür "
+                    "[ACI_YAYI §7 ⑥]. Dönen sahne kamera geometrisini birebir "
+                    "kopyalar ve sonuna şunu ekler: \"— the same position, "
+                    "height and lens as Scene N.\""))
+
+            # ⑥ BİREBİR YAZIM: aynı harf → aynı ölçülen imza olmak ZORUNDA.
+            #    Uymuyorsa ikisinden biri yanlıştır: ya metin kaymıştır
+            #    (§7 ⑥ ihlali) ya iskelet harfi yanlış konmuştur. İkisinin de
+            #    çözümü aynı: geometriyi kaynak sahneden KOPYALA.
+            harf_sahne = {}
+            for j, h in enumerate(iskelet):
+                harf_sahne.setdefault(h, []).append(j)
+            for h, idx in sorted(harf_sahne.items()):
+                imzalar = {kurulumlar[j] for j in idx}
+                if len(imzalar) > 1:
+                    ornek = sorted(idx)[:3]
+                    sonuc["dosya_bulgulari"].append(Bulgu(
+                        "FIX", f"iskelet '{h}' {len(idx)} sahnede ama "
+                               f"{len(imzalar)} farklı kurulum ölçüldü",
+                        " ⇄ ".join(f"satır {video[j]['satir']}: "
+                                   f"{kurulum_ozet(kurulumlar[j])}"
+                                   for j in ornek)
+                        + " · Aynı harf aynı kurulumdur; geometri kelimesi "
+                          "kelimesine kopyalanır (aynı sayı biçimiyle: \"2.5 m\" "
+                          "hep \"2.5 m\", bir yerde rakam bir yerde yazı olmaz) "
+                          "[ACI_YAYI §7 ⑥]."))
+
     # ─── TEMA KAPISI ───────────────────────────────────────────────
     # TEMA_MUHENDISLIGI §9 madde 1 · §5 matrisi
     # KILAVUZ_REHBERI §6 adım 1: "tema yoksa DURMA, film koreografi olur"
@@ -1585,6 +2008,43 @@ def metin_denetle(yol, metin, promptlar=None):
                 "\"the back of the suit is one continuous smooth panel from collar to hip, "
                 "carrying nothing\" — yokluk listesi arkadan çekimde tutmaz; model boş sırtı "
                 "doldurur (altın sırt ünitesi, 10 s)."))
+
+
+    # ─── ⑳b DEĞİŞİM KAPISI [Ders 179 · 05.09.2026] ─────────────────
+    # I2V hattında İMAJ t=0'dır. İmaj promptu değişimin SONRASINI yazarsa
+    # modelden, başlangıç karesinde BULUNMAYAN bir şeyi söndürmesi istenir —
+    # THE HEALING GROUND'da göğüs kapağı hiç açılmadı, tüy kalçada değil
+    # zemindeki diskte çıktı, filmin BEDELİ hiç ekrana gelmedi.
+    # Eşleme: bir imaj promptu ile ONU İZLEYEN ilk video promptu aynı sahnedir.
+    for idx, ip in enumerate(promptlar or []):
+        if ip["tip"] != "image":
+            continue
+        vp = next((q for q in (promptlar or [])[idx + 1:] if q["tip"] == "video"), None)
+        if not vp:
+            continue
+        v_govde = duzles(pozitif_govde(vp["govde"]))
+        i_govde = duzles(pozitif_govde(ip["govde"]))
+        for m in IMAJ_YOKLUK.finditer(i_govde):
+            nesne = (m.group(1) or m.group(2) or "").strip()
+            if len(nesne) < 4:
+                continue
+            cekirdek = nesne.split()[-1]                 # 'vapour plume' → 'plume'
+            if cekirdek.lower() in SOYUT_AD:
+                continue
+            if len(cekirdek) < 4 or cekirdek not in v_govde:
+                continue
+            pen_i = v_govde.find(cekirdek)
+            if SONME_FIILI.search(v_govde[pen_i: pen_i + 220]):
+                sonuc["dosya_bulgulari"].append(Bulgu(
+                    "BLOCK", f"imaj promptu değişimin SONRASINI yazıyor: '{nesne}'",
+                    f"Video promptu '{cekirdek}' nesnesinin SÖNDÜĞÜNÜ tarif "
+                    f"ediyor; imaj promptu ise onu BAŞTAN YOK sayıyor. I2V'de "
+                    "imaj t=0'dır: başlangıç karesinde bulunmayan bir şey "
+                    "söndürülemez, model onu BAŞKA BİR YERE koyup söndürür "
+                    "[D179 · THE HEALING GROUND]. İmaj promptu değişimin "
+                    f"ÖNCESİNİ yazar; sönme video TIMELINE'ının işidir. "
+                    f"(imaj promptu satır {ip['satir']})"))
+                break
 
     return sonuc
 

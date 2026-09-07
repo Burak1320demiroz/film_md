@@ -453,6 +453,30 @@ temizlik 14.'yü engellemez. ⏳ Faz 2'nin kapı işine bağlandı.
 
 ---
 
+## 🆕 06.09.2026 — PLAN SADAKATİ MERCEKLERİ ⑨-⑫ AÇILDI (D184) · İLK KOŞU BEKLİYOR
+
+```
+Sahibin sorusu "QA promptları yeni filmdeki hatayı azaltmaya yeter mi?" —
+ölçülen cevap HAYIR: Kept Light'ta 8 gerçek kusurun 2'si raporda; kaçan üç
+üretim hatası "plan X dedi, ekran Y gösterdi" ve planı ekrana karşı okuyan
+mercek yoktu. Sahip dört eksen seçti; dördü açıldı (00_README 🎯 bölümü).
+```
+
+- [x] ⑨ KADRAJ · ⑩ OYUNCULUK · ⑪ IŞIK · ⑫ HOOK kaynak rubrikleri (~350 satır)
+- [x] rubrik_paketle.sh PAKET_9..12 · rapor_kontrol.py imza + dizi/tahmin kapıları
+- [x] T9-T12 · AGENTS F5-F8 · kart B/Y · 00_README · skill'ler · sayac
+- [ ] ⏳ **İLK KOŞU:** Kept Light kurgulanmış master (filigransız · kartsız ·
+      hook kırpılmış · 209-219 hard mute · −14 LUFS) → ⑪ ölçüm → 12 mercek MOD D.
+      ⑨'un S24 kafiyesini, ⑩'un S19/S21'i, ⑪'in S4'ü, ⑫'nin hook'u EKRANDAN
+      yazıp yazmadığı ilk kez orada ölçülür. Rubriğin kendi hatası (sayım ·
+      tally · mod) ancak o koşuda görünür.
+- [ ] ⏳ ⑫ tahmini 08_YAYIN_PERFORMANS_TABLOSU'na → yayın → gerçek eğri →
+      |Δ| ≤ 10 s. Aleti izleyiciye karşı kalibre eden ilk satır (Faz 8'in
+      öncülü).
+- [ ] ⬜ Faz 5 RUBRİK DİYETİ ile birleşir: ①②⑦⑧'in yakaladığı her şey ya
+      ffmpeg'de ya ⑤⑥⑨⑪'de — ilk MOD D koşusundan sonra hangi eski merceğin
+      düşeceği verilerle kararlaştırılır, önce değil.
+
 ## 🚫 YAPILMAYACAKLAR (bu listenin sınırı)
 
 ```
@@ -465,11 +489,169 @@ temizlik 14.'yü engellemez. ⏳ Faz 2'nin kapı işine bağlandı.
 · Commit atılmaz; her faz "commit'e hazır" bırakılır.
 ```
 
+## ✅ FAZ 0d — OPERATÖR YOLU VE ÇIKTI UCU (04.09.2026)
+
+> Tetikleyici: 8 ⛔ ÇALIŞMIYOR dersin sekizi de AYNI eklemde kırılıyordu —
+> araç var, kural üç ayrı yerde ⛔ ile yazılı, ama **kapının durduğu yol ile
+> operatörün eliyle gittiği yol farklı.** D94(6) → D129(13): her tekrarda daha
+> kalın bir ⛔ eklendi ve sayaç arttı. Kural yazma yolu tükendi; bu faz kural
+> değil DÜZEN değiştirir.
+
+### ① ÇIPLAK RUBRİK ULAŞILAMAZ YAPILDI  [D129 · D94]
+
+- [x] `QA_PROMPTLARI/{1..8}_*_QA_CRITIQUE_PROMPT.md` → **`QA_PROMPTLARI/_KAYNAK/`**
+      (`git mv`). Kökte artık yalnız `00_README.md · FILME_OZEL/ · _KAYNAK/ ·
+      CALISTIRMA_KAYITLARI.md · ARSIV_6_MERCEK/` var → operatörün klasörü açtığında
+      yapıştırılabilir görünen tek şey **filme özel paket**.
+- [x] `rubrik_paketle.sh` → `SRC="$R/_KAYNAK"` (8 okuma taşındı) · `sayac.sh` rubrik
+      hacmi globu `_KAYNAK/` altına alındı. **Makine referansı kırığı: 0** (doğrulandı).
+- [x] ⭐ **ASIL MEKANİZMA BULUNDU — AGENTS.md kartlarının kendisi yanlış dosyayı
+      gösteriyordu.** Sekiz QA kartının sekizi de `**Rubrik:** QA_PROMPTLARI/<n>_...`
+      diyordu; `qa-isle` "paketi kullan" derken aynı skill "çelişkide AGENTS.md
+      kazanır" diyor. Sekizi de `FILME_OZEL/<FILM>/PAKET_<n>_<MERCEK>.md`'yi
+      gösterecek şekilde düzeltildi + ⛔ ÇIPLAK RUBRİK YAPIŞTIRILMAZ satırı eklendi.
+- [x] `QA_PROMPTLARI/00_README.md` ÇALIŞTIRMA TARİFİ yeniden yazıldı: adım 1 artık
+      "tablodan rubrik seç" değil **"filmin paketini aç"**; SPEC'i elle kesip
+      yapıştırma adımı KALKTI (paket onu zaten gömüyor). Üç tablonun ilk sütunu
+      paket adına çevrildi.
+- [x] `YAPI_GRAFI` depo haritası · `T1-T8` kaynak rubrik satırları · `00_INDEX` ·
+      4 kılavuz · 2 README = **19 canlı yol** güncellendi.
+      ⛔ **Geçmiş kayıtlara DOKUNULMADI** (`02_HAM_RAPORLAR/` · `01_FILM_RAPORLARI/` ·
+      film dosyaları · `CALISTIRMA_KAYITLARI`): onlar o gün ne yapıştırıldığının
+      kaydıdır, talimat değil.
+
+### ④ "ÖLÇÜLDÜ" İLE "TABLOYA GİRDİ" AYRILAMAZ YAPILDI
+
+- [x] **`RAPOR_KONTROL/t_tablo.py`** (yeni) + `rapor_kontrol.py --t-tablo`.
+      Betik "▶ TABLOYA GİRECEK SAYI"yı zaten HESAPLIYOR ve elle kopyalanmasını
+      bekliyordu; artık T satırını **kendisi yazar** (aynı film varsa yerine yazar).
+      8 merceğin 8'i için İngilizce kategori → Türkçe sütun eşlemesi kuruldu.
+- [x] ⛔ **Kapı reddediyor:** GEÇERSİZ/TEKRAR kararlı rapor satır YAZMAZ.
+      mod V satırı Ⓥ, SPEC varken mod V koşulduysa ⛔ damgası alır.
+- [x] ⛔ **Film adı YALNIZ klasörden gelir.** İlk koşu rapordaki `FILM` alanını
+      kullandı ve bozdu: THE_PAYLOAD raporu "The Last Custodian.mp4",
+      THE_LAST_SPAN raporu "The Last Stand" diyordu; adı okunamayan 6 rapor tek bir
+      `**?**` satırında birbirinin üstüne yazıldı. Tablolar `git checkout` ile geri
+      alındı, ad türetmesi klasöre bağlandı, koşu tekrarlandı. Kimliksiz satır artık
+      hiç yazılmaz.
+
+### 📊 GERİYE DÖNÜK KOŞUNUN ÖLÇÜMÜ — beklenen ile çıkan farklı
+
+```
+ölçülen                  önce      sonra
+canlı sistemde film      2 / 83  → 7 / 83
+tabloya işlenmemiş      16 film  → 11 film
+yazılan satır                    → 14 (6 filmde, T2 · T3 · T5)
+```
+
+⛔ **ÖNEMLİ:** "16 filmlik birikmiş emek kırtasiye kaybıdır" TAHMİNİ YANLIŞ ÇIKTI.
+81 ham rapor tarandı; **49'u kapıdan geçemedi** — 38'i **TEKRAR** (SPEC dosyası
+filmin klasöründe dururken mod V koşulmuş = D129'un tam kendisi), 11'i ⑤ çapraz
+kapısında parti GEÇERSİZ. Yani bekleyen 16 filmin çoğu *işlenmemiş* değil,
+**işlenemez**: kayıp kırtasiye değil, D129 hasarı. Kırtasiye kaybı yalnız 5 filmdi.
+
+**Açık borç (bu fazdan çıkan):**
+- [ ] `THE_LAST_SPAN` — 7 ham raporu var, **depoda film klasörü YOK**. Kimliği
+      doğrulanmadan satır yazılmadı (raporlar filmi "The Last Stand" diye anıyor).
+- [ ] `THE_LEANING_ROOM` (8 mercek) · `THE_COLD_WELD` (6) · `THE_FROST_LINE` (13) ·
+      `THE_BORROWED_WEIGHT` (4) — hepsi ⑤ çapraz kapısında parti GEÇERSİZ.
+      Tabloya girmeleri için yeniden koşu gerekir, kırtasiye düzeltmesi yetmez.
+- [ ] ⏳ **① hamlesinin ölçütü:** bir sonraki filmde **D129 sayacı 13'te kalmalı.**
+      Kalmazsa kırık olan dosya düzeni değil, başka bir şeydir.
+- [ ] ② `kosu.sh` (tek giriş, girdi eksikse `exit 1`) ve ③ `teslim.sh` (ihraç
+      hattı kimlik kartı) YAZILMADI — karar verildi (sert DUR), sıradaki tur.
+
+---
+
+## ✅ FAZ 0e — KAPI ADRESİ ÇÖZÜLÜYOR (05.09.2026)
+
+> Tetikleyici: kılavuz taramasının üç mercekli çürütmeden sağ çıkan iki
+> konusundan biri — **"depo kapıyı SAYIYOR, ÇÖZMÜYOR."** Kontrat kapıyı
+> zorunlu kılıyor, `sayac.sh` kapı satırını sayıyordu, ama kapının işaret
+> ettiği betik jetonu / liste maddesi hiçbir yerde ARANMIYORDU.
+
+### ÖLÇÜM ALETİ
+
+- [x] **`kilavuzlar_ve_sistem_dosyalari/kapi_adres.py`** (yeni) — her `**KAPI:**`
+      satırının adresini fiilen açar: BETİK jetonu hedef dosyada birebir aranır,
+      LİSTE maddesi hedef listede aranır, KARAR/ARŞİV'de adres aranmaz.
+      `sayac.sh` 🧭 bloğuna bağlandı; her görevin ilk 60 saniyesinde koşuyor.
+- [x] ⛔ **İki kalibrasyon hatası ölçümle yakalandı ve düzeltildi:**
+      ① İlk sürüm backtick içindeki her dizgeyi hedef dosya saydı — regex
+      (`\bsuit\b`), bayrak (`--olcum-filigran`), çıktı dosyası (`son_kare.jpg`)
+      ve jeton (`NOVUM`) dâhil; 14 hayaletin **9'unu UYDURDU.**
+      ② Gevşetme sonrası `KAPISI` gibi jenerik kelimeler eşleşti ve
+      **doğrulanmış iki hayaleti (D175 · D176) "çözüldü" gösterdi** — çözmediğini
+      çözdü sanan bir çözücü, düzeltmeye çalıştığımız arızanın ta kendisi.
+      Jenerik sözlük kapatıldı; daireli kapı numarası (⑭ · ⑳b) korundu.
+- [x] ⛔ Çok satırlı KAPI okuması **denendi ve GERİ ALINDI**: gövde metni
+      jetonlarla eşleşip beş hayaleti sakladı, ⬜ AÇIK 2'den 7'ye çıktı.
+      Bilinen bedel dosyada yazılı (KAPI satırı saran ders HAYALET görünebilir).
+
+### ALTI HAYALET KAPI İNŞA EDİLDİ
+
+```
+                                                   05.09 öncesi   sonra
+adresi ÇÖZÜLEN kapı                                    —          28 / 35
+⛔ HAYALET / ADRESSİZ                                   6            0
+```
+
+- [x] **⑳b DEĞİŞİM KAPISI** [D179] · `prompt_kontrol.py` — imaj promptu ile onu
+      izleyen video promptu eşlenir; imaj değişimin SONRASINI yazıyorsa BLOCK.
+      D179'un kaynak vakasını (THE HEALING GROUND · `vapour` tüyü) yakalıyor.
+      Kalibrasyon: soyut ad listesi (fill · ground · surface …) 26 → 17 vaka.
+- [x] **㉑ MÜHÜR KAPISI** [D175] · `prompt_kontrol.py` — üç alt denetim:
+      saydamlık tuzağı (`through the glove`) · mühür sınırı uzvuna ANATOMİ
+      ayrıntısı + ±12 kelimede örtü yok · çıplak-deri negatifi 3 bölgeden az.
+      Kalibrasyon: `shoulder/arm/neck` çıkarıldı ve tetik uzvun ADI değil
+      ANATOMİ AYRINTISI yapıldı → **720 → 40 vaka**.
+- [x] **㉒ YÜZEY RENK KAPISI** [D176] · `prompt_kontrol.py` — IŞIK bloğu biyom
+      düzlemine renk atıyorsa BLOCK. ⛔ Dersin yazdığı biçim ("aynı yüzey iki
+      renk taşıyorsa") **D176'nın KENDİ VAKASINI kaçırıyordu** (orada renk
+      cümlesi TEKTİ, sorun yazıldığı BLOKTU); asıl kural blok yetkisidir.
+      İkinci alt denetim (iki HUE çatışması) kalibrasyonda ~180 kez ateşledi,
+      çoğu meşru → **silindi, kapıya girmedi.**
+- [x] **MERCEK YOKLAMASI** [D111] · `rapor_kontrol.py` — partide hangi zorunlu
+      mercek HİÇ koşmadı (FİLM ①②③④ · FRAGMAN ①). D111'in 2. vakasını
+      (YERÇEKİMİ FRAGMAN · eksik ① KARE) birebir yakalıyor.
+- [x] **FİLİGRAN HAKEMLİĞİ** [D177] · `rapor_kontrol.py --olcum-filigran VAR|YOK`
+      (+ `--olcum-lufs`) — verilmezse eksen "ÖLÇÜLMEDİ" ⚠️, `VAR` verilirse parti
+      🔴 TESLİM KUSURU. ⑤ SUSKUNLUK kapısı mutabakatSIZLIĞI ölçüyordu; sekiz
+      mercek birden susunca ateşlenemiyordu [D150 · 4 vaka].
+- [x] **B5c ÜRETİM SIRASI** [D168] · `03_PLAN_ONCESI_KONTROL_LISTESI.md` —
+      üretim sırası dramatik sıra olamaz; ilk üretilen sahne doruk ya da
+      merkezî seçimdir. ⚠️ Madde PLANI bağlar, ÜRETİMİ bağlamaz (D168 2. vakası).
+
+### KALİBRASYON KAYDI — kararı değişen dosya 6, altısı da GERÇEK BULGU
+
+```
+baseline (kapılar öncesi)   95 BLOCK · 21 FIX ·  9 GO
+üç kapı eklendikten sonra   99 BLOCK · 19 FIX ·  7 GO
+```
+
+| dosya | ne ateşledi |
+|---|---|
+| THE_UPWARD_FALL BOLUM_1 · BOLUM_2 | ㉒ — **D175/D176'yı doğuran filmin ta kendisi** |
+| THE_PRESSED_FIELD BOLUM_1 · BOLUM_2 | ㉑ `through the glove` ×2 — D175'in birebir mekanizması |
+| LOW_POWER_FRAGMAN_DIKEY | ㉒ IŞIK bloğu `ground = brown/red` |
+| THE_RISING_SNOW_PART_B | ㉒ IŞIK bloğu `walls = green` |
+
+**Açık borç:**
+- [ ] ⏳ **Ölçüt:** bir sonraki KAPI satırı yazıldığında `kapi_adres.py` onu
+      ÇÖZÜLDÜ göstermeli. Hayalet sayısı 0'dan yükselirse kapı yazımı bozuktur.
+- [ ] ⬜ AÇIK iki ders (kapı arayan) ve DOSYA düzeyi iki kapı (alt jeton iddia
+      etmemiş) — kontrat §5 gereği geriye dönük tasnif YAPILMADI.
+- [ ] ② `kosu.sh` (sert DUR) ve ③ `teslim.sh` — dünkü karar, hâlâ sırada.
+- [ ] ⏸️ Kılavuz taramasının **hükümsüz** kümesi (MADDE VE TEMAS · güç 8) —
+      üç merceği de harcama limitinde düştü; çürütülmedi, yargılanmadı.
+
+---
+
 ## 🔎 BİTİŞ ÖLÇÜTÜ VE DOĞRULAMA
 
 ```bash
 bash kilavuzlar_ve_sistem_dosyalari/sayac.sh                       # 🧭: mod D ≥3 · rubrik 6/6 ≤25 KB · KAPI kartlı kılavuz 34/34
-python3 kilavuzlar_ve_sistem_dosyalari/PROMPT_KONTROL/prompt_kontrol.py dikey_shorts_filmler yatay_2_4_dk_filmler_uzay yatay_3_5_dk_filmler yatay_7_9_dk_filmler yatay_10_20_dk_filmler | tail -3
+python3 kilavuzlar_ve_sistem_dosyalari/PROMPT_KONTROL/prompt_kontrol.py dikey_shorts_filmler yatay_2_4_dk_filmler_uzay yatay_3_5_dk_filmler yatay_10_20_dk_filmler | tail -3
 python3 kilavuzlar_ve_sistem_dosyalari/RAPOR_KONTROL/rapor_kontrol.py kilavuzlar_ve_sistem_dosyalari/FILM_QA_RAPORLARI/02_HAM_RAPORLAR/THE_COLD_WELD_*_HAM_D.md --film yatay_2_4_dk_filmler_uzay/THE_COLD_WELD
 grep -L "🎫 KAPI KARTI" kilavuzlar_ve_sistem_dosyalari/*.md            # boş olmalı (Faz 2 bitince)
 git status                                                          # commit sahibin

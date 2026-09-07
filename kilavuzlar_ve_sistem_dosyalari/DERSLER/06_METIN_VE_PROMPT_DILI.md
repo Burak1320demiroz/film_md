@@ -1203,3 +1203,77 @@ Kaldırılan şey filmden hiçbir şey götürmez.
 > Ders 138 (ölçü prompt gövdesinde etikete döner) · Ders 123 (yasak
 > kelimeyi prompta sokar — aynı aile: niyet değil biçim ölçülür) ·
 > KART 12 · POLITIKA_VE_URETILEBILIRLIK §1 · red defteri vaka 15.
+
+---
+
+## 🔴 DERS 179: İMAJ PROMPTU DEĞİŞİMİN *SONRASINI* YAZDI — I2V'DE İMAJ t=0'DIR, VE FİLMİN BEDELİ HİÇ EKRANA GELMEDİ
+
+**KAPI:** BETİK · `prompt_kontrol.py` ⑳b DEĞİŞİM KAPISI
+**TEKRAR:** 0
+
+**Kaynak:** THE HEALING GROUND · 04.09.2026 · ⑪ ÖLÇÜM + prompt dosyası
+(rapordan DEĞİL). Kareler 111 s ↔ 119 s, aynı kurulum.
+④ HİKAYE mod V'de "no thematic cost is paid" · "no peak located" yazdı ve
+ikisi de ⑩ ÖNERME KAPISINDAN GEÇTİ.
+
+**Sorun:** Filmin bütün anlamı tek jestteydi — *göğüs kapağını açar,
+ısıtıcıyı kapatır, kalçasındaki buhar tüyü söner.* Sahnenin **video**
+promptu bunu doğru yazmıştı:
+
+```
+0.0s — ... A short white vapour plume stands at his hip.
+2.0s — he reaches inside and turns one plain recessed switch. The plume at
+       his hip thins, drops and goes out
+```
+
+Aynı sahnenin **imaj** promptu ise şunu yazıyordu:
+
+```
+... its hinged cover standing open. ... There is no vapour plume at his
+hip: the vent is dark and still. ... Around the dark disc under his gloves
+there is no vapour
+```
+
+İmaj promptu, video promptunun **onuncu saniyesini** tarif ediyor. I2V
+hattında imaj **t=0**'dır. Modelden, başlangıç karesinde bulunmayan bir
+tüyü söndürmesi istendi; o da tüyü **başka bir yere** (zemindeki diske)
+koyup onu söndürdü. Ekranda:
+
+- göğüs kapağı **hiç açılmadı**, el **hiç içeri girmedi**, anahtar **hiç görünmedi**
+- tüy kalçada değil **diskte** çıktı
+- geriye kalan okuma: *"bir adam bir tabağın üstünde duruyor ve buhar kesiliyor"*
+
+**Bedel yazıldı, sebebi üretilmedi.** Bir izleyicinin göremediği bir seçim,
+bedel değildir; film "kamera taşıyıcı" olarak okundu.
+
+⚠️ Planın da payı var: sahnenin kurulumu **24mm EWS · 40 m**. Kırk metreden
+bir kalça tüyünün sönmesi üç pikselik bir olaydır. **Film merkezî seçimini
+kendi EN GENİŞ kurulumuna yazmıştı.**
+
+**ÇÖZÜM:**
+
+```
+① İMAJ PROMPTU HER ZAMAN 0,0 SANİYEYİ YAZAR — SAHNENİN SONUCUNU DEĞİL.
+   Değişim taşıyan sahnede imaj promptu, video promptunun `0.0s —`
+   satırıyla KELİME KELİME uyumludur.
+   ✗ imaj: "there is no vapour plume at his hip"
+     video: "0.0s — a short white vapour plume stands at his hip"
+   ✓ imaj: "a short white vapour plume stands at his hip, 14 cm tall"
+     video: "0.0s — the plume stands at his hip · 2.0s — it thins and goes out"
+
+② ⑳b DEĞİŞİM KAPISI (betik): sahne başlığında `BEDEL SAHNESİ` ya da
+   `MERKEZÎ SEÇİM` geçiyorsa — betik video promptunun `0.0s` satırındaki
+   durum nesnesini alır ve İMAJ promptunda o nesnenin OLUMSUZUNU
+   (`no <nesne>`, `zero <nesne>`, `<nesne> ... dark and still`) arar.
+   Bulursa ⛔ BLOCK: iki prompt aynı sahnenin iki farklı anını tarif ediyor.
+
+③ BEDEL SAHNESİ, FİLMİN EN GENİŞ KURULUMUNA YAZILMAZ.
+   Sayısal kilit: bedeli taşıyan değişim, kadrajın kısa kenarının
+   **en az 1/8'i** kadar yer kaplar. 40 m'den 14 cm'lik bir tüy
+   1/300'dür → o sahne CU/MS'e iner ya da bedel başka bir kanala taşınır.
+```
+
+> 🔗 Ders 157 (taşıyıcı TEK KARE satırında) · Ders 151 (mercek vuruşu
+> göremez) · Ders 172 (novumun yerine tanıdık mekanizma geçer) ·
+> Ders 122 (zaman hesaplanmaz, hesaplatılır) · `ONERME_VE_NOVUM §4①` ·
+> `03_PLAN_ONCESI` B5 BEDEL maddesi.

@@ -580,6 +580,29 @@ You are judging behaviour in the mix, not composition:
   underneath it
 ```
 
+⛔ **A DECLARED SILENCE IS A DELIVERY ITEM. VERIFY IT, DO NOT ASSUME IT.**
+
+```
+When the supplied SPEC names a silence — a window of absolute silence, a
+music-free scene, a hard drop at a stated second — that window is a thing
+the edit was supposed to DELIVER, and its absence is a finding of its own.
+Nothing else in this rubric looks for it: every other check asks whether a
+sound that IS there behaves, and a silence that never arrived makes no
+sound to judge.
+
+□ Go to the stated second. Say what is actually in the mix there.
+□ Report the level, not an impression: a window that reads "quiet" while
+  the surrounding scenes read "quiet" has not been delivered.
+□ Compare it to the film's own quiet floor — the quietest stretch you can
+  find anywhere in the runtime. A declared absolute silence that measures
+  LOUDER than the film's own floor is a 🔴 finding, and name both seconds.
+□ Where the silence exists but sits at a different second than the SPEC
+  states, report both seconds. Late and missing are different defects and
+  only one of them is expensive to fix.
+□ In MODE V you cannot know a silence was planned. Say where the film's
+  quiet floor is, in seconds and level, and stop there.
+```
+
 ---
 
 **Distribution reality — score this inside category 9, do not open a new one.**

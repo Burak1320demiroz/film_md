@@ -43,6 +43,12 @@ echo "🎬 FİLMLER"
 TOPLAM=0
 # 23.08.2026: zombi klasörü yeniden açıldı (görev kartı H) — 12.08'de
 # silinmişti.
+# 04.09.2026: yatay_7_9_dk_filmler kaldırıldı (görev kartı H2, sahip kararı).
+# Klasör DÖRT listeden birden çıktı (film sayımı · tema dağılımı · SPEC borcu
+# · ⑯ politika taraması); zombi turunda üçtü, bu betik o gün büyümüş.
+# ⚠️ TOPLAM DEĞİŞMEDİ ve değişmemeliydi: tek filmi THE_SLOW_STONE silinmedi,
+#    yatay_10_20_dk_filmler'e taşındı (bandı 7 dk'ya açıldı, §2.5). Sayının
+#    düşmesi taşımanın kaçtığı anlamına gelirdi.
 # 26.08.2026: zombi klasörü TEKRAR kaldırıldı (görev kartı H2) ve bu kez
 # tür de kapandı — depo yalnız UZAY filmlerine indirildi. Klasör üç ayrı
 # listeden birden çıkarıldı (film sayımı · tema dağılımı · SPEC borcu);
@@ -52,7 +58,7 @@ TOPLAM=0
 # artık filmin klasörünün İÇİNDE durur ve zaten sayıma girmez; aşağıdaki
 # _QA_SPEC süzgeci geriye dönük emniyet olarak duruyor (tek dosya kalırsa).
 for d in dikey_shorts_filmler yatay_2_4_dk_filmler_uzay \
-         yatay_3_5_dk_filmler yatay_7_9_dk_filmler yatay_10_20_dk_filmler; do
+         yatay_3_5_dk_filmler yatay_10_20_dk_filmler; do
     [ -d "$d" ] || continue
     n=$(ls -1 "$d" 2>/dev/null | grep -viE "^[0-9_]*README" | grep -v "^kilavuzlar$" \
         | grep -viE "_QA_SPEC\.md$" | wc -l | tr -d ' ')
@@ -75,7 +81,7 @@ echo
 echo "🎭 TEMA DAĞILIMI"
 TEMA_P="^[[:space:]>*_#-]*\**[[:space:]]*(TEMA|THEME)([[:space:]]+[[:alpha:]][[:alpha:] ]{0,17}|[[:space:]]*\([[:alpha:] ]{1,18}\))?[[:space:]]*:"
 FILM_DIZIN="dikey_shorts_filmler yatay_2_4_dk_filmler_uzay \
-            yatay_3_5_dk_filmler yatay_7_9_dk_filmler yatay_10_20_dk_filmler"
+            yatay_3_5_dk_filmler yatay_10_20_dk_filmler"
 TEMALI=0
 for d in $FILM_DIZIN; do
     [ -d "$d" ] || continue
@@ -218,7 +224,7 @@ HAM=$(ls -1 "$Q/02_HAM_RAPORLAR/" 2>/dev/null | grep -v README | wc -l | tr -d '
 # ölçüm kalitesinin üst akışıdır, ayrı bir konu değil.
 SPECLI=0
 for d in dikey_shorts_filmler yatay_2_4_dk_filmler_uzay \
-         yatay_3_5_dk_filmler yatay_7_9_dk_filmler yatay_10_20_dk_filmler; do
+         yatay_3_5_dk_filmler yatay_10_20_dk_filmler; do
     [ -d "$d" ] || continue
     for f in "$d"/*/; do
         [ -d "$f" ] || continue
@@ -275,6 +281,12 @@ CALISMIYOR=$(cat "$K/DERSLER/"0[1-9]_*.md | grep -cE "^\*\*TEKRAR:\*\*.*ÇALIŞM
 ADAY=$(grep -cE "^## ADAY-" "$K/DERSLER/GOZLEM_DEFTERI.md" 2>/dev/null || true); ADAY=${ADAY:-0}
 MODD=$(grep -lE "^INPUT MODE:[[:space:]]*D" "$Q/02_HAM_RAPORLAR/"*.md 2>/dev/null | wc -l | tr -d ' ')
 printf "   KAPI satırı olan ders         %s / %s   (geriye dönük tasnif YOK — dokununca alır)\n" "$KAPILI" "$DERS"
+# ⭐ KAPI SATIRI SAYMAK KAPIYI ÇÖZMEK DEĞİLDİR (05.09.2026).
+#    Kontrat kapıyı ZORUNLU kılıyor, sayaç kapı satırını SAYIYORDU — ama kapının
+#    işaret ettiği betik jetonu / liste maddesi hiç ARANMIYORDU. İlk koşu: D179'un
+#    kapısı `prompt_kontrol.py ⑳b DEĞİŞİM KAPISI` yazılı, betikte ⑳b sayısı 0.
+#    Ders "kapılı" sayılıyordu, kapı yoktu. Ayrıntı: kapi_adres.py --tam
+python3 "$K/kapi_adres.py" 2>/dev/null || printf "   ⚠️  kapi_adres.py koşulamadı\n"
 printf "   ⛔ ÇALIŞMIYOR damgalı ders     %s\n" "$CALISMIYOR"
 [ "$CALISMIYOR" -gt 0 ] && cat "$K/DERSLER/"0[1-9]_*.md \
   | awk '/^## .* DERS [0-9]+/{ if (match($0, /DERS [0-9]+/)) d = substr($0, RSTART+5, RLENGTH-5) }
@@ -287,7 +299,7 @@ cat "$K/DERSLER/"0[1-7]_*.md | grep -E "^## .{0,4} DERS [0-9]+" | cut -c1-92 \
   | awk '{ if (match($0, /DERS [0-9]+/)) { n = substr($0, RSTART+5, RLENGTH-5) + 0; print n "\t" $0 } }' \
   | sort -n | tail -5 | cut -f2- | sed 's/^## //; s/^/      /'
 echo "   ── rubrik hacmi (tavan 25 KB · üstü çıktı kapısına taşınır, rubriğe eklenmez) ──"
-for f in "$K"/QA_PROMPTLARI/[1-9]_*.md; do
+for f in "$K"/QA_PROMPTLARI/_KAYNAK/[1-9]_*.md "$K"/QA_PROMPTLARI/_KAYNAK/1[0-2]_*.md; do   # 9-12: D184
     b=$(wc -c < "$f"); kb=$((b / 1024)); flag=""; [ "$kb" -gt 25 ] && flag="⚠️ tavan üstü"
     printf "      %-38s %3s KB  %s\n" "$(basename "$f" | cut -c1-38)" "$kb" "$flag"
 done
@@ -318,8 +330,8 @@ fi
 # ⛔ Betik koşulur, sayı buraya yazılmaz (kural ①).
 echo "   ── ⑯ POLİTİKA SÖZLÜĞÜ · canlı tarama (prompt_kontrol) ──"
 python3 "$K/PROMPT_KONTROL/prompt_kontrol.py" \
-    dikey_shorts_filmler yatay_2_4_dk_filmler_uzay yatay_3_5_dk_filmler \
-    yatay_7_9_dk_filmler yatay_10_20_dk_filmler 2>/dev/null \
+    dikey_shorts_filmler yatay_2_4_dk_filmler_uzay \
+    yatay_3_5_dk_filmler yatay_10_20_dk_filmler 2>/dev/null \
   | grep -oE "politika sözlüğü T[12] · [0-9]+|milliyet ifadesi|gövdeye yönelmiş şiddet fiili|gerçek kurum adı|yapısal red profili" \
   | awk '/T1 ·/{t1+=$NF; n1++} /T2 ·/{t2+=$NF; n2++} /milliyet/{m++}
          /şiddet fiili/{f++} /kurum/{k++} /yapısal/{y++}

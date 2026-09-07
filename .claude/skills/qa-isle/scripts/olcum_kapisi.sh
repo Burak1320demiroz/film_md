@@ -46,9 +46,16 @@ else
 fi
 
 echo "== LOUDNESS (ebur128 · ihraç kilidi −14 LUFS / −1,0 dBTP — KURGU_RITMI §6) =="
+LUFS_I=""
 if [ -n "$AUDIO" ]; then
-  ffmpeg -hide_banner -nostats -i "$M" -af ebur128=peak=true -f null - 2>&1 \
-    | grep -E "^\s+(I:|Peak:)" || echo "(ölçülemedi)"
+  EBU=$(ffmpeg -hide_banner -nostats -i "$M" -af ebur128=peak=true -f null - 2>&1 \
+        | grep -E "^\s+(I:|Peak:)")
+  if [ -n "$EBU" ]; then
+    echo "$EBU"
+    LUFS_I=$(echo "$EBU" | grep -E "^\s+I:" | tail -1 | grep -oE "\-?[0-9]+\.[0-9]+" | head -1)
+  else
+    echo "(ölçülemedi)"
+  fi
 else
   echo "(ses kanalı yok — atlandı)"
 fi
@@ -121,6 +128,8 @@ else
       if (e+0 > D-12) tag=tag " 🔴 KUYRUK KART ŞÜPHESİ";
       if (s+0 < 3)    tag=tag " 🔴 BAŞ KART ŞÜPHESİ";
       printf "donmuş: %.1f-%.1f s (%.1f s)%s\n", s, e, e-s, tag }'
+  KUYRUK_DONMA=$(echo "$FRZ" | awk -v D="$DUR" 'NR%2==1{s=$1} NR%2==0{e=$1;
+      if (e+0 > D-12 && e-s >= 1.5) c++ } END{ print c+0 }')
   # tek başına kalan start (dosya sonuna kadar donmuş) → kuyruk
   n=$(echo "$FRZ" | wc -l | tr -d ' ')
   if [ $((n % 2)) -eq 1 ]; then
@@ -133,6 +142,37 @@ if [ "$DUR" -gt 1 ]; then
     && echo "BAKILACAK: $SONK — kadrajda YAZI/kart varsa 🔴 D70/D72 (ekran metni 0,0 s); kartı kes, ⑪'i yeniden koş" \
     || echo "(son kare üretilemedi)"
 fi
+
+echo "== TESLİM SINIFI [D181] — KURGU YAPILDI MI? =="
+# D181: teslim edilen dosya bir KURGU mu, yoksa üreticinin ham zinciri mi?
+# Dört eksenin ikisi burada ÖLÇÜLÜR, ikisi GÖZLE kapanır. Bir tanesi bile
+# 🔴 ise mercek koşulmaz: sıra KURGU → ÖLÇÜM → MERCEK.
+HAM=0
+if [ -n "$LUFS_I" ]; then
+  D_LU=$(awk -v i="$LUFS_I" 'BEGIN{ d=i-(-14); if (d<0) d=-d; printf "%.1f", d }')
+  if awk -v d="$D_LU" 'BEGIN{ exit !(d > 3) }'; then
+    echo "  LUFS      : ${LUFS_I} → |Δ| ${D_LU} LU  🔴 (eşik 3 LU)"; HAM=1
+  else
+    echo "  LUFS      : ${LUFS_I} → |Δ| ${D_LU} LU  ✅ (eşik 3 LU)"
+  fi
+else
+  echo "  LUFS      : ⬜ ölçülemedi (ses kanalı yok ya da ebur128 çalışmadı)"
+fi
+if [ "${KUYRUK_DONMA:-0}" -gt 0 ]; then
+  echo "  kuyruk    : son 12 s içinde ≥1,5 s donma VAR  🔴  → son_kare.jpg'de YAZI varsa kesin"; HAM=1
+else
+  echo "  kuyruk    : son 12 s içinde ≥1,5 s donma yok  ✅"
+fi
+echo "  filigran  : ⬜ GÖZ — kose_*.png · ≥4/6 örnekte aynı köşede aynı şekil → 🔴 [D150]"
+echo "  klip      : ⬜ SPEC — ölçülen klip sayısı SPEC'in CLIP COUNT'una eşit mi? [D124]"
+echo "  ------------------------------------------------------------"
+if [ "$HAM" -eq 1 ]; then
+  echo "  TESLİM SINIFI: 🚨 HAM ZİNCİR"
+else
+  echo "  TESLİM SINIFI: ⬜ KARARSIZ — iki GÖZ ekseni kapanmadan MASTER denmez"
+fi
+echo "  ⛔ HAM ZİNCİR ise: mercek KOŞULMAZ, rapor OKUNMAZ, satır YAZILMAZ."
+echo "     Önce kurgu yapılır. Sıra: KURGU → ÖLÇÜM → MERCEK."
 
 echo "== NOT: karanlık filmde scene>0.3 kesme görmez; ızgarayı silencedetect deliklerinden ve kart başından oku (10 s katı = ızgara) =="
 

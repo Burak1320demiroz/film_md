@@ -221,7 +221,23 @@
 | 176 | 🔴 | KONTRAST GARANTİSİ ZEMİNİ İKİNCİ KEZ TARİF ETTİ — AYNI PROMPTTA İKİ CÜMLE ZEMİNE İKİ RENK VERDİ VE FİLM ORTASINDA BİYOM DEĞİŞTİRDİ → kontrast ÖZNEYİ tarif eder, yüzeyi değil | [04_ISIK_VE_CEVRE.md](DERSLER/04_ISIK_VE_CEVRE.md) |
 | 177 | 🔴 | SUSKUNLUK KAPISI SIFIR İDDİADA ATEŞLENMEZ — SEKİZ MERCEK BİRDEN SUSTU VE 225 SANİYELİK FİLİGRAN HEM SEKİZ MERCEKTEN HEM BETİKTEN ÇIKTI → ölçüm bayrakları rapor_kontrol.py'ye | [08_QA_SURECI.md](DERSLER/08_QA_SURECI.md) |
 | 178 | 🔴 | ÖLÇÜM HAKEMLİĞİ, BAŞKA BİR FİLMİN RAPORUNU "SAPAN MERCEK" DİYE KURTARDI — YEDİ RAPORUN BEŞİ ÖNCEKİ FİLMİNDİ, KAPI PARTİYİ AYAKTA TUTTU → ⑤'e BÜYÜKLÜK TESTİ + MERCEK YOKLAMASI + ⑤'in özne sayımının okunması | [08_QA_SURECI.md](DERSLER/08_QA_SURECI.md) |
+| 179 | 🔴 | İMAJ PROMPTU DEĞİŞİMİN *SONRASINI* YAZDI — I2V'DE İMAJ t=0'DIR; MODEL SÖNDÜREMEDİĞİ TÜYÜ BAŞKA YERE KOYUP ONU SÖNDÜRDÜ VE FİLMİN BEDELİ HİÇ EKRANA GELMEDİ → ⑳b DEĞİŞİM KAPISI + bedel sahnesi en geniş kuruluma yazılmaz (≥1/8 kısa kenar) | [06_METIN_VE_PROMPT_DILI.md](DERSLER/06_METIN_VE_PROMPT_DILI.md) |
+| 180 | 🔴 | PLANLI MUTLAK SESSİZLİK VİDEO MODELİNDEN İSTENDİ — İKİ FİLM ÜST ÜSTE DORUĞUNU KAYBETTİ; SESSİZLİK DORUKTAN BEŞ SANİYE SONRA GELDİ → sessizlik bıçağı KURGUDA hard mute, betik üç eşikte hakem | [07_KURGU_VE_ANLATI.md](DERSLER/07_KURGU_VE_ANLATI.md) |
+| 181 | 🔴 | HAM ZİNCİR MASTER DEĞİLDİR — KURGU HİÇ YAPILMADAN KOŞAN SEKİZ MERCEK, FİLMİ DEĞİL ÜRETİCİYİ ÖLÇTÜ → `olcum_kapisi.sh` sona TESLİM SINIFI satırı (uygulandı 06.09) | [09_SISTEM_VE_SUREC.md](DERSLER/09_SISTEM_VE_SUREC.md) |
+| 182 | 🔴 | SAYILABİLİR NESNE DİZİSİ "KALABALIK" DEĞİLDİR — FİLMİN TWIST'İ KADRAJIN ÜÇTE BİRİNİ KAPLIYORDU, SEKİZ MERCEK SAYMADI, BİRİ ONU KUSUR SANIP SİLMEYİ ÖNERDİ | [08_QA_SURECI.md](DERSLER/08_QA_SURECI.md) |
+| 183 | 🔴 | ⑩ ÖNERME KAPISI YALNIZ DÜŞÜRÜR, SINIRI SORMAZ — DÜŞEN NOVUM BULGUSUNUN ALTINDAKİ SINIR İHLALİ ONUNLA BİRLİKTE GÖMÜLDÜ → `rapor_kontrol.py` ①.7 NOVUM SINIR KAPISI | [08_QA_SURECI.md](DERSLER/08_QA_SURECI.md) |
+| 184 | 🔴 | SEKİZ MERCEK PLANI EKRANA KARŞI OKUMUYORDU — 8 GERÇEK KUSURUN 2'Sİ YAZILDI; KAÇAN ÜÇ ÜRETİM HATASI "PLAN X DEDİ, EKRAN Y GÖSTERDİ"YDİ → dört plan sadakati merceği ⑨ KADRAJ · ⑩ OYUNCULUK · ⑪ IŞIK · ⑫ HOOK (PAKET_9..12 · T9-T12 · rapor_kontrol dizi/tahmin kapıları · sayı sorulmaz, verilir) | [08_QA_SURECI.md](DERSLER/08_QA_SURECI.md) |
+| 185 | 🔴 | FAZ FİLM DEĞİLDİR — ON İKİ MERCEK BİR ORTA SEGMENTİ (16:00-18:00) BAĞIMSIZ KISA FİLM SANIP HOOK'UNU, FİNALİNİ VE TUTUNDURMASINI PUANLADI, KESME LİSTESİ YAZDI → `rapor_kontrol.py` ①.8 FAZ KAPISI + faz rubriği olmayan faz denetlenmez | [08_QA_SURECI.md](DERSLER/08_QA_SURECI.md) |
+| 186 | 🔴 | "KUSUR BULAMADIM" HÜCRESİNE 7/10 YAZILDI — TEMİZ EKSEN CEZALANDIRILDI, ÖLÇÜLMEMİŞ EKSEN ÖLÇÜLMÜŞ GÖRÜNDÜ (⑤ 6,5 → 4,0) → `rapor_kontrol.py` ①.5 boş/temiz issue + kaynaksız kesinti kapısı | [08_QA_SURECI.md](DERSLER/08_QA_SURECI.md) |
+| 187 | 🔴 | PLANIN "EN UCUZ VE EN KESİN GÖSTERGESİ" DEDİĞİ KİLİT ON İKİ MERCEĞİN ARASINDAN DÜŞTÜ — HİÇBİRİNİN KAPSAMINA GİRMİYORDU (AĞIRLIĞIN ÜÇ KANITI: 0/3) → taşıyıcı kilidin yanına ÖLÇEN MERCEK yazılır | [08_QA_SURECI.md](DERSLER/08_QA_SURECI.md) |
+| 188 | 🔴 | ON İKİ MERCEK EKSİK TESLİMİ OYBİRLİĞİYLE ONAYLADI — raporlar birbirini doğrular, TESLİMİ doğrulamaz; filmin son karesi (S120) makarada yoktu → `rapor_kontrol.py` ①.9: plan sahne sayısı ↔ rapor sahne sayısı | [08_QA_SURECI.md](DERSLER/08_QA_SURECI.md) |
+| 189 | 🔴 | BİR KAPSÜL, DÖRT FATURA — ② ile ⑤ aynı nesneyi TERS YÖNDE sahipleniyordu, ⑨ onu çapa yaptı, ① iki zaman kodlu bulgu yazdı → adı olan nesne ②'nin, adsız alan ⑤'in | [08_QA_SURECI.md](DERSLER/08_QA_SURECI.md) |
 
+> ⚠️ 06.09.2026: 181-182 dizine hiç işlenmemişti (dosyalarda vardı, tabloda
+> yoktu) — 183 yazılırken eklendi. **Aynı arıza ÜÇÜNCÜ kez** (161-163 · 172-174
+> · 181-182): Kart G adım 1b her seferinde atlanıyor, tematik dosya yazılıyor
+> ve dizin satırı yazılmıyor. Vaka 3 → ⛔ ÇALIŞMIYOR + dönüştürme borcu:
+> dizin satırını BETİK yazmalı (`sayac.sh` çift yönlü karşılaştırma).
 > ⚠️ 04.09.2026: 172-174 dizine hiç işlenmemişti (dosyalarda vardı, tabloda
 > yoktu) — 175-177 yazılırken eklendi. Aynı arıza ikinci kez.
 > ⚠️ 01.09.2026: 161-163 dizine hiç işlenmemişti (dosyalarda vardı, tabloda

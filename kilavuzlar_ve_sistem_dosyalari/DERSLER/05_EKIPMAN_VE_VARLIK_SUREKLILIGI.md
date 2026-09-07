@@ -63,18 +63,35 @@ structure must maintain IDENTICAL INTERNAL PROPORTIONS across all scenes:
 - Landing leg geometry (angle, pad size, strut thickness) must remain
   identical in every visible frame.
 - Hull panel proportions and accent stripe widths must not shift.
-- The ship's LONGEST DIMENSION (e.g., 12m) relative to the character
-  (e.g., 1.67m = 1:7.2 ratio) must remain CONSTANT in all establishing
-  shots where both are visible.
+- The ship's LONGEST DIMENSION relative to the character must remain
+  CONSTANT in all establishing shots where both are visible. SPEC side:
+  "hull 12,0 m · figure 1,67 m · 1:7,2". Prompt side: "the hull's long
+  axis reads about seven body-lengths of the figure standing beside it".
 
-IMPLEMENTATION: The IMAGE PROMPT for scenes containing the ship should
-include the critical proportions explicitly (e.g., "door height = 2.1m,
-character height = 1.67m, ramp angle = 25 degrees"). These numbers
-must be COPIED IDENTICALLY into every scene prompt that shows the ship.
+IMPLEMENTATION: proportions live in the SPEC lock list and the plan's
+geometry ledger, NEVER in the prompt body. The image prompt carries the
+SAME ratios as OBJECT-RELATIVE units: "the hatch opening is a little
+wider than her shoulders", "the ramp rises at a shallow angle, about two
+body-lengths of run for every half body-length of rise". The ratio is
+what must be COPIED IDENTICALLY into every scene prompt that shows the
+ship — not the metre value.
 
 NEGATIVE ADDITION: No door/window proportion shifts. No staircase angle
 changes. No hull scaling between scenes. No landing leg geometry changes.
 ```
+
+> 🔄 **REVİZYON — 04.09.2026 (TUR 9 denetimi).** Bu dersin
+> IMPLEMENTATION satırı **Ders 138 ile doğrudan çarpışıyordu:** metreli
+> ölçüyü image prompt gövdesine yazdırıyordu, D138 ise ölçünün gövdeye
+> inince modelin onu nesnenin ÜSTÜNE bastığını ölçtü (THE THIN ROOF S2 ·
+> 22,41 s · halkanın iç yayında `11 metres` + gradasyon çentikleri).
+> Daha kötüsü, `prompt_kontrol.py`'nin yüzey-işareti sözlüğünde
+> door/hatch/ramp/hull/panel/truss yoktu ve "height/…m" muafiyete
+> giriyordu — bu dersin ihlali kapıdan **0 BLOCK ile geçiyordu.**
+> ⭐ Ders geçersiz değil, DİLİ değişti: **oran korunur, birimi değişir.**
+> Metre SPEC'te ve fizik defterinde kalır; prompt aynı oranı gövde boyu
+> cinsinden taşır. Ayrıntılı biçim ve dönüşüm tablosu:
+> `UZAY_USSU_VE_ISTASYON_MIMARISI_KILAVUZU.md` §1.
 
 ---
 

@@ -1,6 +1,6 @@
 # ⚖️ T6 — FİZİK KALİTE TABLOSU (derin tarama)
 
-> **Kaynak rubrik:** `../QA_PROMPTLARI/6_FIZIK_QA_CRITIQUE_PROMPT.md`
+> **Kaynak rubrik:** `../QA_PROMPTLARI/_KAYNAK/6_FIZIK_QA_CRITIQUE_PROMPT.md`
 > **Açılış:** 24.08.2026 — DERİN TARAMA sınıfının ilk iki merceğiyle birlikte
 >
 > **Ne ölçer:** "Dünyanın davranışı ÖLÇÜMDEN sağ çıkıyor mu." Tek sayısal

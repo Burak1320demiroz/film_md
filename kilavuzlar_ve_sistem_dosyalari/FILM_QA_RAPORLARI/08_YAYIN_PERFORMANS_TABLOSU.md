@@ -52,9 +52,15 @@ YAYINLANMIŞ FİLM SAYISI:  0
 
 # 1. 📋 KİMLİK KAYDI — yayından önce doldurulur
 
-| Film | Format | Yayın (GG.AA.YYYY SS:DD) | Platform | Kapak var. | Başlık var. | Hook tipi | QA (T/H/M) |
-|---|---|---|---|---|---|---|---|
-| *(ilk yayınla açılacak)* | | | | | | | |
+| Film | Format | Yayın (GG.AA.YYYY SS:DD) | Platform | Kapak var. | Başlık var. | Hook tipi | QA (T/H/M) | ⑫ tahmin (3 sn · sebep) |
+|---|---|---|---|---|---|---|---|---|
+| *(ilk yayınla açılacak)* | | | | | | | | |
+
+> **⑫ tahmin** hücresi ⑫ HOOK raporunun DROP-OFF PREDICTION bloğundan OLDUĞU
+> GİBİ kopyalanır — yayından ÖNCE, kart F8 adım 3 [D184]. Üç saniye + sabit
+> listeden sebep (`slow open · no stakes yet · plateau · repeated setup ·
+> unreadable beat · card`). Bu hücre bu tablodaki tek MODEL sütunudur ve
+> yalnız §3'teki gerçek terk saniyesiyle kıyaslanmak için vardır.
 
 ---
 
@@ -72,9 +78,13 @@ YAYINLANMIŞ FİLM SAYISI:  0
 
 # 3. 🩺 EĞRİ TEŞHİSİ — terk noktası hangi sahne
 
-| Film | Eğri şekli | Terk saniyesi | Izgara → SAHNE | Suçlu değişken | Revize edilen belge |
-|---|---|:--:|:--:|---|---|
-| *(ilk yayınla açılacak)* | | | | | |
+| Film | Eğri şekli | Terk saniyesi | Izgara → SAHNE | ⑫ Δ (s · tuttu/tutmadı) | Suçlu değişken | Revize edilen belge |
+|---|---|:--:|:--:|:--:|---|---|
+| *(ilk yayınla açılacak)* | | | | | | |
+
+> **⑫ Δ:** gerçek terk saniyesi − §1'deki en yakın ⑫ tahmini. |Δ| ≤ 10 s
+> TUTTU, ötesi TUTMADI. Üç filmde 0/9 tutarsa yanlış olan ⑫'dir →
+> `../URETIM_ONCESI_ANALIZ/01_DERS_ETKINLIK_RAPORU.md` [D184].
 
 ```
 EĞRİ ŞEKİLLERİ (kılavuz §4.1)

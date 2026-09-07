@@ -30,9 +30,12 @@
   SHORTS                                        │
   6 sahne × 8s = 48 sn          ②  SÜRE? ───────┼───────┬───────────┐
   süre seçimi YOK — sabit                       │       │           │
-  (dal burada biter)                          2-4 dk  3-5 dk     7-9 dk
-                                             12-13 sh  25 sh      60 sh
-                                              ~2:00    4:09       8:00
+  (dal burada biter)                          2-4 dk  3-5 dk    7-20 dk
+                                             12-13 sh  25 sh   48-144 sh
+                                              ~2:00    4:09    8:00-20:00
+                                                                (7 fazın
+                                                                 üstünde
+                                                                 PERDE)
                                                 │       │           │
                                                 └───────┴─────┬─────┘
                                                               │
@@ -106,16 +109,25 @@ kısafilmler/
 │
 │   ⭐ 01.09.2026 — YENİ FİLMLERDE KLASÖR İSKELETİ HER FORMATTA AYNI:
 │      PLAN · BOLUM_1 · BOLUM_2 · KAPAK · MUZIK · YAYIN_PAKETI · QA_SPEC
+│      (+ REFERANS_PAKETI — REFERANS_PAKETI_KILAVUZU §1'in altı
+│       tetikleyicisinden biri doğruysa; KAPI 0, promptlardan ÖNCE)
 │      Tanım: KILAVUZ_REHBERI §2.0 · kopya: FILM_KLASOR_SABLONU/
 │      (eski filmler olduğu gibi kalır; yeniden bölünmez)
 │
-├── yatay_7_9_dk_filmler/          16:9 · 60 sahne × 8s · 8:00
-│   └── kilavuzlar/                start/end frame zinciri + 3 geçişli QA
-│                                  (bu formatın kendi kılavuz seti burada)
-│
-├── yatay_10_20_dk_filmler/        ⚠️ sadece README — henüz film yok
+├── yatay_10_20_dk_filmler/        16:9 · 3 perde · bant 7-20 dk
+│                                  (04.09.2026: yatay_7_9_dk_filmler/
+│                                  kaldırıldı, bandın kısa ucu buraya
+│                                  katıldı — THE_SLOW_STONE 48×10s·8:00)
+│                                  ⚠️ üç filmden yalnız THE_SLOW_STONE
+│                                  üretildi (QA 5/10); YERÇEKİMİ ve
+│                                  THE_SECOND_SHIP yazıldı, üretilmedi
+│                                  (05.09.2026: dikey_20_25_dk_filmler/
+│                                  açıldığı gün kaldırıldı — depoda dört
+│                                  film klasörü var, beşincisi yok)
 │
 └── kilavuzlar_ve_sistem_dosyalari/  → Bölüm 4
+    (05.09.2026: film_analizleri/ kaldırıldı — dış film analiz hattı
+     kapandı; kurtarılan metodoloji → DIS_FILM_ANALIZI/, Bölüm 4)
 ```
 
 ```
@@ -170,6 +182,11 @@ kilavuzlar_ve_sistem_dosyalari/
 │   │                                      + hızlı referans bloğu)
 │   ├── VEO_3_1_FAST_..._KILAVUZU.md ..... araç davranışı, tırnak sentaksı
 │   ├── SAHNE_DEVAMLILIK_KILAVUZU.md ..... karakter çapalama, seed
+│   ├── REFERANS_PAKETI_KILAVUZU.md ...... KAPI 0: hangi varlık kendi
+│   │                                      referans sayfasını hak eder,
+│   │                                      durum merdiveni, sayfa kanonu,
+│   │                                      sahne→referans eşleme, kabul
+│   │                                      kapısı (06.09.2026 · D146)
 │   ├── SINEMATOGRAFIK_TEKNIK_KILAVUZ.md . kamera sözlüğü · §17 karar tablosu
 │   ├── SENARYO_VE_VIRAL_KAMERA_KILAVUZU.md  vuruş haritası (§2, sahne
 │   │                                      haritasından ÖNCE) + loop
@@ -266,7 +283,10 @@ kilavuzlar_ve_sistem_dosyalari/
 │   │                                      ⭐ rubrikler SALT PROMPT (12.08.2026)
 │   ├── 00_README.md ..................... klasör rehberi + ajan akışı
 │   ├── CALISTIRMA_KAYITLARI.md .......... koşu tarihçesi + ders dipnotları
-│   ├── FILME_OZEL/ ...................... film-özel üretim kapıları
+│   ├── FILME_OZEL/ ...................... ⭐ OPERATÖRÜN YAPIŞTIRDIĞI TEK YER
+│   │                                      PAKET_1..12 = rubrik + SPEC gömülü (mod D · 9-12 plan sadakati, D184)
+│   ├── _KAYNAK/ ......................... çıplak rubrik 1-8 — BETİK okur,
+│   │                                      operatör AÇMAZ [D129 · 04.09.2026]
 │   ├── ARSIV_6_MERCEK/ .................. ⛔ eski 6 rubrik — ÇALIŞTIRILMAZ
 │   ├── 1_KARE_QA_....md ................. ① sahne içi · yatay VEYA dikey
 │   │                                      (FORMAT: DİKEY → 9:16 · güvenli
@@ -277,6 +297,17 @@ kilavuzlar_ve_sistem_dosyalari/
 │   │                                      (yalnız TAM KURGU — tek klibe koşulmaz)
 │   └── 4_HIKAYE_QA_....md ............... ④ dramaturji (+PLAN = MOD D ·
 │                                          yalnız video = MOD V, satır Ⓥ)
+│
+├── 🎞️ DIS_FILM_ANALIZI/ ................. ⛔ HAT KAPALI (05.09.2026) —
+│   │                                      film_analizleri/ kaldırıldı, kart
+│   │                                      H2 ③ gereği kurtarılanlar burada
+│   ├── 00_README.md ..................... hattın durumu + akış (yeniden
+│   │                                      açılırsa koşulacak tarif)
+│   ├── KAMERA_/OLAY_/TEMA_/SENTEZ_ANALIZ_PROMPT.md  salt promptlar
+│   └── NOBODY_WAS_ALIVE_DERS_SECKISI.md . ⭐ CANLI — THE_LAST_SHIFT ve
+│                                          THE_HOLLOW_COUNT §0.19 tabloları
+│                                          buradan devraldı. Skor üretmez,
+│                                          T tablosuna girmez, sayaç saymaz
 │
 ├── 📊 FILM_QA_RAPORLARI/ ................ QA çıktıları — TEK SAYAÇ
 │   ├── 00_INDEX.md ...................... ⭐ film listesi + ölçüm durumu
@@ -305,15 +336,17 @@ kilavuzlar_ve_sistem_dosyalari/
                                               gerçek veri → kılavuz
                                               revizyonu (22.08.2026)
 
-FORMATA ÖZEL — kendi klasöründe durur
-└── yatay_7_9_dk_filmler/kilavuzlar/
-        ├── 5_FAZ_MIMARISI.md
-        ├── FAZ_DOSYASI_SABLONU.md
-        ├── KESINTISIZ_VIDEO_URETIM_TEKNIGI.md
-        └── kalite_kontrol/ ............... 3 geçişli QA sistemi
-                ⚠️ QA_2 (devamlılık) ile QA_PROMPTLARI/MANTIK_QA aynı hata
-                   sınıfına bakıyor, iki farklı isimle. Ders numarası
-                   çakışması riski duruyor.
+FAZ MİMARİSİ — 04.09.2026'da format klasöründen merkeze çıktı
+├── 5_FAZ_MIMARISI.md ................ faz = dramatik işlev (5 fazlık yay)
+├── FAZ_DOSYASI_SABLONU.md ........... faz dosyası iskeleti · 12 sahne
+├── KESINTISIZ_VIDEO_URETIM_TEKNIGI.md  start/end frame zinciri
+└── QA_PROMPTLARI/UC_GECISLI_QA/ ..... 3 geçişli QA sistemi
+        ⚠️ Üçü de yatay_7_9_dk_filmler/kilavuzlar/'daydı; klasör kapanınca
+           buraya alındı ve format-bağımsız oldu. Faz mimarisini kullanan
+           tek canlı hat 10-20 dk'dır (bant 7-20).
+        ⚠️ QA_2 (devamlılık) ile QA_PROMPTLARI/MANTIK_QA aynı hata
+           sınıfına bakıyor, iki farklı isimle. Ders numarası
+           çakışması riski duruyor.
 ```
 
 ---

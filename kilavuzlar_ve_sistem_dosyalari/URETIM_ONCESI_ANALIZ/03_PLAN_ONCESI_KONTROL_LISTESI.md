@@ -183,6 +183,20 @@ satırını al, motifi sahne sahne dağıt. Betik tarafı:
    dutch 5-15° ideal · 15-30° meşru · 35°+ ⛔ kiç
    alt açı 15-30° meşru · 45°+ ⛔ · üst açı 15-30° · 45-60° ⛔ ölü bölge
 □ Doruk sahnesi en yüksek kontrast sıçramasını taşıyor mu? [ACI_YAYI §9]
+□ 🆕 KURULUM İSKELETİ satırı PLAN'da yazılı mı?  [ACI_YAYI §4b · 05.09.2026]
+   Bu satır kapıyı AÇAR: prompt_kontrol ⑩④ yalnız onu beyan eden
+   dosyada koşar. Harf sayısı sahne sayısına eşit olmak zorunda.
+□ 🆕 12+ sahne: KÜME ≥2 mü?                      [ACI_YAYI §3 🕰️]
+   Küme = tek vuruş sürerken ardışık 2-3 klip aynı kurulumda.
+   Sahne sayısını ve süreyi DEĞİŞTİRMEZ, kesme sayısını düşürür.
+   6-11 sahne ve dikey shorts MUAF.
+□ 🆕 12+ sahne: DÖNÜŞ oranı ≥%40 mı?             [ACI_YAYI §4b]
+   Dönüş = kaynağından EN ÇOK 3 sahne sonra gelen tekrar. Daha
+   uzağı yeniden tanıtımdır ve sayılmaz. ⛔ Üst banda uymak yetmez:
+   A B C D E F A B C D E F tavana uygundur, dönüş oranı %0'dır.
+□ 🆕 Her dönüş/küme kamera metnini BİREBİR kopyalıyor + işaret
+   satırını taşıyor mu?                          [ACI_YAYI §7 ⑥]
+   Model harf iskeletini GÖRMEZ, yalnız metni görür.
 ```
 
 > 🚨 **Gerçek olay:** THE BRIGHT TETHER (26.08.2026, deponun en yeni filmi).
@@ -264,6 +278,34 @@ Liste maddesi betiğin göremediği tek şeyi sorar: dizinin VURUŞLA eşleşmes
 > **Kaynak:** kısa filmde çatışma ZORUNLU değildir [Raskin] — ama iki kişi
 > kadraja girdiyse aralarındaki fark **etkileşimin kendisidir**, ve
 > etkileşimin yokluğu "umursamadım"ın üçüncü sebebidir [TUR 4 · T4.1/6].
+
+---
+
+### B5c — ÜRETİM SIRASI ⭐ 🆕 05.09.2026 [D168]
+
+```
+□ ÜRETİM SIRASI plana yazıldı ve DRAMATİK SIRA DEĞİL:
+  referans paketi → DORUK → merkezî seçim → kapanış imajı → S0 → kalanı
+□ Üretilecek İLK sahne = S___   (doruk ya da merkezî seçim olmalı)
+□ ⛔ Sıra S0'dan başlıyorsa satır GEÇMEZ.
+```
+
+> **Gerekçe:** yarıda kalma bir olasılık değil, bu hattın NORMALİDİR —
+> üretim red alır, kota biter, motor değişir, gün biter (depoda 15 red
+> vakası). Soru "film biterse nasıl görünür" değil, **"film HERHANGİ BİR
+> NOKTADA durursa elde ne kalır"**dır. Baştan üretirsen elde hep KURULUM
+> kalır ve kurulum, tanımı gereği, kendini savunamayan malzemedir.
+>
+> **Vaka:** THE SINKING STAKE (02.09.2026) — 25 sahnenin ~14'ü üretildi,
+> sırası planla birebir, ve eksik 11 sahne ARDIŞIKTIR ve filmin SONUDUR
+> (merkezî seçim S19 · doruk S21 · ikinci seçim S22 · final S24).
+> Sahibin değerlendirmesi: *"ne bir mantıklı ilerleme var ne de sahneler
+> arası devamlılık"* — ilerleme yok çünkü ilerleme VAR OLMAYAN kısımda.
+>
+> ⚠️ **Bu madde PLANI bağlar, ÜRETİMİ bağlamaz** [D168 · 2. vaka]:
+> THE UPWARD FALL'da ÜRETİM SIRASI plana YAZILMIŞTI ("1. DORUK S24") ve
+> S24 yine teslim edilmedi. Teslim tarafının ölçüm aleti ④ KURGU
+> KAPISI'nın **FİNAL VURUŞ KANITI** satırıdır [D141].
 
 ---
 
@@ -400,6 +442,8 @@ B3 □ TEMA: ___________ · motife döndüğü sahneler: S___, S___, S___
 B4 □ kurulum dizisi: _______________ · kurulum sayısı ___ · açı tipi ___
      ardışık çiftler güvenli bantta (≥1 kademe + ≥45°) · şok sayısı ___/2
      derece satırları abartı bandında               [ACI_YAYI §3-4 · KAMERA §5]
+     🆕 KURULUM İSKELETİ: ______________ · küme ___/2 · dönüş %___/40
+     🆕 dönüş+küme satırları birebir kopya + işaret taşıyor  [ACI_YAYI §4b · §7 ⑥]
 B5 □ İSTEK: ______________ (anlamak/görmek/fark etmek DEĞİL)
      ENGEL: ______________ · BEDEL: ____________ S___ ⭐ (B2 ile çapraz)
      MUHATAP: □ ikinci insan  □ kendi geçmiş kararı  □ kendi bedeni

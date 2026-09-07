@@ -2,7 +2,7 @@
 Dikey YouTube Shorts / Reels Production Document
 Format: **9:16 (DİKEY)** | Sahne: 6 (Hook + 5 Ana Sahne) | Süre: Her sahne 8 saniye, toplam 48 saniye
 Prompt yapısı: Her sahne için **1 görsel promptu + 2 video promptu** (Versiyon A = T2V, Versiyon B = I2V)
-Kaynak: `yatay_7_9_dk_filmler/THE_SLOW_STONE/` (8 dk, 48 sahne · QA **5/10**)
+Kaynak: `yatay_10_20_dk_filmler/THE_SLOW_STONE/` (8 dk, 48 sahne · QA **5/10**)
 _"Hareketsiz kalan her şey kalır. Sonsuza kadar."_
 
 ---

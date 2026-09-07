@@ -1,6 +1,6 @@
 # 🔗 T2 — DEVAMLILIK KALİTE TABLOSU (sahneler arası)
 
-> **Kaynak rubrik:** `../QA_PROMPTLARI/2_DEVAMLILIK_QA_CRITIQUE_PROMPT.md`
+> **Kaynak rubrik:** `../QA_PROMPTLARI/_KAYNAK/2_DEVAMLILIK_QA_CRITIQUE_PROMPT.md`
 > **Açılış:** 22.08.2026 — dört mercekli sisteme geçişle birlikte
 > **Selefleri:** `04_MANTIK_KALITE_TABLOSU.md` ve
 > `06_KARAKTER_KALITE_TABLOSU.md` — ikisi de aynı gün KAPANDI. İki rubrik
@@ -55,6 +55,11 @@ gördü" o zaman bir doğrulama değil, tek raporun dört kopyasıdır.
 | **The Iron Slope** Ⓥ ⛔ ⚠️ | ⬜ | 3 | 10 | 5 | 9 | 8 | — | 2 | 7 | 3 | ⬜ | — | ⬜ | **5,9** |
 
 | **The Rose Coat** ⚠️ | — | ⬜ | ⬜ | ⬜ | (7) | — | ⬜ | (7) | — | ⬜ | — | — | — | **—** |
+| **The Payload** Ⓥ ⛔ ⚠️ | 9 | 3 | 4 | 3 | 8 | 8 | — | 6 | 9 | 4 | 9 | 1 | 8 | **6,0** |
+| **The Skylight** Ⓥ ⛔ | 9 | 5 | 4 | 6 | 8 | 7 | — | 7 | 8 | 6 | 9 | 9 | 9 | **7,2** |
+| **The Still Swarm** Ⓥ ⛔ ⚠️ | 10 | 7 | 10 | 4 | 8 | 10 | — | 7 | 10 | 8 | 10 | 3 | 7 | **7,8** |
+| **The Thin Roof** Ⓥ ⛔ ⚠️ | — | — | 8 | 6 | 9 | — | — | 7 | — | — | — | 1 | — | **6,2** |
+| **The Upward Fall** Ⓥ ⛔ ⚠️ | — | 7 | — | 4 | — | — | — | 6 | — | — | — | — | — | **5,7** |
 
 > **The Rose Coat · 26.08.2026 · belgesiz koşu · ⚠️ ŞARTLI**
 > Kayıt: [`01_FILM_RAPORLARI/THE_ROSE_COAT.md`](01_FILM_RAPORLARI/THE_ROSE_COAT.md)

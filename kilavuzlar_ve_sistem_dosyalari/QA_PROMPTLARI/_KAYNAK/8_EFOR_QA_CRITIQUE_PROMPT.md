@@ -98,6 +98,14 @@ it changes what counts as work. In a world where nothing can be pushed
 against, throwing mass IS the exertion, and a body that throws and drifts
 is paying a bill you will otherwise score as "no strain shown".
 
+⛔ **EVERY REGISTERED RULE CARRIES ITS BOUNDARY.** A world rule holds inside a
+region, a medium, a side of a threshold — write that boundary on the register
+line ("below the lip, not above it") and then check one exertion on the
+ORDINARY side of it. Work done on the ordinary side must cost what ordinary
+work costs; if the rule has leaked there, effort disappears for a reason the
+register never granted. If the boundary is not stated, say so in FLAGS; never
+assume the rule covers the whole frame.
+
 ⛔ **LOW GRAVITY IS NOT LOW EFFORT.** A 0.12g environment reduces weight, not
 mass and not inertia. Starting, stopping and turning a large mass costs the
 same. A film where everything is effortless because "it's low gravity" has

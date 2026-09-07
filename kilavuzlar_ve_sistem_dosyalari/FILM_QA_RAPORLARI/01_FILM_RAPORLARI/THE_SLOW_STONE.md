@@ -1,7 +1,7 @@
 # 🔍 THE SLOW STONE — QA KAYDI
 
-> **Kaynak dosya:** `yatay_7_9_dk_filmler/THE_SLOW_STONE/`
-> ✅ **ORİJİNAL QA RAPORU MEVCUT:** `yatay_7_9_dk_filmler/THE_SLOW_STONE/QA_RAPORU.md`
+> **Kaynak dosya:** `yatay_10_20_dk_filmler/THE_SLOW_STONE/`
+> ✅ **ORİJİNAL QA RAPORU MEVCUT:** `yatay_10_20_dk_filmler/THE_SLOW_STONE/QA_RAPORU.md`
 > **(235 satır, 4 rapor birleştirilmiş) — projedeki TEK tam QA belgesi.**
 > Bu dosya sadece özet ve indekstir; ayrıntı için kaynak rapora bakılır.
 

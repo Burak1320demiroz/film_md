@@ -380,13 +380,33 @@ What the figures DO — measured against what the shot establishes:
 ```
 □ No object in the field appears or disappears within a shot
 □ Between two visits to the same place, the untouched set dressing is
-  the same dressing (moved-by-the-action objects belong to the
-  continuity lens; untouched ones are yours)
+  the same dressing — BUT ONLY IF IT IS ANONYMOUS FIELD (see the gate
+  directly below). A named object's change across scenes is never yours.
 □ No impossible repetition: the same vehicle twice in one row, the same
   window pattern tiling across a facade, cloned debris
 □ Background objects are period- and world-coherent with what the film
   itself establishes — a defect here needs an ON-SCREEN contradiction,
   not your knowledge of what "should" be there
+```
+
+```
+⛔ AN OBJECT THAT IS A SUBJECT IN ANY SCENE IS NEVER BACKGROUND IN ANOTHER.
+
+Read your own SUBJECTS EXCLUDED list before you write a finding here.
+If the object you are about to score appears on that list for ANY scene —
+the capsule you excluded in S1, the vehicle the film opened on — it is a
+NAMED object, the film attends to it, and its change across scenes belongs
+to the CONTINUITY lens. You write it as a one-line out-of-scope flag and
+take NO number for it.
+
+What is yours in this category is the ANONYMOUS field: dressing the film
+never attends to, texture, tiling, clones, things no scene is about.
+
+Why this line exists: on 07.09.2026 one capsule-and-parachute layout was
+scored by FOUR lenses at once — the frame lens as Environment, continuity
+as World State, this category, and the setup lens as its own frame anchor.
+One defect, four deductions, one merged record. The object had been listed
+as this lens's OWN excluded subject two scenes earlier [D189].
 ```
 
 ### 7. 🔍 FOCUS HONESTY

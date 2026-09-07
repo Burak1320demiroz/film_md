@@ -1,4 +1,8 @@
-# 🔍 3 GEÇİŞLİ QA SİSTEMİ — 7-9 Dakikalık Filmler
+# 🔍 3 GEÇİŞLİ QA SİSTEMİ — Uzun Filmler (7 dk üstü)
+
+> 04.09.2026: `yatay_7_9_dk_filmler/kilavuzlar/kalite_kontrol/`'den buraya
+> taşındı. ⛔ `_KAYNAK/`'taki dört mercekten AYRI bir sistemdir; iki sistemin
+> skorları aynı tabloya yazılamaz [00_README].
 
 > **Neden 3 prompt?** 2-4 dk formatının tek dev QA promptu (`1_KARE_QA_CRITIQUE_PROMPT.md`,
 > 11 kategori, 511 satır) 8 saniyelik TEK klip için tasarlandı. 480 saniyelik,
@@ -80,8 +84,9 @@ o kontrolü `UNVERIFIABLE` yapar** — model tahmin etmez, "doğrulanamadı" der
 Üç raporu da bana gönder. Ben:
 1. Üç raporu tek tabloda birleştiririm (aşağıdaki şablon),
 2. Çakışan bulguları tekilleştiririm,
-3. Mevcut 42 derse eşleşenleri işaretlerim,
-4. Eşleşmeyenleri **Ders 43+** formatında `LESSONS_LEARNED.md`'ye yazarım,
+3. Mevcut derslere eşleşenleri işaretlerim,
+4. Eşleşmeyenleri sıradaki ders numarasıyla `LESSONS_LEARNED.md`'ye yazarım
+   (numara elle sayılmaz: `bash kilavuzlar_ve_sistem_dosyalari/sayac.sh`),
 5. Prompt düzeltmelerini ilgili faz dosyasına uygularım.
 
 ---
@@ -139,8 +144,8 @@ Bu eşik olmadan ders listesi şişer ve negatif blok karakter bandını (video
 
 | Dosya | Konum | Ne için |
 |---|---|---|
-| 5 Faz Mimarisi | `../5_FAZ_MIMARISI.md` | Geçiş 3'ün yay ölçütü |
-| Kesintisiz Üretim Tekniği | `../KESINTISIZ_VIDEO_URETIM_TEKNIGI.md` | Geçiş 1'in çapa ölçütü |
-| Faz Dosyası Şablonu | `../FAZ_DOSYASI_SABLONU.md` | Düzeltmelerin uygulanacağı yer |
-| Lessons Learned | `../../../kilavuzlar_ve_sistem_dosyalari/LESSONS_LEARNED.md` | 42 ders — eşleştirme kaynağı |
-| Tekil klip QA | `../../../kilavuzlar_ve_sistem_dosyalari/QA_PROMPTLARI/1_KARE_QA_CRITIQUE_PROMPT.md` | Tek 8s klip yeniden üretilince |
+| 5 Faz Mimarisi | `../../5_FAZ_MIMARISI.md` | Geçiş 3'ün yay ölçütü |
+| Kesintisiz Üretim Tekniği | `../../KESINTISIZ_VIDEO_URETIM_TEKNIGI.md` | Geçiş 1'in çapa ölçütü |
+| Faz Dosyası Şablonu | `../../FAZ_DOSYASI_SABLONU.md` | Düzeltmelerin uygulanacağı yer |
+| Lessons Learned | `../../LESSONS_LEARNED.md` | eşleştirme kaynağı — ders sayısı `sayac.sh`'te |
+| Tekil klip QA | `../_KAYNAK/1_KARE_QA_CRITIQUE_PROMPT.md` | Tek 8s klip yeniden üretilince |

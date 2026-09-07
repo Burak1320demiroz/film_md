@@ -51,7 +51,14 @@ karmaşadan arınmış + beklenti ihlali (pattern interrupt — beyin anomaliyi
 □ Rim light ile arka plandan ayrıştırma
 □ Vizör camında İKİNCİ hikaye objesi yansır (gezegen, yapı, patlama ışığı)
 □ Kadrajın kalanı yoğun negatif alan
-□ Vizör içindeki yüz OKUNMAZ → bilgi boşluğu izleyiciyi videoda tutar
+□ Vizör içindeki yüz OKUNUR → ⭐ 04.09.2026 SAHİBİN KARARI ile
+  DEĞİŞTİ (eskisi: "yüz OKUNMAZ → bilgi boşluğu"). Bilgi boşluğunu
+  camdaki YANSIMA taşır, karanlık yüz değil. Gerekçe ölçümdür:
+  THE STARLESS CIRCLE'da yüz 14 sahnenin yalnız 3'ünde okundu ve
+  Ekipman 4/10 geldi (tekrarları UNBROKEN CITY · BLIND RETURN);
+  ters yönde D95 vizör tamamen görünmez olunca iki bağımsız mercek
+  "kask çıkarılmış" okudu. Kilit: D79 · POLITIKA §3 imza ⑥.
+  Kayıt: ../URETIM_ONCESI_ANALIZ/04_ARASTIRMA_BULGULARI.md §TUR 11 · T11.5③
 ```
 
 Sayılar (ilk 3 saniye kancası): izleyicinin %71'i kalma kararını ilk
@@ -150,10 +157,12 @@ siyah arka plan modelin render yükünü sıfırlar, titreme önlenir.
 Extreme wide shot. A tiny, silhouetted astronaut floating tethered against the infinite, pitch-black void of deep space. Static lock-off camera. A single, distant, blinding star casts harsh bright light on one edge of the suit. Cinematic scale, 1-point perspective, absolute isolation. No subtitles. Audio: deep, unsettling sub-bass rumble, a subtle heartbeat fading in and out, extreme quiet.
 ```
 
-**K3 · Vizörde gezegen** — yüz yerine camdaki yansıma anlatır; mikro
-hareket buğudan gelir.
+**K3 · Vizörde gezegen** — camdaki yansıma İKİNCİ hikâyeyi anlatır;
+yüz yansımanın ARDINDA okunur kalır. ⭐ Kalıp 04.09.2026'da düzeltildi
+(eskisi yüzü karanlıkta gizliyor ve cama yoğuşma koyuyordu — ikisi de
+D79/D37/D57 kilidini deliyordu; kayıt T11.5③ · T11.5④).
 ```
-Extreme close-up shot of a scratched astronaut helmet visor. Static lock-off camera. The face inside is completely hidden in darkness. The curved glass clearly reflects a massive, glowing blue gas giant planet. Slow condensation forming on the cold glass. Sharp focus. No subtitles. Audio: faint, high-pitched crackle of dead radio static, slow muffled inhales.
+Extreme close-up shot of a scratched astronaut helmet visor. Static lock-off camera. The glass is optically clear with zero tint and zero mirror coating; the face behind it stays fully readable, lit from inside the helmet. Across the upper half of the curved glass a massive, glowing blue gas giant is reflected, and the reflection sits over the glass without covering the eyes. Sharp focus. No subtitles. Audio: faint, high-pitched crackle of dead radio static, slow muffled inhales.
 ```
 
 **K4 · Monolitik karşılaşma** — alt açı + ölçek kontrastı: nesnenin

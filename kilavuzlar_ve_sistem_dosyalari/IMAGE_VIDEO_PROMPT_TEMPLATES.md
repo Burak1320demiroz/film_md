@@ -110,6 +110,12 @@ NEGATIVE:
 >       shallow depth of field, physically accurate perspective.
 >    "Sayı+harf+bölü" dizilimi ekranda lens verisi olarak okunabilecek
 >    tek biçim.
+>    ⚠️ **04.09.2026:** bu örnek KARAKTER çekimi içindir. Kadrajın öznesi
+>    BÜYÜK BİR YAPI ise (istasyon · üs · gemi) sığ alan derinliği ölçeği
+>    kırar ve yapıyı maket okutur — orada derin netlik zorunludur:
+>    `UZAY_USSU_VE_ISTASYON_MIMARISI_KILAVUZU.md` §5.4.
+>    ⛔ Ve nesne ÖLÇÜSÜ prompt gövdesine yazılmaz [Ders 138]; kamera
+>    MESAFESİ yazılır (muaf).
 >
 > 3. NEGATIVE bloğuna ekle (ikinci savunma hattı):
 >    HUD overlay, lens data, focal length text, camera metadata, name label,
@@ -223,8 +229,8 @@ Spires visible in the far background. The sand is fine, pale grey,
 completely still. The violet-gold sky casts even, warm light.
 
 SUBJECT:
-[CHARACTER BIBLE] The figure crouches at approximately 1 meter from
-0.3m crystal spike, her head tilted, studying the spike's facets.
+[CHARACTER BIBLE] The figure crouches an arm's length from a crystal
+spike no taller than her forearm, her head tilted, studying its facets.
 Her throat-collar resonator plate is inactive (no glow). Her wrist
 display shows a slow amber pulse. Hands empty.
 

@@ -2012,3 +2012,373 @@ D166 → rubrik_paketle.sh ⑥ enjeksiyonu (süzgeç SATIR değil KAYIT seçer)
 D166 → rapor_kontrol.py ①.6 NOVUM KAPISI (⑥⑦⑧ · ateşleme doğrulandı:
        THE STILL SWARM 3/3, THE COLD WELD 0/6)
 ```
+
+---
+
+### 🧭 DERS → RUBRİK İZ DEFTERİ — 179-180 eki
+
+> Kaynak koşu: THE HEALING GROUND · 04.09.2026 · yedi mercek, **yedisi de mod V**.
+> ⛔ **İki dersin ikisi de RAPORDAN gelmiyor** — biri ⑪ ÖLÇÜM KAPISINDAN (ses
+> profili, iki film üst üste), biri FİLMİN KENDİ PROMPT DOSYASINDAN (imaj ↔ video
+> çelişkisi) + iki kareden. Bu yüzden D63'ün "önce kaynak rubriği yamala"
+> maddesinin kaynağı yok: yamalanacak bir kaynak rubrik çalıştırması yok.
+> 5c taraması yine de koşuldu.
+
+```
+D179 → hiçbir rubriğe işlenmedi · GEREKMEZ · ders BİTMİŞ FİLMİ değil PROMPT
+       ÇİFTİNİ denetliyor; rubrik yalnız çıktıyı görür, imaj promptunu hiç
+       görmez. Kapı üretimden ÖNCEDİR.
+D179 → prompt_kontrol.py ⑳b DEĞİŞİM KAPISI · ⬜ YAZILACAK
+       (sahne başlığında `BEDEL SAHNESİ` / `MERKEZÎ SEÇİM` varsa: video
+        promptunun `0.0s` satırındaki durum nesnesi alınır, İMAJ promptunda
+        `no <nesne>` / `zero <nesne>` / `<nesne> ... dark and still`
+        aranır → bulunursa ⛔ BLOCK)
+D179 → 03_PLAN_ONCESI_KONTROL_LISTESI.md · ⬜ YAZILACAK — B5 BEDEL maddesine
+       iki satır: "bedelin taşıyıcısı kadrajın kısa kenarının ≥1/8'i mi?" +
+       "imaj promptu 0,0 saniyeyi mi yazıyor, sonucu mu?"
+D179 → 1_KARE · 2_DEVAMLILIK · 3_SES · 4_HIKAYE · 5_ARKA_PLAN · 6_FIZIK ·
+       7_AKSIYON · 8_EFOR · GEREKMEZ · 5c taraması koşuldu ("bu rubrik aynı
+       malzemeyi görse aynı hatayı yapar mıydı?") → hayır: sekizinin de girdisi
+       BİTMİŞ VİDEO'dur, çelişki iki prompt ARASINDA duruyor ve hiçbiri
+       promptu görmüyor. ⭐ Ölçüm: ④ HİKAYE mod V'de bu sahneye "REWRITE —
+       needs to show why they are pressing it harder. What is failing?" yazdı;
+       yani mercek sonucu doğru gördü, sebebi göremezdi.
+
+D180 → 3_SES_QA_CRITIQUE_PROMPT.md · §9 MUSIC & SILENCE ✅ YAMANDI
+       ("A DECLARED SILENCE IS A DELIVERY ITEM. VERIFY IT, DO NOT ASSUME IT."
+        — beyan edilen saniyeye git · seviyeyi yaz · filmin KENDİ sessiz
+        dibiyle karşılaştır · geç gelen sessizlikte İKİ saniyeyi de yaz ·
+        mod V'de yalnız dibi bildir)
+       Gerekçe: rubrik sessizliği ŞÜPHE olarak tanıyordu ("absolute digital
+       silence never appears between clips") ama BEKLENEN sessizliği hiç
+       aramıyordu. Gelmemiş bir sessizlik ses çıkarmaz; başka hiçbir kutu
+       onu göremez.
+D180 → 1_KARE · 2_DEVAMLILIK · 4_HIKAYE · 5_ARKA_PLAN · 6_FIZIK · 7_AKSIYON ·
+       8_EFOR · GEREKMEZ · 5c taraması koşuldu → ses yedisinin de kapsamı
+       dışında (①'in yalnız "vakumda ses" ve lip-sync kutusu var).
+       ⚠️ AMA ④ HİKAYE bu kusurun SONUCUNU gördü ve "no peak located" yazdı —
+       yani doruk kaybı hikâye merceğine YANSIYOR, sebebi ③'te duruyor.
+D180 → olcum_kapisi.sh · SESSİZLİK satırı ZATEN VAR (−50 dB / 0,3 s) ·
+       ⬜ AÇIK: üç eşiğe çıkarılacak (−50 / −40 / −30) ve filmin sessiz DİBİ
+       (saniye + dB) da basılacak — bu koşuda elle ölçüldü
+D180 → rapor_kontrol.py · ⬜ YAZILACAK `--olcum-sessizlik <baş>-<son>` bayrağı
+       ([[D177]]'nin `--olcum-filigran` / `--olcum-lufs` bayraklarının kardeşi)
+D180 → MUZIK dosyası şablonu · ⬜ YAZILACAK — SESSİZLİK KARARI bloğuna zorunlu
+       satır: `KURGUDA HARD MUTE: sn <baş> – <son>` (ızgaradan hesaplatılır)
+```
+
+---
+
+## 🔴 06.09.2026 · YERÇEKİMİ FAZ 8 — DERS 110 İHLALİ, SEKİZ MERCEK TEK OTURUMDA
+
+```
+Makara  YERÇEKİMİ faz 8 · ~99-100 s · 10 klip
+Koşulan ⑤ arka plan → ⑥ fizik → ① kare → ② devamlılık → ③ ses →
+        ④ hikaye → ⑦ aksiyon → ⑧ efor  · HEPSİ AYNI SOHBETTE
+Ham     ../FILM_QA_RAPORLARI/02_HAM_RAPORLAR/YERCEKIMI_FAZ08_8MERCEK_HAM.md
+```
+
+**Kontaminasyon kanıtı dosyanın kendi içinde duruyor ve tek satırda okunuyor:**
+
+```
+⑥ FİZİK (erken)  : "LINES HEARD: none — nothing audible to me"
+① KARE  (sonra)  : "LINES HEARD: 3" + üç cümle + zaman kodları
+②③④⑦⑧ (sonra)  : AYNI üç cümle · AYNI zaman kodları · AYNI sahne
+                   haritası · AYNI presence string "-111-1-11-"
+```
+
+⛔ **Sekiz ölçüm değil, bir ölçüm ve yedi kopyadır.** "Altı mercek aynı
+şeyi gördü" bir doğrulama sanıldı; oysa altısı da ikincinin cümlesini
+devraldı. Ve devralınan şey en pahalı iddiaydı: filmin kask takvimini
+kıran üç replik.
+
+```
+✅ DOĞRULAMA KOMUTU — modele sorulmaz:
+   ffprobe -v error -select_streams a -show_entries stream=codec_name,channels -of csv=p=0 <makara>
+```
+
+**İKİNCİ İHLAL — YANLIŞ ALET:** faza özgü `FAZ_08_QA_PROMPT.md` dururken
+genel sekiz mercek ÇIPLAK koşuldu [D129]. Ölçülebilir bedeli:
+
+```
+· ÜÇ YANLIŞ POZİTİF — üçü de belgede yazılı TASARIMI kusur yazdı:
+  düz egzoz konisi (D36 tam da bunu ister) · "kalın eldiven" (A
+  eldivensiz) · "sabit hızlı enkaz" (⑥ fizik doğru okudu, ① ve ⑧ yazdı)
+· FAZIN EN KIRILGAN KİLİDİ HİÇ ÖLÇÜLMEDİ: S88'in bir saniyeden kısa
+  ışık geçişi. Sekiz merceğin hiçbiri sormadı; faza özgü rubrik üç
+  ayrı yerde soruyor.
+· ④ HİKAYE bir FAZ makarasını FİLM sandı → 3,5/10 "REWRITE PREMISE".
+  Yüz saniyelik bir faz, yirmi dakikalık bir filmin doruk rampasıdır.
+```
+
+**KURAL — kayda geçti:**
+
+```
+① FAZ makarasına o fazın KENDİ iki mühürlü rubriği koşulur (D164).
+② Genel sekiz mercek TAM KURGUYA koşulur, faza değil.
+③ Her mercek TEMİZ OTURUMDA [DERS 110] — istisnasız.
+④ Aynı iddia birden çok raporda geçiyorsa, önce SIRAYA bakılır:
+   sonraki raporlar öncekinin cümlesini devralmış olabilir.
+```
+
+---
+
+### 🧭 DERS → RUBRİK İZ DEFTERİ — 181-183 eki
+
+**Kaynak koşu:** THE KEPT LIGHT · 06.09.2026 · sekiz mercek (Gemini, iki küme
+hâlinde tek oturum) · sekizi de mod V · parti 🚨 GEÇERSİZ.
+Film kaydı: `FILM_QA_RAPORLARI/01_FILM_RAPORLARI/THE_KEPT_LIGHT.md`
+
+```
+D181 → olcum_kapisi.sh · == TESLİM SINIFI [D181] == bloğu ✅ YAZILDI (06.09)
+       borç KAPANDI: ders 05.09'da yazıldı, kapısı 06.09'da koda indi.
+       İki eksen ÖLÇÜLÜR (LUFS eşiği 3 LU · kuyrukta ≥1,5 s donma),
+       iki eksen ⬜ GÖZ / ⬜ SPEC olarak açık kalır (filigran · klip sayısı).
+       İlk koşusu: THE KEPT LIGHT → 🚨 HAM ZİNCİR.
+D181 → AGENTS.md §3 ⑪ ÖLÇÜM KAPISI ✅ YAMANDI — betiğin satırı + "HAM ZİNCİR
+       ise mercek KOŞULMAZ" hükmü.
+D181 → .claude/skills/qa-isle/SKILL.md §1 ✅ YAMANDI.
+D181 → hiçbir MERCEK rubriğine işlenmedi · GEREKMEZ · ders TESLİM SINIFINI
+       ölçer; mercek eline geçen dosyanın kurgulanmış olup olmadığını
+       gözleyemez (dosya özelliği, D137'nin aynı ailesi).
+
+D183 → 6_FIZIK_QA_CRITIQUE_PROMPT.md · STEP 0 PREMISE GATE ✅ YAMANDI
+       ("EVERY REGISTERED RULE CARRIES ITS BOUNDARY, AND YOU VERIFY THE
+        BOUNDARY") — kaynak rubrik, önce burası [D63].
+D183 → 7_AKSIYON_QA_CRITIQUE_PROMPT.md · STEP 0 PREMISE GATE ✅ YAMANDI
+       (5c taraması: ⑦'nin register'ı aynı biçimde yalnız ortamı yazıyordu —
+        aynı malzemeyi görse aynı hatayı yapardı → yamandı)
+D183 → 8_EFOR_QA_CRITIQUE_PROMPT.md · STEP 0 PREMISE GATE ✅ YAMANDI
+       (aynı gerekçe; ⑧ bu koşuda register'a "1G interior, vacuum exterior"
+        yazdı — sınır cümlesi hiç yok)
+D183 → 1_KARE · 2_DEVAMLILIK · 3_SES · 4_HIKAYE · 5_ARKA_PLAN · GEREKMEZ ·
+       bu beş rubrikte PREMISE REGISTER bölümü YOKTUR; kural kaydı yalnız
+       ⑥ ⑦ ⑧'de tutulur.
+D183 → rapor_kontrol.py · ①.7 NOVUM SINIR KAPISI ✅ YAZILDI (06.09) —
+       SPEC'in NOVUM bloğundaki ⛔ cümlesini basar. ⚠️ Kalibrasyon notu:
+       ilk sürüm `^\s*⛔` ile satır BAŞINDA aradı ve Kept Light'ın sınır
+       cümlesini KAÇIRDI (cümle "tamamlanması. ⛔ İhlal DIŞINDA…" diye
+       satır ORTASINDA başlıyordu) → arama satır İÇİNE alındı.
+D183 → AGENTS.md §3 ⑩ ÖNERME KAPISI · ALTINCI SATIR ✅ YAMANDI.
+D183 → .claude/skills/qa-isle/SKILL.md §6 ✅ YAMANDI.
+D183 → SPEC ŞABLONU · ⬜ YAZILACAK — novumu olan her SPEC'in NOVUM bloğu
+       kuralın SINIRINI ⛔ ile yazar; sınır cümlesi yoksa kapı ateşlemez.
+       (Kept Light'ın SPEC'i bunu ZATEN doğru yazmıştı; şablon değil, kapı
+        eksikti.)
+```
+
+⛔ **PAKET TAZELEME BORCU:** üç kaynak rubrik değişti → `FILME_OZEL/` altındaki
+paketlerin ⑥ ⑦ ⑧ dosyaları eskidi. Yeniden koşulacak her film için
+`rubrik_paketle.sh` YENİDEN ÇALIŞTIRILIR. THE KEPT LIGHT için 06.09'da
+çalıştırıldı; diğer filmler için borç açık.
+
+### 🧭 DERS → RUBRİK İZ DEFTERİ — 184 eki (06.09.2026 · DÖRT YENİ MERCEK)
+
+Sahibin sorusu: *"QA promptları yeni filmlerdeki hataları azaltmak için
+yeterli mi?"* Ölçülen cevap (Kept Light partisi): 8 gerçek kusurun 2'si
+raporlarda; 26 uydurma/yanlış bulgu depo genelinde; 14 kez SPEC hazırken mod V.
+Karar: sahip dört eksen seçti (kadraj · oyunculuk · ışık · hook), dördü açıldı.
+
+```
+D184 → _KAYNAK/9_KADRAJ · 10_OYUNCULUK · 11_ISIK · 12_HOOK ✅ YAZILDI
+       (yeni kaynak rubrikler · 356 · 372 · 348 · 345 satır · İngilizce,
+        gövdede ders numarası YOK). Kart G 5 "önce kaynak rubriği yamala"
+       burada "kaynak rubrik YOKTU, açıldı" olarak işler.
+D184 → 5c KARDEŞ TARAMASI: 1-8 · GEREKMEZ · ders "eksik EKSEN" dersidir,
+       mevcut bir rubriğin yanlış davranışı değil. ⑥'nın S6 hatası D183'te
+       yamandı; ④'ün 7-blok hatası D107/D118 kapılarında zaten sayılıyor.
+D184 → rubrik_paketle.sh · kayit() (C bloğundan etiket desenine göre KAYIT)
+       + PAKET_9..12 + 00_PAKET_README satırları + "HAM ZİNCİR → mercek yok" ✅
+       ⑨ ← B + C(EŞ KADRAJ · EKRAN YÖNÜ) · ⑩ ← A + C(İNSAN · KASK · EKRAN YÖNÜ)
+       ⑪ ← C(IŞIK TAKVİMİ · ATMOSFER · YAPI ANATOMİSİ · KASK) + GRID
+       ⑫ ← A + B + <FILM>_KAPAK.md "KAPAK ANI" satırı
+D184 → rapor_kontrol.py · MERCEK_IMZA(+4) · MOD_D_MERCEKLER(+4) · gozlem_dizi()
+       (`OBSERVED:` satırından — dizi_al burada KULLANILMAZ, "OBSERVED"
+        sözcüğü [A-Z]{3,} ile eşleşir) · ⑨⑩⑪ dizi uzunluğu = kesme+1 ·
+       ⑨ SETUP STRING ↔ KURULUM İSKELETİ fark listesi (birebir eşleşme NOT:
+       kare-önce şüphesi) · ⑫ DROP-OFF üç saniye + sabit sebep ✅
+       Sentetik test: ⑨ raporu S24 farkını bastı, ⑫ raporu GO; ikisi de
+       Kept Light'ın filigran ölçümüyle parti düzeyinde GEÇERSİZ düştü — doğru.
+D184 → T9_KADRAJ · T10_OYUNCULUK · T11_ISIK · T12_HOOK ✅ AÇILDI (0 satır ·
+       mod V satırı YOK — "SATIR YAZMADAN ÖNCE" bloğu 4. maddeyi böyle yazar)
+D184 → AGENTS.md · kart F5-F8 · depo haritası (7-12 + T7-T12) · kart B
+       (HAM ZİNCİR + ⑨-⑫ koşul) · kart Y (⑫ tahmin → §1; |Δ| ≤ 10 s) ✅
+D184 → 00_README · 🎯 PLAN SADAKATİ bölümü · "hangi filme hangi mercekler" ·
+       kapsam haritası 4 satır + kapak satırı · KAPSAM DIŞI'na ⑫ notu ·
+       değişiklik kaydı · NUMARA ÇAKIŞMASI notu (mercek ⑪ ≠ kapı ⑪) ✅
+D184 → qa-isle SKILL §0 / §6 / §7 · yeni-film SKILL PAKET_1..12 (2 yer) ✅
+D184 → sayac.sh · rubrik hacmi döngüsü 1[0-2]_ ✅
+D184 → 08_YAYIN_PERFORMANS_TABLOSU · ⑫ tahmin hücresi (aşağıdaki satır)
+D184 → THE KEPT LIGHT paketi PAKET_1..12 ile yeniden üretildi ✅ — dört koşul
+       da tutuyor (iskelet var · replik 0 · IŞIK TAKVİMİ var · yayınlanacak);
+       film kaydının "SONRA" satırı güncellendi.
+D184 → SPEC ŞABLONU · GEREKMEZ · dört mercek mevcut A/B/C kayıtlarını okur
+       (KURULUM İSKELETİ · CENTRAL CHOICE · IŞIK TAKVİMİ · VIRAL · KAPAK ANI);
+       yeni blok istemez. D183'ün ⛔ sınır cümlesi borcu AYRI durur.
+```
+
+⛔ **PAKET TAZELEME BORCU (büyüdü):** diğer filmlerin `FILME_OZEL/` klasörlerinde
+PAKET_9..12 YOK ve ⑥⑦⑧ eski; yeniden koşulacak her film için
+`rubrik_paketle.sh` YENİDEN çalıştırılır. Kept Light için 06.09'da yapıldı.
+
+⚠️ **Dürüst sınır:** ⑨-⑫ hiç koşulmadı; ilk gerçek koşu Kept Light'ın
+kurgulanmış master'ında olacak. Rubriklerin kendi hatası (sayım · tally ·
+mod) ancak o koşuda ölçülür; bu ek onların VARLIĞINI kaydeder, işe
+yaradığını değil.
+
+---
+
+## 📅 06.09.2026 · YERÇEKİMİ FAZ 9 / DÜŞÜŞ — ON İKİ MERCEK · FAZ RUBRİĞİ YERİNE GENEL MERCEK
+
+```
+Makara  "faz 9.mp4" · 12 segment · 120 s · 11 kesme (rapor beyanı)
+Mod     on ikisi de V · SPEC yok · FAZ_09_QA_PROMPT.md yok
+Ölçüm   ⑪ KOŞULMADI — sahip kararı: depo dışına çıkılmaz, master'a dokunulmaz
+Ham     FILM_QA_RAPORLARI/02_HAM_RAPORLAR/YERCEKIMI_FAZ09_12MERCEK_HAM.md
+Faz     yatay_10_20_dk_filmler/YERCEKIMI/FAZ_09_DUSUS/FAZ_09_QA_DERSLER.md
+Parti   🚨 T tablolarına satır GİRMEZ
+⭐ ⑨ KADRAJ · ⑩ OYUNCULUK · ⑪ IŞIK · ⑫ HOOK — depoda İLK koşuları [D184]
+```
+
+⭐ **DÖRT YENİ MERCEĞİN İLK KOŞUSU — dürüst bilanço:**
+
+```
+⑩ OYUNCULUK  ✅ EN ÇOK İŞE YARAYAN. Sahne başına cümle yöntemi çalıştı ve
+              S102'de kilidin yarısının eksik olduğunu KİLİDİ GÖRMEDEN
+              buldu ("the body is entirely static"). KİLİT 43 "İNSAN DA
+              DÜŞER" der; ⑩ semptomu yakaladı.
+⑫ HOOK       ⚠️ İKİYE BÖLÜNDÜ. Kapak saniyesi (9/10) ve paylaşım anları
+              (8/10) faz ölçeğinde geçerli; hook · plato · çıkış · terk
+              tahmini bir ORTA SEGMENTTE anlamsız [D185].
+⑨ KADRAJ     ⚠️ ÜÇ HÜCRESİ "kusursuz→7/10" yazdı [D186]; kafiye çifti
+              bulgusu faz ölçeğinde geçersiz (film kafiyesi F1↔F10'dur).
+              Kalan gerçek katkı: 12 kurulum / 0 dönüş sayımı.
+⑪ IŞIK       🔴 FİLMİN RENK TAKVİMİNİ (KİLİT 44) 3/10 ile en düşük
+              kategorisi yaptı. Ama AYNI raporda In-Clip Stability 10/10 ve
+              Atmosphere Honesty 10/10 verdi — yani kilidin TUTTUĞUNU da
+              ölçtü. Mod V'de ⑪ takvimi göremez; ⑪ SPEC'siz koşulmamalıydı
+              (kendi rubriği bunu yazıyor).
+```
+
+```
+D185 → rapor_kontrol.py · ①.8 FAZ KAPISI ✅ YAZILDI (06.09) — faz_mi()
+       klasör adı / FAZ_*/ alt klasörleri / raporun FILM satırından tespit
+       eder; --faz ile elle beyan edilir. ④/⑨/⑫'nin dokuz film ölçekli
+       kategorisi `—` olur, kesme listesi durur.
+       ⚠️ Kalibrasyon notu: kapı ilk sürümde SPEC kapısının yanına konmuştu
+       ve `rows` henüz yoktu (UnboundLocalError) → skor_tablosu() çağrısının
+       ARDINA taşındı.
+D185 → 00_README · "hangi filme hangi mercekler" → FAZ bloğu ✅ + değişiklik
+       kaydı satırı ✅
+D185 → HİÇBİR MERCEK RUBRİĞİNE İŞLENMEDİ · GEREKMEZ · ders merceğin
+       davranışını değil OPERATÖRÜN ALET SEÇİMİNİ düzeltir; mercek eline
+       geçen makaranın filmin neresi olduğunu gözleyemez (D137 ailesi).
+D186 → rapor_kontrol.py · ①.5 ✅ YAZILDI — BOS_ISSUE · TEMIZ_ISSUE ·
+       KAYNAK_IZI. Koşu doğrulaması: ⑤'in beş "none" hücresi yakalandı,
+       ortalama 6,5 → 4,0. Üçüncü desen ④'ün iki süpürücü kesintisini de
+       yakaladı (kaynaksız).
+D186 → MERCEK RUBRİKLERİNE İŞLENMEDİ · GEREKMEZ · kural ④ zaten ⑤'in ve
+       ⑨'un gövdesinde YAZILI ve tutmadı — bu tam olarak D161'in tarif
+       ettiği durum: yazılı kural kapı değildir, kapı çıktıda koşar.
+D187 → KAPI LİSTE tarafında · faz rubriği + QA_SPEC C bloğu taşıyıcı
+       kilidin yanına ÖLÇEN MERCEK yazacak. ⬜ BETİK yarısı AÇIK.
+       ⛔ Mercek rubriklerine "saç kategorisi" EKLENMEDİ ve eklenmeyecek:
+       kilit her filmde başkadır, kapsam haritası genel kalır.
+D129 → TEKRAR 13 → 15 (THE KEPT LIGHT · YERÇEKİMİ FAZ 9)
+D166 → TEKRAR 1 → 2 (⑥ fazın konusunu TWO GRAVITIES ilan etti; rubriğin
+       kendi öz-denetim cümlesi ateşlemedi)
+```
+
+⛔ **ÖLÇÜM KAPISI HAKKINDA KAYIT (06.09.2026 · sahip kararı):** bu koşuda ⑪
+başlatıldı ve sahip DURDURDU — *"sen videoya dokunma, repodan niye dışarı
+çıkıyorsun"*. Kayda geçer: ⑪ ölçüm kapısı depo dışındaki bir dosyaya
+dokunur ve **sahip istemeden koşturulmaz.** Bu koşunun bütün süre/kesme
+sayıları RAPORUNKİDİR.
+⭐ Ve bu partide ölçüme ihtiyaç DA olmadı: on iki raporun on ikisi de
+`12 sahne · 11 kesme · 120 s · 1111111111-1` yazdı — ⑤ ÇAPRAZ SAYIM KAPISI
+depoda ilk kez sıfır sapmayla kapandı [D107].
+
+---
+
+## 07.09.2026 · YERÇEKİMİ FAZ 10 / ZEMİN — ON İKİ MERCEK · 🚨 PARTİ GEÇERSİZ
+
+```
+Malzeme  "faz 10.mp4" · 109–111 s (rapor beyanı) · S109–S120 · FİLMİN SON FAZI
+Mod      V ×12 · SPEC yok · FAZ_10_QA_PROMPT.md YOK (F9'dan sonra ikinci kez)
+Ölçüm    ⑪ KOŞULMADI — sahip kararı yürürlükte
+Karar    🚨 GEÇERSİZ [D188] — hiçbir satır T tablolarına girmedi
+```
+
+⭐ **BU KOŞUNUN TEK GERÇEK BULGUSUNU HİÇBİR MERCEK YAZMADI:** plan 12 sahne
+yazıyor, on iki rapor 11 klip saydı. İçerik eşlemesi eksiği fazın SONUNA
+koyuyor — S120 HELD FRAME, filmin son karesi, ⛔ kesilemez. On iki mercek
+ayrışmayı oybirliğiyle onayladı; hiçbiri soramazdı da (mod V'de "eksik"
+demek yasak, ④'ün son-sahne kapısı MODE D ONLY).
+⛔ **KAPI HÜKÜM VERMİYOR:** (a) eksik teslim mi (b) toplu sayım hatası mı —
+ölçüm gelmeden ayrılmaz. Aritmetik (a) lehine (12 × 10 s = 120 s ≠ 110 s)
+ama karar sahibin tek ölçüm komutunda.
+
+```
+D188 → rapor_kontrol.py · ①.9 TESLİM KAPISI ✅ YAZILDI
+       plan dosyalarındaki `## 🎬 SAHNE n` başlıklarının BİRLEŞİMİ ↔
+       `--olcum-sahne` (varsa) ya da raporların çoğunluğu. İlk koşuşunda
+       ateşledi ve partiyi düşürdü.
+       ⭐ ÜÇ KONTROL KOŞUSU YAPILDI:
+         · F9        plan 12 ↔ rapor 12          → temiz geçti ✅
+         · KEPT LIGHT plan 25 ↔ rapor 20         → ateşledi
+                      plan 25 ↔ ÖLÇÜM 25         → temiz geçti ✅
+           ⛔ Bu vaka kapının iki şıkkını ayırdı: orada teslim TAMDI, beş
+           mercek yanlış saymıştı. Kapı "eksik teslim dedektörü" değil,
+           plan ile parti arasındaki her sayı ayrışmasının dedektörüdür;
+           hangi tarafta olduğunu ÖLÇÜM söyler [AGENTS §3].
+         · Çok bölümlü film düzeltmesi: sahne sayısı dosya başına MAX değil,
+           numaraların BİRLEŞİMİ (BOLUM_1 13 + BOLUM_2 12 = 25).
+D188 → MERCEK RUBRİKLERİNE İŞLENMEDİ · GEREKMEZ · mercek planı görmüyor ve
+       mod V'de "eksik" diyemez. Bu operatör/betik tarafı bir kapıdır.
+
+D189 → dört rubrik yamandı ✅ (⑤ cat.6 · ② cat.10 · ⑨ cat.7 · ① kapsam testi)
+       Kök: ② "a thing never touched stays put" ile ⑤ "untouched ones are
+       yours" aynı nesneyi ters yönde sahipleniyordu — ikisini de ben
+       yazmıştım. Ayrım artık nesne SINIFI değil: adı olan nesne ②'nin,
+       adsız alan ⑤'in. ⑨'un çapası DÖNÜŞ ister; ①'in testi mekanikleşti
+       ("kendi satırındaki zaman kodlarını say").
+
+D185 → TEKRAR 2 · ⛔ KAPI YAZILIYDI AMA BAĞLAMIYORDU. Hücreleri doğru
+       adlandırıyor, ortalamadan düşürmüyordu. Düzeltildi.
+       Etkisi: ⑫ 7,5 → GEÇERSİZ · ⑨ 4,5 → 5,3 (faz, sahip olmadığı bir
+       kafiye çifti yüzünden cezalandırılıyordu — RHYME BROKEN düştü).
+       ⭐ Bu, D74'ün ta kendisi: kaydı/koşusu olmayan kapı, kapı değildir.
+
+D186 → TEKRAR 1 · ters uçtan: "kusur bulamadım" bu kez 7/10'a değil
+       10,0/10'a yazıldı (⑥, yedi hücrede birebir "no deductions").
+       TEMIZ_ISSUE genişletildi → ⑥'nın 10,0'ı `—`'ye düştü.
+       ⭐ Altındaki kök CETVELDİ: 0,1 s / 5 cm'lik düşüşten g hesaplanmış.
+       ⑥ rubriğine CETVEL TABANI eklendi (0,3 s / 0,5 m).
+
+D110 → TEKRAR 3 · ⭐ İLK BETİK KAPISI (17.08.2026'dan beri operatör kuralıydı)
+       `rapor_kontrol.py` ⑦ ORTAK DEFTER: künyesi (kesme·sahne·şerit) birebir
+       aynı + çoğunluktan sapan + **kesme ZAMAN KODU basmamış** grup →
+       "azınlık İKİ oy değil, BİR oydur". Partide tam bir kez: ⑦ + ⑧.
+       ⚠️ İki daraltma gerekti: (1) anahtardan SÜRE çıktı — 109/110/111 aynı
+       ölçümün yuvarlaması, süreyle birlikte kapı dört grubu işaretliyordu;
+       (2) zaman kodu şartı eklendi — kopyanın imzası künyenin aynı olması
+       DEĞİL, sayımın KANITININ olmamasıdır. Zaman kodu basan iki mercek
+       gerçekten aynı şeyi saymış olabilir; o mutabakattır.
+
+D187 → TEKRAR 1 · KİLİT 49'un beş kanıtından en fazla biri ölçüldü.
+       ⭐ KAPI ADRESLENDİ: FAZ_DOSYASI_SABLONU.md'ye §BU FAZIN KİLİTLERİ
+       bloğu eklendi — her kanıtın yanına ÖLÇEN MERCEK. Şablona yazıldı ki
+       yeni fazlar doğarken alsın. ⬜ BETİK yarısı hâlâ AÇIK.
+
+D137 → TEKRAR 6 · ilk kez YARIK: ① ve ③ "room tone present" + bağımsız
+       olarak aynı saniyede aynı Foley kusuru (1:22); diğer sekizi
+       "nothing audible to me". ⛔ Bu bir çelişki değil, iki TANIK ve on
+       ÇEKİMSER — çapraz kapı bu satırları oy gibi okuyor.
+       ⬜ AÇIK: tek ffprobe komutu, depo dışı, sahibin kararı.
+```
+
+⛔ **⑤ ÇAPRAZ SAYIM KAPISININ KÖR NOKTASI BU KOŞUDA GÖRÜLDÜ.** F9'da kapı
+depoda ilk kez sıfır sapmayla kapanmıştı ve bunu bir başarı diye yazmıştık.
+F10 aynı kapıyı geçti — dokuz mercek aynı şeridi yazdı — **ve şerit bir klip
+eksikti.** Mutabakat ne kadar güçlüyse kayıt o kadar ikna edici görünüyor.
+Kapı raporları birbirine bakar; parti dışındaki tek referans PLANDIR.

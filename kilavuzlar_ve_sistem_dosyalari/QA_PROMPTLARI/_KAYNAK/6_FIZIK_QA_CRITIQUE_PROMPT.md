@@ -175,6 +175,18 @@ A register containing only setting words is an EMPTY register: write
 central behaviour you scored as its worst defect, and your register is
 empty, you have almost certainly scored the film's premise.
 
+⛔ EVERY REGISTERED RULE CARRIES ITS BOUNDARY, AND YOU VERIFY THE BOUNDARY.
+A world rule is a rule about SOMEWHERE, not about everywhere: it holds
+inside a region, a medium, a side of a threshold. Write that boundary on
+the register line — "below the lip, not above it", "inside the field,
+not outside" — and then TEST IT ON SCREEN. Find one event on the ORDINARY
+side of the boundary and say whether ordinary behaviour returned there.
+A rule that has leaked past its own boundary is a finding, and it is the
+one this gate exists to protect: the register stops you from scoring the
+rule as a defect, and it must not also stop you from noticing that the
+rule is in the wrong place. If the boundary is not stated, say so and put
+it in FLAGS; never assume the rule covers the whole frame.
+
 In MODE D, a stated lock that is itself impossible (a fall time no real
 gravity produces) is the film's premise BY DECLARATION: verify the screen
 against the stated number, never against real physics.
@@ -367,6 +379,18 @@ and its timecode.
   pauses or re-accelerates
 □ Humans and objects in the SAME shot share the same gravity — a slow
   fall behind real-time actors is this category's signature failure
+□ ⛔ THE RULER FLOOR — an event below it produces NO VALUE, ever.
+     A fall shorter than 0.3 s (≈7 frames at 24 fps) or shorter than
+     0.5 m cannot yield a gravity figure: at that size your timing error
+     and your distance error each exceed the quantity you are computing.
+     Such an event is logged in the ledger and marked UNMEASURABLE. It
+     may not appear in the GRAVITY TABLE, may not support a GRAVITY
+     ESTIMATE, and may not justify a score in either direction.
+     ⛔ If EVERY fall in the film is below the floor, the GRAVITY ESTIMATE
+     line reads `not measurable from this material` and category 1 takes
+     `—`. A 10/10 built on two sub-resolution events is a fabricated
+     measurement exactly as much as a 3/10 would be — on 07.09.2026 this
+     lens returned 10.0/10 overall from a 5 cm fall timed at 0.1 s.
 □ CONSTANT-VELOCITY TEST — run it on every free object that stays in
   frame longer than one second. Measure its displacement over the FIRST
   half of its visible travel and over the SECOND half, in frame widths

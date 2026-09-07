@@ -111,6 +111,47 @@ S1 = TIRMANDIRMA SAHNESİ hayatta kalanı 10-30'a taşır   (8-16/20 sn)
 Aynı işi iki kez yapan iki sahne = ikinci düşüş dalgası. Serinin kanca
 platosunun (5-6) en olası sebebi S1'in hiç tanımlanmamış olmasıydı.
 
+## 1.1 ⭐ AÇILIŞ BÜTÇESİ — ilk dramatik hamlenin en geç yeri (04.09.2026)
+
+> **Kaynak:** TUR 10 · süzme kaydı `URETIM_ONCESI_ANALIZ/04_ARASTIRMA_BULGULARI.md`
+> §TUR 10. Kapanış tarafı `FINAL_VE_PAYLASIM_KILAVUZU.md` §2.1'dedir ve
+> burada tekrarlanmaz.
+
+**Açılış bütçesi** = ilk dramatik hamleye (katalizör / geri dönülmez
+eylem) kadar geçen sürenin toplam süreye oranı.
+
+```
+⭐ BÜTÇE YÜZDEYLE YAZILIR, SANİYE FORMAT KARTINDAN TÜRETİLİR.
+   Sebep ölçülmüş: ızgara D124 ile bir kez zaten değişti ve saniyeye
+   yazılmış her satır o gün öldü. Sahne sayısı da yazılmaz — klip
+   süresi araçtan ölçülür (KILAVUZ_REHBERI §2).
+```
+
+| Band | Toplam (format kartı) | Açılış bütçesi | Saniye karşılığı | Bağlayıcı ek kapı |
+|---|--:|:--:|--:|---|
+| dikey shorts | 6 sahne × ölçülen klip | **%10-15** | ~6-9 s | 0:03'te ipucu ZORUNLU (§2.5) · reveal 5-7 s bandı (format kartı §2.1) |
+| yatay 2-4 dk | 12-18 sahne × 10 s | **%10-15** | 12-27 s | ⛔ katalizör **≤ 0:15** — depo kapısı bütçeden DAR, o kazanır (§3) |
+| yatay 3-5 dk | 25 sahne · 249 s | **%10-15** | 25-37 s | — |
+| yatay 7-20 dk · **kısa uç** | 60 sahne × 8 s · 480 s | **%10-15** | 48-72 s | — |
+| yatay 7-20 dk · **uzun uç** | 120 sahne × 8 s · 960 s | **%10-15** | 96-144 s | YERÇEKİMİ katalizörü S16 = 2:00 = %12,5 (ölçüm, bandın ortası) |
+
+> ⭐ **TOHUM VE KATALİZÖR AYNI PENCEREYİ PAYLAŞIR.** `FINAL` §3'ün tohum
+> penceresi de %10-15'tir. Yani tohum katalizörden hemen ÖNCE ekilir ve
+> katalizör onu görünmez kılar. İki satır aynı yerde yazılır; ayrı
+> düşerlerse tohum ya erken doğar ya geç kalır.
+
+```
+⛔ TUR 10'UN BÜTÇE TABLOSU OLDUĞU GİBİ İNMEDİ — dürüst kayıt:
+   ① Rapor "1 sahne = 9 saniye" varsaydı; depoda 9 s ızgara YOK.
+      Bütün sahne sayıları bu yüzden düştü.
+   ② "10-20 dk'da en geç 90. saniye" tavanı, deponun kendi filminin
+      (%12,5) ALTINDA kaldı ve düştü.
+   ③ Terk eğrisi sütununun dayanağı (Wistia B2B açıklayıcı video)
+      TUR 4'te ZATEN elenmişti — ikinci kez inmedi.
+   ④ "Karar 8 saniyede verilir" iddiası deponun ölçülü 1,5-1,7 s
+      penceresinin beş katıydı; sıkı olan taraf durur (§0②).
+```
+
 ---
 
 # 2. 🎬 S0 — KARAR SAHNESİ: dört kilit
@@ -183,6 +224,48 @@ frame reveal'siz kilitlenir.
 
 ---
 
+## 2.6 · AÇILIŞ BİLGİ BÜTÇESİ — ne, hangi sırada, ne ERTELENİR (04.09.2026)
+
+**Mekanizma:** §2.1 bütçenin TAVANINI koyuyordu ("tek güçlü görsel fikir
++ tek anlam ipucu; iki fikir üst üste = sıfır fikir") ama SIRASINI ve
+neyin ertelendiğini söylemiyordu. Kesme kullanılamadığı için bilgi
+kadrajın İÇİNE, sırayla sızmak zorundadır.
+
+```
+S0'IN İLK PLANINDA BİLGİ SIRASI — dört adım, atlanmaz
+
+  ① NEREDE      mekân ve ölçek. Net bir geometri + yüksek kontrast.
+                Bu kare aynı zamanda KAPAKTIR → 120 px testi (§2.1).
+  ② KİM ve NE YAPIYOR
+                karakter eylemsiz DURMAZ; fiziksel bir işin içindedir.
+                İzleyici yetkinliği ya da aczi işten okur.
+  ③ NE YANLIŞ   kural ihlali kadraja SIZAR: kadraj içi hareket, ışık
+                değişimi, kadraj dışından gelen ses, düşen gölge.
+  ④ TEPKİ       karakterin fiziksel yanıtı — denge bozuldu.
+
+⛔ ERTELENENLER — ilk planda YASAK:
+   geçmiş · evrenin makro kuralları · karakterin nihai amacı ·
+   jenerik/logo hiyerarşisi · açıklayıcı her şey [Raskin "overtelling"]
+
+⭐ TAŞIYICI ARAÇLAR (kesme yokken bilgi bunlarla girer):
+   kadraj içi hareket · ışık değişimi · kadraj dışı ses girişi ·
+   ölçek şahidi · karakterin yaptığı iş (görev-tabanlı kurgulama)
+```
+
+```
+⚠️ SIRA İNER, SANİYE İNMEZ — dürüst kayıt.
+   TUR 10'un raporu bu bütçeyi saniyeye böldü (1-2 · 3-5 · 6-8 · 9-10)
+   ama tek bir bant ayrımı yapmadı: aynı 10 saniyelik bütçe hem
+   dikeye hem 16 dakikalık filme dayatılıyordu. Saniye tarafı §1.1'in
+   band tablosundadır; burada yalnız SIRA durur.
+   Raporun "kusursuz örnek" saydığı üç açılış (All Is Lost · Prospect ·
+   Portal: No Escape) denetimde düştü — biri dış sesle açılıyor, biri
+   iki karakterli, ikisinde de "geri dönülmez eylem" ilk kesmeden
+   SONRA geliyor. Şablon kalır, örnekler kalmaz.
+```
+
+---
+
 # 3. 📈 S1 — TIRMANDIRMA SAHNESİ
 
 > Serinin en büyük tanımsız alanı buydu. S1'in görevi cevap vermek
@@ -230,7 +313,7 @@ katalizör S1'in içinde ya da sonunda patlar, S2'ye sarkmaz.
 ## 3.1 ⭐ İKİ AYRI ARAÇ: BİLGİ EŞİTLİĞİ ve DRAMATİK İRONİ
 
 > **Eklendi 27.08.2026 (araştırma 3).** Depo bugüne kadar bu ikisini tek
-> araç sandı ve yalnız birincisini kullandı: **16 dikey filmin 16'sı da
+> araç sandı ve yalnız birincisini kullandı: **dikey filmlerin tamamı da
 > bilgi eşitliği filmidir.** İkisi zıt değil, farklı iş yapar — ve
 > ikincisi deponun kanca platosunun (5-6, §0③) en olası açıklamasıdır.
 
@@ -314,7 +397,7 @@ BİLGİ ASİMETRİSİ: [YOK / DRAMATİK İRONİ · taşıyıcı ① - ⑤ · asi
 ```
 
 Satır **zorunludur**; "YOK" yazmak meşru bir karardır ama yazılmamış olması
-değildir — çünkü depo 16 filmde 16 kez farkında olmadan "YOK" yazdı.
+değildir — çünkü depo bugüne dek her dikey filmde farkında olmadan "YOK" yazdı (sayı: 05_DIKEY_HAT_TESHISI).
 
 ---
 
@@ -326,13 +409,29 @@ değildir — çünkü depo 16 filmde 16 kez farkında olmadan "YOK" yazdı.
 > §2.2'deki "hareketin ortasında açılış" tip değil ZEMİNDİR: her tipin
 > altında zorunludur.
 
-| Tip | Mekanizma | En iyi format/tür | Risk |
-|---|---|---|---|
-| **Ölçek şoku** | Tanıdık nesne + imkansız ölçek AYNI karede | Dikeyin doğal silahı (karakter alt 1/3, kozmik ölçek üst 2/3) | Model ölçeği şişirir → oran SAYIYLA yazılır ("the object spans 40× her height") |
-| **Yanlışlık kompozisyonu** | Tamamen normal sahne + TEK anormal öğe; beyin tamamlamak için durur | Günümüz-Dünya konseptleri (Winter Line, Wrong Shadow sınıfı) | ⚠️ Anomali türetilmiş fenomense (gölge, yansıma) [D73]: tek-kare fizibilite kapısı ŞART — novum render edilmezse hook doğmaz |
-| **In medias res** | Olay ortasından açılış; kurulum yok, bağlam sonradan | Aksiyon konseptleri (Quiet Impact sınıfı), yatay 2-4 dk | Bağlam borcu birikir — S1'deki ikinci bilgi bağlam TAKSİDİ olarak tasarlanır |
-| **Yetkinlik / süreç** | Karakter alışılmadık bir işi ustalıkla yaparken açılır → "bu ne işi?" | Keşif filmleri (Unbroken City, Starless Circle sınıfı) | En yavaş tip — 0. kare sınavını İŞİN tuhaflığı geçmek zorunda, karakterin değil |
-| **Ses-önce** | Görüntü sakin, ses "yanlış" — ya da mutlak sessizlik | Diyaloglu/AI sesli filmler, gece konseptleri | Sessiz izlenen feed'de görsel zemin tek başına ayakta kalmalı (§5) |
+| Tip | Mekanizma | En iyi format/tür | Band | Risk |
+|---|---|---|:--:|---|
+| **Ölçek şoku** | Tanıdık nesne + imkansız ölçek AYNI karede | Dikeyin doğal silahı (karakter alt 1/3, kozmik ölçek üst 2/3) | dikey ⭐ · 10-20 dk | Model ölçeği şişirir → oran NESNE-GÖRELİ ÇARPANLA yazılır ("the object spans forty times her own height") — çarpan muaftır, birimli ölçü değildir [D138 · KART 13] |
+| **Yanlışlık kompozisyonu** | Tamamen normal sahne + TEK anormal öğe; beyin tamamlamak için durur | Günümüz-Dünya konseptleri (Winter Line, Wrong Shadow sınıfı) | dikey ⭐ · 2-4 dk | ⚠️ Anomali türetilmiş fenomense (gölge, yansıma) [D73]: tek-kare fizibilite kapısı ŞART — novum render edilmezse hook doğmaz |
+| **In medias res** | Olay ortasından açılış; kurulum yok, bağlam sonradan | Aksiyon konseptleri (Quiet Impact sınıfı), yatay 2-4 dk | 2-4 · 3-5 dk | Bağlam borcu birikir — S1'deki ikinci bilgi bağlam TAKSİDİ olarak tasarlanır |
+| **Yetkinlik / süreç** | Karakter alışılmadık bir işi ustalıkla yaparken açılır → "bu ne işi?" | Keşif filmleri (Unbroken City, Starless Circle sınıfı) | 7-20 dk | En yavaş tip — 0. kare sınavını İŞİN tuhaflığı geçmek zorunda, karakterin değil |
+| **Ses-önce** | Görüntü sakin, ses "yanlış" — ya da mutlak sessizlik | Diyaloglu/AI sesli filmler, gece konseptleri | ⚠️ hiçbirinde birincil değil | Sessiz izlenen feed'de görsel zemin tek başına ayakta kalmalı (§5) |
+
+```
+⚠️ BAND SÜTUNU BİR ÖLÇÜM DEĞİL, BİR TERCİHTİR (04.09.2026 · TUR 10).
+   Rapor bu eşleşmeyi "belgelenmiş" diye sundu, ama promptun kendisi
+   beş tipi raporun önüne koymuştu: rapor ÖLÇMEDİ, SIRALADI. Sütun
+   deponun kendi kaynaklı satırlarıyla uyumlu hâle getirilerek indi ve
+   raporun iki iddiası REDDEDİLDİ:
+     ⛔ "ölçek şoku dikeyde başarısız olur" — depo bu tipi dikeyin
+        İMZASI sayıyor (format kartı §2.1: karakter alt 1/3, kozmik
+        ölçek üst 2/3). İddia kaynaksızdı.
+     ⛔ "yanlışlık kompozisyonu dikeyde çalışmaz" — §2.3'ün mekanizması
+        birebir budur ve dikeye göre yazılmıştır.
+   ⚠️ SES-ÖNCE için rapor "dikeyde en etkili" dedi; akış içi videoların
+      ~%85'i SESSİZ başlıyor (§5⑥, iki bağımsız kaynakla doğrulanmış).
+      Ses-önce birincil taşıyıcı YAPILMAZ; ikincil katman kalır.
+```
 
 ---
 
@@ -417,7 +516,7 @@ SIRA:
 
 ---
 
-# 8. ✅ PLAN KONTROLÜ — bu kılavuzun 7 maddesi
+# 8. ✅ PLAN KONTROLÜ — bu kılavuzun 10 maddesi
 
 > `SENARYO_VE_VIRAL_KAMERA_KILAVUZU.md` §7 listesinin hook maddesinin
 > yerine geçer; diğer maddeler orada kalır.
@@ -440,6 +539,12 @@ SIRA:
   sessizlik)? Erken müzik girişi elendi mi? (§5)
 □ Hook sorusu ↔ kapanış imajı çifti kuruldu mu; S0, loop satırıyla
   tutarlı mı? (§6)
+  ⭐ ÇİFT KARTI ayrı dosyada doldurulur:
+     ACILIS_KAPANIS_CIFTI_KILAVUZU.md §5 — kart dolmadan S0 yazılmaz.
+□ ⭐ AÇILIŞ BÜTÇESİ bandına uyuluyor mu (§1.1) — katalizör %10-15
+  penceresinde mi, tohum penceresiyle sıralı mı (FINAL §3)?
+□ ⭐ AÇILIŞ BİLGİ SIRASI dolduruldu mu (§2.6): nerede → kim/ne yapıyor →
+  ne yanlış → tepki; ertelenenler ilk plana sızmadı mı?
 ```
 
 ---

@@ -55,6 +55,13 @@ DEĞİŞKEN film         (sahne içi kesme VEYA değişken çekim süresi)
 □ ①b ÇEKİM SAYISI = plan SHOT COUNT       (sahne ≠ çekim olan filmde)
 □ ①c SAHNE SAYISI = plan SCENE COUNT
      → üçü eşitse tek satır yeter; değilse ÜÇÜ DE ölçülür
+     🆕 04.09.2026 · TEKNİK KUSURLA DÜŞEN KLİP — eşitlik iki yoldan
+       birine bağlanır, üçüncü yol yoktur:
+         (a) klip YENİDEN ÜRETİLİR ve sayı korunur, ya da
+         (b) plan CLIP COUNT revize edilir ve §2 gerekçe tablosuna
+             "teknik kusur · yerine ne kondu" satırı yazılır.
+       Gerekçesi yazılmadan düşen klip kapıyı GEÇEMEZ — D100'ün açığı
+       (10 klip sessizce düştü, süre tuttu) tam bu boşluktan girmişti.
 □ ② TOPLAM SÜRE  = plan RUNTIME ± 2 s
      ⚠️ süre tek başına ALDATIR: Last Shift 174/190 "yaklaşık tuttu",
        10 klip eksikti [D100]. Süre maddesi ①'in yerine geçmez.
@@ -98,9 +105,43 @@ tuttuğu için kayıp görünmez.
 □ SPEC'e iki satır:   RAW FOOTAGE: __ klip × __ s = __ s
                       TRIM BUDGET: __ s
 □ KIRPMA TABLOSU (plan §0.18) — klip başına tek satır:
-    | klip | ham | kurguda | nereden kırpılır |
-    | S11-Ç1 | 10.0 s | 2.5 s | baştan 1.0 · sondan 6.5 (botlar çıkınca) |
+    | klip | ham | kurguda | nereden kırpılır | BOZULMA KARESİ |
+    | S11-Ç1 | 10,0 s | 2,5 s | baştan 1,0 · sondan 6,5 (botlar çıkınca) | 7,4 s |
   Tablosu olmayan değişken süreli plan, SABİT ızgaralı plan sayılır.
+  🆕 BOZULMA KARESİ (04.09.2026 · TUR 11) — kırpma noktasının İKİNCİ
+    ölçütü. Bugüne kadar "nereden kırpılır" sütununu yalnız yuva mantığı
+    dolduruyordu [KURGU_RITMI §1.1]. İkinci ölçüt klibin KENDİ çöküşüdür:
+    uzuv erimesi, arka plan kayması, tekrar eden birimin dalgalanması ya
+    da ince çizginin titremeye başladığı İLK KARE. O kareden sonrası
+    kullanılamaz — yuva "kırpılmaz" dese bile.
+    ⛔ BU SÜTUN SABİT IZGARALI FİLMLERDE DE DOLDURULUR. Model çöküşü
+      ızgaradan bağımsızdır; kırpma tablosu olmayan film bu satırı
+      §1 kapısında (madde ⑥'nın yanında) yazar.
+    ⛔ SAYI YAZILMAZ, İZLENİR. TUR 11 raporu bozulmayı "3-4. saniyede
+      başlar, sabit planda 7-8'e uzar" diye verdi; hiçbir benchmark
+      saniye cinsinden bozulma eşiği yayımlamıyor ve o üç sayının
+      kaynağı yok. Bu sütun her klip için ELLE ölçülür; boş bırakılan
+      satır "bozulma yok" demektir ve bu bir iddiadır, varsayılan değil.
+    ⭐ Sınıf sıralaması (mekanizması doğrulanmış, zamanlaması değil):
+      en kırılgan = ince çizgi · yazı · tekrar eden birim (ızgara, çit,
+      delik dizisi) → sonra yüz ve el → en dayanıklı = kumaş, toz, duman.
+      Gerekçe (sıkıştırma oranları ve kaynak TEK YERDE:
+      `KILAVUZ_REHBERI.md` §5④): 3D nedensel VAE kodlamasında yüksek
+      frekanslı ince detay kayboluyor.
+      ⚠️ Buradaki "dayanıklılık" yalnız YÜKSEK FREKANSLI DETAY KAYBI
+        eksenidir. Tozun kendi arızası ayrı eksende yaşıyor
+        (D143 toz şelalesi · D39 "swirl" — `KILAVUZ_REHBERI` §7);
+        tozlu klip bu satır yüzünden güvenli sayılmaz.
+□ 🆕 DÜŞEN HER KLİBİN KARŞISINDA GEREKÇE + HALKA ETİKETİ VAR:
+    | düşen klip | gerekçe | halka | yerine ne kondu |
+  Beş kesme gerekçesinden (süre/tempo · tekrar · bilgi fazlalığı ·
+  teknik kusur · doruk kaybı) bu hatta MEŞRU olan tek tanesi TEKNİK
+  KUSURDUR — modeli çöken klip zaten kullanılamaz. Geri kalanı kapıda
+  tutulur ve çözüm sahneyi geri koymaktır (aşağıdaki D70/72 satırı).
+  Halka etiketi (ara · açıklama · terminal bedel) ve bu ayrımın PLAN
+  tarafındaki karşılığı: `SAHNE_ZINCIRI_VE_SINIR_KILAVUZU.md` §6.
+  ⚠️ D100'de kurgu 10 klibi hiçbir gerekçe yazmadan düşürdü; bu satır
+    o boşluğu kapatır, kapıyı GEVŞETMEZ.
   ⭐ BÜTÇE HANGİ YUVAYA HARCANIR: KURGU_RITMI_VE_IHRAC_KILAVUZU.md §1.1
     (kanca ve çözülme kırpılmaz · oryantasyon ve doruk öncesi kırpılır).
 □ 5 s altı çekim planlayan sahne "üretimde değil KURGUDA doğar" etiketi

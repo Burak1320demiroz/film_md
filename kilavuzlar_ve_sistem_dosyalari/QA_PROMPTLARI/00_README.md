@@ -17,13 +17,21 @@
 
 ```
 ÇALIŞTIRMA TARİFİ — üç adım:
-1. Aşağıdaki tablodan doğru rubriği seç
-2. Rubrik dosyasının TAMAMINI kopyala + medyayı (video/kurgu) yükle
-   · filmin planında 📋 QA SPEC BLOĞU varsa (2-4 dk dosyalarında §0.15):
-     KES, rubriğin SPEC/SCENE SPECIFICATION alanına YAPIŞTIR → MOD D
-   · SPEC yapıştırmadıysan koşu MOD V'dir ve bunun bedeli vardır [DERS 94]
+1. FİLMİN PAKETİNİ AÇ:  FILME_OZEL/<FILM>/PAKET_<n>_<MERCEK>.md
+   Klasör yoksa tek komutla doğar (1 saniye):
+     bash .claude/skills/qa-isle/scripts/rubrik_paketle.sh <film klasörü>
+2. Paket dosyasının TAMAMINI kopyala + medyayı (video/kurgu) yükle.
+   SPEC paketin İÇİNE zaten gömülüdür → koşu MOD D'dir, elle kesip
+   yapıştırma yok.
 3. Gelen raporu asla doğrudan tabloya işleme —
    aşağıdaki 🤖 AJAN KULLANIMI bölümündeki karta göre işle
+
+⛔ ÇIPLAK RUBRİK YAPIŞTIRILMAZ [D129 · 13 film · son vaka 04.09.2026]
+   `_KAYNAK/` altındaki 1-8 numaralı dosyalar BETİĞİN girdisidir,
+   operatörün değil. Elle yapıştırılırsa koşu MOD V olur ve mod V
+   koşusu T tablolarına GİREMEZ — yedi mercek koşulur, yedisi de düşer.
+   Bu, deponun en büyük tekrar sayacıdır; sebebi bilgi eksikliği değil,
+   yanlış dosyanın doğru dosyadan kolay olmasıydı (düzeltildi 04.09.2026).
 
 ⛔ HER MERCEK TEMİZ OTURUMDA KOŞULUR [DERS 110]
    Yeni sohbet · yalnız medya + tek rubrik. Aynı oturumda ikinci bir
@@ -60,12 +68,12 @@ DEFTERİ** bölümünde tutulur; tek izlenebilirlik kaydı orasıdır.
 Ayrım ekseni **konu değil ZAMAN**: kusuru söylemek için kaç sahneye
 bakman gerekiyor?
 
-| Dosya | Mercek | Soru | Zorunlu girdi | Kat. | Skor tablosu |
+| Yapıştırılacak dosya (paket) | Mercek | Soru | Zorunlu girdi | Kat. | Skor tablosu |
 |---|---|---|---|:--:|---|
-| `1_KARE_QA_CRITIQUE_PROMPT.md` | ① 🔧 KARE | "bu karede ne bozuk" | klip / montaj · yatay **veya dikey** | 11 +3 | `../FILM_QA_RAPORLARI/T1_KARE_KALITE.md` |
-| `2_DEVAMLILIK_QA_CRITIQUE_PROMPT.md` | ② 🔗 DEVAMLILIK | "film ve insanı kendiyle çelişiyor mu" | tam kurgu | 13 | `../FILM_QA_RAPORLARI/T2_DEVAMLILIK_KALITE.md` |
-| `3_SES_QA_CRITIQUE_PROMPT.md` | ③ 🔊 SES | "doğru ses doğru bedenden mi" | **TAM KURGU** | 9 | `../FILM_QA_RAPORLARI/T3_SES_KALITE.md` |
-| `4_HIKAYE_QA_CRITIQUE_PROMPT.md` | ④ 📖 HİKAYE | "kimse umursar mı" | film (+ PLAN = MOD D) | 10 | `../FILM_QA_RAPORLARI/T4_HIKAYE_KALITE.md` |
+| `FILME_OZEL/<FILM>/PAKET_1_KARE.md` | ① 🔧 KARE | "bu karede ne bozuk" | klip / montaj · yatay **veya dikey** | 11 +3 | `../FILM_QA_RAPORLARI/T1_KARE_KALITE.md` |
+| `FILME_OZEL/<FILM>/PAKET_2_DEVAMLILIK.md` | ② 🔗 DEVAMLILIK | "film ve insanı kendiyle çelişiyor mu" | tam kurgu | 13 | `../FILM_QA_RAPORLARI/T2_DEVAMLILIK_KALITE.md` |
+| `FILME_OZEL/<FILM>/PAKET_3_SES.md` | ③ 🔊 SES | "doğru ses doğru bedenden mi" | **TAM KURGU** | 9 | `../FILM_QA_RAPORLARI/T3_SES_KALITE.md` |
+| `FILME_OZEL/<FILM>/PAKET_4_HIKAYE.md` | ④ 📖 HİKAYE | "kimse umursar mı" | film (+ PLAN = MOD D) | 10 | `../FILM_QA_RAPORLARI/T4_HIKAYE_KALITE.md` |
 
 **Dördü de kendi kendine yeter** — tek dosya + medya, başka hiçbir şey.
 
@@ -84,10 +92,10 @@ bakman gerekiyor?
 > yanına beşinci/altıncı zorunlu mercek olarak DEĞİL, ayrı bir sınıf
 > olarak eklendiler.
 
-| Dosya | Mercek | Soru | Zorunlu girdi | Kat. | Skor tablosu |
+| Yapıştırılacak dosya (paket) | Mercek | Soru | Zorunlu girdi | Kat. | Skor tablosu |
 |---|---|---|---|:--:|---|
-| `5_ARKA_PLAN_QA_CRITIQUE_PROMPT.md` | ⑤ 🖼️ ARKA PLAN | "çekimin KONUSU OLMAYAN alan yerinde duruyor mu" | tam kurgu · **yalnız video** | 9 | `../FILM_QA_RAPORLARI/T5_ARKA_PLAN_KALITE.md` |
-| `6_FIZIK_QA_CRITIQUE_PROMPT.md` | ⑥ ⚖️ FİZİK | "dünyanın davranışı ÖLÇÜMDEN sağ çıkıyor mu" | tam kurgu (+ SAYISAL KİLİTLER = MOD D) | 9 | `../FILM_QA_RAPORLARI/T6_FIZIK_KALITE.md` |
+| `FILME_OZEL/<FILM>/PAKET_5_ARKA_PLAN.md` | ⑤ 🖼️ ARKA PLAN | "çekimin KONUSU OLMAYAN alan yerinde duruyor mu" | tam kurgu · **yalnız video** | 9 | `../FILM_QA_RAPORLARI/T5_ARKA_PLAN_KALITE.md` |
+| `FILME_OZEL/<FILM>/PAKET_6_FIZIK.md` | ⑥ ⚖️ FİZİK | "dünyanın davranışı ÖLÇÜMDEN sağ çıkıyor mu" | tam kurgu (+ SAYISAL KİLİTLER = MOD D) | 9 | `../FILM_QA_RAPORLARI/T6_FIZIK_KALITE.md` |
 
 ```
 ⑤ ARKA PLAN   kimlik testi: bulgu, çekimin KONUSU OLMAYAN bir şeyde mi?
@@ -95,6 +103,13 @@ bakman gerekiyor?
               sadakat bütçesini özneye harcar; insan gözü de özneyi izler
               — altıncı parmak orta planda on izlemeden sağ çıkar. Bu
               mercek bir koşuyu tamamen özneye BAKMAMAYA harcar.
+              ⛔ 07.09.2026 [D189] — ② ile SINIR NETLEŞTİ: bir sahnede
+              ÖZNE olan nesne başka sahnede ARKA PLAN DEĞİLDİR. Adı olan,
+              planın andığı, bir sahnenin konusu olan nesne (kapsül,
+              araç, kapı) ②'nindir. ⑤'in olan ADSIZ ALANDIR: doku,
+              döşeme, kalabalık yoğunluğu, kimsenin adlandırmadığı dekor.
+              Sebep: bir kapsül yerleşimi DÖRT mercekte birden puan
+              düşürdü (① ② ⑤ ⑨) — iki rubrik metni çelişiyordu.
 ⑥ FİZİK       kimlik testi: bulgu bir ÖLÇÜM taşıyor mu ya da kırdığı
               yasayı adlandırıyor mu? ① "toz sıvı gibi akıyor" DESENİNİN
               sahibi kalır; ⑥ "aynı tür düşüş bir sahnede 1.1 s, diğerinde
@@ -137,10 +152,10 @@ bakman gerekiyor?
 > ölçer, ⑧ **işin bedene neye mal olduğunu**. Bir dövüş aritmetik olarak
 > kusursuz, okunabilirlik olarak sıfır olabilir — o bulgunun sahibi yoktu.
 
-| Dosya | Mercek | Soru | Zorunlu girdi | Kat. | Skor tablosu |
+| Yapıştırılacak dosya (paket) | Mercek | Soru | Zorunlu girdi | Kat. | Skor tablosu |
 |---|---|---|---|:--:|---|
-| `7_AKSIYON_QA_CRITIQUE_PROMPT.md` | ⑦ 🎯 AKSİYON | "izleyici ne olduğunu anlatabilir mi" | tam kurgu (+ A/C blokları = MOD D) | 9 | `../FILM_QA_RAPORLARI/T7_AKSIYON_KALITE.md` |
-| `8_EFOR_QA_CRITIQUE_PROMPT.md` | ⑧ 💪 EFOR | "iş bedene neye mal oldu, faturası ekranda mı" | tam kurgu (+ A/C blokları = MOD D) | 9 | `../FILM_QA_RAPORLARI/T8_EFOR_KALITE.md` |
+| `FILME_OZEL/<FILM>/PAKET_7_AKSIYON.md` | ⑦ 🎯 AKSİYON | "izleyici ne olduğunu anlatabilir mi" | tam kurgu (+ A/C blokları = MOD D) | 9 | `../FILM_QA_RAPORLARI/T7_AKSIYON_KALITE.md` |
+| `FILME_OZEL/<FILM>/PAKET_8_EFOR.md` | ⑧ 💪 EFOR | "iş bedene neye mal oldu, faturası ekranda mı" | tam kurgu (+ A/C blokları = MOD D) | 9 | `../FILM_QA_RAPORLARI/T8_EFOR_KALITE.md` |
 
 ```
 ⑦ AKSİYON     kimlik testi: ANLATIM CÜMLESİ yazılabiliyor mu? Her beat için
@@ -190,6 +205,73 @@ bakman gerekiyor?
    ötekinin türünü yazmaz. Çifte fatura değil, çapraz doğrulama.
 ```
 
+### 🎯 PLAN SADAKATİ MERCEKLERİ — 4 (06.09.2026'da açıldı)
+
+> Sekiz mercek THE KEPT LIGHT'ın 8 gerçek kusurunun 2'sini yazdı [D184].
+> Kaçan altının üçü ÜRETİM hatasıydı ve üçünün ortak yanı şuydu: plan bir şey
+> söylüyordu (kamera 0,6 m üstte · alet güverteye çarpar · S0↔S24 aynı
+> kurulum), ekran başka bir şey gösteriyordu, ve HİÇBİR MERCEK PLANI EKRANA
+> KARŞI OKUMUYORDU. ①②③⑤⑦⑧ planı görmez; ④ hikayeyi, ⑥ sayıyı okur. Bu dördü
+> yalnız bunu yapar: planın bir satırını alır, kareye bakar, tutuyor mu der.
+> Bu yüzden SPEC'siz koşuları tanım gereği BOŞTUR ve mod V satırı tablolarına
+> GİRMEZ.
+
+| Yapıştırılacak dosya (paket) | Mercek | Soru | Zorunlu girdi | Kat. | Skor tablosu |
+|---|---|---|---|:--:|---|
+| `FILME_OZEL/<FILM>/PAKET_9_KADRAJ.md` | ⑨ 🎯 KADRAJ | "kamera planın koyduğu yerde mi, orada kalıyor mu" | tam kurgu + B bloğu (MOD D) | 7 | `../FILM_QA_RAPORLARI/T9_KADRAJ_KALITE.md` |
+| `FILME_OZEL/<FILM>/PAKET_10_OYUNCULUK.md` | ⑩ 🎭 OYUNCULUK | "istediği, seçtiği, hissettiği BEDENDE okunuyor mu" | tam kurgu + A bloğu (MOD D) | 9 | `../FILM_QA_RAPORLARI/T10_OYUNCULUK_KALITE.md` |
+| `FILME_OZEL/<FILM>/PAKET_11_ISIK.md` | ⑪ 💡 IŞIK | "ışık klipten klibe tutuyor mu, yalnız planlı sınırda mı değişiyor" | tam kurgu + C ışık takvimi (MOD D) | 8 | `../FILM_QA_RAPORLARI/T11_ISIK_KALITE.md` |
+| `FILME_OZEL/<FILM>/PAKET_12_HOOK.md` | ⑫ 🪝 HOOK | "filmi seçmemiş bir yabancı kalır mı, nerede gider" | tam kurgu + A/B + KAPAK ANI (MOD D) | 8 | `../FILM_QA_RAPORLARI/T12_HOOK_KALITE.md` |
+
+```
+⑨ KADRAJ      kimlik testi: KARE ÖNCE, HARF SONRA. Her sahnede gözlenen
+              boyut/açı/lens/konum yazılır, SONRA plan harfi atanır; SETUP
+              STRING planın KURULUM İSKELETİ'yle yan yana konur. Kafiye çifti
+              (ilk kare ↔ son kare) her filmde koşulur. ⭐ Diğer bütün mercekler
+              kameranın içinden özneye bakar; bu mercek kameraya bakar. Kept
+              Light S24'ün yanlış açısını sekiz merceğin hiçbiri yazmadı.
+⑩ OYUNCULUK   kimlik testi: İZLEYİCİ CÜMLESİ — "bu beden ne istiyor?" — plan
+              okunmadan yazılır; üç çapa vuruşta (SEÇİM · BEDEL · FİNAL)
+              öncesi/sonrası karesi dondurulur, bedendeki fark bir cümledir.
+              "Hiçbir şey" → vuruş ekrana ulaşmamış. ⭐ Kask kapalıysa yüz
+              N/A'dır, 1/10 değil. ⑧ bedeli, ⑦ olayı, ④ sayfayı okur; kişiyi
+              yalnız bu okur. "Hikayesi berbat" şikâyetinin gerçek ölçütü.
+⑪ IŞIK        kimlik testi: KOMŞU ÇİFT — her kesmede "ışıkta ne değişti?"
+              Aynı bölgede değişim = sıçrama; planlı sınırda değişim = PASS.
+              ⭐ Ortam yasayı koyar: vakumda pus/bloom/kaldırılmış gölge
+              bulgudur. Lambanın varlığı ②/⑤'in; YANIP yanmadığı bu merceğin.
+              Isı/pozlama grade işi; yön/dolgu/sönük lamba yeniden üretim.
+⑫ HOOK        kimlik testi: YABANCININ CÜMLESİ — açılış penceresinde SORU
+              oluşuyor mu, viral ara sahne tek başına gidiyor mu, son kare ilk
+              kareye mi dönüyor. Tek kalıcı çıktısı DROP-OFF PREDICTION: üç
+              saniye + sabit listeden sebep → 08_YAYIN_PERFORMANS_TABLOSU'na
+              kopyalanır, yayından sonra gerçek eğriyle kıyaslanır — aleti
+              izleyiciye karşı kalibre eden ilk satır. ⭐ KESME ÖNERMEZ.
+
+⛔ /4 PAYDASINA GİRMEZLER — KOŞUL tetikli. Koşullar:
+     ⑨ → SPEC'te KURULUM İSKELETİ satırı (yeni-film şablonu her filmde yazar)
+     ⑩ → replik 0 · ya da SPEC'te CENTRAL CHOICE satırı
+     ⑪ → SPEC'te IŞIK TAKVİMİ kaydı · ya da ≥12 klipten kurulu kurgu
+     ⑫ → film yayınlanacak (kart Y) — yayından ÖNCE koşulur
+   Dördü de ÖLÇÜMDEN SONRA koşulur: TESLİM SINIFI 🚨 HAM ZİNCİR ise HİÇBİR
+   mercek koşulmaz [D181] — kurgulanmamış dosyaya plan sadakati sorulmaz.
+
+⛔ SAYI MODELE SORULMAZ, VERİLİR: dördünün paketine ızgara (hook + klip) ve
+   iskelet SPEC'ten gömülür; rapor `CUTS OFF GRID` satırıyla ızgaraya
+   UYMAYAN kesmeyi bildirir, sahneyi yeniden numaralandırmaz. Sekiz eski
+   mercek 24 kesmeyi 20, 25 sahneyi 7 blok saydı — sayan model değil,
+   doğrulayan model. Rubrikler ~350 satır (eskilerin 500-1.186'sına karşı).
+
+⛔ BULGU SAHİPLİĞİ: aynı kural. Kameranın KONUMU ⑨'un · karenin İÇİ ①'in ·
+   ışık ⑪'in · arkası ⑤'in · bedenin BEDELİ ⑧'in · bedenin NİYETİ ⑩'un ·
+   olayın OKUNURLUĞU ⑦'nin · yabancının KALIŞI ⑫'nin · yapının kendisi ④'ün.
+   T9-T12 kendi tablosunda durur, T1-T4 ile toplanmaz.
+
+⛔ NUMARA ÇAKIŞMASI — mercek ⑨⑩⑪ ile AGENTS §3'ün kapı ⑨ HİZALAMA · ⑩ ÖNERME ·
+   ⑪ ÖLÇÜM aynı rakamı taşır (①-⑧ için zaten öyleydi). Yazımda hep önek:
+   "mercek ⑪" / "kapı ⑪". Öneksiz ⑪ bu depoda ÖLÇÜM KAPISI'dır.
+```
+
 ### ⛔ DİKEY ARTIK AYRI BİR RUBRİK DEĞİL
 
 Eski `SHORTS_QA` 16 kategori taşıyordu ve **13'ü başka bir rubriğin
@@ -220,15 +302,47 @@ HER FİLM — yatay ve dikey fark etmez:
                              kapısı zaten N/A verir
                   + ⑤ ⑥    — RİSK TETİKLİ derin tarama (yukarıdaki bölüm);
                              /4 paydasına girmezler
+                  + ⑦ ⑧    — RİSK TETİKLİ aksiyon mercekleri (kart 11/4/2/6/8 · kart 3)
+                  + ⑨ ⑩ ⑪ ⑫ — KOŞUL TETİKLİ plan sadakati (yukarıdaki bölüm);
+                             SPEC'siz KOŞULMAZ; ölçüm HAM ZİNCİR dediyse hiçbiri
 
 ⛔ OPSİYONEL MERCEK KALMADI. Eski sistemde karakter ve ses "opsiyonel"di
    ve bu yüzden çoğu film ölçülmeden geçti: 34 film kaydının yalnız 5'inde
    ses raporu, 10'unda karakter raporu vardı. Karakter artık ②'nin gövde
    yarısıdır ve atlanamaz.
 
-7-9 dk                 BU KLASÖR DEĞİL → yatay_7_9_dk_filmler/kilavuzlar/
-                       kalite_kontrol/ (3 geçişli ayrı sistem — skorları
-                       buradaki tablolarla KARŞILAŞTIRILAMAZ)
+⛔ FAZ MİMARİSİYLE YAZILMIŞ FİLM (10-20 dk hattı) — BURADAKİ MERCEKLER
+   DOĞRUDAN KOŞULMAZ [D185 · 06.09.2026]:
+
+     QA birimi FİLM değil FAZDIR. Her fazın KENDİ rubriği vardır ve fazın
+     kendi kilitlerini taşır:  <FILM>/FAZ_nn_AD/FAZ_nn_QA_PROMPT.md
+     (761-1.674 satır · YERÇEKİMİ'nde dokuz fazın sekizinde yazılı)
+
+     ① Faz rubriği VARSA  → o koşulur. Buradaki mercekler onun yedeği DEĞİL,
+       başka ölçekte başka bir alettir.
+     ② Faz rubriği YOKSA  → önce O YAZILIR. Rubriksiz faz denetlenmez.
+     ③ Yine de genel mercek koşulduysa, ④ ⑨ ⑫'nin şu kategorileri SAYI
+       TAŞIMAZ (rapor_kontrol.py ①.8 basar):
+          ④ Hook · Structure & Pacing · Ending · Retention Risk
+          ⑫ Hook Question · Stakes · Plateau · Peak Placement · Exit
+          ⑨ Rhyme Pair
+       Sebep: hook filmin BAŞINDA, final SONUNDA, tutundurma eğrisi filmin
+       TAMAMINDADIR. Bir orta segmentte üçü de ölçülemez.
+       ⚠️ Faz ölçeğinde GEÇERLİ kalanlar sayı taşımaya devam eder: kare içi
+       her şey (①), aynılık (②), ses (③), alan (⑤), sayı (⑥), okunurluk (⑦),
+       bedel (⑧), kurulum sadakati (⑨'un kalanı), beden (⑩), ışık (⑪),
+       kapak saniyesi ve paylaşım anları (⑫'nin kalanı).
+     ⛔ Ve kesme listesi / yeniden sıralama HİÇBİR fazda uygulanmaz: fazın
+       kesmesi filmin kurgusudur, faz raporunun yetkisi değildir.
+     📌 Vaka: YERÇEKİMİ F8 (sekiz mercek) ve F9 (on iki mercek), 06.09.2026,
+       ardışık iki fazda aynı gün.
+
+3 GEÇİŞLİ SİSTEM       → UC_GECISLI_QA/ (bu klasörün altında, 04.09.2026'dan
+                       beri — kapanan yatay_7_9_dk_filmler/'den taşındı).
+                       ⛔ AYRI bir sistemdir: skorları yukarıdaki dört
+                       merceğin tablolarıyla KARŞILAŞTIRILAMAZ. Faz
+                       mimarisiyle yazılmış uzun filmler (10-20 dk hattı)
+                       içindir; hangisinin koşulacağı hâlâ yazılı değil.
 ```
 
 ⛔ **Bir filme koşulan bütün merceklere AYNI dosya verilir.** Starless
@@ -363,10 +477,14 @@ Rubrik dosyasına YAZILMAZ (salt prompt ilkesi).
 | Video — sahneler arası, dünya **ve** karakter | ✅ ② DEVAMLILIK |
 | Video — özne-dışı alan (arka plan figürleri, ufuk, derinlik, kadraj kenarı) | ✅ ⑤ ARKA PLAN — derin tarama, risk tetikli (24.08.2026) |
 | Video — sayısal fizik doğrulaması (plan kilitleri ekranda, görünür g, hız/ölçek aritmetiği) | ✅ ⑥ FİZİK — derin tarama, mod D kilit tablosuyla (24.08.2026) |
+| Video — kamera kurulumu (plan lensi/mesafesi/açısı ekranda mı · lockoff · S0↔son kafiye çifti) | ✅ ⑨ KADRAJ — plan sadakati, koşul tetikli (06.09.2026) |
+| Video — performans (niyet · seçim · bedel BEDENDE okunuyor mu) | ✅ ⑩ OYUNCULUK — plan sadakati (06.09.2026) |
+| Video — ışık ve grade devamlılığı (anahtar yön · gölge · ısı · pratikler · bölge sınırları) | ✅ ⑪ IŞIK — plan sadakati (06.09.2026) |
+| Açılış · paylaşım anları · çıkış (yayın ÖNCESİ tutundurma tahmini) | ✅ ⑫ HOOK — üç saniyelik DROP-OFF PREDICTION → 08_YAYIN_PERFORMANS_TABLOSU (06.09.2026); yayın SONRASI veri kapsam dışı kalır (aşağıda) |
 | Video — dikey | ✅ ① KARE `FORMAT: DİKEY` + ④ HİKAYE dikey merdiveni |
 | Video — 7-9 dk | ✅ 3 geçişli sistem (kendi klasöründe, ayrı skor evreni) |
 | Montaj bütünlüğü (planlanan sahne ekranda var mı) | ✅ kurgu kapısı [D70/72/81] + ④ HİKAYE zirve kontrolü |
-| Kapak / thumbnail | ⚠️ **rubriksiz** — 120 px testi elle (12.08.2026'dan beri) |
+| Kapak / thumbnail | ⚠️ kısmi — ⑫ HOOK "kapak saniyesi" kategorisi filmdeki KAREYİ ölçer (06.09.2026); ayrı kapak görselinin 120 px testi elle |
 | Ses tasarımı / diyalog / miks | ✅ ③ SES |
 | Müzik | ⚠️ kısmi — ③ SES §9 miksteki davranışı ölçer; beste ölçülmüyor |
 | Başlık & açıklama paketi | ❌ rubrik yok — yazım tarafı kılavuzlu: `../PAKETLEME_VE_VAAT_KILAVUZU.md` + `../VIRAL_BASLIK_VE_ACIKLAMA_PROMPT.md` |
@@ -383,6 +501,10 @@ YAYIN SONRASI İZLEYİCİ VERİSİ               QA değil analitik — rubrik b
    22.08.2026'dan beri o tablo VAR:
    ../FILM_QA_RAPORLARI/08_YAYIN_PERFORMANS_TABLOSU.md
    (kılavuz: ../YAYIN_VE_PERFORMANS_KILAVUZU.md · AGENTS kart Y).
+   ⑫ HOOK bu satırı AÇMAZ: o mercek yayından ÖNCE üç saniyelik tahmin
+   yazar; bu satır yayından SONRA gelen veriyi rubrikle puanlamayı
+   yasaklar. İkisi aynı tabloda yan yana durur — veri tahmini kalibre
+   eder, tahmin veriyi değil (06.09.2026 · D184).
 ```
 
 ⚠️ Bu satırları "eksik" sanıp yeniden açma — karar gerekçesiyle burada kayıtlı.
@@ -392,6 +514,42 @@ YAYIN SONRASI İZLEYİCİ VERİSİ               QA değil analitik — rubrik b
 ## 📝 DEĞİŞİKLİK KAYDI
 
 ```
+06.09.2026  ⛔ FAZ SATIRI — "hangi filme hangi mercekler"e FAZ mimarisi girdi
+            [D185]. 10-20 dk hattında QA birimi FAZDIR ve her fazın kendi
+            rubriği vardır; buradaki mercekler onun yedeği değildir. Rubriksiz
+            faz denetlenmez. Genel mercek yine de koşulursa ④/⑨/⑫'nin film
+            ölçekli dokuz kategorisi sayı taşımaz (rapor_kontrol ①.8) ve
+            kesme listesi hiçbir fazda uygulanmaz.
+            Vaka: YERÇEKİMİ F8 + F9, ardışık iki faz, aynı gün.
+
+07.09.2026  🚨 TESLİM KAPISI — RAPORLAR BİRBİRİNİ DOĞRULAR, TESLİMİ DOĞRULAMAZ [D188]
+            YERÇEKİMİ F10: plan 12 sahne, raporlar 11 klip — ve eksik olan,
+            içerik eşlemesine göre FİLMİN SON KARESİ (S120 HELD FRAME).
+            ON İKİ MERCEĞİN ON İKİSİ ayrışmayı oybirliğiyle onayladı.
+            ⛔ Kapı hüküm vermez, ŞIKLARI AYIRIR: (a) eksik teslim mi
+            (b) toplu sayım hatası mı — hakem ÖLÇÜMDÜR (`--olcum-sahne`).
+            THE KEPT LIGHT'ta aynı kapı ateşledi ve orada şık (b) çıktı:
+            plan 25, raporlar 20, ölçüm 25 — teslim tamdı.
+            Hepsi aynı makarayı izliyor;
+            mod V'de "eksik" demek yasak; ④'ün son-sahne kapısı MODE D ONLY.
+            ⑤ ÇAPRAZ SAYIM KAPISININ KÖR NOKTASI: mutabakat ne kadar güçlüyse
+            kayıt o kadar ikna edici görünür. Parti dışındaki tek referans
+            PLANDIR → rapor_kontrol.py ①.9: plandaki `## 🎬 SAHNE n`
+            başlıkları ↔ raporların çoğunluk sahne sayısı. Fark = parti
+            GEÇERSİZ, kesme listesi UYGULANMAZ.
+            ⭐ Aynı partide ⑤ ile ②'nin kapsam ÇAKIŞMASI da kapatıldı [D189]
+            ve D110'a ilk betik kapısı takıldı (⑦ ORTAK DEFTER).
+
+06.09.2026  🎯 PLAN SADAKATİ SINIFI AÇILDI — ⑨ KADRAJ · ⑩ OYUNCULUK · ⑪ IŞIK · ⑫ HOOK
+            Sekiz mercek THE KEPT LIGHT'ın 8 gerçek kusurunun 2'sini yazdı; kaçan
+            üç üretim hatasının ortak yanı "plan X dedi, ekran Y gösterdi, planı
+            ekrana karşı okuyan mercek yok"tu [D184]. Dört KOŞUL TETİKLİ mercek;
+            dördü de MOD D'ye bağlı (SPEC'siz koşusu boş), ızgara/iskelet pakete
+            gömülür (sayı sorulmaz, verilir), her biri ~350 satır. Skor tabloları
+            T9-T12 açıldı; rapor_kontrol.py SETUP/GAZE/KEY DIRECTION STRING
+            uzunluğunu, ⑨'da plan iskeletiyle farkı, ⑫'de üç saniyelik tahmini
+            sayar. Görev kartları: AGENTS.md F5-F8. Tutanak: CALISTIRMA_KAYITLARI.md
+
 24.08.2026  🔬 DERİN TARAMA SINIFI AÇILDI — ⑤ ARKA PLAN + ⑥ FİZİK
             İki KONU merceği; 22.08'in ZAMAN eksenine oturmadıkları için
             ①-④'ün yanına zorunlu mercek olarak değil, /4 paydasının
