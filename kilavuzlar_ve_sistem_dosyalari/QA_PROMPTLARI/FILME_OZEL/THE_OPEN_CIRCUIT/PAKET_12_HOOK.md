@@ -5,7 +5,7 @@ mercek    : ⑫ HOOK
 mod       : D
 girdi     : ____ (master yolu · süre · çözünürlük — koşudan ÖNCE doldur, D160)
 SPEC      : THE_OPEN_CIRCUIT_QA_SPEC.md  (aile: yatay)
-üretildi  : 07.09.2026 · rubrik_paketle.sh — elle düzenlenmez, SPEC değişince yeniden üret
+üretildi  : 08.09.2026 · rubrik_paketle.sh — elle düzenlenmez, SPEC değişince yeniden üret
 koşu sonrası: python3 kilavuzlar_ve_sistem_dosyalari/RAPOR_KONTROL/rapor_kontrol.py <rapor.md> --film yatay_3_5_dk_filmler/THE_OPEN_CIRCUIT
 belge: A (viral ara sahneler · final türü) + B (hook uzunluğu · kırpma · ekran metni · kafiye · doruk) + KAPAK ANI. ⛔ KESME ÖNERMEZ; üç saniye TAHMİN yazar → 08_YAYIN_PERFORMANS_TABLOSU
 ```
@@ -61,10 +61,28 @@ must be repeated.
 scenes are built to be shared, where the peak sits and how the film exits.
 You test each against the screen.
 
-**MODE V** — you have no plan. You choose the windows yourself (first ten
-seconds · the three most shareable moments you find · last ten seconds) and
-score them. You may never say a share moment is MISSING against a plan you
-do not have — that goes to FLAGS.
+⛔ **THIS LENS DOES NOT RUN IN MODE V. STOP HERE.**
+
+This review exists to read a written plan against the screen. Without the
+plan you would infer an intended plan from the footage itself — and a plan
+inferred from the footage always matches the footage. A scene that was never
+delivered reads as a deliberate ending. A broken lock reads as a style
+choice. The film's worst defect collects this lens's highest score, and the
+report then stands as evidence that the defect was intended. That output is
+not a weaker review; it is a wrong one, and it hides the exact failure this
+lens was built to catch.
+
+If no SPEC block is supplied, write these three lines and nothing else:
+
+```
+INPUT MODE: V — LENS NOT RUN
+REASON: this lens scores plan fidelity; no plan was supplied
+NEEDED: the SPEC block for this film (scene map · locks · declared beats)
+```
+
+Do not count scenes. Do not transcribe lines. Do not score a category. Do
+not write a verdict, a cut list, a trim or a regeneration order. Ask for the
+SPEC block instead.
 
 ---
 

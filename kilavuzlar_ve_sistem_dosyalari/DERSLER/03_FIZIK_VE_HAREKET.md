@@ -793,3 +793,62 @@ kliplerde yaşıyorsa model ikisine ayrı g verir ve izleyici bunu tek bakışta
 > 🔗 Ders 143 (sayılı toz cümlesi — bu ders onu OLAY KİMLİĞİNE genişletir) ·
 > Ders 44 (0,38 g gerçek zamanlı) · Ders 153 (aynı mekanizmanın SET hâli) ·
 > Ders 144 (kapı biçimi).
+
+---
+
+## 🔴 DERS 192: FİLMİN 1 NUMARALI RİSKİ TARİF KİLİDİYLE KORUNDU — DORUĞUN BOŞALMASI **ŞİMŞEK** GELDİ; NEGATİF CÜMLE YASAĞI SÖYLER, BİÇİMİ SÖYLEMEZ
+
+**KAPI:** LİSTE · `URETIM_ONCESI_ANALIZ/03_PLAN_ONCESI_KONTROL_LISTESI.md`
+**A5 — filmin 1 numaralı riski SAYIYLA mı yazıldı** (eklendi 08.09.2026)
+**TEKRAR:** 0 · 08.09.2026 THE OPEN CIRCUIT
+
+**Kaynak:** THE OPEN CIRCUIT QA (08.09.2026) — kare 222,20 → 222,70 ve
+226,30 → 226,50. Filmin tek elektrik olayı, gökten inen, **dallanan**,
+kadraja ışık bırakan, en az **0,5 s** süren beyaz-mavi bir **şimşek**.
+
+**Sorun:** Yasak her yerde yazılıydı. 25 sahnenin NEGATIVE bloklarında
+kelimesi kelimesine şu duruyor:
+
+```
+"No continuous glow, no plasma beam, no lightning bolt, no fireball,
+ no electrical fire, nothing burns."
+```
+
+Ve SPEC göz kapısı ④ riski **adıyla** ilan etmişti: *"8 boşalma sahnesinin
+hepsinde çizgi TEK, İNCE, DÜZ ve SÖNÜMLÜ mü? … [bu filmin 1 numaralı riski]"*.
+
+⭐ **Ama pozitif biçimin bir SAYISI yoktu.** Aynı planda ölçülebilir yazılan
+her şey ayakta kaldı — basınç konisi *"BİR SANİYEDEN AZ durur"*, toz halkası
+*"iki saniyede oturur"*. Sayısı olmayan tek vuruş, filmin **en pahalı**
+vuruşuydu. Model "şimşek değil" cümlesini okur, yerine ne koyacağını
+bilmez, ve elindeki en güçlü elektrik imgesini üretir: şimşeği.
+
+**İkinci zarar fizikseldir.** Bu film 610 Pa'lık %95 CO2 atmosferde geçiyor
+ve novum'u *"fırtına İTMEZ, YÜKLER · patlama BASINÇ olayıdır, alev yoktur"*.
+Yeryüzü şimşeği bu novum'un doğrudan ihlalidir — ve [[D183]]'ün sınır
+sorusunun tam olarak sınadığı şey budur: novum bir kuralı korurken, o kuralın
+**bittiği yer** kareyle sınanmazsa ihlal onun altına saklanır. Altı mercek
+boşalmayı gördü; ⑥ FİZİK onu ölçtü, **yönünü ters yazdı** (*"beam shoots UP
+mast"* — oysa gökten AŞAĞI iniyor ve masta değil PLAKAYA vuruyor) ve
+Işık-Gölge Fiziği'ne **10/10** verdi.
+
+**ÇÖZÜM — POZİTİF BİÇİM SAYIYLA YAZILIR:**
+
+```
+✗  NEGATIVE: "no lightning bolt, no plasma beam, no continuous glow"
+   + göz kapısı: "çizgi TEK, İNCE, DÜZ ve SÖNÜMLÜ"
+
+✅ NEGATIVE aynen KALIR, üstüne pozitif biçim SAYIYLA:
+   "A single straight discharge line, no wider than the glove is thick,
+    visible for less than 0,3 s, leaving zero afterglow in the next frame;
+    it descends from the strap to the ground and ends at the plate."
+   + göz kapısı: "boşalma ≤0,3 s · tek çizgi · 0 dal · sönümden sonra
+     0 kare artık ışık · yön AŞAĞI · bitiş noktası PLAKA"
+```
+
+Kural [[D63]]/`01_DERS_ETKINLIK_RAPORU §4` ile aynı: **tarif kilidi %0,
+sayısal kilit %100.** Bir yasak, biçim değildir.
+
+🔗 [[D183]] (novum sınırı kareyle sınanır) · [[D138]] · [[D141]] (final vuruş
+kanıtı — burada vuruş TESLİM edildi ama YANLIŞ BİÇİMDE) · [[D192]]'nin ışık
+tarafı [[D193]]

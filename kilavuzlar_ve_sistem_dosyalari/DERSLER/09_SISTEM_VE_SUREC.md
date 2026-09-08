@@ -579,7 +579,14 @@ lake; nothing reflects in it.
 ## 🔴 DERS 165: ARAÇ YAZILDI, KOŞACAK KART YOKTU — QA PAKETİ FİLMİN YAZIMINDA ÜRETİLİR, QA ANINDA DEĞİL
 
 **KAPI:** BETİK · `yeni-film` Kart A §4 → `qa-isle/scripts/rubrik_paketle.sh <film klasörü>` · paket klasörü yoksa film "yazımı tamam" DEĞİLDİR [D117'nin kardeşi]
-**TEKRAR:** 2 · 02.09.2026 THE SINKING STAKE (paket YOKTU) · ⭐ 04.09.2026 THE UPWARD FALL — **paket VARDI** (`FILME_OZEL/THE_UPWARD_FALL/PAKET_1..8`) ve sekiz mercek yine mod V koştu. → Arıza yer DEĞİŞTİRDİ: "paket yok" değil, **"paket var ama operatör rubriği açıyor"**. Bir sonraki dönüşüm paketi rubriğin YERİNE koymalıdır (çıplak rubrik dosyası operatörün göreceği yerde durdukça yapıştırılacak olan odur)
+**TEKRAR:** **3** · ⛔ **ÇALIŞMIYOR — dönüştürme borcu doğdu** [DERS_YAZIM_KONTRATI §3].
+3. vaka **08.09.2026 THE OPEN CIRCUIT**: paket VARDI (`FILME_OZEL/THE_OPEN_CIRCUIT/PAKET_1..12`,
+filmin yazıldığı gün üretildi) ve **on iki merceğin on ikisi** yine mod V koştu. İki vakada
+sekiz, üçüncüde on iki — paketin varlığı davranışı hiç değiştirmedi.
+**BORÇ:** paket rubriğin YANINA konuldukça çıplak rubrik yapıştırılıyor; paket rubriğin
+YERİNE geçmeli — `QA_PROMPTLARI/_KAYNAK/` altındaki çıplak rubrikler operatörün
+açtığı yerden kaldırılır, tek görünen dosya `FILME_OZEL/<FILM>/PAKET_n` olur.
+· 02.09.2026 THE SINKING STAKE (paket YOKTU) · ⭐ 04.09.2026 THE UPWARD FALL — **paket VARDI** (`FILME_OZEL/THE_UPWARD_FALL/PAKET_1..8`) ve sekiz mercek yine mod V koştu. → Arıza yer DEĞİŞTİRDİ: "paket yok" değil, **"paket var ama operatör rubriği açıyor"**. Bir sonraki dönüşüm paketi rubriğin YERİNE koymalıdır (çıplak rubrik dosyası operatörün göreceği yerde durdukça yapıştırılacak olan odur)
 
 > ⛔ **02.09.2026 · İKİNCİ VAKA VE SEBEBİ BULUNDU — KAPI SATIRI ARACIN
 > KENDİSİNE İNMEMİŞTİ.** Ders 01.09'da yazıldı; ertesi gün yazılan
@@ -714,7 +721,12 @@ zaten bastığı dört sayıdan (LUFS · filigran · kuyruk kart · klip sayıs�
 karar üretir. `HAM ZİNCİR` çıkarsa `rapor_kontrol.py` partiyi mercek okumadan
 🚨 GEÇERSİZ yapar — `--olcum-filigran VAR` bayrağının yaptığının aynısı,
 tek eksenle değil dört eksenle.
-**TEKRAR:** 1 · son vaka **06.09.2026 THE KEPT LIGHT** — ve bu vakada
+**TEKRAR:** 2 · son vaka **08.09.2026 THE OPEN CIRCUIT** — betik `🚨 HAM ZİNCİR`
+bastı (kuyrukta 4,8 s donma) ve sınıf DOĞRUYDU: dosya kurgudan değil üreticiden
+çıkmış (filigran 23/23 klip · planlı sessizlik yok · −16,6 LUFS / 0,0 dBFS ·
+2 klip eksik). ⛔ Ama sıra yine bozuldu: on iki mercek koşulduktan SONRA ölçüldü,
+yani "HAM ZİNCİR'de mercek koşulmaz" kuralı ancak geriye dönük uygulanabildi
+[[D125]]. · önceki **06.09.2026 THE KEPT LIGHT** — ve bu vakada
 **kapı ARTIK KODDA**: `olcum_kapisi.sh` sona `== TESLİM SINIFI [D181] ==`
 bloğunu basıyor, iki ekseni ölçüyor (LUFS eşiği 3 LU · kuyrukta ≥1,5 s donma)
 ve ikisini `⬜ GÖZ` / `⬜ SPEC` diye AÇIK bırakıyor. Kept Light'ta ilk koşuda

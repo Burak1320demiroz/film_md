@@ -49,9 +49,28 @@ must be repeated.
 **MODE D** — the plan names the beat of every scene and the three anchor
 beats. You test whether each reached the body.
 
-**MODE V** — you have no plan. You infer the beat from the screen and score
-legibility only. You may never report that an intention is MISSING against a
-plan you do not have — that goes to FLAGS.
+⛔ **THIS LENS DOES NOT RUN IN MODE V. STOP HERE.**
+
+This review exists to read a written plan against the screen. Without the
+plan you would infer an intended plan from the footage itself — and a plan
+inferred from the footage always matches the footage. A scene that was never
+delivered reads as a deliberate ending. A broken lock reads as a style
+choice. The film's worst defect collects this lens's highest score, and the
+report then stands as evidence that the defect was intended. That output is
+not a weaker review; it is a wrong one, and it hides the exact failure this
+lens was built to catch.
+
+If no SPEC block is supplied, write these three lines and nothing else:
+
+```
+INPUT MODE: V — LENS NOT RUN
+REASON: this lens scores plan fidelity; no plan was supplied
+NEEDED: the SPEC block for this film (scene map · locks · declared beats)
+```
+
+Do not count scenes. Do not transcribe lines. Do not score a category. Do
+not write a verdict, a cut list, a trim or a regeneration order. Ask for the
+SPEC block instead.
 
 ---
 

@@ -83,6 +83,32 @@ gölge boyu. `02_RISK_KARTLARI.md` KART 5.
 □ Satır yoksa denetim YAPILMAMIŞ sayılır (D74 mantığı: kaydı olmayan kapı).
 ```
 
+### A5 — FİLMİN 1 NUMARALI RİSKİ SAYIYLA MI YAZILDI ⭐ 🆕 08.09.2026 [D192]
+
+> 🚨 **Gerçek olay:** THE OPEN CIRCUIT. Plan kendi 1 numaralı riskini adıyla
+> ilan etmişti (KIVILCIM) ve onu **yalnız sıfatla** korudu: *"çizgi TEK, İNCE,
+> DÜZ ve SÖNÜMLÜ"*. Aynı planda ölçülebilir yazılmış her şey ölçülebilir kaldı
+> (koni "BİR SANİYEDEN AZ", toz halkası "iki saniyede oturur"). Ekranda doruğun
+> boşalması **en az 0,5 s süren, dallanan, kadraja ışık bırakan bir ŞİMŞEK**
+> olarak geldi — her sahnenin NEGATIVE bloğunda *"no lightning bolt"* yazılıyken.
+> Negatif cümle yasağı söyler, **biçimi söylemez**; model boşluğu doldurur.
+
+```
+□ Plan kendi 1 numaralı riskini ADIYLA yazdı mı? (risk kartı / göz kapısı)
+□ O riskin POZİTİF biçimi SAYI taşıyor mu — süre · uzunluk · genişlik · adet?
+     ✗  "çizgi TEK, İNCE, DÜZ ve SÖNÜMLÜ"
+     ✅ "tek çizgi · ≤0,3 s · genişliği eldiven kalınlığından az ·
+         söndükten sonra 0 kare artık ışık"
+□ SPEC'in göz kapısı o sayıyı ölçülebilir cümleyle tekrarlıyor mu?
+□ Yalnız NEGATIVE cümlesi varsa denetim YAPILMAMIŞ sayılır: yasak, biçim değildir.
+```
+
+> **Kural:** sayısal kilit %100, tarif kilidi %0 tuttu
+> (`01_DERS_ETKINLIK_RAPORU.md` §4). Filmin en pahalı vuruşu, tarif kilidiyle
+> korunan tek vuruş olmamalıdır.
+
+---
+
 ---
 
 # 🔴 B. FİLMİN DORUĞU YAZILMIŞ MI

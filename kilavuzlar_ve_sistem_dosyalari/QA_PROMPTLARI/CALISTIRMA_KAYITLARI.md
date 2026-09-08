@@ -2382,3 +2382,80 @@ depoda ilk kez sıfır sapmayla kapanmıştı ve bunu bir başarı diye yazmış
 F10 aynı kapıyı geçti — dokuz mercek aynı şeridi yazdı — **ve şerit bir klip
 eksikti.** Mutabakat ne kadar güçlüyse kayıt o kadar ikna edici görünüyor.
 Kapı raporları birbirine bakar; parti dışındaki tek referans PLANDIR.
+
+---
+
+## 📅 08.09.2026 · THE OPEN CIRCUIT — ON İKİ MERCEK · SPEC **VE** PAKET HAZIRDI, ON İKİSİ DE MOD V
+
+```
+MASTER   : the open cırcuıt (1).mp4 · 235,14 s · 3840x2160 · 30 fps
+           (ikiz: the open cırcuıt.mp4 — aynı süre, 1280x720)
+PLAN     : 25 sahne · 249,0 s        MAKARA: 23 klip · 230,1 s + 5,0 s kart
+KOŞU     : ① ② ③ ④ ⑤ ⑥ ⑦ ⑧ ⑨ ⑩ ⑪ ⑫ — hepsi INPUT MODE: V
+SONUÇ    : parti 🚨 GEÇERSİZ · T1-T12'ye SIFIR satır
+```
+
+**Neden bu koşu ayrı yazılıyor:** depoda ilk kez **on iki merceğin on ikisi**
+aynı anda ve aynı yönde yanıldı, ve yanıldıkları şey filmin VAR OLUP OLMADIĞIYDI.
+Ölçüm koşudan sonra yapıldı; bulduğu her şey rapor dışıdır:
+
+```
+· iki sahne makarada YOK — S17 ve S22; S22 filmin DORUĞU
+  (iki sahnenin repliği de on iki raporun HİÇBİRİNDE duyulmamış:
+   "Counted." · "Ground path is closed.")
+· S2 ↔ S3 yer değiştirmiş (replik ekseni: #1/#2 bir klip erken)
+· üretici filigranı 230 saniyenin 230'unda, 23/23 klipte
+· doruğun boşalması ŞİMŞEK — 25 sahnenin negatifi "no lightning bolt" diyordu
+· ışık takvimi geri sardı: sönen şeritler aynı klipte geri yandı,
+  "no window strip is lit" promptuyla üretilen son iki sahne yanıyor
+· planlı 2 s HARD MUTE hiç uygulanmamış · −16,6 LUFS / 0,0 dBFS
+· ABD bayrağı yaması (196 s) · kubbe kask (25/25)
+```
+
+### 🧭 DERS → RUBRİK İZ DEFTERİ — 190-193 eki
+
+```
+D190 → 9_KADRAJ · 10_OYUNCULUK · 11_ISIK · 12_HOOK  ·  STEP −1 (INPUT MODE)
+       YAMANDI: mod V artık bu dört mercekte DURDURUR ("THIS LENS DOES NOT
+       RUN IN MODE V. STOP HERE." + üç satırlık LENS NOT RUN çıktısı).
+       ⚠️ Gövdedeki mod V yuvaları (GRID GIVEN · N/A in mode V · ⑨'un
+       "rhyme pair is run on every film, including in mode V") BIRAKILDI —
+       künye satırlarını rapor_kontrol.py ayrıştırıyor. Bağlayıcı kapı
+       BETİKTİR: ⑨-⑫ mod V = 🚨 GEÇERSİZ (karantina).
+D190 → 1_KARE · 2_DEVAMLILIK · 3_SES · 4_HIKAYE · 5_ARKA_PLAN · 6_FIZIK ·
+       7_AKSIYON · 8_EFOR · GEREKMEZ · bu sekizi filmin KENDİSİYLE
+       tutarlılığını ölçer; belgesiz koşuda ölçtükleri şey yine gerçektir,
+       yalnız plana karşı okunamaz (D129 zaten TEKRAR diyor).
+D191 → rubrik yaması YOK · GEREKMEZ · göz kapıları SPEC'in F bloğudur,
+       rubriğin değil. Kapı rapor_kontrol.py ①.10'a indi: F bloğu her
+       koşuda ⬜ listesi olarak basılır.
+D192 → rubrik yaması YOK · kapı PLAN tarafında (03_PLAN_ONCESI A5).
+       ⚠️ 6_FIZIK'in "measure it or say you could not" kuralı ŞİMŞEĞİ
+       yakalayamadı: ⑥ olayı ölçtü, YÖNÜNÜ ters yazdı ve 10/10 verdi.
+       ⬜ AÇIK: yön ölçümünün kanıtı (iki kare, önce-sonra) rubrikte
+       zorunlu değil.
+D193 → rubrik yaması YOK · kapı olcum_kapisi.sh'a indi (IŞIK TAKVİMİ İZİ).
+       ⚠️ 11_ISIK key YÖNÜNÜ ölçüyor, kaynak SAYISINI ölçmüyor; takvim
+       ekseni rubrikte hiç yok ve mod D'de de yoktu.
+```
+
+### 🔧 RUBRİK KOŞU SAYILARI — 08.09.2026 sonrası (THE OPEN CIRCUIT partisi)
+
+```
+1_KARE          · +1 · son 08.09.2026 · sonuç ⛔ TEKRAR (mod V · D129)
+2_DEVAMLILIK    · +1 · son 08.09.2026 · sonuç ⚠️ ŞARTLI → parti geçersiz
+3_SES           · +1 · son 08.09.2026 · sonuç ⚠️ ŞARTLI → parti geçersiz
+4_HIKAYE        · +1 · son 08.09.2026 · sonuç 🚨 GEÇERSİZ (aritmetik fabrike)
+5_ARKA_PLAN     · +1 · son 08.09.2026 · sonuç ✅ GO → parti geçersiz
+6_FIZIK         · +1 · son 08.09.2026 · sonuç ⛔ TEKRAR
+7_AKSIYON       · +1 · son 08.09.2026 · sonuç ⛔ TEKRAR
+8_EFOR          · +1 · son 08.09.2026 · sonuç ⛔ TEKRAR
+9_KADRAJ        · +1 · son 08.09.2026 · sonuç 🚨 GEÇERSİZ [D190 · yeni kural]
+10_OYUNCULUK    · +1 · son 08.09.2026 · sonuç 🚨 GEÇERSİZ [D190]
+11_ISIK         · +1 · son 08.09.2026 · sonuç 🚨 GEÇERSİZ [D190]
+12_HOOK         · +1 · son 08.09.2026 · sonuç 🚨 GEÇERSİZ [D190]
+```
+
+⛔ **BU KOŞUNUN TEK CÜMLESİ:** on iki mercek filmin İÇİNE baktı ve on ikisi de
+filmin YARISININ orada olmadığını göremedi. Mercek eklemek görüşü artırmıyor;
+**parti dışındaki tek referans plan, plan dışındaki tek referans ölçümdür.**

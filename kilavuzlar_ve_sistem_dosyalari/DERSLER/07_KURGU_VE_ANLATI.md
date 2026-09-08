@@ -282,7 +282,12 @@ masasında, teslimden önce, dört maddelik bir bakışla çözülür — ve
 ## 🔴 DERS 70: ÜRETİM KİLİTLERİ KURGUYU BAĞLAMIYOR — 48 SANİYELİK FİLM KURGUDA 64 SANİYE OLDU, JENERİK KARTI GERİ GELDİ
 
 **KAPI:** BETİK · `olcum_kapisi.sh` KUYRUK/BAŞ KART ŞÜPHESİ (freezedetect −60dB + `son_kare.jpg`) — 01.09.2026
-**TEKRAR:** 11 · son vaka 04.09.2026 (THE HEALING GROUND 140,10-145,09 · 4,99 s · kart yine KAPAK görselidir ve filmin dünyasıyla çelişir: turuncu gök + ufku kaplayan dev gezegen + SİYAH giysi, filmin kendi paleti soluk kum + kehribar pus, gezegen 0 kare, giysi arduvaz grisi · üstelik kart **DÖNGÜ KANITINI öldürdü**: SPEC S0 ↔ S13 eş kadraj çifti istiyordu, izleyici son kare olarak kartı görüyor) · önceki 04.09.2026 (THE UPWARD FALL 220,13-225,11 · kart üstelik KAPAK görselidir: kahverengi ceket + baloncuk kask, filmin mat siyah kostümüyle çelişir) · önceki 01.09.2026 (THE PAYLOAD 4:00-4:06 · THE COLD WELD 2:30-2:35) · ⛔ ÇALIŞMIYOR → araca çevrildi: "kart ekleme" cümlesi dokuz teslimde tutmadı, kapı artık betikte
+**TEKRAR:** 12 · son vaka **08.09.2026 (THE OPEN CIRCUIT 230,13-235,14 · 5,0 s ·
+kart yine KAPAK görselidir ve filmin ortamıyla çelişir: kartta kelepçeden çıkan MOR
+kıvılcım + gündoğumu ufku + dev gezegen, filmin kendi doruğu ise gece ve beyaz-mavi.
+Her 25 sahnenin NEGATIVE bloğunda "no title card, no captions, no watermark" yazılıydı;
+kart yine de eklendi ve ⑫ HOOK onu doğru okudu: "the card kills the loop")** ·
+önceki 04.09.2026 (THE HEALING GROUND 140,10-145,09 · 4,99 s · kart yine KAPAK görselidir ve filmin dünyasıyla çelişir: turuncu gök + ufku kaplayan dev gezegen + SİYAH giysi, filmin kendi paleti soluk kum + kehribar pus, gezegen 0 kare, giysi arduvaz grisi · üstelik kart **DÖNGÜ KANITINI öldürdü**: SPEC S0 ↔ S13 eş kadraj çifti istiyordu, izleyici son kare olarak kartı görüyor) · önceki 04.09.2026 (THE UPWARD FALL 220,13-225,11 · kart üstelik KAPAK görselidir: kahverengi ceket + baloncuk kask, filmin mat siyah kostümüyle çelişir) · önceki 01.09.2026 (THE PAYLOAD 4:00-4:06 · THE COLD WELD 2:30-2:35) · ⛔ ÇALIŞMIYOR → araca çevrildi: "kart ekleme" cümlesi dokuz teslimde tutmadı, kapı artık betikte
 
 **Kaynak:** THE FIRST MORNING SHORTS_QA koşusu (06.08.2026, MOD V) — 6/10,
 REGENERATE · `Negative Violations: 🔴 BLOCKER — title card presented at 1:00`
@@ -362,7 +367,11 @@ HOOK REVEAL KİLİDİ (dikey shorts):
 ## 🔴 DERS 72: KURGU KAPISI YATAYA GENELLENİR — PLANIN DORUĞU KURGUYA GİRMEDEN FİLM TESLİM EDİLDİ
 
 **KAPI:** BETİK · `olcum_kapisi.sh` KUYRUK/BAŞ KART ŞÜPHESİ — D70 ile aynı araç — 01.09.2026
-**TEKRAR:** 12 · D70 ile ortak sayaç · **05.09.2026 THE STANDING WIRE: kuyruk kartı GERİ GELDİ** — 240,1-245,1 s arası 5,0 s'lik başlık kartı (freezedetect 241,9-244,9 donma + son_kare.jpg'de "THE STANDING WIRE" yazısı). SPEC `SCREEN TEXT: 0 saniye` diyordu; **yasak filmin kendi KAPAK.md dosyasında da yazılıydı** (*"⛔ KLİP ZİNCİRİNE KARIŞMAZ [D70/D72]"*) ve kart tam da o KAPAK çıktısının kendisiydi. İkinci zarar: kart planlı AÇILIŞ-KAPANIŞ KAFİYESİNİ öldürdü — SPEC ilk kare 6,0 s ↔ son kare 247,0 s diyordu, 247,0 s artık kartın içinde ve izleyici filmden S24 ile değil bir afişle çıkıyor. Kart, filmin kendi kompozisyonunu taşıdığı için "yabancı kart" gibi de okunmuyor. · 04.09.2026 THE HEALING GROUND: planlı DORUK S12 kurguya GİRDİ ama **sessizlik bıçağı girmedi** — 2 s mutlak sessizlik yerine ölçüm 125-128 s'de −20,4 dB (filmin SESLİ seviyesi) gösteriyor, sessizlik doruktan 5 s SONRA geliyor [[D180]] · önceki 04.09.2026 THE UPWARD FALL: planlı DORUK S24 kurguya hiç girmedi (⑪ + kare ile doğrulandı) · ⛔ ÇALIŞMIYOR → araca çevrildi (01.09.2026)
+**TEKRAR:** 13 · D70 ile ortak sayaç · **08.09.2026 THE OPEN CIRCUIT: planlı DORUK
+S22 kurguya HİÇ GİRMEDİ** (⑪ ölçümü + yuva eşlemesi + repliğin yokluğu ile üç kez
+doğrulandı) ve kuyruk kartı yine 5,0 s. İkinci zarar tanıdık: kart, S24'ün son
+karesinden sonra geliyor ve filmin ince açık bant kapanışını izleyiciden alıyor.
+· önceki **05.09.2026 THE STANDING WIRE: kuyruk kartı GERİ GELDİ** — 240,1-245,1 s arası 5,0 s'lik başlık kartı (freezedetect 241,9-244,9 donma + son_kare.jpg'de "THE STANDING WIRE" yazısı). SPEC `SCREEN TEXT: 0 saniye` diyordu; **yasak filmin kendi KAPAK.md dosyasında da yazılıydı** (*"⛔ KLİP ZİNCİRİNE KARIŞMAZ [D70/D72]"*) ve kart tam da o KAPAK çıktısının kendisiydi. İkinci zarar: kart planlı AÇILIŞ-KAPANIŞ KAFİYESİNİ öldürdü — SPEC ilk kare 6,0 s ↔ son kare 247,0 s diyordu, 247,0 s artık kartın içinde ve izleyici filmden S24 ile değil bir afişle çıkıyor. Kart, filmin kendi kompozisyonunu taşıdığı için "yabancı kart" gibi de okunmuyor. · 04.09.2026 THE HEALING GROUND: planlı DORUK S12 kurguya GİRDİ ama **sessizlik bıçağı girmedi** — 2 s mutlak sessizlik yerine ölçüm 125-128 s'de −20,4 dB (filmin SESLİ seviyesi) gösteriyor, sessizlik doruktan 5 s SONRA geliyor [[D180]] · önceki 04.09.2026 THE UPWARD FALL: planlı DORUK S24 kurguya hiç girmedi (⑪ + kare ile doğrulandı) · ⛔ ÇALIŞMIYOR → araca çevrildi (01.09.2026)
 
 **Kaynak:** THE UNBROKEN CITY dört mercek QA (06.08.2026, dördü mod V) —
 senaryo Karakter 4/10 ("the astronaut makes zero choices") · mantık
@@ -1082,7 +1091,15 @@ yanında daha tanıdık bir mekanizma varsa okunmaz.**
 ## 🔴 DERS 180: PLANLI MUTLAK SESSİZLİK VİDEO MODELİNDEN İSTENDİ — İKİ FİLM ÜST ÜSTE DORUĞUNU KAYBETTİ
 
 **KAPI:** BETİK · `olcum_kapisi.sh` SESSİZLİK satırı → `rapor_kontrol.py --olcum-sessizlik`
-**TEKRAR:** 2 · son vaka **05.09.2026 THE STANDING WIRE — dersin YAZILDIĞI günün ilk ÖLÇÜLMÜŞ vakası, ve DÜŞTÜ.** SPEC bu kez doğru yazılmıştı (`KURGUDA HARD MUTE: sn 214,0-239,0`, üç eşik + komut). Ölçüm: −50 dB'de aralık DÖRT parçaya bölünmüş, en büyük delik 220,1→230,1 (10,0 s); −40 dB'de delik duruyor; ancak −30 dB'de kesintisiz. Yani aralık **sessiz değil, kısık.** ⭐ Sebep dersin kendi cümlesinin ötesinde: bu dosyada **hiç kurgu yapılmamıştı** — bıçağı kurguya taşımak, kurgu adımı olmayan bir hatta yetmiyor [[D181]]. · öncesi 04.09.2026 (THE HEALING GROUND; THE UPWARD FALL, aynı gün)
+**TEKRAR:** **3** · ⛔ **ÇALIŞMIYOR — dönüştürme borcu doğdu** [DERS_YAZIM_KONTRATI §3].
+3. vaka **08.09.2026 THE OPEN CIRCUIT**: SPEC BLOK D *"PLANLI SESSİZLİK: 193,0-195,0 s ·
+⛔ BIÇAK KURGUDADIR"* diyordu ve MUZIK dosyasında HARD MUTE komutu yazılıydı. Ölçüm:
+`silencedetect -50dB/0,3s` **dosyanın tamamında tek aralık bulmadı** — bıçak hiç
+vurulmadı. Ve sebep [[D181]] ile aynı: **bu dosyada kurgu adımı hiç koşmadı**;
+sessizlik, kurgu olmayan bir hatta taşınamaz.
+**BORÇ:** SPEC'in planlı sessizliği `olcum_kapisi.sh`'ın TESLİM SINIFI satırına
+beşinci eksen olarak girer — aralık yoksa sınıf HAM ZİNCİR'dir, ayrı bir bulgu değil.
+· 2. vaka **05.09.2026 THE STANDING WIRE — dersin YAZILDIĞI günün ilk ÖLÇÜLMÜŞ vakası, ve DÜŞTÜ.** SPEC bu kez doğru yazılmıştı (`KURGUDA HARD MUTE: sn 214,0-239,0`, üç eşik + komut). Ölçüm: −50 dB'de aralık DÖRT parçaya bölünmüş, en büyük delik 220,1→230,1 (10,0 s); −40 dB'de delik duruyor; ancak −30 dB'de kesintisiz. Yani aralık **sessiz değil, kısık.** ⭐ Sebep dersin kendi cümlesinin ötesinde: bu dosyada **hiç kurgu yapılmamıştı** — bıçağı kurguya taşımak, kurgu adımı olmayan bir hatta yetmiyor [[D181]]. · öncesi 04.09.2026 (THE HEALING GROUND; THE UPWARD FALL, aynı gün)
 
 **Kaynak:** ⑪ ÖLÇÜM KAPISI, iki film (rapordan DEĞİL — sekiz ve yedi
 merceğin hiçbiri görmedi).

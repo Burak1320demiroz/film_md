@@ -1535,7 +1535,7 @@ dosya filmin teslim kurgusu değil.** Her iki hâlde de kurgu kapısı (26 klip 
 şerit) BİREBİR aynı olan ve çoğunluktan sapan mercek grubu işaretlenir:
 *"azınlık İKİ oy değil, BİR oydur."* — 07.09.2026. Bu ders 17.08.2026'dan beri
 yalnız operatör kuralıydı; ilk betik kapısı bugün takıldı [[D74]].
-**TEKRAR:** 3 · 07.09.2026 YERÇEKİMİ FAZ 10 — ⑦ ve ⑧ künyeleri birebir aynı
+**TEKRAR:** 4 · **08.09.2026 THE OPEN CIRCUIT — en temiz vaka: on iki rapor ÜÇ künye grubuna ayrıldı** (25 replik: ①②③④ · 22 replik: ⑥⑦⑧ · 16 replik: ⑨⑩⑪⑫) ve grup içi `LINES HEARD` metinleri BİREBİR aynı. Bağımsız ölçüm sayısı **12 değil, en fazla 3**; ⑤ + ⑥ künyeleri (kesme 22 · sahne 22) ayrıca çoğunluktan sapıyor ve azınlık İKİ oy değil BİR oydur. · önceki 07.09.2026 YERÇEKİMİ FAZ 10 — ⑦ ve ⑧ künyeleri birebir aynı
 (109 s · 11 kesme · 12 sahne · `--1111111111`) ve **ikisi de rubriğin ⛔ zorunlu
 kıldığı kesme ZAMAN KODLARINI basmadı**: sayım yapılmamış, devralınmıştır.
 ⭐ Aynı partide ikinci kanıt: ⑦'nin `01:36'da bir kesme` iddiası — o saniyede
@@ -2184,7 +2184,7 @@ D93 kartı gördü ve ölçümü iptal etti; D120 kartı ölçülebilir hâle ge
 ## 🔴 DERS 125: MAKİNEYLE ÖLÇÜLEBİLEN SAYIYI MODELE SORMA — ALTI MERCEK AYNI YANLIŞ KESME LİSTESİNİ VERDİ, BİRİ HİÇ VAR OLMAYAN SESSİZLİKTEN 🔴 BLOCKER ÜRETTİ
 
 **KAPI:** BETİK · `qa-isle/scripts/olcum_kapisi.sh` — koşu sırasının EN BAŞI; ④ ⑤ ⑦ ⑨ bu betiğin sayılarıyla koşar
-**TEKRAR:** 3 parti · son vaka 02.09.2026 (THE STILL SWARM) · ⛔ ÇALIŞMIYOR — ama engel araç değil, **DOSYA**: ffmpeg kurulu, master verilmiyor. Dönüştürme borcu: koşu, master YOLU olmadan başlatılmaz (operatör yolunu ham raporun künyesine yazar [D160])
+**TEKRAR:** 4 parti · son vaka **08.09.2026 THE OPEN CIRCUIT** — on iki mercek koştu, ölçüm koşudan SONRA yapıldı ve raporların hepsini geçersiz kıldı (2 eksik klip · filigran · kuyruk kartı · −16,6 LUFS). Sıra kontratta EN BAŞTA, pratikte EN SONDA: operatörün eli rubrikten başlıyor. · önceki 02.09.2026 (THE STILL SWARM) · ⛔ ÇALIŞMIYOR — ama engel araç değil, **DOSYA**: ffmpeg kurulu, master verilmiyor. Dönüştürme borcu: koşu, master YOLU olmadan başlatılmaz (operatör yolunu ham raporun künyesine yazar [D160])
 
 **Kaynak:** THE IRON SLOPE · 25.08.2026 · altı mercekli parti (🔧🔗🔊📖🖼️⚖️),
 altısı da mod V. İki bağımsız kanıt aynı koşudan çıktı:
@@ -2293,7 +2293,11 @@ arka plan nesnesi adlandırılır, yoksa "none" yazılır.
 ## 🔴 DERS 129: SPEC DOSYASI FİLMİN KENDİ KLASÖRÜNDE DURURKEN BEŞ MERCEK DE MOD V KOŞULDU — KESME LİSTESİ DORUĞU, KAPAK KARESİNİ VE İKİ VİRALİ KESTİ
 
 **KAPI:** KARAR · `rubrik_paketle.sh` (QA_PROMPTLARI/FILME_OZEL/<FILM>/) + `rapor_kontrol.py` ① SPEC kapısı (mod V → TEKRAR) — 01.09.2026
-**TEKRAR:** **15 film** · son vaka 06.09.2026 (YERÇEKİMİ FAZ 9, **on iki mercek** —
+**TEKRAR:** **16 film** · son vaka **08.09.2026 (THE OPEN CIRCUIT, on iki mercek —
+SPEC ve PAKET_1..12 ikisi de VARDI, paket filmin yazıldığı gün 09:56'da üretilmişti;
+on iki raporun on ikisi `INPUT MODE: V`. Bu koşuda kesme listesi filmin ⭐TEMA #1
+sahnesini (S4 · kangal) ve kesici kurulumunu (S12) kesmeyi önerdi, ⑫ ise makarada
+OLMAYAN doruğa 9/10 verdi [[D190]])** · önceki 06.09.2026 (YERÇEKİMİ FAZ 9, **on iki mercek** —
 bu hatta SPEC'in adresi FAZ RUBRİĞİDİR ve FAZ 9'unki hiç yazılmamıştı, bkz. [[D185]]) ·
 önceki 06.09.2026 (THE KEPT LIGHT, **sekiz mercek** — SPEC ve PAKET ikisi de VARDI) ·
 önceki 04.09.2026 (THE HEALING GROUND, **yedi mercek** — paket VARDI, film ve paket aynı gün 05:00'te doğdu, operatör yine çıplak rubriği açtı; THE UPWARD FALL ile **AYNI GÜN, arka arkaya** — sorun artık "paket yok" değil, **paketin operatöre ulaşmaması**) · önceki 04.09.2026 (THE UPWARD FALL, **sekiz mercek** — bu kez paket VARDI, bkz. [[D165]]) · önceki 02.09.2026 (THE SINKING STAKE, **sekiz mercek** — sebep: FILME_OZEL paketi yoktu [D165]) · ⛔ ÇALIŞMIYOR → araca çevrildi ama araç KOŞULMADI: paket ancak QA anında, `qa-isle` açılırsa üretiliyordu; film 01.09'da yazıldı, paketi hiç doğmadı, ertesi gün operatörün elinde yapıştıracak paket yoktu → **[[D165]]** aracı filmin YAZIMINA bağlar
@@ -2817,7 +2821,13 @@ ekseni ölçülmedi` olur.
 ## 🔴 DERS 150: ÜRETİCİ FİLİGRANI 315 SANİYENİN 315'İNDE DURUYORDU — ⑤ 31 SAHNEDE "EDGES: CLEAN" YAZDI, ① KUTUYU İŞARETLEMEDİ; KÖŞE TESTİ MAKİNE KAPISINA
 
 **KAPI:** BETİK · `olcum_kapisi.sh` KÖŞE TESTİ (kose_SA.png) + `rapor_kontrol.py` ⑤ SUSKUNLUK — 01.09.2026
-**TEKRAR:** **5** · 5. vaka 05.09.2026 THE STANDING WIRE: camgöbeği "▷" sağ alt çeyrekte 6/6 örnek + 25 sahne karesinin 25'inde — **sekiz merceğin sekizinde bulgu 0**; ① "no watermark" kutusunu boş bıraktı, ⑤ 18 sahneye `EDGES: Clean` yazdı. ⭐ **AMA BU SEFER PARTİ DÜŞTÜ:** [[D177]]'nin ödediği borç ilk kez ATEŞLEDİ — `rapor_kontrol.py --olcum-filigran VAR` sekiz raporu da mercek okumadan 🚨 GEÇERSİZ yaptı. Rubrik tarafı hâlâ %0; **betik tarafı artık %100.** Kapı gözde değil, ölçümdedir — rubriğin filigran kutusu emekli edilir, kutuyu işaretleyen tek şey `olcum_kapisi.sh`'dir. 4. vaka 04.09.2026 THE HEALING GROUND: beyaz dört uçlu ✦ sağ altta, 5/5 gövde örneği (5·30·60·90·120 s), 140/140 saniye — **yedi merceğin yedisinde bulgu 0**, ⑤ 14 sahneye `EDGES: Clean` yazdı ve Kenarlar hücresine 10/10 verdi; ① "no watermark" kutusunu boş bıraktı. **THE UPWARD FALL ile aynı gün, arka arkaya iki film** → kusur film başına değil **İHRAÇ HATTINA** aittir. · ⛔ ÇALIŞMIYOR → dönüştürme borcu [[D177]] ile ÖDENDİ (ölçüm sonucu artık `rapor_kontrol.py`'ye bayrakla girer; verilmezse eksen "ÖLÇÜLMEDİ" yazar). 3. vaka 04.09.2026 THE UPWARD FALL: cyan "▷" sağ alt çeyrekte 7/7 örnek, 225/225 saniye — **sekiz merceğin sekizinde bulgu 0**, ⑤ 20 sahneye `EDGES: Clean` yazdı; ⑤ SUSKUNLUK kapısı sıfır iddiada ateşlenemedi. 2. vaka 01.09.2026 THE COLD WELD ÖLÇÜLDÜ ve filigran DOĞRULANDI (sağ alt çeyrek, 6/6 örnek, cyan üçgen; merkez 4K'da ≈3450,1800 — köşeden %10/%17 içeride). ⚠️ Kapının ilk sürümü SABİT 360×240 kırpıyordu ve KAÇIRDI; 01.09.2026'da DÖRT ÇEYREĞE çevrildi (`olcum_kapisi.sh`). ⛔ %3 crop yetmez: temizlik kadraj genişliğinin %12'sini götürür.
+**TEKRAR:** **6** · 6. vaka **08.09.2026 THE OPEN CIRCUIT**: siyah disk içinde
+camgöbeği ok, sağ alt köşede, 0→229 s her örnekte ve 23 sahne karesinin 23'ünde —
+**on iki merceğin on ikisinde bulgu 0**; ⑤ 22 sahneye `EDGES: Clean` yazdı, ① "no
+watermark" kutusunu boş bıraktı, ve ⑤ SUSKUNLUK kapısı yine sıfır iddiada
+ateşleyemedi. ⭐ Betik tarafı yine %100: `--olcum-filigran VAR` partiyi mercek
+okumadan 🚨 GEÇERSİZ yaptı [[D177]]. **Beş filmde beş kez aynı ihraç hattı** —
+kusur film başına değil hatta aittir. · 5. vaka 05.09.2026 THE STANDING WIRE: camgöbeği "▷" sağ alt çeyrekte 6/6 örnek + 25 sahne karesinin 25'inde — **sekiz merceğin sekizinde bulgu 0**; ① "no watermark" kutusunu boş bıraktı, ⑤ 18 sahneye `EDGES: Clean` yazdı. ⭐ **AMA BU SEFER PARTİ DÜŞTÜ:** [[D177]]'nin ödediği borç ilk kez ATEŞLEDİ — `rapor_kontrol.py --olcum-filigran VAR` sekiz raporu da mercek okumadan 🚨 GEÇERSİZ yaptı. Rubrik tarafı hâlâ %0; **betik tarafı artık %100.** Kapı gözde değil, ölçümdedir — rubriğin filigran kutusu emekli edilir, kutuyu işaretleyen tek şey `olcum_kapisi.sh`'dir. 4. vaka 04.09.2026 THE HEALING GROUND: beyaz dört uçlu ✦ sağ altta, 5/5 gövde örneği (5·30·60·90·120 s), 140/140 saniye — **yedi merceğin yedisinde bulgu 0**, ⑤ 14 sahneye `EDGES: Clean` yazdı ve Kenarlar hücresine 10/10 verdi; ① "no watermark" kutusunu boş bıraktı. **THE UPWARD FALL ile aynı gün, arka arkaya iki film** → kusur film başına değil **İHRAÇ HATTINA** aittir. · ⛔ ÇALIŞMIYOR → dönüştürme borcu [[D177]] ile ÖDENDİ (ölçüm sonucu artık `rapor_kontrol.py`'ye bayrakla girer; verilmezse eksen "ÖLÇÜLMEDİ" yazar). 3. vaka 04.09.2026 THE UPWARD FALL: cyan "▷" sağ alt çeyrekte 7/7 örnek, 225/225 saniye — **sekiz merceğin sekizinde bulgu 0**, ⑤ 20 sahneye `EDGES: Clean` yazdı; ⑤ SUSKUNLUK kapısı sıfır iddiada ateşlenemedi. 2. vaka 01.09.2026 THE COLD WELD ÖLÇÜLDÜ ve filigran DOĞRULANDI (sağ alt çeyrek, 6/6 örnek, cyan üçgen; merkez 4K'da ≈3450,1800 — köşeden %10/%17 içeride). ⚠️ Kapının ilk sürümü SABİT 360×240 kırpıyordu ve KAÇIRDI; 01.09.2026'da DÖRT ÇEYREĞE çevrildi (`olcum_kapisi.sh`). ⛔ %3 crop yetmez: temizlik kadraj genişliğinin %12'sini götürür.
 
 **Kaynak:** THE SKYLIGHT (29.08.2026) — master köşe şeridi (`crop=360:240:iw-360:ih-240,
 fps=1/30,tile=6x2`): 11 örneğin 11'inde sağ altta aynı "▷" ikonu; altı raporun
@@ -4267,8 +4277,15 @@ kapatmadı: eksen eklemek kapsam boşluğunu kapatmıyor)
 sayılır (çok bölümlü filmde BOLUM_1 + BOLUM_2) ve `--olcum-sahne` verilmişse
 ÖLÇÜME, verilmemişse raporların çoğunluğuna karşı okunur. Fark varsa parti
 GEÇERSİZ; kesme listesi ve yeniden üretim UYGULANMAZ. — 07.09.2026
-**TEKRAR:** 0 · önceki vaka F8 (iki sahne üretilmemişti) ELLE yakalanmıştı,
-kapı yoktu
+**TEKRAR:** 1 · ⭐ **ÇALIŞIYOR — 08.09.2026 THE OPEN CIRCUIT'te kapı ATEŞLEDİ.**
+Plan 25 sahne (BOLUM_1 13 + BOLUM_2 12), makara **23 klip**; betik `--olcum-sahne 23`
+ile partiyi mercek okumadan 🚨 GEÇERSİZ yaptı. Eksik iki sahne kareyle ve replik
+ekseniyle ADIYLA yazıldı: **S17** (*"HE TAKES IT DOWN"* — ayrılığın tersinmesi;
+repliği *"Counted."* on iki raporun hiçbirinin `LINES HEARD`'ında yok) ve **S22**
+(*"⭐DORUK b · IT GOES DOWN"* — filmin DORUĞU; repliği *"Ground path is closed."*
+yine hiçbir raporda yok). Oybirliği yine tamdı: on iki merceğin on ikisi 22 sahne
+saydı ve ⑫ eksik doruğun yerine geçen sahneye **"peak placement 9/10"** verdi
+[[D190]]. · önceki vaka F8 (iki sahne üretilmemişti) ELLE yakalanmıştı, kapı yoktu
 
 **Kaynak:** YERÇEKİMİ FAZ 10 / ZEMİN · on iki mercek · 07.09.2026 ·
 `FAZ_10_ZEMIN/FAZ_10_QA_DERSLER.md`
@@ -4398,3 +4415,97 @@ tam olarak bunu söylüyor ve bu ders onun puan tarafıdır.
 orada sebep kopya defterdi, burada rubrik metninin kendisi) · [[D110]] ·
 [[D184]] (mercek eklemek kapsam boşluğunu kapatmıyor — bu ders tersini
 gösteriyor: mercek eklemek kapsam ÇAKIŞMASI da açıyor) · [[D188]]
+
+---
+
+## 🔴 DERS 190: ⑨-⑫ MOD V'DE BOŞ DEĞİL, **TERSİNE** ÇALIŞIR — BELGESİZ KOŞAN PLAN SADAKATİ MERCEĞİ EKRANDAN BİR PLAN UYDURUR VE FİLMİN EKSİĞİNİ NİYET SANIP 9/10 VERİR
+
+**KAPI:** BETİK · `rapor_kontrol.py` ① SPEC kapısı — ⑨-⑫ raporu `INPUT MODE: D`
+değilse karar **🚨 GEÇERSİZ** (uygulandı 08.09.2026; öncesinde ⛔ TEKRAR'dı)
+**TEKRAR:** 0 · 08.09.2026 THE OPEN CIRCUIT
+
+**Kaynak:** THE OPEN CIRCUIT QA (08.09.2026) — ⑫ HOOK mod V: *"Peak Placement
+**9/10** — S22 03:40 lands perfectly at the physical end of the action."*
+Planın S22'si (**⭐DORUK b · IT GOES DOWN**) makarada **YOK**; 03:40'ta izlenen
+sahne S24'tür ve ölçüm iki sahnenin eksik olduğunu ⑤ kapısında zaten bildirdi.
+
+**Sorun:** [[D184]] bu dörtlüyü *"plan ne dedi, ekran ne gösterdi"* sorusunu
+soran mercekler olarak kurdu ve **SPEC'siz koşulmayacaklarını** yazdı. Kural
+"boş koşu" varsayıyordu — zararsız, yalnız faydasız. Ölçüm bunun yanlış
+olduğunu gösterdi: bu dörtlü belge yokken **ekrandan bir plan türetir**, ve
+türettiği plan ekrana her zaman uyar. Sonuç bilgi eksikliği değil, **ters
+işaretli bilgi**:
+
+```
+⑫ HOOK   → "peak placement 9/10"      · planın doruğu makarada YOK
+⑨ KADRAJ → "regenerate the final shot to rhyme with S1"
+                                       · plan S24'ü zaten S6/S8'in eş kadrajı
+                                         yapıyor, S1'in değil
+⑪ IŞIK   → "key walks" (14 🔴)         · filmin GERÇEK ışık arızası (sönen
+                                         şeritlerin geri yanması) hiç yazılmadı
+⑩ OYUNCULUK → "regenerate S22, figures must flinch"
+                                       · S22 üretilmemiş; sipariş var olmayan
+                                         klibe kesiliyor
+```
+
+Dördü de kendi içinde tutarlı, dördü de plana aykırı. Bir mod V ⑫ raporu
+**"doruk yerinde" diye kaydedilirse, eksik doruk kaydın kendisi tarafından
+örtülür** — ve bu, hiç rapor almamaktan kötüdür.
+
+**ÇÖZÜM:** ⑨-⑫ için mod V artık `TEKRAR` değil `GEÇERSİZ`'dir. Rapor
+karantinaya girer: T9-T12'ye satır girmez, `00_INDEX` hücresi ❌ kalır,
+**hiçbir bulgusu ders, sipariş ya da kesme üretmez** — çünkü bulgunun ölçtüğü
+plan uydurulmuştur. ①-⑧'de mod V hâlâ TEKRAR'dır: onlar filmin kendisiyle
+tutarlılığını ölçer, belge olmadan da bir şey ölçerler.
+
+⚠️ **DÜRÜST KAYIT — yama YARIM:** dört rubriğin STEP −1'i artık mod V'de
+DURDURUYOR, ama gövdelerinde mod V yuvaları duruyor (`GRID GIVEN: … or "none
+(mode V)"` · `SETUP FIDELITY (mode D only · N/A in mode V)` · ⑨'un *"the rhyme
+pair is run on every film, including in mode V"* satırı). Bunlar STEP −1'i
+atlayan bir modele hâlâ davetiyedir; gövde temizliği yapılmadı çünkü rubriğin
+künye satırlarını `rapor_kontrol.py` ayrıştırıyor. **Bu yüzden bağlayıcı kapı
+metin değil BETİKTİR** — rubrik ikna eder, betik reddeder.
+
+🔗 [[D184]] (dörtlüyü kuran ders — orada "SPEC'siz koşulmaz" bir tavsiyeydi,
+burada makine kararı) · [[D129]] (①-⑧'in mod V kapısı) · [[D188]] (eksik
+teslimi onaylayan oybirliği — ⑫'nin 9/10'u o oybirliğinin en zararlı oyuydu)
+· [[D131]] (kaynaksız hücreye puan)
+
+---
+
+## 🔴 DERS 191: SPEC'İN GÖZ KAPILARINI KOŞAN MERCEK YOK — FİLMİN KENDİ 12 KAPISININ BEŞİ EKRANDA İHLAL EDİLDİ, ON İKİ MERCEĞİN ON İKİSİ SIFIR YAZDI
+
+**KAPI:** BETİK · `rapor_kontrol.py` ①.10 — `--film` verildiğinde SPEC'in
+F bloğundaki `□` maddeleri EKRANA BASILIR (uygulandı 08.09.2026)
+**TEKRAR:** 0 · 08.09.2026 THE OPEN CIRCUIT
+
+**Kaynak:** THE OPEN CIRCUIT QA (08.09.2026) — SPEC BLOK F, 12 madde.
+Kareyle sınandı, **beşi düştü**:
+
+| göz kapısı | SPEC ne istiyor | ekranda ne var | kaç mercek yazdı |
+|---|---|---|---|
+| ① AĞIZ | 22 replikte konuşan ağız **0 kare** | S14/S16/S19/S20 yuvalarında yüz ve ağız kadrajda | 0/12 |
+| ② KASK | çerçeveli + **DÜZ** ön pencere [[D146]] | kubbe/kavisli pencere (kare 145 · 184 · 215) | 0/12 |
+| ④ KIVILCIM | tek · ince · düz · sönümlü | **şimşek** (kare 222,2-222,7) | 0/12 |
+| ⑧ ŞERİT | 4→3→2→0, hiç geri yanmaz | 189 s'de geri yandı, S23/S24'te yanıyor | 0/12 |
+| ⑫ METİN | hiçbir yüzeyde metin | başlık kartı + üretici filigranı | 0/12 |
+
+**Sorun:** Bu kapılar makineye inmeyen, **tek kareyle** kapanan maddelerdir ve
+SPEC onları filmin kendi diliyle yazar. Ama hiçbir merceğin **kapsamında
+değiller**: ① ekran metnine bakar, filmin şerit takvimine bakmaz; ⑪ key
+yönüne bakar, "kaç pencere yanıyor"a bakmaz; ② kostüm sürüklenmesine bakar,
+"kask kubbe mi düz mü" tasarım kilidine bakmaz. Kapı yazılıydı, **koşacak
+kimse yoktu** — ve on iki rapor, on iki kez, olmayan koşucunun yerine geçti.
+
+Bu [[D187]]'nin ikizi: orada *taşıyıcı kilidin ölçen merceği yoktu*, burada
+*filmin kendi kapılarının koşucusu yok*. Fark: göz kapıları zaten yazılmış
+durumda — eksik olan yalnız onların QA masasına **görünür** olması.
+
+**ÇÖZÜM:** `rapor_kontrol.py` her koşuda SPEC'in F bloğunu ⬜ listesi olarak
+basar. Liste film kaydına kopyalanır ve her madde **bir kareyle** kapanır
+(`ffmpeg -ss <sn> -i "$M" -frames:v 1`). Açık ⬜ madde varken parti kapanmaz;
+kapanmayan madde [[D96]] kilit defterine `⬜ AÇIK` olarak girer ve o eksende
+skor SAYI TAŞIMAZ.
+
+🔗 [[D187]] · [[D96]] · [[D146]] · [[D138]] · [[D162]] (SUSKUNLUK: bir iddiayı
+sahibi yazmazsa kapı ateşlemez — burada iddia hiç doğmadı)

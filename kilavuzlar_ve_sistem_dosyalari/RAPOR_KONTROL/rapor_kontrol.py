@@ -17,6 +17,7 @@
 #  yorumlamaz:
 #     ① SPEC KAPISI     film klasöründe *_QA_SPEC.md varken ①/④/⑥/⑦/⑧/⑨-⑫
 #                       mod V ise → TEKRAR (tabloya satır YOK)        [D129]
+#                       ⑨-⑫ mod V ise → GEÇERSİZ (karantina)          [D190]
 #     ⑨⑩⑪ DİZİ         SETUP / GAZE / KEY DIRECTION STRING uzunluğu = kesme+1;
 #                       ⑨'da dizi SPEC'in KURULUM İSKELETİ ile kıyaslanır  [D184]
 #     ⑫ TAHMİN          DROP-OFF PREDICTION üç saniye + sabit listeden sebep  [D184]
@@ -88,6 +89,7 @@ MOD_D_MERCEKLER = ("① KARE", "④ HİKAYE", "⑥ FİZİK",
                    "⑦ AKSİYON", "⑧ EFOR",
                    "⑨ KADRAJ", "⑩ OYUNCULUK", "⑪ IŞIK", "⑫ HOOK")   # yalnız bunların MODE D bölümü var
 # ⑨-⑫ planı ekrana karşı okur: SPEC varken mod V koşusu tanım gereği BOŞTUR
+PLAN_SADAKATI_MERCEKLER = ("⑨ KADRAJ", "⑩ OYUNCULUK", "⑪ IŞIK", "⑫ HOOK")   # [D190] mod V = 🚨 GEÇERSİZ
 DIZI_MERCEKLER = {   # mercek → (dizi başlığı, alfabe) — "OBSERVED:" satırından okunur [D184]
     "⑨ KADRAJ":    ("SETUP STRING",         "A-Z?"),
     "⑩ OYUNCULUK": ("GAZE STRING",          "OADU-"),
@@ -123,6 +125,25 @@ def novum_var(spec_metin):
 # ekrana basar ve kareyle sınanmalarını ister.
 NOVUM_SINIR_SATIRI = re.compile(r"⛔\s*(.+?)\s*$")
 ETIKET_SATIRI = re.compile(r"^[A-ZÇĞİÖŞÜ][A-ZÇĞİÖŞÜ′\s]{2,}\S")
+
+
+# ─── ①.10 GÖZ KAPILARI KAPISI [D191] ───────────────────────────────
+# SPEC'in F bloğu (GÖZ KAPILARI) filmin KENDİ kapılarıdır: makineye inmeyen,
+# tek kareyle kapanan maddeler. Hiçbir merceğin kapsamında değiller ve bu
+# yüzden hiç koşulmuyorlardı — THE OPEN CIRCUIT'te on iki maddenin BEŞİ
+# ekranda ihlal edildi (ağız · kubbe kask · şimşek · şerit geri yandı ·
+# metin+filigran) ve on iki merceğin on ikisi sıfırını yazdı.
+# Kapı bulgu üretmez: maddeleri EKRANA BASAR, kareyle kapatılmalarını ister.
+GOZ_BLOK = re.compile(r"GÖZ KAPILARI(.{0,2500}?)(?:\n##|\Z)", re.S)
+GOZ_MADDE = re.compile(r"^\s*□\s*(.+?)\s*$", re.M)
+
+
+def goz_kapilari(spec_metin):
+    """SPEC F bloğundaki □ maddeleri — her biri TEK KAREYLE kapanır."""
+    m = GOZ_BLOK.search(spec_metin or "")
+    if not m:
+        return []
+    return [g.strip() for g in GOZ_MADDE.findall(m.group(1))]
 
 
 def novum_sinir(spec_metin):
@@ -487,9 +508,20 @@ def rapor_denetle(yol, spec_metin=None, hook=10.0, klip=10.0, faz=None):
 
     # ① SPEC KAPISI
     if spec_metin is not None and R["mercek"] in MOD_D_MERCEKLER and R["mod"] != "D":
-        B.append(Bulgu("TEKRAR", f"SPEC dosyası VAR, rapor mod {R['mod'] or '?'} → koşu TEKRARLANIR [D129]",
-                       "ham rapor 02/'ye düşer, T tablosuna satır YAZILMAZ, kesme listesi / REMOVE / "
-                       "yeniden üretim UYGULANMAZ. Paket: qa-isle/scripts/rubrik_paketle.sh <film klasörü>"))
+        if R["mercek"] in PLAN_SADAKATI_MERCEKLER:
+            # ⑨-⑫ MOD V'DE BOŞ DEĞİL, TERSİNE ÇALIŞIR [D190]: bu dörtlü planı
+            # ekrana karşı okumak için vardır; belge yokken ekrandan bir plan
+            # UYDURUR ve uydurduğu plan filme her zaman uyar. THE OPEN CIRCUIT'te
+            # ⑫ makarada olmayan bir doruğa "Peak Placement 9/10" verdi.
+            B.append(Bulgu("GEÇERSİZ",
+                           f"⑨-⑫ PLAN SADAKATİ MERCEĞİ mod {R['mod'] or '?'} koşulmuş → koşu GEÇERSİZ [D190 · D184]",
+                           "Bu dörtlü belgesiz koşulduğunda ekrandan bir plan uydurur ve kusuru NİYET sanıp "
+                           "puanlar. Rapor karantinadadır: T9-T12'ye satır girmez, 00_INDEX'te hücre ❌ KALIR, "
+                           "hiçbir bulgusu ders/sipariş üretmez. Koşu PAKET_9..12 ile mod D tekrarlanır."))
+        else:
+            B.append(Bulgu("TEKRAR", f"SPEC dosyası VAR, rapor mod {R['mod'] or '?'} → koşu TEKRARLANIR [D129]",
+                           "ham rapor 02/'ye düşer, T tablosuna satır YAZILMAZ, kesme listesi / REMOVE / "
+                           "yeniden üretim UYGULANMAZ. Paket: qa-isle/scripts/rubrik_paketle.sh <film klasörü>"))
     elif spec_metin is not None and R["mercek"] not in MOD_D_MERCEKLER:
         B.append(Bulgu("NOT", "bu merceğe belge verilmez — mod V tasarımdır; FLAGS koşudan SONRA SPEC C bloğundan cevaplanır"))
 
@@ -1088,6 +1120,12 @@ def main():
         if specs:
             spec_metin = specs[0].read_text(encoding="utf-8", errors="replace")
             print(f"SPEC: {specs[0]}  → ①/④/⑥/⑦/⑧ + ⑨-⑫ için MOD D ZORUNLU")
+            goz = goz_kapilari(spec_metin)
+            if goz:
+                print(f"①.10 GÖZ KAPILARI [D191] — SPEC'te {len(goz)} madde · hiçbir merceğin kapsamında DEĞİL,")
+                print("      her biri TEK KAREYLE kapanır; kapanmadan parti kapanmaz:")
+                for g in goz:
+                    print(f"      ⬜ {g[:150]}")
         else:
             print(f"SPEC: yok ({film_dir}) → mod V bilinçli; ama [D117] film 'yazımı tamam' değil")
 

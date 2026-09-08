@@ -1,6 +1,6 @@
 # 📦 QA PAKETİ — THE_OPEN_CIRCUIT
 
-> Betikten üretildi (07.09.2026 · `rubrik_paketle.sh`). Elle düzenlenmez; SPEC değişince yeniden üretilir.
+> Betikten üretildi (08.09.2026 · `rubrik_paketle.sh`). Elle düzenlenmez; SPEC değişince yeniden üretilir.
 > Kaynak SPEC: `yatay_3_5_dk_filmler/THE_OPEN_CIRCUIT/THE_OPEN_CIRCUIT_QA_SPEC.md` · aile: yatay
 
 | dosya | mercek | mod | belge |

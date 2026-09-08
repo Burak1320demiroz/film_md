@@ -5,12 +5,22 @@
 > **kopyalanabilir hâlidir** — çelişkide §2.0 kazanır.
 
 ```bash
-cp -r kilavuzlar_ve_sistem_dosyalari/FILM_KLASOR_SABLONU <FORMAT_KLASORU>/<FILM_ADI>
-cd <FORMAT_KLASORU>/<FILM_ADI> && rm 00_SABLON_README.md
-for f in FILM_*.md; do mv "$f" "<FILM_ADI>${f#FILM}"; done
+bash kilavuzlar_ve_sistem_dosyalari/film_klasoru_ac.sh \
+     <FORMAT_KLASORU> <FILM_ADI> <SAHNE_SAYISI> [BOLUM_SAYISI]
 ```
 
-Sonra dosya başlarındaki `<FILM_ADI>` yer tutucularını doldur.
+⛔ **ELLE `cp -r` YAPILMAZ (08.09.2026).** Betik dört işi birden yapar ve
+dördü de elle yapılınca kaçıyordu: şablonu kopyalar · dosyaları
+`<FILM>_<ROL>.md` yapar · `00_ANALIZ/05_SAHNE_CALISMALARI/` altına sahne
+sayısı kadar çalışma dosyası damgalar · okuma çizelgesini üretir. Yer
+tutucuları (`<FILM_ADI>` · `<FILM>` · `<NN>`) da o doldurur.
+
+Sahne sayısı sıralama sırasında değişirse:
+```bash
+bash kilavuzlar_ve_sistem_dosyalari/film_klasoru_ac.sh \
+     <FORMAT_KLASORU> <FILM_ADI> <YENİ_SAHNE_SAYISI> --sahne-guncelle
+```
+Var olan çalışma dosyasına DOKUNMAZ, yalnız eksikleri damgalar.
 
 ---
 
@@ -34,6 +44,28 @@ uygulanmıyor, kopyalanabilir yapı uygulanıyor.
 | `<FILM>_MUZIK.md` | adım 9 (yazımda taslak) | `GOOGLE_FLOW_MUSIC_URETIM_KILAVUZU.md` §7-19 |
 | `<FILM>_YAYIN_PAKETI.md` | adım 11 (yazımda taslak) | `VIRAL_BASLIK_VE_ACIKLAMA_PROMPT.md` + `apexaic/<platform>/PAKETLEME_SABLONU.md` + `apexaic/CAPRAZ_YAYIN.md` §7 |
 | `<FILM>_QA_SPEC.md` | yazım paketinin SON parçası | AGENTS.md Kart A · [D117 · D122 · D141 · D142] |
+| `<FILM>_REFERANS_PAKETI.md` | ⚠️ **İSTEĞE BAĞLI** (08.09.2026) | `REFERANS_PAKETI_KILAVUZU.md` §1 |
+| `00_ANALIZ/` | 🆕 yazımdan ÖNCE, adım adım | kendi README'si |
+
+---
+
+## 🔬 00_ANALIZ — yazımdan önceki iş
+
+08.09.2026'da eklendi (sahip kararı). Film yazılmadan önce TÜM dersler, TÜM
+kılavuzlar ve QA raporları okunur; okunanlar bu filme düşen kilitlere,
+kilitler sahne sıralamasına ve uyarı notlarına, uyarılar da sahne başına bir
+çalışma dosyasına dönüşür. Altı adım, altı dosya — sırası ve kapıları
+`00_ANALIZ/00_ANALIZ_README.md`'de.
+
+⛔ `prompt_kontrol.py`'nin `ATLA` deseni `00_ANALIZ` içeren her yolu atlar.
+Klasör adı DEĞİŞTİRİLMEZ; değişirse taslak metinler denetime girer ve
+`05_SAHNE_CALISMALARI/` ayrı bir FİLM sayılır.
+
+⚠️ **REFERANS PAKETİ ARTIK ZORUNLU DEĞİL** (08.09.2026 · sahip kararı).
+Tetikleyici doğruyken atlanıyorsa PLAN'a tek satır gerekçe yazılır [D74
+kalıbı]; sessizce atlanmaz. Yazıldıysa kapı sertliğini korur: onaysız
+sayfanın varlığı geçtiği hiçbir sahne üretilmez [D168]. Karşı kayıt duruyor —
+D146'nın üç ölçülmüş vakası ve SINKING STAKE'in "çapa yok" kaydı.
 
 ⛔ **Boş bırakılan dosya silinmez, `⬜ BEKLİYOR` satırıyla durur.** Var olan
 boş dosya görünür borçtur; olmayan dosya borç değil, unutmadır.

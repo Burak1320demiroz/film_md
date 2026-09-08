@@ -50,6 +50,8 @@ bash .claude/skills/qa-isle/scripts/olcum_kapisi.sh "<master_yolu>"        # son
   Sıra: KURGU → ÖLÇÜM → MERCEK.
 - Betik KUYRUK/BAŞ KART ŞÜPHESİ (freezedetect) ve `son_kare.jpg` de basar [D70/72 · 9 vaka];
   şüphe varsa kart kesilir ve ⑪ yeniden koşulur — kart S0↔son sahne eş kadraj çiftini öldürür.
+- Betik **IŞIK TAKVİMİ İZİ** de basar [D193]: sahne başına YAVG (ort · min · son 2 s);
+  `↑` takvim geri sardı · `⟳` klibin içinde geri yandı. Takvim monotonikse her işaret 🔴.
 - Betik ayrıca LUFS/true peak (ihraç kilidi −14 / −1,0) ve KÖŞE TESTİ (`kose_SA.png`)
   basar: aynı köşede aynı ikon her örnekte → 🔴 FİLİGRAN, master yeniden ihraç [D150].
 - Karanlık filmde kesme dedektörü kördür: ızgarayı silencedetect deliklerinden ve
@@ -71,6 +73,17 @@ Koşu tekrarlanacaksa yine buradan üretilir:
 ```
 bash .claude/skills/qa-isle/scripts/rubrik_paketle.sh <film klasörü> [master]   → QA_PROMPTLARI/FILME_OZEL/<FILM>/
 ```
+
+⛔ **⑨-⑫ MOD V'DE GEÇERSİZDİR, TEKRAR DEĞİL [D190].** Plan sadakati merceği
+belgesiz koşunca ekrandan bir plan türetir ve türettiği plan ekrana her zaman
+uyar: ⑫ makarada olmayan doruğa "peak placement 9/10" verdi. Rapor karantinaya
+girer — T9-T12'ye satır yok, 00_INDEX hücresi ❌, hiçbir bulgusu ders/sipariş
+üretmez. Betik bunu kendisi verir.
+
+⛔ **①.10 GÖZ KAPILARI [D191].** Betik `--film` ile koşunca SPEC'in F bloğunu
+⬜ listesi olarak basar. Bunlar filmin kendi kapılarıdır ve hiçbir merceğin
+kapsamında değildir; her biri TEK KAREYLE kapanır. Açık ⬜ madde varken parti
+kapanmaz.
 
 SPEC VARSA ve raporun ilk satırı `INPUT MODE: D` değilse → koşu TEKRARLANIR:
 ham rapor 02'ye düşer, T tablosuna SATIR YAZILMAZ, kesme listesi / REMOVE

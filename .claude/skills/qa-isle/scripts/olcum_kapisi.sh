@@ -112,6 +112,54 @@ else
   echo "  (kesme listesi ya da süre okunamadı — ızgara atlandı)"
 fi
 
+echo "== IŞIK TAKVİMİ İZİ (D193 · sahne YAVG · ışık takvimi olan filmde ZORUNLU) =="
+# 08.09.2026 THE OPEN CIRCUIT: plan "şerit 4→3→2→0, MONOTONİK azalır, hiç geri
+# yanmaz" diyordu. Ekranda ışık İKİ KEZ geri geldi: merkezî seçimin İÇİNDE
+# (klip 185 s'de kararıp 189 s'de yeniden yandı) ve filmin son iki sahnesinde
+# (promptları "no window strip is lit" diyen sahneler). On iki merceğin on ikisi
+# kaçırdı; ⑪ yalnız key YÖNÜNÜ yazdı. Kapı sayı değil SERİ verir.
+#   ↑ = sahne, kendinden önceki EN KARANLIK sahneden %20+ parlak  (takvim geri sardı)
+#   ⟳ = sahnenin SONU, kendi en karanlık anından %25+ parlak      (klip içinde geri yandı)
+YAVG_TXT=$(mktemp)
+ffmpeg -hide_banner -v error -i "$M" \
+  -vf "signalstats,metadata=print:key=lavfi.signalstats.YAVG:file=$YAVG_TXT" -f null - 2>/dev/null
+if [ -s "$YAVG_TXT" ] && [ -n "${MIDS:-}" ]; then
+  echo "$MIDS" | awk -v f="$YAVG_TXT" '
+    BEGIN{
+      n=0; got=0
+      while ((getline line < f) > 0) {
+        if (line ~ /pts_time:/) { split(line,a,"pts_time:"); t=a[2]+0; got=1 }
+        else if (line ~ /YAVG=/ && got) { split(line,b,"="); T[n]=t; V[n]=b[2]+0; n++; got=0 }
+      }
+    }
+    { mid[NR]=$1+0 }
+    END{
+      printf "  sahne (orta s) :  ort   min   son2s\n"
+      runmin=1e9
+      for (i=1;i<=NR;i++){
+        lo = (i==1 ? 0 : (mid[i-1]+mid[i])/2)
+        hi = (i==NR ? 1e9 : (mid[i]+mid[i+1])/2)
+        s=0;c=0; mn=1e9; se=0; ce=0
+        for (j=0;j<n;j++) if (T[j]>=lo && T[j]<hi) {
+          s+=V[j]; c++
+          if (V[j]<mn) mn=V[j]
+          if (T[j] >= hi-2 && hi<1e9) { se+=V[j]; ce++ }
+        }
+        avg=(c?s/c:0); endv=(ce?se/ce:avg); if(mn==1e9) mn=avg
+        mark=""
+        if (i>1 && avg > runmin*1.20) mark = mark "  ↑ takvim GERİ SARDI (önceki en karanlık: " sprintf("%.1f",runmin) ")"
+        if (endv > mn*1.25)           mark = mark "  ⟳ klibin İÇİNDE geri yandı"
+        printf "  %3d (%6.2f s) : %5.1f %5.1f %5.1f%s\n", i, mid[i], avg, mn, endv, mark
+        if (avg<runmin) runmin=avg
+      }
+    }'
+  echo "  ⛔ Planın IŞIK TAKVİMİ MONOTONİK ise ↑ ve ⟳ işaretli her sahne 🔴'dir."
+  echo "     Takvim monotonik değilse satırlar yalnız gözlemdir — ama SPEC'le yan yana OKUNUR."
+else
+  echo "  (YAVG ya da sahne ızgarası okunamadı — takvim izi atlandı)"
+fi
+rm -f "$YAVG_TXT"
+
 echo "== KUYRUK / BAŞ KART ŞÜPHESİ (freezedetect −60dB / 1,5 s · son kare — D70/D72 · 9 vaka) =="
 # 01.09.2026: "kart ekleme" cümlesi dokuz teslimde tutmadı; kapı ARACA indi.
 # Grenli film karesi -60dB'de donmuş sayılmaz; siyah üstüne yazı kartı donar.

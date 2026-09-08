@@ -1565,7 +1565,18 @@ def prompt_denetle(p):
 # Şablon ve kılavuz dosyaları film değildir: içlerindeki "prompt" blokları
 # yer tutucu ve TALİMAT taşır ("ANTI-GLOW: 'glowing' KULLANMA") — denetime
 # sokulursa kendi yasak listesini ihlal sayarlar.
-ATLA = re.compile(r"/kilavuzlar/|SABLON|ŞABLON|TEMPLATE", re.IGNORECASE)
+#
+# 08.09.2026 · `00_ANALIZ` eklendi. Film klasörü artık yazımdan ÖNCEKİ işi
+# taşıyan bir alt klasörle geliyor (okuma çizelgesi · QA hasadı · sahne
+# sıralaması · uyarı notları · sahne sahne çalışma) ve o dosyalar TASLAK
+# metin taşır. İki somut arıza kapatıldı:
+#   ① `klasorleri_bul` ağaçtaki her klasöre bakar; 05_SAHNE_CALISMALARI'na
+#      iki sahne başlığı düşse o klasör AYRI BİR FİLM sayılırdı.
+#   ② `rglob("*.md")` her analiz dosyasını tek tek denetime sokar; sahne
+#      çalışmasına yazılan taslak prompt kendi yasak listesini ihlal eder.
+# D117'nin kalıbı: "plandaki örnek bir prompt sahne dizisine karışır."
+# Desen eklenirken ölçüldü: mevcut hiçbir dosyayı FAZLADAN atlamıyor (0).
+ATLA = re.compile(r"/kilavuzlar/|SABLON|ŞABLON|TEMPLATE|00_ANALIZ", re.IGNORECASE)
 
 
 def sahneli_dosyalar(klasor):

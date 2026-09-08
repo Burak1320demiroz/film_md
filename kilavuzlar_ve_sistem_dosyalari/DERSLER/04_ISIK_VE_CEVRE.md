@@ -247,3 +247,52 @@ farklı sadakat üretti, burada **renge**. Ortak kural: *bir promptta bir
 ⭐ **VE QA TARAFI:** kontrast KAPISI promptla değil ÖLÇÜMLE koşulur —
 `olcum_kapisi.sh` KAPI ⑦ (YMAX − YMIN ≥ 110). Promptta yazılan kontrast
 garantisi bir ölçüm değil, bir renk ataması olur.
+
+---
+
+## 🔴 DERS 193: IŞIK TAKVİMİ "MONOTONİK AZALIR" DİYE YAZILDI, HİÇBİR YERDE ÖLÇÜLMEDİ — SÖNEN ŞERİTLER **AYNI KLİBİN İÇİNDE** GERİ YANDI VE FİLM KARANLIK BİTMESİ GEREKEN İKİ SAHNEYİ YANAR HÂLDE TESLİM ETTİ
+
+**KAPI:** BETİK · `olcum_kapisi.sh` → **IŞIK TAKVİMİ İZİ** (sahne YAVG serisi;
+↑ = takvim geri sardı · ⟳ = klibin içinde geri yandı) — uygulandı 08.09.2026
+**TEKRAR:** 0 · 08.09.2026 THE OPEN CIRCUIT
+
+**Kaynak:** THE OPEN CIRCUIT QA (08.09.2026). Plan KART 6b: *"25 sahnenin
+20'si gece; ışık takvimi **MONOTONİK AZALIR ve hiç geri yükselmez**"* —
+şerit sayısı 4→3→2→**0**. S19 (merkezî seçim) planın sıfır noktası:
+*"AYNI KAREDE son iki şerit birlikte söner ve ova kararır."*
+
+**Ölçüm (saniyelik YAVG, 1280x720 master):**
+
+```
+183 s : 58,8   184 s : 56,2      ← şeritler yanıyor
+185 s : 35,1   186 s : 29,5   187 s : 29,5   ← söndü ✅ plan burada bitiyor
+188 s : 35,8   189 s : 47,5      ← ⟳ AYNI KLİBİN İÇİNDE GERİ YANDI
+195 s : 63,3   205 s : 56,4   215 s : 53,5   ← ↑ takvim geri sardı
+225 s (S24, filmin son sahnesi) : modül pencereleri YANIYOR (kare 225 s)
+```
+
+S23 ve S24'ün kendi promptları şunu yazıyordu: *"**No window strip is lit and
+no structure light is on anywhere.**"* İki sahne de o cümleyle üretildi ve
+ikisinde de üs yanıyor. Filmin tek cümlelik vaadi — *"üs sabaha kadar
+karanlıkta ayakta durur"* — ekranda **yok**.
+
+**Sorun:** Işık takvimi bir SAYI dizisidir (4→3→2→0) ve depoda onu ölçen
+hiçbir kapı yoktu. ⑪ IŞIK merceği koştu ve **key YÖNÜNÜ** yazdı (14 🔴 "key
+walks"); "kaç pencere yanıyor, geri yanan var mı" sorusu hiçbir merceğin
+kapsamında değil. Takvim plan tarafında yazılı, üretim tarafında serbest.
+
+**ÇÖZÜM:** Işık takvimi olan her filmde `olcum_kapisi.sh` sahne başına
+YAVG (ortalama · min · son 2 s) basar ve iki işaret koyar:
+
+```
+↑  sahne, kendinden önceki EN KARANLIK sahneden %20+ parlak → takvim geri sardı
+⟳  sahnenin SONU, kendi en karanlık anından %25+ parlak     → klip içinde geri yandı
+```
+
+Takvim monotonikse **↑ ve ⟳ işaretli her sahne 🔴'dir**; klip yeniden
+üretilir. Takvim monotonik değilse satırlar gözlemdir ama SPEC'le yan yana
+okunur. Kapı sayı vermez, **seri** verir — çünkü ihlal tek karede değil,
+iki kare arasındaki YÖNDE durur.
+
+🔗 [[D147]] (kir fazı monotoniktir — aynı biçim, farklı eksen) · [[D192]]
+(aynı filmin boşalma biçimi) · [[D141]] · [[D188]]

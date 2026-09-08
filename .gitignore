@@ -2,3 +2,18 @@
 # raporları sahibin çalışma alanıdır — depo onları BİLMEZ.
 # Kurtarılan ölçüm: kilavuzlar_ve_sistem_dosyalari/DIS_REFERANS_OLCUMU.md
 video/
+
+# ⛔ GÖRSEL DOSYA DEPOYA GİRMEZ (08.09.2026 · sahip kararı)
+# Kökteki kose_*.png üçlüsü kazayla izlenmişti; silindi.
+# Ölçüm kapısı (olcum_kapisi.sh) ve elle çıkarılan kanıt kareleri
+# operatörün çalışma alanıdır — depo onları BİLMEZ.
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp
+*.bmp
+# ölçüm artıkları
+yavg.txt
+ymax.txt
+freeze.txt

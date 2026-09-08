@@ -98,9 +98,12 @@ Yeni bir filme başlarken **sırayla** cevapla. Her cevap bir sonrakini daraltı
 □ UZAY_USSU_VE_ISTASYON_MIMARISI_KILAVUZU.md 🆕 (kadrajda istasyon, üs
   ya da büyük yapı varsa ZORUNLU — ölçek birimi + anatomi kartı + mesafe
   kesir tablosu + iki ayrı negatif blok · 04.09.2026)
-□ REFERANS_PAKETI_KILAVUZU.md 🆕 (ALTI TETİKLEYİCİDEN BİRİ doğruysa ZORUNLU —
-  §1 tablosu; T1 "kask/vizör/basınç giysisi" bu deponun neredeyse her
-  filminde doğrudur, yani paket İSTİSNA DEĞİL VARSAYILANDIR. PROMPT
+□ REFERANS_PAKETI_KILAVUZU.md 🆕 (⚠️ **İSTEĞE BAĞLI** 🆕 08.09.2026 · sahip
+  kararı — eskiden altı tetikleyiciden biri doğruysa ZORUNLU'ydu. §1 tablosu
+  yine okunur; T1 "kask/vizör/basınç giysisi" bu deponun neredeyse her
+  filminde doğrudur, yani tetikleyici genelde AÇIKTIR ve atlanıyorsa PLAN'a
+  TEK SATIR gerekçe yazılır [D74 kalıbı]. Paket YAZILDIYSA kapı sertliğini
+  korur: KAPI 0, onaysız sayfanın varlığı geçtiği sahne üretilmez. PROMPT
   yazılmadan ve İLK KARE ÜRETİLMEDEN önce okunur: KAPI 0. Kapı kartı 31
   satır; gövde yalnız ① yeni film · ② biçim iki klipte sapmış · ③ üretim
   ortasında tasarım değişmiş · ④ insan dışı canlı/tekrar eden olay varsa
@@ -155,8 +158,17 @@ Yeni bir filme başlarken **sırayla** cevapla. Her cevap bir sonrakini daraltı
 
 ## 2.0 ⭐ FİLM KLASÖRÜ İSKELETİ — her formatta aynı (01.09.2026)
 
-> Kartların `DOSYA:` satırları buraya işaret eder. **Yedi dosya, yedi ayrı iş.**
-> Kopyalanabilir hâli: `FILM_KLASOR_SABLONU/` — tarif değil, `cp -r`.
+> Kartların `DOSYA:` satırları buraya işaret eder. **Yedi dosya, yedi ayrı iş**
+> — artı yazımdan ÖNCEKİ işi taşıyan `00_ANALIZ/` klasörü (🆕 08.09.2026).
+> Kopyalanabilir hâli: `FILM_KLASOR_SABLONU/` — ve kopyalama da tarif değil,
+> BETİK:
+>
+> ```bash
+> bash kilavuzlar_ve_sistem_dosyalari/film_klasoru_ac.sh \
+>      <FORMAT_KLASORU> <FILM_ADI> <SAHNE_SAYISI> [BOLUM_SAYISI]
+> ```
+> ⛔ Elle `cp -r` YAPILMAZ. Betik ayrıca sahne çalışma dosyalarını damgalar
+> ve okuma çizelgesini üretir; elle kopyalamada bu ikisi kaçıyordu.
 
 ```
 <FORMAT_KLASORU>/<FILM_ADI>/
@@ -168,13 +180,35 @@ Yeni bir filme başlarken **sırayla** cevapla. Her cevap bir sonrakini daraltı
 ├── <FILM>_KAPAK.md         kapak anı + prompt + 120 px testi + Plan B
 ├── <FILM>_MUZIK.md         §17 künyesi + tek global tema + ses yatağı
 ├── <FILM>_YAYIN_PAKETI.md  ⭐ TAMAMEN İNGİLİZCE · YouTube + Shorts + IG + TikTok
-└── <FILM>_QA_SPEC.md       A/B/C/E blokları — ad DEĞİŞMEZ (üç betik arar)
-    (+ <FILM>_REFERANS_PAKETI.md — REFERANS_PAKETI_KILAVUZU §1'in ALTI
-     tetikleyicisinden biri doğruysa ZORUNLU. ⛔ Eski "iki insandan/araçtan
-     fazlası" sayımı ÖLDÜ: onu hiç tetiklemeyen THE STANDING WIRE D146'nın
-     3. vakası oldu · THE SINKING STAKE kuralı tetiklemiyordu ve paketi
-     yine yazdı. Şablon: FILM_KLASOR_SABLONU/FILM_REFERANS_PAKETI.md)
+├── <FILM>_QA_SPEC.md       A/B/C/E blokları — ad DEĞİŞMEZ (üç betik arar)
+├── <FILM>_REFERANS_PAKETI.md  ⚠️ İSTEĞE BAĞLI (08.09.2026 · sahip kararı)
+│                           REFERANS_PAKETI_KILAVUZU §1'in ALTI tetikleyicisi
+│                           okunur; doğruyken atlanıyorsa PLAN'a TEK SATIR
+│                           gerekçe [D74 kalıbı] — sessizce atlanmaz.
+│                           ⛔ Yazıldıysa KAPI 0'dır: sayfası ONAYLI olmayan
+│                           ve seed'i yazılmayan varlığın geçtiği hiçbir
+│                           sahne üretilmez [D168].
+│                           ⛔ Yazılmasa da dosya SİLİNMEZ, ⬜ BEKLİYOR durur.
+│                           Karşı kayıt duruyor: D146'nın üç ölçülmüş vakası
+│                           (SKYLIGHT · YERÇEKİMİ F2 · STANDING WIRE) ve
+│                           SINKING STAKE'in "referans paketi HİÇ ÜRETİLMEDİ
+│                           → çapa yok" QA kaydı. Sahip maliyeti üstlendi.
+└── 00_ANALIZ/              🆕 yazımdan ÖNCEKİ iş — altı adım, altı dosya
+    ├── 00_OKUMA_CIZELGESI.md    TÜM ders + TÜM kılavuz + QA raporu defteri
+    │                            (betikten üretilir: okuma_cizelgesi.sh)
+    ├── 01_QA_DERS_HASADI.md     okunanlardan BU filme düşen kilitler
+    ├── 02_KONSEPT_VE_RISK.md    ortam/tür · risk kartları · novum · B5
+    ├── 03_SAHNE_SIRALAMASI.md   X sahnenin sırası · kurulum iskeleti
+    ├── 04_UYARI_NOTLARI.md      ölçülmüş arızalara bağlı uyarılar
+    └── 05_SAHNE_CALISMALARI/    S00.md … Snn.md — sahne sahne çalışma
+    ⛔ prompt_kontrol.py'nin ATLA deseni 00_ANALIZ'i atlar; klasör adı
+      DEĞİŞTİRİLMEZ. Bu klasörde prompt ve "## SAHNE <n>" başlığı yazılmaz.
 ```
+
+**Neden 00_ANALIZ ayrı bir klasör:** analiz PLAN'ın içine gömülünce plan
+1.200 satır oluyor ve kimse geri dönüp bakmıyor — D117'nin ölçtüğü kalıp
+(*blok okunmuyor, dosya okunuyor*) analiz için de geçerli. Ayrıca sahne sahne
+çalışma ancak sahne başına bir DOSYA olduğunda yapılıyor.
 
 **Neden yedi dosya:** her dosyanın tüketicisi ve saati farklı. Müzik promptu
 Suno'ya, kapak promptu imaj modeline, yayın paketi platform formuna gider;

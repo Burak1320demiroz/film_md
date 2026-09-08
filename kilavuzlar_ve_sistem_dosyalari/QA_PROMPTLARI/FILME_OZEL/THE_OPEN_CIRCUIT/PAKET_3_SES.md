@@ -5,7 +5,7 @@ mercek    : ③ SES
 mod       : V (tasarım — belge VERİLMEZ)
 girdi     : ____ (master yolu · süre · çözünürlük — koşudan ÖNCE doldur, D160)
 SPEC      : THE_OPEN_CIRCUIT_QA_SPEC.md  (aile: yatay)
-üretildi  : 07.09.2026 · rubrik_paketle.sh — elle düzenlenmez, SPEC değişince yeniden üret
+üretildi  : 08.09.2026 · rubrik_paketle.sh — elle düzenlenmez, SPEC değişince yeniden üret
 koşu sonrası: python3 kilavuzlar_ve_sistem_dosyalari/RAPOR_KONTROL/rapor_kontrol.py <rapor.md> --film yatay_3_5_dk_filmler/THE_OPEN_CIRCUIT
 ⚠️ AUDIO STATE bir dinleme beyanıdır; ses kanalı VARLIĞI ⑪ ile ölçülür [D136]
 ```

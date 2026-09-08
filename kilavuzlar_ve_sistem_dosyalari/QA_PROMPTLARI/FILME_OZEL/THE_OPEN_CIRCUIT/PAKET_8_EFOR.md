@@ -5,7 +5,7 @@ mercek    : ⑧ EFOR
 mod       : D
 girdi     : ____ (master yolu · süre · çözünürlük — koşudan ÖNCE doldur, D160)
 SPEC      : THE_OPEN_CIRCUIT_QA_SPEC.md  (aile: yatay)
-üretildi  : 07.09.2026 · rubrik_paketle.sh — elle düzenlenmez, SPEC değişince yeniden üret
+üretildi  : 08.09.2026 · rubrik_paketle.sh — elle düzenlenmez, SPEC değişince yeniden üret
 koşu sonrası: python3 kilavuzlar_ve_sistem_dosyalari/RAPOR_KONTROL/rapor_kontrol.py <rapor.md> --film yatay_3_5_dk_filmler/THE_OPEN_CIRCUIT
 belge: A (sahne haritası) + C (kilitler). ⛔ FATURA CÜMLESİ önce EKRANDAN. ⚠️ Düşük yerçekimi düşük efor değildir — kütle ve atalet değişmez
 ```

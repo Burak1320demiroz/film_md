@@ -11,6 +11,17 @@
 > ⛔ **Dosya adı `*_QA_SPEC.md` KALIR.** `sayac.sh`, `rubrik_paketle.sh` ve
 > `rapor_kontrol.py` üçü de bu deseni arar; ad değişirse üçü birden körleşir.
 
+> ⛔ **DİKEY FİLMSE `## 🎬 SAHNE SPESİFİKASYONU` BAŞLIĞI ZORUNLUDUR**
+> (08.09.2026'da ölçüldü). `rubrik_paketle.sh` filmin ailesini TEK bir satırla
+> tespit ediyor:
+> `AILE="yatay"; grep -qE "^## .*SAHNE SPESİFİKASYONU" "$SPEC" && AILE="dikey"`
+> Başlık yoksa dikey film **YATAY sanılır** ve paket her merceğe YANLIŞ bloğu
+> verir (① KARE'ye A+B+UYARI yerine A, ④ HİKAYE'ye B yerine A+UYARI…).
+> ⚠️ Arıza SESSİZDİR: betik hata vermez, `aile: yatay` yazıp geçer — koşu
+> sonunda kimse yanlış belgeyle bakıldığını fark etmez.
+> Kontrol: betiğin son satırında `aile: dikey` yazdığını GÖZLE doğrula.
+> (Depodaki beş dikey filmin beşi de başlığı taşıyor; risk YENİ filmdedir.)
+
 ---
 
 ## 🚦 HANGİ RUBRİĞE NE VERİLİR

@@ -232,6 +232,10 @@
 | 187 | 🔴 | PLANIN "EN UCUZ VE EN KESİN GÖSTERGESİ" DEDİĞİ KİLİT ON İKİ MERCEĞİN ARASINDAN DÜŞTÜ — HİÇBİRİNİN KAPSAMINA GİRMİYORDU (AĞIRLIĞIN ÜÇ KANITI: 0/3) → taşıyıcı kilidin yanına ÖLÇEN MERCEK yazılır | [08_QA_SURECI.md](DERSLER/08_QA_SURECI.md) |
 | 188 | 🔴 | ON İKİ MERCEK EKSİK TESLİMİ OYBİRLİĞİYLE ONAYLADI — raporlar birbirini doğrular, TESLİMİ doğrulamaz; filmin son karesi (S120) makarada yoktu → `rapor_kontrol.py` ①.9: plan sahne sayısı ↔ rapor sahne sayısı | [08_QA_SURECI.md](DERSLER/08_QA_SURECI.md) |
 | 189 | 🔴 | BİR KAPSÜL, DÖRT FATURA — ② ile ⑤ aynı nesneyi TERS YÖNDE sahipleniyordu, ⑨ onu çapa yaptı, ① iki zaman kodlu bulgu yazdı → adı olan nesne ②'nin, adsız alan ⑤'in | [08_QA_SURECI.md](DERSLER/08_QA_SURECI.md) |
+| 190 | 🔴 | ⑨-⑫ MOD V'DE BOŞ DEĞİL **TERSİNE** ÇALIŞIR — belgesiz plan sadakati merceği ekrandan bir plan uydurur; ⑫ makarada OLMAYAN doruğa "peak placement 9/10" verdi → `rapor_kontrol.py`: ⑨-⑫ mod V = 🚨 GEÇERSİZ (karantina) | [08_QA_SURECI.md](DERSLER/08_QA_SURECI.md) |
+| 191 | 🔴 | SPEC'İN GÖZ KAPILARINI KOŞAN MERCEK YOK — filmin kendi 12 kapısının 5'i ekranda ihlal edildi (ağız · kubbe kask · şimşek · şerit geri yandı · metin+filigran), on iki merceğin on ikisi 0 yazdı → `rapor_kontrol.py` ①.10 F bloğunu ⬜ listesi olarak basar | [08_QA_SURECI.md](DERSLER/08_QA_SURECI.md) |
+| 192 | 🔴 | FİLMİN 1 NUMARALI RİSKİ TARİF KİLİDİYLE KORUNDU — "no lightning bolt" 25 sahnenin negatifinde yazılıyken doruk ŞİMŞEK geldi; pozitif biçimin sayısı yoktu → plan öncesi liste A5 (süre · genişlik · dal · artık ışık SAYIYLA) | [03_FIZIK_VE_HAREKET.md](DERSLER/03_FIZIK_VE_HAREKET.md) |
+| 193 | 🔴 | IŞIK TAKVİMİ YAZILDI, ÖLÇÜLMEDİ — sönen şeritler aynı klibin içinde geri yandı, "no window strip is lit" promptuyla üretilen son iki sahne yanıyor → `olcum_kapisi.sh` IŞIK TAKVİMİ İZİ (↑ geri sardı · ⟳ klip içinde geri yandı) | [04_ISIK_VE_CEVRE.md](DERSLER/04_ISIK_VE_CEVRE.md) |
 
 > ⚠️ 06.09.2026: 181-182 dizine hiç işlenmemişti (dosyalarda vardı, tabloda
 > yoktu) — 183 yazılırken eklendi. **Aynı arıza ÜÇÜNCÜ kez** (161-163 · 172-174
