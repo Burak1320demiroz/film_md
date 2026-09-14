@@ -411,7 +411,7 @@ Kuramı kendi filmlerimize uygulayalım. Dürüst değerlendirme:
 > 🆕 **31.07.2026 — Bu bölüm artık kısmen ölçüm.** Aşağıdaki ilk üç denetim
 > kılavuz yazarının okumasıdır. THE RING WALKER ise **dış senaryo QA'sıyla
 > puanlanmış ilk film** — kuram ile ölçüm ilk kez yan yana duruyor.
-> Ham rapor: `FILM_QA_RAPORLARI/02_HAM_RAPORLAR/THE_RING_WALKER_SENARYO_HAM.md`
+> Ham rapor: `FILM_QA_RAPORLARI/02_HAM_RAPORLAR/THE_RING_WALKER/THE_RING_WALKER_SENARYO_HAM.md`
 
 ## THE DEAD APPROACH (2-4 dk, vakum)
 

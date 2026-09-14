@@ -1,0 +1,42 @@
+# OKUMA ÇEKİRDEĞİ — yeni-film TUR 2/3 zorunlu okuma manifesti (14.09.2026 · reform FAZ 8)
+#
+# `okuma_cizelgesi.sh` TUR 2/3'ü dosya sisteminin tamamından değil BU listeden üretir.
+# Ölçüm: THE_LOCKED_PULSE çizelgesi 126 dosya / ~42.000 satır, 126/126 satırdan "kilit"
+# çıkmış, "—" sıfır — çizelge sahte işaretlenmişti. Hedef ≤ 30 dosya / ≤ 10.000 satır;
+# gerçek sayı çizelgenin özet bloğunda betikten basılır, buraya yazılmaz.
+#
+# BİÇİM:  <kök-göreli yol> | <etiket ya da -> | <not: hangi bölüm · neden>
+# ETİKET: [dikey] [faz] betikten (klasör yolundan) süzülür — uymayan format satırı hiç görmez.
+#         [kask] [replik] [iki-insan] [referans] çizelgede görünür; filme uymuyorsa satır
+#         "—" ile geçilir ("etiket dışı"), açılmaz. Bu "—" MEŞRUDUR (㉘ sahtelik kapısı).
+# Manifest dışındaki her kılavuz HAVUZDUR: KILAVUZ_REHBERI §1 tablosu tür/ortama göre ek
+# dosya gösterir; açılan ek dosya çizelgeye "havuzdan açıldı" satırı olarak ELLE eklenebilir
+# (tek istisna — çizelgenin "elle satır eklenmez" kuralı yalnız zorunlu bloklar içindir).
+# Sahip vetosuna açık liste. Yeni kılavuz buraya girmek için bir ders kadar gerekçe ister.
+#
+# ── TUR 2 · ÜRETİM ÖNCESİ ANALİZ ─────────────────────────────────────────────
+URETIM_ONCESI_ANALIZ/02_RISK_KARTLARI.md | - | 12 kart · PLAN'dan önce · 5+ risk → kilit tavanı ≤ 20 (㉕)
+URETIM_ONCESI_ANALIZ/03_PLAN_ONCESI_KONTROL_LISTESI.md | - | A kapı listesi (hikâye onayı A0 dâhil) · B5 dörtlüsü · §D
+URETIM_ONCESI_ANALIZ/06_HIKAYE_HATTI_TESHISI.md | - | B5'in kaynağı · "umursamadım"ın üç sebebi
+URETIM_ONCESI_ANALIZ/05_DIKEY_HAT_TESHISI.md | [dikey] | dikey hattın ölçülmüş arızaları
+# ── TUR 3 · KILAVUZLAR — çekirdek ────────────────────────────────────────────
+KILAVUZ_REHBERI.md | - | §1 okuma tablosu · §2.x FORMAT kartı · §3 ORTAM kartı · §4 TÜR · §5 negatif çekirdek (8 cümle) · §6 akış · §7 tuzaklar
+IMAGE_VIDEO_PROMPT_TEMPLATES.md | - | V3 iskelet: IN FRAME · tek kilit üçüncü satır · START FRAME · bütçe
+ONERME_VE_NOVUM_KILAVUZU.md | - | novum kapısı · TEK KARE cümlesi taşıyıcı nesne adıyla [D157]
+TEMA_MUHENDISLIGI_KILAVUZU.md | - | §3 sekizli → §5 matris → §9 · TANIM cümlesi (TAKAS değil)
+HOOK_VE_ILK_SAHNE_KILAVUZU.md | - | hook mimarisi · S0 · ilk 3 saniye
+ACI_YAYI_VE_SEKANS_KILAVUZU.md | - | §3 güvenli bant (≥1 ölçek VE ≥45°) · §4 kurulum sayısı · açı tipi ≥3
+SENARYO_VE_VIRAL_KAMERA_KILAVUZU.md | - | ⭐VİRAL ölçütü (YÜZ + HAREKET) · §2.4
+KURGU_RITMI_VE_IHRAC_KILAVUZU.md | - | §2 örüntü kırıcı · kurgu kapısı · süre = sahne × klip
+KARAKTER_KARTI_VE_DAVRANIS_KILAVUZU.md | - | §1 sekiz satırlık kart · §3 karar mimarisi · §4 davranış şeridi · §10 kart bağı
+OYUNCULUK_YAZIM_KILAVUZU.md | - | §1 izleyici cümlesi · §2 gövde fiili · §3 niyet kanalı · §4 tempo · §8 çapa üçlüsü
+POLITIKA_VE_URETILEBILIRLIK_KILAVUZU.md | - | red sözlüğü · nötr tarif · ⑯ politika kapısı
+IKI_KISI_VE_AYRILIK_KILAVUZU.md | [iki-insan] | §2 istek çaprazı · §5 ayrılık kartı · §6 konum kilidi · §8 faz farkı
+DIYALOG_SAHNESI_VE_MUHATAP_KILAVUZU.md | [replik] | §2-§3 değiş-tokuş tablosu · §4 dinleyen bedeni · §5-§7 değişim satırı
+SES_VE_DIYALOG_URETIM_KILAVUZU.md | [replik] | §1a kadraj dışı ses · §2a register · replik tablosu İŞLEV sütunu
+ASTRONOT_DONANIM_VE_KIMLIK_KILAVUZU.md | [kask] | §9 kimlik · Character Bible yazılmadan ÖNCE
+UZAY_GIYSISI_SINEMATIK_TASARIM_KILAVUZU.md | [kask] | §5 sırt · §8 vizör · §11 görünüş — arketip seçimi
+REFERANS_PAKETI_KILAVUZU.md | [referans] | §1 tetikleyici · paket yazılacaksa kapı 0
+DIKEY_MIKRO_DRAMA_KILAVUZU.md | [dikey] | dikey sadakat · döngü · 6 sahne
+5_FAZ_MIMARISI.md | [faz] | 7-20 dk faz mimarisi
+FAZ_DOSYASI_SABLONU.md | [faz] | faz dosyası iskeleti

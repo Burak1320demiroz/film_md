@@ -11,8 +11,12 @@
 > ileride yeniden koşulacaksa **aynı metin** koşulmalı; yoksa iki turun
 > sonucu karşılaştırılamaz (07-15'in gerekçesiyle aynı).
 >
-> **KOŞU KAYDI:** ⬜ koşulmadı. Ham metinler gelince → `TUR13_HAM_RAPORLAR/`,
-> süzme → `04_ARASTIRMA_BULGULARI.md` §TUR 13.
+> **KOŞU KAYDI:** ⚠️ 07.09.2026 — 1·2·3 koşuldu, **4 (metinsiz geçen zaman
+> merdiveni) KOŞULMADI** (`TUR13_HAM_RAPORLAR/00_KUNYE.md`). Süzme:
+> `04_ARASTIRMA_BULGULARI.md` §TUR 13. Ham metinler klasöre birebir
+> kopyalanmadı — künye "bekliyor" der. 4. promptun aynı metni
+> `19_…` §1 olarak yeniden koşulacak; raporu `TUR13_HAM_RAPORLAR/`'a iner.
+> *(Bu satır 11.09.2026'ya kadar "koşulmadı" diyordu — künyeyle hizalandı.)*
 >
 > 🔗 **KARDEŞ DOSYA `17_THE_MARTIAN_EKSEN_FILMI_ARASTIRMA_PROMPTLARI.md` (TUR 14):**
 > 16 TÜRÜ sorar (çoğul örnek, genel mekanizma), 17 EKSEN FİLMİ söker

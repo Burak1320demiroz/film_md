@@ -1149,7 +1149,7 @@ E  ☑ QA SPEC bloğu ayrı dosyada [D117]
 
 ```
 KOŞU:   python3 kilavuzlar_ve_sistem_dosyalari/PROMPT_KONTROL/prompt_kontrol.py \
-          yatay_3_5_dk_filmler/THE_STANDING_WIRE
+          yatay_4_dk_filmler/THE_STANDING_WIRE
 ÇIKTI:  📁 FİLM KLASÖRÜ · 2 bölüm dosyası birleşik   ✅ dizi kapıları koştu
 SONUÇ:  ⛔ 0 BLOCK  ·  ⚠️ 2 FIX  ·  ✅ 1 GO (film klasörü)
 

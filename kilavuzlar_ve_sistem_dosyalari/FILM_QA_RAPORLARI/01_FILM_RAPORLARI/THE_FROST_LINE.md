@@ -60,7 +60,7 @@ OTURUM:   🚨 ŞÜPHELİ [D110] — altı merceğin kesme listesi, şeridi ve s
           başına kanıt değil; şüphe kaydı düşüldü, parti düşürülmedi)
 HAM:      ../02_HAM_RAPORLAR/THE_FROST_LINE_{KARE,DEVAMLILIK,SES,HIKAYE,
           ARKA_PLAN,FIZIK,FIZIK_2}_HAM.md
-PLAN:     ../../../yatay_3_5_dk_filmler/THE_FROST_LINE/THE_FROST_LINE_PLAN.md
+PLAN:     ../../../yatay_4_dk_filmler/THE_FROST_LINE/THE_FROST_LINE_PLAN.md
 SPEC:     ✅ VAR — THE_FROST_LINE_QA_SPEC.md (A/B/C/E blokları) — ⛔ operatöre VERİLMEDİ
 MÜZİK:    THE_FROST_LINE_MUZIK.md yazılı (29.08); kurgudaki sesin cue'larla
           ilişkisi kulakla doğrulanmadı (sahip dinler) — ölçüm yalnız "ses VAR" der

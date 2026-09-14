@@ -6,7 +6,7 @@ FRAGMAN.md emsali — dikey klasörde değil). Film SAYIMINA GİRMEZ
 (yatay_3_5 klasörü grouped: klasör = film); teslimi yine 9:16 Shorts.
 Format: **9:16 (DİKEY)** | Sahne: 6 (Hook + 5) | Süre: Her sahne 8 saniye, toplam 48 saniye
 Prompt yapısı: Her sahne için **1 görsel promptu + 1 video promptu** (tek versiyon, T2V)
-Kaynak film: **`yatay_3_5_dk_filmler/THE_BLACK_CRADLE/`** — 26 sahne · 4:19 · S0-S14 üretildi, gerisi yazılı (0/4 mercek)
+Kaynak film: **`yatay_4_dk_filmler/THE_BLACK_CRADLE/`** — 26 sahne · 4:19 · S0-S14 üretildi, gerisi yazılı (0/4 mercek)
 _"Işık onları kovaladı. Karanlık onları eve aldı."_
 
 ---

@@ -18,6 +18,11 @@
 ④ REFERANS PAKETİ: ⬜ [YAZILSIN / YAZILMASIN / ANALİZ KARAR VERSİN]
    "analiz karar versin" ise §5b'deki altı tetikleyici tablosu doldurulur.
    "yazılmasın" ise PLAN'a düşecek TEK SATIR gerekçe: ⬜
+⑤ HİKÂYE ONAYI (14.09.2026): `00_HIKAYE_ONAYI.md` ONAY ⬜ <tarih> · TUR ⬜/3
+   ⛔ Bu dosya onaylı hikâyeyi İYİLEŞTİRİR, değiştirmez. Aşağıdaki hiçbir
+   kapı (konsept · tema · novum · B5) onaylı LOGLINE / BEDEL / sahne
+   satırlarını sessizce bozamaz; bozulacaksa 00_HIKAYE_ONAYI SAPMA + yeniden
+   onay. Ders ve kapı dili BURAYA yazılır, onay dosyasına değil (㉙ jargon).
 ```
 
 ## 1. 🎯 SAHİBİN TALEBİ — birebir
@@ -72,8 +77,9 @@ NOVUM TAŞIYICISI:    ⬜ <nesne> × <jest> → <ihlal>
 
 ## 5. ⚠️ RİSK KARTLARI — `URETIM_ONCESI_ANALIZ/02_RISK_KARTLARI.md`
 
-> ⛔ **PLAN YAZILMADAN ÖNCE.** 5+ risk çıkıyorsa malzeme AZALTILIR —
-> prompt iyileştirmek bu deponun ölçtüğü kadarıyla işe yaramıyor.
+> ⛔ **PLAN YAZILMADAN ÖNCE.** 5+ risk çıkıyorsa KİLİT TAVANI (≤ 20 ders kilidi) —
+> malzeme azaltılmaz; dışarıda kalan kilitler PLAN `UYGULANMAYAN KİLİTLER`e gerekçeyle
+> (14.09.2026, 02_RISK_KARTLARI §RİSK TOPLAMI).
 
 | kart | tetiklendi mi | neden | tasarımla düşürüldü mü | kalan risk |
 |---|:--:|---|---|:--:|

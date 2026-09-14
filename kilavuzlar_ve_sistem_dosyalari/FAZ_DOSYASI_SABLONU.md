@@ -216,7 +216,12 @@ Clean dialogue only. [Diyalog loud/dominant] + [orta plan efekt] +
 
 ---
 
-## 🚫 EVRENSEL NEGATİF BLOK (her prompta yapıştırılır)
+## 🚫 EVRENSEL NEGATİF BLOK (her prompta yapıştırılır — eski rejim)
+
+> ⭐ 14.09.2026: `00_ANALIZ/00_HIKAYE_ONAYI.md` taşıyan (yeni rejim) klasörde bu blok
+> PLAN'ın Negative Bible'ına yazılır; faz dosyasındaki her prompt `KILAVUZ_REHBERI`
+> §5.1 çekirdeğini (8 cümle) + ≤3 sahneye özel cümle taşır (`prompt_kontrol.py` ㉗),
+> ilk satırı `IN FRAME:` (㉖), pozitif gövde kelime bandında (①). Eski klasörler aynen.
 
 ```
 Single unbroken take. No cuts, no edits, no camera resets, no multiple

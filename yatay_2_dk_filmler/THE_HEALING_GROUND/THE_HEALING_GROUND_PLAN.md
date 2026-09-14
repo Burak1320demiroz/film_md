@@ -828,7 +828,7 @@ E  ☑ QA SPEC ayrı dosyada + künyesi bu planda
 ```
 ① prompt_kontrol.py · KLASÖR MODU · 04.09.2026
    python3 kilavuzlar_ve_sistem_dosyalari/PROMPT_KONTROL/prompt_kontrol.py \
-           yatay_2_4_dk_filmler_uzay/THE_HEALING_GROUND
+           yatay_2_dk_filmler/THE_HEALING_GROUND
    SONUÇ: ✅ GO · 0 BLOCK · 0 FIX · 28 prompt
    "📁 FİLM KLASÖRÜ · 2 bölüm dosyası birleşik" satırı çıktıda VAR — dizi
    kapıları film boyunca koştu (bu satır yoksa kapı koşmamıştır).
@@ -845,7 +845,7 @@ E  ☑ QA SPEC ayrı dosyada + künyesi bu planda
 
 ② rubrik_paketle.sh · 04.09.2026
    bash .claude/skills/qa-isle/scripts/rubrik_paketle.sh \
-        yatay_2_4_dk_filmler_uzay/THE_HEALING_GROUND
+        yatay_2_dk_filmler/THE_HEALING_GROUND
    SONUÇ: ✅ PAKET_1..8 üretildi →
    kilavuzlar_ve_sistem_dosyalari/QA_PROMPTLARI/FILME_OZEL/THE_HEALING_GROUND/
    ⛔ QA anında ÇIPLAK RUBRİK değil BU PAKET açılır [D165 · iki vaka].
@@ -893,5 +893,5 @@ Nefes          dışarıda görünür buhar YOK (gövde mühürlü); giysinin
      (atmosfer var) · Ders 41 (yumuşak ışık ≠ bloom) geçerli ve KRİTİK
      (bu ortam baştan sona yumuşak ışıktır).
 Kask           solunamaz bileşim + 95 K → vizör %100 kapalı, ara durum yok.
-Referans film  THE HEALING GROUND (yatay_2_4_dk_filmler_uzay/)
+Referans film  THE HEALING GROUND (yatay_2_dk_filmler/)
 ```

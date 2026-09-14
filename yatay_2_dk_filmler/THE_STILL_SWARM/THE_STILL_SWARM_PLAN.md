@@ -765,7 +765,7 @@ RİSK SAYISI: 4 / 13     (kartlar 3 · 4 · 5 · 6 · 12 → 12 dahil 5, ama
 
 ```
 python3 kilavuzlar_ve_sistem_dosyalari/PROMPT_KONTROL/prompt_kontrol.py \
-        yatay_2_4_dk_filmler_uzay/THE_STILL_SWARM
+        yatay_2_dk_filmler/THE_STILL_SWARM
 
 SONUÇ: ⛔ 0 BLOCK · ⚠️ 2 FIX · ✅ 1 GO   (çıkış kodu 1)
        📁 FİLM KLASÖRÜ · 2 bölüm dosyası birleşik · 28 prompt

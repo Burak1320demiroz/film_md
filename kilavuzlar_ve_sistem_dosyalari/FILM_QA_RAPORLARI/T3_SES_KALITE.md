@@ -27,6 +27,13 @@
     ölçüm DEĞİLDİR. İkisi aynı sütunda toplanmaz.
 ⛔   ÖN KOŞU — planda SPEC hazırdı ama mod V koşuldu. Skor tabloya girer,
     tamlık matrisine GİRMEZ.
+    ⚠️ 11.09.2026 · BU TABLODA ⛔ YAZILMAZ: bu mercek SPEC'e göre TASARIM
+    GEREĞİ mod V'dir (`FILM_KLASOR_SABLONU/FILM_QA_SPEC.md` §HANGİ RUBRİĞE NE
+    VERİLİR → "hiçbir şey (tasarım gereği) MOD V"); "SPEC hazırdı ama
+    verilmedi" bu mercek için tanımsızdır. ⛔ yalnız SPEC ALAN merceklerde
+    (①④ ve ⑥⑨-⑬) geçerlidir. Ⓥ satırı bu tabloda GEÇERLİ satırdır ve
+    tamlık matrisine Ⓥ olarak GİRER; rapor_kontrol.py'nin "TABLOYA" sütunu
+    da onu böyle yazar. (Bu tarihe kadarki Ⓥ ⛔ satırlarından ⛔ kaldırıldı.)
 🚨   GEÇERSİZ — koşu bir kapıdan geçmedi (sahne sayısı tutmadı, yanlış
     materyal, yanlış mercek). Satır üstü çizili durur, ortalamaya girmez.
 —    Kategori N/A veya UNVERIFIABLE: boş bırakılır. ASLA 0 yazılmaz;
@@ -50,13 +57,23 @@ gördü" o zaman bir doğrulama değil, tek raporun dört kopyasıdır.
 | Film | Ses Durumu | Atıf | Sentetik | Ses Kimliği | Aktarım | Sıra Alma | Ambiyans | SFX Senk | Miks | Müzik | Toplam |
 |---|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
 
-| ~~**The Iron Slope** Ⓥ ⛔ 🚨~~ | B (sessiz, tasarımlı) | — | — | — | — | — | ~~2~~ | ~~5~~ | ~~6~~ | — | ~~4,3~~ |
+| ~~**The Iron Slope** Ⓥ 🚨~~ | B (sessiz, tasarımlı) | — | — | — | — | — | ~~2~~ | ~~5~~ | ~~6~~ | — | ~~4,3~~ |
 
 | **The Rose Coat** ⬜ | C (ses bilgisi yok) | — | — | — | — | — | — | — | — | — | **—** |
-| **The Payload** Ⓥ ⛔ ⚠️ | A | 10 | 8 | 10 | 8 | — | 7 | 7 | 9 | 8 | **8,4** |
-| **The Skylight** Ⓥ ⛔ | B | — | — | — | — | — | — | — | — | — | **—** |
-| **The Still Swarm** Ⓥ ⛔ | B | — | — | — | — | — | 6 | 7 | 9 | 8 | **7,5** |
-| **The Upward Fall** Ⓥ ⛔ | B | — | — | — | — | — | — | — | — | — | **—** |
+| **The Payload** Ⓥ ⚠️ | A | 10 | 8 | 10 | 8 | — | 7 | 7 | 9 | 8 | **8,4** |
+| **The Skylight** Ⓥ | B | — | — | — | — | — | — | — | — | — | **—** |
+| **The Still Swarm** Ⓥ | B | — | — | — | — | — | 6 | 7 | 9 | 8 | **7,5** |
+| **The Upward Fall** Ⓥ | B | — | — | — | — | — | — | — | — | — | **—** |
+| **The Counted Turn** ⚠️ | B (sessiz, tasarımlı) | — | — | — | — | — | — | — | — | — | **—** |
+| **The Hard Dock** Ⓥ ⚠️ | A | — | — | — | — | — | 8 | 9 | 9 | 8 | **8,5** |
+| **The Locked Pulse** Ⓥ ⛔ ⚠️ | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ | **6,7** |
+
+> **The Hard Dock · 12.09.2026 · Ⓥ mod V (tasarım gereği) · ⚠️ ŞARTLI**
+> Kayıt: [`01_FILM_RAPORLARI/THE_HARD_DOCK.md`](01_FILM_RAPORLARI/THE_HARD_DOCK.md)
+> · `rapor_kontrol.py` ile düzeltildi: 5 diyalog-replik kategorisi (MACHINE register 0 replik / 0 insan) N/A `—` yazıldı. Düzeltilmiş ortalama: **8,5** (Ham: 8,89/10).
+> · Kesme sayısı (19) master ölçümünden (24) saptığı için film boyu kategoriler şartlı işaretlendi.
+
+| **The Resonant Strand** Ⓥ ⛔ | ⬜ | — | — | — | ⬜ | ⬜ | 8 | 9 | 8 | 8 | **8,2** |
 
 > **The Rose Coat · 26.08.2026 · `AUDIO ABSENT — RUN NOT STARTED`**
 > ⛔ Bu bir SKOR SATIRI DEĞİL, bir İZ satırıdır [D136]: stop bloğu doğru
@@ -78,6 +95,10 @@ gördü" o zaman bir doğrulama değil, tek raporun dört kopyasıdır.
 > · "no music present" satırı da şüpheli: 0-60 s kesintisiz, düzenli vuruşlu
 > geniş bant katman var. · Altı kategori N/A — film **repliksizdir**, bu bir
 > kısıttır, eksik değil [D113]. → **DERS 125**
+
+> **The Counted Turn · 09.09.2026 · MOD D · ⚠️ ŞARTLI**
+> Kayıt: [`01_FILM_RAPORLARI/THE_COUNTED_TURN.md`](01_FILM_RAPORLARI/THE_COUNTED_TURN.md)
+> · State B/C dijital sessizlik (0 replik, 0 duyulan ambiyans). Kusur bildirilmeyen 4 kategori `no in-scope source` nedeniyle `—` yazıldı [D131]. Düzeltilmiş ortalama: **—** (sayı taşıyan hücre 0).
 
 ⛔ **Bir bulgu diğer bütün skorları ezer:** yanlış karakterden çıkan replik,
 ya da hiçbir kaynağa bağlanmayan ses → **WRONG VOICE, REGENERATE.**

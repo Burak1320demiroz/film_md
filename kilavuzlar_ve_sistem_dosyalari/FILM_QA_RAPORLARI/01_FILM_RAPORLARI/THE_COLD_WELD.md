@@ -39,7 +39,7 @@ MALZEME:  teslim kurgusu · 155 s / ~2:35 (raporlardan; ÖLÇÜLMEDİ) · 16:9
 MERCEK:   ① KARE 5,1 · ② DEVAMLILIK 8,8 (fabrike) · ③ SES 6,0 · ④ HİKAYE 5,6
           · ⑤ ARKA PLAN 5,0 · ⑥ FİZİK 6,2   (altısı da mod V + parti 🚨 → tabloya GİRMEZ)
 HAM:      ../02_HAM_RAPORLAR/THE_COLD_WELD_{KARE,DEVAMLILIK,SES,HIKAYE,ARKA_PLAN,FIZIK}_HAM.md
-PLAN:     ../../../yatay_2_4_dk_filmler_uzay/THE_COLD_WELD/THE_COLD_WELD_METAL_REEF_FILM.md
+PLAN:     ../../../yatay_2_dk_filmler/THE_COLD_WELD/THE_COLD_WELD_METAL_REEF_FILM.md
 SPEC:     ✅ VAR — .../THE_COLD_WELD_QA_SPEC.md (A/B/C blokları)
           ⛔ operatöre VERİLMEDİ — SPEC ile film AYNI GÜN yazıldı
 OTURUM:   ⚠️ kopya deseni YOK [D110]: altı raporun bulgu listeleri, kapsam

@@ -21,7 +21,7 @@ KLİP SÜRESİ:   ⬜ ARAÇTAN ÖLÇÜLECEK [D124] — plan 10,0 s varsayar:
 SAHNE SAYISI:  30            RUNTIME: 299 s = 4:59 = 9 s hook + 29 × 10 s
                ⚠️ DEPODA ÇELİŞKİ VAR ve bu film §2.3'ü izliyor:
                KILAVUZ_REHBERI §2.3 kartı **25 sahne / 4:09** der,
-               `yatay_3_5_dk_filmler/README.md` **24 sahne / 2×12** der.
+               `yatay_4_dk_filmler/README.md` **24 sahne / 2×12** der.
                THE PAYLOAD README'yi, THE SINKING STAKE ve THE UPWARD FALL
                §2.3'ü izledi. Bu film KART A'nın işaret ettiği §2.3'ü izler
                ve sahne sayısını **sahibin açık izniyle 25 → 30'a** çıkarır
@@ -521,7 +521,7 @@ EKRAN YÖNÜ KİLİDİ (coğrafyalı sahnelerin tamamı):
 
 ```bash
 python3 kilavuzlar_ve_sistem_dosyalari/PROMPT_KONTROL/prompt_kontrol.py \
-        yatay_3_5_dk_filmler/THE_WHITE_FLOOD
+        yatay_4_dk_filmler/THE_WHITE_FLOOD
 ```
 
 ```

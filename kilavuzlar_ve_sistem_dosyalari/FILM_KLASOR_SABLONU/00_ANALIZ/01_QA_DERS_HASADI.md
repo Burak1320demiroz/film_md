@@ -10,7 +10,10 @@
 
 ---
 
-## 1. 🔒 DERS KİLİTLERİ — okunan derslerden bu filme düşenler
+## 1. 🔒 DERS KİLİTLERİ — okunan derslerden bu filme düşenler (⛔ tavan 20 — fazlası §1b'ye)
+
+> 14.09.2026: kaynak `00_YASAYAN_DERSLER.md` (≤ 40); bu filme düşen ≤ 20 kilit PLAN'a taşınır,
+> geri kalanı §1b'de gerekçeyle bekler. Etiketi filme uymayan ders çizelgede "—" alır.
 
 > Ders metni kopyalanmaz; **bu filmde ne yapılacağı** yazılır.
 > Kilit prompta ETİKETSİZ taşınır — `[LESSON n]` gövdeye girmez [D45].
@@ -18,6 +21,12 @@
 | ders | ölçülmüş arıza | bu filmde kilit cümlesi | hangi sahnelere düşecek |
 |---|---|---|---|
 | ⬜ |  |  |  |
+
+### 1b. ⛔ UYGULANMAYAN KİLİTLER — tavanı aşanlar (PLAN'daki blokla aynı)
+
+| ders | neden bu filmde uygulanmadı |
+|---|---|
+| — | |
 
 ## 2. 🚨 QA KAYITLARINDAN GELEN ARIZALAR — `01_FILM_RAPORLARI/`
 

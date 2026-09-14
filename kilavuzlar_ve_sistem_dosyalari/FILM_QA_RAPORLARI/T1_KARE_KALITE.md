@@ -47,8 +47,16 @@ satırlarda 9:16 / Güvenli Alan / Kanca dolar; yatay satırlarda boş kalır.
 |---|:--:|---|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
 
 | **The Iron Slope** Ⓥ ⛔ ⚠️ | DİKEY | Derleme (6) | 4 | (2) | (10) | 10 | (6) | — | 4 | ⬜ | — | 2 | 6 | 6 | 10 | 3 | **5,5** |
-
 | **The Rose Coat** Ⓥ ⛔ ⚠️ | YATAY | Derleme (13) | ⬜ | ⬜ | ⬜ | ⬜ | — | — | ⬜ | — | — | ⬜ | | | | (5) | **—** |
+| **The Counted Turn** ⚠️ | YATAY | Derleme (25) | 1 | 7 | (10) | (10) | 9 | — | 1 | 7 | — | 7 | | | | 4 | **5,3** |
+| **The Hard Dock** ✅ | YATAY | 24 | 8 | 7 | 6 | 8 | 7 | — | 8 | 8 | — | 7 | | | | 8 | **7,4** |
+
+> **The Hard Dock · 12.09.2026 · MOD D · ✅ GO**
+> Kayıt: [`01_FILM_RAPORLARI/THE_HARD_DOCK.md`](01_FILM_RAPORLARI/THE_HARD_DOCK.md)
+> · `rapor_kontrol.py` doğrulaması tamamlandı. Düzeltilmiş skor: **7,4** (GO).
+> · 🔴 BLOCKER: 1:10 Kamera yönelim sıçraması (dış istasyon dönme açısı aniden ~45 derece sıçrıyor).
+
+| **The Resonant Strand** ⚠️ | YATAY | ⬜ | ⬜ | — | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ | 9 | — | 9 | ⬜ | ⬜ | ⬜ | ⬜ | **7,4** |
 
 > **The Rose Coat · 26.08.2026 · Ⓥ mod V · ⛔ ÖN KOŞU · ⚠️ ŞARTLI**
 > Kayıt: [`01_FILM_RAPORLARI/THE_ROSE_COAT.md`](01_FILM_RAPORLARI/THE_ROSE_COAT.md)
@@ -75,3 +83,9 @@ satırlarda 9:16 / Güvenli Alan / Kanca dolar; yatay satırlarda boş kalır.
 > kaymasını gösteriyor. · **Diyalog-Ses 1/10** ⬜ AÇIK (vakumda ses hükmü
 > 10 sn dinleme bekliyor). · Toplam, rubriğin kendi aritmetiğidir;
 > kapı ④ düştüğü için satır ortalamalara girmez.
+
+> **The Counted Turn · 09.09.2026 · MOD D · ⚠️ ŞARTLI**
+> Kayıt: [`01_FILM_RAPORLARI/THE_COUNTED_TURN.md`](01_FILM_RAPORLARI/THE_COUNTED_TURN.md)
+> · `rapor_kontrol.py` ile düzeltildi: Camera (10/10) ve Lighting (10/10) hücreleri (kusur bildirilmeyen, D186) `—` hücresi olarak güncellendi. Düzeltilmiş ortalama: **5,3** (Ham: 6,5/10).
+> · 🔴 BLOCKER: Sol el parmak erimesi/kaynaşması (0:27, 3:25), sağ başparmak ve karabiner penetrasyonu (0:35, 2:44), kayış penetrasyonu (1:26, 1:44, 3:05), jenerik başlık kartı (4:10).
+

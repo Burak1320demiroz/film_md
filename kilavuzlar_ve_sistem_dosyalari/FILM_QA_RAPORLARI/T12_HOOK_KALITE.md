@@ -40,7 +40,9 @@ Biri bile hayırsa satır YAZILMAZ; ham rapor 02_HAM_RAPORLAR/'da durur.
 
 | Film | Tarih | Mod | Hook|Kapak|Risk|Paylaşım|Plato|Doruk|Çıkış|Format | Toplam | Not |
 |---|---|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|---|
-| *(henüz koşu yok)* | | | | | | | | | | |  | |
+| **The Counted Turn** | 09.09.2026 | D | 7.0 | — | 8.0 | 9.0 | 7.0 | — | 9.0 | — | ⚠️ 8.0 | 🟡 **THE STRANGER STAYS** — S1 hook kırpılmamış (10s vs 9s bütçe), tüm kesmeler 1.0s kayık; S7-S9 ızgara mekanı plato [D184] |
+| **The Hard Dock** ⚠️ | 12.09.2026 | D | 8.0 | 9.0 | 8.0 | 6.0 | 5.0 | 8.0 | 4.0 | 10.0 | **7,2** | LEAVES AT 00:25 s · 00:10-00:40 and 01:10-01:50 cockpit-exterior plateau |
+
 
 ⛔ Sayılar bu tabloya ELLE yazılmaz — rapordan gelir ve `rapor_kontrol.py`
 GO döndükten sonra kopyalanır [kural ① · D161].

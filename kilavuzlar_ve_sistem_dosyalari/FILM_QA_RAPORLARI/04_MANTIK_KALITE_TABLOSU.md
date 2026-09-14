@@ -162,7 +162,7 @@ EN YÜKSEK NEDENSELLİK:   Last Archive 9 · Stone Sky 7 — okuma-karar zinciri
 > planlarda toz RÜZGÂRA KARŞI akıyor — plan 18 sahnede SAĞ→SOL tek yön
 > şart koşar; gerçek VIDEO_QA koşusu doğrulayacak (girdisiz koşu → D80).
 > → kayıt: [`01_FILM_RAPORLARI/THE_BLIND_RETURN.md`](01_FILM_RAPORLARI/THE_BLIND_RETURN.md)
-> · ham: [`02_HAM_RAPORLAR/THE_BLIND_RETURN_MANTIK_HAM.md`](02_HAM_RAPORLAR/THE_BLIND_RETURN_MANTIK_HAM.md)
+> · ham: [`02_HAM_RAPORLAR/THE_BLIND_RETURN/THE_BLIND_RETURN_MANTIK_HAM.md`](02_HAM_RAPORLAR/THE_BLIND_RETURN/THE_BLIND_RETURN_MANTIK_HAM.md)
 
 > 🚨 **The Starless Circle — belge kontrolü bir bulguyu düşürdü, üçünü
 > ayakta tuttu, birini yeniden adlandırdı (06.08.2026).**
@@ -193,7 +193,7 @@ EN YÜKSEK NEDENSELLİK:   Last Archive 9 · Stone Sky 7 — okuma-karar zinciri
 > (Ders 58) yazılıyken oldu — Dawn Front'la aynı "dosya dolu, model uymuyor"
 > örüntüsü. Üç FLAGS sorusunun üçü de plan dosyasından cevaplandı.
 > → kayıt: [`01_FILM_RAPORLARI/THE_STONE_SKY.md`](01_FILM_RAPORLARI/THE_STONE_SKY.md)
-> · ham: [`02_HAM_RAPORLAR/THE_STONE_SKY_MANTIK_HAM.md`](02_HAM_RAPORLAR/THE_STONE_SKY_MANTIK_HAM.md)
+> · ham: [`02_HAM_RAPORLAR/THE_STONE_SKY/THE_STONE_SKY_MANTIK_HAM.md`](02_HAM_RAPORLAR/THE_STONE_SKY/THE_STONE_SKY_MANTIK_HAM.md)
 
 > 🚨 **Dawn Front, Kostüm-Prop 1/10'un ikinci vakası — ama Deep Pressure'ın
 > tersi:** orada Bible hiç yoktu (Ders 55), burada Bible dolu, sayısal ve
@@ -205,7 +205,7 @@ EN YÜKSEK NEDENSELLİK:   Last Archive 9 · Stone Sky 7 — okuma-karar zinciri
 > (S0 −4.0° → S13 +0.4°) sahne başına yazılmıştı ve TUTTU — sayısal takvim
 > kilidi ışıkta çalışıyor, kostümde çalışmıyor.
 > → kayıt: [`01_FILM_RAPORLARI/THE_DAWN_FRONT.md`](01_FILM_RAPORLARI/THE_DAWN_FRONT.md)
-> · ham: [`02_HAM_RAPORLAR/THE_DAWN_FRONT_MANTIK_HAM.md`](02_HAM_RAPORLAR/THE_DAWN_FRONT_MANTIK_HAM.md)
+> · ham: [`02_HAM_RAPORLAR/THE_DAWN_FRONT/THE_DAWN_FRONT_MANTIK_HAM.md`](02_HAM_RAPORLAR/THE_DAWN_FRONT/THE_DAWN_FRONT_MANTIK_HAM.md)
 
 > 🚨 **Deep Pressure, rubriğin bugüne kadar gördüğü en ağır tablo:** 6 bulgunun
 > 5'i kostüm, 4'ü BLOCKER, ve dördü de tek bir sebepten — **plan dosyasında
@@ -215,7 +215,7 @@ EN YÜKSEK NEDENSELLİK:   Last Archive 9 · Stone Sky 7 — okuma-karar zinciri
 > Rubrik bunu bilmeden doğru ölçtü: dokümansız çalıştı, "eksik" demedi,
 > `FLAGS FOR DOCUMENT CHECK` altına **"kanonik kıyafet hangisi?"** diye sordu.
 > Cevap doküman kontrolünde çıktı: **kanonik kıyafet 14 sahnenin hiçbirinde yok.**
-> → DERS 55-58 · ham rapor: [`02_HAM_RAPORLAR/THE_DEEP_PRESSURE_MANTIK_HAM.md`](02_HAM_RAPORLAR/THE_DEEP_PRESSURE_MANTIK_HAM.md)
+> → DERS 55-58 · ham rapor: [`02_HAM_RAPORLAR/THE_DEEP_PRESSURE/THE_DEEP_PRESSURE_MANTIK_HAM.md`](02_HAM_RAPORLAR/THE_DEEP_PRESSURE/THE_DEEP_PRESSURE_MANTIK_HAM.md)
 
 > 🚨 **The Herd, rubriğin ilk "iki bulgusu da yanlış çıkan" vakası.**
 > İki `FLAGS FOR DOCUMENT CHECK` sorusunun biri üretim hatasını doğruladı
@@ -225,7 +225,7 @@ EN YÜKSEK NEDENSELLİK:   Last Archive 9 · Stone Sky 7 — okuma-karar zinciri
 > Öneri uygulansa film yapısal iddiasını kaybederdi. Kaleida emsalinin aynısı.
 > Belge kontrolü bu filmde raporu **düzeltti**, tamamlamadı.
 > → kayıt: [`01_FILM_RAPORLARI/THE_HERD.md`](01_FILM_RAPORLARI/THE_HERD.md)
-> · ham: [`02_HAM_RAPORLAR/THE_HERD_UC_MERCEK_HAM.md`](02_HAM_RAPORLAR/THE_HERD_UC_MERCEK_HAM.md)
+> · ham: [`02_HAM_RAPORLAR/THE_HERD/THE_HERD_UC_MERCEK_HAM.md`](02_HAM_RAPORLAR/THE_HERD/THE_HERD_UC_MERCEK_HAM.md)
 
 > 🚨 **Holding Field, rubriğin ilk "öncül ters render edildi" vakası.**
 > Filmin tek kuralı *hiçbir şey yükselmez*; `never rising` yasağı 28 promptun
@@ -236,7 +236,7 @@ EN YÜKSEK NEDENSELLİK:   Last Archive 9 · Stone Sky 7 — okuma-karar zinciri
 > Kök neden yasağın eksikliği değil, pozitif betimlemedeki **isim seçimi**
 > (`hang / suspended / floating` × 24) — Ders 56'nın mekanizması, yeni alan.
 > → DERS 59 · kayıt: [`01_FILM_RAPORLARI/THE_HOLDING_FIELD.md`](01_FILM_RAPORLARI/THE_HOLDING_FIELD.md)
-> · ham rapor: [`02_HAM_RAPORLAR/THE_HOLDING_FIELD_MANTIK_HAM.md`](02_HAM_RAPORLAR/THE_HOLDING_FIELD_MANTIK_HAM.md)
+> · ham rapor: [`02_HAM_RAPORLAR/THE_HOLDING_FIELD/THE_HOLDING_FIELD_MANTIK_HAM.md`](02_HAM_RAPORLAR/THE_HOLDING_FIELD/THE_HOLDING_FIELD_MANTIK_HAM.md)
 
 > 🎯 **Canopy World, kapsam sınırının ilk gerçek testi.** Aynı gün aynı filme
 > hem teknik hem mantık QA'sı yapıldı. **Ortak bulgu: 0.** Teknik rapor

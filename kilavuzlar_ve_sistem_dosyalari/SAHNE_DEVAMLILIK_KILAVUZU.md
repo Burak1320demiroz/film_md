@@ -80,6 +80,9 @@ HİÇBİR KELİME DEĞİŞTİRİLMEDEN kopyala-yapıştır olarak kullanılır.
 > sırt silueti · bilek/saat · kişisel eşya + hazır İngilizce kalıplar):
 > `ASTRONOT_DONANIM_VE_KIMLIK_KILAVUZU.md` — blok oradan derlenir,
 > buradaki kelimesi kelimesine kuralıyla dondurulur.
+> ⭐ 12.09.2026: giysinin GÖRÜNÜŞÜ (arketip · kask · malzeme · sırt cümlesi)
+> `UZAY_GIYSISI_SINEMATIK_TASARIM_KILAVUZU.md` §11 reçetesinden; blok banda
+> sığmıyorsa CÜMLE KISALTILMAZ, KATMAN ATILIR (oradaki §9 sırası).
 
 ### 2.2 Zayıf vs. Güçlü Prompt Karşılaştırması
 

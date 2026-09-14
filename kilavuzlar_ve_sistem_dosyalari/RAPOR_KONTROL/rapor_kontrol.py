@@ -34,17 +34,36 @@
 #                       (varsayılan 10 s · --hook/--klip ile değiştir) [D115]
 #     ② ÖLÇÜM BOŞLUĞU   SPEC sayaç yazarken ② "Counter Logic N/A" dediyse
 #                       ⬜ AÇIK                                        [D134]
-#     ⑤ ÇAPRAZ          birden çok rapor: kesme yayılımı · şerit · replik ·
+#     ⑤ ÇAPRAZ          birden çok rapor: kesme yayılımı · şerit · replik · SÜRE [D205] ·
 #                       ⭐ SUSKUNLUK (film boyu iddia + sahibin sessizliği)
 #                                                                [D107·D162]
+#     ①.11 BÖLÜM        --bolum n/m (13.09.2026 · 6/8 dk hattı): QA birimi
+#                       BÖLÜM olan filmde yarım masterın rapor(lar)ı. ①.9
+#                       teslim kapısı YALNIZ <FILM>_BOLUM_n.md'yi sayar; uç
+#                       kategoriler (baş bölümde final, son bölümde hook,
+#                       hepsinde bütün-film dörtlüsü) `—` olur — D185'in
+#                       yarım-film uzantısı. Kural: KILAVUZ_REHBERI §2.6/§2.7
+#     ⑭ ⑮ (14.09.2026)  HAREKET (hareket mantığı) · YÖN (yön/hedef): PURPOSE / VECTOR
+#                       STRING uzunluğu = kesme+1 · MOVEMENTS/ACTS sayımı · PREMISE
+#                       REGISTER (SPEC NOVUM'luysa) · VERDICT_SOZLUK · mod D listesi
+#  ─── 14.09.2026 · QA ÇIKTI REFORMU (FAZ 0-1) ─────────────────────────
+#     ✂️ KESİK          SCORES SUMMARY yok / hücre yok / MEDIA MISSING → koşu DEĞİL:
+#                       tabloya, ⑤ çaprazına, frekansa girmez; yeniden koşulur
+#     ①.13 HÜKÜM        VERDICT: satırı var mı · rubriğin KAPALI listesinde mi
+#                       (VERDICT_SOZLUK — tek kaynak; ders_frekans buradan okur)
+#     ①.5 (yeni sözleşme) rubrik artık tally/toplam/ortalama İSTEMEZ; model
+#                       yalnız hücre + etiket + timecode yazar, bu betik sayar.
+#                       Eski raporlarda iddia varsa yine kıyaslanır (kayıt).
+#     govde_al          '---' künye değil raporun başlık bloğunu kapatıyorsa
+#                       atlanmaz (mod "?" sahte bulgusu kapandı)
 #
 #  KULLANIM:
 #      python3 kilavuzlar_ve_sistem_dosyalari/RAPOR_KONTROL/rapor_kontrol.py \
 #              <rapor.md> [<rapor.md> ...] [--film <film klasörü>] \
-#              [--hook 10] [--klip 10] [--rapor]
+#              [--hook 10] [--klip 10] [--rapor] [--bolum n/m]
 #
-#  ÇIKTI:   rapor başına GO / ŞARTLI / TEKRAR / GEÇERSİZ + TABLOYA GİRECEK SAYI
-#  ÇIKIŞ:   0 = hepsi GO · 1 = en az bir ŞARTLI · 2 = TEKRAR ya da GEÇERSİZ var
+#  ÇIKTI:   rapor başına GO / ŞARTLI / TEKRAR / GEÇERSİZ / ✂️ KESİK + TABLOYA GİRECEK SAYI
+#  ÇIKIŞ:   0 = hepsi GO · 1 = en az bir ŞARTLI · 2 = TEKRAR, GEÇERSİZ ya da KESİK var
 #
 #  ⛔ Bu betik BULGUNUN DOĞRULUĞUNU ölçmez — o iş kare/ses ister (⑪, ②
 #     kilit defteri). Ölçtüğü tek şey raporun KENDİ İÇİNDE tutup tutmadığı
@@ -81,26 +100,47 @@ MERCEK_IMZA = [
                                 r"ZONE REGISTER|ZONES REGISTERED|Key Direction Continuity", re.I)),
     ("⑫ HOOK",       re.compile(r"HOOK LEDGER|INTERSTITIAL CHECK|DROP-OFF PREDICTION|"
                                 r"WINDOW REGISTER|OPENING WINDOW|Cover Second", re.I)),
+    # ─── HAREKET MANTIĞI + YÖN/HEDEF [⑭ ⑮ · 14.09.2026 · sahip talebi] ───
+    # "saçma sapan hareketler · yanlış yere dönmek/ateş etmek" — ders çıkarabilmek için
+    ("⑭ HAREKET",    re.compile(r"MOTION LEDGER|PURPOSE STRING|PURPOSELESS MOVEMENTS|MOTION SENSE|"
+                                r"Purpose Legibility|Locomotion Sense|Turn & Rotation Logic|"
+                                r"MOVEMENTS LOGGED", re.I)),
+    ("⑮ YÖN",        re.compile(r"TARGET LEDGER|VECTOR STRING|VECTOR LOCK|MISSED VECTORS|"
+                                r"DIRECTION & TARGET|Target Establishment|Reach & Aim|"
+                                r"Screen Direction Across Cuts|ACTS LOGGED|ACTS MISSED", re.I)),
+    # ─── ÜRETİM SADAKATİ MERCEĞİ [⑬ · 11.09.2026] ───
+    # Sahne ↔ PROMPT. ⑨-⑫ planı okur, bu mercek modele GÖNDERİLEN metni okur.
+    ("⑬ UYUM",       re.compile(r"CONFORMANCE LEDGER|CONFORMANCE STRING|ATTRIBUTION SUMMARY|"
+                                r"LESSON ORDERS|CONFORMANCE COUNT|LOCKS CHECKED|"
+                                r"PROMPT GAP|MODEL DRIFT", re.I)),
 ]
 ZORUNLU_FILM = ("① KARE", "② DEVAMLILIK", "③ SES", "④ HİKAYE")
 ZORUNLU_FRAGMAN = ("① KARE",)
 FRAGMAN_IZI = re.compile(r"FRAGMAN|TEASER|TRAILER", re.IGNORECASE)
 MOD_D_MERCEKLER = ("① KARE", "④ HİKAYE", "⑥ FİZİK",
                    "⑦ AKSİYON", "⑧ EFOR",
-                   "⑨ KADRAJ", "⑩ OYUNCULUK", "⑪ IŞIK", "⑫ HOOK")   # yalnız bunların MODE D bölümü var
+                   "⑨ KADRAJ", "⑩ OYUNCULUK", "⑪ IŞIK", "⑫ HOOK",
+                   "⑬ UYUM", "⑭ HAREKET", "⑮ YÖN")   # yalnız bunların MODE D bölümü var
 # ⑨-⑫ planı ekrana karşı okur: SPEC varken mod V koşusu tanım gereği BOŞTUR
 PLAN_SADAKATI_MERCEKLER = ("⑨ KADRAJ", "⑩ OYUNCULUK", "⑪ IŞIK", "⑫ HOOK")   # [D190] mod V = 🚨 GEÇERSİZ
+# ⑬ promptu ekrana karşı okur: PROMPT METNİ GİRDİNİN KENDİSİDİR.
+# ⑨-⑫'de belgesiz koşu "geçersiz"dir; burada daha sert — mod V diye bir hâli YOKTUR.
+URETIM_SADAKATI_MERCEKLER = ("⑬ UYUM",)   # [11.09.2026] promptsuz koşu = KOŞU DEĞİL
 DIZI_MERCEKLER = {   # mercek → (dizi başlığı, alfabe) — "OBSERVED:" satırından okunur [D184]
     "⑨ KADRAJ":    ("SETUP STRING",         "A-Z?"),
     "⑩ OYUNCULUK": ("GAZE STRING",          "OADU-"),
     "⑪ IŞIK":      ("KEY DIRECTION STRING", "0-9TEW?-"),
+    # ⛔ tire SONDA: sınıf `[ \t{alfabe}]` diye kuruluyor; tire başa yazılırsa
+    #    `\t-K` bir ARALIĞA dönüşür ve dizi yerine rakam/noktalama da yutulur
+    #    (11.09.2026'da ölçüldü; D194'ün aynası).
+    "⑬ UYUM":      ("CONFORMANCE STRING",   "KTPY-"),
 }
 ISKELET_ETIKET = re.compile(r"^KURULUM İSKELETİ\s*[:：]\s*([A-Z](?:\s*[A-Z])+)", re.M)
 DUSUS_SEBEP = re.compile(r"slow open|no stakes yet|plateau|repeated setup|unreadable beat|card", re.I)
 
 # ─── ①.6 NOVUM KAPISI [D166] ───────────────────────────────────────
 # PREMISE REGISTER / PREMISE GATE taşıyan mercekler
-NOVUM_MERCEKLER = ("⑥ FİZİK", "⑦ AKSİYON", "⑧ EFOR")
+NOVUM_MERCEKLER = ("⑥ FİZİK", "⑦ AKSİYON", "⑧ EFOR", "⑭ HAREKET", "⑮ YÖN")
 # SPEC'in C bloğunda dünya kuralı kaydı var mı
 NOVUM_ETIKET = re.compile(r"^(NOVUM|ÖNERME|İHLAL|PREMISE)\b", re.M)
 # raporun register'ı yalnız ORTAMI mı yazıyor (tür), yoksa bir KURAL mı
@@ -199,6 +239,95 @@ SKOR = re.compile(
     r"|(?P<dash>^[—–-]$)", re.I)
 KAYNAKSIZ = re.compile(r"no in[- ]scope source|no source\b|kaynak(?:sız| yok)|no in scope", re.I)
 
+# ─── ✂️ KESİK KOŞU [14.09.2026 · QA çıktı reformu FAZ 0] ─────────────────
+# Ölçüm: 336 mercek raporunun 56'sında hiç skor hücresi yok — medya yüklenmemiş,
+# koşu erken durmuş, çıktı kesilmiş. Bunlar GEÇERSİZ değil KOŞU DEĞİLDİR: parti
+# çaprazına (⑤) girmez, tabloya girmez, frekans sayımına girmez, "yeniden
+# koşulacak" listesine girer. Ham dosya silinmez/yeniden adlandırılmaz — ayrım
+# İÇERİKTEN yapılır; yeni gelen kesik koşu `_KESIK_HAM.md` adıyla kaydedilir.
+KESIK_IZI = re.compile(r"MEDIA MISSING|INPUT MODE\s*[:：]\s*MISSING|RUN NOT STARTED|"
+                       r"AUDIO ABSENT\s*[—-]\s*RUN|no media (?:was )?(?:readable|attached)|"
+                       r"nothing (?:was )?played", re.I)
+SKOR_BASLIK = re.compile(r"SCORES?\s+SUMMARY", re.I)   # "SCORE SUMMARY" (tekil) de kabul
+
+
+# ─── ①.13 HÜKÜM SÖZLÜĞÜ [14.09.2026 · QA çıktı reformu FAZ 1] ────────────
+# 13 rubriğin 13'ü kapalı VERDICT listesi tanımlıyordu; 232 raporda 56 farklı hüküm
+# metni çıktı — model listeden sapıyor, betik bakmıyordu. Liste rubriklerin KENDİ
+# listesidir (rubrik metni değişmedi); tek kaynak burasıdır: ders_frekans ve qa_saglik
+# buradan okur. ⑬'ün film düzeyi hükmü yoktur (sahne başına ACCEPT / FIX IN EDIT /
+# LOCK FOR NEXT FILM / REGENERATE) → None = kapı koşmaz.
+VERDICT_SOZLUK = {
+    "① KARE":       ("ACCEPT", "ACCEPT WITH FIX PASS", "REGENERATE"),
+    "② DEVAMLILIK": ("HOLDS TOGETHER", "DRIFTS BUT RECOVERABLE", "FIXABLE IN EDIT",
+                     "STRUCTURAL PROBLEM", "IDENTITY BREAK"),
+    "③ SES":        ("SOUNDTRACK HOLDS", "AUDIBLE DRIFT, FIXABLE IN THE MIX",
+                     "WRONG VOICE — REGENERATE", "NO VERDICT — NOTHING MEASURED"),
+    "④ HİKAYE":     ("SHOOT AS IS", "SHOOT WITH TRIMS", "REVISE STRUCTURE", "REWRITE PREMISE"),
+    "⑤ ARKA PLAN":  ("FIELD HOLDS", "FIELD DRIFTS BUT RECOVERABLE", "FIXABLE IN EDIT",
+                     "FIELD COLLAPSES", "SUBJECT DUPLICATE IN FIELD"),
+    "⑥ FİZİK":      ("PHYSICS HOLDS", "MINOR SLIPS", "FIXABLE IN EDIT", "INCONSISTENT WORLD",
+                     "TWO GRAVITIES"),
+    "⑦ AKSİYON":    ("ACTION READS", "MINOR BLUR", "FIXABLE IN EDIT", "BEATS ILLEGIBLE",
+                     "ACTION NEVER RENDERED", "N/A — NO ACTION BEATS"),
+    "⑧ EFOR":       ("THE BODY PAYS", "MINOR DEBT", "FIXABLE IN EDIT", "WEIGHTLESS WORK",
+                     "NOBODY PAYS", "N/A — NO EXERTION EVENTS"),
+    "⑨ KADRAJ":     ("CAMERA HELD", "MINOR DRIFT", "SETUP BROKEN", "RHYME BROKEN", "CAMERA WANDERED"),
+    "⑩ OYUNCULUK":  ("THE BODY TELLS IT", "MOSTLY LEGIBLE", "TASK WITHOUT FEELING",
+                     "THE CHOICE IS INVISIBLE", "MANNEQUIN"),
+    "⑪ IŞIK":       ("LIGHT HOLDS", "GRADEABLE DRIFT", "KEY WALKS", "ZONE BROKEN", "LIT FROM NOWHERE"),
+    "⑫ HOOK":       ("THE STRANGER STAYS", "LEAVES AT <n> s", "HOOK MISSING", "EXIT FLAT"),
+    "⑬ UYUM":       None,
+    "⑭ HAREKET":    ("MOTION MAKES SENSE", "MINOR TWITCHES", "FIXABLE IN EDIT", "PUPPET MOTION",
+                     "MOTION WITHOUT PURPOSE", "N/A — NO HUMAN MOTION"),
+    "⑮ YÖN":        ("EVERY VECTOR LANDS", "MINOR MISAIMS", "FIXABLE IN EDIT", "WRONG WAY",
+                     "AIMED AT NOTHING", "N/A — NO DIRECTED ACTS"),
+}
+VERDICT_SATIR = re.compile(r"^[ \t>*#]*VERDICT\s*[:：]\s*\**\s*([^\n]+?)\s*\**\s*$", re.M | re.I)
+
+
+def verdict_normal(v):
+    v = re.sub(r"[\[\]`]", "", v).strip().rstrip(".").upper()
+    v = re.sub(r"[\u2014\u2013-]+", "—", v)                # her tire tek uzun tireye
+    v = re.sub(r"\s+", " ", v).replace(" — ", " — ")
+    v = re.sub(r"^(?:VERDICT\s*:\s*)", "", v)
+    return v
+
+
+def verdict_oku(metin):
+    """Rapordaki VERDICT: satırı → normalize edilmiş hüküm | None (satır yok)."""
+    m = VERDICT_SATIR.search(metin)
+    return verdict_normal(m.group(1)) if m else None
+
+
+def verdict_sozlukte(metin, mercek):
+    """→ True (sözlükte) · False (sözlük dışı / satır yok) · None (bu mercekte kapı yok)."""
+    liste = VERDICT_SOZLUK.get(mercek)
+    if not liste:
+        return None
+    v = verdict_oku(metin)
+    if v is None:
+        return False
+    for k in liste:
+        kn = verdict_normal(k)
+        if kn.startswith("LEAVES AT"):
+            if re.match(r"^LEAVES AT\s*~?\d+(?::\d{2})?([.,]\d+)?\s*S?\b", v):
+                return True
+        elif v == kn or v.startswith(kn + " ") or v.startswith(kn + " —"):
+            return True
+    return False
+
+
+def kesik_mi(metin, rows):
+    """Koşu hiç başlamamış / yarıda kesilmiş mi? → (True, sebep) | (False, None)."""
+    if KESIK_IZI.search(metin) and not rows:
+        return True, KESIK_IZI.search(metin).group(0)
+    if not SKOR_BASLIK.search(metin):
+        return True, "SCORES SUMMARY başlığı yok"
+    if not rows:
+        return True, "SCORES SUMMARY var, skor hücresi yok"
+    return False, None
+
 # ─── D186 · "KUSUR YOK" HÜCRESİ SAYI TAŞIYAMAZ ─────────────────────
 # YERÇEKİMİ F9 (06.09.2026): ⑤ beş hücreye, ⑨ üç hücreye "none" /
 # "flawless … mapped to 7" yazıp 7/10 verdi. İki rubrikte de kural ④
@@ -220,6 +349,23 @@ FAZ_IZI = re.compile(r"\bfaz[\s_]*\d+", re.I)
 FAZ_OLCULEMEZ = {
     "④ HİKAYE":  re.compile(r"^(hook|structure|ending|retention)", re.I),
     "⑫ HOOK":    re.compile(r"^(hook question|stakes|plateau|peak placement|exit)", re.I),
+    "⑨ KADRAJ":  re.compile(r"^rhyme", re.I),
+}
+# ─── 13.09.2026 · BÖLÜM FİLM DEĞİLDİR — D185'in yarım-film uzantısı ───
+# 36/48 sahnelik hatta (yatay_6_dk_filmler · yatay_8_dk_filmler) QA birimi
+# BÖLÜMDÜR: on iki mercek iki yarım mastera ayrı koşulur. Faz gibi bir ORTA
+# segment değil, bir UÇ segmenttir — baş bölüm hook'u görür ama finali
+# göremez, son bölüm tersi; bütün filmi isteyen dörtlü hiçbirinde sayı taşımaz.
+#   --bolum n/m  →  n == 1: BAŞ · n == m: SON · 1 < n < m: ORTA (= FAZ maskesi)
+BOLUM_ARG = re.compile(r"^(\d+)\s*/\s*(\d+)$")
+BOLUM_BAS_GOREMEZ = {    # BAŞ bölümün göremediği: filmin SONU + bütün-film dörtlüsü
+    "④ HİKAYE":  re.compile(r"^(structure|retention|ending)", re.I),
+    "⑫ HOOK":    re.compile(r"^(plateau|peak placement|exit)", re.I),
+    "⑨ KADRAJ":  re.compile(r"^rhyme", re.I),
+}
+BOLUM_SON_GOREMEZ = {    # SON bölümün göremediği: filmin BAŞI + bütün-film dörtlüsü
+    "④ HİKAYE":  re.compile(r"^(structure|retention|hook)", re.I),
+    "⑫ HOOK":    re.compile(r"^(plateau|hook question|stakes)", re.I),
     "⑨ KADRAJ":  re.compile(r"^rhyme", re.I),
 }
 DIYALOG_YALNIZ = re.compile(
@@ -256,12 +402,12 @@ FILM_BOYU_IZ = re.compile(r"every scene|all scenes|\b\d{1,2}/\d{1,2}\s+scenes|th
 
 
 class Bulgu:
-    """seviye: GEÇERSİZ · TEKRAR · ŞARTLI · NOT"""
+    """seviye: KESİK · GEÇERSİZ · TEKRAR · ŞARTLI · NOT"""
     def __init__(self, seviye, baslik, ayrinti=""):
         self.seviye, self.baslik, self.ayrinti = seviye, baslik, ayrinti
 
     def __str__(self):
-        isaret = {"GEÇERSİZ": "🚨", "TEKRAR": "⛔", "ŞARTLI": "⚠️ ", "NOT": "·"}[self.seviye]
+        isaret = {"KESİK": "✂️", "GEÇERSİZ": "🚨", "TEKRAR": "⛔", "ŞARTLI": "⚠️ ", "NOT": "·"}[self.seviye]
         s = f"   {isaret} {self.baslik}"
         if self.ayrinti:
             s += f"\n        {self.ayrinti}"
@@ -278,6 +424,12 @@ def govde_al(metin):
     satirlar = metin.split("\n")
     for i, s in enumerate(satirlar[:60]):
         if s.strip() == "---":
+            # 14.09.2026: '---' künyeyi değil raporun kendi başlık bloğunu kapatıyorsa
+            # (öncesinde INPUT MODE / VERDICT / FORMAT satırı var) HİÇBİR ŞEY atlanmaz —
+            # aksi hâlde mod "?" ve "hüküm yok" sahte bulguları doğuyordu (33 TEKRAR).
+            bas = "\n".join(satirlar[:i])
+            if re.search(r"^[ \t>*#]*(INPUT MODE|VERDICT|FORMAT)\s*[:：]", bas, re.M | re.I):
+                return metin
             return "\n".join(satirlar[i + 1:])
     return metin
 
@@ -329,17 +481,34 @@ def serit_al(metin):
 
 
 def dizi_al(metin, baslik, alfabe):
-    """BEAT STRING (⑦) / COST CURVE (⑧) — sahne başına bir hane."""
-    d = re.search(rf"{baslik}[^\n]*\n(?:[^\n]*\n)??\s*`?([{alfabe}]{{3,}})`?", metin) or \
-        re.search(rf"{baslik}[:\s`]*([{alfabe}]{{3,}})", metin)
-    return d.group(1) if d else None
+    """BEAT STRING (⑦) / COST CURVE (⑧) — sahne başına bir hane.
+    ⛔ BOŞLUK TOLERE EDİLİR [D194 · kardeş tarama]: ⑨⑩⑪ diziyi boşluklu
+    yazdığı için okunamamıştı; ⑦ ve ⑧ aynı arızayı üretebilir (rubrikleri
+    'no spaces' cümlesini D194'e kadar taşımıyordu). Boşluk sınıfın BAŞINA."""
+    d = re.search(rf"{baslik}[^\n]*\n(?:[^\n]*\n)??[ \t]*`?([ \t{alfabe}]{{3,}}?)`?[ \t]*$",
+                  metin, re.M) or \
+        re.search(rf"{baslik}[:\s`]*([ \t{alfabe}]{{3,}}?)`?[ \t]*$", metin, re.M)
+    if not d:
+        return None
+    g = re.sub(r"[ \t]+", "", d.group(1))
+    return g if len(g) >= 3 else None
 
 
 def gozlem_dizi(metin, baslik, alfabe):
     """⑨/⑩/⑪ dizileri — başlığın altındaki `OBSERVED:` satırından, [D184].
-    dizi_al burada KULLANILMAZ: `OBSERVED` sözcüğünün kendisi [A-Z]{3,} ile eşleşir."""
-    m = re.search(rf"{baslik}(?:[^\n]*\n){{0,4}}[ \t`]*OBSERVED\s*[:：]\s*`?([{alfabe}]{{3,}})`?", metin)
-    return m.group(1) if m else None
+    dizi_al burada KULLANILMAZ: `OBSERVED` sözcüğünün kendisi [A-Z]{3,} ile eşleşir.
+    ⛔ BOŞLUK TOLERE EDİLİR [D194]: rubrikler diziyi `A B ? ? D E` diye boşluklu
+    yazıyordu; alfabe sınıfı boşluğu içermediği için ÜÇ merceğin ÜÇÜ de
+    okunamadı ve betik suçu rapora yazdı ("dizisiz rapor"). Satır önce
+    alınır, boşluklar SONRA silinir — sıra ters olursa kapı yine körleşir."""
+    # ⛔ boşluk sınıfın BAŞINA yazılır: sonuna eklenirse `OADU-` gibi tire ile
+    #    biten alfabede "U- " geçersiz aralık olur ve betik ÇÖKER [D194].
+    m = re.search(rf"{baslik}(?:[^\n]*\n){{0,4}}[ \t`]*OBSERVED\s*[:：][ \t]*`?([ \t{alfabe}]{{3,}}?)`?[ \t]*$",
+                  metin, re.M)
+    if not m:
+        return None
+    g = re.sub(r"[ \t]+", "", m.group(1))
+    return g if len(g) >= 3 else None
 
 
 def plan_iskelet(spec_metin):
@@ -406,7 +575,7 @@ def hucre_ayir(satir):
 def skor_tablosu(metin):
     """SCORES SUMMARY bölümünün satırlarını çöz → [dict(ad, tip, deger, issue)]"""
     satirlar = metin.split("\n")
-    bas = next((i for i, s in enumerate(satirlar) if re.search(r"SCORES SUMMARY", s)), None)
+    bas = next((i for i, s in enumerate(satirlar) if SKOR_BASLIK.search(s)), None)
     if bas is None:
         return []
     rows = []
@@ -471,7 +640,7 @@ def faz_mi(film_dir, metin):
     return None
 
 
-def rapor_denetle(yol, spec_metin=None, hook=10.0, klip=10.0, faz=None):
+def rapor_denetle(yol, spec_metin=None, hook=10.0, klip=10.0, faz=None, bolum=None):
     metin_tam = yol.read_text(encoding="utf-8", errors="replace")
     metin = govde_al(metin_tam)
     R = {"yol": yol, "bulgular": [], "mercek": mercek_bul(metin)}
@@ -486,6 +655,8 @@ def rapor_denetle(yol, spec_metin=None, hook=10.0, klip=10.0, faz=None):
     R["kart"] = alan(metin, "NON-SCENE MATERIAL")
     R["serit"] = serit_al(metin)
     R["beat_dizi"] = dizi_al(metin, "BEAT STRING", "Apx-")
+    R["purpose_dizi"] = dizi_al(metin, "PURPOSE STRING", "Pmx-")     # ⑭
+    R["vector_dizi"] = dizi_al(metin, "VECTOR STRING", "Hmx-")       # ⑮
     R["bedel_dizi"] = dizi_al(metin, "COST CURVE", "0-9")
     R["plan_dizi"] = None
     if R["mercek"] in DIZI_MERCEKLER:
@@ -506,6 +677,61 @@ def rapor_denetle(yol, spec_metin=None, hook=10.0, klip=10.0, faz=None):
     iddia_ov = float(m_ov.group(1).replace(",", ".")) if m_ov else None
     R["iddia"] = (iddia_n, iddia_sum, iddia_div, iddia_ov)
 
+    # ①.11 ÜRETİM SADAKATİ KAPISI [⑬ UYUM · 11.09.2026]
+    # ⑬'ün girdisi SPEC değil, modele GÖNDERİLEN PROMPT METNİDİR. Bu yüzden
+    # kapı SPEC'in varlığından BAĞIMSIZ koşar: promptsuz koşu "eksik" değil,
+    # KOŞU DEĞİLDİR — ekrandan prompt uyduran mercek ekrana her zaman uyar.
+    if R["mercek"] in URETIM_SADAKATI_MERCEKLER and R["mod"] != "D":
+        B.append(Bulgu("GEÇERSİZ",
+                       f"⑬ UYUM mod {R['mod'] or '?'} koşulmuş → KOŞU DEĞİL [11.09.2026]",
+                       "Bu merceğin mod V'si yoktur: sahne↔prompt karşılaştırmasının bir tarafı "
+                       "eksikse karşılaştırma da yoktur. T13'e satır girmez, ders siparişi üretmez. "
+                       "Koşu dört girdiyle tekrarlanır: kurgu · sahne promptları (birebir) · QA_SPEC · "
+                       "sahne_kapisi.sh çıktısı + üretim defteri satırları."))
+
+    # ①.12 ALINTI KAPISI [⑬ UYUM] — alıntısız bulgu DÜŞER
+    # ⑬'ün tek ayırt edici aracı alıntıdır: 🅐 iddiası promptun cümlesini,
+    # 🅑 iddiası "promptta bunun yerine ne yazıyor"u taşımak zorundadır.
+    # Alıntısız satır bir gözlem olabilir ama ATIF değildir ve ders üretemez.
+    if R["mercek"] in URETIM_SADAKATI_MERCEKLER:
+        m_led = re.search(r"CONFORMANCE LEDGER(.*?)(?=\n#|\Z)", metin, re.S)
+        if m_led:
+            satirlar = [l for l in m_led.group(1).split("\n")
+                        if l.strip().startswith("|") and "---" not in l]
+            veri = [l for l in satirlar[1:] if l.count("|") >= 5]
+            # 🅑'nin meşru cevabı alıntı DEĞİLDİR: "promptta karşılığı yok" da bir
+            # beyandır ve rubrik onu açıkça istiyor. Kapı ikisini de kabul eder,
+            # HİÇBİRİNİ taşımayan satırı düşürür.
+            BEYAN = re.compile(r"no corresponding line|instead|karşılığı yok|yerine", re.I)
+            alintisiz = [l for l in veri
+                         if not re.search(r"[\"'\u201c\u201d\u2018\u2019`]\s*\S", l)
+                         and not BEYAN.search(l)]
+            if veri and alintisiz:
+                B.append(Bulgu("ŞARTLI",
+                               f"CONFORMANCE LEDGER: {len(alintisiz)}/{len(veri)} satır ALINTISIZ",
+                               "Alıntısız satır ATIF taşıyamaz: 🅐 promptun cümlesini, 🅑 promptun "
+                               "bunun yerine ne dediğini yazmak zorundadır. Bu satırlar düşer; "
+                               "ders siparişine de girmez."))
+            if veri and len(alintisiz) == len(veri):
+                B.append(Bulgu("GEÇERSİZ", "⑬ raporunda HİÇBİR bulgu alıntı taşımıyor",
+                               "Bu, promptla değil ekranla konuşan bir rapordur. T13'e satır girmez."))
+
+    # ①.13 DERS SİPARİŞİ KAPISI [⑬ UYUM] — kilit cümlesi FİLME ÖZEL olamaz
+    # Bu merceğin ürünü sonraki filmin kilididir; "S07'deki gibi" diye yazılan
+    # bir kilit, o filmi görmemiş birine hiçbir şey söylemez ve derse dönüşemez.
+    if R["mercek"] in URETIM_SADAKATI_MERCEKLER:
+        m_ders = re.search(r"LESSON ORDERS(.*?)(?=\n#|\Z)", metin, re.S)
+        if m_ders:
+            d_satir = [l for l in m_ders.group(1).split("\n")
+                       if l.strip().startswith("|") and "---" not in l and l.count("|") >= 4]
+            ozel = [l for l in d_satir[1:] if re.search(r"\bS\d{1,2}\b", l)]
+            if ozel:
+                B.append(Bulgu("ŞARTLI",
+                               f"DERS SİPARİŞİ: {len(ozel)} satır SAHNE NUMARASI taşıyor",
+                               "Kilit cümlesi sonraki filmin yazarına gider; o kişi bu filmi görmedi. "
+                               "Sahne numarası, film adı ve 'S07'deki gibi' ifadesi kilit satırından "
+                               "çıkarılır — kanıt sütununda kalabilir."))
+
     # ① SPEC KAPISI
     if spec_metin is not None and R["mercek"] in MOD_D_MERCEKLER and R["mod"] != "D":
         if R["mercek"] in PLAN_SADAKATI_MERCEKLER:
@@ -517,11 +743,11 @@ def rapor_denetle(yol, spec_metin=None, hook=10.0, klip=10.0, faz=None):
                            f"⑨-⑫ PLAN SADAKATİ MERCEĞİ mod {R['mod'] or '?'} koşulmuş → koşu GEÇERSİZ [D190 · D184]",
                            "Bu dörtlü belgesiz koşulduğunda ekrandan bir plan uydurur ve kusuru NİYET sanıp "
                            "puanlar. Rapor karantinadadır: T9-T12'ye satır girmez, 00_INDEX'te hücre ❌ KALIR, "
-                           "hiçbir bulgusu ders/sipariş üretmez. Koşu PAKET_9..12 ile mod D tekrarlanır."))
+                           "hiçbir bulgusu ders/sipariş üretmez. Koşu, rubriğin başına SPEC yapıştırılarak mod D tekrarlanır."))
         else:
             B.append(Bulgu("TEKRAR", f"SPEC dosyası VAR, rapor mod {R['mod'] or '?'} → koşu TEKRARLANIR [D129]",
                            "ham rapor 02/'ye düşer, T tablosuna satır YAZILMAZ, kesme listesi / REMOVE / "
-                           "yeniden üretim UYGULANMAZ. Paket: qa-isle/scripts/rubrik_paketle.sh <film klasörü>"))
+                           "yeniden üretim UYGULANMAZ. Mod D: _KAYNAK/ rubriği + <FILM>_QA_SPEC.md AYNI mesajda, SPEC başta."))
     elif spec_metin is not None and R["mercek"] not in MOD_D_MERCEKLER:
         B.append(Bulgu("NOT", "bu merceğe belge verilmez — mod V tasarımdır; FLAGS koşudan SONRA SPEC C bloğundan cevaplanır"))
 
@@ -567,10 +793,46 @@ def rapor_denetle(yol, spec_metin=None, hook=10.0, klip=10.0, faz=None):
         B.append(Bulgu("NOT", "⛔ FAZ'ın kendi rubriği var mı? [D185]",
                        "10-20 dk hattında QA birimi FAZDIR: `<FAZ>/FAZ_nn_QA_PROMPT.md`. "
                        "Varsa genel mercek yerine O koşulur; yoksa önce O yazılır."))
+    # ①.11 BÖLÜM KAPISI [13.09.2026 · KILAVUZ_REHBERI §2.6/§2.7] — yarım masterda
+    # uç kategoriler ölçülemez. Faz kapısıyla aynı mekanizma, farklı maske:
+    # bölümün KONUMU hangi ucun dosyada olmadığını söyler.
+    bolum_rx = None
+    if bolum:
+        b_n, b_m = bolum
+        if b_n == 1 and b_m > 1:
+            sozluk, konum = BOLUM_BAS_GOREMEZ, "BAŞ bölüm — filmin SONU bu dosyada değil"
+        elif b_n == b_m:
+            sozluk, konum = BOLUM_SON_GOREMEZ, "SON bölüm — filmin BAŞI bu dosyada değil"
+        else:
+            sozluk, konum = FAZ_OLCULEMEZ, "ORTA bölüm — ne baş ne son bu dosyada"
+        bolum_rx = sozluk.get(R["mercek"])
+        if bolum_rx:
+            vuran = [r["ad"] for r in rows if r["tip"] == "sayi" and bolum_rx.match(r["ad"])]
+            if vuran:
+                B.append(Bulgu("ŞARTLI",
+                               f"BÖLÜM KAPISI — {len(vuran)} kategori BÖLÜM {b_n}/{b_m}'de ölçülemez [§2.6]",
+                               f"{konum} · sayı taşıyamaz: {' · '.join(vuran)}. Bu hücreler `—` olur, "
+                               "ortalama yeniden hesaplanır; kesme listesi ve yeniden sıralama UYGULANMAZ "
+                               "(kesme filmin kurgusudur, bölüm raporunun yetkisi değil)."))
+            else:
+                B.append(Bulgu("NOT", f"BÖLÜM {b_n}/{b_m} girdisi — {konum}",
+                               "uç kategoriler zaten sayı taşımıyor; maske uygulanacak hücre yok"))
+        else:
+            B.append(Bulgu("NOT", f"BÖLÜM {b_n}/{b_m} girdisi — {konum}",
+                           "bu merceğin kategorileri bölüm ölçeğinde geçerli; ④ ⑨ ⑫'nin uç kategorileri değildir"))
+        if R["mercek"] == "② DEVAMLILIK":
+            B.append(Bulgu("NOT", "⛔ BÖLÜM SINIRI KÖR NOKTASI [§2.6]",
+                           "② sınır çiftini (son sahne ↔ sonraki bölümün ilk sahnesi) hiçbir yarım masterda "
+                           "yan yana GÖREMEZ. Çift SPEC B'nin sınır satırından ELLE KAREYLE kapanır "
+                           "(①.10 göz kapısı kalıbı); kapanmadan parti kapanmaz."))
     R["rows"] = rows
-    if not rows:
-        B.append(Bulgu("GEÇERSİZ", "SCORES SUMMARY tablosu okunamadı — hücre yok, ortalama doğrulanamaz"))
-        R["karar"] = "GEÇERSİZ"
+    kesik, sebep = kesik_mi(metin, rows)
+    if kesik:
+        B.append(Bulgu("KESİK", f"KESİK KOŞU — {sebep}",
+                       "Koşu değil: medya yüklenmemiş / çıktı yarıda kesilmiş. Tabloya girmez, partiyi "
+                       "düşürmez, frekansa girmez; aynı mercek YENİDEN koşulur. Yeni gelen kesik çıktı "
+                       "`<FILM>_<MERCEK>_KESIK_HAM.md` adıyla kaydedilir [14.09.2026]."))
+        R["karar"] = "KESİK"
         return R
 
     ham_sayi = [r for r in rows if r["tip"] == "sayi" and not NEGATIF_SAYIM.search(r["ad"])]
@@ -601,6 +863,11 @@ def rapor_denetle(yol, spec_metin=None, hook=10.0, klip=10.0, faz=None):
             r["tip"], r["not"] = "dash", "faz ölçeği→—"
             duzeltme.append(f"{r['ad']} {r['deger']:g}/10 → — "
                             f"(faz ölçeğinde ölçülemez: hook/final/tutundurma) [D185]")
+        elif bolum_rx is not None and bolum_rx.match(r["ad"]):
+            # [§2.6 · 13.09.2026] aynı bağlayıcılık, bölüm maskesiyle
+            r["tip"], r["not"] = "dash", "bölüm ölçeği→—"
+            duzeltme.append(f"{r['ad']} {r['deger']:g}/10 → — "
+                            f"(bölüm {bolum[0]}/{bolum[1]}: bu uç dosyada yok) [§2.6]")
         elif KAYNAKSIZ.search(r["issue"]):
             r["tip"], r["not"] = "dash", "kaynaksız→—"
             duzeltme.append(f"{r['ad']} {r['deger']:g}/10 → — (issue: \"no in-scope source\") [D131]")
@@ -648,6 +915,18 @@ def rapor_denetle(yol, spec_metin=None, hook=10.0, klip=10.0, faz=None):
     R["son_ort"] = round(R["son_sum"] / R["son_n"], 1) if R["son_n"] else None
     R["ham"] = (ham_n, ham_sum, ham_ort)
 
+    # ①.13 HÜKÜM [14.09.2026 · FAZ 1] — VERDICT satırı var mı, rubriğin kapalı listesinde mi
+    R["verdict"] = verdict_oku(metin)
+    R["verdict_sozlukte"] = verdict_sozlukte(metin, R["mercek"])
+    if R["verdict_sozlukte"] is False:
+        if R["verdict"] is None:
+            B.append(Bulgu("ŞARTLI", "①.13 HÜKÜM yok — `VERDICT:` satırı bulunamadı",
+                           "Rubrik kapalı liste verir; hükümsüz rapor frekans sayımına girmez, tabloya ŞARTLI girer"))
+        else:
+            B.append(Bulgu("ŞARTLI", f"①.13 HÜKÜM sözlük dışı: \"{R['verdict'][:60]}\"",
+                           f"{R['mercek']} listesi: " + " / ".join(VERDICT_SOZLUK[R["mercek"]]) +
+                           " — ders_frekans yalnız listedeki hükmü sayar"))
+
     # ①.5 TALLY
     if R["tally"]:
         y = R["yazili"]
@@ -655,8 +934,7 @@ def rapor_denetle(yol, spec_metin=None, hook=10.0, klip=10.0, faz=None):
         if yz != R["tally"]:
             B.append(Bulgu("ŞARTLI", f"SEVERITY TALLY {R['tally']} ≠ yazılı etiketler {yz} (🔴,🟠,🟡)",
                            "verdict bu tally'den türetildi → REGENERATE / kesme hükmü UYGULANMAZ [D161]"))
-    elif any(R["yazili"].values()):
-        B.append(Bulgu("NOT", f"SEVERITY TALLY satırı yok; yazılı etiketler {R['yazili']}"))
+    # tally satırı yoksa: 14.09.2026 sözleşmesi — model saymaz, betik sayar; NOT bile yok
 
     # ④ ŞERİT — uzunluk = kesme + 1 (kart hariç)
     if R["serit"] and R["kesme"]:
@@ -681,6 +959,27 @@ def rapor_denetle(yol, spec_metin=None, hook=10.0, klip=10.0, faz=None):
                                "okunur + kısmi + okunmaz, defterdeki beat sayısını vermeli"))
         if R["beat_dizi"] and b_top == 0 and re.search(r"[Apx]", R["beat_dizi"]):
             B.append(Bulgu("ŞARTLI", "BEATS COUNTED 0 ama BEAT STRING beat gösteriyor", "ikisinden biri yanlış"))
+
+    # ⑭ PURPOSE STRING · ⑮ VECTOR STRING — uzunluk = kesme + 1 (14.09.2026)
+    for ad, dizi in (("PURPOSE STRING", R["purpose_dizi"]), ("VECTOR STRING", R["vector_dizi"])):
+        if dizi and R["kesme"]:
+            bek = R["kesme"] + 1
+            if len(dizi) not in (bek, bek - 1, bek - 2):
+                B.append(Bulgu("ŞARTLI", f"{ad} {len(dizi)} hane, kesme+1 = {bek}",
+                               "dizi sahne başına bir hanedir; tutmuyorsa defter ya da kesme sayımı yanlış"))
+    if R["mercek"] == "⑭ HAREKET":
+        m_top = ilk_sayi(alan(metin, "MOVEMENTS LOGGED"))
+        m_x = ilk_sayi(alan(metin, "PURPOSELESS MOVEMENTS"))
+        if m_top is not None and m_x is not None and m_x > m_top:
+            B.append(Bulgu("ŞARTLI", f"PURPOSELESS MOVEMENTS {m_x} > MOVEMENTS LOGGED {m_top}", "ikisinden biri yanlış"))
+    if R["mercek"] == "⑮ YÖN":
+        a_top = ilk_sayi(alan(metin, "ACTS LOGGED"))
+        m_am = re.search(r"ACTS MISSED[:\s]*(\d+)\D+(\d+)\D+(\d+)\D+(\d+)\D+(\d+)", metin)
+        if a_top and m_am:
+            parca = sum(int(g) for g in m_am.groups())
+            if parca != a_top:
+                B.append(Bulgu("ŞARTLI", f"ACTS MISSED toplamı {parca} ≠ ACTS LOGGED {a_top}",
+                               "HIT + MISS + UNKNOWN + NO TARGET + FLIP, defterdeki satır sayısını vermeli"))
 
     # ⑨⑩⑪ PLAN DİZİLERİ — uzunluk = kesme + 1 · ⑨'da plan iskeletiyle kıyas [D184]
     if R["mercek"] in DIZI_MERCEKLER:
@@ -784,19 +1083,27 @@ SAHNE_BASLIK = re.compile(r"^#{1,4}\s.*\bSAHNE\s+(\d{1,3})\b", re.M)
 PLAN_DISI = re.compile(r"QA_|DERSLER|RAPOR|_QA|README|INDEX", re.I)
 
 
-def plan_sahne_sayisi(film_dir):
+def plan_sahne_sayisi(film_dir, bolum=None):
     """[D188] Planın kendi sahne başlıklarını sayar: `## 🎬 SAHNE 109 — ...`
 
     Raporlar birbirini doğrular ama HEPSİ aynı makarayı izler; eksik teslim
     oybirliğiyle onaylanabilir. Planın sahne sayısı, parti dışındaki TEK
-    referanstır."""
+    referanstır.
+
+    bolum=(n, m) [13.09.2026 · §2.6]: QA birimi BÖLÜM olan filmde makara yarım
+    masterdır; plan tarafı da YALNIZ `<FILM>_BOLUM_n.md` olur. Bütün dosyalar
+    sayılsaydı kapı her yarımda YANLIŞ ateşlerdi (plan 36, makara 18)."""
     if not film_dir or not Path(str(film_dir)).is_dir():
         return None, None
     # ⛔ MAX DEĞİL BİRLEŞİM: bir film birden çok bölüm dosyasına yayılabilir
     # (BOLUM_1 13 sahne + BOLUM_2 7 sahne = 20). Sahne NUMARALARI birleştirilir;
     # numaralar dosyalar arası benzersiz olduğu için tekrar kendiliğinden erir.
     tum, kaynaklar = set(), []
-    for f in sorted(Path(str(film_dir)).glob("*.md")):
+    if bolum:
+        dosyalar = sorted(Path(str(film_dir)).glob(f"*_BOLUM_{bolum[0]}.md"))
+    else:
+        dosyalar = sorted(Path(str(film_dir)).glob("*.md"))
+    for f in dosyalar:
         if PLAN_DISI.search(f.name):
             continue
         no = {int(m) for m in SAHNE_BASLIK.findall(
@@ -862,6 +1169,37 @@ def capraz(sonuclar, olcum=None, plan_sahne=None, plan_kaynak=None):
         v = [k for _, k in sah]
         if max(v) - min(v) > 1:
             B.append(Bulgu("ŞARTLI", f"⑤ sahne sayıları ayrışıyor: " + " · ".join(f"{m} {k}" for m, k in sah)))
+
+    # ⑤ SÜRE SATIRI [D205 · 13.09.2026] — ⑩ 60 s · ⑫ 25 s · on mercek 124 s yazdı,
+    # kapı ✅ verdi: kesme · sahne · şerit · replik karşılaştırılıyordu, SÜRE hiç.
+    # Süre bir DOSYA özelliğidir; aynı makaraya bakan iki mercek %10'dan fazla
+    # ayrışamaz. Ölçüm (--olcum-sure) hakemdir; yoksa ORTANCA referanstır.
+    o_sur = olcum.get("sure")
+    sur = [(r["mercek"], float(r["sure"])) for r in sonuclar if r["sure"]]
+    if sur and (len(sur) >= 2 or o_sur):
+        vals = sorted(v for _, v in sur)
+        ref = float(o_sur) if o_sur else vals[len(vals) // 2]
+        ref_ad = "ÖLÇÜM" if o_sur else f"ortanca ({len(sur)} mercek)"
+        tol = max(5.0, 0.10 * ref)
+        sapan = [(m, v) for m, v in sur if abs(v - ref) > tol]
+        satir = " · ".join(f"{m} {v:g}" for m, v in sur)
+        if sapan:
+            for r in sonuclar:
+                if r["sure"] and abs(float(r["sure"]) - ref) > tol:
+                    r["bulgular"].append(Bulgu(
+                        "ŞARTLI",
+                        f"süre {float(r['sure']):g} s ≠ {ref_ad} {ref:g} s (tolerans ±{tol:g}) → ZAMAN EKSENİ uydurma sayılır [D205]",
+                        "zaman kodları, DROP-OFF saniyeleri ve sahne aralıkları bu rapordan ALINMAZ; "
+                        "mercek temiz oturumda yeniden koşulur [D112 · D125]"))
+                    if r["karar"] == "GO":
+                        r["karar"] = "ŞARTLI"
+            B.append(Bulgu("ŞARTLI",
+                           f"⑤ SÜRE — {ref_ad} {ref:g} s; sapan: " +
+                           " · ".join(f"{m} {v:g}" for m, v in sapan) + " [D205]",
+                           satir + "\n        süre bir DOSYA özelliğidir; aynı makaraya bakan iki merceğin süresi "
+                                   "%10'dan fazla ayrışamaz — sapan merceğin zaman ekseni 🚨, parti düşmez"))
+        else:
+            B.append(Bulgu("NOT", f"⑤ süre ekseni doğrulandı — {len(sur)} mercek, {ref_ad} {ref:g} s (±{tol:g})"))
 
     # ⑦ ORTAK DEFTER KAPISI [D110] — künyesi birebir aynı iki rapor tek ölçümdür
     kunye, kodsuz = {}, set()
@@ -1016,7 +1354,7 @@ def capraz(sonuclar, olcum=None, plan_sahne=None, plan_kaynak=None):
 
 # ─── ÇIKTI ─────────────────────────────────────────────────────────
 def tabloya(r):
-    if r["karar"] in ("GEÇERSİZ", "TEKRAR"):
+    if r["karar"] in ("KESİK", "GEÇERSİZ", "TEKRAR"):
         return "—"
     if r["son_ort"] is None:
         return "— (sayı taşıyan hücre yok)"
@@ -1029,7 +1367,7 @@ def tabloya(r):
 
 
 def yazdir(r):
-    isaret = {"GO": "✅", "ŞARTLI": "⚠️ ", "TEKRAR": "⛔", "GEÇERSİZ": "🚨"}[r["karar"]]
+    isaret = {"GO": "✅", "ŞARTLI": "⚠️ ", "TEKRAR": "⛔", "GEÇERSİZ": "🚨", "KESİK": "✂️"}[r["karar"]]
     print(f"\n{'═' * 67}\n{isaret} {r['karar']}  ·  {r['mercek']}  ·  {r['yol'].name}\n{'═' * 67}")
     n, s, o = r.get("ham", (None, None, None))
     i_n, i_s, i_d, i_o = r["iddia"]
@@ -1044,12 +1382,16 @@ def yazdir(r):
     print(f"   ▶ TABLOYA GİRECEK SAYI: {tabloya(r)}")
 
 
-def rapor_yaz(sonuclar, cb, kok, film_adi):
+def rapor_yaz(sonuclar, cb, kok, film_adi, bolum=None):
     hedef = kok / "RAPORLAR"
     hedef.mkdir(exist_ok=True)
     bugun = date.today().strftime("%d.%m.%Y")
-    ad = f"{film_adi or 'RAPOR'}_{date.today().strftime('%Y%m%d')}_RAPOR_KONTROL.md"
-    L = [f"# 🧮 RAPOR KONTROL — {film_adi or '(film adı verilmedi)'}", "",
+    # [§2.6] bölüm koşusu kendi dosyasına yazılır — B1 ile B2 aynı gün
+    # birbirinin üstüne yazmasın (sayac.sh `<FILM>_*_RAPOR_KONTROL.md` ile bulur)
+    ek = f"_B{bolum[0]}" if bolum else ""
+    ad = f"{film_adi or 'RAPOR'}{ek}_{date.today().strftime('%Y%m%d')}_RAPOR_KONTROL.md"
+    L = [f"# 🧮 RAPOR KONTROL — {film_adi or '(film adı verilmedi)'}"
+         + (f" · BÖLÜM {bolum[0]}/{bolum[1]}" if bolum else ""), "",
          f"> **Tarih:** {bugun} · betikten üretildi, elle düzenlenmez · kaynak: `rapor_kontrol.py`", "",
          "| mercek | dosya | karar | iddia n/Σ/ort | hücreler n/Σ/ort | düzeltme sonrası | TABLOYA |",
          "|---|---|:--:|---|---|---|---|"]
@@ -1072,18 +1414,50 @@ def rapor_yaz(sonuclar, cb, kok, film_adi):
     return hedef / ad
 
 
+DERS_DONUSU = re.compile(r"^##\s+🔁\s+DERS DÖNÜŞÜ", re.M)
+
+
+def ders_donusu_kontrol(film_adi):
+    """①.12 DERS DÖNÜŞÜ [14.09.2026 · reform FAZ 4 · kontrat §4].
+
+    Her QA koşusunun film kaydı iki satırla biter: hangi ESKİ ders tekrar etti
+    (TEKRAR sayacı +1) ve TEK yeni aday (ya da "yok — gerekçe"). Bölüm yoksa NOT —
+    eski kayıtlar kırılmaz; yeni koşuda kayıt zinciri tamamlanmamış sayılır.
+    """
+    kayit = Path(__file__).resolve().parent.parent / "FILM_QA_RAPORLARI" / "01_FILM_RAPORLARI" / f"{film_adi}.md"
+    if not kayit.exists():
+        print(f"  · ①.12 DERS DÖNÜŞÜ: film kaydı yok ({kayit.name}) — kayıt zinciri adım 2 bekliyor")
+        return
+    metin = kayit.read_text(encoding="utf-8", errors="replace")
+    if DERS_DONUSU.search(metin):
+        blok = metin[DERS_DONUSU.search(metin).end():].split("\n## ", 1)[0]
+        tekrar = re.search(r"^\s*(?:[-*]\s*)?\**TEKRAR:?\**\s*[:：]?\s*(.+)$", blok, re.M)
+        aday = re.search(r"^\s*(?:[-*]\s*)?\**ADAY:?\**\s*[:：]?\s*(.+)$", blok, re.M)
+        eksik = [a for a, m in (("TEKRAR", tekrar), ("ADAY", aday)) if not m]
+        if eksik:
+            print(f"  · ①.12 DERS DÖNÜŞÜ: bölüm var ama satır eksik: {' · '.join(eksik)} (kontrat §4)")
+        else:
+            print(f"  ✅ ①.12 DERS DÖNÜŞÜ: TEKRAR {tekrar.group(1).strip()[:60]} · ADAY {aday.group(1).strip()[:60]}")
+    else:
+        print(f"  · ①.12 DERS DÖNÜŞÜ bölümü yok: {kayit.name} — kayıt zinciri adım 2: "
+              f"`## 🔁 DERS DÖNÜŞÜ` (TEKRAR · ADAY) ÜÇ SATIRLIK SONUÇ'tan önce [kontrat §4]")
+
+
 def main():
     argv = sys.argv[1:]
     if not argv or "-h" in argv or "--help" in argv:
         print(__doc__ or "")
         print("KULLANIM: rapor_kontrol.py <rapor.md> [...] [--film <klasör>] [--hook 10] [--klip 10] [--rapor]")
         print("           [--t-tablo]  ← GEÇEN satırı T tablosuna BETİK yazar [④ · 04.09.2026]")
-        print("           [--olcum-kesme <n>] [--olcum-sahne <n>]  ← ⑪ ölçümü hakem yapar")
+        print("           [--olcum-kesme <n>] [--olcum-sahne <n>] [--olcum-sure <s>]  ← ⑪ ölçümü hakem yapar")
         print("           [--olcum-filigran VAR|YOK] [--olcum-lufs <n>]  ← D177 · verilmezse eksen ÖLÇÜLMEDİ")
+        print("           [--bolum n/m]  ← 6/8 dk hattı: QA birimi BÖLÜM — ①.9 yalnız BOLUM_n'i sayar,")
+        print("                            ①.11 uç kategorileri `—` yapar (KILAVUZ_REHBERI §2.6/§2.7)")
         return 1
     hook, klip, film_dir, rapor, dosyalar = 10.0, 10.0, None, False, []
     t_yaz = False
     faz_zorla = None
+    bolum = None
     olcum = {}
     i = 0
     while i < len(argv):
@@ -1102,6 +1476,8 @@ def main():
             olcum["kesme"] = int(argv[i + 1]); i += 2
         elif a == "--olcum-sahne":
             olcum["sahne"] = int(argv[i + 1]); i += 2
+        elif a == "--olcum-sure":
+            olcum["sure"] = float(argv[i + 1].replace(",", ".")); i += 2
         elif a == "--olcum-filigran":
             olcum["filigran"] = argv[i + 1]; i += 2
         elif a == "--olcum-lufs":
@@ -1110,6 +1486,11 @@ def main():
             faz_zorla = argv[i + 1] if i + 1 < len(argv) and not argv[i + 1].startswith("-") \
                         else "operatör beyanı"
             i += 2 if faz_zorla != "operatör beyanı" else 1
+        elif a == "--bolum":                                 # [§2.6 · 13.09.2026]
+            m_b = BOLUM_ARG.match(argv[i + 1] if i + 1 < len(argv) else "")
+            if not m_b or int(m_b.group(1)) < 1 or int(m_b.group(1)) > int(m_b.group(2)):
+                print("⛔ --bolum n/m biçiminde olmalı (örn. 1/2 · 2/2), 1 ≤ n ≤ m"); return 2
+            bolum = (int(m_b.group(1)), int(m_b.group(2))); i += 2
         else:
             dosyalar.append(Path(a)); i += 1
 
@@ -1135,18 +1516,28 @@ def main():
         faz = faz_zorla or faz_mi(film_dir, govde_al(ilk))
     if faz:
         print(f"FAZ: {faz}  → ④/⑨/⑫'nin film ölçekli kategorileri SAYI TAŞIMAZ [D185]")
+    if bolum and faz:
+        print("⛔ --bolum ile FAZ girdisi aynı anda olamaz: bölüm bir UÇ segmenttir, faz bir ORTA segment."); return 2
+    if bolum:
+        uc = "BAŞ" if bolum[0] == 1 and bolum[1] > 1 else ("SON" if bolum[0] == bolum[1] else "ORTA")
+        print(f"BÖLÜM: {bolum[0]}/{bolum[1]} ({uc})  → ①.9 yalnız *_BOLUM_{bolum[0]}.md sayılır · "
+              f"①.11 uç kategoriler SAYI TAŞIMAZ [KILAVUZ_REHBERI §2.6]")
 
     sonuclar = []
     for y in dosyalar:
         if not y.is_file():
             print(f"⚠️  bulunamadı: {y}"); continue
-        sonuclar.append(rapor_denetle(y, spec_metin, hook, klip, faz))
+        sonuclar.append(rapor_denetle(y, spec_metin, hook, klip, faz, bolum))
     if not sonuclar:
         return 1
-    plan_sahne, plan_kaynak = plan_sahne_sayisi(film_dir)
+    plan_sahne, plan_kaynak = plan_sahne_sayisi(film_dir, bolum)
     if plan_sahne:
         print(f"PLAN: {plan_sahne} sahne ({plan_kaynak}) → ①.9 teslim kapısı koşacak [D188]")
-    cb = capraz(sonuclar, olcum, plan_sahne, plan_kaynak) if len(sonuclar) >= 2 else []
+    elif bolum and film_dir:
+        print(f"⚠️  PLAN: *_BOLUM_{bolum[0]}.md'de `## 🎬 SAHNE n` başlığı yok → ①.9 teslim kapısı KOŞMAYACAK")
+    # ✂️ KESİK koşular ⑤ çaprazına girmez: yarım raporun sahne/kesme sayısı partiyi düşüremez
+    tam = [r for r in sonuclar if r["karar"] != "KESİK"]
+    cb = capraz(tam, olcum, plan_sahne, plan_kaynak) if len(tam) >= 2 else []
     for r in sonuclar:
         yazdir(r)
 
@@ -1155,7 +1546,7 @@ def main():
         for b in cb:
             print(b)
         if any(b.seviye == "GEÇERSİZ" for b in cb):
-            for r in sonuclar:
+            for r in tam:
                 r["karar_tekil"] = r["karar"]
                 r["karar"] = "GEÇERSİZ"
             print("   ▶ parti GEÇERSİZ: hiçbir satır tabloya girmez; ŞERİT ve REPLİK eksenleri yine de okunur [D121]")
@@ -1163,26 +1554,30 @@ def main():
     kararlar = [r["karar"] for r in sonuclar]
     if any("karar_tekil" in r for r in sonuclar):
         print("   tekil kararlar (parti düşmeden önce): " +
-              " · ".join(f"{r['mercek']} {r['karar_tekil']}" for r in sonuclar))
+              " · ".join(f"{r['mercek']} {r.get('karar_tekil', r['karar'])}" for r in sonuclar))
     print(f"\n{'═' * 67}\n  TOPLAM {len(sonuclar)} rapor · 🚨 {kararlar.count('GEÇERSİZ')} GEÇERSİZ · "
           f"⛔ {kararlar.count('TEKRAR')} TEKRAR · ⚠️  {kararlar.count('ŞARTLI')} ŞARTLI · ✅ {kararlar.count('GO')} GO"
-          f"\n{'═' * 67}")
+          + (f" · ✂️ {kararlar.count('KESİK')} KESİK (koşu değil — yeniden koşulur)" if 'KESİK' in kararlar else "")
+          + f"\n{'═' * 67}")
     if t_yaz:
         import t_tablo
         kok = Path(__file__).resolve().parent.parent / "FILM_QA_RAPORLARI"
         print(f"\n{'═' * 67}\n  ④ T TABLOSU — betik yazıyor (elle kopyalama yok)\n{'═' * 67}")
         for r in sonuclar:
             k = t_tablo.satir_kur(r, film_dir, spec_var=spec_metin is not None,
-                                  tarih=date.fromtimestamp(r["yol"].stat().st_mtime).strftime("%d.%m"))
+                                  tarih=date.fromtimestamp(r["yol"].stat().st_mtime).strftime("%d.%m"),
+                                  bolum=bolum)
             if k is None:
                 print(f"   ⛔ {r['mercek']}: {r['karar']} → satır YAZILMADI (tablo okuma kuralı)")
                 continue
             print("   " + t_tablo.tabloya_yaz(kok, *k))
 
     if rapor:
-        p = rapor_yaz(sonuclar, cb, Path(__file__).resolve().parent, film_adi)
+        p = rapor_yaz(sonuclar, cb, Path(__file__).resolve().parent, film_adi, bolum)
         print(f"  rapor yazıldı: {p}")
-    if any(k in ("GEÇERSİZ", "TEKRAR") for k in kararlar):
+    if film_adi:
+        ders_donusu_kontrol(film_adi)
+    if any(k in ("GEÇERSİZ", "TEKRAR", "KESİK") for k in kararlar):
         return 2
     if "ŞARTLI" in kararlar:
         return 1

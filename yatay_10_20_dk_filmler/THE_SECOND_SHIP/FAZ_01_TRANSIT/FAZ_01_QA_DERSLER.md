@@ -2,7 +2,7 @@
 
 > Koşu: 07.08.2026 · Model: Gemini · Girdi: 10 sahnelik derleme reel (100 s)
 > Rubrik: `FAZ_01_QA_PROMPT.md` · Ham çıktı:
-> `kilavuzlar_ve_sistem_dosyalari/FILM_QA_RAPORLARI/02_HAM_RAPORLAR/THE_SECOND_SHIP_FAZ01_HAM.md`
+> `kilavuzlar_ve_sistem_dosyalari/FILM_QA_RAPORLARI/02_HAM_RAPORLAR/THE_SECOND_SHIP/THE_SECOND_SHIP_FAZ01_HAM.md`
 >
 > **Raporun skoru 5.4/10 — ama bu sayı OLDUĞU GİBİ OKUNMAZ.** Yedi RED'in
 > dördü tek bir kurgu hatasına, biri rubriğin kendi hatasına iniyor.

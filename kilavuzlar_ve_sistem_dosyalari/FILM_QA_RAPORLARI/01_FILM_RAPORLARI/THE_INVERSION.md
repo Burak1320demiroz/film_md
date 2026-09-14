@@ -1,11 +1,11 @@
 # 🔍 THE INVERSION — QA KAYDI
 
-> **Kaynak dosya:** `yatay_2_4_dk_filmler_uzay/THE_INVERSION/THE_INVERSION_PLANET_FILM.md`
+> **Kaynak dosya:** `yatay_2_dk_filmler/THE_INVERSION/THE_INVERSION_PLANET_FILM.md`
 > **Teknik QA (VIDEO_QA):** ❌ hiç yapılmadı
 > **Senaryo QA (SENARYO_QA):** ✅ 5.0/10 · 31.07.2026 · ham rapor
-> `../02_HAM_RAPORLAR/THE_INVERSION_SENARYO_HAM.md`
+> `../02_HAM_RAPORLAR/THE_INVERSION/THE_INVERSION_SENARYO_HAM.md`
 > **Mantık QA (MANTIK_QA):** ✅ **3.0/10** · 31.07.2026 · ham rapor
-> `../02_HAM_RAPORLAR/THE_INVERSION_MANTIK_HAM.md`
+> `../02_HAM_RAPORLAR/THE_INVERSION/THE_INVERSION_MANTIK_HAM.md`
 >
 > Teknik puanı hâlâ yok. Ama iki bağımsız rubrik aynı filmi ölçtü ve
 > **ikisi de aynı 40 saniyelik tekrar döngüsünü buldu** — biri hikaye

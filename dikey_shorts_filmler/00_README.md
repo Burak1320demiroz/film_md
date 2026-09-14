@@ -416,7 +416,7 @@ Eski dosyalar **6 sahne × 8 s = 48 saniye** ızgarasıyla yazıldı; **25.08.20
 > 🗑️ **17.08.2026 — THE COLD BURN FRAGMAN bu klasörden SİLİNDİ.**
 > `THE_COLD_BURN_FRAGMAN_DIKEY_SHORTS.md` (09.08.2026 · mekanik ÖLÇEK
 > MERDİVENİ) kaldırıldı; filmin tek dikey fragmanı artık kaynak filmin
-> klasöründedir: `yatay_3_5_dk_filmler/THE_COLD_BURN/THE_COLD_BURN_FRAGMAN_DIKEY.md`
+> klasöründedir: `yatay_4_dk_filmler/THE_COLD_BURN/THE_COLD_BURN_FRAGMAN_DIKEY.md`
 > (mekanik KAPANAN KAPILAR). Klasörde artık **fragman dosyası yoktur** ve
 > dikey satır sayısı 13 → 12'ye indi; 00_INDEX ve sayac.sh buna göre
 > güncellendi.
@@ -668,7 +668,7 @@ NINE_MINUTES · WALKING_DAY
 > ⛔ **ÜRETİM SIRASI NORMAL DEĞİL: S2 İLK ÜRETİLİR.** Halka orada kapalı
 > bir eğri olarak çıkmıyorsa diğer beş sahne üretilmez.
 > ⚠️ **AYNI GÜN ÇAKIŞMASI, dürüst kayıt:** bu dosya yazılırken depoda
-> eşzamanlı olarak `yatay_3_5_dk_filmler/THE_SKYLIGHT/` yazıldı ve o film
+> eşzamanlı olarak `yatay_4_dk_filmler/THE_SKYLIGHT/` yazıldı ve o film
 > de Mars'ta bir lav tüpü tavan çöküğünde geçiyor. Format, mercek, novum,
 > toz bütçesi ve palet TAM AYRI (karşılaştırma tablosu film dosyasının
 > başında); karar proje sahibinindir.

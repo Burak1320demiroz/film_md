@@ -15,12 +15,12 @@
 > `yatay_10_20_dk_filmler/THE_SECOND_SHIP/FRAGMAN_DIKEY_3.md`
 > (aynı filmin **ÜÇÜNCÜ** dikey teaser'ı · 6 vuruş · mekanik KUSUR YOK ·
 > ⚠️ üretim BEKLİYOR, prompt kontrol GO → §1.3b'nin üçüncü teslim notu)
-> `yatay_3_5_dk_filmler/THE_COLD_BURN/THE_COLD_BURN_FRAGMAN_DIKEY.md`
+> `yatay_4_dk_filmler/THE_COLD_BURN/THE_COLD_BURN_FRAGMAN_DIKEY.md`
 > (dikey · 6 vuruş · mekanik KAPANAN KAPILAR · **kadraj kesişimi**
 > denetimini ekledi → §1.3c)
-> `yatay_3_5_dk_filmler/THE_BLACK_CRADLE/THE_BLACK_CRADLE_FRAGMAN.md`
+> `yatay_4_dk_filmler/THE_BLACK_CRADLE/THE_BLACK_CRADLE_FRAGMAN.md`
 > (dikey · 6 vuruş · mekanik TERS KURALLAR)
-> `yatay_3_5_dk_filmler/THE_BORROWED_WEIGHT/THE_BORROWED_WEIGHT_FRAGMAN_DIKEY.md`
+> `yatay_4_dk_filmler/THE_BORROWED_WEIGHT/THE_BORROWED_WEIGHT_FRAGMAN_DIKEY.md`
 > (dikey · 6 vuruş · mekanik TERAZİ · kaynak filmin I2V hattını fragmana
 > taşıyan ilk teslim · ⚠️ üretim BEKLİYOR, prompt kontrol GO)
 > `yatay_10_20_dk_filmler/YERCEKIMI/YERCEKIMI_FRAGMAN_YATAY.md`

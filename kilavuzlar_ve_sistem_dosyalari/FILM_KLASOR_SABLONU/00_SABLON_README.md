@@ -11,9 +11,13 @@ bash kilavuzlar_ve_sistem_dosyalari/film_klasoru_ac.sh \
 
 ⛔ **ELLE `cp -r` YAPILMAZ (08.09.2026).** Betik dört işi birden yapar ve
 dördü de elle yapılınca kaçıyordu: şablonu kopyalar · dosyaları
-`<FILM>_<ROL>.md` yapar · `00_ANALIZ/05_SAHNE_CALISMALARI/` altına sahne
-sayısı kadar çalışma dosyası damgalar · okuma çizelgesini üretir. Yer
-tutucuları (`<FILM_ADI>` · `<FILM>` · `<NN>`) da o doldurur.
+`<FILM>_<ROL>.md` yapar · `00_ANALIZ/05_SAHNE_CALISMALARI/` altına ≤8
+sahnede sahne başına çalışma dosyası damgalar, >8 sahnede `00_SAHNE_TABLOSU.md`
+üretir (14.09.2026) · okuma çizelgesini üretir. Yer tutucuları (`<FILM_ADI>` ·
+`<FILM>` · `<NN>`) da o doldurur. Kilit sahneler (HOOK · NOVUM · DORUK · BEDEL ·
+FINAL) sonradan `--kilit-sahne <FMT> <FILM> S<nn> <ROL>` ile damgalanır.
+`00_HIKAYE_ONAYI.md` kopyası klasörü YENİ REJİME sokar (`prompt_kontrol.py`
+㉕-㉚); `--analiz-ekle` eski klasöre onu kopyalamaz.
 
 Sahne sayısı sıralama sırasında değişirse:
 ```bash
@@ -37,6 +41,7 @@ uygulanmıyor, kopyalanabilir yapı uygulanıyor.
 
 | Dosya | Ne zaman yazılır | Kaynak kılavuz |
 |---|---|---|
+| `<FILM>_URETIM_DEFTERI.md` | ⛔ YAZIMDA DEĞİL — üretim sırasında (kart B); klip başına bir satır + teslim satırı | `AGENTS.md` kart B · ⑬ UYUM rubriği |
 | `<FILM>_PLAN.md` | akış adım 1-2 | `KILAVUZ_REHBERI` §6 · `TEMA_MUHENDISLIGI` · `ACI_YAYI` |
 | `<FILM>_BOLUM_1.md` | akış adım 3 | `IMAGE_VIDEO_PROMPT_TEMPLATES.md` + §5 negatif çekirdek |
 | `<FILM>_BOLUM_2.md` | akış adım 3 | aynı |

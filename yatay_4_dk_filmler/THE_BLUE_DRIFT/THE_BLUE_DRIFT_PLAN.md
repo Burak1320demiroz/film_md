@@ -97,7 +97,7 @@ Depodaki hiçbir filmde:
 - ❌ Havayla itki yok — kabin atmosferinin son itici olarak harcanması
 - ❌ "Hiçbir şey yapmama"nın dramatize edildiği bir film yok
 
-THE BLUE DRIFT beşini birden getiriyor. `yatay_3_5_dk_filmler`
+THE BLUE DRIFT beşini birden getiriyor. `yatay_4_dk_filmler`
 klasörünün yedinci filmi. ✅ **Format sapması YOK:** klasör standardı
 25 sahne — bu film tam 25 sahne (Hook 9 s + 24 × 10 s = 4:09).
 

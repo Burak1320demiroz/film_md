@@ -1277,3 +1277,89 @@ kendi EN GENİŞ kurulumuna yazmıştı.**
 > göremez) · Ders 172 (novumun yerine tanıdık mekanizma geçer) ·
 > Ders 122 (zaman hesaplanmaz, hesaplatılır) · `ONERME_VE_NOVUM §4①` ·
 > `03_PLAN_ONCESI` B5 BEDEL maddesi.
+
+---
+
+## 🔴 DERS 203: PLANIN REPLİK ENVANTERİ PROMPTA HİÇ GEÇMEDİ — SPEC YEDİ MAKİNE REPLİĞİ İLAN ETTİ, OTUZ PROMPTUN HİÇBİRİNDE TIRNAK YOKTU, FİLM REPLİKSİZ DOĞDU VE ③ SES BUNA 9/10 VERDİ
+
+**KAPI:** BETİK · `PROMPT_KONTROL/prompt_kontrol.py` ㉓ REPLİK ENVANTERİ (klasör modu: SPEC A
+`DIALOGUE LINES: N` ↔ prompt gövdelerinde tırnaklı replik sayısı · 0 → BLOCK · < N → FIX) —
+13.09.2026 · ölçen mercek: ⑬ UYUM (🅑 prompt boşluğu) · ③ SES (`SPOKEN LINES: 0` + SPEC N>0)
+**TEKRAR:** 1 · 13.09.2026 THE STATIC SHADOW · geriye dönük 09.09.2026 THE MIRROR FAUNA
+(SPEC 11 insan repliği · promptta 0 · mod D ③ bir uydurma replik duydu: *"Come front to you take."*)
+
+**Kaynak:** THE STATIC SHADOW QA (13.09.2026) — on iki mercek `LINES HEARD: none`; ③ SES
+`STATE B — NO VOICES, SOUND ONLY`, SFX senk 9/10. Plan `📋 REPLİK ENVANTERİ`: 7 HELIOS satırı
+(S01 · S02 · S06 · S08 · S09 · S11 · S15). SPEC A: `DIALOGUE LINES: 7 · MACHINE 7`.
+`grep -c '"' THE_STATIC_SHADOW_BOLUM_1.md THE_STATIC_SHADOW_BOLUM_2.md` → **0 · 0**.
+`00_ANALIZ/03_SAHNE_SIRALAMASI.md`'de "replik yerleşimi" adımı da boş.
+
+**Sorun:** Replik bu depoda ÜÇ yerde yaşar — plan (envanter), SPEC (sayı + register), prompt
+(tırnak içi, VEO kılavuzu §3). Üçüncüsü olmadan ilk ikisi HİÇBİR ŞEY üretmez: video modeli
+planı görmez. Film repliksiz doğdu ve filmin ÖNERMESİ replikle taşınıyordu — gölge kayması
+sayısı, "dört dakika", "Abort", "Shadow lock stabilized". ④ HİKAYE filmi "manuel yanaşma
+gerilimi" diye okudu; planın sorusu ("500 m'lik kalkan neden yalpalıyor?") ekranda hiç
+sorulmadı. ③'ün 9/10'u yalan değil: mercek belgesizdir, duyduğu sesin planla uyuşmasını
+ölçemez — SPEC'i yalnız ㉓ okur.
+
+⭐ **İkinci vaka geriye dönük ve daha kötü:** THE MIRROR FAUNA (09.09.2026, deponun İLK mod D
+partisi) SPEC'te 11 insan repliği ilan etti, 30 promptun hiçbirinde replik yoktu; model
+1:03'te anlamsız bir cümle uydurdu ve ③ onu tek replik olarak kaydetti. Sekiz mercek mod D
+koştu ve hiçbiri "SPEC 11 diyor, 1 duydum" demedi — çünkü rubrik ③'e SPEC vermez (tasarım).
+
+**ÇÖZÜM — kapı yazım tarafında, QA tarafında değil:**
+
+```
+㉓ prompt_kontrol.py klasör modu (13.09.2026):
+   SPEC A `DIALOGUE LINES: N`  (N = 0 → kapı sessiz)
+   prompt gövdelerinde tırnaklı replik sayısı q  (düz " " ve “ ” · satır sonunu aşabilir · ≤240 karakter)
+   q = 0        → ⛔ BLOCK  "SPEC N replik ilan ediyor, promptlarda tırnaklı replik 0"
+   0 < q < N    → ⚠️ FIX
+KALİBRASYON 38 SPEC · 13.09.2026:
+   gerçek pozitif 2  — STATIC SHADOW 7→0 · MIRROR FAUNA 11→0
+   yanlış pozitif 0  — HEALING GROUND 4=4 · HARD DOCK 8≤18 · WHITE FLOOD 16>15 (yalnız FIX)
+   ⚠️ ilk sürüm satır sonunu aşan tırnağı saymıyordu ve LOSS OF LIFT (1) ile BORROWED WEIGHT
+     (4) BLOCK aldı; ikisinin repliği de promptta VARDI, 78. sütunda kırılmıştı → düzeltildi
+```
+
+⛔ Yazım kuralı (kapının ölçtüğü cümle): **replik prompta tırnak içinde girer; planın envanteri
+prompt DEĞİLDİR.** Bilinçli sessiz filmde SPEC `DIALOGUE LINES: 0` yazar — 7 yazıp 0 vermek,
+SPEC'in ③'e söylediği ilk yalandır.
+
+🔗 [[D122]] (replik zamanı hesaplatılır — önce replik var olmalı) · [[D82]] · [[D129]]
+(SPEC var, mod V) · [[D188]] (aynı filmde teslim eksiği) · `SES_VE_DIYALOG_URETIM_KILAVUZU` §2a
+
+
+---
+
+## 🔴 DERS 214: KADRAJDA OLMAYAN BEDEN TARİF EDİLDİ — "SELF-CONTAINED" BIBLE'IN TAMAMI DEMEK DEĞİLDİR; MODEL YAZILANI KADRAJA SOKAR
+
+**FREKANS:** 3 film + 1 ölçüm · YERÇEKİMİ FAZ 3 (mod V — ADAY-5: kask ×4 + saç ayrıntısı, kapsayan nesne düştü) · THE UPWARD FALL (⑪ ölçüm kapısı 186 s — ADAY-8: WORLD bloğu tam anatomi, tek-uzuv kadrajda iki bacak) · THE HEALING GROUND (S4 kare 45 s — ADAY-9: kolu yazılmayan eldiven kopuk doğdu, ikinci mürettebat okundu) · THE LOCKED_PULSE (13.09.2026 prompt ölçümü, 0 kare: 10/10 close-up/insert promptu tam yüz tarifi taşıyor; promptun %57'si her sahnede aynen tekrar)
+**DEĞİŞEN SATIR:** Her promptun ilk satırı `IN FRAME: face · hands · torso · legs · full body · back | none`; SUBJECT bloğu **yalnız** IN FRAME'dekini tarif eder — yüz kadrajda değilse yüz cümlesi yok, sırt kadrajda değilse sırt cümlesi yok; devamlılık I2V'nin onaylı karesiyle taşınır (`START FRAME:` tek satır)
+**KAPI:** BETİK · `prompt_kontrol.py` ㉖ KADRAJ ENVANTERİ (IN FRAME satırı zorunlu; kadrajda olmayan yüz tarifi → BLOCK — 14.09.2026, yeni rejim)
+**TEKRAR:** 0
+
+**Kaynak:** THE HEALING GROUND S4 (04.09.2026) prompt dosyası + kare 45 s — ADAY-9. Zincir ADAY-5 · 6b · 8 · 9; LOCKED_PULSE ölçümü `TODO_AKIS_VE_DERS_REFORMU.md` TEŞHİS ②.
+
+**Örüntü:** Kural ③ ("BIBLE'a bak atfı yasak, prompt self-contained") Character Bible'ın tamamını her prompta soktu: 75 mm insert'te yüz, sırttan çekimde göz rengi, tek-uzuv kadrajda tam anatomi. Model yazılan her şeyi kadraja sokmaya çalışır; kadrajda olmayanı yazmak ikinci bacak, ikinci mürettebat, ezilen kask üretir. Deponun ölçümü zaten söylüyordu: tarif kilidi %0 tuttu — tekrar eden 2.300 karakterin etkisi sıfır, maliyeti sıfır değil.
+
+**ÇÖZÜM:** `IN FRAME` satırı + kelime bütçesi (IMAGE ≤ 250 · VIDEO ≤ 300, `prompt_kontrol.py` `KELIME_BANDI`). Self-contained = **kadrajdaki** her şey promptta; kadraj dışı hiçbir şey promptta değil. Negatif çekirdek 8 cümle (`KILAVUZ` §5), gerisi PLAN'da.
+
+🔗 [[D174]] · [[D175]] · [[D176]] · [[D179]] · [[D79]] · AGENTS §2 kural ③ (14.09.2026 notu)
+
+---
+
+## 🔴 DERS 215: EKRAN METNİ, FİLİGRAN VE HAREKETSİZ AĞIZ ARAÇ AYARIDIR — PROMPT CÜMLESİ DEĞİL; ÜRETİM DEFTERİNE ÜÇ KUTU, KURGU KAPISINA ÜÇ SAYI
+
+**FREKANS:** 6 film · THE STANDING WIRE (⑤ çapraz kapı — ADAY-10: sıfır replikli filmde dört cümle duyuldu) · THE AMBER LATTICE (⑤ 7 — sağ altta jeneratör logosu 0:01-1:39) · THE CRACKED HELMET (① V 5,3 — vizör dış yüzeyine yapışık HUD metni) · THE RING WALKER (① 5,3 — 1:50 "THE RING WALKER" burned-in başlık) · LOW_POWER (③ 4,3 — 01:31 MCU'da replik oynarken ağız hareketsiz) · YERÇEKİMİ F5-F7 (ADAY-7, KAPANDI — altyazı sebebi ARAÇ, kapı yazılmaz)
+**DEĞİŞEN SATIR:** `<FILM>_URETIM_DEFTERI.md` motor satırı üç kutu — `altyazı/caption: KAPALI` · `filigran: YOK (ücretli katman/ayar)` · `konuşan ağız: kadraj dışı` — ve kurgu kapısı ④'te üç sayı: ekran metni **0 s** · filigran **0** (`rapor_kontrol.py --olcum-filigran`) · kadrajda konuşan ağız **0** klip
+**KAPI:** BETİK · `rapor_kontrol.py --olcum-filigran` · LİSTE · `FILM_KLASOR_SABLONU/FILM_URETIM_DEFTERI.md` motor satırı
+**TEKRAR:** 0
+
+**Kaynak:** THE RING WALKER QA (10.09.2026) — ① `1:50 — Burned-in title text ("THE RING WALKER") appears on screen, violating series no-text rule`. Zincir ADAY-10 · 20 · 34 · 45 · 64 (+7 kapalı).
+
+**Örüntü:** Altı filmde ekranda metin/logo/altyazı ya da konuşurken kapalı ağız çıktı ve her seferinde NEGATIVE bloğuna bir cümle daha eklendi. ADAY-7'nin kapanışı sebebi ölçtü: **araç ayarı** (caption toggle, ücretsiz katman filigranı, lip-sync modu). Negatif cümle bir araç ayarını değiştiremez; 50 no/never/not içeren çekirdek bunu 6 filmde kanıtladı. Ağız içinse çözüm zaten yazılıydı (`SES_VE_DIYALOG` §2a: konuşan ağız kadraj dışı) — kapısı yoktu.
+
+**ÇÖZÜM:** Üç kutu üretimden önce üretim defterinde işaretlenir; işaretsiz kutuyla üretilen klip kabul edilmez. Kurgu kapısı ④ üç sayıyı masterda ölçer. NEGATIVE bloğuna bu konuda **yeni cümle eklenmez** (`KILAVUZ` §5 8 cümle).
+
+🔗 [[D34]] · [[D40]] · [[D21]] · [[D72]] · [[D101]] · [[D35]] · ADAY-7 kapanışı

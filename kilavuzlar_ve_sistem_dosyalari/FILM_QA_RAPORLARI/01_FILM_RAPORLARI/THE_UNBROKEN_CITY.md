@@ -2,7 +2,7 @@
 
 > Oluşturma: 06.08.2026 · dört mercek aynı gün, dördü de MOD V (belgesiz)
 > koşuldu; belge cevapları aşağıda bu kayda işlendi.
-> Kaynak dosya: `yatay_2_4_dk_filmler_uzay/THE_UNBROKEN_CITY/THE_UNBROKEN_CITY_PLANET_FILM.md`
+> Kaynak dosya: `yatay_2_dk_filmler/THE_UNBROKEN_CITY/THE_UNBROKEN_CITY_PLANET_FILM.md`
 
 ---
 
@@ -10,7 +10,7 @@
 
 | Mercek | Durum | Skor | Ham rapor |
 |---|---|---|---|
-| 🔧 VIDEO_QA | ✅ Ⓥ mod V | **5/10** · REGENERATE (3 BLOCKER) | `02_HAM_RAPORLAR/THE_UNBROKEN_CITY_TEKNIK_HAM.md` |
+| 🔧 VIDEO_QA | ✅ Ⓥ mod V | **5/10** · REGENERATE (3 BLOCKER) | `02_HAM_RAPORLAR/THE_UNBROKEN_CITY/THE_UNBROKEN_CITY_TEKNIK_HAM.md` |
 | 📖 SENARYO_QA | ⚠️ Ⓥ mod V ŞARTLI | **5/10** · REVISE STRUCTURE | `..._SENARYO_HAM.md` |
 | 🧩 MANTIK_QA | ✅ (rubrik zaten belgesiz) | **8.0/10** · FIXABLE IN EDIT — **serinin en yüksek mantık skoru** | `..._MANTIK_HAM.md` |
 | 🧍 KARAKTER_QA | ✅ (opsiyonel 5. mercek) | **8/10** · DRIFTS BUT RECOVERABLE | `..._KARAKTER_HAM.md` |

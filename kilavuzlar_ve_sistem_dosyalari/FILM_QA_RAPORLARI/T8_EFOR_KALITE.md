@@ -60,7 +60,17 @@ Biri bile hayırsa satır YAZILMAZ; ham rapor 02_HAM_RAPORLAR/'da durur.
 
 | Film | Tarih | Mod | Zorlanma | Nefes | Yorgunluk | Yük | Yaralanma | Kavrama | Ekipman | Acı | Eğri | Toplam | Not |
 |---|---|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|---|
-| *(henüz koşu yok)* | | | | | | | | | | | | | |
+| **The Counted Turn** | 09.09.2026 | D | 0.0 | 0.0 | 0.0 | 0.0 | — | 0.0 | 0.0 | 0.0 | 0.0 | ⚠️ 0.0 | 🔴 **NOBODY PAYS** — efor faturası ekranda 0; 6 iş olayının altısında da beden yorulmuyor/zorlanmıyor (0:10, 1:10, 1:20, 1:30, 3:00, 3:40) [D184] |
+| **The Solar Mirror** Ⓥ ⚠️ | 11.09.2026 | V | 2 | 3 | 3 | 4 | — | 2 | 2 | 4 | 3 | **2,9** | WEIGHTLESS WORK · 8 efor olayının 7'sinde sıfır zorlanma, acil durumda dinlenmiş nefes |
+| **The Resonant Strand** ⚠️ | 11.09 | D | 1 | — | 1 | 1 | — | 1 | 1 | — | 1 | **1,0** | ⬜ |
+| **The Hard Dock** ⚠️ | 12.09.2026 | D | 6 | 7 | 6 | 7 | — | 6 | 7 | — | 7 | **6,6** | Visor fogging absent under heavy exhalation, no tremor in E10 |
+
+
+> **The Solar Mirror · 11.09.2026 · Ⓥ mod V · ⚠️ ŞARTLI · matrise girmez**
+> Kayıt: [`01_FILM_RAPORLARI/THE_SOLAR_MIRROR.md`](01_FILM_RAPORLARI/THE_SOLAR_MIRROR.md)
+> · Skor: **2,9/10** (Ⓥ mod V). Verdict: `WEIGHTLESS WORK`.
+> · 8 efor olayının 7'sinde bedensel zorlanma/tensing yok (E1-E7); acil durumda nefes rested kalıyor.
+
 
 ⛔ Sayılar bu tabloya ELLE yazılmaz — rapordan gelir ve `rapor_kontrol.py`
 GO döndükten sonra kopyalanır [kural ① · D161].

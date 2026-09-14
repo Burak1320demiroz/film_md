@@ -257,7 +257,7 @@ A4 — YASAKLI SAHNE TİPİ DENETİMİ   (plan yazılırken, 2 dakika)
 ## 🔴 DERS 122: KAPININ REFERANS SAYISI ELLE HESAPLANIYOR — PLANIN REPLİK ÇİZELGESİNDE DÖRT KAYDIN İKİSİ BİR YUVA GEÇ; D115 DOĞRU BİR KURGUYU "10 SANİYE KAYMIŞ" OKUYACAKTI
 
 **Kaynak:** THE BORROWED WEIGHT · 24.08.2026 ·
-`yatay_3_5_dk_filmler/THE_BORROWED_WEIGHT/THE_BORROWED_WEIGHT_PLAN.md` §replik
+`yatay_4_dk_filmler/THE_BORROWED_WEIGHT/THE_BORROWED_WEIGHT_PLAN.md` §replik
 çizelgesi + `..._QA_SPEC.md` A/B bloğu
 **Sorun:** yazım paketi kusursuz görünüyordu — ızgara formülü SPEC'te yazılı,
 replik ofsetleri prompt TIMELINE'larında yazılı, çizelge dolu. Ama çizelgenin
@@ -578,6 +578,14 @@ lake; nothing reflects in it.
 
 ## 🔴 DERS 165: ARAÇ YAZILDI, KOŞACAK KART YOKTU — QA PAKETİ FİLMİN YAZIMINDA ÜRETİLİR, QA ANINDA DEĞİL
 
+> ⛔ **KAPI KALDIRILDI — 11.09.2026 · proje sahibi kararı.** `QA_PROMPTLARI/FILME_OZEL/`
+> ve `qa-isle/scripts/rubrik_paketle.sh` depodan SİLİNDİ; bu dersin KAPI satırı artık
+> OLMAYAN bir betiği adresliyor ve yeniden kurulmaz. Gerekçe dersin kendi ölçümüdür:
+> üç vakada paketin varlığı davranışı hiç değiştirmedi (UPWARD FALL 8/8 · OPEN CIRCUIT
+> 12/12 mercek mod V, paket VARKEN). Dersin AYAKTA KALAN yarısı D129'dur: mod D'yi
+> taşıyan tek şey `<FILM>_QA_SPEC.md`'nin rubrikle BİRLİKTE yapıştırılmasıdır.
+> ⚠️ Aşağıdaki metin TARİHTİR, talimat değil — okunur, uygulanmaz.
+
 **KAPI:** BETİK · `yeni-film` Kart A §4 → `qa-isle/scripts/rubrik_paketle.sh <film klasörü>` · paket klasörü yoksa film "yazımı tamam" DEĞİLDİR [D117'nin kardeşi]
 **TEKRAR:** **3** · ⛔ **ÇALIŞMIYOR — dönüştürme borcu doğdu** [DERS_YAZIM_KONTRATI §3].
 3. vaka **08.09.2026 THE OPEN CIRCUIT**: paket VARDI (`FILME_OZEL/THE_OPEN_CIRCUIT/PAKET_1..12`,
@@ -649,7 +657,7 @@ SPEC değişirse betik yeniden koşulur (paket elle düzenlenmez).
 ## 🔴 DERS 168: ÜRETİM SIRASI DRAMATİK SIRAYLA AYNIYSA, YARIDA KALAN FİLM KENDİNİ SAVUNAMAZ — 14 KLİP ÜRETİLDİ VE ÜÇÜNCÜ PERDE HİÇ VAR OLMADI
 
 **KAPI:** LİSTE · `03_PLAN_ONCESI_KONTROL_LISTESI.md` B5 (yeni madde: ÜRETİM SIRASI) — 02.09.2026
-**TEKRAR:** 2 · 02.09.2026 THE SINKING STAKE · 04.09.2026 THE UPWARD FALL — ⭐ bu vakada ÜRETİM SIRASI **plana yazılmıştı** ("1. DORUK S24") ve S24 yine teslim edilmedi. Liste maddesi PLANI bağlıyor, ÜRETİMİ bağlamıyor: kapı plan tarafında koşuyor, teslim tarafında hiçbir şey S24'ün varlığını sormuyor → ④ KURGU KAPISI'nın FİNAL VURUŞ KANITI satırı [[D141]] bunun tek ölçüm aleti
+**TEKRAR:** 3 ⛔ ÇALIŞMIYOR → araca çevrildi (13.09.2026): KARAR · `FILM_KLASOR_SABLONU/FILM_URETIM_DEFTERI.md` §4 + AGENTS kart B — defterin İLK KABUL satırı ÜRETİM SIRASI'nın ilk halkası (doruk / merkezî seçim) değilse ikinci klip ÜRETİLMEZ; liste planı bağlıyordu, defter satırı üretimi bağlar · **13.09.2026 THE STATIC SHADOW — 3. vaka:** ÜRETİM SIRASI plana yazılmıştı (S14 → S12 → S15 → S01 → kalanı); makara S01-S10 TAM, eksik üçü S11 · S12 · S13/S14 — listenin ilk iki halkası; üretim defteri BOŞ, sıra hiç kaydedilmedi · 02.09.2026 THE SINKING STAKE · 04.09.2026 THE UPWARD FALL — ⭐ bu vakada ÜRETİM SIRASI **plana yazılmıştı** ("1. DORUK S24") ve S24 yine teslim edilmedi. Liste maddesi PLANI bağlıyor, ÜRETİMİ bağlamıyor: kapı plan tarafında koşuyor, teslim tarafında hiçbir şey S24'ün varlığını sormuyor → ④ KURGU KAPISI'nın FİNAL VURUŞ KANITI satırı [[D141]] bunun tek ölçüm aleti
 
 **Kaynak:** THE SINKING STAKE (02.09.2026) — üretim bir politika reddi
 yüzünden yarıda bırakıldı. Dosya sisteminden ölçüldü: 25 sahnenin ~14'ü
@@ -806,3 +814,61 @@ D181 aynı mekanizmayı kalan üç eksene genişletir.
 [[D150]] (filigran, 5. vaka) · [[D180]] (planlı sessizlik, ilk ölçülmüş vaka) ·
 [[D136]] (ses kanalı YOK → parti durur; bu onun "kanal var ama 21 LU kısık" kardeşi) ·
 [[D129]] (mod V) · [[D142]] (yazılmış ama koşulamayan kapı, koşulmamış kapıdır)
+
+---
+
+## 🔴 DERS 199: SESSİZ MASTER İHRAC KONTROLÜ — VİDEO İHRAÇ EDİLİRKEN SES KANALI UNUTULDUĞUNDA KANITSIZ HİKAYE OKUNUR
+
+**Kaynak:** THE GREEN CEILING QA (10.09.2026) — ③ SES (Total Audio Absence flag) `The file played with absolutely nothing audible across its full runtime`.
+
+**Sorun:** Kurgu yazılımından master render alınırken ses kanalı işaretlenmediğinde video tam boyutta ancak 0dB mutlak sessizlikte (unencoded / missing audio track) çıkmakta ve ses mercekleri "nothing audible" diyerek sağırlık bayrağı kaldırmaktadır.
+
+**ÇÖZÜM — `olcum_kapisi.sh` / İHRAÇ ADIMI KİLİDİ:**
+
+1. İhraç kontrolüne `ffprobe -show_streams -select_streams a` komutu eklenir; ses akışı yoksa master geçersiz sayılır.
+2. LUFS ölçümü 0dB sessizlik verirse veya ses akışı yoksa yayın/QA akışı durdurulur; kurgudan sesli ihraç zorunlu kılınır.
+
+
+---
+
+## 🔴 DERS 204: SPEC ŞABLONU KABUK OLARAK TESLİM EDİLDİ — B KURGU GEOMETRİSİ · İNSAN ŞERİDİ · FİNAL VURUŞ KANITI · C KİLİT LİSTESİ · E MAKİNE KAPILARI YOK; DÖRT QA KAPISI SESSİZCE BOŞ KOŞTU
+
+**KAPI:** BETİK · `PROMPT_KONTROL/prompt_kontrol.py` ㉔ SPEC TAMLIK (00_ANALIZ'li klasörde
+`<FILM>_QA_SPEC.md`'nin yedi makine çapası: GRID · CLIP COUNT · FİNAL VURUŞ KANITI · İNSAN
+ŞERİDİ PLAN · NOVUM · KASK · E DOĞRULANDI — yok/⬜ → FIX · yedisi yok → BLOCK · dosya yok →
+BLOCK) — 13.09.2026
+**TEKRAR:** 0 · 13.09.2026 THE STATIC SHADOW (geriye dönük kalibrasyon aşağıda)
+
+**Kaynak:** THE STATIC SHADOW (12.09.2026 yazıldı, 13.09 QA). `THE_STATIC_SHADOW_QA_SPEC.md`
+91 satır: A bloğu dolu, B bloğu yalnız görsel kilitler, C bloğu beş fizik satırı, E bloğu
+YOK, İNSAN ŞERİDİ YOK, FİNAL VURUŞ KANITI YOK, ÇAPA ÜÇLÜSÜ YOK, NOVUM `⛔` sınır cümlesi YOK.
+Şablon (`FILM_KLASOR_SABLONU/FILM_QA_SPEC.md`) bunların hepsini taşır; `film_klasoru_ac.sh`
+onu kopyalar; yazan ajan dosyayı baştan yazıp blokları düşürdü ve film "yazımı tamam" sayıldı.
+
+**Sorun — kapılar hata vermez, BOŞ koşar:**
+
+```
+④c sıra ekseni        SPEC'te PLAN şeridi yok → plandan elle türetildi (-111---1-111--1)
+④d FİNAL VURUŞ KANITI  satır yok → koşulamadı; oysa makara finali (S15) sapmış olabilir
+①.9 teslim kapısı      yalnız sahne SAYISI kaldı (15 ≠ 12); şerit Δ'sı elle okundu
+①.10 göz kapıları      F/E bloğu yok → betik ⬜ listesi basmadı, on üç mercek sıfır göz kapısıyla koştu
+⑥ mod D kilit listesi  C bloğu üç satır: ölçek 1/30 ve 0,008 rad/s VAR ama ⑥ mod V koştu ve
+                       1:6 · 1,5°/s ölçüp "tutarlı" dedi — SPEC olsaydı da NOVUM sınırı yoktu [D183]
+```
+
+⭐ **Geriye dönük kalibrasyon (13.09.2026 · 15 yeni-film klasörü, 38 SPEC):** tam SPEC **1/38**
+(THE HARD DOCK). Yedi makine çapasında ㉔ **yedi klasörde** ateşledi — STATIC SHADOW 7/7
+(kabuk · BLOCK) · CRACKED HELMET 6/7 · SOLAR MIRROR 6/7 · RESONANT STRAND 3/7 · TETHERED MASS
+2/7 · GREEN CEILING 1/7 (şerit) · SCOURED GLASS 1/7 (şerit). Yani `yeni-film` akışının
+ürettiği SPEC'lerin yarısı QA makinesine kör. AGENTS kart A "B kurgu geometrisi + İNSAN
+ŞERİDİ · FİNAL VURUŞ KANITI · E MAKİNE KAPISI" yazıyordu; **yazılı olan kural üçüncü kez
+tek başına tutmadı** [D74 · D142 · D191 aynı aile].
+
+**ÇÖZÜM:** kapı BETİK. Tetik yalnız `00_ANALIZ/` olan klasör (sahip kararı 05.09.2026: eski
+filmler dokunulmadan kalır). ÇAPA ÜÇLÜSÜ ve KURULUM İSKELETİ bilerek listede DEĞİL — ikisi
+şablonda henüz yok (kart G/P borcu); şablona girince çapaya eklenir. Şablondan kopyalanıp
+doldurulmamış `⬜` satır da eksiktir: kapı yalnız varlığa değil DOLULUĞA bakar.
+
+🔗 [[D117]] (SPEC bir dosyadır) · [[D141]] (final vuruş kanıtı) · [[D142]] (makine kapısı
+doğrulanır) · [[D191]] (göz kapıları) · [[D188]] (teslim kapısı bu filmde şeritsiz koştu) ·
+[[D203]] (aynı SPEC'in replik satırı da yalan söyledi)

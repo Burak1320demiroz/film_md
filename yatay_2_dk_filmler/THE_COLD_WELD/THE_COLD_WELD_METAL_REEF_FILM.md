@@ -128,7 +128,7 @@ KAPSAM SINIRI    Kaynak yalnız TEMİZ metal-metal temasında olur.
                  yazılmaz, süre ve mesafe yazılır) · 138 (metin
                  yasağının KAPSAMI — metal yüzey en riskli zemindir) ·
                  79 · 139 (kamera arkaya geçen sahnede sırt POZİTİF)
-Referans film    THE COLD WELD (yatay_2_4_dk_filmler_uzay/) — yazıldı,
+Referans film    THE COLD WELD (yatay_2_dk_filmler/) — yazıldı,
                  üretilmedi (01.09.2026)
 ```
 

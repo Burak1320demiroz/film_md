@@ -23,6 +23,24 @@
 > planı · kapanış planı · açılış-kapanış çifti · süre bandı bütçesi)
 > → yeni `ACILIS_KAPANIS_CIFTI_KILAVUZU.md` + HOOK/FINAL genişletmeleri
 > — aşağıda §TUR 10
+> **16. tur — 11.09.2026:** dört rapor (THE SCOURED GLASS: zaman merdiveni
+> [= TUR13·4 geç koşu] · novum fiziği · kaynak aritmetiği · görüş kaybı) →
+> filmin 00_ANALIZ/00_PLAN'ına; kılavuz adayları ⬜ · ham: `TUR16_HAM_RAPORLAR/`
+> (+ `TUR13_HAM_RAPORLAR/TUR13_4_…`) — aşağıda §TUR 16
+> **15. tur — 11.09.2026:** dört rapor (oyunculuk ve karakter: niyet bedende ·
+> karakter kartı · iki kişi ve ayrılık · diyalog sahnesi) → DÖRT yeni kılavuz
+> (`KARAKTER_KARTI_VE_DAVRANIS` · `IKI_KISI_VE_AYRILIK` · `DIYALOG_SAHNESI_VE_MUHATAP`
+> · `OYUNCULUK_YAZIM`) · ham: `TUR15_HAM_RAPORLAR/` (4/4 birebir) — aşağıda §TUR 15
+> **17. tur — 12.09.2026:** üç rapor (sinematik uzay giysisi: silüet ve
+> tasarım dili · yüzey, renk ve ışık · giysi kilidi ve bütçe) → yeni
+> `UZAY_GIYSISI_SINEMATIK_TASARIM_KILAVUZU.md` · ham: `TUR17_HAM_RAPORLAR/`
+> (3/3 birebir, kaynak listesi yok) — aşağıda §TUR 17 (üçüncü liste:
+> GEOMETRİYE ÇEVRİLDİ · sayı katmanı çürük, sayısız indi)
+> **18. tur — 12.09.2026:** dört rapor (dünya görünüşü · ışık senaryosu ·
+> yüz ve kast · araç ve iç hacim) → DÖRT yeni kılavuz (`DUNYA_GORUNUSU` ·
+> `ISIK_SENARYOSU` · `YUZ_VE_KAST` · `ARAC_VE_IC_HACIM_TASARIM`) · ham:
+> `TUR18_HAM_RAPORLAR/` (4/4 birebir, kaynak listesi yok) — aşağıda §TUR 18
+> (sayı katmanı dördüncü kez çürük, sayısız indi · Kelvin A/B ⬜ açıldı)
 > ⚠️ **TUR 8 BOŞTUR** ve `11_UZAYLI_TASARIM_ARASTIRMA_PROMPTLARI.md`'nin
 > koşusuna rezervedir; o koşu hâlâ yapılmadı.
 > **Bu dosya ne değildir:** kılavuz değildir. Kural buradan okunmaz —
@@ -1979,7 +1997,7 @@ Dört raporda da tekrarlanan dört yapısal arıza:
 | ⛔ "%38 / %12 mizah yoğunluğu", "22 makro sekans", "24 günlük sahnesi" gibi rapor tarafından ÜRETİLEN yüzde ve sayımlar | Ölçüm yöntemi verilmedi, ikinci okumayla doğrulanmadı. ÖNERİ etiketiyle kayda geçti, **kılavuza sayı olarak inmedi** |
 | ⛔ Motor sürüm tarihleri ve fiyatları (2026 künyeleri) | TUR 12'de aynı sınıf sayı üç sağlayıcıda birden yanlış çıktı. ⛔ **Hiçbir sağlayıcı tarihi ya da fiyatı inmedi** — emsal §TUR 12 |
 | ⛔ Raporun "15 faz yerine 4 sekans + 8 kırılma kullanın" tavsiyesi | Sahip 15 fazda ısrar etti (07.09.2026). Tavsiye **REDDEDİLMEDİ, KAYDA GEÇTİ**: parçalanma riski gerçek bir risktir ve bant kartına uyarı olarak yazıldı. Raporun ikinci şıkkı (15 faz için matematik) uygulandı |
-| ⬜ **TUR13·4 — metinsiz geçen zaman** | **HİÇ KOŞULMADI.** Gövde ve mekân merdiveninin kademe boyu ölçülmedi. Filmin zaman motoru bu turda dış bilgiyle kapanamadı; kademeler ÖNERİ etiketiyle depo içi akıl yürütmeyle kuruldu. ⛔ **FAZ 4 ve sonrası bu prompt koşulmadan kilitlenmez** |
+| ✅ **TUR13·4 — metinsiz geçen zaman** | ~~HİÇ KOŞULMADI~~ → **11.09.2026'da aynı metinle koşuldu** (`TUR13_HAM_RAPORLAR/TUR13_4_ZAMAN_MERDIVENI_HAM.md`); süzmesi §TUR 16 T16.2 #1-#7 ve T16.1 ①/③ çapraz okumasında. Sonuç: KİLİT 4 sakal tokeni biyolojiye çekildi (84 sol ≈ azami 3 cm, "long" silindi), kalça yarası merdiveni tutuyor, faz başına 1 ana + ≤2 yan kanal kuralı geldi. FAZ 4+ kilidi açıldı |
 
 ---
 
@@ -2051,3 +2069,1085 @@ koşulmadı ve **hiçbir bulgu üretimde sınanmadı.** Örneklerin tamamı çok
 karakterli, kesmeli, insan eliyle çekilmiş yapımlardır. Motor tablosu en
 hızlı bayatlayan kısımdır. ⛔ İlk üretilen on iki klip, bu iki turun
 kurallarının ilk gerçek sınavıdır.
+
+---
+---
+
+# 🔬 TUR 15 — OYUNCULUK VE KARAKTER (11.09.2026)
+
+> **Promptlar:** `18_OYUNCULUK_VE_KARAKTER_ARASTIRMA_PROMPTLARI.md` (dört prompt,
+> onar cümle) · **Ham:** `TUR15_HAM_RAPORLAR/` — ✅ **4/4 rapor geldi ve dördü
+> BİREBİR arşivlendi** (TUR 13/14'ün "ham metin bekliyor" açığı bu turda yok).
+> **Tetikleyen:** sahip kararı — oyunculuk hattı için dört kılavuz; ölçülmüş
+> arıza ⑩ OYUNCULUK 2,0-6,3 platosu (T10 · D202) + `06` §1.4 (Character
+> Bible karakter taşımıyor) + iki insanlı planlarda ölçülmemiş AYRILIK +
+> yazılmayan "iki replik arası".
+> **İndiği yerler:** ⭐ DÖRT YENİ KILAVUZ — `KARAKTER_KARTI_VE_DAVRANIS_KILAVUZU.md`
+> · `IKI_KISI_VE_AYRILIK_KILAVUZU.md` · `DIYALOG_SAHNESI_VE_MUHATAP_KILAVUZU.md`
+> · `OYUNCULUK_YAZIM_KILAVUZU.md`. Şablon/rubrik/betik dokunuşları (FILM_PLAN ·
+> QA_SPEC · 10_OYUNCULUK · DIALOGUE_CRITIQUE · prompt_kontrol) bu turda
+> YAPILMADI — kılavuzlar o dokunuşların METNİNİ taşır, kart G/P ile işlenir.
+
+```
+⚠️ BU TURUN KAYNAK PROFİLİ — SATIR İÇİ ATIFLAR BOŞ GELDİ
+   Dört raporun dördünde araştırma aracı atıf yerlerini boş bıraktı ve
+   kaynak listesi yapıştırılmadı. Kaynak zinciri yazar adı + yıl üzerinden
+   YENİDEN KURULDU: tanınan çalışmalar (Sacks/Schegloff/Jefferson 1974 ·
+   Stivers 2009 · Levinson & Torreira 2015 · Kendrick & Torreira 2015 ·
+   Bögels 2015 · Mondada 2015/19 · McNeill/Kendon · Flanagan & Johansson
+   2003 · Massion 1992 · Becchio/Sartori/Ansuini/Cavallo · Smith 1995 ·
+   Grodal · Gomes 2013 · Busselle & Bilandzic 2009 · Hall 1966 · Kendon
+   F-formasyonu · Germeys & d'Ydewalle 2007 · ITU-R BS.1359 · McKee 1997)
+   ÖLÇÜLMÜŞ/UYGULAMA etiketi alabildi. Yazar adı doğru olup İDDİA o yazarın
+   alanına düşmeyen satırlar (Proffitt'e atfedilen "3-6 s kalıntı duruş",
+   Kumano'ya atfedilen "500-1000 ms değerlendirme", Becchio'ya atfedilen
+   "izleyici duraklama eşikleri") ÖNERİ'ye düşürüldü. Motor/benchmark
+   satırlarında ad-tarih-sürüm katmanı TUR 12 emsaliyle İNMEDİ.
+```
+
+## T15.0 ⭐ BU TURUN KARAKTERİ — mekanizma tuttu, sayı katmanı ikiye bölündü
+
+Dört rapor da sorunun DOĞRU yerine vurdu: tek plan + sabit kamera + kapalı
+vizör kısıtı altında niyetin, kararın, cevabın ve karakterin **hangi
+kanaldan** okunduğunu ayrıştırdılar ve kanallar birbirini tuttu (T15.1).
+Sayı katmanı ise iki sınıfa ayrıldı ve kılavuzlara **iki ayrı etiketle**
+indi:
+
+```
+① İZLEYİCİ EŞİĞİ  — "izleyici X ms'den sonra ret okur" türü iddia.
+   Yalnız kaynak zinciri kurulabilenler ÖLÇÜLMÜŞ; kurulamayanlar ÖNERİ ya
+   da ⬜ HİPOTEZ. Kılavuzda etiketiyle durur, ilk ⑩ mod D koşusunda sınanır.
+② YAZIM SAYISI    — "el mandaldan bir avuç uzakta iki saniye durur" türü
+   PROMPT cümlesi. Bu bir iddia değil TASARIM KARARIDIR; D169'un "sayı yaz,
+   sıfat değil" kuralı gereği kılavuzlar bunları serbestçe verir. Sayının
+   izleyici eşiğine dayandığı SANILMASIN diye ayrı işaretlenir.
+```
+
+⭐ Ve turun en pahalı tek bulgusu bir SAYI değil bir YAPI: **3 ile 4 numaralı
+raporlar cevabı iki farklı eksende sınıfladı** (kanal ↔ içerik) ve bu bir
+çelişki değil, kılavuzların birlikte kullanacağı bir ızgara çıkardı (T15.1 ④).
+
+## T15.1 ⭐ ÇAPRAZ OKUMA — dört çift
+
+```
+① 1 ↔ 2  (bedendeki karar ↔ karar mimarisi)          ✅ TUTUYOR
+   2: seçim = görünür alternatif + 1-3 başarısız deneme + numaralı bedel.
+   1: karar = salınım durur · baş hedefe kilitlenir · omuz iner · nefes
+      derinleşir · el biçim alır.
+   Aynı vuruşun iki düzeyi: 2 SAHNE YAPISINI, 1 GÖVDE İMZASINI verir.
+   Sayı çakışması yok (2'nin 0,5-3 s "anlık bedel" penceresi 1'de karşılık
+   aramıyor). → KARAKTER §3 yapıyı, OYUNCULUK §2 imzayı taşır; SPEC'te
+   ikisi tek blokta buluşur (ÇAPA ÜÇLÜSÜ).
+
+② 1 ↔ 4  (niyet kanalları ↔ dinleyenin bedeni)      ✅ TUTUYOR + YENİ KURAL
+   4: dinleyen cevabı replik bitmeden HAZIRLAR (600/1500 ms hazırlık,
+      ~200 ms sıra boşluğu) ve jest sözü ÖNCELER (100-300 ms).
+   1: niyet hareketin İLK fazında okunur; bakış ve ağırlık eli önceler.
+   → Dinleyen kadrajı bir niyet kanalıdır ve KURALI şudur: dinleyenin
+     bedeni replik BİTMEDEN kımıldar (baş döner / ağırlık kayar / el
+     durur). Replik bittikten sonra başlayan tepki "geç" okunur.
+     Post'ta binen seste de sıra aynıdır: hareket önce, ses sonra.
+
+③ 2 ↔ 3  (karakter kartı satırları ↔ iki figürün asgari farkı)  ✅ TUTUYOR
+   3'ün fark listesi: siluet · tempo · alışkanlık jesti · taşınan nesne
+   (+ ağırlık dağılımı). 2'nin kartı: istek · baskı tepkisi · alışkanlık ·
+   sınır · zaaf · tutum kırılması.
+   → İKİ AYRI LİSTE, İKİSİ DE ŞART: fiziksel fark (siluet · nesne ·
+     ekipman şeridi) Character Bible'ın işidir [ASTRONOT_DONANIM]; davranışsal
+     fark (alışkanlık · tempo/baskı tepkisi · istek) kartın işidir.
+     İki kart ≥3 davranış satırında AYRIŞMALI; yalnız fiziksel fark iki
+     gövdeli tek kişi üretir (`06` §1.5 Sinking Stake).
+
+④ 3 ↔ 4  (sözsüz cevap tipolojisi ↔ sözlü cevap tipolojisi)
+   ⚠️ ÇELİŞKİ DEĞİL — İKİ EKSEN. 4 cevabı KANALA göre sınıfladı (söz ·
+   sessizlik · eylem · makine); 3 İÇERİĞE göre (uyma · ret · erteleme ·
+   karşı teklif · görmezden gelme). Birleşik ızgara iki kılavuza da indi:
+      CEVAP = KANAL × İÇERİK  (ör. "eylem × ret" = el yarım kalır, geri
+      çekilir · "sessizlik × erteleme" = 1,5 s tutulan boşluk + baş nesneye
+      döner · "makine × ret" = giysi sesi "no return")
+   EŞİKLER — iki rapor iki bant verdi, tek banta indirildi:
+      4: gecikme 0,2-0,7 s (tercih edilmeyen) · 1,0-2,0 s açık ret ·
+         >2,5 s donma
+      3: ≤0,3 s uyum · 0,7-1,0 s ret beklentisi · 1,2-1,7 s "gebe
+         duraklama" · >2,0 s görmezden · >2,5 s donma
+      → TEK BANT (kılavuzlarda bu etiketlerle):
+         ≤ 0,3 s      UYUM                 ÖLÇÜLMÜŞ (Stivers 2009 · Kendrick & Torreira 2015)
+         0,5 - 1,0 s  RET BEKLENTİSİ       ÖLÇÜLMÜŞ yön (Bögels 2015 · Jefferson ~1 s)
+         1,0 - 2,0 s  AÇIK RET / ERTELEME  UYGULAMA (Levinson 1983 örneği · CA kuramı)
+         > 2,5 s      DONMA                ⬜ HİPOTEZ — iki raporda AYNI ve ikisinde de
+                                            kaynaksız: model önseli sayılır
+   ⛔ AYRICA: 1 numaralı raporun "eylem İÇİ duraklama >0,8 s = donma" eşiği
+      ile bu "cevap BOŞLUĞU >2,5 s = donma" eşiği iki farklı konumdur
+      (uzanmanın ortasında durmak ↔ bir hamleye cevap vermemek). Kılavuzlar
+      ikisini AYRI yazar; ikisi de ⬜ etiketli.
+   İÇ TUTARLILIK (ölçüm değil): THE WHITE FLOOD S8 AYRILIK sahnesinde iki
+   replik 1:22 → 1:24 (2,0 s boşluk) — bant "açık ret" diyor ve sahne
+   planda zaten AYRILIK. Deponun tek tasarlanmış örneği bantla çelişmiyor.
+```
+
+## T15.2 ✅ DEPOYA GİRENLER
+
+| # | Bulgu | Kaynak · tür | Etiket | İndiği yer |
+|:-:|---|---|:--:|---|
+| 1 | **Değiş-tokuş birimi:** bitişik çift (ilk eylem ikinci eylemi zorunlu kılar) + TRP öngörüsü | Sacks/Schegloff/Jefferson 1974 · Levinson 2016 · CA | ÖLÇÜLMÜŞ | `DIYALOG_SAHNESI` §2 |
+| 2 | **Sıra geçiş boşluğu ~200 ms (100-300), diller arası evrensel** — ızgara bunu VEREMEZ (tek klip tek konuşmacı): cevap ya aynı klipte kadraj dışından ya sonraki klibin İLK saniyesinde; boşluk plana YAZILIR | Stivers et al. 2009 PNAS · Levinson & Torreira 2015 | ÖLÇÜLMÜŞ | `DIYALOG_SAHNESI` §3 |
+| 3 | **Cevap replik bitmeden hazırlanır** (kelime 600 ms · cümle ~1500 ms) → dinleyenin bedeni replik BİTMEDEN kımıldar | Levinson & Torreira 2015 · Indefrey & Levelt | ÖLÇÜLMÜŞ | `DIYALOG_SAHNESI` §4 · `OYUNCULUK_YAZIM` §3 |
+| 4 | **Tercih edilmeyen cevap gecikmelidir**, önünde tereddüt işareti taşır; tek bant T15.1 ④ | Kendrick & Torreira 2015 · Bögels 2015 | ÖLÇÜLMÜŞ yön | `DIYALOG_SAHNESI` §3 · `IKI_KISI` §4 |
+| 5 | **Sessizlik cevaptır:** ~1 s'den sonra ret okunur; 2,0 s'lik boşluğu ilk konuşan kendi olumsuz cevabıyla kapatır | Jefferson "standart azami sessizlik" · Levinson 1983 | UYGULAMA/kuram | `DIYALOG_SAHNESI` §3 |
+| 6 | **Bedenselleşmiş sıra / sessiz ikinci eylem:** söze nesneyi bırakarak, sırt dönerek, işe devam ederek cevap verilir; cevap sayılması için eylemin HAZIRLIĞI repliğin bitimine yakın görünür olmalı | Mondada 2015 · 2019 · CA | ÖLÇÜLMÜŞ (biçim) | `DIYALOG_SAHNESI` §3 · `IKI_KISI` §4 |
+| 7 | **Jest sözü önceler** (hazırlık fazı 100-300 ms önce) → post'ta binen seste hareket önce, ses sonra | McNeill 1992 · Kendon 2004 | ÖLÇÜLMÜŞ | `DIYALOG_SAHNESI` §4 · §7 |
+| 8 | **Söz-beden çelişkisinde beden kazanır** — TUR 11'in yüz-beden bulgusunun SÖZ-beden genişlemesi | McKee (UYGULAMA) + de Gelder yönü | UYGULAMA | `DIYALOG_SAHNESI` §4 |
+| 9 | **Senkron toleransı** (ağız kadrajdaysa): fark edilirlik ses önde +45 ms · arkada −125 ms; kabul +90/−185 ms | ITU-R BS.1359-1 | ÖLÇÜLMÜŞ/standart | `DIYALOG_SAHNESI` §7 |
+| 10 | **Değer kayması testi:** sahne başı/sonu değer yükü (+/−) · vuruşlara bölme · dönüm noktası; değişimsiz sahne = "statik / non-event" | McKee 1997 *Story* | UYGULAMA | `DIYALOG_SAHNESI` §6 · `KARAKTER_KARTI` §3 |
+| 11 | **Dinleyen kadrajı:** göz konuşanın yüzündedir; alt metin/tehdit taşıyan replikte dinleyene kayar; üç tepki planı (onay · yorum · gizemli) | T.J. Smith 2013/2018 (yön) · TV pratiği | ÖLÇÜLMÜŞ yön + UYGULAMA | `DIYALOG_SAHNESI` §5 |
+| 12 | **Tamamen dinleyen kadrajıyla anlatı mümkün** — *Shirin* (2008): 114 yüz, olay hiç gösterilmez | Kiarostami 2008 · vaka | UYGULAMA | `DIYALOG_SAHNESI` §5 |
+| 13 | **İki taraf ayrı çekilip kurguda birleşir** — *Ten* (2002) | Kiarostami · vaka | UYGULAMA | `DIYALOG_SAHNESI` §7 (merdiven 4. basamak emsali) |
+| 14 | **AI konuşan-dinleyen arızaları:** dinleyenin ağzı oynar · yanlış figür konuşur · "ağzını kapat" = donuk figür · eşzamanlı konuşma. ÇÖZÜM: replik metni prompttan ÇIKAR, dinleyenin bedeni yazılır (dudak kapalı · göz kırpma · nefes · kaş), ses post'ta | uygulama kılavuzları (oranlar İNMEDİ) | UYGULAMA · **ZATEN VAR** D35(c)/D82 aynı mekanizma | `DIYALOG_SAHNESI` §7 |
+| 15 | **Niyet hareketin İLK fazında okunur** (uzanmanın ilk üçte biri) → prompt niyeti hareketin BAŞINA yazar, sonucuna değil | Becchio 2008 · Sartori 2011 · Ansuini/Cavallo 2014-18 (yön; %68-84 bandı İNMEDİ) | ÖLÇÜLMÜŞ yön | `OYUNCULUK_YAZIM` §1 · §3 |
+| 16 | **Sosyal/sunma eyleminde yavaşlama fazı uzar**, bireysel eylem simetrik çan eğrisi | Becchio et al. 2008 | ÖLÇÜLMÜŞ | `OYUNCULUK_YAZIM` §3 TEMPO · `IKI_KISI` §4 (uzatma jesti yavaş biter) |
+| 17 | **Bakış eli önceler** (hedefe kilitlenme uzanmadan önce) → kask önce döner, el sonra; eşzamanlı başlayan baş+el refleks/plansız okunur (ÖNERİ) | Flanagan & Johansson 2003 · Land & Hayhoe | ÖLÇÜLMÜŞ | `OYUNCULUK_YAZIM` §3 BAKIŞ |
+| 18 | **Ağırlık harekete ÖNCE kayar** (erken postür düzeltmesi) → "weight to the rear boot, THEN the hand" | Massion 1992 | ÖLÇÜLMÜŞ (mekanizma) | `OYUNCULUK_YAZIM` §3 AĞIRLIK |
+| 19 | **Tereddüdün kinematik biçimleri:** çift tepeli hız · durma-yeniden başlama · yörünge sapması · yarım uzanma-geri çekilme · yanlış başlangıç (ağırlık öne, geri) | kinematik literatür (biçim) — eşikler ⬜ | ÖLÇÜLMÜŞ (biçim) | `OYUNCULUK_YAZIM` §3 TEREDDÜT sözlüğü |
+| 20 | **Kalıntı duruş:** olay sonrası duruş üstel söner; kesmede ani sıfırlama DEVAMLILIK HATASI okunur, zaman atlaması için ara plan/mekân değişimi gerekir; süreklilik pratiği omurga açısı + omuz yüksekliği kaydeder | süreklilik pratiği (3-6 s sayısı İNMEDİ) | UYGULAMA | `OYUNCULUK_YAZIM` §5 anti-RESET |
+| 21 | **Durgunluk ≠ donma:** canlı beden 0,1-0,5 Hz / 5-15 mm salınır, 12-18 nefes/dk, 8-12 Hz tremor; mikro-hareket yokluğu manken okunur; güçlü durgunluk = bağlı akış + nefes, hareketin bastırılması değil | genel fizyoloji · Chekhov/Noh (UYGULAMA) | ÖLÇÜLMÜŞ + UYGULAMA | `OYUNCULUK_YAZIM` §4 |
+| 22 | **Tempo:** yavaşlama = ağırlık/tehlike · ani ivme = telaş · film boyu sabit tempo "düz" · ⭐ TERS VAKA: yavaş filmde 100 ms'lik ani jest = şok → kural "en yavaş jest" değil **TEMPO KONTRASTI** | UYGULAMA (iki yönlü soruldu, iki yön geldi) | UYGULAMA | `OYUNCULUK_YAZIM` §4 |
+| 23 | **Laban çaba eşlemesi:** tereddüt = Indirect + Sustained + Bound · karar = Direct + Sudden + Free/Strong; Delsarte konsantrik/eksantrik; Stanislavski engelde dur → ağırlık → yeniden kilitlen; Chekhov psikolojik jest + son pozisyonu tut; Meisner: dış dürtü yoksa hareket yok | LMA · Delsarte · Stanislavski · Chekhov · Meisner | UYGULAMA | `OYUNCULUK_YAZIM` §3 sözlük · §6 tetik kuralı |
+| 24 | **AI hareket kontrolü:** ardışık iki aşama tek harekete çöker; ayrıntısız istemde dolgu jesti; "holds still / hesitates" → donma; İŞE YARAYAN: somut fiil + saniye + açı + ağırlık aktarımı · YARAMAYAN: soyut zarf, olumsuz cümle, derecesiz sıfat | T2V-CompBench · TC-Bench ailesi (yön) | ÖLÇÜLMÜŞ yön · **ZATEN VAR** D169 "sayı yaz" · REHBER §7 | `OYUNCULUK_YAZIM` §3 · §8 |
+| 25 | **Tanıma / hizalanma / bağlanma** ve yüz kapalıyken karşılıkları: tanıma = beden/adım/ekipman · hizalanma = bakış + eylem erişimi · bağlanma = bedel ödeme biçimi | Murray Smith 1995 · Wollheim | UYGULAMA/kuram | `KARAKTER_KARTI` §1 |
+| 26 | **Asgari küme:** İSTEK + BASKI ALTINDA FARKLILAŞAN TEPKİ; yoksa figür "kamera taşıyıcısı/figüran" okunur | zihin kuramı (raporun sentezi) | UYGULAMA/ÖNERİ | `KARAKTER_KARTI` §1 (İSTEK ZATEN VAR = B5; BASKI TEPKİSİ yeni) |
+| 27 | **Motif jest:** ≥3 tekrarda kaydolur (üçler kuralı); derecelenmeden 4+ = dolgu (⬜); **krizde KIRILMASI** en dolaysız sözsüz dönüşüm işareti (*Le Samouraï* şapka · *All Is Lost* kap) | dramaturji · vaka | UYGULAMA (⬜ sayılar) | `KARAKTER_KARTI` §2 |
+| 28 | **Karar mimarisi:** reddedilen seçenek kadrajda YA DA bedeli çıkarılabilir · 1-3 başarısız deneme gerilim kurar, 4+ yöntem değişmeden bıkkınlık (⬜) · anlık bedel hemen görünür, stratejik bedel ertelenebilir (ironi penceresi) · tek seçenekte TARZ ve ZAMAN seçilir (Hobson) | dramaturji | UYGULAMA (⬜ sayılar) | `KARAKTER_KARTI` §3 |
+| 29 | **Tutarlılık:** ihlal yeni bilgi/baskıya bağlıysa GELİŞME, değilse KOPUŞ · yayınlanmış araçlar: Gomes 2013 (8 boyut) · Lee & Heeter 2012 (5) · NES 2009 — madde olarak, SAYI ÜRETMEDEN (TUR 6 hakem kararı) | Gomes/Martinho/Paiva/Jhala 2013 · Busselle & Bilandzic 2009 | ÖLÇÜLMÜŞ araç | `KARAKTER_KARTI` §4 |
+| 30 | **Süre → değişim miktarı:** 1 dk = AN · 4 dk = yöntem değişimi (mikro-yay) · 20 dk = yay; "hiç değişmedi" = ilk/son eylem aynı · "sebepsiz değişti" = arada deneme/bedel yok | dramaturji (Raskin ZATEN VAR) | UYGULAMA | `KARAKTER_KARTI` §6 |
+| 31 | **Duygu olaydan doğar:** refleks penceresi (~0-0,4 s) · değerlendirme penceresi (~0,5-1 s) · geç tepki ancak DONMA köprüsüyle; sebepsiz duygu yapay okunur | PECMA (Grodal) · Tan; pencere sayıları ÖNERİ | UYGULAMA | `KARAKTER_KARTI` §5 · `OYUNCULUK_YAZIM` §6 |
+| 32 | **Yüzsüz kahraman ikame kanalları:** ekipman bakımı · duruş/adım · kişisel eşya; **"avatar" = zorlanma, yorgunluk, hata ve kalıcı hasar YOKLUĞU** | vaka (All Is Lost · Le Samouraï · Mandalorian) | UYGULAMA · birleştirir: KARAKTER_VE_DUYGU §4.4 · D169 · D42 | `KARAKTER_KARTI` §7 |
+| 33 | **Tek kişilik filmde üç kanal SIRAYLA açılır:** nesne → beden → geçmiş karar; "anladığı an" = motorik donma + omuz + bırakma (fırlatma değil) | *All Is Lost* (zaman damgası doğrulanmadı) | UYGULAMA | `KARAKTER_KARTI` §8 |
+| 34 | **Proksemik bantlar** — ⚠️ rapor sosyal/kamusal sınırını yanlış verdi; Hall'un aslıyla indi: mahrem <0,45 · kişisel 0,45-1,2 · sosyal 1,2-3,6 · kamusal >3,6 m | Hall 1966 (düzeltildi) | ÖLÇÜLMÜŞ | `IKI_KISI` §5 |
+| 35 | **Yönelim:** 0° yüz yüze = azami yoğunluk (yakınlık YA DA çatışma) · 90° L = ortak odak/yumuşama · 180° sırt = ret/kopuş | Kendon F-formasyonu | UYGULAMA/ÖLÇÜLMÜŞ | `IKI_KISI` §5 |
+| 36 | **Baskınlık = dikey yükseklik farkı + alan kaplama; yakınlık = mesafe × ortak yönelim** (">30 cm" İNMEDİ) | Hall/Coats/LeBeau 2005 meta · Burgoon | ÖLÇÜLMÜŞ yön | `IKI_KISI` §5 |
+| 37 | ⭐ **Senkron = tek irade/otomat; iki irade = FAZ FARKI + etki-tepki** — `06` §4②'nin ("ikisi aynı anda aynı şeyi yapıyorsa satır boştur") DIŞ DOĞRULAMASI | ortak eylem algısı literatürü | ÖLÇÜLMÜŞ yön | `IKI_KISI` §2 |
+| 38 | **İki figürü ayırma:** siluet · tempo · alışkanlık jesti · taşınan nesne (fiziksel liste Bible'a, davranışsal liste karta — T15.1 ③) | tiyatro/sinema pratiği | UYGULAMA | `IKI_KISI` §2 |
+| 39 | **Bloklama:** ön plan = ağırlık/tehdit · nesneye yakınlık = inisiyatif · sabit kamerada figürün ötekinin önünden geçip taraf değiştirmesi "yer değiştirdiler" karmaşası | Germeys & d'Ydewalle 2007 · Smith 2013 | ÖLÇÜLMÜŞ yön | `IKI_KISI` §6 (D86 kim-solda kilidi) |
+| 40 | **Mesafe eğrisi:** kademeli daralma "kazanılmış", ani daralma "sebepsiz" | dans/mim/sinema pratiği | UYGULAMA | `IKI_KISI` §5 |
+| 41 | **Çözüm tipolojisi:** boyun eğme · karşılıklı değişim · çözümsüz eylem · üçüncü nesne; **bedelsiz çözüm zayıf** | raporun sentezi | ÖNERİ | `IKI_KISI` §7 |
+| 42 | **10 s anlaşmazlık bütçesi:** 0-2 yaklaşma · 2-4 hamle · 4-5,5 duraklama · 5,5-8 ret/yön · 8-10 bedelli çözüm | raporun tasarımı | ⬜ HİPOTEZ | `IKI_KISI` §8 şablon (ilk ⑩ koşusunda sınanır) |
+| 43 | **AI iki-kişi arıza sınıfları** (kimlik sızması · ikizleşme/zorunlu senkron · temas erimesi · taraf değiştirme/kaybolma) ve stratejiler (konum kilidi frame-left/right · ayrık-zıt tarif · sabit kamera · TEMASSIZ anlaşmazlık) | benchmark ailesi (oranlar İNMEDİ) | UYGULAMA · **ZATEN VAR** D20/D69/D140/D196 · KART 12 | `IKI_KISI` §6 · §9 |
+
+## T15.3 ⛔ DEPOYA GİRMEYENLER — dürüst kayıt
+
+| Bulgu | Neden inmedi |
+|---|---|
+| **Karar anı milimetreleri** — omuz 10-20 mm kalkık → 15-25 mm iner · salınım 15-25 → 3-5 mm · nefes 20-25 → 10-12/dk · "<5 mm kaçırılır, >40 mm melodram, en iyisi 10-15 mm" | Kaynaksız; ayrıca basınç giysisi üstünden dışarıdan ölçülemez. KANAL LİSTESİ indi (salınım durur · baş kilitlenir · omuz iner · nefes derinleşir), sayılar inmedi. |
+| **Kalıntı duruş 3,0-6,0 s** (Proffitt et al. 2012/2015'e atfedildi) | Proffitt algı/eğim araştırmacısıdır, duruş sönümlenmesi ölçmez; atıf tutmuyor. Mekanizma UYGULAMA olarak indi, sayı ⬜. |
+| **Tereddüt eşikleri** <150 ms fark edilmez · 200-500 ms tereddüt · >800-1000 ms donma (Becchio/Sartori'ye atfedildi) | O çalışmalar gözlemcinin DURAKLAMA eşiğini ölçmez, kinematikten niyet okumayı ölçer. ⬜ HİPOTEZ; kılavuzda yalnız YAZIM SAYISI olarak (T15.0 ②). |
+| **Baş dönüşü 5-15° / 150-250 ms önce**, "eşzamanlı = refleks" | Yön (bakış eli önceler) ÖLÇÜLMÜŞ; derece/ms raporun. ÖNERİ. |
+| **Manken eşiği** salınım <2 mm ve <0,05 Hz | Kaynaksız. ÖNERİ; kılavuz "salınım + nefes yazılır" der, eşik vermez. |
+| **Motor tabloları** (Kling 3.0 Pro / Fal.ai 2026 · Sora 2 · Veo 3.1 · Runway Gen-4 cümleleri) | TUR 12 emsali: sağlayıcı adı, sürüm, tarih İNMEZ. İfade BİÇİMİ (fiil+saniye+açı ✅ · zarf+olumsuz ✗) motor bağımsız olarak indi. |
+| **Kumano et al. 2014 → "500-1000 ms bilişsel değerlendirme"** | Kumano'nun çalışması kolektif izlenim/empati analizi; zaman penceresi atfı kurulamadı. Pencereler ÖNERİ. |
+| **">%80 olumsuz cevap öngörüsü" (0,7-1,0 s)** · **">30 cm yükseklik farkı"** (von Bergen 2013?) | Yüzde ve santimetre kaynaksız; yön indi (T15.2 #4 · #36). |
+| **Hall bantları raporun hâliyle** (sosyal 120-200 · kamusal >200 cm) | Hall'un aslı 1,2-3,6 m · >3,6 m — DÜZELTİLEREK indi. Rapor sayıyı kaynağından kopardı. |
+| **AI oranları** — dinleyen ağız %40-60 · yanlış figür %30-50 · donma %50 · eşzamanlı %25-35 · temas %60-70 · Comp-Attn 0,8256→0,8614 · WorldRoamBench/BRITE | Kaynaklar "AI Video Generation Studies (2024)", "Kling Tutorial", "Cinematic AI Prompting Guides" — blog/eğitim; WorldRoamBench/BRITE doğrulanamadı. Arıza SINIFLARI ve stratejiler indi, oranlar inmedi. |
+| **"%68-84 niyet doğruluğu, ilk %30-40'ta"** | Yön ÖLÇÜLMÜŞ (Cavallo 2016 ailesi gözlemci ayrımını şansın üstünde bulur), bant raporun ve kaynak listesi yok. Sayı kılavuza inmedi. |
+| **"ATSC hedef −90 ms · TV +30 ms"** | ITU-R BS.1359 rakamlarıyla karışık; yalnız ITU indi. |
+| **Raporların KENDİ hipotezleri** — motif jest "tam 3", "4+ deneme kesin bıkkınlık", ">1,5 s tepki kesin yapay", "4,0 s sessizlik = bilinç kaybı", "göz kırpma %25", "mesafe↑ gerilim lineer", "vizör koyuluğu %40", "5,5. saniye katarsis", "kumaş %25 az erime", giysi dikişinden kas gerilimi, 2° eğimden ±5 cm, göğüsten karar, 3 Hz omurga, 1 s sıfırlama = disosiasyon | Raporlar bunları zaten "kaynaksız" işaretledi. Kayda geçti, kılavuza inmedi. |
+| **Chekhov "son pozisyonu 10 saniye tut"** · Stanislavski "300 ms bekle" · Delsarte "10-15 cm genişlet" | Yöntemler gerçek, SAYILAR raporun eklemesi. Yöntem indi, sayı inmedi. |
+
+## T15.4 🚨 İKİNCİ KEZ İNMEYENLER — "ZATEN VAR" kapısı
+
+```
+Kuleshov bağlam atfı (nötr yüze komşu planın anlamı)   → KARAKTER_VE_DUYGU §2
+Yüz-beden çelişkisinde beden kazanır                     → TUR 11 (de Gelder)
+On-the-nose · statik/non-event diyalog · silme testi     → TUR 6 · SES_VE_DIYALOG §2a
+Raskin "karakter anı" (kısa filmde yay zorunlu değil)    → TUR 4 #5
+Kişisel eşya kanalı                                      → KARAKTER_VE_DUYGU §4.4 · ASTRONOT_DONANIM §8
+Zorlanma/yorgunluk = ödenen bedel                        → D169 · ⑧ EFOR
+Model kaynaksız ses için konuşan ağız İCAT EDER          → D35(c) · D82
+Klon · ikizleşme · temas erimesi · klip başı klon        → D20 · D69 · D140 · D196
+Kim solda kilidi (ekran yönü)                            → D86 · UZAMSAL_HARITA
+"Sayı yaz, sıfat değil" · olumsuz cümle tutmaz           → D169 · 01_DERS_ETKINLIK §4 · D79
+Durum değişimi klibe değil sınıra                        → SAHNE_ZINCIRI (REHBER §7)
+```
+Bu satırlar dört raporda yeniden geldi ve dört kılavuz onlara ATIF yapar,
+ikinci kez yazmaz.
+
+## T15.5 ⭐ BU TURUN EN NET SATIRI
+
+```
+Dört rapor tek bir şeyi dört açıdan söyledi: bu hatta NİYET, KARAR ve CEVAP
+hareketin SONUCUNDA değil BAŞINDA ve ARASINDA yaşıyor — bakış eli önceler,
+ağırlık adımı önceler, jest sözü önceler, dinleyen repliği bitmeden kımıldar,
+ret bir GECİKMEDİR, iki irade bir FAZ FARKIDIR. Deponun TIMELINE biçimi ise
+yalnız sonucu yazıyor ("presses the button"). Dört kılavuzun ortak işi,
+her gövde satırının ÖNÜNE bir hazırlık ve ARASINA bir gecikme yazdırmaktır.
+```
+
+## T15.6 ⬜ BU TURUN SINIRI
+
+```
+· Dört rapor DIŞ bilgidir; kaynak listeleri gelmedi, zincir yazar+yıl ile
+  yeniden kuruldu. Depoda ⑩ mod D ile ölçülmüş "ÇAPA ÜÇLÜSÜ yazılmış" film 0.
+· Konuşma analizi sayıları YÜZ YÜZE insan konuşmasından; telsiz, kask ve
+  post'ta binen ses altında aynı eşiklerin geçerliliği ölçülmedi.
+· Kinematik sayılar çıplak el/kol deneylerinden; basınç giysisi ve 12 m
+  lockoff altında hangi genliğin OKUNDUĞU ölçülmedi — bu yüzden kılavuzlar
+  izleyici eşiğini etiketle, prompt sayısını tasarım olarak taşır (T15.0).
+· İki-kişi ve dinleyen kadrajı bulguları çok karakterli, kesmeli, insan
+  eliyle çekilmiş yapımlardan. PROB A (ikinci insan) hâlâ koşulmadı.
+· ⛔ İlk sınav: bu dört kılavuzla yazılmış ilk filmin ⑩ mod D koşusu +
+  (iki insanlıysa) ⑩'a eklenecek "SPLIT ON THE BODY" satırı. Koşulmazsa
+  bu tur, TUR 13/14 gibi bir varsayım olarak kalır.
+```
+
+---
+---
+
+# 🔬 TUR 16 — THE SCOURED GLASS: NOVUM · KAYNAK · GÖRÜŞ KAYBI (11.09.2026)
+
+> **Promptlar:** `19_THE_SCOURED_GLASS_NOVUM_KAYNAK_GORUS_ARASTIRMA_PROMPTLARI.md`
+> (dört prompt, altışar cümle; 1 numaralı = `16_…` §4 birebir — TUR 13'ün
+> açığı) · **Ham:** `TUR16_HAM_RAPORLAR/` (2·3·4) + `TUR13_HAM_RAPORLAR/
+> TUR13_4_ZAMAN_MERDIVENI_HAM.md` (1) — ✅ **4/4 rapor geldi ve dördü
+> BİREBİR arşivlendi.**
+> **Tetikleyen:** `yatay_10_20_dk_filmler/THE_SCOURED_GLASS/` — 07.09.2026'da
+> yazılan 00_PLAN + FAZ_01'in `yeni-film` akışına (08.09 iskeleti + 11.09
+> TUR 15 kılavuzları) göre güncellenmesi. Bu tur filme ÖZGÜ üç boşluğu +
+> TUR 13'ün koşulmamış dördüncü promptunu kapatır.
+> **İndiği yerler:** ⭐ öncelikle FİLMİN kendisi — `00_ANALIZ/01_QA_DERS_HASADI`
+> · `02_KONSEPT_VE_RISK` · 00_PLAN (NOVUM · KİLİT 1/4/5 · faz haritası · B5)
+> · FAZ_01. Kılavuz adayları ⬜ (T16.7) — kart G işi; bu turda kılavuz
+> dokunuşu YAPILMADI, TUR 15 usulü.
+
+```
+⚠️ BU TURUN KAYNAK PROFİLİ — TUR 15 profili tekrarlandı
+   Dört raporun dördünde kaynak listesi gelmedi. Rapor 2 NASA belge
+   numaraları verdi (TM-2005-213694 · SP-284 · TM-105241 · TM-2010-216792);
+   SP-284 (Surveyor III analizi) bilinen bir belgedir, TM-2005-213694
+   DOĞRULANAMADI — Apollo toz etkileri raporunun bilinen numarası
+   TM-2005-213610'dur (Gaier). Rapor 3 NASA BVAD / STD-3001 / DRA 5.0'a
+   dayandı; metabolik sayılar (0,84 kg O₂ · 0,62 kg kuru gıda · ~2,4 L su)
+   BVAD'ın bilinen değerleriyle örtüşüyor → KAYNAK. Rapor 4'ün zaman
+   damgaları (Wait Until Dark 00:14:22 · All Is Lost 01:31:20 · Gravity
+   00:34:10) DOĞRULANMADI → vaka UYGULAMA olarak iner, damga İNMEZ.
+   Sayılar TUR 15'in iki sınıfıyla etiketlendi: ① İZLEYİCİ EŞİĞİ (kaynak
+   zinciri kurulamayan → ÖNERİ/⬜) · ② YAZIM SAYISI (tasarım kararı,
+   D169 gereği serbest).
+```
+
+## T16.0 ⭐ BU TURUN KARAKTERİ — üç bulgu + bir ön kontrol arızası
+
+```
+① NOVUM YENİDEN TANIMLANDI, YIKILMADI. "Hiçbir yüzey iki kez temizlenemez"
+   harfi harfine savunulamaz (solvent · kurbanlık kaplama · elektrostatik
+   itme varsa aşınmasız temizlik mümkün). Savunulabilir hâli: "sert ve açılı
+   mikro-partikül altında, solvent ya da yenilenebilir koruyucu katman
+   OLMADAN yapılan her KURU mekanik temizleme yüzeyi kalıcı çizer ve
+   geçirgenliği geri dönülemez düşürür." Bu filmin dünyasında solvent SU'dur
+   ve su hayattır → novum bir KAYNAK SEÇİMİNE dönüşür (kuru sil → görüş git;
+   ıslak sil → su git). Bedel kapısı BÜYÜDÜ, küçülmedi.
+
+② PROBLEM ZİNCİRİNDE BİR HALKA DÜŞTÜ, ÜÇÜ YENİDEN TANIMLANDI, MESAFE YENİDEN
+   YAZILDI. ⛔ F7 "filtreyi bezle değiştirmek" İMKÂNSIZ (1-3 µm toz, kumaş
+   gözeneği 20-100 µm). F4 su üretimi YAŞAM ALANI DIŞINA taşındı (H₂ patlama
+   bandı %4-75). F5-F6 tarım bu filmde ASLA hasat vermez (ilk mahsul 90-110
+   sol > 84 sol) — zaten planda başarısızdı, şimdi fizik de öyle diyor.
+   "Doksan sol ötedeki araç" TEK EVA'lık son etapla (≤15-20 km · 1 sol)
+   çelişiyordu → mesafe ~180 km, gezici PANEL-SINIRLI (novum yolculuğu
+   yavaşlatır), araç son etaba ≤15 km kala ölür.
+
+③ RAPOR 4 KISITI YANLIŞ OKUDU AMA MEKANİZMASI TUTTU. §7 şablonu 12 kademeyi
+   180 sahneye yaydı, mat şeride "nemlenme" dedi, tırmanışı S31'de başlattı
+   — HİÇBİRİ İNMEZ. §1-§6'nın gövde sözlüğü, tek-POV ekonomisi, silmeme
+   kararının önce/sonra çifti ve tırmanış bütçesi indi ve rapor 2 ile
+   çapraz tuttu (T16.1 ②).
+
+⚠️ ÖN KONTROL ARIZASI — TUR 13/14 KILAVUZLARA İNMEMİŞ (11.09.2026 ölçümü).
+   §T13.1/§T14.1'in "indiği yer" sütunları HOOK §1/§2/§4 · SES_VE_DIYALOG
+   §2a (muhatap) · KAMERA_ACISI §günlük · KARAKTER_VE_DUYGU §ton ·
+   02_RISK_KARTLARI "TEKDÜZE RENK" · KILAVUZ_REHBERI §3 "MARS kartı"
+   diyor. grep ölçümü: "Zillmann" · "fıçı distorsiyon" · "TEKDÜZE RENK"
+   yalnız BU dosyada ve film planında geçiyor; §3.2 kartı hâlâ jenerik
+   (610 Pa · 0,38 g yalnız §8 film satırlarında). Yani iki turun bulguları
+   PLAN'a indi, KILAVUZA İNMEDİ — D180/D165 ile aynı sınıf dönüştürme
+   borcu. Sonuç: THE SCOURED GLASS'ın 00_ANALIZ hasadı TUR 13/14/16'yı
+   kılavuzdan değil BU DOSYADAN okur; kılavuz dokunuşu kart G'ye yazıldı
+   (T16.7 ⬜).
+```
+
+## T16.1 ⭐ ÇAPRAZ OKUMA — dört çift
+
+```
+① 1 ↔ 2  (zaman kanalları ↔ cam merdiveni)                  ✅ TUTUYOR + KURAL
+   1: fazda 1 ANA taşıyıcı 1 kademe + ≤2 yan kanal; 4+ kanal aynı anda =
+      görsel gürültü / devamlılık hatası; AI 3+ değişken durumda karıştırır.
+   2: 12 kademe; komşu kademe MCU'da ≥%3,5-5 kadraj alanı farkıyla okunur.
+   → Cam F10-F12'de 2-3 kademe birden atlıyor; o fazlarda BAŞKA kanal
+     atlamaz (sakal tokeni F10-F12 zaten sabitti ✅). Planın "15 kademe"
+     yazan satırı 12'ye (0-12) düzeltilir; F12=9 → F14=12 çelişkisi
+     (F13'te silmeme kararı merdiveni durduruyorsa F14 nasıl 12?) kapanır:
+     merdiven F12 sonunda 11, F13 başında son silme 12, KARAR ondan sonra.
+
+② 2 ↔ 4  (yüzün okunmaz olduğu kademe ↔ gövdenin yüzü devraldığı sahne) ✅ TUTUYOR
+   2: %60 matlıkta yüz kontrastı %90 düşer (Kademe 9), %75-80'de leke.
+   4: gövde işaretleri (baş eğimi → el önde → dokunma → adım → dur-dinle →
+      ışığa dönme) SIRAYLA açılır.
+   → F11 KÖRLÜK (kademe 6-8 · %30-50): ilk iki işaret. F12 (9-11): dokunma
+     + adım/sürtme. F13 (12): dur-dinle + ışığa dönme = güneşle yön bulma.
+     Yüzün kaybolduğu kademe ile gövdenin devraldığı faz AYNI (F11-F12).
+   → Her iki rapor da TEK öznel kadraj diyor; planın motif listesindeki
+     "S94 (kamera)" o kadrajdır (F8 orta nokta, kademe ~4). Final karesi
+     (S180, mat camın ardından gökyüzü) ikinci öznel kadrajdır ve kuralın
+     ÖDEMESİDİR — öğretme S94'te, ödeme S180'de; başka POV YOK.
+
+③ 3 ↔ 1  (kaynak defterinin tükenme kademeleri ↔ kaynak-azalması kanalı)  ✅ TUTUYOR + DÜZELTME
+   1: raf/depo değişimi ≥%25 hacim boşalmadan okunmaz (ÖNERİ).
+   3: 84 paket → 1'e lineer (sol başına 1).
+   → Lineer tek-paket eksilmesi %25 eşiğinin altında kalır = görünmez.
+     Kule SIRA olarak düşer: 4 sıra × 10 = 40 paket (yarım tayın — kilo
+     kaybı ve "cheeks hollowed" buradan doğar), F2=4 · F5=3 · F8=2 (kalan
+     geziciye taşınır) · gezici ağı F9=20 · F12=0. Planın "5 sıra · F6=4 ·
+     F9=2 · F12=0" satırı bu ızgaraya çekilir.
+
+④ 3 ↔ 4  (son etabın üst sınırı ↔ tırmanış/yürüyüş bütçesi)            ✅ TUTUYOR
+   3: gezici öldükten sonra yürünebilecek son etap ≤15-20 km · 1 sol · tek
+      EVA (6-8 s); gece dışarıda ısıtmasız = ölüm.
+   4: tırmanış 10 s'de 1-1,5 basamak, aritmik duraklar; yürüyüşte adım
+      60-70 → 30-40 cm.
+   → F13 (12 sahne) = tek EVA'lık ≤15 km yürüyüş; F14 (12 sahne) = tırmanış
+     ~12-18 basamak. Gezici F12 sonunda araca ≤15 km kala ölür; bu sayı
+     PLAN'a yazılır. "Doksan sol" ifadesi B5/README/PLAN'dan çıkar.
+```
+
+## T16.2 ✅ DEPOYA GİRENLER
+
+| # | Bulgu | Kaynak · tür | Etiket | İndiği yer |
+|:-:|---|---|:--:|---|
+| **1 · ZAMAN MERDİVENİ (TUR13·4)** | | | | |
+| 1 | **Altı zaman kanalı:** gövde · giysi · mekân birikmesi · kaynak azalması · iç ışık · ritüel deformasyonu | tür sökümü (vaka) | UYGULAMA | 02_KONSEPT §zaman kanalları · 00_PLAN KİLİT listesi (ritüel + iç ışık aday) |
+| 2 | **Biyolojik hızlar:** sakal 0,3-0,4 mm/gün (~1,25 cm/ay) · saç ~1 cm/ay · tırnak ~3 mm/ay · yara: inflamasyon 1-4 gün → proliferasyon 4-21 gün → remodelasyon 21 gün+ | genel fizyoloji | ÖLÇÜLMÜŞ | ⭐ 00_PLAN KİLİT 4 — **sakal tokeni biyolojiye çekilir:** 84 sol ≈ 86 gün → azami ~3-3,5 cm. "long unkempt beard" (F10-F15) SİLİNİR: F1-F2 four days of stubble · F3-F5 short dark stubble thickening · F6-F9 a short full dark beard · F10-F12 a full dark beard, unkempt · F12+ + cheeks hollowed. Kalça yarası merdiveni (F1 açık · F4 kabuk · F9 iz) biyolojiyle TUTUYOR, değişmez |
+| 3 | **Kilo/yüz çökmesi** kademelenir (eksen filmde 3 aşama/450 sol, dublörle); 84 solda yarım tayınla yanak çökmesi | yapım notu (vaka) | UYGULAMA | KİLİT 4 "cheeks hollowed" F12'de başlar (son kasksız iç mekân = gezici kabini); F13-F15'te yazılır ama vizör ardında OKUNMAZ |
+| 4 | **Değişim körlüğü:** arka plan nesnesi kadrajın ≥%8-12'si · yüzey gradyanı (toz/kir) kadraj alanının ≥%20-25'i · yüz değişimi yüz alanının ≥%3-5'i → okunur | mekanizma: Simons & Levin 1997 · Smith & Henderson 2008 "edit blindness" (yön) · **yüzdeler raporun** | ÖLÇÜLMÜŞ yön · sayılar ÖNERİ | 02_KONSEPT · her taşıyıcının kadraj payı sahne çalışmasında ölçülür (D179 ile birlikte) |
+| 5 | **Faz başına 1 ANA taşıyıcı 1 kademe + ≤2 yan kanal;** 4+ kanal aynı anda = gürültü; "ardışık üç sahnede en az iki kanalda kademe yoksa zaman durur" | raporun tasarımı (AI dikkat kayması iddiası kaynaksız) | ÖNERİ · ⬜ HİPOTEZ (üç-sahne kuralı) | ⭐ 02_KONSEPT §ZAMAN MERDİVENİ tablosu: faz × ana/yan kanal |
+| 6 | **Ana taşıyıcı = her sahnede KADRAJDA olan nesne** (rapor: iç mekân duvarı; yüz kasklı dışarıda kesilir) | raporun gerekçesi | UYGULAMA · ⚠️ ÇEVRİLDİ | Bizde modül F9'da terk edilir → ana taşıyıcı KONUMA göre ikiye ayrılır: İÇ (F2-F8) çentik duvarı · DIŞ (her faz) vizör mat şeridi; sakal iç mekânda DOĞRULAYICI |
+| 7 | **Kademe faz SINIRINDA değişir, yeni fazın ilk sahnesinde görünür** | raporun şablonu | UYGULAMA · **ZATEN VAR** (SAHNE_ZINCIRI: durum değişimi klibe değil sınıra) | 03_SAHNE_SIRALAMASI: bedel çeyreğinde (S10-S12) ÖDENİR, sonraki fazın S1'inde YENİ DURUM |
+| **2 · NOVUM FİZİĞİ** | | | | |
+| 8 | **Kuru silme sert tozla optik yüzeyi çizer:** Apollo vizör/mercek çizikleri (kumaş eldivenle silme), Surveyor III optiklerinin egzoz tozuyla matlaşması, MARSWIT kuru silme deneyi; ay tozu Mohs 6-7 · polikarbonat Mohs 2-3 | Apollo debrief (Gaier 2005 yön) · SP-284 · MARSWIT (doğrulanmadı) | ÖLÇÜLMÜŞ (mekanizma) · sayı ÖNERİ | ⭐ 00_PLAN §NOVUM — önerme yeniden yazılır (T16.0 ①) · QA_SPEC C bloğu · ⬜ KILAVUZ_REHBERI §3.2 MARS satırı adayı |
+| 9 | **Mars toz 1-10 µm, bazalt/hematit, Mohs 5-6,5;** pasif çökelti günde %0,2-0,3 güç kaybı; temizlenme olayları RÜZGÂRLA (+%10-70), silmeyle DEĞİL; 2007/2018 fırtınalarında τ>5 → %99 engel | MER/InSight telemetrisi (bilinen) | ÖLÇÜLMÜŞ | 02_KONSEPT · F12 panel ölümü fırtına tozunun çökmesiyle; "rüzgâr temizler" filmde YOK (dramaturjik karar: rüzgâr onu kurtarmaz — kayda geçer) |
+| 10 | **Mat cam ≠ bulanıklık:** perdeleyici parlama (siyah seviyesi yükselir) · MTF/lokal kontrast kaybı · ışık kaynağı çevresinde halo | optik (genel) | ÖLÇÜLMÜŞ | ⭐ prompt sözlüğü: mat şerit "blur/soft focus" ile DEĞİL, "veiling haze, lifted blacks, halo around the sun" ile yazılır; NEGATİF bloğundaki "no soft focus" korunur |
+| 11 | **Berrak↔tam mat arasında ~10-12 JND;** yüz %60 matlıkta okunmaz olmaya başlar, %75-80'de leke; komşu kademe MCU'da ≥%3,5-5 kadraj alanı farkı ister | Weber-Fechner (yön) · sayılar raporun | ÖNERİ (izleyici eşiği) | KİLİT 1: 12 kademe algısal tavanın İÇİNDE; her kademe farkı ≥%3,5 kadraj alanı (S8'de şerit ~%15 → ✅) |
+| 12 | **12 kademelik CAM MERDİVENİ** — vizör kaplama %: 0-2 · 5 · 10 · 15 · 22 · 30 · 40 · 50 · 60 · 70 · 80 · 85+; Kademe 8 (%50) ağız kaybolur, 9 (%60) yüz tespiti düşer, 12 yüz %0 | raporun şablonu | ÖNERİ (yazım sayısı) | ⭐ 00_PLAN KİLİT 1 tablosu (faz eşlemesi T16.7'de) · FAZ 1 S8 = Kademe 1-2 |
+| 13 | **Nesne↔karakter bağı dört hamleyle kurulur:** ilk eşleştirme (aynı kadrajda dokunma/bakış) · tekrar · TEK öznel kadraj · dokunma; bağ kurulmazsa "aksesuar kusuru / devamlılık hatası" okunur | dramaturji (raporun sentezi; örnekleri zayıf) | UYGULAMA | 03_SAHNE_SIRALAMASI: S8 ilk eşleştirme ✅ · her silme = tekrar · S94 tek POV · silme jesti = dokunma |
+| 14 | **AI cam sözlüğü — TUTAN:** `matte glass strip` · `micro-abraded surface` · `dust-scratched corner` · `frosted matte edge band` · `etched polycarbonate` · `sanded glass band` — **KAÇAN (bleed):** fog/condensation/steam · lens flare/glare · reflection/specular · broken/cracked/shattered · bokeh/blur | uygulama sözlüğü (motor adları İNMEDİ) | UYGULAMA | ⭐ 00_PLAN §NEGATİF ÇEKİRDEK'e bleed-word satırı · FAZ 1 S8-S12 SCENE/NEGATİF · QA_SPEC C |
+| 15 | **I2V motorları köşe mat şeridini KENDİLİĞİNDEN TEMİZLER** (estetik öncel) → her sahnede konum koordinatla yazılır + "never becomes clear" negatifi | uygulama gözlemi (oran yok) | UYGULAMA · **ZATEN VAR** (D147 kir MONOTONİK merdiven, faz satırı her prompta) | KİLİT 1 ④: mat şerit her dış sahne promptunun SCENE satırında konum + kademeyle YAZILIR (self-contained kural ③'ün bu filme özgü hâli) |
+| 16 | **Yüz önünde mat bant:** %50 üstünde yüz tespiti düşer; dudak senkronu ağız bant ardındaysa titrer/reddeder; politika filtreleri "kimlik gizleme/bozuk görüntü" diye reddedebilir | uygulama (oran yok) | UYGULAMA · KART 12 sınıfı | 02_KONSEPT politika satırı: ≥Kademe 8 dış sahnelerde yüz MCU YOK (MS/WS ya da eksen dışı); iç mekân zaten kasksız — replikli sahne etkilenmez |
+| 17 | **Hüküm:** önerme harfi harfine savunulamaz; en yakın savunulabilir ifade T16.0 ①'de | raporun hükmü | UYGULAMA | 00_PLAN §NOVUM (D74: sapma açıkça yazılır) |
+| **3 · KAYNAK ARİTMETİĞİ** | | | | |
+| 18 | **Metabolik gün:** O₂ 0,84 kg · CO₂ ~1,0 kg · 3.041 kcal · kuru gıda 0,62 kg · su 2,38 L (içme 1,62 + hazırlama 0,76) | NASA BVAD (bilinen değerlerle örtüşür) | KAYNAK | 02_KONSEPT kaynak defteri · 84 sol toplamları (70 kg O₂ · 52 kg gıda · 200 L su) ÖNERİ etiketli |
+| 19 | **Güneş:** Mars TOA ~590 W/m² · τ=0,5'te yüzey ~220 W/m² · %30 hücre → ~250 Wh/m²/sol; toz %0,2-0,28/sol → 84 solda −%19; fırtına τ>5 → %14 | TOA ÖLÇÜLMÜŞ · gerisi ÖNERİ | ÖLÇÜLMÜŞ / ÖNERİ | ⭐ 02_KONSEPT: gezici PANEL-SINIRLI — 10 m² panel ≈ 2,5 kWh/sol ≈ 6,3 kW sürüşte ~25 dk ≈ **~6-8 km/sol**; raporun 60-90 km/sol'u tam pil varsayar, İNMEZ (T16.4) |
+| 20 | **Gece ısıtması:** −80…−110 °C · 1,5-2 kW × 12 s = 18-24 kWh = 40 kWh pilin %45-60'ı | ÖNERİ (mimari varsayımı) | ÖNERİ | F9 "ısıtıcı pili yarılanır" ✅ savunulabilir; görünür bedel: pil iğnesi yeşil ortadan sarı/kırmızı sınıra + **kabin camında iç kırağı** (yeni görsel) |
+| 21 | **F4 yakıt→su: YENİDEN TANIMLANMALI** — H₂ yakımı kapalı kabinde patlama bandında (%4-75); hidrazin toksik; çözüm: yaşam alanı DIŞINDA yakma hücresi, yoğuşan su içeri; 100 L ≈ 89 kg N₂H₄ + 44,5 kg O₂ · ~4 sol | kimya (ÖLÇÜLMÜŞ) · sayılar ÖNERİ | ÖLÇÜLMÜŞ / ÖNERİ | ⭐ 00_PLAN F4: eylem hava kilidinin DIŞINDA, boru ucundan kaba damlayan su; bedel: yanık + O₂ (iğne bir kademe düşer) |
+| 22 | **F5 tarım: YENİDEN TANIMLANMALI** — perklorat %0,5-1,0 kütle; ilk mahsul 90-110 sol > 84 sol → bu filmde hasat OLMAZ; filiz 3-7 günde çıkar ve ölür | astrobiyoloji (bilinen) | ÖLÇÜLMÜŞ | 00_PLAN F5: filiz çıkar (S~55) → F6 solar; bitki YALNIZ modül içinde (negatif çekirdek "no plants outside" korunur) |
+| 23 | **F6 perklorat yıkama: SAVUNULABİLİR** — toprak:su 1:5, üç kademe; görünür: huni altında berrak su + tepside BEYAZ KRİSTAL TUZ; 20 kg toprak = 100 L = stoğun yarısı | kimya (çözünürlük ÖLÇÜLMÜŞ) | ÖLÇÜLMÜŞ | 00_PLAN F6 ✅ planın "su stoğunun yarısı gider"i aritmetikle TUTUYOR; yeni görsel: beyaz tuz kabuğu |
+| 24 | ⛔ **F7 filtre: BEZLE DEĞİŞTİRMEK İMKÂNSIZ** (toz 1-3 µm, kumaş 20-100 µm); savunulabilir: filtreyi ters gaz/vurarak temizlemek (0,2 kg gaz); görünür: kararmış silindire vurulunca kırmızı toz bulutu, yüzey griye döner | filtrasyon (ÖLÇÜLMÜŞ) | ÖLÇÜLMÜŞ | ⭐ 00_PLAN F7 YENİDEN: bez FİLTRE OLMAZ; bez giriş ızgarasını siler ve tozla DOLAR → aynı bez sonraki vizör silmesinde daha derin çizer ("filtre bezi = silme bezi" nedenselliği korunur, mekanizma değişir); gaz bedeli iğnede |
+| 25 | **F10 fırtına: görüş SAVUNULABİLİR, rüzgâr DEĞİL** — τ>5-6: görüş 2-5 m, güneş diski kaybolur, pas alacakaranlık; 30 m/s = 9 Pa; gelişme 3-5 sol, bölgesel haftalar, küresel 30-90 sol | TUR 14 #9 **ZATEN VAR** (9 Pa) + yeni görsel parametreler | ÖLÇÜLMÜŞ | ⭐ 00_PLAN IŞIK TAKVİMİ: yeni blok **B1-FIRTINA** (güneş yok, gölge yok, pas alacakaranlık, görüş ~3 m) F10-F12; fırtına 15-18 sol sürer ve F12 panel ölümünü doğurur; F13'te gök açılır (final karesi için) |
+| 26 | **F11 yanlış yön: SAVUNULABİLİR** — Mars'ta küresel manyetik alan yok, pusula çalışmaz; kerteriz güneştir; mat vizörde güneş belirsiz parlama | gezegen bilimi (ÖLÇÜLMÜŞ) | ÖLÇÜLMÜŞ | 00_PLAN F11: yön kaybının SEBEBİ mat camdaki güneş halosu (T16.2 #10 ile aynı görsel) — "duvardaki oklar" İNMEZ |
+| 27 | **F12-F13 gezici ölümü SAVUNULABİLİR, uzun yürüyüş İMKÂNSIZ** — son etap ≤15-20 km · tek EVA 6-8 s · 1 sol; giyside 0,28 kg O₂ · 1,2-3,6 kg soğutma suyu · ~800 Wh | EVA sınırları (bilinen) | ÖLÇÜLMÜŞ / ÖNERİ | ⭐ 00_PLAN + B5: gezici araca ≤15 km kala ölür; F13 = tek EVA yürüyüşü; gece dışarıda kalınmaz |
+| 28 | **Gece ve alacakaranlık görselleri:** gün batımında 15-20 °C/saat düşüş · kayalarda ince beyaz kırağı · fırtınasız gece kristal berrak yıldızlı gök | ÖLÇÜLMÜŞ (genel) · kırağı tipi ÖNERİ | ÖLÇÜLMÜŞ | 00_PLAN IŞIK TAKVİMİ **GECE** bloğu (F9): yıldız İZİNLİ (negatif "no stars in DAYLIGHT"), kırağı 10 s'de yavaş belirir — tek planda üretilebilir olay listesi: kırağı oluşumu · panelin mat kiremit rengine dönmesi · vizörün güneş açısıyla matlaşması |
+| 29 | **Fiziksel taşıyıcı seti:** su tüpü (şeffaf) · paket kulesi · panel tozu + rakamsız iğne · O₂ tank ibresi · çentik · vizör | raporun önerisi | UYGULAMA · çoğu ZATEN VAR | **YENİ:** şeffaf su tüpü → KİLİT 6 adayı, ⛔ "dereceli" DEĞİL (çizgi = metin riski, KART 5) — düz silindir, seviye tek gösterge; O₂ tank ibresi ALINMADI (kanal sayısı: T16.2 #5) |
+| 30 | **Zincir kısaltılacaksa atılacak halka:** filtre-bez | raporun hükmü | UYGULAMA | #24 ile kapandı — halka atılmadı, yeniden tanımlandı |
+| **4 · GÖRÜŞ KAYBI** | | | | |
+| 31 | **Körlüğün gövde sözlüğü, SIRAYLA:** baş 15-30° yana/yukarı · el gözden 10-30 cm önde · sürekli dokunma hattı · adım 60-70 → 30-40 cm + taban sürter · 3-5 m'de dur-dinle · en parlak kaynağa dönme | raporun sentezi (sayılar kaynaksız) | UYGULAMA · sayılar YAZIM SAYISI | ⭐ 00_PLAN F11-F13 gövde şeridi + KARAKTER KARTI "ALIŞKANLIK/İLK↔SON" · 05_SAHNE_CALISMALARI F11+ · TUR 15 #17 (bakış eli önceler) TERSİNE döner: körlükte EL BAKIŞI önceler — kart bunu yazar |
+| 32 | **Tek öznel kadraj yeter** (Gravity vizör buğusu tek POV; Diving Bell 14 POV sonra −%80) | vaka (damgalar doğrulanmadı) | UYGULAMA | T16.1 ②: S94 öğretir, S180 öder; başka POV yok |
+| 33 | **Yapmamayı seçmek = KARAR:** reddedilen nesne kadrajda kalır · el yüzeye 2-3 cm kala DURUR, donar, yavaşça iner · ÖNCE bükük/gergin gövde → SONRA dik, dingin omurga | dramaturji + All Is Lost vakası | UYGULAMA · **ZATEN VAR** mekanizma (KARAKTER_KARTI §3 · OYUNCULUK_YAZIM §2 ÇAPA ÜÇLÜSÜ) | ⭐ 00_PLAN ÇAPA ÜÇLÜSÜ — CHOICE satırı: F13 silmeme sahnesi, BEFORE/AFTER bu çift; bez kadrajda KALIR (karar mimarisi) |
+| 34 | **Sessiz son üçte bir dikkati neyle tutar:** mikro-akustik ses (nefes · kumaş · temas) · sayılabilir görev (basamak) · ritim değişimi; iki yönlü eleştiri ("saf minimalizm" ↔ "hiçbir şey olmuyor") | vaka (All Is Lost %94 · Gerry · Jeanne Dielman · Turin Horse) | UYGULAMA · TUR 13 #6 **ZATEN VAR** | 00_PLAN §SES F13-F15: kask içi nefes + eldiven-metal teması tek ses katmanı; MUZIK: son üçte birde tema yok, yalnız nefes ritmi (aday) |
+| 35 | **Tırmanış bütçesi:** 10 s'de 1-1,5 basamak · aritmik duraklar · düşme riski = siluet basamak ekseninden 15-20° dışarı + ağırlık tek kolda + diğer el boşlukta arar · 2-3 s nefes donması | raporun tasarımı · Touching the Void vakası | UYGULAMA · sayılar YAZIM SAYISI | ⭐ 03_SAHNE_SIRALAMASI F14: 12 sahne ≈ 12-18 basamak; S158 sınıfı kayma sahnesi; ⑧ EFOR merceği ölçer |
+| 36 | **Tatmin = katarsis değil, fiziksel olarak mümkün olanın sınırına varmak;** "doruk yok, düz bitti" eleştirisi bedel ve ritim yoksa gelir | vaka + eleştiri (yön) | UYGULAMA · TUR 14 #14 **ZATEN VAR** (final yasağı) | 00_PLAN §TON F14-F15 |
+
+## T16.3 ⛔ GERÇEK / FİLM — üçüncü liste (17'nin kapısı, 2 ve 3 numaralı raporlar)
+
+| Konu | GERÇEK: ne olur | FİLM (eksen ya da bizim taslak): ne gösterdi | Bizim karar |
+|---|---|---|---|
+| Kuru silme | Sert tozla yüzeyi çizer, geçirgenlik geri gelmez (Apollo) | Bizim taslak: "hiçbir yüzey iki kez temizlenemez" | ✅ yeniden tanımlandı: KURU silme; solvent = su = hayat → seçim |
+| Rüzgâr temizliği | Toz hortumu paneli %10-70 açar (MER) | Eksen: yok; bizde yok | ⛔ filmde rüzgâr onu KURTARMAZ — dramaturjik karar, fizik ihlali değil (rüzgâr olmayabilir); PLAN'a tek satır |
+| H₂ yakarak su | Kapalı kabinde patlama bandı; dışarıda hücrede mümkün | Eksen: kabin içinde açık alev (eleştirildi) | ✅ F4 hava kilidi DIŞINDA |
+| Regolitte tarım | Perklorat yıkanmadan çimlenmez; hasat 90-110 sol | Eksen: dışkı + ham regolit, hasat var | ✅ bizde hasat YOK — filiz ölür (F5-F6 başarısız) |
+| Filtreyi bezle değiştirmek | 1-3 µm toz kumaştan geçer — imkânsız | Bizim taslak: "filtre bezi = silme bezi" | ✅ bez ızgarayı siler, tozla dolar; filtre gazla/vurarak temizlenir |
+| Toz fırtınası | 9 Pa — deviremez; görüş 2-5 m; haftalar sürer | Eksen: aracı devirir (filmin ana hatası, TUR 14 ZATEN VAR) | ✅ B1-FIRTINA ışık bloğu; 15-18 sol; panel ölümünün sebebi |
+| Pusula | Küresel manyetik alan yok | — | ✅ yön güneşle; mat cam güneşi haloya çevirir → F11 |
+| Gezici menzili | Pil-sınırlı: 40 kWh ≈ 90 km TEK şarj; solar şarj 10 m²'de ~2,5 kWh/sol → sürdürülebilir ~6-8 km/sol | Rapor: 60-90 km/sol (tam pil varsayımı); bizim taslak: "90 sol" | ✅ ~180 km · panel-sınırlı · novum yolculuğu yavaşlatır |
+| Yürüyerek son etap | ≤15-20 km · tek EVA · 1 sol; gece dışarıda ölüm | Eksen: yok; bizim taslak: belirsiz | ✅ gezici araca ≤15 km kala ölür; F13 tek EVA |
+| Gece | −80…−110 °C · kırağı · yıldızlı berrak gök | — | ✅ F9 GECE bloğu; yıldız yalnız gece |
+| Kilo kaybı | 84 sol yarım tayın → yüz çökmesi başlar | Eksen: dublörle 450 sol | ✅ "cheeks hollowed" F12'den; F13+ vizör ardında okunmaz |
+
+## T16.4 ⛔ DEPOYA GİRMEYENLER — dürüst kayıt
+
+| Bulgu | Neden inmedi |
+|---|---|
+| **Rapor 1'in 15 fazlık şablonu** (Gün 1 → Yıl 4 · "clean-shaven" başlangıç · 6000K klinik ışık · 200 çentik · omuz hizasında saç) | Filmin künyesini okumadı: 84 sol, dört günlük sakalla başlar, iç ışık alttan pratik/sıcak. Yapı (1 ana + ≤2 yan kanal) indi, hücreler İNMEDİ |
+| Rapor 1 zaman damgaları (Cast Away 00:42:10 · Martian 01:45:12 · Le Trou · Moon 00:52:20 …) ve Hanks 23/25 kg | Doğrulanmadı; filme düşen iş yok — vaka olarak kayıt |
+| "%74 arka plan değişimi kaçırılır" · "%8-12 / %20-25 / %3-5" eşikleri | Change blindness literatürü VAR (Simons & Levin · Smith & Henderson), bu yüzdeler raporun; mekanizma indi, sayılar ÖNERİ etiketiyle yalnız tasarım ızgarası olarak |
+| "Ardışık üç sahnede iki kanal yoksa zaman durur" | Kaynaksız → ⬜ HİPOTEZ; faz başına ≥2 kanal kuralı olarak tasarımda tutuldu |
+| Rapor 2 NASA belge numaraları (TM-2005-213694 · TM-105241 · TM-2010-216792) ve "tek silme %3-15 geçirgenlik kaybı" | Numaralar doğrulanamadı (Apollo toz raporu TM-2005-213610 olarak bilinir); yüzde raporun — Apollo kayıtları NİTELİKSEL ("scratched"). Mekanizma ÖLÇÜLMÜŞ, sayı ÖNERİ |
+| "InSight'ı 2018 fırtınası öldürdü" | Yanlış: InSight 2022'de birikmiş tozla bitti; Opportunity 2018 fırtınasıyla. Düzeltilerek kayda geçti, kılavuza inmedi |
+| "10-12 JND" · "%60'ta kontrast −%90" · "%75-80'de leke" · "≥%3,5-5 kadraj alanı" | Weber-Fechner yönü doğru, sayılar kaynaksız → ÖNERİ; 12 kademe tasarımı bu sayılara DAYANMAZ, onlarla ÇELİŞMEZ |
+| Rapor 2'nin "The Martian / Gravity vizör çizikleri" ve "ilk eşleştirme = HUD göstergesi" örnekleri | Gravity'ninki buğu, çizik değil; HUD = metin yasağı. Dört hamle mekanizması indi, örnekler inmedi |
+| Set pratiği: camsız kask + post VFX vizör | Bizim zincirde post katmanı yok — kısıt, bulgu değil |
+| Motor adları (Midjourney v6/v7 · Flux · Sora · Runway Gen-3) ve yüz tespit kütüphaneleri (MediaPipe · Dlib · FAN · Wav2Lip · LatentSync) | TUR 12 emsali: ad/sürüm İNMEZ; SÖZLÜK (tutan/kaçan kelime) ve davranış SINIFI indi |
+| Rapor 3: gezici 60-90 km/sol · "90 sol" = 5.400 km / 1.080 km türetimleri | Tam pil/sol varsayımı ve bizim yanlış öncülümüz üzerine kurulu. Yerine panel-sınırlı menzil (T16.2 #19) ve ~180 km |
+| Rapor 3: "ısıtmasız giyside 8-15 dk ölüm" · "duvardaki yön okları" · "dereceli silindir tüp" · "84 paket (sol başına 1)" | Sırasıyla: kaynaksız ve gereksiz (gece zaten kabinde) · sembol/metin yasağı · çizgi = KART 5 · yarım tayın 40 paket (T16.1 ③) |
+| Rapor 3: CO₂ kırağısı | Orta enlemde su kırağısı daha olası; "ince beyaz kırağı" olarak indi, kimyası inmedi |
+| Rapor 3: habitat 3,5 kW · gezici 7,5 kW · 40 kWh · LiOH 1,3 kg/kg | Mimari varsayımlar (DRA 5.0 atfı doğrulanmadı) → ÖNERİ; yalnız oran (gece = pilin ~yarısı) plana indi |
+| **Rapor 4 §7 şablonunun TAMAMI** (12 kademe × 15 sahne · "nemlenme" · tırmanış S31'den · S82 POV · S112 karar · S158 kayma) | Kısıtı yanlış okudu: merdiven F3-F13'te, buğu KAÇAN kelime (rapor 2), tırmanış F14'te. Sahne numaraları İNMEZ; mekanizmalar §1-§6'dan indi |
+| Rapor 4 zaman damgaları ve sayıları (00:14:22 · 0,4 s · 14 POV / 6-12 s / 22 s · 18 s · 01:31:20 / 45 s · %94 · 15-30° · 10-30 cm · 3-5 m · 1-1,5 basamak · 15-20°) | Kaynaksız; T15.0 ② gereği YAZIM SAYISI olarak kılavuz/plan kullanabilir, izleyici eşiği olarak İNMEZ |
+| "Geordi La Forge VISOR eleştirisi" | Kaynaksız, konuyla ilgisiz |
+
+## T16.5 🚨 İKİNCİ KEZ İNMEYENLER — "ZATEN VAR" kapısı
+
+```
+Durum değişimi klibe değil SINIRA                    → SAHNE_ZINCIRI (REHBER §7)
+Kir/toz MONOTONİK merdiven, faz satırı her prompta   → D147 · D155
+Sayı yaz, sıfat değil · olumsuz cümle tutmaz         → D169 · D79
+Ana nesne ≥100 px                                    → D179
+30 m/s = 9 Pa, fırtına deviremez · Mars künyesi      → TUR 14 #8 · #9
+Absürt kurtuluş yasağı · "düşük bahis" eleştirisi    → TUR 14 #14 (FİNAL YASAĞI)
+Sayılabilir kaynak · görünür takvim · dramatik ironi → TUR 13 #16 · TUR 14 #4
+All Is Lost 51 kelime · sessiz filmler               → TUR 13 #6
+Niyet hareketin BAŞINDA · bakış eli önceler          → TUR 15 #15 · #17 (körlükte TERS)
+Karar imzası (salınım durur · omuz iner)             → TUR 15 T15.1 ①
+Reddedilen nesne kadrajda · ÇAPA ÜÇLÜSÜ önce/sonra   → KARAKTER_KARTI §3 · OYUNCULUK_YAZIM §2
+Kapalı vizör = oklüzyon, dış replik post'ta          → TUR 13 #10
+Motor adı/sürümü inmez                               → TUR 12
+```
+
+## T16.6 ⭐ BU TURUN EN NET SATIRI
+
+```
+Dört rapor filmin merkezini aynı yere itti: bu filmde HER ŞEY KURU'dur.
+Su hayattır ve solventtir; kuru silmek görüşü, ıslak silmek suyu götürür.
+Novum bir fizik yasası olmaktan çıkıp bir SEÇİM oldu — ve seçim
+KARAKTER_KARTI'nın istediği şeydir: reddedilen nesne (su tüpü) kadrajda
+dururken adam bezi kuru sürer. Tek kişilik bir filmin hasmı yoktu;
+şimdi var ve adı kendi susuzluğudur.
+```
+
+## T16.7 🔧 PLANA VE FAZ 1'E DÜŞEN DEĞİŞİKLİKLER — 00_ANALIZ bunları taşır
+
+```
+00_PLAN
+ 1. §NOVUM önermesi yeniden yazılır (KURU silme · solvent yok · su seçimi) [D74 sapma satırı]
+ 2. KİLİT 1: "15 kademe" → 12 kademe (0-12) + vizör kaplama % tablosu +
+    faz eşlemesi: F1-F2 = 0 · F3 = 1-2 (S8 tohum + F3 ilk bilinçli silme) ·
+    F7 = 3 · F8 = 4 (S94 POV) · F10 = 7 (üç silme) · F11 = 9 · F12 = 11 ·
+    F13 = 12 (son silme, sonra KARAR) · F14-F15 = 12
+    + her dış sahne SCENE satırında konum+kademe + bleed-word negatifi
+    + ≥Kademe 8'de yüz MCU yok (politika)
+ 3. KİLİT 4 sakal tokeni biyolojiye (T16.2 #2); cheeks hollowed F12'den
+ 4. KİLİT 5 erzak kulesi 4 sıra × 10 = 40 · F2=4 · F5=3 · F8=2 → gezici ağı
+    F9=20 · F12=0
+ 5. KİLİT 6 (yeni): şeffaf, ÇİZGİSİZ su tüpü — F4'te dolar, F6'da yarılanır,
+    F10'da REDDEDİLEN NESNE (ıslak silmeme)
+ 6. 15 FAZ HARİTASI: F4 dış yakma hücresi + O₂ bedeli · F5 filiz · F6 beyaz
+    tuz + su yarı · F7 ızgara bezi + gaz bedeli · F9 kırağı + yıldız ·
+    F10-F12 B1-FIRTINA · F12 panel ölümü = fırtına tozu · F13 ≤15 km tek EVA
+ 7. B5 ENGEL: "90 sol" → ~180 km, panel-sınırlı gezici
+ 8. IŞIK TAKVİMİ: + GECE (F9 · F12) + B1-FIRTINA (F10-F12)
+ 9. GÖVDE ŞERİDİ F11-F13 (T16.2 #31) · ÇAPA ÜÇLÜSÜ CHOICE = F13 silmeme
+    (el 2-3 cm'de durur; ÖNCE bükük / SONRA dik) · tek POV S94 + S180
+10. Motif listesi: "S176 seçim" → F13 içinde (03_SIRALAMA sahnesini seçer)
+
+FAZ_01 (24 prompt BOZULMAZ — ekleme/düzeltme)
+ a. S8: mat şerit sözlüğü (frosted matte edge band · micro-abraded) ve
+    "milky" yerine tutan kelime; NEGATİF'e bleed-word satırı
+ b. S9-S12 SCENE satırlarına mat şeridin konumu+kademesi (I2V kendiliğinden
+    temizler — #15); S10-S12 iç mekânda kask kadrajdaysa şerit görünür
+ c. TUR 15: her sahne çalışmasına İZLEYİCİ CÜMLESİ + kart bağı; TIMELINE
+    hazırlık satırları (bakış → ağırlık → el)
+ d. FAZ 1 ZATEN uyumlu olanlar: sakal F1 tokeni · yara açık · iğne · S3 boş ufuk
+
+⬜ KILAVUZ ADAYLARI — kart G (bu turda YAPILMADI)
+ · KILAVUZ_REHBERI §3.2 → MARS satırı (TUR 14 #8 + TUR 16 #9 #25 #28) —
+   TUR 14'ün inmemiş borcuyla BİRLİKTE
+ · 02_RISK_KARTLARI → KART 14 adayı: KISMİ MAT CAM (self-cleaning · bleed
+   words · yüz tespiti/politika) + TUR 14'ün inmemiş TEKDÜZE RENK kartı
+ · SAHNE_DEVAMLILIK → ZAMAN MERDİVENİ bölümü (1 ana + ≤2 yan · biyolojik
+   hızlar · faz sınırı)
+ · KARAKTER_KARTI §7 → körlük gövde sözlüğü (bakış-el sırası tersine döner)
+ · HOOK · SES_VE_DIYALOG · KAMERA_ACISI · KARAKTER_VE_DUYGU → TUR 13/14'ün
+   T16.0'da ölçülen inmemiş dokunuşları
+```
+
+## T16.8 ⬜ BU TURUN SINIRI
+
+```
+· Dört rapor DIŞ bilgidir, kaynak listeleri gelmedi; NASA belge numaraları
+  doğrulanamadı. Tek-silme geçirgenlik kaybı ve JND sayıları ÖNERİ'dir.
+· Mat şeridin motorda tutup tutmadığını hiçbir rapor söyleyemez — FAZ 1
+  üretim sırasının 2. halkası (S8) söyler. Bu turun en pahalı cümlesi
+  "I2V kendiliğinden temizler" ölçülmemiş bir gözlemdir; ilk 12 klip sınar.
+· Kaynak defteri (84 sol × su/gıda/güç) mimari varsayımlarla kuruldu;
+  filmde SAYI görünmez, yalnız ORAN görünür (yarı · sıfır · sıra düşer).
+· Körlük gövde sözlüğünün basınç giysisi altında ve 12 m lockoff'ta
+  OKUNUP OKUNMADIĞI ölçülmedi (TUR 15 sınırıyla aynı) — ⑧ EFOR ve ⑩
+  OYUNCULUK mod D koşusu ilk sınav.
+· ⛔ TUR 13/14 gibi bu tur da kılavuza inmedi; plana indi. Kart G koşulmazsa
+  bir sonraki Mars filmi bu üç turu yine 04'ten okumak zorunda kalır.
+```
+
+---
+---
+
+# 🔬 TUR 17 — SİNEMATİK UZAY GİYSİSİ (12.09.2026)
+
+> **Promptlar:** `20_SINEMATIK_UZAY_GIYSISI_ARASTIRMA_PROMPTLARI.md` (üç
+> prompt, onar cümle) · **Ham:** `TUR17_HAM_RAPORLAR/` — ✅ **3/3 rapor geldi
+> ve üçü BİREBİR arşivlendi** (tek satır, tablolar çökmüş, kaynak listesi
+> yok — künye §⚠️).
+> **Tetikleyen:** sahibin isteği 12.09.2026 — *"filmlerdeki karakterlerin
+> astronot kıyafetleri çok kötü, daha film tarzı havalı kıyafetler için
+> kılavuz."* Depo teşhisi 20_'nin başında (tek sıfat + "pressure suit" ·
+> D79/139 bloğunun yan etkisi · TUR 5 kimlik sordu görünüş sormadı ·
+> tasarım kalitesini ölçen mercek yok).
+> **İndiği yer:** ⭐ yeni `../UZAY_GIYSISI_SINEMATIK_TASARIM_KILAVUZU.md`
+> (aynı gün, süzmeden SONRA) + tek satırlık işaretçiler (T17.7).
+
+```
+⚠️ BU TURUN KAYNAK PROFİLİ — üç rapor, üç ayrı güven düzeyi
+   Rapor 1 (silüet): tasarımcı atıfları (Lange/Amies · Mollo/Moebius ·
+   Larlarb · Yates · Zophres · Wolsky · Hansen) bilinen yapım kayıtlarıyla
+   TUTUYOR → UYGULAMA. Sobchack "Screening Space" (1987) gerçek kuram
+   kitabı. Ama sayı katmanı (%40/%60 sertlik · 1,6:1 omuz/bel · 5-7 blok ·
+   %60 yüz görünürlüğü) kaynaksız ve raporun kendi §9'u 1,6:1'i "hipotez"
+   diye listeliyor → tamamı ÖNERİ/⬜.
+   Rapor 2 (yüzey/ışık): ışık-yüzey fiziği ders kitabı düzeyi → UYGULAMA;
+   60-30-10 tasarım heuristiği gerçek ama kostüme özgü ölçüm değil; AI
+   kelime tablosu "sistematik gözlem" diyor, kaynak yok → ÖNERİ; "MgO₂"
+   AR kaplama satırı ÇÜRÜK (MgF₂'dir); "Sarah Blostein" doğrulanamadı.
+   Rapor 3 (kilit/bütçe): değişim körlüğü zinciri (Levin & Simons 1997 ·
+   Levin et al. 2000 · O'Regan, Rensink & Clark 1999) GERÇEK ve sayılar
+   bilinen aralıkta → ÖLÇÜLMÜŞ; VBench/GenEval/ViStoryBench gerçek
+   benchmark'lar → ÖLÇÜLMÜŞ (eksen ayrımı); Lost in the Middle (Liu et al.
+   2023) gerçek ama DİL MODELİ çalışması, difüzyon kodlayıcısına
+   ekstrapolasyon → ⬜; sürüklenme yüzdeleri ve motor skorları depoda
+   olmayan motorlarda (Wan · CogVideoX · Cosmos · Seedance · HY) → İNMEDİ;
+   §3'ün "ölçülmüştür" dediği sırt tarifini §8 "hipotez" diye geri alıyor
+   → İÇ ÇELİŞKİ, sayı inmez, kalıp ⬜ iner.
+   Üçünde de kaynak listesi gelmedi (TUR 15/16 profili). Yeniden koşuda
+   İSTENİR.
+```
+
+## T17.0 ⭐ BU TURUN KARAKTERİ — teşhis tuttu, cevap beklenenden farklı
+
+```
+① "KÖTÜ GÖRÜNEN ŞEY BELGESEL ARKETİP DEĞİL, TARİFSİZ ARKETİP." Rapor 1'in
+   iki yönlü sorusuna cevap net: sade/belgesel giysi (First Man tipi)
+   "viseral, otantik, güvenilir" okunuyor — ama görünür yaka ve bilek
+   halkası, dokulu kırık beyaz naylon, kumaş kıvrımı ve hafif aşınma
+   YAZILDIĞINDA. Depo aynı arketipi "white pressure suit" diye yazıyor
+   (20_ §Neden ŞİMDİ ①): halka yok, doku yok, kir yok, sırt "carrying
+   nothing". Kötü olan seçim değil, boşluk. → Kılavuzun ilk kararı:
+   arketip değiştirmeden önce mevcut arketipi DOLDUR (§1 · §2 satır E).
+
+② SERT KABUK İKİ RAPORDA AYNI YERDE DEVRİLİYOR (1↔2 çapraz tuttu). Rapor 1:
+   sertlik oranı yükselince "oyuncak / video oyunu zırhı" (eşik sayısı
+   ÖNERİ). Rapor 2: "hard composite shell / anodized / glossy / glowing
+   strips / torso screen" kelimeleri oyun-görünümünü tetikliyor, "matte
+   scuffed composite plate with ballistic nylon joints" geri çekiyor.
+   Mekanizma tutarlı, sayı yok → KURAL: sert kabuk yazılırken mat + aşınmış
+   kenar + tekstil eklem ÜÇÜ BİRDEN yazılır; biri eksikse kabuk yazılmaz.
+
+③ KİR İKİ RAPORDA ZIT YÖNDE — ÇÖZÜM YAZIM BİÇİMİNDE (2↔3 çapraz). Rapor 2:
+   yıpranma fotogerçekçiliğe çeker, temiz giysi oyuncak okunur. Rapor 3:
+   kir/leke dağılımı klipler arasında İLK kayan öğe ve bütçeden ilk
+   çıkarılacak katman. İkisi de doğruysa kir LOKALİZE LEKE olarak değil
+   GLOBAL BİTİŞ olarak yazılır ("evenly dusted matte finish, scuffed
+   edges") — rapor 3'ün kendi önleyici tarifi de bu ("homojen mat toz
+   tabakası, yerelleştirilmemiş"). D42 (yıpranma sabit) ile örtüşür.
+
+④ SIRT: ÜÇ TARİF BİÇİMİ, TEK ÖLÇÜLMEMİŞ TERCİH. Rapor 3 yokluk tarifi
+   ("no backpack") · düz pozitif ("one continuous flat panel") · heykelsi
+   pozitif ("low-profile sculpted back plate with two recessed panels")
+   üçlüsünü sıraladı ve üçüncüyü seçti — ama bu üçlü 20_'nin 3 numaralı
+   promptunun DÖRDÜNCÜ CÜMLESİNDEN geri yankılandı ve raporun §8'i
+   "karşılaştırmalı test yayınlanmadı" diyor. Deponun kendi kanıtı (D139:
+   yokluk kilidi 6 sahnenin 5'inde tuttu, kamera arkaya geçince düştü)
+   yönü destekliyor. → Heykelsi pozitif kalıp kılavuza ⬜ HİPOTEZ olarak
+   iner, ilk filmde R1 ARKA paneli + ② ile sınanır; D79/139 KARARI
+   (kaymaz tek yüzey) değişmez, TARİF BİÇİMİ değişir.
+
+⑤ DEĞİŞİM KÖRLÜĞÜ BÜTÇENİN YÖNÜNÜ SÖYLÜYOR. İzleyici kesimde kostüm
+   değişimini %0-33 fark ediyor (ÖLÇÜLMÜŞ); depo devamlılığı mercekle
+   ölçüyor, izleyiciyle değil. Sonuç: giysi bütçesinin devamlılık için
+   harcanan payı TASARIMA kaydırılabilir — mercek yine yakalar. ⬜ Bu bir
+   çıkarımdır, ölçüm değil; kılavuz §9'da "yön" olarak yazıldı.
+
+⑥ ASİMETRİ TUR 5 İLE ÇELİŞTİ (yeni açık). TUR 5 ⭐ öneri: tek taraflı şerit
+   karakteri ayırır ve ayna hatasını ölçtürür. Rapor 3: asimetrik ayırıcı
+   detay "dikkat haritası simetri aradığı için" öteki kola/karaktere
+   sızıyor (oran ÖNERİ, §8'de hipotez). İki taraf da ölçülmemiş →
+   ÇELİŞKİ KAYDA GEÇTİ, TUR 5 kararı SÜRER; kılavuz asimetrik öğenin
+   BÜYÜK (360° sarılı bant) ve referans panelinde görünür olmasını şart
+   koşar, küçük asimetrik yama yazılmaz.
+```
+
+## T17.1 ⭐ ÇAPRAZ OKUMA — üç çift
+
+```
+1 ↔ 2  TUTTU. Rapor 1'in beş arketipinden ikisi (%90 sert MONOLİTİK · %50
+       sert TAKTİK) rapor 2'nin oyun-görünümü tetikleyici listesine
+       düşüyor. MONOLİTİK ayrıca dar pencere vizörle D79'a çarpıyor →
+       kılavuza KAYIT olarak girer, KULLANILMAZ işaretli. TAKTİK risk
+       etiketiyle girer (mat + aşınmış + tekstil eklem zorunlu). Diğer
+       üçü (ENDÜSTRİYEL · TEKNOKRATİK · BELGESEL) 2'nin güvenilir kelime
+       setiyle yazılabiliyor → tam girer.
+2 ↔ 3  ÇELİŞTİ, ÇÖZÜLDÜ (T17.0 ③). Rapor 2'nin güvenilir dediği "worn /
+       scuffed / weathered" rapor 3'te ilk kayan öğe. Çözüm: yıpranma
+       global bitiş kelimesi olarak yazılır, konumlu leke olarak yazılmaz.
+       "satin" rapor 1'de "AI'da en yüksek detay" (raporun §9'u bunu
+       hipotez diye geri alıyor), rapor 2'de "orta güvenilir / orta CGI
+       riski" → satin ⬜, kılavuzda "yalnız kabin içi yumuşak ışıkta".
+1 ↔ 3  TUTTU. Rapor 1'in gövde kalıpları 24-31 kelime; rapor 3'ün bütçe
+       eşiği (35-40 kelime, ⬜) altında. Ama kalıplar D79/D146/yasak
+       listesi grameriyle yeniden yazılınca uzuyor → her arketip kılavuza
+       KISALTMA SIRASI (rapor 3 §4: kir → mikro aksesuar → doku → ikincil
+       renk → siluet ASLA) ile birlikte iner; sırasız arketip yok.
+```
+
+## T17.2 ✅ DEPOYA GİRENLER
+
+| # | Bulgu | Kaynak · tür | Etiket | İndiği yer |
+|:-:|---|---|:--:|---|
+| **1 · SİLÜET VE TASARIM DİLİ** | | | | |
+| 1 | **Beş arketip** (monolitik yalnızlık · ağır endüstriyel · teknokratik form-fit · taktik yüksek-G · tarihsel belgesel) — her biri sertlik dağılımı · kask tipi · renk mantığı · hikâye tonu · izleyici okumasıyla | raporun tasarımcı derlemesi (film adlı) | UYGULAMA (tanıklık) · ÖNERİ (sentez) | ⭐ KILAVUZ §2 tablosu — film adları T17.3'te geometriye çevrildi; MONOLİTİK ⛔ kullanılmaz, TAKTİK ⚠️ risk etiketli |
+| 2 | **Sade/belgesel giysi güçlü okunur** — koşulu: görünür halkalar, dokulu kumaş, kıvrım, hafif aşınma (First Man vakası) | eleştiri alıntısı (yapım) | UYGULAMA | ⭐ KILAVUZ §1 — teşhisin cevabı: mevcut beyaz giysi ARKETİP değil, TARİF sorunu |
+| 3 | **Sertlik devrilmesi:** sert kabuk baskınlaşınca "oyuncak / video oyunu zırhı / kostüm partisi" okuması | eleştiri korpusu (rapor) · sayı (%80) kaynaksız | UYGULAMA yön · sayı ÖNERİ | KILAVUZ §3 değişken tablosu (sayısız) · §5 sert kabuk kuralı |
+| 4 | **Siluet okunurluğu** = tek renk gölgede bile duruş/kütle/rol okunur: belirgin omuz hattı · asimetrik ekipman · kaskın gövdeden ayrılması | Sobchack 1987 (kuram, yön) · rapor | UYGULAMA | KILAVUZ §3 satır 1 + "gölge testi" (R1 panelinde siluet karesi) |
+| 5 | **Kask-gövde bağlantısı:** dıştan görünür rulmanlı yaka = mekanik/belgesel; gömülü yaka = monolitik/fütüristik | tasarım gözlemi | UYGULAMA | KILAVUZ §4 — depoda GÖRÜNÜR yaka halkası tercih (D146: çerçevesizlik kubbe davetiyesi) |
+| 6 | **Eklem sözlüğü:** akordeon körük (retro/gerçekçi) · dönel bilezik (mekanik) · üst üste binen segment (modern/askerî) | tasarım pratiği | UYGULAMA | KILAVUZ §5 malzeme sözlüğü eklem satırları |
+| 7 | **Yüz okunurluğu ↔ heybet takası** ve telafisi: çerçeve kalınlığı · yükseltilmiş omuz hattı · derin yaka · mat sert dokular | DP/tasarım pratiği | UYGULAMA | ⭐ KILAVUZ §4 "berrak vizörle heybet" — D79 kararının sinematik telafisi |
+| 8 | **Tarihsel sapmalar** (ince bel, esnek eklem, sırt ünitesiz, kask içi ışık) genel izleyicide fark edilmiyor, uzman izleyicide "sahte" | rapor gözlemi | UYGULAMA | KILAVUZ §0 — sapma bilinçli seçimdir, kayda yazılır |
+| **2 · YÜZEY, RENK, IŞIK** | | | | |
+| 9 | **Yüzey × ışık davranışı:** mat sert ışıkta doku/kütle, yumuşakta doygun renk · saten sert ışıkta parıltı şeridi, gölgede doku kaybı · parlak/metalik sert ışıkta patlar | sinematografi ders kitabı | UYGULAMA | KILAVUZ §5 malzeme sözlüğü "kamerada" sütunu |
+| 10 | **Doku × kamera ölçeği:** kapitone ECU/MCU'da okunur, WS'de kütle · nervür MCU'da okunur, WS'de düz renge çöker · düz sık dokuma MCU'dan itibaren düz renk | optik/kostüm pratiği | UYGULAMA | KILAVUZ §5 "ölçek" sütunu — lockoff mesafesine göre doku kelimesi seçilir |
+| 11 | **Aksan rengin yeri:** üst gövde merkezi (klavikula/üst göğüs/yaka) bakışı kaska çeker; ekstremite ucu silueti parçalar | yapım notu (rapor) | UYGULAMA | ⭐ KILAVUZ §6 — TUR 5 şeridi (kol/uyluk) ile birlikte: ROL şeridi uzuvda, AKSAN üst gövdede |
+| 12 | **Zemin → giysi değer tablosu:** siyah uzay → mat kemik beyazı/fırtına grisi · Mars → arduvaz/lacivert + güvenlik turuncusu aksan · buz → grafit/koyu bordo · gri metal iç → tuğla kırmızısı/yanık turuncu aksan | tasarım kuramı + algı (yön) | UYGULAMA | ⭐ KILAVUZ §6 tablosu — ORTAM KARTI (REHBER §3) ile eşlenir |
+| 13 | **Kir bölge haritası:** yüksek = bot tabanı · bilek · diz · dirsek · manşet · yaka içi; orta = dikiş/eklem; düşük = sırt ortası · üst göğüs | costume breakdown pratiği | UYGULAMA | KILAVUZ §7 — yalnız REFERANS PANELİNDE (görselde kilitlenir), prompta konumlu leke yazılmaz (T17.0 ③) |
+| 14 | **Kask içi ışık üç düzenek:** çene çift LED (alttan, sıcak) · vizör çerçevesi halka difüzör (homojen, nötr, göz pırıltısı) · yanak soğuk camgöbeği (HUD illüzyonu) | yapım konvansiyonu ("In Space Everyone Can See Your Face" trope) | UYGULAMA | ⭐ KILAVUZ §4 üç İngilizce kalıp — REFERANS_PAKETI §4.1'in "kask içi lokal ışık" satırına gerekçe |
+| 15 | **Oyun-görünümü tetikleyici / geri çekici kelimeler:** tetikler: unreal engine render · hard composite shell (yalın) · glowing strips · torso screen · glossy finish; geri çeker: 35mm film grain · practical lighting · micro-fabric weave · worn edge scuffs | "sistematik gözlem" (kaynaksız) | ÖNERİ · ⬜ | ⭐ KILAVUZ §5 iki liste + KURAL (mat + aşınmış + tekstil eklem) · negatif çekirdek notu (REHBER §5) |
+| 16 | **Pozlama kelimeleri:** beyaz patlaması → "off-white bone fabric"; koyu erimesi → "rim light separation", "textured matte charcoal finish" | AI pratiği (kaynaksız) | ÖNERİ | KILAVUZ §6 pozlama satırı — LIGHTING bloğuna değil SUBJECT bloğuna |
+| **3 · KİLİT VE BÜTÇE** | | | | |
+| 17 | **Değişim körlüğü:** kesimde kostüm/aksesuar değişimi %0-33 fark edilir (Levin & Simons 1997/98) · katılımcılar %83 "fark ederim" der, gerçek %0-46 (Levin et al. 2000) · mudsplash %13-30 maskeler (O'Regan, Rensink & Clark 1999) | hakemli (yazar+yıl, liste yok) | ÖLÇÜLMÜŞ | KILAVUZ §9 "bütçenin yönü" (⬜ çıkarım) · TUR 16 T16.2 #4 ile aynı zincir |
+| 18 | **Kostüm kitabı zorunlu alanları:** katman kırılımı · aksesuar konum/yön · iliklenme · kir düzeyi · ön/arka/profil foto · kamera yüksekliği/lens | kostüm departmanı pratiği | UYGULAMA | KILAVUZ §10 — REFERANS_PAKETI RK kaydına "kir düzeyi + eklem durumu" satırı önerisi |
+| 19 | **Sürüklenme sırası (mekanizma):** yüksek frekanslı öğe önce kayar — kir/leke → küçük aksesuar → şerit konumu → eldiven/bilek → panel sayısı → sırt → ana renk/siluet (son) | difüzyon dikkat mekanizması (yön) · oranlar ÖNERİ | ⬜ HİPOTEZ (yön deponun D42·D58·D79·D139 vakalarıyla uyumlu) | ⭐ KILAVUZ §9 tablosu — SAYISIZ, depo vakası sütunuyla |
+| 20 | **Kısaltma sırası:** kir → mikro aksesuar → malzeme dokusu (panel taşır) → ikincil renk → SİLÜET ASLA | raporun tasarımı (T12.3 ile tutarlı) | ÖNERİ | ⭐ KILAVUZ §9 — her arketip bloğunun yanına yazıldı (1↔3) |
+| 21 | **"Az ama büyük" > "çok ama küçük"** öğe ilkesi; ters vaka: kısıtsız sade tarif de kayar ("sade siyah tişört" — model boşluğu doldurur) | mekanizma + vaka (kaynaksız) | ÖNERİ · ZATEN VAR (TUR 5 §1 BÜYÜK·GEOMETRİK·SAYILABİLİR) | KILAVUZ §1 — "sade ≠ boş": az öğe, ama her öğe yazılı |
+| 22 | **Sırt tarif üçlüsü** — yokluk / düz pozitif / heykelsi pozitif; düz pozitif hacmi öldürür | raporun sınıflaması (yankı, T17.0 ④) | ⬜ HİPOTEZ | ⭐ KILAVUZ §8 — heykelsi kalıp, negatif kelimesiz; ilk filmde R1 arka + ② sınar |
+| 23 | **Referans ışığı ↔ sahne ışığı çelişkisi** kostümü bozar (parlaklık haritası taşınır); referans pozu ↔ sahne pozu (eğilme) doku yırtar | AI gözlemi (kaynaksız) | ÖNERİ | KILAVUZ §10 — REFERANS_PAKETI §4.1'in nötr ışık kuralına KOSTÜM uyarısı: sahne ışığı sertse R1'e ek "sahne ışığı" karesi |
+| 24 | **Kavram sızması (concept/attribute bleeding)** iki benzer giysili figürde; çözümler A-STAR sınıfı dikkat kayıpları ve grounding — motor içi, promptla erişilemez | Agarwal et al. 2023 sınıfı literatür (yön) | ÖLÇÜLMÜŞ (olgu) · çözüm ERİŞİLEMEZ | KILAVUZ §10 iki figür satırı → IKI_KISI_VE_AYRILIK'a işaretçi; tek klipte iki figür riski zaten kayıtlı |
+| 25 | **Ölçüm eksenleri ayrı:** VBench/VBench++ Subject/Appearance Consistency ≠ Aesthetic/Imaging Quality; GenEval sayım/renk/konum; ViStoryBench karakter tutarlılığı | gerçek benchmark'lar | ÖLÇÜLMÜŞ (eksen ayrımı) · uyuşma sayıları doğrulanmadı | ⭐ KILAVUZ §12 — "tasarlandığı gibi mi" ⬜ mercek adayı ⑭: devamlılık (②) ile tasarım sadakati AYRI puanlanır; kart G işi |
+
+## T17.3 ⭐ GEOMETRİYE ÇEVRİLDİ — film adlı bulgu → adsız geometri (17_'nin kapısı)
+
+| Film adlı bulgu (raporda) | Kılavuza inen geometri | Not |
+|---|---|---|
+| 2001: renkli monokrom bloklar, fiberglas kask, gerçek uçak parçaları | "tek doygun ana renk + gümüş metal halkalar, pürüzsüz sert kask kabuğu" | renk = işlev kodu; TUR 5 rol şeridiyle aynı mantık |
+| Alien: samuray omuz pedi · dikey kapitone · pirinç yaka · kir | ENDÜSTRİYEL arketip: geniş kapaklı omuz pedi, dikey kapitone gövde, pirinç/bronz görünür yaka halkası, homojen toz bitişi | en düşük CGI riski (kapitone + kir + mat) |
+| Sunshine: som altın çan kask, dar yatay pencere | MONOLİTİK arketip — ⛔ dar pencere yüzü kapatır (D79) · %90 sert (oyun riski) → KAYIT, kullanılmaz | vizör berrak olduğu sürece bu arketip depoda yok |
+| Prometheus/Gravity: form-fit neopren + kesintisiz cam küre | TEKNOKRATİK arketip: vücuda oturan nervürlü teknik kumaş, kompozit göğüs plakası, **görünür çerçeveli düz/hafif kavisli pane** (küre DEĞİL — D146) | "seamless bubble" kılavuza İNMEDİ |
+| The Martian: Z-2 esinli form-fit, Mars'a karşı buz mavisi/beyaz + siyah | TEKNOKRATİK'in yüzey varyantı + §6 zemin tablosu Mars satırı | KOPYA SINIRI: film adı promptta yok |
+| First Man: X-15/Gemini/A7L birebir, kırışık naylon, görünür halkalar | BELGESEL arketip: dokulu kırık beyaz naylon, görünür metal yaka + bilek halkası, kumaş kıvrımı, hafif aşınma | ⭐ deponun mevcut giysisinin DOLDURULMUŞ hâli |
+| Ad Astra: A7LB evrimi, kırık beyaz/krem/toprak mat tekstil | BELGESEL arketipin "yorgun" renk varyantı | palet kelimesi: "off-white, matte cream, earth-tone" |
+| The Expanse: gömülü yaşam desteği, entegre boyun halkası, manyetik bot, çok yüzlü düz pane | TAKTİK arketip: keskin omuz hattı, entegre boyun çemberi, modüler göğüs, çok yüzlü düz panelli vizör, gömülü bağlantılar | ⚠️ %50 sert → mat + aşınmış + tekstil eklem zorunlu |
+| Project Hail Mary: hardal sarısı tulum tek aksan | "tek aksan rengi" ilkesinin vakası | §6 |
+
+## T17.4 ⛔ DEPOYA GİRMEYENLER — dürüst kayıt
+
+| Bulgu | Neden girmedi |
+|---|---|
+| %40/%60 sertlik "kritik eşik" · %80 devrilme · 1,6:1 omuz/bel · 1,7:1 devrilme · 5-7 blok · "3'ten fazla kablo" · %60+/%30- yüz görünürlüğü (rapor 1) | Kaynaksız; raporun kendi §9'u 1,6:1'i hipotez diye listeliyor. Kılavuza YÖN indi (§3), sayı inmedi |
+| "Saten AI'da en yüksek detay" (rapor 1) · "saten %35 daha tutarlı" | Rapor 1 §9 kendisi hipotez diyor; rapor 2 sateni "orta" veriyor (2↔3) |
+| "Kask içi ışık %50 daha fazla bağ" · "5600K oyun riskini %15 artırır" · "NBP Veo'dan %20 daha kararlı" | Raporların kendi hipotez listeleri; ölçüm yok |
+| AR kaplama "SiO₂ + MgO₂ · %4 → %1" (rapor 2) | MgO₂ yanlış (MgF₂); set tekniği zaten kılavuz konusu değil — AI motoru cam kaplamaz |
+| "Sarah Blostein" · Stan Winston Studio kir vakaları | Ad doğrulanamadı; teknik (cila, zımpara) fiziksel set işi, prompta çevrilemez |
+| 60-30-10 ORAN olarak · "%90 tonal + %10 aksan" | T12.1 kararı: renk sayısına/oranına tavan YAZILMADI, depo BAĞ ilkesini kullanır (aksan rengi kaç yere bağlı). 60-30-10 kılavuzda yalnız "hiyerarşi var" düzeyinde |
+| Kir "%40 yüzey eşiği" | Kaynaksız; kılavuz kiri global bitiş yazdığı için yüzde anlamsız |
+| Nano Banana 2 Lite · LongCat · Omni'nin "multi-turn kumaş düzenleme" satırı | Motor listesi POLITIKA §6'dan gelir; Lite sürümü depoda yok; Omni düzenleme yeteneği red defteriyle sınanmadı |
+| Sürüklenme YÜZDELERİ (%85-95 kir … %10-15 siluet) ve motor skorları (Cosmos 93,21 · Wan 91,40 · Seedance 99,4 · CogVideoX 78,8) | Depoda kullanılmayan motorlar; benchmark adları gerçek ama bu sayılar doğrulanamadı; VBench "subject consistency" kostüm öğesi ölçmez |
+| "Çok ama küçük → %60 kayıp / az ama büyük → %85" · "tek kare %65 / 4-6 kare %90" · "asimetrik sızma %55-70" · "sırt heykelsi %90+" · "35-40 kelime → %30-45 düşüş" | Hepsi raporun kendi §8 hipotez listesinde ya da yankı (T17.0 ④); yön indi, sayı inmedi |
+| EEG N300/N400 "scale in/out" kesim algısı | Kaynaksız, kurgu konusu, kostüm kılavuzuna ait değil |
+| Lost in the Middle → "karakter bloğu prompt ortasında ihmal edilir" | Liu et al. 2023 dil modeli çalışması; V2 iskeletinde SUBJECT bloğu ortada — ⬜ KAPI ADAYI olarak TODO'ya, iskelet bu turda DEĞİŞMEDİ |
+| Attention Segregation/Retention Loss · GLIGEN/Grounded-Diffusion | Motor içi çözümler; Nano Banana/Veo/Omni promptundan erişilemez. Kayıt için |
+| "sweat and condensation inside visor" geri çekici kelime (rapor 2) | ⛔ T11.5③ sahip kararı: buğu yalnız vizör KENARINDA; yüzü kapatan yoğuşma yazılmaz |
+| "seamless glass bubble helmet" · "massive angular back unit" · "no visible hoses" (rapor 1 kalıpları) | D146 (çerçevesizlik kubbe davetiyesi) · D79/139 (sırt) · YASAK LİSTESİ TUZAĞI (pozitif tarifin içinde "no …") — kalıplar kılavuzda YENİDEN YAZILDI |
+
+## T17.5 🚨 İKİNCİ KEZ İNMEYENLER — "ZATEN VAR" ve YANKI
+
+```
+· Rol şeridi konumu · metinsiz amblem · eşya bütçesi · yaşam destek dış
+  anatomisi · AI risk sınıfları → TUR 5. Rapor 1 §2'nin "PLSS hacmi" satırı
+  ve rapor 3 §5'in "asimetrik şerit" satırı buraya çarptı (T17.0 ⑥ çelişki
+  kaydıyla).
+· "Sayılabilen BELGEDE / dokunsal GÖRSELDE" iş bölümü · 4-6 karelik
+  görünüm seti · nötr ışık · "renk = malzeme + renk adı" → TUR 12 (T12.3).
+  Rapor 3 §5 ve rapor 2 "compound noun" satırı aynı kuralı yeniden getirdi —
+  ikinci kez inmedi, kılavuz T12'ye işaret eder.
+· "no CGI / no video game aesthetic" negatif çekirdeğin varlığı → REHBER
+  §5. Rapor 2 etkisini "gözlemlenmiştir" diyor, kaynak yok; kural zaten var.
+· YANKI: rapor 1 §6 ve rapor 3 §6, 20_'nin dokuzuncu cümlesindeki
+  kısıtları (hortum yok · metin yok · sırt tek yüzey · vizör berrak) bize
+  bulgu diye geri yazdı. Bilgi değil; sayılmadı.
+```
+
+## T17.6 ⭐ BU TURUN EN NET SATIRI
+
+```
+Depo giysiyi kötü göstermiyor; giysiyi YAZMIYOR. "White pressure suit"
+bir arketip adı değil, bir boşluk — model boşluğu kendi varsayılanıyla
+dolduruyor ve varsayılan stok ajans giysisi. Rapor 1'in belgesel vakası
+aynı beyaz giysinin, halkası, dokusu, kıvrımı ve aşınması yazıldığında
+"viseral" okunduğunu söylüyor. Kılavuzun işi yeni giysi icat etmek değil,
+beş arketipin her birini D79/D139/D146 grameriyle YAZILABİLİR hâle
+getirmek ve sert kabuğu üç kelimeyle (mat · aşınmış · tekstil eklem)
+oyun-görünümünden korumaktır. Sayı katmanı üç raporda da çürük çıktı
+(TUR 11/15 profili); kılavuz sayısız yazıldı.
+```
+
+## T17.7 🔧 UYGULANAN DEĞİŞİKLİKLER (12.09.2026, aynı gün)
+
+```
+① UZAY_GIYSISI_SINEMATIK_TASARIM_KILAVUZU.md AÇILDI — §0 değişmeyen
+   kararlar · §1 teşhis · §2 beş arketip (film adsız, depo grameriyle
+   yeniden yazılmış İngilizce bloklar + kısaltma sırası) · §3 okuma
+   değişkenleri (sayısız) · §4 kask mimarisi + kask içi ışık üç kalıp ·
+   §5 malzeme sözlüğü + sert kabuk kuralı + tetikleyici/geri çekici
+   listeler · §6 renk bloğu + zemin tablosu + pozlama · §7 kir (global
+   bitiş) · §8 sırt üç biçim (⬜) · §9 sürüklenme + kısaltma + bütçe yönü ·
+   §10 referans paneli iş bölümü (kostüm) · §11 bible reçetesi + üç örnek
+   blok · §12 ölçüm ⬜ mercek adayı ⑭ · §13 çapraz referans.
+② İşaretçiler (tek satır, içerik kopyalanmadı): KILAVUZ_REHBERI §1
+   Bilimkurgu satırı · ASTRONOT_DONANIM başlık + §4 + §10 · SAHNE_DEVAMLILIK
+   §2.1 notu · REFERANS_PAKETI §4.1 kask içi ışık satırı · FILM_KLASOR_
+   SABLONU/FILM_PLAN Character Bible · yeni-film SKILL adım 8 · AGENTS §1
+   depo haritası · REHBER §5 negatif çekirdek altına sert kabuk notu.
+③ 20_ KOŞU KAYDI ✅ · 00_README satırı · bu dosyanın başlık dizini.
+④ ⬜ TODO'ya iki kapı adayı: ⑭ "tasarlandığı gibi mi" merceği (kart G) ·
+   V2 iskeletinde SUBJECT bloğunun konumu (Lost in the Middle — ⬜ ölçülmeli).
+⛔ Ders 79/139 bloğunun KARARI ve T11.5③ vizör kararı DEĞİŞMEDİ.
+```
+
+## T17.8 ⬜ BU TURUN SINIRI
+
+```
+· Üç rapor DIŞ bilgidir; kaynak listesi üçünde de gelmedi. Değişim
+  körlüğü ve benchmark eksen ayrımı dışında hiçbir sayı inmedi.
+· Beş arketipin hiçbiri henüz depoda ÜRETİLMEDİ. Kılavuz "havalı" olup
+  olmadığını ölçemez — ölçen şey, ilk uygulamada sahibin gözü + R1
+  paneli + ①/② skorları + ⬜ ⑭ merceğidir.
+· Heykelsi sırt kalıbı (§8) 20_'nin kendi cümlesinin yankısıdır; deponun
+  D139 vakası yönü destekler ama karşılaştırma yapılmadı. İlk filmde
+  sırt kalıbı A/B sınanmadan "tuttu" denmez.
+· Kask içi ışık kalıpları fiziksel olarak sahtedir (rapor 2 bunu açıkça
+  yazıyor); depo bunu D79 gereği bilinçli kabul eder — kayıt burada.
+· Asimetri çelişkisi (TUR 5 ↔ rapor 3) AÇIK kaldı; iki taraf da
+  ölçülmemiş. Referans paketi + ② skoru ilk iki filmde veriyi biriktirir.
+· Motor sözlüğü (§5) Nano Banana Pro/2 · Veo 3.1 · Omni için YAZILDI ama
+  hiçbir kelime bu motorlarda A/B ölçülmedi — hepsi ⭐ öneri.
+```
+
+---
+
+# 🔬 TUR 18 — DÜNYA · IŞIK · YÜZ · ARAÇ VE İÇ HACİM (12.09.2026)
+
+> **Promptlar:** `21_DUNYA_ISIK_YUZ_ARAC_GORUNUS_ARASTIRMA_PROMPTLARI.md` (dört
+> prompt, altışar cümle) · **Ham:** `TUR18_HAM_RAPORLAR/` — ✅ **4/4 rapor
+> geldi ve dördü BİREBİR arşivlendi** (üçü tek satır, tablolar çökmüş; yalnız
+> rapor 4 paragraflı; kaynak listesi dördünde de yok — künye §⚠️).
+> **Tetikleyen:** sahibin sorusu 12.09.2026 — *"sence kılavuz olarak başka
+> eksik ne var"* → tarama: şablonun altı Bible'ından World ve Lighting'in
+> yazım kılavuzu yoktu; yüz tarifi tek kalıba, araç/iç hacim tek sıfata
+> düşmüştü (teşhis 21_'nin başında, komutlarıyla).
+> **İndiği yer:** ⭐ DÖRT yeni kılavuz (aynı gün, süzmeden SONRA):
+> `../DUNYA_GORUNUSU_KILAVUZU.md` · `../ISIK_SENARYOSU_KILAVUZU.md` ·
+> `../YUZ_VE_KAST_KILAVUZU.md` · `../ARAC_VE_IC_HACIM_TASARIM_KILAVUZU.md`
+> + tek satırlık işaretçiler (T18.7).
+
+```
+⚠️ BU TURUN KAYNAK PROFİLİ — dört rapor, dört ayrı güven düzeyi
+   Rapor 1 (dünya): tasarımcı atıfları (Vermette/Fraser · Deakins · Max ·
+   Franklin/Thorne) bilinen yapım kayıtlarıyla TUTUYOR → UYGULAMA. Cutting &
+   Vishton 1995 (algısal alan kuramı) GERÇEK → ÖLÇÜLMÜŞ. Ama "Gerçek yer"
+   tablosunun eşik sayıları (%15 · %5 · 2 tekrar · %2 · 0,5°), sürüklenme
+   yüzdeleri (%45 → %10) ve "TCS" metriği kaynaksız → İNMEDİ. "2013 Sydney
+   toz fırtınası" yılı çürük (2009). "≥200 K / ≥15° derhal fark edilir"
+   satırı rapor 2'nin ölçülmüş zinciriyle ÇELİŞİYOR (1↔2) → iki eşik de inmedi.
+   Rapor 2 (ışık): değişim körlüğü zinciri (Ostrovsky, Cavanagh & Sinha 2005
+   · Ehinger et al. 2016 · Wright 2005 · Lopez-Moreno et al. 2010) GERÇEK
+   ve yön bilinen aralıkta → ÖLÇÜLMÜŞ; N/d′/derece sayıları etiketsiz →
+   inmedi. Yapım kayıtları (2001 dolgusuz · Gravity ışık kutusu · First Man
+   tek uzak kaynak · Moon · Sunshine · Martian çöl güneşi) tutuyor →
+   UYGULAMA; Mad Max satırı bilinen kayıtla çelişiyor → inmedi. Vakum
+   fiziği ders kitabı düzeyi (saçılma yok · terminatör · albedo · pozlama)
+   → UYGULAMA. Süreklilik algısı tablosunun künyesiz kaynakları ("Mdpi" ·
+   "Yale") → sayıları inmedi. Motor tablosu TARİHLİ ama kaynaksız → ÖNERİ.
+   Rapor 3 (yüz): standartlar GERÇEK (FISWG · ASTM E3149 · Glogau ·
+   Fitzpatrick · Monk · Pantone SkinTone · EvoFIT/EFIT) → UYGULAMA. Ellis,
+   Shepherd & Davies 1979 gerçek ve bulgu doğru (iç/dış özellik) →
+   ÖLÇÜLMÜŞ — ⭐ turun en sağlam damarı. Hill & Bruce 1996 gerçek, sayıları
+   (44 ms · d′) doğrulanamadı → yön ÖLÇÜLMÜŞ, sayı inmedi. Kast pratiği
+   "beş eksen" kaynaksız → ÖNERİ. AI kararlılık hiyerarşisi kaynaksız ve
+   "cinsiyet en kararlı" satırı ADAY-16 ile çelişiyor → ⬜. HEX/MST
+   kodunu prompta yazma önerisi depo kuralıyla (HEX yok · gövdede sayı
+   yok) çelişir → inmedi. PickScore/InsightFace gerçek araçlar → ÖLÇÜLMÜŞ.
+   Rapor 4 (araç): tasarımcı atıfları (Lange/Masters · Cobb · Tildesley ·
+   Crowley · Max) tutuyor → UYGULAMA; kitbashing/greeble tarihi doğru.
+   "A-10 referansı" ve "tarım traktörü şasisi" tek kaynaklı → ⬜. Clutter /
+   crowding literatürü gerçek ama rapor kaynak adı vermedi → yön
+   ÖLÇÜLMÜŞ, kaynak eksik. Motor tablosu ("Veo 3.1 Mayıs 2025 versiyonu" ·
+   "Gemini Omni 1.1 Flash" · "3-4 saniye sonra") → sayılar ve sürümler
+   inmedi. Kalıpları negatif kelime ("no screens", "absolutely no windows")
+   ve gövdede sayı ("20 helmet-heights long") taşıyor → REHBER §7 · D138
+   gereği YENİDEN YAZILDI (T18.3).
+   Dördünde de kaynak listesi gelmedi (TUR 15/16/17 profili, dördüncü kez).
+   SAYI KATMANI ÇÜRÜK → dört kılavuz da SAYISIZ yazıldı (TUR 17 usulü).
+```
+
+## T18.0 ⭐ BU TURUN KARAKTERİ — teşhis dört kez tuttu, iki gerekçe düzeldi
+
+```
+① AYNI HASTALIK, DÖRT YÜZEY. Giysideki "white pressure suit" boşluğu
+   (T17.0 ①) gökyüzünde "flat black sky", araçta "the hull", yüzde "dark
+   brown eyes" olarak duruyor. Dört rapor da aynı cevabı verdi: eksik olan
+   arketip değil TARİF; çözüm "çok öğe" değil "AZ ÖĞE, HER ÖĞE SOMUT" —
+   malzeme + konum + sayı. Dünya: gökyüzü gradyanı + TEK gök cismi konumu +
+   ÜÇ katman arazi. Araç: TEK asimetrik siluet öğesi + sayılabilir büyük
+   öğe + malzeme. Yüz: kask penceresindeki bölgeden TEK sapma. Işık: TEK
+   kaynak, yön dünyaya kilitli. → Dört kılavuzun ortak §1'i.
+
+② IŞIK KURALI AYNI KALDI, GEREKÇESİ DÜZELDİ. Bilim (rapor 2, ÖLÇÜLMÜŞ):
+   izleyici serbest izlemede ışık yönü tutarsızlığını ve silinen gölgeyi
+   FARK ETMİYOR (Ostrovsky 2005 · Ehinger 2016 · Lopez-Moreno 2010; dokulu
+   yüzeyde tolerans daha da geniş). Set pratiği: sıfır tolerans. Depo D201'de
+   120°'lik sıçramayı ⑪ MERCEĞİYLE yakaladı, izleyiciyle değil. Sonuç: yön
+   kilidi kararı aynı [D201 · D47]; gerekçe "izleyici görür" değil "mercek
+   görür + bilinçaltı 'sahte' okuması ⬜" (rapor 2'nin kendi ÖNERİsi).
+   TUR 17 §9'daki "bütçenin yönü" çıkarımı burada ikinci kez tuttu.
+
+③ YÜZ TURUNUN EN NET SATIRI (ÖLÇÜLMÜŞ, Ellis 1979): tanıdık OLMAYAN yüz
+   DIŞ özelliklerden (saç · dış hat) tanınır; iç özellikler tanıdık yüzde
+   baskındır. Depo karakterleri izleyici için hep "tanıdık olmayan" VE saç
+   her karede kaskta gizli → izleyicinin en güvendiği ipucu depoda YOK. Yük
+   kaş-göz-burun-ağız-çene bölgesine kayar; tek kalıp ("dark brown eyes")
+   bu bölgede ayırt edici hiçbir şey yazmıyor. + Hill & Bruce 1996: ışık
+   yönü değişince yüz eşleştirme düşer → yüz kilidi ışık kilidine bağlı
+   (2↔3). Bu, ADAY-16 ve ADAY-61'in ölçülmüş açıklaması.
+
+④ 1↔2 ÇELİŞKİSİ EŞİKLERİ ÖLDÜRDÜ. Rapor 1 "≥200 K / ≥15° derhal fark
+   edilir" (kaynaksız) ↔ rapor 2 "30-40° serbest izlemede fark edilmez"
+   (ÖLÇÜLMÜŞ). İki eşik de inmedi; kural EŞİKSİZ: kesmeler arası yön ve
+   gök cismi DEĞİŞMEZ, değişecekse yalnız planlı sahne sınırında
+   (SAHNE_ZINCIRI §1 durum-değişimi kuralıyla aynı).
+
+⑤ STERİL PARLAK BEYAZ 2↔4'TE DEVRİLDİ. Rapor 4 temiz gövdeyi "glossy white
+   ceramic, seamless" ile korumayı öneriyor; rapor 2 tek sert kaynak +
+   dolgusuz gölge diyor; depo D3 (bloom: parlayan yüzey yıkanır) ve D146
+   ("seamless" davetiyesi) biliyor. Çözüm koşullu: DIŞ gövde her zaman
+   MAT; parlak beyaz yalnız İÇ hacimde, difüz tavan ışığıyla, bilinçli
+   "tekinsiz düzen" tonu için — ve orada da "glossy" değil "smooth white
+   panels under an even overhead panel light" yazılır.
+
+⑥ SAYI KATMANI DÖRDÜNCÜ KEZ ÇÜRÜK. Yüzdeler, N'ler, milisaniyeler, motor
+   sürüm tarihleri, "TCS" → hiçbiri inmedi. Dört kılavuz sayısız. Sayı
+   taşıyan tek şey ölçek birimi (gövde boyu, sözle) ve plan belgesinde
+   duran açı/Kelvin — gövde cümlesine inmez [D138].
+
+⑦ YANKI DÖRT KEZ. "helmet-height en tutarlı yöntem olarak tescillenmiştir"
+   · "flat black sky sürüklenmeyi tamamen durdurur" · "derece/Kelvin plan
+   belgesinde durur" · "saç tanımlamadan çıkarılır" — dördü 21_'nin beşinci
+   cümlesi. Bilgi değil, kısıtın geri okunması; sayılmadı.
+
+⑧ KELVİN SORUSU AÇILDI (karar değil). Rapor 2: "5600K" gövdeye yazılınca
+   metin okuyabilen modelde kadraja sayı/HUD basma riski. Depoda Kelvin
+   prompt gövdesinde YAYGIN (ölç: `grep -rhoE "[0-9]{4}K" yatay_* dikey_* |
+   sort | uniq -c`) ve D138 zaten "sayı zemine basıldı" vakası. Bu turda
+   Kelvin kalıpları KORUNDU (TUR 17 §4 dâhil); ⬜ A/B TODO'ya: aynı sahne
+   "4500K fill" ↔ "neutral white fill" — ① KARE metin bayrağıyla.
+```
+
+## T18.1 ⭐ ÇAPRAZ OKUMA — dört çift
+
+```
+1 ↔ 2  TUTTU + BİR ÇELİŞKİ. Rapor 1'in arketip tablosundaki güneş konumu
+       ("tek güneş sol üstte" · "küçük soluk güneş sağda") ile rapor 2'nin
+       "yön dünya koordinatına kilitlenir" satırı aynı fiziği yazıyor →
+       DUNYA §2 güneş sütunu ISIK §2'ye işaret eder, iki kez yazılmaz.
+       Eşik çelişkisi (T18.0 ④) → eşiksiz kural.
+1 ↔ 4  TUTTU. Rapor 1 "1/f doku hiyerarşisi: yakın taş → orta çakıl → uzak
+       ton" ile rapor 4 "yüzey ondülasyonu + mat specular maket etkisini
+       kırar" aynı mekanizma: ÖLÇEK YAKIN DOKUDAN OKUNUR. Yeni kural
+       yazılmadı; UZAY_USSU §5 (ölçek şahidi · §5.4 bulanıklık gradyanı)
+       işaretlendi; DUNYA §4 ve ARAC §2 "yakın doku" satırı taşır.
+2 ↔ 4  ÇELİŞTİ → KOŞULLU. Parlak beyaz gövde ↔ tek sert kaynak (T18.0 ⑤).
+       Dış: mat. İç: parlak-difüz yalnız bilinçli tonla. ARAC §2 satırı
+       ⛔/koşullu etiketli.
+2 ↔ 3  TUTTU. Hill & Bruce (ışık yönü → tanıma) + rapor 2 key direction log
+       + rapor 3 "üst iç bölge en okunur" → YUZ §4: yüz kadrajında ana
+       ışık yönü film boyunca aynı, kask içi dolgu SABİT (TUR 17 §4 — ikinci
+       kez yazılmadı, işaret). Hangi yönün yüzü daha iyi okuttuğu (üst-ön
+       vs yan) raporda sayı yok → ⬜.
+```
+
+## T18.2 ✅ DEPOYA GİRENLER
+
+| # | Bulgu | Kaynak · tür | Etiket | İndiği yer |
+|:-:|---|---|:--:|---|
+| **1 · DÜNYA GÖRÜNÜŞÜ** | | | | |
+| 1 | **Dünya arketipleri** — vakum siyahı · ağartılmış kum · ince atmosfer toz düzlüğü · kriyojenik buz · basık fırtınalı kayalık · monokrom toksik pus (+ iki novum-düzeyi: bükülmüş okyanus, halkalı bazalt) | raporun tasarımcı tanıklıkları (yapım) | UYGULAMA | ⭐ DUNYA §2 — her satır bir ORTAM KARTINA (REHBERİ §3.x) bağlandı; film adsız (T18.3) |
+| 2 | **Atmosferik perspektif kararı ortam kartından çıkar:** vakumda YOK (uzak sırt yakın taşla aynı keskinlik) · ince atmosferde yalnız çok uzakta desatürasyon · kalın/toksikte orta plandan itibaren kontrast sıfırlanır | fizik + yapım tanıklığı | UYGULAMA | DUNYA §3 "perspektif = kartın fonksiyonu" tablosu |
+| 3 | **Manzara alanında derinlik üç ipucuyla kurulur:** atmosferik perspektif · görüş alanı yüksekliği (ufuk) · örtüşme — sabit kamerada paralaks YOK | Cutting & Vishton 1995 | ÖLÇÜLMÜŞ | ⭐ DUNYA §3 — lockoff'ta derinlik ÖRTÜŞME ile yazılır ("a ridge crossing in front of the far crater wall") |
+| 4 | **"Fon levhası" değişkenleri:** uzak planda saf siyah/yüksek kontrast · tekrar eden doku · gök cismi ölçeği · ufuk-kamera uyumsuzluğu · zemin ile gök arasında ışık sekmesi yokluğu | VFX / matte painting pratiği | UYGULAMA (eşikler İNMEDİ) | DUNYA §3 değişken tablosu (sayısız) |
+| 5 | **Arazi doku hiyerarşisi üç katman:** yakın taş (boyu gövdeye göre) → orta çakıl/kum → uzak ton | 1/f fraktal (rapor) · VFX pratiği | UYGULAMA | ⭐ DUNYA §4 arazi kalıbı |
+| 6 | **Devamlılık belgeleri:** güneş yolu · ufuk yüksekliği kilidi · biyom haritası · matte painting bible (gökyüzü rengi · pus · albedo · kaya/kum dağılımı) | yapım pratiği | UYGULAMA | DUNYA §5 World Bible satırları (araç adları inmedi) |
+| 7 | **Bilerek değiştirilen gökyüzü anlatı aracıdır** (gri yağmur → turuncu pus geçişi karakterin kırılmasını taşır) | yapım tanıklığı | UYGULAMA | DUNYA §5 — gökyüzü değişimi yalnız PLANLI SINIRDA (SAHNE_ZINCIRI §1) |
+| 8 | **Kalıp biçimi:** gökyüzü tek gradyan + TEK gök cismi konumla + üç katman arazi ("one small pale moon high on the far right" · "fine grey regolith with fist-sized rocks receding to smooth crater ridges") | AI pratiği (kaynaksız) + yankı | ÖNERİ | DUNYA §4 kalıplar (sayısız; "fist-sized" gövde-göreli kaldı) |
+| 9 | **Çok katmanlı dünya tarifi klip içinde ikinci güneş / kaya üretir; sade yapısal tarif daha kararlı** — raporun kendi hipotez listesinde | AI gözlemi | ⬜ HİPOTEZ | DUNYA §6 kısaltma sırası + ilk filmde A/B |
+| **2 · IŞIK SENARYOSU** | | | | |
+| 10 | **Işık planı belge seti:** ışık planı · güneş yolu · ANA IŞIK YÖNÜ GÜNLÜĞÜ · renk sıcaklığı takvimi · pratik kaynak envanteri · pozlama planı — sahne başına | DP/gaffer pratiği | UYGULAMA | ⭐ ISIK §1 Lighting Bible'ın altı satırı |
+| 11 | **Yön DÜNYAYA kilitlenir, kameraya değil** — figür dönse, kamera dönse güneş azimutu sabit (ışık kutusu vakası · tek uzak kaynak vakası) | yapım tanıklığı | UYGULAMA | ISIK §2 — D201'in yapım-tarafı gerekçesi |
+| 12 | **Değişim körlüğü ışıkta:** ışık yönü tutarsızlığı ve silinen gölge serbest izlemede fark edilmiyor; dokulu yüzeyde tolerans artıyor | Ostrovsky, Cavanagh & Sinha 2005 · Ehinger et al. 2016 · Wright 2005 · Lopez-Moreno et al. 2010 | ÖLÇÜLMÜŞ (sayılar İNMEDİ) | ⭐ ISIK §3 — gerekçe düzeltmesi: devamlılığı MERCEK ölçer (T18.0 ②) |
+| 13 | **Set pratiği üç kilit:** yüzün gölge tarafı kesmede yer değiştirmez · temas gölgesi eşleşir · kayıp pratik kaynağın duvardaki izi korunur | devamlılık süpervizörü pratiği | UYGULAMA | ISIK §2 kalıplar |
+| 14 | **Vakum ışığı:** saçılma yok · keskin terminatör · albedo dolgusu (regolit zayıf, beyaz gövde/giysi güçlü) · gezegen parıltısı soğuk ikincil · güneşe pozlanınca yıldız yok | fizik + Apollo/ISS pratiği | UYGULAMA (sayılar İNMEDİ) | ISIK §4 + REHBERİ §3.1'e işaret |
+| 15 | **Sinemanın bilinçli sapması:** gölge tarafına gizli dolgu; uzman "stüdyo hatası", genel izleyici "yıldız yok = sahte" okur | yapım pratiği + bilinen Apollo-hoax okuması | UYGULAMA | ISIK §4 — sapma kayda geçer (TUR 17 §0 ile aynı politika) |
+| 16 | **Sayı gövdeye yazılınca HUD/OCR basma riski; gölge YÖNÜ + gölge BOYU (gövde oranı) cümlesi temiz** | AI pratiği + D138 | UYGULAMA | ISIK §5 gövde kalıbı · ⬜ Kelvin A/B (T18.0 ⑧) |
+| 17 | **Referans karesinin ışığı metni bastırır** | AI pratiği | ZATEN VAR (TUR 12 · ADAY-2) | ISIK §5 işaret |
+| 18 | **"volumetric / god rays / cinematic lighting / dramatic lighting" havasız sahneye saçılma ekler** | AI pratiği + D29/D33 | UYGULAMA | ISIK §5 tetikleyici listesi (YASAK sözlüğüyle aynı hizada) |
+| **3 · YÜZ VE KAST** | | | | |
+| 19 | **Tanıdık yüz İÇ özelliklerden, tanıdık OLMAYAN yüz DIŞ özelliklerden (saç · dış hat) tanınır; saç hızlı ama kararsız ipucu** | Ellis, Shepherd & Davies 1979 | ÖLÇÜLMÜŞ | ⭐ YUZ §1 teşhis (T18.0 ③) |
+| 20 | **Ayırt edicilik:** ortalama yüz hatırlanmaz, normdan sapan yüz hatırlanır (yüz uzayı) | yüz-uzayı kuramı (rapor kaynak adı vermedi) | ÖLÇÜLMÜŞ (yön) | YUZ §2 "TEK sapma" kuralı |
+| 21 | **Işık yönü değişince yüz eşleştirme düşer** | Hill & Bruce 1996 (sayılar İNMEDİ) | ÖLÇÜLMÜŞ (yön) | YUZ §4 — yüz kilidi = ışık kilidi (2↔3) |
+| 22 | **Standart sözlükler:** morfoloji listesi (FISWG / ASTM E3149) · yaş dokusu I-IV (Glogau) · ten ölçekleri (Fitzpatrick · Monk · Pantone SkinTone) | adli/dermatoloji standartları | UYGULAMA | YUZ §2 sözlük — klinik terim DÜZ İNGİLİZCEYE çevrildi (T18.3); MST yalnız PLAN düzeyinde (§3) |
+| 23 | **Kask altında kalan bölge:** kaş kemiği · göz çukuru · burun kemeri · ağız · çene; kast tercihi belirgin kaş/derin göz/keskin burun | rapor çıkarımı (Ellis'ten türetilebilir, kaynaksız) | ÖNERİ · ⬜ | YUZ §2 "kask penceresi" |
+| 24 | **Kast çeşitliliği eksenleri:** kafa geometrisi · ten değeri · yaş bandı · saç kütlesi · tekil işaret + benzer kastın karıştırıldığı eleştiri vakaları · ortalama yüzün bilinçli seçildiği vakalar | kast pratiği (anekdot) | UYGULAMA (anekdot) | YUZ §3 kanal dağılımı (saç ekseni düştü — kaskta yok) |
+| 25 | **Aşırı uzun yüz tarifi kaymayı artırır, aşırı kısa tarif rastgele yüz üretir; referans kare + kısa metin iş bölümü** | AI pratiği | ÖNERİ (TUR 17 #21 ile tutarlı) | YUZ §5 |
+| 26 | **Sürüklenme sırası:** tekil işaret → deri dokusu/kırışıklık → iris → burun/dudak oranı → ten değeri → cinsiyet/kafa (son) | AI gözlemi (kaynaksız) · ADAY-61 tutuyor · ADAY-16 ÇELİŞİYOR | ⬜ HİPOTEZ | YUZ §5 (sayısız; cinsiyet satırı ⚠️ işaretli) |
+| 27 | **Etnik/milliyet sıfatı filtre tetikler, morfoloji dili geçer — ama "epicanthic fold" gibi klinik terimler de etnik VEKİL** (raporun kendi filtre sütunu) | TUR 3 + rapor | ZATEN VAR + genişleme | YUZ §2 ⛔ vekil listesi · POLİTİKA §2 satırına işaret |
+| 28 | **Kimlik tutarlılığı ölçülebilir:** yüz gömme benzerliği (InsightFace) · PickScore | gerçek araçlar | ÖLÇÜLMÜŞ (araç varlığı) | YUZ §6 ⬜ ⑭ merceğinin YÜZ satırı (kart G, yazılmadı) |
+| **4 · ARAÇ VE İÇ HACİM** | | | | |
+| 29 | **Araç arketipleri:** bilimsel sonda · endüstriyel çekici · basınçlı gezici · atmosferik iniş aracı — film adsız geometri, tek asimetrik siluet öğesi | tasarımcı tanıklıkları | UYGULAMA | ⭐ ARAC §2 (kalıplar negatif kelimesiz ve sayısız YENİDEN yazıldı) |
+| 30 | **Dünyevi referans ilkesi:** denizaltı · petrol platformu · traktör · soğuk savaş jeti → inandırıcılık; "uçan daire" reddi | tasarım tarihi | UYGULAMA | ARAC §1 |
+| 31 | **Greeble ikili:** ölçek verir, aşırısı silueti yutar ("mikroçip" okuması); görsel kalabalık hedefi bulma süresini uzatır | tasarım pratiği + crowding literatürü (kaynak adı yok) | UYGULAMA + ÖLÇÜLMÜŞ (yön) | ARAC §2 "az ama büyük" = UZAY_USSU §2.2 (ikinci kez yazılmadı, işaret) |
+| 32 | **İç hacim değişkenleri:** malzeme · panel/düğme yoğunluğu · kablo görünürlüğü · eşya/kir · renk kodlu yerel dikey · ışık kaynağı sayısı · pencere sayısı/biçimi · hacmin dar tutulması | yapım tasarımı pratiği | UYGULAMA | ⭐ ARAC §4 İÇ HACİM tablosu |
+| 33 | **İki uç:** steril parlak beyaz = "insanüstü düzen / tekinsiz" (bilinçli); aşırı kalabalık = "karakter hangi panelde, okuyamadım" | eleştiri alıntıları | UYGULAMA | ARAC §4 — parlak beyaz KOŞULLU (2↔4) |
+| 34 | **Dokunsal ergonomi:** eldivenle basılacak büyük mekanik şalter · analog kadran · mat gri panel; ekran/HUD yok | tasarım pratiği | UYGULAMA | ARAC §4 konsol satırı (Kart 5 ile aynı yön) |
+| 35 | **Devamlılığa en açık öğeler:** anten · kapak · valf · rastgele kir; siluet anında algılanır, panel/anten değişimi nadiren | sanat departmanı pratiği + değişim körlüğü | UYGULAMA + ZATEN VAR (TUR 17 #17) | ARAC §5 sürüklenme |
+| 36 | **Maket etkisini kıran yüzey:** panel birleşiminde mikro derinlik · hafif eğimli kenar · mat specular yayılımı · sac ondülasyonu (bulanıklık gradyanına EK) | tasarım pratiği | UYGULAMA · ⬜ | ARAC §2 yüzey dili — UZAY_USSU §5.4'e ek satır olarak işaret |
+| 37 | **Oyun-görünümü kelimeleri araçta:** tetikler "sleek · futuristic · sci-fi spaceship · high-tech cockpit · holographic"; geri çeker "fabric · dirt · paint wear · rivets · matte composite · analog switches · bare metal" | AI pratiği (kaynaksız) | ÖNERİ (TUR 17 #15 ile tutarlı) | ARAC §3 — giysi sözlüğü araca TAŞINDI |
+| 38 | **Motor temiz gövdeye kendiliğinden kir/greeble ekler** — steril arketip için pozitif yüzey cümlesi gerekir | raporun hipotezi | ⬜ HİPOTEZ | ARAC §3 (parlak yazılmaz; "smooth matte white panels" pozitif) |
+| 39 | **Araç sürüklenme sırası:** panel çizgileri → pencere sayısı/biçimi → konsol/düğme (HUD belirir) → ışık rengi → asimetrik tek öğe (en kararlı, kopyalanma riski) | AI gözlemi (kaynaksız) · ADAY-54/69 tutuyor | ⬜ HİPOTEZ | ARAC §5 (sayısız) |
+
+## T18.3 ⭐ GEOMETRİYE ÇEVRİLDİ — film / oyuncu / klinik terim → adsız kalıp
+
+| Adlı bulgu (raporda) | Kılavuza inen geometri | Not |
+|---|---|---|
+| 2001 · Moon: vakum siyahı, tek büyük gezegen diski | DUNYA arketip V: "a flat black sky, one large pale planet disc fixed high on the right, sharp far crater rims" | §3.1 VAKUM kartı |
+| Dune: ağartılmış krem gökyüzü, tek beyaz güneş, ufuk alt üçte bir, ince çakıl → dalgalı kum → silik tepeler | DUNYA arketip K: "a bleached pale beige sky, one hard white sun high on the left, ripple sand near, soft pale dunes far" | Dünya-benzeri atmosfer — §3.3 ⏸️ rafta; kayıt |
+| Blade Runner 2049 Vegas: monokrom kehribar pus, gök cismi yok | DUNYA arketip P: "a uniform amber haze filling the sky, the far structures reduced to flat silhouettes" | toksik/kalın atmosfer varyantı; "2013 Sydney" yılı inmedi |
+| The Martian: tereyağı → somon gradyan, küçük soluk güneş, yumruk boyu bazalt | DUNYA arketip İ: "a pale butterscotch sky fading to salmon at the horizon, one small pale sun on the right, fist-sized dark rocks on fine rust dust" | §3.2 kartının görünüş satırı |
+| Interstellar Mann: camgöbeği-gri, güneşsiz, dik buz, donmuş bulut | DUNYA arketip B: "a pale cyan-grey overcast sky, jagged ice ridges, frozen cloud masses on the horizon" | §3.9 kriyojenik / buz |
+| Alien LV-426 · Prometheus: lacivert-kül gradyan, alçak hareketli bulut, ıslak bazalt, orta plandan sis | DUNYA arketip F: "a dark slate sky under a low moving cloud deck, wet black basalt near, the midground already softened by fog" | §3.4 kalın atmosfer |
+| Interstellar Miller: sığ okyanus + bükülmüş disk | NOVUM düzeyi — kart yok; yalnız "tek dev gök cismi" ilkesinin vakası | kayıt, kalıp yok |
+| Foundation: eflatun-lacivert + halka arkı + bazalt sütun | "one luminous ring arch rising from the horizon" = TEK gök cismi kalıbının halka varyantı | DUNYA §4 gök cismi satırı |
+| Gravity ışık kutusu · First Man tek uzak kaynak · 2001 dolgusuz · Dune kum albedosu | ISIK §2: "yön dünyaya kilitli, kamera dönse de" · "tek uzak kaynak, paralel gölgeler" · "dolgu yalnız yüzey albedosundan" | Mad Max satırı İNMEDİ (çelişkili) |
+| Dizi/film kast vakaları (benzer yaş + benzer saç + orta ten = karışma; ortalama yüz = empati) | YUZ §3 ilke: "iki karakter aynı yaş bandı + aynı ten değeri + aynı kafa geometrisinde yazılmaz; ortalama yüz bilinçli seçimdir" | oyuncu/dizi adı kılavuza girmez |
+| FISWG/ASTM klinik terimler: supraorbital ridge · vermilion border · mentum · synophrys · epicanthic fold · nasal alae | YUZ §2: "heavy brow ridge" · "thin lips / full lips" · "square chin / pointed chin" · "brows meeting" · (epicanthic → YAZILMAZ, etnik vekil) · "broad nose / narrow nose" | metin kodlayıcı klinik Latince'yi düz İngilizce kadar güvenilir taşımaz (⬜); vekil terimler ⛔ |
+| Discovery: küre + omurga + reaktör, tek çanak | ARAC arketip S SONDA: "a matte white forward sphere joined to an aft engine block by a long thin truss, one dish antenna on the starboard side" | sayı yok, negatif yok |
+| Nostromo · Outland: dikey üstyapı, greeble, koyu gri, korozyon, tek vinç | ARAC arketip E ENDÜSTRİYEL: "a dark grey matte hull with worn paint, a tall blocky superstructure, one heavy crane arm on the port side, an even dusting of grit" | greeble = "az ama büyük" kuralıyla sınırlı |
+| Interstellar Ranger/Lander: küt burun, perçin, ısı plakası | ARAC arketip A ATMOSFERİK İNİŞ: "a blunt-nosed lander with broad stub wings, matte off-white heat tiles underneath, visible rivet lines" | "A-10" referansı ⬜ |
+| The Martian rover: yüksek şasi, altıgen kabin, kumaş, düz panel tepsisi | ARAC arketip G GEZİCİ: "a pressurized rover on a high-clearance suspension, a hexagonal matte composite cabin wrapped in thermal fabric, one flat solar tray on the roof" | "tarım traktörü" ⬜ |
+| Icarus II altın kalkan · 2001 santrifüj parlak beyaz | KAYIT: parlak dış yüzey ⛔ (2↔4 · D3); parlak beyaz İÇ hacim koşullu (ARAC §4) | |
+| 2001 EVA pod pencere "kornea" metaforu | İNMEDİ — tek kaynak, iç-dış tutarsızlığı depo kuralına aykırı | |
+
+## T18.4 ⛔ DEPOYA GİRMEYENLER — dürüst kayıt
+
+| Bulgu | Neden girmedi |
+|---|---|
+| Rapor 1 eşikleri: "%15 kontrast kaybı" · "%5 paralaks" · "2 tekrar tiling" · "0,5° gök cismi" · "%2 ufuk" · "≥200 K / ≥15° derhal fark edilir" | Kaynaksız; sonuncusu rapor 2'nin ÖLÇÜLMÜŞ zinciriyle çelişiyor (1↔2). Kılavuza YÖN indi, eşik inmedi |
+| Rapor 1 sürüklenme yüzdeleri (%45 gök cismi → %10 renk) · "TCS" metriği · "3. saniyeden itibaren" | Kaynaksız; "TCS" tanımsız; motor sürümü/tarih yok |
+| "2013 Sydney toz fırtınası" | Yıl çürük (Eylül 2009); referans ilişkisi tutuyor ama tarih inmedi |
+| Sun Surveyor · Helios · Sun Seeker · Artemis · Set.a.light 3D · Cine Tracer (araç ADLARI) | Fiziksel set araçları; depo güneşi metinle kilitler. Yalnız KAVRAM (güneş yolu · ufuk kilidi · yön günlüğü) indi |
+| Set uzantısı birleşim hattı "baş seviyesinin üstünde" | Fiziksel set + rotoskop işi; AI hattında karşılığı yok |
+| Rapor 2 sayıları: N=25 · N=24 · d=0,72 · "30-40°" · "≥300 K ani kesmede" · "0,5 EV" · "%15 / %80 pratik kaynak" · "5-10° set toleransı" · "1:32 ↔ 1:4/1:8" · "Earth-shine 60×" · "8500-10000 K" | Yazar-yıl zinciri gerçek ama sayılar künyesiz kaynaklardan ("Mdpi" · "Yale" · "Tim Palmer"); depo eşiksiz yazdı |
+| Mad Max: Fury Road "high-noon kilidi, bulutta çekim durdu" | Bilinen yapım kaydıyla çelişir (büyük ölçüde düz ışıkta çekilip grade'de düzeltildi); tek satır, inmedi |
+| Rapor 2 Lighting Bible kalıpları: "45-degree azimuth and 60-degree elevation" · "pinned at 5800K" · "T8.0 at ISO 800 … 1:32" | Bunlar PLAN belgesine ait sayılar [D138]; ISIK §1'e "plan satırı" olarak indi, gövde kalıbı olarak İNMEDİ |
+| Rapor 3 istatistikleri: 44 ms · d′ 2,6 → 2,3 · F(1,30) · "%70 EvoFIT" · "0,65 kosinüs eşiği" · "%70,5 PickScore" · "3 saat ↔ 24 saat %300" | Kaynak makaleden doğrulanamadı ya da raporun kendi hipotez listesinde; yön indi, sayı inmedi |
+| HEX kodu ("#E0AC69") ve "MST 03" prompt gövdesinde | Depo kuralı: HEX prompta girmez (TUR 17 kısıtı) · gövdede sayı yok [D138]; MST yalnız PLAN'da kast dağılımı için (YUZ §3) |
+| "Do not alter, omit, or modify core facial morphology" anti-drift çıpası | YASAK LİSTESİ TUZAĞI (REHBER §7): olumsuz direktif SUBJECT bloğuna yazılmaz; kelimesi kelimesine kural zaten çapadır |
+| "epicanthic fold absent / present" · "Caucasian yerine …" · "African yerine …" ikame örnekleri | Klinik terim etnik VEKİL; raporun kendi filtre sütunu da "takılabilir" diyor. YUZ §2 ⛔ listesine ters işaretle girdi (yazılmaz) |
+| "Panoramik yansıtmasız KÜRESEL polikarbonat vizör" | D146 · D79: depo düz pane + görünür çerçeve; küre kubbe davetiyesi |
+| Kask içi LED aydınlatma satırı (rapor 3) · rapor 2 hipotez 2 (kask içi ışığın kabulü) | ZATEN VAR (TUR 17 §4); ikinci kez inmedi |
+| "Cinsiyet okuması EN KARARLI özellik" | ADAY-16 (vizör ardında cinsiyet değişimi) ile çelişir; ⬜, satır ⚠️ ile |
+| Thatcher etkisi · "aynı interkantik mesafe = aynı kişi" · "Hex %0 sürüklenme" | Raporun kendi hipotez listesi; ikisi mekanik olarak da yanlış |
+| Rapor 4 motor tablosu: "3-4 saniye sonra panel erir" · "Veo 3.1 Mayıs 2025 versiyonu" · "Gemini Omni 1.1 Flash" | Sürüm adları doğrulanamadı; süre kaynaksız |
+| Rapor 4 kalıplarındaki "20 helmet-heights long" · "4 helmet-heights long" · "10 helmet-heights wide" · "1 helmet-height wide" | Gövde cümlesinde SAYI [D138]; UZAY_USSU §1 usulüyle sözle ("a little under four body-lengths") yeniden yazıldı |
+| Rapor 4 kalıplarındaki "no screens" · "absolutely no windows" · "no greebles" · "strict lack of panel lines" · "seamless" | YASAK LİSTESİ TUZAĞI + D146; pozitif yüzey cümlesine çevrildi; yokluk NEGATIVE bloğuna |
+| "glossy white ceramic, seamless aerospace composite" dış gövde kalıbı | 2↔4: tek sert kaynakta patlar (D3 bloom); dış gövde MAT. İç hacimde koşullu ve "glossy" kelimesiz |
+| 2001 EVA pod "kornea" pencere metaforu · "A-10 Thunderbolt" · "tarım traktörü şasisi" | Tek kaynak, doğrulanamadı; iç-dış tutarsızlığı kural olarak zaten yasak |
+| Rapor 4 hipotezleri: anakart yanılsaması · pencere → uçak lombozu sızıntısı · rim light halüsinasyonu · turuncu şerit geometriden kararlı | Kaynaksız; ilk üçü kayıt, dördüncüsü TUR 5 rol şeridi ile ilişkili ⬜ (ARAC §5 dipnot) |
+
+## T18.5 🚨 İKİNCİ KEZ İNMEYENLER — "ZATEN VAR" ve YANKI
+
+```
+· Ortam FİZİĞİ (toz, gölge kenarı, dolgu, ses, rüzgar, gökyüzü tek satırı)
+  → REHBERİ §3 kartları. Rapor 1'in her arketip satırı bu kartlardan
+  birine BAĞLANDI, fizik yeniden yazılmadı.
+· Ölçek birimi 1H · sayılabilir çapa (n ≤ 3, tek sayı yazma) · ölçek şahidi
+  · maket etkisi = bulanıklık gradyanı · iki negatif blok → TUR 9. Rapor 4
+  "exactly three windows" ve "helmet-height" satırlarıyla buraya çarptı.
+· Malzeme sözlüğü · kir global bitiş · kask içi ışık üç düzenek · oyun-
+  görünümü tetikleyici/geri çekici → TUR 17. Rapor 4'ün kelime listesi
+  ARACA TAŞINDI (ARAC §3), sözlük yeniden yazılmadı; rapor 3'ün kask içi
+  LED satırı ikinci kez inmedi.
+· Referans karesinin ışığı metni bastırır → TUR 12 · ADAY-2. Rapor 2
+  aynı cümleyi getirdi; ISIK §5 işaret eder.
+· Milliyet · etnik köken · ünlü benzerliği reddi → TUR 3 · POLİTİKA §2.
+  Rapor 3 doğruladı ve klinik vekil terimleri ekledi (genişleme, #27).
+· Değişim körlüğü (Levin & Simons zinciri) → TUR 17 #17. Rapor 2 ışık
+  ekseninde AYRI çalışmalarla genişletti (#12) — bu yeni bulgu sayıldı;
+  rapor 4'ün "panel değişimi fark edilmez" satırı ZATEN VAR.
+· D138 (derece/metre gövdeye yazılmaz) · D201 (güneş yönü kadran+yükseklik
+  SPEC'te) · D104 (ışık mıknatısı) · D47/D48 (ışık ve biyom sıçramaz) ·
+  D145 (ufuk kilidi) · D79 (vizör berrak) · D45 (ad yok) → deponun
+  KARARLARI; dört rapor da bunları kısıt olarak geri okudu.
+· YANKI (T18.0 ⑦): "helmet-height tescillenmiş en tutarlı yöntem" (rapor 4)
+  · "flat black sky sürüklenmeyi tamamen durdurur" (rapor 1) · "derece ve
+  Kelvin plan belgesinde durur" (rapor 2) · "saç tanımlamadan tamamen
+  çıkarılır" (rapor 3). Bilgi değil; sayılmadı.
+```
+
+## T18.6 ⭐ BU TURUN EN NET SATIRI
+
+```
+Dört kılavuzun ortak kuralı tek cümle: AZ ÖĞE, HER ÖĞE SOMUT — malzeme +
+konum + (sözle) sayı — ve YÖN, GÖK CİSMİ, SİLUET ÖĞESİ, YÜZDEKİ TEK SAPMA
+film boyunca AYNI cümleyle. Devamlılığı izleyici değil MERCEK ölçer
+(ÖLÇÜLMÜŞ: ışıkta Ostrovsky/Ehinger/Lopez-Moreno; yüzde Ellis 1979 saç
+ipucunun depoda yokluğu) — bu yüzden bütçe devamlılık cümlelerine değil
+TARİFE harcanır; devamlılık mercekte, tarif kadrajda.
+```
+
+## T18.8 ⬜ BU TURUN SINIRI
+
+```
+① DÖRT KILAVUZUN HİÇBİR KALIBI ÜRETİMDE SINANMADI. İlk uygulamada ① KARE ·
+   ② DEVAMLILIK · ⑪ IŞIK skorları + R panelleri sınavdır; ⬜ ⑭ TASARIM
+   SADAKATİ merceği (kart G) hâlâ yazılmadı — bu turda YÜZ ve DÜNYA satırı
+   eklendi (YUZ §6 · DUNYA §7), mercek yok.
+② SAYISIZ KILAVUZ: eşik, oran, yüzde yok. Sayı taşıyan tek yer plan
+   belgesi (açı · Kelvin · ölçek) ve sözle ölçek.
+③ KELVIN A/B AÇIK (T18.0 ⑧): gövdede "4500K" kalıpları korundu; ilk filmde
+   sınanır. TUR 17 §4 kalıpları bu karara bağlı.
+④ VEHICLE BIBLE ŞABLONA GİRMEDİ — sahip kararı. ARAC kılavuzu World Bible
+   altına "araç satırı" olarak iner; ayrı Bible olup olmayacağı ⬜.
+⑤ AÇIK ÇELİŞKİLER: "cinsiyet en kararlı" ↔ ADAY-16; TUR 5 asimetrik şerit ↔
+   rapor 4 "turuncu şerit geometriden kararlı" (iki yönde de ölçüm yok);
+   parlak beyaz iç hacim (2001 tipi) hiç üretilmedi.
+⑥ RAPORLARIN KAYNAK LİSTESİ YOK (dördüncü kez). Yeniden koşuda kaynak
+   listesi ve motor sürüm/tarih İSTENİR; künyesiz motor satırı inmez.
+```

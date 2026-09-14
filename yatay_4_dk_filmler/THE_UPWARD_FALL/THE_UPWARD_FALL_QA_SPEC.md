@@ -275,7 +275,7 @@ DOĞRULANDI    ffmpeg 8.1 · 02.09.2026 — signalstats mevcut ✅
 
 KAPI ⑥        PROMPT KAPISI — üretimden ÖNCE, tek kare üretilmeden
 KOMUT         python3 kilavuzlar_ve_sistem_dosyalari/PROMPT_KONTROL/prompt_kontrol.py \
-                yatay_3_5_dk_filmler/THE_UPWARD_FALL
+                yatay_4_dk_filmler/THE_UPWARD_FALL
               ⛔ FİLM KLASÖRÜ verilir, tek bölüm dosyası DEĞİL. Çıktıda
                 "📁 FİLM KLASÖRÜ · n bölüm dosyası birleşik" satırı yoksa
                 kapı KOŞMAMIŞTIR.

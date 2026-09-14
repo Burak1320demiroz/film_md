@@ -3,7 +3,7 @@
 ```
 Koşu    07.09.2026 · Gemini · tek oturum · ON İKİ mercek
 Ham     ../../../kilavuzlar_ve_sistem_dosyalari/FILM_QA_RAPORLARI/
-        02_HAM_RAPORLAR/YERCEKIMI_FAZ10_12MERCEK_HAM.md
+        02_HAM_RAPORLAR/YERCEKIMI/YERCEKIMI_FAZ10_12MERCEK_HAM.md
 Betik   ../../../kilavuzlar_ve_sistem_dosyalari/RAPOR_KONTROL/RAPORLAR/
         FAZ_10_ZEMIN_20260907_RAPOR_KONTROL.md
 Mod     ⚠️ V — on ikisinin on ikisi · SPEC yok · FAZ_10_QA_PROMPT.md YOK

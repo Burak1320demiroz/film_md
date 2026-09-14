@@ -13,7 +13,11 @@
 > Ham metinler `TUR14_HAM_RAPORLAR/`, süzme `04_ARASTIRMA_BULGULARI.md`
 > §TUR 14. (Ayrı tur numarası kuralı: Tur 7 usulü.)
 >
-> **KOŞU KAYDI:** ⬜ koşulmadı.
+> **KOŞU KAYDI:** ✅ 07.09.2026 — dördü de koşuldu ve geldi
+> (`TUR14_HAM_RAPORLAR/00_KUNYE.md`). Süzme: `04_ARASTIRMA_BULGULARI.md`
+> §TUR 14 (KOPYA SINIRI listesi §T14.3). Ham metinler klasöre birebir
+> kopyalanmadı — künye "bekliyor" der.
+> *(Bu satır 11.09.2026'ya kadar "koşulmadı" diyordu — künyeyle hizalandı.)*
 
 ---
 

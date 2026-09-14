@@ -1,0 +1,120 @@
+# 🔬 S<NN> — SAHNE ÇALIŞMASI · THE_BURNING_ENTRY
+
+> ⛔ Başlık biçimi `## 🔬 S<nn> — ...`'dir. `## ... SAHNE <n>` YAZILMAZ:
+> `prompt_kontrol.py`'nin SAHNE_BASLIK deseni odur ve bu klasörü ayrı bir
+> film sanmasının tek yolu budur.
+> ⛔ Bu dosyada PROMPT YOKTUR. Prompt bölüm dosyasına yazılır.
+>
+> Girdi: `03_SAHNE_SIRALAMASI.md` satırı + `04_UYARI_NOTLARI.md`'nin bu
+> sahneye düşen satırları. Bu dosya bitmeden bu sahnenin promptu yazılmaz.
+
+---
+
+## 🪪 KİMLİK
+
+```
+SAHNE:      S<NN>            BAŞLIK: ⬜
+BÖLÜM:      THE_BURNING_ENTRY_BOLUM_⬜.md
+ZAMAN:      ⬜ s → ⬜ s       ⛔ FORMÜLLE [D122]: hook + (n−1) × klip
+VURUŞ:      ⬜               B5 SATIRI: ⬜ [İSTEK/ENGEL/BEDEL/MUHATAP/AYRILIK]
+⭐VİRAL:    ⬜ [evet/hayır]  → evet ise YÜZ ve HAREKET satırları aşağıda ZORUNLU
+```
+
+## 🎬 OLAY — tek cümle, ne DEĞİŞİYOR
+
+```
+OLAY:            ⬜
+BAŞTA:           ⬜        (sahne açılırken durum)
+SONDA:           ⬜        (sahne kapanırken durum)
+⛔ KLİP İÇİ DEĞİŞİM: ⬜ [VAR / YOK]
+   VAR ise: ölçülmüş EN ZAYIF eksendir (T2V-CompBench 0,0687). İki seçenek:
+   ① değişimi sahne SINIRINA taşı  ② ARA DURUM YASAĞI cümlesini prompta yaz
+   Seçim: ⬜   Gerekçe: ⬜
+```
+
+## 🎥 KURULUM — harf ve OPTİK ARİTMETİĞİ
+
+```
+KURULUM HARFİ:  ⬜        İŞARET: ⬜ [ilk kullanım / dönüş S⬜ / küme S⬜]
+⛔ dönüş veya küme ise kamera metni BİREBİR kopyalanır + işaret satırı taşınır
+
+LENS:           ⬜ mm     MESAFE: ⬜ m     YÜKSEKLİK: ⬜ m
+ÖLÇEK:          ⬜        AÇI TİPİ: ⬜
+KADRAJ ENİ:     ⬜ m      ⛔ HESAPLANDI (§5.2) — kadraja alınacak nesne ⬜ m
+                          Sığıyor mu: ⬜   [OPEN CIRCUIT: 5 kurulumun 5'i tutmuyordu]
+ANA NESNE PİKSEL: ⬜ px   ⛔ ≥100 px [D179 · ~60 px ekranda okunmuyor]
+ÖNCEKİ SAHNEYLE: ölçek kademesi ⬜ · azimut ⬜°   → bant içi: ⬜
+```
+
+## 👤 KADRAJDAKİLER — devamlılık taşıyıcıları
+
+```
+İNSAN SAYISI:   ⬜   ⛔ film boyu KİLİT: ⬜ (her karede aynı)
+AYRIM EKSENİ:   ⬜   ⛔ yalnız RENK yetmez — gece sahnesinde iki koyu gövde
+                     ayrılmaz; siluet/malzeme/boy çapası yazılır
+GİREN NESNE:    ⬜        ÇIKAN NESNE: ⬜
+TAŞINAN NESNE:  ⬜   → önceki görüldüğü sahne S⬜ · sonraki S⬜
+⛔ BİÇİM KİLİDİ: ⬜ [D146 — metinle tutulmuyorsa referans paketi sayfası şart]
+```
+
+## 💡 IŞIK · 🔊 SES · ⚛️ FİZİK
+
+```
+IŞIK:      ⬜   (ortam kartının ışık takvimi: ⬜ · monotonik mi: ⬜)
+PALET:     ⬜   ⛔ önceki sahneyle aynı olamaz [KURGU_RITMI §2 örüntü kırıcı]
+SES:       ⬜   ⛔ önceki sahneyle aynı doku olamaz
+MÜZİK:     ⬜ [var / yok — müziksiz sahne mi]
+FİZİK:     ⬜   (ortam kartından bu sahneye düşen satırlar: ⬜)
+```
+
+## 🎙️ REPLİK (varsa)
+
+```
+REPLİK:    ⬜ · ⬜ s · konuşan ⬜ · REGISTER ⬜
+İŞLEV:     ⬜   ⛔ boşsa replik SİLİNİR
+AĞIZ:      ⬜ [okunuyor / okunmuyor] — bedenleştirme yalnız DORUKTA
+```
+
+## ⭐VİRAL — yalnız işaretli sahnede, İKİ satır ZORUNLU
+
+```
+YÜZ:       ⬜   vizör ardında hangi ifade DEĞİŞİYOR
+HAREKET:   ⬜   kadrajda ne HIZLANIYOR
+⛔ Ölçütsüz ⭐VİRAL etiketi DÜŞER [SENARYO_VE_VIRAL_KAMERA §2.4]
+```
+
+## 🔒 BU SAHNEYE DÜŞEN KİLİTLER — `01_QA_DERS_HASADI.md`'den
+
+| kaynak (ders/QA/red) | kilit cümlesi | prompta nasıl girecek |
+|---|---|---|
+| ⬜ |  |  |
+
+## ⚠️ BU SAHNEYE DÜŞEN UYARILAR — `04_UYARI_NOTLARI.md`'den
+
+| # | seviye | uyarı | ne yapıldı | durum |
+|:--:|:--:|---|---|:--:|
+| 1 | ⛔/⚠️ |  |  | ⬜ |
+
+## 🛡️ POLİTİKA
+
+```
+RİSKLİ Mİ:   ⬜   sınıf: ⬜ [PK/PB/YR/MÇ]
+NÖTR TARİF:  ⬜   ⛔ nesne ADLANDIRILMAZ, FORMU tarif edilir [D67]
+⛔ YASAK CÜMLE YAZILMAZ ("never drawn/aimed" D123 tuzağıdır) —
+  karşılığı POZİTİF kilittir: ⬜
+```
+
+---
+
+## ✅ KAPI — bu sahnenin promptu yazılabilir mi
+
+```
+□ OLAY tek cümleyle yazıldı, BAŞTA/SONDA ayrı
+□ optik aritmetiği yapıldı — nesne kadraja SIĞIYOR ve ≥100 px
+□ önceki sahneyle ardışık çift bant içi (ya da şok gerekçeli)
+□ kurulum harfi + işaret satırı yazıldı
+□ ⛔ uyarıların hepsi kapandı
+□ politika satırı yazıldı
+□ ⭐VİRAL ise YÜZ + HAREKET satırları var
+→ hepsi ✅ ise THE_BURNING_ENTRY_BOLUM_⬜.md'ye bu sahnenin 📸 + 🎥 promptu yazılabilir
+```

@@ -1,5 +1,10 @@
 # 📋 HIZLI REFERANS — KİLİT HAVUZU (sahneye göre seçilir)
 
+> ⚠️ **14.09.2026: ARŞİV HAVUZU.** Bu dosya 21.08.2026'da kaldı, `[LESSON n]` etiketli ve
+> hiçbir betik okumuyor. Yeni filmin ÇEKİRDEK okuması `00_YASAYAN_DERSLER.md`'dir (≤ 40 ders,
+> her biri DEĞİŞEN SATIR taşır). Buradaki İngilizce kilit cümleleri gerektiğinde kopyalanır;
+> prompta tamamı yapıştırılmaz (aşağıdaki 21.08 düzeltmesi ve kelime bütçesi `prompt_kontrol.py`).
+
 > `LESSONS_LEARNED.md` 07.08.2026'da tematik dosyalara bölündü; bu dosya ders
 > içermez — derslerden damıtılan **kilit havuzunu** taşır.
 > Ders metinleri kardeş dosyalarda, tam dizin:

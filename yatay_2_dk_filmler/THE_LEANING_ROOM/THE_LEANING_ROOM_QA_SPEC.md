@@ -6,7 +6,7 @@
 > ⛔ **RUBRİKLE BİRLİKTE YAPIŞTIRILIR [Ders 129].** Yapıştırılmadıysa koşu ön
 > koşu değil **YAPILMAMIŞ koşudur**.
 > Paketi betik üretir:
-> `bash .claude/skills/qa-isle/scripts/rubrik_paketle.sh yatay_2_4_dk_filmler_uzay/THE_LEANING_ROOM`
+> `bash .claude/skills/qa-isle/scripts/rubrik_paketle.sh yatay_2_dk_filmler/THE_LEANING_ROOM`
 
 > ⛔ **Dosya adı `*_QA_SPEC.md` KALIR.** `sayac.sh`, `rubrik_paketle.sh` ve
 > `rapor_kontrol.py` üçü de bu deseni arar.

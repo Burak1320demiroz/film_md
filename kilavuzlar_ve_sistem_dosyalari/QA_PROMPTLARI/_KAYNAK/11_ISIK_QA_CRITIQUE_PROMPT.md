@@ -46,32 +46,9 @@ INPUT MODE: V   → video only, no document
 ⛔ If a SPEC was supplied and you write `INPUT MODE: V`, the run is void and
 must be repeated.
 
-**MODE D** — the plan declares zones, sources and the exact boundaries where
-light may change. A change AT a declared boundary is a PASS; a change inside
-a zone is a finding.
+**MODE D** — the plan declares zones, sources and the exact boundaries where light may change.
 
-⛔ **THIS LENS DOES NOT RUN IN MODE V. STOP HERE.**
-
-This review exists to read a written plan against the screen. Without the
-plan you would infer an intended plan from the footage itself — and a plan
-inferred from the footage always matches the footage. A scene that was never
-delivered reads as a deliberate ending. A broken lock reads as a style
-choice. The film's worst defect collects this lens's highest score, and the
-report then stands as evidence that the defect was intended. That output is
-not a weaker review; it is a wrong one, and it hides the exact failure this
-lens was built to catch.
-
-If no SPEC block is supplied, write these three lines and nothing else:
-
-```
-INPUT MODE: V — LENS NOT RUN
-REASON: this lens scores plan fidelity; no plan was supplied
-NEEDED: the SPEC block for this film (scene map · locks · declared beats)
-```
-
-Do not count scenes. Do not transcribe lines. Do not score a category. Do
-not write a verdict, a cut list, a trim or a regeneration order. Ask for the
-SPEC block instead.
+**MODE V** — no written SPEC supplied. Perform lighting continuity and quality analysis directly from the video footage. Evaluate key light direction, exposure consistency, shadow continuity, color temperature jumps, and practical light behavior across cuts based strictly on direct visual evidence.
 
 ---
 
@@ -281,18 +258,6 @@ LIGHT JUMPS: [n · from the jump log] · CLEAN CUTS: [n]
 
 ⛔ NON-SCENE MATERIAL is not a scene at ANY duration. Exclude it from every
 count and every string.
-
-ARITHMETIC GATE — write these three numbers BEFORE the score
-  SCORED CATEGORIES:  __        (N/A excluded, never 0)
-  SUM OF SCORES:      __._
-  DIVISION:           __._ ÷ __ = __._      ← this is OVERALL SCORE
-
-OVERALL SCORE: __/10
-VERDICT: [LIGHT HOLDS / GRADEABLE DRIFT / KEY WALKS / ZONE BROKEN /
-          LIT FROM NOWHERE]
-         One finding outranks the mean: if the KEY DIRECTION STRING changes
-         inside a zone at three or more cuts, the verdict is KEY WALKS
-         regardless of the score.
 ```
 
 ## LIGHT LEDGER
@@ -300,7 +265,7 @@ VERDICT: [LIGHT HOLDS / GRADEABLE DRIFT / KEY WALKS / ZONE BROKEN /
 
 ## KEY DIRECTION STRING
 ```
-OBSERVED:  [one character per scene · 1-9 T 0 E W ? -]
+OBSERVED:  [one character per scene, in edit order, no spaces · 1-9 T 0 E W ? -]
 ZONES:     [one letter per scene naming its zone — mode D]
 ```
 ⛔ Length = SCENES OBSERVED. If they disagree, say so on this line.
@@ -321,8 +286,11 @@ One row per LIGHT JUMP from the adjacent-pair test. Write "no jumps" if none.
 
 ⛔ **EVERY SCORE CELL CARRIES ITS SOURCE, AND NO OBSERVATION IS BILLED TWICE.**
 Write the deduction's source as ledger rows with timecodes. A deduction with
-no listed source is not applied. A category with material but no in-scope
-source keeps 10/10 and its Issue cell reads "no in-scope source".
+no listed source is not applied. A category with material but no in-scope source is
+written `—` and is not scored — it stays out of the mean. It never takes a silent
+deduction. DO NOT TOTAL, AVERAGE OR TALLY ANYTHING — the library's script counts the
+🔴/🟠/🟡 tags you wrote and computes the mean from the cells; a number you compute
+yourself is discarded. No SEVERITY TALLY, no SUM, no OVERALL.
 
 | # | Category | Score | Issue (ledger rows and timecodes) |
 |---|----------|-------|-----------------------------------|
@@ -335,10 +303,13 @@ source keeps 10/10 and its Issue cell reads "no in-scope source".
 | 7 | Zone Boundaries | /10 | |
 | 8 | Atmosphere Honesty | /10 | |
 
-## SEVERITY TALLY
-🔴 BLOCKER: __   🟠 MAJOR: __   🟡 MINOR: __
-⛔ The tally must equal the number of 🔴/🟠/🟡 tags actually written in this
-report.
+Write the verdict UNDER the table, after every cell is filled — exactly one of the
+options below (the library's script checks the word against this list):
+VERDICT: [LIGHT HOLDS / GRADEABLE DRIFT / KEY WALKS / ZONE BROKEN /
+          LIT FROM NOWHERE]
+         One finding outranks the mean: if the KEY DIRECTION STRING changes
+         inside a zone at three or more cuts, the verdict is KEY WALKS
+         regardless of the score.
 
 ## THE THREE THAT MATTER
 The three findings that most damage this film's light, in order, each with

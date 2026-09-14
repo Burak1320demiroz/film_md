@@ -1,6 +1,6 @@
 # 🌑 THE BLACK CRADLE — FİLM QA KAYDI
 
-> **Film:** THE BLACK CRADLE · 16:9 yatay · 3-5 dk · `yatay_3_5_dk_filmler/THE_BLACK_CRADLE/`
+> **Film:** THE BLACK CRADLE · 16:9 yatay · 3-5 dk · `yatay_4_dk_filmler/THE_BLACK_CRADLE/`
 > **Plan:** 26 sahne (S0-S24 + S19b) · 259 s (4:19) · 26 klip · 14 replik / 12 sahne
 > (7 MACHINE + 7 HUMAN) · 14 sessiz sahne · 26/26 sabit lockoff · viral ara S4·S7·S15·S21
 > **Kurgu (ölçülen):** 232 s · 🔧 raporu **21 kesme** saydı · diğer dört mercek **4 sahne** saydı

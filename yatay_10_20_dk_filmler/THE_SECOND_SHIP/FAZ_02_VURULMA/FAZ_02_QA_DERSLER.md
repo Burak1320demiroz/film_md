@@ -2,7 +2,7 @@
 
 > Koşu: 07.08.2026 · Model: Gemini · Girdi: tek 100 s reel · MODE R
 > Rubrik: `FAZ_02_QA_PROMPT.md` · Ham çıktı:
-> `kilavuzlar_ve_sistem_dosyalari/FILM_QA_RAPORLARI/02_HAM_RAPORLAR/THE_SECOND_SHIP_FAZ02_HAM.md`
+> `kilavuzlar_ve_sistem_dosyalari/FILM_QA_RAPORLARI/02_HAM_RAPORLAR/THE_SECOND_SHIP/THE_SECOND_SHIP_FAZ02_HAM.md`
 >
 > **Skor 5.5/10 — ama ortalama yanıltıcı, dağılım iki uçlu:** kimlik 8,
 > kostüm 8, klon 9, metin 9, teslim 10 / hasar 1, fizik 1, silah-ateş 1,

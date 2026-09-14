@@ -2,7 +2,7 @@
 
 > Koşu: 08.08.2026 · Model: Gemini · Girdi: tek 96 s reel (8×10.0 s +
 > 2×8.0 s) · MODE R · Rubrik: `FAZ_03_QA_PROMPT.md` · Ham çıktı:
-> `kilavuzlar_ve_sistem_dosyalari/FILM_QA_RAPORLARI/02_HAM_RAPORLAR/THE_SECOND_SHIP_FAZ03_HAM.md`
+> `kilavuzlar_ve_sistem_dosyalari/FILM_QA_RAPORLARI/02_HAM_RAPORLAR/THE_SECOND_SHIP/THE_SECOND_SHIP_FAZ03_HAM.md`
 >
 > **Skor 3.7/10 — ama bu sayı ÜRETİMİ ölçmüyor, iki hatanın karışımını
 > ölçüyor:** reel yanlış sırada kurulmuş (5 slot kayık) ve klipler o

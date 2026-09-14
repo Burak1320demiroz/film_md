@@ -17,3 +17,20 @@ video/
 yavg.txt
 ymax.txt
 freeze.txt
+
+# ⛔ VİDEO DOSYASI DA DEPOYA GİRMEZ (11.09.2026 · sahip kararı)
+# Kural tek cümle: bu repoda image veya video olmayacak. Görsel uzantılar
+# 08.09'da kapatılmıştı, video uzantıları açıkta kalmıştı — master'lar,
+# klipler ve test makaraları operatörün çalışma alanındadır. Depoya yalnız
+# ÖLÇÜM girer: süre · sahne sayısı · SHA-256 · kare numarası.
+*.mp4
+*.mov
+*.mkv
+*.webm
+*.m4v
+*.avi
+*.wmv
+# ses/ara çıktı
+*.wav
+*.mp3
+*.m4a

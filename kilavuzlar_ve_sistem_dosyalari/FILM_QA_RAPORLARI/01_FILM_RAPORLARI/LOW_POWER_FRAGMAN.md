@@ -1,8 +1,8 @@
 # 🔋 LOW POWER — FRAGMAN DİKEY · Film QA Kaydı
 
 > Oluşturma: 20.08.2026 · tek mercek (SHORTS_QA), MOD B + INPUT MODE V (belgesiz).
-> Kaynak dosya: `yatay_3_5_dk_filmler/LOW_POWER/LOW_POWER_FRAGMAN_DIKEY.md`
-> Ham rapor: `02_HAM_RAPORLAR/LOW_POWER_FRAGMAN_SHORTS_HAM.md`
+> Kaynak dosya: `yatay_4_dk_filmler/LOW_POWER/LOW_POWER_FRAGMAN_DIKEY.md`
+> Ham rapor: `02_HAM_RAPORLAR/LOW_POWER/LOW_POWER_FRAGMAN_SHORTS_HAM.md`
 > Kaynak filmin kaydı: [`LOW_POWER.md`](LOW_POWER.md) (teknik QA tek sahneye koşulmuş · senaryo QA geçersiz)
 > ⚠️ Bu kaydın ana çıktısı **skor değil, ÜÇ SAPMA + BİR PARMAK İZİ ŞÜPHESİDİR.**
 

@@ -4250,7 +4250,7 @@ DURUM              🎬 ÜRETİLDİ + KURGULANDI (16.08.2026) · QA: dört merce
 
 PROMPT UZUNLUK KONTROLÜ — üretimden önce ölçülecek
   python3 kilavuzlar_ve_sistem_dosyalari/PROMPT_KONTROL/prompt_kontrol.py \
-     yatay_2_4_dk_filmler_uzay/THE_LAST_SHIFT/THE_LAST_SHIFT_COLONY_FILM.md
+     yatay_2_dk_filmler/THE_LAST_SHIFT/THE_LAST_SHIFT_COLONY_FILM.md
   ⚠️ 4.300 karakter Veo'da hata veriyor (KILAVUZ_REHBERI §7).
 
 🆕 BU FİLMDE İLK KEZ DENENEN BEŞ ŞEY — üretimden sonra ölçülecek

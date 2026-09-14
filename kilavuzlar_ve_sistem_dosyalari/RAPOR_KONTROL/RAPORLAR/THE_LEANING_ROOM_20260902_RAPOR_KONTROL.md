@@ -4,14 +4,14 @@
 
 | mercek | dosya | karar | iddia n/Σ/ort | hücreler n/Σ/ort | düzeltme sonrası | TABLOYA |
 |---|---|:--:|---|---|---|---|
-| ① KARE | `THE_LEANING_ROOM_1_KARE_HAM.md` | GEÇERSİZ | 7/None/5.8 | None/None/None | None/0/None | — |
-| ② DEVAMLILIK | `THE_LEANING_ROOM_2_DEVAMLILIK_HAM.md` | GEÇERSİZ | None/None/8.1 | None/None/None | None/0/None | — |
-| ③ SES | `THE_LEANING_ROOM_3_SES_HAM.md` | GEÇERSİZ | None/None/6.3 | None/None/None | None/0/None | — |
-| ④ HİKAYE | `THE_LEANING_ROOM_4_HIKAYE_HAM.md` | GEÇERSİZ | None/None/5.6 | None/None/None | None/0/None | — |
-| ⑤ ARKA PLAN | `THE_LEANING_ROOM_5_ARKA_PLAN_HAM.md` | GEÇERSİZ | None/None/6.5 | None/None/None | None/0/None | — |
-| ⑥ FİZİK | `THE_LEANING_ROOM_6_FIZIK_HAM.md` | GEÇERSİZ | None/None/7.1 | None/None/None | None/0/None | — |
-| ⑦ AKSİYON | `THE_LEANING_ROOM_7_AKSIYON_HAM.md` | GEÇERSİZ | None/None/6.7 | None/None/None | None/0/None | — |
-| ⑧ EFOR | `THE_LEANING_ROOM_8_EFOR_HAM.md` | GEÇERSİZ | None/None/1.8 | None/None/None | None/0/None | — |
+| ① KARE | `THE_LEANING_ROOM_KARE_HAM.md` | GEÇERSİZ | 7/None/5.8 | None/None/None | None/0/None | — |
+| ② DEVAMLILIK | `THE_LEANING_ROOM_DEVAMLILIK_HAM.md` | GEÇERSİZ | None/None/8.1 | None/None/None | None/0/None | — |
+| ③ SES | `THE_LEANING_ROOM_SES_HAM.md` | GEÇERSİZ | None/None/6.3 | None/None/None | None/0/None | — |
+| ④ HİKAYE | `THE_LEANING_ROOM_HIKAYE_HAM.md` | GEÇERSİZ | None/None/5.6 | None/None/None | None/0/None | — |
+| ⑤ ARKA PLAN | `THE_LEANING_ROOM_ARKA_PLAN_HAM.md` | GEÇERSİZ | None/None/6.5 | None/None/None | None/0/None | — |
+| ⑥ FİZİK | `THE_LEANING_ROOM_FIZIK_HAM.md` | GEÇERSİZ | None/None/7.1 | None/None/None | None/0/None | — |
+| ⑦ AKSİYON | `THE_LEANING_ROOM_AKSIYON_HAM.md` | GEÇERSİZ | None/None/6.7 | None/None/None | None/0/None | — |
+| ⑧ EFOR | `THE_LEANING_ROOM_EFOR_HAM.md` | GEÇERSİZ | None/None/1.8 | None/None/None | None/0/None | — |
 
 ## ① KARE — GEÇERSİZ
 - **TEKRAR** — SPEC dosyası VAR, rapor mod V → koşu TEKRARLANIR [D129]<br>ham rapor 02/'ye düşer, T tablosuna satır YAZILMAZ, kesme listesi / REMOVE / yeniden üretim UYGULANMAZ. Paket: qa-isle/scripts/rubrik_paketle.sh <film klasörü>

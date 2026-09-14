@@ -552,21 +552,26 @@ FİLM: ______________________
 RİSK SAYISI: ___ / 14        ← payda YUKARIDAKİ SORU SAYISIDIR, sabit değil.
                                 Kart eklenince payda da artar (bu liste tek kaynak).
 
-⚠️ 5 ve üstü ise: film şu anki sistemle 5/10'un üstüne çıkamaz.
-   Malzeme azaltmayı düşün. Kalite, daha iyi prompttan değil,
-   DAHA AZ RİSKLİ SAHNEDEN geliyor — kanıt: Kamera 2→8 (tablo min→max;
-   ardışık sıçrama karşılığı 3→8 · 01_DERS_ETKINLIK_RAPORU §5).
+⭐ 14.09.2026 SAHİP KARARI — "5+ risk → MALZEME AZALT" GERİ ALINDI, yerine KİLİT TAVANI:
+   5 ve üstü ise filme uygulanan DERS KİLİDİ sayısı ≤ 20'ye çekilir (sabit:
+   `prompt_kontrol.py` KILIT_TAVANI; ㉕ kapısı sayar). Malzeme (sahne · olay · nesne)
+   AZALTILMAZ: dışarıda kalan kilitler PLAN'ın `### ⛔ UYGULANMAYAN KİLİTLER` bloğuna
+   gerekçesiyle yazılır ve o filmde bilinçli olarak uygulanmaz. Ölçüm (THE_LOCKED_PULSE,
+   13.09.2026): 10/14 risk → 8 kalem malzeme kesildi → 48 kilit uygulandı → hikâye
+   dört dakikalık bir vana tamirine indi ve 17/17 kapıdan geçti. Malzeme azaltmak
+   kaliteyi değil hikâyeyi düşürüyordu; kilit azaltmak promptu ve akışı kısaltır.
+   Eski kanıt (Kamera 2→8 · 01_DERS_ETKINLIK_RAPORU §5) KLİP İÇİ kamera hareketi
+   talebinin kaldırılmasıydı — o bir kilit kararıdır, malzeme kararı değil; kayıt durur.
 
 ⚠️ EŞİK KALİBRASYONU AÇIK: "5+" bandı liste 9 SORULUYKEN ölçüldü; kart
    6b · 9 · 10 · 11 · 12 · 13 sonradan eklendi ve payda 14'e çıktı. Aynı film
    şimdi mekanik olarak daha yüksek risk sayısı üretir. Bant yeniden
    ölçülene kadar 5+ eşiği KORUNUR (yanlış tarafa hata yapar: fazla uyarır).
 
-⛔ VE KART 12 BU EŞİĞİN İÇİNDE ÖZEL DURUMDUR: "malzeme azalt" tavsiyesi
-   politika riskine uygulanırsa hikâye eksilir. KART 12'nin cevabı
-   malzemeyi ÇIKARMAK değil, aynı aksiyonu başka kanaldan yazmaktır
-   (POLITIKA_VE_URETILEBILIRLIK §4.1). 5+ sayarken KART 12'yi say,
-   ama malzeme kesme kararını ondan BAŞLATMA.
+⛔ KART 12 İSTİSNASI KALIR: politika riskinin cevabı malzemeyi çıkarmak değil,
+   aynı aksiyonu başka kanaldan yazmaktır (POLITIKA_VE_URETILEBILIRLIK §4.1).
+   5+ sayarken KART 12'yi say; kilit tavanı politika satırını (B6) kapsamaz —
+   o satır tavanın dışında, her filmde zorunludur.
 ```
 
 ---

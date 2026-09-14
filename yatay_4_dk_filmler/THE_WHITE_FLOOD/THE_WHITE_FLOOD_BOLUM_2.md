@@ -26,7 +26,7 @@
 >
 > Bölüm sınırı ardışık bir çifttir: S14 (B · MS · göz hizası · AZ 60) ile
 > S15 (H · CU · alt açı 22° · AZ 160) — 1 ölçek kademesi + 100° azimut ✅
-> Denetim: `python3 kilavuzlar_ve_sistem_dosyalari/PROMPT_KONTROL/prompt_kontrol.py yatay_3_5_dk_filmler/THE_WHITE_FLOOD`
+> Denetim: `python3 kilavuzlar_ve_sistem_dosyalari/PROMPT_KONTROL/prompt_kontrol.py yatay_4_dk_filmler/THE_WHITE_FLOOD`
 
 ---
 

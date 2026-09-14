@@ -7,7 +7,7 @@
 > koşu değil **YAPILMAMIŞ koşudur**: ham rapor arşive düşer, T tablosuna satır
 > yazılmaz, kesme listesi ve REMOVE reçetesi uygulanmaz.
 > Paketi betik üretir:
-> `bash .claude/skills/qa-isle/scripts/rubrik_paketle.sh yatay_2_4_dk_filmler_uzay/THE_STILL_SWARM <master>`
+> `bash .claude/skills/qa-isle/scripts/rubrik_paketle.sh yatay_2_dk_filmler/THE_STILL_SWARM <master>`
 
 ---
 
@@ -259,7 +259,7 @@ BEKLENEN      aynı lens sınıfı, aynı ölçek, aynı ışık yönü, aynı e
 ```
 ⛔ TEK KARE ÜRETİLMEDEN ÖNCE (AGENTS Kart P):
    python3 kilavuzlar_ve_sistem_dosyalari/PROMPT_KONTROL/prompt_kontrol.py \
-           yatay_2_4_dk_filmler_uzay/THE_STILL_SWARM
+           yatay_2_dk_filmler/THE_STILL_SWARM
    ⛔ FİLM KLASÖRÜ verilir, tek bölüm dosyası değil. Çıktıda
      `📁 FİLM KLASÖRÜ · n bölüm dosyası birleşik` satırı yoksa kapı koşmamıştır.
    Ardından: PROMPT_KONTROL/PROMPT_QA_CRITIQUE_PROMPT.md (insan yarısı —

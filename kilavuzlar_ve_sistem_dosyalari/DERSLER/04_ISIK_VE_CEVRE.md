@@ -252,6 +252,9 @@ garantisi bir ölçüm değil, bir renk ataması olur.
 
 ## 🔴 DERS 193: IŞIK TAKVİMİ "MONOTONİK AZALIR" DİYE YAZILDI, HİÇBİR YERDE ÖLÇÜLMEDİ — SÖNEN ŞERİTLER **AYNI KLİBİN İÇİNDE** GERİ YANDI VE FİLM KARANLIK BİTMESİ GEREKEN İKİ SAHNEYİ YANAR HÂLDE TESLİM ETTİ
 
+**FREKANS:** 5 film (14.09.2026 küme K4) · THE OPEN CIRCUIT (mod D · ⑪) · THE AMBER LATTICE (② — gündüz/gece 4 kez; ⑪ 7,7 — 6500K↔2200K üç kesme) · THE CRACKED HELMET (⑪ 8,7 — key 10→2 saat, 120°) · THE RING WALKER (⑪ 7,0 — key 12/3/10/12/8 saat, 6000→2800K) · LOW_POWER (⑪ 4,9 — aynı çölde key 9/2/10; pratik ışın kaynağı kesmede söndü; 20 s'de 6500→2800→8500K)
+**DEĞİŞEN SATIR:** SPEC C `IŞIK TAKVİMİ` satırı sahne başına **iki sayı**: key yönü (saat) + renk sıcaklığı (K); aynı mekânda ardışık sahnede yön farkı ≤ 30°, K farkı ≤ 500; her IMAGE promptunun LIGHT satırı bu iki sayıyı taşır; pratik kaynak (ışın, lamba) yandıysa bir sonraki sahnede de yanar ya da sönmesi OLAY olarak yazılır
+
 **KAPI:** BETİK · `olcum_kapisi.sh` → **IŞIK TAKVİMİ İZİ** (sahne YAVG serisi;
 ↑ = takvim geri sardı · ⟳ = klibin içinde geri yandı) — uygulandı 08.09.2026
 **TEKRAR:** 0 · 08.09.2026 THE OPEN CIRCUIT
@@ -296,3 +299,44 @@ iki kare arasındaki YÖNDE durur.
 
 🔗 [[D147]] (kir fazı monotoniktir — aynı biçim, farklı eksen) · [[D192]]
 (aynı filmin boşalma biçimi) · [[D141]] · [[D188]]
+
+---
+
+## 🔴 DERS 201: VAKUMDA GÜNEŞ IŞIĞI AÇISI KOMŞU SAHNELERDE FLIP ETTİ — ORBİTAL SAHNELER ARASINDA GÜNEŞ YÖNÜ 120° SIÇRADI (S23 → S24)
+
+**KAPI:** ⑪ IŞIK · `11_ISIK_QA_CRITIQUE_PROMPT.md` → **Key Direction Continuity** (6.0/10)
+**TEKRAR:** 0 · 10.09.2026 THE GREEN CEILING
+
+**Kaynak:** THE GREEN CEILING QA (10.09.2026, MOD V). Zone E (Outer Space / Orbit, S23–S24). S23 (03:40) 10 o'clock solar key illumination vs S24 (03:50) 2 o'clock solar key illumination.
+
+**Sorun:** Atmosfersiz vakum ortamında güneş tek kaynak ve doğrudan sert specular ışık basar. S23'te 10 yönünden (sol üst) gelen sert güneş ışığı, komşu orbital sahne S24'te 2 yönüne (sağ üst) atlıyor. Kamera ve kapsül yönelimi sabit tutulmasına rağmen speküler parlamalar ve gölge yönü 120° tersine dönüyor (🔴 BLOCKER).
+
+**ÇÖZÜM:** Vakum / orbital sahnelerde dış güneş açısı (solar angle / key direction) SPEC ve prompt düzeyinde derece ve kadran bazında sabitlenmelidir (`solar key at 10 o'clock, 45° elevation`). Üretimde bu kilit ihlal edildiğinde vakum speküler parlamaları bükülemeyeceği için renk düzeltme (grade) ile çözülemez; klip yeniden üretilmelidir (regeneration).
+
+🔗 [[D11]] (ışık sürekliliği) · [[D193]] (ışık takvimi) · [[D200]] (fizik tutarsızlığı)
+
+
+---
+
+## 🔴 DERS 209: DÜNYA ÇAPASI YOK — GÖK CİSMİ, UFUK, ARAZİ VE YER İMİ HER SAHNEDE YENİDEN TARİF EDİLDİ VE HER SAHNEDE BAŞKA BİR DÜNYA ÇIKTI
+
+**FREKANS:** 3 film · THE CRACKED HELMET (⑤ 2,0 — boş uzay → halkalı gezegen → mavi gezegen → iki güneş; 5,0 — havasız kaya → turuncu kanyon) · THE RING WALKER (⑤ 7,3 — arka plan tek 2D levha, parallax yok) · LOW_POWER (⑤ 5,0 — verici kulesi 3 form; kar zirvesi → çöl kanyonu; uzak dağ yakından net; ① 5,4 — alt kenarda panel belirmesi)
+**DEĞİŞEN SATIR:** PLAN World Bible **DÜNYA ÇAPASI** üç cümle — gök (tek cümle) · ufuk/zemin (tek cümle) · yer imi (tek cümle, oran gövde boyu cinsinden) — her dış-mekân IMAGE promptuna kurulum harfi gibi **BİREBİR** kopyalanır; `00_SAHNE_TABLOSU` "taşıyıcılar" hücresi hangi çapanın kadrajda olduğunu yazar
+**KAPI:** LİSTE · SPEC C bloğu EŞ KADRAJ satırının yanı ("DÜNYA ÇAPASI 3/3") · ⑤ ARKA PLAN Horizon & Topology ölçer
+**TEKRAR:** 0
+
+**Kaynak:** THE CRACKED HELMET QA (10.09.2026) — ⑤ `0:00 empty space ↔ 0:20 ringed planet ↔ 0:50 small blue planet ↔ 1:50 dual suns orange haze`. Zincir ADAY-31 · 32 · 50 · 58 · 69 · 70 · 71.
+
+**Örüntü:** Üç filmde dünya sahneden sahneye değişti çünkü her IMAGE promptu çevreyi **yeniden** anlattı; aynı gök, aynı ufuk, aynı kule için üç farklı cümle üç farklı dünya üretti. D6 çevre morfunu yasakladı (negatif), ne yazılacağını söylemedi. Kamera kurulumu için çözüm 08.09'da bulunmuştu (aynı harf = aynı cümle, betik ⑩④); dünya için yoktu.
+
+**ÇÖZÜM — ÜÇ CÜMLE, SIFIR SAPMA:**
+```
+GÖK      "a black sky with one ringed planet low on the right, the size of a helmet at arm's length"
+UFUK     "a flat grey plain to a straight horizon at eye level, no atmosphere haze"
+YER İMİ  "a lattice transmission mast three body-lengths tall, screen-left, its base on the plain"
+```
+1. Üç cümle World Bible'da; dış-mekân promptlarında değişmeden.
+2. Gök cismi/ufuk/yer imi değişecekse bu bir OLAY'dır ve sahne haritasında yazılır (gündüz→gece [[D193]] gibi).
+3. Kadraj kenarından "beliren" nesne yasak: kenarda ne varsa IMAGE'da vardır ([[D131]]).
+
+🔗 [[D6]] · [[D58]] (dönen varlık) · [[D131]] · [[D193]] · [[D176]]

@@ -346,7 +346,7 @@ DOĞRULANDI    ⬜ ÜRETİMDEN SONRA
 
 KAPI ⑥        PROMPT KAPISI — üretimden ÖNCE, tek kare üretilmeden
 KOMUT         python3 kilavuzlar_ve_sistem_dosyalari/PROMPT_KONTROL/prompt_kontrol.py \
-                yatay_3_5_dk_filmler/THE_WHITE_FLOOD
+                yatay_4_dk_filmler/THE_WHITE_FLOOD
               ⛔ FİLM KLASÖRÜ verilir, tek bölüm dosyası DEĞİL. Çıktıda
                 "📁 FİLM KLASÖRÜ · n bölüm dosyası birleşik" satırı yoksa
                 kapı KOŞMAMIŞTIR.

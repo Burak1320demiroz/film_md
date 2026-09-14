@@ -14,8 +14,10 @@ film kaydına yazılmış olmalıdır.
 ## 0. Mercek tespiti
 Raporun başlık/kategori yapısından hangi mercek olduğunu belirle:
 ① KARE · ② DEVAMLILIK · ③ SES · ④ HİKAYE · ⑤ ARKA PLAN · ⑥ FİZİK ·
-⑦ AKSİYON · ⑧ EFOR · ⑨ KADRAJ · ⑩ OYUNCULUK · ⑪ IŞIK · ⑫ HOOK.
-(①-④ zorunlu; ⑤-⑧ risk tetikli; ⑨-⑫ KOŞUL tetikli plan sadakati — 00_README.
+⑦ AKSİYON · ⑧ EFOR · ⑨ KADRAJ · ⑩ OYUNCULUK · ⑪ IŞIK · ⑫ HOOK · ⑬ UYUM ·
+⑭ HAREKET · ⑮ YÖN (14.09.2026: hareket mantığı · yön/hedef — kart F10 · F11).
+(①-④ zorunlu; ⑤-⑧ ve ⑭-⑮ risk tetikli; ⑨-⑫ KOŞUL tetikli plan sadakati; ⑬ üretim
+tetikli — 00_README. `rapor_kontrol.py` merceği İÇERİKTEN tanır (MERCEK_IMZA).
 ⛔ ⑨-⑫ SPEC'siz koşulmaz, mod V satırı tabloya girmez; ölçüm HAM ZİNCİR
 dediyse HİÇBİR mercek koşulmaz [D181 · D184])
 Malzeme FRAGMAN ise → kapı ⑧: mercek yalnız ①, satır film tablolarına girmez.
@@ -65,20 +67,38 @@ bash .claude/skills/qa-isle/scripts/olcum_kapisi.sh "<master_yolu>"        # son
 ls <FILM klasörü>/*_QA_SPEC.md
 ```
 
-⭐ **PAKET ZATEN VAR OLMALI** — `yeni-film` Kart A §4 onu SPEC ile birlikte üretir
-[D165]. `QA_PROMPTLARI/FILME_OZEL/<FILM>/` yoksa Kart A adımı atlanmıştır: burada
-üret, ve filmin kaydına tek satır düş (paket QA anında doğuyorsa operatör çoktan
-çıplak rubriği yapıştırmıştır — THE STILL SWARM'da sekiz mercek böyle mod V koştu).
-Koşu tekrarlanacaksa yine buradan üretilir:
+⭐ **RUBRİK + SPEC, TEK MESAJDA — SPEC BAŞTA.** `QA_PROMPTLARI/_KAYNAK/` altındaki
+rubriği aç, `<FILM>_QA_SPEC.md`'yi rubriğin BAŞINA yapıştır; koşu ancak böyle mod
+D'dir [D129]. SPEC yapıştırılmadıysa operatör çıplak rubrik koşmuştur ve rapor T
+tablosuna GİRMEZ (THE STILL SWARM'da sekiz mercek böyle mod V koştu).
+⭐ 14.09.2026 rubrik diyeti: ①-⑥ 25 KB'ın altında; DİKEY filmde ① KARE'nin SONUNA
+`_KAYNAK/1_KARE_DIKEY_EK.md` de yapıştırılır (sıra: SPEC → rubrik → dikey ek). Yatayda
+yapıştırılmaz. Kesilen uzun kurallar `QA_PROMPTLARI/ARSIV_CIKTI_KURALLARI.md`'de.
+
+⛔ **FİLME ÖZEL PAKET KALDIRILDI [11.09.2026 · proje sahibi kararı]:**
+`QA_PROMPTLARI/FILME_OZEL/` ve `scripts/rubrik_paketle.sh` depodan silindi.
+Gerekçe deponun kendi ölçümüdür — D165 08.09'da "ÇALIŞMIYOR" işaretlendi: paket
+VARKEN de on iki merceğin on ikisi mod V koştu (OPEN CIRCUIT). Mod D'yi taşıyan
+şey paket değil, SPEC'in yapıştırılmasıdır.
+
+⛔ **⑬ UYUM'UN MOD V'Sİ YOKTUR [11.09.2026].** Diğer her mercek videoya bakıp bir
+şey söyleyebilir; bu söyleyemez — sahne↔prompt karşılaştırmasının bir tarafı yoksa
+karşılaştırma da yoktur. Dört girdi zorunludur: kurgu · sahne promptları (BİREBİR) ·
+`<FILM>_QA_SPEC.md` · `sahne_kapisi.sh` çıktısı + üretim defteri satırları.
+Önce makine yarısı koşar; 🚨 TESLİM UYUŞMAZLIĞI basarsa hiçbir mercek koşulmaz:
 ```
-bash .claude/skills/qa-isle/scripts/rubrik_paketle.sh <film klasörü> [master]   → QA_PROMPTLARI/FILME_OZEL/<FILM>/
+bash .claude/skills/qa-isle/scripts/sahne_kapisi.sh <master> 10 <prompt_sayısı>
 ```
+⭐ ⑬'ün çıktısı kesme listesi değil DERS SİPARİŞİDİR: 🅑 (prompt boşluğu) satırları
+sonraki filmin kilidine dönüşür. ⛔ Ölçülen filmin promptuna DOKUNULMAZ.
 
 ⛔ **⑨-⑫ MOD V'DE GEÇERSİZDİR, TEKRAR DEĞİL [D190].** Plan sadakati merceği
 belgesiz koşunca ekrandan bir plan türetir ve türettiği plan ekrana her zaman
 uyar: ⑫ makarada olmayan doruğa "peak placement 9/10" verdi. Rapor karantinaya
-girer — T9-T12'ye satır yok, 00_INDEX hücresi ❌, hiçbir bulgusu ders/sipariş
-üretmez. Betik bunu kendisi verir.
+girer — T9-T12'ye satır yok, 00_INDEX hücresi ❌, hiçbir bulgusu DERS/sipariş
+üretmez. Betik bunu kendisi verir. ⭐ 14.09.2026: bulgu **ADAY olabilir** —
+`GOZLEM_DEFTERI`'ne `**MOD:** V · ⑨-⑫ (plan uydurma riski)` etiketiyle düşer; ≥ 2
+filmde tekrarlarsa ders olur [kontrat §4]. Ders yasağı sürer, aday yasağı kalktı.
 
 ⛔ **①.10 GÖZ KAPILARI [D191].** Betik `--film` ile koşunca SPEC'in F bloğunu
 ⬜ listesi olarak basar. Bunlar filmin kendi kapılarıdır ve hiçbir merceğin
@@ -107,15 +127,41 @@ onaylanır. O zaman kesme listesi / REMOVE reçetesi / yeniden üretim UYGULANMA
 önce hangi sahnenin makarada olmadığı adıyla yazılır ve soru ÜRETİM masasına
 geçer (YERÇEKİMİ F10: plan 12, makara 11, eksik olan filmin son karesiydi).
 
+⛔ **①.11 BÖLÜM KAPISI [13.09.2026 · KILAVUZ_REHBERI §2.6/§2.7]** — film
+`yatay_6_dk_filmler/` ya da `yatay_8_dk_filmler/` altındaysa QA birimi BÖLÜMDÜR:
+on iki mercek iki yarım mastera AYRI koşulur ve betik **`--bolum 1/2`** /
+**`--bolum 2/2`** ile çağrılır. Bayraksız koşu ①.9'u yanlış ateşler (plan 36,
+makara 18). Bayrakla ①.9 yalnız `<FILM>_BOLUM_n.md`'yi sayar; uç kategoriler
+(baş bölümde final, son bölümde hook, ikisinde bütün-film dörtlüsü) `—` olur.
+`--rapor` çıktısı `<FILM>_B<n>_<tarih>_RAPOR_KONTROL.md`, `--t-tablo` satırı
+`**<Film>** B<n>` olur. ② sınır çiftini göremez → SPEC B sınır satırı elle
+kareyle kapanır. Kesme listesi bölüm raporundan UYGULANMAZ.
+
+⭐ **①.12 DERS DÖNÜŞÜ [14.09.2026 · kontrat §4]** — film kaydı `## 🎯 ÜÇ SATIRLIK
+SONUÇ`'tan hemen önce `## 🔁 DERS DÖNÜŞÜ` bölümü taşır: `TEKRAR: D<n> — <bulgu> ·
+sayaç +1 → <dosya>` (ya da `TEKRAR: yok`) ve `ADAY: ADAY-<n> — <tek cümle> · MOD: D/V`
+(ya da `ADAY: yok — <gerekçe>`). Betik `--film` ile koşunca bölümü arar, yoksa NOT
+basar. TEKRAR satırı yazılınca ilgili dersin `**TEKRAR:**` sayacı +1 alır; aday
+`GOZLEM_DEFTERI`'ne düşer, ≥ 2 filmde tekrarlayınca ders olur (Kart G).
+
+⭐ **①.13 HÜKÜM + ✂️ KESİK [14.09.2026 · QA çıktı reformu]** — rubrikler artık tally /
+toplam / OVERALL İSTEMEZ: model hücre + etiketli timecode + tablonun altında kapalı
+listeden tek `VERDICT:` yazar; betik etiketleri sayar, ortalamayı hücrelerden hesaplar,
+hükmü `VERDICT_SOZLUK` ile kıyaslar (yok / sözlük dışı → ŞARTLI; frekans sayımına
+girmez). Eski raporlarda tally/OVERALL varsa yine kıyaslanır. SCORES SUMMARY'siz /
+hücresiz / `MEDIA MISSING` çıktı → `KESİK` (koşu değil; `_KESIK_HAM.md`, yeniden koşulur).
+Sağlık: `python3 kilavuzlar_ve_sistem_dosyalari/RAPOR_KONTROL/qa_saglik.py --film <FILM>`.
+
 n·Σ·ort · tally · şerit · ⑨ ızgara · ④ harita↔kesme · ② sayaç boşluğu · çoklu
-raporda ⑤'in beş satırı (SUSKUNLUK dahil). **GEÇERSİZ / TEKRAR → T tablosuna
+raporda ⑤'in altı satırı (SUSKUNLUK · SÜRE dahil [D205]). **KESİK / GEÇERSİZ / TEKRAR → T tablosuna
 satır YAZILMAZ; ŞARTLI → düzeltilmiş ortalama Ⓥ ⚠️ girer.** Betik çıktısı film
 kaydına "①.5 BETİK KOŞUSU" olarak yapıştırılır.
 
 ## 3. ③ KİMLİK KAPISI (①'den önce koşulur)
 Raporun sahne listesinden belgeye METİN OLMAYAN en az İKİ çapa eşlenir
 (bir vuruş + bir sayısal kilit). Ekrandaki yazı çapa DEĞİLDİR.
-Eşleşme < 2 → UNATTRIBUTED: ham rapor korunur, SKOR SATIRI YAZILMAZ, ders yazılmaz.
+Eşleşme < 2 → UNATTRIBUTED: ham rapor korunur, SKOR SATIRI YAZILMAZ, ders yazılmaz,
+**aday da yazılmaz** (film kimliği belirsiz — 14.09.2026 kontrat §4'ün tek istisnası).
 
 ## 4. ④ KURGU KAPISI
 Önce sahne-dışı malzemeyi ayıkla (süre ölçüt değildir; kurgu ortasındaysa koşu durur).
@@ -147,11 +193,17 @@ KAREYLE sınanır — `rapor_kontrol.py` ①.7 o cümleyi ekrana basar. Kept Lig
 düşen "TWO GRAVITIES" hükmünün altında sınanmamış bir SINIR İHLALİ duruyordu.
 
 ## 7. Kayıt zinciri — sırası değişmez
-1. HAM rapor OLDUĞU GİBİ → `kilavuzlar_ve_sistem_dosyalari/FILM_QA_RAPORLARI/02_HAM_RAPORLAR/` (kural ④).
+1. HAM rapor OLDUĞU GİBİ → `kilavuzlar_ve_sistem_dosyalari/FILM_QA_RAPORLARI/02_HAM_RAPORLAR/<FILM>/<FILM>_<MERCEK>_HAM.md` (film klasörü · kural ④ · 11.09.2026'dan beri klasörlü).
+   ⭐ 14.09.2026 — ✂️ **KESİK KOŞU:** çıktıda `SCORES SUMMARY` yoksa / skor hücresi yoksa / `MEDIA MISSING` · `INPUT MODE: MISSING` · `RUN NOT STARTED` varsa bu bir rapor değil, yarım koşudur: `<FILM>_<MERCEK>_KESIK_HAM.md` adıyla kaydedilir (silinmez), tabloya/frekansa/partiye girmez, aynı mercek yeniden koşulur. `rapor_kontrol.py` içerikten tanır (karar `KESİK`, çıkış 2); eski dosyalar yeniden adlandırılmaz.
+   Bölüm koşusunda (6/8 dk hattı): `<FILM>_B1_<MERCEK>_HAM.md` · `<FILM>_B2_<MERCEK>_HAM.md`; film kaydı TEK dosya, `## BÖLÜM 1` / `## BÖLÜM 2` başlıkları; 00_INDEX matrisinde `**<FILM>** (B1)` · `(B2)` iki satır.
 2. Film kaydı → `.../FILM_QA_RAPORLARI/01_FILM_RAPORLARI/<FILM>.md` (kapı defterleri buraya).
+   ⭐ 14.09.2026: kaydın sondan bir önceki bölümü `## 🔁 DERS DÖNÜŞÜ` (TEKRAR · ADAY) — ①.12.
 3. ⛔ `rapor_kontrol.py` GEÇERSİZ/TEKRAR dediyse bu adım ATLANIR. Skor satırı DOĞRU tabloya: ① → T1 · ② → T2 ·
-   ③ → T3 · ④ → T4 · ⑤ → T5 · ⑥ → T6 · ⑦ → T7 · ⑧ → T8 · ⑨-⑫ → T9-T12
-   (⑨-⑫'de mod V satırı YOKTUR). Geçerlilik işareti: ✅ / ⚠️ ŞARTLI / 🚨.
+   ③ → T3 · ④ → T4 · ⑤ → T5 · ⑥ → T6 · ⑦ → T7 · ⑧ → T8 · ⑨-⑫ → T9-T12 ·
+   ⑬ → T13 · ⑭ → T14 · ⑮ → T15 (14.09.2026)
+   (⑨-⑫'de mod V satırı YOKTUR; ⑬'ün mod V'si yoktur). Geçerlilik işareti: ✅ / ⚠️ ŞARTLI / 🚨.
+   ⭐ ⑭/⑮ raporunun PROMPT ORDERS tablosu adım 5'in ham maddesidir: aynı etiket/desen
+   ≥ 2 filmde → ders (kontrat §2b); tek filmde → GOZLEM_DEFTERI ADAY (MOD etiketiyle).
 4. `.../FILM_QA_RAPORLARI/00_INDEX.md` sayım + tamlık matrisi.
 5. Yeni ders çıktıysa → AGENTS.md Kart G.
 6. Commit ATILMAZ — "commit'e hazır" diye raporla.

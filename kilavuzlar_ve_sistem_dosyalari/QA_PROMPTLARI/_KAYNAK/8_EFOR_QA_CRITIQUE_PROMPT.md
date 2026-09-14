@@ -361,22 +361,9 @@ scattered. A throughout-absence you suspect is deliberate goes to FLAGS as
 a question, never to a score.
 
 ⛔ A FILM WITH NO EXERTION IS NOT A ZERO. If the ledger is empty, every
-category is N/A, OVERALL SCORE reads `N/A — no exertion events`, and you
-write one line saying so. A film of a person watching a sunrise does not
+category is N/A, the VERDICT reads `N/A — no exertion events`, and you write
+one line saying so. A film of a person watching a sunrise does not
 fail this lens; it is out of its reach.
-
-ARITHMETIC GATE — write these three numbers BEFORE the score
-  SCORED CATEGORIES:  __        (UNVERIFIABLE, N/A and ⚠️ PARTIAL excluded,
-                                 never 0)
-  SUM OF SCORES:      __._
-  DIVISION:           __._ ÷ __ = __._      ← this is OVERALL SCORE
-
-OVERALL SCORE: __/10
-VERDICT: [THE BODY PAYS / MINOR DEBT / FIXABLE IN EDIT / WEIGHTLESS WORK /
-          NOBODY PAYS]
-         One finding outranks every other score: if EVERY exertion event in
-         the ledger has `STRAIN SHOWN: none`, the verdict is NOBODY PAYS,
-         first line, regardless of the mean.
 ```
 
 ## EFFORT LEDGER
@@ -401,7 +388,7 @@ matching string as proof that the order is right.
 
 ## COST CURVE
 ```
-One digit per scene, in order, length = SCENES OBSERVED:
+One digit per scene, in order, no spaces, length = SCENES OBSERVED:
   0 = baseline, rested        5 = heavily taxed
   9 = at the limit            (use the whole range, not just 0 and 1)
 Example (15 scenes): 000122334445553
@@ -437,8 +424,11 @@ NOT PRESENT. A FAIL needs the ledger row it came from.
    (it lowers nothing). Never both, and never two categories at once — a
    grip failure that also reveals a glove problem picks its owning category
    by the root cause.
-③ A category with material but no in-scope source keeps 10/10 and the Issue
-   cell reads "no in-scope source". It never takes a silent deduction.
+③ A category with material but no in-scope source is written `—` and is not
+   scored — it stays out of the mean. It never takes a silent deduction.
+④ DO NOT TOTAL, AVERAGE OR TALLY ANYTHING — the library's script counts the
+   🔴/🟠/🟡 tags you wrote and computes the mean from the cells; a number you
+   compute yourself is discarded. No SEVERITY TALLY, no SUM, no OVERALL.
 ```
 
 | # | Category | Score | Issue (with ledger rows and timecodes) |
@@ -453,10 +443,13 @@ NOT PRESENT. A FAIL needs the ledger row it came from.
 | 8 | Pain, Restraint and Proportion | /10 | |
 | 9 | Recovery Curve Honesty | /10 | |
 
-## SEVERITY TALLY
-🔴 BLOCKER: __   🟠 MAJOR: __   🟡 MINOR: __
-⛔ The tally must equal the number of 🔴/🟠/🟡 tags actually written in this
-report.
+Write the verdict UNDER the table, after every cell is filled — exactly one of the
+options below (the library's script checks the word against this list):
+VERDICT: [THE BODY PAYS / MINOR DEBT / FIXABLE IN EDIT / WEIGHTLESS WORK /
+          NOBODY PAYS]
+         One finding outranks every other score: if EVERY exertion event in
+         the ledger has `STRAIN SHOWN: none`, the verdict is NOBODY PAYS,
+         first line, regardless of the mean.
 
 ## UNPAID WORK TABLE
 | Timecode | The work | What should have shown | Which pattern (①–⑭) | Severity |

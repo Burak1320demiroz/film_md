@@ -65,6 +65,11 @@ küçük farkı burada da fark sayma.
 |---|---|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|---|---|
 
 | **The Iron Slope** Ⓥ ⛔ ⚠️ | 25.08.2026 | V (D olacaktı) | 3 | — | — | 10 | — | 8 | 10 | 10 | (4) | **7,5** | mod V — kilit tablosu yok | TWO GRAVITIES |
+| **The Counted Turn** ⚠️ | 09.09.2026 | D | 8 | 10 | 9 | 6 | — | 10 | 8 | 10 | 8 | **8,6** | 7 kilit: 6 PASS · 1 FAIL | MINOR SLIPS |
+| **The Solar Mirror** Ⓥ ⚠️ | 11.09.2026 | V | — | — | 7 | 8 | — | 6 | 8 | 5 | — | **6,8** | mod V — kilit tablosu yok | MINOR SLIPS |
+| **The Resonant Strand** ⚠️ | 11.09 | D | — | — | 8 | 9 | 8 | 8 | 7 | — | — | **8,0** | ⬜ | ⬜ |
+| **The Hard Dock** ⚠️ | 12.09.2026 | D | — | 8.5 | 8.0 | 9.0 | — | 8.0 | 8.0 | 9.0 | — | **8,4** | mod D | MINOR SLIPS |
+
 
 > **The Iron Slope · Ⓥ mod V · ⛔ ÖN KOŞU · ⚠️ ŞARTLI** — matrise İŞLENMEZ
 > Kayıt: [`01_FILM_RAPORLARI/THE_IRON_SLOPE.md`](01_FILM_RAPORLARI/THE_IRON_SLOPE.md)
@@ -75,3 +80,15 @@ küçük farkı burada da fark sayma.
 > · Yerçekimi 3/10 **AYAKTA ve ölçümle doğrulandı**: serbest parça sabit
 > ~0,15 m/s süzülüyor; kilit 3. saniyede 9,7 m istiyordu → mod D'de
 > `VERDICT: FAIL`. → **DERS 127**
+
+> **The Counted Turn · 09.09.2026 · MOD D · ⚠️ ŞARTLI · matrise girmez**
+> Kayıt: [`01_FILM_RAPORLARI/THE_COUNTED_TURN.md`](01_FILM_RAPORLARI/THE_COUNTED_TURN.md)
+> · Skor: **8,6/10** (MOD D). 7 sayısal kilit: 6 PASS, 1 FAIL (S0 00:05 ilk düşüş 1.1s — planlanan 1.69s kilidinden hızlı).
+> · Verdict: `MINOR SLIPS`. 02:50'de ağır endüstriyel kayışın lastik bant gibi sıvımsı dalgalanması (Material Amnesia) edit kurgusu veya yeniden üretim gerektirir.
+
+> **The Solar Mirror · 11.09.2026 · Ⓥ mod V · ⚠️ ŞARTLI · matrise girmez**
+> Kayıt: [`01_FILM_RAPORLARI/THE_SOLAR_MIRROR.md`](01_FILM_RAPORLARI/THE_SOLAR_MIRROR.md)
+> · Skor: **6,8/10** (Ⓥ mod V). Verdict: `MINOR SLIPS`.
+> · 01:25 / 01:45 tutarsız güneş ışığı vektörü ve 01:04 vakumda tutuşan yapı unsurları (Material/Atmosphere).
+
+

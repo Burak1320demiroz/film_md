@@ -3,7 +3,7 @@
 > ⛔ **AYRI DOSYA** [D117]: SPEC planın içinde bir bölüm olarak yazıldığında
 > dokuz filmde bir kez bile mod D koşulmadı; ayrı dosyaya çıkarılınca koştu.
 > ⛔ Bu SPEC yazılır yazılmaz QA PAKETİ üretilir [D165]:
-> `bash .claude/skills/qa-isle/scripts/rubrik_paketle.sh yatay_3_5_dk_filmler/THE_OPEN_CIRCUIT`
+> `bash .claude/skills/qa-isle/scripts/rubrik_paketle.sh yatay_4_dk_filmler/THE_OPEN_CIRCUIT`
 
 ---
 
@@ -195,7 +195,7 @@ KAPI ④ — KAMERA SABİTLİĞİ İKAMESİ (SOFT · vidstabdetect YOK)
 
 ```
 ⬜ bash .claude/skills/qa-isle/scripts/rubrik_paketle.sh \
-       yatay_3_5_dk_filmler/THE_OPEN_CIRCUIT
+       yatay_4_dk_filmler/THE_OPEN_CIRCUIT
    → kilavuzlar_ve_sistem_dosyalari/QA_PROMPTLARI/FILME_OZEL/THE_OPEN_CIRCUIT/PAKET_1..12
 ⛔ Bu klasör yoksa operatörün eline ÇIPLAK RUBRİK kalır, çıplak rubrik
   MOD V koşar, ve mod V koşusu T tablolarına GİREMEZ [D129 · D165].

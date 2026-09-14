@@ -6,7 +6,7 @@ emsali — dikey klasörde değil). Film SAYIMINA GİRMEZ (yatay_3_5 klasörü
 grouped: klasör = film); teslim 9:16 Shorts.
 Format: **9:16 (DİKEY)** | Sahne: 6 (Hook + 5) | Süre: Her sahne 8 saniye, toplam 48 saniye
 Prompt yapısı: Her sahne için **1 görsel promptu + 1 video promptu** (tek versiyon, T2V)
-Kaynak film: **`yatay_3_5_dk_filmler/THE_THIRD_DUNE/`** — 25 sahne · 4:09 · ÜRETİLDİ (245 s kurgu · 3/3 mercek + 🧍, 11.08.2026)
+Kaynak film: **`yatay_4_dk_filmler/THE_THIRD_DUNE/`** — 25 sahne · 4:09 · ÜRETİLDİ (245 s kurgu · 3/3 mercek + 🧍, 11.08.2026)
 _"Zemin sabit değildir. Sabit olan tek şey, ne bırakacağına karar vermendir."_
 
 ---

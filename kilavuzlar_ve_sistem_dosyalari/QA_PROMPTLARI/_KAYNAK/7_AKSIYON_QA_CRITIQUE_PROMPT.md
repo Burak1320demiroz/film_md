@@ -378,22 +378,9 @@ that is scattered. A throughout-absence you suspect is deliberate goes to
 FLAGS as a question, never to a score.
 
 ⛔ A FILM WITH NO ACTION BEATS IS NOT A ZERO. If the ledger is empty, every
-category is N/A, the OVERALL SCORE line reads `N/A — no action beats`, and
-you write one line saying so. This lens does not punish a contemplative
+category is N/A, the VERDICT reads `N/A — no action beats`, and you write
+one line saying so. This lens does not punish a contemplative
 film for being contemplative.
-
-ARITHMETIC GATE — write these three numbers BEFORE the score
-  SCORED CATEGORIES:  __        (UNVERIFIABLE, N/A and ⚠️ PARTIAL excluded,
-                                 never 0)
-  SUM OF SCORES:      __._
-  DIVISION:           __._ ÷ __ = __._      ← this is OVERALL SCORE
-
-OVERALL SCORE: __/10
-VERDICT: [ACTION READS / MINOR BLUR / FIXABLE IN EDIT / BEATS ILLEGIBLE /
-          ACTION NEVER RENDERED]
-         One finding outranks every other score: if any beat's core attempt
-         is elided by a cut (pattern ④) and never shown, the verdict is
-         ACTION NEVER RENDERED, first line, regardless of the mean.
 ```
 
 ## ACTION BEAT LEDGER
@@ -418,7 +405,7 @@ matching string as proof that the order is right.
 
 ## BEAT STRING
 ```
-One character per scene, in order, length = SCENES OBSERVED:
+One character per scene, in order, no spaces, length = SCENES OBSERVED:
   A = a beat runs in this scene and reads
   p = a beat runs and is PARTIALLY readable
   x = a beat runs and does NOT read
@@ -449,8 +436,11 @@ exists — never omit a declared beat from it.
    (it lowers nothing). Never both, and never two categories at once — a
    contact that also broke the geography picks its owning category by the
    root cause, and the other category is not touched.
-③ A category with material but no in-scope source keeps 10/10 and the Issue
-   cell reads "no in-scope source". It never takes a silent deduction.
+③ A category with material but no in-scope source is written `—` and is not
+   scored — it stays out of the mean. It never takes a silent deduction.
+④ DO NOT TOTAL, AVERAGE OR TALLY ANYTHING — the library's script counts the
+   🔴/🟠/🟡 tags you wrote and computes the mean from the cells; a number you
+   compute yourself is discarded. No SEVERITY TALLY, no SUM, no OVERALL.
 ```
 
 | # | Category | Score | Issue (with ledger rows and timecodes) |
@@ -465,11 +455,13 @@ exists — never omit a declared beat from it.
 | 8 | The Stakes Object | /10 | |
 | 9 | Physical Tempo & Escalation | /10 | |
 
-## SEVERITY TALLY
-🔴 BLOCKER: __   🟠 MAJOR: __   🟡 MINOR: __
-⛔ The tally must equal the number of 🔴/🟠/🟡 tags actually written in this
-report. If they disagree, the report is not internally consistent and the
-gate will say so.
+Write the verdict UNDER the table, after every cell is filled — exactly one of the
+options below (the library's script checks the word against this list):
+VERDICT: [ACTION READS / MINOR BLUR / FIXABLE IN EDIT / BEATS ILLEGIBLE /
+          ACTION NEVER RENDERED]
+         One finding outranks every other score: if any beat's core attempt
+         is elided by a cut (pattern ④) and never shown, the verdict is
+         ACTION NEVER RENDERED, first line, regardless of the mean.
 
 ## UNREADABLE MOMENTS TABLE
 | Timecode | What I could not recover | Which pattern (①–⑭) | Severity |

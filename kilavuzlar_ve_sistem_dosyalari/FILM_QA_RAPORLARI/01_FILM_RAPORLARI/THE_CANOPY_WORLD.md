@@ -1,10 +1,10 @@
 # 🔍 THE CANOPY WORLD — QA KAYDI
 
-> **Kaynak dosya:** `yatay_2_4_dk_filmler_uzay/THE_CANOPY_WORLD/THE_CANOPY_WORLD_PLANET_FILM.md`
+> **Kaynak dosya:** `yatay_2_dk_filmler/THE_CANOPY_WORLD/THE_CANOPY_WORLD_PLANET_FILM.md`
 > **Bu filmde ÜÇ ölçüm var:**
 > · **TEKNİK QA #1** (aşağıda) — 4/10 · derslerden geri çıkarım, ham rapor kayıp
-> · **TEKNİK QA #2** (31.07.2026) — **3/10** · [`../02_HAM_RAPORLAR/THE_CANOPY_WORLD_TEKNIK_HAM.md`](../02_HAM_RAPORLAR/THE_CANOPY_WORLD_TEKNIK_HAM.md)
-> · **MANTIK QA** (31.07.2026) — **5/10** · [`../02_HAM_RAPORLAR/THE_CANOPY_WORLD_MANTIK_HAM.md`](../02_HAM_RAPORLAR/THE_CANOPY_WORLD_MANTIK_HAM.md)
+> · **TEKNİK QA #2** (31.07.2026) — **3/10** · [`../02_HAM_RAPORLAR/THE_CANOPY_WORLD/THE_CANOPY_WORLD_TEKNIK_HAM.md`](../02_HAM_RAPORLAR/THE_CANOPY_WORLD/THE_CANOPY_WORLD_TEKNIK_HAM.md)
+> · **MANTIK QA** (31.07.2026) — **5/10** · [`../02_HAM_RAPORLAR/THE_CANOPY_WORLD/THE_CANOPY_WORLD_MANTIK_HAM.md`](../02_HAM_RAPORLAR/THE_CANOPY_WORLD/THE_CANOPY_WORLD_MANTIK_HAM.md)
 >
 > 🎯 **Projede aynı filmin iki kez ölçüldüğü TEK vaka.** Bu, kalite tablosunun
 > ne kadar hassas olduğunu söyleyen ilk veri: **±1.3 puan.** Aşağıya bak.
@@ -76,7 +76,7 @@ GENEL SKOR:    4/10
 
 # 🔧 TEKNİK QA #2 — 31 Temmuz 2026
 
-> **Ham çıktı:** [`../02_HAM_RAPORLAR/THE_CANOPY_WORLD_TEKNIK_HAM.md`](../02_HAM_RAPORLAR/THE_CANOPY_WORLD_TEKNIK_HAM.md)
+> **Ham çıktı:** [`../02_HAM_RAPORLAR/THE_CANOPY_WORLD/THE_CANOPY_WORLD_TEKNIK_HAM.md`](../02_HAM_RAPORLAR/THE_CANOPY_WORLD/THE_CANOPY_WORLD_TEKNIK_HAM.md)
 > **Skor:** 3/10 · **Verdikt:** REGENERATE · **Durum:** ⚠️ ŞARTLI (SPEC boş)
 
 ## 📏 İKİ ÖLÇÜM YAN YANA — projenin ilk güvenilirlik verisi
@@ -131,7 +131,7 @@ Artık 7 dersin kaynak karesi belli:
 
 # 🧩 MANTIK VE DEVAMLILIK QA — 31 Temmuz 2026
 
-> **Ham çıktı + doküman kontrolü:** [`../02_HAM_RAPORLAR/THE_CANOPY_WORLD_MANTIK_HAM.md`](../02_HAM_RAPORLAR/THE_CANOPY_WORLD_MANTIK_HAM.md)
+> **Ham çıktı + doküman kontrolü:** [`../02_HAM_RAPORLAR/THE_CANOPY_WORLD/THE_CANOPY_WORLD_MANTIK_HAM.md`](../02_HAM_RAPORLAR/THE_CANOPY_WORLD/THE_CANOPY_WORLD_MANTIK_HAM.md)
 > **Skor:** 5/10 · **Verdikt:** FIXABLE IN EDIT · **Durum:** ✅ GEÇERLİ
 
 | Kategori | Skor |

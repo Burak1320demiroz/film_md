@@ -17,14 +17,18 @@ dönüp bakmıyor. Ayrı dosya, görünür borçtur.
 
 | # | dosya | ne yapar | bitmeden geçilmez |
 |:--:|---|---|---|
-| 0 | `00_OKUMA_CIZELGESI.md` | TÜM ders + TÜM kılavuz + QA raporu okuma defteri | ⬜ kalan satır varken 1'e geçilmez |
-| 1 | `01_QA_DERS_HASADI.md` | okunanlardan BU filme düşen kilitler | 0 satırla 2'ye geçilmez |
+| 0.7 | `00_HIKAYE_ONAYI.md` | ⭐ 14.09.2026 — hikâye dosya okunmadan sahibe onaylatılır; onaylı metin buraya işlenir. **Yeni rejim işareti**: bu dosya varken `prompt_kontrol.py` ㉕-㉚ koşar | `ONAY:` tarihli değilse hiçbir şey yazılmaz (㉙ BLOCK) |
+| 0 | `00_OKUMA_CIZELGESI.md` | yaşayan 40 ders + çekirdek manifest (≤30 dosya) + QA raporu okuma defteri — 14.09'dan beri "hepsi" değil | ⬜ kalan satır varken 1'e geçilmez (㉘); sıfır "—" sahtedir (㉘ BLOCK) |
+| 1 | `01_QA_DERS_HASADI.md` | okunanlardan BU filme düşen kilitler — tavan 20 (㉕) | 0 satırla 2'ye geçilmez |
 | 2 | `02_KONSEPT_VE_RISK.md` | konsept · ortam/tür kartı · risk kartları · novum kapısı | konsept kapısı ✅ olmadan 3'e geçilmez |
-| 3 | `03_SAHNE_SIRALAMASI.md` | X sahnenin sırası — olay · vuruş · kurulum harfi | 4'ün girdisidir |
+| 3 | `03_SAHNE_SIRALAMASI.md` | X sahnenin sırası — olay · vuruş · kurulum harfi; hikâye onayından sapıyorsa `SAPMA:` | 4'ün girdisidir |
 | 4 | `04_UYARI_NOTLARI.md` | sıralamanın tetiklediği ölçülmüş arızalar | ⛔ satırı açıkken 5'e geçilmez |
-| 5 | `05_SAHNE_CALISMALARI/` | sahne başına bir dosya — konuya özel çalışma | hepsi ✅ olmadan PROMPT yazılmaz |
+| 5 | `05_SAHNE_CALISMALARI/` | ≤8 sahne: sahne başına dosya · >8 sahne: `00_SAHNE_TABLOSU.md` (satır başına sahne) + 5 kilit sahne dosyası (`--kilit-sahne`) | hepsi ✅ / tablo KAPI ✅ + 5 rol olmadan PROMPT yazılmaz (㉚) |
 
-Beşi bittikten SONRA film yazımı başlar: `<FILM>_PLAN.md` → BIBLE → `<FILM>_BOLUM_*.md`.
+Hepsi bittikten SONRA film yazımı başlar: `<FILM>_PLAN.md` → BIBLE → `<FILM>_BOLUM_*.md`.
+
+> `OKUMA_CEKIRDEGI.txt` manifesti şablon klasöründe durur, film klasörüne
+> kopyalanmaz — `okuma_cizelgesi.sh` onu şablondan okur (tek kaynak).
 
 ---
 

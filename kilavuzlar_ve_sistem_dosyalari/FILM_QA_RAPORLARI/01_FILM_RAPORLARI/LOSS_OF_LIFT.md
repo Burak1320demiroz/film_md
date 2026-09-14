@@ -1,6 +1,6 @@
 # 🎈 LOSS OF LIFT — FİLM QA KAYDI
 
-> **Plan:** `yatay_3_5_dk_filmler/LOSS_OF_LIFT/LOSS_OF_LIFT_PLAN.md`
+> **Plan:** `yatay_4_dk_filmler/LOSS_OF_LIFT/LOSS_OF_LIFT_PLAN.md`
 > **Format:** 16:9 · 3-5 dk · bilimkurgu · Venüs bulut katmanı (54 km)
 > **Plan özeti:** 25 sahne (Hook 9 s + 24 × 10 s = 249 s) · 0 sahne içi kesme ·
 > 1 replik (S22) · viral S5·S13·S19·S23 · doruk S20 · insansız S0·S13·S19·S24

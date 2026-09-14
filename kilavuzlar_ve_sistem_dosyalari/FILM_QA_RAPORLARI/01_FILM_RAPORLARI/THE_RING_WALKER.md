@@ -1,9 +1,9 @@
 # 🔍 THE RING WALKER — QA KAYDI
 
-> **Kaynak dosya:** `yatay_2_4_dk_filmler_uzay/THE_RING_WALKER/THE_RING_WALKER_MOON_FILM.md`
+> **Kaynak dosya:** `yatay_2_dk_filmler/THE_RING_WALKER/THE_RING_WALKER_MOON_FILM.md`
 > **İki QA geçişi var:**
 > - **TEKNİK (VIDEO_QA)** — 5/10 · ham rapor ❌ kayıp · veri `LESSONS_LEARNED.md` Ders 30-32'den geri çıkarıldı
-> - **SENARYO (SENARYO_QA)** — 5/10 · ham rapor ✅ `../02_HAM_RAPORLAR/THE_RING_WALKER_SENARYO_HAM.md` (31.07.2026)
+> - **SENARYO (SENARYO_QA)** — 5/10 · ham rapor ✅ `../02_HAM_RAPORLAR/THE_RING_WALKER/THE_RING_WALKER_SENARYO_HAM.md` (31.07.2026)
 >
 > Bu, projede **iki farklı rubrikle ölçülmüş ilk film.**
 
@@ -103,7 +103,7 @@ GENEL SKOR:    5/10
 KARAR:         SHOOT WITH TRIMS
 GEÇERLİLİK:    ⚠️ ŞARTLI — izlenen kurgu plandan sapıyor (bkz. Bulgu 1)
                Rapor dürüst ve ekranda olanı ölçüyor; sorun girdide.
-HAM RAPOR:     ✅ ../02_HAM_RAPORLAR/THE_RING_WALKER_SENARYO_HAM.md
+HAM RAPOR:     ✅ ../02_HAM_RAPORLAR/THE_RING_WALKER/THE_RING_WALKER_SENARYO_HAM.md
 ```
 
 ## 📊 SKORLAR
@@ -260,3 +260,75 @@ filmin hikaye puanına dokunmuyor. Ring Walker'ın çürütülmüş "canlı yok 
 düşük risk" hipotezinin hikaye tarafındaki karşılığı: **zorluk kaynağını
 kaldırmak (canlı/tehlike/diyalog) hata bütçesini yok etmiyor, karakter
 etkinliğine kaydırıyor.**
+
+---
+
+# 🔬 BÖLÜM C — ON İKİ MERCEKLİ TAM QA GEÇİŞİ (MOD V, D, A, H, 5, 6, 7, 8, 9, 10, 11, 12 — 10.09.2026)
+
+## 📋 KÜNYE
+
+```
+QA TARİHİ:     10 Eylül 2026
+MOD V (KARE):  5.3 / 10 (VERDICT: REGENERATE / BLOCKER — sum 37.0 ÷ 7 = 5.28)
+MOD D (DEVAM): 7.4 / 10 (VERDICT: DRIFTS BUT RECOVERABLE — sum 81.0 ÷ 11 = 7.36)
+MOD A (SES):   8.1 / 10 (VERDICT: PASS WITH MINOR REVISIONS — 7 spoken lines)
+MOD H (HİKAYE):5.4 / 10 (VERDICT: PACING STALLED — 9 scored categories, Dialogue N/A)
+MOD 5 (ARKA P):7.3 / 10 (VERDICT: FIELD DRIFTS BUT RECOVERABLE — sum 44.0 ÷ 6 = 7.33)
+MOD 6 (FİZİK): 7.7 / 10 (VERDICT: TWO GRAVITIES — BLOCKER at 00:49 L7 g≈4.94 m/s²)
+MOD 7 (AKSİYON):8.3 / 10 (VERDICT: ACTION READS — 8 readable physical beats)
+MOD 8 (EFOR):  6.7 / 10 (VERDICT: WEIGHTLESS WORK — 4 exertion events with no strain)
+MOD 9 (KADRAJ): 4.8 / 10 (VERDICT: RHYME BROKEN — BLOCKER S1 vs S14 asset morph & 8 drifts)
+MOD 10 (OYUNCU):6.1 / 10 (VERDICT: MOSTLY LEGIBLE — S12 aftermath reset to neutral)
+MOD 11 (IŞIK):  7.0 / 10 (VERDICT: KEY WALKS — key direction shifts & temp seesaw 6000K-2800K)
+MOD 12 (HOOK):  6.0 / 10 (VERDICT: LEAVES AT 00:03 s — BLOCKER 4s opening title card)
+```
+
+## 📊 SKORLAR ÖZETİ
+
+| Mercek | Skor | Karar | Ham Rapor |
+|---|:---:|---|---|
+| Mod V (Kare & Fizik) | 5.3/10 | REGENERATE (BLOCKER) | `../02_HAM_RAPORLAR/THE_RING_WALKER/THE_RING_WALKER_KARE_HAM.md` |
+| Mod D (Devamlılık & Kimlik) | 7.4/10 | DRIFTS BUT RECOVERABLE | `../02_HAM_RAPORLAR/THE_RING_WALKER/THE_RING_WALKER_DEVAMLILIK_HAM.md` |
+| Mod A (Ses & Akustik) | 8.1/10 | PASS WITH MINOR REVISIONS | `../02_HAM_RAPORLAR/THE_RING_WALKER/THE_RING_WALKER_SES_HAM.md` |
+| Mod H (Hikaye / Anlatı) | 5.4/10 | PACING STALLED | `../02_HAM_RAPORLAR/THE_RING_WALKER/THE_RING_WALKER_HIKAYE_HAM.md` |
+| Mod 5 (Arka Plan - Derin) | 7.3/10 | FIELD DRIFTS | `../02_HAM_RAPORLAR/THE_RING_WALKER/THE_RING_WALKER_ARKA_PLAN_HAM.md` |
+| Mod 6 (Fizik - Derin) | 7.7/10 | TWO GRAVITIES (BLOCKER) | `../02_HAM_RAPORLAR/THE_RING_WALKER/THE_RING_WALKER_FIZIK_HAM.md` |
+| Mod 7 (Aksiyon Okunurluk) | 8.3/10 | ACTION READS | `../02_HAM_RAPORLAR/THE_RING_WALKER/THE_RING_WALKER_AKSIYON_HAM.md` |
+| Mod 8 (Efor & Yük Bedeli) | 6.7/10 | WEIGHTLESS WORK | `../02_HAM_RAPORLAR/THE_RING_WALKER/THE_RING_WALKER_EFOR_HAM.md` |
+| Mod 9 (Kadraj Sadakati) | 4.8/10 | RHYME BROKEN (BLOCKER) | `../02_HAM_RAPORLAR/THE_RING_WALKER/THE_RING_WALKER_KADRAJ_HAM.md` |
+| Mod 10 (Oyunculuk & Beden) | 6.1/10 | MOSTLY LEGIBLE | `../02_HAM_RAPORLAR/THE_RING_WALKER/THE_RING_WALKER_OYUNCULUK_HAM.md` |
+| Mod 11 (Işık Sürekliliği) | 7.0/10 | KEY WALKS | `../02_HAM_RAPORLAR/THE_RING_WALKER/THE_RING_WALKER_ISIK_HAM.md` |
+| Mod 12 (Hook & Retention) | 6.0/10 | LEAVES AT 00:03 s (BLOCKER) | `../02_HAM_RAPORLAR/THE_RING_WALKER/THE_RING_WALKER_HOOK_HAM.md` |
+
+---
+
+## 📌 ÖNE ÇIKAN BULGULAR VE İHLALLER
+
+1. **Mod V Blocker (1:50):** Final karesinde ekranda "THE RING WALKER" başlık metni belirmiş (burned-in title text), serinin ekranda yazı bulundurmama kuralını ihlal etmiştir.
+2. **Mod 12 Blocker (00:00–00:04):** Videonun ilk 4 saniyesi durağan başlık jenerik metniyle harcanmış, izleyicinin videoyu henüz sahne başlamadan (00:03 saniyesinde) terk etme riskine yol açmıştır.
+3. **Mod 9 Blocker (00:00 S1 vs 01:05 S14):** Açılış-kapanış kafiyesi (rhyme pair) tamamen çökmüştür. S1'deki turuncu/siyah lander modülü "SAVCI" final S14 karesinde düz çölde gümüş uzay gemisine dönüşmüştür.
+4. **Mod 6 Blocker (00:49 L7):** Core chamber düşüşünde yerçekimi ivmesi $g \approx 4.94 \text{ m/s}^2$ olarak ölçülmüş, genel $9.7 \text{ m/s}^2$ ivmesini yarı yarıya düşürerek çifte yerçekimi ihlali (TWO GRAVITIES) üretmiştir.
+5. **Dış Mekân Işık Yürümeleri (Mod 11 Zone B):** Ana güneş ışığı açısı sahneler arası sürekli kaymakta (saat 12, 3, 10, 12, 8), renk sıcaklığı ise 6000K mavidan 2800K altın sarısına dalgalanmaktadır.
+6. **Şok Sonrası Beden Dili Sıfırlanması (Mod 10 S12 01:14):** S12'deki meteor patlaması irkilmesi S13'te (01:21) aniden rahat nötür bir bakış duruşuna sıfırlanmıştır.
+7. **Efor ve Yük Hissizliği (Mod 8 S16 1:30):** Dar dağ sırtında ağır sırt çantasını taşırken astronotun omurgasında hiçbir eğilme veya ağırlık merkezi telafisi görülmemektedir.
+
+---
+
+## 🧪 ÇIKARILAN ADAY DERSLER
+* `ADAY-45`: EKRANDA OYNATIM SIRASINDA YAZI/BAŞLIK METNİ GÖRÜNMESİ VE NO-TEXT KURALI İHLALİ
+* `ADAY-46`: AYNI ORTAMDA ÇİFTE YERÇEKİMİ VE ZIT PARÇACIK VEYA SIVI FİZİĞİ ÇELİŞKİSİ
+* `ADAY-47`: DİKİŞ/AMBLEM YAMA POZİSYONUNUN KESMEDE SAĞ/SOL OMUZA MİRORLANMASI VE AKS İHLALİ
+* `ADAY-48`: DRAMATİK ANLARDA DENSE SOUNDTRACK CLIFF VE 5 KATMANLI SES YIĞILMASI
+* `ADAY-49`: HİKÂYE AKIŞINDA TEKRARLAYAN GÖZLEM VE YÜRÜYÜŞ SAHNELERİYLE ORTA BÖLÜM TEMPO DURGUNLUĞU
+* `ADAY-50`: KAMERA KAYMASINDA ARKA PLANIN TEK KATMANLI 2D LEVHA GİBİ SÜRÜKLENMESİ VE PARALLAX YİTİMİ
+* `ADAY-51`: AYNI MEKÂNDA DÜŞEN DEBRİS HIZININ DEĞİŞEREK ÇİFTE YERÇEKİMİ HESAPLANMASI
+* `ADAY-52`: GÖRSEL METEOR DÜŞÜŞÜ VEYA TEHDİT ANINDA REAKSİYON VEYA TRAJEKTORİ ANININ EKSİKLİĞİ
+* `ADAY-53`: AĞIR SIFIRT HAKİKİ KILIF VEYA GÖREV YÜKÜ TAŞINIRKEN BEDEN DURUŞUNDA AĞIRLIK HİSSİZLİĞİ
+* `ADAY-54`: AÇILIŞ VE KAPANIŞ SAHNELERİ ARASINDA UÇAK/GEMİ MODELİ DEĞİŞİMİ VE RHYME PAIR ÇÖKÜŞÜ
+* `ADAY-55`: ŞOK/DARBE TEHDİDİ SONRASI DÜZ DURUŞA HIZLI SIFIRLANMA VE REAKSİYON TUTARSIZLIĞI
+* `ADAY-56`: DIŞ MEKÂN SAHNELERİ ARASINDA GÜNEŞ IŞIĞI AÇISI VE RENK SICAKLIĞI DÜZENSİZLİĞİ
+* `ADAY-57`: AÇILIŞTA STATİK METİN KARTI VE JENERİKLE İZLEYİCİ İLK 3 SANİYE TERK RİSKİ
+
+
+
+

@@ -155,7 +155,7 @@ DARBOĞAZ (7 satırın 7'sinde de aynı):  KARAKTER — hepsi ≤4 (Wrong Shadow
 > reçetesi REDDEDİLDİ — replik SAYAÇ A'nın (oksijen, tamamen sesli kanal)
 > ikinci okuması. → cevaplar:
 > [`01_FILM_RAPORLARI/THE_BLIND_RETURN.md`](01_FILM_RAPORLARI/THE_BLIND_RETURN.md)
-> · ham: [`02_HAM_RAPORLAR/THE_BLIND_RETURN_SENARYO_HAM.md`](02_HAM_RAPORLAR/THE_BLIND_RETURN_SENARYO_HAM.md)
+> · ham: [`02_HAM_RAPORLAR/THE_BLIND_RETURN/THE_BLIND_RETURN_SENARYO_HAM.md`](02_HAM_RAPORLAR/THE_BLIND_RETURN/THE_BLIND_RETURN_SENARYO_HAM.md)
 
 > 🚨 **The Starless Circle neden GEÇERSİZ — mercek FİLMİ değil, 12 SANİYELİK
 > TEK KLİBİ puanladı (06.08.2026).** Rapor `RUNTIME: 12 · SCENE COUNT: 1`
@@ -169,7 +169,7 @@ DARBOĞAZ (7 satırın 7'sinde de aynı):  KARAKTER — hepsi ≤4 (Wrong Shadow
 > MALZEME KAPISI eklendi). Satır ancak tam kurgu (174 s) + BÖLÜM 0 ile
 > tekrar koşulduğunda değişir.
 > → cevaplar: [`01_FILM_RAPORLARI/THE_STARLESS_CIRCLE.md`](01_FILM_RAPORLARI/THE_STARLESS_CIRCLE.md)
-> · ham: [`02_HAM_RAPORLAR/THE_STARLESS_CIRCLE_SENARYO_HAM.md`](02_HAM_RAPORLAR/THE_STARLESS_CIRCLE_SENARYO_HAM.md)
+> · ham: [`02_HAM_RAPORLAR/THE_STARLESS_CIRCLE/THE_STARLESS_CIRCLE_SENARYO_HAM.md`](02_HAM_RAPORLAR/THE_STARLESS_CIRCLE/THE_STARLESS_CIRCLE_SENARYO_HAM.md)
 
 > ⚠️ **The Wrong Shadow neden Ⓥ ŞARTLI — serinin en düşük hikaye skoru,
 > ama satırın çoğu KURGUNUN puanı (06.08.2026, dikey hattın ilk senaryo
@@ -185,7 +185,7 @@ DARBOĞAZ (7 satırın 7'sinde de aynı):  KARAKTER — hepsi ≤4 (Wrong Shadow
 >   HATASI — plan doruğu S4 hizalanma. Kök neden: **DERS 73** (novum
 >   taşıyıcısı türetilmiş optik fenomendi ve modelden çıkmadı).
 > → cevaplar: [`01_FILM_RAPORLARI/THE_WRONG_SHADOW.md`](01_FILM_RAPORLARI/THE_WRONG_SHADOW.md)
-> · ham: [`02_HAM_RAPORLAR/THE_WRONG_SHADOW_SENARYO_HAM.md`](02_HAM_RAPORLAR/THE_WRONG_SHADOW_SENARYO_HAM.md)
+> · ham: [`02_HAM_RAPORLAR/THE_WRONG_SHADOW/THE_WRONG_SHADOW_SENARYO_HAM.md`](02_HAM_RAPORLAR/THE_WRONG_SHADOW/THE_WRONG_SHADOW_SENARYO_HAM.md)
 
 > ⚠️ **The Stone Sky neden Ⓥ ŞARTLI — ilk mod V senaryo satırı (05.08.2026).**
 > Rapor doğru mod V davranışı gösterdi: kendi sahne haritasını kurdu, hiçbir
@@ -198,7 +198,7 @@ DARBOĞAZ (7 satırın 7'sinde de aynı):  KARAKTER — hepsi ≤4 (Wrong Shadow
 > ③ son planlı sahne (S12 overview) kurguda yok — Ders 62'nin 4. vakası.
 > Karakter 4 ve Tema 4 skorları büyük ölçüde kayıp doruğun puanı.
 > → cevaplar: [`01_FILM_RAPORLARI/THE_STONE_SKY.md`](01_FILM_RAPORLARI/THE_STONE_SKY.md)
-> · ham: [`02_HAM_RAPORLAR/THE_STONE_SKY_SENARYO_HAM.md`](02_HAM_RAPORLAR/THE_STONE_SKY_SENARYO_HAM.md)
+> · ham: [`02_HAM_RAPORLAR/THE_STONE_SKY/THE_STONE_SKY_SENARYO_HAM.md`](02_HAM_RAPORLAR/THE_STONE_SKY/THE_STONE_SKY_SENARYO_HAM.md)
 
 > ⚠️ **The Inversion neden "şartlı" — ve neden yine de en kullanışlı rapor.**
 > Rapor künyesinde *"plan doc unsupplied"* yazıyor. **Plan dosyası depoda
@@ -219,7 +219,7 @@ DARBOĞAZ (7 satırın 7'sinde de aynı):  KARAKTER — hepsi ≤4 (Wrong Shadow
 > Buna karşılık bu rapor, dört rapor içinde **reçetelerinin üçü de kabul
 > edilen tek rapor.** Sebebi net: bulguları tasarım kararlarına değil,
 > **üretim ve kurgu hatalarına** dokunuyor.
-> → [`02_HAM_RAPORLAR/THE_INVERSION_SENARYO_HAM.md`](02_HAM_RAPORLAR/THE_INVERSION_SENARYO_HAM.md)
+> → [`02_HAM_RAPORLAR/THE_INVERSION/THE_INVERSION_SENARYO_HAM.md`](02_HAM_RAPORLAR/THE_INVERSION/THE_INVERSION_SENARYO_HAM.md)
 > · [film kaydı](01_FILM_RAPORLARI/THE_INVERSION.md)
 >
 > 🚨 Ve tek bir bulgusu tüm teknik rubrik zincirinden daha değerli çıktı:
@@ -239,7 +239,7 @@ DARBOĞAZ (7 satırın 7'sinde de aynı):  KARAKTER — hepsi ≤4 (Wrong Shadow
 > yazdı. Ayrıca planın tek tehlike sahnesi olan **CIVA NEHRİ'ni** (S6)
 > "redundant walking beat" sanıp tamamen kesmeyi önerdi.
 > **2 reçete reddedildi, 3 bulgu kabul edildi.** Ayrıntı ve sahne eşleme
-> tablosu: [`02_HAM_RAPORLAR/THE_KALEIDA_CRASH_SENARYO_HAM.md`](02_HAM_RAPORLAR/THE_KALEIDA_CRASH_SENARYO_HAM.md)
+> tablosu: [`02_HAM_RAPORLAR/THE_KALEIDA_CRASH/THE_KALEIDA_CRASH_SENARYO_HAM.md`](02_HAM_RAPORLAR/THE_KALEIDA_CRASH/THE_KALEIDA_CRASH_SENARYO_HAM.md)
 >
 > Skor ortalamaya girmez ama **bulguları kullanılabilir** — çünkü en değerli
 > bulgusu videodan değil, yapıdan geliyor: **filmde bedelli bir seçim yok.**
@@ -307,7 +307,7 @@ filmlerinin hiçbirinde sorulmamış.
 > uyuşmuyor: 7 sahne / 254s / 1 monolog bildirilmiş; film 25 sahne / 249s /
 > 5 konuşmalı sahne. Rapor var olmayan bir kurguyu puanladı.
 > Ayrıntı ve doğrudan yanlış çıkan bulgular:
-> [`02_HAM_RAPORLAR/LOW_POWER_SENARYO_HAM.md`](02_HAM_RAPORLAR/LOW_POWER_SENARYO_HAM.md)
+> [`02_HAM_RAPORLAR/LOW_POWER/LOW_POWER_SENARYO_HAM.md`](02_HAM_RAPORLAR/LOW_POWER/LOW_POWER_SENARYO_HAM.md)
 >
 > Ayrıca rapor kendi içinde tutarsız: başlıkta 7.0, takip satırında 7.1.
 > (10 skorun ortalaması 7.1 — başlık yanlış.)

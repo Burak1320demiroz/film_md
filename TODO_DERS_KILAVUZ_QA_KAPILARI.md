@@ -222,7 +222,9 @@ beslemesi Faz 1'in işiyle aynıydı. Devirle gelen üç uyarı:
       ④ loudness −14 LUFS / −1,0 dBTP'ye normalize
       ⭐ kart §0.19 açılış-kapanış çiftini de öldürüyor (son kare levhadaki disk olmalı)
 - [ ] ⑪ YENİDEN koşulur (kart yok · filigran yok · loudness kilitte)
-- [ ] `rubrik_paketle.sh <film> <yeni master>` → künyeye süre/çözünürlük girer [D160]
+- [x] ~~`rubrik_paketle.sh <film> <yeni master>` → künyeye süre/çözünürlük girer [D160]~~
+      ⛔ İPTAL 11.09.2026: betik ve `FILME_OZEL/` silindi (filme özel QA promptu
+      yazılmıyor). D160'ın künye ihtiyacı varsa SPEC'in B bloğuna yazılır.
 - [ ] Altı paket, altı TEMİZ oturum [D110], aynı dosya [D75] → `*_HAM_D.md`
       (mod V ham raporları KORUNUR, üstüne yazılmaz)
 - [ ] `rapor_kontrol.py <6 rapor> --film … --rapor` · beklenti: ①④⑥ TEKRAR değil ·
@@ -287,7 +289,11 @@ beslemesi Faz 1'in işiyle aynıydı. Devirle gelen üç uyarı:
 
 ---
 
-## FAZ 4 — İZLEYİCİ OKUMASI (plan aşaması, sıfır kare)  (~2 saat)
+## ⏩ FAZ 4 — İZLEYİCİ OKUMASI (plan aşaması, sıfır kare)  (~2 saat)
+
+> ⏩ **14.09.2026: `TODO_AKIS_VE_DERS_REFORMU.md` FAZ 9'a taşındı** — plan aşamasındaki
+> okuma bir rubrik değil SAHİP ONAYI oldu (`00_ANALIZ/00_HIKAYE_ONAYI.md`, sahne başına bir
+> satır, düz Türkçe, analiz başlamadan). Buradaki maddeler orada kapanır; bu blok tarih için durur.
 
 > Üretimden önce planı okuyan tek yargı rubriğinde "novum · izleyici · yokluk"
 > 0 kez geçiyor. Hikâye merceği yalnız videoya koşuyor. Boşluk burası.
@@ -308,7 +314,11 @@ beslemesi Faz 1'in işiyle aynıydı. Devirle gelen üç uyarı:
 
 ---
 
-## ⏳ FAZ 5 — RUBRİK DİYETİ  (~1 gün · ENFORCEMENT kısmı hemen, ÖZ kısmı Faz 1'den sonra)
+## ⏩ FAZ 5 — RUBRİK DİYETİ  (~1 gün · ENFORCEMENT kısmı hemen, ÖZ kısmı Faz 1'den sonra)
+
+> ⏩ **14.09.2026: `TODO_AKIS_VE_DERS_REFORMU.md` FAZ 5'e taşındı** — sahip kararı 25 KB SERT,
+> altı rubrik; ortak kalıp `ARSIV_CIKTI_KURALLARI.md`'ye (buradaki ad korundu), rubriğe özel
+> kesikler `ARSIV_RUBRIK_DIYETI/`'ye. Buradaki maddeler orada kapanır.
 
 > Kural rubrik metnine değil çıktı kapısına gider; rubrik metnindeki
 > "ARITHMETIC GATE / SCORES SUMMARY ①-⑤ / PRESENCE STRING / LINES HEARD / CUTS
@@ -409,7 +419,7 @@ grep -c "THE_WAKING_GROUND" kilavuzlar_ve_sistem_dosyalari/KILAVUZ_REHBERI.md   
 grep -c "hep yalnız" kilavuzlar_ve_sistem_dosyalari/KILAVUZ_REHBERI.md          # 0
 grep -c "^- \[ \]" TODO_TEMA_VE_ACI_KAPILARI.md                                 # 0
 python3 kilavuzlar_ve_sistem_dosyalari/PROMPT_KONTROL/prompt_kontrol.py \
-        yatay_2_4_dk_filmler_uzay/THE_COLD_WELD/     # kılavuz düzeltmeleri kararı bozmadı mı
+        yatay_2_dk_filmler/THE_COLD_WELD/     # kılavuz düzeltmeleri kararı bozmadı mı
 ```
 
 ### 📐 Şablon hatasının yarıçapı — ÖLÇÜLDÜ (düzeltilmedi, film dosyaları bu fazda değişmez)
@@ -435,7 +445,7 @@ düştü) hâlâ örüntüyü taşıyor. Ders yazıldı, kapı kurulmadı, örü
 `prompt_kontrol.py`'ye eklemektir — 13 dosyayı elle temizlemek değil; elle
 temizlik 14.'yü engellemez. ⏳ Faz 2'nin kapı işine bağlandı.
 
-> 📌 **Kenar bulgu (Faz 7 dışı, düzeltilmedi):** `yatay_2_4_dk_filmler_uzay/`
+> 📌 **Kenar bulgu (Faz 7 dışı, düzeltilmedi):** `yatay_2_dk_filmler/`
 > kökünde `THE_ROSE_COAT_DUST_PLAIN_FILM.md` duruyor ve aynı dosya
 > `THE_ROSE_COAT/` klasörünün içinde de var. `yeni-film` skill'i
 > *"format klasörünün köküne .md bırakma — sayaç kökteki her girdiyi BİR FİLM
@@ -476,6 +486,45 @@ mercek yoktu. Sahip dört eksen seçti; dördü açıldı (00_README 🎯 bölü
 - [ ] ⬜ Faz 5 RUBRİK DİYETİ ile birleşir: ①②⑦⑧'in yakaladığı her şey ya
       ffmpeg'de ya ⑤⑥⑨⑪'de — ilk MOD D koşusundan sonra hangi eski merceğin
       düşeceği verilerle kararlaştırılır, önce değil.
+
+## 🆕 12.09.2026 — TUR 17 (SİNEMATİK UZAY GİYSİSİ) · KILAVUZ YAZILDI · ÜÇ KAPI ADAYI BEKLİYOR
+
+```
+Sahibin cümlesi "astronot kıyafetleri çok kötü, film tarzı havalı olsun".
+Ölçülen teşhis: bible tek sıfat + "pressure suit" (biçim hiç yazılmıyor) ·
+D79/139 bloğu devamlılık için doğru, görünüşü söküyor · TUR 5 kimlik sordu
+görünüş sormadı · tasarım kalitesini ölçen mercek yok. Üç prompt → TUR 17 →
+04 §TUR 17 (sayı katmanı çürük, sayısız süzüldü) →
+UZAY_GIYSISI_SINEMATIK_TASARIM_KILAVUZU.md (beş arketip · kask · malzeme ·
+renk · kir · sırt ⬜ · bütçe · üç hazır blok). Kılavuz "havalı"yı ÖLÇEMEZ;
+aşağıdaki üç kapı ölçer.
+```
+
+- [x] 20_ üç prompt · TUR17_HAM (3/3 birebir + künye) · 04 §TUR 17 · kılavuz ·
+      sekiz işaretçi (AGENTS · REHBER §1/§5 · DONANIM · SAHNE_DEVAMLILIK ·
+      REFERANS_PAKETI §4.1 · FILM_PLAN şablonu · yeni-film adım 8)
+- [ ] ⬜ **⑭ TASARIM SADAKATİ merceği** (QA mercek serisi, kart G): R1 sayfası +
+      klip → siluet gölge testi · kask çerçevesi görünür mü · sırt §8 kalıbı ·
+      sert kabuk oyun-görünümü · aksan tek yerde. ② DEVAMLILIK'tan AYRI satır,
+      ①/② ile toplanmaz. Yazılana kadar "havalı oldu" T tablosuna girmez.
+- [ ] ⬜ **SIRT A/B** — ilk giysi-kılavuzlu filmde aynı arka-açı sahnesi düz
+      pozitif ("one continuous smooth panel … carrying nothing") ve heykelsi
+      pozitif ("one continuous sculpted surface … two shallow recessed panels")
+      ile İKİ kez üretilir; ② skoru + R1 arka karesi karşılaştırılır. Bu koşu
+      yapılmadan kılavuz §8 "tuttu" demez (04 §T17.8).
+- [ ] ⬜ **SUBJECT BLOĞU KONUMU** — rapor 3 "Lost in the Middle"ı prompt
+      kodlayıcısına taşıdı (⬜ ekstrapolasyon). V2 iskeletinde SUBJECT ortada
+      (SCENE → ENVIRONMENT → SUBJECT → CAMERA …). Aynı sahne SUBJECT önde /
+      ortada iki kez → ② karşılaştır. Ölçülmeden IMAGE_VIDEO_PROMPT_TEMPLATES
+      DEĞİŞMEZ.
+- [ ] ⬜ **DONANIM "glowing" temizliği** (kart G): ASTRONOT_DONANIM §3/§5
+      kalıpları ("glowing cyan triangle" · "glowing digital readout")
+      prompt_kontrol YASAK sözlüğüne (D29) takılır — "lit / lamp light / cast"
+      ile yeniden yazılır. Ayrıca AGENTS §1 OYUNCULUK satırındaki "kapı adayı
+      ㉒" numarası ㉒ YÜZEY RENK KAPISI ile çakışıyor — yeniden numaralanır.
+- [ ] ⬜ **ASİMETRİ ÇELİŞKİSİ** (TUR 5 ⭐ öneri ↔ TUR 17 rapor 3 sızma) AÇIK:
+      iki taraf da ölçülmemiş. İlk iki giysi-kılavuzlu filmde ② raporunun
+      "band flips / sızma" hücresi sayılır; karar veriden sonra.
 
 ## 🚫 YAPILMAYACAKLAR (bu listenin sınırı)
 
@@ -651,8 +700,8 @@ baseline (kapılar öncesi)   95 BLOCK · 21 FIX ·  9 GO
 
 ```bash
 bash kilavuzlar_ve_sistem_dosyalari/sayac.sh                       # 🧭: mod D ≥3 · rubrik 6/6 ≤25 KB · KAPI kartlı kılavuz 34/34
-python3 kilavuzlar_ve_sistem_dosyalari/PROMPT_KONTROL/prompt_kontrol.py dikey_shorts_filmler yatay_2_4_dk_filmler_uzay yatay_3_5_dk_filmler yatay_10_20_dk_filmler | tail -3
-python3 kilavuzlar_ve_sistem_dosyalari/RAPOR_KONTROL/rapor_kontrol.py kilavuzlar_ve_sistem_dosyalari/FILM_QA_RAPORLARI/02_HAM_RAPORLAR/THE_COLD_WELD_*_HAM_D.md --film yatay_2_4_dk_filmler_uzay/THE_COLD_WELD
+python3 kilavuzlar_ve_sistem_dosyalari/PROMPT_KONTROL/prompt_kontrol.py dikey_shorts_filmler yatay_2_dk_filmler yatay_4_dk_filmler yatay_10_20_dk_filmler | tail -3
+python3 kilavuzlar_ve_sistem_dosyalari/RAPOR_KONTROL/rapor_kontrol.py kilavuzlar_ve_sistem_dosyalari/FILM_QA_RAPORLARI/02_HAM_RAPORLAR/THE_COLD_WELD_*_HAM_D.md --film yatay_2_dk_filmler/THE_COLD_WELD
 grep -L "🎫 KAPI KARTI" kilavuzlar_ve_sistem_dosyalari/*.md            # boş olmalı (Faz 2 bitince)
 git status                                                          # commit sahibin
 ```

@@ -24,7 +24,7 @@
 > çıktısı değil.
 >
 > ✅ **15.08.2026 — İLK SAHA DENEMESİ YAPILDI.** Bu seçkinin 11 dersi
-> `yatay_2_4_dk_filmler_uzay/THE_SLOW_LIGHT_RELAY_FIELD_FILM.md` filmine
+> `yatay_2_dk_filmler/THE_SLOW_LIGHT_RELAY_FIELD_FILM.md` filmine
 > uygulandı; hangi dersin hangi sahneye girdiği o dosyanın §0.19
 > tablosunda satır satır yazılı. Film henüz ÜRETİLMEDİ — dersler
 > "planda çalışıyor" aşamasında, "ekranda tuttu" aşamasında değil.

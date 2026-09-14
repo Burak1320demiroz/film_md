@@ -1,6 +1,6 @@
 # 🏜️ THE THIRD DUNE — FİLM QA KAYDI
 
-> **Film:** THE THIRD DUNE · 16:9 yatay · 3-5 dk · `yatay_3_5_dk_filmler/THE_THIRD_DUNE/`
+> **Film:** THE THIRD DUNE · 16:9 yatay · 3-5 dk · `yatay_4_dk_filmler/THE_THIRD_DUNE/`
 > **Plan:** 25 sahne (S0-S24) · 249 s · 10 replik · **Kurgu:** 245 s · 24 kesme (25 klip)
 > **QA tarihi:** 11.08.2026 — dört mercek aynı gün, hepsi **mod V**
 > **Ham raporlar:** `../02_HAM_RAPORLAR/THE_THIRD_DUNE_{TEKNIK,SENARYO,MANTIK,KARAKTER,SES}_HAM.md`

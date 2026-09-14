@@ -127,7 +127,7 @@ ANGLE. The back of the suit is one continuous smooth panel from collar to
 hip, unbroken, carrying nothing — one smooth surface with a single flat
 vertical seam down its centre. Fixed wear that never moves: ⬜ · ⬜.
 
-NEGATIVE: [KILAVUZ_REHBERI §5 negatif çekirdek TAM METİN] ⬜ · no backpack,
+NEGATIVE: [KILAVUZ_REHBERI §5.3 tam liste — referans sayfası bölüm promptu değildir, kelime bandı/㉗ koşmaz (14.09.2026)] ⬜ · no backpack,
 no tank, no hose, no rear housing of any kind · no panel gutters, no labels,
 no captions, no arrows, no callouts, no dimension lines, no panel titles.
 

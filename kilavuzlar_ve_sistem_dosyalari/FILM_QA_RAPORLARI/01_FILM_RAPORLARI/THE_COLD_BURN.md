@@ -1,6 +1,6 @@
 # ❄️ THE COLD BURN — FİLM QA KAYDI
 
-> **Film dosyası:** `../../../yatay_3_5_dk_filmler/THE_COLD_BURN/`
+> **Film dosyası:** `../../../yatay_4_dk_filmler/THE_COLD_BURN/`
 > **Plan:** 30 sahne · 299 s · 12+ replik (tümü kask telsizi / gövdesiz EKO)
 > **Ölçülen kurgu:** 225 s · 12 sahne · 7 replik (tümü ekranda insan)
 > **QA tarihi:** 09.08.2026 · beş mercek, beşi de MOD V, beşi de AYNI dosya (D75 ✅)

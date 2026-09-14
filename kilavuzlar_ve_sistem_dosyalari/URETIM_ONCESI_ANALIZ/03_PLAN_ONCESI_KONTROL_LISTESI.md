@@ -2,7 +2,7 @@
 
 > **Ne zaman:** Plan ve Bible yazıldı, **tek kare üretilmedi.**
 > **Süre:** ~20 dakika. Maliyeti sıfır.
-> **Neden:** Aşağıdaki 17 maddenin **11'i gerçek filmlerde gerçekten oldu** ve
+> **Neden:** Aşağıdaki 18 maddenin **12'si gerçek filmlerde gerçekten oldu** ve
 > hepsi üretimden SONRA, para harcandıktan sonra bulundu.
 > **26.08.2026:** B3 (tema indeksi) ve B4 (açı yayı) eklendi — ikisi de
 > yazılı kuralı olan ama hiçbir kapıda ölçülmeyen alanlardı; liste 12'den
@@ -13,6 +13,10 @@
 > HASIM'dan MUHATAP'a düzeltildi ve "ORTAM hasım değildir" kapısı
 > **geri çekildi** — gerekçe `04_ARASTIRMA_BULGULARI.md` T4.0.
 > Teşhis: `06_HIKAYE_HATTI_TESHISI.md` §3.1.
+> **14.09.2026:** A0 (HİKÂYE ONAYI) eklendi → 18. THE_LOCKED_PULSE 17/17 maddeyle
+> geçti, hikâyesi vana tamiriydi; hiçbir madde "sahip bu hikâyeyi gördü mü"
+> diye sormuyordu. Reform: `TODO_AKIS_VE_DERS_REFORMU.md` FAZ 9 · kapı
+> `prompt_kontrol.py` ㉙ (yalnız 00_HIKAYE_ONAYI.md taşıyan klasörlerde).
 > **Ek katman (06.08.2026):** `SENARYO_VE_VIRAL_KAMERA_KILAVUZU.md` §7'nin
 > 6 senaryo/kamera maddesi bu listeyle BİRLİKTE koşulur — bu listenin
 > yerine geçmez, üstüne eklenir.
@@ -20,6 +24,24 @@
 ---
 
 # 🔴 A. PLAN KENDİ İÇİNDE ÇELİŞİYOR MU
+
+### A0 — HİKÂYE ONAYI VAR MI ⭐ 🆕 14.09.2026 · ⛔ A1'DEN ÖNCE, HER ŞEYDEN ÖNCE
+
+```
+□ 00_ANALIZ/00_HIKAYE_ONAYI.md var ve ONAY: satırı TARİHLİ (⬜ değil)
+□ sahne satırı sayısı = PLAN'daki sahne sayısı (S0 … Sn)
+□ SAHNELER bölümünde jargon yok: D-numarası · "novum" · kurulum harfi · "kilit"
+□ PLAN'ın sahne haritası onaylı satırlardan sapıyorsa SAPMA bölümü dolu ve
+  yeniden onaylı — sapma sessizce yapılmamış [D74]
+□ LOGLINE ≤ 25 kelime · NEDEN İZLENİR tek soru · BEDEL sahne numaralı
+```
+
+**Neden ilk madde:** 17 maddenin 17'si kapıya bakar, hiçbiri hikâyeye bakmaz.
+THE_LOCKED_PULSE (13.09.2026) hepsinden geçti; hikâyesi bir vana tamiriydi ve
+sahip onu yazım bittikten sonra gördü. Bu liste PLAN'ı denetler; A0, PLAN'ın
+denetlenmeye değer olup olmadığını denetler. Onay, dosya okunmadan sohbette
+alınır (`yeni-film` adım 0.7 · AGENTS Kart A HİKÂYE); bu madde yalnız onun
+kaydının yerinde olduğunu doğrular. Kaynak: reform ölçümü, 14.09.2026.
 
 ### A1 — Yasak ↔ anlatım çelişkisi ⭐ EN PAHALI HATA
 
@@ -332,6 +354,11 @@ Liste maddesi betiğin göremediği tek şeyi sorar: dizinin VURUŞLA eşleşmes
 > THE UPWARD FALL'da ÜRETİM SIRASI plana YAZILMIŞTI ("1. DORUK S24") ve
 > S24 yine teslim edilmedi. Teslim tarafının ölçüm aleti ④ KURGU
 > KAPISI'nın **FİNAL VURUŞ KANITI** satırıdır [D141].
+>
+> ⛔ **3. vaka THE STATIC SHADOW (13.09.2026) → ⛔ ÇALIŞMIYOR, araca çevrildi:** sıra plana
+> yazılıydı (S14 → S12 → S15 → S01), makara S01-S10 tam, S11 · S12 · S13/S14 yok. Kapı artık
+> üretim tarafında: `<FILM>_URETIM_DEFTERI.md` §4 — ilk KABUL satırı sıranın ilk halkası
+> değilse ikinci klip üretilmez (AGENTS kart B). Bu madde plan tarafında KALIR, tek başına yetmez.
 
 ---
 
@@ -415,11 +442,13 @@ göremediği iki şeyi sorar: **kompozisyon riski** ve **anlam maliyeti**.
 
   0-2 risk  → sistem bu filmi taşır
   3-4 risk  → dikkat, en riskli malzemeyi bir sahneye hapset
-  5+ risk   → 🚨 bu film şu anki sistemle 5/10'un üstüne çıkamaz.
-              Malzeme azalt. (Kanıt: Kamera 2→8, talebi kaldırınca oldu.
-              ⛔ Kaldırılan talep KLİP İÇİ kamera hareketiydi. Sahneler
-              ARASI açı değişimi bu karara dahil değildir ve B4 maddesiyle
-              ayrıca zorunludur — ACI_YAYI_VE_SEKANS_KILAVUZU.md §3.)
+  5+ risk   → ⭐ 14.09.2026: KİLİT TAVANI — filme uygulanan ders kilidi ≤ 20
+              (`prompt_kontrol.py` KILIT_TAVANI · ㉕). Malzeme AZALTILMAZ;
+              tavanı aşan kilitler PLAN `### ⛔ UYGULANMAYAN KİLİTLER`
+              bloğuna gerekçeyle yazılır. (Eski kural "malzeme azalt"
+              geri alındı — 02_RISK_KARTLARI §RİSK TOPLAMI'ndaki ölçüm.
+              Kamera 2→8 kanıtı KLİP İÇİ kamera hareketi talebiydi; sahneler
+              ARASI açı değişimi B4 ile ayrıca zorunludur — ACI_YAYI §3.)
 ```
 
 ---
@@ -455,6 +484,8 @@ hatırlanır ve bozulur — projede 4 rapor bu yüzden şartlı/geçersiz oldu.
 ```
 ÜRETİM ÖNCESİ KONTROL — <FİLM ADI>            tarih: __________
 
+A0 □ HİKÂYE ONAYI: ONAY __.__.____ · TUR _/3 · satır ___ = sahne ___ ·
+     jargon yok · SAPMA: □ yok □ yeniden onaylı            [㉙ · 14.09.2026]
 A1 □ "no text" ile ekran içeriği aynı dosyada YOK
 A2 □ sahne sayısı: başlık ___ = blok ___ = "Scene N of X" ___
 A3 □ süre: ___ sahne × ___ s = ___ s = iddia edilen süre
@@ -483,7 +514,7 @@ C  □ 6 sayısal kilit yazıldı (insan · kask · ölçü · yerçekimi · sı
 D  □ risk sayımı yapıldı: ___/___  (payda: 02_RISK_KARTLARI soru sayısı)
 E  □ QA SPEC bloğu plan dosyasına yazıldı
 
-İMZA: bu 17 madde işaretlenmeden üretim başlamaz.
+İMZA: bu 18 madde işaretlenmeden üretim başlamaz (A0 · 14.09.2026: 17 → 18).
 ✅ B5 İNDİ (02.09.2026) — 05_DIKEY_HAT_TESHISI §5① üç gün "ayrılmış"
    kaldı; teşhis 06_HIKAYE_HATTI_TESHISI §3.1'de.
 ```
@@ -496,7 +527,8 @@ Bu listedeki her madde bir gerçek olaydan çıktı:
 
 | Madde | Kaynak film | Nerede belgelendi |
 |---|---|---|
-| A1 | The Tidal Hunt | Ders 50 · `../FILM_QA_RAPORLARI/02_HAM_RAPORLAR/THE_TIDAL_HUNT_MANTIK_HAM.md` |
+| A0 | The Locked Pulse (14.09.2026) | 17/17 madde ✅, hikâye vana tamiri, sahip en sonda gördü · `../../yatay_4_dk_filmler/THE_LOCKED_PULSE/00_ANALIZ/` (çizelge 126/126 sahte kilit) · kapı `../PROMPT_KONTROL/prompt_kontrol.py` ㉙ |
+| A1 | The Tidal Hunt | Ders 50 · `../FILM_QA_RAPORLARI/02_HAM_RAPORLAR/THE_TIDAL_HUNT/THE_TIDAL_HUNT_MANTIK_HAM.md` |
 | A2 | The Kaleida Crash | `../FILM_QA_RAPORLARI/01_FILM_RAPORLARI/THE_KALEIDA_CRASH.md` |
 | B1 | The Tidal Hunt | aynı ham rapor · "dalga atlaması planda da var" |
 | B2 | Kaleida · Ring Walker | `../FILM_QA_RAPORLARI/03_HIKAYE_KALITE_TABLOSU.md` |

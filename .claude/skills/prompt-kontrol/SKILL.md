@@ -48,8 +48,18 @@ düzeltilir, rubrik yeniden koşulur. Kural tarafı:
 ## 3. Karar
 
 - **GO** → üretime geçilebilir (önce imaj; imaj onaylanınca video).
-- **BLOCK** → üretme. 5+ risk çıkıyorsa malzeme azaltmayı öner; bu bandda
-  prompt iyileştirmek işe yaramıyor (kartın kendi kaydı).
+- **BLOCK** → üretme. 5+ risk çıkıyorsa kilit tavanına (≤ 20, ㉕) çekmeyi öner,
+  malzeme azaltmayı değil (14.09.2026); prompt cümlesi eklemek bu bandda işe yaramıyor.
+- ⭐ **Yeni rejim** (çıktıda `rejim: YENİ` — klasörde 00_HIKAYE_ONAYI.md var; 14.09.2026):
+  ① `uzunluk n kelime (pozitif gövde)` BLOCK → çözüm EKLEMEK değil SİLMEKTİR: IN FRAME
+  dışını sil, Bible'ı değil kadrajdakini yaz, videoda `START FRAME:` tek satır ·
+  ㉖ "kadrajda olmayan YÜZ" BLOCK → yüz cümlesi silinir, IN FRAME satırı düzeltilmez
+  (satırı kadraja uydur, tarifi satıra değil) · ㉗ NEGATIVE > 11 cümle FIX → film-özel
+  yasaklar PLAN Negative Bible'a iner, prompta §5.1 çekirdek + ≤3 kalır ·
+  ㉕ kilit > 20 FIX → `UYGULANMAYAN KİLİTLER` bloğuna gerekçeyle. Klasör modunda bu
+  bulgular dosya düzeyinde tek satırda toplanır ("n prompt: satırlar…"); satırlar
+  bölüm dosyasındaki satır numarasıdır. `rejim: eski` çıkıyorsa bu maddeler koşmaz
+  ve koşturulmaz — eski klasör eski bantla (sahip kararı).
 
 ## Mazeret çürütme — bu satırlar senin için yazıldı
 

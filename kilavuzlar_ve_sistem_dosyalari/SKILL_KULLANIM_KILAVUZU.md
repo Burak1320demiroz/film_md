@@ -122,7 +122,7 @@ SERİ PLANI   content-strategy (SERI_VE_KANAL_STRATEJI ile)
 
 ```
 /yeni-film dikey THE_SILENT_ORBIT
-/prompt-kontrol yatay_2_4_dk_filmler_uzay/THE_X        ⛔ klasör, tek bölüm değil
+/prompt-kontrol yatay_2_dk_filmler/THE_X        ⛔ klasör, tek bölüm değil
 /qa-isle dikey_shorts_filmler/THE_X ~/masaustu/THE_X_master.mp4
 /yayin-takip THE_X once
 

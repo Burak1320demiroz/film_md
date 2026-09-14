@@ -46,8 +46,11 @@ gördü" o zaman bir doğrulama değil, tek raporun dört kopyasıdır.
 |---|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
 
 | **The Iron Slope** Ⓥ ⛔ ⚠️ | DİKEY | dikey shorts | 6 | 4 | ⬜ | 2 | 2 | — | ⬜ | ⬜ | 2 | ⬜ | **2,6** |
-
 | **The Rose Coat** Ⓥ ⛔ ⚠️ | YATAY | 2-4 dk | (5) | (3) | (2) | — | (2) | — | (1) | ⬜ | (4) | (2) | **—** |
+| **The Counted Turn** ⚠️ | YATAY | 3-5dk | 7 | — | 4 | 7 | 6 | — | 4 | 7 | 7 | 3 | **5,6** |
+| **The Resonant Strand** ⚠️ | YATAY | ⬜ | ⬜ | 7 | 6 | ⬜ | ⬜ | ⬜ | 8 | 6 | ⬜ | 6 | **7,0** |
+| **The Hard Dock** | YATAY | 3-5dk | 9 | 8 | 8 | 9 | 8 | 8 | 8 | 8 | 7 | 8 | **8,1** |
+
 
 > **The Rose Coat · 26.08.2026 · Ⓥ mod V · ⛔ ÖN KOŞU · ⚠️ ŞARTLI**
 > Kayıt: [`01_FILM_RAPORLARI/THE_ROSE_COAT.md`](01_FILM_RAPORLARI/THE_ROSE_COAT.md)
@@ -78,6 +81,11 @@ gördü" o zaman bir doğrulama değil, tek raporun dört kopyasıdır.
 > THING NOTHING ELSE DOES: none found." Filmin novum'u (uzayda aşağı var)
 > ekrana gelmedi; ölçüm bunu doğruladı (serbest parça hızlanmıyor).
 > · Kesme listesi ve REMOVE reçeteleri ön koşu olduğu için UYGULANMAZ.
+
+> **The Counted Turn · 09.09.2026 · MOD D · ⚠️ ŞARTLI**
+> Kayıt: [`01_FILM_RAPORLARI/THE_COUNTED_TURN.md`](01_FILM_RAPORLARI/THE_COUNTED_TURN.md)
+> · `rapor_kontrol.py` ile düzeltildi: Premise & Clarity (8/10) hücresi (kusur bildirilmeyen, D186) `—` hücresine çekildi. Düzeltilmiş ortalama: **5,6** (Ham: 5,8/10).
+> · Verdict: `SHOOT WITH TRIMS`. 30 saniyelik kesme önerisi: S7 (10s empty wide), S8 (10s sitting beat), S15 (10s redundant kneeling).
 
 ⛔ **Sessiz filmde Diyalog `N/A`'dır, düşük puan değil.** Sessizlik bu
 serinin ilan edilmiş kısıtıdır; sözsüz bir filme "sözsüz olduğu için" 5

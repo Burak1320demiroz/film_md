@@ -3,7 +3,7 @@
 ```
 Koşu    06.09.2026 · Gemini · YALNIZ PROMPT A (kör geçiş)
 Ham     ../../../kilavuzlar_ve_sistem_dosyalari/FILM_QA_RAPORLARI/
-        02_HAM_RAPORLAR/YERCEKIMI_FAZ07_KOR_HAM.md
+        02_HAM_RAPORLAR/YERCEKIMI/YERCEKIMI_FAZ07_KOR_HAM.md
 Mod     ⚠️ V — SPEC yok [D129] · master yok [⑪] → film-dersi YAZILAMAZ
 ⛔ KATALOG GEÇİŞİ KOŞULMADI. D164: yalnız A → "GERÇEK ama ÖLÇÜSÜZ".
    Kimlik kapısı ve sıra skoru geçerli; kategori skorları YOK.

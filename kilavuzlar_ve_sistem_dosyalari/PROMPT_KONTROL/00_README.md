@@ -25,6 +25,18 @@ KULLANIM SIRASI — ikisi aynı şeyi ölçmez, ikisi de gerekir
 
 Çıkış kodu: `0` = GO · `1` = FIX · `2` = BLOCK — betikten zincirlenebilir.
 
+> ⭐ **14.09.2026 — İKİ REJİM (sahip kararı · reform FAZ 6-9).** Çıktının üçüncü
+> satırı `rejim: YENİ | eski`. Klasörde `00_ANALIZ/00_HIKAYE_ONAYI.md` varsa
+> (14.09'dan sonra `film_klasoru_ac.sh` ile açılan her klasör) yeni kapılar koşar:
+> ① kelime bandı — **POZİTİF gövde** (NEGATIVE öncesi) image 100-250 · video
+> 120-300, üstü BLOCK · ㉕ kilit tavanı 20 · ㉖ `IN FRAME:` satırı + kadrajda
+> olmayan yüz → BLOCK · ㉗ NEGATIVE ≤ 11 cümle · ㉘ çizelge sahtelik · ㉙ hikâye
+> onayı · ㉚ sahne tablosu. Eski klasörlerde çıktı BİREBİR eskisi gibi (bilgi
+> satırı hariç) — 26 üretilmemiş film eski bantla kalır. Klasör modunda per-prompt
+> ①/㉖/㉗ bulguları dosya düzeyinde tek satıra toplanır. Sabitler betiğin başında
+> (`KELIME_BANDI` · `NEGATIF_CUMLE_TAVANI` · `KILIT_TAVANI` · `REJIM_MARKER`);
+> kural metni `KILAVUZ_REHBERI` §5 · §7, iskelet `IMAGE_VIDEO_PROMPT_TEMPLATES` V3.
+
 ---
 
 ## 🧭 AKIŞTAKİ YERİ

@@ -2,7 +2,7 @@
 Dikey YouTube Shorts / Reels Production Document
 Format: **9:16 (DİKEY)** | Sahne: 6 (Hook + 5 Ana Sahne) | Süre: Her sahne 8 saniye, toplam 48 saniye
 Prompt yapısı: Her sahne için **1 görsel promptu + 2 video promptu** (Versiyon A = T2V, Versiyon B = I2V)
-Kaynak: `yatay_2_4_dk_filmler_uzay/THE_SLOW_TIDE/THE_SLOW_TIDE_PLANET_FILM.md` (QA 5/10 — serinin en yüksek bandı)
+Kaynak: `yatay_2_dk_filmler/THE_SLOW_TIDE/THE_SLOW_TIDE_PLANET_FILM.md` (QA 5/10 — serinin en yüksek bandı)
 _"Saniyede bir santimetre ilerleyen bir dalga da bir dalgadır. Ve durdurulamaz."_
 
 ---

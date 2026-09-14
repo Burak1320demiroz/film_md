@@ -1,10 +1,10 @@
 # 🔍 THE STONE SKY — QA KAYDI
 
-> **Kaynak dosya:** `yatay_2_4_dk_filmler_uzay/THE_STONE_SKY/THE_STONE_SKY_MOON_FILM.md`
-> **Teknik QA (VIDEO_QA):** ✅ **4/10 Ⓥ** · 05.08.2026 · ham: `../02_HAM_RAPORLAR/THE_STONE_SKY_TEKNIK_HAM.md`
-> **Mantık QA (MANTIK_QA):** ✅ **4.0/10** · 05.08.2026 · ham: `../02_HAM_RAPORLAR/THE_STONE_SKY_MANTIK_HAM.md`
-> **Senaryo QA (SENARYO_QA):** ⚠️ **5/10 Ⓥ ŞARTLI** · 05.08.2026 · ham: `../02_HAM_RAPORLAR/THE_STONE_SKY_SENARYO_HAM.md`
-> **Karakter QA (KARAKTER_QA):** ✅ **6/10** · 05.08.2026 · ham: `../02_HAM_RAPORLAR/THE_STONE_SKY_KARAKTER_HAM.md`
+> **Kaynak dosya:** `yatay_2_dk_filmler/THE_STONE_SKY/THE_STONE_SKY_MOON_FILM.md`
+> **Teknik QA (VIDEO_QA):** ✅ **4/10 Ⓥ** · 05.08.2026 · ham: `../02_HAM_RAPORLAR/THE_STONE_SKY/THE_STONE_SKY_TEKNIK_HAM.md`
+> **Mantık QA (MANTIK_QA):** ✅ **4.0/10** · 05.08.2026 · ham: `../02_HAM_RAPORLAR/THE_STONE_SKY/THE_STONE_SKY_MANTIK_HAM.md`
+> **Senaryo QA (SENARYO_QA):** ⚠️ **5/10 Ⓥ ŞARTLI** · 05.08.2026 · ham: `../02_HAM_RAPORLAR/THE_STONE_SKY/THE_STONE_SKY_SENARYO_HAM.md`
+> **Karakter QA (KARAKTER_QA):** ✅ **6/10** · 05.08.2026 · ham: `../02_HAM_RAPORLAR/THE_STONE_SKY/THE_STONE_SKY_KARAKTER_HAM.md`
 > ⭐ **KARAKTER_QA rubriğinin İLK çalıştırması** ve projede **dört mercekle
 > aynı gün ölçülen ilk film.** Dördü de mod V / yalnız-video koştu; belge
 > soruları aşağıda plan dosyasından cevaplandı.

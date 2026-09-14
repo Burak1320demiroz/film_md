@@ -149,7 +149,7 @@ Her satırın kanıtı ya bir KARE ya bir REPLİK zaman kodudur.
 ## §①.5 BETİK KOŞUSU — `rapor_kontrol.py` · 08.09.2026 · **12 rapor**
 
 ```
---film yatay_3_5_dk_filmler/THE_OPEN_CIRCUIT --hook 10 --klip 10
+--film yatay_4_dk_filmler/THE_OPEN_CIRCUIT --hook 10 --klip 10
 --olcum-kesme 22 --olcum-sahne 23 --olcum-filigran VAR --olcum-lufs -16.6
 
 🚨 TESLİM EKSİK — plan 25 sahne, ÖLÇÜLEN 23 [D188] → parti GEÇERSİZ

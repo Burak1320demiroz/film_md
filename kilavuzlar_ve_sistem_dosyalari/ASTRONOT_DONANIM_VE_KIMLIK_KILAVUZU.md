@@ -11,6 +11,13 @@
 > `URETIM_ONCESI_ANALIZ/TUR5_HAM_RAPORLAR/`. Kural buradan okunur,
 > bulgunun nereden geldiği oradan okunur.
 >
+> ⭐ **12.09.2026 · İKİZ KILAVUZ:** Bu belge giysinin KİMLİĞİNİ kurar (kim ·
+> hangi rol · hangi eşya). Giysinin GÖRÜNÜŞÜ (arketip · kask mimarisi ·
+> malzeme · renk · kir · sırtın tarif biçimi · bütçe) ayrı belgede:
+> `UZAY_GIYSISI_SINEMATIK_TASARIM_KILAVUZU.md` — ikisi §9 reçetesiyle TEK
+> İngilizce bloğa iner. ⚠️ §3/§5'teki "glowing" kalıpları `prompt_kontrol.py`
+> YASAK sözlüğüne (D29) takılır — "fill / cast / lamp light" yazılır.
+>
 > ⚠️ **DÜRÜST SINIR:** Bu kılavuzun tarihsel satırları ansiklopedik/ikincil
 > kaynaklara dayanır (hakemli değil); "⭐ öneri" işaretli satırlar ise
 > raporların KENDİ tasarım icadıdır, ölçüm değildir. Hiçbir çapa henüz
@@ -166,6 +173,11 @@ KASK (EVVA)          küre + AYNA GİBİ ALTIN VİZÖR; üstte 4 lamba,
   ile "thruster frame" farkı YERÇEKİMİ'nde sınanmakta olan modeldir
 □ Altın vizör en güvenilir tekil çapadır: "highly reflective gold
   sun-visor" — yansıma sahne ışığını taşır, model küreyi iyi korur
+  ⛔ AMA D79/T11.5③: depoda vizör BERRAK — altın vizör yalnız KALKIK
+  kalkan olarak yazılabilir; yüzü kapatamaz.
+□ ⭐ 12.09.2026: Sırt C "DÜMDÜZ"ün heykelsi pozitif hâli (kapalı, iki
+  gömme panel — ⬜ hipotez) ve kabuk/yaka/malzeme sözlüğü:
+  `UZAY_GIYSISI_SINEMATIK_TASARIM_KILAVUZU.md` §4 · §5 · §8
 ```
 
 ---
@@ -357,6 +369,7 @@ hiçbir eksen metin/marka/bayrak taşımaz.
 # 10. 🔗 ÇAPRAZ REFERANSLAR
 
 ```
+UZAY_GIYSISI_SINEMATIK_TASARIM    giysinin GÖRÜNÜŞÜ — ikiz kılavuz (12.09.2026)
 SAHNE_DEVAMLILIK_KILAVUZU §2      kelimesi kelimesine çapalama (kural)
 KARAKTER_VE_DUYGU_KILAVUZU §4.4/6 eşya BÜTÇESİ ve sahne dağıtımı
 UZAY_SENARYO_KILAVUZU             tür/dramaturji tarafı

@@ -668,7 +668,7 @@ o sayı kurguda ölçülmedi.
 
 **Kaynak:** THE COLD BURN — FRAGMAN DİKEY · 17.08.2026 · aynı oturumda üretilen
 başlık/açıklama/etiket paketi ·
-`FILM_QA_RAPORLARI/02_HAM_RAPORLAR/THE_COLD_BURN_FRAGMAN_SENARYO_HAM.md` §paketleme
+`FILM_QA_RAPORLARI/02_HAM_RAPORLAR/THE_COLD_BURN/THE_COLD_BURN_FRAGMAN_SENARYO_HAM.md` §paketleme
 **Sorun:** ilk vaka — ama depodaki her fragman aynı paketleme promptundan geçecek
 
 `FRAGMAN_KILAVUZU.md` §1.2 spoiler kapısını 17.08'de plandan KURGUYA taşıdı
@@ -1160,3 +1160,94 @@ gereken **yokluğu** değil. Bir yokluk ancak ölçümle bulunur.
 > Ders 179 (bedel yazıldı, sebebi üretilmedi) ·
 > `UZAYLI_VARLIK_TASARIM_KILAVUZU §8` SESSİZLİK BIÇAĞI ·
 > `KURGU_RITMI_VE_IHRAC §6`.
+
+---
+
+## 🔴 DERS 202: HİKÂYENİN MERKEZÎ SEÇİMİ VE BEDELİ BEDENDE OKUNMUYOR — "GÖRÜNMEZ SEÇİM" (S06, S16, S21, S24)
+
+**FREKANS:** 5 film (14.09.2026 küme K3) · THE GREEN CEILING (mod V · ⑩) · THE CRACKED HELMET (mod D · ⑩ 2,0 — S9 ölüm-kalım kararı sıfır tereddüt) · THE RING WALKER (mod V · ⑦ 8,3 — meteor çarpmasına irkilme yok) · LOW_POWER (mod V · ⑩ 5,8 — S5/S19 nedensiz dolgu jesti) · YERÇEKİMİ F2 (mod V — ADAY-4: dönüm anı kadraj kenarında)
+**DEĞİŞEN SATIR:** PLAN `ÇAPA ÜÇLÜSÜ` (SEÇİM/BEDEL/FİNAL) her satırda BEFORE/AFTER beden çifti + saniye; `00_SAHNE_TABLOSU` "izleyici cümlesi" hücresi seçim sahnesinde tereddüt kanalını adlandırır (el durur · nefes tutulur · adım geri) — dolgu jesti (yaka düzeltme, el kaldırma) yazılmaz
+
+**KAPI:** ⑩ OYUNCULUK / ④ HİKÂYE · `10_OYUNCULUK_QA_CRITIQUE_PROMPT.md` → **The Central Choice on the Body (4/10) · Cost & Aftermath (4/10)**
+**TEKRAR:** 0 · 10.09.2026 THE GREEN CEILING
+
+**Kaynak:** THE GREEN CEILING QA (10.09.2026, MOD V). Performance Ledger (S06, S16, S21, S24).
+
+**Sorun:** Karakterin dramatik kararı (S06 00:50, yerçekimi anomalisini fark etme ve ele alma) ve dramatik bedeli (S21 03:20, hayati erzak çantasının süzülüp gitmesi) bedende hiçbir duruş/ağırlık değişimi, tereddüt veya omurga çökmesi üretmiyor (🔴 BLOCKER). S16'daki rokete biniş sırasında karakter manken gibi tepkisiz kalıyor. Karakterin iç dünyası ve duygusal kırılması ekranda görünmez kalıyor ("THE CHOICE IS INVISIBLE", score 5.2/10).
+
+**ÇÖZÜM:** Prompt seviyesinde karakter eylemlerine mikro-beden hareketleri (fiziksel irkilme/recoil, el uzatmadan önce tereddüt/hesitation, omuz çökmesi/slump, G-kuvveti altında kas gerilimi ve titreme) zorunlu yazılmalıdır. Anlatının kırılma ve bedel anları yalnızca nesne/prop hareketine emanet edilemez; kararın dramatik yükü bedende okunmalıdır.
+
+🔗 [[D179]] (bedel yazıldı, sebebi üretilmedi) · [[D100]] (oyunculuk/duygu) · [[D197]] (vizör/karakter)
+
+
+---
+
+## 🔴 DERS 211: İLK 10 SANİYEDE SORU YOK, SON 10 SANİYEDE ÇIKIŞ YOK — BAŞLIK KARTI, DURAĞAN PEYZAJ VE ÜST ÜSTE KURULUM SAHNELERİ İZLEYİCİYİ 3-27. SANİYEDE BIRAKTI
+
+**FREKANS:** 4 film · THE AMBER LATTICE (mod V · ⑫ 6,5 — LEAVES AT 00:21, S2-S7 konsol platosu) · THE CRACKED HELMET (mod V · ⑫ 6,6 — LEAVES AT 00:27, 4 ardışık kurulum) · THE RING WALKER (mod V · ⑫ 6,0 — 4 s statik başlık kartı, LEAVES AT 00:03) · LOW_POWER (④ 7,8 — 19 s durağan peyzaj; ⑫ 5,5 — HOOK MISSING, son 10 s statik karanlık, döngü yok)
+**DEĞİŞEN SATIR:** SPEC B `SCREEN TEXT: 0 saniye` + PLAN `HOOK MİMARİSİ` "S0 SORUSU" satırı sahne haritasının **ilk satırında** (S0 = soru sahnesi, kurulum değil) + `DÖNGÜ KANITI` satırı son kareyi adlandırır; `03_PLAN_ONCESI` A3'e "ilk 30 s'de en çok 2 kurulum sahnesi" sayısı
+**KAPI:** LİSTE · `03_PLAN_ONCESI` A3 (süre) + B1 (doruk) · kurgu kapısı ④: master 0:00-0:10 içinde başlık kartı/siyah = ⛔, son 10 s statik siyah = ⛔
+**TEKRAR:** 0
+
+**Kaynak:** THE RING WALKER QA (10.09.2026) — ⑫ `00:00-00:04 opening window spends 4 seconds on static title typography before scene action begins`. Zincir ADAY-28 · 44 · 57 · 68 · 89 · 90. D70/D72'nin kuyruk kartı borcu (⛔ ÇALIŞMIYOR) bu örüntünün çıkış yarısıdır.
+
+**Örüntü:** Dört filmde hook kılavuzu (HOOK §8) plana yazıldı ama masterda ilk 10 s başlık kartı, siyah ya da peyzaj; ilk 30 s'de 4 kurulum sahnesi; son 10 s statik karanlık. Sebep kurguda: S0 promptu soru taşıyor, ama kurgucu başa kart, sona siyah ekliyor ve kurgu kapısı bunu saymıyordu.
+
+**ÇÖZÜM — ÜÇ SAYI:**
+1. `0:00-0:10` içinde soru sahnesi (S0) başlar; başlık kartı **0 s** (SPEC B SCREEN TEXT = 0).
+2. İlk 30 s'de kurulum sahnesi **≤ 2**; üçüncü kurulum sahnesi haritada ileri taşınır.
+3. Son 10 s: son kare adlandırılmış bir nesne/jest (DÖNGÜ KANITI) — statik siyah **0 s**.
+4. Kurgu kapısı ④ üç sayıyı masterda ölçer (`ffmpeg -ss 0/-sseof -10 …` kareleri).
+
+🔗 [[D62]] · [[D70]] · [[D72]] · [[D141]] · `HOOK_VE_ILK_SAHNE_KILAVUZU` §8
+
+---
+
+## 🔴 DERS 212: AYNI VURUŞ ARDIŞIK SAHNELERDE TEKRARLANDI, AYNI KLİP KURGUDA İKİ KEZ KULLANILDI — TEMPO PLATOSU
+
+**FREKANS:** 3 film · THE CRACKED HELMET (mod V · ④ 7,6 — S6+S7 18 s kristale bakış) · THE RING WALKER (mod V · ④ 5,4 — S3/S5/S9 aynı hayranlık vuruşu) · LOW_POWER (① 5,4 — 01:19 ve 01:29 birebir aynı klip; ④ 7,8 — S9/S10 aynı giriş, S14 = S4 koridor)
+**DEĞİŞEN SATIR:** PLAN `SAHNE HARİTASI` "vuruş" sütunu — ardışık iki sahne aynı vuruş adını taşıyamaz (bakış · yürüyüş · giriş · inceleme); `VURUŞ TABLOSU`'nda her vuruş adı bir kez; kurgu kapısı ④: aynı klip iki kez = ⛔ (`sahne_kapisi.sh` klip sayısı = prompt sayısı)
+**KAPI:** LİSTE · `03_PLAN_ONCESI` B1 · `KURGU_RITMI` §2 örüntü kırıcı · kurgu kapısı ④
+**TEKRAR:** 0
+
+**Kaynak:** LOW_POWER QA (10.09.2026) — ① `Greenhouse entry sequence at 01:19 is duplicated verbatim at 01:29`. Zincir ADAY-37 · 49 · 59 · 67.
+
+**Örüntü:** Sahne haritası "bakar" · "bakar" · "yürür" · "yürür" yazınca model de kurgucu da aynı şeyi iki kez üretiyor. `KURGU_RITMI` §2 örüntü kırıcıyı ölçek/palet/ses için istiyordu; vuruş adı için istemiyordu.
+
+**ÇÖZÜM:** Vuruş sütununda ardışık tekrar **0**; aynı işlevli ikinci sahne ya silinir ya bir engel/karar eklenir. Kurguda aynı klip **0** kez tekrar; `sahne_kapisi.sh` çıktısındaki klip sayısı prompt sayısını aşamaz.
+
+🔗 [[D124]] · [[D118]] · `KURGU_RITMI` §2
+
+---
+
+## 🔴 DERS 213: AKSİYON ELİPSİ — TEMAS KESMEDEN ÖNCE, SONUÇ KADRAJIN DIŞINDA; ŞALTER ATTI MI, KLİPS TAKILDI MI, KRİSTAL SIVI MI KATI MI BELLİ DEĞİL
+
+**FREKANS:** 4 film · THE AMBER LATTICE (mod V · ⑦ 7,2 — el kola uzanır, temas öncesi kesme; halat klipsi kadraj altında) · THE CRACKED HELMET (mod D · ⑦ 9,0 — 1:19 sıvı küre ↔ 1:21 katı parça) · LOW_POWER (⑦ 8,6 — şalter durumu belirsiz; temizlenen panelde geri bildirim yok) · YERÇEKİMİ F2 (ADAY-4 — dönüm anı kadraj kenarında, ilk izlemede görülmedi)
+**DEĞİŞEN SATIR:** Video TIMELINE'da temaslı eylemin **üç satırı**: `TEMAS` (el nesneye değer) · `DEĞİŞİM` (nesne durum değiştirir) · `SONUÇ` (yeni durum kadrajda ≥ 1 s kalır) — üçü aynı klipte, nesne kadrajın merkez üçte-birinde; `00_SAHNE_TABLOSU` "olay (BAŞ→SON)" SON'u nesnenin yeni durumunu adlandırır
+**KAPI:** LİSTE · `00_SAHNE_TABLOSU` olay hücresi · SPEC B FİNAL VURUŞ KANITI kalıbı ([[D141]]) her temaslı sahneye
+**TEKRAR:** 0
+
+**Kaynak:** THE AMBER LATTICE QA (10.09.2026) — ⑦ `00:27-00:33 glove reaches for exterior panel handle but edit cuts away before contact; tether clip interaction happens below frame edge`. Zincir ADAY-23 · 33 · 76 · 77 (+4).
+
+**Örüntü:** Dört filmde eylemin en pahalı üç saniyesi (temas · değişim · sonuç) ya klibin son karesine denk geldi ya kadraj kenarına ya bir sonraki klibe. D141 bunu yalnız FİNAL için istedi; D90 "milimetrik olay üretilmez" dedi. Kural her temaslı sahneye genişler.
+
+**ÇÖZÜM:** Üç satır, saniyeli, aynı klip: `3,0 s — the glove closes on the lever` · `4,5 s — the lever drops a hand-span` · `5,5-10,0 s — hold: the lever stays down, centre frame`. Sonuç ≥ **1 s** kadrajda; temas noktası kadrajın dış üçte-birinde **yasak**.
+
+🔗 [[D141]] · [[D127]] · [[D90]] · [[D206]]
+
+---
+
+## 🔴 DERS 216: SES MİKSİ YAZILMADI — BEŞ KATMAN, DUCKING YOK, KESMEDE ÜÇ KARE DİJİTAL SIFIR, KADRAJ DIŞI REPLİKTE TELSİZ FİLTRESİ YOK
+
+**FREKANS:** 3 film · THE AMBER LATTICE (③ 7 — 0:31 dış çekim üstünde telsiz filtresiz replik; 5 — 0:34/1:00 beş katman, alarm ve müzik ducking yok, diyalog −3/4 dB) · THE RING WALKER (③ 8,1 — 00:33/00:50/01:22 beş katman) · LOW_POWER (③ 4,3 — 01:12 kesmede 3 kare sessizlik; 02:44 sarsıntı altında sakin ses)
+**DEĞİŞEN SATIR:** `<FILM>_MUZIK.md` katman tablosu — sahne başına aktif katman **≤ 4** (sayı), her kesmede oda tonu köprüsü **≥ 0,2 s**, kadraj dışı replik satırında `telsiz filtresi: EVET`, efor sahnesinde ses performansı `zorlanmış` etiketi; ③ SES `LAYER COUNT` ve `AMBIENCE HOLE LOG` ölçer
+**KAPI:** LİSTE · `FILM_KLASOR_SABLONU/FILM_MUZIK.md` §🔊 SES YATAĞI (katman tavanı satırı eklendi 14.09.2026)
+**TEKRAR:** 0
+
+**Kaynak:** THE AMBER LATTICE QA (10.09.2026) — ③ `0:34 & 1:00 layer count reaches 5, alarm klaxon and music un-ducked, masking dialogue by ~3-4 dB`. Zincir ADAY-18 · 19 · 48 · 65 · 66.
+
+**Örüntü:** Üç filmde ses kurguda "yapıldı", plana hiç yazılmadı: katman sayısı, ducking, kesme köprüsü ve akustik uzam (telsiz) kararı yoktu. D180 sessizlik bıçağını, D171 katman tavanını ayrı ayrı söyledi; MUZIK dosyasında bunların satırı yoktu.
+
+**ÇÖZÜM — DÖRT SAYI:** katman ≤ 4 · köprü ≥ 0,2 s · kesmede dijital sıfır 0 kare · diyalog altında müzik/alarm −6 dB. Kadraj dışı ses = telsiz band-pass (`SES_VE_DIYALOG` §1a).
+
+🔗 [[D180]] · [[D171]] · [[D83]] · [[D99]] · [[D206]] (efor sesi)

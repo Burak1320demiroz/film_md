@@ -15,7 +15,7 @@
 >
 > Bölüm sınırı ardışık bir çifttir: S12 (EWS · göz hizası · AZ 10) ile
 > S13 (WS · alt açı 22° · AZ 300) — 1 ölçek kademesi + 70° azimut ✅
-> Denetim: `python3 .../prompt_kontrol.py yatay_3_5_dk_filmler/THE_SINKING_STAKE`
+> Denetim: `python3 .../prompt_kontrol.py yatay_4_dk_filmler/THE_SINKING_STAKE`
 
 ---
 

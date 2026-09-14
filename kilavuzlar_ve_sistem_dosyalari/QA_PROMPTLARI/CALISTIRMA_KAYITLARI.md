@@ -2075,7 +2075,7 @@ D180 → MUZIK dosyası şablonu · ⬜ YAZILACAK — SESSİZLİK KARARI bloğun
 Makara  YERÇEKİMİ faz 8 · ~99-100 s · 10 klip
 Koşulan ⑤ arka plan → ⑥ fizik → ① kare → ② devamlılık → ③ ses →
         ④ hikaye → ⑦ aksiyon → ⑧ efor  · HEPSİ AYNI SOHBETTE
-Ham     ../FILM_QA_RAPORLARI/02_HAM_RAPORLAR/YERCEKIMI_FAZ08_8MERCEK_HAM.md
+Ham     ../FILM_QA_RAPORLARI/02_HAM_RAPORLAR/YERCEKIMI/YERCEKIMI_FAZ08_8MERCEK_HAM.md
 ```
 
 **Kontaminasyon kanıtı dosyanın kendi içinde duruyor ve tek satırda okunuyor:**
@@ -2234,7 +2234,7 @@ yaradığını değil.
 Makara  "faz 9.mp4" · 12 segment · 120 s · 11 kesme (rapor beyanı)
 Mod     on ikisi de V · SPEC yok · FAZ_09_QA_PROMPT.md yok
 Ölçüm   ⑪ KOŞULMADI — sahip kararı: depo dışına çıkılmaz, master'a dokunulmaz
-Ham     FILM_QA_RAPORLARI/02_HAM_RAPORLAR/YERCEKIMI_FAZ09_12MERCEK_HAM.md
+Ham     FILM_QA_RAPORLARI/02_HAM_RAPORLAR/YERCEKIMI/YERCEKIMI_FAZ09_12MERCEK_HAM.md
 Faz     yatay_10_20_dk_filmler/YERCEKIMI/FAZ_09_DUSUS/FAZ_09_QA_DERSLER.md
 Parti   🚨 T tablolarına satır GİRMEZ
 ⭐ ⑨ KADRAJ · ⑩ OYUNCULUK · ⑪ IŞIK · ⑫ HOOK — depoda İLK koşuları [D184]
@@ -2459,3 +2459,315 @@ D193 → rubrik yaması YOK · kapı olcum_kapisi.sh'a indi (IŞIK TAKVİMİ İZ
 ⛔ **BU KOŞUNUN TEK CÜMLESİ:** on iki mercek filmin İÇİNE baktı ve on ikisi de
 filmin YARISININ orada olmadığını göremedi. Mercek eklemek görüşü artırmıyor;
 **parti dışındaki tek referans plan, plan dışındaki tek referans ölçümdür.**
+
+---
+
+### 🧭 DERS → RUBRİK İZ DEFTERİ — 194-195 eki (09.09.2026 · THE BENT GRASS)
+
+```
+D194 → 9_KADRAJ · 10_OYUNCULUK · 11_ISIK · YAMANDI
+       `OBSERVED:` şablon satırına `in edit order, no spaces` eklendi —
+       PRESENCE STRING bloğunun 22.08'den beri taşıdığı cümlenin aynısı.
+       Rubrik boşluklu yazdırıyordu (`A B ? ? D E`), betiğin alfabe
+       sınıfları boşluğu içermiyordu, üç mercek de "dizi YOK" sayıldı.
+D194 → 7_AKSIYON (BEAT STRING) · 8_EFOR (COST CURVE) · YAMANDI ·
+       KARDEŞ TARAMA [D111]: ikisi de "one character/digit per scene, in
+       order" diyordu, `no spaces` cümlesi YOKTU — aynı malzemeyi görse
+       aynı hatayı yapardı. ⑧'in örnek satırı (`000122334445553`) biçimi
+       tesadüfen tutuyordu, ⑦'de o koruma bile yoktu.
+D194 → 1_KARE · 2_DEVAMLILIK · 3_SES · 4_HIKAYE · 5_ARKA_PLAN · 6_FIZIK ·
+       12_HOOK · GEREKMEZ · bu yedisi dizi ekseni üretmiyor; taşıdıkları
+       tek dizi PRESENCE STRING ve o blok `no spaces` cümlesini zaten
+       taşıyor (10 raporun 10'unda doğru okundu).
+D194 → BETİK · rapor_kontrol.py · `gozlem_dizi()` ve `dizi_al()` boşluğu
+       tolere eder. ⛔ Boşluk karakter sınıfının BAŞINA yazılır: sonuna
+       eklenirse `OADU-` alfabesinde `U- ` geçersiz aralık olur ve betik
+       PatternError ile ÇÖKER (yama sırasında bir kez oldu, düzeltildi).
+       Doğrulama: ⑨ `AB??DE??F?G?A` · ⑩ `DOODA-OODODO-` · ⑪ `99?3999?99999`
+       — üçü de 13 hane, ve ⑨ artık plan iskeletiyle karşılaştırılıyor
+       ("SETUP STRING 13 hane, plan iskeleti 14 hane" = eksik sahne,
+       teslim kusurunun BAĞIMSIZ ikinci ekseni).
+
+D195 → rubrik yaması YOK · GEREKMEZ · kapı QA tarafında değil, ÜRETİM
+       ÖNCESİ tarafta: prompt_kontrol.py ⑳ ZORLANMA KANALI.
+D195 → BETİK · prompt_kontrol.py · `EFOR_PENCERE` iki zaman-çizelgesi
+       biçimini de alır:  `^TIMELINE:` (18 dosya)  +  başlıksız
+       `0s — / 3s — / 6s — / 8s —` (4 film: BENT_GRASS · COUNTED_TURN ·
+       PRESSED_FIELD · STILL_SWARM). Pencere B biçiminde HİÇ açılmıyordu.
+       Doğrulama (yama sonrası, daha önce görünmeyen bulgular):
+         THE_BENT_GRASS 4 · THE_COUNTED_TURN 3 · THE_STILL_SWARM 2 ·
+         THE_PRESSED_FIELD 0     → toplam 9
+       Regresyon: A biçimli dosyalarda pencere hâlâ TIMELINE bloğunu alıyor
+       (THE_SINKING_STAKE · THE_KEPT_LIGHT ile sınandı).
+       ⬜ AÇIK: `EFOR_FIILI` sözlüğü (haul·pull·drag·lift·heave·prise·lever)
+       THE_BENT_GRASS'ın işini (taşımak·diz çökmek·paketlemek·devirmek)
+       KAPSAMIYOR. Liste altı filmlik ölçümle DARALTILDI; genişletme kararı
+       yeni bir kalibrasyon koşusu ister, bu koşuda YAPILMADI.
+```
+
+### 🔧 RUBRİK KOŞU SAYILARI — 09.09.2026 (THE BENT GRASS partisi)
+
+```
+1_KARE        · +1 · 09.09.2026 · 🚨 GEÇERSİZ (parti · teslim kapısı D188)
+2_DEVAMLILIK  · +1 · 09.09.2026 · 🚨 GEÇERSİZ (ayrıca aritmetik fabrike D161)
+3_SES         · +1 · 09.09.2026 · 🚨 GEÇERSİZ (tekil: GO · 0 kategori ölçüldü)
+5_ARKA_PLAN   · +1 · 09.09.2026 · 🚨 GEÇERSİZ (tekil: ŞARTLI)
+6_FIZIK       · +1 · 09.09.2026 · 🚨 GEÇERSİZ (tekil: ŞARTLI · → ADAY-13)
+7_AKSIYON     · +1 · 09.09.2026 · 🚨 GEÇERSİZ (10.0/10, 9 hücrenin 9'u kaynaksız)
+8_EFOR        · +1 · 09.09.2026 · 🚨 GEÇERSİZ (tekil: GO · 4.0 WEIGHTLESS WORK)
+9_KADRAJ      · +1 · 09.09.2026 · 🚨 GEÇERSİZ (tekil: ŞARTLI · → D194 kaynağı)
+10_OYUNCULUK  · +1 · 09.09.2026 · 🚨 GEÇERSİZ (tekil: ŞARTLI)
+11_ISIK       · +1 · 09.09.2026 · 🚨 GEÇERSİZ (tekil: ŞARTLI)
+12_HOOK       · +1 · 09.09.2026 · 🚨 GEÇERSİZ (tekil: ŞARTLI)
+4_HIKAYE      ·  0 · KOŞMADI — zorunlu eksen eksik [D111 · TEKRAR 2]
+```
+
+⛔ **BU KOŞUNUN TEK CÜMLESİ:** on bir mercek koştu, ikisi kendi kapısından
+geçti, on biri de partiyle düştü — ve partiyi düşüren şey merceklerin
+GÖRDÜĞÜ değil, ÖLÇÜLMEYEN şeydi. **Master verilmeden koşulan on bir mercek,
+bir merceğin on bir katı kadar hakemsizdir.**
+
+---
+
+## 📅 13.09.2026 · THE STATIC SHADOW — ON ÜÇ MERCEK · SPEC HAZIRDI, ON İKİSİ MOD V · ⑬ DOĞRU DURDU · MASTER YOK
+
+```
+girdi:      operatör 13 raporu yapıştırdı; master yolu VERİLMEDİ, dosya diskte bulunamadı
+            (raporlar "the statıc shadow.mp4" diyor). Ham raporların künyesinde girdi yolu ve
+            rubrik sürümü YOK — ①③④ raporlarında rubriğin zorunlu kıldığı SCORES SUMMARY
+            bölümü de yok (eski rubrik metni mi, model mi atladı: bilinmiyor).
+SPEC:       yatay_2_dk_filmler/THE_STATIC_SHADOW/THE_STATIC_SHADOW_QA_SPEC.md VARDI
+            → ①④⑥⑦⑧ TEKRAR [D129 · 17. film] · ⑨⑩⑪⑫ GEÇERSİZ/karantina [D190 · 2. vaka]
+            ⛔ ve SPEC'in kendisi KABUK: yedi makine çapasının yedisi yok → D204
+⑬ UYUM:     INPUT MODE: MISSING — STEP −1 doğru işledi. Üretim defteri BOŞ (teslim ⬜, 0 klip),
+            prompt ve SPEC verilmemiş. "DEFTERSİZ ⑬ KOŞUSU YOKTUR" kuralının ilk vakası: kural tuttu.
+betik:      rapor_kontrol.py --film … --hook 10 --klip 10 · ölçüm bayrağı yok
+            13/13 🚨 GEÇERSİZ · ①.9 TESLİM ŞÜPHESİ plan 15 / makara 12 [D188 · 3. vaka] ·
+            ⑤ SUSKUNLUK (⑤ filigran, ① sustu) İLK KEZ gerçek iddiada ateşledi [D162] ·
+            ⑤ SÜRE (bu koşuda yazıldı, D205) ⑩ 60 s ve ⑫ 25 s'yi yakaladı
+            ⚠️ ilk koşuda 8 raporun künyesi okunamadı: 02_HAM_RAPORLAR künye bloğu '---' ile
+            kapanmalı (govde_al ilk '---'dan başlar); dosyalara ayraç eklendi, koşu tekrarlandı.
+belgeden:   plan 7 HELIOS repliği · SPEC "DIALOGUE LINES: 7" · 30 promptta tırnak 0 → D203 (㉓)
+            geriye dönük aynı arıza: THE MIRROR FAUNA 11 → 0 (09.09 mod D partisi görmemişti)
+```
+
+### 🧭 DERS → RUBRİK İZ DEFTERİ — 203-205 eki
+
+```
+D203 → rubrik yaması YOK · GEREKMEZ · kapı ÜRETİM ÖNCESİ tarafta: prompt_kontrol.py ㉓
+       REPLİK ENVANTERİ (klasör modu; SPEC DIALOGUE LINES ↔ tırnaklı replik; 0 → BLOCK).
+       ③ SES rubriğine SPEC verilmez (tasarım) — 3_SES'e "SPEC N diyor, sen kaç duydun"
+       satırı yazılmadı, çünkü mod V'de SPEC yoktur; mod D'de ise ㉓ zaten üretimden önce
+       durdurur. Kardeş rubrik taraması: ①②④-⑫ aynı hatayı üretemez (replik yokluğunu
+       ölçen tek mercek ③, o da sayıyı SPEC'ten alamaz) → GEREKMEZ.
+       Kalibrasyon: 38 SPEC · 2 gerçek pozitif (STATIC SHADOW · MIRROR FAUNA) · 0 yanlış
+       pozitif — ilk sürüm satır sonu aşan tırnağı saymıyordu (LOSS OF LIFT · BORROWED
+       WEIGHT yanlış BLOCK), 240 karakter sınırlı çok-satırlı desene çevrildi.
+D204 → rubrik yaması YOK · GEREKMEZ · kapı yazım tarafında: prompt_kontrol.py ㉔ SPEC TAMLIK.
+       rapor_kontrol.py zaten SPEC'i okuyor (①.9 · ①.10); eksik bloğu "hata" değil "yok"
+       sayıyordu — ㉔ ondan önce, kart P'de yakalar. Tetik: 00_ANALIZ/ olan klasör.
+       Kalibrasyon: 38 SPEC'in 1'i tam (HARD DOCK); 7 yeni-film klasörü FIX/BLOCK.
+D205 → rubrik yaması YOK · GEREKMEZ · kapı betikte: rapor_kontrol.py capraz() ⑤ SÜRE satırı
+       + --olcum-sure. Rubrikler RUNTIME'ı zaten "measured" yazmak zorunda; ölçemedikleri
+       şeyi daha dikkatli ölçmelerini istemek D137'nin kibar hâli olurdu.
+       Regresyon: THE UPWARD FALL 8 rapor → "süre ekseni doğrulandı, ortanca 226 s".
+D168 → araca çevrildi (KARAR): FILM_KLASOR_SABLONU/FILM_URETIM_DEFTERI.md §4 ilk-KABUL
+       maddesi + AGENTS kart B satırı. Rubrik tarafı yok.
+```
+
+### 🔧 RUBRİK KOŞU SAYILARI — 13.09.2026 (THE STATIC SHADOW partisi)
+
+```
+1_KARE        · +1 · 13.09.2026 · 🚨 GEÇERSİZ (mod V · SPEC var [D129] · SCORES SUMMARY yok)
+2_DEVAMLILIK  · +1 · 13.09.2026 · 🚨 GEÇERSİZ (parti · tekil: ŞARTLI 8,7)
+3_SES         · +1 · 13.09.2026 · 🚨 GEÇERSİZ (SCORES SUMMARY yok · 0 replik = prompt boşluğu D203)
+4_HIKAYE      · +1 · 13.09.2026 · 🚨 GEÇERSİZ (mod V · SPEC var · harita bir sahne kaymış D135)
+5_ARKA_PLAN   · +1 · 13.09.2026 · 🚨 GEÇERSİZ (parti · tekil: ŞARTLI 7,2 · filigran iddiası → SUSKUNLUK)
+6_FIZIK       · +1 · 13.09.2026 · 🚨 GEÇERSİZ (tekil: TEKRAR · 1:6 ölçek "tutarlı" — SPEC 1/30 · ADAY-91)
+7_AKSIYON     · +1 · 13.09.2026 · 🚨 GEÇERSİZ (tekil: TEKRAR)
+8_EFOR        · +1 · 13.09.2026 · 🚨 GEÇERSİZ (tekil: TEKRAR · 1,0 NOBODY PAYS · ADAY-93)
+9_KADRAJ      · +1 · 13.09.2026 · 🚨 GEÇERSİZ (mod V karantina D190 · 5 hücre "no in-scope source" D131)
+10_OYUNCULUK  · +1 · 13.09.2026 · 🚨 GEÇERSİZ (mod V karantina · RUNTIME 60 s uydurma D205)
+11_ISIK       · +1 · 13.09.2026 · 🚨 GEÇERSİZ (mod V karantina)
+12_HOOK       · +1 · 13.09.2026 · 🚨 GEÇERSİZ (mod V karantina · RUNTIME 25 s uydurma D205)
+13_UYUM       · +1 · 13.09.2026 · ⏸️ KOŞU YOK — INPUT MODE: MISSING, rubrik doğru durdu (defter boş)
+```
+
+⛔ **BU KOŞUNUN TEK CÜMLESİ:** on üç mercek koştu, hiçbiri ekran hakkında kullanılabilir bir
+şey söyleyemedi (master yok, SPEC verilmedi, teslim eksik) — ve partiden çıkan üç ders üç
+BELGEDEN çıktı: plan ↔ prompt (replik) · şablon ↔ SPEC (kabuk) · rapor ↔ rapor (süre).
+**Belge, raporun söyleyemediğini söyledi.**
+
+---
+
+### 🔧 RUBRİK KOŞU SAYILARI — 13.09.2026 (THE SILENT PERIHELION partisi)
+
+```
+1_KARE        · +1 · 13.09.2026 · 🚨 GEÇERSİZ (SCORES SUMMARY okunamadı / Mod V ön koşu [D129])
+2_DEVAMLILIK  · +1 · 13.09.2026 · ⚠️ ŞARTLI 8,8 (T2 tablosuna eklendi; verdict: FIXABLE IN EDIT)
+3_SES         · +1 · 13.09.2026 · 🚨 GEÇERSİZ (SCORES SUMMARY okunamadı)
+4_HIKAYE      · +1 · 13.09.2026 · 🚨 GEÇERSİZ (SCORES SUMMARY okunamadı / Mod V ön koşu [D129])
+5_ARKA_PLAN   · +1 · 13.09.2026 · ✅ GO 7.8 (T5 tablosuna eklendi; verdict: FIELD DRIFTS BUT RECOVERABLE)
+6_FIZIK       · +1 · 13.09.2026 · ⛔ TEKRAR 6.0 (Mod V / SPEC var [D129])
+7_AKSIYON     · +1 · 13.09.2026 · ⛔ TEKRAR 8.7 (Mod V / SPEC var [D129])
+8_EFOR        · +1 · 13.09.2026 · ⛔ TEKRAR 5.9 (Mod V / SPEC var [D129])
+9_KADRAJ      · +1 · 13.09.2026 · 🚨 GEÇERSİZ 8.5 (Mod V karantina [D190])
+10_OYUNCULUK  · +1 · 13.09.2026 · 🚨 GEÇERSİZ 6.7 (Mod V karantina [D190])
+11_ISIK       · +1 · 13.09.2026 · 🚨 GEÇERSİZ 5.6 (Mod V karantina [D190])
+12_HOOK       · +1 · 13.09.2026 · 🚨 GEÇERSİZ 6.0 (Mod V karantina [D190])
+```
+
+> Çalıştırma kaydı: 12 mercek çalıştırıldı · 13.09.2026 · THE SILENT PERIHELION (Mod V ham raporlar: 1 ✅ GO 7.8, 1 ⚠️ ŞARTLI 8.8, 3 ⛔ TEKRAR, 7 🚨 GEÇERSİZ; ham raporlar 02_HAM_RAPORLAR/THE_SILENT_PERIHELION/ altında saklandı, T2 ve T5 tabloları güncellendi).
+
+---
+
+### 🔧 RUBRİK KOŞU SAYILARI — 14.09.2026 (THE SHATTERED BREATH partisi — 12 mercek tamamlama)
+
+```
+1_KARE        · +1 · 14.09.2026 · 🚨 GEÇERSİZ (SCORES SUMMARY okunamadı / Mod V ön koşu [D129])
+2_DEVAMLILIK  · +1 · 14.09.2026 · 🚨 GEÇERSİZ (aritmetik fabrike D161: metin Σ=71.0, tablo toplamı 75.0)
+3_SES         · +1 · 14.09.2026 · 🚨 GEÇERSİZ (SCORES SUMMARY okunamadı)
+4_HIKAYE      · +1 · 14.09.2026 · 🚨 GEÇERSİZ (SCORES SUMMARY okunamadı / Mod V ön koşu [D129])
+5_ARKA_PLAN   · +1 · 14.09.2026 · ⚠️ ŞARTLI 8,3 (T5 tablosuna eklendi; verdict: FIELD DRIFTS BUT RECOVERABLE)
+6_FIZIK       · +1 · 14.09.2026 · ⛔ TEKRAR 7,0 (Mod V / SPEC var [D129])
+7_AKSIYON     · +1 · 14.09.2026 · ⛔ TEKRAR 8,6 (Mod V / SPEC var [D129])
+8_EFOR        · +1 · 14.09.2026 · ⛔ TEKRAR 2,7 (Mod V / SPEC var [D129])
+9_KADRAJ      · +1 · 14.09.2026 · 🚨 GEÇERSİZ 10,0 (Mod V karantina [D190 · D184])
+10_OYUNCULUK  · +1 · 14.09.2026 · 🚨 GEÇERSİZ 4,8 (Mod V karantina [D190] + süre 41s uydurma [D205])
+11_ISIK       · +1 · 14.09.2026 · 🚨 GEÇERSİZ 5,0 (Mod V karantina [D190])
+12_HOOK       · +1 · 14.09.2026 · 🚨 GEÇERSİZ 5,0 (Mod V karantina [D190])
+```
+
+> Çalıştırma kaydı: 12 mercek çalıştırıldı · 14.09.2026 · THE SHATTERED BREATH (Mod V ham raporlar: 12 mercek tamamlandı; 1 ⚠️ ŞARTLI 8.3 [T5], 3 ⛔ TEKRAR [6,7,8], 8 🚨 GEÇERSİZ; ham raporlar 02_HAM_RAPORLAR/THE_SHATTERED_BREATH/ altında saklandı, T5 tablosu güncellendi).
+
+---
+
+### 🔧 RUBRİK KOŞU SAYILARI — 14.09.2026 (THE LOCKED PULSE partisi — 12 mercek tamamlama)
+
+```
+1_KARE        · +1 · 14.09.2026 · 🚨 GEÇERSİZ (SCORES SUMMARY okunamadı / Mod V ön koşu [D129])
+2_DEVAMLILIK  · +1 · 14.09.2026 · 🚨 GEÇERSİZ (parti kesme yayılımı 7 > 1 [D107])
+3_SES         · +1 · 14.09.2026 · 🚨 GEÇERSİZ (SCORES SUMMARY okunamadı)
+4_HIKAYE      · +1 · 14.09.2026 · 🚨 GEÇERSİZ (SCORES SUMMARY okunamadı / Mod V ön koşu [D129])
+5_ARKA_PLAN   · +1 · 14.09.2026 · 🚨 GEÇERSİZ (parti kesme yayılımı 7 > 1 [D107])
+6_FIZIK       · +1 · 14.09.2026 · 🚨 GEÇERSİZ (parti kesme yayılımı 7 > 1 [D107])
+7_AKSIYON     · +1 · 14.09.2026 · ⛔ TEKRAR (Mod V / SPEC var [D129])
+8_EFOR        · +1 · 14.09.2026 · ⛔ TEKRAR (Mod V / SPEC var [D129])
+9_KADRAJ      · +1 · 14.09.2026 · 🚨 GEÇERSİZ (Mod V karantina [D190 · D184])
+10_OYUNCULUK  · +1 · 14.09.2026 · 🚨 GEÇERSİZ (Mod V karantina [D190 · D184])
+11_ISIK       · +1 · 14.09.2026 · 🚨 GEÇERSİZ (Mod V karantina [D190 · D184])
+12_HOOK       · +1 · 14.09.2026 · 🚨 GEÇERSİZ (Mod V karantina [D190 · D184])
+```
+
+> Çalıştırma kaydı: 12 mercek çalıştırıldı · 14.09.2026 · THE LOCKED PULSE (Mod V ham raporlar: 12 mercek tamamlandı; parti kesme yayılımı 7 > 1 [D107 · D188] nedeniyle 12 🚨 GEÇERSİZ; ham raporlar 02_HAM_RAPORLAR/THE_LOCKED_PULSE/ altında saklandı; master video `olcum_kapisi.sh` ile taranmayı bekliyor).
+
+## 🥗 14.09.2026 · RUBRİK DİYETİ — ①-⑥ 25 KB TAVANI (koşu değil, rubrik revizyonu)
+
+```
+① KARE         61.054 → 25.681 B   + 1_KARE_DIKEY_EK.md (3,8 KB, yalnız dikey)
+② DEVAMLILIK   38.240 → 20.078 B
+③ SES          40.118 → 20.316 B
+④ HİKAYE       49.519 → 24.646 B
+⑤ ARKA PLAN    29.985 → ~16 KB
+⑥ FİZİK        33.484 → 19.704 B
+DEĞİŞMEYEN: kategori adları · SCORES SUMMARY · başlık alanları · tracking row · MERCEK_IMZA
+KESİLEN → ARSIV_CIKTI_KURALLARI.md + ARSIV_RUBRIK_DIYETI/ (tam kopyalar)
+⚠️ Bu tarihten sonraki ilk koşu her rubrik için "diyet sonrası 1. koşu" olarak buraya
+   yazılır; T tablosu satırına 'diyet sonrası' notu düşer — puan kayması varsa ölçülür.
+```
+
+---
+
+## 📉 TABAN ÇİZGİSİ — 14.09.2026 kesiti (rubrik diyeti ve çıktı sözleşmesi ÖNCESİ)
+
+> `python3 kilavuzlar_ve_sistem_dosyalari/RAPOR_KONTROL/qa_saglik.py --ozet` çıktısı, olduğu
+> gibi (sayı elle yazılmadı; betik bastı). Diyet (14.09 ①-⑥ ≤ 25 KB) ve çıktı sözleşmesi
+> (14.09 FAZ 1: model saymaz, betik sayar) sonrası ilk 3 filmde aynı komut koşulur ve bu
+> bloğun altına tarihli ikinci kesit eklenir. Dört sayı izlenir: **tekil GO oranı ·
+> tally = etiket · ✂️ KESİK · rapor boyutu medyanı** — dördü birden kıpırdamıyorsa
+> sözleşme değişikliği işe yaramamıştır. Ayrıntı: `TODO_QA_CIKTI_REFORMU.md`.
+> ⚠️ "⑤ çapraz sonrası" satırı: mercekler kesme/sahne sayısında anlaşamayınca parti
+> komple düşüyor — 41 filmin 25'i. Makine sayımı (`sahne_kapisi.sh` · ⑬) bu satırın ilacıdır.
+
+```
+   336 mercek raporu · 41 film · 29 mercek dışı dosya (faz/kapak/kapı) · tarama 2 s
+   tekil karar : ✅ GO 26 (7%) · ⚠️ ŞARTLI 114 · ⛔ TEKRAR 85 · 🚨 GEÇERSİZ 57 · ✂️ KESİK 54
+   ⑤ çapraz sonrası (tabloya giren): ✅ GO 3 · ⚠️ ŞARTLI 39 · 🚨 GEÇERSİZ 221 — parti düşen film 25 / 41 [D107 · D121]
+   en az bir GO raporu olan film 3 / 41
+   ── mercek ──            n   modD    GO  ŞART  TEKR  GEÇ  KESİK  tally=etk  VERDICT  boyut  kaynaksız
+   ① KARE            36   13%     0     3     5   16     12    35%       87% satır   5.2KB   19%
+   ② DEVAMLILIK      35    2%     1     6     0   26      2    44%       75% satır   8.2KB   13%
+   ③ SES             38    0%     1     7     0   16     14    65%       95% satır   5.6KB   15%
+   ④ HİKAYE          32    9%     0     2     5   13     12     —       90% satır   7.6KB    2%
+   ⑤ ARKA PLAN       34    0%     0     9     0   24      1    43%       69% satır   9.5KB    8%
+   ⑥ FİZİK           33   15%     0     3     5   24      1    29%       78% satır   5.6KB   12%
+   ⑦ AKSİYON         26   23%     0     1     2   22      1    25%       68% satır   7.0KB   32%
+   ⑧ EFOR            25   20%     0     2     2   19      2    36%       65% satır   6.6KB   11%
+   ⑨ KADRAJ          19   21%     0     1     0   16      2    43%       47% satır   5.9KB   18%
+   ⑩ OYUNCULUK       18   27%     1     1     0   15      1    37%       82% satır   6.3KB    2%
+   ⑪ IŞIK            21   23%     0     2     0   15      4    68%       47% satır   7.0KB   10%
+   ⑫ HOOK            19   26%     0     2     0   15      2    50%       58% satır   5.1KB    9%
+   ⑬ UYUM                 0   —      koşulmamış
+```
+
+---
+
+## 📜 14.09.2026 · ÇIKTI SÖZLEŞMESİ — 13 rubrik (QA çıktı reformu FAZ 1)
+
+> Ne değişti (her rubrikte aynı): SEVERITY TALLY bölümü · ARITHMETIC GATE (SCORED /
+> SUM / DIVISION) · OVERALL SCORE satırı ÇIKTI; SCORES SUMMARY kuralı ⑤ "do not total,
+> average or tally — the library's script counts"; "no in-scope source" → `—` (⑦-⑫'de
+> "keeps 10/10" kalktı); VERDICT kapalı listesi başlıktan tablonun ALTINA taşındı;
+> tracking row son hücresi `—`. ⑬: SCORED/SUM/DIVISION/OVERALL bloğu çıktı, sahne başına
+> karar kaldı. Kategori adları, `MERCEK_IMZA` ifadeleri, başlık alanları DONUK
+> (rapor_kontrol 13/13 mercek tanıyor). Çıkarılan metin `ARSIV_CIKTI_KURALLARI.md`.
+> Betik tarafı: `rapor_kontrol.py` ①.13 HÜKÜM (VERDICT_SOZLUK) · ✂️ KESİK · `govde_al`
+> künye düzeltmesi · `ders_frekans` sözlüğe hizalandı (sözlük dışı hüküm ayrı sayılır).
+>
+> ⚠️ Bu değişikliğin modelin çıktısına etkisi depoda ÖLÇÜLEMEZ (dış model). Sözleşme
+> sonrası ilk 3 filmde `qa_saglik.py --ozet` koşulur; aşağıdaki kesitle karşılaştırılır.
+> Betik düzeltmelerinin (KESİK · govde_al · ①.13) ESKİ raporlara etkisi — aynı raporlar,
+> yeni betik:
+
+```
+   336 mercek raporu · 41 film · 29 mercek dışı dosya (faz/kapak/kapı) · tarama 3 s
+   tekil karar : ✅ GO 21 (6%) · ⚠️ ŞARTLI 118 · ⛔ TEKRAR 84 · 🚨 GEÇERSİZ 59 · ✂️ KESİK 54
+   ⑤ çapraz sonrası (tabloya giren): ✅ GO 2 · ⚠️ ŞARTLI 32 · 🚨 GEÇERSİZ 229 — parti düşen film 26 / 41 [D107 · D121]
+   en az bir GO raporu olan film 2 / 41
+   ── mercek ──            n   modD    GO  ŞART  TEKR  GEÇ  KESİK  tally=etk  VERDICT  boyut  kaynaksız
+   ① KARE            36   13%     0     3     5   16     12    35%       87% sözlük  5.2KB   19%
+   ② DEVAMLILIK      35    2%     0     6     0   27      2    44%      100% sözlük  8.2KB   13%
+   ③ SES             38    0%     1     7     0   16     14    65%       83% sözlük  5.6KB   15%
+   ④ HİKAYE          32    9%     0     2     5   13     12     —       90% sözlük  7.6KB    2%
+   ⑤ ARKA PLAN       34    0%     0     8     0   25      1    43%       90% sözlük  9.5KB    8%
+   ⑥ FİZİK           33   15%     0     2     5   25      1    29%       93% sözlük  5.6KB   12%
+   ⑦ AKSİYON         26   23%     0     1     2   22      1    25%       88% sözlük  7.0KB   32%
+   ⑧ EFOR            25   20%     0     1     2   20      2    36%       91% sözlük  6.6KB   11%
+   ⑨ KADRAJ          19   21%     0     0     0   17      2    43%       82% sözlük  5.9KB   18%
+   ⑩ OYUNCULUK       18   27%     1     0     0   16      1    37%       88% sözlük  6.3KB    2%
+   ⑪ IŞIK            21   23%     0     1     0   16      4    68%       88% sözlük  7.0KB   10%
+   ⑫ HOOK            19   26%     0     1     0   16      2    50%       88% sözlük  5.1KB    9%
+   ⑬ UYUM                 0   —      koşulmamış
+```
+
+---
+
+## 🧍🧭 14.09.2026 · ⑭ HAREKET + ⑮ YÖN YAZILDI (koşu yok — sahip talebi)
+
+> Talep: *"filmlerde saçma sapan hareketler yapıyorlar, yanlış yere dönmek, ateş etmek vs.
+> — tespit edelim, ders çıkarabilelim."* İki mercek, iki soru: ⑭ **"beden bunu NEDEN yaptı"**
+> (AMAÇ CÜMLESİ · 13 kapalı etiket · PURPOSE STRING · 8 kategori · hüküm: MOTION MAKES SENSE /
+> MINOR TWITCHES / FIXABLE IN EDIT / PUPPET MOTION / MOTION WITHOUT PURPOSE) · ⑮ **"vektör
+> hedefe vardı mı"** (VEKTÖR CÜMLESİ · HIT / MISS / UNKNOWN / NO TARGET / FLIP · VECTOR STRING ·
+> 8 kategori · hüküm: EVERY VECTOR LANDS / MINOR MISAIMS / FIXABLE IN EDIT / WRONG WAY / AIMED
+> AT NOTHING). İkisi de yeni çıktı sözleşmesiyle doğdu ve ürünü **PROMPT ORDERS** tablosudur
+> (sonraki filmin prompt satırı → kart G). Sınırlar rubrikte tek cümle: ⑦ ne oldu · ⑥ kaç
+> saniye · ⑩ ne hissetti · ② aynı mı · ⑨ kamera nerede · ⑭ NEDEN · ⑮ DOĞRU YERE Mİ.
+> Betik: `rapor_kontrol.py` imza · mod D · PREMISE (NOVUM) · VERDICT_SOZLUK · PURPOSE/VECTOR
+> STRING = kesme+1 · MOVEMENTS/ACTS sayımı; sentetik raporla sınandı (⑭ ŞARTLI D186 · ⑮ ŞARTLI
+> D186 — kapılar çalışıyor). Tablolar T14/T15 açıldı, boş.
+> ⚠️ Gerçek koşu yok. İlk koşu geldiğinde: `rapor_kontrol.py <rapor> --film <FILM>` · ham
+> `<FILM>_HAREKET_HAM.md` / `<FILM>_YON_HAM.md` · PROMPT ORDERS satırları GOZLEM_DEFTERI'ne
+> ADAY olarak (tek film) — ikinci filmde aynı etiket → ders.
+
+> Çalıştırma kaydı: henüz koşu yok.

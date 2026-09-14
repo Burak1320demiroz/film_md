@@ -177,7 +177,8 @@ vermiyor**. Dış kaynak **TUR 12** (`URETIM_ONCESI_ANALIZ/15_...` →
    STAKE 000° azimut / 34° yükseklik, 25/25 sahnede aynı); nötr stüdyo ışığı
    o kimliği siler.
 ⛔ D79 SAYFAYA DA İŞLER: opak/altın/aynalı vizör YASAK, yüz HER KAFA AÇISINDA
-   okunur; kask içi lokal ışık bunun aracıdır ve dış ortam ne kadar karanlık
+   okunur; kask içi lokal ışık bunun aracıdır (üç düzenek + İngilizce kalıp:
+   `UZAY_GIYSISI_SINEMATIK_TASARIM` §4 · 12.09.2026) ve dış ortam ne kadar karanlık
    olursa olsun kareye YAZILIR. ⛔ "seamless visor" yazılmaz — çerçevesizlik
    kubbe davetiyesidir [D146]. Marka/tescilli tasarım adı girmez, biçim
    GEOMETRİYE çevrilir (`MESHUR_SAHNE_KALIPLARI` §4).

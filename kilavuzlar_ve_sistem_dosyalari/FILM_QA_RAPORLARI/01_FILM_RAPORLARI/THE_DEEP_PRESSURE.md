@@ -1,12 +1,12 @@
 # 🔍 THE DEEP PRESSURE — QA KAYDI
 
-> **Kaynak dosya:** `yatay_2_4_dk_filmler_uzay/THE_DEEP_PRESSURE/THE_DEEP_PRESSURE_GAS_GIANT_FILM.md`
+> **Kaynak dosya:** `yatay_2_dk_filmler/THE_DEEP_PRESSURE/THE_DEEP_PRESSURE_GAS_GIANT_FILM.md`
 > ⚠️ **Bu dosya 13 sahnelik filmin yalnız 2 sahnesini içeriyor (56 satır).**
 > Character Bible, sahne haritası ve negatif blok depoda YOK.
 >
 > **Bu filmde bir QA var:**
 > · **MANTIK QA** (1 Ağustos 2026) — **3.0/10** · ham çıktı:
->   [`../02_HAM_RAPORLAR/THE_DEEP_PRESSURE_MANTIK_HAM.md`](../02_HAM_RAPORLAR/THE_DEEP_PRESSURE_MANTIK_HAM.md)
+>   [`../02_HAM_RAPORLAR/THE_DEEP_PRESSURE/THE_DEEP_PRESSURE_MANTIK_HAM.md`](../02_HAM_RAPORLAR/THE_DEEP_PRESSURE/THE_DEEP_PRESSURE_MANTIK_HAM.md)
 > · Teknik QA: ❌ henüz yapılmadı
 > · Senaryo QA: ❌ henüz yapılmadı
 

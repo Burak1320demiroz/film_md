@@ -15,7 +15,7 @@ KLİP SÜRESİ:   ⬜ ARAÇTAN ÖLÇÜLECEK [D124] — plan 10,0 s varsayar:
 SAHNE SAYISI:  25            RUNTIME: 249 s = 4:09 = 9 s hook + 24 × 10 s
                ⚠️ DEPODA ÇELİŞKİ VAR ve bu film §2.3'ü izliyor:
                KILAVUZ_REHBERI §2.3 kartı **25 sahne / 4:09** der,
-               `yatay_3_5_dk_filmler/README.md` **24 sahne / 2×12** der.
+               `yatay_4_dk_filmler/README.md` **24 sahne / 2×12** der.
                THE PAYLOAD (31.08) README'yi izledi ve çelişkiyi kaydetti;
                bu film KART A'nın işaret ettiği §2.3'ü izler (13+12).
                ⛔ Çelişki hâlâ depoda duruyor — iki kaynaktan biri
@@ -332,7 +332,7 @@ ring — no spine, no cylinder, no broken arc`.
 
 ```
 KOMUT   python3 kilavuzlar_ve_sistem_dosyalari/PROMPT_KONTROL/prompt_kontrol.py \
-          yatay_3_5_dk_filmler/THE_SINKING_STAKE
+          yatay_4_dk_filmler/THE_SINKING_STAKE
 ÇIKTI   📁 FİLM KLASÖRÜ · 2 bölüm dosyası birleşik · 50 prompt
         ⛔ 0 BLOCK · ⚠️ 0 FIX · ✅ 1 GO
 ⛔ Klasör modu koştu (satır çıktıda var). Dosya modu tek başına koşulursa

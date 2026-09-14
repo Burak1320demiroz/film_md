@@ -1,6 +1,7 @@
 # 🗺️ YAPI GRAFİĞİ — Tek Bakışta Proje
 
 > **Son eşitleme:** 31 Temmuz 2026 · dosya sistemiyle karşılaştırılarak
+> (13.09.2026: yalnız §1 karar ağacı + §2 klasör ağacına 6/8 dk satırları eklendi; tam eşitleme yapılmadı)
 >
 > ⚠️ **SAYI YAZMA KURALI.** Bu dosya artık "42 ders", "30 film" gibi sabit
 > sayı taşımaz. Sayılar haftada birkaç kez değişiyor ve altı ayrı belgeye
@@ -28,16 +29,20 @@
      │                                          │
      ▼                                          │
   SHORTS                                        │
-  6 sahne × 8s = 48 sn          ②  SÜRE? ───────┼───────┬───────────┐
-  süre seçimi YOK — sabit                       │       │           │
-  (dal burada biter)                          2-4 dk  3-5 dk    7-20 dk
-                                             12-13 sh  25 sh   48-144 sh
-                                              ~2:00    4:09    8:00-20:00
-                                                                (7 fazın
-                                                                 üstünde
-                                                                 PERDE)
-                                                │       │           │
-                                                └───────┴─────┬─────┘
+  6 sahne × 8s = 48 sn          ②  SÜRE? ──┬───────┬───────┬───────┬───────────┐
+  süre seçimi YOK — sabit                  │       │       │       │           │
+  (dal burada biter)                     2 dk    4 dk    6 dk    8 dk     7-20 dk
+                                         12 sh   24 sh   36 sh   48 sh    48-144 sh
+                                         2:00    4:00    6:00    8:00     8:00-20:00
+                                        ─── 12-SAHNE MODÜL MERDİVENİ ───  (FAZ hattı ·
+                                        (13.09.2026 · yazım hepsinde aynı;   7 fazın
+                                         6/8 dk'da QA birimi BÖLÜM = iki    üstünde
+                                         yarım master × 12 mercek)          PERDE)
+                                           │       │       │       │           │
+                                           └───────┴───────┴───────┴─────┬─────┘
+                                        ⚠️ 8 dk'da iki hat: MODÜL (48 sh · 2 bölüm ·
+                                           yatay_8_dk_filmler) ↔ FAZ (5 faz · 10_20).
+                                           Seçim mimariye göre, süreye göre değil.
                                                               │
                                        ③  TÜR? ──────────────┤
                                               │
@@ -95,7 +100,11 @@ kısafilmler/
 │                                     shorts'ları da hiç yok. Durum ve güvenli
 │                                     alan kuralları: dikey_shorts_filmler/00_README.md
 │
-├── yatay_2_4_dk_filmler_uzay/     16:9 · 12-13 sahne × 10s · ~2:00-2:10
+├── yatay_2_dk_filmler/            16:9 · 12 sahne × 10s · 2:00 (13.09.2026 modül
+│                                  beyanı — merdivenin ilk basamağı; 13-18
+│                                  sahneli eski filmler olduğu gibi)
+│                                  🔁 13.09.2026'ya kadar `yatay_2_4_dk_filmler_uzay/`
+│                                  — "2-4 dk" = bu formatın eski adı
 │                                  film başına KLASÖR (25.08.2026)
 │
 │   (yatay_2_4_dk_filmler_zombi/ — 26.08.2026'da kart H2 ile KALDIRILDI,
@@ -104,8 +113,20 @@ kısafilmler/
 │                                     Türün açılış şartı bir BÜTÇEDİR —
 │                                     klasörün 00_README.md'sinde yazılı
 │
-├── yatay_3_5_dk_filmler/          16:9 · 25 sahne × 10s · 4:09
+├── yatay_4_dk_filmler/            16:9 · 24 sahne × 10s · 4:00 (13.09.2026 modül
+│                                  beyanı; 25'li eski filmler olduğu gibi)
+│                                  🔁 13.09.2026'ya kadar `yatay_3_5_dk_filmler/`
+│                                  — "3-5 dk" = bu formatın eski adı
 │                                  film başına KLASÖR
+│
+├── yatay_6_dk_filmler/            🆕 13.09.2026 · 16:9 · 36 sahne × 10 s · 6:00 · 2 × 18
+│                                  yazım 3-5 dk ile aynı · ⭐ QA birimi BÖLÜM:
+│                                  iki yarım master × 12 mercek = 24 rapor ·
+│                                  rapor_kontrol.py --bolum n/2 · KILAVUZ_REHBERI §2.6
+│
+├── yatay_8_dk_filmler/            🆕 13.09.2026 · 16:9 · 48 sahne × 10 s · 8:00 · 2 × 24
+│                                  aynı kural · §2.7 · ⚠️ faz hattı DEĞİL —
+│                                  THE_SLOW_STONE 10_20'de kalır
 │
 │   ⭐ 01.09.2026 — YENİ FİLMLERDE KLASÖR İSKELETİ HER FORMATTA AYNI:
 │      PLAN · BOLUM_1 · BOLUM_2 · KAPAK · MUZIK · YAYIN_PAKETI · QA_SPEC
@@ -113,6 +134,12 @@ kısafilmler/
 │       tetikleyicisinden biri doğruysa; KAPI 0, promptlardan ÖNCE)
 │      Tanım: KILAVUZ_REHBERI §2.0 · kopya: FILM_KLASOR_SABLONU/
 │      (eski filmler olduğu gibi kalır; yeniden bölünmez)
+│   ⭐ 14.09.2026 — İKİ REJİM (reform · TODO_AKIS_VE_DERS_REFORMU.md):
+│      00_ANALIZ/00_HIKAYE_ONAYI.md taşıyan klasör = YENİ REJİM →
+│      prompt_kontrol ㉕-㉚ (kilit ≤20 · IN FRAME · NEGATIVE ≤11 cümle ·
+│      çizelge sahtelik · hikâye onayı · sahne tablosu) + kelime bandı.
+│      14.09'dan önce açılan 26 üretilmemiş film ESKİ kapılarla kalır;
+│      film_klasoru_ac.sh --analiz-ekle onayı kopyalamaz (sahip kararı).
 │
 ├── yatay_10_20_dk_filmler/        16:9 · 3 perde · bant 7-20 dk
 │                                  (04.09.2026: yatay_7_9_dk_filmler/
@@ -133,8 +160,10 @@ kısafilmler/
 ```
 ⚠️ İKİ BİLİNEN YAPISAL BORÇ
 
-1. TÜR, KLASÖR ADINA YAPIŞTIRILMIŞ  (_uzay)
-   Ölçeklenmiyor: 3-5 dk'ya ikinci bir tür eklersen yeni klasör gerekecek.
+1. ✅ ÖDENDİ 13.09.2026 — TÜR, KLASÖR ADINA YAPIŞTIRILMIŞTI  (_uzay)
+   Klasör `yatay_2_dk_filmler/` oldu; tür soneki düştü, tür artık yalnız
+   KILAVUZ_REHBERI §4'te (dosya içinde) yaşar. Aşağıdaki kayıt tarihtir.
+   Ölçeklenmiyordu: 3-5 dk'ya ikinci bir tür eklersen yeni klasör gerekecekti.
    Doğrusu tür etiketini dosya içinde tutmak. Şimdilik dokunulmadı —
    KILAVUZ_REHBERI mantıksal ayrımı zaten kuruyor. (12.08.2026: _zombi ve
    _savas klasörleri kaldırıldı. 23.08.2026: _zombi geri açıldı.
@@ -147,6 +176,13 @@ kısafilmler/
    HER format       → film başına KLASÖR (25.08.2026: 2-4 dk ve shorts
                       da tek dosyadan klasöre geçti — artık istisna yok)
    Kural şu: sahne sayısı 13'ü geçtiğinde klasöre geçilir. Yazılı değildi.
+
+3. 🆕 14.09.2026 — İKİ REJİM AYNI DEPODA
+   Eski klasör (00_HIKAYE_ONAYI yok) eski bantla, yeni klasör yeni kapılarla
+   denetlenir; aynı betik, iki kural seti (prompt_kontrol.py rejim()).
+   Bilinçli borç: 26 üretilmemiş eski filmden biri üretime girecekse sahip
+   ya eski bantla üretir ya dosyayı şablondan kopyalayıp yeni rejime alır —
+   arası yok. Borç, eski filmler üretilip/emekli edilince kendiliğinden kapanır.
 ```
 
 ---
@@ -180,6 +216,11 @@ kilavuzlar_ve_sistem_dosyalari/
 │   ├── LESSONS_LEARNED.md ............... ders DİZİNİ + teknik kalite tablosu
 │   ├── DERSLER/ ......................... ders metinleri (9 tematik dosya
 │   │                                      + hızlı referans bloğu)
+│   │   ├── 00_YASAYAN_DERSLER.md ........ ⭐ 14.09.2026 · yeni filmin okuduğu
+│   │   │                                  TEK liste (≤40 · ETİKET · DEĞİŞEN SATIR)
+│   │   ├── 00_DERS_YAZIM_KONTRATI.md .... §2b film dersi = FREKANS ≥2 film +
+│   │   │                                  DEĞİŞEN SATIR + KAPI + TEKRAR (14.09)
+│   │   └── 00_HIZLI_REFERANS.md ......... arşiv kilit havuzu (çekirdek okuma değil)
 │   ├── VEO_3_1_FAST_..._KILAVUZU.md ..... araç davranışı, tırnak sentaksı
 │   ├── SAHNE_DEVAMLILIK_KILAVUZU.md ..... karakter çapalama, seed
 │   ├── REFERANS_PAKETI_KILAVUZU.md ...... KAPI 0: hangi varlık kendi
@@ -262,7 +303,12 @@ kilavuzlar_ve_sistem_dosyalari/
 │
 ├── 🗂️ FILM_KLASOR_SABLONU/ .............. film klasörü iskeletinin KOPYASI
 │   │                                      7 dosya taslağı · `cp -r` hedefi
-│   └──                                    tanım: KILAVUZ_REHBERI §2.0
+│   │                                      tanım: KILAVUZ_REHBERI §2.0
+│   └── 00_ANALIZ/ ....................... 14.09.2026: 00_HIKAYE_ONAYI.md (sahip
+│                                          onayı · YENİ REJİM işareti · ㉙) ·
+│                                          OKUMA_CEKIRDEGI.txt (TUR 2/3 manifesti,
+│                                          ≤30 dosya) · 05_/00_SAHNE_TABLOSU.md
+│                                          (>8 sahnede satır başına sahne · ㉚)
 │
 ├── 🔬 PROMPT_KONTROL/ ................... üretimden ÖNCE koşan sıfır maliyetli kapı
 │   ├── prompt_kontrol.py ................ sayar: uzunluk · yasak kelime ·
@@ -270,6 +316,10 @@ kilavuzlar_ve_sistem_dosyalari/
 │   │                                      ⭐ KLASÖR MODU: film klasörü verilir,
 │   │                                      bölümler birleşir (01.09.2026)
 │   │                                      (akıştaki yeri: REHBER §6 adım 3.5)
+│   │                                      ⭐ 14.09.2026 İKİ REJİM: 00_HIKAYE_ONAYI
+│   │                                      olan klasörde kelime bandı (pozitif gövde)
+│   │                                      + ㉕-㉚; eski klasör eski bant. Sabitler
+│   │                                      betiğin başında (KELIME_BANDI · KILIT_TAVANI …)
 │   ├── PROMPT_QA_CRITIQUE_PROMPT.md ..... yargılar: kilit SAYI mı TARİF mi
 │   └── RAPORLAR/ ........................ koşu raporları
 │
@@ -283,11 +333,16 @@ kilavuzlar_ve_sistem_dosyalari/
 │   │                                      ⭐ rubrikler SALT PROMPT (12.08.2026)
 │   ├── 00_README.md ..................... klasör rehberi + ajan akışı
 │   ├── CALISTIRMA_KAYITLARI.md .......... koşu tarihçesi + ders dipnotları
-│   ├── FILME_OZEL/ ...................... ⭐ OPERATÖRÜN YAPIŞTIRDIĞI TEK YER
-│   │                                      PAKET_1..12 = rubrik + SPEC gömülü (mod D · 9-12 plan sadakati, D184)
-│   ├── _KAYNAK/ ......................... çıplak rubrik 1-8 — BETİK okur,
-│   │                                      operatör AÇMAZ [D129 · 04.09.2026]
+│   ├── _KAYNAK/ ......................... ⭐ ON ÜÇ RUBRİK — OPERATÖRÜN AÇTIĞI YER
+│   │                                      13_UYUM = sahne ↔ PROMPT (⑬ · 11.09.2026)
+│   │                                      yanına <FILM>_QA_SPEC.md yapıştırılır = mod D [D129]
+│   │                                      (FILME_OZEL/ paketleri 11.09.2026'da silindi)
 │   ├── ARSIV_6_MERCEK/ .................. ⛔ eski 6 rubrik — ÇALIŞTIRILMAZ
+│   ├── ARSIV_RUBRIK_DIYETI/ ............. ⛔ 14.09.2026 diyet-öncesi altı rubrik
+│   │                                      + kesilen metinler — ÇALIŞTIRILMAZ
+│   ├── ARSIV_CIKTI_KURALLARI.md ......... ortak çıktı kalıbının uzun hâli (tek kopya)
+│   ├── _KAYNAK/1_KARE_DIKEY_EK.md ....... ① dikey ek — yalnız dikey filmde sona
+│   │                                      yapıştırılır (rubrik tavanı 25 KB · sayac)
 │   ├── 1_KARE_QA_....md ................. ① sahne içi · yatay VEYA dikey
 │   │                                      (FORMAT: DİKEY → 9:16 · güvenli
 │   │                                       alan · kanca kategorileri açılır)
@@ -323,6 +378,20 @@ kilavuzlar_ve_sistem_dosyalari/
 │                                          (22.08.2026 — yukarıdaki altısını
 │                                          bir MODEL doldurur, bunu VERİ
 │                                          doldurur; çakışırsa bu üstündür)
+│
+├── 🧮 RAPOR_KONTROL/ .................... QA raporunun ÇIKTI kapısı (01.09.2026)
+│   ├── rapor_kontrol.py ................. n·Σ·ort · tally · ⑨ ızgara · --film →
+│   │                                      ①.12 DERS DÖNÜŞÜ yoksa NOT (14.09)
+│   └── ders_frekans.py .................. 🔁 14.09.2026 · VERDICT / düşük kategori
+│                                          × farklı film (mod D/V) → dersleşmemiş
+│                                          örüntüler; sayac 🔁 bloğu çağırır
+│
+├── 🛠️ BETİKLER (kök)
+│   ├── sayac.sh ......................... sayılar (14.09: film/alet dersi ·
+│   │                                      YAŞAYAN n/40 · rubrik ≤25 KB · 🔁 frekans)
+│   ├── film_klasoru_ac.sh ............... klasör açar · >8 sahne → tablo ·
+│   │                                      --kilit-sahne · 00_HIKAYE_ONAYI kopyası
+│   └── okuma_cizelgesi.sh ............... yaşayan 40 ders + manifest çizelgesi
 │
 └── 🎨 YAYIN
     ├── KAPAK_FOTOGRAFI_MIMARISI_KILAVUZU.md  thumbnail psikolojisi

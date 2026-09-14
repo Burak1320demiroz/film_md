@@ -3,7 +3,7 @@
 ```
 Koşu    06.09.2026 · Gemini · makara "faz 9.mp4" · 12 segment · 120 s · 11 kesme
 Ham     ../../../kilavuzlar_ve_sistem_dosyalari/FILM_QA_RAPORLARI/
-        02_HAM_RAPORLAR/YERCEKIMI_FAZ09_12MERCEK_HAM.md
+        02_HAM_RAPORLAR/YERCEKIMI/YERCEKIMI_FAZ09_12MERCEK_HAM.md
 Defter  .../FILM_QA_RAPORLARI/01_FILM_RAPORLARI/YERCEKIMI.md § KOŞU 9
 Mod     ⚠️ V — SPEC yok [D129] · ÇIPLAK RUBRİK → T tablolarına GİREMEZ
 Ölçüm   ⛔ ⑪ KOŞULMADI — sahip kararı: depo dışına çıkılmaz, master'a dokunulmaz

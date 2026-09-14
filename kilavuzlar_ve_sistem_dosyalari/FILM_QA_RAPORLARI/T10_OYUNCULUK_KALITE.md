@@ -40,7 +40,9 @@ Biri bile hayırsa satır YAZILMAZ; ham rapor 02_HAM_RAPORLAR/'da durur.
 
 | Film | Tarih | Mod | Yüz|Eller|Duruş|Bakış|Tempo|Seçim|Bedel|Final|Orantı | Toplam | Not |
 |---|---|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|---|
-| *(henüz koşu yok)* | | | | | | | | | | | |  | |
+| **The Counted Turn** | 09.09.2026 | D | 3.0 | 3.0 | 3.0 | 7.0 | 3.0 | 3.0 | 3.0 | 3.0 | 3.0 | 3.4 | 🔴 **THE CHOICE IS INVISIBLE** — niyet bedende okunmuyor; S20 merkezî kararında tereddüt/vücut ağırlığı sıçraması yok, manken postürü [D184] |
+| **The Hard Dock** ⚠️ | 12.09.2026 | D | 7.5 | 7.0 | 7.5 | 8.0 | 7.0 | 7.5 | 7.5 | 7.5 | 7.5 | **7,4** | S13-S16 exterior sequence disrupts character emotional build-up |
+
 
 ⛔ Sayılar bu tabloya ELLE yazılmaz — rapordan gelir ve `rapor_kontrol.py`
 GO döndükten sonra kopyalanır [kural ① · D161].

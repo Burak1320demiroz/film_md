@@ -3,7 +3,7 @@
 Dikey YouTube Shorts / Reels Production Document — **FRAGMAN (teaser)**
 Format: **9:16 (DİKEY)** | Vuruş: 6 (V0 hook + V1-V5) | Süre: her vuruş 8 saniye, toplam 48 saniye
 Prompt yapısı: her vuruş için **1 görsel promptu + 1 video promptu** (tek versiyon, T2V)
-Kaynak film: `yatay_3_5_dk_filmler/LOW_POWER/` — 25 sahne · 4:09 · 16:9 · ⚠️ **üretilmedi**
+Kaynak film: `yatay_4_dk_filmler/LOW_POWER/` — 25 sahne · 4:09 · 16:9 · ⚠️ **üretilmedi**
 Kılavuz: `kilavuzlar_ve_sistem_dosyalari/FRAGMAN_KILAVUZU.md` §1 · §2
 _"Süpürüyor. Toz geri geliyor. Bir tek yere toz inmiyor — ve orası bedava değil."_
 
@@ -1202,7 +1202,7 @@ patch, at any moment.
 
 ```
 FILM: LOW POWER — FRAGMAN (dikey shorts · "Örtülme")
-KAYNAK FİLM: yatay_3_5_dk_filmler/LOW_POWER/ (25 sahne · 249 s · 16:9 ·
+KAYNAK FİLM: yatay_4_dk_filmler/LOW_POWER/ (25 sahne · 249 s · 16:9 ·
      ⚠️ ÜRETİLMEDİ — bu fragman yazılı kayıttan türedi)
 FORMAT: 9:16 · 6 vuruş × 8 s = 48 s · vuruş başına 1 kesintisiz çekim, 0 kesme
 TİP: FRAGMAN — filmin ilk %60'ından altı vuruş; doruk (S20), devretme (S22)
@@ -1455,14 +1455,14 @@ en uzunu 4.216 (V3) — ama hedef bandın (2.000-2.600) ÜSTÜNDEDİR.
 Gerekçe sapma ⑤'te yazılı. Betik 20.08.2026'da koşuldu, sonuç FIX
 (çıkış kodu 1), BLOCK yok. Her üretimden önce yeniden koşulur:
     python3 kilavuzlar_ve_sistem_dosyalari/PROMPT_KONTROL/prompt_kontrol.py \
-            yatay_3_5_dk_filmler/LOW_POWER/LOW_POWER_FRAGMAN_DIKEY.md
+            yatay_4_dk_filmler/LOW_POWER/LOW_POWER_FRAGMAN_DIKEY.md
 
 ⚠️ Bu dosya kaynak filmin PART_A / PART_B promptlarını DEĞİŞTİRMEZ.
 İki teslim ayrıdır; hiçbirinin karesi diğerinin kurgusuna girmez.
 
 ⚠️ SAYIMDAKİ YERİ: Bu dosya film klasörünün İÇİNDEDİR (Cold Burn, Black
 Cradle ve Second Ship emsali), bu yüzden film sayımına GİRMEZ ve
-00_INDEX'e yeni satır AÇILMAZ — sayac.sh yatay_3_5_dk_filmler'i klasör
+00_INDEX'e yeni satır AÇILMAZ — sayac.sh yatay_4_dk_filmler'i klasör
 başına sayar. Dikey klasöre kopya konmaz.
 
 ⚠️ MERCEK: SHORTS_QA. SENARYO_QA bu dosyaya koşulmaz [D111]; koşulursa

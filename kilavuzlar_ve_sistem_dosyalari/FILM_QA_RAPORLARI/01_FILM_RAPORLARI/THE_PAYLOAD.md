@@ -28,7 +28,7 @@ MALZEME:  teslim kurgusu · 245-246 s (raporlardan; ÖLÇÜLMEDİ) · 16:9
 MERCEK:   ① KARE 4,5 · ② DEVAMLILIK 6,0 · ③ SES 8,4 · ④ HİKAYE 3,4
           · ⑤ ARKA PLAN 6,2 · ⑥ FİZİK 5,5      (altısı da mod V → tabloya girmez)
 HAM:      ../02_HAM_RAPORLAR/THE_PAYLOAD_{KARE,DEVAMLILIK,SES,HIKAYE,ARKA_PLAN,FIZIK}_HAM.md
-PLAN:     ../../../yatay_3_5_dk_filmler/THE_PAYLOAD/THE_PAYLOAD_PLAN.md
+PLAN:     ../../../yatay_4_dk_filmler/THE_PAYLOAD/THE_PAYLOAD_PLAN.md
 SPEC:     ✅ VAR — .../THE_PAYLOAD_QA_SPEC.md (A/B/C/E blokları · 11 makine kapısı)
           ⛔ operatöre VERİLMEDİ
 OTURUM:   ⚠️ ŞÜPHELİ DEĞİL — altı raporun şerit/replik satırları aynı ama

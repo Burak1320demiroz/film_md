@@ -427,6 +427,8 @@ Cairn sayacı gibi: geriye gitmez, sıçramaz, faz değişimi yalnız sahneler A
 
 ## 🔴 DERS 169: 25 SAHNELİK BİR FİZİKSEL İŞ FİLMİNDE ZORLANMA SÖZLÜĞÜ TEK SAHNEDE VARDI — DÜŞÜK YERÇEKİMİ AĞIRLIĞI AZALTIR, ATALETİ AZALTMAZ
 
+> 🔁 14.09.2026: yedi filmlik örüntü dersi [[D206]] (bedel bedende ödenmiyor) — bu ders sözlüğü, D206 sahne/saniye/kanal sayısını ister.
+
 **KAPI:** BETİK · `prompt_kontrol.py` ⑳ ZORLANMA KANALI (efor sahnesinde gövde tepkisi cümlesi var mı) — 02.09.2026
 **TEKRAR:** 2 · 02.09.2026 THE SINKING STAKE · ⚠️ 04.09.2026 THE UPWARD FALL — ters yönde: efor sözlüğü UYGULANDI (8 sahnede 2 kanal) ama ÖNKOL kanal cümlesi (`the forearm tendons stand out through the glove`) mühürlü giysili filmde **çıplak deri** ürettirdi → cümle [[D175]] ile değişti
 
@@ -489,3 +491,67 @@ gövde yalnız ekranda GÖSTERİLEN işin bedelini öder.
 > yazılır — bu ders onu EFOR kanalına genişletir) · KARAKTER_VE_DUYGU §6
 > (el/nefes/yürüyüş bütçesi — bu ders o bütçeye ZORLANMA'yı ekler) ·
 > mercek ⑧ EFOR (bu dersin ölçüm aleti).
+
+---
+
+## 🔴 DERS 197: KASK VİZÖRÜ ŞEFFAFLIK/OPAKLIK GEÇİŞİ (VISOR OPACITY TOGGLE DRIFT)
+
+**Kaynak:** THE GREEN CEILING QA (10.09.2026) — ② DEVAMLILIK `0:00 (S1 clear visor) vs 0:10 (S2 opaque visor) vs 0:40 (S5 clear visor) vs 1:40 (S11 clear visor)`, `visors alternate between completely clear/open and opaque black without manipulation`.
+
+**Sorun:** Kask vizörü sahneler arasında hiçbir fiziksel müdahale/manipülasyon olmaksızın anlık biçimde şeffaf (yüz okunur) ve opak siyah (aynalı/kapalı) görünümler arasında sıçramaktadır.
+
+**ÇÖZÜM — PROMPT GENELİNDE TEK NİTELİK KİLİDİ:**
+
+1. Kask vizörü durumu film boyunca TEK nitelik cümlesiyle kilitlenmelidir.
+2. Açık vizör isteniyorsa tüm promptlarda:
+   ```
+   always clear transparent glass visor with visible inner face, zero tint, zero mirror coating, zero black reflection
+   ```
+3. Opak vizör isteniyorsa tüm promptlarda:
+   ```
+   always pitch-black reflective opaque mirror visor, zero visible inner face, zero transparent glass
+   ```
+4. İki çelişkili veya belirsiz tanım aynı filmin prompt setinde karıştırılamaz.
+
+
+---
+
+## 🔴 DERS 206: BEDEL BEDENDE ÖDENMİYOR — "NOBODY PAYS / WEIGHTLESS WORK" YEDİ FİLMDE: EFOR FİİLİ PROMPTTA VAR, ÖDEME KANALI YOK
+
+**FREKANS:** 7 film · THE STANDING WIRE (mod V · ⑧) · THE MIRROR FAUNA (mod D · ⑧ 2,0) · THE AMBER LATTICE (mod V · ⑧ 2,0) · THE CRACKED HELMET (mod V · ⑧ 1,0) · THE RING WALKER (mod V · ⑧ 6,7) · LOW_POWER (mod V · ⑧ 4,3) · THE STATIC SHADOW (mod V · ⑧ 1,0 — makara eksik, sayım dışı)
+**DEĞİŞEN SATIR:** PLAN `ŞERİT · TEMPO · BEDEL EĞRİSİ` tablosunun BEDEL hücresi — efor sahnesinde boş olamaz: `<kanal> @ <saniye>` (ön kol · omurga eğimi · nefes buğusu · adım kadansı · hız düşüşü); aynı satır video promptunun TIMELINE'ına saniyesiyle iner
+**KAPI:** BETİK · `prompt_kontrol.py` ⑳ ZORLANMA (efor fiili var, gövde tepkisi yok → NOT) · LİSTE · `03_PLAN_ONCESI` B2 (bedelli seçim)
+**TEKRAR:** 0
+
+**Kaynak:** THE STANDING WIRE (05.09.2026) 50-60 s kare şeridi — ADAY-11: "yazılan zorlanma kanalı ekranda yok; prompt tam, beden boş". Zincir ADAY-11 → 12 → 24 → 38 → 53 → 78 → 79 → 93.
+
+**Örüntü:** Yedi filmde ⑧ EFOR aynı hükmü verdi: ağır giysiyle merdiven, dar sırtta yük, duvara 10 s basınç, kritik oksijen sızıntısı, anten torku — ve ekranda ön kol gerilimi, ağırlık merkezi telafisi, nefes buğusu, hız düşüşü **sıfır**. Ortak sebep tek: promptta efor **fiili** var (`climbs`, `pushes`, `carries`), ödemenin **kanalı** ve **saniyesi** yok; model fiili ağırlıksız oynatıyor. D169 sözlüğü yazdı (kanal cümlesi), D202 seçimi bedene bağladı; ikisi de "hangi sahnede, kaçıncı saniyede, hangi kanal" sayısını istemiyordu.
+
+**ÇÖZÜM — ÖDEME SATIRI SAYIYLA:**
+1. Efor sahnesi = TIMELINE'ında efor fiili olan sahne (betik ⑳ bunu zaten bulur).
+2. Her efor sahnesinde **≥ 1 ödeme satırı**, saniyeli: `4,0 s — his right forearm locks, the wheel stops for half a second` · `7,5 s — the shoulders drop a palm's width`.
+3. Ödeme geri alınmaz: bir sonraki sahnenin IMAGE promptu bedenin AFTER hâlini taşır ([[D207]]).
+4. ⑧ EFOR'un `VERDICT: NOBODY PAYS | WEIGHTLESS WORK` satırı ölçer; `ders_frekans.py` sayar.
+
+🔗 [[D169]] (zorlanma sözlüğü) · [[D202]] (seçim bedende) · [[D207]] (sıfırlanma) · `OYUNCULUK_YAZIM` §2
+
+---
+
+## 🔴 DERS 207: ŞOK VE YORGUNLUK KESMEDE SIFIRLANIYOR — BİR SONRAKİ SAHNENİN IMAGE PROMPTU BİBLE'IN NÖTR BEDENİNDEN DOĞUYOR, ÖNCEKİ SAHNENİN SONUNDAN DEĞİL
+
+**FREKANS:** 4 film · THE AMBER LATTICE (mod V · ⑩ 5,9 — S12 patlama → S13 nötr) · THE RING WALKER (mod V · ⑩ 6,1 — S12 irkilme → S13 nötr) · LOW_POWER (mod V · ⑧ 4,3 — S24 yorgunluk 6 → S27 seviye 1; ⑩ 5,8 — S17 → S21) · THE CRACKED HELMET (mod V · ⑧ 1,0 — 1:50 boğulma sonrası dik duruş)
+**DEĞİŞEN SATIR:** `00_SAHNE_TABLOSU` "olay (BAŞ→SON)" hücresi — bir sahnenin SON bedeni bir sonraki satırın BAŞ bedenidir ve o sahnenin IMAGE promptunun SUBJECT satırına **kelimesi kelimesine** iner (`shoulders dropped, breath fog on the pane`)
+**KAPI:** LİSTE · `00_SAHNE_TABLOSU` (BAŞ = önceki SON) · `03_PLAN_ONCESI` B2
+**TEKRAR:** 0
+
+**Kaynak:** THE AMBER LATTICE QA (10.09.2026) — ⑩ `00:57-01:03 (S12→S13) sudden reset from explosive spark blast to calm standing posture erases physical aftermath`. Zincir ADAY-26 → 55 → 80 → 84 (+38).
+
+**Örüntü:** Dört filmde patlama, meteor, sera kaybı ve ağır yorgunluk bir kesme sonra yok oldu. Sebep üretim hattında: her sahnenin IMAGE promptu Character Bible'ın **nötr** bedeninden yazılıyor; önceki sahnenin AFTER'ı hiçbir prompta taşınmıyor. `OYUNCULUK_YAZIM` §2 bunu yalnız ÇAPA ÜÇLÜSÜ (seçim/bedel/final) için istiyordu; şok ve yorgunluk her sahneye yayılıyor.
+
+**ÇÖZÜM — YORGUNLUK SAYISI:**
+1. PLAN `BEDEL EĞRİSİ`: sahne başına yorgunluk **0-6** tek sayı.
+2. Ardışık sahnede sayı en çok **1 kademe** düşer; sıfırlama yalnız yazılı dinlenme sahnesinden sonra.
+3. Sayı ≥ 3 olan her sahnenin IMAGE promptu bedende bir işaret taşır (omuz · nefes · adım); SUBJECT satırı önceki SON'dan kopyalanır.
+4. ⑧ `RESET LOG` ve ⑩ Cost & Aftermath ölçer.
+
+🔗 [[D206]] · [[D202]] · [[D42]] (yıpranma sabit — aynı ilke beden için)

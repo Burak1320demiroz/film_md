@@ -66,6 +66,14 @@ farkı burada da fark sayma.
 | **The Thin Roof** Ⓥ ⛔ ⚠️ | 28.08 | — | — | — | 7 | — | 7 | — | — | 8 | **7,3** | ⬜ |
 | **The Upward Fall** Ⓥ ⛔ ⚠️ | 04.09 | 6 | 5 | 6 | 3 | 5 | 4 | 5 | 6 | 6 | **5,1** | ⬜ |
 | **The Healing Ground** Ⓥ ⛔ ⚠️ | 04.09 | — | — | — | 10 | 10 | 4 | 10 | 10 | 10 | **9,0** | ⬜ |
+| **The Counted Turn** ⚠️ | 09.09.2026 | — | — | — | — | 7 | — | — | — | — | **7,0** | FIELD HOLDS |
+| **The Solar Mirror** Ⓥ ⚠️ | 11.09.2026 | 3 | 4 | — | 4 | 5 | 4 | 6 | 4 | 5 | **4,4** | SUBJECT DUPLICATE IN FIELD |
+| **The Resonant Strand** Ⓥ ⛔ ⚠️ | 11.09 | — | — | — | 9 | 9 | 9 | 10 | 8 | 6 | **8,5** | ⬜ |
+| **The Hard Dock** Ⓥ ⚠️ | 12.09.2026 | — | — | — | 5 | 6 | 6 | 7 | 7 | 7 | **6,3** | FIELD DRIFTS BUT RECOVERABLE |
+| **The Silent Perihelion** Ⓥ ⛔ | 13.09 | — | — | — | 7 | 8 | 8 | 8 | 7 | 9 | **7,8** | ⬜ |
+| **The Shattered Breath** Ⓥ ⛔ ⚠️ | 13.09 | — | — | — | 8 | 9 | 8 | 10 | 8 | 7 | **8,3** | ⬜ |
+| **The Locked Pulse** Ⓥ ⛔ ⚠️ | 14.09 | — | — | — | 8 | 8,5 | 4 | 8,5 | — | 6 | **7,0** | ⬜ |
+
 
 > **The Rose Coat · 26.08.2026 · belgesiz koşu · ⚠️ ŞARTLI · matrise girmez**
 > Kayıt: [`01_FILM_RAPORLARI/THE_ROSE_COAT.md`](01_FILM_RAPORLARI/THE_ROSE_COAT.md)
@@ -90,3 +98,13 @@ farkı burada da fark sayma.
 > üçte birini bir GEZEGEN kaplıyor ve gezegen planın 12 negatif bloğunun
 > 12'sinde yasaklıydı. **Gökyüzü (6)** hücresi bu yüzden parantezlidir.
 > → **DERS 126** + rubrik yaması (en büyük nesne adlandırılır).
+
+> **The Counted Turn · 09.09.2026 · MOD D · ⚠️ ŞARTLI · matrise girmez**
+> Kayıt: [`01_FILM_RAPORLARI/THE_COUNTED_TURN.md`](01_FILM_RAPORLARI/THE_COUNTED_TURN.md)
+> · `rapor_kontrol.py` ile düzeltildi: Kusur bildirilmeyen 4 kategori (10/10) `—` hücresine çekildi [D186]. Düzeltilmiş ortalama: **7,0** (Ham: 9,4/10).
+> · Verdict: `FIELD HOLDS`. Tek kusur 00:40 ve 01:30'da düz-plaka paralaks (starfield ve kemerlerin aynı hızda kayması).
+
+> **The Solar Mirror · 11.09.2026 · Ⓥ mod V · ⚠️ ŞARTLI · matrise girmez**
+> Kayıt: [`01_FILM_RAPORLARI/THE_SOLAR_MIRROR.md`](01_FILM_RAPORLARI/THE_SOLAR_MIRROR.md)
+> · Skor: **4,4/10** (Ⓥ mod V). Verdict: `SUBJECT DUPLICATE IN FIELD`.
+> · S9 (01:20) visual anomaly: Mirror reflection contains duplicate astronaut figure with desynced head rotation / identical second suit opposite primary astronaut.

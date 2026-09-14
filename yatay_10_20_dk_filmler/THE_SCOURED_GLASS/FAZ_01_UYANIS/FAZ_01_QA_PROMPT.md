@@ -60,17 +60,24 @@ kategoriyi sorarsa hücreye TİRE konur ve ortalamaya GİRMEZ [D185 · D131].
 > Mercek adı taşımayan kanıt ölçülmemiş sayılır.
 
 ```
-KİLİT 1 — CAM MERDİVENİ, 0. KADEME  ⭐ NOVUM
-  ① S1-S7'de vizör camı ÇİZİKSİZ (üstünde yalnız gevşek toz)  → ② cat.3
-  ② S8'de bez TEK GEÇİŞ — gidiş-geliş VARSA kusur             → ⑦ cat.1
-  ③ S9-S12'de mat şerit EKRAN-SOL ALT köşede DURUR            → ① cat.2
-  ④ S8'de mat şerit kadrajın ~%45'i                           → ⑨ cat.4
-  ⛔ ŞERİDİN VARLIĞI KUSUR DEĞİLDİR. Şeridin KAYBOLMASI kusurdur.
+KİLİT 1 — CAM MERDİVENİ, 0. → 1. KADEME  ⭐ NOVUM (11.09 güncel)
+  ① S1-S7'de vizör camı ÇİZİKSİZ (üstünde yalnız seyrek tane)  → ② cat.3
+  ② S8'de PED TEK GEÇİŞ — gidiş-geliş VARSA kusur             → ⑦ cat.1
+  ③ S9-S12'de mat şerit alt köşede DURUR (yeşil yay tarafı =
+     bu kadrajlarda ekran-sol); S10-S12'de kask bench'te/elde,
+     şerit görünür ve AYNI                                    → ① cat.2
+  ④ S8'de ped + şerit kadrajın ~%45'i                         → ⑨ cat.4
+  ⑤ KADEME 1 = üç parmak yüksek × bir el uzun, kenar keskin;
+     buğu/yansıma/çatlak/damla olarak OKUNMAZ                  → ⑬ C1 · ② cat.3
+  ⛔ ŞERİDİN VARLIĞI KUSUR DEĞİLDİR. Şeridin KAYBOLMASI, küçülmesi
+     ya da buğu okunması kusurdur.
 
 KİLİT 2 — GÖĞÜS İĞNESİ, KIRMIZI YAYDA
   ① S1 · S6 · S7'de iğne kırmızı yayda, tek yönde              → ② cat.10
   ② göstergede rakam/harf/çentik SIFIR                         → ① cat.6
-  ③ S7'de 10 s'de bir iğne kalınlığı kayar                     → ⑥ cat.5
+  ③ S7'de iğne klip boyunca SABİT ("holds its place"); 0,7 m/85 mm'de
+     bir iğne kalınlığı 6 px'tir — ⑥ cat.5 NOT EXERCISED yazar,
+     "iğne oynamadı" kusur değildir (11.09)                   → ⑥ cat.5
   ⛔ Rakamsızlık "eksik bilgi" diye yazılamaz — SPEC METİN YASAĞI.
 
 KİLİT 3 — SIZINTI ZİNCİRİ (fazın nedensellik omurgası)
@@ -88,7 +95,9 @@ KİLİT 4 — GÖVDE, 0. KADEME
 KİLİT 5 — TOZ YAPIŞIR
   ① S2'de toz eldivenden DÖKÜLMEZ, silkeleme işe yaramaz        → ⑥ cat.1
   ② her sahnede diz altı pas rengi toz kaplı                    → ⑤ cat.2
-  ③ S9'da kapaktan çıkan toz havada ASILI KALIR                 → ⑥ cat.4
+  ③ S9'da kapaktan çıkan toz perde gibi düşer ve klip içinde
+     YERE OTURUR (asılı kalırsa/süzülürse KUSUR — D39, 11.09)     → ⑥ cat.4
+  ④ S2'den sonra sağ avuç + parmak içi pas rengi KALIR (KİLİT 7)  → ② cat.3
 ```
 
 ---

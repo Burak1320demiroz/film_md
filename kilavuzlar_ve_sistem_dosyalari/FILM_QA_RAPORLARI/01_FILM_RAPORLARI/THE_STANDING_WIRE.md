@@ -153,7 +153,7 @@ ekrandaki GEOMETRİYİ değil. Aynı mekanizma YERÇEKİMİ FAZ 2'de ölçülmü
 
 ```
 python3 RAPOR_KONTROL/rapor_kontrol.py 02_HAM_RAPORLAR/THE_STANDING_WIRE_*_HAM.md \
-  --film yatay_3_5_dk_filmler/THE_STANDING_WIRE --hook 10 --klip 10 --rapor \
+  --film yatay_4_dk_filmler/THE_STANDING_WIRE --hook 10 --klip 10 --rapor \
   --olcum-kesme 24 --olcum-sahne 24 --olcum-filigran VAR --olcum-lufs -35.5
 
 TOPLAM 8 rapor · 🚨 8 GEÇERSİZ · ⛔ 0 TEKRAR · ⚠️ 0 ŞARTLI · ✅ 0 GO

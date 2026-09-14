@@ -1,10 +1,10 @@
 # 🔍 THE KALEIDA CRASH — QA KAYDI
 
-> **Kaynak dosya:** `yatay_2_4_dk_filmler_uzay/THE_KALEIDA_CRASH/THE_KALEIDA_CRASH_PLANET_FILM.md`
+> **Kaynak dosya:** `yatay_2_dk_filmler/THE_KALEIDA_CRASH/THE_KALEIDA_CRASH_PLANET_FILM.md`
 > **Bu filmde ÜÇ ayrı QA var — projede üç merceğin de uygulandığı ilk film:**
 > · **TEKNİK QA** (aşağıda) — `LESSONS_LEARNED.md` kalite tablosu + Ders 20-22
-> · **SENARYO QA** (31.07.2026) — [aşağıdaki bölüm](#-senaryo-qa--31-temmuz-2026) · ham çıktı: [`../02_HAM_RAPORLAR/THE_KALEIDA_CRASH_SENARYO_HAM.md`](../02_HAM_RAPORLAR/THE_KALEIDA_CRASH_SENARYO_HAM.md)
-> · **MANTIK QA** (31.07.2026) — **4.0/10** · ham çıktı: [`../02_HAM_RAPORLAR/THE_KALEIDA_CRASH_MANTIK_HAM.md`](../02_HAM_RAPORLAR/THE_KALEIDA_CRASH_MANTIK_HAM.md)
+> · **SENARYO QA** (31.07.2026) — [aşağıdaki bölüm](#-senaryo-qa--31-temmuz-2026) · ham çıktı: [`../02_HAM_RAPORLAR/THE_KALEIDA_CRASH/THE_KALEIDA_CRASH_SENARYO_HAM.md`](../02_HAM_RAPORLAR/THE_KALEIDA_CRASH/THE_KALEIDA_CRASH_SENARYO_HAM.md)
+> · **MANTIK QA** (31.07.2026) — **4.0/10** · ham çıktı: [`../02_HAM_RAPORLAR/THE_KALEIDA_CRASH/THE_KALEIDA_CRASH_MANTIK_HAM.md`](../02_HAM_RAPORLAR/THE_KALEIDA_CRASH/THE_KALEIDA_CRASH_MANTIK_HAM.md)
 >
 > ⚠️ **Teknik QA'nın orijinal raporu dosya olarak mevcut değil.**
 
@@ -85,7 +85,7 @@ Zaman damgasına göre klon, planın **S7 (enkaz alanı)** sahnesinde.
 # 📖 SENARYO QA — 31 Temmuz 2026
 
 > **Prompt:** `../../QA_PROMPTLARI/SENARYO_QA_CRITIQUE_PROMPT.md`
-> **Ham çıktı + sahne eşleme tablosu:** [`../02_HAM_RAPORLAR/THE_KALEIDA_CRASH_SENARYO_HAM.md`](../02_HAM_RAPORLAR/THE_KALEIDA_CRASH_SENARYO_HAM.md)
+> **Ham çıktı + sahne eşleme tablosu:** [`../02_HAM_RAPORLAR/THE_KALEIDA_CRASH/THE_KALEIDA_CRASH_SENARYO_HAM.md`](../02_HAM_RAPORLAR/THE_KALEIDA_CRASH/THE_KALEIDA_CRASH_SENARYO_HAM.md)
 
 ```
 SKOR:             5.1/10  ·  VERDİKT: SHOOT WITH TRIMS

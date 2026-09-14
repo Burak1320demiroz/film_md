@@ -83,4 +83,4 @@ EN DÜŞÜK:            Wrong Shadow Hikaye/Tutundurma 3 — kök neden novum
 
 > 📌 Belge cevapları ve hüküm gerekçeleri film kayıtlarında:
 > `01_FILM_RAPORLARI/THE_WRONG_SHADOW.md` · First Morning'in film kaydı
-> henüz yazılmadı (ham raporu `02_HAM_RAPORLAR/THE_FIRST_MORNING_SHORTS_HAM.md`).
+> henüz yazılmadı (ham raporu `02_HAM_RAPORLAR/THE_FIRST_MORNING/THE_FIRST_MORNING_SHORTS_HAM.md`).

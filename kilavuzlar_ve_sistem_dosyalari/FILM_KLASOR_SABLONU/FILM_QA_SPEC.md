@@ -6,21 +6,22 @@
 > ⛔ **RUBRİKLE BİRLİKTE YAPIŞTIRILIR [Ders 129].** Yapıştırılmadıysa koşu ön
 > koşu değil **YAPILMAMIŞ koşudur**: ham rapor arşive düşer, T tablosuna satır
 > yazılmaz, kesme listesi ve REMOVE reçetesi uygulanmaz.
-> Paketi betik üretir: `bash .claude/skills/qa-isle/scripts/rubrik_paketle.sh <film klasörü> <master>`
+> ⛔ 11.09.2026: filme özel PAKET KALDIRILDI (`QA_PROMPTLARI/FILME_OZEL/` ve
+> `rubrik_paketle.sh` silindi). Operatör `QA_PROMPTLARI/_KAYNAK/` rubriğini açar
+> ve BU dosyayı rubriğin BAŞINA yapıştırır. Mod D'yi taşıyan tek şey budur.
 
-> ⛔ **Dosya adı `*_QA_SPEC.md` KALIR.** `sayac.sh`, `rubrik_paketle.sh` ve
-> `rapor_kontrol.py` üçü de bu deseni arar; ad değişirse üçü birden körleşir.
+> 🧩 **⑬ UYUM MERCEĞİ İÇİN:** bu SPEC tek başına yetmez — o mercek ayrıca
+> `<FILM>_URETIM_DEFTERI.md`'yi ve `sahne_kapisi.sh` çıktısını ister. SPEC onun
+> YANLIŞ-POZİTİF DUVARI'dır: burada İLAN EDİLEN tasarım kararı (0 replik · sabit
+> lockoff · tasarımlı sessizlik · metinsiz sayaç) ihlal olarak yazılamaz.
 
-> ⛔ **DİKEY FİLMSE `## 🎬 SAHNE SPESİFİKASYONU` BAŞLIĞI ZORUNLUDUR**
-> (08.09.2026'da ölçüldü). `rubrik_paketle.sh` filmin ailesini TEK bir satırla
-> tespit ediyor:
-> `AILE="yatay"; grep -qE "^## .*SAHNE SPESİFİKASYONU" "$SPEC" && AILE="dikey"`
-> Başlık yoksa dikey film **YATAY sanılır** ve paket her merceğe YANLIŞ bloğu
-> verir (① KARE'ye A+B+UYARI yerine A, ④ HİKAYE'ye B yerine A+UYARI…).
-> ⚠️ Arıza SESSİZDİR: betik hata vermez, `aile: yatay` yazıp geçer — koşu
-> sonunda kimse yanlış belgeyle bakıldığını fark etmez.
-> Kontrol: betiğin son satırında `aile: dikey` yazdığını GÖZLE doğrula.
-> (Depodaki beş dikey filmin beşi de başlığı taşıyor; risk YENİ filmdedir.)
+> ⛔ **Dosya adı `*_QA_SPEC.md` KALIR.** `sayac.sh` ve `rapor_kontrol.py` bu
+> deseni arar; ad değişirse ikisi birden körleşir.
+
+> ⚠️ **DİKEY FİLMDE `## 🎬 SAHNE SPESİFİKASYONU` BAŞLIĞI — artık MAKİNE KAPISI
+> DEĞİL.** Bu başlığı yalnız `rubrik_paketle.sh` okuyordu (aile: yatay/dikey) ve
+> o betik 11.09.2026'da silindi. Başlık yazım geleneği olarak KALABİLİR; hiçbir
+> betik ona bakmaz, yokluğu artık sessiz bir arıza üretmez.
 
 ---
 
@@ -33,7 +34,15 @@
 ④ 📖 HİKAYE      → A BLOĞU                          MOD D
 ⑤ 🖼️ ARKA PLAN  → C BLOĞU'nun YALNIZ üç kilidi [D133]
 ⑥ ⚖️ FİZİK      → C BLOĞU'nun sayısal kilitleri    MOD D
+⑦ 🎯 AKSİYON · ⑧ 💪 EFOR → A + C BLOĞU (çıkarım)   MOD D
+⑨-⑫ plan sadakati → A + C + E BLOĞU                MOD D (mod V GEÇERSİZ)
+⑬ 🧩 UYUM        → SPEC + sahne promptları + üretim defteri + sahne_kapisi (mod V YOK)
+⑭ 🧍 HAREKET     → A (sahne haritası · çapa jestleri) + C (el/ayak/baş kilitleri)  MOD D
+⑮ 🧭 YÖN         → C BLOĞU ekran yönü kilitleri (hedef dilimi · hareket yönü · eksen) + A  MOD D
 ② ③ ⑤'in FLAGS soruları koşudan SONRA C BLOĞU'ndan cevaplanır.
+⭐ 14.09.2026: ⑭/⑮ için C bloğuna yazılacak satırlar — `HAREKET KİLİDİ:` (eller/ayaklar/baş ne
+   yapar, "tek jest" kuralı) ve `EKRAN YÖNÜ:` (hedef hangi dilimde · figür hangi yöne · eksen
+   çizgisi — screen-left/right, pusula yok). Yoksa iki mercek çıkarımla koşar ve bunu yazar.
 ```
 
 ---
@@ -45,6 +54,10 @@ FILM:              <FILM_ADI>
 FORMAT:            ⬜
 RUNTIME:           ⬜ seconds (title card: ⬜ — screen text lock ⬜ s)
 SCENE COUNT:       ⬜
+PART GRID:         — (yalnız 6/8 dk hattı [§2.6/§2.7]: B1 = S00-S17 · 18 clips · 0-180 s ·
+                   B2 = S18-S35 · 18 clips · 180-360 s — QA her yarıya AYRI koşar; rubriğe
+                   SPEC'le birlikte "THIS FILE IS PART n OF 2 — …" beyanı yapıştırılır;
+                   BOUNDARY PAIR S17↔S18 elle kareyle kapanır. Diğer formatlarda "—" kalır)
 THEME:             ⬜
 THEME SCENES:      ⬜ S· S· S     ⛔ en az üç (yazılmayan tema dekoratif)
 INTENDED EMOTION:  ⬜
@@ -108,7 +121,10 @@ ATMOSFER      ⬜
 EKRAN YÖNÜ    ⬜ hedef hep ⬜ · ilerleme ⬜ — kaç sahnenin kaçında sabit
 SAYAÇ         ⬜ monotonik mi, hangi sahnede hangi değer
 EŞ KADRAJ     ⬜ S⬜↔S⬜
+DÜNYA ÇAPASI  ⬜ 3/3 — gök · ufuk · yer imi (World Bible'daki üç cümle BİREBİR; dış-mekân promptlarında sıfır sapma) [D209]
 YIPRANMA      ⬜ sabit bölge sayısı [D42]
+KİMLİK DİZİSİ ⬜ kask K/A sahne başına (sahne sayısı kadar harf) · amblem SOL/SAĞ omuz · giysi rengi ·
+              kir bölgesi + başlangıç sahnesi · hasar başlangıç sahnesi (geri dönmez) [D208]
 IŞIK TAKVİMİ  ⬜ monotonik mi
 SES REGISTER  ⬜ HUMAN ⬜ · MACHINE ⬜
 ```

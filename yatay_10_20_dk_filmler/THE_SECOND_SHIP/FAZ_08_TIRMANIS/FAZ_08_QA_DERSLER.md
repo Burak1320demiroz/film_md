@@ -2,7 +2,7 @@
 
 > Koşu: 12.08.2026 · Girdi: **1 birleşik reel (~100 s) · MODE R —
 > KARAR 5 ⑨'a RAĞMEN** · Rubrik: `FAZ_08_QA_PROMPT.md` · Ham çıktı:
-> `../../../kilavuzlar_ve_sistem_dosyalari/FILM_QA_RAPORLARI/02_HAM_RAPORLAR/THE_SECOND_SHIP_FAZ08_HAM.md`
+> `../../../kilavuzlar_ve_sistem_dosyalari/FILM_QA_RAPORLARI/02_HAM_RAPORLAR/THE_SECOND_SHIP/THE_SECOND_SHIP_FAZ08_HAM.md`
 >
 > **SKOR YOK — ve bu kez bu bir BAŞARIDIR.** MAPPING COLLAPSE kapısı
 > [DERS 92, F7 koşusundan sonra yazıldı] ilk sahasında çalıştı: rapor

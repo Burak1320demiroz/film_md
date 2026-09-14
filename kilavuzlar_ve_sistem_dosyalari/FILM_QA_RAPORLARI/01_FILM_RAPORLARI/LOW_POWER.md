@@ -1,9 +1,9 @@
 # 🔍 LOW POWER — QA KAYDI
 
-> **Kaynak dosya:** `yatay_3_5_dk_filmler/LOW_POWER/`
+> **Kaynak dosya:** `yatay_4_dk_filmler/LOW_POWER/`
 > **Bu filmde İKİ ayrı QA var:**
 > · **TEKNİK QA** (aşağıda) — `LESSONS_LEARNED.md` kalite tablosu + Ders 39-42
-> · **SENARYO QA** (31.07.2026) — [aşağıdaki bölüm](#-senaryo-qa--31-temmuz-2026) · ham çıktı: [`../02_HAM_RAPORLAR/LOW_POWER_SENARYO_HAM.md`](../02_HAM_RAPORLAR/LOW_POWER_SENARYO_HAM.md)
+> · **SENARYO QA** (31.07.2026) — [aşağıdaki bölüm](#-senaryo-qa--31-temmuz-2026) · ham çıktı: [`../02_HAM_RAPORLAR/LOW_POWER/LOW_POWER_SENARYO_HAM.md`](../02_HAM_RAPORLAR/LOW_POWER/LOW_POWER_SENARYO_HAM.md)
 >
 > ⚠️ **Teknik QA'nın orijinal raporu dosya olarak mevcut değil** — timestamp'li
 > ham bulgular derslerde korunmuş.
@@ -105,7 +105,7 @@ Ayrıca 3-5 dk formatının tek veri noktası ve tek sahneye dayanıyor.
 # 📖 SENARYO QA — 31 Temmuz 2026
 
 > **Prompt:** `../../QA_PROMPTLARI/SENARYO_QA_CRITIQUE_PROMPT.md`
-> **Ham çıktı:** [`../02_HAM_RAPORLAR/LOW_POWER_SENARYO_HAM.md`](../02_HAM_RAPORLAR/LOW_POWER_SENARYO_HAM.md)
+> **Ham çıktı:** [`../02_HAM_RAPORLAR/LOW_POWER/LOW_POWER_SENARYO_HAM.md`](../02_HAM_RAPORLAR/LOW_POWER/LOW_POWER_SENARYO_HAM.md)
 > **Projede saklanan İLK senaryo QA çıktısı.**
 
 ```
@@ -168,3 +168,70 @@ ve 249 saniye. `LOW_POWER_PLAN.md` ile karşılaştırma:
 Doğru künye: `25 sahne · 249s · 5 konuşmalı sahne · 20 sessiz · viral S5/S14/S19/S23 ·
 seçim S20 · tema "devretme"`. Bu rapor bir hikaye ölçümü değil, **SPEC
 doğrulamasının neden zorunlu olduğunun üçüncü kanıtı** olarak duruyor.
+
+---
+---
+
+# 🎯 12 MERCEK QA RAPORLARI (CANLI SİSTEM · 10.09.2026)
+
+> **Kapsam:** LOW_POWER 4:15 derleme kurgusu ve ses parçası.
+> **Ham Raporlar:** [`LOW_POWER_KARE_HAM.md`](../02_HAM_RAPORLAR/LOW_POWER/LOW_POWER_KARE_HAM.md), [`LOW_POWER_DEVAMLILIK_HAM.md`](../02_HAM_RAPORLAR/LOW_POWER/LOW_POWER_DEVAMLILIK_HAM.md), [`LOW_POWER_SES_HAM.md`](../02_HAM_RAPORLAR/LOW_POWER/LOW_POWER_SES_HAM.md), [`LOW_POWER_HIKAYE_HAM.md`](../02_HAM_RAPORLAR/LOW_POWER/LOW_POWER_HIKAYE_HAM.md), [`LOW_POWER_ARKA_PLAN_HAM.md`](../02_HAM_RAPORLAR/LOW_POWER/LOW_POWER_ARKA_PLAN_HAM.md), [`LOW_POWER_FIZIK_HAM.md`](../02_HAM_RAPORLAR/LOW_POWER/LOW_POWER_FIZIK_HAM.md), [`LOW_POWER_AKSIYON_HAM.md`](../02_HAM_RAPORLAR/LOW_POWER/LOW_POWER_AKSIYON_HAM.md), [`LOW_POWER_EFOR_HAM.md`](../02_HAM_RAPORLAR/LOW_POWER/LOW_POWER_EFOR_HAM.md), [`LOW_POWER_KADRAJ_HAM.md`](../02_HAM_RAPORLAR/LOW_POWER/LOW_POWER_KADRAJ_HAM.md), [`LOW_POWER_OYUNCULUK_HAM.md`](../02_HAM_RAPORLAR/LOW_POWER/LOW_POWER_OYUNCULUK_HAM.md), [`LOW_POWER_ISIK_HAM.md`](../02_HAM_RAPORLAR/LOW_POWER/LOW_POWER_ISIK_HAM.md), [`LOW_POWER_HOOK_HAM.md`](../02_HAM_RAPORLAR/LOW_POWER/LOW_POWER_HOOK_HAM.md)
+
+### 📊 MERCEK SKOR ÖZETİ
+
+| Mercek | İsim | Skor | Verdivet / Durum | Ham Rapor |
+|:---:|---|:---:|---|:---:|
+| **Lens 1** | Kare QA (Mod V) | **5.4 / 10** | 3 Blocker (Güneş paneli doğma, Sera klip tekrarı, Parmak erimesi) | [`HAM`](../02_HAM_RAPORLAR/LOW_POWER/LOW_POWER_KARE_HAM.md) |
+| **Lens 2** | Devamlılık QA | **5.1 / 10** | IDENTITY BREAK (Oyuncu yüz değişimi, Kask zıplaması, Yön/yer değişimi) | [`HAM`](../02_HAM_RAPORLAR/LOW_POWER/LOW_POWER_DEVAMLILIK_HAM.md) |
+| **Lens 3** | Ses & Akustik | **4.3 / 10** | REJECT (Line 7 kapalı ağız Blocker, 01:12 Dijital sessizlik çukuru Blocker) | [`HAM`](../02_HAM_RAPORLAR/LOW_POWER/LOW_POWER_SES_HAM.md) |
+| **Lens 4** | Anlatı & Hikaye | **7.8 / 10** | PASS (Güçlü tema & fedakarlık seçimi; 19s geç kanca & sera kapı tekrarı) | [`HAM`](../02_HAM_RAPORLAR/LOW_POWER/LOW_POWER_HIKAYE_HAM.md) |
+| **Lens 5** | Arka Plan | **5.0 / 10** | FIELD DRIFT (Kule mimari değişimi, Kar->Çöl zemin zıplaması, Sis zıtlığı) | [`HAM`](../02_HAM_RAPORLAR/LOW_POWER/LOW_POWER_ARKA_PLAN_HAM.md) |
+| **Lens 6** | Fizik & Dynamics | **4.6 / 10** | TWO GRAVITIES (Kabin içi 8.87 m/s² vs 4.13 m/s² yerçekimi, 2.5s süzülme) | [`HAM`](../02_HAM_RAPORLAR/LOW_POWER/LOW_POWER_FIZIK_HAM.md) |
+| **Lens 7** | Aksiyon Okunurluğu | **8.6 / 10** | ACTION READS (14/15 vuruş açık okunur; B9 şalter atlama belirsizliği) | [`HAM`](../02_HAM_RAPORLAR/LOW_POWER/LOW_POWER_AKSIYON_HAM.md) |
+| **Lens 8** | Efor & Bedel | **4.3 / 10** | WEIGHTLESS WORK (Merdiven tırmanış/anten ayar eforsuz; yorgunluk sıfırlanması) | [`HAM`](../02_HAM_RAPORLAR/LOW_POWER/LOW_POWER_EFOR_HAM.md) |
+| **Lens 9** | Kadraj / Plan Sadakati | **5.3 / 10** | RHYME BROKEN (10° dutch tilt ile rhyme pair çöküşü; S5'te plansız dolly creep) | [`HAM`](../02_HAM_RAPORLAR/LOW_POWER/LOW_POWER_KADRAJ_HAM.md) |
+| **Lens 10** | Oyunculuk & Mimik | **5.8 / 10** | MOSTLY LEGIBLE (Duygusal yorgunluğun S21'de sıfırlanması; S19 amacsız el kaldırma) | [`HAM`](../02_HAM_RAPORLAR/LOW_POWER/LOW_POWER_OYUNCULUK_HAM.md) |
+| **Lens 11** | Işık & Atmosfer | **4.9 / 10** | KEY WALKS (S22-S23 enerji ışını sönmesi; saat 9->2->10 ışık zıplaması) | [`HAM`](../02_HAM_RAPORLAR/LOW_POWER/LOW_POWER_ISIK_HAM.md) |
+| **Lens 12** | Hook & Paylaşım | **5.5 / 10** | HOOK MISSING (İlk 10s kanca eksikliği; finalde döngüsüz karanlık çıkış) | [`HAM`](../02_HAM_RAPORLAR/LOW_POWER/LOW_POWER_HOOK_HAM.md) |
+
+---
+
+### 🧪 BU RAPORLARDAN ÇIKARILAN ADAY DERSLER (`GOZLEM_DEFTERI.md`)
+
+* **[[ADAY-58]]:** Alt Kadraj Kenarında Kendiliğinden Beliren Görsel Nesne Ve Eleman Spawning
+* **[[ADAY-59]]:** Derleme Kurgusunda Yanlış Uygulanan Klip Tekrarı Ve Tekraren Kurgu Hatası
+* **[[ADAY-60]]:** Ellerin Göğüste Birleşmesi Anında Parmakların Birbirine Erimesi Ve Şekil Bozulması
+* **[[ADAY-61]]:** Sahneler Arası Aktör Ve Yüz Amblemi Değişimi Ve İz Hopping
+* **[[ADAY-62]]:** Ardışık Sahnelerde Kask Takma/Çıkarma Hızlı Flicker'ı Ve Kir Resetlenmesi
+* **[[ADAY-63]]:** Ekran Sayaç Ve Metrik Değerlerinin Gidişatının Tersine Düşmesi
+* **[[ADAY-64]]:** Dialogue Repliğinin Hareketsiz Ve Kapalı Dudak Üzerine Oynaması
+* **[[ADAY-65]]:** Sahne Kesmelerinde Mekân Sesinin Aniden Kesilmesiyle Dijital Sessizlik Boşluğu
+* **[[ADAY-66]]:** Ekrandaki Fiziksel Zorlanma Ve Sarsıntının Sakin Ses Performansıyla Çakışması
+* **[[ADAY-67]]:** Tekrarlayan Sera Giriş Kutusu Ve Gereksiz Geçiş Sahneleriyle Tempo Aksaması
+* **[[ADAY-68]]:** Açılıştaki Durağan Peyzaj Kadrajıyla İzleyici İlk 19 Saniye Terk Riski
+* **[[ADAY-69]]:** Verici Ve Ante Kulesi Mimarisinin Sahneler Arası Değişimi Ve Form Deformasyonu
+* **[[ADAY-70]]:** Karlı Zirveden Kuru Çöl Vadisine Ani Mekân Ve Zemin Dönüşümü
+* **[[ADAY-71]]:** Derinlik Ve Atmosferik Perspektifin Tersine Dönmesi Ve Zıtlık Uyumsuzluğu
+* **[[ADAY-72]]:** Kabin İçi Serbest Düşüşlerde Çifte Yerçekimi İvmesi Tutarsızlığı
+* **[[ADAY-73]]:** Serbest Enkaz Ve Malzemenin Yerçekimsiz Çözülümlü Düz Süzülmesi
+* **[[ADAY-74]]:** Pnömatik Kapı Kapanma Hızının Ardışık Kesmelerde Yarıya Düşmesi
+* **[[ADAY-75]]:** Çarpmada Sürücü Ve Beden Hareketinin İnerşiyel Eylemsizlik Uyumsuzluğu
+* **[[ADAY-76]]:** Konsol Şalterine Dokunma Eyleminde Mekanik Değişim Belirsizliği Ve İzolasyon Eksikliği
+* **[[ADAY-77]]:** Temizlenen Güneş Paneli Modülünde Görsel Ve Elektriksel Geri Bildirim Eksikliği
+* **[[ADAY-78]]:** Merdiven Tırmanmada Basamak Ve Tutunma Eforunun Görselde İşlenmemesi
+* **[[ADAY-79]]:** Mekanik Ayarlama Eyleminde Gövde Ve Ağırlık Kaldıradının Kullanılmaması
+* **[[ADAY-80]]:** Sahneler Arası Yorgunluk Düzeyinin Geçişsiz Şekilde Aniden Sıfırlanması
+* **[[ADAY-81]]:** Açılış Ve Kapanış Kadrajları Arasında Kamera Açısı Ve Ufkun Bozulması
+* **[[ADAY-82]]:** Sabit Kadraj Klibi İçinde Plansız Yavaş Yakınlaşma Kayması
+* **[[ADAY-83]]:** Aynı Kamera Kurulumuna Dönüşte Kamera Yüksekliği Ve Çapa Yeri Değişimi
+* **[[ADAY-84]]:** Duygusal Dönüş Sahneleri Sonrası Beden Yorgunluğunun Aniden Resetlenmesi
+* **[[ADAY-85]]:** Ekipman Hazırlık Sahnelerinde Nedensiz Hand Lift Ve Generek Jestler
+* **[[ADAY-86]]:** Gökyüzü Elektrik Cihazı Ve Enerji Işını Pratik Kaynağının Kesmede Aniden Sönmesi
+* **[[ADAY-87]]:** Aynı Dış Mekânda Güneş Işığı Açısının Radikal Şekilde Zıplaması
+* **[[ADAY-88]]:** Ardışık Sahnelerde Aşırı Renk Sıcaklığı Ve Pozlama Dalgalanması
+* **[[ADAY-89]]:** Açılış Statik Jenerik Ve Yavaş Açılış Nedeniyle İlk 10 Saniye Kanca Eksikliği
+* **[[ADAY-90]]:** Finalde Statik Karanlık Ve Döngü Mekanizması Eksikliği
+
+
+
+

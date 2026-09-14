@@ -8,7 +8,7 @@ Yazım 120/120 GO · üretim 01.09.2026'da FAZ 1 ile başladı.
 # 📋 KOŞU 1 — FAZ 1 MAKARASI · 01.09.2026
 
 ```
-Ham rapor  02_HAM_RAPORLAR/YERCEKIMI_FAZ01_HAM.md
+Ham rapor  02_HAM_RAPORLAR/YERCEKIMI/YERCEKIMI_FAZ01_HAM.md
 Rubrik     FAZ_01_GOREV/FAZ_01_QA_PROMPT.md (⭐ sıradan bağımsız sürüm)
 Mod        ⚠️ V — ÖN KOŞU. Film klasöründe *_QA_SPEC.md YOK [D129].
            ⛔ Skor satırı T tablolarına GİRMEZ. Faz koşusu zaten girmezdi.
@@ -243,8 +243,8 @@ C: EVET, BİREBİR. 31.08 RC revizyonu tam olarak budur. Bu cevap
 Malzeme   FAZ 2 makarası · 12 parça · 96 s (iki rapor da aynı sayıyı verdi)
 Rubrik    FAZ_02_DALGA/FAZ_02_QA_PROMPT.md — A (kör) + B (katalog)
 Motor     Gemini · iki AYRI sohbet, mühür korundu
-Ham       02_HAM_RAPORLAR/YERCEKIMI_FAZ02_KOR_HAM.md
-          02_HAM_RAPORLAR/YERCEKIMI_FAZ02_KATALOG_HAM.md
+Ham       02_HAM_RAPORLAR/YERCEKIMI/YERCEKIMI_FAZ02_KOR_HAM.md
+          02_HAM_RAPORLAR/YERCEKIMI/YERCEKIMI_FAZ02_KATALOG_HAM.md
 Mod       ⚠️ V — *_QA_SPEC.md YOK [D129] · master ELDE YOK [⑪]
 ⛔ Faz koşusudur: T1-T4 skor tablolarına GİRMEZ.
 ```
@@ -1165,7 +1165,7 @@ F7'de tırnaklı replik taşıyan DÖRT sahne var ve ÜÇÜ halüsinasyon:
 # 📋 KOŞU 7 — FAZ 7 MAKARASI · 06.09.2026 · ⚠️ TEK GEÇİŞ (yalnız KÖR)
 
 ```
-Ham    ../02_HAM_RAPORLAR/YERCEKIMI_FAZ07_KOR_HAM.md
+Ham    ../02_HAM_RAPORLAR/YERCEKIMI/YERCEKIMI_FAZ07_KOR_HAM.md
 Ders   ../../../yatay_10_20_dk_filmler/YERCEKIMI/FAZ_07_SES/FAZ_07_QA_DERSLER.md
 Mod    ⚠️ V — SPEC yok [D129] · master yok
 ⛔ KATALOG GEÇİŞİ KOŞULMADI → D164: "GERÇEK ama ÖLÇÜSÜZ".
@@ -1235,7 +1235,7 @@ S81 yanlış el 🟠
 # 📋 KOŞU 8 — FAZ 8 MAKARASI · 06.09.2026 · ⛔ YANLIŞ ALETLE
 
 ```
-Ham    ../02_HAM_RAPORLAR/YERCEKIMI_FAZ08_8MERCEK_HAM.md
+Ham    ../02_HAM_RAPORLAR/YERCEKIMI/YERCEKIMI_FAZ08_8MERCEK_HAM.md
 Ders   ../../../yatay_10_20_dk_filmler/YERCEKIMI/FAZ_08_AYRILIS/FAZ_08_QA_DERSLER.md
 Mod    ⚠️ V · ÇIPLAK RUBRİK [D129] → T tablolarına GİREMEZ
 ⛔ FAZ_08_QA_PROMPT.md koşulmadı; genel sekiz mercek koşuldu.
@@ -1309,7 +1309,7 @@ Ek: F9'a TAŞIYICI SAHNE KAPISI (S102 sonucu yazılmadan devam yok).
 Makara  "faz 9.mp4" · 12 segment · 120 s · 11 kesme (rapor beyanı)
 Mercek  ① ② ③ ④ ⑤ ⑥ ⑦ ⑧ ⑨ ⑩ ⑪ ⑫ — on ikisi de mod V
         ⭐ ⑨ KADRAJ · ⑩ OYUNCULUK · ⑪ IŞIK · ⑫ HOOK depoda İLK koşuları [D184]
-Ham     ../02_HAM_RAPORLAR/YERCEKIMI_FAZ09_12MERCEK_HAM.md
+Ham     ../02_HAM_RAPORLAR/YERCEKIMI/YERCEKIMI_FAZ09_12MERCEK_HAM.md
 Faz     ../../../yatay_10_20_dk_filmler/YERCEKIMI/FAZ_09_DUSUS/FAZ_09_QA_DERSLER.md
         ⭐ BULGULARIN TAMAMI ORADA — bu bölüm yalnız kapı defteridir
 Skor    ⛔ KAYDA GEÇMİYOR (mod V · çıplak rubrik · faz ölçeği)
@@ -1421,7 +1421,7 @@ Sisteme: D185 · D186 · D187 · D129 TEKRAR 15 · D166 TEKRAR 2
 Malzeme  "faz 10.mp4" · raporların ölçtüğü süre 109–111 s
 Faz      S109–S120 · 18:00–20:00 · Perde III · FİLMİN SON FAZI
 Mod      ⚠️ V ×12 · SPEC yok · FAZ_10_QA_PROMPT.md YOK
-Ham      ../02_HAM_RAPORLAR/YERCEKIMI_FAZ10_12MERCEK_HAM.md
+Ham      ../02_HAM_RAPORLAR/YERCEKIMI/YERCEKIMI_FAZ10_12MERCEK_HAM.md
 Dersler  ../../../yatay_10_20_dk_filmler/YERCEKIMI/FAZ_10_ZEMIN/FAZ_10_QA_DERSLER.md
 Betik    ../../RAPOR_KONTROL/RAPORLAR/FAZ_10_ZEMIN_20260907_RAPOR_KONTROL.md
 KARAR    🚨 PARTİ GEÇERSİZ [D188]

@@ -3,7 +3,7 @@
 Dikey YouTube Shorts / Reels Production Document — **FRAGMAN (teaser)**
 Format: **9:16 (DİKEY)** | Sahne: 6 (Hook + 5) | Süre: Her sahne 8 saniye, toplam 48 saniye
 Prompt yapısı: Her sahne için **1 görsel promptu + 1 video promptu** (tek versiyon, T2V)
-Kaynak film: ✅ **`yatay_3_5_dk_filmler/THE_COLD_BURN/`** — 30 sahne · 4:59 · beş mercekle ölçüldü
+Kaynak film: ✅ **`yatay_4_dk_filmler/THE_COLD_BURN/`** — 30 sahne · 4:59 · beş mercekle ölçüldü
 Kılavuz: `kilavuzlar_ve_sistem_dosyalari/FRAGMAN_KILAVUZU.md`
 _"Her sekiz saniyede bir kapı kapanıyor. Altıncısında geriye tek bir şey kalıyor."_
 
@@ -1131,7 +1131,7 @@ or on any panel at any moment.
 
 ```
 FILM: THE COLD BURN — FRAGMAN (dikey shorts · "Kapanan Kapılar")
-KAYNAK FİLM: yatay_3_5_dk_filmler/THE_COLD_BURN/ (30 sahne · 299 s · 16:9)
+KAYNAK FİLM: yatay_4_dk_filmler/THE_COLD_BURN/ (30 sahne · 299 s · 16:9)
 FORMAT: 9:16 · 6 sahne × 8 s = 48 s · sahne başına 1 kesintisiz çekim, 0 kesme
 TİP: FRAGMAN — filmin ilk %70'inden altı vuruş; doruk (S26) ve final (S29)
      bilinçli olarak DIŞARIDA
@@ -1338,7 +1338,7 @@ V5 üçüncü sıradadır çünkü kapak oradan çıkar.
 ⚠️ SAYIMDAKİ YERİ: Bu dosya film klasörünün İÇİNDEDİR (Second Ship
 FRAGMAN_DIKEY_2.md ve Black Cradle FRAGMAN.md emsali), bu yüzden film
 sayımına GİRMEZ ve 00_INDEX'e yeni satır AÇILMAZ — sayac.sh
-yatay_3_5_dk_filmler'i klasör başına sayar. 17.08.2026'da bu filmin
+yatay_4_dk_filmler'i klasör başına sayar. 17.08.2026'da bu filmin
 dikey klasördeki fragmanı silindi; geriye tek fragman olarak bu dosya
 kaldı ve dikey klasörde artık Cold Burn satırı yoktur.
 ```

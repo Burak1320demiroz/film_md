@@ -572,7 +572,7 @@ paket `rubrik_paketle.sh` ile ÜRETİLDİ, QA anında değil yazım anında).
   B1b yok · B2 · B3 · B4 · B5 · B5b yok · B6 · C · D · E)
 □ Promptlar yazıldıktan sonra, TEK KARE ÜRETMEDEN → görev kartı P
   python3 kilavuzlar_ve_sistem_dosyalari/PROMPT_KONTROL/prompt_kontrol.py \
-          yatay_2_4_dk_filmler_uzay/THE_PRESSED_FIELD
+          yatay_2_dk_filmler/THE_PRESSED_FIELD
   ⛔ Çıktıda "📁 FİLM KLASÖRÜ · 2 bölüm dosyası birleşik" satırı YOKSA
     dizi kapıları (kurulum · açı · tema · B5) KOŞMAMIŞTIR.
 ```

@@ -21,7 +21,7 @@ KLİP SÜRESİ:   ⬜ ARAÇTAN ÖLÇÜLECEK [D124] — plan 10,0 s varsayar:
 SAHNE SAYISI:  25            RUNTIME: 249 s = 4:09 = 9 s hook + 24 × 10 s
                ⚠️ DEPODA ÇELİŞKİ VAR ve bu film §2.3'ü izliyor:
                KILAVUZ_REHBERI §2.3 kartı **25 sahne / 4:09** der,
-               `yatay_3_5_dk_filmler/README.md` **24 sahne / 2×12** der.
+               `yatay_4_dk_filmler/README.md` **24 sahne / 2×12** der.
                Kart A §2.3'e işaret ettiği için bu film 13 + 12 yazar.
                ⛔ Çelişki depoda duruyor; düzeltilene kadar her film
                  hangisini izlediğini YAZAR.
@@ -837,7 +837,7 @@ CENTRAL CHOICE:       S19   · bedel S21'de görülür
 
 ```
 python3 kilavuzlar_ve_sistem_dosyalari/PROMPT_KONTROL/prompt_kontrol.py \
-        yatay_3_5_dk_filmler/THE_KEPT_LIGHT
+        yatay_4_dk_filmler/THE_KEPT_LIGHT
 
 SONUÇ:  ✅ GO · 📁 FİLM KLASÖRÜ · 2 bölüm dosyası birleşik · 50 prompt
         ⛔ 0 BLOCK · ⚠️ 2 FIX (ikisi de AŞAĞIDAKİ BİLİNEN YANLIŞ POZİTİF)

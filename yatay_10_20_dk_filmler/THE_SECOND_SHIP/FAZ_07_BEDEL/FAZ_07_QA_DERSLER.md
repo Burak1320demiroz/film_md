@@ -2,7 +2,7 @@
 
 > Koşu: 12.08.2026 · Girdi: **1 birleşik reel (~100 s) · MODE R —
 > KARAR 5 ⑥'ya RAĞMEN** · Rubrik: `FAZ_07_QA_PROMPT.md` · Ham çıktı:
-> `../../../kilavuzlar_ve_sistem_dosyalari/FILM_QA_RAPORLARI/02_HAM_RAPORLAR/THE_SECOND_SHIP_FAZ07_HAM.md`
+> `../../../kilavuzlar_ve_sistem_dosyalari/FILM_QA_RAPORLARI/02_HAM_RAPORLAR/THE_SECOND_SHIP/THE_SECOND_SHIP_FAZ07_HAM.md`
 >
 > **SKOR GEÇERSİZ — taban koşusu DEĞİLDİR.** Rapor on kategoriye de
 > sayı verdi (ortalama 1.9), ama sıra kayması yüzünden segmentlerin

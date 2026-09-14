@@ -49,7 +49,7 @@ Yayın bir üretim adımıdır; kaydı tutulmayan yayın ölçülemez.
 ```
 □ FILM_QA_RAPORLARI/08_YAYIN_PERFORMANS_TABLOSU.md → filme satır aç
 □ Satıra yazılacak KİMLİK alanları (yayından ÖNCE doldurulur):
-     · film adı + format (shorts / 2-4 / 3-5 / 7-20 dk)
+     · film adı + format (shorts / 2-4 / 3-5 / 6 dk / 8 dk / 7-20 dk)
      · yayın tarihi + saat (GG.AA.YYYY SS:DD)
      · platform(lar) ve her birinde hangi başlık/kapak VARYANTI
      · plandaki HOOK TİPİ satırı (HOOK_VE_ILK_SAHNE_KILAVUZU §4)
@@ -132,7 +132,7 @@ Instagram Reels  →  SENDS PER REACH (erişim başına DM gönderimi).
 | **IG ilk 3 sn hold rate** | < %40 | ≥ %60 | İlk saniyeleri kırp (yavaş açılış / boş kadraj) | 1,7 saniyelik karar penceresi kaybedildi |
 | **IG gönderim/erişim** | ≤ beğeninin %10'u | beğeninin 3-5 katı | Bekle: bu filme müdahale etme | Film teknik olarak temiz ama PAYLAŞILACAK bir önerme taşımıyor |
 
-## 2.2 YATAY (16:9 · 2-4 / 3-5 / 7-20 dk) — YouTube uzun form
+## 2.2 YATAY (16:9 · 2-4 / 3-5 / 6 / 8 / 7-20 dk) — YouTube uzun form
 
 | Metrik | 🔴 Tehlike | 🟢 Hedef | Karar | Önce sorgulanan değişken |
 |---|:--:|:--:|---|---|

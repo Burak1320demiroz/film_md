@@ -1,8 +1,8 @@
 # 🌑 THE BLACK CRADLE — FRAGMAN · Film QA Kaydı
 
 > Oluşturma: 17.08.2026 · tek mercek (SHORTS_QA), MOD V (belgesiz) koşuldu.
-> Kaynak dosya: `yatay_3_5_dk_filmler/THE_BLACK_CRADLE/THE_BLACK_CRADLE_FRAGMAN.md`
-> Ham rapor: `02_HAM_RAPORLAR/THE_BLACK_CRADLE_FRAGMAN_SHORTS_HAM.md`
+> Kaynak dosya: `yatay_4_dk_filmler/THE_BLACK_CRADLE/THE_BLACK_CRADLE_FRAGMAN.md`
+> Ham rapor: `02_HAM_RAPORLAR/THE_BLACK_CRADLE/THE_BLACK_CRADLE_FRAGMAN_SHORTS_HAM.md`
 > ⚠️ Bu kaydın ana çıktısı **skor değil, ATIF DENETİMİDİR** — aşağıya bak.
 
 ---

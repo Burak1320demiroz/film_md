@@ -3,7 +3,7 @@
 Dikey YouTube Shorts / Reels Production Document — **FRAGMAN (teaser)**
 Format: **9:16 (DİKEY)** | Sahne: 6 (Hook + 5) | Süre: Her sahne 8 saniye, toplam 48 saniye
 Prompt yapısı: Her sahne için **1 görsel promptu + 1 video promptu** (I2V — kaynak filmin hattı)
-Kaynak film: ✅ **`yatay_3_5_dk_filmler/THE_BORROWED_WEIGHT/`** — 25 sahne · 4:09 · yazıldı, üretim bekliyor
+Kaynak film: ✅ **`yatay_4_dk_filmler/THE_BORROWED_WEIGHT/`** — 25 sahne · 4:09 · yazıldı, üretim bekliyor
 Kılavuz: `kilavuzlar_ve_sistem_dosyalari/FRAGMAN_KILAVUZU.md`
 _"Enkaz tüyden hafif. Adam kurşundan ağır. Ağırlık nereye gidiyor?"_
 

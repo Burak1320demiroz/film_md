@@ -10,7 +10,7 @@ _"Yukarısı karanlık değil. Yukarısı yok."_
 ## 🎯 BU SHORTS'UN TEK İŞİ
 
 Bu dosya bir karadelik filmidir ve depoda **zaten bir karadelik filmi var**
-(`yatay_2_4_dk_filmler_uzay/THE_LAST_CROSSING/THE_LAST_CROSSING_BLACK_HOLE_FILM.md`, teknik
+(`yatay_2_dk_filmler/THE_LAST_CROSSING/THE_LAST_CROSSING_BLACK_HOLE_FILM.md`, teknik
 4/10, Ders 33'ün kaynağı). O filmden ne aldığımızı değil, **neyi bilerek
 almadığımızı** yazmak bu dosyanın ilk işi:
 

@@ -1,8 +1,8 @@
 # 🌹 THE ROSE COAT — FİLM KAYDI
 
 > **Koşu tarihi:** 26.08.2026 · **beş mercek** (① ② ③ ④ ⑤)
-> **Plan:** [`../../../yatay_2_4_dk_filmler_uzay/THE_ROSE_COAT/THE_ROSE_COAT_DUST_PLAIN_FILM.md`](../../../yatay_2_4_dk_filmler_uzay/THE_ROSE_COAT/THE_ROSE_COAT_DUST_PLAIN_FILM.md)
-> **SPEC:** [`../../../yatay_2_4_dk_filmler_uzay/THE_ROSE_COAT/THE_ROSE_COAT_QA_SPEC.md`](../../../yatay_2_4_dk_filmler_uzay/THE_ROSE_COAT/THE_ROSE_COAT_QA_SPEC.md)
+> **Plan:** [`../../../yatay_2_dk_filmler/THE_ROSE_COAT/THE_ROSE_COAT_DUST_PLAIN_FILM.md`](../../../yatay_2_dk_filmler/THE_ROSE_COAT/THE_ROSE_COAT_DUST_PLAIN_FILM.md)
+> **SPEC:** [`../../../yatay_2_dk_filmler/THE_ROSE_COAT/THE_ROSE_COAT_QA_SPEC.md`](../../../yatay_2_dk_filmler/THE_ROSE_COAT/THE_ROSE_COAT_QA_SPEC.md)
 > **Format:** 2-4 dk · yatay · 13 sahne × 10 s = 130 s · 0 kesme · 0 replik
 >
 > ## 🚨 BU KOŞUNUN TEK CÜMLELİK ÖZETİ
@@ -20,11 +20,11 @@
 
 | Mercek | Ham rapor | Mod | Rapor toplamı | Durum |
 |---|---|:--:|:--:|---|
-| 🔧 ① KARE | [`KARE_HAM`](../02_HAM_RAPORLAR/THE_ROSE_COAT_KARE_HAM.md) | V | 5,0 | Ⓥ ⛔ ÖN KOŞU · ⚠️ ŞARTLI |
-| 🔗 ② DEVAMLILIK | [`DEVAMLILIK_HAM`](../02_HAM_RAPORLAR/THE_ROSE_COAT_DEVAMLILIK_HAM.md) | belgesiz (tasarım) | 7,2 | ⚠️ ŞARTLI |
-| 🔊 ③ SES | [`SES_HAM`](../02_HAM_RAPORLAR/THE_ROSE_COAT_SES_HAM.md) | belgesiz (tasarım) | — | `AUDIO ABSENT — RUN NOT STARTED` |
-| 📖 ④ HİKAYE | [`HIKAYE_HAM`](../02_HAM_RAPORLAR/THE_ROSE_COAT_HIKAYE_HAM.md) | V | 2,3 | Ⓥ ⛔ ÖN KOŞU · ⚠️ ŞARTLI |
-| 🖼️ ⑤ ARKA PLAN | [`ARKA_PLAN_HAM`](../02_HAM_RAPORLAR/THE_ROSE_COAT_ARKA_PLAN_HAM.md) | belgesiz (tasarım) | 6,0 | ⚠️ ŞARTLI · matrise girmez |
+| 🔧 ① KARE | [`KARE_HAM`](../02_HAM_RAPORLAR/THE_ROSE_COAT/THE_ROSE_COAT_KARE_HAM.md) | V | 5,0 | Ⓥ ⛔ ÖN KOŞU · ⚠️ ŞARTLI |
+| 🔗 ② DEVAMLILIK | [`DEVAMLILIK_HAM`](../02_HAM_RAPORLAR/THE_ROSE_COAT/THE_ROSE_COAT_DEVAMLILIK_HAM.md) | belgesiz (tasarım) | 7,2 | ⚠️ ŞARTLI |
+| 🔊 ③ SES | [`SES_HAM`](../02_HAM_RAPORLAR/THE_ROSE_COAT/THE_ROSE_COAT_SES_HAM.md) | belgesiz (tasarım) | — | `AUDIO ABSENT — RUN NOT STARTED` |
+| 📖 ④ HİKAYE | [`HIKAYE_HAM`](../02_HAM_RAPORLAR/THE_ROSE_COAT/THE_ROSE_COAT_HIKAYE_HAM.md) | V | 2,3 | Ⓥ ⛔ ÖN KOŞU · ⚠️ ŞARTLI |
+| 🖼️ ⑤ ARKA PLAN | [`ARKA_PLAN_HAM`](../02_HAM_RAPORLAR/THE_ROSE_COAT/THE_ROSE_COAT_ARKA_PLAN_HAM.md) | belgesiz (tasarım) | 6,0 | ⚠️ ŞARTLI · matrise girmez |
 
 ---
 

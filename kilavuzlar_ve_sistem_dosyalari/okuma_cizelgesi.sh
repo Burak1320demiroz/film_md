@@ -16,6 +16,19 @@
 #  çizelge dosya sisteminden ÜRETİLİR. Yeni bir kılavuz eklendiğinde bir
 #  sonraki filmin çizelgesinde kendiliğinden ⬜ olarak belirir.
 #
+#  ⭐ 14.09.2026 · REFORM FAZ 8 (sahip kararı · TODO_AKIS_VE_DERS_REFORMU.md):
+#  "hepsi" çizelgesi ölçüldü ve sahteydi — THE_LOCKED_PULSE 126 dosya / ~42.000
+#  satır, 126/126 satırdan "kilit" çıkmış, "—" SIFIR; film 747 KB, üretim 0 kare.
+#  Çizelge küçüldü, sahtelik kapısı geldi (prompt_kontrol.py ㉘):
+#     TUR 1  DERSLER/00_YASAYAN_DERSLER.md tablosu — ders başına bir satır (≤ 40),
+#            ETİKET görünür; etiket filme uymuyorsa "—" yazılır (meşru)
+#     TUR 2/3 FILM_KLASOR_SABLONU/00_ANALIZ/OKUMA_CEKIRDEGI.txt manifesti —
+#            [dikey]/[faz] satırları klasör yolundan süzülür; [kask]/[replik]/
+#            [iki-insan]/[referans] görünür, uymayanı "—"
+#     TUR 4/5 aynen. Manifest dışı kılavuzlar HAVUZ (§1 tablosu) — "havuzdan
+#            açıldı" satırı olarak elle eklenebilir (tek istisna).
+#  Eski klasörlerin çizelgesine dokunulmaz (işaretli çizelge ezilmez).
+#
 #  KULLANIM:
 #      bash kilavuzlar_ve_sistem_dosyalari/okuma_cizelgesi.sh <film klasörü> [--force]
 #  ÇIKTI:
@@ -65,17 +78,64 @@ printf '> bırakılmaz — boş hücre "okudum" ile "atladım" arasını ayırt 
 printf '>\n'
 printf '> ⭐ Son sütunda yazılan her kilit `01_QA_DERS_HASADI.md` tablosuna taşınır.\n'
 printf '> ⛔ ⬜ kalan satır varken `02_KONSEPT_VE_RISK.md` yazılmaz.\n'
+printf '> ⛔ 14.09.2026: her satırdan kilit ÇIKMAZ. "—" yazmak meşrudur; sıfır "—"\n'
+printf '> çizelgeyi sahte yapar (`prompt_kontrol.py` ㉘ · LOCKED_PULSE 126/126 ölçümü).\n'
 } > "$OUT"
 
-baslik "TUR 1 · DERSLER — hepsi (film dersleri 01-07 · alet dersleri 08-09 · gözlem)"
-for f in "$K"/DERSLER/*.md; do satir "$f" "${f#$K/}"; done
+# ── TUR 1 · YAŞAYAN DERSLER (≤ 40) ─────────────────────────────────────
+YAS="$K/DERSLER/00_YASAYAN_DERSLER.md"
+[ -f "$YAS" ] || { echo "⛔ yaşayan liste yok: $YAS"; exit 2; }
+{
+printf '\n### TUR 1 · YAŞAYAN DERSLER — `DERSLER/00_YASAYAN_DERSLER.md` (14.09.2026)\n\n'
+printf '> Film dersi havuzu bu listedir; ders metni ETİKET filme uyuyorsa açılır. ETİKET\n'
+printf '> uymuyorsa (`kask` etiketli ders kasksız filmde) satır **"—"** ile geçilir — bu\n'
+printf '> "okumadım" değil "bu filme düşmüyor" demektir ve ㉘ kapısı tam bunu bekler.\n\n'
+printf '| ⬜/✅ | ders | ETİKET | bu filme düşen kilit |\n|:--:|---|---|---|\n'
+printf '| ⬜ | `DERSLER/00_YASAYAN_DERSLER.md` — tablo + giriş/çıkış defteri | hepsi |  |\n'
+printf '| ⬜ | `DERSLER/00_DERS_YAZIM_KONTRATI.md` §2b — FREKANS · DEĞİŞEN SATIR ne demek | hepsi |  |\n'
+} >> "$OUT"
+TOPLAM_D=$((TOPLAM_D + 2))
+TOPLAM_S=$((TOPLAM_S + $(wc -l < "$YAS" | tr -d ' ')))
+DERS_N=0
+while IFS='|' read -r _ d bsl etiket _degisen dosya _; do
+  d="$(echo "$d" | tr -d ' ')"; case "$d" in ''|*[!0-9]*) continue;; esac
+  bsl="$(echo "$bsl" | sed -e 's/^ *//' -e 's/ *$//')"
+  etiket="$(echo "$etiket" | sed -e 's/^ *//' -e 's/ *$//')"
+  dosya="$(echo "$dosya" | tr -d ' ')"
+  yol="$(ls "$K"/DERSLER/${dosya}_*.md 2>/dev/null | head -1)"
+  [ -n "$yol" ] && yol="${yol#$K/}" || yol="DERSLER/${dosya}_*.md"
+  printf '| ⬜ | D%s · %s · `%s` | %s |  |\n' "$d" "$bsl" "$yol" "$etiket" >> "$OUT"
+  DERS_N=$((DERS_N + 1))
+done < "$YAS"
 
-baslik "TUR 2 · ÜRETİM ÖNCESİ ANALİZ — teşhis ve risk"
-for f in "$K"/URETIM_ONCESI_ANALIZ/*.md; do satir "$f" "${f#$K/}"; done
-
-baslik "TUR 3 · KILAVUZLAR — hepsi"
-for f in "$K"/*.md; do satir "$f" "${f#$K/}"; done
-for f in "$K"/DIS_FILM_ANALIZI/*.md; do satir "$f" "${f#$K/}"; done
+# ── TUR 2/3 · MANİFEST (OKUMA_CEKIRDEGI.txt) ───────────────────────────
+MAN="$K/FILM_KLASOR_SABLONU/00_ANALIZ/OKUMA_CEKIRDEGI.txt"
+[ -f "$MAN" ] || { echo "⛔ manifest yok: $MAN"; exit 2; }
+case "$F" in *dikey*) DIKEY=1 ;; *) DIKEY=0 ;; esac
+case "$F" in *10_20*) FAZ=1 ;; *) FAZ=0 ;; esac
+{
+printf '\n### TUR 2/3 · ÇEKİRDEK KILAVUZLAR — `FILM_KLASOR_SABLONU/00_ANALIZ/OKUMA_CEKIRDEGI.txt` manifesti\n\n'
+printf '> Liste dosya sisteminin tamamı değil, MANİFESTTİR (14.09.2026). Etiketli satır\n'
+printf '> ([kask] [replik] [iki-insan] [referans]) filme uymuyorsa **"—"** ile geçilir.\n'
+printf '> Manifest dışı kılavuzlar havuzdur: `KILAVUZ_REHBERI` §1 tablosu tür/ortama göre\n'
+printf '> ek dosya gösterir; açtığın ek dosyayı bu tablonun SONUNA `havuzdan açıldı` notuyla\n'
+printf '> elle ekleyebilirsin — çizelgenin tek elle-satır istisnası budur.\n\n'
+printf '| ⬜/✅ | dosya | satır | etiket · ne için | bu filme düşen kilit |\n|:--:|---|--:|---|---|\n'
+} >> "$OUT"
+MAN_N=0
+while IFS='|' read -r yol etiket not; do
+  yol="$(echo "$yol" | tr -d ' ')"; [ -z "$yol" ] && continue; case "$yol" in \#*) continue;; esac
+  etiket="$(echo "$etiket" | tr -d ' ')"; not="$(echo "$not" | sed -e 's/^ *//' -e 's/ *$//')"
+  case "$etiket" in
+    *dikey*) [ "$DIKEY" -eq 1 ] || continue ;;
+    *faz*)   [ "$FAZ" -eq 1 ]   || continue ;;
+  esac
+  f="$K/$yol"; [ -f "$f" ] || { printf '| ⬜ | `%s` | ⛔ YOK | %s | manifest hatası |\n' "$yol" "$not" >> "$OUT"; continue; }
+  n=$(wc -l < "$f" | tr -d ' ')
+  [ "$etiket" = "-" ] && et="" || et="**$etiket** · "
+  printf '| ⬜ | `%s` | %s | %s%s |  |\n' "$yol" "$n" "$et" "$not" >> "$OUT"
+  TOPLAM_D=$((TOPLAM_D + 1)); TOPLAM_S=$((TOPLAM_S + n)); MAN_N=$((MAN_N + 1))
+done < "$MAN"
 
 baslik "TUR 4 · QA RAPORLARI — ölçülmüş arıza kaydı"
 satir "$Q/00_INDEX.md"               "FILM_QA_RAPORLARI/00_INDEX.md"
@@ -104,14 +164,19 @@ printf '\nTam liste: `ls %s/01_FILM_RAPORLARI/`\n' "$Q"
 
 {
 printf '\n---\n\n## 📊 ÇİZELGE ÖZETİ\n\n```\n'
+printf 'YAŞAYAN DERS:    %s  (TUR 1 · tavan 40)\n' "$DERS_N"
+printf 'MANİFEST DOSYA:  %s  (TUR 2/3 · hedef ≤ 30 dosya / ≤ 10.000 satır)\n' "$MAN_N"
 printf 'ZORUNLU DOSYA:   %s\n' "$TOPLAM_D"
 printf 'ZORUNLU SATIR:   %s\n' "$TOPLAM_S"
 printf 'SEÇMELİ KAYIT:   5 / %s  (TUR 5)\n' "$RAPOR_N"
 printf '```\n\n'
-printf '⚠️ **Bu bir oturumluk iş değildir ve olmaması normaldir.** Okuma\n'
-printf 'yarıda kalırsa çizelge nerede kalındığını taşır; kaldığı satırdan\n'
+printf '⭐ 14.09.2026: bu çizelge KÜÇÜK olsun diye küçüktür (eski çizelge 126 dosya /\n'
+printf '~42.000 satırdı ve 126/126 satırdan sahte kilit çıkmıştı). Her satırdan kilit\n'
+printf 'çıkmaz; "—" yazmak meşrudur ve `prompt_kontrol.py` ㉘ sıfır "—" görürse\n'
+printf 'çizelgeyi SAHTE sayar (BLOCK). ⬜ kalan satır varken KONSEPT yazılmaz (FIX).\n\n'
+printf '⚠️ Okuma yarıda kalırsa çizelge nerede kalındığını taşır; kaldığı satırdan\n'
 printf 'devam edilir. ⛔ Okuma bitmeden sahne sıralaması yazılmaz.\n'
 } >> "$OUT"
 
 echo "✅ ÇİZELGE: $OUT"
-echo "   $TOPLAM_D zorunlu dosya · $TOPLAM_S satır · + 5 seçmeli film kaydı ($RAPOR_N içinden)"
+echo "   $DERS_N yaşayan ders · $MAN_N manifest dosyası · $TOPLAM_D zorunlu dosya / $TOPLAM_S satır · + 5 seçmeli film kaydı ($RAPOR_N içinden)"

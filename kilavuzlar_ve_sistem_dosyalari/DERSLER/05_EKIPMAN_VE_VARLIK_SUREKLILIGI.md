@@ -731,3 +731,44 @@ kilit, ihlali o yerlerin dışında gizler.*
       the wrists between glove and sleeve, none at the ankles between
       boot and leg; every seam is closed and every seal ring is visible.
 ```
+
+---
+
+## 🔴 DERS 196: NESNE İLE TEMAS MORFLAŞMASI — ELDİVEN VEYA PARMAKLAR TUTULAN NESNEYLE ERİYOR VEYA YAPISINI KAYBEDEDİYOR
+
+**Kaynak:** THE GREEN CEILING QA (10.09.2026) — ① KARE (0:04, 3:10) `Contact morphing: fingers merge into case handles`, `gloves lose structural integrity upon touching the case lock`.
+
+**Sorun:** Eldiven giymiş astronot/mürettebat elle bir çanta kulpunu, kilit mekanizmasını veya donanımı tuttuğu anda model el dokusunu nesne ile erimekte, eldiven sınırlarını kaybetmekte veya parmak ağını nesnenin malzemesine karıştırmaktadır.
+
+**ÇÖZÜM — PROMPT VE İMAJ SEÇİMİ:**
+
+1. İmaj promptunda dokunma/kavrama anı seçiliyorsa temas doğrudan nesnenin içine batan el olarak değil, nesne yüzeyine oturan belirgin eldiven sınırları ile yazılır.
+2. Video promptuna pozitif sınır kilitleri eklenir:
+   ```
+   crisp glove mesh boundaries, no finger merging into handle, solid metallic handle shape, rigid glove structure upon contact
+   ```
+
+
+---
+
+## 🔴 DERS 208: KİMLİK DİZİSİ İLAN EDİLMEDİ — YÜZ, GİYSİ RENGİ, AMBLEM KONUMU, KASK DURUMU VE KİR SAHNEDEN SAHNEYE BAŞKA BİR AKTÖRE GEÇTİ
+
+**FREKANS:** 4 film · THE AMBER LATTICE (② — S2 erkek yüz / S6 kadın yüz) · THE CRACKED HELMET (② 2,0 — siyah↔beyaz giysi 12 sahnede 5 kez; amblem omuz→sırt; 4,0 — tamir edilen vizör çatlağı finalde sıfır) · THE RING WALKER (② 7,4 — amblem sol omuzdan sağa aynalandı S11) · LOW_POWER (② 5,1 — S2/S10/S24/S29 dört yüz; kask S18-S24 takılı/çıkık flicker; kir S14'te temizlendi; ① 5,4 — göğüste parmak erimesi)
+**DEĞİŞEN SATIR:** `<FILM>_QA_SPEC.md` C bloğu **KİMLİK DİZİSİ** satırı — sahne başına `K/A` kask dizisi · amblem konumu (SOL/SAĞ omuz) · giysi rengi · kir bölgesi + başlangıç sahnesi; ② DEVAMLILIK'in CHARACTER PASSPORT'u bu satırı okur, ilan edilmeyen özellik ihlal yazılamaz, ilan edilen tek sapmada 🔴
+**KAPI:** LİSTE · `FILM_KLASOR_SABLONU/FILM_QA_SPEC.md` C bloğu KİMLİK DİZİSİ (eklendi 14.09.2026) · REFERANS_PAKETI T1/T2
+**TEKRAR:** 0
+
+**Kaynak:** THE CRACKED HELMET QA (10.09.2026) — ② `0:00 (S1) black suit vs 0:20 (S3) white suit, patches migrate between shoulders and backpack`. Zincir ADAY-16 · 29 · 30 · 47 · 60 · 61 · 62.
+
+**Örüntü:** Dört filmde kimlik beş ayrı kanalda kaydı (yüz · renk · amblem · kask durumu · kir) ve dördünde de kayan kanal SPEC'te **sayı olarak** ilan edilmemişti — ② bunu ancak "değişti" diye yazabildi, "S3'te ilan edilenden saptı" diye değil. D79/D146 vizörü, D42 yıpranmayı, D8 kıyafeti tek tek kilitledi; beşinin **dizisi** hiçbir yerde tek satır değildi.
+
+**ÇÖZÜM — BEŞ KANAL TEK SATIR:**
+```
+KİMLİK DİZİSİ   kask K K K A A K … (sahne sayısı kadar) · amblem SOL omuz · giysi slate-grey ·
+                kir sağ yanak S7'den itibaren · vizör hasarı S8'den itibaren (geri dönmez)
+```
+1. Satır SPEC C bloğunda, PLAN Character Bible ile birebir.
+2. Dizideki K→A geçişi sahne haritasında bir OLAY'dır (kask çıkarma sahnesi yazılır); yazılmamış geçiş üretilmez.
+3. Referans paketi varsa (T1 kask · T2 biçim kilidi) sayfa numarası dizinin yanına.
+
+🔗 [[D8]] · [[D37]] · [[D42]] · [[D79]] · [[D146]] · [[D167]] · [[D196]] (temas morfu)

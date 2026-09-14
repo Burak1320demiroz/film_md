@@ -29,7 +29,7 @@
 >
 > Bölüm sınırı ardışık bir çifttir: S12 (B · MS · göz hizası · AZ 40) ile
 > S13 (E · MCU · göz hizası · AZ 350) — 1 ölçek kademesi + 50° azimut ✅
-> Denetim: `python3 kilavuzlar_ve_sistem_dosyalari/PROMPT_KONTROL/prompt_kontrol.py yatay_3_5_dk_filmler/THE_UPWARD_FALL`
+> Denetim: `python3 kilavuzlar_ve_sistem_dosyalari/PROMPT_KONTROL/prompt_kontrol.py yatay_4_dk_filmler/THE_UPWARD_FALL`
 
 ---
 

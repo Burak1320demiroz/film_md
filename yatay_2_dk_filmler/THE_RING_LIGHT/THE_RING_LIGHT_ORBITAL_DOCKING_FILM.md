@@ -13,7 +13,7 @@
 > Bu bölüm `KILAVUZ_REHBERI.md` §6 adım 1'dir ve üretimden önce yazıldı.
 > Sıralama: RİSK → PLAN → BIBLE → PLAN KONTROL → PROMPT.
 >
-> **Kaynak sekans:** `yatay_3_5_dk_filmler/THE_COLD_BURN/THE_COLD_BURN_PART_B.md`
+> **Kaynak sekans:** `yatay_4_dk_filmler/THE_COLD_BURN/THE_COLD_BURN_PART_B.md`
 > S17-S24 yanaşma zinciri. Bu film o zinciri kopyalamaz; **tek başına ayakta
 > duran bir filme çevirir** ve mekaniğini değiştirir (§0.16).
 

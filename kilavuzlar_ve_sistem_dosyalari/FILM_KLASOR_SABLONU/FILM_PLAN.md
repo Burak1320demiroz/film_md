@@ -5,7 +5,8 @@
 > başlıktan sayar; plana konan örnek bir prompt sahne dizisine karışır.
 
 ```
-FORMAT:        [dikey shorts 9:16 / yatay 2-4 / 3-5 / 7-20]
+FORMAT:        [dikey shorts 9:16 / yatay 2-4 (12) / 3-5 (24) / 6 dk (36) / 8 dk (48) / 7-20 faz]
+               ⚠️ 6/8 dk: QA birimi BÖLÜM — SPEC A `PART GRID` satırı dolu olmalı [§2.6/§2.7]
 ORTAM:         [KILAVUZ_REHBERI §3 kart numarası]
 TÜR:           bilimkurgu   (tek açık dal — §4.1)
 KLİP SÜRESİ:   ⬜ ARAÇTAN ÖLÇÜLDÜ [D124]:
@@ -135,32 +136,50 @@ KAPI: promptlar bitince PROMPT_KONTROL/DIALOGUE_CRITIQUE_PROMPT.md
 
 ## 📖 BIBLE'LAR
 
-> Karakter bloğu **kelimesi kelimesine** sabitlenir ve her IMAGE promptuna
-> tam yazılır (kural ③: prompt self-contained · "BIBLE'a bak" atfı YASAK).
+> Karakter bloğu **kelimesi kelimesine** burada sabitlenir; IMAGE promptuna
+> yalnız o karenin `IN FRAME:` satırındaki kısmı gider — hands ise eldiven/bilek/
+> kol, face ise yüz + kask, full body ise silüet + renk bandı (14.09.2026 · D214 ·
+> `prompt_kontrol.py` ㉖). "BIBLE'a bak" atfı YASAK (kural ③), ama self-contained
+> ≠ Bible'ın tamamı: kadrajda olmayan YAZILMAZ. Videoya Bible girmez — `START FRAME:`
+> tek satır. Bu blok promptların kaynağıdır, kopyası değil.
 
 ### 👤 Character Bible
+> kimlik: `ASTRONOT_DONANIM` §9 · görünüş: `UZAY_GIYSISI_SINEMATIK_TASARIM` §11
+> (arketip E/I/T/K seçili · kask + görünür çerçeve · sırt heykelsi pozitif ·
+> kir global · "glow / seamless / no …" yok) → tek İngilizce blok
 ### 🌍 World Bible
 ### 🎥 Camera Bible
 ### 💡 Lighting Bible
 ### ⚙️ Physics Bible
-### 🚫 Negative Bible — `KILAVUZ_REHBERI` §5 negatif çekirdek TAM METİN
+### 🚫 Negative Bible — `KILAVUZ_REHBERI` §5.3 TAM LİSTE + bu filmin ortam/tür/risk yasakları
+> Havuz burada durur, prompta girmez: prompt §5.1 çekirdek (8 cümle) + bu listeden
+> sahne başına ≤3 cümle taşır (㉗ · 14.09.2026).
 
 ---
 
 ## 🔢 SAYISAL KİLİT LİSTESİ
 
 > Tarif değil SAYI. `02_RISK_KARTLARI.md`'nin bu filmde tetiklenen her kartı
-> buraya bir SAYI bırakır. 5+ risk çıkıyorsa malzeme azalt.
+> buraya bir SAYI bırakır. 5+ risk çıkıyorsa kilit tavanı (aşağıda), malzeme değil.
 
 | kilit | sayı | hangi risk kartı | hangi sahne |
 |---|---|---|---|
 | ⬜ | | | |
 
-## 🔒 DERS KİLİTLERİ — bu filmin risk profili
+## 🔒 DERS KİLİTLERİ — bu filmin risk profili (⛔ en çok 20 satır — `prompt_kontrol.py` ㉕ KİLİT TAVANI)
+
+> 14.09.2026: yaşayan listeden (`00_YASAYAN_DERSLER.md`) bu filme düşenler. Tavan 20;
+> aşan kilit aşağıdaki bloğa iner. Sayı elle değişmez (sabit betikte).
 
 | ders | kilit cümlesi | nerede uygulandı |
 |---|---|---|
 | ⬜ | | |
+
+### ⛔ UYGULANMAYAN KİLİTLER — tavanı aşanlar, gerekçesiyle (boşsa "—")
+
+| ders | neden bu filmde uygulanmadı |
+|---|---|
+| — | |
 
 ---
 

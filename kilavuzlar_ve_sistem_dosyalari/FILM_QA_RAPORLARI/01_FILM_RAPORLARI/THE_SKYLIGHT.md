@@ -34,8 +34,8 @@ OTURUM:   🚨 ŞÜPHELİ [D110] — ⑤'in künyesi ④'ün satırlarını taş
           satırlar YOKTUR); ② ve ⑥'nın OUT-OF-SCOPE satırları ①'in TOP-3'ünü
           (4:50 rigid · 4:20 exhaust) birebir tekrar ediyor.
 HAM:      ../02_HAM_RAPORLAR/THE_SKYLIGHT_{KARE,DEVAMLILIK,SES,HIKAYE,ARKA_PLAN,FIZIK}_HAM.md
-PLAN:     ../../../yatay_3_5_dk_filmler/THE_SKYLIGHT/THE_SKYLIGHT_PLAN.md
-SPEC:     ✅ VAR — ../../../yatay_3_5_dk_filmler/THE_SKYLIGHT/THE_SKYLIGHT_QA_SPEC.md
+PLAN:     ../../../yatay_4_dk_filmler/THE_SKYLIGHT/THE_SKYLIGHT_PLAN.md
+SPEC:     ✅ VAR — ../../../yatay_4_dk_filmler/THE_SKYLIGHT/THE_SKYLIGHT_QA_SPEC.md
           (A/B/C blokları · C bloğu 30 satırlık kilit listesi) — ⛔ operatöre VERİLMEDİ
 MÜZİK:    THE_SKYLIGHT_MUZIK.md yazıldı (28.08) — kurguda müzik VAR mı ölçülmedi
           (aşağıda: ses yatağı var, cue ayrımı kulakla yapılmadı)

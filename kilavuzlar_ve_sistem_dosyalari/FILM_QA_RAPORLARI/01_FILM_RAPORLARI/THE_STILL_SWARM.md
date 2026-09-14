@@ -248,7 +248,7 @@ olabilir. Bağımsızlık kanıtlanmadı → madde kareyle çözülür.
    TEK KARE (1:04) filmin novum sorusunu ikiye ayırır.
 3. KOŞU YENİDEN YAPILIR — çıplak rubrikle değil, PAKETLE:
    bash .claude/skills/qa-isle/scripts/rubrik_paketle.sh \
-        yatay_2_4_dk_filmler_uzay/THE_STILL_SWARM "<master>"
+        yatay_2_dk_filmler/THE_STILL_SWARM "<master>"
 ```
 
 **Bu koşudan çıkan dersler:** D165 (paket filmin yazımında üretilir) ·

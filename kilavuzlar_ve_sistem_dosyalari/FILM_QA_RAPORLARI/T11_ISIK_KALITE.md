@@ -40,7 +40,9 @@ Biri bile hayırsa satır YAZILMAZ; ham rapor 02_HAM_RAPORLAR/'da durur.
 
 | Film | Tarih | Mod | Yön|Gölge|Isı|Kaynak|Pozlama|Klip içi|Sınır|Atmosfer | Toplam | Not |
 |---|---|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|---|
-| *(henüz koşu yok)* | | | | | | | | | | |  | |
+| **The Counted Turn** | 09.09.2026 | D | 3.0 | 9.0 | — | — | 9.0 | — | — | 6.0 | ⚠️ 6.8 | 🔴 **KEY WALKS** — S12 (1:50) ve S14 (2:10) MCU'larda ana ışık yönü 3'ten 9 saat yönüne ters sıçrıyor (monotonik ışık planı ihlali) [D184] |
+| **The Hard Dock** ⚠️ | 12.09.2026 | D | 6.0 | 5.0 | 6.0 | 5.0 | 6.0 | 6.0 | 5.0 | 5.0 | **5,5** | S8->S9 color temperature jump from warm to cool neutral on subject face |
+
 
 ⛔ Sayılar bu tabloya ELLE yazılmaz — rapordan gelir ve `rapor_kontrol.py`
 GO döndükten sonra kopyalanır [kural ① · D161].

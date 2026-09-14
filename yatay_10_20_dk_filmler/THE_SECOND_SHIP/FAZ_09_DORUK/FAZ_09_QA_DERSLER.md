@@ -2,7 +2,7 @@
 
 > Koşu: 12.08.2026 · Girdi: **1 birleşik reel (~100 s) · MODE R** ·
 > Rubrik: `FAZ_09_QA_PROMPT.md` · Ham çıktı:
-> `../../../kilavuzlar_ve_sistem_dosyalari/FILM_QA_RAPORLARI/02_HAM_RAPORLAR/THE_SECOND_SHIP_FAZ09_HAM.md`
+> `../../../kilavuzlar_ve_sistem_dosyalari/FILM_QA_RAPORLARI/02_HAM_RAPORLAR/THE_SECOND_SHIP/THE_SECOND_SHIP_FAZ09_HAM.md`
 >
 > **SKOR 5.7 · ⚠️ ŞARTLI — filmin İLK TAM FAZ ÖLÇÜMÜ.** Dört fazdır
 > (F6 · F7 · F8) teslimat yüzünden hiçbir faz taban üretememişti. Bu

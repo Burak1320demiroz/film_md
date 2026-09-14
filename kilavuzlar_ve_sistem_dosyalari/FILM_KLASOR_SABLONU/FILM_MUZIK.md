@@ -52,6 +52,9 @@ NO whoosh.
 
 ```
 REGISTER:     ⬜ (bu seri diegetik yapay ses kullanır: suit AI · telsiz · kayıt)
+KATMAN TAVANI: sahne başına aktif katman ≤ 4 · her kesmede oda tonu köprüsü ≥ 0,2 s · dijital sıfır 0 kare ·
+              diyalog altında müzik/alarm −6 dB · kadraj dışı replik = telsiz band-pass [D216 · 14.09.2026]
+KATMAN TABLOSU: ⬜ | sahne | katmanlar (ad) | sayı | köprü | — ③ SES LAYER COUNT bunu ölçer
 REPLİK SAYISI: ⬜
 REPLİK ZAMANLARI: ⛔ HESAPLANMAZ, HESAPLATILIR [D122]:
    replik(S_n) = hook + (n−1) × klip + promptun TIMELINE ofseti

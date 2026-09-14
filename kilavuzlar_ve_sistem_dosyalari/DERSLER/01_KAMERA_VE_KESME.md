@@ -264,3 +264,24 @@ okuduğu tek şey o sahnenin prompt gövdesidir [kural ③].
 > 🔗 Ders 104 (ışık mıknatısı — yönü yanlış nesne belirler) · Ders 157 (novumun
 > taşıyıcısı) · Ders 172 (aynı filmde taşıyıcının kordonu) · Ders 127 ·
 > UZAMSAL_HARITA_VE_EKRAN_YONU_KILAVUZU §6.1
+
+
+---
+
+## 🔴 DERS 210: KAFİYE ÇİFTİ VE LOCKOFF PROMPTTA DEĞİL NİYETTE KALDI — KAPANIŞ AÇILIŞIN KAMERA CÜMLESİNİ TAŞIMADI, SABİT KAMERA KLİBİN SON SANİYELERİNDE KENDİLİĞİNDEN YAKLAŞTI
+
+**FREKANS:** 4 film · THE AMBER LATTICE (mod V · ⑨ 5,7 — kapanış Setup J, açılış A) · THE CRACKED HELMET (mod D · ⑨ 2,1 — A ↔ H; 11 klibin 6'sında plansız push-in) · THE RING WALKER (mod V · ⑨ 4,8 — açılış lander ≠ kapanış gemi) · LOW_POWER (mod V · ⑨ 5,3 — A' 10° dutch, çapa %12 kaymış; S5 son 10 s'de %5 push-in)
+**DEĞİŞEN SATIR:** Kapanış sahnesinin CAMERA satırı = açılış sahnesinin CAMERA satırı **BİREBİR** (kurulum iskeletinde aynı harf) + SPEC B `DÖNGÜ KANITI` satırına harf çifti `A ↔ A`; her video promptunun TIMELINE son satırı `hold — the frame does not move` ve CAMERA satırında `absolutely zero camera movement`
+**KAPI:** BETİK · `prompt_kontrol.py` ⑩④ (iskelet — aynı harf, aynı cümle) · LİSTE · ⑨ KADRAJ raporunun `LOCKOFF HELD n / n` ve `RHYME PAIR` satırları
+**TEKRAR:** 0
+
+**Kaynak:** THE CRACKED HELMET QA (10.09.2026, ⑨ mod D) — `0:00 (S1) Setup A side-on wide vs 1:40 (S11) Setup H rear wide shatters visual loop` · `6 out of 11 clips feature unmotivated slow push-in`. Zincir ADAY-25 · 39 · 54 · 81 · 83 · 40 · 82. ⚠️ Dördünün üçü mod V ⑨ — plan uydurma riski [[D190]]; CRACKED HELMET mod D ile doğrulanmış.
+
+**Örüntü:** Kafiye çifti PLAN'da niyet olarak yazıldı ("açılış-kapanış çifti"), kapanış promptunda açılışın kamera cümlesi kopyalanmadı; model yeni bir kurulum üretti. Lockoff'ta ise "fixed camera" cümlesi var ama klip sonunda motorun varsayılan yavaş yaklaşması yazılı bir "hold" ile bastırılmadı. AGENTS §8'in üç kalite kararından biri "sabit lockoff kamera" — kararın prompt satırı yoktu.
+
+**ÇÖZÜM:**
+1. Kurulum iskeletinin ilk ve son harfi aynıdır (`A … A`); betik ⑩④ aynı harfin cümlesini birebir ister — kafiye çifti bu kuralın alt kümesidir.
+2. Video TIMELINE'ının son satırı her zaman `… — hold: <kadraj değişmez>`; CAMERA satırı `absolutely zero camera movement` (`KILAVUZ` §7 §IMAGE_VIDEO şablonu).
+3. ⑨ raporunda `LOCKOFF HELD` = klip sayısı olmalı; eksik her klip 🔴.
+
+🔗 [[D131]] · [[D184]] · [[D194]] · `ACILIS_KAPANIS_CIFTI` · AGENTS §8

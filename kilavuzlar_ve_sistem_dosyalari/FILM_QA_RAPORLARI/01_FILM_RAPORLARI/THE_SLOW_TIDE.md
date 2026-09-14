@@ -1,6 +1,6 @@
 # 🔍 THE SLOW TIDE — QA KAYDI
 
-> **Kaynak dosya:** `yatay_2_4_dk_filmler_uzay/THE_SLOW_TIDE/THE_SLOW_TIDE_PLANET_FILM.md`
+> **Kaynak dosya:** `yatay_2_dk_filmler/THE_SLOW_TIDE/THE_SLOW_TIDE_PLANET_FILM.md`
 > **İlgili:** `dikey_shorts_filmler/THE_SLOW_TIDE/THE_SLOW_TIDE_DIKEY_SHORTS.md` — **dikey
 > versiyonun ayrı QA'sı YOK**
 > **Veri kaynağı:** `LESSONS_LEARNED.md` — kalite tablosu + Ders 1, 13-16

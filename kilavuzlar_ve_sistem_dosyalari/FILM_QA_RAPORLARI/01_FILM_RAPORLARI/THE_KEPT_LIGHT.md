@@ -32,7 +32,7 @@ MERCEK:   ① KARE 7,9 · ② DEVAMLILIK 6,5 · ③ SES 6,8 · ④ HİKAYE 4,5
           (sekizi de mod V + parti 🚨 → HİÇBİRİ tabloya GİRMEZ)
 HAM:      ../02_HAM_RAPORLAR/THE_KEPT_LIGHT_{KARE,DEVAMLILIK,SES,HIKAYE,
           ARKA_PLAN,FIZIK,AKSIYON,EFOR}_HAM.md
-PLAN:     ../../../yatay_3_5_dk_filmler/THE_KEPT_LIGHT/THE_KEPT_LIGHT_PLAN.md
+PLAN:     ../../../yatay_4_dk_filmler/THE_KEPT_LIGHT/THE_KEPT_LIGHT_PLAN.md
 SPEC:     ✅ VAR — .../THE_KEPT_LIGHT_QA_SPEC.md (A/B/C/E blokları)
 PAKET:    ✅ VAR — ../../QA_PROMPTLARI/FILME_OZEL/THE_KEPT_LIGHT/PAKET_1..8
           ⛔ operatöre VERİLMEDİ — sekiz mercek de ÇIPLAK RUBRİKLE koştu.
@@ -495,7 +495,7 @@ IZGARA GERİ ALMA TABLOSU (raporların sahne haritası bununla DEĞİŞTİRİLD�
 ## ①.5 BETİK KOŞUSU [D161 · D162 · D177]
 
 ```
-python3 .../rapor_kontrol.py <8 ham rapor> --film yatay_3_5_dk_filmler/THE_KEPT_LIGHT \
+python3 .../rapor_kontrol.py <8 ham rapor> --film yatay_4_dk_filmler/THE_KEPT_LIGHT \
   --hook 10 --klip 10 --olcum-kesme 24 --olcum-sahne 25 \
   --olcum-filigran VAR --olcum-lufs -16.4 --rapor
 

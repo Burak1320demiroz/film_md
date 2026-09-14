@@ -2,7 +2,7 @@
 
 > Koşu: 09.08.2026 · Model: Gemini · Girdi: tek 93 s reel (6×10.0 s +
 > 3×8.0 s + 1×9.0 s) · MODE R · Rubrik: `FAZ_04_QA_PROMPT.md` · Ham çıktı:
-> `kilavuzlar_ve_sistem_dosyalari/FILM_QA_RAPORLARI/02_HAM_RAPORLAR/THE_SECOND_SHIP_FAZ04_HAM.md`
+> `kilavuzlar_ve_sistem_dosyalari/FILM_QA_RAPORLARI/02_HAM_RAPORLAR/THE_SECOND_SHIP/THE_SECOND_SHIP_FAZ04_HAM.md`
 >
 > **Skor 5.2/10 — F3'ün 3.7'sinden farklı olarak ÇOĞU GERÇEK.** Bu kez
 > takas yalnız iki segmenti (S32/S33) kirletti; kalan sekizi kendi

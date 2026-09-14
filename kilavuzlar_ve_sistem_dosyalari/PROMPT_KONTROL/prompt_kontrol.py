@@ -69,6 +69,29 @@
 #                           üç sınırı birden yazmıyor — 05.09.2026 [D175]
 #     ㉒ YÜZEY RENK KAPISI  IŞIK bloğu biyom düzlemine (floor/ground/wall) RENK
 #                           atıyor; renk ENVIRONMENT'ın işidir — 05.09.2026 [D176]
+#  ─── 13.09.2026 · İKİ KLASÖR KAPISI DAHA (Ders 203 · Ders 204) ────────────
+#     ㉓ REPLİK ENVANTERİ   SPEC A `DIALOGUE LINES: N` (N>0) ilan ediyor ama prompt
+#                           kod bloklarında tırnaklı replik 0 (BLOCK) / < N (FIX).
+#                           Kalibrasyon 38 SPEC: 2 gerçek pozitif, 0 yanlış pozitif.
+#     ㉔ SPEC TAMLIK        yeni-film klasöründe (00_ANALIZ/ var) <FILM>_QA_SPEC.md'nin
+#                           makine çapaları: GRID · CLIP COUNT · FİNAL VURUŞ KANITI ·
+#                           İNSAN ŞERİDİ PLAN · NOVUM · KASK · E DOĞRULANDI. Yok/⬜ →
+#                           FIX; yedisi birden yoksa SPEC kabuktur → BLOCK; dosya yok → BLOCK.
+#  ─── 14.09.2026 · REFORM FAZ 6-9 — YENİ REJİM KAPILARI (sahip kararı) ────────
+#     Yalnız 00_ANALIZ/00_HIKAYE_ONAYI.md taşıyan klasörde koşar (rejim()); eski
+#     klasörlerde eski kapılar aynen. Sabitler tek yerde (KELIME_BANDI · KILIT_TAVANI …).
+#     ① UZUNLUK (yeni)     POZİTİF gövde kelime bandı (NEGATIVE hariç): image 100-250 ·
+#                          video 120-300; üstü BLOCK · altı NOT; TAVAN 4300 karakter kalır
+#     ㉕ KİLİT TAVANI      PLAN `## 🔒 DERS KİLİTLERİ` satırı > 20 → FIX [D214 · 02_RISK]
+#     ㉖ KADRAJ ENVANTERİ  her promptta `IN FRAME:` satırı; face yokken yüz tarifi → BLOCK;
+#                          back yokken sırt cümlesi → NOT; ⑮ buna bağlandı [D214]
+#     ㉗ NEGATİF ÇEKİRDEK  NEGATIVE bloğu > 11 cümle (8 çekirdek + ≤3) → FIX [KILAVUZ §5]
+#     ㉘ ÇİZELGE SAHTELİK  00_OKUMA_CIZELGESI: ⬜ kaldı → FIX · ✅≥15 ve "—"=0 → BLOCK ·
+#                          "—" > %80 → FIX (LOCKED_PULSE 126/126 sahte kilit)
+#     ㉙ HİKÂYE ONAYI      00_HIKAYE_ONAYI: ONAY tarihli mi · S-satırı = sahne sayısı ·
+#                          jargon (D-no · novum · kurulum harfi · kilit) yok → aksi BLOCK
+#     ㉚ SAHNE TABLOSU     >8 sahnede 00_SAHNE_TABLOSU satırı = sahne · 5 rol dosyası → FIX
+#     Klasör modunda per-prompt ① ㉖ ㉗ bulguları DOSYA düzeyi tek satıra toplanır.
 #  ─── 01.09.2026 · POLİTİKA KAPISI (Ders 123 — "betik göremez" denilen yer) ──
 #     ⑯ POLİTİKA SÖZLÜĞÜ     T1/T2 tetikleyici sayımı (NEGATIVE bloğu DÂHİL) ·
 #                            gövdeye yönelmiş şiddet fiili · milliyet · kurum ·
@@ -152,6 +175,63 @@ TAVAN = 4300
 # Ya bant bayat, ya image için hiç ölçülmedi. Karar verilene kadar image
 # uzunluğu BULGU değil GÖZLEM olarak raporlanır; üretim durdurmaz.
 IMAGE_BANDI_KARARA_BAGLI = True
+
+# ─── 14.09.2026 · YENİ REJİM SABİTLERİ (reform FAZ 6-9 · TODO_AKIS_VE_DERS_REFORMU) ───
+# Sayı tek yerde durur (kural ①): belgeler bu sabitlere atıf yapar, sayı yazmaz.
+REJIM_MARKER = ("00_ANALIZ", "00_HIKAYE_ONAYI.md")   # varsa klasör YENİ rejimdir
+KELIME_BANDI = {"image": (100, 250), "video": (120, 300)}   # POZİTİF gövde kelimesi (NEGATIVE hariç); üstü BLOCK, altı NOT
+NEGATIF_CUMLE_TAVANI = 11        # KILAVUZ §5: 8 çekirdek cümle + ≤ 3 sahneye özel
+KILIT_TAVANI = 20                # PLAN `## 🔒 DERS KİLİTLERİ` satır tavanı
+KILIT_SAHNE_ROLLERI = ("HOOK", "NOVUM", "DORUK", "BEDEL", "FINAL")
+KILIT_SAHNE_ESIGI = 8            # ≤ 8 sahnelik filmde her sahne dosya alır (tablo yok)
+CIZELGE_SAHTE_MIN = 15           # ✅ satır ≥ 15 iken "—" = 0 → çizelge sahte
+CIZELGE_OKUNMAMIS_ORAN = 0.8     # "—" / ✅ > 0.8 → okunmamış
+IN_FRAME = re.compile(r"^[ \t]*IN FRAME\s*[:：]\s*(.+)$", re.IGNORECASE | re.MULTILINE)
+IN_FRAME_TOKENS = ("face", "hands", "torso", "legs", "full body", "back", "none")
+FACE_TARIFI = re.compile(
+    r"\b(brow ridge|heavy brow|jawline|heavy jaw|square jaw|cheekbones?|broad nose|nostrils?|"
+    r"forehead|chin|stubble|beard|skin with (?:visible )?pores|"
+    r"(?:dark|deep-set|narrow|wide|blue|brown|grey|green|pale)\s+eyes)\b", re.IGNORECASE)
+HIKAYE_ONAY = re.compile(r"^[ \t]*ONAY\s*[:：]\s*(.+)$", re.IGNORECASE | re.MULTILINE)
+HIKAYE_SATIR = re.compile(r"^[ \t]*S(\d{1,3})\b", re.MULTILINE)
+HIKAYE_JARGON = re.compile(r"\bD\d{1,3}\b|\bnovum\b|kurulum\s+[A-Z]\b|\bkilit", re.IGNORECASE)
+TARIH = re.compile(r"\b\d{2}\.\d{2}\.\d{4}\b")
+
+
+def film_klasoru(yol):
+    yol = Path(yol)
+    return yol if yol.is_dir() else yol.parent
+
+
+def yeni_rejim(yol):
+    """14.09.2026: 00_ANALIZ/00_HIKAYE_ONAYI.md taşıyan klasör yeni rejimdir.
+    Eski klasörlerde (26 üretilmemiş film dahil) yeni kapılar KOŞMAZ — sahip kararı."""
+    return film_klasoru(yol).joinpath(*REJIM_MARKER).exists()
+
+
+def bolum_al(metin, baslik_rx):
+    """`## …` başlığından sonraki `## ` başlığına kadar olan gövde (### dahil)."""
+    m = re.search(baslik_rx, metin, re.MULTILINE)
+    if not m:
+        return None
+    kalan = metin[m.end():]
+    n = re.search(r"^## ", kalan, re.MULTILINE)
+    return kalan[:n.start()] if n else kalan
+
+
+def tablo_satirlari(govde):
+    """Markdown tablo veri satırları: başlık · ayraç · boş (⬜/—) satırlar hariç."""
+    out = []
+    for L in govde.split("\n"):
+        if not L.startswith("|"):
+            continue
+        h = [c.strip() for c in L.strip().strip("|").split("|")]
+        if not h or all(re.fullmatch(r":?-{2,}:?", c) for c in h if c):
+            continue
+        if h[0] in ("⬜", "—", "-", "–", "") or h[0].lower() in ("ders", "d", "s", "#"):
+            continue
+        out.append(h)
+    return out
 
 # ─── YASAK KELİMELER ───────────────────────────────────────────────
 # Her biri bir dersten geldi. Yasağın İÇİNDE geçmesi meşrudur
@@ -784,8 +864,18 @@ EFOR_FIILI = re.compile(
 #   ③ "press" saça çarpıyor: "hair pressed flat under the helmet ring". Çıkarıldı.
 #   ④ "wrench" COLD_WELD'de NESNEDİR (bir İngiliz anahtarı), fiil değil. Çıkarıldı.
 # Kalan yedi fiil tek anlamlıdır ve hepsi bir YÜKE karşı iş tarif eder.
-EFOR_PENCERE = re.compile(r"^TIMELINE:.*?(?=^[A-Z⭐][A-Z ]{2,}:|\Z)",
-                          re.IGNORECASE | re.MULTILINE | re.DOTALL)
+# ⛔ İKİ ZAMAN ÇİZELGESİ BİÇİMİ VAR, KAPI BİRİNİ GÖRMÜYORDU [D195 · 09.09.2026]:
+#   biçim A → `TIMELINE:` başlığı + altında satırlar        (18 film dosyası)
+#   biçim B → başlıksız, doğrudan `0s — / 3s — / 6s — / 8s —` (4 film:
+#             BENT_GRASS · COUNTED_TURN · PRESSED_FIELD · STILL_SWARM)
+# Pencere yalnız A'ya çapalıydı; B'de HİÇ AÇILMADI, fiil aranmadı, kapı
+# sessizce GO dedi. THE_BENT_GRASS böyle geçti ve ⑧ EFOR sonradan o filme
+# 4,0/10 WEIGHTLESS WORK verdi. Pencere açılmazsa sözlük kalibrasyonunun
+# hiçbir önemi yoktur.
+EFOR_PENCERE = re.compile(
+    r"^TIMELINE:.*?(?=^[A-Z⭐][A-Z ]{2,}:|\Z)"
+    r"|(?:^[0-9]+\s*s\s*[—–-][^\n]*\n?)+",
+    re.IGNORECASE | re.MULTILINE | re.DOTALL)
 ZORLANMA_IZI = re.compile(
     r"\bforearm[^.]{0,40}\b(?:tendon|stand out|tighten|cord|strain|work)|"
     r"\b(?:grip|hands?)\b[^.]{0,40}\b(?:slips?|re-?tak|tighten|shak|tremor)|"
@@ -1240,7 +1330,7 @@ def repliksiz(govde):
     return re.sub(r"[\"“”][^\"“”]{0,300}[\"“”]", " ", govde)
 
 
-def prompt_denetle(p):
+def prompt_denetle(p, yeni=False):
     bulgular = []
     govde = p["govde"]
     govde_d = duzles(govde)                    # desen araması için
@@ -1252,7 +1342,24 @@ def prompt_denetle(p):
     # çözümü zaten "NEGATIVE bloğunu kaldır, minimale in" diyor.
     # Reçeteyi uygulayan promptu reçeteye uymadı diye cezalandırmayız.
     alt, ust = BANT[p["tip"]]
-    if p["tip"] == "image" and IMAGE_BANDI_KARARA_BAGLI:
+    if yeni:
+        # 14.09.2026 YENİ REJİM — KELİME bandı (LOCKED_PULSE ölçümü: image 719 kelime,
+        # %57'si her promptta aynen tekrar; tarif kilidi %0 tuttu). Karakter tavanı kalır.
+        # Bant POZİTİF gövdeye (NEGATIVE: öncesi) uygulanır: sahneye ait metin ölçülür;
+        # NEGATIVE'in kendi tavanı ㉗ (≤ 11 cümle), toplamın tavanı TAVAN (karakter).
+        kelime = len(poz_d.split())
+        k_alt, k_ust = KELIME_BANDI[p["tip"]]
+        if n > TAVAN:
+            bulgular.append(Bulgu("BLOCK", f"uzunluk {n} karakter — Veo tavanının ({TAVAN}) üstünde",
+                                  "Low Power S5/S11 bu eşikte hata verdi. Üretme, kısalt."))
+        elif kelime > k_ust:
+            bulgular.append(Bulgu("BLOCK", f"uzunluk {kelime} kelime (pozitif gövde) — {p['tip']} bütçesinin ({k_alt}-{k_ust}) üstünde [KELIME_BANDI]",
+                                  "IN FRAME dışını sil · Bible'ı değil kadrajdakini yaz · NEGATIVE 8 çekirdek + ≤3 (KILAVUZ §5) · "
+                                  "video: CONTINUITY LOCKS paragrafı yerine tek satır START FRAME"))
+        elif kelime < k_alt and not p["yedek"]:
+            bulgular.append(Bulgu("NOT", f"uzunluk {kelime} kelime (pozitif gövde) — {p['tip']} bütçesinin ({k_alt}-{k_ust}) altında",
+                                  "Kısa prompt kilitleri taşımıyor olabilir; IN FRAME ve sahne olayı yazılı mı?"))
+    elif p["tip"] == "image" and IMAGE_BANDI_KARARA_BAGLI:
         # Ölçülmemiş eşikle üretim durdurulmaz — yalnız gözlem yazılır.
         if n > ust:
             bulgular.append(Bulgu("NOT", f"uzunluk {n} — image bandının ({alt}-{ust}) üstünde",
@@ -1559,6 +1666,40 @@ def prompt_denetle(p):
                     f"[D175]. Eksik bölge(ler): {', '.join(eksik)}. Üçü de "
                     "yazılır: 'above the collar' + 'at the wrist' + 'at the ankle'."))
 
+    # ─── ㉖ KADRAJ ENVANTERİ [D214 · 14.09.2026 · yeni rejim] ────────────
+    # Kural ③ "self-contained" Bible'ın tamamını her prompta soktu: 75 mm insert'te
+    # yüz tarifi (LOCKED_PULSE 10/10). Model yazılanı kadraja sokar (ikinci bacak,
+    # ikinci mürettebat, ezilen kask). IN FRAME satırı zorunlu; kadrajda olmayan yazılmaz.
+    if yeni and not p["yedek"]:
+        m_if = IN_FRAME.search(govde)
+        if not m_if:
+            bulgular.append(Bulgu("FIX", "㉖ IN FRAME satırı yok",
+                                  "Her promptun ilk satırı: IN FRAME: face · hands · torso · legs · full body · back | none"))
+        else:
+            satir = m_if.group(1).lower()
+            tokens = {t for t in IN_FRAME_TOKENS if t in satir}
+            if "face" not in tokens:
+                m_f = FACE_TARIFI.search(poz_d)
+                if m_f:
+                    bulgular.append(Bulgu("BLOCK", f"㉖ kadrajda olmayan YÜZ tarif edilmiş: \"{m_f.group(0)}\" (IN FRAME: {m_if.group(1).strip()})",
+                                          "Yüz kadrajda değilse yüz cümlesi yazılmaz; devamlılığı onaylı kare taşır (START FRAME) [D214]"))
+            if "back" not in tokens and SIRT_POZITIF.search(poz_d):
+                bulgular.append(Bulgu("NOT", "㉖ sırt kadrajda değil, pozitif sırt cümlesi gereksiz",
+                                      "⑮ SIRT POZİTİF yalnız IN FRAME: back ya da kamera arkada iken ister [D139 · D214]"))
+
+    # ─── ㉗ NEGATİF ÇEKİRDEK [KILAVUZ §5 · 14.09.2026 · yeni rejim] ──────
+    # §5 çekirdeği 8 cümledir; tam liste PLAN Negative Bible'da durur. LOCKED_PULSE:
+    # NEGATIVE promptun %23'ü (946 karakter). ⑤ KİLİT'in beş imzası aranmaya devam eder.
+    if yeni and not p["yedek"]:
+        # `Output: …` satırı negatif cümle değildir (şablon onu NEGATIVE'in altına koyar).
+        neg = "\n".join(l for l in negatif_govde(govde).splitlines()
+                        if not re.match(r"\s*Output\s*:", l, re.I)).strip()
+        if neg:
+            cumleler = [c for c in re.split(r"(?<=[.;])\s+", neg) if c.strip()]
+            if len(cumleler) > NEGATIF_CUMLE_TAVANI:
+                bulgular.append(Bulgu("FIX", f"㉗ NEGATIVE bloğu {len(cumleler)} cümle — tavan {NEGATIF_CUMLE_TAVANI} (8 çekirdek + ≤3 sahneye özel)",
+                                      "KILAVUZ §5 8 cümle; film-özel yasaklar PLAN Negative Bible'da kalır, prompta girmez"))
+
     return bulgular
 
 
@@ -1619,8 +1760,10 @@ def metin_denetle(yol, metin, promptlar=None):
 
     sonuc = {"yol": yol, "promptlar": [], "dosya_bulgulari": []}
 
+    yeni = yeni_rejim(yol)
+    sonuc["yeni_rejim"] = yeni
     for p in promptlar:
-        p["bulgular"] = prompt_denetle(p)
+        p["bulgular"] = prompt_denetle(p, yeni)
         sonuc["promptlar"].append(p)
 
     # ─── DOSYA SEVİYESİ ────────────────────────────────────────────
@@ -2010,7 +2153,14 @@ def metin_denetle(yol, metin, promptlar=None):
             if p["yedek"]:
                 continue
             kam = " ".join(kamera_cumleleri(p["govde"]))
-            if KAMERA_ARKADA.search(kam) and not SIRT_POZITIF.search(duzles(p["govde"])):
+            # 14.09.2026: yeni rejimde IN FRAME satırı belirleyicidir — back kadrajdaysa
+            # (kamera arkada olmasa da) pozitif sırt cümlesi istenir; değilse istenmez [D214]
+            m_if = IN_FRAME.search(p["govde"]) if yeni else None
+            if m_if is not None:
+                sirt_gerekli = "back" in m_if.group(1).lower() or bool(KAMERA_ARKADA.search(kam))
+            else:
+                sirt_gerekli = bool(KAMERA_ARKADA.search(kam))
+            if sirt_gerekli and not SIRT_POZITIF.search(duzles(p["govde"])):
                 arkada.append(str(p["satir"]))
         if arkada:
             sonuc["dosya_bulgulari"].append(Bulgu(
@@ -2092,6 +2242,228 @@ def ilk_sahne(metin):
     return min(nolar) if nolar else -1
 
 
+# ─── ㉓ REPLİK ENVANTERİ KAPISI [Ders 203 · 13.09.2026] ─────────────
+# Plan 7 makine repliği yazdı, SPEC A "DIALOGUE LINES: 7" ilan etti, iki bölüm
+# dosyasındaki 30 promptun HİÇBİRİNDE tırnak karakteri yoktu. Film repliksiz
+# üretildi, ③ SES "STATE B — no voices" okudu ve 9/10 verdi; filmin önermesi
+# (gölge kayması · 4 dakika · abort · shadow lock) ekrana hiç ulaşmadı.
+# Aynı arıza bir önceki mod D partisinde de vardı ve görülmemişti: THE MIRROR
+# FAUNA SPEC 11 insan repliği, promptta 0; model bir replik uydurdu.
+# Kalibrasyon 13.09.2026 · 38 SPEC: 2 gerçek pozitif · 0 yanlış pozitif
+# (HEALING GROUND 4=4 · HARD DOCK 8≤18 · WHITE FLOOD 16>15 yalnız FIX).
+# ⛔ Yalnız klasör modunda koşar: SPEC klasörde, promptlar bölüm dosyalarında.
+DIALOGUE_LINES = re.compile(r"^[ \t]*DIALOGUE LINES\s*:\s*(\d+)", re.MULTILINE)
+# ⚠️ Tırnak SATIR SONUNU AŞABİLİR (eski hat promptları 78 sütunda kırılıyor:
+#    LOSS OF LIFT S22 · BORROWED WEIGHT AI çağrıları) — \n dışlanırsa iki
+#    yanlış pozitif; uzunluk 240 ile sınırlı, eşleşmemiş tırnak kaçamaz.
+TIRNAKLI_REPLIK = re.compile(r'["\u201c][^"\u201d]{4,240}["\u201d]')
+
+
+def spec_dosyasi(klasor):
+    specs = sorted(klasor.glob("*_QA_SPEC.md"))
+    return specs[0] if specs else None
+
+
+def replik_kapisi(klasor, promptlar):
+    spec = spec_dosyasi(klasor)
+    if not spec:
+        return []
+    m = DIALOGUE_LINES.search(spec.read_text(encoding="utf-8", errors="replace"))
+    if not m or int(m.group(1)) == 0:
+        return []
+    n = int(m.group(1))
+    q = sum(len(TIRNAKLI_REPLIK.findall(p["govde"])) for p in promptlar if not p["yedek"])
+    if q == 0:
+        return [Bulgu("BLOCK",
+                      f"㉓ REPLİK ENVANTERİ — SPEC {n} replik ilan ediyor, promptlarda tırnaklı replik 0",
+                      "replik ancak prompt gövdesinde tırnak içinde yazılırsa üretilir (VEO kılavuzu §3); "
+                      "yoksa film repliksiz doğar, ③ SES 'STATE B' okur ve SPEC A'nın replik sayısı "
+                      "yalan söyler. Planın REPLİK ENVANTERİ prompta taşınır ya da SPEC 0 yazar.")]
+    if q < n:
+        return [Bulgu("FIX",
+                      f"㉓ REPLİK ENVANTERİ — SPEC {n} replik, promptlarda tırnaklı {q}",
+                      "eksik replik hangi sahnedeyse prompta yazılır; bilinçli kısaltmaysa SPEC A düzeltilir [D74]")]
+    return []
+
+
+# ─── ㉔ SPEC TAMLIK KAPISI [Ders 204 · 13.09.2026] ──────────────────
+# Şablon (FILM_QA_SPEC.md) A·B·C·E bloklarını taşır; yeni-film akışında yazılan
+# SPEC'lerin yarısından fazlası B/C/E'yi düşürüyor. Bir film SPEC'i yedi makine
+# çapasının yedisini de kaybetmiş olarak "yazımı tamam" sayıldı ve QA'da:
+# ①.9 teslim kapısı şeritsiz, ④c sıra ekseni ölçemez, FİNAL VURUŞ KANITI yok,
+# ①.10 göz kapısı boş, ⑥ mod D kilit listesi boş koştu.
+# Kalibrasyon 13.09.2026 · 15 yeni-film klasörü: 8'i FIX/BLOCK (1 kabuk).
+# ⛔ Tetik: yalnız 00_ANALIZ/ olan klasör (sahip kararı 05.09: eskiler dokunulmaz).
+SPEC_CAPALARI = (
+    ("B GRID",               re.compile(r"^[ \t]*GRID\s*:.*$", re.MULTILINE)),
+    ("B CLIP COUNT",         re.compile(r"^[ \t]*CLIP COUNT\s*:.*$", re.MULTILINE)),
+    ("B FİNAL VURUŞ KANITI", re.compile(r"^.*F[İI]NAL VURU[ŞS] KANITI.*$", re.MULTILINE)),
+    ("B İNSAN ŞERİDİ PLAN",  re.compile(r"^[ \t]*PLAN\s*:\s*[1\-–⬜].*$", re.MULTILINE)),
+    ("C NOVUM",              re.compile(r"^[ \t]*NOVUM\b.*$", re.MULTILINE)),
+    ("C KASK",               re.compile(r"^[ \t]*KASK\b.*$", re.MULTILINE)),
+    ("E DOĞRULANDI",         re.compile(r"^[ \t]*DO[ĞG]RULANDI\b.*$", re.MULTILINE)),
+)
+
+
+def spec_tamlik_kapisi(klasor):
+    if not (klasor / "00_ANALIZ").is_dir():
+        return []
+    spec = spec_dosyasi(klasor)
+    if not spec:
+        return [Bulgu("BLOCK", "㉔ SPEC TAMLIK — <FILM>_QA_SPEC.md YOK",
+                      "SPEC dosyası yoksa film 'yazımı tamam' değildir [D117]; QA mod V koşar ve T tablosuna satır girmez")]
+    metin = spec.read_text(encoding="utf-8", errors="replace")
+    eksik = []
+    for ad, desen in SPEC_CAPALARI:
+        m = desen.search(metin)
+        if not m:
+            eksik.append(ad + " (yok)")
+        elif "⬜" in m.group(0):
+            eksik.append(ad + " (⬜ boş)")
+    if not eksik:
+        return []
+    seviye = "BLOCK" if len(eksik) == len(SPEC_CAPALARI) else "FIX"
+    return [Bulgu(seviye,
+                  f"㉔ SPEC TAMLIK — {spec.name}: {len(eksik)}/{len(SPEC_CAPALARI)} makine çapası eksik",
+                  " · ".join(eksik) + "\n        Şablon: FILM_KLASOR_SABLONU/FILM_QA_SPEC.md. Bu çapalar rapor_kontrol.py "
+                  "①.9/①.10, ④ kurgu kapısı (şerit · final vuruş kanıtı) ve ⑥ mod D kilit listesinin girdisidir; "
+                  "yoksa o kapılar sessizce boş koşar" + (" — yedisi de yok: SPEC bir KABUKTUR" if seviye == "BLOCK" else ""))]
+
+
+# ─── 14.09.2026 · YENİ REJİM KLASÖR KAPILARI ㉕ ㉘ ㉙ ㉚ ───────────────────
+
+def plan_dosyasi(klasor):
+    adaylar = sorted(klasor.glob("*_PLAN.md"))
+    return adaylar[0] if adaylar else None
+
+
+def kilit_tavani_kapisi(klasor):
+    """㉕ PLAN `## 🔒 DERS KİLİTLERİ` satır sayısı ≤ KILIT_TAVANI [02_RISK_KARTLARI 14.09.2026]."""
+    plan = plan_dosyasi(klasor)
+    if not plan:
+        return [Bulgu("FIX", "㉕ KİLİT TAVANI — <FILM>_PLAN.md yok", "PLAN yoksa kilit sayısı ölçülemez")]
+    metin = plan.read_text(encoding="utf-8", errors="replace")
+    govde = bolum_al(metin, r"^## .{0,4}\s*DERS KİLİTLERİ")
+    if govde is None:
+        return [Bulgu("FIX", "㉕ KİLİT TAVANI — PLAN'da `## 🔒 DERS KİLİTLERİ` bölümü yok",
+                      "FILM_PLAN şablonu 14.09.2026: ≤ 20 satır + `### ⛔ UYGULANMAYAN KİLİTLER`")]
+    ana = govde.split("### ", 1)[0]          # UYGULANMAYAN alt bloğu sayılmaz
+    # Satır birden çok dersi paketleyebilir ("D127 · D192 · D62") — sayılan, FARKLI ders numarası;
+    # ders numarasız satır (red defteri vakası, aday) satır olarak sayılır.
+    satirlar = tablo_satirlari(ana)
+    dersler = set(re.findall(r"\bD(\d{1,3})\b", ana))
+    numarasiz = sum(1 for h in satirlar if not re.search(r"\bD\d{1,3}\b", h[0]))
+    n = len(dersler) + numarasiz
+    if n > KILIT_TAVANI:
+        return [Bulgu("FIX", f"㉕ KİLİT TAVANI — PLAN'da {n} ders kilidi ({len(dersler)} D-numarası + {numarasiz} numarasız satır), tavan {KILIT_TAVANI}",
+                      "Malzeme değil kilit azaltılır: fazlası `### ⛔ UYGULANMAYAN KİLİTLER` bloğuna gerekçeyle "
+                      "(02_RISK_KARTLARI §RİSK TOPLAMI · 14.09.2026)")]
+    return []
+
+
+def cizelge_kapisi(klasor):
+    """㉘ 00_OKUMA_CIZELGESI: ⬜ kaldı · her satırdan kilit çıktı (sahte) · hiç kilit çıkmadı."""
+    f = klasor / "00_ANALIZ" / "00_OKUMA_CIZELGESI.md"
+    if not f.exists():
+        return [Bulgu("FIX", "㉘ ÇİZELGE — 00_ANALIZ/00_OKUMA_CIZELGESI.md yok", "okuma_cizelgesi.sh üretir")]
+    ok, bos, bekleyen = 0, 0, 0
+    for L in f.read_text(encoding="utf-8", errors="replace").split("\n"):
+        if not L.startswith("|"):
+            continue
+        h = [c.strip() for c in L.strip().strip("|").split("|")]
+        if not h:
+            continue
+        if h[0] == "⬜":
+            bekleyen += 1
+        elif h[0] == "✅":
+            ok += 1
+            if h[-1] in ("—", "-", "–", ""):
+                bos += 1
+    out = []
+    if bekleyen:
+        out.append(Bulgu("FIX", f"㉘ ÇİZELGE — {bekleyen} satır ⬜ (okuma bitmedi)", "⬜ kalan satır varken KONSEPT'e geçilmez"))
+    if ok >= CIZELGE_SAHTE_MIN and bos == 0:
+        out.append(Bulgu("BLOCK", f"㉘ ÇİZELGE SAHTE — {ok} ✅ satırın {ok}'inden kilit çıkmış, \"—\" sıfır",
+                         "Her dosyadan kilit çıkmaz (LOCKED_PULSE 126/126). Etiketi filme uymayan satıra \"—\" yazılır; "
+                         "sütun doldurmak için doldurulmaz."))
+    elif ok and bos / ok > CIZELGE_OKUNMAMIS_ORAN:
+        out.append(Bulgu("FIX", f"㉘ ÇİZELGE — {bos}/{ok} satır \"—\" (okunmamış görünüyor)", "Çekirdek listeden hiç kilit çıkmaması olası değil"))
+    return out
+
+
+def hikaye_onayi_kapisi(klasor, sahne_sayisi):
+    """㉙ 00_HIKAYE_ONAYI: ONAY tarihli · S-satırı = sahne sayısı · jargon yok."""
+    f = klasor.joinpath(*REJIM_MARKER)
+    metin = f.read_text(encoding="utf-8", errors="replace")
+    out = []
+    m = HIKAYE_ONAY.search(metin)
+    if not m or "⬜" in m.group(1) or not TARIH.search(m.group(1)):
+        out.append(Bulgu("BLOCK", "㉙ HİKÂYE ONAYI — `ONAY:` satırı tarihli değil (⬜)",
+                         "Sahip onayı olmadan analiz/prompt yazılmaz (yeni-film adım 0.7)"))
+    satirlar = HIKAYE_SATIR.findall(metin)
+    n_satir = len(set(satirlar))
+    if sahne_sayisi and n_satir != sahne_sayisi:
+        out.append(Bulgu("BLOCK", f"㉙ HİKÂYE ONAYI — {n_satir} sahne satırı, bölüm dosyalarında {sahne_sayisi} sahne",
+                         "Onaylı hikâye sahne sayısı kadar satır taşır; sapma varsa SAPMA: satırı + yeniden onay"))
+    govde = bolum_al(metin, r"^## .{0,4}\s*SAHNELER") or metin
+    j = HIKAYE_JARGON.search(govde)
+    if j:
+        out.append(Bulgu("FIX", f"㉙ HİKÂYE ONAYI — jargon: \"{j.group(0)}\"",
+                         "Düz Türkçe: D-numarası, novum, kurulum harfi, kilit yazılmaz — sahip okur"))
+    return out
+
+
+def sahne_tablosu_kapisi(klasor, sahne_sayisi):
+    """㉚ >8 sahnede 00_SAHNE_TABLOSU satırı = sahne sayısı · 5 kilit sahne dosyası."""
+    if not sahne_sayisi or sahne_sayisi <= KILIT_SAHNE_ESIGI:
+        return []
+    d = klasor / "00_ANALIZ" / "05_SAHNE_CALISMALARI"
+    out = []
+    t = d / "00_SAHNE_TABLOSU.md"
+    if not t.exists():
+        out.append(Bulgu("FIX", "㉚ SAHNE TABLOSU — 05_SAHNE_CALISMALARI/00_SAHNE_TABLOSU.md yok",
+                         "film_klasoru_ac.sh >8 sahnede tabloyu üretir (14.09.2026)"))
+    else:
+        n = len(re.findall(r"^\|\s*S\d{1,3}\b", t.read_text(encoding="utf-8", errors="replace"), re.MULTILINE))
+        if n != sahne_sayisi:
+            out.append(Bulgu("FIX", f"㉚ SAHNE TABLOSU — {n} satır, {sahne_sayisi} sahne", "her sahne bir satır"))
+    roller = set()
+    for f in d.glob("S*_*.md") if d.is_dir() else []:
+        m = re.match(r"S\d{1,3}_([A-Z]+)\.md$", f.name)
+        if m and m.group(1) in KILIT_SAHNE_ROLLERI:
+            roller.add(m.group(1))
+    eksik = [r for r in KILIT_SAHNE_ROLLERI if r not in roller]
+    if eksik:
+        out.append(Bulgu("FIX", f"㉚ KİLİT SAHNE — rol dosyası eksik: {' · '.join(eksik)}",
+                         "film_klasoru_ac.sh --kilit-sahne <FMT> <FILM> S<nn> <ROL> (HOOK · NOVUM · DORUK · BEDEL · FINAL)"))
+    return out
+
+
+def yeni_rejim_kapilari(klasor, metin):
+    sahne_sayisi = len(set(re.findall(r"^##\s+.*\bSAHNE\s+(\d+)", metin, re.IGNORECASE | re.MULTILINE)))
+    return (kilit_tavani_kapisi(klasor) + cizelge_kapisi(klasor)
+            + hikaye_onayi_kapisi(klasor, sahne_sayisi) + sahne_tablosu_kapisi(klasor, sahne_sayisi))
+
+
+def prompt_bulgularini_topla(sonuc):
+    """Klasör modunda per-prompt ① ㉖ ㉗ bulguları DOSYA düzeyi tek satıra iner (kapı görünür kalır)."""
+    gruplar = {}
+    for p in sonuc["promptlar"]:
+        for b in p["bulgular"]:
+            m = re.match(r"(uzunluk .*? — |㉖ [^:—]+|㉗ NEGATIVE)", b.baslik)
+            if not m:
+                continue
+            anahtar = re.sub(r"\d+", "n", m.group(1)).strip().rstrip("—").strip()
+            g = gruplar.setdefault((b.seviye, anahtar), {"satir": [], "ayrinti": b.ayrinti, "ornek": b.baslik})
+            g["satir"].append(str(p["satir"]))
+    out = []
+    for (sev, anahtar), g in gruplar.items():
+        sat = g["satir"]
+        out.append(Bulgu(sev, f"{anahtar} — {len(sat)} prompt: {', '.join(sat[:10])}{'…' if len(sat) > 10 else ''}",
+                         f"örnek: {g['ornek']}\n        {g['ayrinti']}"))
+    return out
+
+
 def klasor_denetle(klasor):
     """Bir FİLM klasörünü tek gövde gibi denetler. Film değilse None."""
     # Bölüm dosyası tek ise film zaten tek gövdedir; dosya modu tamdır.
@@ -2124,6 +2496,12 @@ def klasor_denetle(klasor):
         return None
     sonuc["klasor"] = True
     sonuc["parca"] = sahneli
+    # ㉓ ㉔ — yalnız klasör modunda [13.09.2026]
+    sonuc["dosya_bulgulari"] += replik_kapisi(klasor, promptlar) + spec_tamlik_kapisi(klasor)
+    # ㉕ ㉘ ㉙ ㉚ + per-prompt toplama — yalnız YENİ rejim [14.09.2026]
+    if sonuc.get("yeni_rejim"):
+        sonuc["dosya_bulgulari"] += prompt_bulgularini_topla(sonuc)
+        sonuc["dosya_bulgulari"] += yeni_rejim_kapilari(klasor, "\n\n".join(parcalar))
     for p in sonuc["promptlar"]:
         p["bulgular"] = []
     return sonuc
@@ -2157,6 +2535,8 @@ def yazdir(sonuc):
         print(f"   📁 FİLM KLASÖRÜ · {sonuc['parca']} bölüm dosyası birleşik · "
               "yalnız DİZİ ve DOSYA seviyesi kapıları")
     print(f"   {len(asil)} prompt" + (f" (+{len(yedek)} yedek sürüm, sayıma girmez)" if yedek else ""))
+    print("   rejim: " + ("YENİ (14.09.2026 — kelime bandı · ㉕-㉚)" if sonuc.get("yeni_rejim")
+                          else "eski (00_ANALIZ/00_HIKAYE_ONAYI.md yok — 14.09 kapıları koşmadı)"))
     print("═" * 67)
 
     for p in sonuc["promptlar"]:
@@ -2178,8 +2558,13 @@ def yazdir(sonuc):
     for tip in ("image", "video"):
         boylar = [len(p["govde"]) for p in asil if p["tip"] == tip]
         if boylar:
-            print(f"\n  📏 {tip}: {min(boylar)}-{max(boylar)} karakter "
-                  f"(bant {BANT[tip][0]}-{BANT[tip][1]} · tavan {TAVAN})")
+            if sonuc.get("yeni_rejim"):
+                kel = [len(duzles(pozitif_govde(p["govde"])).split()) for p in asil if p["tip"] == tip]
+                print(f"\n  📏 {tip}: {min(kel)}-{max(kel)} kelime pozitif gövde "
+                      f"(bütçe {KELIME_BANDI[tip][0]}-{KELIME_BANDI[tip][1]} · toplam {min(boylar)}-{max(boylar)} karakter · tavan {TAVAN})")
+            else:
+                print(f"\n  📏 {tip}: {min(boylar)}-{max(boylar)} karakter "
+                      f"(bant {BANT[tip][0]}-{BANT[tip][1]} · tavan {TAVAN})")
 
 
 def rapor_yaz(sonuclar, kok):

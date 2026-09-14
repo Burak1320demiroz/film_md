@@ -34,7 +34,7 @@ sorusunun referansı yine videodur; her bulgu totolojiktir.
 
 ```
 1. QA ÇALIŞTIRMA SATIRI — dosya yolu elle yapıştırılır, "varsa" değil:
-   VIDEO_QA  +  yatay_2_4_dk_filmler_uzay/<FILM>.md  +  <klip>
+   VIDEO_QA  +  yatay_2_dk_filmler/<FILM>.md  +  <klip>
 
 2. TEK CÜMLELİK KURAL, RUBRİĞİN EN ÜSTÜNE:
    "A SPEC block filled from the video is an EMPTY SPEC block.
@@ -150,7 +150,7 @@ INPUT MISSING   doküman hiç gelmedi                 → ÇALIŞTIRMA durur,
 İkisi aynı kodla raporlanınca, ucuz bir iş akışı kazası pahalı bir film
 bulgusu gibi arşivleniyor.
 
-**(b) Dosya aranmadı.** `yatay_2_4_dk_filmler_uzay/THE_INVERSION/THE_INVERSION_PLANET_FILM.md`
+**(b) Dosya aranmadı.** `yatay_2_dk_filmler/THE_INVERSION/THE_INVERSION_PLANET_FILM.md`
 depoda duruyor. Bulgu 7'nin Inversion satırında aynı hata yazılıydı:
 *"plan doc unsupplied dedi — oysa dosya depoda."* **Aynı hata üst üste ikinci
 kez.** Model dokümanın yokluğunu varsayıyor, doğrulamıyor.
@@ -159,7 +159,7 @@ kez.** Model dokümanın yokluğunu varsayıyor, doğrulamıyor.
 
 ```
 INPUT MISSING — RUN STOPPED (this is not a film finding)
-Searched : yatay_2_4_dk_filmler_uzay/  ·  yatay_3_5_dk_filmler/  ·  …
+Searched : yatay_2_dk_filmler/  ·  yatay_4_dk_filmler/  ·  …
 Required : <FILM>/<FILM>_PLAN.md  veya  <FILM>_PLANET_FILM.md
 Action   : rerun with the path attached.
 No score is written. No CONDITIONAL row is added. This run did not happen.
@@ -923,7 +923,7 @@ rules; sonraki faz rubrikleri bu sürümden türetilir.
 ## 🔴 DERS 93: FİLME ÖZEL RUBRİK 4 SANİYELİK JENERİK KARTIYLA SUSTURULDU — KURGU KAPISI, GÖRDÜĞÜ HATAYI ÖLÇÜME ÇEVİRMEK YERİNE ÖLÇÜMÜ İPTAL ETTİ
 
 **Kaynak:** THE RING LIGHT · 12.08.2026 · FİLME ÖZEL rubrik MOD F koşusu ·
-`FILM_QA_RAPORLARI/02_HAM_RAPORLAR/THE_RING_LIGHT_FILME_OZEL_HAM.md`
+`FILM_QA_RAPORLARI/02_HAM_RAPORLAR/THE_RING_LIGHT/THE_RING_LIGHT_FILME_OZEL_HAM.md`
 **Sorun:** ilk vaka — ama susturulan mercek, filmin kırk küsur kilidini tutan
 TEK mercekti
 
@@ -989,6 +989,10 @@ iptal etmekten kat kat değerlidir.
 ## 🔴 DERS 94: SPEC PLANDA HAZIRKEN KOŞULAN MOD V, KİLİT İHLALİNİ CİLA NOTUNA İNDİRİYOR — BEDELİ İLK KEZ ÖLÇÜLDÜ
 
 **KAPI:** KARAR · `rubrik_paketle.sh` — rubrik + SPEC mercek başına TEK dosya, mod D VARSAYILAN — 01.09.2026
+
+> ⚠️ **11.09.2026:** bu kapının betiği (`rubrik_paketle.sh`) ve `QA_PROMPTLARI/FILME_OZEL/`
+> proje sahibinin kararıyla SİLİNDİ. Kapının AYAKTA KALAN hâli: `_KAYNAK/` rubriği +
+> `<FILM>_QA_SPEC.md` AYNI mesajda, SPEC başta yapıştırılır — mod D'nin tek koşulu budur.
 **TEKRAR:** 6 · ⛔ ÇALIŞMIYOR → araca çevrildi (01.09.2026): "SPEC'i ver" cümlesi tutmadı, varsayılan değişti
 
 **Kaynak:** THE RING LIGHT · 12.08.2026 · 🔧 VIDEO_QA + 📖 SENARYO_QA mod V
@@ -1267,7 +1271,7 @@ Kategori 10 kapanış bloğu:
 ## 🔴 DERS 105: RAPOR FİLM ADINI UYDURMADI — OPERATÖR AYNI BAŞLIK KARTINDAN OKUDU; DOSYALAMANIN TEK KANITI, FİLMİN EN AĞIR İHLALİ OLDU
 
 **Kaynak:** THE BLACK CRADLE — FRAGMAN · 17.08.2026 · SHORTS_QA mod V ·
-`FILM_QA_RAPORLARI/02_HAM_RAPORLAR/THE_BLACK_CRADLE_FRAGMAN_SHORTS_HAM.md`
+`FILM_QA_RAPORLARI/02_HAM_RAPORLAR/THE_BLACK_CRADLE/THE_BLACK_CRADLE_FRAGMAN_SHORTS_HAM.md`
 **Sorun:** ikinci vaka (ilki The Starless Circle, 06.08 — o satır bugün hâlâ
 "operatör hangi dosyanın yüklendiğini doğrulayana kadar kesin sayılmaz")
 
@@ -1535,7 +1539,7 @@ dosya filmin teslim kurgusu değil.** Her iki hâlde de kurgu kapısı (26 klip 
 şerit) BİREBİR aynı olan ve çoğunluktan sapan mercek grubu işaretlenir:
 *"azınlık İKİ oy değil, BİR oydur."* — 07.09.2026. Bu ders 17.08.2026'dan beri
 yalnız operatör kuralıydı; ilk betik kapısı bugün takıldı [[D74]].
-**TEKRAR:** 4 · **08.09.2026 THE OPEN CIRCUIT — en temiz vaka: on iki rapor ÜÇ künye grubuna ayrıldı** (25 replik: ①②③④ · 22 replik: ⑥⑦⑧ · 16 replik: ⑨⑩⑪⑫) ve grup içi `LINES HEARD` metinleri BİREBİR aynı. Bağımsız ölçüm sayısı **12 değil, en fazla 3**; ⑤ + ⑥ künyeleri (kesme 22 · sahne 22) ayrıca çoğunluktan sapıyor ve azınlık İKİ oy değil BİR oydur. · önceki 07.09.2026 YERÇEKİMİ FAZ 10 — ⑦ ve ⑧ künyeleri birebir aynı
+**TEKRAR:** 6 · **13.09.2026 THE STATIC SHADOW:** ③ ve ⑥ OUT-OF-SCOPE satırı harfi harfine aynı (*"00:20 & 01:30 — Visor HUD reticle static graphic overlay consistency"*), sekiz mercek aynı şerit + künye, ⑩ ve ⑫ aynı dosyaya 60 s ve 25 s yazdı [D205] · **08.09.2026 THE OPEN CIRCUIT — en temiz vaka: on iki rapor ÜÇ künye grubuna ayrıldı** (25 replik: ①②③④ · 22 replik: ⑥⑦⑧ · 16 replik: ⑨⑩⑪⑫) ve grup içi `LINES HEARD` metinleri BİREBİR aynı. Bağımsız ölçüm sayısı **12 değil, en fazla 3**; ⑤ + ⑥ künyeleri (kesme 22 · sahne 22) ayrıca çoğunluktan sapıyor ve azınlık İKİ oy değil BİR oydur. · önceki 07.09.2026 YERÇEKİMİ FAZ 10 — ⑦ ve ⑧ künyeleri birebir aynı · **09.09.2026 THE BENT GRASS — çoğunluk tarafı:** iki künye öbeği (2:14 · kart 4 s · "nothing audible" = ①②③⑤⑥ · 2:16 · kart 6 s · "room tone present" = ⑦⑧⑨⑩⑪⑫). Betik ②⑤⑥ için ortak defter şüphesi bastı, ikinci öbeğe aynı testi UYGULAMADI → [[ADAY-14]]
 (109 s · 11 kesme · 12 sahne · `--1111111111`) ve **ikisi de rubriğin ⛔ zorunlu
 kıldığı kesme ZAMAN KODLARINI basmadı**: sayım yapılmamış, devralınmıştır.
 ⭐ Aynı partide ikinci kanıt: ⑦'nin `01:36'da bir kesme` iddiası — o saniyede
@@ -1595,13 +1599,13 @@ rebuild yours from the footage and say so.
 
 **KAPI:** BETİK · `rapor_kontrol.py` MERCEK YOKLAMASI [[D178]] — partide hangi
 mercekler var, hangi ZORUNLU mercek eksik (FİLM ①②③④ · FRAGMAN ①) — 04.09.2026
-**TEKRAR:** 1 · 04.09.2026 YERÇEKİMİ FRAGMAN — bu kez rubrik fragmanı film
+**TEKRAR:** 2 · 04.09.2026 YERÇEKİMİ FRAGMAN — bu kez rubrik fragmanı film · 09.09.2026 THE BENT GRASS — zorunlu ④ HİKAYE hiç koşmadı, ama risk/koşul tetikli YEDİ mercek (⑤⑥⑦⑧⑨⑩⑪⑫) koştu. Zorunlu küme tamamlanmadan isteğe bağlı mercek koşuluyor.
 sanmadı; **fragmanın zorunlu merceği (①) HİÇ KOŞMADI** ve onun yerinde başka bir
 filmin raporu duruyordu. Kapı "yanlış mercek koşuldu"yu görüyor, "mercek hiç
 koşmadı"yı görmüyordu.
 
 **Kaynak:** THE COLD BURN — FRAGMAN DİKEY · 17.08.2026 · SENARYO_QA mod V ·
-`FILM_QA_RAPORLARI/02_HAM_RAPORLAR/THE_COLD_BURN_FRAGMAN_SENARYO_HAM.md`
+`FILM_QA_RAPORLARI/02_HAM_RAPORLAR/THE_COLD_BURN/THE_COLD_BURN_FRAGMAN_SENARYO_HAM.md`
 **Sorun:** D106 aynı gün yazıldı, TEK rubriğe (SHORTS) işlendi; hata ertesi
 koşuda ikinci rubrikte (SENARYO) birebir tekrarladı. İki vaka, iki rubrik,
 tek kök.
@@ -2058,7 +2062,7 @@ bakılacak yer tam olarak orasıdır.
 ## 🔴 DERS 119: SKOR ARİTMETİĞİ RUBRİKTE YAZILI DEĞİLSE MODEL TOPLAMI UYDURUR — AYNI DEFTER, TEK YENİ GÖZLEM YOK, 2.0 PUAN FARK
 
 **Kaynak:** LOSS OF LIFT · 21.08.2026 · 🧩 MANTIK_QA aynı dosyaya iki koşu ·
-`02_HAM_RAPORLAR/LOSS_OF_LIFT_MANTIK_HAM.md`
+`02_HAM_RAPORLAR/LOSS_OF_LIFT/LOSS_OF_LIFT_MANTIK_HAM.md`
 **Sorun:** iki koşunun çelişki defteri, severity tally'si ve sahne haritası
 **birebir aynı** — yalnız skorlar farklı:
 
@@ -2293,7 +2297,11 @@ arka plan nesnesi adlandırılır, yoksa "none" yazılır.
 ## 🔴 DERS 129: SPEC DOSYASI FİLMİN KENDİ KLASÖRÜNDE DURURKEN BEŞ MERCEK DE MOD V KOŞULDU — KESME LİSTESİ DORUĞU, KAPAK KARESİNİ VE İKİ VİRALİ KESTİ
 
 **KAPI:** KARAR · `rubrik_paketle.sh` (QA_PROMPTLARI/FILME_OZEL/<FILM>/) + `rapor_kontrol.py` ① SPEC kapısı (mod V → TEKRAR) — 01.09.2026
-**TEKRAR:** **16 film** · son vaka **08.09.2026 (THE OPEN CIRCUIT, on iki mercek —
+> ⚠️ **11.09.2026:** bu kapının betiği (`rubrik_paketle.sh`) ve `QA_PROMPTLARI/FILME_OZEL/`
+> proje sahibinin kararıyla SİLİNDİ. Kapının AYAKTA KALAN hâli: `_KAYNAK/` rubriği +
+> `<FILM>_QA_SPEC.md` AYNI mesajda, SPEC başta yapıştırılır — mod D'nin tek koşulu budur.
+
+**TEKRAR:** **17 film** · son vaka **13.09.2026 (THE STATIC SHADOW, on iki mercek + ⑬ — SPEC VARDI, paket hattı 11.09'da kaldırılmıştı, operatör yine çıplak rubriği açtı; ⑬ tek başına doğru davrandı ve STEP −1'de durdu; ①③④ raporlarında SCORES SUMMARY bile yoktu — rubrik sürümü belirsiz)** · önceki **08.09.2026 (THE OPEN CIRCUIT, on iki mercek —
 SPEC ve PAKET_1..12 ikisi de VARDI, paket filmin yazıldığı gün 09:56'da üretilmişti;
 on iki raporun on ikisi `INPUT MODE: V`. Bu koşuda kesme listesi filmin ⭐TEMA #1
 sahnesini (S4 · kangal) ve kesici kurulumunu (S12) kesmeyi önerdi, ⑫ ise makarada
@@ -2442,7 +2450,7 @@ koşulmadığı bir dünyada yaşar.
 ## 🔴 DERS 131: "no in-scope source" = 10/10 — KAPSAM SINIRINA UYAN MERCEK KAYNAKSIZLIKLA ÖDÜLLENDİRİLİYOR; ÇÖKEN FİLM 4,3'TEN 7,2'YE ÇIKTI
 
 **Kaynak:** THE ROSE COAT · 26.08.2026 · ② DEVAMLILIK ·
-`FILM_QA_RAPORLARI/02_HAM_RAPORLAR/THE_ROSE_COAT_DEVAMLILIK_HAM.md`
+`FILM_QA_RAPORLARI/02_HAM_RAPORLAR/THE_ROSE_COAT/THE_ROSE_COAT_DEVAMLILIK_HAM.md`
 **Sorun:** D108 "kapsam dışı bulgu hücreyi düşürmez" dedi; D119 bunu sayıya
 çevirdi: *"A category whose issue cell reads 'no in-scope source' scores
 10/10."* İki doğru düzeltme birleşince şu çıktı:
@@ -2608,7 +2616,7 @@ known feature). "It looks bigger later" is an approach, not a defect.
 ## 🔴 DERS 134: BELGESİZ MERCEĞİN "THE THREE THAT MATTER" SIRALAMASI SONUÇ SIRALAMASI DEĞİLDİR — BOT RENGİ FİLMİN ÜÇ KİMLİK KANALINDAN BİRİYDİ, RAPOR ONU "KOSTÜM SÜRÜKLENMESİ" YAZDI
 
 **Kaynak:** THE ROSE COAT · 26.08.2026 · ② DEVAMLILIK ·
-`FILM_QA_RAPORLARI/02_HAM_RAPORLAR/THE_ROSE_COAT_DEVAMLILIK_HAM.md`
+`FILM_QA_RAPORLARI/02_HAM_RAPORLAR/THE_ROSE_COAT/THE_ROSE_COAT_DEVAMLILIK_HAM.md`
 **Sorun:** ② merceğe BELGE VERİLMEZ ve bu bilinçlidir — baseline'ı videodan
 kurulan karakter pasaportudur. Doğru tasarım. Ama sonucu şu: mercek **neyin
 ne kadar önemli olduğunu bilemez**, ve raporun en çok okunan bölümü tam
@@ -2670,7 +2678,7 @@ girer; "filmin iki karakteri ayırt edilemiyor" üretimi durdurur.
 **KAPI:** BETİK · `olcum_kapisi.sh` SES KANALI (ffprobe -select_streams a) — 22.08.2026'dan beri; satır 01.09.2026
 
 **Kaynak:** THE ROSE COAT · 26.08.2026 · ③ SES ·
-`FILM_QA_RAPORLARI/02_HAM_RAPORLAR/THE_ROSE_COAT_SES_HAM.md`
+`FILM_QA_RAPORLARI/02_HAM_RAPORLAR/THE_ROSE_COAT/THE_ROSE_COAT_SES_HAM.md`
 **Sorun:** ③ SES `AUDIO ABSENT — RUN NOT STARTED` döndürdü — doğru davranış,
 STATE C bloğu tam da bunun için yazıldı. Kart E3 ② kapısı da doğru koştu:
 skor yazılmadı. Ama iki delik açık kaldı.
@@ -2870,6 +2878,8 @@ template, not an observation.
 ---
 
 ## 🔴 DERS 151: ÜÇ NOVUM VURUŞU EKRANDAYDI, ALTI MERCEK ÜÇÜNÜ DE GÖRMEDİ YA DA TERSİNE OKUDU — KAPI SAHNESİNİN a/b KARE ÇİFTİ OLMADAN "OLAY YOK / OLAY TERS" HÜKMÜ İŞLENMEZ
+
+**14.09.2026 küme K14 (film tarafı):** aynı örüntünün film-yazım yarısı dört filmde ADAY olarak birikti — YERÇEKİMİ F2 (ADAY-3: tek noktada okunan sayaç saat değildir) · THE STILL SWARM (ADAY-6a: sekiz mercek novum'u göremedi) · LOW_POWER (ADAY-63: ekran metriği 78→19→100, monoton değil) · THE STATIC SHADOW (ADAY-92: filmin adı olan olay on iki raporda yok). DEĞİŞEN SATIR (film): SPEC C `SAYAÇ` satırı monotonik değer dizisi + novum kanıtı S⬜ a/b kare çifti PLAN `TEK KARE` satırında; ölçen mercek ⑬ UYUM. Bu ders alet dersi olarak 08'de kalır; film yarısı [[D211]]/[[D213]] ile birlikte okunur.
 
 **TEKRAR:** 2 · 01.09.2026 THE COLD WELD: novumun üç kanıtı da EKRANDAYDI (avuç makrosu 65 s · diskli duvar 100-120 s · doruk 122 s) ve altı merceğin altısı üçünü de adlandırmadı; ② otuz bir diski "wall BUTTONS" sandı, ⑤ hiç saymadı. ⛔ ÇALIŞMIYOR → SPEC E bloğu a/b kare çifti zorunlu, mod D şart [D129 ile ortak].
 
@@ -3118,7 +3128,7 @@ döngüyü öldürmüyor, **yanlış filmi doğru film gibi imzalıyor.**
 ## 🔴 DERS 161: ALTI RAPORUN BEŞİ KENDİ ARİTMETİK KAPISINDAN GEÇEMEDİ — VE BİRİ, HİÇBİR HÜCRE KÜMESİNİN ÜRETEMEYECEĞİ BİR TOPLAM BASTI
 
 **KAPI:** BETİK · `RAPOR_KONTROL/rapor_kontrol.py` (①.5 aritmetik · tally · şerit · ⑨ ızgara · ④ harita) — 01.09.2026
-**TEKRAR:** 2 parti · son vaka 02.09.2026 (THE STILL SWARM — **8 raporun 7'sinde** tally ≠ yazılı etiketler; ⑦'de 2, ⑧'de 1 kaynaksız hücreye 10/10) · ⭐ ÇALIŞIYOR: betik hepsini otomatik yakaladı ve verdict'leri düşürdü — ders artık ARAÇTIR, kural değil
+**TEKRAR:** 3 parti · son vaka 02.09.2026 (THE STILL SWARM — **8 raporun 7'sinde** tally ≠ yazılı etiketler; ⑦'de 2, ⑧'de 1 kaynaksız hücreye 10/10) · ⭐ ÇALIŞIYOR: betik hepsini otomatik yakaladı ve verdict'leri düşürdü — ders artık ARAÇTIR, kural değil · 09.09.2026 THE BENT GRASS — ② DEVAMLILIK: rapor n=11 Σ=101 yazdı, kendi tablosunda 12 hücre Σ=111 var; hiçbir hücre kümesi 101 üretmiyor. Ayrıca ①⑨⑫'de tally ≠ yazılı etiket.
 
 **Kaynak:** THE COLD WELD QA (01.09.2026) — altı mercek, altısı mod V. Her
 rubrik "ARITHMETIC GATE — write these three numbers BEFORE the score" diye
@@ -3998,6 +4008,10 @@ GAZE / KEY DIRECTION STRING uzunluk kapısı · ⑨ SETUP STRING ↔ KURULUM İS
 fark listesi · ⑫ üç saniye + sabit sebep listesi · LİSTE · `00_README`
 "hangi filme hangi mercekler" koşul satırları (⑨ iskelet · ⑩ replik 0 /
 CENTRAL CHOICE · ⑪ IŞIK TAKVİMİ / ≥12 klip · ⑫ kart Y)
+> ⚠️ **11.09.2026:** bu kapının betiği (`rubrik_paketle.sh`) ve `QA_PROMPTLARI/FILME_OZEL/`
+> proje sahibinin kararıyla SİLİNDİ. Kapının AYAKTA KALAN hâli: `_KAYNAK/` rubriği +
+> `<FILM>_QA_SPEC.md` AYNI mesajda, SPEC başta yapıştırılır — mod D'nin tek koşulu budur.
+
 **TEKRAR:** 0
 
 **Kaynak:** THE KEPT LIGHT · sekiz mercek · 06.09.2026 — ⑪ ölçüm + kare
@@ -4277,7 +4291,7 @@ kapatmadı: eksen eklemek kapsam boşluğunu kapatmıyor)
 sayılır (çok bölümlü filmde BOLUM_1 + BOLUM_2) ve `--olcum-sahne` verilmişse
 ÖLÇÜME, verilmemişse raporların çoğunluğuna karşı okunur. Fark varsa parti
 GEÇERSİZ; kesme listesi ve yeniden üretim UYGULANMAZ. — 07.09.2026
-**TEKRAR:** 1 · ⭐ **ÇALIŞIYOR — 08.09.2026 THE OPEN CIRCUIT'te kapı ATEŞLEDİ.**
+**TEKRAR:** 3 · **13.09.2026 THE STATIC SHADOW — 3. film:** plan 15 / makara 12 (9 mercek), kapı ateşledi; master yokken eksik üçü ŞERİT Δ'sıyla [D121] adıyla yazıldı: **S11 ABORT · S12 KARAR (merkezî seçim) · S13/S14 (doruk)** — planın ÜRETİM SIRASI'nın ilk halkaları [D168 3. vaka]; ⑩ merkezî seçimin yerine S4 joystick'e CHOICE yazdı [D190]. ⛔ SPEC'te İNSAN ŞERİDİ yoktu (D204), betik yalnız sayıyı gördü. · ⭐ **ÇALIŞIYOR — 08.09.2026 THE OPEN CIRCUIT'te kapı ATEŞLEDİ.** · **09.09.2026 THE BENT GRASS — 2. film:** plan 14 sahne / 140,0 s / kart YOK; makara 13 sahne + 4-6 s başlık kartı. Dokuz mercek 13 saydı ve hiçbiri eksiği ADIYLA yazmadı; ⑦ tek başına "S12 (0 insan, 3 canlı) eksik" dedi. İnsan şeridi `11111-111111-` = planın şeridi EKSİ SON HANE. Kapı ateşledi, parti GEÇERSİZ.
 Plan 25 sahne (BOLUM_1 13 + BOLUM_2 12), makara **23 klip**; betik `--olcum-sahne 23`
 ile partiyi mercek okumadan 🚨 GEÇERSİZ yaptı. Eksik iki sahne kareyle ve replik
 ekseniyle ADIYLA yazıldı: **S17** (*"HE TAKES IT DOWN"* — ayrılığın tersinmesi;
@@ -4422,7 +4436,7 @@ gösteriyor: mercek eklemek kapsam ÇAKIŞMASI da açıyor) · [[D188]]
 
 **KAPI:** BETİK · `rapor_kontrol.py` ① SPEC kapısı — ⑨-⑫ raporu `INPUT MODE: D`
 değilse karar **🚨 GEÇERSİZ** (uygulandı 08.09.2026; öncesinde ⛔ TEKRAR'dı)
-**TEKRAR:** 0 · 08.09.2026 THE OPEN CIRCUIT
+**TEKRAR:** 1 · 13.09.2026 THE STATIC SHADOW (⑨⑩⑪⑫ dördü mod V; ⑨ planın hiç ilan etmediği S01 EWS ↔ S15 OTS çiftine PAIR FAILS yazdı — planın kafiyesi OTS ailesiydi; ⑩ makarada olmayan S12'nin yerine S4'e CHOICE yazdı; betik dördünü karantinaya aldı, ders/sipariş üretmediler) · 08.09.2026 THE OPEN CIRCUIT
 
 **Kaynak:** THE OPEN CIRCUIT QA (08.09.2026) — ⑫ HOOK mod V: *"Peak Placement
 **9/10** — S22 03:40 lands perfectly at the physical end of the action."*
@@ -4509,3 +4523,164 @@ skor SAYI TAŞIMAZ.
 
 🔗 [[D187]] · [[D96]] · [[D146]] · [[D138]] · [[D162]] (SUSKUNLUK: bir iddiayı
 sahibi yazmazsa kapı ateşlemez — burada iddia hiç doğmadı)
+
+---
+
+## 🔴 DERS 194: ⑨⑩⑪'İN DİZİSİNİ RUBRİK BOŞLUKLU YAZIYOR, BETİK BOŞLUKSUZ OKUYOR — D184'ÜN KURDUĞU KAPI, İHTİYAÇ DUYULAN İLK MOD D FİLMİNDE ÜÇ MERCEKTE BİRDEN SESSİZCE KAPALIYDI
+
+**KAPI:** BETİK · `rapor_kontrol.py` `gozlem_dizi()` boşluğu tolere eder
+(sınıfın BAŞINA yazılır — sonuna eklenirse `OADU-` alfabesinde `U- ` geçersiz
+aralık olur ve betik çöker) + `_KAYNAK/9·10·11` rubriklerinde `OBSERVED:`
+satırına `in edit order, no spaces` (uygulandı 09.09.2026)
+**TEKRAR:** 0 · 09.09.2026 THE BENT GRASS
+
+**Kaynak:** THE_BENT_GRASS QA · 11 mercek · 09.09.2026. ⑨ KADRAJ 6,1/10 ·
+⑩ OYUNCULUK 4,6/10 · ⑪ IŞIK 6,5/10 — üçü de diziyi YAZDI, betik üçünü de
+"YOK" saydı.
+
+**Sorun:** Rubrik dizi satırını şöyle emrediyor —
+`OBSERVED:  [one character per scene · O A D U -]` — ve model onu doğal olarak
+**boşluklu** yazıyor:
+
+```
+⑨  OBSERVED:   A B ? ? D E ? ? F ? G ? A
+⑩  OBSERVED:  D O O D A - O O D O D O -
+⑪  OBSERVED:  9 9 ? 3 9 9 9 ? 9 9 9 9 9
+```
+
+`rapor_kontrol.py`'nin alfabe sınıfları (`A-Z?` · `OADU-` · `0-9TEW?-`)
+**boşluğu içermiyor**, `{3,}` ilk boşlukta kırılıyor, `re.search` `None`
+dönüyor. Betik bunun üzerine suçu RAPORA yazıyor:
+
+> `SETUP STRING YOK ya da OBSERVED: satırı okunamadı`
+> `bu merceğin makine çıktısı dizidir; dizisiz rapor sahne sahne sınanamaz`
+
+Dizi oradaydı. Kapı okumadı ve okuyamadığını raporun eksikliği diye bildirdi.
+
+**Neden PRESENCE STRING tutuyor da bunlar tutmuyor:** aynı rubriklerin
+PRESENCE bloğu tek bir cümle fazla taşıyor — *"One character per scene, in
+edit order, **no spaces**"*. O cümle üç dizi bloğunun hiçbirinde yok. Biçimi
+emreden yer ile biçimi okuyan yer ayrı dosyalarda yazıldı ve **birbirine karşı
+hiç koşulmadı**.
+
+**Bedeli tek satırda ölçüldü.** Yama sonrası aynı parti yeniden koşuldu:
+
+```
+ÖNCE:  ⚠️ SETUP STRING YOK ya da `OBSERVED:` satırı okunamadı
+SONRA: ⚠️ SETUP STRING 13 hane, plan iskeleti 14 hane
+```
+
+İkinci satır filmin ASIL kusurudur — eksik teslim edilen 14. sahne — ve ⑨'un
+dizisi onu BAĞIMSIZ bir eksenden doğruluyordu. Kapı kapalıyken o doğrulama
+hiç gelmedi; teslim şüphesi yalnız sahne SAYISINDAN okundu.
+
+Bu [[D142]]'nin kardeşi ("yazılmış ama koşulamayan kapı, koşulmamış kapıdır"),
+ama arıza bir adım sinsi: orada filtre KURULU DEĞİLDİ ve betik sustu; burada
+kapı kurulu, koşuyor, ve **yanlış tarafı suçlayan bir uyarı basıyor**. D142
+"kapı yok" der, bu ders "kapı var ve yanlış yeri gösteriyor" der.
+
+⛔ **Kural:** bir eksen iki yerde tarif ediliyorsa (rubrik yazar · betik okur)
+o iki yer **aynı örnekle** sınanmadan kapı kurulmuş sayılmaz. D184 kapıyı
+kurdu, TEKRAR 0 yazdı ve kapı ilk ihtiyaçta koşmadı — çünkü kurulum testi
+rubriğin ürettiği GERÇEK bir satırla değil, betiğin beklediği satırla yapıldı.
+
+**ÇÖZÜM:** İki taraf da yamandı (tek taraf kırılgan bırakır):
+1. `_KAYNAK/9·10·11` → `OBSERVED:` satırına `in edit order, no spaces`
+2. `rapor_kontrol.py` → `gozlem_dizi()` satırı önce ALIR, boşlukları SONRA
+   siler. Sıra ters olursa kapı yine körleşir.
+3. Yeni bir dizi ekseni eklenirse: rubriğin ürettiği örnek satır betiğe
+   kopyalanıp `assert` ile sınanır.
+
+🔗 [[D142]] · [[D184]] (kapıyı kuran ders) · [[D186]] · [[D188]]
+
+---
+
+## 🔴 DERS 195: ZORLANMA KAPISININ PENCERESİ TEK BİR ZAMAN ÇİZELGESİ BİÇİMİNE ÇAPALIYDI — DÖRT FİLMDE HİÇ AÇILMADI, VE AÇILMAYAN PENCEREDE SÖZLÜK KALİBRASYONUNUN HİÇBİR ÖNEMİ YOK
+
+**KAPI:** BETİK · `prompt_kontrol.py` `EFOR_PENCERE` başlıksız
+`0s — / 3s — / 6s — / 8s —` biçimini de alır (uygulandı 09.09.2026)
+**TEKRAR:** 0 · 09.09.2026 THE BENT GRASS
+
+**Kaynak:** THE_BENT_GRASS · ⑧ EFOR **4,0/10 · WEIGHTLESS WORK** (mod D) —
+ama `prompt_kontrol.py` aynı filme **✅ GO** demişti ve ⑳ ZORLANMA KAPISI
+tek satır bile basmamıştı.
+
+**Sorun:** Depoda İKİ zaman çizelgesi biçimi var ve kimse ikisini birden
+saymamış:
+
+```
+biçim A   TIMELINE: 0.0s — ...        18 film dosyası
+biçim B   0s — ... / 3s — ...          4 film: BENT_GRASS · COUNTED_TURN ·
+          6s — ... / 8s — ...                  PRESSED_FIELD · STILL_SWARM
+```
+
+`EFOR_PENCERE` yalnız `^TIMELINE:` çapasına bakıyordu. Biçim B'de pencere
+**hiç açılmadı** → `tl` boş kaldı → `if tl and EFOR_FIILI...` hiç
+değerlendirilmedi → kapı sessizce geçti. Sözlüğün üzerinde altı filmlik
+kalibrasyon çalışması var (`carries` çıkarıldı · `push` çıkarıldı · `press`
+çıkarıldı · `wrench` çıkarıldı) — **pencere açılmayınca hepsi ölü kod.**
+
+Ve THE_BENT_GRASS'ın promptlarında zorlanma izi GERÇEKTEN vardı:
+`BOLUM_2:128 — "the shoulders drop by a small, clear amount"` — yani kapı
+açılsaydı ölçecek malzeme buluyordu.
+
+**Bedeli:** Yama sonrası aynı dört film yeniden tarandı, **daha önce
+görünmeyen 9 bulgu** çıktı:
+
+| film | "efor fiili var, gövde tepkisi yok" |
+|---|---|
+| THE_BENT_GRASS | 4 |
+| THE_COUNTED_TURN | 3 |
+| THE_STILL_SWARM | 2 |
+| THE_PRESSED_FIELD | 0 |
+
+**Sıra dersi:** ⑧ EFOR merceği filmi ÜRETİMDEN SONRA 4,0/10 ile yakaladı;
+`prompt_kontrol.py` aynı kusuru ÜRETİMDEN ÖNCE yakalayabilirdi ve pencere
+yüzünden yakalayamadı. Kapı sırası ters işledi: pahalı olan (14 klip üretimi)
+koştu, ucuz olan (regex) susturuldu.
+
+⛔ **Kural:** bir kapı metnin BİÇİMİNE çapalanıyorsa, o biçimin depodaki tüm
+varyantları SAYILIR ve kapı hepsine karşı koşulur. Tek varyanta yazılmış çapa
+bir kapı değil, bir örnektir. Sözlük genişletmeden ÖNCE pencerenin açıldığı
+doğrulanır — kapalı pencerede en iyi sözlük bile 0 bulgu üretir ve bu 0
+"temiz film" diye okunur [[D53]].
+
+⚠️ **Sözlük genişletilmedi ve genişletilmemelidir (bu koşuda):** `EFOR_FIILI`
+listesi (haul · pull · drag · lift · heave · prise · lever) altı filmlik
+ölçümle DARALTILMIŞ bir listedir. THE_BENT_GRASS'ın işi taşımak · diz çökmek ·
+paketlemek · devirmek — listede yok. Bu ayrı bir sorudur ve ölçülmeden
+liste büyütülmez; büyütme kararı yeni bir kalibrasyon koşusu ister.
+
+🔗 [[D169]] (kapıyı kuran ders) · [[D142]] · [[D53]] · [[ADAY-11]] · [[ADAY-12]]
+
+---
+
+## 🔴 DERS 205: ⑤ ÇAPRAZ KAPI SÜREYİ HİÇ KARŞILAŞTIRMIYORDU — ⑩ 60 s, ⑫ 25 s, ON MERCEK 124 s YAZDI VE KAPI "BİRBİRİNİ DOĞRULUYOR" DEDİ
+
+**KAPI:** BETİK · `RAPOR_KONTROL/rapor_kontrol.py` ⑤ SÜRE satırı (ortanca ± max(5 s, %10);
+`--olcum-sure <s>` hakem) · sapan merceğin karar hücresine ŞARTLI + "zaman ekseni uydurma"
+— 13.09.2026
+**TEKRAR:** 0 · 13.09.2026 THE STATIC SHADOW
+
+**Kaynak:** THE STATIC SHADOW QA (13.09.2026) — aynı 12 sahneli makaraya ⑩ OYUNCULUK
+`RUNTIME: 01:00` (sahne başına 5 s), ⑫ HOOK `RUNTIME: 00:25 · 25 fps` (sahne başına ~2 s),
+on mercek `02:04-02:05`. Her sahne aynı olayları anlatıyor; yalnız saat farklı. Betiğin ⑤
+bloğu kesme · sahne · şerit · replik · suskunluk satırlarını basıp **"kesme sayıları
+birbirini doğruluyor (yayılım 1)"** dedi. ⑦ ORTAK DEFTER anahtarı süreyi bilerek dışlıyordu
+("109/110/111 aynı ölçümün yuvarlamasıdır") — doğru gerekçe, yanlış sonuç: yuvarlama ±1 s'dir,
+%80 sapma değil.
+
+**Sorun:** Süre bir DOSYA özelliğidir [D137'nin zaman ekseni karşılığı]; aynı makaraya bakan
+iki mercek onu %10'dan fazla farklı okuyamaz. Farklı okuyan mercek ya başka dosyaya baktı
+[D160] ya saati uydurdu [D112 · D125] — iki hâlde de o raporun her zaman kodu, DROP-OFF
+saniyesi ve sahne aralığı çöptür. ⑫'nin işi tam da saniye söylemektir (08 yayın tablosuna
+üç düşüş saniyesi) ve ⑫'nin saati 5× yanlıştı. Bu koşuda ikisi de zaten karantinadaydı
+[D190]; bir sonraki partide ①'in saati yanlış olsa kapı yine susacaktı.
+
+**ÇÖZÜM:** `capraz()`'a SÜRE satırı — ölçüm verilmişse hakem odur, verilmemişse ORTANCA
+(çoğunluk değil: tek sapan çoğunluğu bozamaz, iki sapan ortancayı bozamaz). Tolerans
+max(5 s, %10). Sapan mercek TEKİL ŞARTLI; parti düşmez (ölçüm hakemliği mantığı [D125]).
+Regresyon: THE UPWARD FALL 8 rapor → "süre ekseni doğrulandı, ortanca 226 s (±22,6)".
+
+🔗 [[D107]] (çapraz sayım) · [[D112]] (parmak izi: süre uydurma) · [[D125]] (ölçüm kazanır) ·
+[[D160]] (hangi dosyayı ölçtün) · [[D190]] (⑫ makarada olmayan doruğa saniye verdi)

@@ -311,4 +311,4 @@ Bu rubriğin her maddesi bir gerçek olaydan çıktı:
 | 3 | Ders 50 · The Tidal Hunt |
 | 4 | AGENTS.md kural ③ · `SAHNE_DEVAMLILIK_KILAVUZU.md` §2.1 |
 | 5 | `03_PLAN_ONCESI_KONTROL_LISTESI.md` B1 · The Tidal Hunt |
-| Yanlış pozitif duvarı | `QA_PROMPTLARI/FILME_OZEL/` Ring Light gerekçesi |
+| Yanlış pozitif duvarı | Ring Light gerekçesi (şablon 11.09.2026'da silindi; kural burada yaşar) |

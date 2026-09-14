@@ -1,7 +1,7 @@
 # 🔎 PROMPT KONTROL — THE_LAST_SHIFT_COLONY_FILM
 
 > **Tarih:** 16.08.2026  ·  **Karar:** FIX
-> **Kaynak:** `yatay_2_4_dk_filmler_uzay/THE_LAST_SHIFT/THE_LAST_SHIFT_COLONY_FILM.md`
+> **Kaynak:** `yatay_2_dk_filmler/THE_LAST_SHIFT/THE_LAST_SHIFT_COLONY_FILM.md`
 > Bu rapor betikten üretildi, elle düzenlenmez.
 
 ## IMAGE · satır 1310 · 2440 karakter

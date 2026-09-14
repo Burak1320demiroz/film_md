@@ -1469,7 +1469,7 @@ denetlenen şey değişti: F8 bir YASAĞIN tek bir yerde delinmesini
 1 kez çalıştırıldı · son 12.08.2026 · sonuç: 5.7 ⚠️ ŞARTLI
   girdi: 1 birleşik reel (MODE R) — protokol 10 ayrı klip (MODE T)
   ham çıktı: kilavuzlar_ve_sistem_dosyalari/FILM_QA_RAPORLARI/
-             02_HAM_RAPORLAR/THE_SECOND_SHIP_FAZ09_HAM.md
+             02_HAM_RAPORLAR/THE_SECOND_SHIP/THE_SECOND_SHIP_FAZ09_HAM.md
   işlenmiş : FAZ_09_QA_DERSLER.md
 
   ⭐ SIRA KAYMADI — dört fazda ilk kez. On segmentin onu da kendi

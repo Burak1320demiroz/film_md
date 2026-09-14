@@ -54,7 +54,23 @@ Biri bile hayırsa satır YAZILMAZ; ham rapor 02_HAM_RAPORLAR/'da durur.
 
 | Film | Tarih | Mod | Beat anat. | Coğrafya | Tehdit | Temas | Sonuç | Kamera | Niyet | Bahis | Tempo | Toplam | Not |
 |---|---|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|---|
-| *(henüz koşu yok)* | | | | | | | | | | | | | |
+| **The Counted Turn** ⚠️ | 09.09.2026 | D | 8 | 9 | — | 4 | 7 | — | 9 | 9 | 8 | **7,7** | MINOR BLUR · 4 temas penetrasyonu (0:31, 1:43, 3:43), S21 eylemsiz beat |
+| **The Solar Mirror** Ⓥ ⚠️ | 11.09.2026 | V | 9 | 9 | 8 | — | 9 | — | — | 9 | — | **8,8** | ACTION READS · B3 unmotivated energy ring, S2-S3 spatial jump |
+| **The Resonant Strand** ⚠️ | 11.09 | D | 7 | 8 | 7 | 7 | 7 | 9 | 7 | 6 | — | **7,2** | ⬜ |
+| **The Hard Dock** ⚠️ | 12.09.2026 | D | 8 | 9 | 9 | 8 | 9 | 10 | 10 | 8 | 8 | **8,8** | B4 docking impact elided by cut to cockpit |
+
+
+> **The Counted Turn · 09.09.2026 · MOD D · ⚠️ ŞARTLI · matrise girmez**
+> Kayıt: [`01_FILM_RAPORLARI/THE_COUNTED_TURN.md`](01_FILM_RAPORLARI/THE_COUNTED_TURN.md)
+> · `rapor_kontrol.py` ile düzeltildi: Kusur bildirilmeyen 2 kategori (Threat Vector 10/10, Camera's Contract 10/10) `—` hücresine çekildi [D131/D186]. Düzeltilmiş ortalama: **7,7** (Ham: 8,2/10).
+> · Verdict: `MINOR BLUR`. Temas okunabilirliği (4/10): B2, B5, B8 temas anlarında el/kumaş/karabiner erimesi ve penetrasyon.
+
+> **The Solar Mirror · 11.09.2026 · Ⓥ mod V · ⚠️ ŞARTLI · matrise girmez**
+> Kayıt: [`01_FILM_RAPORLARI/THE_SOLAR_MIRROR.md`](01_FILM_RAPORLARI/THE_SOLAR_MIRROR.md)
+> · Skor: **8,8/10** (Ⓥ mod V). Verdict: `ACTION READS`.
+> · 4 kusursuz kategori (Contact, Camera Contract, Agency, Tempo) D131 uyarınca `—`'a çekildi. Düzeltilmiş ortalama 8,8/10.
+
+
 
 ⛔ Sayılar bu tabloya ELLE yazılmaz — rapordan gelir ve `rapor_kontrol.py`
 GO döndükten sonra kopyalanır [kural ① · D161].

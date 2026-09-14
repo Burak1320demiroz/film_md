@@ -1,7 +1,7 @@
 # 🎬 THE LEANING ROOM — FİLM KAYDI
 
 ```
-FİLM:      THE LEANING ROOM  ·  yatay_2_4_dk_filmler_uzay/THE_LEANING_ROOM/
+FİLM:      THE LEANING ROOM  ·  yatay_2_dk_filmler/THE_LEANING_ROOM/
 YAZIM:     02.09.2026        ÜRETİM: 02.09.2026 (aynı gün)
 PARTİ:     sekiz mercek (① ② ③ ④ ⑤ ⑥ ⑦ ⑧) · Gemini · 02.09.2026
 SONUÇ:     🚨 PARTİ GEÇERSİZ — 8/8 mod V, SPEC ve QA paketi VARDI [D129]
@@ -55,7 +55,7 @@ altı gevşek eşya · masaya gömülü pirinç el çarkı · tek insan · kask 
 ## SPEC KAPISI [D129] — ⛔ PARTİ BURADA DÜŞTÜ
 
 ```
-ls yatay_2_4_dk_filmler_uzay/THE_LEANING_ROOM/*_QA_SPEC.md   → VAR
+ls yatay_2_dk_filmler/THE_LEANING_ROOM/*_QA_SPEC.md   → VAR
 ls QA_PROMPTLARI/FILME_OZEL/THE_LEANING_ROOM/                → VAR (8 paket)
 
 ⭐ Paket, filmin YAZIMINDA üretilmişti — D165 tam olarak bunun için yazıldı
@@ -76,7 +76,7 @@ Sekiz raporun sekizinin ilk satırı:
 
 ```
 python3 RAPOR_KONTROL/rapor_kontrol.py <8 ham rapor> \
-        --film yatay_2_4_dk_filmler_uzay/THE_LEANING_ROOM \
+        --film yatay_2_dk_filmler/THE_LEANING_ROOM \
         --hook 10 --klip 10 --olcum-kesme 11 --olcum-sahne 12
 
 TOPLAM 8 rapor · 🚨 8 GEÇERSİZ · ⛔ 0 TEKRAR · ⚠️ 0 ŞARTLI · ✅ 0 GO

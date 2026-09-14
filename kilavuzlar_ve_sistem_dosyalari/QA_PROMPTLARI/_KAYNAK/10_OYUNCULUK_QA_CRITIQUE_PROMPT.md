@@ -46,31 +46,9 @@ INPUT MODE: V   → video only, no document
 ⛔ If a SPEC was supplied and you write `INPUT MODE: V`, the run is void and
 must be repeated.
 
-**MODE D** — the plan names the beat of every scene and the three anchor
-beats. You test whether each reached the body.
+**MODE D** — the plan names the beat of every scene and the three anchor beats. You test whether each reached the body.
 
-⛔ **THIS LENS DOES NOT RUN IN MODE V. STOP HERE.**
-
-This review exists to read a written plan against the screen. Without the
-plan you would infer an intended plan from the footage itself — and a plan
-inferred from the footage always matches the footage. A scene that was never
-delivered reads as a deliberate ending. A broken lock reads as a style
-choice. The film's worst defect collects this lens's highest score, and the
-report then stands as evidence that the defect was intended. That output is
-not a weaker review; it is a wrong one, and it hides the exact failure this
-lens was built to catch.
-
-If no SPEC block is supplied, write these three lines and nothing else:
-
-```
-INPUT MODE: V — LENS NOT RUN
-REASON: this lens scores plan fidelity; no plan was supplied
-NEEDED: the SPEC block for this film (scene map · locks · declared beats)
-```
-
-Do not count scenes. Do not transcribe lines. Do not score a category. Do
-not write a verdict, a cut list, a trim or a regeneration order. Ask for the
-SPEC block instead.
+**MODE V** — no written SPEC supplied. Perform acting and performance analysis directly from the video footage. Evaluate character emotional expression, body posture, gesture legibility, physical strain, and performance consistency across cuts based strictly on direct visual evidence.
 
 ---
 
@@ -302,18 +280,6 @@ SCENES TASK ONLY: [n · from the ledger]
 
 ⛔ NON-SCENE MATERIAL is not a scene at ANY duration. Exclude it from every
 count and every string.
-
-ARITHMETIC GATE — write these three numbers BEFORE the score
-  SCORED CATEGORIES:  __        (N/A excluded, never 0)
-  SUM OF SCORES:      __._
-  DIVISION:           __._ ÷ __ = __._      ← this is OVERALL SCORE
-
-OVERALL SCORE: __/10
-VERDICT: [THE BODY TELLS IT / MOSTLY LEGIBLE / TASK WITHOUT FEELING /
-          THE CHOICE IS INVISIBLE / MANNEQUIN]
-         One finding outranks the mean: if THE CHOICE ON THE BODY returns
-         "nothing" for the central choice, the verdict is THE CHOICE IS
-         INVISIBLE regardless of the score.
 ```
 
 ## PERFORMANCE LEDGER
@@ -328,7 +294,7 @@ FINAL   (S__ · __ s)  Before: …   After: …
 
 ## GAZE STRING
 ```
-OBSERVED:  [one character per scene · O A D U -]
+OBSERVED:  [one character per scene, in edit order, no spaces · O A D U -]
 PLAN UP / DOWN: [what the SPEC names as up and down — mode D]
 ```
 ⛔ Length = SCENES OBSERVED. If they disagree, say so on this line.
@@ -344,8 +310,11 @@ and proves little on its own; write it anyway.
 
 ⛔ **EVERY SCORE CELL CARRIES ITS SOURCE, AND NO OBSERVATION IS BILLED TWICE.**
 Write the deduction's source as ledger rows with timecodes. A deduction with
-no listed source is not applied. A category with material but no in-scope
-source keeps 10/10 and its Issue cell reads "no in-scope source".
+no listed source is not applied. A category with material but no in-scope source is
+written `—` and is not scored — it stays out of the mean. It never takes a silent
+deduction. DO NOT TOTAL, AVERAGE OR TALLY ANYTHING — the library's script counts the
+🔴/🟠/🟡 tags you wrote and computes the mean from the cells; a number you compute
+yourself is discarded. No SEVERITY TALLY, no SUM, no OVERALL.
 
 | # | Category | Score | Issue (ledger rows and timecodes) |
 |---|----------|-------|-----------------------------------|
@@ -359,10 +328,13 @@ source keeps 10/10 and its Issue cell reads "no in-scope source".
 | 8 | Final Beat Legibility | /10 | |
 | 9 | Proportion | /10 | |
 
-## SEVERITY TALLY
-🔴 BLOCKER: __   🟠 MAJOR: __   🟡 MINOR: __
-⛔ The tally must equal the number of 🔴/🟠/🟡 tags actually written in this
-report.
+Write the verdict UNDER the table, after every cell is filled — exactly one of the
+options below (the library's script checks the word against this list):
+VERDICT: [THE BODY TELLS IT / MOSTLY LEGIBLE / TASK WITHOUT FEELING /
+          THE CHOICE IS INVISIBLE / MANNEQUIN]
+         One finding outranks the mean: if THE CHOICE ON THE BODY returns
+         "nothing" for the central choice, the verdict is THE CHOICE IS
+         INVISIBLE regardless of the score.
 
 ## THE THREE THAT MATTER
 The three findings that most damage this film's performance, in order, each

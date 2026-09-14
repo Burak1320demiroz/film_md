@@ -27,7 +27,7 @@ KLİP SÜRESİ:   ⬜ ARAÇTAN ÖLÇÜLECEK [D124] — plan 10,0 s varsayar:
                ffprobe -v error -show_entries format=duration -of csv=p=0 <test klibi>
 SAHNE SAYISI:  25            RUNTIME: 249 s = 4:09 = 9 s hook + 24 × 10 s
                ⚠️ DEPODA ÇELİŞKİ VAR ve bu film §2.3'ü izliyor: KILAVUZ_REHBERI
-               §2.3 **25 sahne / 4:09** der, `yatay_3_5_dk_filmler/README.md`
+               §2.3 **25 sahne / 4:09** der, `yatay_4_dk_filmler/README.md`
                **24 sahne** der. THE PAYLOAD README'yi; SINKING STAKE,
                UPWARD FALL ve bu film §2.3'ü izledi. Çelişki depoda DURUYOR.
 BÖLÜM:         BOLUM_1 = S0-S12 (13 sahne) · BOLUM_2 = S13-S24 (12 sahne)
@@ -1116,7 +1116,7 @@ KARTLARDA OLMAYAN, BU FİLME ÖZEL DÖRT RİSK — çözümleriyle:
 
 ```bash
 python3 kilavuzlar_ve_sistem_dosyalari/PROMPT_KONTROL/prompt_kontrol.py \
-        yatay_3_5_dk_filmler/THE_OPEN_CIRCUIT
+        yatay_4_dk_filmler/THE_OPEN_CIRCUIT
 ```
 
 ```
@@ -1449,7 +1449,7 @@ TETİKLEYİCİ KONTROLÜ — altı tetikleyiciden ÜÇÜ doğru:
 ```
 □ SPEC ayrı dosyada: `THE_OPEN_CIRCUIT_QA_SPEC.md`  [D117]
 □ QA paketi: bash .claude/skills/qa-isle/scripts/rubrik_paketle.sh \
-             yatay_3_5_dk_filmler/THE_OPEN_CIRCUIT   [D165]
+             yatay_4_dk_filmler/THE_OPEN_CIRCUIT   [D165]
 □ Replik zamanları HESAPLATILIR, elle yazılmaz [D122]:
   replik(S_n) = 9 + (n−1) × 10 + TIMELINE ofseti
 □ E bloğu makine kapıları ffmpeg ile KURU KOŞULACAK [D142] — yazılmadan

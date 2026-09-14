@@ -42,7 +42,7 @@ karakter alçakta. [`KILAVUZ_REHBERI` §4.1 yetkinlik kuralı: hata bilgi
 eksikliğinden gelir, aptallıktan değil.]
 
 > ⛔ **AYNI GÜN ÇAKIŞMA KAYDI — 27.08.2026, dürüst kayıt.** Bu dosya
-> yazılırken depoda **eşzamanlı olarak** `yatay_3_5_dk_filmler/THE_SKYLIGHT/`
+> yazılırken depoda **eşzamanlı olarak** `yatay_4_dk_filmler/THE_SKYLIGHT/`
 > yazıldı (16:17-16:31) ve o film de **Mars'ta bir lav tüpü tavan çöküğünde**
 > geçiyor. İki dosya birbirinden habersiz aynı jeolojik olguyu seçti.
 > Çakışma gerçektir ve gizlenmiyor; ayrım şu üç eksende TAM:

@@ -1,11 +1,11 @@
 # 🔍 THE HOLDING FIELD — QA KAYDI
 
-> **Kaynak dosya:** `yatay_2_4_dk_filmler_uzay/THE_HOLDING_FIELD/THE_HOLDING_FIELD_PLANET_FILM.md`
+> **Kaynak dosya:** `yatay_2_dk_filmler/THE_HOLDING_FIELD/THE_HOLDING_FIELD_PLANET_FILM.md`
 > **Teknik QA (VIDEO_QA):** ⛔ kapıda durdu — künye "The Shift" dedi, doküman
 > "THE HOLDING FIELD" diyor. Doğru davranış; film kimliği çözülünce yeniden.
 > **Senaryo QA (SENARYO_QA):** ⛔ kapıda durdu — künye 134 s, plan 140 s.
 > **Mantık QA (MANTIK_QA):** ✅ **4.0/10** · 03.08.2026 · ham rapor
-> `../02_HAM_RAPORLAR/THE_HOLDING_FIELD_MANTIK_HAM.md`
+> `../02_HAM_RAPORLAR/THE_HOLDING_FIELD/THE_HOLDING_FIELD_MANTIK_HAM.md`
 >
 > Üç mercek arka arkaya çalıştı; **yalnız doküman istemeyen mercek başlayabildi
 > ve gerçek sorunu o buldu.** Diğer ikisi doğru sebeple durdu ama yanlış

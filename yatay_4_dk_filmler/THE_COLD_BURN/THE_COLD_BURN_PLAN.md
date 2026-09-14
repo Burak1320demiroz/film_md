@@ -76,7 +76,7 @@ Depodaki filmlerin neredeyse tamamı **tek kâşif** üzerine kurulu. Hiçbirind
 - ❌ Uçuş içi arıza/patlama ve toparlanma yayı yok
 - ❌ Buz gezegeni yüzeyi + yörünge mekaniği aynı filmde yok
 
-THE COLD BURN dördünü birden getiriyor. `yatay_3_5_dk_filmler` klasörünün
+THE COLD BURN dördünü birden getiriyor. `yatay_4_dk_filmler` klasörünün
 üçüncü filmi ve klasördeki ilk uzay-uçuş filmi.
 
 ⚠️ **Bilinçli format sapması:** klasör standardı 25 sahnedir; bu film

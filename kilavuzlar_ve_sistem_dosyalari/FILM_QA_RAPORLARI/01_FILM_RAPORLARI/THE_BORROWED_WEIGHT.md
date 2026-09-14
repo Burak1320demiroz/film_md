@@ -25,8 +25,8 @@ MERCEK:   🔧 1_KARE · 🔗 2_DEVAMLILIK · 🔊 3_SES · 📖 4_HIKAYE
 MOD:      dördü de V — SPEC AYRI DOSYA olarak hazırdı, verilmedi
 OTURUM:   ⬜ AÇIK — operatör beyanı yok; ayrı oturum olup olmadığı bilinmiyor [D110]
 HAM:      ../02_HAM_RAPORLAR/THE_BORROWED_WEIGHT_{KARE,DEVAMLILIK,SES,HIKAYE}_HAM.md
-PLAN:     ../../../yatay_3_5_dk_filmler/THE_BORROWED_WEIGHT/THE_BORROWED_WEIGHT_PLAN.md
-SPEC:     ../../../yatay_3_5_dk_filmler/THE_BORROWED_WEIGHT/THE_BORROWED_WEIGHT_QA_SPEC.md
+PLAN:     ../../../yatay_4_dk_filmler/THE_BORROWED_WEIGHT/THE_BORROWED_WEIGHT_PLAN.md
+SPEC:     ../../../yatay_4_dk_filmler/THE_BORROWED_WEIGHT/THE_BORROWED_WEIGHT_QA_SPEC.md
 ```
 
 ---
@@ -234,7 +234,7 @@ ve verdict'i (herhangi bir 🔴 = REGENERATE) o sayı sürüyor.
 ## 🧰 PROMPT REÇETESİ KAPISI [D85] — ① KARE'nin üç önerisi
 
 ```
-grep -rin "<önerideki dize>" yatay_3_5_dk_filmler/THE_BORROWED_WEIGHT/
+grep -rin "<önerideki dize>" yatay_4_dk_filmler/THE_BORROWED_WEIGHT/
 
 REMOVE  "cinematic lighting"        → 0 eşleşme  ⛔ REÇETE DÜŞER
 REPLACE "heavy impact"              → 0 eşleşme  ⛔ REÇETE DÜŞER

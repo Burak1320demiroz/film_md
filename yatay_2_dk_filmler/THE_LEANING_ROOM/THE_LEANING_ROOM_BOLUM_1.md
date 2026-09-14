@@ -7,7 +7,7 @@
 > Bölüm sınırı ardışık bir çifttir: bu dosyanın son sahnesi (S5, yakın plan ·
 > omuz üstü) ile bölüm 2'nin ilk sahnesi (S6, orta plan · profil) bir ölçek
 > kademesi ve bir açı tipi ayrılır. Denetimi klasör modu yapar:
-> `python3 kilavuzlar_ve_sistem_dosyalari/PROMPT_KONTROL/prompt_kontrol.py yatay_2_4_dk_filmler_uzay/THE_LEANING_ROOM`
+> `python3 kilavuzlar_ve_sistem_dosyalari/PROMPT_KONTROL/prompt_kontrol.py yatay_2_dk_filmler/THE_LEANING_ROOM`
 
 ---
 

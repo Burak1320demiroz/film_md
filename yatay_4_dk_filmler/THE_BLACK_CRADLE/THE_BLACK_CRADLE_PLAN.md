@@ -78,7 +78,7 @@ Depodaki hiçbir filmde:
 - ❌ Pilotun hedefi hiç görmediği "kör uçuş" işbölümü yok
 - ❌ Işığın tehdit, karanlığın sığınak olduğu bir dünya yok
 
-THE BLACK CRADLE dördünü birden getiriyor. `yatay_3_5_dk_filmler`
+THE BLACK CRADLE dördünü birden getiriyor. `yatay_4_dk_filmler`
 klasörünün beşinci filmi. ⚠️ Bilinçli format sapması (17.08.2026):
 klasör standardı 25 sahnedir; +1 ara sahneyle (S19b kanat kamerası,
 operatör isteği) film **26 sahne = 4:19** — Cold Burn'ün 30-sahne

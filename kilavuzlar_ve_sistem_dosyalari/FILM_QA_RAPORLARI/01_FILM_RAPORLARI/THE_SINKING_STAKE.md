@@ -32,7 +32,7 @@ SONUÇ: raporların SÜRE ve SAHNE SAYISI değerleri HİÇBİR KAPIYA girmedi.
 
 ### ① SPEC KAPISI — ⛔ PARTİ DÜŞTÜ [D129]
 ```
-ls yatay_3_5_dk_filmler/THE_SINKING_STAKE/*_QA_SPEC.md → VAR
+ls yatay_4_dk_filmler/THE_SINKING_STAKE/*_QA_SPEC.md → VAR
 Sekiz raporun ilk satırı → INPUT MODE: V  (8/8)
 
 SONUÇ: koşu TEKRARLANIR. Ham raporlar 02/'ye düşer; T2/T3/T4/T5/T6

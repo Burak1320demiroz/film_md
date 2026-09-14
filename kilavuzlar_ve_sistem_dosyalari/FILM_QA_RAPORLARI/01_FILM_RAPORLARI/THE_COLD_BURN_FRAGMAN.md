@@ -1,8 +1,8 @@
 # ❄️ THE COLD BURN — FRAGMAN DİKEY · Film QA Kaydı
 
 > Oluşturma: 17.08.2026 · tek mercek (SENARYO_QA), MOD V (belgesiz) koşuldu.
-> Kaynak dosya: `yatay_3_5_dk_filmler/THE_COLD_BURN/THE_COLD_BURN_FRAGMAN_DIKEY.md`
-> Ham rapor: `02_HAM_RAPORLAR/THE_COLD_BURN_FRAGMAN_SENARYO_HAM.md`
+> Kaynak dosya: `yatay_4_dk_filmler/THE_COLD_BURN/THE_COLD_BURN_FRAGMAN_DIKEY.md`
+> Ham rapor: `02_HAM_RAPORLAR/THE_COLD_BURN/THE_COLD_BURN_FRAGMAN_SENARYO_HAM.md`
 > Kaynak filmin kaydı: [`THE_COLD_BURN.md`](THE_COLD_BURN.md) (beş mercek, 09.08.2026)
 > ⚠️ Bu kaydın ana çıktısı **skor değil, MERCEK HATASI + KURGU SAPMASIDIR.**
 
@@ -119,7 +119,7 @@ SONUÇ: 2/2 çapa. Koşu ATIFLIDIR — UNATTRIBUTED değil.
 
 **1. "Bu bir tanıtım fragmanı mı, bağımsız kısa film mi?"**
 FRAGMAN. Dosyanın ilk cümlesi: "Bu dosya yeni bir film değil, bir FRAGMANDIR."
-Mekanik KAPANAN KAPILAR, kaynak film `yatay_3_5_dk_filmler/THE_COLD_BURN/`
+Mekanik KAPANAN KAPILAR, kaynak film `yatay_4_dk_filmler/THE_COLD_BURN/`
 (30 sahne · 4:59). Rubrik bu soruyu FLAGS'e yazdı ama **cevabı beklemeden
 on kategoriye puan verdi** — soru ile puanın aynı gözlemden çıkması D102'nin
 yasakladığı şeydir: gözlem ya soru olur ya puan düşürür, ikisi birden olmaz.

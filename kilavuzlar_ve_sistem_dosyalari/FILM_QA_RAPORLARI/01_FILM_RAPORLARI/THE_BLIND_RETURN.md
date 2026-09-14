@@ -5,7 +5,7 @@
 > yüklenmedi** (girdisiz koşu → DERS 80). Filmin dosyasında hazır SPEC bloğu
 > vardı (§0.15) ve üç merceğin hiçbirine verilmedi — Starless Circle'la aynı
 > operatör hatası.
-> Kaynak dosya: `yatay_2_4_dk_filmler_uzay/THE_BLIND_RETURN/THE_BLIND_RETURN_MARS_STORM_FILM.md`
+> Kaynak dosya: `yatay_2_dk_filmler/THE_BLIND_RETURN/THE_BLIND_RETURN_MARS_STORM_FILM.md`
 
 ---
 
@@ -13,7 +13,7 @@
 
 | Mercek | Durum | Skor | Ham rapor |
 |---|---|---|---|
-| 🔧 VIDEO_QA | 🚨 **GEÇERSİZ — girdisiz koşu** (video yüklenmedi; rapor yine de REGENERATE verdikti yazdı → DERS 80) | — | `02_HAM_RAPORLAR/THE_BLIND_RETURN_TEKNIK_HAM.md` |
+| 🔧 VIDEO_QA | 🚨 **GEÇERSİZ — girdisiz koşu** (video yüklenmedi; rapor yine de REGENERATE verdikti yazdı → DERS 80) | — | `02_HAM_RAPORLAR/THE_BLIND_RETURN/THE_BLIND_RETURN_TEKNIK_HAM.md` |
 | 📖 SENARYO_QA | ⚠️ Ⓥ mod V · tam kurgu · **DERS 75 kapısı ÇALIŞTI** (169 s / 13 kesme ölçüldü, TAM KOŞU) | **4.0/10** · REVISE STRUCTURE | `..._SENARYO_HAM.md` |
 | 🧩 MANTIK_QA | ✅ (rubrik zaten belgesiz) · tam kurgu | **4.0/10** · STRUCTURAL PROBLEM | `..._MANTIK_HAM.md` |
 | 🧍 KARAKTER_QA | ✅ (opsiyonel 5. mercek) · tam kurgu | **4.0/10** · DRIFTS BUT RECOVERABLE | `..._KARAKTER_HAM.md` |

@@ -1825,7 +1825,7 @@ SÜRE DENETİMİ
 
 ```
 🩸 1. KOŞU YAPILDI (12.08.2026) — ÜRETİLDİ, DENETLENDİ, SKOR YOK
-   Rapor: FAZ_07_QA_DERSLER.md · ham: 02_HAM_RAPORLAR/THE_SECOND_SHIP_FAZ07_HAM.md
+   Rapor: FAZ_07_QA_DERSLER.md · ham: 02_HAM_RAPORLAR/THE_SECOND_SHIP/THE_SECOND_SHIP_FAZ07_HAM.md
    Reel + sıra kayması → skor tabanı üretilemedi. Promptlar KARAR 6
    ile yamalandı; aşağıdaki sıra YENİDEN ÜRETİM sırasıdır.
 

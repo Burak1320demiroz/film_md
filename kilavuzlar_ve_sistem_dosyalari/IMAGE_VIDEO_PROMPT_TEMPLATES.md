@@ -3,6 +3,8 @@
 > Bu şablonlar, mevcut film dosyalarının analiz edilmesiyle çıkarılmıştır.
 > İki nesil format tespit edildi: **V1 (düz format)** ve **V2 (Bible yapılı format)**.
 > Aşağıdaki şablonlar **V2'nin en güncel ve en başarılı versiyonunu** temel alır.
+> ⭐ 14.09.2026: yeni açılan klasörler (00_HIKAYE_ONAYI.md var) **V3** iskeletini
+> kullanır — bir sonraki bölüm; V2 eski klasörler için durur.
 
 ---
 
@@ -34,7 +36,117 @@
 
 ---
 
-## 📸 IMAGE PROMPT ŞABLONU (V2 — En Güncel Format)
+## ⭐ 14.09.2026 · YENİ REJİM İSKELETİ — IN FRAME · bütçe · START FRAME (V3)
+
+> **Sahip kararı (reform FAZ 7 · `TODO_AKIS_VE_DERS_REFORMU.md`).** Yalnız
+> `00_ANALIZ/00_HIKAYE_ONAYI.md` taşıyan (14.09.2026'dan sonra açılan) klasörlerde;
+> eski klasörler aşağıdaki V2 şablonuyla kalır. Ölçüm: THE_LOCKED_PULSE IMAGE promptu
+> ort. 719 kelime, %57'si her promptta aynen tekrar; 10/10 insert promptu kadrajda
+> olmayan yüzü tarif ediyordu ve model yazılanı kadraja soktu [D214]. Kapılar
+> `prompt_kontrol.py` ① (kelime bandı) · ㉖ (IN FRAME) · ㉗ (NEGATIVE ≤ 11 cümle);
+> sayılar betikte (`KELIME_BANDI` · `NEGATIF_CUMLE_TAVANI`), buraya kopyadır.
+>
+> Üç kural: **① ilk satır `IN FRAME:`** — kadrajda ne var, sözlükten (face · hands ·
+> torso · legs · full body · back · none); yalnız yazılan tarif edilir, Bible'ın kalanı
+> YAZILMAZ (self-contained ≠ Bible'ın tamamı — AGENTS §2 kural ③). `face` yalnız yüz
+> OKUNABİLİR kadrajda (MS ve yakını) yazılır; `full body`/WS'de yüz ayrıntısı girmez.
+> **② bütçe** — POZİTİF gövde (NEGATIVE öncesi) IMAGE 100-250 · VIDEO 120-300 kelime,
+> üstü BLOCK; NEGATIVE = `KILAVUZ_REHBERI` §5.1 çekirdek (image 7 · video 8 cümle) +
+> ≤3 sahneye özel (§5.2). **③ video Bible'ı tekrar etmez** — I2V'de imaj t=0'dır,
+> tek satır `START FRAME:` devamlılığı taşır; `CONTINUITY LOCKS` paragrafı yazılmaz.
+> Sahnenin tutması gereken TEK kilit ÜÇÜNCÜ satırdadır (TUR 11 ② KONUM — ilk kez şablona indi).
+
+### 📸 IMAGE (V3)
+
+```
+IN FRAME: <face · hands · torso · legs · full body · back | none — kadrajda olan, sözlükten>
+Scene <n> of <N>.
+<SAHNENİN TEK KİLİDİ — bu karede tutması gereken şey, SAYIYLA. Örn.:
+ The left glove stays open, all five fingers spread, resting on the valve wheel.>
+
+<ÖZNE — yalnız IN FRAME'dekiler: hands → eldiven · bilek halkası · kol;
+ face → yüz + kask + [D79 vizör cümlesi, §5.2]; back → [D139 sırt cümlesi, §5.2];
+ full body → kostümün silüeti ve renk bandı, yüz ayrıntısı YOK.
+ Character Bible'ın kalanı yazılmaz — model yazılanı kadraja sokar [D214].>
+<MEKÂN · IŞIK · ÖLÇEK — bu karede görünen kadarı; ölçü nesne-göreli [D138]>
+<CAMERA: lens + mesafe + yükseklik + açı tipi sözlük kelimesiyle
+ ("low angle" / "eye level" / "high angle" / "over-the-shoulder")>
+
+NEGATIVE: <§5.1 çekirdek — IMAGE'de 7 cümle (① tek çekim düşer)>
+<+ ≤3 sahneye özel cümle — §5.2 (diyalog · risk kartı kilidi); yoksa boş>
+
+Output: <oran>, <çözünürlük>, no text, no watermark.
+```
+
+### 🎥 VIDEO (V3)
+
+```
+IN FRAME: <face · hands · torso · legs · full body · back | none>
+Scene <n> of <N>. Duration <klip> seconds.
+START FRAME: the approved still from this scene's IMAGE prompt — animate it; suit, helmet, light and scene carried from the frame, nothing re-described.
+<SAHNENİN TEK KİLİDİ — hareket kilidi, SAYIYLA. Örn.:
+ The wheel turns exactly one quarter, then stops, and nothing else in frame moves.>
+
+<TIMELINE: 0,0 s … / <t> s … — her satırda ≥1 GÖVDE FİİLİ; iki aşamalı eylem iki
+ satıra; replik varsa ofseti buradan okunur ve konuşan/dinleyen bedeni §5.2 diyalog satırı>
+<CAMERA: ⛔ I2V'de bu satır ŞART — betik kurulum yayını buradan ölçer; lens · mesafe ·
+ hareket tipi (fixed lockoff / push-in …) · IN FRAME: back ya da kamera arkadaysa
+ pozitif sırt cümlesi burada [D139]>
+
+NEGATIVE: <§5.1 çekirdek — 8 cümle>
+<+ ≤3 sahneye özel cümle — §5.2>
+
+Output: <oran>, no text, no watermark.
+```
+
+> Ölçülen kalıp: §5.1 çekirdek 886 karakter / 139 kelime; bütçe POZİTİF gövdeye
+> uygulandığı için çekirdek sahne metninden yer yemez. Toplam karakter tavanı
+> (4.300, `TAVAN`) aynen durur.
+
+### 📝 V3 doldurulmuş örnek — THE_LOCKED_PULSE S0'ın yeniden yazımı (14.09.2026 doğrulaması)
+
+> Aynı sahne, aynı kurulum (24mm · WS · 6,0 m). Eski IMAGE 4.382 karakter (tavan
+> üstü, BLOCK) ve 24mm geniş planda **yüz tarifi** (kaş kemeri · çene · gözenek);
+> V3 hâli 2.392 karakter / 247 kelime pozitif gövde, `IN FRAME: full body` — yüz
+> yok, silüet + renk bandı var. VIDEO 3.845 → 2.477 karakter; `CONTINUITY LOCKS`
+> paragrafı tek satır `START FRAME:` oldu. `prompt_kontrol.py` yeni rejimde bu
+> çift için 0 bulgu (①/㉖/㉗/㉑). Üçüncü satır = sahnenin tek kilidi (sayıyla).
+> Sahneye özel 2 negatif cümle: mühür üç sınırı [D175] + pencere/yıldız yok.
+
+```
+IN FRAME: full body
+Scene 1 of 25.
+The hand-wheel stays at its starting position for the whole frame, both gloves closed on its rim.
+
+A single suited figure kneels side-on to the camera in the right third of a curved ring-habitat corridor, facing the wall, torso upright. Muted slate-grey quilted pressure suit, one amber band on the LEFT upper arm and one on the LEFT thigh, rounded hard-shell helmet in a wide bronze collar ring, dark-grey gloves. In the right-hand wall at chest height a recessed valve bay: a brushed-steel hand-wheel the width of a helmet, a round port collar at hip height, above them a row of seven fist-sized lamps, six lit white, the last on the right dark, and one red lamp above the bay. A stiff webbing strap hangs from a ceiling rail on the left, nearer the camera, almost to the deck, one straight line caught at the left end of a swing, filling the left third of the frame. Dark grey ribbed deck rising into the distance like the inside of a great wheel, pale grey matte wall panels, one arched ceiling panel overhead.
+
+CAMERA: 24mm spherical lens on a fixed locked-off tripod 6.0 m from the valve bay, camera height 1.20 m, eye-level wide shot, deep focus. LIGHT: even neutral light from the ceiling panel, slightly from screen-left, short soft shadows; the red lamp pulses once every two seconds, reaching only the bay face and his right shoulder, no halo.
+
+NEGATIVE: Exactly one human character, no duplicates, no second person. 0% bloom, no glow, no soft focus, every surface keeps visible texture. No readable text, letters, digits or symbols on any display, surface, patch or sign — none on the suit, the equipment, the ground or any natural surface in the frame — no subtitles, no captions, no watermark. Photorealistic with 35mm film grain, no CGI or video-game look, real skin pores and sweat, no airbrushing, no waxy texture, no face morphing. Equipment and clothing identical throughout, no drift, no gear appearing or disappearing. Hand-to-surface contact keeps a clear boundary, no merging, no phasing, no extra fingers. Particles obey the stated gravity with continuous momentum, never hovering, never swirling like liquid, terrain static, no melting or warping. No bare skin anywhere in frame — none above the collar, none at the wrist, none at the ankle. No window, no sky, no stars inside the corridor.
+
+Output: 16:9, 4K, no text, no watermark.
+```
+
+```
+IN FRAME: full body
+Scene 1 of 25. Duration 9 seconds.
+START FRAME: the approved still from this scene's IMAGE prompt — animate it; suit, helmet, light and scene carried from the frame, nothing re-described.
+The hand-wheel does not move for the whole clip; the strap on the left completes one full swing every four seconds.
+
+TIMELINE: 0.0s — he kneels at the bay, both gloves closed on the rim of the hand-wheel, the strap at the left end of its swing. 2.0s — the strap has swung across to the right end and is on its way back; his torso leans into the wheel. 4.0s — the strap completes one full swing and keeps swinging at that same rate. 7.0s — his shoulders settle back a finger's width, then lean into the wheel again. 9.0s — hold: both gloves on the rim, the strap mid-swing, the red lamp pulsing; the wheel has not moved.
+
+CAMERA: 24mm spherical lens on a fixed locked-off tripod 6.0 m from the valve bay, camera height 1.20 m, eye-level wide shot, deep focus, fixed lockoff — absolutely zero camera movement.
+
+PHYSICS: spin gravity inside the ring — down is the deck and the corridor curves up into the distance; about a quarter of Earth's weight; real time, normal human pace; anything let go falls to the deck; the strap swings as one straight line and never ripples. AUDIO: a steady low fan-and-pump hum; the alarm warble once every two seconds; his breathing inside the helmet; no music.
+
+NEGATIVE: Single unbroken take, no cuts, no dissolves, no camera resets, no angle change. Exactly one human character, no duplicates, no second person. 0% bloom, no glow, no soft focus, every surface keeps visible texture. No readable text, letters, digits or symbols on any display, surface, patch or sign — none on the suit, the equipment, the ground or any natural surface in the frame — no subtitles, no captions, no watermark. Photorealistic with 35mm film grain, no CGI or video-game look, real skin pores and sweat, no airbrushing, no waxy texture, no face morphing. Equipment and clothing identical throughout, no drift, no gear appearing or disappearing. Hand-to-surface contact keeps a clear boundary, no merging, no phasing, no extra fingers. Particles obey the stated gravity with continuous momentum, never hovering, never swirling like liquid, terrain static, no melting or warping. No bare skin anywhere in frame — none above the collar, none at the wrist, none at the ankle. No window, no sky, no stars inside the corridor.
+
+Output: 16:9, no text, no watermark.
+```
+
+---
+
+## 📸 IMAGE PROMPT ŞABLONU (V2 — eski rejim · 14.09.2026'dan önce açılan klasörler)
 
 ```
 SCENE:
@@ -148,7 +260,7 @@ NEGATIVE:
 
 ---
 
-## 🎥 VIDEO PROMPT ŞABLONU (V2 — En Güncel Format)
+## 🎥 VIDEO PROMPT ŞABLONU (V2 — eski rejim · 14.09.2026'dan önce açılan klasörler)
 
 ```
 MOTION ([X] seconds, [lens]mm, [hareket tipi] at [X] meters):
@@ -178,7 +290,7 @@ MOTION ([X] seconds, [lens]mm, [hareket tipi] at [X] meters):
   midground left-to-right") ve blok sonuna tek satır eksen hatırlatması
   eklenir ("Ship remains in the right third throughout; no direction
   reversal.") — `UZAMSAL_HARITA_VE_EKRAN_YONU_KILAVUZU.md` §4.4
-- **`[PHYSICS + NEGATIVE bibles apply throughout]`** her video prompt'un en son satırında ZORUNLU
+- **`[PHYSICS + NEGATIVE bibles apply throughout]`** her video prompt'un en son satırında ZORUNLU (eski rejim; V3'te atıf yok — çekirdek promptun kendisinde, §5.1)
 - **Video, image'in DEVAMI olmalı** — aynı kompozisyon, aynı ışık, aynı poz
 
 ---
@@ -197,7 +309,8 @@ MOTION ([X] seconds, [lens]mm, [hareket tipi] at [X] meters):
 >
 > **Güncel kullanım:**
 > - Tür-bağımsız çekirdek (her prompta giren kısa blok):
->   `KILAVUZ_REHBERI.md` **§5 NEGATİF ÇEKİRDEK** — tam metin orada.
+>   `KILAVUZ_REHBERI.md` **§5.1 ÇEKİRDEK — 8 cümle** (14.09.2026; eski
+>   klasörde §5.3 tam metin). Film-özel tam liste PLAN Negative Bible'da.
 > - Sahneye göre seçilecek kilit havuzu (suit/su/canlı/sıfır-g vb.):
 >   `DERSLER/00_HIZLI_REFERANS.md` — havuzdur, tamamı yapıştırılmaz.
 >

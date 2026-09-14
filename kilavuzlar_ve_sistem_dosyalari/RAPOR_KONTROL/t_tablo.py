@@ -8,7 +8,7 @@ elle kopyalanmasını bekliyordu. 04.09.2026 ölçümü: ham raporu olup T
 tablosunda satırı olmayan film 16 — kayıp ders değil, KIRTASİYE.
 "Ölçüldü" ile "tabloya girdi" iki ayrı durum olmaktan çıkar.
 
-⛔ GEÇERSİZ / TEKRAR kararlı rapor satır YAZMAZ (tablo okuma kuralları).
+⛔ GEÇERSİZ / TEKRAR / ✂️ KESİK kararlı rapor satır YAZMAZ (tablo okuma kuralları; KESİK 14.09.2026).
 ⛔ mod V satırı Ⓥ ile yazılır; SPEC varken mod V koşulduysa ⛔ da eklenir
    [D94 · D129] — skor tabloya girer, tamlık matrisine girmez.
 """
@@ -70,6 +70,18 @@ T = {
    "Yaralanma": ["Injury Persistence & Cost"], "Kavrama": ["Grip & the Price of Holding On"],
    "Ekipman": ["Equipment Burden"], "Acı": ["Pain, Restraint and Proportion"],
    "Eğri": ["Recovery Curve Honesty"]}),
+ # 14.09.2026 · sahip talebi: hareket mantığı + yön/hedef mercekleri
+ "⑭ HAREKET": ("T14_HAREKET_KALITE.md", {
+   "Amaç": ["Purpose Legibility"], "Yürüyüş": ["Locomotion Sense"],
+   "Dönüş": ["Turn & Rotation Logic"], "El/Nesne": ["Hands & Object Handling"],
+   "Döngü": ["Loop & Repetition"], "Tamamlama": ["Commitment & Completion"],
+   "Beden": ["Body Coherence"], "Tepki": ["Reaction Sense"]}),
+ "⑮ YÖN": ("T15_YON_KALITE.md", {
+   "Hedef": ["Target Establishment"], "Bakış": ["Look Direction"],
+   "Dönüş/Gidiş": ["Turn & Travel Direction"], "Uzanma/Nişan": ["Reach & Aim"],
+   "Ateş/Atış": ["Fire · Trigger · Throw · Release", "Fire / Trigger / Throw / Release", "Fire, Trigger, Throw & Release"],
+   "Kesme yönü": ["Screen Direction Across Cuts"], "Kamera": ["Camera-Relative Sense"],
+   "Sonuç": ["Consequence on Target"]}),
 }
 
 
@@ -93,11 +105,17 @@ def _film_adi(r, film_dir=None):
     return " ".join(w[:1].upper() + w[1:].lower() for w in ad.split() if w) or None
 
 
-def satir_kur(r, film_dir=None, spec_var=False, tarih=None):
-    """rapor_kontrol sonucundan tek T satırı üret → (tablo dosyası, film adı, satır) | None"""
+def satir_kur(r, film_dir=None, spec_var=False, tarih=None, bolum=None):
+    """rapor_kontrol sonucundan tek T satırı üret → (tablo dosyası, satır anahtarı, satır) | None
+
+    bolum=(n, m) [13.09.2026 · KILAVUZ_REHBERI §2.6]: QA birimi BÖLÜM olan filmde
+    her yarım kendi satırını alır — `**<Film>** B1` · `**<Film>** B2`. Etiket
+    KALININ DIŞINDA durur: sayac.sh yalnız kalın adı okur, iki satır aynı film
+    klasörüne çözülür; tabloya_yaz ise etiketi anahtara katar ki B1 ile B2
+    birbirinin üstüne yazmasın."""
     if r["mercek"] not in T:
         return None
-    if r["karar"] in ("GEÇERSİZ", "TEKRAR"):
+    if r["karar"] in ("KESİK", "GEÇERSİZ", "TEKRAR"):      # ✂️ KESİK: koşu değil (14.09.2026)
         return None
     dosya, harita = T[r["mercek"]]
     bulunan = {}
@@ -109,6 +127,7 @@ def satir_kur(r, film_dir=None, spec_var=False, tarih=None):
     ad = _film_adi(r, film_dir)
     if not ad:
         return None          # klasör verilmediyse satır YAZILMAZ (kimliksiz satır yazmaktansa yazma)
+    anahtar = f"**{ad}**" + (f" B{bolum[0]}" if bolum else "")
     isaret = ""
     if r.get("mod") != "D":
         isaret += " Ⓥ"
@@ -118,10 +137,10 @@ def satir_kur(r, film_dir=None, spec_var=False, tarih=None):
         isaret += " ⚠️"
     t = tarih or date.today().strftime("%d.%m")
 
-    h = [f"**{ad}**{isaret}"]
-    if dosya.startswith(("T5", "T6", "T7", "T8")):
+    h = [f"{anahtar}{isaret}"]
+    if dosya.startswith(("T5", "T6", "T7", "T8", "T14", "T15")):
         h.append(t)
-    if dosya.startswith(("T6", "T7", "T8")):
+    if dosya.startswith(("T6", "T7", "T8", "T14", "T15")):
         h.append(r.get("mod") or "V")
     if dosya.startswith("T1"):
         h += [(r.get("format") or "⬜").upper(), str(r.get("sahne") or "⬜")]
@@ -133,15 +152,19 @@ def satir_kur(r, film_dir=None, spec_var=False, tarih=None):
     h += [bulunan.get(k, "⬜") for k in harita]
     top = (f'{r["son_ort"]:.1f}'.replace(".", ",")) if r.get("son_ort") is not None else "—"
     h.append(f"**{top}**")
-    if dosya.startswith(("T5", "T7", "T8")):
+    if dosya.startswith(("T5", "T7", "T8", "T14", "T15")):
         h.append("⬜")
     if dosya.startswith("T6"):
         h += ["⬜", "⬜"]
-    return dosya, ad, "| " + " | ".join(h) + " |"
+    return dosya, anahtar, "| " + " | ".join(h) + " |"
 
 
 def tabloya_yaz(kok, dosya, film_adi, satir):
-    """Tabloya ekle; aynı filmin satırı varsa YERİNE yaz (üst üste birikmez)."""
+    """Tabloya ekle; aynı filmin satırı varsa YERİNE yaz (üst üste birikmez).
+
+    film_adi = satır anahtarı: `**Ad**` ya da bölüm koşusunda `**Ad** B1`.
+    Çıplak `**Ad**` bir bölüm satırıyla (`**Ad** B1`) EŞLEŞMEZ — aksi hâlde
+    tam-film satırı ilk bölüm satırını ezerdi."""
     p = kok / dosya
     if not p.exists():
         return f"⚠️  tablo yok: {p}"
@@ -156,9 +179,14 @@ def tabloya_yaz(kok, dosya, film_adi, satir):
             son = i
         elif L[i].strip() and not L[i].startswith("|"):
             break
-    anahtar = f"**{film_adi}**"
+    anahtar = film_adi if film_adi.startswith("**") else f"**{film_adi}**"
+    bolumlu = re.search(r"\*\* B\d+$", anahtar) is not None
     for i in range(ayrac + 1, son + 1):
-        if anahtar in L[i]:
+        if bolumlu:
+            eslesti = re.search(re.escape(anahtar) + r"(?!\d)", L[i]) is not None
+        else:
+            eslesti = anahtar in L[i] and not re.search(re.escape(anahtar) + r" B\d+", L[i])
+        if eslesti:
             L[i] = satir
             p.write_text("\n".join(L), encoding="utf-8")
             return f"↻ {dosya}: '{film_adi}' satırı GÜNCELLENDİ"

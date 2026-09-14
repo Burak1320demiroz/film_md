@@ -7,7 +7,7 @@
 > Bölüm sınırı ardışık bir çifttir: S6 (medium shot · profil) ile bölüm 2'nin
 > S7'si (extreme wide · overhead) arasında 2 ölçek kademesi VE 90° pitch farkı
 > vardır — bilinçli ŞOK #1. Denetimi klasör modu yapar:
-> `python3 kilavuzlar_ve_sistem_dosyalari/PROMPT_KONTROL/prompt_kontrol.py yatay_2_4_dk_filmler_uzay/THE_STILL_SWARM`
+> `python3 kilavuzlar_ve_sistem_dosyalari/PROMPT_KONTROL/prompt_kontrol.py yatay_2_dk_filmler/THE_STILL_SWARM`
 >
 > ⛔ Kamera cümlesi her sahnede image ve video promptunda BİREBİR aynıdır —
 > aynı kurulumun iki farklı cümleyle yazılması çeşitlilik sanılır ve kurulum

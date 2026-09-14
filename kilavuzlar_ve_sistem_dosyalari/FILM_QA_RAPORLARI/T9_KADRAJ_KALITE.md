@@ -40,7 +40,8 @@ Biri bile hayırsa satır YAZILMAZ; ham rapor 02_HAM_RAPORLAR/'da durur.
 
 | Film | Tarih | Mod | Kurulum|Lockoff|Kafiye|Dönüş|Dikiş|Açı yayı|Geometri | Toplam | Not |
 |---|---|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|---|
-| *(henüz koşu yok)* | | | | | | | | | |  | |
+| **The Hard Dock** ⚠️ | 12.09.2026 | D | 10 | 10 | 2 | 10 | 10 | 10 | 10 | **8,7** | S24 closing setup mismatch (B vs A) breaks bookend rhyme |
+
 
 ⛔ Sayılar bu tabloya ELLE yazılmaz — rapordan gelir ve `rapor_kontrol.py`
 GO döndükten sonra kopyalanır [kural ① · D161].

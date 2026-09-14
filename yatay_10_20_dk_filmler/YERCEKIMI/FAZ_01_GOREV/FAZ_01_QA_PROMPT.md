@@ -26,7 +26,7 @@
 > 3. Aşağıdaki kod bloğunun **içini** kopyala, başka hiçbir şey ekleme.
 >
 > **Rapor geldiğinde:** ham çıktıyı olduğu gibi
-> `FILM_QA_RAPORLARI/02_HAM_RAPORLAR/YERCEKIMI_FAZ01_HAM.md`'ye kaydet
+> `FILM_QA_RAPORLARI/02_HAM_RAPORLAR/YERCEKIMI/YERCEKIMI_FAZ01_HAM.md`'ye kaydet
 > [AGENTS kural ④ — özetleme, düzeltme yok], sonra bana ver.
 >
 > ⛔ Bu bir **faz** ölçümüdür. Skoru `00_INDEX`in T1-T4 tablolarına
@@ -713,7 +713,7 @@ RULES AGAINST INVENTION - violating these makes the report worthless
 
 ```
 1. Ham çıktıyı OLDUĞU GİBİ kaydet [AGENTS kural ④]:
-   FILM_QA_RAPORLARI/02_HAM_RAPORLAR/YERCEKIMI_FAZ01_HAM.md
+   FILM_QA_RAPORLARI/02_HAM_RAPORLAR/YERCEKIMI/YERCEKIMI_FAZ01_HAM.md
 
 2. Bana ver. Koşacağım kapılar:
    ⑪ ÖLÇÜM   → raporun süre/parça sayısı ölçümle çelişiyor mu

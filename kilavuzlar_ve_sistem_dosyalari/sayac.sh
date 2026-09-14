@@ -32,8 +32,20 @@ DERS=$(cat "$K/DERSLER/"*.md | grep -oE "^## .{0,4} DERS [0-9]+" \
 SON=$(cat "$K/DERSLER/"*.md | grep -oE "^## .{0,4} DERS [0-9]+" \
        | grep -oE "[0-9]+" | sort -n | tail -1)
 
+# 14.09.2026 (akış+ders reformu FAZ 0): film dersi (01-07) ile alet dersi (08-09)
+# ayrı sayılır — "205 ders" rakamı 91 alet dersini gizliyordu; okuma listesi
+# yalnız film dersini görür (00_YASAYAN_DERSLER.md · 🧭 bloğu).
+FILM_DERS=$(cat "$K/DERSLER/"0[1-7]_*.md | grep -oE "^## .{0,4} DERS [0-9]+" \
+       | grep -oE "[0-9]+" | sort -n | uniq | wc -l | tr -d ' ')
+ALET_DERS=$(cat "$K/DERSLER/"0[8-9]_*.md | grep -oE "^## .{0,4} DERS [0-9]+" \
+       | grep -oE "[0-9]+" | sort -n | uniq | wc -l | tr -d ' ')
+
 echo "📚 DERSLER"
 printf "   benzersiz ders    %s\n" "$DERS"
+printf "   ├ film dersi (01-07)  %s   ← yeni-film bunu okur (yaşayan liste ≤ 40)\n" "$FILM_DERS"
+printf "   └ alet dersi (08-09)  %s   ← qa-isle bunu okur\n" "$ALET_DERS"
+[ $((FILM_DERS + ALET_DERS)) -ne "$DERS" ] && \
+  printf "     (iki grubun toplamı %s ≠ %s: tarihsel çift numaralar 60/61/62 iki grupta da geçiyor)\n" "$((FILM_DERS + ALET_DERS))" "$DERS"
 printf "   en yüksek numara  %s" "$SON"
 [ "$DERS" = "$SON" ] && echo "   ✅ boşluk yok" || echo "   🚨 BOŞLUK VAR — numaralar atlanmış"
 echo
@@ -57,8 +69,17 @@ TOPLAM=0
 # film klasörüne geçti, yani bir satır = bir film klasörü. <FILM>_QA_SPEC.md
 # artık filmin klasörünün İÇİNDE durur ve zaten sayıma girmez; aşağıdaki
 # _QA_SPEC süzgeci geriye dönük emniyet olarak duruyor (tek dosya kalırsa).
-for d in dikey_shorts_filmler yatay_2_4_dk_filmler_uzay \
-         yatay_3_5_dk_filmler yatay_10_20_dk_filmler; do
+# 13.09.2026 (aynı gün, ikinci iş): yatay_2_4_dk_filmler_uzay → yatay_2_dk_filmler,
+# yatay_3_5_dk_filmler → yatay_4_dk_filmler YENİDEN ADLANDIRILDI (kart H2 altıncı
+# tur). Beş liste de yeni adı taşır; eski ad bu yorumdan başka yerde kalmadı.
+# 13.09.2026: yatay_6_dk_filmler + yatay_8_dk_filmler açıldı (görev kartı H,
+# sahip kararı — 12-sahne modül merdiveni: 12 · 24 · 36 · 48). Klasör BEŞ
+# listeye birden girdi (film sayımı · tema dağılımı FILM_DIZIN · SPEC borcu ·
+# ⑯ politika taraması · matris uyumu FILM_DIZIN üzerinden). Biri atlansaydı
+# sayaç ilk 6/8 dk filmi görmeyecekti.
+for d in dikey_shorts_filmler yatay_2_dk_filmler \
+         yatay_4_dk_filmler yatay_6_dk_filmler yatay_8_dk_filmler \
+         yatay_10_20_dk_filmler; do
     [ -d "$d" ] || continue
     n=$(ls -1 "$d" 2>/dev/null | grep -viE "^[0-9_]*README" | grep -v "^kilavuzlar$" \
         | grep -viE "_QA_SPEC\.md$" | wc -l | tr -d ' ')
@@ -80,8 +101,9 @@ echo
 #    cümle) ve "**Tema:**" (MÜZİK teması). TEMA'dan sonra HARF gelemez.
 echo "🎭 TEMA DAĞILIMI"
 TEMA_P="^[[:space:]>*_#-]*\**[[:space:]]*(TEMA|THEME)([[:space:]]+[[:alpha:]][[:alpha:] ]{0,17}|[[:space:]]*\([[:alpha:] ]{1,18}\))?[[:space:]]*:"
-FILM_DIZIN="dikey_shorts_filmler yatay_2_4_dk_filmler_uzay \
-            yatay_3_5_dk_filmler yatay_10_20_dk_filmler"
+FILM_DIZIN="dikey_shorts_filmler yatay_2_dk_filmler \
+            yatay_4_dk_filmler yatay_6_dk_filmler yatay_8_dk_filmler \
+            yatay_10_20_dk_filmler"
 TEMALI=0
 for d in $FILM_DIZIN; do
     [ -d "$d" ] || continue
@@ -202,13 +224,36 @@ DERIN=$(for t in T5_ARKA_PLAN_KALITE T6_FIZIK_KALITE; do
 # Canlı mercek sonekleri: KARE · DEVAMLILIK · HIKAYE · ARKA_PLAN · FIZIK
 # (SES bilerek dışarıda — eski 6 mercekli sistemde de aynı adı taşıyordu,
 #  tek başına canlı koşu kanıtı değildir).
-HAM_SET=$(ls -1 "$Q/02_HAM_RAPORLAR/" 2>/dev/null \
+# ⚠️ 11.09.2026 — 02_HAM_RAPORLAR FİLM KLASÖRLERİNE geçti
+#    (02_HAM_RAPORLAR/<FILM>/<FILM>_<MERCEK>_HAM.md). Film adı artık KLASÖR
+#    adıdır. 12.09.2026: `_T<n>_` önekli (136), `_<n>_` önekli (8) ve `_MOD_x`
+#    takma adlı (14) dosyalar kanonik `<FILM>_<MERCEK>_HAM.md` adına çevrildi;
+#    önek kalsaydı da sayım bozulmazdı (film adı klasörden okunur).
+#    Eski kod dosya adından film adı türetiyordu ve
+#    `LOW_POWER_T1_KARE_HAM.md`'den "LOW_POWER_T1" diye sahte film üretiyordu;
+#    taşınmadan sonra ise HİÇBİR şey bulamıyordu (sessiz sıfır).
+HAM_SET=$(find "$Q/02_HAM_RAPORLAR" -mindepth 2 -type f 2>/dev/null \
     | grep -E '_(KARE|DEVAMLILIK|HIKAYE|ARKA_PLAN|FIZIK)_HAM\.md$' \
-    | sed -E 's/_(KARE|DEVAMLILIK|HIKAYE|ARKA_PLAN|FIZIK)_HAM\.md$//' \
+    | awk -F/ '{print $(NF-1)}' \
     | ad_normal | sort -u)
-ISLENMEMIS=$(comm -23 <(printf '%s\n' "$HAM_SET" | grep -v '^$') \
-                      <(printf '%s\n' "$OLCULEN_SET" | grep -v '^$'))
-ISLENMEMIS_N=$(printf '%s\n' "$ISLENMEMIS" | grep -c .)
+ISLENMEMIS_HAM=$(comm -23 <(printf '%s\n' "$HAM_SET" | grep -v '^$') \
+                          <(printf '%s\n' "$OLCULEN_SET" | grep -v '^$'))
+# 🚨 GEÇERSİZ PARTİ ile ⏳ İŞLENMEDİ aynı şey değildir: rapor_kontrol.py bir
+#    filmin bütün merceklerine GEÇERSİZ/TEKRAR dediyse tabloya satır YAZILMAZ
+#    [D161/D162] — o film "işlenmemiş" değil, "geçersiz"dir. Karar sütunu
+#    RAPOR_KONTROL/RAPORLAR/<FILM>_<tarih>_RAPOR_KONTROL.md tablosundan okunur.
+GECERSIZ_PARTI=""; ISLENMEMIS=""
+for f in $ISLENMEMIS_HAM; do
+    rk=$(ls -1 "$K/RAPOR_KONTROL/RAPORLAR/${f}"_*_RAPOR_KONTROL.md 2>/dev/null | sort | tail -1)
+    # 14.09.2026: ✂️ KESİK (koşu değil) da "geçerli satır" sayılmaz
+    if [ -n "$rk" ] && awk -F'|' '/^\| [①-⑬]/{k=$4; gsub(/ /,"",k); if(k!="GEÇERSİZ" && k!="TEKRAR" && k!="KESİK") ok=1} END{exit ok?1:0}' "$rk"; then
+        GECERSIZ_PARTI="$GECERSIZ_PARTI$f"$'\n'
+    else
+        ISLENMEMIS="$ISLENMEMIS$f"$'\n'
+    fi
+done
+ISLENMEMIS_N=$(printf '%s' "$ISLENMEMIS" | grep -c .)
+GECERSIZ_N=$(printf '%s' "$GECERSIZ_PARTI" | grep -c .)
 
 # 01_FILM_RAPORLARI'nda FRAGMAN kayıtları da var; fragman bir FİLM DEĞİLDİR.
 # Eski hesap onları film sayıyordu ve "ölçülmemiş film" sayısını 3 eksik
@@ -216,15 +261,17 @@ ISLENMEMIS_N=$(printf '%s\n' "$ISLENMEMIS" | grep -c .)
 KAYIT_FRAG=$(ls -1 "$Q/01_FILM_RAPORLARI/" 2>/dev/null | grep -ciE "_FRAGMAN\.md$")
 KAYIT=$(ls -1 "$Q/01_FILM_RAPORLARI/" 2>/dev/null | grep -viE "^[0-9_]*README" \
         | grep -viE "_FRAGMAN\.md$" | wc -l | tr -d ' ')
-HAM=$(ls -1 "$Q/02_HAM_RAPORLAR/" 2>/dev/null | grep -v README | wc -l | tr -d ' ')
+HAM=$(find "$Q/02_HAM_RAPORLAR" -mindepth 2 -type f -name '*.md' 2>/dev/null | wc -l | tr -d ' ')
+HAM_KLASOR=$(find "$Q/02_HAM_RAPORLAR" -mindepth 1 -maxdepth 1 -type d 2>/dev/null | wc -l | tr -d ' ')
 
 # D117: her filmin yanında <FILM>_QA_SPEC.md durur. SPEC yoksa rubrik
 # yalnız mod V koşulabilir (belgesiz) — Iron Slope'un altı merceği tam bu
 # yüzden mod V koşuldu ve matris 0/4'te kaldı. Yani SPEC borcu doğrudan
 # ölçüm kalitesinin üst akışıdır, ayrı bir konu değil.
 SPECLI=0
-for d in dikey_shorts_filmler yatay_2_4_dk_filmler_uzay \
-         yatay_3_5_dk_filmler yatay_10_20_dk_filmler; do
+for d in dikey_shorts_filmler yatay_2_dk_filmler \
+         yatay_4_dk_filmler yatay_6_dk_filmler yatay_8_dk_filmler \
+         yatay_10_20_dk_filmler; do
     [ -d "$d" ] || continue
     for f in "$d"/*/; do
         [ -d "$f" ] || continue
@@ -248,15 +295,44 @@ if [ "$OLCULEN" -lt "$TOPLAM" ]; then
 fi
 if [ "$ISLENMEMIS_N" -gt 0 ]; then
     printf "   ⏳ ÖLÇÜLDÜ AMA TABLOYA İŞLENMEDİ  %s film\n" "$ISLENMEMIS_N"
-    printf '%s\n' "$ISLENMEMIS" | grep -v '^$' | sed 's/^/      · /'
+    printf '%s' "$ISLENMEMIS" | grep -v '^$' | sed 's/^/      · /'
     echo "      ham raporu var, T tablosunda satırı yok → AGENTS.md §3 kart C/D/E/E3/F/F2"
+fi
+if [ "$GECERSIZ_N" -gt 0 ]; then
+    printf "   🚨 GEÇERSİZ PARTİ (satır yazılmaz) %s film\n" "$GECERSIZ_N"
+    printf '%s' "$GECERSIZ_PARTI" | grep -v '^$' | sed 's/^/      · /'
+    echo "      rapor_kontrol.py bütün merceklere GEÇERSİZ/TEKRAR dedi [D161] — ölçüm tekrarlanır"
+fi
+# ─── MATRİS UYUM (11.09.2026) ─────────────────────────────────────
+# 00_INDEX'in tamlık matrisi elle tutulur ve ölçülmüş biçimde bayatlıyor
+# (11.09'da 97 filmin 40'ı yoktu, 3 hayalet satır vardı). Bu blok matrisi
+# ÜRETMEZ; yalnız film klasörleriyle KARŞILAŞTIRIR. Matris = "# 🎯 QA TAMLIK
+# MATRİSİ" başlığından bir sonraki "# " başlığına kadar olan İLK hücreler.
+MATRIS_SET=$(awk '/^# 🎯 QA TAMLIK MATRİSİ/{m=1; next} m && /^# /{exit} m' "$Q/00_INDEX.md" \
+    | awk -F'|' '/^\|/{c=$2; if (c ~ /~~/) next
+                 if (match(c, /\*\*[^*]+\*\*/)) {c=substr(c, RSTART+2, RLENGTH-4); print c}}' \
+    | sed -E 's/ *\(.*//; s/ — .*//' | ad_normal | sort -u)
+KLASOR_SET=$(for d in $FILM_DIZIN; do
+                 [ -d "$d" ] && ls -1 "$d" | grep -viE "^[0-9_]*README" | grep -v "^kilavuzlar$" \
+                              | grep -viE "_QA_SPEC\.md$" | sed -E 's/\.md$//'
+             done | ad_normal | sort -u)
+M_EKSIK=$(comm -23 <(printf '%s\n' "$KLASOR_SET") <(printf '%s\n' "$MATRIS_SET") | grep -c .)
+M_HAYALET=$(comm -13 <(printf '%s\n' "$KLASOR_SET") <(printf '%s\n' "$MATRIS_SET") | grep -c .)
+if [ "$M_EKSIK" -eq 0 ] && [ "$M_HAYALET" -eq 0 ]; then
+    printf "   ✅ MATRİS UYUM — 00_INDEX tamlık matrisi film klasörleriyle birebir\n"
+else
+    printf "   ⚠️ MATRİS UYUMSUZ — klasörde var/matriste yok %s · matriste var/klasörde yok %s\n" "$M_EKSIK" "$M_HAYALET"
+    comm -23 <(printf '%s\n' "$KLASOR_SET") <(printf '%s\n' "$MATRIS_SET") | sed 's/^/      eksik:   /'
+    comm -13 <(printf '%s\n' "$KLASOR_SET") <(printf '%s\n' "$MATRIS_SET") | sed 's/^/      hayalet: /'
+    echo "      → 00_INDEX.md matrisine satır ekle/sil (AGENTS §3 ortak adım ⑥)"
 fi
 printf "      (derin tarama görmüş film: %s)\n" "$DERIN"
 echo
 printf "   film kaydı (01/)   %s film" "$KAYIT"
 [ "$KAYIT_FRAG" -gt 0 ] && printf "  + %s fragman kaydı (film değil)" "$KAYIT_FRAG"
 echo
-printf "   ham rapor  (02/)   %s\n" "$HAM"
+printf "   ham rapor  (02/)   %s film klasörü · %s dosya\n" "$HAM_KLASOR" "$HAM"
+printf "   ✂️ KESİK koşu (koşu değil — yeniden koşulur; içerikten tanınır)   → 🔁 bloğunda sayı · qa_saglik.py --ozet\n"
 printf "   ⚠️ 01/ kayıtlarının çoğu KAPALI sistemin ölçümüdür — canlı sayı yukarıdaki ⭐\n"
 echo
 printf "   SPEC'i olan film (D117)   %s / %s" "$SPECLI" "$TOPLAM"
@@ -275,12 +351,31 @@ echo
 echo "🧭 DERS → KAPI  (kontrat: DERSLER/00_DERS_YAZIM_KONTRATI.md)"
 # ⚠️ 00_* dosyaları (kontrat şablonu) sayıma GİRMEZ — şablonun örnek satırları ders değildir.
 KAPILI=$(cat "$K/DERSLER/"0[1-9]_*.md | grep -cE "^\*\*KAPI:\*\*")
+# 14.09.2026 reform: film dersinin yeni şablonu FREKANS + DEĞİŞEN SATIR taşır (kontrat §2b)
+FREKANSLI=$(cat "$K/DERSLER/"0[1-7]_*.md | grep -cE "^\*\*FREKANS:\*\*")
+DEGISENLI=$(cat "$K/DERSLER/"0[1-7]_*.md | grep -cE "^\*\*DEĞİŞEN SATIR:\*\*")
 CALISMIYOR=$(cat "$K/DERSLER/"0[1-9]_*.md | grep -cE "^\*\*TEKRAR:\*\*.*ÇALIŞMIYOR")
 # ⚠️ AÇIK aday: "## ADAY-n". Kapanan aday "## ✅ ADAY-n" olur ve sayılmaz.
 #    grep 0 bulunca exit 1 döner; `|| echo 0` iki satır basıyordu — `|| true` ile susturulur.
 ADAY=$(grep -cE "^## ADAY-" "$K/DERSLER/GOZLEM_DEFTERI.md" 2>/dev/null || true); ADAY=${ADAY:-0}
-MODD=$(grep -lE "^INPUT MODE:[[:space:]]*D" "$Q/02_HAM_RAPORLAR/"*.md 2>/dev/null | wc -l | tr -d ' ')
+MODD=$(grep -rlE "^INPUT MODE:[[:space:]]*D" "$Q/02_HAM_RAPORLAR" 2>/dev/null | wc -l | tr -d ' ')
 printf "   KAPI satırı olan ders         %s / %s   (geriye dönük tasnif YOK — dokununca alır)\n" "$KAPILI" "$DERS"
+printf "   yeni biçimli film dersi       FREKANS %s · DEĞİŞEN SATIR %s / %s   (14.09.2026 §2b — ≥2 film + tek satır)\n" "$FREKANSLI" "$DEGISENLI" "$FILM_DERS"
+# 14.09.2026 reform FAZ 3: yeni-film yalnız 00_YASAYAN_DERSLER.md'yi okur — tavan 40, her D çözülmeli
+YASAYAN_DOSYA="$K/DERSLER/00_YASAYAN_DERSLER.md"
+YASAYAN_TAVAN=40
+if [ -f "$YASAYAN_DOSYA" ]; then
+  YASAYAN=$(grep -cE "^\| [0-9]+ \|" "$YASAYAN_DOSYA")
+  YAS_KAYIP=""
+  for d in $(grep -oE "^\| [0-9]+ \|" "$YASAYAN_DOSYA" | grep -oE "[0-9]+"); do
+    grep -qE "^## .{0,4} DERS ${d}:" "$K/DERSLER/"0[1-7]_*.md || YAS_KAYIP="$YAS_KAYIP D$d"
+  done
+  if [ "$YASAYAN" -gt "$YASAYAN_TAVAN" ]; then YAS_ISARET="⛔ TAVAN AŞILDI — biri çıkmadan biri girmez"; else YAS_ISARET="✅"; fi
+  printf "   YAŞAYAN film dersi            %s / %s   %s\n" "$YASAYAN" "$YASAYAN_TAVAN" "$YAS_ISARET"
+  [ -n "$YAS_KAYIP" ] && printf "   ⛔ listede var, 01-07'de yok:%s\n" "$YAS_KAYIP"
+else
+  echo "   ⛔ 00_YASAYAN_DERSLER.md YOK — yeni-film okuma listesi kaynağı eksik"
+fi
 # ⭐ KAPI SATIRI SAYMAK KAPIYI ÇÖZMEK DEĞİLDİR (05.09.2026).
 #    Kontrat kapıyı ZORUNLU kılıyor, sayaç kapı satırını SAYIYORDU — ama kapının
 #    işaret ettiği betik jetonu / liste maddesi hiç ARANMIYORDU. İlk koşu: D179'un
@@ -292,17 +387,38 @@ printf "   ⛔ ÇALIŞMIYOR damgalı ders     %s\n" "$CALISMIYOR"
   | awk '/^## .* DERS [0-9]+/{ if (match($0, /DERS [0-9]+/)) d = substr($0, RSTART+5, RLENGTH-5) }
          /^\*\*TEKRAR:\*\*.*ÇALIŞMIYOR/{ sub(/^\*\*TEKRAR:\*\*/, ""); print "D" d " ·" $0 }' \
   | cut -c1-96 | sed 's/^/      /'
-printf "   gözlem defterinde aday        %s   (kapısız — ders DEĞİL)\n" "$ADAY"
+printf "   gözlem defterinde aday        %s   (açık — ≥2 filmde tekrarlayınca ders olur · terfi eden ✅ ADAY-n sayılmaz)\n" "$ADAY"
 printf "   mod D koşusu (02/ ham rapor)  %s\n" "$MODD"
+# 14.09.2026 ①.12: film kaydında DERS DÖNÜŞÜ bölümü (TEKRAR · ADAY) — kayıt zincirinin son halkası
+DONUSLU=$(grep -lE "^## 🔁 DERS DÖNÜŞÜ" "$Q/01_FILM_RAPORLARI/"*.md 2>/dev/null | wc -l | tr -d ' ')
+KAYIT_N=$(ls "$Q/01_FILM_RAPORLARI/"*.md 2>/dev/null | grep -v README | wc -l | tr -d ' ')
+printf "   DERS DÖNÜŞÜ taşıyan kayıt     %s / %s   (①.12 · 14.09.2026'dan sonraki her koşuda zorunlu)\n" "$DONUSLU" "$KAYIT_N"
 echo "   ── son 5 FİLM dersi (01-07) — yeni film yazmadan önce AÇ ──"
 cat "$K/DERSLER/"0[1-7]_*.md | grep -E "^## .{0,4} DERS [0-9]+" | cut -c1-92 \
   | awk '{ if (match($0, /DERS [0-9]+/)) { n = substr($0, RSTART+5, RLENGTH-5) + 0; print n "\t" $0 } }' \
   | sort -n | tail -5 | cut -f2- | sed 's/^## //; s/^/      /'
 echo "   ── rubrik hacmi (tavan 25 KB · üstü çıktı kapısına taşınır, rubriğe eklenmez) ──"
-for f in "$K"/QA_PROMPTLARI/_KAYNAK/[1-9]_*.md "$K"/QA_PROMPTLARI/_KAYNAK/1[0-2]_*.md; do   # 9-12: D184
+for f in "$K"/QA_PROMPTLARI/_KAYNAK/[1-9]_*CRITIQUE_PROMPT.md "$K"/QA_PROMPTLARI/_KAYNAK/1[0-5]_*CRITIQUE_PROMPT.md; do   # 9-12: D184 · 13: ⑬ UYUM · 14-15: ⑭ HAREKET ⑮ YÖN (14.09) · _EK dosyaları rubrik değil
     b=$(wc -c < "$f"); kb=$((b / 1024)); flag=""; [ "$kb" -gt 25 ] && flag="⚠️ tavan üstü"
     printf "      %-38s %3s KB  %s\n" "$(basename "$f" | cut -c1-38)" "$kb" "$flag"
 done
+echo
+
+# ─── 🔁 BULGU FREKANSI (14.09.2026 · reform FAZ 4) ─────────────────
+# Ders tek koşudan değil örüntüden yazılır (kontrat §2b). ders_frekans.py 02_HAM_RAPORLAR'ı
+# tarar: VERDICT ve düşük kategori × FARKLI film; "⬜ dersi yok" satırı ADAY adayıdır.
+echo "🔁 BULGU FREKANSI  (ders_frekans.py --ozet · tam tablo: --tam)"
+python3 "$K/RAPOR_KONTROL/ders_frekans.py" --ozet 2>/dev/null || echo "   ⚠️  ders_frekans.py koşulamadı"
+echo
+
+# ─── 🩺 QA SAĞLIK (14.09.2026 · QA çıktı reformu FAZ 0) ─────────────
+# 336 mercek raporunun %8'i GO'ydu ve bu sayı hiçbir yerde basılmıyordu. qa_saglik.py
+# her ham raporu rapor_kontrol'ün kendi yolundan geçirir (⑤ çapraz dâhil, KESİK dışarıda):
+# mercek başına karar dağılımı · mod D payı · tally tutarlılığı · VERDICT · boyut.
+# Rubrik/sözleşme değişikliğinin etkisi bu bloğun sonraki koşularında görünür (taban:
+# CALISTIRMA_KAYITLARI.md "TABAN ÇİZGİSİ 14.09.2026").
+echo "🩺 QA SAĞLIK  (qa_saglik.py --ozet · sebepler ve film listesi: --tam)"
+python3 "$K/RAPOR_KONTROL/qa_saglik.py" --ozet 2>/dev/null || echo "   ⚠️  qa_saglik.py koşulamadı"
 echo
 
 # ─── 🚫 ÜRETİM REDDİ (01.09.2026) ───────────────────────────────────
@@ -330,8 +446,9 @@ fi
 # ⛔ Betik koşulur, sayı buraya yazılmaz (kural ①).
 echo "   ── ⑯ POLİTİKA SÖZLÜĞÜ · canlı tarama (prompt_kontrol) ──"
 python3 "$K/PROMPT_KONTROL/prompt_kontrol.py" \
-    dikey_shorts_filmler yatay_2_4_dk_filmler_uzay \
-    yatay_3_5_dk_filmler yatay_10_20_dk_filmler 2>/dev/null \
+    dikey_shorts_filmler yatay_2_dk_filmler \
+    yatay_4_dk_filmler yatay_6_dk_filmler yatay_8_dk_filmler \
+    yatay_10_20_dk_filmler 2>/dev/null \
   | grep -oE "politika sözlüğü T[12] · [0-9]+|milliyet ifadesi|gövdeye yönelmiş şiddet fiili|gerçek kurum adı|yapısal red profili" \
   | awk '/T1 ·/{t1+=$NF; n1++} /T2 ·/{t2+=$NF; n2++} /milliyet/{m++}
          /şiddet fiili/{f++} /kurum/{k++} /yapısal/{y++}

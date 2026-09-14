@@ -647,7 +647,7 @@ ASLA
 ```bash
 python3 - <<'PY'
 import os,glob,re
-roots=['dikey_shorts_filmler','yatay_2_4_dk_filmler_uzay','yatay_3_5_dk_filmler',
+roots=['dikey_shorts_filmler','yatay_2_dk_filmler','yatay_4_dk_filmler',
        'yatay_10_20_dk_filmler']   # 7-9 klasörü 04.09.2026'da kapandı;
                                    # THE_SLOW_STONE 10-20'ye taşındı, film kümesi AYNI
 tot=pos=neg=dia=0; novum={}
@@ -706,5 +706,5 @@ PROB_KOSUSU.md                            PROB A · PROB B — ikisi de koşulma
 FILM_QA_RAPORLARI/T4_HIKAYE_KALITE.md     iki satır · ikisi de Ⓥ ⛔ ⚠️
 TODO_TEMA_VE_ACI_KAPILARI.md              "sistem neyi ölçüyorsa onu optimize etti"
 sayac.sh (02.09.2026)                     79 film · canlı ölçüm 2 · SPEC 15
-yatay_3_5_dk_filmler/THE_SINKING_STAKE/   §1.3 · §1.4 · §1.5 ham kanıt
+yatay_4_dk_filmler/THE_SINKING_STAKE/   §1.3 · §1.4 · §1.5 ham kanıt
 ```

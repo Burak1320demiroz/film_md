@@ -2,7 +2,7 @@
 
 > Koşu: 10.08.2026 · Girdi: **8 ayrı klip · MODE T — beş fazda İLK KEZ**
 > · Rubrik: `FAZ_05_QA_PROMPT.md` · Ham çıktı:
-> `kilavuzlar_ve_sistem_dosyalari/FILM_QA_RAPORLARI/02_HAM_RAPORLAR/THE_SECOND_SHIP_FAZ05_HAM.md`
+> `kilavuzlar_ve_sistem_dosyalari/FILM_QA_RAPORLARI/02_HAM_RAPORLAR/THE_SECOND_SHIP/THE_SECOND_SHIP_FAZ05_HAM.md`
 >
 > **Skor YOK — model rubriğin çıktı formatının yalnız ilk yarısını
 > üretti** (WATCHER LEDGER, GROUND RESPONSE TABLE, DRAWING LEDGER,

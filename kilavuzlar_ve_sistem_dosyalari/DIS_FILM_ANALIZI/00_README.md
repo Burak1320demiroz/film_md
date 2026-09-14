@@ -44,10 +44,10 @@ filmin kaynağıdır** — ikisi de hikâye ve kamera gramerini bu seçkiden
 devraldı ve dosyalarının §0.19 tablosunda ders ders yazılı:
 
 ```
-yatay_2_4_dk_filmler_uzay/THE_LAST_SHIFT/THE_LAST_SHIFT_COLONY_FILM.md
+yatay_2_dk_filmler/THE_LAST_SHIFT/THE_LAST_SHIFT_COLONY_FILM.md
      §0.19 DEVRALINAN DERSLER — deponun DIŞ FİLM ANALİZİNDEN hikâye ve
      kamera grameri devralan İLK filmi
-yatay_2_4_dk_filmler_uzay/THE_HOLLOW_COUNT/THE_HOLLOW_COUNT_SALT_TERRACE_FILM.md
+yatay_2_dk_filmler/THE_HOLLOW_COUNT/THE_HOLLOW_COUNT_SALT_TERRACE_FILM.md
      §0.19 DEVRALINAN DERSLER — aynı analizden türetilen ikinci film
 ```
 

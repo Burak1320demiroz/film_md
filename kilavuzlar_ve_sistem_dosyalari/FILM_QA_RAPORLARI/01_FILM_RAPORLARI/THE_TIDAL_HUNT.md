@@ -1,9 +1,9 @@
 # 🔍 THE TIDAL HUNT — QA KAYDI
 
-> **Kaynak dosya:** `yatay_2_4_dk_filmler_uzay/THE_TIDAL_HUNT/THE_TIDAL_HUNT_PLANET_FILM.md`
+> **Kaynak dosya:** `yatay_2_dk_filmler/THE_TIDAL_HUNT/THE_TIDAL_HUNT_PLANET_FILM.md`
 > **Bu filmde İKİ ayrı QA var:**
 > · **TEKNİK QA** (aşağıda) — `LESSONS_LEARNED.md` kalite tablosu + Ders 17-19
-> · **MANTIK QA** (31.07.2026) — **4.0/10** · [aşağıdaki bölüm](#-mantik-ve-devamlilik-qa--31-temmuz-2026) · ham çıktı: [`../02_HAM_RAPORLAR/THE_TIDAL_HUNT_MANTIK_HAM.md`](../02_HAM_RAPORLAR/THE_TIDAL_HUNT_MANTIK_HAM.md)
+> · **MANTIK QA** (31.07.2026) — **4.0/10** · [aşağıdaki bölüm](#-mantik-ve-devamlilik-qa--31-temmuz-2026) · ham çıktı: [`../02_HAM_RAPORLAR/THE_TIDAL_HUNT/THE_TIDAL_HUNT_MANTIK_HAM.md`](../02_HAM_RAPORLAR/THE_TIDAL_HUNT/THE_TIDAL_HUNT_MANTIK_HAM.md)
 > · Senaryo QA: ❌ henüz yapılmadı
 >
 > ⚠️ **Teknik QA'nın orijinal raporu dosya olarak mevcut değil.**
@@ -91,7 +91,7 @@ en büyük eksiği "ham veri yok" idi, kısmen kapandı:
 # 🧩 MANTIK VE DEVAMLILIK QA — 31 Temmuz 2026
 
 > **Prompt:** `../../QA_PROMPTLARI/MANTIK_VE_DEVAMLILIK_QA_CRITIQUE_PROMPT.md`
-> **Ham çıktı + doküman kontrolü cevapları:** [`../02_HAM_RAPORLAR/THE_TIDAL_HUNT_MANTIK_HAM.md`](../02_HAM_RAPORLAR/THE_TIDAL_HUNT_MANTIK_HAM.md)
+> **Ham çıktı + doküman kontrolü cevapları:** [`../02_HAM_RAPORLAR/THE_TIDAL_HUNT/THE_TIDAL_HUNT_MANTIK_HAM.md`](../02_HAM_RAPORLAR/THE_TIDAL_HUNT/THE_TIDAL_HUNT_MANTIK_HAM.md)
 
 ```
 SKOR:      4.0/10  ·  VERDİKT: FIXABLE IN EDIT

@@ -3887,7 +3887,7 @@ KURGU KAPISI [Ders 72 · v2: Ders 81] — teslimden önce:
 ```
 PROMPT KONTROL [görev kartı P · adım 1] — üretimden önce, sıfır maliyet
   python3 kilavuzlar_ve_sistem_dosyalari/PROMPT_KONTROL/prompt_kontrol.py \
-      yatay_2_4_dk_filmler_uzay/THE_TALL_SHORE/THE_TALL_SHORE_DRY_OCEAN_FILM.md
+      yatay_2_dk_filmler/THE_TALL_SHORE/THE_TALL_SHORE_DRY_OCEAN_FILM.md
   tarih: 14.08.2026 · karar: ⚠️ FIX (⛔ 0 BLOCK) · 36/36 prompt okundu
 
   ✅ GEÇEN KAPILAR (hepsi sıfır bulgu):

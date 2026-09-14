@@ -852,3 +852,44 @@ sayısal kilit %100.** Bir yasak, biçim değildir.
 🔗 [[D183]] (novum sınırı kareyle sınanır) · [[D138]] · [[D141]] (final vuruş
 kanıtı — burada vuruş TESLİM edildi ama YANLIŞ BİÇİMDE) · [[D192]]'nin ışık
 tarafı [[D193]]
+
+---
+
+## 🔴 DERS 198: SIFIR-G NESNE EKSENSEL MOMENTUM KİLİDİ — YÜZEN NESNELER DURAĞAN/STATİK KALAMAZ
+
+**KAPI:** LİSTE · SPEC C YERÇEKİMİ satırı (0 g'de yüzen nesne: dönme ekseni + saniyede derece) — 14.09.2026 eklendi; prompt cümlesi tek başına kader değildir [kontrat §2]
+**TEKRAR:** 0 · 10.09.2026 THE GREEN CEILING
+
+**Kaynak:** THE GREEN CEILING QA (10.09.2026) — ① KARE (0:50, 1:30) `Zero-G micro-motion failure: floating pin remains rigidly static in space instead of maintaining continuous subtle axis rotation`, `Floating leaves exhibit rigid 2D planar hovering`.
+
+**Sorun:** Yerçekimsiz ortamda yüzen nesneler (pim, çivi, yaprak, taş) video modelince uzayda tamamen donuk duran heykeller gibi üretilmekte veya 3D eksensel dönme momentumu taşımamaktadır.
+
+**ÇÖZÜM — MİKRO-DÖNME MOMENTUMU KİLİDİ:**
+
+Video promptuna yüzen nesne için dönme ekseni momentum kilitleri eklenmelidir:
+```
+continuous subtle 3D rotational inertia around center axis, continuous slow micro-rotation, 3D volume drifting through space, zero static freezing
+```
+
+---
+
+## 🔴 DERS 200: TEK KADRAIDA İKİ YERÇEKİMİ ÇELİŞKİSİ — ORTAMDAN YANIT ALAN DÜŞME İLE HAVADA SÜZÜLME AYNI KAREDE ÇAKIŞAMAZ
+
+**FREKANS:** 5 film (14.09.2026 küme K10) · THE GREEN CEILING (mod V · ⑥) · THE CRACKED HELMET (① 5,3 — 1g gezegende sıvı küre 0g; ⑥ 9,3 — vakumda konvektif duman; ⑪ — vakumda hacimsel saçılma) · THE RING WALKER (① 5,3 — kum 1g / damla low-g / tanecik yukarı; ⑥ 7,7 — 4,94 vs 9,7 m/s²) · LOW_POWER (⑥ 4,6 — 8,87 vs 4,13 m/s²; enkaz 2,5 s ivmesiz; kapı 1,50 → 0,75 m/s) · THE AMBER LATTICE (⑥ 9,7 — kıvılcım 0,28 g)
+**DEĞİŞEN SATIR:** SPEC C `YERÇEKİMİ` satırı tek g değeri + Physics Bible düşüş tablosu (yükseklik → saniye); serbest düşen/bırakılan her nesne için video TIMELINE'ında saniyeli düşüş satırı (`falls the height of a glove in 0,3 s`); atmosfer yoksa duman/saçılma/bloom cümlesi yazılmaz (ortam kartı)
+**KAPI:** LİSTE · SPEC C YERÇEKİMİ + Physics Bible · ⑥ FİZİK `GRAVITY TABLE` ölçer
+**TEKRAR:** 4 · 10.09.2026 THE CRACKED HELMET · THE RING WALKER · LOW_POWER · THE AMBER LATTICE (aynı gün, dört film — küme K10, ADAY-22/35/36/43/46/51/72/73/74)
+
+**Kaynak:** THE GREEN CEILING QA (10.09.2026) — ⑥ FİZİK (0:01 vs 0:10 / 0:50) `Rain falls at real-time speeds while tablet floats mid-air in the same medium`, `Rain falls normally while nail experiences extreme slow-motion/float`.
+
+**Sorun:** Aynı kadrajda yağmur damlaları veya atmosferik partiküller 1g hızında düşerken, elden bırakılan veya fırlatılan nesnelerin (tablet, çivi) 0g/mikro-g hızında havada asılı kalması veya süzülmesi fiziki tutarsızlık üretmektedir (TWO GRAVITIES).
+
+**ÇÖZÜM — ORTAM KARTIYLA TAM UYUM:**
+
+1. Sıfır-g veya dikey novum ihlali olan sahnelerde yağmur damlaları ve serbest düşen atmosferik nesneler kapatılmalı veya mikro-g esneme hareketine çekilmelidir:
+   ```
+   no normal falling rain droplets, no Earth-1g particle drop, all airborne particles locked in micro-gravity flotation
+   ```
+
+
+

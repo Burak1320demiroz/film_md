@@ -10,7 +10,7 @@
 
 | Mercek | Durum | Skor | Ham rapor |
 |---|---|---|---|
-| 📱 SHORTS_QA | ✅ Ⓥ mod V | **5.6/10** · **REGENERATE** (3 BLOCKER) | `02_HAM_RAPORLAR/THE_WRONG_SHADOW_SHORTS_HAM.md` |
+| 📱 SHORTS_QA | ✅ Ⓥ mod V | **5.6/10** · **REGENERATE** (3 BLOCKER) | `02_HAM_RAPORLAR/THE_WRONG_SHADOW/THE_WRONG_SHADOW_SHORTS_HAM.md` |
 | 📖 SENARYO_QA | ⚠️ Ⓥ mod V ŞARTLI | **3.0/10** · REVISE STRUCTURE | `..._SENARYO_HAM.md` |
 | 🎨 KAPAK_QA | ❌ | — | — |
 

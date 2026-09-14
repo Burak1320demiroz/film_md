@@ -3,7 +3,7 @@
 ```
 Koşu    06.09.2026 · Gemini · makara ~99-100 s · 10 segment
 Ham     ../../../kilavuzlar_ve_sistem_dosyalari/FILM_QA_RAPORLARI/
-        02_HAM_RAPORLAR/YERCEKIMI_FAZ08_8MERCEK_HAM.md
+        02_HAM_RAPORLAR/YERCEKIMI/YERCEKIMI_FAZ08_8MERCEK_HAM.md
 Mod     ⚠️ V — SPEC yok · ÇIPLAK RUBRİK [D129] → T tablolarına GİREMEZ
 ⛔ FAZ_08_QA_PROMPT.md KOŞULMADI. Onun yerine _KAYNAK/ altındaki genel
    sekiz mercek koşuldu — ve bu, bu koşunun en pahalı kararıdır

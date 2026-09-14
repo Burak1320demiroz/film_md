@@ -1386,7 +1386,7 @@ OLARAK BİR YERDE delinmesi.
 1 kez çalıştırıldı · son 12.08.2026 · sonuç: BULGU KOŞUSU, TABAN YOK
   girdi: 1 birleşik reel (MODE R) — protokol 10 ayrı klip (MODE T)
   ham çıktı: kilavuzlar_ve_sistem_dosyalari/FILM_QA_RAPORLARI/
-             02_HAM_RAPORLAR/THE_SECOND_SHIP_FAZ08_HAM.md
+             02_HAM_RAPORLAR/THE_SECOND_SHIP/THE_SECOND_SHIP_FAZ08_HAM.md
   işlenmiş : FAZ_08_QA_DERSLER.md
 
 RUBRİĞİN TUTAN TARAFI
