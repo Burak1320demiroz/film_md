@@ -1,0 +1,7 @@
+INPUT MODE: MISSING
+
+Absent inputs:
+
+* ② SCENE PROMPTS
+* ③ QA SPEC
+* ④ MACHINE TABLE

@@ -1000,7 +1000,9 @@ iki bölüntü yan yana konur. Yine uyuşmuyorsa eksen ⑤'e eklenir.
 
 ---
 
-## ADAY-21 — DİYALOGUN GÖRSELİ BİREBİR ANLATMASI (VISUAL NARRATION EXPOSITION)
+## ✅ ADAY-21 — DİYALOGUN GÖRSELİ BİREBİR ANLATMASI (VISUAL NARRATION EXPOSITION)
+
+**DURUM:** → D217 · 15.09.2026 — ikinci film MARS_SON_CIKIS (④ B1 Dialogue 6/10 · ④ B2 8/10, ikisi de mod V) · kontrat §2b FREKANS 2 film
 
 **Kaynak:** THE_AMBER_LATTICE QA (10.09.2026) — Mod H (Hikaye / Diyalog): 5/10 — `0:58 line 5 ("We can't hold this trajectory much longer!") narrating what violently shaking camera frame already shows`.
 **KAPI:** aday — muhtemel LİSTE (`SENARYO_VE_VIRAL_KAMERA_KILAVUZU` Replik Yazım Kapısı). **Vaka:** 1.
@@ -2121,3 +2123,41 @@ makarada yok; ⑩ seçimi joystick'e (S4) yazdı, bu D190'dır.
 🔗 [[ADAY-11]] · [[ADAY-12]] · [[D202]] · [[D195]]
 
 ---
+
+---
+
+## ADAY-94 — KRİZ ZİNCİRİ PLANDA VAR, KADRAJDA YOK: HER HALKA BAŞKA YERDE, BAŞKA NESNEDE — İZLEYİCİ DÖRT AYRI ARIZA OKUDU
+
+**Tarih / kaynak:** 15.09.2026 · MARS_SON_CIKIS B1 (S01-S18) · ④ HİKAYE · parti 🚨 GEÇERSİZ (mod V + ⑪ ölçüm yok) → tek film, ADAY.
+**MOD:** V · ④ (⑫ HOOK aynı ekseni `Plateau` olarak gördü — ⑫ mod V karantinada, destek diye yazıldı, sayılmadı)
+**KAPI:** aday — muhtemel LİSTE (`00_SAHNE_TABLOSU` olay hücresinde kriz sahneleri için `TAŞIYICI` nesne · ya da `03_PLAN_ONCESI` B maddesi: "ardışık kriz sahneleri kadrajda aynı nesneyi gösteriyor mu?"). **Vaka:** 1.
+
+**Gözlem (rapor + plan):** altmış saniyede dört tehdit, her biri kendi on saniyesinde ve kendi mekânında: S05 güneş parçacık uyarısı (kontrol odası penceresi) · S08 havalandırma 4'te yalıtım yanığı (tavan kanalı) · S10 servis kapağı arkasında elektrik arkı (kapı dibi) · S11 ana hat şalteri (pano). ④: *"Cutting every ~10 seconds to a brand-new distinct catastrophe (solar radiation, duct leak, electrical fire, breaker trip) creates an artificial montage effect rather than letting one crisis build organic tension"* (Structure & Pacing 6/10 · Emotional Arc 7/10 · retention 1:42 *"Repeating hazard variants feels synthetic"*). ④'ün FLAG sorusu: *"intentional viral procedural montage, or a single runaway disaster?"* Plan zinciri KURMUŞ: S08 `insulation is burning inside the duct` → S10 `arc flashes flicker through the door keyhole` → S11 `glowing orange insulation fire spreading … inside the channel` + replik `fire is in the duct`. Ama her halka başka bir yerde ve başka bir nesnede duruyor (kanal ızgarası → kapı dibi → pano → yine kanal); bağı taşıyan tek şey replik. Kadrajda sabit kalan bir taşıyıcı (aynı kanal, aynı duman) yok — izleyici dört olay görüyor, bir felaket değil.
+
+**Hipotez:** on saniyelik sabit birimde zincirin halkaları farklı nesnelere dağılınca sebep-sonuç kesmede kaybolur; tehdit tırmanmaz, yenilenir (D212 "aynı vuruş ardışık" yasağının öteki ucu: hep FARKLI nesne). Karşı-kalıp: TEK taşıyıcı nesne, büyüyen hâller, ardışık sahnelerde kadrajda — aynı kanal: sızıntı → duman → alev (D157 novum taşıyıcısının kriz hâli).
+
+**Kapatma:** ikinci film. Bir filmin ④'ü "montage / checklist / repeating hazard variants" derse ve sahne tablosunda ardışık ≥ 3 kriz sahnesinin kadrajda ortak taşıyıcı nesnesi yoksa → ders; DEĞİŞEN SATIR `00_SAHNE_TABLOSU` olay hücresinde `TAŞIYICI` (aynı nesne adı).
+
+🔗 [[D212]] · [[D157]] · [[D211]] · `SAHNE_ZINCIRI_VE_SINIR_KILAVUZU` §2-§4
+
+---
+
+## ADAY-95 — KADRAJDAKİ BEDENE İŞ YAZILMADI: TIMELINE KAPIYI ANLATTI, ASTRONOT BOŞTA DÖNDÜ (⑭ ⑮ İLK GERÇEK KOŞU)
+
+**Tarih / kaynak:** 15.09.2026 · MARS_SON_CIKIS B2 (S19-S36) + B1 · ⑭ HAREKET · ⑮ YÖN (ikisi de mod V; ikisinin de depodaki ilk koşusu) · parti 🚨 GEÇERSİZ → ADAY.
+**MOD:** V · ⑭ ⑮
+**KAPI:** aday — muhtemel BETİK (`prompt_kontrol.py`: `IN FRAME:` satırı bir beden gösteriyor ama bir TIMELINE satırında o bedene gövde fiili yok → FIX; ㉛ DOLULUK adayıyla aynı tarama) ya da LİSTE (`SAHNE_DOLULUGU_KILAVUZU` §6 soru 1). **Vaka:** 1 film · 4 sahne.
+
+**Gözlem (rapor + prompt):**
+· S34 (B2 2:30-2:40) — ⑭ M11 `SPIN` 🟡: *"She rotates her upper torso side to side while standing in place — I do not know why; nothing is there."* Prompt `IN FRAME: full body`; TIMELINE'ın üç satırı da KAPIYI anlatıyor (door slides closed · locking pins · green indicators) — iki astronot kadrajın öznesi, onlara tek fiil yazılmamış. Aynı sahnede ② kaskları geri takılı buldu, S33'te çıkarılmışlardı [D207].
+· S08 (B1 1:16) — ⑭ M21 `SPIN` 🟡: gri tulumlu figür dar koridorda hedefsiz 180° dönüyor. Promptun `3.0s - 7.0s` satırı yalnız dumanı ve prob ekranını anlatıyor — o dört saniyede bedene fiil yok; dönüş tam o pencerede.
+· S04 (B1 0:37) — ⑭ M12 `PHANTOM` 🟡: kupa elden çıktıktan sonra erkek astronot boş havada parmak büküyor — iş bitti, beden boşta kaldı.
+· S36 (B2 2:52) — ⑮ V15 `MISS` 🟠: omza uzanan el havaya iniyor; promptun son satırı *"the room settles into deep peaceful silence … as the scene fades out"*.
+
+**Hipotez:** TUR 19'un "model yazılanı üretir" satırının hareket yüzü: kadrajdaki bedene bir TIMELINE satırında iş yazılmazsa model onu dondurmuyor, AMAÇSIZ hareket uyduruyor — sallanma, dönme, boşa tutuş. `SAHNE_DOLULUGU` son üç saniyeyi bağlar; bu aday satır içindeki fiilsiz bedeni.
+
+**Kapatma:** ikinci filmde ⑭ `SPIN / PHANTOM / SLIDE` bulgusu, promptunda o saniyeye o bedenin fiili yazılmamış bir sahneye düşerse → ders; DEĞİŞEN SATIR: `IN FRAME:` satırındaki her beden TIMELINE'ın her satırında bir gövde fiili taşır.
+
+⚠️ ⑭ B2 PROMPT ORDERS #2 *"the astronaut stands completely still … without rotating her shoulders"* önerdi — bu depoda YAZILMAZ (`OYUNCULUK_YAZIM` §4 · `SAHNE_DOLULUGU` §4 ⑥); reçete olarak inmedi.
+
+🔗 [[D207]] · [[D214]] · `SAHNE_DOLULUGU_KILAVUZU` §3 · §6

@@ -345,7 +345,10 @@ o sahneye düşen kilitler ve uyarılar · politika satırı ·
 taşıyan niyet kanalı (≤2) + TASK ONLY mu [`OYUNCULUK_YAZIM` §1 · §3] ·
 **kart bağı** (bu sahne kartın hangi satırını taşıyor; boşsa "—")
 [`KARAKTER_KARTI` §10] · replikli sahnede **DEĞİŞİM SATIRI** (BAŞ ≠ SON) +
-dinleyen tepki planı tipi [`DIYALOG_SAHNESI` §5-§6].
+dinleyen tepki planı tipi [`DIYALOG_SAHNESI` §5-§6] ·
+⭐ **SON 3 s** (7-10. saniyede beden ne yapıyor — süreç fiiliyle) + **ölü sahne
+beş sorusu** (fiil sınıfı · direnç · tek kilit · sınır · çevre saati)
+[`SAHNE_DOLULUGU` §1 · §6 · 15.09.2026].
 
 ```
 ⛔ Bir sahnenin ÇALIŞMA DOSYASI (ya da tablo satırı KAPI ✅) kapanmadan o
@@ -379,7 +382,10 @@ Analizin çıktısı film dosyalarına taşınır; **yeniden düşünülmez, ta�
   · "then reaches"); hazırlık önce (kask döner → ağırlık kayar → el gider);
   "still/motionless/frozen" tek başına YAZILMAZ; imaj promptu ÇAPA'nın
   BEFORE'unu, sonraki sahnenin imajı AFTER'ı taşır [`OYUNCULUK_YAZIM` §2 · §8 ·
-  D179]. Replikte konuşanın/dinleyenin bedeni + dinleyen klibinde replik metni
+  D179]. ⭐ DOLULUK [`SAHNE_DOLULUGU` §2 · §4 · 15.09.2026]: kilit fiili SÜREÇ
+  (erişme ancak dirençle) · imaj bedeni YÜK ALTINDA (eylem başlamış) yazar ·
+  TIMELINE ≤3 satır, son satır SÜRDÜRME — "settles / then stops / nothing else
+  moves" yazılmaz · sahne başına tek çevre saati + zemin bağı cümlesi. Replikte konuşanın/dinleyenin bedeni + dinleyen klibinde replik metni
   YOK, "lips closed" VAR [`DIYALOG_SAHNESI` §4 · §7]. İki figürde KONUM KİLİDİ
   (sol/sağ üçte bir · never touch) + faz farkı [`IKI_KISI` §2 · §6].
 - Sahne başlıkları `## 🎬 SAHNE <n> — BAŞLIK` (kural ②) ve YALNIZ bölüm

@@ -323,7 +323,7 @@ iki kare arasındaki YÖNDE durur.
 **FREKANS:** 3 film · THE CRACKED HELMET (⑤ 2,0 — boş uzay → halkalı gezegen → mavi gezegen → iki güneş; 5,0 — havasız kaya → turuncu kanyon) · THE RING WALKER (⑤ 7,3 — arka plan tek 2D levha, parallax yok) · LOW_POWER (⑤ 5,0 — verici kulesi 3 form; kar zirvesi → çöl kanyonu; uzak dağ yakından net; ① 5,4 — alt kenarda panel belirmesi)
 **DEĞİŞEN SATIR:** PLAN World Bible **DÜNYA ÇAPASI** üç cümle — gök (tek cümle) · ufuk/zemin (tek cümle) · yer imi (tek cümle, oran gövde boyu cinsinden) — her dış-mekân IMAGE promptuna kurulum harfi gibi **BİREBİR** kopyalanır; `00_SAHNE_TABLOSU` "taşıyıcılar" hücresi hangi çapanın kadrajda olduğunu yazar
 **KAPI:** LİSTE · SPEC C bloğu EŞ KADRAJ satırının yanı ("DÜNYA ÇAPASI 3/3") · ⑤ ARKA PLAN Horizon & Topology ölçer
-**TEKRAR:** 0
+**TEKRAR:** 1 · 15.09.2026 MARS_SON_CIKIS (mod V · SPEC C `DÜNYA ÇAPASI 3/3 — Kızıl Mars ufku` yüzey sahnelerine yazıldı, yörünge promptlarına İNMEDİ: S19 `a photorealistic wide shot in deep space` · S21/S22 gezegen adı yok → ⑤ B2 🟠 S21'de Dünya yörüngesi arka planı ↔ S36 penceresinde Mars diski)
 
 **Kaynak:** THE CRACKED HELMET QA (10.09.2026) — ⑤ `0:00 empty space ↔ 0:20 ringed planet ↔ 0:50 small blue planet ↔ 1:50 dual suns orange haze`. Zincir ADAY-31 · 32 · 50 · 58 · 69 · 70 · 71.
 

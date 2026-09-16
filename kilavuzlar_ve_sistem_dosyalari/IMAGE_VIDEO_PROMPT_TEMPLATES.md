@@ -85,10 +85,14 @@ IN FRAME: <face · hands · torso · legs · full body · back | none>
 Scene <n> of <N>. Duration <klip> seconds.
 START FRAME: the approved still from this scene's IMAGE prompt — animate it; suit, helmet, light and scene carried from the frame, nothing re-described.
 <SAHNENİN TEK KİLİDİ — hareket kilidi, SAYIYLA. Örn.:
- The wheel turns exactly one quarter, then stops, and nothing else in frame moves.>
+ The wheel turns exactly one quarter, then stops, and nothing else in frame moves.
+ ⚠️ 15.09.2026: "then stops … nothing else moves" SAHNE_DOLULUGU §4 ⑥ ile çelişir —
+ kilit fiili SÜREÇ (§1 · §4 ①); örneğin değişimi ⬜ sahip kararı (22_ aday 3)>
 
 <TIMELINE: 0,0 s … / <t> s … — her satırda ≥1 GÖVDE FİİLİ; iki aşamalı eylem iki
- satıra; replik varsa ofseti buradan okunur ve konuşan/dinleyen bedeni §5.2 diyalog satırı>
+ satıra; replik varsa ofseti buradan okunur ve konuşan/dinleyen bedeni §5.2 diyalog satırı ·
+ ⭐ 15.09.2026: ≤3 satır (evre ① yük altında · ② direnç · ③ SÜRDÜRME) —
+ SAHNE_DOLULUGU §2 · §4.1 önce/sonra>
 <CAMERA: ⛔ I2V'de bu satır ŞART — betik kurulum yayını buradan ölçer; lens · mesafe ·
  hareket tipi (fixed lockoff / push-in …) · IN FRAME: back ya da kamera arkadaysa
  pozitif sırt cümlesi burada [D139]>

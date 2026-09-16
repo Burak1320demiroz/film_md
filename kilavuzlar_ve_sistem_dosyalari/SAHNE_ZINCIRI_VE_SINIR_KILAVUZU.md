@@ -129,6 +129,9 @@ Klibin İÇİ ise boş bırakılamaz:
    ⚠️ KAMERA_ACISI'ndaki "subtle mist" ve "particles floating"
      örnekleri HOOK §2.4 perde yasağına ve çekirdeğin "never
      hovering" satırına takılır; süngeri yukarıdaki örneklerle doldur.
+   ⭐ 15.09.2026 · YÖNTEM: SAHNE_DOLULUGU_KILAVUZU.md (TUR 19) — bu
+     paragrafın "nasıl"ı: kilit fiili SÜREÇ · üç evre / ≤3 TIMELINE
+     satırı · son satır SÜRDÜRME · dolgu kaynağı sırası · tek çevre saati.
 ```
 
 ---

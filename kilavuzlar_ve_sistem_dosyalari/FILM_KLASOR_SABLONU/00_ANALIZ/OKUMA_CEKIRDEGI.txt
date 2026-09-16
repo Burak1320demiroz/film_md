@@ -30,6 +30,7 @@ SENARYO_VE_VIRAL_KAMERA_KILAVUZU.md | - | ⭐VİRAL ölçütü (YÜZ + HAREKET) 
 KURGU_RITMI_VE_IHRAC_KILAVUZU.md | - | §2 örüntü kırıcı · kurgu kapısı · süre = sahne × klip
 KARAKTER_KARTI_VE_DAVRANIS_KILAVUZU.md | - | §1 sekiz satırlık kart · §3 karar mimarisi · §4 davranış şeridi · §10 kart bağı
 OYUNCULUK_YAZIM_KILAVUZU.md | - | §1 izleyici cümlesi · §2 gövde fiili · §3 niyet kanalı · §4 tempo · §8 çapa üçlüsü
+SAHNE_DOLULUGU_KILAVUZU.md | - | §1 kilit fiili SÜREÇ · §2 üç evre / TIMELINE ≤3 satır, son satır sürdürme · §6 ölü sahne 5 soru (15.09.2026 · TUR 19 · ⬜ sahip vetosu: manifest satır hedefini aşar)
 POLITIKA_VE_URETILEBILIRLIK_KILAVUZU.md | - | red sözlüğü · nötr tarif · ⑯ politika kapısı
 IKI_KISI_VE_AYRILIK_KILAVUZU.md | [iki-insan] | §2 istek çaprazı · §5 ayrılık kartı · §6 konum kilidi · §8 faz farkı
 DIYALOG_SAHNESI_VE_MUHATAP_KILAVUZU.md | [replik] | §2-§3 değiş-tokuş tablosu · §4 dinleyen bedeni · §5-§7 değişim satırı

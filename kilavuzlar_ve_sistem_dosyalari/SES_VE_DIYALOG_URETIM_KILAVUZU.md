@@ -127,6 +127,11 @@ MACHINE   film bunu SENTETİK ses olarak sunar (suit AI · bilgisayar ·
 □ İŞLEV sütunu (03.09.2026 · TUR 6): replik B5 omurgasının hangi
   satırına hizmet ediyor — İSTEK / ENGEL / BEDEL / MUHATAP — ya da
   hangi vuruşu ÇEVİRİYOR. Boş kalan İŞLEV = silme testi adayı (§2a.1).
+□ ⭐ 15.09.2026 [D217]: GÖRÜNENİ SÖYLEYEN İŞLEV DE BOŞTUR. Hücreye `Durum
+  bilgisi` · `Ölçüm` · `Tamamlama` yazılıyorsa sor: ses kapatılınca izleyici
+  bunu kadrajdan alıyor mu? Evet → replik silinir ya da görünmeyene çevrilir
+  ("Electrical fire behind service hatch" ÇIKAR · "Foam won't reach the core" KALIR).
+  Makine sesi dâhil. Tabloya girmeyen replik prompta da girmez [D203].
 □ UNCLEAR yazım tarafında YASAKTIR: planda register'ı belirsiz replik
   kalamaz. (UNCLEAR yalnız QA merceğinin sözlüğünde vardır — film
   register'ı EKRANDA okutamadıysa bulgu yazar.)

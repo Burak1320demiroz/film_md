@@ -542,7 +542,7 @@ gövde yalnız ekranda GÖSTERİLEN işin bedelini öder.
 **FREKANS:** 4 film · THE AMBER LATTICE (mod V · ⑩ 5,9 — S12 patlama → S13 nötr) · THE RING WALKER (mod V · ⑩ 6,1 — S12 irkilme → S13 nötr) · LOW_POWER (mod V · ⑧ 4,3 — S24 yorgunluk 6 → S27 seviye 1; ⑩ 5,8 — S17 → S21) · THE CRACKED HELMET (mod V · ⑧ 1,0 — 1:50 boğulma sonrası dik duruş)
 **DEĞİŞEN SATIR:** `00_SAHNE_TABLOSU` "olay (BAŞ→SON)" hücresi — bir sahnenin SON bedeni bir sonraki satırın BAŞ bedenidir ve o sahnenin IMAGE promptunun SUBJECT satırına **kelimesi kelimesine** iner (`shoulders dropped, breath fog on the pane`)
 **KAPI:** LİSTE · `00_SAHNE_TABLOSU` (BAŞ = önceki SON) · `03_PLAN_ONCESI` B2
-**TEKRAR:** 0
+**TEKRAR:** 1 · 15.09.2026 MARS_SON_CIKIS (mod V · ② B2 🔴 S33 kasklar elde → S34 kasklar yeniden takılı: S34'ün IMAGE ve VIDEO promptu kask durumunu HİÇ yazmıyor, TIMELINE yalnız kapıyı anlatıyor · ⑧ B1 kapı altında kalan Aras S15'te iki bacağına basarak koşuyor — S15 IMAGE `clutches his injured left arm … uneven, painful stride` YAZIYORDU: SUBJECT satırı taşındı, film yine sıfırladı; satır gerekli ama tek başına yetmedi)
 
 **Kaynak:** THE AMBER LATTICE QA (10.09.2026) — ⑩ `00:57-01:03 (S12→S13) sudden reset from explosive spark blast to calm standing posture erases physical aftermath`. Zincir ADAY-26 → 55 → 80 → 84 (+38).
 

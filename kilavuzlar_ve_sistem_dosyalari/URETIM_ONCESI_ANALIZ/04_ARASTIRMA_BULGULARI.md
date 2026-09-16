@@ -3151,3 +3151,317 @@ TARİFE harcanır; devamlılık mercekte, tarif kadrajda.
 ⑥ RAPORLARIN KAYNAK LİSTESİ YOK (dördüncü kez). Yeniden koşuda kaynak
    listesi ve motor sürüm/tarih İSTENİR; künyesiz motor satırı inmez.
 ```
+
+---
+
+# 🔬 TUR 19 — SAHNE DOLULUĞU: MOTOR · ZANAAT · SENARYO BİRİMİ (15.09.2026)
+
+> **Promptlar:** `22_SAHNE_DOLULUGU_ARASTIRMA_PROMPTLARI.md` (üç prompt, altışar
+> cümle) · **Ham:** `TUR19_HAM_RAPORLAR/` — ✅ **3/3 rapor geldi ve üçü BİREBİR
+> arşivlendi** (üçü tek satır, tablolar çökmüş; kaynak listesi üçünde de yok —
+> künye §⚠️). **Tetikleyen:** sahibin sorunu 15.09.2026 — *"10 saniyenin
+> sahnelerinin bazılarında 3 saniyede iş bitiyor, kalan 7 saniye boş"* — ve
+> 48 × 10 s yatay filmin yazılacak olması. Teşhis depodan ölçüldü (22_'nin
+> başında; `doluluk_olcum.py`: 1440 video promptun son vuruşlarının %59'u
+> durgunluk kelimesi taşıyor; üretilmiş klip hiç ölçülmemiş).
+> **İndiği yer:** ⭐ TEK yeni kılavuz (aynı gün, süzmeden SONRA):
+> `../SAHNE_DOLULUGU_KILAVUZU.md` + tek satırlık işaretçiler (T19.7).
+
+```
+⚠️ BU TURUN KAYNAK PROFİLİ — üç rapor, aynı güven düzeyi: MEKANİZMA sağlam, SAYI çürük
+   Rapor 1 (motor): VBench / VBench-I2V / EvalCrafter / T2V-CompBench GERÇEK
+   araçlar ve "statik klip tutarlılıkta yüksek, dinamik derecede düşük"
+   yönü doğru → ÖLÇÜLMÜŞ-yön. Öne yığma, I2V donma yanlılığı, süreç/noktasal
+   fiil farkı, ≤3 vuruş → mekanizma makul, motor tablosu tarihli ama
+   künyesiz → ÖNERİ. Bütün yüzdeler (%60-70 · %80 · %85 · %75 · %65 ·
+   %30-40) ve Motion Bucket/CFG değerleri kaynaksız → İNMEDİ. "Prompt
+   Relay" · "PACC 2026" · "Steady-Forcing" bilinen yayınla eşleşmedi → ⬜.
+   Rapor 2 (zanaat): Thomas & Johnston · Williams (moving hold · offset ·
+   follow-through) · Murch (göz kırpma) GERÇEK → UYGULAMA. Loschky et al.
+   2015 (Tyranny of Film) ve Dwyer & Perkins (Passing Time) GERÇEK
+   çalışmalar → yön ÖLÇÜLMÜŞ; N/d/ms hücreleri (N=62 · d=0,67 · 260-330 ms
+   · 350-590 ms) künyesiz → inmedi. "1,8 s'de dikkat özneyi terk eder",
+   "%20-30 senkronizasyon" kaynaksız → inmedi. Dolgu kaynağı tablosunun
+   SIRASI üç raporda tutarlı → sıra iner, saniye inmez.
+   Rapor 3 (senaryo): Vendler 1957 GERÇEK (sınıflar doğru) → ÖLÇÜLMÜŞ
+   (sınıf); "0,5-1,5 s / 8-10 s" hücreleri raporun kendi tahmini → ÖNERİ.
+   Glebas 2008 · McCloud 1993 GERÇEK → UYGULAMA. "August (2012)" ·
+   "SurePrompts (2026)" · "MrBeast Hook Formula" · "NDI Guide" künyesiz;
+   kontrol soruları yine de mekanizma düzeyinde iner (ÖNERİ).
+   Üç raporda da kaynak listesi gelmedi (BEŞİNCİ kez). SAYI KATMANI
+   ÇÜRÜK → kılavuz SAYISIZ yazıldı (TUR 17/18 usulü).
+```
+
+## T19.0 ⭐ BU TURUN KARAKTERİ — iki hipotez de tuttu ve aynı yerde kesişti
+
+```
+① MODEL YAZILANI ÜRETİR — ikinci kez. 22_'nin iki hipotezi (a) "motor geç
+   damgayı okumuyor" ve (b) "geç vuruşlar zayıf yazılıyor" AYNI cevaba
+   çıktı: rapor 1 noktasal fiili noktasal üretir, "holds / settles /
+   still" optik akışı sıfırlar, I2V ilk kareye bağlanınca ikinci yarıda
+   donma yanlılığı artar; rapor 3 erişme fiili bir anda biter, kalan
+   süre boş. Depo son vuruşların %59'una "settles · holds · stays"
+   yazıyor — motor da tam onu yapıyor. Sorun damganın okunmaması değil,
+   DAMGAYA YAZILAN ŞEYİN DURGUNLUK OLMASI. T15.0'ın dersiyle aynı kalıp:
+   orada "iş yapılıyor, kimse istemiyor"; burada "iş bitiyor, kimse
+   sürdürmüyor".
+
+② ÜÇ BAĞIMSIZ SORU, AYNI ÜÇ CEVAP. Motor (1), zanaat (2), senaryo (3)
+   birbirinden habersiz aynı yere geldi:
+   (a) KİLİT FİİLİ SÜREÇTİR — rapor 1 "durative" · rapor 2 "görünür
+       ilerlemesi olan iş + direnç" · rapor 3 "Etkinlik / Tamamlama";
+       erişme fiili (grabs · turns · notices) ancak dirençle tamamlamaya
+       çevrilirse kilit olabilir. Turun en sağlam damarı → kılavuz §1.
+   (b) BAŞLANGIÇ KARESİ EYLEMİN ORTASIDIR — rapor 1 "mid-action start
+       frame" (ilk 0-3 s'nin 'eyleme giriş' maliyetini siler) · rapor 3
+       "geç gir: birim mekanik stres başlamışken açılır". I2V'de imaj
+       promptu = ilk kare (D179) olduğundan bu doğrudan IMAGE kuralı →
+       §2.
+   (c) SON ÜÇTE BİR YERLEŞME DEĞİL SÜRDÜRMEDİR — rapor 1 "sustain clause:
+       …without relaxing through the last second" · rapor 2 "moving hold:
+       tam durma hiçbir karede yok" · rapor 3 "kesme momentum sürerken
+       düşer, sonraki birim sonrasından başlar" → §2 · §4.
+
+③ VURUŞ SAYISI: rapor 1 ">3 vuruş → son vuruşlar aynı zamana sıkışır ya
+   da yutulur"; rapor 3 "10 s'ye 1 ana vuruş + 1 mikro-komplikasyon".
+   Depo TIMELINE'larında 5-6 vuruş en sık (doluluk_olcum). → Kural:
+   TIMELINE ÜÇ SATIR — kilit · direnç/kesinti · sürdürme. (İki raporun
+   ÖNERİsi, ölçüm yok; ilk filmde hareket profiliyle sınanır.)
+
+④ ZAMAN DAMGASI BİÇİMİ AÇIK KALDI. Rapor 1: "0s —" satırları yumuşak
+   gradyan; köşeli parantez `[00:03-00:08]` Veo'da resmî — ama motor
+   desteklemezse metni HUD olarak BASAR. Depo yazı yasağı (D34 · D45) ve
+   Veo kılavuzunun damgayı yalnız replik için bilmesi → depo biçimi
+   ("0.0s — … 4.0s — … 8.0s —") KORUNDU; köşeli parantez ⬜ A/B (T19.8).
+
+⑤ ORAN KİLİDİ ÇELİŞKİSİ (1 ↔ depo). Rapor 1: "one full swing every four
+   seconds" tipi periyot beyanı düşük tutarlılıkla işlenir, sayım sapar
+   (kaynaksız). Depo V3 örneği tam bu kalıp ve SPEC FİNAL VURUŞ KANITI
+   "kaç tane" sayar [D141]. → Oran kilidi YAZILMAYA DEVAM EDER (SPEC
+   kanıtı için gerekli; kesinti yerine SÜREKLİLİK verir) ama ⬜ HİPOTEZ:
+   QA'da periyot SAYISI değil "aynı oranda sürdü mü" sınanır; ilk filmde
+   ölçülür (T19.8 ③).
+
+⑥ 2 ↔ 3 BÜTÇE ÇELİŞKİSİ ÇÖZÜLDÜ. Rapor 2'nin dört evresi (hazırlık 1,5 /
+   eylem 4 / tepki 2 / yerleşme 2,5) son 2,5 s'yi "yerleşme" yazıyor;
+   rapor 1 "settles / holds" donma tetikler diyor; rapor 3 son üçte biri
+   "kısmi sonuç ya da erteleme" yazıyor. Üçü bağdaşır: YERLEŞME EVRESİ
+   VAR ama SÜRDÜRME DİLİYLE yazılır (nefes + ağırlık + tutuş gerilimi +
+   dış saat). OYUNCULUK §4'ün tutulan durgunluk üçlüsü tam buraya
+   oturur — o üçlü S sahnesi içindi, şimdi HER birimin son üçte biri.
+   Saniyeler inmedi; oran indi: orta evre en uzun, son evre boş değil.
+
+⑦ DOLGU KAYNAĞI SIRASI (sayısız): tek başına on saniye taşıyan yalnız
+   GÖRÜNÜR İLERLEMESİ OLAN İŞ (direnç + alet + ikinci deneme). Sonra
+   SAATLİ TUTUŞ (bedende üçlü + kadrajda bir dış saat) · İKİNCİ GÖREV ·
+   MOVING HOLD (tek başına kısa) · SAATSİZ BEKLEYİŞ (en kısa; rapor 2:
+   göz kadrajı terk eder). Rapor 2'nin tolerans tablosunun SIRASI üç
+   raporla tutarlı; saniyeleri künyesiz → sıra iner, saniye inmez.
+
+⑧ RAPORLAR KENDİ KISITINI DÖRT KEZ İHLAL ETTİ (künye ④): "sitting
+   motionless" (rapor 2 moving hold kalıbı) · "valve bursts open at t=9s"
+   ve "rung snaps at t=4s" (rapor 3 — klip içi DURUM DEĞİŞİMİ) · "holds
+   breath frozen" (rapor 3). Kalıp olarak inmedi; GEOMETRİYE ÇEVRİLDİ
+   (T19.3). Ders: raporun kalıp sütunu KISITTAN sonra yazılmıyor —
+   süzmede her İngilizce kalıp yasak-kelime ve durum-değişimi süzgecinden
+   ayrıca geçirilir.
+
+⑨ YENİ AD: "ÖLÜ SANİYE" (rapor 2 "dead time" · rapor 3 "ölü panel").
+   Depoda bu şeyin adı yoktu; kılavuz, kontrol sorusu ve makine ölçümü
+   adayı bu adı alır. Rapor 1'in VBench satırı gerekçeyi verir: tutarlılık
+   skoru doluluğu ÖLÇMEZ (statik klip tutarlılıkta yüksek puan alır) —
+   yani ② DEVAMLILIK 10/10 bir klip tamamen ölü olabilir. Ölçüm ayrı.
+```
+
+## T19.1 ⭐ ÇAPRAZ OKUMA — üç çift
+
+```
+1 ↔ 3  FİİL SINIFI — TUTTU. Rapor 3 "Etkinlik / Tamamlama 10 s taşır,
+       Erişme 1-2 s'de biter, Durum (holds · remains · sits) kilit olamaz"
+       ↔ rapor 1 "süreç fiili 6-10. saniyeye taşır, noktasal fiil 3. s'de
+       donma/döngü, holds/still optik akışı sıfırlar". Yön aynı, sayı yok
+       → SAYISIZ İNDİ (§1). Rapor 1'in ek bedeli (süreç fiili zorlanınca
+       süzülme · kayan ayak) → §4 zemin bağı cümlesi.
+2 ↔ 3  ZAMAN BÜTÇESİ — ÇELİŞTİ, ÇÖZÜLDÜ (T19.0 ⑥). Rapor 3'ün iskeleti
+       (soru 0-3 / direnç 3-7 / sonuç-erteleme 7-10; prosedürelde temas /
+       direnç / ağırlık aktarımı / mikro-sonuç) rapor 2'ye göre yeniden
+       bölündü: ÜÇ evre, orta en uzun, son evre sürdürme. Tek başına
+       hiçbiri inmedi.
+1 ↔ 2  DOLGU KAYNAĞI MOTORDA — KISMEN. Çevre saati: rapor 1 "ikincil
+       hareket 1 s periyotla döngüye biner, fazla yüklenirse doku erir" →
+       TEK saat, ana eylemle çelişmeyen, oran cümlesiyle (§3). Moving
+       hold: rapor 2'nin kalıbı "motionless" taşıyor → düştü; yalnız
+       FİİLLE yazılır (§4). Kamera hareketi: rapor 1 eledi (kilitli
+       tripod) ↔ rapor 2 "2-5 s taşır" → dolgu kaynağı DEĞİL; kapalı
+       listeden ve ancak sahnenin kendi gerekçesiyle (ZATEN VAR:
+       TEMPLATES). Örtüşen eylem (kayış · kumaş): rapor 1 "kayan ayak /
+       süzülme" bedeli → yalnız zemin bağı cümlesiyle birlikte (§4).
+```
+
+## T19.2 ✅ DEPOYA GİRENLER
+
+| # | Bulgu | Kaynak · tür | Etiket | İndiği yer |
+|:-:|---|---|:--:|---|
+| 1 | **Motor noktasal fiili noktasal üretir:** öne yığma + tamamlanınca donma / döngü / boş salınım / sürüklenme / uydurulmuş eylem; I2V'de ilk kareye bağ donma yanlılığını artırır; tutarlılık skoru doluluğu ölçmez | rapor 1 · mekanizma + VBench yönü | ÖNERİ (mek.) · ÖLÇÜLMÜŞ (yön) | ⭐ SAHNE_DOLULUGU §0 teşhis · §5 ölçüm gerekçesi |
+| 2 | **Fiil dört sınıf** (durum · etkinlik · tamamlama · erişme); kilit fiili ETKİNLİK ya da TAMAMLAMA; ERİŞME ancak direnç + aşama + alet + ağırlıkla tamamlamaya çevrilir; DURUM fiili (holds · remains · sits · stands) kilit olamaz | Vendler 1957 (sınıf) · rapor 1 + 3 (ekran) | ÖLÇÜLMÜŞ (sınıf) · ÖNERİ (ekran) | ⭐ §1 FİİL SINIFI + yeniden yazım kalıpları |
+| 3 | **Başlangıç karesi eylemin ORTASIDIR:** imaj promptu bedeni yük altında, mekanik gerilim başlamış yazar; nötr poz ilk saniyeleri "eyleme giriş"e harcar | rapor 1 (mid-action frame) + rapor 3 (geç gir) — iki bağımsız | UYGULAMA | ⭐ §2 ① · IMAGE prompt kuralı · D179 ile çift |
+| 4 | **Erken çık:** kesme momentum sürerken düşer; sonraki birim eylemin sonrasından başlar; hiçbir birim "bitmiş bedenle" kapanmaz | rapor 3 + rapor 1 (sustain) | UYGULAMA | §2 ③ · SAHNE_ZINCIRI §1 işaretçi |
+| 5 | **Son üçte bir SÜRDÜRME diliyle:** "keeps … at the same steady rate through the last second" · "nothing in the grip relaxes" · nefes + ağırlık + tutuş; "settles / holds / comes to rest" yazılmaz | rapor 1 (sustain clause) + rapor 2 (moving hold) | UYGULAMA | ⭐ §2 ③ · §4 kalıp · OYUNCULUK §4 işaretçi |
+| 6 | **TIMELINE ≤ 3 vuruş:** kilit · direnç/kesinti · sürdürme; >3 vuruş → son vuruşlar sıkışır ya da yutulur | rapor 1 + rapor 3 | ÖNERİ | ⭐ §2 iskelet · TEMPLATES V3 TIMELINE notu |
+| 7 | **Dolgu kaynağı SIRASI** (sayısız): prosedürel iş > saatli tutuş > ikinci görev > moving hold > saatsiz bekleyiş; tek başına on saniye taşıyan yalnız birincisi | rapor 2 (sıra) · rapor 1/3 tutarlı | UYGULAMA (sıra) | ⭐ §3 DOLGU KAYNAKLARI |
+| 8 | **Çevre saati TEK ve periyodik:** sallanan kayış · damlayan sıvı · yürüyen gölge · dönen çark; ana eylemle çelişmez, "at one steady rate" ile yazılır; ikinci saat gürültüdür | rapor 2 + rapor 1 (döngü/doku bedeli) | UYGULAMA | §3 ② |
+| 9 | **Kesinti = DİRENÇ, kırılma değil:** takılma · ağırlık · kayma · ikinci deneme (0,5 s duraksayıp açıyı değiştirme) — durum değişimi (kopar · patlar · açılır) değil | rapor 2 (second attempt · snag) + rapor 3 (direnç kontrolü) | UYGULAMA | §2 ② · SAHNE_ZINCIRI §1 ile uyumlu |
+| 10 | **Tutulan plan = bedende üçlü + kadrajda bir dış saat;** tam durma hiçbir karede yok (animasyonda birkaç karelik sıfır hareket "donmuş" okunur); saatsiz tutuş en kısa ömürlü | rapor 2 (Thomas & Johnston · Williams · Murch) | UYGULAMA | §3 ③ · OYUNCULUK §4 üçlüsüne DIŞ SAAT şartı eklendi (işaretçi) |
+| 11 | **Ölü sahne kontrolü — beş soru:** fiil sınıfı · direnç · tek kilit · sınıra devredilen durum · çevre saati; "hayır" ne öngörür | rapor 3 | ÖNERİ | ⭐ §6 kontrol listesi · 00_SAHNE_TABLOSU sütun adayı |
+| 12 | **Birim mikro-sorusu:** 0 s'de fiziksel soru (beden yönelimi · kuvvet), 10 s'de kısmi cevap ya da erteleme; paneller arası oluk = birim sınırı | rapor 3 (Glebas 2008 · McCloud 1993) | UYGULAMA | §2 iskelet · SAHNE_ZINCIRI §2 ile çift |
+| 13 | **Zemin bağı cümlesi:** ikincil hareket istenirken beden zemine yazılır ("both boots stay planted, his weight on the front foot") — kayan ayak / süzülme bedeli | rapor 1 | ÖNERİ | §4 kalıp ⑤ |
+| 14 | **"Ölü saniye"** kavramı + makine ölçümü gerekçesi (tutarlılık ≠ doluluk) | rapor 1 + 2 + 3 (ad) | ÖNERİ | §5 ÖLÇÜM ⬜ hareket_profili · ㉛ kapı adayı |
+| 15 | **Kuvvet fiilleri direnç taşır** (heave · strain · lean into · work loose); D169 efor sözlüğüyle aynı damar — yeni olan: kilit fiili SEÇİMİ | rapor 1 | ÖNERİ | §1'den D169'a işaretçi |
+
+## T19.3 ⭐ GEOMETRİYE ÇEVRİLDİ — film / oyuncu / raporun bozuk kalıbı → adsız, kısıta uyan kalıp
+
+```
+"Keaton'ın bedeni yerçekimiyle müzakere eder"  → iş her saniye bir dirençle
+   karşılaşır: ağırlık · sürtünme · takılma — "he leans his weight into the
+   wheel; it gives a finger's width and grips again"
+"Tati / Keaton sahne işi"                        → İKİNCİ GÖREV: ana iş sürerken
+   öteki el ikinci nesneyi tutar / ayak ikinci işi yapar — "his left glove
+   keeps the coil from unwinding while his right works the seal"
+"Akerman / Tarr tutulan plan"                    → SAATLİ TUTUŞ: bedende üçlü
+   + kadrajda bir dış saat — "his shoulders rise once with a slow breath;
+   the strap swings at one steady rate behind him"
+Rapor 2 moving hold kalıbı ("sitting motionless…") → "his shoulders rise once
+   with a slow breath and ease; the right glove tightens on the rail and
+   eases; the helmet stays on the horizon"
+Rapor 3 tohum-ödeme ("valve bursts open at t=9s") → durum değişimi değil ORAN
+   değişimi: "the drip from the valve quickens through the clip, one drop
+   every three seconds at the start, one every second by the end"
+   ⬜ HİPOTEZ: oran değişimi klip içinde tutar mı — ölçülmedi (T19.8 ④)
+Rapor 3 kesintili süreç ("rung snaps at t=4s") → "his boot slips off the
+   rung and finds it again; he climbs on at the same pace"
+Rapor 3 saatli tutuş ("holds breath frozen")   → "he keeps his chest still
+   but for one slow breath; his eyes track the shadow crossing screen-left
+   to screen-right"
+Rapor 1 sustain clause                          → "keeps hauling at the same
+   steady rate through the last second; nothing in his grip relaxes"
+Rapor 1 köşeli parantez damgası                 → depo biçimi korundu:
+   "0.0s — … 4.0s — … 8.0s —" (⬜ A/B — T19.8 ②)
+Rapor 1 "[00:00-00:05] pulls; [00:05-00:10] maintains the strain" → aynı
+   içerik üç TIMELINE satırında (§2 örneği)
+```
+
+## T19.4 ⛔ DEPOYA GİRMEYENLER — dürüst kayıt
+
+```
+• Bütün yüzdeler ve eşikler: %60-70 (I2V kilit) · %80 (mid-action) · %85
+  (sustain) · %75 (Motion Bucket) · %65 (negatif) · %30-40 (geç damga) ·
+  "1,8 s'de göz özneyi terk eder" · "1,5-2,5 s" · "4-6 kare donmuş okunur"
+  · "6-24 kare moving hold" · N=62 · d=0,67 · 260-330 / 350-590 ms ·
+  "%20-30 senkronizasyon" · rapor 3'ün saniye hücreleri → kaynaksız /
+  künyesiz. Yönleri iner, sayıları inmez. Kılavuz sayısız.
+• Motion Bucket ID · CFG 5-7 · tohum ayarı → motor dışı (depo Veo 3.1 /
+  Flow); ARAÇ AYARI satırına aday bile değil.
+• Negatif banda "freeze frame · static image · sudden stop · morphing" →
+  olumsuz cümle tutmaz [D79 · REHBER §7] + ㉗ 11 cümle tavanı; ⬜ sahneye
+  özel tek negatif cümle olarak A/B (T19.8 ⑤). Rapor 1'in kendi "motion
+  blur" negatifi depoda zaten var mı: §5.1 çekirdeğinde YOK, sahneye özel.
+• "Middle two" (4-8 s üret, kurguda kes) → ızgara 48 × 10 s sabit;
+  kırpma KURGU_RITMI §1'in işi, D100 tablosuyla.
+• Kamera hareketiyle dolgu → kilitli tripod varsayılan; kapalı liste ZATEN
+  VAR; dolgu kaynağı olarak inmedi.
+• Hailuo "15 kelime kuralı" → bant 120-300 kelime (§7); motor dışı.
+• First & Last Frame çifti → faz hattında start/end zinciri ZATEN VAR
+  (KESINTISIZ_VIDEO); modül hattı tek başlangıç karesi; rapor "orta
+  saniyede yapay hızlanma" bedelini kendisi yazıyor → inmedi.
+• "İki hareketli birim + bir tutulan birim" ritmi → tempo haritası ZATEN
+  VAR (OYUNCULUK §4: ≥3 değişim · ardışık üç aynı harf yok). İnmedi.
+• Reklam "cevabı 8. saniyeye ertele" → HOOK · FINAL · SAHNE_ZINCIRI §2
+  ZATEN VAR; birim içi soru için #12 yeter.
+• Raporların kendi kısıtını ihlal eden dört kalıp (künye ④) → kalıp
+  olarak inmedi, T19.3'te yeniden yazıldı.
+• "Prompt Relay" · "PACC 2026 Consequence Arrest" · "Steady-Forcing" ·
+  "RA-Bench" · "SurePrompts (2026)" · "MrBeast Hook Formula" · "NDI Guide"
+  · "Rhythm Cutting" → doğrulanamayan ad; mekanizma cümleleri ancak
+  ÖNERİ etiketiyle, ad olmadan indi.
+• Sora · Kling · Wan · Runway · Hailuo motor satırları → motor dışı;
+  yalnız ortak mekanizma (öne yığma · I2V donma yanlılığı) indi.
+• "Bir satır = bir saniye çürütüldü" → depoda böyle kural yok; ilgisiz.
+• Rapor 2'nin "gerekçeli kamera hareketi 2-5 s taşır" ve "push-in"
+  kalıbı → T19.1 (1↔2): dolgu kaynağı değil.
+• Rapor 3 "yavaşlatıcı terimler ekleyerek eylemi 10 s'ye yay" ("slowly")
+  → D-kuralıyla çelişir (sıfat değil sayı/oran; "slowly" hız değil
+  belirsizlik üretir — REHBER §7) → inmedi; oran cümlesi yerine geçer.
+```
+
+## T19.5 🚨 İKİNCİ KEZ İNMEYENLER — "ZATEN VAR" ve YANKI
+
+```
+• Durum değişimi kesmeye yazılır (rapor 1 ve 3 tekrar etti) →
+  SAHNE_ZINCIRI §1 · REHBER §7 DEĞİŞEN NİTELİK. Kısıtın geri okunması.
+• "still / motionless / frozen / holds" tek başına yazılmaz → OYUNCULUK
+  §4 (T15.2 #24). Üç rapor bağımsız aynı şeyi söyledi; rapor 1 mekanizma
+  ekledi ("optik akış vektörleri sıfırlanır" — ÖNERİ). Kural aynı; bu tur
+  ㉛ DOLULUK kapısı adayının gerekçesini büyüttü (T19.8 ①).
+• Tek sahne tek kilit, sayıyla → V3 (TEMPLATES). Rapor 3 "tek hareket
+  kilidi" dedi — yankı.
+• Efor fiili → gövde tepkisi · kuvvet fiili sözlüğü → D169 · ⑳. Rapor 1'in
+  "push · pull · heave · strain" listesi D169'un içinde.
+• Tempo haritası Y/N/H → OYUNCULUK §4. Rapor 3'ün "2+1" ritmi yankı.
+• Açılan soru / cevap tipleri · sınır satırı → SAHNE_ZINCIRI §2-§5.
+• Klip süresi araçtan → D124. Kırpma → D100 · KURGU_RITMI.
+• Damga yalnız replik için → VEO kılavuzu §⏩; hareket için bu turda
+  soruldu, cevap "biçim açık" (T19.0 ④) — ZATEN VAR değil, ⬜.
+• Üç raporun "elenen çözümler" listeleri = 22_'nin beşinci cümlesi.
+  Bilgi değil; sayılmadı.
+```
+
+## T19.6 ⭐ BU TURUN EN NET SATIRI
+
+```
+Model yazılanı üretir: son vuruşa "settles" yazan plan, klibin son üç
+saniyesini kendi eliyle boşaltır. Kilit fiili bir SÜREÇ fiilidir
+(etkinlik ya da tamamlama; erişme ancak dirençle), başlangıç karesi
+eylemin ORTASIDIR, son üçte bir YERLEŞME değil SÜRDÜRMEDİR, TIMELINE üç
+satırı geçmez — ve tek başına on saniye taşıyan yalnız görünür
+ilerlemesi olan İŞTİR: ağırlık · sürtünme · takılma · ikinci deneme.
+Doluluğu ② DEVAMLILIK ölçmez (statik klip tutarlılıkta 10 alır);
+ölü saniye ayrı sayılır.
+```
+
+## T19.7 📍 İŞARETÇİLER — nereye tek satır indi (✅ hepsi 15.09.2026 · + yeni-film SKILL §7/§8)
+
+```
+SAHNE_ZINCIRI_VE_SINIR §1 "klibin içi boş bırakılamaz" bloğu → SAHNE_DOLULUGU
+OYUNCULUK_YAZIM §4 tutulan durgunluk üçlüsü → + DIŞ SAAT şartı, §3 ③
+IMAGE_VIDEO_PROMPT_TEMPLATES V3 TIMELINE satırı → ≤3 vuruş · son satır sürdürme
+KILAVUZ_REHBERI §1 okuma listesi → yeni □ satırı
+FILM_KLASOR_SABLONU/00_ANALIZ/OKUMA_CEKIRDEGI.txt → TUR 3 satırı (⬜ sahip vetosu)
+AGENTS §1 harita → yeni satır
+yatay_8_dk_filmler/README → "yazım öncesi" işaretçisi
+22_ KOŞU KAYDI → ✅ · 00_README satırı → ✅
+```
+
+## T19.8 ⬜ BU TURUN SINIRI
+
+```
+① HİÇBİR KALIP ÜRETİMDE SINANMADI. İlk uygulama 48 × 10 s filmdir; sınav
+   ⬜ hareket_profili.sh (saniye başına enerji → ölü saniye) + ⑭ HAREKET
+   + ⑫ plato hücresi. ㉛ DOLULUK kapısı (prompt_kontrol · yeni rejim)
+   yazılmadı — 22_ sonundaki altı aday sahip kararı bekliyor.
+② DAMGA BİÇİMİ A/B: "0.0s —" (depo) ↔ "[00:00-00:04]" (rapor 1 "Veo
+   resmî"). Aynı sahne iki biçimle; ① KARE metin bayrağı (HUD basıyor mu)
+   + hareket profili. Karar gelene kadar depo biçimi.
+③ ORAN KİLİDİ: "every four seconds" sayımı motorda tutmuyor olabilir
+   (rapor 1, kaynaksız). SPEC kanıtı "kaç tane" sayıyor [D141]. İlk
+   filmde bir oran kilidi kareyle sayılır; tutmazsa D141 kanıt kalıbı
+   "adet" yerine "sürdü mü"ye döner.
+④ ORAN DEĞİŞİMİ (damla hızlanır) klip içinde durum değişimi sayılır mı —
+   ölçülmedi. Tohum-ödeme iskeleti buna bağlı; o zamana kadar ödeme
+   SINIRDADIR (sonraki birim).
+⑤ SAHNEYE ÖZEL NEGATİF ("no freeze, no sudden stop") A/B — olumsuz cümle
+   tutmaz kuralıyla çelişir; tek sahnede sınanır, sonuç ㉗'ye işlenir.
+⑥ SAYISIZ KILAVUZ: saniye, kare, yüzde yok. Tek sayı "TIMELINE ≤3 satır"
+   ve "tek çevre saati" — ikisi de tasarım sayısıdır, eşik değil.
+⑦ RAPORLARIN KAYNAK LİSTESİ YOK (beşinci kez). Yeniden koşuda kaynak
+   listesi İSTENİR; künyesiz motor satırı inmez.
+```

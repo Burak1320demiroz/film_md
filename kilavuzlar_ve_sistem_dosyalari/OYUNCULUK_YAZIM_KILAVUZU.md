@@ -256,6 +256,10 @@ TUTULAN DURGUNLUK ≠ DONMA (ÖLÇÜLMÜŞ fizyoloji · UYGULAMA bağlı akış)
   ⛔ "still", "motionless", "frozen", "does not move" tek başına YAZILMAZ —
     model bunu resim gibi dondurur (T15.2 #24 frozen subject bias);
     olumsuz cümle tutmaz [D79 · REHBER §7] — ne YAPTIĞI yazılır
+  ⭐ 15.09.2026 (TUR 19): üçlü tek başına KISA taşır; on saniyelik tutulan
+    birimde dördüncü şart kadrajda BİR DIŞ SAAT (sallanan kayış · damla ·
+    yürüyen gölge) ve liste genişledi (settles · comes to rest · then
+    stops · nothing else moves) → SAHNE_DOLULUGU_KILAVUZU §3 ③ · §4 ⑥
 ```
 
 ---

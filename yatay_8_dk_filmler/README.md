@@ -34,6 +34,7 @@
 | **Bölüm sınırı** | S23 ↔ S24 (betik damgası S00'dan sayar) — sınır da ARDIŞIK BİR ÇİFTTİR (≥1 ölçek + ≥45°) |
 | **Kurulum iskeleti** | 12+ sahne kuralı geçerli: KÜME ≥2 · DÖNÜŞ ≥%40 [ACI_YAYI §3 🕰️ · §4b] |
 | **Viral ara sahne** | süreyle ölçeklenir: 24 sahnede 4 → 48 sahnede 8 (SENARYO_VE_VIRAL §2.2 yüzde bantları) |
+| **Sahne doluluğu** | 48 birimin her biri 10 s DOLU yazılır: kilit fiili süreç · TIMELINE ≤3 satır, son satır sürdürme · ölü sahne 5 soru — `SAHNE_DOLULUGU_KILAVUZU.md` (15.09.2026 · TUR 19; bu formatın tetiklediği tur) |
 
 ```
 SÜRE HESABI

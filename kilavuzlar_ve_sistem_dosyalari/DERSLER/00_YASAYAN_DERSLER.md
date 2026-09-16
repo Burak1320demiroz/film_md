@@ -27,7 +27,6 @@
 | 45 | PROMPT İSKELETİ ekrana sızıyor | hepsi | prompta `[LESSON n]`/etiket/künye girmez — gövde yalnız sahne | 06 |
 | 62 | MONTAJDA EN ÇOK DÜŞEN SAHNE FİNAL | hepsi | PLAN `KESİLEMEZ LİSTESİ` (doruk · final · viral); kurgu kapısı okur | 07 |
 | 70 | ÜRETİM KİLİTLERİ KURGUYU BAĞLAMIYOR — jenerik kartı geri geldi | hepsi | kurgu kapısı ④: süre = sahne × klip; kart 0 s | 07 |
-| 72 | KURGU KAPISI YATAYA GENELLENİR — doruk kurguya girmeden teslim | hepsi | kurgu kapısı ④ dört satır (doruk · final vuruş · süre · kart) | 07 |
 | 78 | SAHNELER ARASI ANLATIM OKUNMUYOR — sayaç tek karede kanıtlanmadı | novum | SPEC C `SAYAÇ` monotonik değer dizisi; PLAN `TEK KARE` a/b kare çifti | 07 |
 | 138 | METİN YASAĞI KOSTÜME, ÖLÇÜ ZEMİNE YAZILDI | hepsi | ölçüler promptta gövde boyu/avuç/karış; metre yalnız Bible/SPEC | 06 |
 | 139 | DÜZ SIRT KİLİDİ yalnız sırt görünmezken tutuyor | kask | `IN FRAME: back` olan promptta pozitif sırt cümlesi (⑮ koşullu, 14.09) | 05 |
@@ -60,9 +59,11 @@
 | 214 | KADRAJDA OLMAYAN BEDEN tarif edildi | hepsi | `IN FRAME:` satırı; SUBJECT yalnız kadrajdaki; kelime bütçesi (㉖) | 06 |
 | 215 | EKRAN METNİ/FİLİGRAN/AĞIZ araç ayarı | hepsi | üretim defteri üç kutu; kurgu kapısı üç sayı; NEGATIVE'e cümle eklenmez | 06 |
 | 216 | SES MİKSİ yazılmadı | ses | MUZIK katman tablosu ≤ 4 · köprü ≥ 0,2 s · −6 dB · telsiz filtresi | 07 |
+| 217 | REPLİK EKRANDA OLANI SÖYLÜYOR | replik | replik tablosu İŞLEV hücresi görünmeyeni taşır (karar · bedel · kadraj dışı bilgi); `Durum bilgisi`/`Ölçüm` yazılan replik silinir | 07 |
 
 ## 🔁 GİRİŞ / ÇIKIŞ DEFTERİ
 
 | tarih | giren | çıkan | gerekçe |
 |---|---|---|---|
 | 14.09.2026 | 40 satır (ilk seçim) | — | reform FAZ 3; 128 film dersinden 32 ölçütle + 8 temel |
+| 15.09.2026 | D217 | D72 | ADAY-21 ikinci filmde (MARS_SON_CIKIS ④ B1/B2) tekrarladı → ders. Çıkan D72'nin değişen satırı (kurgu kapısı ④: doruk · final vuruş · süre · kart) D70 (süre · kart) ve D211 (ilk/son 10 s) satırlarında zaten duruyor — listede çift okumaydı. Sahip vetosuna açık. |

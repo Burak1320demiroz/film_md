@@ -169,6 +169,13 @@ kısafilmler/
 │   │                                  binding en zayıf eksen —
 │   │                                  sayı: KILAVUZ_REHBERI §7)
 │   │                                  (kaynak: TUR 11 · 06 §0'ın hedefi)
+│   ├── SAHNE_DOLULUGU_KILAVUZU.md 🆕 15.09.2026 · birimin İÇİ:
+│   │                                  "3 s'de iş bitiyor, 7 s boş" — fiil
+│   │                                  sınıfı (kilit SÜREÇ) · üç evre / ≤3
+│   │                                  TIMELINE satırı · son satır SÜRDÜRME ·
+│   │                                  dolgu sırası · tek çevre saati · ölü
+│   │                                  sahne 5 soru · ⬜ hareket_profili ·
+│   │                                  ⬜ ㉛ DOLULUK (yazılmadı) (kaynak: TUR 19)
 │   ├── SHORTS_SISTEM_PROMPTU.md           dikey 9:16 hazır sistem promptu
 │   │                                      ⚠️ 27.08.2026: md.5'ten "tehlike yoktur" KALKTI · "eller her zaman boş" GEVŞEDİ
 │   ├── GOOGLE_FLOW_MUSIC_URETIM_KILAVUZU.md

@@ -121,6 +121,11 @@ Yeni bir filme başlarken **sırayla** cevapla. Her cevap bir sonrakini daraltı
   haritasına açık kalan SORU ve cevap TİPİ sütunlarını yazdırır ·
   ardışık aynı cevap tipi yasağı · sınır satırı (End/Start) ·
   ⛔ durum değişimi klibe değil SINIRA yazılır · 04.09.2026)
+□ SAHNE_DOLULUGU_KILAVUZU.md 🆕 (birimin İÇİ — sahne tablosu ve TIMELINE
+  yazılırken her sahnede: kilit fiili SÜREÇ (erişme ancak dirençle) · imaj
+  eylemin ORTASINDAN · TIMELINE ≤3 satır, son satır SÜRDÜRME ("settles /
+  then stops" yazılmaz) · tek çevre saati · ölü sahne beş sorusu ·
+  15.09.2026 · TUR 19)
 □ ACILIS_KAPANIS_CIFTI_KILAVUZU.md 🆕 (ilk kare ile son kare TEK karar —
   çift kartı sahne haritasından ÖNCE doldurulur · kanca ve final tipini
   seçmez, ikisinin BAĞINI yazar · 04.09.2026)

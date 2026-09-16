@@ -1187,7 +1187,7 @@ gereken **yokluğu** değil. Bir yokluk ancak ölçümle bulunur.
 **FREKANS:** 4 film · THE AMBER LATTICE (mod V · ⑫ 6,5 — LEAVES AT 00:21, S2-S7 konsol platosu) · THE CRACKED HELMET (mod V · ⑫ 6,6 — LEAVES AT 00:27, 4 ardışık kurulum) · THE RING WALKER (mod V · ⑫ 6,0 — 4 s statik başlık kartı, LEAVES AT 00:03) · LOW_POWER (④ 7,8 — 19 s durağan peyzaj; ⑫ 5,5 — HOOK MISSING, son 10 s statik karanlık, döngü yok)
 **DEĞİŞEN SATIR:** SPEC B `SCREEN TEXT: 0 saniye` + PLAN `HOOK MİMARİSİ` "S0 SORUSU" satırı sahne haritasının **ilk satırında** (S0 = soru sahnesi, kurulum değil) + `DÖNGÜ KANITI` satırı son kareyi adlandırır; `03_PLAN_ONCESI` A3'e "ilk 30 s'de en çok 2 kurulum sahnesi" sayısı
 **KAPI:** LİSTE · `03_PLAN_ONCESI` A3 (süre) + B1 (doruk) · kurgu kapısı ④: master 0:00-0:10 içinde başlık kartı/siyah = ⛔, son 10 s statik siyah = ⛔
-**TEKRAR:** 0
+**TEKRAR:** 1 · 15.09.2026 MARS_SON_CIKIS (mod V · ④ B1 Hook 6/10 — `0:01 Mundane crate-unloading procedure poses no dramatic question in the opening 10 s`; plan S01 başlığı `Kanca: Freni tut` — soru plana kanca diye yazıldı, ekranda prosedür okundu · ⑫ B1 Hook Question 3/10 aynı yönde (⑫ mod V karantina — sayılmadı))
 
 **Kaynak:** THE RING WALKER QA (10.09.2026) — ⑫ `00:00-00:04 opening window spends 4 seconds on static title typography before scene action begins`. Zincir ADAY-28 · 44 · 57 · 68 · 89 · 90. D70/D72'nin kuyruk kartı borcu (⛔ ÇALIŞMIYOR) bu örüntünün çıkış yarısıdır.
 
@@ -1225,7 +1225,7 @@ gereken **yokluğu** değil. Bir yokluk ancak ölçümle bulunur.
 **FREKANS:** 4 film · THE AMBER LATTICE (mod V · ⑦ 7,2 — el kola uzanır, temas öncesi kesme; halat klipsi kadraj altında) · THE CRACKED HELMET (mod D · ⑦ 9,0 — 1:19 sıvı küre ↔ 1:21 katı parça) · LOW_POWER (⑦ 8,6 — şalter durumu belirsiz; temizlenen panelde geri bildirim yok) · YERÇEKİMİ F2 (ADAY-4 — dönüm anı kadraj kenarında, ilk izlemede görülmedi)
 **DEĞİŞEN SATIR:** Video TIMELINE'da temaslı eylemin **üç satırı**: `TEMAS` (el nesneye değer) · `DEĞİŞİM` (nesne durum değiştirir) · `SONUÇ` (yeni durum kadrajda ≥ 1 s kalır) — üçü aynı klipte, nesne kadrajın merkez üçte-birinde; `00_SAHNE_TABLOSU` "olay (BAŞ→SON)" SON'u nesnenin yeni durumunu adlandırır
 **KAPI:** LİSTE · `00_SAHNE_TABLOSU` olay hücresi · SPEC B FİNAL VURUŞ KANITI kalıbı ([[D141]]) her temaslı sahneye
-**TEKRAR:** 0
+**TEKRAR:** 1 · 15.09.2026 MARS_SON_CIKIS (mod V · ⑦ B1 🟠 B25 2:08 — inen yangın kapısının Aras'ın gövdesine temas noktası kapı kenarının arkasında kaldı; S13 promptu teması klibin son üçte birine (`7.0s - 10.0s … as the heavy steel fire door drops rapidly`) koymuş, SONUÇ satırı yok)
 
 **Kaynak:** THE AMBER LATTICE QA (10.09.2026) — ⑦ `00:27-00:33 glove reaches for exterior panel handle but edit cuts away before contact; tether clip interaction happens below frame edge`. Zincir ADAY-23 · 33 · 76 · 77 (+4).
 
@@ -1251,3 +1251,20 @@ gereken **yokluğu** değil. Bir yokluk ancak ölçümle bulunur.
 **ÇÖZÜM — DÖRT SAYI:** katman ≤ 4 · köprü ≥ 0,2 s · kesmede dijital sıfır 0 kare · diyalog altında müzik/alarm −6 dB. Kadraj dışı ses = telsiz band-pass (`SES_VE_DIYALOG` §1a).
 
 🔗 [[D180]] · [[D171]] · [[D83]] · [[D99]] · [[D206]] (efor sesi)
+
+---
+
+## 🔴 DERS 217: REPLİK EKRANDA OLANI SÖYLÜYOR — "SERVİS KAPAĞININ ARKASINDA ELEKTRİK YANGINI" DERKEN YANGIN KADRAJDA; SÖZ GÖRÜNMEYENİ TAŞIMIYOR
+
+**FREKANS:** 2 film · THE AMBER LATTICE (mod V · ④ 5 — 0:58 "We can't hold this trajectory much longer!" sarsılan kokpitin üstünde) · MARS_SON_CIKIS (mod V · ④ B1 6 — 1:31 "Electrical fire behind service hatch." yangın kadrajda · ④ B2 8 — 0:02 "Orientation aligned. Horizon locked." göstergenin söylediğini okuyor)
+**DEĞİŞEN SATIR:** PLAN `REPLİK TABLOSU` İŞLEV hücresi — her replik ekranda OLMAYAN tek şeyi taşır (karar · bedel · kadraj dışı bilgi · zaman baskısı); hücreye `Durum bilgisi` / `Ölçüm` / `Tamamlama` yazılan, yani kadrajdaki olayı ya da göstergeyi adlandıran replik silinir ya da görünmeyene çevrilir
+**KAPI:** LİSTE · PLAN replik tablosu İŞLEV sütunu (`SES_VE_DIYALOG_URETIM_KILAVUZU` §2a — "boş İŞLEV = silme testi adayı" satırına "görüneni söyleyen İŞLEV de boştur") · ölçen mercek: ④ HİKAYE (Dialogue)
+**TEKRAR:** 0
+
+**Kaynak:** THE AMBER LATTICE QA (10.09.2026) — ④ Dialogue 5/10 — `0:58 line 5 narrating what violently shaking camera frame already shows` (ADAY-21). İkinci film: MARS_SON_CIKIS QA (15.09.2026) — ④ B1 Dialogue 6/10 — `1:31 (C6) Lines continuously narrate visible screen actions and technical status callouts`; ④ B2 Dialogue 8/10 — `Automated telemetry speech states status already visible on console displays`.
+
+**Örüntü:** İki filmde de replik var, prompta geçmiş ve ekranda duyuluyor — sorun yokluk değil İÇERİK. MARS_SON_CIKIS'in replik tablosu yedi satırın İŞLEV hücresine B5 satırı yerine `Durum bilgisi` · `Ölçüm` · `Tamamlama` yazmış; promptlar tabloya girmeyen onlarca durum okuması daha eklemiş ("Decon clear. Pressure equalized." · "Breaker tripped. Main line is dead." · "Hatch sealed. Powering flight computer."). Kadraj olayı gösteriyor, replik aynı olayı ikinci kez söylüyor; ④ iki bölümde de yeniden yazım reçetesinin başına bu satırı koydu. D203 repliği prompta taşıdı; bu ders taşınan repliğin NE söyleyeceğini bağlar.
+
+**ÇÖZÜM:** Replik tablosu yazılırken her satıra tek soru: *ses kapatılınca izleyici bu bilgiyi kadrajdan alıyor mu?* Evet → replik silinir (sessiz sahne artar) ya da görünmeyene çevrilir. Aynı cümlenin iki yarısı örnektir: "Electrical fire behind service hatch" görüneni söyler, ÇIKAR · "Foam won't reach the core" kadraj dışı bilgiyi söyler, KALIR. Makine sesi de görüneni okumaz — register ne olursa olsun İŞLEV kuralı aynıdır. `DIALOGUE_CRITIQUE_PROMPT`'un `THINKING-OUT-LOUD` bayrağı bu ekseni tek kişilik sahnede arıyordu; bu satır iki kişilik ve telsizli sahneye genişletir.
+
+🔗 [[D203]] · [[D180]] · [[D216]] · ADAY-21 (terfi · 15.09.2026)

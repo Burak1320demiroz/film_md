@@ -327,14 +327,20 @@ kilavuzlar_ve_sistem_dosyalari/
 │   ├── 00_README.md ..................... akıştaki yeri + dürüstlük kuralı
 │   ├── 01_DERS_ETKINLIK_RAPORU.md ....... hangi ders çalışıyor — kanıtla
 │   ├── 02_RISK_KARTLARI.md .............. "filmde su var" → ne bozulacak
-│   └── 03_PLAN_ONCESI_KONTROL_LISTESI.md  planı üretime sokmadan tara
+│   ├── 03_PLAN_ONCESI_KONTROL_LISTESI.md  planı üretime sokmadan tara
+│   ├── 04_ARASTIRMA_BULGULARI.md ........ TUR n süzme kaydı — kuralın kaynağı
+│   ├── 07-22_*_ARASTIRMA_PROMPTLARI.md .. derin araştırma promptları (salt prompt)
+│   │                                      22_ = sahne doluluğu (TUR 19 ✅ → SAHNE_DOLULUGU_KILAVUZU · 15.09.2026)
+│   └── TURn_HAM_RAPORLAR/ ............... koşulan promptların ham raporları
 │
 ├── 🔍 QA_PROMPTLARI/ .................... üretilmiş işin eleştirisi
 │   │                                      ⭐ rubrikler SALT PROMPT (12.08.2026)
 │   ├── 00_README.md ..................... klasör rehberi + ajan akışı
 │   ├── CALISTIRMA_KAYITLARI.md .......... koşu tarihçesi + ders dipnotları
-│   ├── _KAYNAK/ ......................... ⭐ ON ÜÇ RUBRİK — OPERATÖRÜN AÇTIĞI YER
+│   ├── _KAYNAK/ ......................... ⭐ ON BEŞ RUBRİK — OPERATÖRÜN AÇTIĞI YER
 │   │                                      13_UYUM = sahne ↔ PROMPT (⑬ · 11.09.2026)
+│   │                                      14_HAREKET · 15_YON = hareket mantığı ·
+│   │                                      yön/hedef (⑭⑮ · 14.09.2026 · henüz koşu yok)
 │   │                                      yanına <FILM>_QA_SPEC.md yapıştırılır = mod D [D129]
 │   │                                      (FILME_OZEL/ paketleri 11.09.2026'da silindi)
 │   ├── ARSIV_6_MERCEK/ .................. ⛔ eski 6 rubrik — ÇALIŞTIRILMAZ

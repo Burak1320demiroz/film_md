@@ -2301,7 +2301,7 @@ arka plan nesnesi adlandırılır, yoksa "none" yazılır.
 > proje sahibinin kararıyla SİLİNDİ. Kapının AYAKTA KALAN hâli: `_KAYNAK/` rubriği +
 > `<FILM>_QA_SPEC.md` AYNI mesajda, SPEC başta yapıştırılır — mod D'nin tek koşulu budur.
 
-**TEKRAR:** **17 film** · son vaka **13.09.2026 (THE STATIC SHADOW, on iki mercek + ⑬ — SPEC VARDI, paket hattı 11.09'da kaldırılmıştı, operatör yine çıplak rubriği açtı; ⑬ tek başına doğru davrandı ve STEP −1'de durdu; ①③④ raporlarında SCORES SUMMARY bile yoktu — rubrik sürümü belirsiz)** · önceki **08.09.2026 (THE OPEN CIRCUIT, on iki mercek —
+**TEKRAR:** **18 film** · son vaka **15.09.2026 (MARS_SON_CIKIS — on beş mercek × iki bölüm: 28 koşu mod V, ⑬ iki kez STEP −1'de doğru durdu; SPEC VARDI)** · önceki **13.09.2026 (THE STATIC SHADOW, on iki mercek + ⑬ — SPEC VARDI, paket hattı 11.09'da kaldırılmıştı, operatör yine çıplak rubriği açtı; ⑬ tek başına doğru davrandı ve STEP −1'de durdu; ①③④ raporlarında SCORES SUMMARY bile yoktu — rubrik sürümü belirsiz)** · önceki **08.09.2026 (THE OPEN CIRCUIT, on iki mercek —
 SPEC ve PAKET_1..12 ikisi de VARDI, paket filmin yazıldığı gün 09:56'da üretilmişti;
 on iki raporun on ikisi `INPUT MODE: V`. Bu koşuda kesme listesi filmin ⭐TEMA #1
 sahnesini (S4 · kangal) ve kesici kurulumunu (S12) kesmeyi önerdi, ⑫ ise makarada
