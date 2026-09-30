@@ -41,6 +41,11 @@ DEĞİŞKEN film         (sahne içi kesme VEYA değişken çekim süresi)
                       → üç sayı üç ayrı şeydir; plan SPEC'i ÜÇ SATIR yazar:
                         SCENE COUNT: __  ·  SHOT COUNT: __  ·  CLIP COUNT: __
                       → eşit sanmak, en kalabalık birimi görmemektir [D101].
+ÇOK KLİPLİ SAHNE film 🆕 22.09.2026 (yeni yatay filmler · COK_KLIPLI_SAHNE_KILAVUZU)
+                      → sahne 2-6 klip · ÇEKİM = KLİP (klip içi kesme yok)
+                      → SCENE COUNT ≠ CLIP COUNT · SHOT COUNT = CLIP COUNT
+                      → kurgu kapısı ① KLİP sayar; ①c sahne sayısı PLAN'daki
+                        SAHNE PLANI satırının uzunluğudur
 ```
 
 ---

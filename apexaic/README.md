@@ -62,6 +62,7 @@ apexaic/
   3. POLITIKA_VE_RISK.md            ⭐ kanalı ne öldürür
   4. YAYIN_PLANI.md                 ne zaman ne yayınlanıyor
   5. CAPRAZ_YAYIN.md                bir film üç hesaba nasıl gidiyor
+  6. ../kilavuzlar_ve_sistem_dosyalari/YOUTUBE_VIRAL_SANS_KILAVUZU.md  🆕 20.09.2026 · viral şans düzeni · DIS_SAYILAR §1 yeni satırlar
 
 YÜKLEME GÜNÜ — elinde tutacağın iki dosya
   · CAPRAZ_YAYIN.md §7              (çapraz kontrol listesi)

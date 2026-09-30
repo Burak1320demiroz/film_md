@@ -68,8 +68,34 @@ T = {
    "Zorlanma": ["Strain During the Work"], "Nefes": ["Breath & Recovery"],
    "Yorgunluk": ["Fatigue Accumulation"], "Yük": ["Load in the Body"],
    "Yaralanma": ["Injury Persistence & Cost"], "Kavrama": ["Grip & the Price of Holding On"],
-   "Ekipman": ["Equipment Burden"], "Acı": ["Pain, Restraint and Proportion"],
+   "Ekipman": ["Equipment Burden"], "Acı": ["Pain, Restraint and Proportion", "Pain, Restraint & Proportion"],
    "Eğri": ["Recovery Curve Honesty"]}),
+ # 06.09.2026 · plan sadakati mercekleri [D184]
+ "⑨ KADRAJ": ("T9_KADRAJ_KALITE.md", {
+   "Kurulum": ["Setup Fidelity"], "Lockoff": ["Lockoff Integrity"],
+   "Kafiye": ["Rhyme Pair"], "Dönüş": ["Return Consistency"],
+   "Dikiş": ["Cluster Seams"], "Açı yayı": ["Angle Arc & Deliberate Shocks"],
+   "Geometri": ["Screen Geometry"]}),
+ "⑩ OYUNCULUK": ("T10_OYUNCULUK_KALITE.md", {
+   "Yüz": ["Face", "Face & Eyes"], "Eller": ["Hands", "Hands as Intent"],
+   "Duruş": ["Posture", "Posture & Weight of Decision"], "Bakış": ["Gaze", "Gaze Direction"],
+   "Tempo": ["Tempo", "Tempo & Stillness"], "Seçim": ["Choice", "The Central Choice on the Body"],
+   "Bedel": ["Cost", "Cost & Aftermath"], "Final": ["Final", "Final Beat Legibility"],
+   "Orantı": ["Proportion"]}),
+ "⑪ IŞIK": ("T11_ISIK_KALITE.md", {
+   "Yön": ["Direction", "Key Direction Continuity"], "Gölge": ["Shadow", "Shadow Quality & Fill"],
+   "Isı": ["Temperature", "Colour Temperature"], "Kaynak": ["Source", "Practical Sources"],
+   "Pozlama": ["Exposure", "Exposure at Cuts"], "Klip içi": ["In-clip consistency", "In-Clip Stability"],
+   "Sınır": ["Boundary logic", "Zone Boundaries"], "Atmosfer": ["Atmosphere", "Atmosphere Honesty"]}),
+ "⑫ HOOK": ("T12_HOOK_KALITE.md", {
+   "Hook": ["Hook Strength", "Hook Question", "Hook"],
+   "Kapak": ["Cover Match", "Cover Second", "Cover"],
+   "Risk": ["Risk / Payoff", "Stakes by the First Share Moment", "Risk"],
+   "Paylaşım": ["Shareability", "Share Moments Stand Alone"],
+   "Plato": ["Plateau Avoidance", "Plateau"],
+   "Doruk": ["Peak", "Peak Placement"],
+   "Çıkış": ["Outro", "Exit & Return"],
+   "Format": ["Format Compatibility", "Format Fit", "Format"]}),
  # 14.09.2026 · sahip talebi: hareket mantığı + yön/hedef mercekleri
  "⑭ HAREKET": ("T14_HAREKET_KALITE.md", {
    "Amaç": ["Purpose Legibility"], "Yürüyüş": ["Locomotion Sense"],
@@ -138,21 +164,21 @@ def satir_kur(r, film_dir=None, spec_var=False, tarih=None, bolum=None):
     t = tarih or date.today().strftime("%d.%m")
 
     h = [f"{anahtar}{isaret}"]
-    if dosya.startswith(("T5", "T6", "T7", "T8", "T14", "T15")):
+    if dosya.startswith(("T5", "T6", "T7", "T8", "T9", "T10", "T11", "T12", "T14", "T15")):
         h.append(t)
-    if dosya.startswith(("T6", "T7", "T8", "T14", "T15")):
+    if dosya.startswith(("T6", "T7", "T8", "T9", "T10", "T11", "T12", "T14", "T15")):
         h.append(r.get("mod") or "V")
-    if dosya.startswith("T1"):
+    if dosya.startswith("T1_"):
         h += [(r.get("format") or "⬜").upper(), str(r.get("sahne") or "⬜")]
-    if dosya.startswith("T4"):
+    if dosya.startswith("T4_"):
         h += [(r.get("format") or "⬜").upper(), "⬜"]
-    if dosya.startswith("T3"):
+    if dosya.startswith("T3_"):
         h.append(r.get("audio_state") or "⬜")
 
     h += [bulunan.get(k, "⬜") for k in harita]
     top = (f'{r["son_ort"]:.1f}'.replace(".", ",")) if r.get("son_ort") is not None else "—"
     h.append(f"**{top}**")
-    if dosya.startswith(("T5", "T7", "T8", "T14", "T15")):
+    if dosya.startswith(("T5", "T7", "T8", "T9", "T10", "T11", "T12", "T14", "T15")):
         h.append("⬜")
     if dosya.startswith("T6"):
         h += ["⬜", "⬜"]

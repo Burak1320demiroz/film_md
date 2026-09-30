@@ -29,6 +29,13 @@ AÇILIŞ↔KAPANIŞ:   ⬜ [KAFİYE / LOOP / TWIST+tohum] — değişen TEK değ
 > `KARAKTER_VE_DUYGU §6` (göz · tepki planı · el · yürüyüş · eşya) ·
 > `KURGU_RITMI §2` örüntü kırıcı (**ardışık iki sahne aynı ölçek + palet +
 > ses dokusunda OLAMAZ**) · `ACI_YAYI §3` güvenli bant · B5 bağı.
+>
+> 🆕 **22.09.2026 · ÇOK KLİPLİ SAHNE** (yatay film): sıralama iki katmanlıdır. Önce
+> SAHNELER sıralanır; her sahneye 2-6 klip ve bir kapsama şablonu verilir
+> (`COK_KLIPLI_SAHNE_KILAVUZU` §1-§2). Sonra aşağıdaki tablo KLİP başına doldurulur:
+> `S` sütununa `K07 · S03 2/3` yazılır. Örüntü kırıcıda palet + ses farkı yalnız
+> sahneler arasında aranır; sahne içinde yalnız kurulum değişir. Satır sonucu PLAN'daki
+> `SAHNE PLANI:` satırıdır (toplam = klip sayısı · sahne bölüm sınırını aşmaz).
 
 | S | başlık | olay (tek cümle) | vuruş | B5 satırı | kurulum | lens · ölçek · açı tipi | palet | ses | ⭐VİRAL |
 |---|---|---|---|---|:--:|---|---|---|:--:|

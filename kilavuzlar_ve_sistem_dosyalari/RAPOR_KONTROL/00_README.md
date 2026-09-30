@@ -20,6 +20,29 @@ python3 kilavuzlar_ve_sistem_dosyalari/RAPOR_KONTROL/rapor_kontrol.py \
 | kesme zaman kodları planın ızgarasına oturuyor mu (⑨) | D115 |
 | SPEC sayaç yazarken ② "Counter N/A" → ölçüm boşluğu | D134 |
 | birden çok rapor: kesme · sahne · şerit · replik · ⭐ SUSKUNLUK (film boyu iddia ↔ sahibin sessizliği) | D107 · D162 |
+| `--bolum n/m` (6/8/16 dk): ①.9 yalnız o parçanın bölüm dosya(lar)ını sayar — k dosya / m parça tam bölünüyorsa parça n = dosyalar (n−1)k/m+1…nk/m (16 dk: 8/4 → 2 dosya; 8 dk 4×12 yazımı: 4/2 → 2 dosya), bölünmüyorsa uyarı + yalnız BOLUM_n (MARS 3×12↔2) · ①.11 maske BAŞ/ORTA/SON | §2.6 · §2.7 · §2.8 (19.09.2026) |
+
+---
+
+## 🔎 prompt_hata_analizi.py — ham bulgu × PROMPT METNİ [18.09.2026]
+
+`rapor_kontrol.py` raporun KENDİ aritmetiğini denetler; bu betik raporun bulgusunu
+**o sahnenin promptuna** bağlar ve kusurun sahibini sorar (🅐 model sapması /
+🅑 prompt boşluğu). ⑬ UYUM merceğinin retrospektif hâlidir — ⑬ hiç koşmadığı için
+(`FILM_QA_RAPORLARI/T13_UYUM_KALITE.md` boş) arşiv bu betikle okundu.
+
+```
+python3 .../RAPOR_KONTROL/prompt_hata_analizi.py --ozet            # kapsam
+                                                --film <FILM>      # tek film defteri
+                                                --kilit <FILM>     # çekirdek cümle envanteri
+                                                --sahne <FILM> <n> # promptun kendisi
+                                                --regex-dene "<d>" # kapı önerisi ölçümü
+                                                --yaz              # 10_ klasörüne defter
+```
+
+`rapor_kontrol`'ün yardımcılarını (`govde_al` · `alan` · `mercek_bul` · `skor_tablosu` ·
+`kesik_mi`) içe alır. ⛔ `--yaz` verilmedikçe **dosya yazmaz**.
+Çıktısı: `../FILM_QA_RAPORLARI/10_PROMPT_QA_ANALIZI/`
 
 **Çıkış:** 0 GO · 1 ŞARTLI · 2 TEKRAR/GEÇERSİZ/✂️ KESİK. `--rapor` → `RAPORLAR/<FILM>_<tarih>_RAPOR_KONTROL.md`.
 

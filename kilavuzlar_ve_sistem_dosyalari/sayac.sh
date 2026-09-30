@@ -77,9 +77,11 @@ TOPLAM=0
 # listeye birden girdi (film sayımı · tema dağılımı FILM_DIZIN · SPEC borcu ·
 # ⑯ politika taraması · matris uyumu FILM_DIZIN üzerinden). Biri atlansaydı
 # sayaç ilk 6/8 dk filmi görmeyecekti.
+# 19.09.2026: yatay_16_dk_filmler açıldı (kart H · §2.8 · 96 = 8 × 12 · QA 4 PART);
+# 22.09.2026: yatay_32_dk_filmler ve yatay_64_dk_filmler açıldı (§2.9/§2.10).
 for d in dikey_shorts_filmler yatay_2_dk_filmler \
-         yatay_4_dk_filmler yatay_6_dk_filmler yatay_8_dk_filmler \
-         yatay_10_20_dk_filmler; do
+         yatay_4_dk_filmler yatay_8_dk_filmler yatay_16_dk_filmler \
+         yatay_32_dk_filmler yatay_64_dk_filmler; do
     [ -d "$d" ] || continue
     n=$(ls -1 "$d" 2>/dev/null | grep -viE "^[0-9_]*README" | grep -v "^kilavuzlar$" \
         | grep -viE "_QA_SPEC\.md$" | wc -l | tr -d ' ')
@@ -87,6 +89,17 @@ for d in dikey_shorts_filmler yatay_2_dk_filmler \
     TOPLAM=$((TOPLAM + n))
 done
 printf "   %-30s %s\n" "TOPLAM" "$TOPLAM"
+# 22.09.2026: çok klipli sahne rejimi (COK_KLIPLI_SAHNE_KILAVUZU) — PLAN'ında
+# `SAHNE PLANI:` satırı taşıyan film klasörü (prompt_kontrol ㉜ tetiği).
+COKKLIP=0
+for d in yatay_2_dk_filmler yatay_4_dk_filmler yatay_8_dk_filmler yatay_16_dk_filmler \
+         yatay_32_dk_filmler yatay_64_dk_filmler; do
+    [ -d "$d" ] || continue
+    for f in "$d"/*/*_PLAN.md; do
+        [ -f "$f" ] && grep -qE "^[[:space:]]*SAHNE PLANI[[:space:]]*:[[:space:]]*[0-9]" "$f" && COKKLIP=$((COKKLIP + 1))
+    done
+done
+printf "   %-30s %s\n" "├ çok klipli sahne rejimi" "$COKKLIP"
 echo
 
 # ─── TEMA DAĞILIMI ─────────────────────────────────────────────────
@@ -102,8 +115,8 @@ echo
 echo "🎭 TEMA DAĞILIMI"
 TEMA_P="^[[:space:]>*_#-]*\**[[:space:]]*(TEMA|THEME)([[:space:]]+[[:alpha:]][[:alpha:] ]{0,17}|[[:space:]]*\([[:alpha:] ]{1,18}\))?[[:space:]]*:"
 FILM_DIZIN="dikey_shorts_filmler yatay_2_dk_filmler \
-            yatay_4_dk_filmler yatay_6_dk_filmler yatay_8_dk_filmler \
-            yatay_10_20_dk_filmler"
+            yatay_4_dk_filmler yatay_8_dk_filmler yatay_16_dk_filmler \
+            yatay_32_dk_filmler yatay_64_dk_filmler"
 TEMALI=0
 for d in $FILM_DIZIN; do
     [ -d "$d" ] || continue
@@ -234,7 +247,7 @@ DERIN=$(for t in T5_ARKA_PLAN_KALITE T6_FIZIK_KALITE; do
 #    taşınmadan sonra ise HİÇBİR şey bulamıyordu (sessiz sıfır).
 HAM_SET=$(find "$Q/02_HAM_RAPORLAR" -mindepth 2 -type f 2>/dev/null \
     | grep -E '_(KARE|DEVAMLILIK|HIKAYE|ARKA_PLAN|FIZIK)_HAM\.md$' \
-    | awk -F/ '{print $(NF-1)}' \
+    | awk -F'/02_HAM_RAPORLAR/' '{split($2, a, "/"); print a[1]}' \
     | ad_normal | sort -u)
 ISLENMEMIS_HAM=$(comm -23 <(printf '%s\n' "$HAM_SET" | grep -v '^$') \
                           <(printf '%s\n' "$OLCULEN_SET" | grep -v '^$'))
@@ -270,8 +283,8 @@ HAM_KLASOR=$(find "$Q/02_HAM_RAPORLAR" -mindepth 1 -maxdepth 1 -type d 2>/dev/nu
 # ölçüm kalitesinin üst akışıdır, ayrı bir konu değil.
 SPECLI=0
 for d in dikey_shorts_filmler yatay_2_dk_filmler \
-         yatay_4_dk_filmler yatay_6_dk_filmler yatay_8_dk_filmler \
-         yatay_10_20_dk_filmler; do
+         yatay_4_dk_filmler yatay_8_dk_filmler yatay_16_dk_filmler \
+         yatay_32_dk_filmler yatay_64_dk_filmler; do
     [ -d "$d" ] || continue
     for f in "$d"/*/; do
         [ -d "$f" ] || continue
@@ -447,8 +460,8 @@ fi
 echo "   ── ⑯ POLİTİKA SÖZLÜĞÜ · canlı tarama (prompt_kontrol) ──"
 python3 "$K/PROMPT_KONTROL/prompt_kontrol.py" \
     dikey_shorts_filmler yatay_2_dk_filmler \
-    yatay_4_dk_filmler yatay_6_dk_filmler yatay_8_dk_filmler \
-    yatay_10_20_dk_filmler 2>/dev/null \
+    yatay_4_dk_filmler yatay_8_dk_filmler yatay_16_dk_filmler \
+    yatay_32_dk_filmler yatay_64_dk_filmler 2>/dev/null \
   | grep -oE "politika sözlüğü T[12] · [0-9]+|milliyet ifadesi|gövdeye yönelmiş şiddet fiili|gerçek kurum adı|yapısal red profili" \
   | awk '/T1 ·/{t1+=$NF; n1++} /T2 ·/{t2+=$NF; n2++} /milliyet/{m++}
          /şiddet fiili/{f++} /kurum/{k++} /yapısal/{y++}

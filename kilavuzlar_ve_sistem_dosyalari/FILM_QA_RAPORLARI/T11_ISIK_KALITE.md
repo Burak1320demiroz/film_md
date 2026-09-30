@@ -42,6 +42,9 @@ Biri bile hayırsa satır YAZILMAZ; ham rapor 02_HAM_RAPORLAR/'da durur.
 |---|---|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|---|
 | **The Counted Turn** | 09.09.2026 | D | 3.0 | 9.0 | — | — | 9.0 | — | — | 6.0 | ⚠️ 6.8 | 🔴 **KEY WALKS** — S12 (1:50) ve S14 (2:10) MCU'larda ana ışık yönü 3'ten 9 saat yönüne ters sıçrıyor (monotonik ışık planı ihlali) [D184] |
 | **The Hard Dock** ⚠️ | 12.09.2026 | D | 6.0 | 5.0 | 6.0 | 5.0 | 6.0 | 6.0 | 5.0 | 5.0 | **5,5** | S8->S9 color temperature jump from warm to cool neutral on subject face |
+| **The Inward Fall** ⚠️ | 30.09 | D | 9 | 10 | 9 | 10 | 9 | 10 | 10 | 10 | **9,6** | ⬜ |
+| **The Signal Keepers** | 30.09 | D | 10 | 10 | 10 | 10 | 10 | 10 | 10 | 10 | **10,0** | LIGHT HOLDS · 6 ışık bölgesi eksiksiz kilitli · S01-S06 key yönü ve renk sıcaklığı tutarlı · S05 mutlak siyah salon ve S06 aktivasyon yükselişi kusursuz |
+| **The Static Veil** | 30.09 | D | 7 | 8 | 7 | 7 | 7 | 6 | 8 | 7 | **7,1** | LIGHT HOLDS · S07/S09 elektrik arkı yapay bloom; S11 vakumda hacimsel sarı ışık huzmesi |
 
 
 ⛔ Sayılar bu tabloya ELLE yazılmaz — rapordan gelir ve `rapor_kontrol.py`

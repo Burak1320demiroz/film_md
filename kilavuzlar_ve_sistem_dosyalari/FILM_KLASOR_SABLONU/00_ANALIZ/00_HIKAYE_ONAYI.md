@@ -11,8 +11,16 @@
 >    sahip okur, ajan değil (㉙ FIX). Ders/kapı dili `02_KONSEPT_VE_RISK.md`'ye gider.
 > ⛔ Sahne satırı sayısı = filmin sahne sayısı (㉙ BLOCK). Satırlar betik damgalar
 >    (`S0 — ⬜`); sahne sayısı değişirse `--sahne-guncelle` ve YENİDEN ONAY.
+> 🆕 **22.09.2026 · ÇOK KLİPLİ SAHNE** (`--sahne-plani` ile açılan yatay film): satır
+>    SAHNE başınadır ve klip sayısını taşır — `S3 (4 klip · 0:40–1:20) — <olay>`.
+>    ㉙ satır sayısını SAHNE PLANI'yla, `(n klip)` toplamını klip sayısıyla karşılaştırır.
+>    Sahip hem hikâyeyi hem sahnelerin uzunluğunu onaylar.
 > ⛔ Plan / sahne haritası onaylı metinden ayrılırsa SAPMA bölümüne yazılır ve yeniden
 >    onay alınır [D74 kalıbı: kaydı olmayan sapma, yapılmamış sapmadır].
+> ⭐ **21.09.2026:** hikâye FİKİR TURUNDAN gelir (`HIKAYE_FIKIR_TURU_KILAVUZU.md`, adım 0.7a):
+>    üç yöntemle açılan havuzdan elenerek seçilmiş A adayıdır; elenen iki aday ADAYLAR
+>    bloğunda durur. ⛔ ADAYLAR satırları `B —` / `C —` ile başlar, `S<n>` ile DEĞİL
+>    (㉙ sahne satırı sayımı bütün dosyada koşar).
 
 ## LOGLINE — en çok 25 kelime, tek cümle
 
@@ -29,6 +37,11 @@
 ## SAHNELER — sahne başına bir satır · en çok 15 kelime · olay dili (kim · ne yapıyor · ne değişiyor)
 
 <SAHNE_SATIRLARI>
+
+## ADAYLAR — seçilmeyen iki hikâye ve neden (düz Türkçe · fikir turu 21.09.2026)
+
+B — ⬜ <logline> · neden elendi: ⬜
+C — ⬜ <logline> · neden elendi: ⬜
 
 ## ONAY
 

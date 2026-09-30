@@ -2161,3 +2161,180 @@ makarada yok; ⑩ seçimi joystick'e (S4) yazdı, bu D190'dır.
 ⚠️ ⑭ B2 PROMPT ORDERS #2 *"the astronaut stands completely still … without rotating her shoulders"* önerdi — bu depoda YAZILMAZ (`OYUNCULUK_YAZIM` §4 · `SAHNE_DOLULUGU` §4 ⑥); reçete olarak inmedi.
 
 🔗 [[D207]] · [[D214]] · `SAHNE_DOLULUGU_KILAVUZU` §3 · §6
+
+---
+
+## ADAY-96 — ÇİFT KULE AYRIMI GÖRSELDE ÇÖKÜYOR: PLANLI İKİ AYRI YAPI KADRAJDA AYRIŞMADI, İZLEYİCİ KULEYİ RESETLENDİ/ZAMANSAL DÖNGÜ SANDI
+
+**Tarih / kaynak:** 21.09.2026 · THE_STOLEN_SKY PART 1 (S00-S23) · ② DEVAMLILIK · parti 🚨 GEÇERSİZ (mod V + ⑪ ölçüm yok) → tek film, ADAY.  
+**MOD:** V · ② DEVAMLILIK (① KARE'de de kule çarpışması blocker çıktı)  
+**KAPI:** aday — muhtemel LİSTE (`UZAY_USSU_VE_ISTASYON_MIMARISI_KILAVUZU` §2 veya `03_PLAN_ONCESI` mimari kontrast satırı). **Vaka:** 1.  
+
+**Gözlem (rapor + plan):**  
+- S00 (00:04): İnsan tahliye gemisi kafese çarpıp yamacın altındaki boş servis kulesine (`one empty service tower taller than the rest`) çarpar ve kuleyle birlikte çöker.  
+- S12/S13 (02:00): Çatı tareti savunma kulesinden (`Roof turret / defence grid tower`) gökyüzü kafesine lazer sıkar.  
+- ② DEVAMLILIK raporu: *"Launch tower destroyed by ship impact at 00:04 (S1) is intact at 02:00 (S13)... The short film is structured as a non-linear concept teaser... Launch tower collapsing in S1 but standing intact in S13. Fix: Re-order S13/S14 to open the reel as establishing shots prior to the S1 crash."*  
+- Planda hikâye kesinlikle doğrusaldır; S00'daki servis kulesi ile S12'deki savunma taret kulesi iki tamamen ayrı yapıdır. Ancak video promptlarında iki kulenin mimari dili, silueti ve malzemesi yeterince zıtlaştırılmadığı için AI her ikisini de benzer metal kule yapısı olarak üretmiş; izleyici/denetçi kuleyi tekil nesne sanarak kurgunun resetlendiği veya non-linear teaser olduğu sonucuna varmıştır.
+
+**Hipotez:** Aynı dünyada geçen sahnelerde birden fazla büyük dikey yapı (kule, anten, baca, gantry) varsa, malzeme dili (ör. açık kafes çelik iskelet ↔ masif monolitik beton blok) ve siluet geometrisi en baştan zıtlaştırılmalıdır. Aksi takdirde difüzyon modeli jenerik 'kule' varlığı çağırır ve izleyici iki ayrı yapıyı tek bir nesnenin durum sıfırlanması (causality break) olarak okur.
+
+**Kapatma:** İkinci filmde iki farklı mimari yapı kadrajda birbirine karıştırılıp 'dünya durumu resetlendi' bulgusu üretirse → ders; DEĞİŞEN SATIR: `UZAY_USSU_VE_ISTASYON_MIMARISI_KILAVUZU` mimari kontrast kuralı.
+
+🔗 [[D209]] · [[D208]] · `UZAY_USSU_VE_ISTASYON_MIMARISI_KILAVUZU` §2 · §5
+
+---
+
+## ADAY-98 — "TRIPOD" KELİMESİ KADRAJA DÜŞÜYOR: CAMERA SATIRININ KENDİ JETONU PLANSIZ KAMERA SEHPASI ÜRETİYOR (JETON SIZINTISI SINIFI)
+
+**Tarih / kaynak:** 22.09.2026 · TUR 24 süzgecinde depo verisinden bulundu (`URETIM_ONCESI_ANALIZ/04_ARASTIRMA_BULGULARI.md` §TUR 24 ⑤) · THE_SLOW_RAIN PART 1 + THE_STOLEN_SKY PART 1.
+**MOD:** ⑤ ARKA PLAN ✅ GO (SLOW_RAIN) · ⑮ YÖN ⛔ TEKRAR mod V (SLOW_RAIN V14) · ① KARE out-of-scope flag (STOLEN_SKY) → sayım dışı bulgular karışık; **2 film**.
+**KAPI:** aday — muhtemel BETİK (`prompt_kontrol.py` CAMERA satırında `tripod` → NOT) ya da LİSTE (`IMAGE_VIDEO_PROMPT_TEMPLATES` V3 CAMERA kalıbı). **Vaka:** 2.
+
+**Gözlem (rapor + prompt):**
+- THE_SLOW_RAIN S14 (02:10): *"zemin düzlüğünde plansız kamera tripodu beliriyor"* (⑤) · V14 0:28 *"kaza düşüşünde kadrajda daha önce kurulmamış tripod"* (⑮). QA kaydının cevabı: *"tripod yapay zeka modelinin 'camera/setup' kelimelerinden türettiği dışsal bir görsel halüsinasyondur."*
+- THE_STOLEN_SKY PART 1 ① 00:39: *"Camera tripod visible in foreground near cave entrance between scene cuts."*
+- İki filmin CAMERA satırı `… on a fixed locked-off tripod …` taşıyor: SLOW_RAIN 96/96 CAMERA satırı · STOLEN_SKY 94/192.
+- Karşı kanıt: "tripod" depo bölüm dosyalarında 440 kez geçiyor; tripod bulgusu yalnız bu iki filmde. Ötekilerde (LOW_POWER · STONE_SKY · LISTENING_WORLD · BLUE_DRIFT · BLIND_RETURN) "tripod" ya plandaki bir nesne ya rubrik dilidir.
+
+**Hipotez:** PROMPT_HATA §6 JETON SIZINTISI — promptun kendi kelimesi kadraja yazılıyor (`PHASE 1` · `EVA` · `S04` emsali). Kamera cümlesindeki nesne adı, kadrajın içine bir nesne olarak düşebiliyor; özellikle geniş dış planda boş zemin varken.
+
+**Öneri (ÖNERİ · maliyeti sıfır):** CAMERA satırında `a locked-off camera` — kurulum imzası (lens · yükseklik/mesafe · ölçek · açı tipi) değişmez; `prompt_kontrol.py` KAMERA_IZI `camera` kelimesini zaten tanır.
+
+**Kapatma:** "tripod"suz CAMERA satırıyla üretilen ilk iki filmde ⑤/⑮ plansız tripod 0 ise ve "tripod"lu bir filmde yeniden çıkarsa → ders; DEĞİŞEN SATIR: `IMAGE_VIDEO_PROMPT_TEMPLATES` V3 CAMERA kalıbı + `KILAVUZ_REHBERI` örnek cümleleri.
+
+🔗 PROMPT_HATA_ONLEME §6 · `MIKRO_AKSIYON_VE_HALUSINASYON_KILAVUZU` §4.2 · [[D59]]
+
+---
+
+## ADAY-99 — ORTAM KARTININ NEGATİF SATIRI HİKÂYE NESNESİYLE ÇAKIŞIYOR: YASAK KALKMAZ, KAYNAK İÇİN POZİTİF KURAL YAZILIR (ARŞİMET KALIBININ İKİNCİ VAKASI)
+
+**Tarih / kaynak:** 28.09.2026 · THE_SIGNAL_KEEPERS yazımında `00_ANALIZ/04_UYARI_NOTLARI.md` §4b ADAY-A olarak önerildi; ilk vaka THE_COUNTED_RIVET (§3.6 nötr yüzerlik ↔ `never hovers`).
+**MOD:** yazım turu (üretim 0 kare) — henüz ölçülmedi, bu yüzden ADAY.
+**KAPI:** aday — muhtemel LİSTE (`PROMPT_HATA_ONLEME_KILAVUZU` §2'nin her ortam kartına bir "ÇAKIŞMA" satırı) ya da KILAVUZ (§3 kartlarının kendi içine). **Vaka:** 2.
+
+**Gözlem (yazım, iki film):**
+- THE_COUNTED_RIVET · §3.6 SÜREKLİ BULUT: kart platformun nötr yüzerlikte olmasını ister, negatif çekirdek ⑧ `never hovering` der. İkisi aynı promptta.
+- THE_SIGNAL_KEEPERS · §3.4 KALIN ATMOSFER: hikâyenin bitkileri KENDİ ışığını verir, negatif çekirdek ③ `0% bloom, no glow` der. İkisi aynı promptta. Aynı filmde ikinci çakışma: kart "dolgu ÇOK GÜÇLÜ" der, ③ bloom'u yasaklar.
+- İkisinde de geçen çözüm AYNI: **yasak cümle SİLİNMEZ** (silinirse hâle geri gelir ve kapı körleşir); yasağın yanına KAYNAK için pozitif, sayılı bir kural yazılır —
+  `the low plants are themselves the source of a green-blue light, like lit lamps, the light not spreading past their edges`
+  `the platform floats in neutral buoyancy, settling at a constant rate`
+- ⚠️ Ve çözümün İKİNCİ yarısı SPEC'tedir: ⑪ IŞIK (ya da ⑥ FİZİK) merceği bunu çelişki yazarsa bulgu TASARIMDIR ve YANLIŞ-POZİTİF DUVARI'na satır olarak girer. Duvar satırı yazılmazsa aynı bulgu her koşuda yeniden gelir.
+
+**Hipotez:** Negatif çekirdek HÂLE ve HAREKET üzerine yazılmıştır, KAYNAK üzerine değil. Bir hikâye nesnesi kartın yasakladığı fiziksel davranışı TAŞIMAK zorunda olduğunda çatışma kelimede değil KAPSAMDA: yasak "havanın içinde yayılan ışık"ı, pozitif kural "nesnenin kendi yüzeyinde duran ışık"ı tarif eder. İkisi çelişmez ama model için ayırt edilmeleri POZİTİF cümleye bağlıdır.
+
+**Öneri (ÖNERİ · maliyeti sıfır):** `PROMPT_HATA_ONLEME_KILAVUZU` §2'nin her ortam kartı bloğuna tek satır: *"ÇAKIŞMA: bu kartın hangi satırı negatif çekirdekle çarpışır ve pozitif karşılığı nedir."* §3.4 ve §3.6'da o satır bugün yazıldı; kalan yedi kartta YOK.
+
+**Kapatma:** üçüncü vaka farklı bir kartta çıkarsa ve çözüm yine "yasağı koru + pozitif kaynak kuralı" olursa → ders. DEĞİŞEN SATIR: `PROMPT_HATA_ONLEME_KILAVUZU` §2 (dokuz kart) + `KILAVUZ_REHBERI` §5.1'in çekirdek notu.
+
+🔗 PROMPT_HATA_ONLEME §2 §3.4 §3.6 · `KILAVUZ_REHBERI` §3.4 · [[D123]] · [[D29]]
+
+---
+
+## ADAY-100 — ÖLÇEK YÜRÜYÜŞÜ POLİTİKA RİSKİNİ DÜŞÜRDÜ: KOMPOZİSYON KAPISI, POLİTİKA KAPISININ ALETİ OLABİLİR
+
+**Tarih / kaynak:** 28.09.2026 · THE_SIGNAL_KEEPERS yazımında `00_ANALIZ/04_UYARI_NOTLARI.md` §4b ADAY-B olarak önerildi ve `00_ANALIZ/03_SAHNE_SIRALAMASI.md` §7c④'te ölçüldü.
+**MOD:** yazım turu (üretim 0 kare) — red sınıfı ekranda sınanmadı, bu yüzden ADAY.
+**KAPI:** aday — muhtemel KILAVUZ (`POLITIKA_VE_URETILEBILIRLIK_KILAVUZU` §4'e "ölçek aleti" satırı) ya da LİSTE (`02_RISK_KARTLARI` KART 12'ye çapraz not). **Vaka:** 1.
+
+**Gözlem (tek film, ölçülmüş):**
+- `02_KONSEPT_VE_RISK.md` §6 filmin en red-riskli karesini K23 diye yazdı (omuzdaki yuvadan nesne çıkarma · red defteri #3 sınıfı) ve nötr tarifi **ECU** olarak kurdu: *"no body, no face and no suit beyond the panel in frame"*.
+- Sonra `ACI_YAYI` §3'ün güvenli bandı (ardışık çift ≥1 ölçek kademesi) o kareyi **CU**'ya çekti: kurulum L · 50 mm · 0,72 × 0,41 m. Kadraja omuz paneli + boyun halkası + kaskın ALT KENARI girdi.
+- ⭐ Sonuç bir RİSK DÜŞÜŞÜ: red defteri **#13**'ün (sahne İPTAL edilmişti) üç bileşeninden ikisi kadrajdan çıktı — "yüzsüz izolasyon" ve "tepeden makro". Kalan tek bileşen nesnenin kendisi.
+- Yani politika kararı (nötr tarif) ile kompozisyon kararı (ölçek yürüyüşü) BİRBİRİNDEN HABERSİZ alındı ve kompozisyon olan politikayı İYİLEŞTİRDİ. Tersi de olabilirdi: ölçek yürüyüşü bir kareyi ECU'ya ÇEKSEYDİ risk artardı ve hiçbir kapı bunu görmezdi.
+- Aynı filmde ikinci gözlem: K10-K11'in (red #13'ün "iki uzuv" bileşeni) iki eli AYRI kliplere düşmesi de politika kararı değil ölçek/dönüş kararıydı.
+
+**Hipotez:** POLİTİKA kapısı (B6) ve AÇI YAYI kapısı (B4) aynı değişkeni — KADRAJDA NE VAR — iki ayrı yerden yazıyor ve birbirlerini okumuyorlar. Red defteri sınıflarının çoğu bir KOMPOZİSYON tarifidir (yüzsüz izolasyon · tepeden makro · iki uzuv yan yana · gövdeden çıkarma), dolayısıyla ölçek merdiveni politikanın en ucuz aletidir.
+
+**Öneri (ÖNERİ · maliyeti sıfır):** `03_PLAN_ONCESI` B6'ya tek satır: *"EN RED-RİSKLİ KARENİN ÖLÇEĞİ B4'ün yürüyüşüyle uyumlu mu — ve yürüyüş o kareyi YAKINLAŞTIRIYOR mu UZAKLAŞTIRIYOR mu?"* Uzaklaştırıyorsa kazanç kayda geçer; yakınlaştırıyorsa politika satırı YENİDEN yazılır.
+
+**Kapatma:** ikinci bir filmde ölçek yürüyüşü en red-riskli kareyi YAKINLAŞTIRDIĞI hâlde politika satırı güncellenmez ve red gelirse → ders (ve o zaman bu aday BLOCK'a döner). DEĞİŞEN SATIR: `URETIM_ONCESI_ANALIZ/03_PLAN_ONCESI_KONTROL_LISTESI.md` B6 + `POLITIKA_VE_URETILEBILIRLIK_KILAVUZU` §4.
+
+🔗 `POLITIKA_VE_URETILEBILIRLIK_KILAVUZU` §4 · `ACI_YAYI_VE_SEKANS_KILAVUZU` §3 · `02_RISK_KARTLARI` KART 12 · red defteri #3 · #13
+
+---
+
+## ADAY-101 — OPTİK ARİTMETİĞİ BİR KARE KURTARDI: KURULUM TABLOSU, KADRAJ ENİNİ NESNE BOYUYLA KARŞILAŞTIRMADAN YAZILAMAZ
+
+**Tarih / kaynak:** 28.09.2026 · THE_LAST_TOW yazımında `00_ANALIZ/03_SAHNE_SIRALAMASI.md` §3 kurulum tablosu kurulurken, `00_ANALIZ/05_SAHNE_CALISMALARI/K01_HOOK.md` OPTİK satırında yakalandı.
+**MOD:** yazım turu (üretim 0 kare) — hata ekranda sınanmadı, üretimden ÖNCE düştü, bu yüzden ADAY.
+**KAPI:** aday — muhtemel LİSTE (`03_PLAN_ONCESI` B4'e tek satır). **Vaka:** 1.
+
+**Gözlem (ölçülmüş):**
+- Filmin HOOK klibi (K01) bir nesnenin tek karelik bilmecesidir: 56 cm'lik çelik bir anahtar bir metal levhanın üstünde DİK duruyor.
+- Kurulum önce **D** seçildi: 85 mm · 1,1 m → kadraj eni **0,47 m**, kadraj yüksekliği 0,26 m.
+- ⛔ 56 cm'lik bir nesne 0,47 × 0,26 m'lik bir kadraja SIĞMAZ. Filmin en önemli karesi, hesap yapılmadan yazıldığı için ÜRETİLEMEZ bir karedi.
+- Yakalayan şey rubrik değil, sahne çalışma şablonunun `KADRAJ ENİ: ⬜ m ⛔ HESAPLANDI` satırıydı — yani şablon zaten soruyordu, ama soru KURULUM TABLOSU kurulurken sorulmuyordu.
+- Düzeltme: kurulum C'ye taşındı (50 mm · 2,4 m → 1,73 m), anahtar 1242 px. Zincirleme sonuç: K01→K02 şoku Δ3'ten Δ2'ye indi ve iskeletin ilk harfi değişti.
+
+**Hipotez:** Kurulum tablosu (lens + mesafe + yükseklik + ölçek + azimut) bir GEOMETRİ tablosudur ama İÇERİK bilgisi taşımaz. Kadraj eni ile o klibin ANA NESNESİNİN boyu ayrı yerlerde yazıldığı sürece, ikisinin çelişmesi ancak sahne çalışma dosyası yazılırken — yani kurulum kararı verildikten SONRA — görünür. Bu deponun `OPEN CIRCUIT` denetimindeki "5 kurulumun 5'i tutmuyordu" bulgusu aynı boşluğun daha ağır hâli olabilir.
+
+**Öneri (ÖNERİ · maliyeti sıfır):** kurulum tablosuna **iki sütun daha**: `kadraj eni (m)` ve `bu kurulumda en küçük/en büyük ana nesne (m)`. Tablo kurulurken sığmayan eşleşme kırmızı görünür. `03_PLAN_ONCESI` B4'e tek satır: *"her kurulumun kadraj eni, o kurulumu kullanan kliplerin EN BÜYÜK ana nesnesinden büyük mü?"*
+
+**Kapatma:** ikinci bir filmde aynı çelişki sahne çalışma dosyasına kadar yakalanmadan geçerse ve üretimde kare kırpılırsa → ders. DEĞİŞEN SATIR: `URETIM_ONCESI_ANALIZ/03_PLAN_ONCESI_KONTROL_LISTESI.md` B4 + `ACI_YAYI_VE_SEKANS_KILAVUZU` §4.
+
+🔗 `ACI_YAYI_VE_SEKANS_KILAVUZU` §4 · `KILAVUZ_REHBERI` §5.2 · [[D179]] · THE_OPEN_CIRCUIT denetimi
+
+---
+
+## ADAY-102 — ORTAM KARTININ SAYISI HANGİ MALZEMEYİ VARSAYDIĞINI YAZMIYOR
+
+**Tarih / kaynak:** 28.09.2026 · THE_LAST_TOW'un `00_ANALIZ/06_URETIM_ONCESI_KONTROL.md` §GENLEŞME SAYISININ DÜRÜST KAYDI bölümünde hesaplandı.
+**MOD:** yazım turu · aritmetik denetimi (ekranda sınanmadı). **KAPI:** aday — muhtemel KART NOTU (`KILAVUZ_REHBERI` §3.8). **Vaka:** 1.
+
+**Gözlem (aritmetik):**
+- Kart §3.8 şöyle diyor: *"Gölgede ~100 K'de duran bir levha ışığa girince ~370 K'ye çıkar ve metrede yaklaşık 1,3 mm uzar."*
+- ΔT = 270 K. Bu sayı α = 4,8 × 10⁻⁶ /K anlamına gelir — tungsten (4,5) ya da Kovar sınıfı **düşük genleşmeli** bir alaşım.
+- Yapı çeliği α ≈ 12 × 10⁻⁶ /K → aynı ΔT'de **3,2 mm/m**. Alüminyum α ≈ 23 × 10⁻⁶ /K → **6,2 mm/m**.
+- Yani kartın sayısı yanlış değil ama **hangi malzeme için** doğru olduğu yazılı değil; ve bu kartın kendi zemini "işlenmiş metal" diyor, alaşım demiyor.
+- THE_LAST_TOW kartın sayısını KULLANDI (tek kaynak kuralı) ve sonucu hikâye için güvenli: 18 m'lik dizi 23 mm büyüyor, kapanması gereken boşluk 20 mm. Çelik değeriyle 58 mm olurdu — mekanik **daha güçlü** çalışır, yani hikâye hiçbir yönde kırılmıyor.
+
+**Hipotez:** §3 kartlarının sayıları ortamı (basınç · yerçekimi · sıcaklık) kilitliyor ama MALZEME sabitlerini kilitlemiyor. Malzemeye bağlı bir sayı (genleşme · iletkenlik · ses hızı) kartta malzeme adı olmadan durduğunda, ikinci film onu başka bir malzeme için kullanır ve iki film aynı kartta çelişir.
+
+**Öneri (ÖNERİ · maliyeti bir satır):** malzemeye bağlı her sayının yanına malzeme adı: *"metrede ~1,3 mm (düşük genleşmeli alaşım; yapı çeliği için ~3,2 mm)"*. ⛔ Kartı DEĞİŞTİRMEK sahip kararıdır — bu aday yalnız aritmetiği kayda geçirir.
+
+**Kapatma:** ikinci bir §3.8 filmi çelik varsayıp 3,2 mm/m yazarsa iki film aynı kartta iki sayı taşır → ders. DEĞİŞEN SATIR: `KILAVUZ_REHBERI` §3.8 ikinci kural bloğu.
+
+🔗 `KILAVUZ_REHBERI` §3.8 · `PROMPT_HATA_ONLEME` §2 §3.8 · [[D127]]
+
+---
+
+## ADAY-103 — SAHİBİN YASAĞI SÖZLÜKLE DEĞİL DEPONUN KENDİ DİLİYLE ÇÖZÜLÜYOR
+
+**Tarih / kaynak:** 30.09.2026 · THE_LAST_GATE'in SAPMA 1 kaydı (`THE_LAST_GATE_PLAN.md` §Rozet Bible · §SAPMA).
+**MOD:** yazım turu · iki kılavuzun kesişimi (ekranda sınanmadı). **KAPI:** aday — muhtemel AKIŞ NOTU (`yeni-film` adım 4). **Vaka:** 1.
+
+**Gözlem:**
+- Sahip "özgün rozetler korunur" dedi. Negatif çekirdek ④ ise *"no readable text, letters, digits or **symbols** … on any … patch"* diyor. Çelişki gerçekti.
+- **İlk çözümüm** rozeti KÜÇÜLTMEK oldu: "blank raised relief, shape only" — yani rozet var ama tasarımı yok. İsteği karşılamıyordu, yalnız kapıyı geçiyordu.
+- **Doğru çözüm depoda zaten yazılıydı ve okumamıştım:** `ASTRONOT_DONANIM_VE_KIMLIK_KILAVUZU` §3 **METİNSİZ AMBLEM DİLİ** — `textless` + TEK geometrik motif + sayılabilir öğe + doku kelimesi (`embossed embroidery`), kılavuzun kendi ölçtüğü risk **"çok düşük"**.
+- Aynı klipte hem sahibin isteği tam karşılanıyor (rozetin görünür bir tasarımı var) hem ④ ile çelişki kalkıyor (`textless` ile `no readable text` aynı yöne bakıyor).
+
+**Hipotez:** Sahip talebi ↔ kapı çatışmasında ilk refleks **talebi kısmak** oluyor. Ama bu depoda çatışmaların çoğu daha önce çözülmüş ve çözüm bir kılavuz bölümünde duruyor. Çatışma anında sorulacak soru "talebi nasıl küçültürüm" değil, **"bu çatışmanın adı hangi kılavuzda geçiyor"**.
+
+**Öneri (ÖNERİ · maliyeti bir satır):** `yeni-film` adım 4'ün (`02_KONSEPT_VE_RISK` §1 sapma tablosu) yanına tek satır: *"Sapma yazmadan önce `KILAVUZ_REHBERI` §1'in ORTAMA/TÜRE GÖRE EK OKUMA tablosunda o çatışmanın adını ara — sapma son çare, ilk çare değil."*
+
+**Kapatma:** ikinci bir filmde sahip talebi bir kapıyla çarpışır ve çözüm yine mevcut bir kılavuz bölümünde bulunursa → ders. DEĞİŞEN SATIR: `yeni-film/SKILL.md` adım 4 · `03_PLAN_ONCESI` A1.
+
+🔗 `ASTRONOT_DONANIM_VE_KIMLIK_KILAVUZU` §3 · `KILAVUZ_REHBERI` §5.1 ④ · [[D138]] · [[D74]]
+
+---
+
+## ADAY-104 — YASAK KELİME NEGATİFİN İÇİNDE İKİ KEZ DAHA GERİ GELİYOR
+
+**Tarih / kaynak:** 30.09.2026 · THE_LAST_GATE · üretim öncesi tam sözlük taraması.
+**MOD:** yazım turu · 40 kelimelik grep taraması (ekranda sınanmadı). **KAPI:** aday — muhtemel KAPI EKLEMESİ (`prompt_kontrol.py` ⑯). **Vaka:** 2 (D123'ün LAST_SPAN vakası + bu).
+
+**Gözlem:**
+- D123 zaten şunu söylüyor: *"Politika sınıflandırıcısı öneki değil kelimeyi okur."* Bu filmde o dersi **bilerek uyguladım** ve yine iki kez ihlal ettim:
+  - Kalabalık riskini kapatmak için negatife *"never a crowd and never a mass of **bodies**"* yazdım. Yani **kalabalığı yasaklamak için "crowd" kelimesini 10 kez, "bodies" kelimesini 15 kez prompta soktum** — tam D123'ün LAST_SPAN'de ölçtüğü mekanizma.
+  - `"The ship never stops **dead** in space"` — bir DEYİM içinde, `POLITIKA_T2`'nin `\bdead\b` deseni.
+- İkisi de `prompt_kontrol.py` ⑯ kapısından **geçti**: ⑯ T1/T2 sayımı YOĞUNLUK arıyor ve 10 geçiş bandın altında kaldı.
+- Elle grep bulduktan sonra çözüm D123'ün kendi reçetesiydi: yasağı SİL, MALZEMEYİ TARİF ET → *"spaced apart with clear deck between them, and every one of them stays at a bay."*
+
+**Hipotez:** D123'ü BİLMEK yetmiyor, çünkü ihlal **yasağı yazma anında** doğuyor: yazan kişi riski kapattığını sanırken riski prompta taşıyor. Kapının bandı (yoğunluk) bu kalıbı göremez — 10 geçiş "az" sayılıyor ama 10 geçişin **hepsi negatif bloğunda** ve hepsi aynı kelime.
+
+**Öneri (ÖNERİ · maliyeti bir regex):** ⑯'ya alt kontrol: *bir T1/T2 kelimesi promptta yalnız NEGATIVE bloğunda geçiyor ve gövdede 0 kez geçiyorsa* → bu bir YASAK YAZMA kalıbıdır, yoğunluktan bağımsız FIX. Ek olarak `crowd` ve `mass of bodies` T2 sözlüğüne aday (şu an ikisi de listede YOK; `bod(y|ies)` var ama `crowd` yok).
+
+**Kapatma:** ikinci bir film aynı kalıpla (yasağı yazarken kelimeyi taşıyarak) yakalanırsa → ders + kapı. DEĞİŞEN SATIR: `prompt_kontrol.py` `POLITIKA_T2` + ⑯ alt kontrolü.
+
+🔗 `FILM_QA_RAPORLARI/09_URETIM_RED_DEFTERI` #8 · [[D123]] · [[D59]]

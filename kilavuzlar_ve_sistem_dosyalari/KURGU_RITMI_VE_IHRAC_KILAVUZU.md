@@ -135,6 +135,13 @@ SABİT IZGARADA KARŞILIĞI (klip süresi 8-10 s)
    yazılırken üç sütun yan yana okunur:
      | sahne | ölçek | palet | ses dokusu |
    Üçü de değişmeyen ardışık çift = orta bölüm çöküşünün mimarisi.
+
+🆕 22.09.2026 · ÇOK KLİPLİ SAHNE (COK_KLIPLI_SAHNE_KILAVUZU):
+   MİKRO kırıcı sahne İÇİNDEKİ her kesmede ölçek/kurulum değişimidir
+   (palet ve ses yatağı sahne içinde BİREBİR aynı kalır — sahne kilidi).
+   Palet + ses dokusu farkı SAHNELER ARASINDA aranır. MAKRO penceresi
+   (30-40 s) 3-4 kliplik sahneyle örtüşür; 5-6 kliplik sahne pencereyi
+   aşar → içeride tempo değişimi (TERSLİK/KARAR klibi) ya da DÖNÜŞ klibi şart.
 ```
 
 ---

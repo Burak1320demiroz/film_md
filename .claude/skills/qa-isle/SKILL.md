@@ -83,9 +83,13 @@ VARKEN de on iki merceğin on ikisi mod V koştu (OPEN CIRCUIT). Mod D'yi taşı
 
 ⛔ **⑬ UYUM'UN MOD V'Sİ YOKTUR [11.09.2026].** Diğer her mercek videoya bakıp bir
 şey söyleyebilir; bu söyleyemez — sahne↔prompt karşılaştırmasının bir tarafı yoksa
-karşılaştırma da yoktur. Dört girdi zorunludur: kurgu · sahne promptları (BİREBİR) ·
-`<FILM>_QA_SPEC.md` · `sahne_kapisi.sh` çıktısı + üretim defteri satırları.
-Önce makine yarısı koşar; 🚨 TESLİM UYUŞMAZLIĞI basarsa hiçbir mercek koşulmaz:
+karşılaştırma da yoktur. **Zorunlu girdi İKİDİR [16.09.2026]:** kurgu · sahne promptları
+(BİREBİR — çıplak ya da `<FILM>_BOLUM_n.md` dosyası olduğu gibi). `<FILM>_QA_SPEC.md` ve
+`sahne_kapisi.sh` çıktısı + üretim defteri VARSA okunur; yoksa koşu sürer ve eksiklik
+raporun `INPUTS:` satırında yazılıdır (makine tablosu yoksa seed/SHA/as-built iddia
+edilemez). Eski dört-girdi kuralı beş filmde beş boş rapor üretti — rubrik doğru duruyordu,
+istediği girdi sistemde yoktu (`QA_PROMPTLARI/CALISTIRMA_KAYITLARI.md` 16.09.2026).
+Makine yarısı VARSA önce koşar; 🚨 TESLİM UYUŞMAZLIĞI basarsa hiçbir mercek koşulmaz:
 ```
 bash .claude/skills/qa-isle/scripts/sahne_kapisi.sh <master> 10 <prompt_sayısı>
 ```
@@ -128,7 +132,7 @@ onaylanır. O zaman kesme listesi / REMOVE reçetesi / yeniden üretim UYGULANMA
 geçer (YERÇEKİMİ F10: plan 12, makara 11, eksik olan filmin son karesiydi).
 
 ⛔ **①.11 BÖLÜM KAPISI [13.09.2026 · KILAVUZ_REHBERI §2.6/§2.7]** — film
-`yatay_6_dk_filmler/` ya da `yatay_8_dk_filmler/` altındaysa QA birimi BÖLÜMDÜR:
+`yatay_6_dk_filmler/` · `yatay_8_dk_filmler/` ya da `yatay_16_dk_filmler/` (§2.8: 8 dosya / 4 PART, `--bolum n/4`, betik dosya eşlemesini yapar; + TAM-FİLM koşusu ④ ⑫ ③ maskesiz) altındaysa QA birimi BÖLÜMDÜR:
 on iki mercek iki yarım mastera AYRI koşulur ve betik **`--bolum 1/2`** /
 **`--bolum 2/2`** ile çağrılır. Bayraksız koşu ①.9'u yanlış ateşler (plan 36,
 makara 18). Bayrakla ①.9 yalnız `<FILM>_BOLUM_n.md`'yi sayar; uç kategoriler
@@ -136,6 +140,15 @@ makara 18). Bayrakla ①.9 yalnız `<FILM>_BOLUM_n.md`'yi sayar; uç kategoriler
 `--rapor` çıktısı `<FILM>_B<n>_<tarih>_RAPOR_KONTROL.md`, `--t-tablo` satırı
 `**<Film>** B<n>` olur. ② sınır çiftini göremez → SPEC B sınır satırı elle
 kareyle kapanır. Kesme listesi bölüm raporundan UYGULANMAZ.
+
+🆕 **ÇOK KLİPLİ SAHNE filmi [22.09.2026 · `COK_KLIPLI_SAHNE_KILAVUZU`]** — PLAN'da
+`SAHNE PLANI:` satırı varsa: ①.9 KLİP sayar (plan `## 🎬 KLİP n` başlıkları = makara
+klipleri; SCENE COUNT ayrı satırdır). PART sınırı = sahne sınırıdır, sahne bölünmez.
+SPEC B `INTRA-SCENE CUTS` listesindeki kesmelerde ② DEVAMLILIK sıfırlanma (poz · kir ·
+eldeki nesne · ışık) bulgusu 🔴'dır ve ders adayı değil önce §3 durum kilidinin
+ölçümüdür (kılavuz §9 ⬜). ⛔ Kesme/düşürme önerisi sahne İÇİNDEKİ bir klibi hedefliyorsa
+kalan kliplerin `CONTINUOUS ACTION:` durum sırası kopar → öneri sahneyi bütün olarak ele
+almadan UYGULANMAZ.
 
 ⭐ **①.12 DERS DÖNÜŞÜ [14.09.2026 · kontrat §4]** — film kaydı `## 🎯 ÜÇ SATIRLIK
 SONUÇ`'tan hemen önce `## 🔁 DERS DÖNÜŞÜ` bölümü taşır: `TEKRAR: D<n> — <bulgu> ·

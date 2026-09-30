@@ -482,7 +482,7 @@ redleri önceden gören tek film odur. Genelleşir → 03_PLAN_ONCESI B6.
 |---|---|:--:|---|
 | **NBP** Nano Banana Pro | image | 0 | Gemini 3 Pro Image · yüksek sadakat · **filtreler NB2'den KATI** |
 | **NB2** Nano Banana 2 | image | 0 | Gemini 3.1 Flash Image · sağlayıcı dokümanı *"daha esnek, daha az kısıtlayıcı güvenlik filtreleri"* diyor → **red alan image promptunda ÖNCE NB2 dene** |
-| **OMNI** ("Osmi") | video | 0 | = **Gemini Omni Flash** · düzenleme odaklı · V2V + ilk/son kare · ⛔ **"ünlü kişi" yanlış-pozitifi Veo'dan AĞIR** |
+| **OMNI** ("Osmi") | video | 0 | = **Gemini Omni Flash** · düzenleme odaklı · V2V + ilk/son kare · ⛔ **"ünlü kişi" yanlış-pozitifi Veo'dan AĞIR** · ✅ **TUR 20 (16.09.2026, resmî belge):** kimlik `gemini-omni-1.1-flash` ve ilk/son kare (`<FIRST_FRAME> <LAST_FRAME>`) DOĞRULANDI; "Veo'dan ağır" karşılaştırmalı kanıt bulmadı → ⬜ hipotez kalır; dış vaka: kurgusal yetişkin sunucu + ağız hareketi ÇIKTI aşamasında engellendi, kurgusal beyan işe yaramadı → `OMNI_1_1_FLASH_I2V_URETIM_KILAVUZU` §6 |
 | **VEO 3.1** | video | 1 (milliyet) | uzunluk tavanı ~4.300 kr ÖLÇÜLDÜ · milliyet reddi DOĞRULANDI · kurgusal yüzde Omni'den TOLERANSLI |
 | **?** kayıtsız | — | 13 | mesaj tablosu §1 · sınıf dağılımı defter §2 |
 

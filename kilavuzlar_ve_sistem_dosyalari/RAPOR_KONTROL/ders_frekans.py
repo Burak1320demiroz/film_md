@@ -100,8 +100,8 @@ def tara(esik=6.0):
     dusuk = defaultdict(lambda: {"D": set(), "V": set()})
     dosya, film_sayisi, kesik = 0, set(), 0
     disi = Counter()
-    for ham in sorted(KOK.glob("*/*_HAM.md")):
-        film = ham.parent.name
+    for ham in sorted(KOK.glob("**/*_HAM.md")):
+        film = ham.relative_to(KOK).parts[0]
         try:
             metin = ham.read_text(encoding="utf-8")
         except Exception:

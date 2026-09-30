@@ -23,6 +23,14 @@
    kapı (konsept · tema · novum · B5) onaylı LOGLINE / BEDEL / sahne
    satırlarını sessizce bozamaz; bozulacaksa 00_HIKAYE_ONAYI SAPMA + yeniden
    onay. Ders ve kapı dili BURAYA yazılır, onay dosyasına değil (㉙ jargon).
+⑥ FİKİR TURU KAYDI (21.09.2026 · `HIKAYE_FIKIR_TURU_KILAVUZU` §9) — 0.7a'da
+   sohbette yapılan işin tek kaydı; puan yazılmaz:
+   GERİLİM CÜMLESİ:  ⬜ <karakter> <iş> istiyor, ama <engel>, çünkü <neden>
+   ENGEL TİPİ:       ⬜ [insanî / ortam / ilişki]
+   DUYGU ADI:        ⬜ <ad> · kademe ⬜ [sıradan / belirli / çift-duygu]  ⛔ A çift-duygu taşır
+   ÜÇ YÖNTEM:        ⬜ yapısal · ⬜ çağrışım · ⬜ tersine
+   DOYUM (§8):       ⬜ en yakın iki film · FARK: ⬜
+   ÖLDÜRÜLEN GÖZDE:  ⬜ A'ya karşı argüman (üç satır) · sonuç: ⬜ [A kaldı / B yükseldi]
 ```
 
 ## 1. 🎯 SAHİBİN TALEBİ — birebir
@@ -103,6 +111,25 @@ TETİKLENEN RİSK:  ⬜ / ⬜
 EŞİK:             5
 ⬜ EŞİĞİN ÜSTÜNDEYSE: hangi malzeme çıkarıldı → ⬜
                       çıkarılamıyorsa kabul gerekçesi → ⬜
+```
+
+### 🪦 ÖN-OTOPSİ — "film çekildi ve izlenmedi, neden?" 🆕 21.09.2026 [`HIKAYE_FIKIR_TURU` §8]
+
+> Konsept kapılarından ÖNCE, okuma bittikten SONRA. Beş arıza modu; yüksek × yüksek
+> hücre ya önlem alır ya konsepti öldürür ve yukarıdaki risk kartı tablosuna kart olarak iner.
+
+| arıza modu | olasılık | etki | önlem / öldür |
+|---|:--:|:--:|---|
+| kanal tezi (`apexaic/README.md`) | ⬜ | ⬜ | ⬜ |
+| politika / red (`09_URETIM_RED_DEFTERI`) | ⬜ | ⬜ | ⬜ |
+| üretim tek-hata noktası (biçim kilidi · kask · metin) | ⬜ | ⬜ | ⬜ |
+| tutundurma (ilk on saniyede soru · son on saniyede çıkış) | ⬜ | ⬜ | ⬜ |
+| doyum (§8 matris — analiz sırasında yakın film çıktı mı) | ⬜ | ⬜ | ⬜ |
+
+```
+KARAR: ⬜ [GO / REVİZE / ÖLDÜR]
+   REVİZE → ne değişiyor: ⬜   (onaylı metne dokunuyorsa 00_HIKAYE_ONAYI SAPMA + yeniden onay)
+   ÖLDÜR  → 0.7'ye dönülür, B adayı yazılır; tur sayacı devam eder
 ```
 
 ## 5b. 📦 REFERANS PAKETİ TETİKLEYİCİLERİ — yalnız soru ④ "analiz karar versin" ise

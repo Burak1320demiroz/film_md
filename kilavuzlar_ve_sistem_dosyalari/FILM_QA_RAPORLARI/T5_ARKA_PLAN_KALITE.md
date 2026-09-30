@@ -73,6 +73,14 @@ farkı burada da fark sayma.
 | **The Silent Perihelion** Ⓥ ⛔ | 13.09 | — | — | — | 7 | 8 | 8 | 8 | 7 | 9 | **7,8** | ⬜ |
 | **The Shattered Breath** Ⓥ ⛔ ⚠️ | 13.09 | — | — | — | 8 | 9 | 8 | 10 | 8 | 7 | **8,3** | ⬜ |
 | **The Locked Pulse** Ⓥ ⛔ ⚠️ | 14.09 | — | — | — | 8 | 8,5 | 4 | 8,5 | — | 6 | **7,0** | ⬜ |
+| **The Falling World** B2 Ⓥ ⛔ ⚠️ | 19.09 | — | — | — | — | 9 | — | — | — | — | **9,0** | ⬜ |
+| **The Slow Rain** B1 Ⓥ ⛔ | 22.09 | — | — | — | 5 | 6 | 5 | 7 | 6 | 4 | **5,5** | ⬜ |
+| **The Slow Rain** B2 Ⓥ ⛔ ⚠️ | 22.09 | — | — | — | 8 | 8 | 7 | 9 | 9 | 6 | **7,8** | ⬜ |
+| **The Counted Rivet** Ⓥ ⛔ | 30.09 | — | — | — | 7 | 7 | 5 | 8 | 5 | 6 | **6,3** | ⬜ |
+| **Gunes Mezari** Ⓥ ⛔ | 30.09 | — | — | — | 7 | 8 | 8 | 10 | 9 | 7 | **8,2** | ⬜ |
+| **The Inward Fall** Ⓥ ⛔ ⚠️ | 30.09 | — | — | — | 10 | 9 | 9 | — | — | 7 | **8,8** | ⬜ |
+| **The Signal Keepers** Ⓥ ⚠️ | 30.09 | — | — | — | — | — | — | — | — | 8 | **8,0** | FIELD HOLDS |
+| **The Static Veil** Ⓥ ⚠️ | 30.09 | — | — | — | 9 | 10 | 9 | 10 | 10 | 6 | **9,0** | FIELD HOLDS · sağ alt köşede persistent cyan play icon filigranı [D162] |
 
 
 > **The Rose Coat · 26.08.2026 · belgesiz koşu · ⚠️ ŞARTLI · matrise girmez**

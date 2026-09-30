@@ -67,6 +67,13 @@ gördü" o zaman bir doğrulama değil, tek raporun dört kopyasıdır.
 | **The Counted Turn** ⚠️ | B (sessiz, tasarımlı) | — | — | — | — | — | — | — | — | — | **—** |
 | **The Hard Dock** Ⓥ ⚠️ | A | — | — | — | — | — | 8 | 9 | 9 | 8 | **8,5** |
 | **The Locked Pulse** Ⓥ ⛔ ⚠️ | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ | **6,7** |
+| **The Slow Rain** B1 Ⓥ ⛔ | ⬜ | — | — | — | — | — | 10 | 10 | 10 | 10 | **10,0** |
+| **The Slow Rain** B2 Ⓥ ⛔ ⚠️ | ⬜ | — | — | — | — | — | 9 | 9 | — | 10 | **9,3** |
+| **The Counted Rivet** Ⓥ ⛔ ⚠️ | ⬜ | — | — | — | — | — | — | — | — | — | **—** |
+| **Gunes Mezari** Ⓥ ⛔ ⚠️ | ⬜ | 8 | 5 | — | 7 | 7 | 10 | 10 | — | 10 | **8,1** |
+| **The Inward Fall** Ⓥ ⛔ ⚠️ | ⬜ | — | — | — | — | — | — | — | — | — | **—** |
+| **The Signal Keepers** Ⓥ ⚠️ | A | 7 | 6 | 7 | 6 | 6 | — | 6 | 7 | 6 | **6,4** |
+| **The Static Veil** Ⓥ | A | — | — | — | — | — | 6 | 5 | 6 | 6 | **5,8** |
 
 > **The Hard Dock · 12.09.2026 · Ⓥ mod V (tasarım gereği) · ⚠️ ŞARTLI**
 > Kayıt: [`01_FILM_RAPORLARI/THE_HARD_DOCK.md`](01_FILM_RAPORLARI/THE_HARD_DOCK.md)

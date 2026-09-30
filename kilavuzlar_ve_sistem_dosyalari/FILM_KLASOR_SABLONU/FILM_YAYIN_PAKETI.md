@@ -28,6 +28,7 @@ FILM:              <FILM_ADI>
 RUNTIME:           ⬜ AFTER THE CUT  (m:ss — measured, never planned)
 FORMAT:            ⬜ 16:9 / 9:16 / both masters
 LOGLINE:           ⬜
+AUDIENCE:          ⬜ who watches this and why — one line (YOUTUBE_VIRAL_SANS §4 · 20.09.2026)
 THEME:             ⬜
 ENDING:            ⬜  ⛔ read this before writing any title — most bad
                    packaging promises a payoff the film does not contain

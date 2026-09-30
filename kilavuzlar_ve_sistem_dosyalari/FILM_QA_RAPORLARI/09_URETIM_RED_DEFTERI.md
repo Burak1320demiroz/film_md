@@ -22,7 +22,8 @@
 
 **MOTOR** · `NBP` Nano Banana Pro (Gemini 3 Pro Image) · `NB2` Nano Banana 2
 (Gemini 3.1 Flash Image) · `OMNI` Gemini Omni Flash — sahibin "Osmi" dediği
-model, kimlik TUR 3'te çözüldü · `VEO` Veo 3.1 · `?` kayıtta yazmıyor
+model, kimlik TUR 3'te çözüldü, TUR 20'de resmî belgeyle doğrulandı (`gemini-omni-1.1-flash`;
+red aşaması GİRDİ/ÇIKTI ayrı yazılır — `OMNI_1_1_FLASH_I2V_URETIM_KILAVUZU` §6 ③) · `VEO` Veo 3.1 · `?` kayıtta yazmıyor
 
 **SINIF** · `PK` politika·kelime · `PB` politika·kompozisyon/eylem ·
 `YR` yapısal red · `MÇ` 🆕 maskeli çıktı reddi · `TK` teknik/geçici ·

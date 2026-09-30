@@ -928,7 +928,7 @@ tarif değildir, DAVETTİR.
 ## 🔴 DERS 138: METİN YASAĞI KOSTÜME YAZILDI, ÖLÇÜ ZEMİNE YAZILDI — MODEL ÖLÇÜYÜ ZEMİNE BASTI: HALKANIN İÇİNE "11 metres"
 
 **KAPI:** BETİK · `prompt_kontrol.py` metin yasağı KAPSAMI + yüzey işaretine bitişik ölçü (28.08.2026) — ⚠️ kör nokta (15.09.2026): pozitif gövdede TIRNAKLI gösterge yazısı ve ekran/gösterge RAKAMI aranmıyor; ㉓ o tırnakları replik sayıyor
-**TEKRAR:** 1 · 15.09.2026 MARS_SON_CIKIS (mod V · NEGATIVE'de metin yasağı VARDI · pozitif gövde yazdırdı: S31 `three green "HARD LOCK" indicator lamps` · S32 `displaying "PASSAGE CLEAR" status` · S35 `display numbers count down … from 450 millisieverts per hour` · S23 `closing speed from 5 m/s down to 1.5 m/s as distance reaches 25 meters` → ① B2 🔴 0:41 kokpit ekranında yanmış yazı ve sayısal okuma · 2:41 `"RADIATION DOSIMETER"` etiketi · ⑤ B2 🟠 2:44 dozimetre ekranı bloklara çöktü)
+**TEKRAR:** 2 · 15.09.2026 MARS_SON_CIKIS (mod V · NEGATIVE'de metin yasağı VARDI · pozitif gövde yazdırdı: S31 `three green "HARD LOCK" indicator lamps` · S32 `displaying "PASSAGE CLEAR" status` · S35 `display numbers count down … from 450 millisieverts per hour` · S23 `closing speed from 5 m/s down to 1.5 m/s as distance reaches 25 meters` → ① B2 🔴 0:41 kokpit ekranında yanmış yazı ve sayısal okuma · 2:41 `"RADIATION DOSIMETER"` etiketi · ⑤ B2 🟠 2:44 dozimetre ekranı bloklara çöktü) · 21.09.2026 THE_STOLEN_SKY (mod V · ① S06/01:05 tablet ekranında arayüz dokusu dinamik yüzüyor [texture swimming] 🟠 · 02:45 gösterge sıvı seviyesi zamansal atlıyor 🟡)
 
 **Kaynak:** THE THIN ROOF QA (28.08.2026) — S2 · 21,0-23,0 s · ① KARE 7,2 · ⑤ ARKA PLAN 7,3
 **Sorun:** deponun "sayı yaz, tarif yazma" doktrininin ilk ölçülmüş ters etkisi —

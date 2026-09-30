@@ -521,7 +521,7 @@ gövde yalnız ekranda GÖSTERİLEN işin bedelini öder.
 **FREKANS:** 7 film · THE STANDING WIRE (mod V · ⑧) · THE MIRROR FAUNA (mod D · ⑧ 2,0) · THE AMBER LATTICE (mod V · ⑧ 2,0) · THE CRACKED HELMET (mod V · ⑧ 1,0) · THE RING WALKER (mod V · ⑧ 6,7) · LOW_POWER (mod V · ⑧ 4,3) · THE STATIC SHADOW (mod V · ⑧ 1,0 — makara eksik, sayım dışı)
 **DEĞİŞEN SATIR:** PLAN `ŞERİT · TEMPO · BEDEL EĞRİSİ` tablosunun BEDEL hücresi — efor sahnesinde boş olamaz: `<kanal> @ <saniye>` (ön kol · omurga eğimi · nefes buğusu · adım kadansı · hız düşüşü); aynı satır video promptunun TIMELINE'ına saniyesiyle iner
 **KAPI:** BETİK · `prompt_kontrol.py` ⑳ ZORLANMA (efor fiili var, gövde tepkisi yok → NOT) · LİSTE · `03_PLAN_ONCESI` B2 (bedelli seçim)
-**TEKRAR:** 0
+**TEKRAR:** 1 · 21.09.2026 THE_STOLEN_SKY (mod V · ⑧ B1 VERDICT: WEIGHTLESS WORK · 1.7/10 · 20 efor olayının 17'sinde sıfır zorlanma; E3 asimetrik kalkan taşırken gövde dik; E5 kalın eldivenle çıplak el hızında buton basımı; E17 hızlı harekette sıfır kask buğusu/nefes ritmi; ödeme kanalı ve saniyesi prompta inmedi)
 
 **Kaynak:** THE STANDING WIRE (05.09.2026) 50-60 s kare şeridi — ADAY-11: "yazılan zorlanma kanalı ekranda yok; prompt tam, beden boş". Zincir ADAY-11 → 12 → 24 → 38 → 53 → 78 → 79 → 93.
 

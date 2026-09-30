@@ -399,12 +399,29 @@ dört skor aynı satıra yazılamadı [DERS 75].
 > ⛔ **ÖLÇÜLEN FİLMİN PROMPTU GÜNCELLENMEZ.** Bu merceğin ürünü onarım siparişi
 > değil, **SONRAKİ FİLMİN DERSİDİR**: 🅑 satırları LESSON ORDERS tablosuna, oradan
 > kart G'ye, oradan yazım standardına gider.
-> Makine yarısı önce koşar: `qa-isle/scripts/sahne_kapisi.sh <master> 10 <prompt_sayısı>`
+> Makine yarısı VARSA önce koşar: `qa-isle/scripts/sahne_kapisi.sh <master> 10 <prompt_sayısı>`
 > — ızgarayı ve sahne sayısını ölçer; 🚨 TESLİM UYUŞMAZLIĞI basarsa hiçbir mercek koşulmaz.
+>
+> ⭐ **16.09.2026 · GİRDİ İKİYE İNDİ.** ⑬ beş filmde koşuldu, beşi de STEP −1'de durup
+> yedi satır yazdı: rubrik dört girdi istiyordu, sistem medya + TEK dosya yapıştırıyor.
+> Artık **zorunlu girdi: kurgu + sahne promptları**; SPEC ve makine tablosu VARSA okunur,
+> yoksa koşu sürer ve eksiklik rapor başlığına yazılır (`INPUTS:` satırı).
+> ```
+> PROMPTLAR İKİ BİÇİMDE YAPIŞTIRILABİLİR
+> A) çıplak promptlar  → rubrikteki <<<SCENE_PROMPTS … >>> aralığına
+> B) BÖLÜM DOSYASI     → <FILM>_BOLUM_n.md olduğu gibi; model yalnız
+>    🎥 VİDEO PROMPT bloklarını prompt sayar (📸 IMAGE PROMPT = İLK KARE emri),
+>    Türkçe plan/diyalog/VFX satırlarını prompt saymaz ve alıntılayamaz.
+> ⛔ MOD V hâlâ YOK: promptsuz koşu KOŞU DEĞİLDİR.
+> ⭐ Yarım makara artık TESLİM UYUŞMAZLIĞI değildir: promptlar kurgunun bir
+>   BÖLÜMÜNÜ kapsıyorsa mercek o aralığı ölçer, kalanı diziye `-` yazar.
+> ⭐ Model artık bölmez: LOCKS HELD ÷ LOCKS CHECKED türetmesini T13 satırını
+>   yazan AJAN hesaplar.
+> ```
 
 | Yapıştırılacak dosya | Mercek | Soru | Zorunlu girdi | Kat. | Skor tablosu |
 |---|---|---|---|:--:|---|
-| `_KAYNAK/13_UYUM_QA_CRITIQUE_PROMPT.md` | ⑬ 🧩 UYUM | "ekrandaki sahne, o sahnenin PROMPTUNUN dediği şey mi — değilse kilit promptta var mıydı" | kurgu + sahne promptları (birebir) + SPEC + sahne_kapisi.sh çıktısı + üretim defteri = **MOD D** · ⛔ mod V YOK | 8 | `../FILM_QA_RAPORLARI/T13_UYUM_KALITE.md` |
+| `_KAYNAK/13_UYUM_QA_CRITIQUE_PROMPT.md` | ⑬ 🧩 UYUM | "ekrandaki sahne, o sahnenin PROMPTUNUN dediği şey mi — değilse kilit promptta var mıydı" | **zorunlu:** kurgu + sahne promptları (birebir; bölüm dosyası olabilir) = **MOD D** · **varsa:** SPEC + sahne_kapisi.sh çıktısı + üretim defteri · ⛔ mod V YOK [16.09.2026] | 8 | `../FILM_QA_RAPORLARI/T13_UYUM_KALITE.md` |
 
 ---
 
@@ -644,6 +661,23 @@ YAYIN SONRASI İZLEYİCİ VERİSİ               QA değil analitik — rubrik b
 ## 📝 DEĞİŞİKLİK KAYDI
 
 ```
+16.09.2026  🧩 ⑬ UYUM REVİZYONU — beş koşu, beş boş rapor (THE_STATIC_SHADOW ·
+            THE_RESONANT_STRAND · LOOK_UP · MARS_SON_CIKIS ×2 · KRONOS_SON_SINYAL:
+            hepsi STEP −1'de durdu, hepsi 7-24 satır). Sebep rubrikteydi: DÖRT
+            zorunlu girdi isterken sistem medya + tek dosya yapıştırıyor.
+            DEĞİŞEN: (1) zorunlu girdi ikiye indi — kurgu + sahne promptları; SPEC
+            ve makine tablosu opsiyonel, yokluğu başlıkta `INPUTS:` satırına yazılır
+            (mod V yasağı yerinde). (2) STEP −3 eklendi: promptlar BÖLÜM DOSYASI
+            olarak yapıştırılabilir; 🎥 VİDEO PROMPT = prompt, 📸 IMAGE PROMPT = ilk
+            kare emri, Türkçe plan satırı prompt DEĞİLDİR (alıntılanamaz).
+            (3) ızgara kapısı bölüm tanır — yarım makara artık DELIVERY MISMATCH
+            değil. (4) çıktı hacmi indi: sahne başına 10 satırlık defter ve 8 sütunlu
+            SCENE SCORES tablosu kaldırıldı (24 sahnede 192 uydurma hücre), yerine
+            sahne başına TEK satır + KİLİT DEFTERİ geldi — LOCKS CHECKED artık
+            tablonun satır sayısıdır. (5) model bölmez: türetilmiş skoru ajan
+            hesaplar. (6) C3'e son pencere (7-10 s) kuralı, C4'e "prompt kendi
+            yazısını yasaklıyor" vakası, 🅒'ye kurguda eklenen replik eklendi.
+            Boyut 23 KB. Kapı: AGENTS F9 · T13 · 00_README bu satır.
 14.09.2026  🧍🧭 ⑭ HAREKET + ⑮ YÖN AÇILDI — sahip talebi ("saçma sapan hareketler ·
             yanlış yere dönmek/ateş etmek"). ⑭ hareket mantığı (AMAÇ CÜMLESİ, 13
             kapalı etiket, PURPOSE STRING, 8 kategori) · ⑮ yön/hedef (VEKTÖR CÜMLESİ,

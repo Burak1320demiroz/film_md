@@ -1,7 +1,8 @@
 # 🗺️ YAPI GRAFİĞİ — Tek Bakışta Proje
 
 > **Son eşitleme:** 31 Temmuz 2026 · dosya sistemiyle karşılaştırılarak
-> (13.09.2026: yalnız §1 karar ağacı + §2 klasör ağacına 6/8 dk satırları eklendi; tam eşitleme yapılmadı)
+> (13.09.2026: yalnız §1 karar ağacı + §2 klasör ağacına 6/8 dk satırları eklendi; tam eşitleme yapılmadı ·
+> 21.09.2026: §4'e HIKAYE_FIKIR_TURU satırı eklendi)
 >
 > ⚠️ **SAYI YAZMA KURALI.** Bu dosya artık "42 ders", "30 film" gibi sabit
 > sayı taşımaz. Sayılar haftada birkaç kez değişiyor ve altı ayrı belgeye
@@ -29,20 +30,18 @@
      │                                          │
      ▼                                          │
   SHORTS                                        │
-  6 sahne × 8s = 48 sn          ②  SÜRE? ──┬───────┬───────┬───────┬───────────┐
-  süre seçimi YOK — sabit                  │       │       │       │           │
-  (dal burada biter)                     2 dk    4 dk    6 dk    8 dk     7-20 dk
-                                         12 sh   24 sh   36 sh   48 sh    48-144 sh
-                                         2:00    4:00    6:00    8:00     8:00-20:00
-                                        ─── 12-SAHNE MODÜL MERDİVENİ ───  (FAZ hattı ·
-                                        (13.09.2026 · yazım hepsinde aynı;   7 fazın
-                                         6/8 dk'da QA birimi BÖLÜM = iki    üstünde
-                                         yarım master × 12 mercek)          PERDE)
-                                           │       │       │       │           │
-                                           └───────┴───────┴───────┴─────┬─────┘
-                                        ⚠️ 8 dk'da iki hat: MODÜL (48 sh · 2 bölüm ·
-                                           yatay_8_dk_filmler) ↔ FAZ (5 faz · 10_20).
-                                           Seçim mimariye göre, süreye göre değil.
+  6 sahne × 8s = 48 sn          ②  SÜRE? ──┬───────┬───────┬───────┬───────┬───────┬───────┬───────────┐
+  süre seçimi YOK — sabit                  │       │       │       │       │       │       │           │
+  (dal burada biter)                     2 dk    4 dk    8 dk    16 dk   32 dk   64 dk   (6 dk ⏸️)
+                                         12 sh   24 sh   48 sh   96 sh   192 sh  384 sh  ARŞİVDE
+                                         2:00    4:00    8:00    16:00   32:00   64:00  (22.09.2026
+                                        ─── 12-SAHNE MODÜL MERDİVENİ ──────────────────  kapatıldı)
+                                        (13.09.2026 · yazım hepsinde aynı;               (QA PART=
+                                         8 dk'da QA birimi BÖLÜM;                        2 bölüm;
+                                         16/32/64 dk'da QA birimi PART + TAM FİLM)       19-22.09)
+                                           │       │       │       │       │       │
+                                           └───────┴───────┴───────┴───────┴───────┴───────────┬─────┘
+                                        (⏸️ ARŞİV: 6 dk ve 10-20 dk hatları 22.09.2026'da kapandı)
                                                               │
                                        ③  TÜR? ──────────────┤
                                               │
@@ -119,12 +118,14 @@ kısafilmler/
 │                                  — "3-5 dk" = bu formatın eski adı
 │                                  film başına KLASÖR
 │
-├── yatay_6_dk_filmler/            🆕 13.09.2026 · 16:9 · 36 sahne × 10 s · 6:00 · 2 × 18
-│                                  yazım 3-5 dk ile aynı · ⭐ QA birimi BÖLÜM:
-│                                  iki yarım master × 12 mercek = 24 rapor ·
-│                                  rapor_kontrol.py --bolum n/2 · KILAVUZ_REHBERI §2.6
+│   (22.09.2026: yatay_6_dk_filmler/ sahip kararıyla kapatıldı ve arşivlendi.
+│    MARS_SON_CIKIS ve format README'si kilavuzlar_ve_sistem_dosyalari/ARSIV/yatay_6_dk_filmler/
+│    altına taşındı. Ham raporlar 02_HAM_RAPORLAR altında saklanmaktadır.)
 │
 ├── yatay_8_dk_filmler/            🆕 13.09.2026 · 16:9 · 48 sahne × 10 s · 8:00 · 2 × 24
+├── yatay_16_dk_filmler/           🆕 19.09.2026 · 16:9 · 96 sahne × 10 s · 16:00 · 8 × 12 · QA 4 PART + TAM FİLM (§2.8)
+├── yatay_32_dk_filmler/           🆕 22.09.2026 · 16:9 · 192 sahne × 10 s · 32:00 · 16 × 12 · QA 8 PART + TAM FİLM (§2.9)
+├── yatay_64_dk_filmler/           🆕 22.09.2026 · 16:9 · 384 sahne × 10 s · 64:00 · 32 × 12 · QA 16 PART + TAM FİLM (§2.10)
 │                                  aynı kural · §2.7 · ⚠️ faz hattı DEĞİL —
 │                                  THE_SLOW_STONE 10_20'de kalır
 │
@@ -141,16 +142,11 @@ kısafilmler/
 │      14.09'dan önce açılan 26 üretilmemiş film ESKİ kapılarla kalır;
 │      film_klasoru_ac.sh --analiz-ekle onayı kopyalamaz (sahip kararı).
 │
-├── yatay_10_20_dk_filmler/        16:9 · 3 perde · bant 7-20 dk
-│                                  (04.09.2026: yatay_7_9_dk_filmler/
-│                                  kaldırıldı, bandın kısa ucu buraya
-│                                  katıldı — THE_SLOW_STONE 48×10s·8:00)
-│                                  ⚠️ üç filmden yalnız THE_SLOW_STONE
-│                                  üretildi (QA 5/10); YERÇEKİMİ ve
-│                                  THE_SECOND_SHIP yazıldı, üretilmedi
-│                                  (05.09.2026: dikey_20_25_dk_filmler/
-│                                  açıldığı gün kaldırıldı — depoda dört
-│                                  film klasörü var, beşincisi yok)
+├── kilavuzlar_ve_sistem_dosyalari/ARSIV/yatay_10_dk_filmler/
+│                                  (22.09.2026: yatay_10_dk_filmler [eski 10-20 dk]
+│                                  sahip kararıyla kapatıldı ve arşivlendi. 4 film
+│                                  ve format README buraya taşındı. Ham raporlar
+│                                  02_HAM_RAPORLAR altında saklanmaktadır.)
 │
 └── kilavuzlar_ve_sistem_dosyalari/  → Bölüm 4
     (05.09.2026: film_analizleri/ kaldırıldı — dış film analiz hattı
@@ -223,6 +219,9 @@ kilavuzlar_ve_sistem_dosyalari/
 │   │   └── 00_HIZLI_REFERANS.md ......... arşiv kilit havuzu (çekirdek okuma değil)
 │   ├── VEO_3_1_FAST_..._KILAVUZU.md ..... araç davranışı, tırnak sentaksı
 │   ├── SAHNE_DEVAMLILIK_KILAVUZU.md ..... karakter çapalama, seed
+│   ├── YOUTUBE_VIRAL_SANS_KILAVUZU.md ... 20.09.2026: konu→paket→açılış→ilerleme→
+│   │                                      ölçüm düzeni · VİRAL KART · 7/14/28. gün ·
+│   │                                      evrensel CTR eşiği kapandı (DIS_SAYILAR §1)
 │   ├── REFERANS_PAKETI_KILAVUZU.md ...... KAPI 0: hangi varlık kendi
 │   │                                      referans sayfasını hak eder,
 │   │                                      durum merdiveni, sayfa kanonu,
@@ -235,6 +234,10 @@ kilavuzlar_ve_sistem_dosyalari/
 │   ├── HOOK_VE_ILK_SAHNE_KILAVUZU.md .... S0 karar + S1 tırmandırma,
 │   │                                      hook tipolojisi, ses kancası,
 │   │                                      hook-önce üretim kapısı (09.08.2026)
+│   ├── HIKAYE_FIKIR_TURU_KILAVUZU.md .... yeni-film 0.7a: gerilim → yöntem
+│   │                                      havuzu → eleme → üç aday → onay;
+│   │                                      creative-director'dan damıtıldı
+│   │                                      (CC BY 4.0) · manifestte değil (21.09.2026)
 │   ├── FRAGMAN_KILAVUZU.md .............. iki formatlı teaser: dikey 3-6
 │   │                                      vuruş · yatay 8-12 vuruş, spoiler
 │   │                                      kapısı, tek mekanik (12.08.2026)
@@ -329,8 +332,10 @@ kilavuzlar_ve_sistem_dosyalari/
 │   ├── 02_RISK_KARTLARI.md .............. "filmde su var" → ne bozulacak
 │   ├── 03_PLAN_ONCESI_KONTROL_LISTESI.md  planı üretime sokmadan tara
 │   ├── 04_ARASTIRMA_BULGULARI.md ........ TUR n süzme kaydı — kuralın kaynağı
-│   ├── 07-22_*_ARASTIRMA_PROMPTLARI.md .. derin araştırma promptları (salt prompt)
+│   ├── 07-24_*_ARASTIRMA_PROMPTLARI.md .. derin araştırma promptları (salt prompt)
 │   │                                      22_ = sahne doluluğu (TUR 19 ✅ → SAHNE_DOLULUGU_KILAVUZU · 15.09.2026)
+│   │                                      23_ = OMNI 1.1 Flash I2V (TUR 20 ✅ → OMNI_1_1_FLASH_I2V_URETIM_KILAVUZU · 16.09.2026)
+│   │                                      24_ = Nano Banana 2 görsel üretim (TUR 21 ⏳ koşulmadı · 16.09.2026)
 │   └── TURn_HAM_RAPORLAR/ ............... koşulan promptların ham raporları
 │
 ├── 🔍 QA_PROMPTLARI/ .................... üretilmiş işin eleştirisi
@@ -400,7 +405,8 @@ kilavuzlar_ve_sistem_dosyalari/
 │   └── okuma_cizelgesi.sh ............... yaşayan 40 ders + manifest çizelgesi
 │
 └── 🎨 YAYIN
-    ├── KAPAK_FOTOGRAFI_MIMARISI_KILAVUZU.md  thumbnail psikolojisi
+    ├── FILM_KAPAGI_KILAVUZU.md ............ 20.09.2026: her filme İKİ aday · tek deney · A/B
+    ├── KAPAK_FOTOGRAFI_MIMARISI_KILAVUZU.md  eski — kanıt, ölçü değil
     ├── GOOGLE_FLOW_MUSIC_URETIM_KILAVUZU.md  müzik · §7-19 kuram ve künye
     ├── SERI_VE_KANAL_STRATEJI_KILAVUZU.md .. evren modeli · kapak aile
     │                                         kimliği · playlist · kadans ·

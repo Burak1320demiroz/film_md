@@ -122,6 +122,12 @@ o kadar görünür olur ve "yapay zekâ halüsinasyonu ifşası" okunur.
      beklemeyi monotonluktan ayıran tek şey bu satırdır.
    ⚠️ Küme klibi de ayrı bir klip olarak üretilir — sahne sayısı ve
      toplam süre DEĞİŞMEZ, değişen yalnız kesme sayısıdır.
+   🆕 22.09.2026 · ÇOK KLİPLİ SAHNE REJİMİNDE KÜME YOKTUR (sahip kararı):
+     son kare zinciri kaldırıldı; "continues … exact last frame" işareti
+     artık ZİNCİR DİLİ sayılır ve ㉜ BLOCK'tur. Bekleme aynı KURULUMDA değil
+     aynı MEKÂN ve EYLEMDE kalınarak kurulur: 2-6 kliplik sahne, her kesmede
+     kurulum değişir (bu bandın kalkanı sahne İÇİNDE de geçerli), A-B-A
+     dönüşü sahne içinde teşvik edilir → COK_KLIPLI_SAHNE_KILAVUZU §2.
 
 ⚠️ Sıçrama EKRAN YÖNÜNÜ ÇEVİREMEZ: açı değişir, coğrafya değişmez.
    Hedef-dilim, omuz hattı ve yön kilitleri aynen korunur —
@@ -164,6 +170,10 @@ kurulum"* der, *"en az şu kadar kere geri dön"* demez.
   · EN AZ 2 KÜME bulunur (§3 🕰️)
 ⛔ 6-11 sahnelik film ve dikey shorts MUAF: küme kısa formatta filmin
    üçte birini tek kuruluma bağlar, §4'ün alt bandıyla çakışır.
+🆕 22.09.2026 · SAHNE PLANI'lı filmde (ÇOK KLİPLİ SAHNE) "EN AZ 2 KÜME"
+   ARANMAZ — küme yoktur. DÖNÜŞ %40 aynen aranır ve klip üzerinden sayılır
+   (dönüş işareti: "— the same position, height and lens as Clip N.").
+   §4'ün kurulum bandı da klip sayısıyla hesaplanır.
 ```
 
 ⚠️ Bu iki sayı üst bandın YERİNE GEÇMEZ, onu tamamlar: **tavan dağınıklığı

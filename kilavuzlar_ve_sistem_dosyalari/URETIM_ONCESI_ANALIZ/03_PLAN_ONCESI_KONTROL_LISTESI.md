@@ -34,6 +34,8 @@
 □ PLAN'ın sahne haritası onaylı satırlardan sapıyorsa SAPMA bölümü dolu ve
   yeniden onaylı — sapma sessizce yapılmamış [D74]
 □ LOGLINE ≤ 25 kelime · NEDEN İZLENİR tek soru · BEDEL sahne numaralı
+□ ADAYLAR bloğu dolu (B, C: logline + neden elendi) ve 02_KONSEPT §0⑥ fikir
+  turu kaydı + §5 ÖN-OTOPSİ KARAR satırı yazılı (21.09.2026 · HIKAYE_FIKIR_TURU §9)
 ```
 
 **Neden ilk madde:** 17 maddenin 17'si kapıya bakar, hiçbiri hikâyeye bakmaz.

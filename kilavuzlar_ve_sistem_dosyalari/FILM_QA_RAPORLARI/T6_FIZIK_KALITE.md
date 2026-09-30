@@ -69,6 +69,11 @@ küçük farkı burada da fark sayma.
 | **The Solar Mirror** Ⓥ ⚠️ | 11.09.2026 | V | — | — | 7 | 8 | — | 6 | 8 | 5 | — | **6,8** | mod V — kilit tablosu yok | MINOR SLIPS |
 | **The Resonant Strand** ⚠️ | 11.09 | D | — | — | 8 | 9 | 8 | 8 | 7 | — | — | **8,0** | ⬜ | ⬜ |
 | **The Hard Dock** ⚠️ | 12.09.2026 | D | — | 8.5 | 8.0 | 9.0 | — | 8.0 | 8.0 | 9.0 | — | **8,4** | mod D | MINOR SLIPS |
+| **The Falling World** B2 | 19.09 | D | 10 | 9 | 10 | 9 | 8 | 10 | 10 | 10 | 9 | **9,4** | ⬜ | ⬜ |
+| **The Slow Rain** B2 ⚠️ | 22.09 | D | — | 9 | — | — | — | — | — | — | — | **9,0** | ⬜ | ⬜ |
+| **The Inward Fall** ⚠️ | 30.09 | D | 8 | 9 | — | — | — | — | — | — | 9 | **8,7** | ⬜ | ⬜ |
+| **The Signal Keepers** | 30.09 | D | — | — | 9 | 10 | 10 | 10 | 10 | 10 | 10 | **9,9** | 6 kilit: 6 PASS · 0 FAIL | PHYSICS HOLDS |
+| **The Static Veil** | 30.09 | D | 10 | 10 | 10 | 10 | 10 | 10 | 10 | 10 | 10 | **10,0** | 12 kilit: 12 PASS · 0 FAIL | PHYSICS HOLDS |
 
 
 > **The Iron Slope · Ⓥ mod V · ⛔ ÖN KOŞU · ⚠️ ŞARTLI** — matrise İŞLENMEZ

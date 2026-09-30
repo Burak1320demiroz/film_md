@@ -153,7 +153,7 @@ whole and holds its exact 34-meter silhouette
 ## 🟡 DERS 42: KİR VE TOZ DESENİ SÜRÜKLENMESİ — YIPRANMA HER KAREDE YENİDEN ÜRETİLİYOR
 
 **KAPI:** LİSTE · SPEC C `YIPRANMA` (sabit bölge + başlangıç sahnesi) · ölçen mercek: ② DEVAMLILIK `WEAR TIMELINE` — satır 15.09.2026'da eklendi (kontrat §5)
-**TEKRAR:** 1 · 15.09.2026 MARS_SON_CIKIS (mod V · ② B1 — SPEC C `S14 yangın isi (S15-S36 boyu)` İLAN ETTİ; 2:05 isli giysi → 2:22 Mars yüzeyinde temiz 🟠 · 2:52 göğüste önceki sahnede olmayan kan lekesi 🟡)
+**TEKRAR:** 2 · 15.09.2026 MARS_SON_CIKIS (mod V · ② B1 — SPEC C `S14 yangın isi (S15-S36 boyu)` İLAN ETTİ; 2:05 isli giysi → 2:22 Mars yüzeyinde temiz 🟠 · 2:52 göğüste önceki sahnede olmayan kan lekesi 🟡) · 21.09.2026 THE_STOLEN_SKY (mod V · ② B1 — SPEC C Mara sol omuz açık sıyrık S03+; 00:30 yırtık → 01:40 temiz 🟠 · 02:50 temiz 🟠; yıpranma sıfırlandı)
 
 **Kaynak:** Low Power QA (Genel 4/10) — Karakter: 6/10 — `0:08 — Dust accumulation patterns on shoulders and chest shift completely between frames`
 **Sorun:** Ders 8 kıyafetin *tasarımını* (renk, şerit, amblem) kilitliyordu. Ama kıyafetin üzerindeki **kir, toz, leke ve yıpranma deseni** ayrı bir kategori: model bunları tasarım değil doku gürültüsü sayıyor ve her karede yeniden üretiyor. Sonuç: omuzdaki toz birikimi kare kare yer değiştiriyor, suit "titriyor".
@@ -397,6 +397,14 @@ sayı doğru, taşıyıcı yok.
    yalnız hareketi tarif eder. (7-9 dk formatının zaten yaptığı şey —
    3-5 dk formatı bunu yalnız durum kırılma noktalarında kullanır,
    25 sahnenin hepsinde değil: ~4 zincir noktası yeter.)
+
+   🆕 22.09.2026 · SAHİP KARARI: yeni yatay filmde ① AÇILMAZ — son kare
+   zinciri kaldırıldı (COK_KLIPLI_SAHNE_KILAVUZU). Yerine: durum değişimi
+   SAHNE SINIRINA konur, sahne içinde nicelik değişmez; sahnenin 2.+
+   klibi CONTINUOUS ACTION satırını taşır; kare onayı önceki klibin son
+   karesiyle yan yana yapılır. ② aşağıda aynen geçerlidir (sahnenin
+   klipleri aynı oturumda art arda üretilir). Ders metni değişmedi —
+   yalnız ①'in uygulama yolu kapandı; ilk film ölçer (⬜).
 
 ② AYNI SEVİYEYİ BLOK HÂLİNDE ÜRET
    Seviye 2'nin beş sahnesi arka arkaya, seviye 3'ün dokuzu arka arkaya,
@@ -759,7 +767,7 @@ kilit, ihlali o yerlerin dışında gizler.*
 **FREKANS:** 4 film · THE AMBER LATTICE (② — S2 erkek yüz / S6 kadın yüz) · THE CRACKED HELMET (② 2,0 — siyah↔beyaz giysi 12 sahnede 5 kez; amblem omuz→sırt; 4,0 — tamir edilen vizör çatlağı finalde sıfır) · THE RING WALKER (② 7,4 — amblem sol omuzdan sağa aynalandı S11) · LOW_POWER (② 5,1 — S2/S10/S24/S29 dört yüz; kask S18-S24 takılı/çıkık flicker; kir S14'te temizlendi; ① 5,4 — göğüste parmak erimesi)
 **DEĞİŞEN SATIR:** `<FILM>_QA_SPEC.md` C bloğu **KİMLİK DİZİSİ** satırı — sahne başına `K/A` kask dizisi · amblem konumu (SOL/SAĞ omuz) · giysi rengi · kir bölgesi + başlangıç sahnesi; ② DEVAMLILIK'in CHARACTER PASSPORT'u bu satırı okur, ilan edilmeyen özellik ihlal yazılamaz, ilan edilen tek sapmada 🔴
 **KAPI:** LİSTE · `FILM_KLASOR_SABLONU/FILM_QA_SPEC.md` C bloğu KİMLİK DİZİSİ (eklendi 14.09.2026) · REFERANS_PAKETI T1/T2
-**TEKRAR:** 1 · 15.09.2026 MARS_SON_CIKIS (mod V · KANAL İLAN EDİLDİ, YİNE KAYDI: SPEC C `KİMLİK DİZİSİ … Aras (Oksit Turuncu + Sol Kol Askısı S14-S36)` + S20 promptu `securing his injured left arm` → ② B2 🔴 askı S20-S34 SAĞ kolda, S36'da SOL · ② B1 🟠 turuncu omuz yaması S1 sol omuz → S9 sağ omuz · ② B2 🟠 kadın giysisinde yalnız S33'te lacivert göğüs plakası; satırın yazılı olması tutmaya yetmedi)
+**TEKRAR:** 2 · 15.09.2026 MARS_SON_CIKIS (mod V · KANAL İLAN EDİLDİ, YİNE KAYDI: SPEC C `KİMLİK DİZİSİ … Aras (Oksit Turuncu + Sol Kol Askısı S14-S36)` + S20 promptu `securing his injured left arm` → ② B2 🔴 askı S20-S34 SAĞ kolda, S36'da SOL · ② B1 🟠 turuncu omuz yaması S1 sol omuz → S9 sağ omuz · ② B2 🟠 kadın giysisinde yalnız S33'te lacivert göğüs plakası; satırın yazılı olması tutmaya yetmedi) · 21.09.2026 THE_STOLEN_SKY (mod V · SPEC C Kimlik Dizisi Mara SOL omuz açık gri işaret; model mavi tuluma S9/S12'de beyaz haç yaması bastı, S11/S15'te sildi; ② B1 🟡 amblem göğüs/omuz arasında göç etti)
 
 **Kaynak:** THE CRACKED HELMET QA (10.09.2026) — ② `0:00 (S1) black suit vs 0:20 (S3) white suit, patches migrate between shoulders and backpack`. Zincir ADAY-16 · 29 · 30 · 47 · 60 · 61 · 62.
 

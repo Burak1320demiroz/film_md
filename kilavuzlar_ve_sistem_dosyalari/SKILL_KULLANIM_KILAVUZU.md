@@ -88,11 +88,57 @@ her kurala tek satır eklenir: `Kaynak: Serge Shima — github.com/smixs/visual-
 - **`content-strategy`** — seri/kanal içerik planı;
   `SERI_VE_KANAL_STRATEJI_KILAVUZU.md` ile yan yana okunur.
 
+## 2.3 `creative-director` — smixs (⭐ DAMITILDI, KURULMADI · 21.09.2026)
+
+**Lisans: CC BY 4.0, atıf ZORUNLU.** Sahip kararı (21.09.2026): skill depoya
+kurulmadı; yöntemi `HIKAYE_FIKIR_TURU_KILAVUZU.md`'ye damıtıldı ve `yeni-film`
+adım 0.7a olarak akışa girdi. Atıf satırı o kılavuzun başlığında:
+`Kaynak: Serge Shima — github.com/smixs/creative-director-skill`.
+
+- **Alınan:** gerilim cümlesi (insight) · üç kategoriden yöntem rotasyonu
+  (SIT · SCAMPER · bisosiyasyon · ters beyin fırtınası · PO…) · ilk üç fikir
+  ısınma · gerilim testi · duygu kademesi (sıradan / belirli / çift-duygu) ·
+  gözdeyi öldür · hikâye omurgası (Story Spine, Pixar kuralları) · ön-otopsi.
+- **Alınmayan:** reklam brief alanları (marka · hedef kitle · tagline · medya) ·
+  1-10 puan tabloları ve HumanKind/Grey skalaları · vaka kütüphanesi (üst kaynakta
+  yüzlerce reklam kampanyası kartı — film için doyum ölçüsü olarak
+  `KILAVUZ_REHBERI` §8 matrisi kullanılır).
+- **Neden kurulmadı:** üst kaynak yüzlerce reklam vaka dosyası taşır; skill
+  runtime'da yüklendiğinde akışı kampanya brief'ine çeker; lisans damıtmaya izin
+  verir (visual-skills → VEO kılavuzu §6B emsali). İstenirse `npx skills add
+  smixs/creative-director-skill -g` ile depo DIŞINA kurulabilir; kılavuz değişmez.
+- ⛔ `image`/`video` skill'leri "fikir yoksa creative-director'a git" der; bu
+  depoda o kapı `yeni-film` 0.7a'dır, skill değil.
+
+## 2.4 `skill-conductor` — smixs (GLOBAL KURULDU · 21.09.2026 · MIT)
+
+- **Ne yapar:** yalnız **SKILL.md dosyalarını** ölçer (CREATE · IMPROVE · VALIDATE ·
+  REVIEW · OPTIMIZE · PACKAGE); film ya da QA çıktısını DEĞİL. 21.09 araştırma
+  raporundaki "rapor_kontrol.py ile QA doğrulaması" kullanımı yanlış okumaydı.
+- **Alınan:** BinEval biçimi — evet/hayır soru + kanıt, eşik yargıca söylenmez
+  (`HIKAYE_FIKIR_TURU` §4 eleme soruları bu biçimdedir).
+- **Kurulum:** sahip kararıyla (21.09.2026, ikinci soru) **depo DIŞINA**:
+  `~/.claude/skills/skill-conductor` (`npx skills add smixs/skill-conductor -g`);
+  `skills-lock.json` değişmedi. `uv` Homebrew'la kuruldu; betikler `uv run` ister.
+  Betikler kurulmadan okundu: ağa çıkan tek şey `claude -p` (OPTIMIZE / tetik
+  testi), gerisi yerel. Duman testi geçti.
+- **İlk ölçüm (deterministik sorular, `yeni-film`):** üç "hayır" — tetik ifadesi
+  (araç İngilizce "Use when" kalıbı arıyor; Türkçe tetik var) · negatif tetik yok
+  ("şunun için kullanma" satırı) · gövde aracın uzunluk sınırının üstünde. Süreç-sızması
+  denetimi İngilizce kalıba bakar; description'ın adım sayması sahibin gözüyle
+  değerlendirilir. Tam VALIDATE (yargıç soruları) **sahip koşar**, bulgular ayrı iş.
+- **Kullanım:** `/skill-conductor VALIDATE .claude/skills/yeni-film` · üçüncü taraf
+  skill kurmadan önce `REVIEW` (§5 "okunmadan kurulmaz" kuralının makine karşılığı).
+  ⛔ Film, prompt, QA raporu için çağrılmaz.
+
 ---
 
 # 3. AKIŞTAKİ YERİ — hangi adımda hangi skill
 
 ```
+FİKİR        yeni-film 0.7a  (HIKAYE_FIKIR_TURU — creative-director'dan damıtıldı;
+   │          gerilim → havuz → eleme → üç aday → sahip onayı; skill değil, kılavuz)
+   ▼
 YAZIM        yeni-film  (KILAVUZ_REHBERI + kartlar + QA_SPEC)
    │
 PROMPT       image  → ilk kare / kapak / karakter sayfası promptları
@@ -132,6 +178,8 @@ SERİ PLANI   content-strategy (SERI_VE_KANAL_STRATEJI ile)
 "Kapak için metinsiz sinematik imaj promptu yaz: <sahne>"  → image
 "Bu film için TikTok/Shorts açıklaması yaz"                → social
 "Kapak A/B deneyi kur: <iki kapak>"                        → ab-testing
+"Bu konu için fikir turu koş, üç aday çıkar"               → yeni-film 0.7a
+                                                              (HIKAYE_FIKIR_TURU §2-§6)
 ```
 
 ---
@@ -150,3 +198,63 @@ SERİ PLANI   content-strategy (SERI_VE_KANAL_STRATEJI ile)
                "kaydı olmayan kapı"dır [D74 ruhu].
 □ SAYI YOK     bu kılavuza da sayı yazılmaz; envanter LİSTEDİR, sayaç değil.
 ```
+
+---
+
+# 6. DEĞERLENDİRİLEN DIŞ SKILL'LER — 21.09.2026 araştırması (TUR 23)
+
+> Sahibin 21.09.2026 tarihli "otonom ajan becerileri ve senaryo/dramaturji boru
+> hattı" araştırma raporunun düzeltilmiş özeti. Ham üst-kaynak README'leri
+> `URETIM_ONCESI_ANALIZ/TUR23_HAM_RAPORLAR/`; bulgu kaydı `04_ARASTIRMA_BULGULARI`
+> TUR 23. Envanter TEK yerde durur (§5 kuralı) — kökteki kopya kaldırıldı.
+
+## 6.1 Departman kapsamı
+
+Sanal film ekibinin yedi departmanından yalnız üçü ajan becerisiyle desteklenir;
+görsel/ses üretim ve kurgu katmanı sahip tarafından promptlarla yürütülür.
+
+| departman | ajan kapsamı | depodaki karşılık |
+|---|:--:|---|
+| Senaryo & dramaturji | ✅ | `yeni-film` 0.7a fikir turu (`HIKAYE_FIKIR_TURU`) · HOOK · ONERME · TEMA |
+| Sinematografi & prompt · devamlılık · ses · kurgu | ⛔ | sahip, promptlarla (kart B) |
+| Kalite güvencesi | ✅ | `qa-isle` · `rapor_kontrol.py` · on iki çıplak rubrik |
+| Dağıtım & büyüme | ✅ | `social` · `ab-testing` · `content-strategy` · `yayin-takip` (kart Y) |
+
+## 6.2 Skill kararları
+
+| skill | kaynak | lisans | karar | nerede |
+|---|---|---|---|---|
+| creative-director | smixs | CC BY 4.0 (atıf) | **damıtıldı, kurulmadı** | §2.3 · `HIKAYE_FIKIR_TURU_KILAVUZU` |
+| skill-conductor | smixs | MIT | **global kuruldu** (depo dışı, 21.09 ikinci karar); BinEval biçimi alındı | §2.4 |
+| banana-claude (Gemini imaj üretimi: generate · edit · compare · typeset) | AgriciDaniel | MIT | **kurulmadı** — ücretli Gemini API anahtarı ister, sahipte yok; Nano Banana elle promptla üretiliyor (`image` skill prompt yazar). Anahtar gelirse ilk iş: referans paketi sayfaları, sonra kapak üç aday | — |
+| social · ab-testing · content-strategy | coreyhaines31/marketingskills | MIT | zaten kurulu; ek skill yok | §2.2 |
+| `fountain` (raporda "senaryo analizi") | — | — | **tanımlanamadı** — depo/skill adı yok; sahip ad verirse açılır | — |
+
+## 6.3 Raporda düzeltilen üç cümle
+
+```
+① skill-conductor "rapor_kontrol.py ile QA raporlarını doğrular" → HAYIR; yalnız
+   SKILL.md dosyalarını ölçer (üst kaynağın kendi kapsam beyanı).
+② "deponun 1.6 s kanca süresi" → depoda karar penceresi 1,7 s (HOOK §1); sayı
+   burada da tekrar edilmez, adres verilir.
+③ "marketingskills kurulacak" → üçü 02.09.2026'dan beri kurulu (skills-lock.json).
+```
+
+## 6.4 Koruma kuralları — §0 ile aynı, burada yalnız adres
+
+```
+ÇIKTI FİLTRESİ      dış skill'in ham metni film dosyasına girmez; depo iskeletine
+                    oturur (0.7a çıktısı → 00_HIKAYE_ONAYI biçimi, §0①·③)
+PROMPT-KONTROL      hiçbir dış çıktı Kart P koşulmadan üretime girmez (§0③)
+PUANLAMA KAPILARI   ikili soru + kanıt, eşik gizli (BinEval biçimi) — puan yazılmaz
+```
+
+## 6.5 Risk matrisi (özet)
+
+| risk | önleme | adres |
+|---|---|---|
+| senaryo kuralı çelişkisi (negatif çekirdek · tema · novum atlanır) | fikir turu çıktısı adım 4'te konsept kapılarından geçer; depo kuralı kazanır | `ONERME` §4 · `TEMA` §9 · `KILAVUZ_REHBERI` §5 |
+| hook/tutundurma uyumsuzluğu | HOOK §3.1 dramatik ironi + §8 listesi; kılavuz sahibi HOOK | `HOOK_VE_ILK_SAHNE` |
+| vuruş haritası sapması | zamanlama SENARYO §2'den; fikir turu yalnız nedensellik iskeleti verir | `HIKAYE_FIKIR_TURU` §7 ⛔ |
+| pazarlama dili sızması | çıktı `VIRAL_BASLIK` formatına ve `apexaic/<platform>/PAKETLEME_SABLONU`'na oturur | §2.2 |
+| telif / amblem sızması | referans paketi doğrulaması; onaylı amblem dışı negatif çekirdeğe | `REFERANS_PAKETI` |

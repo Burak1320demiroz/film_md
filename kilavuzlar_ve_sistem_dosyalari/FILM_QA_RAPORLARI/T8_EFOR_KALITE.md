@@ -64,6 +64,11 @@ Biri bile hayırsa satır YAZILMAZ; ham rapor 02_HAM_RAPORLAR/'da durur.
 | **The Solar Mirror** Ⓥ ⚠️ | 11.09.2026 | V | 2 | 3 | 3 | 4 | — | 2 | 2 | 4 | 3 | **2,9** | WEIGHTLESS WORK · 8 efor olayının 7'sinde sıfır zorlanma, acil durumda dinlenmiş nefes |
 | **The Resonant Strand** ⚠️ | 11.09 | D | 1 | — | 1 | 1 | — | 1 | 1 | — | 1 | **1,0** | ⬜ |
 | **The Hard Dock** ⚠️ | 12.09.2026 | D | 6 | 7 | 6 | 7 | — | 6 | 7 | — | 7 | **6,6** | Visor fogging absent under heavy exhalation, no tremor in E10 |
+| **The Falling World** B2 ⚠️ | 19.09 | D | 5 | 7 | 6 | 5 | — | 6 | 5 | 7 | 7 | **6,0** | ⬜ |
+| **The Slow Rain** B2 | 22.09 | D | 8 | 9 | 8 | 9 | — | 8 | 9 | 9 | 10 | **8,8** | ⬜ |
+| **The Inward Fall** ⚠️ | 30.09 | D | 2 | 4 | 2 | 3 | 3 | ⬜ | 2 | 3 | 3 | **2,7** | ⬜ |
+| **The Signal Keepers** ⚠️ | 30.09 | D | 4 | 6 | 5 | 4 | — | 4 | 3 | — | 5 | **4,4** | WEIGHTLESS WORK · E4 tek elle küre taşımada omurga asimetrisi sıfır [Desen ⑨] · E2 3.1 bar eldiven dirençsizliği [Desen ⑥] · E8 kol yorgunluk düşüşü yok [Desen ⑤] |
+| **The Static Veil** ⚠️ | 30.09 | D | 1 | 1 | 1 | 2 | — | 2 | 2 | 1 | 1 | **1,4** | WEIGHTLESS WORK · EVA giysisi ve 0.16 g Ay çekiminde efor/direnç sıfır, visor buğulanması yok |
 
 
 > **The Solar Mirror · 11.09.2026 · Ⓥ mod V · ⚠️ ŞARTLI · matrise girmez**

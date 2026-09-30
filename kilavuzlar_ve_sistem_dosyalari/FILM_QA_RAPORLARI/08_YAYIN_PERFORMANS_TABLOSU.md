@@ -120,6 +120,8 @@ DEVAM KAPISI — indirgenmiş (şu an geçerli olan)
 | `../YAYIN_VE_PERFORMANS_KILAVUZU.md` | bu tabloyu besleyen kılavuz · karar matrisi · geri besleme yolu |
 | `../SERI_VE_KANAL_STRATEJI_KILAVUZU.md` | devam hakkı eşikleri · evren gruplaması |
 | `../KURGU_RITMI_VE_IHRAC_KILAVUZU.md` | Content Loudness ve ihraç sayıları |
-| `../KAPAK_FOTOGRAFI_MIMARISI_KILAVUZU.md` | CTR skalası · 48 saatlik Plan B kapağı |
+| `../FILM_KAPAGI_KILAVUZU.md` | 🆕 20.09.2026 · A·B kapak adayları · tek deney sorusu → §1 `Kapak var.` · §4 platform sonucu + öğrenme |
+| `../KAPAK_FOTOGRAFI_MIMARISI_KILAVUZU.md` | eski CTR skalası (kanıt, ölçü değil) |
+| `../YOUTUBE_VIRAL_SANS_KILAVUZU.md` | 🆕 20.09.2026 · kanal-içi karşılaştırma · 7/14/28. gün satırları (§6) · teşhis tablosu (§7) · VİRAL KART (§4: TEST EDİLECEK TEK HİPOTEZ → §1, 7. GÜN → §2, DERS → §3) |
 | `00_INDEX.md` | film başına QA kapsamı — bu tablo oraya sütun AÇMAZ |
 | `../URETIM_ONCESI_ANALIZ/01_DERS_ETKINLIK_RAPORU.md` | QA yüksek + metrik düşük çıkan filmlerin gideceği yer |

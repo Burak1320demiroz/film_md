@@ -256,6 +256,8 @@ BASAMAK 2 · TEK YÖNLÜ KAYIT (günlük)
    DEĞİŞİM yine yazılır (ne itiraf edildi → BİLGİ +)
    PROMPT: iç mekân, MCU'dan dar olmaz, tırnak sentaksı motorun kendi
    kuralıyla (VEO §3 · Omni "speaks the line:" — SCOURED GLASS S12)
+   ⚠️ 16.09.2026 TUR 20: Omni'de riskli olan TIRNAK olabilir — replikli Omni
+   klibi PROB ① koşulmadan üretilmez (OMNI_1_1_FLASH_I2V_URETIM_KILAVUZU §5 ②)
 BASAMAK 3 · EKRANDA TEK REPLİK (⛔ PROB B koşulmadan girmez)
    D35'in beş reçetesi + §4 konuşan bedeni (hareket sözden önce)
 BASAMAK 4 · İKİ KİŞİ SIRAYLA — İKİ KLİP

@@ -148,5 +148,30 @@ KAYIT — üç yerde de bölüm etiketi taşınır
 ## 🎞️ FİLMLER
 
 Film listesi burada tutulmaz — `FILM_QA_RAPORLARI/00_INDEX.md` tek sayaçtır
-(`bash kilavuzlar_ve_sistem_dosyalari/sayac.sh`). Bu klasörde henüz film yok;
-ilk film `yeni-film` skill'i (Kart A) ile yazılır.
+(`bash kilavuzlar_ve_sistem_dosyalari/sayac.sh`). Yeni film `yeni-film` skill'i (Kart A) ile yazılır.
+
+> ⚠️ **4 × 12 yazım emsali (17.09.2026 · BENI_HATIRLAMA · 18.09.2026 · SUSMAYAN_NOBETCI ·
+> 18.09.2026 · THE_FALLING_WORLD):** sahip üç filmde de
+> "4 bölüm, her bölümde 12 sahne" istedi (ikincisinde birebir: "Süre kesinlikle korunacak: 48 sahne × 10 saniye =
+> 8 dakika. Dört bölümün her biri 12 sahne."); yazım
+> birimi 4 dosya oldu (BOLUM_1 S00-S11 … BOLUM_4 S36-S47). Yukarıdaki "2 × 24" kartı değişmedi — bu bir D74
+> sapmasıdır ve QA birimi (4 çeyrek `--bolum n/4` ↔ 2 yarım) o filmin PLAN'ında ⬜ SAHİP KARARI olarak durur.
+> MARS_SON_CIKIS'in 3 × 12 ↔ 2 yarım uyuşmazlığı ①.9'u her koşuda yanlış ateşletmişti; karar üretimden önce verilir.
+> ⭐ **ÜÇÜNCÜ FİLMDE ARTIK EMSAL DEĞİL, VARSAYILAN:** 8 dk hattında üç filmin üçü de 4 × 12 yazıldı; dördüncü film THE_SLOW_RAIN (22.09.2026) da 4 × 12.
+> Kart §2.7'nin "2 × 24" satırı hâlâ değişmedi ve her filmde ayrı bir D74 kaydı isteniyor. Bu üç kayıt
+> aynı sapmanın üç kopyasıdır; kartın güncellenmesi SAHİP KARARIDIR ve burada yalnız RAPOR EDİLİYOR.
+
+> 🆕 **28.09.2026 · BEŞİNCİ FİLM SAPMAYI KAPATTI: THE_LAST_TOW 2 × 24 YAZILDI.**
+> Bu hattın ilk **ÇOK KLİPLİ SAHNE** filmi (22.09.2026 rejimi): 48 KLİP · **12 SAHNE**
+> (3-5 klip) · `SAHNE PLANI: 4 3 5 4 4 4 4 5 3 4 5 3` · iki bölüm dosyası
+> (BOLUM_1 = K01-K24 / S01-S06 · BOLUM_2 = K25-K48 / S07-S12).
+> ⭐ **4 × 12 sapmasının sebebi de bu rejimle ortadan kalkıyor:** sahip dört filmde
+> "her bölümde 12 sahne" isterken aslında bir DRAMATİK birim istiyordu, dosya birimi
+> istemiyordu. Çok klipli rejimde dramatik birim SAHNEdir (12 tane) ve dosya birimi
+> BÖLÜMdür (2 tane) — ikisi artık çatışmıyor, kartın "2 × 24"ü olduğu gibi tutuyor.
+> ⛔ Bölüm sınırı = sahne sınırı kuralı burada ölçüldü: S06 K24'te bitiyor, S07 K25'te
+> başlıyor; sınır çifti ardışık çift denetiminden geçti (Δ1 ölçek · 150° azimut).
+> QA birimi değişmedi: iki yarım master, `--bolum n/2`, her yarıya AYRI koşu.
+> ⬜ AÇIK KALAN: 8 dk hattında klip sayısı 48 ama SAHNE sayısı artık hikâyeden geliyor;
+> `sahne_kapisi.sh <yarım master> 10 24` ikinci argümanı KLİP sayısıdır (24), sahne
+> sayısı değil. Bu ayrım bu hattın README'sinde ilk kez yazılıyor.

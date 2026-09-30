@@ -42,6 +42,9 @@ Biri bile hayırsa satır YAZILMAZ; ham rapor 02_HAM_RAPORLAR/'da durur.
 |---|---|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|---|
 | **The Counted Turn** | 09.09.2026 | D | 7.0 | — | 8.0 | 9.0 | 7.0 | — | 9.0 | — | ⚠️ 8.0 | 🟡 **THE STRANGER STAYS** — S1 hook kırpılmamış (10s vs 9s bütçe), tüm kesmeler 1.0s kayık; S7-S9 ızgara mekanı plato [D184] |
 | **The Hard Dock** ⚠️ | 12.09.2026 | D | 8.0 | 9.0 | 8.0 | 6.0 | 5.0 | 8.0 | 4.0 | 10.0 | **7,2** | LEAVES AT 00:25 s · 00:10-00:40 and 01:10-01:50 cockpit-exterior plateau |
+| **The Inward Fall** ⚠️ | 30.09 | D | 9 | 9 | 8 | 9 | 6 | 10 | 9 | 10 | **8,8** | ⬜ |
+| **The Signal Keepers** ⚠️ | 30.09 | D | 9 | 9 | 8 | 9 | 7 | 10 | 9 | 10 | **8,9** | THE STRANGER STAYS · K01 ilk kare kapak uyumu tam · K11/K20/K22 3 paylaşılabilir interstitial kare net · 00:25 ve 02:25 plato kırpma adayı |
+| **The Static Veil** | 30.09 | D | 8 | 9 | 7 | 8 | 7 | 9 | 6 | 10 | **8,0** | THE STRANGER STAYS · S00 insan figürsüz 8 saniye gecikme, S09 ark doruk noktası |
 
 
 ⛔ Sayılar bu tabloya ELLE yazılmaz — rapordan gelir ve `rapor_kontrol.py`

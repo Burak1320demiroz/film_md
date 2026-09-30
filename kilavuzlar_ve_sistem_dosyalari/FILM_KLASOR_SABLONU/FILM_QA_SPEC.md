@@ -54,10 +54,11 @@ FILM:              <FILM_ADI>
 FORMAT:            ⬜
 RUNTIME:           ⬜ seconds (title card: ⬜ — screen text lock ⬜ s)
 SCENE COUNT:       ⬜
-PART GRID:         — (yalnız 6/8 dk hattı [§2.6/§2.7]: B1 = S00-S17 · 18 clips · 0-180 s ·
-                   B2 = S18-S35 · 18 clips · 180-360 s — QA her yarıya AYRI koşar; rubriğe
-                   SPEC'le birlikte "THIS FILE IS PART n OF 2 — …" beyanı yapıştırılır;
-                   BOUNDARY PAIR S17↔S18 elle kareyle kapanır. Diğer formatlarda "—" kalır)
+PART GRID:         — (yalnız 6/8/16 dk hattı [§2.6/§2.7/§2.8]: n PART satırı — B1 = S00-S17 · 18 clips ·
+                   0-180 s · B2 = S18-S35 · 18 clips · 180-360 s (6 dk) … 16 dk: B1-B4 × 24 clips ×
+                   240 s + FULL = S00-S95 · 96 clips · 0-960 s. QA her parçaya AYRI koşar; rubriğe
+                   SPEC'le birlikte "THIS FILE IS PART n OF m — …" beyanı yapıştırılır;
+                   BOUNDARY PAIR(lar) elle kareyle kapanır. Diğer formatlarda "—" kalır)
 THEME:             ⬜
 THEME SCENES:      ⬜ S· S· S     ⛔ en az üç (yazılmayan tema dekoratif)
 INTENDED EMOTION:  ⬜
@@ -76,6 +77,11 @@ LIBRARY CONTEXT:   ⬜ aynı raftaki kardeş filmler
 ```
 CLIP COUNT:      ⬜
 SHOT COUNT:      ⬜ · sahne içi kesme ⬜
+SCENE PLAN:      — (yalnız ÇOK KLİPLİ SAHNE filminde [COK_KLIPLI_SAHNE §1 · 22.09.2026]: PLAN'daki
+                 SAHNE PLANI satırı + "S01 = K01 · S02 = K02-K04 · …"; SCENE COUNT ≠ CLIP COUNT)
+INTRA-SCENE CUTS: — (aynı rejimde: K02|K03 · K03|K04 · … — these cuts are INSIDE one scene:
+                 location, light, sound bed, costume dirt, held object and body pose MUST match
+                 across them; a reset here is a ② CONTINUITY defect, not a scene change)
 TARGET ASL BAND: ⬜   ASL CURVE: ⬜
                  ⛔ sabit ızgaralı filmde GEREKÇE SATIRI ZORUNLU [D74]
 GRID:            sahne başlangıcı(n) = ⬜ hook + (n−1) × ⬜ klip

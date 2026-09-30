@@ -92,12 +92,37 @@ yorgunluk ve ret üretir.
 ## 3b. 🧾 DEPODA DOĞMUŞ ETİKETLER — dürüst kayıt (26.08.2026)
 
 Yukarıdaki sekizlinin pazar/kuşak sütunları dış araştırmadan geldi. Sahada
-İKİ etiket daha kullanıldı ve ikisi de bu tablodan gelmiyor:
+BEŞ etiket daha kullanıldı ve beşi de bu tablodan gelmiyor:
 
 | Etiket | Nerede | Pazar / kuşak / tepki | Durum |
 |---|---|---|---|
 | TANIKLIK | THE NEAR PASS · THE BRIGHT TETHER | **ölçülmedi** | ⏸️ aday |
 | ZEMİN | THE STONE SKY | **ölçülmedi** | ⏸️ aday |
+| GÜVEN | THE_FALLING_WORLD (18.09.2026) | **ölçülmedi** | ⏸️ aday |
+| SORUMLULUK | THE_STOLEN_SKY (20.09.2026) | **ölçülmedi** | ⏸️ aday |
+| DAYANIŞMA | THE_LAST_GATE (30.09.2026) | **ölçülmedi** | ⏸️ aday |
+
+> **DAYANIŞMA · 30.09.2026 · sahip ifadesi.** Sahibin kapsamlı planı temayı
+> *"Dayanışmayla kazanılan özgürlük"* diye yazdı. Tanım cümlesi (TAKAS kalıbı
+> DEĞİL, §3c): *"Kendi çıkışını söken, herkesin çıkışını kurmuş olur."* Kanonik
+> ebeveyni FEDAKÂRLIK; ayrıştığı yer şu: fedakârlıkta BİR kişi öder, dayanışmada
+> ödeyen kişi karşılığında BAŞKASININ da ödemesini kabul eder (K89'da kolu Mara
+> değil Lina indirir). Motif: emniyet bağı/kancası · motif sahneleri S06 · S08 ·
+> S17 · S18 · S25.
+>
+> ⚠️ **ÖRÜNTÜ UYARISI (30.09.2026):** bu, on iki günde ÜÇÜNCÜ aday etiket
+> (GÜVEN 18.09 · SORUMLULUK 20.09 · DAYANIŞMA 30.09). Aday etiket üretmek
+> kolaylaşıyor, §3'ün sekizlisi daralmıyor. İki okuma mümkün: ya sekizli
+> eksik, ya aday etiket kaçış kapısı oldu. ⬜ Karar SAHİBİN — burada yalnız
+> ölçüm duruyor.
+
+> **GÜVEN · 18.09.2026 · sahip seçimi.** Tanım cümlesi (TAKAS kalıbı DEĞİL,
+> §3c): *"Başta arkadaşını taşıyan insan, sonunda kendi hayatını onun eline
+> bırakır."* Depoda 0 kez işlenmişti. Motif: uzatılan el / gerilen hat ·
+> nesne indeksi sarı emniyet halatı · motif sahneleri S00 · S02 · S24 · S29 ·
+> S41 · S46. Bu etiketin taşıyıcısı bir İLİŞKİ-tipi novumdur ve deponun bu
+> tipteki ilk filmidir — §4'ün süre-tatmin eşleşmesi bu etiket için de
+> DOĞRULANMAMIŞTIR.
 
 ⛔ **Boş sütunları doldurma.** Bu tablonun değeri ölçülmüş olmasıdır; bir
 etiketi tahminle doldurmak, tablonun tamamını tahmin seviyesine indirir.

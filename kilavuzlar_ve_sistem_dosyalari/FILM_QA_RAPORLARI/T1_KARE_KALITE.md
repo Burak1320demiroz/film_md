@@ -50,6 +50,10 @@ satırlarda 9:16 / Güvenli Alan / Kanca dolar; yatay satırlarda boş kalır.
 | **The Rose Coat** Ⓥ ⛔ ⚠️ | YATAY | Derleme (13) | ⬜ | ⬜ | ⬜ | ⬜ | — | — | ⬜ | — | — | ⬜ | | | | (5) | **—** |
 | **The Counted Turn** ⚠️ | YATAY | Derleme (25) | 1 | 7 | (10) | (10) | 9 | — | 1 | 7 | — | 7 | | | | 4 | **5,3** |
 | **The Hard Dock** ✅ | YATAY | 24 | 8 | 7 | 6 | 8 | 7 | — | 8 | 8 | — | 7 | | | | 8 | **7,4** |
+| **The Slow Rain** B2 | YATAY | ⬜ | 9 | 5 | 10 | 9 | 9 | — | 8 | 10 | — | 7 | — | — | — | — | **8,4** |
+| **The Inward Fall** | YATAY | ⬜ | 5 | 7 | 8 | 9 | 6 | ⬜ | 9 | 10 | ⬜ | 5 | — | — | — | — | **7,4** |
+| **The Signal Keepers** ⚠️ | YATAY | ⬜ | 7 | 9 | — | 8 | 8 | 9 | 9 | 7 | — | 9 | — | — | — | — | **8,2** |
+| **The Static Veil** ⚠️ | YATAY | 12 | 9 | 8 | — | 8 | 9 | — | 8 | 3 | — | 9 | — | — | — | — | **7,7** |
 
 > **The Hard Dock · 12.09.2026 · MOD D · ✅ GO**
 > Kayıt: [`01_FILM_RAPORLARI/THE_HARD_DOCK.md`](01_FILM_RAPORLARI/THE_HARD_DOCK.md)

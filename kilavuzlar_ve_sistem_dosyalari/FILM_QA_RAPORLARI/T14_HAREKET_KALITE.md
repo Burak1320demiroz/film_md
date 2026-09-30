@@ -58,6 +58,10 @@ Biri bile hayırsa satır YAZILMAZ; ham rapor 02_HAM_RAPORLAR/<FILM>/<FILM>_HARE
 
 | Film | Tarih | Mod | Amaç | Yürüyüş | Dönüş | El/Nesne | Döngü | Tamamlama | Beden | Tepki | Toplam | Not |
 |---|---|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|---|
+| **The Falling World** B2 ⚠️ | 19.09 | D | ⬜ | 23 | 8 | 7 | 8 | — | — | 8 | — | — | **7,8** | ⬜ |
+| **The Inward Fall** | 30.09 | D | 6 | 7 | 6 | 6 | 7 | 6 | 7 | 6 | **6,4** | 🔴 **MOTION WITHOUT PURPOSE** — 3 adet x baskın sebepsiz hareket: 0:33 boşta sallanma (Desen ①), 0:53 nedensiz çömelme (Desen ⑧), 2:03 kaskın 180° savrulması (Desen ④) [D184] |
+| **The Signal Keepers** ⚠️ | 30.09 | D | 7 | 8 | 8 | 7 | — | 8 | 8 | — | **7,7** | FIXABLE IN EDIT · M27 (3:45) phantom grab · M7 (0:44) abandoned temas · M24 (3:18) wrist twitch · M5/M10 zemin kayması |
+| **The Static Veil** ⚠️ | 30.09 | D | — | — | — | — | — | — | — | — | **—** | MOTION MAKES SENSE · 23/23 PURPOSEFUL; Ay yerçekimi ve EVA giysisi kinesik kilitleri tam; 8 kategori kusursuz (10/10 → — uyarınca D186) [D184] |
 
 ⛔ Sayılar bu tabloya ELLE yazılmaz — rapordan gelir ve `rapor_kontrol.py`
 GO/ŞARTLI döndükten sonra betik yazar [kural ① · D161].

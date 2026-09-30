@@ -58,6 +58,11 @@ Biri bile hayırsa satır YAZILMAZ; ham rapor 02_HAM_RAPORLAR/'da durur.
 | **The Solar Mirror** Ⓥ ⚠️ | 11.09.2026 | V | 9 | 9 | 8 | — | 9 | — | — | 9 | — | **8,8** | ACTION READS · B3 unmotivated energy ring, S2-S3 spatial jump |
 | **The Resonant Strand** ⚠️ | 11.09 | D | 7 | 8 | 7 | 7 | 7 | 9 | 7 | 6 | — | **7,2** | ⬜ |
 | **The Hard Dock** ⚠️ | 12.09.2026 | D | 8 | 9 | 9 | 8 | 9 | 10 | 10 | 8 | 8 | **8,8** | B4 docking impact elided by cut to cockpit |
+| **The Falling World** B2 ⚠️ | 19.09 | D | 9 | — | — | 9 | — | — | — | — | — | **9,0** | ⬜ |
+| **The Slow Rain** B2 ⚠️ | 22.09 | D | — | — | — | — | — | — | — | — | — | **—** | ⬜ |
+| **The Inward Fall** ⚠️ | 30.09 | D | — | — | 9 | — | — | — | — | — | — | **9,0** | ⬜ |
+| **The Signal Keepers** ⚠️ | 30.09 | D | 8 | 9 | 9 | 8 | 9 | 10 | 10 | 10 | 9 | **9,1** | ACTION READS · B3 (1:05) toz ve zemin engeli temas gizlenmesi · K20 probe yuvası oturumu |
+| **The Static Veil** ⚠️ | 30.09 | D | — | — | — | — | — | — | — | — | — | **—** | ACTION READS · 12 vuruş okunabilir, 9 kategori kusursuz (10/10 → — uyarınca D186) [D184] |
 
 
 > **The Counted Turn · 09.09.2026 · MOD D · ⚠️ ŞARTLI · matrise girmez**

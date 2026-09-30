@@ -41,6 +41,9 @@ Biri bile hayırsa satır YAZILMAZ; ham rapor 02_HAM_RAPORLAR/'da durur.
 | Film | Tarih | Mod | Kurulum|Lockoff|Kafiye|Dönüş|Dikiş|Açı yayı|Geometri | Toplam | Not |
 |---|---|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|---|
 | **The Hard Dock** ⚠️ | 12.09.2026 | D | 10 | 10 | 2 | 10 | 10 | 10 | 10 | **8,7** | S24 closing setup mismatch (B vs A) breaks bookend rhyme |
+| **The Inward Fall** ⚠️ | 30.09 | D | 4 | 10 | 2 | 6 | — | 7 | 8 | **6,2** | ⬜ |
+| **The Signal Keepers** ⚠️ | 30.09 | D | 8 | 10 | 5 | 9 | 10 | 10 | 10 | **8,9** | RHYME BROKEN · S01 vs S24 dış çerçeve kafiye kırılması (A vs G) · S12 kurulum kaçırması (MCU yerine WS) |
+| **The Static Veil** ⚠️ | 30.09 | D | 3 | 10 | 4 | 5 | 6 | 8 | 7 | **6,1** | RHYME BROKEN · S11 açılış S00'ın yatay aynası, kafiye kırıldı · Açı sıçramaları (B->D) |
 
 
 ⛔ Sayılar bu tabloya ELLE yazılmaz — rapordan gelir ve `rapor_kontrol.py`

@@ -31,7 +31,8 @@ import rapor_kontrol as rk
 KOK = Path(__file__).resolve().parent.parent
 HAM = KOK / "FILM_QA_RAPORLARI" / "02_HAM_RAPORLAR"
 FORMATLAR = ("dikey_shorts_filmler", "yatay_2_dk_filmler", "yatay_4_dk_filmler",
-             "yatay_6_dk_filmler", "yatay_8_dk_filmler", "yatay_10_20_dk_filmler")
+             "yatay_8_dk_filmler", "yatay_16_dk_filmler",
+             "yatay_32_dk_filmler", "yatay_64_dk_filmler")
 ARSIV_ALET = re.compile(r"_(TEKNIK|MANTIK|KARAKTER|SENARYO|SHORTS)_HAM\.md$", re.I)
 VERDICT = re.compile(r"^[ \t>*]*VERDICT\s*[:：]", re.M | re.I)
 MERCEK_SIRA = ["① KARE", "② DEVAMLILIK", "③ SES", "④ HİKAYE", "⑤ ARKA PLAN", "⑥ FİZİK",
@@ -44,12 +45,16 @@ def film_klasoru(ad):
         d = KOK.parent / f / ad
         if d.is_dir():
             return d
+    for arsiv_f in ("yatay_10_dk_filmler", "yatay_6_dk_filmler"):
+        arsiv_d = KOK / "ARSIV" / arsiv_f / ad
+        if arsiv_d.is_dir():
+            return arsiv_d
     return None
 
 
 def film_tara(klasor):
     """Bir filmin ham klasörü → rapor_kontrol kararları (main ile aynı yol)."""
-    hams = [h for h in sorted(klasor.glob("*_HAM.md")) if not ARSIV_ALET.search(h.name)]
+    hams = [h for h in sorted(klasor.glob("**/*_HAM.md")) if not ARSIV_ALET.search(h.name)]
     if not hams:
         return []
     film_dir = film_klasoru(klasor.name)

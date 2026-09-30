@@ -391,7 +391,7 @@ Aningaaq (Jonás Cuarón, 7 dk eşlikçi film).
 | ⭐ **Çıktı meta verisi red günlüğü tutamaz**: engellenince dosya OLUŞMAZ (`candidates: []`), SynthID/C2PA yazılacak konteyner yok | `09_URETIM_RED_DEFTERI §5` | ⭐ **defter tasarımı düzeltmesi** |
 | ✅ **Negatif blok paradoksu** — dış kaynak D123'ü BAĞIMSIZ olarak doğruluyor | `DERSLER/06` D123 · dış doğrulama satırı | ✅ mevcut dersi güçlendirdi |
 | ✅ **Ücretli kademe filtreyi GEVŞETMEZ** (Ultra/Pro fark etmiyor) | `POLİTİKA §1` · hipotez öldü | ✅ eleme |
-| ⚠️ **Motor kimliği:** "Osmi" = **Gemini Omni** (Flash / 1.1 Flash) | `POLİTİKA §6` · `09_...DEFTERI` MOTOR lejandı | ⚠️ hipotez — tek tur, doğrulanmalı |
+| ⚠️ **Motor kimliği:** "Osmi" = **Gemini Omni** (Flash / 1.1 Flash) | `POLİTİKA §6` · `09_...DEFTERI` MOTOR lejandı | ✅ **doğrulandı 16.09.2026 — TUR 20** (resmî: `gemini-omni-1.1-flash`, T20.0 ①) |
 | ⚠️ **NB2 filtreleri NB Pro'dan ESNEK** (Firebase dokümanından alıntı) | `POLİTİKA §6` | ⚠️ hipotez — alıntı resmî ama tek kaynak |
 | ⚠️ `shoot`/`fire`/`strike`/`naked` gibi çift anlamlı kelimeler olasılığa KATKI yapıyor olabilir (tek başına tetikleyici değil) | `POLİTİKA §2.4` **(yeni)** ⚠️ HİPOTEZ bloğu | ⚠️ hipotez — depo verisi kısmen çürütüyor |
 | ⚠️ `personGeneration` AB/UK/CH/MENA'da varsayılan `dont_allow` | `POLİTİKA §6` + T3.4 ② | ⚠️ hipotez · **bizi ilgilendirir** |
@@ -1978,7 +1978,7 @@ Dört raporda da tekrarlanan dört yapısal arıza:
 | 8 | **10 saniyeye sığan kelime tavanı ~20-25.** Üstü ya süreyi aşıyor ya karakteri anormal hızlı konuşturuyor | KAYNAK | `SES_VE_DIYALOG` · `PROMPT_KONTROL` (yeni kapı adayı) |
 | 9 | **Lip-sync kadraj tabanı MCU.** WS/LS ve aşırı yan profilde yüz landmark'ı okunamıyor, senkron çöküyor ya da artefakt üretiyor | KAYNAK | `KAMERA_ACISI_PSIKOLOJISI` · film planı |
 | 10 | **Kapalı vizör = oklüzyon.** Model "yüz bulunamadı" veriyor ya da cama tuhaf bir ağız çiziyor. ⛔ **Dış mekânda replikli üretim YAPILMAZ** — görüntü sessiz üretilir, telsiz sesi post'ta biner | KAYNAK | film planı §SES · `SES_VE_DIYALOG` |
-| 11 | **Motor sözdizimi:** Omni'de `Character speaks the line: "..."`; **iki nokta üst üste kullanılmaz** — model onu ekrana yazı yazmak (signage) sanıyor | KAYNAK | `VEO_3_1_FAST_DIYALOG` (yeni motor bölümü) |
+| 11 | **Motor sözdizimi:** Omni'de `Character speaks the line: "..."`; **iki nokta üst üste kullanılmaz** — model onu ekrana yazı yazmak (signage) sanıyor ⚠️ **TUR 20: ters aktarılmış olabilir — riskli olan TIRNAK; PROB (T20.0 ③ · T20.8 ①)** | KAYNAK | `VEO_3_1_FAST_DIYALOG` (yeni motor bölümü) |
 | 12 | **Argo, çığlık ve ağlama krizi Omni'de politika reddi üretebiliyor** — post-dub bu filtreyi aşmanın yolu | KAYNAK | `POLITIKA` §6 · film planı |
 | 13 | **Problem zinciri anatomisi:** film başına **12-18 ana kriz**, kriz başına **3-7 dk**; çözüm ile yeni krizin doğuşu arası **30-45 s** (yüksek tempo) ya da **120-240 s** (yavaş çürüme). ⭐ Halkalar rastlantısal değil: **bir öncekinin ÇÖZÜMÜ bir sonrakini doğurur** | ÖLÇÜLMÜŞ | `KURGU_RITMI_VE_IHRAC` · `06` §4 |
 | 14 | **Başarısızlık aralığı ~%66** (deneme başına). İki eşik: art arda **3 bedelsiz başarı → risk algısı sıfırlanır**; art arda **4 ağır yenilgi → öğrenilmiş çaresizlik, terk**. En geç üçüncü başarısızlıktan sonra küçük bir "göstermelik zafer" şart | ÖNERİ | `KURGU_RITMI_VE_IHRAC` · film planı |
@@ -3464,4 +3464,723 @@ yatay_8_dk_filmler/README → "yazım öncesi" işaretçisi
    ve "tek çevre saati" — ikisi de tasarım sayısıdır, eşik değil.
 ⑦ RAPORLARIN KAYNAK LİSTESİ YOK (beşinci kez). Yeniden koşuda kaynak
    listesi İSTENİR; künyesiz motor satırı inmez.
+```
+
+---
+
+# 🔬 TUR 20 — OMNI 1.1 FLASH · GÖRÜNTÜDEN-VİDEOYA (16.09.2026)
+
+> **Promptlar:** `23_OMNI_1_1_FLASH_I2V_ARASTIRMA_PROMPTLARI.md` (dokuz prompt,
+> altışar cümle) · **Ham:** `TUR20_HAM_RAPORLAR/` — ✅ **9/9 rapor geldi ve
+> dokuzu BİREBİR arşivlendi** (oturum kaydından programla kesildi; yapıştırma
+> sırası 1·3·2·4·5·7·6·8·9, dosyalar prompt numarasıyla). **Tetikleyen:**
+> sahibin isteği 16.09.2026 — *"omni 1.1 flash … image to video … promptlar
+> nasıl olmalı, örnek şablonlar, model nasıl daha iyi çalışır"*.
+> **⭐ Bu turun yeniliği:** süzmeden ÖNCE **canlı kaynak kontrolü** yapıldı
+> (künye §🔎 — resmî Google blog + Gemini API Omni sayfası + beş üçüncü taraf
+> sayfa + bir forum başlığı). **İndiği yer:** `../OMNI_1_1_FLASH_I2V_URETIM_KILAVUZU.md`
+> (süzmeden SONRA, aynı gün) + tek satırlık işaretçiler (T20.7).
+
+```
+⚠️ BU TURUN KAYNAK PROFİLİ — resmî belgeyle ÖRTÜŞEN katman sağlam, SUSTUĞU katman çürük
+   RESMÎ (G1 blog.google 27.08.2026 · G2 ai.google.dev/gemini-api/docs/omni):
+   ad · API kimliği · çözünürlük basamakları · 10 s bağlam · 40 s uzatma ·
+   ilk/son kare etiketleri · 3 × 3 s video referansı · ses her klipte ·
+   negatif alanı yok · tek-plan ve zamanlama ipuçları · İngilizce · kişi ve
+   bölge sınırları → raporlar bunları DOĞRU aktardı → ÖLÇÜLMÜŞ (resmî).
+   ÜÇÜNCÜ TARAF (promptslove.com 9 raporun 7'sinde · segmind · mindstudio ·
+   the-decoder · kie · morphic): tırnak/iki nokta kuralı · 30-80 kelime ·
+   24 FPS · seed yokluğu → tek kaynak, çoğu SINANMAMIŞ ("did not burn API
+   credits") → UYGULAMA en fazla; biri tersini yazıyor. Segmind'in
+   çözünürlük korelasyon ölçümü yöntemli → UYGULAMA (tek bağımsız ölçüm).
+   RAPORUN KENDİSİ: bütün yüzdeler, saniye eşikleri, arıza sıklıkları, Elo
+   sayıları, "thinking_level", red mesajı atıfları → üçü canlı kontrolde
+   YANLIŞ çıktı (thinking_level resmî sayfada yok · #178261 mesajı/modeli/
+   yüzeyi farklı · Elo sayıları anılan kaynaklarda yok) → hiçbiri İNMEDİ.
+   BAĞIMSIZLIK YOK: dokuz rapor aynı araç + aynı kaynak kümesi; iki raporun
+   uyuşması "iki bağımsız uygulayıcı" SAYILMADI. Kılavuz SAYISIZ.
+```
+
+## T20.0 ⭐ BU TURUN KARAKTERİ — beş açık çelişkinin üçü kapandı, biri yön değiştirdi
+
+```
+① KİMLİK KAPANDI. "OMNI" = Google'ın Gemini Omni 1.1 Flash modeli; API
+   kimliği `gemini-omni-1.1-flash` (önceki: `gemini-omni-flash-preview`);
+   duyuru 27.08.2026. 04 §TUR 3'ün "⚠️ hipotez — tek tur, doğrulanmalı"
+   satırı KAPANDI (resmî belge). Adında "Omni" geçen öteki modeller
+   (Kling Omni · OmniHuman) ayrı; raporlar bunu doğru ayırdı.
+
+② ÇELİŞKİ ① (bitiş karesi) KAPANDI — POLİTİKA §6 DOĞRUYDU. G2
+   `<FIRST_FRAME> <LAST_FRAME>` etiketleriyle iki kare arası üretimi
+   belgeliyor; G1 "specify the starting and ending frames of a shot".
+   `THE_SCOURED_GLASS/00_PLAN` "end frame yok (OMNI)" 1.1 için YANLIŞ.
+   ⛔ Film planı bu turda DEĞİŞTİRİLMEDİ: zincir modu (tek başlangıç
+   karesi ↔ start/end zinciri) bir üretim kararıdır, sahibin (T20.8 ⑦).
+   Flow arayüzünde bitiş karesi kutusunun görünürlüğü sınanmadı (rapor 1:
+   "kademeli açılıyor" — UYGULAMA).
+
+③ ÇELİŞKİ ② (iki nokta) YÖN DEĞİŞTİRDİ — sorun iki nokta değil, TIRNAK.
+   04 §T13 #11 "iki nokta üst üste kullanılmaz — model yazı sanıyor"
+   yazmıştı; bu tur üç rapor (tek kaynağa dayanarak) TERSİNİ söylüyor:
+   "A woman says: My name is Clara." → konuşma; tırnak → ekrana yazı.
+   Yönü destekleyen iki kanıt: G2 "Gemini Omni metni
+   doğru ve okunur çizer" (model yazmaya hevesli) + deponun kendi ölçümü
+   D40 (Veo hattı, tırnaklı replik → gömülü altyazı 2/2). Depodaki S12
+   kalıbı `speaks the line: "…"` iki noktayı DEĞİL tırnağı taşıyor —
+   riskli olan tırnak. ⚠️ AMA resmî belge susuyor, kuralın kaynağı sınama
+   yapmadığını yazıyor, bir başka üçüncü taraf rehber "dudak senkronu için
+   tırnak" diyor → KAPI DEĞİL, PROB (T20.8 ①). T13 #11 satırı "⚠️ TUR 20:
+   ters aktarılmış olabilir" notu alır.
+
+④ ÇELİŞKİ ③ (seed) YARI KAPANDI. Resmî API sayfası seed'den söz etmiyor;
+   bir inceleme "seed yok" diyor; bir sağlayıcının (Segmind) kendi uç
+   noktası seed alanı gösteriyor. → Resmî Google yüzeyinde seed BELGESİZ;
+   Flow arayüzü ⬜. İş akışı seed'e KURULAMAZ. Rapor 9'un "360p taslak →
+   aynı seed → 4K" akışı İKİ yerden düştü: seed belgesiz + 360p başka bir
+   üretimdir (⑥).
+
+⑤ ÇELİŞKİ ④ (POLİTİKA §6.1 motor seçim kuralı) YARIM. Kuralın iki
+   gerekçesinden "ilk/son kare yalnız Omni'de" DOĞRULANDI. "Yüz
+   yanlış-pozitifi Omni'de Veo'dan ağır" KARŞILAŞTIRMALI kanıt bulmadı:
+   Omni'de VAR (G2 "certain recognizable people" sınırı + gerçek vaka
+   #178261, T20.2 #14) ama rapor 8'in "aynı kare Veo'da geçer" satırı
+   kaynaksız, rapor 6 Veo reddini de gösteriyor. → §6.1 ⬜ HİPOTEZ KALIR.
+
+⑥ 360p TASLAK SON KLİBİ ÖNGÖRMEZ. Segmind dört çözünürlüğü dört zaman
+   noktasında kare kare karşılaştırmış: 1080p ve 4K, 720p'nin büyütmesi
+   (korelasyon ~0,999); 360p ↔ 720p 0,44-0,73 — AYRI bir üretim. Yani
+   360p'de beğenilen çekim 720p'de YOKTUR. 360p yalnız "prompt okunuyor
+   mu" sınavıdır; çekim SEÇİMİ 720p'de yapılır, 4K sonradan büyütmedir.
+   Kayda ÇÖZÜNÜRLÜK sütunu girer (tek bağımsız ölçüm — UYGULAMA).
+
+⑦ SES HER KLİPTE ÜRETİLİR — SESSİZLİK YAZILIR. G2: model videoyu sesle
+   üretir; kapatma anahtarı belgelenmemiş; resmî olumsuz ipuçları "No
+   dialogue · No extra sound effects". Sessiz sahnenin AUDIO satırı
+   "No dialogue." taşımazsa model konuşma uydurabilir. Ve G2: ses
+   referansı yüklenemez, ses düzenlenemez → ayrı I2V klipleri arasında
+   karakter SESİ kilitlenemez. THE_SCOURED_GLASS'ın 24 günlük klibi
+   (S12 vd.) her birinde AYRI bir ses rengi riski taşır → post-dub kararı
+   sahibin (04 §T13 #12 zaten "post-dub" diyordu; gerekçe büyüdü).
+
+⑧ RESMÎ İPUÇLARI RAPORLARDAN NET ÇIKTI. G2 hazır kalıp veriyor: "In a
+   single continuous shot" · "No scene cuts" · "No dialogue" · "No
+   embellishments" · "After 3 seconds, …" · "[0-3s] …". T19.8 ②'nin damga
+   biçimi A/B'si Omni tarafında yarı kapandı: köşeli parantez Omni'nin
+   BELGELİ biçimidir; depo biçimi ("0.0s —") belgesiz ama yasak değil.
+
+⑨ ÇELİŞKİ ⑤ (klip süresi) AÇIK. G2 süre alanını açık göstermiyor, 24 FPS
+   yalnız üçüncü taraf. İlk Omni klibinde ffprobe (23_ ⬜ 2) duruyor.
+
+⑩ BU TURUN DERSİ — KAYNAK KONTROLÜ SÜZMENİN PARÇASIDIR. Raporların
+   "Doğrulanabilir Bulgular" listeleri üç yerde uydurulmuş doğrulama
+   taşıdı. Süzmeden önce taşıyıcı iddialar birinci el sayfayla eşleştirildi
+   ve üçü düştü. Kural adayı: resmî belgede olmayan hiçbir SÖZDİZİMİ
+   kuralı PROB koşulmadan kapı olmaz; künyeye canlı kontrol tablosu girer.
+   (⬜ gözlem defteri adayı — tek tur.)
+```
+
+## T20.1 ⭐ ÇAPRAZ OKUMA — altı çift (+ bir tanımsız çift)
+
+```
+1 ↔ 9  İŞ AKIŞI KÜNYEYE DAYANMIYOR — DÜŞTÜ. Rapor 9'un adım 2-4'ü (360p
+       taslak · "aynı seed ve prompt korunarak" 4K · "önce seed değiştir"
+       hiyerarşisi) rapor 1'in "seed yok"u ve Segmind ölçümüyle çöktü.
+       Kalan: tek değişkenli A/B düzeni ve "prompt sadeleştir → kareyi
+       yenile" sırası; "seed değiştir" basamağının yerine "aynı kare + aynı
+       prompt yeniden üret" (varyans) girer. Rapor 9'un "sessiz sürüm
+       güncellemesini her sabah aynı seed'le fark modunda yakala" önerisi
+       seed'siz koşulamaz → inmedi.
+2 ↔ 3  KARE KAZANIR — TUTTU. Yeniden tarif kaymayı hızlandırır (rapor 2
+       mekanizma + rapor 6 örnek çift + G2 düzenleme bağlamında "overly
+       descriptive prompts lead to unintended changes") → V3 `START FRAME:
+       … nothing re-described` Omni'de de geçerli (ZATEN VAR, gerekçe
+       büyüdü). Oran: rapor 1 "crop / pad", rapor 3 "model kenarı uzamsal
+       doldurur" — G2 susuyor → çelişki çözülmedi ama kural aynı: kare,
+       çıkış oranında üretilir (V3 Output satırı; ZATEN VAR).
+4 ↔ 5  SABİT KAMERA CÜMLESİ ÖZNEYİ DONDURABİLİR — ⬜. Rapor 5: "completely
+       motionless frame / the camera does not move" türü katı kilit
+       cümleleri modelin dikkatini genel hareketsizliğe çeker, özne mikro
+       hareketi de söner; "mounted on a heavy fixed tripod" çerçevesi
+       söndürmez. Rapor 4: ana eylem bitince ikincil sürekli süreç klibi
+       canlı tutar. İkisi SAHNE_DOLULUGU ile uyumlu. Depo V3 örneği CAMERA
+       satırında "absolutely zero camera movement" yazıyor → ⬜ A/B (T20.8 ⑤);
+       şablon değiştirilmedi.
+6 ↔ 8  YÜZ — "KURGUSAL BEYAN" ÖNERİSİ KARŞI KANITLA DÜŞTÜ. Rapor 6 "promptun
+       başına kurgusal karakter beyanı yanlış-pozitifi aşar" dedi (kaynak
+       yok). Canlı kontrol: #178261'de kullanıcı karakterin kurgusal, yapay
+       zekâ üretimi ve yetişkin olduğunu açıkladı, istek İKİ KEZ engellendi.
+       Bu aynı zamanda 04 §TUR 3 ①'in açık sorusunu (sınıflandırıcı öneki
+       okur mu) bir vakayla besler: okumuyor gibi. Rapor 8'in "vizöre parlama
+       ekleyip yüzü gizle" ikamesi ATLATMA → düştü. Kimlik öznitelik yığını
+       red tetikler (rapor 6 mekanizma) → D167 ≤3-4 ZATEN VAR.
+7 ↔ 8  ÇIĞLIK / AĞLAMA — DEĞİŞMEDİ. Rapor 7'nin red mesajı `[cite]`'lı ve
+       doğrulanmadı; rapor 8 sese özgü aşama vermedi. 04 §T13 #12 tek kaynak
+       kalır; ses tarifinde çığlık/ağlama krizi zaten yazılmıyor.
+2 ↔ 7  TIRNAK — AYNI KAYNAK, BAĞIMSIZ DEĞİL. İki rapor aynı kuralı yazdı;
+       ikisi de resmî belgeye değil üçüncü taraf rehbere dayanıyor → T20.0 ③:
+       yön kabul, kural PROB'a.
+3 ↔ 4  (23_'de tanımsız, burada açıldı) EYLEMİN ORTASI — UZLAŞTI. Rapor 4
+       "eylemin ortasından seçilen kare ilk saniyelerin duraklamasını
+       siler" (TUR 19 ile aynı) ↔ rapor 3 "tek ayak havada, ağırlık merkezi
+       dengesiz poz kütleçekimi yanlış hesaplatır → kayan ayak / askıda
+       kalma". İkisi birlikte: KARE EYLEMİN ORTASIDIR AMA DENGEDEDİR — beden
+       yük altında, iki destek noktası yerde (iki bot · diz + bot · el +
+       bot); adım ortası, sıçrama, düşüş anı değil. → SAHNE_DOLULUGU §2 ①
+       işaretçi.
+```
+
+## T20.2 ✅ DEPOYA GİRENLER
+
+| # | Bulgu | Kaynak · tür | Etiket | İndiği yer |
+|:-:|---|---|:--:|---|
+| 1 | **Künye:** Gemini Omni 1.1 Flash · `gemini-omni-1.1-flash` · 27.08.2026 · 360p/720p(varsayılan)/1080p/4K · 16:9 (varsayılan) ve 9:16 · 10 s önceki bağlam · 10 s adımlarla 40 s uzatma, yalnız sona · 3 klip × 3 s video referansı (sesi yok sayılır) · görevler: text_to_video · image_to_video · reference_to_video · edit · extend | G1 · G2 | ÖLÇÜLMÜŞ (resmî) | ⭐ OMNI kılavuzu §1 · POLİTİKA §6 motor satırı · red defteri MOTOR lejandı |
+| 2 | **İlk + son kare API'de VAR** (`<FIRST_FRAME> <LAST_FRAME>`) — zincir modu seçeneği açık | G1 · G2 | ÖLÇÜLMÜŞ (resmî) | kılavuz §1 · §8 ⬜ zincir modu sahip kararı · POLİTİKA §6 hipotez etiketi kalktı |
+| 3 | **Ses her klipte üretilir**; kapatma belgesiz; ses referansı ve ses düzenleme yok | G2 | ÖLÇÜLMÜŞ (resmî) | kılavuz §5 |
+| 4 | **Sessiz klibin AUDIO satırı "No dialogue." taşır** (+ deponun "no music"u) — yoksa model konuşma uydurabilir | G2 resmî ipucu · rapor 7 | UYGULAMA | ⭐ kılavuz §2 · §5 · TEMPLATES V3 AUDIO notu (işaretçi) |
+| 5 | **Ses kimliği klipler arası KİLİTLENEMEZ** (her I2V klibi ayrı ses rengi) → replikli çok klipli filmde post-dub kararı | G2 (ses ref yok) · rapor 7 mekanizma | UYGULAMA | kılavuz §5 · THE_SCOURED_GLASS ⬜ sahip kararı (T20.8 ⑧) |
+| 6 | **Resmî tek-plan cümlesi:** "In a single continuous shot" · "No scene cuts" — V3 çekirdek ①'in işini POZİTİF gövdede de yapar | G2 | UYGULAMA (resmî ipucu) | kılavuz §2 (CAMERA satırı sonu) |
+| 7 | **Resmî zamanlama biçimi:** "[0-3s] …" ve "After 3 seconds, …" | G2 | UYGULAMA (resmî ipucu) | kılavuz §4 · T19.8 ② A/B'nin Omni kolu |
+| 8 | **Olumsuzlar prompt gövdesinde** — resmî örnek hem "Do not do X" hem "No X"; ayrı alan yok | G2 | ÖLÇÜLMÜŞ (resmî) | kılavuz §2 — V3 NEGATIVE bloğu doğru yerde (biçim ZATEN VAR) |
+| 9 | **Model yazmaya heveslidir:** istenen metni okunur çizer → video promptunda TIRNAK İŞARETİ YOK; replikli klip PROB ① koşulmadan üretilmez (kol A tırnaksız · kol B tırnaklı) | G2 (text renders) · D40 (depo, Veo) · P (sınanmamış) | ÖNERİ ⬜ PROB | ⭐ kılavuz §5 · DIYALOG_SAHNESI "Omni speaks the line:" satırı → ⚠️ işaretçi |
+| 10 | **1080p/4K = 720p'nin büyütmesi; 360p ayrı üretim** → çekim seçimi 720p'de, 360p yalnız okunabilirlik sınavı; kayda ÇÖZÜNÜRLÜK | S (yöntemli tek ölçüm) | UYGULAMA | ⭐ kılavuz §7 |
+| 11 | **Seed resmî API'de belgesiz** → iş akışı seed'e dayanmaz; "aynı kare + aynı prompt yeniden üret" varyans aracıdır | G2 (sessiz) · P · S (sağlayıcı alanı) | UYGULAMA | kılavuz §7 · REFERANS_PAKETI seed satırı [D142] gerekçesi |
+| 12 | **Karakter animasyonu ve nesne kalıcılığı zayıf, arka plan sağlam:** baş dönüşüyle yüz açısı değişince, yüzü el/nesne kapatınca, yüz kadrajdan çıkıp girince kimlik kayar | M (tek test) · rapor 6 mekanizma | UYGULAMA | kılavuz §6 |
+| 13 | **Başlangıç karesi eylemin ortası AMA dengede** (iki destek noktası yerde; adım ortası/düşüş anı değil) | rapor 3 ↔ 4 uzlaşması · TUR 19 | ÖNERİ | kılavuz §3 · SAHNE_DOLULUGU §2 ① işaretçi |
+| 14 | **Gerçek red vakası:** kurgusal, yapay zekâ üretimi yetişkin sunucu PNG'si + ağız hareketi → ÇIKTI aşamasında *"The video was filtered out because it violated Google's Generative AI Prohibited Use policy"*; kurgusal beyan iki denemede de işe yaramadı | F #178261 (14.08.2026, `gemini-omni-flash-preview`, Gemini API) | ÖLÇÜLMÜŞ (tek vaka, birinci el) | kılavuz §6 · POLİTİKA §6 dış vaka satırı |
+| 15 | **Red aşamaları ayrıdır:** girdi (istem gönderilir gönderilmez) ↔ çıktı (üretim sonrası "filtered out"); filtreler bölgeye göre değişir | G2 ("filters to both input prompts and generated video … vary by region") · F | ÖLÇÜLMÜŞ (resmî) | kılavuz §6 · ⬜ red defterine AŞAMA sütunu adayı |
+| 16 | **Tanınmış kişi içeren görsel yüklenemez**; reşit olmayan görünümü EEA/CH/UK'da yasak | G2 | ÖLÇÜLMÜŞ (resmî) | kılavuz §6 |
+| 17 | **Kamera cümlesi yazılmazsa model kendi hareketini/kesmesini ekler** (süzülme · zoom · çok plan) | rapor 1 · 5 · G2'nin tek-plan ipuçlarının varlığı | UYGULAMA | kılavuz §4 — V3 CAMERA satırı ŞART (ZATEN VAR, gerekçe) |
+| 18 | **İnce tekrarlayan arka plan ayrıntısı** (ızgara · kablo demeti · perçin sırası) hareketle titrer/erir; karede baskın değil ikincil tutulur | rapor 3 mekanizma (kaynakları başka motor rehberi) | ÖNERİ ⬜ | kılavuz §3 risk satırı (kural değil) |
+
+## T20.3 ⭐ KALIP SÜZGECİ — raporun bozuk kalıbı → kısıta uyan kalıp
+
+```
+"The subject in the pressurized suit slowly presses a single glowing
+ button on the wrist console once at second 3" (rapor 2)
+   ✗ glow (D3 · D29) · "slowly" oran değil · buton ışığı = durum değişimi ·
+     noktasal fiil 3. saniyede biter (TUR 19)
+   → "[0-4s] his right glove works the recessed dial on the wrist console a
+      notch at a time, his left hand bracing the forearm; [4-10s] he keeps
+      turning at the same slow rate, head bent to the wrist"
+
+"thin condensation gradually forms along the lower edge of the outer
+ visor glass" (rapor 2 konuşma şablonu)
+   ✗ klip içi DURUM DEĞİŞİMİ + buğu (T11.5④) → çıkarıldı; canlılık
+     bedenden: "his chest plate rises and falls under the harness at one
+     slow rate while he speaks"
+
+"lit by pulsing white warning strobes" (rapor 2 tepki şablonu)
+   ✗ kaynaksız ışık, strobe = titreşen ışık durumu
+   → "one white lamp above the hatch pulses once every two seconds,
+      reaching only the helmet shell" (V3 örneğinin kaynağa bağlı oran
+      kalıbı)
+
+"Kodak Vision3 500T color science, desaturated teal and orange palette"
+   ✗ marka adı · renk kararı Lighting Bible'ın → çekirdekteki "35mm film
+     grain" yeter; renk sahne ışığından yazılır
+
+"falls gracefully toward the soft regolith in an extended decelerated
+ arc" (rapor 4 eylem kapasitesi)
+   ✗ düşüş = bedenin durum değişimi, kısıt dışı
+   → "he lowers himself onto one knee at one slow rate, one glove on the
+      regolith taking his weight"
+
+"subtle internal glare obscuring central facial features" (rapor 8)
+   ✗ ATLATMA (yüzü gizleyerek sınıflandırıcıyı geçirme) + D79'un tersi
+   → İKAME YOK. Yüz riski D167 (≤3-4 öznitelik) ve KADRAJ kararıyla
+     yönetilir: yüzün gerekmediği sahnede IN FRAME yüz taşımaz — gizleme
+     değil, yazılmama.
+
+"SFX: Distorted voice over crackling radio comms speaker: Mission Control
+ to Eagle, report status." (rapor 7)
+   ✗ kişi/kurum adı · telsiz sesi klip içinde (04 §T13 #10: post'ta)
+   → "AUDIO: a short burst of radio static from the helmet speaker, no
+      words. No dialogue." — ses post'ta biner
+
+The astronaut says: "Reactor status clear." ↔ says: Reactor status
+ clear. (rapor 7 çifti)
+   → PROB'un iki kolu olarak aynen alındı (T20.8 ①); kalıp olarak inmedi
+```
+
+## T20.4 ⛔ DEPOYA GİRMEYENLER — dürüst kayıt
+
+```
+• Bütün yüzdeler ve eşikler (künye ⑤): rapor 4 arıza sıklıkları ve eylem
+  güvenilirlikleri · "karmaşık fizik %50/50" · "12-8 FPS dalgalanma" ·
+  rapor 5 kamera uyum yüzdeleri · rapor 6 saniye eşikleri ve "±8 yaş" ·
+  rapor 3 "%60 hero zone · %30 lead room · 0,5-2 cm · %80 deformasyon" ·
+  rapor 9 kabul oranları ve varyans → kaynağıyla eşleşmedi. Kılavuz sayısız.
+• `thinking_level` (rapor 2 · 3 · 4 "resmî belgeyle doğrulandı") → G2'de
+  YOK. Uydurulmuş doğrulama; parametre olarak da ipucu olarak da inmedi.
+• Red mesajları (rapor 6 · 8 tabloları) → kontrol edilen tek başlık
+  (#178261) başka mesaj, başka model, başka yüzey gösterdi; kalanlar
+  kontrol edilmedi ve aynı üreticiden → hiçbiri red defterine ya da
+  kılavuza girmedi. Yalnız birinci el vaka (T20.2 #14) indi.
+• LMArena Elo 1515 / 1488 → anılan kaynaklarda yok; sıra (T2V 1. · I2V 2.)
+  var ama oy sayısı düşük → künyede bile yazılmadı; motor seçimini
+  belirlemez.
+• "Referans görseli 10" (rapor 1 · 6) → resmî sayfa özeti 3, sağlayıcı
+  1-10 diyor; hat tek başlangıç karesi → hat dışı.
+• "Promptun başına kurgusal karakter beyanı yanlış-pozitifi aşar" (rapor 6)
+  → karşı kanıt #178261; ayrıca atlatma sınırında. İnmedi.
+• Rapor 8'in "vizöre açısal parlama ekleyince geçti" vakası ve "yüzü
+  örten parlama" ikamesi → ATLATMA + D79'un tersi; vaka kaynaksız.
+• Rapor 8 "Türkiye EMEA · ALLOW_ADULT varsayılan" → G2 bölge listesinde
+  Türkiye yok; kaynaksız. 04 §TUR 3 ② AÇIK kalır.
+• Rapor 8 "API'de reddedilen istek ücretlendirilmez, Flow'da kredi düşer"
+  → Flow yarısı ZATEN VAR (POLİTİKA §5 "kredi iade edilmiyor"); API yarısı
+  kaynaksız ve hat API kullanmıyor.
+• Rapor 2 "Don't show X fiil kalıbı nesneyi çizer, 'No X' kullan" → G2'nin
+  kendi örneği "Do not do X"; iddia kaynaksız. İki biçim de serbest.
+• Rapor 4 "negatif cümle ('no morphing') istenmeyen hareketi tetikler" ↔
+  G2 "No scene cuts · No dialogue" resmî → artefakt adı taşıyan negatifler
+  için ⬜ (T19.8 ⑤ ile aynı A/B); genel yasak inmedi.
+• Rapor 4 "eylem başına güvenilirlik" tablosu (yürüme %60 · alet %40 ·
+  düşme %30 …) → sayı kaynaksız; SIRA bile tek kaynaklı ("Invideo FAQ").
+• Rapor 4 "güvenlik filtresi sert teması iptal eder → el nesneden geçer"
+  → mekanizma iddiası kaynaksız; phasing zaten çekirdek negatifte.
+• Rapor 4 "low gravity yalnız oynatmayı yavaşlatır" → ilginç ama tek
+  kaynaksız cümle; PHYSICS satırı zaten yerçekimini nesne davranışıyla
+  yazıyor (V3) → ⬜ gözlem, inmedi.
+• Rapor 5 "sayısal odak uzunluğu (85mm) tutarlılığı bozar, 'shallow depth
+  of field' yaz" → depo CAMERA satırı lensi sayıyla yazıyor ve kurulum
+  yayını betikle bundan ölçülüyor (prompt_kontrol) → değiştirilmedi; ⬜.
+• Rapor 5 "lens flare / anamorphic ekranda ışıma ve yazı artefaktı üretir"
+  → depo zaten "0% bloom, no glow" yazıyor; ek yasak inmedi.
+• Rapor 9 "klibin baştan/sondan 2-4 kare kırpılması" → kaynak ComfyUI
+  genel; ızgara sabit, kırpma KURGU_RITMI · D100'ün işi.
+• Rapor 9 "renk eşleme için Kodak 2383 LUT · ACES" → kurgu/renk kılavuzu
+  alanı, motor bulgusu değil.
+• Rapor 9 model seçim tablosu (Veo 3.1 Lite · Seedance 2.5 · Wan 2.7 ·
+  fiyatlar) → sürüm ve fiyatlar doğrulanmadı; hat Omni + Veo.
+• Rapor 9 "iki motoru karıştırmak renk/gren/ses dikişi bırakır" → makul
+  ama kaynaksız → ⬜ POLİTİKA §6.1 notu değil, T20.8 ⑨ gözlem.
+• Rapor 1 "Vertex'te sessiz video rotası ayrı fiyatlanır" · "1.048.576
+  token bağlam" · "1-4 varyasyon" → doğrulanmadı; hat dışı.
+• Rapor 3 "Nano Banana Pro karesi Omni'de daha az kayma verir" → rapor
+  kendisi hipotez dedi; hat zaten NBP/NB2 → etkisiz.
+• Rapor 3 "görünmez filigran (SynthID) difüzyonda titreme yapar" → rapor
+  kendisi doğrulanamaz dedi.
+• Rapor 8 yayın tablosu (SynthID · C2PA · görünür filigran anahtarı ·
+  YouTube sentetik içerik bildirimi) → motor bulgusu değil; YAYIN
+  kılavuzunun alanı, bu turda kontrol edilmedi → ⬜ (T20.8 ⑩).
+• Rapor 7 "Dialogue (starting at 00:02):" etiketi · "lip sync mode" →
+  kaynaksız; resmî zamanlama biçimi T20.2 #7.
+```
+
+## T20.5 🚨 İKİNCİ KEZ İNMEYENLER — "ZATEN VAR" ve YANKI
+
+```
+• I2V'de görünüm yeniden tarif edilmez → VEO §6B · REFERANS §5.2 · V3
+  START FRAME. Omni'de de geçerli (rapor 2 · 6 · G2 düzenleme bağlamı).
+• Kimlik öznitelik yığını red tetikler, ≤3-4 → D167 · ⑲ · red defteri #15.
+• Kapalı vizörde replik klip içinde üretilmez, telsiz post'ta → 04 §T13 #10.
+• Lip-sync tabanı MCU, geniş planda çöker → 04 §T13 #9 (rapor 7 tekrar).
+• 20-25 kelime / 10 s → 04 §T13 #8 (rapor 7 tekrar).
+• Çığlık / ağlama / argo red riski → 04 §T13 #12.
+• Klip içinde durum değişimi yok, kesmeye yazılır → REHBER §7 ·
+  SAHNE_ZINCIRI §1 (rapor 3 · 4 tekrar).
+• "still / motionless / frozen" tek başına yazılmaz → OYUNCULUK §4 ·
+  SAHNE_DOLULUGU §4 ⑥ (rapor 2 · 4 · 5 tekrar).
+• Süreç fiili noktasal fiilden iyi taşır · ikincil sürekli hareket ·
+  eylemin ortasından kare → SAHNE_DOLULUGU §1 · §2 · §3 (rapor 4 tekrar).
+• Tek-plan / no cuts negatifi → REHBER §5.1 çekirdek ①.
+• "glow / bloom" yasak → D3 · D29 (rapor 5 tekrar).
+• Okunur yazı · logo · HUD yok → D34 · D45 (rapor 3 tekrar).
+• Reddedilen üretimde kredi iade edilmez (Flow) → POLİTİKA §5.
+• Kamera hareketi kapalı listesi → TEMPLATES (rapor 5 listeyi geri okudu).
+• Kare çıkış oranında üretilir → V3 Output satırı.
+• Dokuz raporun "hat dışı / elenen" listeleri = 23_'nin beşinci cümlesi.
+  Rapor 2'nin "120-300 Hedef Band"ı = kısıtın bulgu olarak geri dönüşü.
+```
+
+## T20.6 ⭐ BU TURUN EN NET SATIRI
+
+```
+Omni 1.1 Flash'ın resmî belgesi az şey söyler ama söylediği sağlamdır:
+ilk ve son kare var, ses her klipte üretilir, olumsuzlar prompt
+gövdesine yazılır, tek plan "In a single continuous shot · No scene
+cuts" ile istenir, zamanlama "[0-3s]" ile yazılır, 4K 720p'nin
+büyütmesidir. Belgenin sustuğu her şey — tırnak kuralı, kelime bandı,
+seed, bütün yüzdeler — üçüncü taraf ya da raporun kendisidir ve bu turda
+üç kez yanlış aktarıldığı yakalandı. Sözdizimi kuralı PROB'dan geçmeden
+kapı olmaz.
+```
+
+## T20.7 📍 İŞARETÇİLER — nereye tek satır indi (✅ 16.09.2026)
+
+```
+23_ KOŞU KAYDI → ✅ · 00_README C tablosu satırı → ✅
+POLITIKA §6 motor tablosu OMNI satırı → kimlik + ilk/son kare ✅ doğrulandı (TUR 20);
+   §6.1 "yüzlü I2V → VEO" gerekçesi ⬜ hipotez kalır
+FILM_QA_RAPORLARI/09_URETIM_RED_DEFTERI MOTOR lejandı → `gemini-omni-1.1-flash` (TUR 20)
+04 §TUR 3 kimlik satırı → ✅ TUR 20 · 04 §T13 #11 → ⚠️ TUR 20: ters aktarılmış olabilir
+DIYALOG_SAHNESI_VE_MUHATAP BASAMAK 2 "Omni speaks the line:" → ⚠️ tırnak PROB'u
+IMAGE_VIDEO_PROMPT_TEMPLATES V3 VIDEO → Omni katmanı işaretçisi (AUDIO "No dialogue." · tırnak yok)
+SAHNE_DOLULUGU §2 ① → "ortası ama dengede" notu
+KILAVUZ_REHBERI §1 okuma listesi → yeni □ satırı · AGENTS §1 harita → yeni satır
+YAPI_GRAFI → 23_ satırı + TUR 20 → OMNI kılavuzu
+⛔ DOKUNULMADI: THE_SCOURED_GLASS/00_PLAN "end frame yok (OMNI)" ve S12
+   replik kalıbı — film dosyası; zincir modu ve replik sözdizimi sahip
+   kararı + PROB (T20.8 ① ⑦ ⑧)
+```
+
+## T20.8 ⬜ BU TURUN SINIRI
+
+```
+① TIRNAK PROB'u (2 klip, aynı kare, MCU, basınçlı iç): A `says: <line>`
+   tırnaksız · B `speaks the line: "<line>"` — ikisinde de `heard only,
+   never shown as text`. Ölçüt: ① KARE metin bayrağı (ekranda yazı var mı)
+   + dudak senkronu. THE_SCOURED_GLASS S12 üretilmeden ÖNCE.
+② UZUNLUK PROB'u: aynı sahne ~80 kelimelik ↔ ~250 kelimelik pozitif gövde
+   (üçüncü taraf 30-80 ↔ depo bandı 120-300). Ölçüt: kilit tuttu mu,
+   kayma, ölü saniye. Sonuç prompt_kontrol `KELIME_BANDI`na motor satırı
+   olarak girer ya da girmez.
+③ ARAYÜZ KÜNYESİ (Flow, 0 kredi): seed alanı · bitiş karesi kutusu · süre
+   seçenekleri · çözünürlük · ses anahtarı — ekran görüntüsü. (23_ ⬜ 1)
+④ SÜRE ÖLÇÜMÜ: ilk Omni klibinde ffprobe → D124 satırı. (23_ ⬜ 2)
+⑤ SABİT KAMERA CÜMLESİ A/B: "absolutely zero camera movement" ↔ "mounted
+   on a fixed tripod" — özne mikro hareketi söner mi (T20.1 4 ↔ 5).
+⑥ DAMGA BİÇİMİ Omni kolu: "0.0s —" ↔ "[0-3s]" (resmî). T19.8 ② ile tek koşu.
+⑦ ZİNCİR MODU (sahip kararı): Omni'de ilk/son kare VAR → faz hattında
+   start/end zinciri (KESINTISIZ_VIDEO · D69) Omni'yle de kurulabilir;
+   modül hattı tek başlangıç karesiyle kalabilir. THE_SCOURED_GLASS planı
+   buna göre ya düzeltilir ya "bilinçli tek kare" gerekçesi alır.
+⑧ SES KİMLİĞİ (sahip kararı): ayrı klipler arasında karakter sesi
+   kilitlenemez → replikli çok klipli filmde (SCOURED 24 günlük) ya
+   post-dub ya "ses değişimi kabul" kararı.
+⑨ MOTOR KARIŞTIRMA dikişi (Omni + Veo aynı filmde: renk · gren · ses
+   zemini) ölçülmedi — ilk karışık filmde QA ② DEVAMLILIK'e not.
+⑩ YAYIN: SynthID/C2PA ve YouTube sentetik içerik bildirimi YAYIN
+   kılavuzunda var mı — bu turda kontrol edilmedi.
+⑪ SAYISIZ KILAVUZ: yalnız resmî belgenin sayıları (çözünürlük · 10 s ·
+   40 s · 3 × 3 s) künyede. Fiyat yazılmadı (künye §🔎 ㉑'de tarihli).
+⑫ CANLI KONTROL ÖZETLEYİCİDEN GEÇTİ: sayfalar bir özetleme aracıyla
+   okundu; alıntılar birebir tarayıcı kopyası değil. Kılavuza inen her
+   resmî satır sahip ilk üretimde arayüzle bir kez daha teyit eder.
+```
+
+---
+
+# 🔬 TUR 22 — PROMPT HATA ÖNLEME · ÜÇ SINIF (19.09.2026)
+
+```
+PROMPT   25_PROMPT_HATA_ONLEME_ARASTIRMA_PROMPTLARI.md — üç prompt, altışar cümle
+HAM      TUR22_HAM_RAPORLAR/ — 3 rapor (prompt 1'in raporu oturuma iki kez yapıştırıldı)
+İNER     ../PROMPT_HATA_ONLEME_KILAVUZU.md §1a · §3 sınıf 2 · §3 sınıf 5 · §4
+⭐ FARK  Bu turun ikinci bir hakemi var: deponun KENDİ ölçümü
+         (FILM_QA_RAPORLARI/10_PROMPT_QA_ANALIZI · 34 film · 395 ham rapor · 771 bulgu).
+         Raporun her sınanabilir iddiası o korpusa karşı koşuldu.
+```
+
+## ① SÖZLEŞME İHLALİ — etiketi DÜŞÜRÜLENLER
+
+Promptun altıncı cümlesi şunu şart koşuyordu: *"prompt rehberi blogunu ÖLÇÜLMÜŞ
+sayma · ÖLÇÜLMÜŞ dediğin her satır için birebir alıntı ve bağlantı ver."*
+
+| rapor satırı | sorun | yeni etiket |
+|---|---|---|
+| "Fine motor control… remain challenging" (kavrayış gevşemesi) | kaynak `mindstudio.ai/blog` | ⬇️ UYGULAMA |
+| "model prioritizes visual smoothness over physical accuracy" (hız düşüşü) | aynı blog | ⬇️ UYGULAMA |
+| "maintain character consistency across different scenes" (statik kir) | `aitoolsreview.co.uk` ürün sayfası | ⬇️ UYGULAMA |
+| "objects can appear out of nowhere…" (nedensellik) | `bdtechtalks.com` haber yazısı | ⬇️ UYGULAMA |
+| "It does not accurately model the physics… like glass shattering" | `medium.com` blogu — **Sora teknik raporunun kendisi değil** | ⬇️ UYGULAMA |
+| **"%5-10 temiz temas · 20-50 deneme"** | altındaki alıntı (`consistency loss… eliminates lucky path`) bir **EĞİTİM tekniğinden** söz ediyor, başarı oranından değil | ⛔ **DÜŞTÜ** — sayının kaynağı yok |
+| **"anchor-and-track" ÖLÇÜLMÜŞ** | alıntı 3B HOI **REKONSTRÜKSİYON** makalesinden; video ÜRETİMİ hakkında değil | ⬇️ ÖNERİ |
+| "Temassız başlayıp klip içinde temas → %90 arıza" | kaynak yok | ⛔ DÜŞTÜ |
+| "VBench-2.0 / T2V-CompBench ~%40-60" | hangi tablo, hangi satır belirtilmemiş | ⚠️ ŞARTLI |
+
+⭐ Bu süzgeç turun yarısını elemedi — **ÖLÇÜLMÜŞ etiketli satırların yaklaşık
+üçte biri sözleşmeyi ihlal ediyordu.** Etiket sözleşmesi olmasaydı bunların hepsi
+kılavuza "ölçülmüş" diye inecekti.
+
+## ② DEPO ÖLÇÜMÜYLE SINAMA — 771 bulgu hakem
+
+⛔ Ham korelasyon **kullanılmadı**: temas cümlesini yazan film, zaten elle iş
+yapılan filmdir (seçilim yanlılığı). Test **maruziyet kontrollü** koşuldu —
+yalnız el/eldiven kadrajda olan sahneler alındı.
+
+### 🅐 SINAMA 1 · TEMAS CÜMLESİ KORUYOR MU?
+
+```
+population : el/eldiven kadrajda olan 617 sahne · 34 film
+treatment  : negatif temas cümlesi VAR / YOK
+outcome    : temas-füzyon-geçiş bulgusu
+betik      : prompt_hata_analizi.py --temas-testi   (elle hesaplanmaz)
+
+  TÜM temas/geçiş      cümle VAR 41/349 = %11,8   YOK 15/268 = %5,6   RR 2,10 · z ≈ +2,77
+  yalnız EL karışan    cümle VAR 30/349 = % 8,6   YOK 10/268 = %3,7   RR 2,30 · z ≈ +2,57
+```
+
+⚠️ **19.09.2026 · SAHNE SAHNE OKUMA İKİ HATA BULDU — ikisi de düzeltildi:**
+```
+① REGEX HATASI: "merg" kalıbı EMERGENCY kelimesini yakalıyordu → 12 yanlış bulgu
+   (MARS S13 "emergency bulkhead", LOCKED_PULSE S17 "post-emergency walk"…).
+   Kelime sınırı eklendi. ⭐ Düzeltme sonucu GÜÇLENDİRDİ: RR 1,65 → 2,10 · z +2,04 → +2,77.
+② TEK YÖNLÜLÜK: promptlardaki cümle "HAND-surface contacts…" diyor. 81 temas/geçiş
+   bulgusunun 26'sı NESNE-NESNE (kayış ↔ pim · halat ↔ abajur · kemer ↔ gövde ·
+   canlı uzvu ↔ giysi). Onları hiçbir cümle kapsamıyor → 🅐 değil 🅑.
+   Bu, kılavuza YENİ BİR SINIF olarak indi (§3b ④).
+```
+
+**Raporun tezi:** *"negatif cümle Beyaz Ayı etkisiyle kavramı aktive eder ve
+arızayı ARTIRIR."* **Deponun ölçümü aynı yönde ve anlamlılık sınırında.**
+İki bağımsız kaynak (dış literatür taraması + deponun 34 filmi) aynı işareti
+verdi. ⭐ Bu turun tek gerçek yakınsaması budur.
+
+⚠️ **Kalan yanlılık dürüstçe yazılıyor:** cümle, yazan kişi tarafından *riskli
+görülen* sahneye bilerek eklenmiş olabilir; o zaman oran cümlenin zararını değil
+yazarın risk sezgisini ölçer. z ≈ 2,04 sınırdadır — iki bulgu oynarsa düşer.
+**Kesin kanıt bir A/B üretimidir; bu ölçüm onu tetikleyen gerekçedir.**
+
+### 🅑 SINAMA 2 · ORTAM: AD mı SAYI mı?
+
+```
+population : toz/enkaz/buhar kadrajda olan 585 sahne · 33 film
+  ortam ADI  VAR :  28/302 = %9,3   ·  YOK : 19/283 = %6,7  → RR 1,38 (z≈+1,14, ANLAMSIZ)
+  ortam SAYI VAR :  18/272 = %6,6   ·  YOK : 29/313 = %9,3  → RR 0,71 (z≈−1,19, ANLAMSIZ)
+```
+
+**Raporun tezi:** *"sayının ölçülebilir hiçbir faydası yoktur; ortam ADI çok daha
+kritiktir."* ⛔ **DEPODA DOĞRULANMADI.** İşaret raporun tam tersine dönük (ad
+zararlı tarafta, sayı koruyucu tarafta) ve ikisi de anlamsız. İki kaynak
+çelişiyor → **ikisi de kılavuza İNMEZ**; kılavuzun mevcut duruşu ("ikisini de
+yaz, üstünlük iddia etme") korunur.
+
+### 🅒 SINAMA 3 · TEMAS KLİBİN NERESİNDE OLMALI?
+
+```
+klip içi konum ↔ temas bulgusunun tüm bulgulara payı (ofset 0 elendi — "klip boyu" bulguları)
+  0-2 s   9/152  = % 5,9   ⭐ en düşük
+  2-4 s  28/144  = %19,4   ← tepe
+  4-6 s  21/138  = %15,2
+  6-8 s   8/ 66  = %12,1
+  8-10 s 13/ 94  = %13,8
+```
+
+**Raporun tezi iki parçaydı:**
+- *"temas halinde başlamak (anchor-and-track) en güvenlisidir"* → ✅ **DESTEKLENDİ**
+  (ilk 2 saniye %5,9; sonraki her bant iki-üç katı)
+- *"zamansal sürüklenme yüzünden geç temas EN KÖTÜSÜDÜR"* → ⛔ **DESTEKLENMEDİ**
+  (tepe 2-4 s'te; sondaki bantlar tepeden daha iyi)
+
+⭐ Bu ayrım kılavuza iner ve **uygulanabilir bir TIMELINE kuralıdır**.
+
+### 🅓 SINAMA 4 · AUDIO SATIRI SESİ KONTROL EDİYOR MU?
+
+```
+AUDIO satırı VAR : 16/476 = %3,4   ·  YOK : 9/279 = %3,2   → RR 1,04 — ETKİSİZ
+```
+Deponun daha önce bulduğu iki vakayla birebir uyumlu: KRONOS `AUDIO:` 0/96 → 4 🔴,
+SUSMAYAN 96/96 ve `no exterior sound at all` → yine 4 🔴.
+**Rapor, deponun bulduğu duvarın SEBEBİNİ veriyor:** ses, promptun metninden değil
+üretilen görüntünün anlamından türüyor; görsel patlama varsa ses latentleri metni bastırıyor.
+
+## ③ KILAVUZA İNENLER
+
+| # | ne iner | nereye | etiket |
+|:--:|---|---|---|
+| 1 | **Negatif temas cümlesi korumuyor** — iki bağımsız kaynak aynı yönde | §1a uyarı · §3 sınıf 2 | ÖLÇÜLMÜŞ (depo) + ÖLÇÜLMÜŞ (literatür) |
+| 2 | **Yerine POZİTİF ara katman cümlesi** (`visible gap` · `thick handle grip` · renk zıtlığı) | §3 sınıf 2 | ÖNERİ — ⬜ sınanmalı |
+| 3 | **Temas klibin İLK 2 SANİYESİNDE kurulur** ya da ilk karede zaten kuruludur | §3 sınıf 2 + TIMELINE | ÖLÇÜLMÜŞ (depo) |
+| 4 | **Ses prompttan kapatılmıyor → KURGU:** low-pass < 300-400 Hz + noise gate | §4 "vakumda ses" satırı | UYGULAMA |
+| 5 | **Efor: sonuç-sayısı değil beden tarifi + duraksama** (`halts abruptly, holds tension, then pulls again`); düz "moves slowly" ağır çekim üretir | §3 sınıf 5 | ÖNERİ — ⬜ sınanmalı |
+| 6 | **Klipte en çok 2-3 beden işareti**; asimetrik işaretler (bir kol çeker, öteki boşta) simetri önyargısıyla bozulur | §3 sınıf 5 | ÖNERİ |
+| 7 | **Açısal momentum ayrı yazılır** (`drifts linearly while continuously rotating on its own axis`) | §3 sınıf 9 | ÖNERİ — deponun THE_GRAVITY_ANCHOR bulgusuyla örtüşüyor |
+| 8 | **İki rejim ayıran işaret** mekanik sebebe bağlanır (`heavy magnetic boots lock onto the floor`) | §3 sınıf 4b | ÖLÇÜLMÜŞ (arXiv 2609.11242) |
+
+## ④ KILAVUZA İNMEYENLER — ve neden
+
+```
+⛔ "%5-10 temiz temas · 20-50 deneme"      alıntı iddiayı taşımıyor (eğitim tekniği)
+⛔ "temassız başlayan temas %90 arıza"      kaynak yok
+⛔ "ortam ADI sayıdan kritiktir"            depo ölçümü TERS yönde, ikisi de anlamsız
+⛔ "sayısal yerçekiminin faydası yoktur"    aynı — depo bunu ne doğruluyor ne çürütüyor
+⚠️ generate_audio=False çalışmıyor          depo Veo API kullanmıyor (Flow arayüzü) → ⬜ ilgisiz
+⚠️ "kalın eldiven fazla parmağı azaltır"    raporun kendi hipotez listesinde, kaynaksız
+✅ "tırnak işareti diyalog halüsinasyonu"    ZATEN BİLİNİYOR — OMNI kılavuzu ④ · D34 · D45.
+                                            Yeni değil; dış kaynakça deponun kuralını doğruladı.
+```
+
+## ⑤ AÇIK KALAN — bir sonraki tur
+
+```
+⬜ A/B ÜRETİMİ: aynı sahne, aynı seed, tek fark negatif temas cümlesi.
+   SINAMA 1'in z≈2,04'ü gözlemseldir; kesin kanıt bu iki koşudur.
+⬜ Pozitif ara katman cümlesinin (`visible gap`) ölçülmüş etkisi — kimse ölçmemiş.
+⬜ Efor cümlesinin BİÇİMİ (beden tarifi ↔ sonuç sayısı) tek değişkenle sınanmadı.
+⬜ `24_`'ün dört promptu hâlâ KOŞULMADI — jeton sızıntısı (artık 4 filmde ölçülü)
+   ve kimlik/süreklilik oradadır.
+```
+
+---
+
+# 🔬 TUR 23 — AJAN BECERİLERİ · SENARYO/DRAMATURJİ BORU HATTI (21.09.2026)
+
+```
+PROMPT   sahibin serbest derin araştırma isteği — depoda prompt dosyası yok
+HAM      TUR23_HAM_RAPORLAR/ — 1 rapor (araştırma özeti + üç GitHub README'si yapıştırma)
+İNER     ../HIKAYE_FIKIR_TURU_KILAVUZU.md (yeni) · ../SKILL_KULLANIM_KILAVUZU.md §2.3 · §2.4 · §6
+         · .claude/skills/yeni-film/SKILL.md 0.7a · AGENTS Kart A · 00_HIKAYE_ONAYI +
+         02_KONSEPT_VE_RISK şablonları · 03_PLAN_ONCESI A0
+⭐ FARK  Bu turun hakemi deponun kendi hikâye ölçümüdür: T4 ④ bağlayıcı satırları
+         aynı üç sebebi tekrar etti (istek yok · bedel yok · bitiş yok), kanca
+         skoru plato yaptı (HOOK §0③), 14.09 kararı "kural eklemek kaliteyi
+         artırmadı" dedi. Rapor bu kayda karşı okundu: alınan şey KAPI değil,
+         hikâye ÜRETEN yöntem oldu.
+```
+
+## ① SÖZLEŞME İHLALİ — düzeltilen cümleler
+
+| rapor satırı | sorun | düzeltme |
+|---|---|---|
+| skill-conductor "BinEval ile QA raporlarını `rapor_kontrol.py` yanında doğrular" | üst kaynağın kendi kapsam beyanı: yalnız SKILL.md dosyalarını ölçer | ⬇️ QA'da kullanılmaz; BinEval BİÇİMİ (evet/hayır + kanıt, eşik gizli) fikir turu elemesine alındı |
+| "deponun 1.6 s kanca süresi" | depoda karar penceresi 1,7 s (HOOK §1) | sayı raporda düzeltilmez, adres verilir |
+| `fountain` "senaryo analizi, eylem/diyalog oranı" | depo/skill adı yok; Fountain bir senaryo işaretleme biçimidir, skill değil | ⛔ tanımlanamadı — sahip ad verirse açılır |
+| "marketingskills kurulacak" | `social · ab-testing · content-strategy` 02.09.2026'dan beri kurulu | ⬇️ ek kurulum yok |
+
+## ② ALINANLAR — creative-director → depo (CC BY 4.0, atıf `HIKAYE_FIKIR_TURU` başlığında)
+
+| üst kaynak | depoda | neden alındı |
+|---|---|---|
+| insight "[X] wants, but [Y], because [Z]" + tension spotting | GERİLİM CÜMLESİ (§2) → B5 İSTEK/ENGEL tohumu | B5'in üç "umursamadım" sebebi doğrudan bu cümlenin üç parçası |
+| üç kategoriden yöntem rotasyonu, 8-12 fikir, ilk üç ısınma | HAVUZ (§3) | "aynı olay örgüsü gezegen değişince" doyumu (YOUTUBE_VIRAL §2 m.15) ancak havuzla kırılır |
+| brief compliance ikili soruları | BEŞ ELEME SORUSU (§4) — hepsi var olan depo kapılarının adresi | yeni kural değil, var olan kapının ERKEN ve GENİŞ uygulanması |
+| emotion tier 1/2/3, "9+ needs tier 3" | DUYGU ADI üç kademe, A çift-duygu (§5) | T4'ün "güzel ama boş" bulgusu (TUR 4 #13) |
+| kill your darlings · Droga · specificity test | GÖZDEYİ ÖLDÜR (§6) | ilk akla gelen hikâyenin savunmasız kalması |
+| Story Spine · Pixar rules | HİKÂYE OMURGASI (§7) — zamanlama SENARYO §2'de kalır | D158 (0 seçim) · D212 (aynı vuruş) · D213 (elips) nedensellik arızaları |
+| pre-mortem 5 arıza modu, Go/Revise/Kill | ÖN-OTOPSİ (§8) → 02_KONSEPT §5 risk kartı | risk kartları üretim riskini ölçüyordu, izlenmeme riskini değil |
+
+## ③ ALINMAYANLAR
+
+```
+· 1-10 puan, HumanKind/Grey skalaları        → puan yazılmaz (17/17 imza dersi)
+· Pollard 7-seviye fikir taksonomisi          → kampanya kavramı; filmde karşılığı yok
+· marka · hedef kitle · tagline · medya       → reklam brief alanları
+· vaka kütüphanesi (yüzlerce reklam kartı)    → doyum ölçüsü REHBER §8 matrisidir
+· skill'in depoya kurulumu                    → sahip kararı 21.09: damıt, kurma
+```
+
+## ④ KARAR VE ÖLÇÜM
+
+```
+KARAR   yeni-film 0.7a FİKİR TURU (sahip · 21.09.2026). Beşinci soru dört
+        seçeneğe çıktı (ONAY · ADAY B · ADAY C · RED); soru sayısı değişmedi.
+        Aynı gün ikinci karar: skill-conductor GLOBAL kuruldu (depo dışı, uv ile),
+        ölçümü sahip koşar; banana-claude (Gemini imaj) KURULMADI — API anahtarı
+        yok, Nano Banana elle promptla üretiliyor (SKILL_KULLANIM §2.4 · §6.2).
+ÖLÇÜM   üç fikir turu filmi T4 ④ Kanca·Karakter·Final ve ⑫'de plato bandıyla
+        karşılaştırılır (AGENTS §6 açık iş). Aynı bantta kalırsa kılavuzun
+        §3/§4'ü değişir; kural eklenmez.
+```
+
+---
+
+# 🔬 TUR 24 — ÇOK KLİPLİ SAHNE · EFOR/YERÇEKİMİ · TRAVMA · MİKRO-AKSİYON (22.09.2026)
+
+```
+PROMPT   27_COK_KLIP_EFOR_TRAVMA_MIKRO_AKSIYON_ARASTIRMA_PROMPTLARI.md — altı prompt (sahip yazdı)
+HAM      TUR24_HAM_RAPORLAR/ — 6 rapor (1A · 1B · 2A · 2B · 3 · 4)
+İNER     ../COK_KLIPLI_SAHNE_KILAVUZU.md §3.4-§3.6 (1A · 1B)
+         ../FIZIKSEL_EFOR_VE_YERCEKIMI_KILAVUZU.md (2A · 2B)
+         ../POST_TRAVMA_VE_DURUM_HAFIZASI_KILAVUZU.md (3)
+         ../MIKRO_AKSIYON_VE_HALUSINASYON_KILAVUZU.md (4)
+HAKEM    TUR 22 emsali: deponun kendi ölçümü (PROMPT_HATA_ONLEME §3b · §5b · §6 ·
+         §4 · D150 · D207) + bu turun sınama setleri (SLOW_RAIN · STOLEN_SKY QA kaydı)
+```
+
+## ① SÖZLEŞME İHLALİ — ÖLÇÜLMÜŞ etiketi TOPTAN düştü
+
+Promptların altıncı cümlesi "etiketler … kaynak bağlantılarıyla" diyordu. Altı raporun
+**hiçbiri** bağlantı vermedi; atıflar `[cite: 5, 19]` biçiminde çıplak numaradır ve
+numaraların karşılığı raporda yoktur. TUR 22'de etiketlerin üçte biri düşmüştü; burada
+**hepsi** düşer.
+
+| rapor iddiası | durum |
+|---|---|
+| DirectorBench geçiş kalitesi 0.256 · talimat 0.71 · CutCraft 0.542→0.383 | ⚠️ kaynak yok — **sayı olarak inmez**; mekanizma ("klipler arası geçiş en zayıf eksen") depo gözlemiyle uyumlu, NİTEL iner |
+| statik koordinat duruş sapmasını %75-85 azaltır · itaat %80-94 | ⛔ kaynak yok — sayı düştü; yön (durum cümlesi > eylem fiili) depo ölçümüyle uyumlu (§3b ① ilk 2 s) |
+| efor tablosu %95 · %98 · %85 · %90 · Kural 1 %92 · Kural 3 %68 | ⛔ düştü |
+| Physics-IQ %10-30 · Veo %75 / Sora %23 (MovieBench) · RigidBench r=0.002 | ⚠️ Physics-IQ gerçek bir kıyaslamadır, ama tablo/satır verilmedi → ŞARTLI, kılavuza sayı girmez |
+| hasar koruma %79-91 · kadro kilidi | ⛔ düştü |
+| mikro-eylem %85-95 · Physion-Eval %93,5/%83,3 · filigran/tripod temizliği **%100** | ⛔ düştü — "%100" iddiası ayrıca depo kanıtıyla çelişir (② R2) |
+
+## ② DEPO ÖLÇÜMÜYLE ÇELİŞEN — REDDEDİLDİ
+
+| # | rapor önerisi | deponun ölçümü | karar |
+|:--:|---|---|---|
+| R1 | 2A: sonuç sayısı — *"the frozen wheel rotates only two inches over eight seconds"* | PROMPT_HATA §5b (TUR 22): sonuç sayısı modeli pürüzsüz yörüngeye iter, figür **ağırlıksız** render edilir → beden + duraksama | ⛔ RED. Yerine §5b kalıbı |
+| R2 | 4: uzun negatif sözlük ile filigran/tripod/füzyon "%100 temizlik" | §3b: temas cümlesi VAR %11,8 ↔ YOK %5,6 (RR 2,10) · TUR 22: negasyon kavramı AKTİVE eder · D150: filigran 6 filmde "hatta aittir", `no watermark` her promptta yazılıydı | ⛔ RED. Filigran = araç ayarı/ihraç (D150 · D215); tripod = aday (⑤) |
+| R3 | 3: `[SPEC DAMAGE STATE: …]` köşeli, büyük harfli durum bloğu | §6 jeton sızıntısı: `PHASE 1` göğse, `EVA` sırta, `S04` gövdeye BASILDI | ⛔ RED. Hasar DÜZ cümleyle, sahne kilidi gibi birebir |
+| R4 | 1A: asimetrik kırpma (4 s · 7 s · 3 s) ile metronomu kırmak | sahip kararı 22.09: klip **tam 10 s** · kurgu kapısı 48 klip · 480 s ±0 | ⛔ RED. Metronomu klip içi tempo + sahne uzunluğu farkı + ses köprüsü kırar |
+| R5 | 2B: *"slow-motion parabolic descent arc"* | §5b: düz yavaşlama = **ağır çekim arızası**; raporun kendi 2A'sı da ağır çekimi arıza sayar | ⛔ RED (iç çelişki). Yerine "long slow arc at normal playback speed" |
+| R6 | 1A: *"highly reflective gold visor"* ile arka planı yansıtmak | D79: vizör şeffaf (yüz okunur · politika imza ⑥) | ⛔ RED. Yansıma giysi/kask kenarına yazılır |
+| R7 | 1A: "holographic button", "glowing interface" | §5.1: 0% bloom · no glow · metin yasağı | ⛔ RED |
+| R8 | 1A: *"Continuing the intense momentum from the previous moment"* · *"Matching the exact lighting from the previous moment"* | D59: geçmiş anlatma ismi çizdirir · ㉜⑤ zincir dili | ⛔ RED. Şimdiki zaman durum cümlesi (`CONTINUOUS ACTION:`) + birebir LIGHT satırı |
+| R9 | 1B: token bütçesi (kamera 1-15 · dünya 16-45 …) | V3 sırası ölçülmüş kapıdır: `IN FRAME:` ilk satır (㉖) · tek kilit üçüncü satır (TUR 11) | ⛔ RED |
+| R10 | 1B · 3: Kling `motion intensity 0.2` · "Cinematic sci-fi shot, 10s, 8k" başlığı | deponun hattı OMNI/Veo · V3 iskeleti | ⛔ RED (depo dışı) |
+
+## ③ KILAVUZA İNENLER — hepsi ÖNERİ/UYGULAMA, hiçbiri ÖLÇÜLMÜŞ
+
+```
+COK_KLIPLI_SAHNE_KILAVUZU
+  · klibin SON TIMELINE satırı süren bir süreçte biter → kesme hareketin içine düşer
+    (1A cut-on-action'ın 10 s sabit klipteki karşılığı; SAHNE_DOLULUGU "son satır SÜRDÜRME")
+  · durum cümlesi eylem fiili değil DURUM: "already … gripping" (1B) — §3b ① ilk 2 s ölçümüyle uyumlu
+  · ekran yönü çift çapası: anatomik uzuv + ekran yönü ("left glove, on the right of frame") (1B)
+  · prop çapası: sahnenin sabit nesneleri biçim+malzeme+konum cümlesiyle BİREBİR (1B · §3 sınıf 11)
+  · yasak bağlaçlar: "next scene" · "following shot" · "after that" · "suddenly" (1A)
+  · ses: oda tonu sahne boyunca aynı cümle; NLE'de 1-2 s ses çakıştırma; J/L-cut (1A · KURGU_RITMI §3)
+  · replik ağız okunmayan klibe L-cut ile taşınabilir (1A · OMNI replik PROB)
+  · temas SAHNE İÇİNDE bölünebilir: klip N hazırlık, klip N+1 "already gripping" — tek klipte
+    imkânsız olan "an atlanır" çözümü (4 implied interaction × §3b ③)
+FIZIKSEL_EFOR_VE_YERCEKIMI
+  · bedensel destek + gövde açısı + işaret (2A tablo a) — §5b'nin "2-3 işaret" tavanıyla
+  · direnç sıfatları: seized · jammed · bound by frost (2A tablo c) — sonuç sayısı OLMADAN
+  · eldiven: "thick pressurized gloves, fingers stiff" (2A kural 4)
+  · kapalı kaskta işaret: göğüs inip kalkması, omuz düşüşü, vizörde buğu (2A) — D79 şeffaf vizörle
+  · "falling / free fall / crash" kelimeleri düşük g'de kaçınılır; kinematik karşılaştırma (2B)
+  · çarpışma üç evrede + ikincil iz (toz, sekme) (2B) — §3b ④ iki yönlü cümle ile
+POST_TRAVMA_VE_DURUM_HAFIZASI
+  · dört basamaklı toparlanma merdiveni (3) — D207 BEDEL EĞRİSİ 0-6 ile eşlenir
+  · acı/yara kelimesi yerine biyomekanik kısıt (3 · POLITIKA red sözlüğü: gore · blood · wound · injury)
+  · kadro kilidi POZİTİF sayı cümlesiyle ("exactly one person in frame") (3)
+  · düşüş klibinden sonraki klip yerde başlar (3 · §3.1 durum kilidi)
+MIKRO_AKSIYON_VE_HALUSINASYON
+  · mikro→makro dönüşüm tablosu (4) · yürüme platosu kırıcı duruşlar (4)
+  · temas perdelemesi / ikiye bölme (4 · §3b ③)
+```
+
+## ④ KILAVUZA İNMEYENLER — ve neden
+
+```
+· model karşılaştırma tabloları (Veo > Kling > Omni …)   kaynaksız; depo hattı OMNI/Veo — OMNI kılavuzu kendi probunu yapar
+· "Omni 4 turluk düzenleme tavanı"                       kaynaksız; depo düzenleme turu kullanmıyor
+· 222 mmHg / 4,3 psi giysi basıncı                       doğru olabilir ama prompta sayı olarak girmez (model basınç görmez)
+· sensorimotor projection 0,5-0,7 s                      kesmeyi klip sınırına sabitleyen depoda kullanım yeri yok
+· negatif kadro listesi ("resurrected figure", "ghostly apparition") → D59: yasak isim kazanır; çekirdek ① zaten "exactly one"
+```
+
+## ⑤ YENİ ADAY — deponun kendi verisinden (bu tur sayesinde bakıldı)
+
+```
+ADAY-98 · TRIPOD KELİMESİ KADRAJA DÜŞÜYOR (jeton sızıntısı · PROMPT_HATA §6 sınıfı)
+  vaka  THE_SLOW_RAIN S14 (⑤ + ⑮ V14 "plansız tripod") · THE_STOLEN_SKY PART1 00:39
+        ("Camera tripod visible in foreground near cave entrance")
+  ortak iki filmin CAMERA satırı "… on a fixed locked-off tripod …" taşıyor
+        (SLOW_RAIN 96/96 · STOLEN_SKY 94/192)
+  karşı depoda "tripod" 440 kez geçiyor, tripod çoğu filmde ÇIKMADI → nedensellik ölçülmedi
+  öneri CAMERA satırında "tripod" yerine "a locked-off camera" — maliyeti sıfır,
+        kurulum imzası (lens · yükseklik · ölçek · açı) değişmez
+  kayıt DERSLER/GOZLEM_DEFTERI.md ADAY-98
+```
+
+## ⑥ AÇIK KALAN — ölçüm planı
+
+```
+· ilk ÇOK KLİPLİ SAHNE filmi: ② DEVAMLILIK INTRA-SCENE CUTS satırlarında sıfırlanma sayısı
+  (durum cümlesinin ve prop çapasının işe yarayıp yaramadığı)
+· ADAY-98: "tripod"suz CAMERA satırıyla bir filmde ⑤/⑮ plansız tripod 0 mı
+· efor: §5b kalıbı ile 2A destek+açı kalıbının A/B'si hâlâ yok (TUR 22'den devreden borç)
+· travma merdiveni: D207 kaydındaki dört filmin sonraki filminde ⑩ Desen ⑧ sayısı
 ```

@@ -120,6 +120,11 @@ kısafilmler/
 │   ├── TEK_CEKIM_VE_GIZLI_GECIS_KILAVUZU.md
 │   ├── IMAGE_VIDEO_PROMPT_TEMPLATES.md    V2 prompt iskeleti
 │   ├── VEO_3_1_FAST_DIYALOG_VE_VIDEO_URETIM_KILAVUZU.md
+│   ├── OMNI_1_1_FLASH_I2V_URETIM_KILAVUZU.md 🆕 16.09.2026 · OMNI motor katmanı
+│   │                                  (V3 üstüne): tek-plan cümlesi · ses her
+│   │                                  klipte → "No dialogue" · tırnak yok ·
+│   │                                  replik PROB · 360p ≠ 720p · seed belgesiz ·
+│   │                                  ilk/son kare VAR (zincir ⬜) (kaynak: TUR 20)
 │   ├── UZAY_SENARYO_KILAVUZU.md · SAVAS_SENARYO_KILAVUZU.md
 │   ├── ASTRONOT_DONANIM_VE_KIMLIK_KILAVUZU.md 🆕 03.09.2026 · giysi
 │   │                                  kimliği: rol şeridi · metinsiz amblem ·
@@ -176,10 +181,40 @@ kısafilmler/
 │   │                                  dolgu sırası · tek çevre saati · ölü
 │   │                                  sahne 5 soru · ⬜ hareket_profili ·
 │   │                                  ⬜ ㉛ DOLULUK (yazılmadı) (kaynak: TUR 19)
+│   ├── COK_KLIPLI_SAHNE_KILAVUZU.md 🆕 22.09.2026 · SAHİP KARARI — yatay
+│   │                                  filmin sahne birimi: SAHNE 2-6 klip ·
+│   │                                  KLİP tam 10 s · son kare zinciri YOK ·
+│   │                                  kapsama şablonu (rol n/N) · CONTINUOUS
+│   │                                  ACTION durum kilidi [D207] · sahne
+│   │                                  kilidi (LIGHT/PHYSICS/AUDIO birebir) ·
+│   │                                  kare onayı · KÜME kalktı · KAPI ㉜
+│   │                                  (tetik: PLAN `SAHNE PLANI:` satırı ·
+│   │                                  açılış: film_klasoru_ac.sh --sahne-plani)
+│   ├── FIZIKSEL_EFOR_VE_YERCEKIMI_KILAVUZU.md 🆕 22.09.2026 · TUR 24 ·
+│   │                                  PROMPT_HATA §5b/§2b'nin SÖZLÜĞÜ: destek·
+│   │                                  gövde·işaret·duraksama [D206] · saydamlık
+│   │                                  tuzağı [D175] · düşük g'de düşüş dili
+│   │                                  [D200 hipotezi] · çarpma üç evre + iz
+│   ├── POST_TRAVMA_VE_DURUM_HAFIZASI_KILAVUZU.md 🆕 22.09.2026 · TUR 24 ·
+│   │                                  toparlanma merdiveni = D207 eğrisi · hasar
+│   │                                  düz cümle (köşeli etiket YOK · §6) + referans
+│   │                                  sayfası · kadro sayı kilidi (aday)
+│   ├── MIKRO_AKSIYON_VE_HALUSINASYON_KILAVUZU.md 🆕 22.09.2026 · TUR 24 ·
+│   │                                  mikro→makro eylem · yürüme platosu · temas
+│   │                                  iki klibe bölünür · filigran = ARAÇ [D215] ·
+│   │                                  tripod jetonu ADAY-98
+│   │                                  ⭐ TUR 24'te rapor önerilerinin 10'u depo
+│   │                                  ölçümüyle çeliştiği için REDDEDİLDİ —
+│   │                                  URETIM_ONCESI_ANALIZ/04 §TUR 24 ②
 │   ├── SHORTS_SISTEM_PROMPTU.md           dikey 9:16 hazır sistem promptu
 │   │                                      ⚠️ 27.08.2026: md.5'ten "tehlike yoktur" KALKTI · "eller her zaman boş" GEVŞEDİ
 │   ├── GOOGLE_FLOW_MUSIC_URETIM_KILAVUZU.md
-│   ├── KAPAK_FOTOGRAFI_MIMARISI_KILAVUZU.md
+│   ├── FILM_KAPAGI_KILAVUZU.md 🆕 20.09.2026 · ANA kapak kılavuzu: her filme İKİ aday
+│   │                                  (A·B) tek deney sorusuyla · an PLAN'dan · prompt biçimi
+│   │                                  metinsiz + Bible cümleleri · 160×90/320×180 kontrolleri ·
+│   │                                  Studio A/B → 08 tablosu · sayılar DIS_SAYILAR §1
+│   │                                  (kaynak: URETIM_ONCESI_ANALIZ/26_ sahip araştırması)
+│   ├── KAPAK_FOTOGRAFI_MIMARISI_KILAVUZU.md   ⚠️ 20.09'dan sonra kanıt, ölçü değil
 │   ├── VIRAL_BASLIK_VE_ACIKLAMA_PROMPT.md paketleme (YT/IG/TikTok)
 │   ├── SENARYO_VE_VIRAL_KAMERA_KILAVUZU.md vuruş haritası + loop + kamera psikolojisi
 │   ├── HOOK_VE_ILK_SAHNE_KILAVUZU.md      ilk iki sahne: S0 karar / S1 tırmandırma + hook tipolojisi
@@ -205,6 +240,14 @@ kısafilmler/
 │   ├── KURGU_RITMI_VE_IHRAC_KILAVUZU.md   ASL eğrisi · örüntü kırıcı · ses köprüsü · ihraç sayıları (22.08.2026)
 │   ├── SERI_VE_KANAL_STRATEJI_KILAVUZU.md evren modeli · kapak aile kimliği · devam hakkı (22.08.2026)
 │   ├── YAYIN_VE_PERFORMANS_KILAVUZU.md    ⭐ akışın SON adımı: gerçek veri → kılavuz revizyonu (22.08.2026)
+│   ├── YOUTUBE_VIRAL_SANS_KILAVUZU.md 🆕 20.09.2026 · konu → paket → açılış →
+│   │                                  ilerleme → ölçüm çalışma düzeni (sahip metni):
+│   │                                  15 madde → depo adresi · VİRAL KART · klip
+│   │                                  kontrol sorusu · 7/14/28. gün · teşhis tablosu ·
+│   │                                  ⭐ evrensel CTR eşiği kapandı (sayı DIS_SAYILAR §1)
+│   ├── HIKAYE_FIKIR_TURU_KILAVUZU.md      🆕 21.09.2026 · yeni-film 0.7a: gerilim → üç yöntem × 8-12 logline →
+│   │                                      beş evet/hayır eleme → üç aday → sahip onayı; creative-director'dan
+│   │                                      damıtıldı (CC BY 4.0 atıf) · manifestte DEĞİL, çizelgeden önce · puan yok
 │   ├── ONERME_VE_NOVUM_KILAVUZU.md        KONSEPT kapısı: novum tipi + taşıyıcı satırı + üç kabul testi (22.08.2026)
 │   ├── FINAL_VE_PAYLASIM_KILAVUZU.md      final tipi → davranış · tohum bilgi %10-15 · görsel ikilem (22.08.2026)
 │   ├── DIKEY_MIKRO_DRAMA_KILAVUZU.md      9:16 dramaturjisi: 6×8 vuruş tablosu · kinesik reset (22.08.2026)
@@ -356,29 +399,43 @@ kısafilmler/
 │                                  `yatay_3_5_dk_filmler/` — "3-5 dk" ifadesi aynı
 │                                  formatın eski adıdır. Sahip beyanı: 24 sahne · 4 dk
 │                                  (12-sahne merdiveni: 2 dk = 12 · 4 dk = 24 · 6 dk = 36 · 8 dk = 48)
-├── yatay_6_dk_filmler/            🆕 13.09.2026 · 16:9 · 36 sahne × 10 s = 6:00 · 2 × 18
-│                                  yazım 3-5 dk ile BİREBİR AYNI · ⭐ TEK FARK: QA birimi
-│                                  BÖLÜM — on iki mercek iki yarım mastera ayrı koşulur
-│                                  (rapor_kontrol.py --bolum n/2 ZORUNLU) · kart §2.6 ·
-│                                  akış: klasörün README.md'si
+    (yatay_6_dk_filmler/ — 22.09.2026'da sahip kararıyla KALDIRILDI ve ARŞİVLENDİ.
+     36 sahne / 2 bölüm formatı sonlandırıldı; tek filmi MARS_SON_CIKIS ve format
+     README'si kilavuzlar_ve_sistem_dosyalari/ARSIV/yatay_6_dk_filmler/ altına
+     taşındı. Ham raporlar 02_HAM_RAPORLAR altında korunmaktadır. Format kartı
+     KILAVUZ_REHBERI §2.6'da ⏸️ ARŞİV notuyla duruyor.)
 ├── yatay_8_dk_filmler/            🆕 13.09.2026 · 16:9 · 48 sahne × 10 s = 8:00 · 2 × 24
 │                                  aynı kural (QA birimi BÖLÜM) · kart §2.7
-│                                  ⚠️ 8 dk'da İKİ HAT: bu MODÜL hattı; faz mimarisi
-│                                  (THE_SLOW_STONE) 10_20'de KALIR · ⬜ §2.5 alt sınırı
-│                                  sahip kararı (H2 ④)
-└── yatay_10_20_dk_filmler/        16:9 · 3 PERDE · FİLM KLASÖRÜ · bant 7-20 dk
-    ├── THE_SECOND_SHIP/              120 sahne × 10s = 20:00 (8s'den sapma)
-    └── THE_SLOW_STONE/               48 sahne × 10s = 8:00 — bandın KISA UCU
+│                                  (8 dk modül hattı — THE_SLOW_STONE ve 10-20 dk faz
+│                                  hattı 22.09.2026'da ARŞİV'e kaldırıldı)
+├── yatay_16_dk_filmler/           🆕 19.09.2026 · 16:9 · 96 sahne × 10 s = 16:00 · 8 × 12
+│                                  yazım §2.3 ile aynı · ⭐ QA birimi PART = 2 bölüm dosyası
+│                                  (4 PART × 24 klip · --bolum n/4, betik dosya eşlemesini
+│                                  kendisi yapar) + TAM-FİLM koşusu (④ ⑫ ③) · kart §2.8 ·
+│                                  akış: klasörün README.md'si · ilk film THE_STOLEN_SKY
+├── yatay_32_dk_filmler/           🆕 22.09.2026 · 16:9 · 192 sahne × 10 s = 32:00 · 16 × 12
+│                                  yazım §2.3 ile aynı · ⭐ QA birimi PART = 2 bölüm dosyası
+│                                  (8 PART × 24 klip · --bolum n/8) + TAM-FİLM koşusu · kart §2.9
+├── yatay_64_dk_filmler/           🆕 22.09.2026 · 16:9 · 384 sahne × 10 s = 64:00 · 32 × 12
+│                                  yazım §2.3 ile aynı · ⭐ QA birimi PART = 2 bölüm dosyası
+│                                  (16 PART × 24 klip · --bolum n/16) + TAM-FİLM koşusu · kart §2.10
+└── kilavuzlar_ve_sistem_dosyalari/ARSIV/yatay_10_dk_filmler/
+    (yatay_10_dk_filmler/ [eski adıyla yatay_10_20_dk_filmler] — 22.09.2026'da sahip
+     kararıyla KALDIRILDI ve ARŞİVLENDİ. Üretim sonlandırıldı; dört film
+     [THE_SCOURED_GLASS, THE_SECOND_SHIP, THE_SLOW_STONE, YERCEKIMI] ve format
+     README'si buraya taşındı. Ham raporlar 02_HAM_RAPORLAR altında korunmaktadır.
+     Format kartı KILAVUZ_REHBERI §2.5'te ⏸️ ARŞİV notuyla duruyor.)
+
     (yatay_7_9_dk_filmler/ — 04.09.2026'da sahip kararıyla KALDIRILDI.
-     Tek filmi THE_SLOW_STONE buraya taşındı; kendi kilavuzlar/ dizini
+     Tek filmi THE_SLOW_STONE buraya taşınmıştı; kendi kilavuzlar/ dizini
      kilavuzlar_ve_sistem_dosyalari/'na çıktı ve format-bağımsız oldu.
      Format kartı KILAVUZ_REHBERI §2.4'te ⏸️ KAPANDI notuyla duruyor.)
 
     (film_analizleri/ — 05.09.2026'da sahip kararıyla KALDIRILDI. Dış film
      analiz hattı kapandı; zaten film sayımına girmiyordu. İki şey kurtarıldı
      ve merkeze taşındı → kilavuzlar_ve_sistem_dosyalari/DIS_FILM_ANALIZI/ :
-     NOBODY_WAS_ALIVE ders seçkisi (kart H2 ③ — iki canlı film adresliyor) ve
-     dört analiz promptu (dış atfı yoktu; pahalı metodoloji olduğu için).
+     NOBODY_WAS_ALIVE ders seçkisi [kart H2 ③ — iki canlı film adresliyor] ve
+     dört analiz promptu [dış atfı yoktu; pahalı metodoloji olduğu için].
      Analiz edilmiş film klasörü git'te durur — `git show e9bcf36:film_analizleri/…`
      ⛔ DIKEY_4_PARCA/ ve CORAK_TOPRAKLAR analizi HİÇBİR COMMIT'TE YOKTU,
         geri alınamaz — bkz. kart H2, beşinci tur.)
@@ -488,25 +545,46 @@ SORULAR — ⭐ DÖRT soru, TEK turda (AskUserQuestion) 🆕 08.09.2026
     karttan ve okumadan çıkar. Akışın uzunluğu OKUMADAN gelir, sorgudan
     değil; ek soru kullanıcıyı açık uçlu mülakata çeker.
  ⭐ TEK TARİHLİ İSTİSNA (14.09.2026 · sahip kararı): BEŞİNCİ SORU = HİKÂYE
-    ONAYI — mülakat değil KAPI. Altıncı soru yoktur.
+    ONAYI — mülakat değil KAPI. Altıncı soru yoktur. 21.09.2026: beşinci
+    sorunun seçenekleri dörde çıktı (ONAY · ADAY B · ADAY C · RED), soru
+    sayısı değişmedi.
 ```
 
 ```
-HİKÂYE — ⭐ 0.7 · dosya okunmadan yazılır, sahip ONAYLAR (14.09.2026)
+FİKİR TURU — ⭐ 0.7a · ilk akla gelen hikâye yazılmaz, havuzdan seçilir
+ (21.09.2026 · sahip kararı · HIKAYE_FIKIR_TURU_KILAVUZU.md)
+ Gerekçe: T4'ün bağlayıcı skorları aynı üç sebebi tekrar etti (istek yok ·
+ bedel yok · bitiş yok), kanca skoru plato yaptı; onay kapısı hikâyeyi
+ onaylatıyor, ÜRETMİYOR. Kural eklenmedi, üretim yöntemi eklendi.
+ □ Kılavuz 0.7'nin "dosya açılmaz" kuralının TEK istisnası: yöntem taşır,
+   kilit taşımaz. Ders/kılavuz/QA yine açılmaz.
+ □ GERİLİM cümlesi → üç kategoriden birer yöntem, 8-12 logline (ilk üç
+   ısınma) → gerilim testi + beş evet/hayır eleme (TEK KARE · İSTEK iş mi ·
+   BEDEL · MUHATAP · DOYUM), her biri tek satır kanıtla → ÜÇ ADAY (A çift-
+   duygu taşır) → A'ya üç satır karşı argüman (güçlüyse B yükselir).
+ ⛔ Puan yazılmaz · soru eklenmez · marka/TA/tagline alanı açılmaz.
+```
+
+```
+HİKÂYE — ⭐ 0.7b · dosya okunmadan yazılır, sahip ONAYLAR (14.09.2026)
  Gerekçe: LOCKED_PULSE 17/17 kapı imzasıyla yazıldı, hikâyesi vana
  tamiriydi, sahip onu en sonda gördü — "neden izlensin" kapısı yoktu.
  Dersler hikâyeyi İYİLEŞTİRİR, üretmez; kapıya göre yazılan hikâye
  kapıya benzer.
  □ Hiçbir ders/kılavuz/QA kaydı açılmadan sohbete yazılır, DÜZ TÜRKÇE
    (D-no · "novum" · kurulum harfi · "kilit" YASAK — sahip okur):
-     LOGLINE ≤ 25 kelime · NEDEN İZLENİR (tutan TEK soru) · BEDEL
-     (ne kaybediyor, hangi sahnede) · SAHNELER S0…Sn ≤ 15 kelime, olay dili
- □ AskUserQuestion, tek soru: ① ONAY ② DEĞİŞTİR (not → yeniden yazılır,
-   yama değil) ③ RED (yeni hikâye). En çok 3 tur; üçüncü RED → konu
-   değişir (soru 1'e dönülür).
+     GERİLİM (0.7a) · LOGLINE ≤ 25 kelime · NEDEN İZLENİR (tutan TEK soru) ·
+     BEDEL (ne kaybediyor, hangi sahnede) · SAHNELER S0…Sn ≤ 15 kelime, olay
+     dili, satırlar birbirini DOĞURUR (omurga: her halka bir seçim ya da
+     başarısız deneme) · B, C üçer satır · A'YA KARŞI üç satır
+ □ AskUserQuestion, tek soru, DÖRT seçenek (21.09.2026): ① ONAY (A)
+   ② ADAY B (tam yazılır, tekrar sorulur) ③ ADAY C ④ RED (yeni havuz, başka
+   üç yöntem). DEĞİŞTİR = "Diğer"e not → yeniden yazılır, yama değil.
+   En çok 3 tur (B/C seçimi de turdur); üçüncü RED → konu değişir (soru 1).
  ⛔ ONAY olmadan klasör açılmaz, dosya okunmaz, hiçbir şey yazılmaz.
  □ Klasör açılınca onaylı metin 00_ANALIZ/00_HIKAYE_ONAYI.md'ye işlenir
-   (betik S satırlarını damgalar; ONAY: <tarih> · sahip · TUR n/3).
+   (betik S satırlarını damgalar; ADAYLAR bloğu B/C + neden elendi —
+   satırlar "B —"/"C —", S<n> ile değil; ONAY: <tarih> · sahip · TUR n/3).
    Bu dosya klasörü YENİ REJİME sokar (prompt_kontrol ㉕-㉚).
  □ Sıralama/PLAN onaylı satırlardan sapıyorsa SAPMA bölümü + yeniden onay
    [D74]; sahne sayısı değişirse --sahne-guncelle + yeniden onay.
@@ -525,6 +603,13 @@ KLASÖR — analizden ÖNCE açılır, analiz İÇİNE yazılır
    işareti, 14.09.2026). Kilit sahneler: --kilit-sahne <FMT> <FILM> S<nn> <ROL>.
    ⛔ ELLE cp/mv/rm YAPILMAZ — elle kopyalamada son iki iş kaçıyordu.
    Sahne sayısı sonradan değişirse: --sahne-guncelle (var olanı EZMEZ).
+ □ 🆕 22.09.2026 · YATAY FİLM = ÇOK KLİPLİ SAHNE (sahip kararı):
+      ... <FMT> <FILM> <KLİP_SAYISI> --sahne-plani "1 3 4 4 …"
+   Sahne 2-6 klip (1 klip yalnız hook/geçiş) · toplam = klip · sahne bölüm
+   sınırını aşamaz. Betik PLAN'a SAHNE PLANI satırını, tabloya klip başına
+   satırı (| K07 | S03 | 2/3 |), hikâye onayına sahne başına satırı, bölüm
+   dosyalarına 📍/KLİP iskeletini damgalar. Kilit roller KLİBE: K<nn>.
+   Kural: COK_KLIPLI_SAHNE_KILAVUZU.md · kapı ㉜. Dikey ve eski filmler aynen.
    --analiz-ekle eski klasöre 00_HIKAYE_ONAYI.md KOPYALAMAZ — eski film
    eski rejimde kalır (sahip kararı); yeni rejime almak sahibin elle işi.
    Yedi dosya: PLAN · BOLUM_1..n · KAPAK · MUZIK · YAYIN_PAKETI
@@ -579,6 +664,10 @@ KLASÖR — analizden ÖNCE açılır, analiz İÇİNE yazılır
  □ 2 · 02_KONSEPT_VE_RISK.md
       Sahibin talebi BİREBİR; fizikle çelişiyorsa yeniden tanımlanır ve
       sapma AÇIKÇA yazılır [D74].
+      ⭐ §0⑥ FİKİR TURU KAYDI (21.09.2026): 0.7a'nın gerilim cümlesi · engel
+        tipi · duygu adı · üç yöntem · doyum · öldürülen gözde — puan yok.
+        §5 ÖN-OTOPSİ konsept kapılarından ÖNCE: beş arıza modu × olasılık/etki
+        → GO/REVİZE/ÖLDÜR; yüksek×yüksek satır risk kartı [HIKAYE_FIKIR_TURU §8].
       Format · ortam kartı §3 · tür §4.1 · KLİP SÜRESİ ARAÇTAN ÖLÇÜLÜR [D124].
       Konsept kapısı ①TEK KARE ②KİNETİK BAĞIMSIZLIK ③BAŞLIK ŞEMASI —
       üçü ✅ değilse KONSEPT REDDEDİLİR, sıralama yazılmaz.
@@ -773,6 +862,9 @@ commit'lenmemişti; 18 commit tarandı, tek iz yok.)*
 1. BETİĞİ KOŞ — sayıları o hesaplar, sen yazma
      python3 kilavuzlar_ve_sistem_dosyalari/PROMPT_KONTROL/prompt_kontrol.py <FİLM KLASÖRÜ>
      ⛔ KLASÖR ver, tek bölüm dosyası değil (01.09.2026 · klasör modu).
+     🆕 22.09.2026: PLAN'da `SAHNE PLANI:` varsa ㉜ ÇOK KLİPLİ SAHNE koşar
+        (plan↔başlık BLOCK · CONTINUOUS ACTION BLOCK · zincir dili BLOCK ·
+        sahne kilidi FIX · bant/bölüm sınırı FIX) — COK_KLIPLI_SAHNE_KILAVUZU §8.
         Film bölüm dosyalarına ayrıldığından beri dizi kapıları dosya
         sınırında körleşiyor: 6 sahnelik dikey film ikiye bölününce dosya
         başına 3 video promptu kalır ve AÇI/KURULUM kapısı HİÇ koşmaz.
@@ -826,7 +918,8 @@ commit'lenmemişti; 18 commit tarandı, tek iz yok.)*
       (rehberin en değerli bölümü, besle) · kelimeyse ayrıca
       prompt_kontrol.py POLITIKA_T1/T2 sözlüğüne
  □ Müzik → <FILM>_MUZIK.md · GOOGLE_FLOW_MUSIC_URETIM_KILAVUZU.md §7-19
- □ Kapak → <FILM>_KAPAK.md · KAPAK_FOTOGRAFI_MIMARISI_KILAVUZU.md (metinsiz üret)
+ □ Kapak → <FILM>_KAPAK.md · FILM_KAPAGI_KILAVUZU.md — İKİ aday (A·B) + TEK DENEY SORUSU,
+      an PLAN'dan (vuruş · İPTAL KAPISI), metinsiz üret, Bible cümleleri birebir, 160×90 sınavı
  □ Fragman yazılacaksa: FRAGMAN_KILAVUZU.md (dikey 3-6 / yatay 8-12 vuruş)
  □ Paketleme → <FILM>_YAYIN_PAKETI.md · ⭐ TAMAMEN İNGİLİZCE
       kural: VIRAL_BASLIK_VE_ACIKLAMA_PROMPT.md
@@ -864,9 +957,11 @@ commit'lenmemişti; 18 commit tarandı, tek iz yok.)*
       ⑨ KADRAJ · ⑩ OYUNCULUK · ⑪ IŞIK · ⑫ HOOK KOŞUL TETİKLİDİR [D184]:
         koşullar 00_README.md tablosunun son sütununda; dördü de MOD D
         (SPEC'siz koşusu boş). ⑫ yayından ÖNCE koşulur → kart Y
-      ⑬ UYUM ÜRETİM TETİKLİDİR [11.09.2026]: üretim defteri dolu + sahne_kapisi.sh
-        koşulmuşsa koşulur. Girdisi SPEC değil PROMPT METNİDİR; promptsuz koşusu
-        "boş" değil YOKTUR. Çıktısı sonraki filmin dersidir → kart G
+      ⑬ UYUM ÜRETİM TETİKLİDİR [11.09.2026 · 16.09.2026 gevşetildi]: film üretildiyse
+        ve sahne promptları yapıştırılabiliyorsa koşulur — defter ve sahne_kapisi.sh
+        artık ÖN KOŞUL değil, VARSA atfı güçlendiren girdidir (defter yokken seed /
+        SHA / as-built iddia edilemez). Girdisi SPEC değil PROMPT METNİDİR; promptsuz
+        koşusu "boş" değil YOKTUR. Çıktısı sonraki filmin dersidir → kart G
  □ 00_INDEX.md → filmin durumunu "üretildi" olarak işaretle
  □ Yayınlanacaksa → görev kartı Y
  □ commit
@@ -894,10 +989,13 @@ YAYINDAN ÖNCE
  □ 08_YAYIN_PERFORMANS_TABLOSU.md → §1 kimlik satırı doldur
  □ Paketleme: apexaic/<platform>/PAKETLEME_SABLONU.md (kanal için doldurulmuş
    VIRAL_BASLIK) + apexaic/CAPRAZ_YAYIN.md §7 çapraz liste
- □ Plan B kapağı hazır mı (KAPAK_FOTOGRAFI §7.2)
+ □ B adayı kapağı hazır mı (FILM_KAPAGI_KILAVUZU §4 — A + B aynı başlıkla Studio testine girer)
  □ ⛔ TEK DEĞİŞKEN KİLİDİ: ilk 48 saatte kapak VEYA başlık — ikisi değil
  □ Seri/playlist kararı: SERI_VE_KANAL_STRATEJI_KILAVUZU.md §5.1
       (bir film YALNIZ TEK resmi seride yer alabilir)
+ □ 🆕 20.09.2026 · YOUTUBE_VIRAL_SANS §4 VİRAL KART son üç satırı: TEST EDİLECEK
+      TEK HİPOTEZ 08 §1'e · Related Video + bitiş ekranı (son 5–20 s) · 7/14/28. gün
+      satırları §6 · CTR kanal-içi karşılaştırma (evrensel eşik YOK · DIS_SAYILAR §1)
 
 24 / 48 / 72 SAAT
  □ §2 metrik satırı · §3 eğri teşhisi · §4 karar satırı
@@ -1882,19 +1980,37 @@ rubriğin BAŞINA yapıştırılır (filme özel paket 11.09.2026'da kaldırıld
 
 ## 🧩 F9 — ⑬ UYUM RAPORU GELDİ (üretim sadakati · sahne ↔ prompt)
 
-**Rubrik:** `QA_PROMPTLARI/_KAYNAK/13_UYUM_QA_CRITIQUE_PROMPT.md` · girdi: kurgu +
-**sahne promptları (birebir)** + `<FILM>_QA_SPEC.md` + `sahne_kapisi.sh` çıktısı +
-üretim defteri satırları — DÖRDÜ DE zorunlu.
-*(11.09.2026'da açıldı — /4 paydasına girmez. Koşul: film üretildi ve defteri dolu.)*
+**Rubrik:** `QA_PROMPTLARI/_KAYNAK/13_UYUM_QA_CRITIQUE_PROMPT.md` · **zorunlu girdi:**
+kurgu + **sahne promptları (birebir)** · **varsa okunur:** `<FILM>_QA_SPEC.md` ·
+`sahne_kapisi.sh` çıktısı + üretim defteri satırları.
+*(11.09.2026'da açıldı — /4 paydasına girmez. Koşul: film üretildi ve promptları var.)*
+*(16.09.2026 revizyonu: girdi dörtten ikiye indi — beş koşu beş boş rapor vermişti;
+rubrik dört girdi isterken sistem medya + tek dosya yapıştırıyordu.)*
+
+```
+⭐ PROMPTLAR İKİ BİÇİMDE GİDER: çıplak promptlar `<<<SCENE_PROMPTS … >>>` arasına,
+   ya da BÖLÜM DOSYASI (`<FILM>_BOLUM_n.md`) olduğu gibi. İkinci biçimde rubrik
+   yalnız 🎥 VİDEO PROMPT bloklarını prompt sayar; 📸 IMAGE PROMPT İLK KARE emridir
+   (yalnız orada duran kilit = 🅑 prompt boşluğu), Türkçe plan/diyalog/VFX satırı
+   prompt DEĞİLDİR ve alıntılanamaz.
+⭐ EKSİK OPSİYONEL GİRDİ RAPORDA YAZILIDIR: `INPUTS: prompts ✓ · SPEC ✗ · machine
+   table ✗` + `SCENE COUNT SOURCE:` satırı. Makine tablosu yoksa seed/SHA/as-built
+   İDDİA EDİLEMEZ — `AS-BUILT DEVIATIONS DECLARED: unknown`.
+```
 
 ```
 ⛔ MOD V YOKTUR: bu mercek promptu ekrana karşı okur. Prompt metni girdinin
    KENDİSİDİR; olmadan koşu "eksik" değil KOŞU DEĞİLDİR. rapor_kontrol.py ①.11
    bunu GEÇERSİZ yazar ve T13'e satır girmez.
 
-⛔ IZGARA KAPISI ÖNCE: sahne_kapisi.sh'in saydığı sahne ≠ prompt sayısı ise
-   rapor TEK bulgu yazar (DELIVERY MISMATCH) ve durur. Plana karşı okunan
-   yanlış makara, her bulgusu çöp olan bir koşudur [D188].
+⛔ IZGARA KAPISI ÖNCE: sahne ≠ prompt sayısı ise rapor TEK bulgu yazar
+   (DELIVERY MISMATCH) ve durur. Plana karşı okunan yanlış makara, her bulgusu
+   çöp olan bir koşudur [D188].
+   ⭐ 16.09.2026 İSTİSNASI: promptlar kurgunun BİR BÖLÜMÜNÜ bitişik olarak
+     kapsıyorsa bu uyuşmazlık değildir (6/8 dk hattında QA birimi bölümdür):
+     mercek kapsanan aralığı ölçer, kalan sahnelere diziye `-` yazar, aralığı
+     başlığa `SCENE RANGE: S13–S24` diye koyar. Hizalama SAYIYLA değil İÇERİKLE
+     kararlaştırılır — ilk · orta · son sahne tutmuyorsa yine DELIVERY MISMATCH.
 
 ⛔ ALINTI KAPISI: her bulgu ya promptun cümlesini alıntılar (🅐 model sapması)
    ya da promptun bunun yerine ne dediğini yazar (🅑 prompt boşluğu).
@@ -1917,7 +2033,9 @@ rubriğin BAŞINA yapıştırılır (filme özel paket 11.09.2026'da kaldırıld
    Ders KAPI satırı **"ölçen mercek: ⑬"** ibaresini taşır [D187'nin panzehiri].
 5. FİLM KAYDINI GÜNCELLE  01_FILM_RAPORLARI/<FILM>.md · 🧩 UYUM bölümü
 6. SKOR SATIRI            FILM_QA_RAPORLARI/T13_UYUM_KALITE.md
-   (birincil sayı: LOCKS HELD / LOCKS CHECKED · skor ondan türetilir)
+   (birincil sayı: LOCKS HELD / LOCKS CHECKED — model ARTIK BÖLMEZ [16.09.2026];
+   türetilmiş skoru bu adımda AJAN hesaplar: HELD ÷ CHECKED × 10, tek ondalık.
+   LOCKS CHECKED = raporun KİLİT DEFTERİ satır sayısıdır; tutmuyorsa satır yazılmaz.)
 ```
 
 ## 🧍 F10 — ⑭ HAREKET RAPORU GELDİ (hareket mantığı · risk tetikli tarama)
@@ -2233,9 +2351,28 @@ SONRA — bir klasör silinince AYNI noktalar güncellenir
 >    kaydına çevrildi: skor üretmez, tabloya girmez, kıyas tabanı olmaz.
 >    Filme özel rubriğin türden bağımsız yarısı da şablona damıtılmıştı:
 >    QA_PROMPTLARI/FILME_OZEL/00_YANLIS_POZITIF_DUVARI_SABLONU.md
->    ⛔ 11.09.2026: şablon, FILME_OZEL klasörüyle birlikte SİLİNDİ (filme özel
->    rubrik yazılmıyor). Kayıt tarihtir; dosya git geçmişinde durur.
-> ```
+> ⭐ **YEDİNCİ TUR — FORMAT ARŞİVLEME (22.09.2026):** `yatay_10_dk_filmler/`
+> (ve eski adıyla `yatay_10_20_dk_filmler/`) sahip kararıyla kapatıldı ve arşivlendi.
+> 10-20 dakikalık uzun faz mimarisi sonlandırıldı; klasör tüm içeriğiyle birlikte
+> (`THE_SCOURED_GLASS`, `THE_SECOND_SHIP`, `THE_SLOW_STONE`, `YERCEKIMI`, `README.md`)
+> `kilavuzlar_ve_sistem_dosyalari/ARSIV/yatay_10_dk_filmler/` altına taşındı.
+> Ham QA raporları (`02_HAM_RAPORLAR/{THE_SECOND_SHIP,YERCEKIMI}`) ve film kayıtları
+> ⭐ **SEKİZİNCİ TUR — FORMAT ARŞİVLEME: YATAY 6 DK (22.09.2026):** `yatay_6_dk_filmler/`
+> sahip kararıyla kapatıldı ve arşivlendi. 36 sahne / 2 bölüm modül formatı sonlandırıldı;
+> klasör tüm içeriğiyle birlikte (`MARS_SON_CIKIS`, `README.md`)
+> `kilavuzlar_ve_sistem_dosyalari/ARSIV/yatay_6_dk_filmler/` altına taşındı.
+> Ham QA raporları (`02_HAM_RAPORLAR/MARS_SON_CIKIS/` 30 rapor) ve film kaydı
+> silinmedi, yerinde korundu. Canlı film sayısı 112'den 111'e güncellendi.
+>
+> ⭐ **DOKUZUNCU TUR — YENİ FORMATLAR: YATAY 32 DK VE 64 DK (22.09.2026):**
+> Sahip kararıyla 12-sahne modül merdiveninin 6. ve 7. basamakları açıldı:
+> `yatay_32_dk_filmler/` (192 sahne · 16 bölüm · 8 PART QA + TAM FİLM · §2.9) ve
+> `yatay_64_dk_filmler/` (384 sahne · 32 bölüm · 16 PART QA + TAM FİLM · §2.10).
+> README manifestoları yazıldı, `sayac.sh`, `qa_saglik.py`, `film_klasoru_ac.sh`,
+> `KILAVUZ_REHBERI.md` ve `YAPI_GRAFI.md` güncellendi. Generic `bolum_dosyalari`
+> mekanizması part/bölüm eşlemesini tam desteklemektedir.
+
+
 
 ---
 
@@ -2311,6 +2448,17 @@ tipler:  film    yeni/güncellenen film dokümanı
    klasörü henüz açılmadı: ㉕-㉚ depoda etkisiz, scratch testinde doğrulandı.
    Bu satır dosya silinince silinir.
 
+🟡 FİKİR TURU (21.09.2026): HIKAYE_FIKIR_TURU_KILAVUZU.md yeni-film 0.7a'ya
+   girdi (creative-director'dan damıtıldı; SKILL_KULLANIM §2.3 · §6). Açık:
+   ① ilk fikir turuyla yazılan film ✅ THE_SLOW_RAIN (22.09.2026 · yatay 8 dk ·
+   12 logline → 5 eleme → 3 aday → ONAY A TUR 1/3; 02_KONSEPT §0⑥ kayıt) —
+   ölçüm üretim + QA bekliyor ② üç film ölçülünce T4 ④ Kanca·Karakter·
+   Final ve ⑫ satırları önceki plato bandıyla karşılaştırılır — aynı bantta
+   kalırsa kılavuzun §3/§4'ü değişir, kural eklenmez ③ skill-conductor global
+   kuruldu (uv var); deterministik ölçüm üç "hayır" verdi (tetik ifadesi ·
+   negatif tetik · gövde uzunluğu) — tam VALIDATE sahip koşar, bulgular ayrı iş
+   (SKILL_KULLANIM §2.4).
+
 🔴 4 dosya başlık standardı dışında (V1 düz metin — kural ② ihlali):
    THE_BREATHING_STORM · THE_DEEP_PRESSURE · THE_ETERNAL_ENGINE · THE_PULSE
    (panel varken bu dosyalar parser'dan düşüyordu; panel 21.08.2026'da
@@ -2383,6 +2531,11 @@ tipler:  film    yeni/güncellenen film dokümanı
    filmi, 05.09'da bu üçü. Kural işlemiyor demek değil; kural KOŞULMUYOR.
 
 🟡 KILAVUZ_REHBERI §8 film matrisi bayat — depodaki filmlerin çoğu listede yok.
+⬜ 22.09.2026 · ÇOK KLİPLİ SAHNE rejimi SIFIR filmle açıldı: CONTINUOUS ACTION
+   satırının pozu taşıyıp taşımadığı, 2-6 bandı ve "48 klip ≈ 14-16 sahne"
+   dağılımı ÖLÇÜLMEDİ. İlk filmin ② DEVAMLILIK raporu (SPEC B INTRA-SCENE CUTS)
+   ölçer; sapma önce COK_KLIPLI_SAHNE_KILAVUZU'nda düzeltilir (Kart G değil, önce
+   belge). Format kartlarının "N sahne" başlıkları bu rejimde N KLİP okunur.
 🟡 dikey_shorts_filmler/ içinde 16:9 YATAY filmler var (klasör adı yanıltıyor).
 ```
 

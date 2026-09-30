@@ -7,6 +7,52 @@
 > "3-5 dk" adıyla yazılmış tarihli kayıttır; "3-5 dk" = bu formatın eski adı.
 > Geçerli kart: `KILAVUZ_REHBERI.md` §2.3.
 
+> 🆕 **25.09.2026 · ÇOK KLİPLİ SAHNE bu klasöre indi** (`kilavuzlar_ve_sistem_dosyalari/COK_KLIPLI_SAHNE_KILAVUZU.md`,
+> sahip kararı 22.09.2026). İlk film: **`THE_COUNTED_RIVET/`** · ikinci film:
+> **`GUNES_MEZARI/`** (26.09.2026 · 24 klip / 7 sahne · `SAHNE PLANI: 3 6 3 2 3 4 3` ·
+> §3.9 KRİYOJENİK ORTA BASINÇ + KURU/BERRAK alt bandı · 1 replik · 2 ⭐viral ·
+> referans paketi VAR) · üçüncü film: **`THE_SIGNAL_KEEPERS/`** (28.09.2026 ·
+> 24 klip / **6 sahne** · `SAHNE PLANI: 3 4 5 3 5 4` · §3.4 KALIN ATMOSFER +
+> **SİSLİ/BİYOIŞIKLI alt bandı** · 1 replik / 2 duyum · **3 ⭐viral** ·
+> referans paketi VAR · ⭐ deponun ilk KADEMELİ ANATOMİ uzaylı filmi ve
+> **ardışık çiftlerin 23/23'ü TAM 1 ölçek kademesi, ⚡şok 0**) · dördüncü film:
+> **`THE_INWARD_FALL/`** (28.09.2026 · 24 klip / **6 sahne** · `SAHNE PLANI: 3 4 5 3 5 4` ·
+> §3.7 ROTASYONEL YAPAY YERÇEKİMİ + HARD VACUUM alt bandı · 0 replik · 2 ⭐viral ·
+> referans paketi VAR · Coriolis sapması novum'u, 15° eğim dinamik dengesi, %62.5 dönüş oranı ve 0 küme).
+> Aşağıdaki gövde "24 SAHNE" diyor; yeni rejimde bu **24 KLİP**tir:
+>
+> ```
+> SAHNE  = dramatik birim, 2-6 KLİP sürer (1 klip yalnız HOOK ya da geçiş,
+>          gerekçesi 📍 başlığının altına yazılır)
+> KLİP   = 10 s'lik dosya, numarası 1'den film sonuna kesintisiz artar
+> TETİK  = PLAN'daki `SAHNE PLANI: 1 3 4 4 3 4 5` satırı · yoksa ㉜ kapısı HİÇ koşmaz
+>          ve klasör eski kurallarla çalışır (eski 21 film etkilenmedi)
+> ```
+> · Bölüm dosyası sınırı bir sahneyi BÖLMEZ: 12 klip 1+3+4+4 ya da 3+4+5 diye bölünür.
+> · Son kare zinciri KALDIRILDI — her klibin kendi IMAGE promptu ve kendi
+>   `START FRAME:` satırı var; sahnenin 2. ve sonraki klibi `CONTINUOUS ACTION:`
+>   satırıyla önceki klibin SON durumunu taşır (IMAGE ve VIDEO'da birden).
+> · Aynı sahnenin bütün kliplerinde `LIGHT:` · `PHYSICS:` · `AUDIO:` ilk cümlesi
+>   BİREBİR aynıdır; değişen yalnız kurulum, eylem evresi ve ses vurgusudur.
+> · **KÜME ARANMAZ** (zincir yok); ardışık aynı kurulum ⑩① ile BLOCK'tur ve
+>   DÖNÜŞ ≥%40 hedefi aynen koşar. THE_COUNTED_RIVET: DÖNÜŞ %58,3 · küme 0.
+> · Aşağıdaki "SAHNE 2.5 / 5.5 — VİRAL ARA SAHNE" numaralandırması bu rejimde
+>   KULLANILMAZ: viral klip, 24'ün içinde bir KLİPTİR ve ayrı bir numara almaz.
+>   ⛔ Ve "4 adet" bir HEDEF değil bir BANTTIR — ilk ölçümde tutmadı:
+>   THE_COUNTED_RIVET 0 ⭐viral kliple yazıldı (§2.4 kapısı yüz VE hareket
+>   kanallarını birden istiyor; üç aday ölçüldü ve üçü tek kanalda kaldı).
+>   Gerekçe [D74] biçiminde o filmin `00_ANALIZ/03_SAHNE_SIRALAMASI.md` §2.4'ünde.
+>   ☑ **İKİNCİ ÖLÇÜM (26.09.2026 · GUNES_MEZARI): 2 ⭐viral** (K12 · K17). İki film,
+>   iki ölçüm: 0 ve 2. Fark yüz taşıyan kurulum sayısından geldi (4 klip · kamera
+>   ≥1,40 m · yüz 374-902 px) ve düşen iki aday tek kanalda kaldı.
+>   ☑ **ÜÇÜNCÜ ÖLÇÜM (28.09.2026 · THE_SIGNAL_KEEPERS): 3 ⭐viral** (K11 · K20 · K22).
+>   ⭐ Ve bu ölçüm BELİRLEYİCİ DEĞİŞKENİ değiştirdi: yüz taşıyan kurulumun SAYISI
+>   değil (bu filmde yalnız 3: B · E · F), o kurulumun KAÇ KLİBİNDE kadrajda ikinci
+>   bir hacim hareketi olduğu. Yol kurulum EKLEMEK değil, yüz klibine ikinci bir
+>   hacim OLAYI koymak — ve bu açı yayını hiç sıkıştırmıyor.
+>   Öneri kartta: **4 bir bant değil**, bu estetiğin bandı **0-3**
+>   (`KILAVUZ_REHBERI` §2.3).
+
 
 ## Format Kuralları
 

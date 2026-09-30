@@ -2771,3 +2771,60 @@ KESİLEN → ARSIV_CIKTI_KURALLARI.md + ARSIV_RUBRIK_DIYETI/ (tam kopyalar)
 > ADAY olarak (tek film) — ikinci filmde aynı etiket → ders.
 
 > Çalıştırma kaydı: henüz koşu yok.
+
+---
+
+## 🧩 16.09.2026 · ⑬ UYUM REVİZYONU — BEŞ KOŞU, BEŞ BOŞ RAPOR (sahip talebi: "saçma sapan çıktı veriyor")
+
+> Ölçüm, koşuların kendisi: ⑬ beş filmde koşuldu ve **beşi de STEP −1'de durdu.**
+>
+> ```
+> THE_STATIC_SHADOW   13.09.2026   INPUT MODE: MISSING          861 bayt (yarısı ajan başlığı)
+> THE_RESONANT_STRAND     —        INPUT MODE: D yazdı, PROMPTS SUPPLIED: none   464 bayt
+> LOOK_UP                 —        INPUT MODE: MISSING          139 bayt
+> MARS_SON_CIKIS ×2   15.09.2026   INPUT MODE: MISSING          154 + 136 bayt
+> KRONOS_SON_SINYAL   16.09.2026   INPUT MODE: MISSING           91 bayt
+> ```
+>
+> Beş koşu, sıfır kilit, sıfır ders siparişi, T13 boş. Rubrik her seferinde DOĞRU durdu —
+> arıza kuralda değil, kuralın istediği girdide: **rubrik DÖRT zorunlu girdi istiyor,
+> sistem ise "medya + tek .md" yapıştırıyor.** Dördüncüsü (makine tablosu) hiçbir filmde
+> hazır değildi, ikincisi (prompt metni) elle toplanamadığı için hiç yapıştırılmadı.
+> Sahibin cümlesi: *"şu qa promtunu güncelle saçma sapan bi çıktı veriyor"*.
+>
+> **DEĞİŞEN (rubrik metni; betik değişmedi):**
+> ```
+> 1 GİRDİ 4 → 2   zorunlu: kurgu + sahne promptları. SPEC ve makine tablosu VARSA okunur;
+>                 yokluğu başlıkta yazılır (INPUTS: · SCENE COUNT SOURCE: · AS-BUILT unknown).
+>                 ⛔ MOD V yasağı YERİNDE — promptsuz koşu hâlâ KOŞU DEĞİL (①.11 kapısı).
+> 2 STEP −3       promptlar BÖLÜM DOSYASI olarak yapıştırılabilir (bir ya da iki dosya):
+>                 🎥 VİDEO PROMPT = prompt · 📸 IMAGE PROMPT = İLK KARE emri ·
+>                 Türkçe plan/diyalog/VFX satırı PROMPT DEĞİL, alıntılanamaz.
+>                 ⭐ "Yalnız IMAGE'da duran kilit" = 🅑 prompt boşluğu (deponun en sık vakası:
+>                   D207 kask · D42 is lekesi · D208 askı — hepsi ilk karede vardı, klipte yok).
+> 3 IZGARA KAPISI bölüm tanır: bitişik bir aralığı kapsayan promptlar TESLİM UYUŞMAZLIĞI
+>                 değildir (6/8 dk hattında QA birimi bölümdür). Hizalama sayıyla değil
+>                 İÇERİKLE: ilk · orta · son sahne tutuyorsa aralık hizalıdır.
+> 4 ÇIKTI HACMİ   sahne başına 10 satırlık defter ve 8 sütunlu SCENE SCORES tablosu kalktı
+>                 (24 sahnede 192 hücre = uydurma). Yerine: sahne başına TEK satır
+>                 (OBSERVED LEDGER) + KİLİT DEFTERİ — sahne başına ≤6 kilit, her kilit BİR
+>                 SATIR. ⛔ LOCKS CHECKED = kilit defterinin satır sayısı; yazılmayan kilit
+>                 sayılmaz. Sahne hükmü yalnız CONFORMANCE STRING'de yaşar.
+> 5 BÖLME YOK     model DERIVED SCORE hesaplamaz (FAZ 1 ilkesi). LOCKS HELD ÷ CHECKED × 10
+>                 türetmesini T13 satırını yazan AJAN yapar.
+> 6 KATEGORİ      C3'e SON PENCERE kuralı (7-10 s'de eylem yazılıysa ve ekran duruyorsa bulgu;
+>                 yazılmamışsa 🅑 boşluk — sahne doluluğu hattına bağlanır) · C4'e "prompt
+>                 kendi yasağını çiğniyor" vakası (gövde okunur yazı/rakam ısmarlarken NEGATIVE
+>                 'no text' diyor → 🅑, iki yarısı da alıntılanır) · 🅒'ye kurguda eklenen
+>                 replik (plan satırıyla eşleşen ses motorun eklemesi değildir).
+> ```
+>
+> Sınama: yeni biçimde sentetik rapor `rapor_kontrol.py --film yatay_8_dk_filmler/KRONOS_SON_SINYAL
+> --bolum 1/4` ile koşuldu → mercek ⑬ tanındı · mod D · alıntı kapısı (①.12) ve ders siparişi
+> kapısı (①.13) sessiz · dizi okundu · ŞARTLI yalnız D186'dan (kusursuz hücre `—`).
+> Rubrik 23 KB (tavan 25). Boyut/kapı: `sayac.sh` rubrik bloğu.
+>
+> ⚠️ Gerçek koşu hâlâ yok: bir sonraki ⑬ koşusu KRONOS_SON_SINYAL PART1'dir (video + rubrik +
+> `KRONOS_SON_SINYAL_BOLUM_1.md` + `_BOLUM_2.md`, S01–S24). O koşu bu revizyonun tek testidir.
+
+> Çalıştırma kaydı: `13_UYUM · +0 · 16.09.2026 · ✏️ REVİZYON — girdi 4→2, bölüm dosyası kabul, çıktı hacmi indi`

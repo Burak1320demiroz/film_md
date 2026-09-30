@@ -55,6 +55,16 @@
 > ≤3 sahneye özel (§5.2). **③ video Bible'ı tekrar etmez** — I2V'de imaj t=0'dır,
 > tek satır `START FRAME:` devamlılığı taşır; `CONTINUITY LOCKS` paragrafı yazılmaz.
 > Sahnenin tutması gereken TEK kilit ÜÇÜNCÜ satırdadır (TUR 11 ② KONUM — ilk kez şablona indi).
+>
+> 🆕 **22.09.2026 · ÇOK KLİPLİ SAHNE (V3-S)** — `SAHNE PLANI` satırı taşıyan filmde iki
+> fark var, ikisi de IMAGE ve VIDEO için aynıdır:
+> **(a)** `Scene <n> of <N>.` → **`Clip <n> of <N>.`** (n = klip numarası, 1'den).
+> **(b)** Sahnenin 2.+ klibinde ikinci satırdan hemen sonra
+> **`CONTINUOUS ACTION: <önceki klibin SON durumu, şimdiki zamanla>`** gelir. Tek kilit
+> satırı ondan sonra gelir. START FRAME yalnız **bu klibin** imajını gösterir
+> (`… from this clip's IMAGE prompt …`); önceki klibe atıf ZİNCİR DİLİDİR (㉜ BLOCK).
+> LIGHT / PHYSICS / AUDIO ilk cümlesi sahne içinde birebir kopyalanır.
+> → `COK_KLIPLI_SAHNE_KILAVUZU.md` §3-§4 · tam örnek §7.
 
 ### 📸 IMAGE (V3)
 
@@ -102,6 +112,10 @@ NEGATIVE: <§5.1 çekirdek — 8 cümle>
 
 Output: <oran>, no text, no watermark.
 ```
+
+> 🎥 **Motor OMNI ise** (16.09.2026 · TUR 20) bu iskeletin üstüne yedi satırlık katman biner:
+> CAMERA satırı `In a single continuous shot.` ile biter · sessiz klipte AUDIO `No dialogue. No music.` ·
+> video promptunda tırnak YOK (replik PROB'a bağlı) — `OMNI_1_1_FLASH_I2V_URETIM_KILAVUZU.md` §2 · §9.
 
 > Ölçülen kalıp: §5.1 çekirdek 886 karakter / 139 kelime; bütçe POZİTİF gövdeye
 > uygulandığı için çekirdek sahne metninden yer yemez. Toplam karakter tavanı

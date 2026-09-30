@@ -1,6 +1,6 @@
 ---
 name: yeni-film
-description: Yeni film yazma akışı (AGENTS.md Kart A). "Yeni film yazalım", "yeni bir shorts / uzay filmi", "film fikrim var" dendiğinde MUTLAKA kullan. Akış DÖRT soruyla başlar (konu · format · sahne sayısı · referans paketi), sonra hikâye hiçbir dosya okunmadan sohbette yazılır ve BEŞİNCİ soruyla sahibe onaylatılır (14.09.2026); onaysız klasör açılmaz. Yaşayan dersler + çekirdek kılavuzlar + QA raporları okunmadan analiz yazılmaz, analiz bitmeden film yazılmaz.
+description: Yeni film yazma akışı (AGENTS.md Kart A). "Yeni film yazalım", "yeni bir shorts / uzay filmi", "film fikrim var" dendiğinde MUTLAKA kullan. Akış DÖRT soruyla başlar (konu · format · sahne sayısı · referans paketi), sonra hikâye hiçbir dosya okunmadan — fikir turuyla açılan havuzdan seçilerek (21.09.2026) — sohbette yazılır ve BEŞİNCİ soruyla sahibe onaylatılır (14.09.2026); onaysız klasör açılmaz. Yaşayan dersler + çekirdek kılavuzlar + QA raporları okunmadan analiz yazılmaz, analiz bitmeden film yazılmaz.
 allowed-tools: AskUserQuestion, Bash(bash:*), Bash(python3:*), Bash(git status:*), Bash(ls:*), Bash(wc:*), Read, Grep, Glob, Write, Edit
 ---
 
@@ -33,7 +33,8 @@ Bu skill sırayı dayatır, içeriği kılavuzlardan okutur. Çelişkide AGENTS.
 ```
 0  DURUM        sayaç + git status
 0.5 SORULAR     ⭐ DÖRT soru, tek turda — başka soru sorulmaz
-0.7 HİKÂYE      ⭐ hikâye sohbette yazılır, sahip ONAYLAR — dosya açılmadan (14.09)
+0.7a FİKİR      ⭐ gerilim → 3 yöntem × 8-12 logline → 5 eleme → 3 aday (21.09 · HIKAYE_FIKIR_TURU)
+0.7b HİKÂYE     ⭐ A adayı sohbette tam yazılır, sahip ONAYLAR — dosya açılmadan (14.09)
 1  KLASÖR       film klasörünü AÇ — analiz oraya yazılacak · onaylı hikâye → 00_HIKAYE_ONAYI
 2  OKU          yaşayan 40 ders · çekirdek manifest · QA    → 00_OKUMA_CIZELGESI
 3  HASAT        okunanlardan bu filme düşen kilitler ≤20    → 01_QA_DERS_HASADI
@@ -70,8 +71,8 @@ gerisi karttan, kılavuzdan ve okumadan çıkar.
 | # | soru | başlık | seçenekler |
 |:--:|---|---|---|
 | 1 | Filmin konusu ne olsun? | `Konu` | ① **AI karar versin** — sayaç `🎭 TEMA DAĞILIMI` + `KILAVUZ_REHBERI` §8 matrisi okunur, depoda **EN AZ işlenmiş** tema/ortam seçilir ② **Konuyu ben vereceğim** (kullanıcı "Diğer"e doğrudan konuyu yazabilir) |
-| 2 | Hangi format? | `Format` | ① dikey shorts 9:16 ② yatay 12 sahne · 2 dk ③ yatay 24 sahne · 4 dk ④ yatay uzun — 36 sahne · 6 dk / 48 sahne · 8 dk / 7-20 dk faz (④'te hangisi olduğu seçeneğin açıklamasında sorulur; kullanıcı "Diğer"e yazar — AskUserQuestion dört seçenekle sınırlı, 13.09.2026) |
-| 3 | Kaç sahne? | `Sahne` | ① **formatın kartındaki varsayılan** ② bandın üst ucu ③ ben belirteceğim ("Diğer"e sayı) |
+| 2 | Hangi format? | `Format` | ① dikey shorts 9:16 ② yatay 12 sahne · 2 dk ③ yatay 24 sahne · 4 dk ④ yatay uzun — 36 sahne · 6 dk / 48 sahne · 8 dk / 96 sahne · 16 dk (§2.8 · 19.09.2026) / 7-20 dk faz (④'te hangisi olduğu seçeneğin açıklamasında sorulur; kullanıcı "Diğer"e yazar — AskUserQuestion dört seçenekle sınırlı, 13.09.2026) |
+| 3 | Kaç sahne? (yatayda: kaç KLİP?) | `Sahne` | ① **formatın kartındaki varsayılan** ② bandın üst ucu ③ ben belirteceğim ("Diğer"e sayı) |
 | 4 | Referans paketi yazılsın mı? | `Ref. paketi` | ① **Yazılsın** ② **Yazılmasın** ③ **Analiz karar versin** |
 
 **Soru 1 — "AI karar versin" seçilirse:** konu havadan seçilmez. Sayaç zaten
@@ -88,11 +89,16 @@ hangi ortam/format kartının açılacağı. Konudan türetilemez.
 **Soru 3 — varsayılanlar formattan gelir** (`KILAVUZ_REHBERI` §2.1-§2.7):
 dikey shorts **6** (Hook + 5, §2.1 sabiti) · 12-sahne modül merdiveni
 (13.09.2026 sahip beyanı): 2-4 dk **12** · 3-5 dk **24** (2 × 12; 25'li eski
-kayıt kartta tarihli) · 6 dk **36** (2 × 18) · 8 dk **48** (2 × 24) · 7-20 dk
+kayıt kartta tarihli) · 6 dk **36** (2 × 18) · 8 dk **48** (2 × 24) · 16 dk **96** (8 × 12 · QA 4 PART + tam film, §2.8) · 7-20 dk
 faz hattı kartın bandından. 6/8 dk'da yazım 3-5 ile birebir aynıdır; tek fark
 QA birimi BÖLÜMDÜR (`yatay_6_dk_filmler/README.md`). ⛔ Bandın DIŞINA çıkılıyorsa
 sahibin açık izni gerekir ve plana gerekçe yazılır [D74] — THE WHITE FLOOD 30
 sahneye böyle çıktı, 40 YAZILMADI çünkü 6:39 eder ve başka bir karta geçerdi.
+
+🆕 **22.09.2026 · ÇOK KLİPLİ SAHNE (yatay, sahip kararı):** yatay formatta bu soru
+KLİP sayısını sorar (kartın "N sahne"si bu rejimde N klip · 10 s). Sahnelerin sayısı
+ve uzunluğu (her biri 2-6 klip) SORULMAZ; hikâyeden çıkar ve 0.7'de sahiple birlikte
+onaylanır (`COK_KLIPLI_SAHNE_KILAVUZU.md` §1). Dikey shorts eskisi gibi kalır.
 
 **Soru 4 — üç seçeneğin karşılığı:**
 ```
@@ -127,36 +133,70 @@ akışın uzunluğu OKUMADAN gelmeli, sorgudan değil.
 adım 0.7.** Bu bir mülakat sorusu değil, bir KAPIDIR: sahip hikâyeyi en sonda
 değil en başta görür. Altıncı soru yoktur.
 
-## 0.7 HİKÂYE — ⭐ dosya okunmadan yazılır, sahip ONAYLAR (14.09.2026)
+> 🆕 **22.09.2026 · ÖN PLAN:** film klasöründe `00_ON_PLAN/` varsa (sahibin tretmanı + taslak
+> sahne planı, ilk örnek `yatay_32_dk_filmler/THE_FALSE_EARTH/`) 0.5 ve 0.7 oradan beslenir:
+> hikâye sahibinse 0.7a atlanır ve gerekçesi hikâye onayına NOT olarak yazılır; 0.7b tretmandan
+> yazılır ve yine 5. soru ile onaylatılır. Adım 1'de betik filmi o klasörün üstüne açar.
+
+## 0.7a FİKİR TURU — ⭐ ilk akla gelen hikâye yazılmaz, havuzdan seçilir (21.09.2026 · sahip kararı)
+
+Sıra ve teknik `HIKAYE_FIKIR_TURU_KILAVUZU.md`'dedir — 0.7'nin "hiçbir dosya
+açılmaz" kuralının TEK istisnası: yöntem taşır, kilit taşımaz; ders/kılavuz/QA
+yine açılmaz. Gerekçe: T4 aynı üç sebebi tekrar etti (istek · bedel · bitiş yok),
+kanca skoru plato yaptı; onay kapısı hikâyeyi onaylatıyor, üretmiyor.
+
+```
+□ GERİLİM CÜMLESİ  "<karakter> <iş> istiyor, ama <engel>, çünkü <neden>" (§2)
+□ HAVUZ            üç kategoriden birer yöntem → 8-12 logline; ilk üç ISINMA (§3)
+□ ELEME            gerilim testi + beş evet/hayır sorusu, her biri tek satır kanıtla:
+                   TEK KARE · İSTEK iş mi · BEDEL · MUHATAP · DOYUM (§4)
+□ ÜÇ ADAY          A (önerilen) · B · C; A çift-duygu taşır (§5); A'ya üç satır
+                   karşı argüman — argüman güçlüyse B yükselir (§6)
+⛔ Puan yazılmaz · soru eklenmez · marka/TA/tagline alanı açılmaz (§10).
+```
+
+## 0.7b HİKÂYE — ⭐ dosya okunmadan yazılır, sahip ONAYLAR (14.09.2026)
 
 **Neden:** THE_LOCKED_PULSE 17/17 kapı imzasıyla yazıldı, hikâyesi vana tamiriydi
 ve sahip onu en sonda gördü — "neden izlensin" sorusunu soran kapı yoktu. Dersler
 ve kılavuzlar hikâyeyi İYİLEŞTİRİR, hikâyeyi ÜRETMEZ; kapıya göre yazılan hikâye
 kapıya benzer. Bu yüzden hikâye **hiçbir ders/kılavuz/QA kaydı açılmadan**, dört
-sorunun cevabından ve sahibin konusundan yazılır.
+sorunun cevabından, sahibin konusundan ve 0.7a'nın A adayından yazılır.
 
 **Ne yazılır (sohbete, düz Türkçe — D-numarası · "novum" · kurulum harfi ·
 "kilit" YASAK; sahip okur, ajan değil):**
 
 ```
+GERİLİM        tek cümle (0.7a)
 LOGLINE        ≤ 25 kelime, tek cümle
 NEDEN İZLENİR  izleyiciyi sona kadar tutan TEK soru ("… olacak mı?")
 BEDEL          karakter neyi kaybediyor, hangi sahnede (sahne numarasıyla;
                "anlamak / fark etmek" bedel değildir)
 SAHNELER       sahne sayısı kadar satır: S0 … Sn, satır başına ≤ 15 kelime,
-               olay dili — kim · ne yapıyor · ne değişiyor
+               olay dili — kim · ne yapıyor · ne değişiyor; satırlar birbirini
+               DOĞURUR (hikâye omurgası, HIKAYE_FIKIR_TURU §7: her halka bir
+               seçim ya da başarısız deneme)
+               🆕 22.09.2026 YATAY: satır SAHNE başınadır ve uzunluğunu taşır —
+               `S3 (4 klip · 0:40–1:20): …` · sahne 2-6 klip (1 klip yalnız hook/
+               geçiş) · toplam = soru 3'ün klip sayısı · bölüm sınırında sahne
+               bölünmez (12 kliplik bölüm = 3+4+5 …) · sahip süreleri de onaylar
+B · C          üçer satır: logline · neden izlenir · bedel
+A'YA KARŞI     üç satır — ve neden yine de A
 ```
 
-**Beşinci soru — `AskUserQuestion`, tek soru, üç seçenek:**
+**Beşinci soru — `AskUserQuestion`, tek soru, dört seçenek (21.09.2026):**
 
 ```
-① ONAY        → adım 1'e geçilir; onaylı metin klasör açılınca
-                00_ANALIZ/00_HIKAYE_ONAYI.md'ye işlenir, ONAY satırı tarihlenir
-② DEĞİŞTİR    → sahip "Diğer"e notunu yazar; hikâye o nota göre YENİDEN yazılır
+① ONAY (A)    → adım 1'e geçilir; onaylı metin klasör açılınca
+                00_ANALIZ/00_HIKAYE_ONAYI.md'ye işlenir, ONAY satırı tarihlenir;
+                B ve C "neden elendi" ile ADAYLAR bloğuna
+② ADAY B      → B, 0.7b biçimiyle tam yazılır, aynı soru tekrar sorulur
+③ ADAY C      → C için aynısı
+④ RED         → üçü de olmaz: yeni havuz (aynı konu, başka üç yöntem); tekrar sorulur
+   DEĞİŞTİR   → seçenek değil, "Diğer"e not: hikâye o nota göre YENİDEN yazılır
                 (yama değil), aynı biçimde tekrar sorulur — NOT satırına tur kaydı
-③ RED         → yeni hikâye (aynı konu, başka olay); tekrar sorulur
-⛔ En çok 3 tur. Üçüncü turda da RED → konu değişir: soru 1'e dönülür
-   ("AI karar versin" seçildiyse depoda ikinci en az işlenmiş tema).
+⛔ En çok 3 tur (B/C seçimi de turdur). Üçüncü turda da RED → konu değişir:
+   soru 1'e dönülür ("AI karar versin" seçildiyse depoda ikinci en az işlenmiş tema).
 ⛔ ONAY olmadan klasör AÇILMAZ, hiçbir dosya okunmaz, hiçbir şey yazılmaz.
 ```
 
@@ -171,13 +211,26 @@ sayısı · SAHNELER'de jargon yok; aksi BLOCK/FIX.
 Dört sorunun cevabı doğrudan betiğin argümanlarıdır. Sahne sayısı sıralama
 sırasında değişirse `--sahne-guncelle` ile tamamlanır. ⭐ Klasör açılınca ilk iş:
 adım 0.7'nin onaylı metni `00_ANALIZ/00_HIKAYE_ONAYI.md`'ye işlenir (LOGLINE ·
-NEDEN İZLENİR · BEDEL · betiğin damgaladığı `S0 — ⬜` satırları · `ONAY: <tarih> ·
-sahip · TUR n/3`). Bu dosya klasörü YENİ REJİME sokar (`prompt_kontrol` ㉕-㉚).
+NEDEN İZLENİR · BEDEL · betiğin damgaladığı `S0 — ⬜` satırları · **ADAYLAR** bloğu
+(B, C: logline + neden elendi; satırlar `B —`/`C —`, `S<n>` ile DEĞİL — 21.09.2026) ·
+`ONAY: <tarih> · sahip · TUR n/3`). Bu dosya klasörü YENİ REJİME sokar (`prompt_kontrol` ㉕-㉚).
 
 ```bash
 bash kilavuzlar_ve_sistem_dosyalari/film_klasoru_ac.sh \
      <FORMAT_KLASORU> <FILM_ADI> <SAHNE_SAYISI> [BOLUM_SAYISI]
+# 🆕 22.09.2026 · yatay film (ÇOK KLİPLİ SAHNE) — onaylı sahne uzunluklarıyla:
+bash kilavuzlar_ve_sistem_dosyalari/film_klasoru_ac.sh \
+     <FORMAT_KLASORU> <FILM_ADI> <KLİP_SAYISI> [BOLUM_SAYISI] --sahne-plani "1 3 4 4 …"
 ```
+
+🆕 `--sahne-plani` ile betik ayrıca: PLAN'a `SAHNE PLANI:` satırını (㉜ tetiği) ·
+tabloya KLİP başına satırı (`| K07 | S03 | 2/3 · ⬜ |`) · hikâye onayına SAHNE
+başına satırı (`S3 (4 klip · 0:40–1:20) — ⬜`) · bölüm dosyalarına `# 📍 SAHNE` /
+`## 🎬 KLİP` iskeletini damgalar; toplam ≠ klip, 6'dan uzun sahne ya da bölüm
+sınırını aşan sahne ⛔ ile reddedilir. Kilit roller KLİBE bağlanır: `--kilit-sahne
+<FMT> <FILM> K<nn> <ROL>`. Promptlar `COK_KLIPLI_SAHNE_KILAVUZU` §2-§4 ile yazılır:
+her klibin rolü (kapsama şablonu) · 2.+ klipte `CONTINUOUS ACTION:` · sahne kilidi
+birebir · zincir dili YOK.
 
 Betik: şablonu kopyalar · dosyaları `<FILM>_<ROL>.md` yapar · ≤8 sahnede
 sahne çalışma dosyalarını (`S00…Snn`) damgalar, >8 sahnede `00_SAHNE_TABLOSU.md`
@@ -246,6 +299,10 @@ ETİKETSİZ girer — `[LESSON n]` gövdeye yazılmaz [D45].
 
 - Sahibin talebi **birebir** yazılır. Fizikle çelişiyorsa yeniden tanımlanır ve
   sapma AÇIKÇA kaydedilir [D74] — emsal: OPEN CIRCUIT'in "fırtınalı/patlamalı"ı.
+- ⭐ §0⑥ **FİKİR TURU KAYDI** (21.09.2026): 0.7a'nın gerilim cümlesi · engel tipi ·
+  duygu adı · üç yöntem · doyum · öldürülen gözde buraya iner — puan yok. §5'te
+  **ÖN-OTOPSİ** (beş arıza modu × olasılık/etki → GO/REVİZE/ÖLDÜR) konsept
+  kapılarından ÖNCE koşar; yüksek×yüksek satır risk kartı olur [`HIKAYE_FIKIR_TURU` §8].
 - Format · ortam kartı (§3) · tür (§4.1) · **klip süresi ARAÇTAN ÖLÇÜLÜR** [D124].
 - Konsept kapısı ①TEK KARE ②KİNETİK BAĞIMSIZLIK ③BAŞLIK ŞEMASI — üçü ✅ değilse
   konsept REDDEDİLİR, sıralama yazılmaz. ⛔ TEK KARE cümlesi taşıyıcı nesnenin

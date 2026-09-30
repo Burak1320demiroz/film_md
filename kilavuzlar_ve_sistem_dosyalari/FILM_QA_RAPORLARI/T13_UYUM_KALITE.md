@@ -13,10 +13,14 @@
 > KATEGORİLER  C1 sayılabilir nesne · C2 kurulum · C3 zaman çizelgesi ·
 >              C4 negatif ihlali · C5 devamlılık taşıyıcısı · C6 okunurluk ·
 >              C7 istenmeyen ekleme (replik dahil) · C8 ses ve metin
-> TETİKLEYİCİ  film ÜRETİLDİ + üretim defteri dolu + sahne_kapisi.sh koşuldu
+> TETİKLEYİCİ  film ÜRETİLDİ + sahne promptları yapıştırılabiliyor [16.09.2026]
+>              (üretim defteri + sahne_kapisi.sh: VARSA okunur, ön koşul DEĞİL)
 > MAKİNE ÇIKTISI  CONFORMANCE STRING — sahne başına bir hane (K·T·P·Y·-);
 >              rapor_kontrol.py uzunluğu sahne sayısıyla karşılaştırır
-> BİRİNCİL SAYI  LOCKS HELD / LOCKS CHECKED — skor bundan TÜRETİLİR
+> BİRİNCİL SAYI  LOCKS HELD / LOCKS CHECKED — model BÖLMEZ [16.09.2026]: türetilmiş
+>              skoru bu satırı yazan ajan hesaplar (HELD ÷ CHECKED × 10).
+>              LOCKS CHECKED = raporun KİLİT DEFTERİ satır sayısı; eşit değilse
+>              sayım uydurulmuştur ve satır YAZILMAZ.
 > ```
 
 ---
@@ -34,13 +38,34 @@ Skoru T1-T4 ile TOPLANMAZ ve KARŞILAŞTIRILMAZ — ayrı eksen, ayrı tablo.
 ## ⛔ SATIR YAZMADAN ÖNCE
 
 ```
-1. sahne_kapisi.sh koşuldu mu · TESLİM UYUŞMAZLIĞI (sahne ≠ prompt) çıkmadı mı
-2. üretim defterinin TESLİM SATIRI dolu mu (master SHA-256 · süre · sahne sayısı)
+1. sahne_kapisi.sh koşulduysa TESLİM UYUŞMAZLIĞI (sahne ≠ prompt) çıkmadı mı
+   (koşulmadıysa raporun `SCENE COUNT SOURCE: counted from cuts` satırı şarttır)
+2. üretim defterinin TESLİM SATIRI dolu mu — dolu değilse satır yazılır ama
+   Not sütununa `makine tablosuz` yazılır ve as-built/seed sütunu iddia taşımaz
 3. rapor_kontrol.py GEÇERSİZ / TEKRAR dönmedi mi
    python3 ../RAPOR_KONTROL/rapor_kontrol.py <rapor> --film <FILM>
 4. CONFORMANCE STRING uzunluğu sahne sayısına eşit mi
 5. Her bulgu alıntı taşıyor mu (🅐 promptun cümlesi · 🅑 "instead" satırı)
 Biri bile hayırsa satır YAZILMAZ; ham rapor 02_HAM_RAPORLAR/'da durur.
+```
+
+---
+
+## 🔁 RETROSPEKTİF — bu mercek hiç koşmadan arşiv okundu [18.09.2026]
+
+```
+Bu tablo BOŞ ve öyle kalıyor: ⑬ UYUM hiçbir filmde koşulmadı.
+Ama ⑬'ün sorduğu soru (🅐 model sapması mı 🅑 prompt boşluğu mu) 31 filmin
+357 ham raporuna GERİYE DÖNÜK soruldu:
+
+    10_PROMPT_QA_ANALIZI/     688 tekil bulgu · 🅐 293 · 🅑 343 · 🅒 29 · 🅓 23
+
+⛔ O klasörün satırları BU TABLOYA GİRMEZ — ⑬ bir KOŞUDUR ve koşmadı.
+   Oradaki hüküm videoya değil, rapor metnine + prompt metnine dayanır;
+   CONFORMANCE STRING yok, LOCKS HELD/CHECKED yok, kare kanıtı yok.
+   İki ayrı eksen, iki ayrı dosya.
+⭐ Ama oradaki 🅑 sınıfları ⑬'ün ASIL çıktısı olan DERS SİPARİŞİ ile aynı şeydir
+   ve sonraki filmin yazım standardına oradan geçer.
 ```
 
 ---

@@ -141,6 +141,11 @@ Instagram Reels  →  SENDS PER REACH (erişim başına DM gönderimi).
 | **İlk 30 sn tutunma** | < %50 | ≥ %70 | S0-S1 mimarisini revize et (`HOOK` §8, 7 madde) | Katalizör 0:15 kapısından geç geldi |
 | **Ortalama izlenme süresi** | — | mutlak dakika artışı | Uzun formda ham AVD, APV'den daha ağır basar; kısa kesmek her zaman doğru değil | Süre bandı formata göre yanlış seçilmiş |
 
+> ⚠️ **20.09.2026:** CTR sütunundaki `< %3 / %5-8` bandı ve KAPAK §7.1 skalası
+> evrensel ÖLÇÜ değildir — kanal-içi karşılaştırma (aynı tür · uzunluk · yayın yaşı),
+> gerekçe ve teşhis tablosu `YOUTUBE_VIRAL_SANS_KILAVUZU.md` §0 ② · §3 · §7; 72 saat
+> sonrası takvim (7 · 14 · 28. gün) aynı kılavuz §6. Görüntülenme sayımı 24.08.2026'da
+> değişti (DIS_SAYILAR §1) — dönemler arası ham görüntülenme karşılaştırılmaz.
 > ⚠️ Kapak CTR skalası ayrı kaynakta duruyor ve burada TEKRARLANMAZ:
 > `KAPAK_FOTOGRAFI_MIMARISI_KILAVUZU.md` §7.1 (%1-2 alarm · %3-4 ortalama ·
 > %5-6 güçlü · %7+ olağanüstü) + §7.2 48 saatlik Plan B kuralı.

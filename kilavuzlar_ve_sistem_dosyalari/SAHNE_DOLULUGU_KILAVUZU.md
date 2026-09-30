@@ -69,6 +69,12 @@
 
 ---
 
+> 🆕 **22.09.2026 · ÇOK KLİPLİ SAHNE:** bu kılavuzun birimi KLİPTİR ve o rejimde
+> de aynen geçerlidir (üç evre · ≤3 TIMELINE satırı · son satır SÜRDÜRME). Rejimin
+> eklediği tek şey: sahne fiili 2-6 klip boyunca SÜRÜP GİDEN bir süreçtir, her klip
+> onun bir evresini taşır ve klibin SON'u sonraki klibin `CONTINUOUS ACTION:`
+> satırıdır → `COK_KLIPLI_SAHNE_KILAVUZU.md` §5.
+
 # 1. 🔤 FİİL SINIFI — kilit fiili ekranda kaç saniye taşır
 
 Bir birimin üçüncü satırı sahnenin TEK KİLİDİDİR (V3). O kilidin fiili
@@ -134,6 +140,9 @@ EVRE ①  GİRİŞ — EYLEM ZATEN BAŞLAMIŞ                          (kısa)
         ✗ imaj: "he stands at the valve bay, one hand on the wheel"
         ✓ imaj: "both gloves closed on the rim, torso leaning into the wheel,
            rear boot braced against the deck ridge"
+        ⚠️ 16.09.2026 TUR 20 (T20.1 3↔4): ORTASI AMA DENGEDE — iki destek
+           noktası yerde (iki bot · diz + bot · el + bot); adım ortası,
+           sıçrama, düşüş anı değil (kayan ayak / askıda kalma riski).
 
 EVRE ②  DİRENÇLİ İLERLEME                                     (en uzun)
         Kilit fiili çalışır ve BİR direnç görür: takılma · ağırlık · kayma

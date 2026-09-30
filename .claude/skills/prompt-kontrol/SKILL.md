@@ -60,6 +60,15 @@ düzeltilir, rubrik yeniden koşulur. Kural tarafı:
   bulgular dosya düzeyinde tek satırda toplanır ("n prompt: satırlar…"); satırlar
   bölüm dosyasındaki satır numarasıdır. `rejim: eski` çıkıyorsa bu maddeler koşmaz
   ve koşturulmaz — eski klasör eski bantla (sahip kararı).
+- 🆕 **Çok klipli sahne** (PLAN'da `SAHNE PLANI:` satırı var · 22.09.2026 sahip kararı):
+  ㉜ koşar. ㉜① plan toplamı ↔ KLİP başlıkları ↔ `(n klip)` beyanı BLOCK → önce PLAN'daki
+  satır ile `# 📍 SAHNE` başlıkları eşitlenir, prompt değil · ㉜④ `CONTINUOUS ACTION:` yok
+  BLOCK → önceki klibin tablodaki SON durumu IMAGE ve VIDEO'ya şimdiki zamanla yazılır
+  [D207] · ㉜⑤ zincir dili BLOCK → "continues the previous clip / exact last frame"
+  silinir, START FRAME bu klibin imajını gösterir · ㉜⑥ sahne kilidi FIX → LIGHT/PHYSICS/
+  AUDIO-ilk-cümle sahnenin 1. klibinden kopyalanır. Bu rejimde "KÜME 0" bulgusu çıkmaz
+  (küme yok); ardışık aynı kurulum yine BLOCK'tur. Kılavuz: `COK_KLIPLI_SAHNE_KILAVUZU.md`.
+  Üretimde kare onayı: 2.+ klibin karesi önceki klibin son karesiyle yan yana (§3.3).
 
 ## Mazeret çürütme — bu satırlar senin için yazıldı
 

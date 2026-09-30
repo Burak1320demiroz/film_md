@@ -39,7 +39,9 @@
 #                                                                [D107·D162]
 #     ①.11 BÖLÜM        --bolum n/m (13.09.2026 · 6/8 dk hattı): QA birimi
 #                       BÖLÜM olan filmde yarım masterın rapor(lar)ı. ①.9
-#                       teslim kapısı YALNIZ <FILM>_BOLUM_n.md'yi sayar; uç
+#                       teslim kapısı YALNIZ o parçanın bölüm dosya(lar)ını
+#                       sayar (19.09.2026 · §2.8: k dosya / m parça eşlemesi,
+#                       16 dk = 8 dosya / 4 PART → bolum_dosyalari()); uç
 #                       kategoriler (baş bölümde final, son bölümde hook,
 #                       hepsinde bütün-film dörtlüsü) `—` olur — D185'in
 #                       yarım-film uzantısı. Kural: KILAVUZ_REHBERI §2.6/§2.7
@@ -889,8 +891,9 @@ def rapor_denetle(yol, spec_metin=None, hook=10.0, klip=10.0, faz=None, bolum=No
     if duzeltme:
         B.append(Bulgu("ŞARTLI", f"{len(duzeltme)} hücre düzeltildi", " · ".join(duzeltme)))
 
-    # ④ KURGU — ④ HİKAYE haritası kesme sayısıyla çelişiyor mu
-    if R["mercek"] == "④ HİKAYE" and R["kesme"] and R["sahne"] and R["sahne"] < R["kesme"] - 1:
+    # ④ KURGU — ④ HİKAYE haritası kesme sayısıyla çelişiyor mu (ÇOK KLİPLİ SAHNE filminde sahne ≠ klip [COK_KLIPLI_SAHNE §0])
+    cok_klipli = bool(spec_metin and re.search(r"SAHNE PLANI:", spec_metin))
+    if not cok_klipli and R["mercek"] == "④ HİKAYE" and R["kesme"] and R["sahne"] and R["sahne"] < R["kesme"] - 1:
         dusen = []
         for r in rows:
             if r["tip"] == "sayi" and any(k in r["ad"].lower() for k in FILM_BOYU_HIKAYE):
@@ -1078,9 +1081,70 @@ def rapor_denetle(yol, spec_metin=None, hook=10.0, klip=10.0, faz=None, bolum=No
 
 
 # ─── ÇAPRAZ (⑤) ────────────────────────────────────────────────────
-SAHNE_BASLIK = re.compile(r"^#{1,4}\s.*\bSAHNE\s+(\d{1,3})\b", re.M)
+# 22.09.2026 · çok klipli sahne rejimi: birim başlığı `## 🎬 KLİP n` (makara klip
+# sayar, plan da klip sayar). Üst birim `# 📍 SAHNE n — … (k klip)` SAYILMAZ.
+SAHNE_BASLIK = re.compile(r"^#{1,4}\s(?![^\n]*📍).*\b(?:SAHNE|KL[İI]P)\s+(\d{1,3})\b", re.M)
 # QA / ders / rapor dosyaları sahne SAYMAZ — onlar sahneden BAHSEDER
 PLAN_DISI = re.compile(r"QA_|DERSLER|RAPOR|_QA|README|INDEX", re.I)
+
+
+def bolum_dosyalari(film_dir, bolum):
+    """[19.09.2026 · §2.8] QA parçası ↔ bölüm dosyası eşlemesi.
+
+    6/8 dk hattında parça sayısı = bölüm dosyası sayısı (2 = 2), parça n =
+    BOLUM_n. 16 dk hattında dosya 8, QA parçası 4: PART n = BOLUM_(2n−1) +
+    BOLUM_(2n). Genel kural: k dosya / m parça tam bölünüyorsa parça n,
+    dosyalar (n−1)·k/m+1 … n·k/m'dir. Bölünmüyorsa (MARS_SON_CIKIS 3 × 12 ↔
+    2 yarım vakası) eski davranış + uyarı: yalnız BOLUM_n sayılır ve ①.9
+    yanlış ateşleyebilir — yapı uyuşmazlığı PLAN'a yazılır."""
+    n, m = bolum
+    tumu = sorted(Path(str(film_dir)).glob("*_BOLUM_*.md"),
+                  key=lambda f: int(re.search(r"_BOLUM_(\d+)\.md$", f.name).group(1))
+                  if re.search(r"_BOLUM_(\d+)\.md$", f.name) else 0)
+    tumu = [f for f in tumu if re.search(r"_BOLUM_(\d+)\.md$", f.name)]
+    k = len(tumu)
+    if k and k % m == 0:
+        per = k // m
+        secim = tumu[(n - 1) * per: n * per]
+        if per > 1:
+            print(f"BÖLÜM DOSYASI: {k} dosya / {m} parça → PART {n} = "
+                  + " + ".join(f.name for f in secim) + "  [§2.8 · 19.09.2026]")
+        return secim
+    if k:
+        print(f"⚠️  YAPI UYUŞMAZLIĞI: {k} bölüm dosyası, {m} QA parçası — tam bölünmüyor; "
+              f"①.9 yalnız *_BOLUM_{n}.md'yi sayar ve YANLIŞ ATEŞLEYEBİLİR (MARS_SON_CIKIS 3×12↔2 vakası)")
+    return sorted(Path(str(film_dir)).glob(f"*_BOLUM_{n}.md"))
+
+
+class SahnePlaniSayisi(int):
+    """ÇOK KLİPLİ SAHNE filminde sahne sayısı (dramatik) ve klip sayısı (fiziksel).
+    Merceklerin bir kısmı dramatik sahne (S01-S06 = 6), bir kısmı klip (K01-K24 = 24)
+    sayabilir; her iki sayım da meşrudur ve teslimi doğrular [D188 · COK_KLIPLI_SAHNE §0]."""
+    def __new__(cls, sahne_sayisi, klip_sayisi, plan_str=""):
+        obj = super().__new__(cls, sahne_sayisi)
+        obj.sahne_sayisi = sahne_sayisi
+        obj.klip_sayisi = klip_sayisi
+        obj.plan_str = plan_str
+        return obj
+
+    def __eq__(self, other):
+        return other == self.sahne_sayisi or other == self.klip_sayisi
+
+    def __repr__(self):
+        return f"{self.sahne_sayisi} sahne ({self.klip_sayisi} klip · SAHNE PLANI: {self.plan_str})"
+
+    def __str__(self):
+        return f"{self.sahne_sayisi} sahne ({self.klip_sayisi} klip)"
+
+    def __sub__(self, other):
+        if isinstance(other, int):
+            if abs(other - self.sahne_sayisi) <= abs(other - self.klip_sayisi):
+                return self.sahne_sayisi - other
+            return self.klip_sayisi - other
+        return super().__sub__(other)
+
+    def __rsub__(self, other):
+        return -(self.__sub__(other))
 
 
 def plan_sahne_sayisi(film_dir, bolum=None):
@@ -1090,17 +1154,44 @@ def plan_sahne_sayisi(film_dir, bolum=None):
     oybirliğiyle onaylanabilir. Planın sahne sayısı, parti dışındaki TEK
     referanstır.
 
+    22.09.2026 · ÇOK KLİPLİ SAHNE [COK_KLIPLI_SAHNE_KILAVUZU §0]:
+    PLAN veya QA_SPEC'te `SAHNE PLANI: 3 4 5 3 5 4` varsa sahne sayısı (dramatik)
+    ve klip sayısı (üretim) ayrıdır. SahnePlaniSayisi ikisini birden taşır;
+    mercekler sahne ya da klip saydığında teslim kapısı doğru doğrular.
+
     bolum=(n, m) [13.09.2026 · §2.6]: QA birimi BÖLÜM olan filmde makara yarım
-    masterdır; plan tarafı da YALNIZ `<FILM>_BOLUM_n.md` olur. Bütün dosyalar
-    sayılsaydı kapı her yarımda YANLIŞ ateşlerdi (plan 36, makara 18)."""
+    masterdır; plan tarafı da YALNIZ o parçanın bölüm dosya(lar)ı olur. Bütün
+    dosyalar sayılsaydı kapı her yarımda YANLIŞ ateşlerdi (plan 36, makara 18).
+    19.09.2026 · §2.8: parça ≠ dosya olabilir (16 dk: 8 dosya / 4 parça) →
+    bolum_dosyalari() eşler."""
     if not film_dir or not Path(str(film_dir)).is_dir():
         return None, None
-    # ⛔ MAX DEĞİL BİRLEŞİM: bir film birden çok bölüm dosyasına yayılabilir
-    # (BOLUM_1 13 sahne + BOLUM_2 7 sahne = 20). Sahne NUMARALARI birleştirilir;
-    # numaralar dosyalar arası benzersiz olduğu için tekrar kendiliğinden erir.
+
+    # Önce SAHNE PLANI satırını ara (ÇOK KLİPLİ SAHNE)
+    for f in sorted(Path(str(film_dir)).glob("*.md")):
+        if PLAN_DISI.search(f.name) and not f.name.endswith(("_QA_SPEC.md", "_PLAN.md")):
+            continue
+        try:
+            txt = f.read_text(encoding="utf-8", errors="replace")
+            m = re.search(r"SAHNE PLANI:\s*([\d\s]+)", txt)
+            if m:
+                sayilar = [int(x) for x in re.findall(r"\d+", m.group(1))]
+                if sayilar:
+                    if bolum:
+                        n, m_bol = bolum
+                        k = len(sayilar)
+                        if k and k % m_bol == 0:
+                            per = k // m_bol
+                            secim = sayilar[(n - 1) * per: n * per]
+                            return SahnePlaniSayisi(len(secim), sum(secim), " ".join(map(str, secim))), f.name
+                    return SahnePlaniSayisi(len(sayilar), sum(sayilar), " ".join(map(str, sayilar))), f.name
+        except OSError:
+            continue
+
+    # Standart sahne başlığı sayımı
     tum, kaynaklar = set(), []
     if bolum:
-        dosyalar = sorted(Path(str(film_dir)).glob(f"*_BOLUM_{bolum[0]}.md"))
+        dosyalar = bolum_dosyalari(film_dir, bolum)
     else:
         dosyalar = sorted(Path(str(film_dir)).glob("*.md"))
     for f in dosyalar:
@@ -1451,8 +1542,9 @@ def main():
         print("           [--t-tablo]  ← GEÇEN satırı T tablosuna BETİK yazar [④ · 04.09.2026]")
         print("           [--olcum-kesme <n>] [--olcum-sahne <n>] [--olcum-sure <s>]  ← ⑪ ölçümü hakem yapar")
         print("           [--olcum-filigran VAR|YOK] [--olcum-lufs <n>]  ← D177 · verilmezse eksen ÖLÇÜLMEDİ")
-        print("           [--bolum n/m]  ← 6/8 dk hattı: QA birimi BÖLÜM — ①.9 yalnız BOLUM_n'i sayar,")
-        print("                            ①.11 uç kategorileri `—` yapar (KILAVUZ_REHBERI §2.6/§2.7)")
+        print("           [--bolum n/m]  ← 6/8/16 dk hattı: QA birimi BÖLÜM/PART — ①.9 yalnız o parçanın")
+        print("                            bölüm dosya(lar)ını sayar (k dosya / m parça · 16 dk: 8/4), ①.11 uç")
+        print("                            kategorileri `—` yapar (KILAVUZ_REHBERI §2.6/§2.7/§2.8)")
         return 1
     hook, klip, film_dir, rapor, dosyalar = 10.0, 10.0, None, False, []
     t_yaz = False
@@ -1520,8 +1612,8 @@ def main():
         print("⛔ --bolum ile FAZ girdisi aynı anda olamaz: bölüm bir UÇ segmenttir, faz bir ORTA segment."); return 2
     if bolum:
         uc = "BAŞ" if bolum[0] == 1 and bolum[1] > 1 else ("SON" if bolum[0] == bolum[1] else "ORTA")
-        print(f"BÖLÜM: {bolum[0]}/{bolum[1]} ({uc})  → ①.9 yalnız *_BOLUM_{bolum[0]}.md sayılır · "
-              f"①.11 uç kategoriler SAYI TAŞIMAZ [KILAVUZ_REHBERI §2.6]")
+        print(f"BÖLÜM: {bolum[0]}/{bolum[1]} ({uc})  → ①.9 yalnız bu parçanın bölüm dosya(lar)ını sayar · "
+              f"①.11 uç kategoriler SAYI TAŞIMAZ [KILAVUZ_REHBERI §2.6 · §2.8]")
 
     sonuclar = []
     for y in dosyalar:
@@ -1534,7 +1626,7 @@ def main():
     if plan_sahne:
         print(f"PLAN: {plan_sahne} sahne ({plan_kaynak}) → ①.9 teslim kapısı koşacak [D188]")
     elif bolum and film_dir:
-        print(f"⚠️  PLAN: *_BOLUM_{bolum[0]}.md'de `## 🎬 SAHNE n` başlığı yok → ①.9 teslim kapısı KOŞMAYACAK")
+        print(f"⚠️  PLAN: *_BOLUM_{bolum[0]}.md'de `## 🎬 SAHNE n` / `## 🎬 KLİP n` başlığı yok → ①.9 teslim kapısı KOŞMAYACAK")
     # ✂️ KESİK koşular ⑤ çaprazına girmez: yarım raporun sahne/kesme sayısı partiyi düşüremez
     tam = [r for r in sonuclar if r["karar"] != "KESİK"]
     cb = capraz(tam, olcum, plan_sahne, plan_kaynak) if len(tam) >= 2 else []

@@ -111,6 +111,10 @@ KURULUM İSKELETİ: ⬜ sahne sahne harf dizisi (örn. A A B C B C D E E C D A)
                      dönüş → "— the same position, height and lens as Scene N."
                      küme  → "continues the previous clip from its exact last
                               frame — the same position, height and lens as Scene N."
+                 🆕 22.09.2026 · ÇOK KLİPLİ SAHNE filminde KÜME YOK; iskelet KLİP
+                   başına harf, dönüş işareti "— the same position, height and lens
+                   as Clip N." · betik aşağıya SAHNE PLANI satırını damgalar
+                   (film_klasoru_ac.sh --sahne-plani · COK_KLIPLI_SAHNE_KILAVUZU)
 BÖLÜM KESİĞİ:    S⬜ ile S⬜ arasında — ⛔ bölüm sınırı da ardışık bir ÇİFTTİR
 ```
 

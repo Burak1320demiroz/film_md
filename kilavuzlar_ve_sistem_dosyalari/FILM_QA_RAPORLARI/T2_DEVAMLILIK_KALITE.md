@@ -73,6 +73,13 @@ gördü" o zaman bir doğrulama değil, tek raporun dört kopyasıdır.
 | **The Silent Perihelion** Ⓥ ⛔ ⚠️ | 7 | 10 | 4 | 5 | ⬜ | 10 | — | 10 | 10 | ⬜ | ⬜ | 10 | 10 | **8,8** |
 | **The Shattered Breath** Ⓥ ⛔ ⚠️ | 8 | 5 | 8 | 7 | ⬜ | 9 | — | 7 | 9 | ⬜ | ⬜ | — | — | **7,7** |
 | **The Locked Pulse** Ⓥ ⛔ | 3 | 6 | 10 | 3 | ⬜ | 8 | 10 | 5 | 8 | ⬜ | ⬜ | 2 | 6 | **5,4** |
+| **The Slow Rain** B1 Ⓥ ⛔ ⚠️ | 9 | 6 | — | 4 | 7 | 8 | — | 5 | 9 | 6 | 6 | 10 | 7 | **7,0** |
+| **The Slow Rain** B2 Ⓥ ⛔ ⚠️ | 9 | 9 | 9 | 9 | 9 | 10 | — | 9 | 10 | — | 10 | 10 | 10 | **9,5** |
+| **The Counted Rivet** Ⓥ ⛔ ⚠️ | 7 | 4 | 8 | 4 | 5 | 7 | — | 5 | 4 | 5 | 6 | 9 | 6 | **5,8** |
+| **Gunes Mezari** Ⓥ ⛔ ⚠️ | 4 | 5 | 7 | 5 | 6 | 8 | — | 6 | 7 | 6 | 6 | 10 | 6 | **6,3** |
+| **The Inward Fall** Ⓥ ⛔ ⚠️ | 9 | 7 | — | 6 | 7 | 8 | 9 | 8 | 9 | 8 | 9 | 10 | 7 | **8,1** |
+| **The Signal Keepers** Ⓥ ⚠️ | 10 | 10 | 10 | 10 | 10 | 10 | — | 10 | 10 | 10 | 10 | 10 | 10 | **10,0** |
+| **The Static Veil** Ⓥ ⚠️ | — | 7 | — | 8 | 8 | 10 | — | 8 | 9 | 7 | 10 | 10 | 10 | **8,7** |
 
 > **The Hard Dock · 12.09.2026 · Ⓥ mod V (tasarım gereği) · ⚠️ ŞARTLI**
 > Kayıt: [`01_FILM_RAPORLARI/THE_HARD_DOCK.md`](01_FILM_RAPORLARI/THE_HARD_DOCK.md)

@@ -91,6 +91,16 @@
 #     ㉙ HİKÂYE ONAYI      00_HIKAYE_ONAYI: ONAY tarihli mi · S-satırı = sahne sayısı ·
 #                          jargon (D-no · novum · kurulum harfi · kilit) yok → aksi BLOCK
 #     ㉚ SAHNE TABLOSU     >8 sahnede 00_SAHNE_TABLOSU satırı = sahne · 5 rol dosyası → FIX
+#  ─── 22.09.2026 · ÇOK KLİPLİ SAHNE (sahip kararı · COK_KLIPLI_SAHNE_KILAVUZU) ─────
+#     Yalnız PLAN'da `SAHNE PLANI:` satırı taşıyan filmde koşar; eski filmler aynen.
+#     ㉜ ÇOK KLİPLİ SAHNE  ① plan toplamı ↔ KLİP başlığı ↔ `(n klip)` beyanı → BLOCK ·
+#                          ② bant 2-6 (1 klip yalnız gerekçeyle) → FIX · ③ sahne bölüm
+#                          sınırını aşıyor → FIX · ④ 2.+ klipte `CONTINUOUS ACTION:` yok →
+#                          BLOCK · ⑤ zincir dili ("exact last frame" …) → BLOCK ·
+#                          ⑥ LIGHT/PHYSICS/AUDIO-ilk-cümle sahne içinde birebir değil → FIX ·
+#                          ⑦ sahnenin bütün klipleri tek kurulumda → FIX
+#     Bu rejimde ⑩④ "KÜME ≥2" düşer (zincir yok); ㉙ satır = SAHNE, ㉚ satır = KLİP.
+#     Birim başlığı `## 🎬 KLİP n`; `# 📍 SAHNE n — … (k klip · …)` tek '#' ile yazılır.
 #     Klasör modunda per-prompt ① ㉖ ㉗ bulguları DOSYA düzeyi tek satıra toplanır.
 #  ─── 01.09.2026 · POLİTİKA KAPISI (Ders 123 — "betik göremez" denilen yer) ──
 #     ⑯ POLİTİKA SÖZLÜĞÜ     T1/T2 tetikleyici sayımı (NEGATIVE bloğu DÂHİL) ·
@@ -194,8 +204,28 @@ FACE_TARIFI = re.compile(
     r"(?:dark|deep-set|narrow|wide|blue|brown|grey|green|pale)\s+eyes)\b", re.IGNORECASE)
 HIKAYE_ONAY = re.compile(r"^[ \t]*ONAY\s*[:：]\s*(.+)$", re.IGNORECASE | re.MULTILINE)
 HIKAYE_SATIR = re.compile(r"^[ \t]*S(\d{1,3})\b", re.MULTILINE)
+HIKAYE_KLIP = re.compile(r"^[ \t]*S\d{1,3}\b[^\n]*?\((\d+)\s*klip", re.IGNORECASE | re.MULTILINE)
 HIKAYE_JARGON = re.compile(r"\bD\d{1,3}\b|\bnovum\b|kurulum\s+[A-Z]\b|\bkilit", re.IGNORECASE)
 TARIH = re.compile(r"\b\d{2}\.\d{2}\.\d{4}\b")
+
+# ─── 22.09.2026 · ÇOK KLİPLİ SAHNE REJİMİ (sahip kararı · COK_KLIPLI_SAHNE_KILAVUZU) ───
+# SAHNE = dramatik birim (2-6 klip) · KLİP = 10 s'lik dosya · son kare zinciri YOK.
+# Tetik PLAN'daki `SAHNE PLANI:` satırıdır (KURULUM İSKELETİ emsali) — satırı
+# taşımayan klasörde ㉜ koşmaz, eski filmler olduğu gibi kalır.
+SAHNE_KLIP_BANDI = (2, 6)        # sahne başına klip; 1 klip yalnız TEK KLİP GEREKÇESİ ile
+SAHNE_PLANI_SATIRI = re.compile(r"^[ \t]*SAHNE\s+PLANI\s*[:：]\s*([\d\s|·,]+?)\s*$", re.MULTILINE)
+# Tek '#' ile açılır: `^##\s` isteyen eski sayımlara görünmez.
+SAHNE_BLOK_BASLIK = re.compile(r"^#[ \t]+📍\s*SAHNE\s+(\d+)\b[^\n]*?\((\d+)\s*klip", re.IGNORECASE)
+KLIP_BASLIK = re.compile(r"^##\s+.*?\bKL[İI]P\s+(\d+)", re.IGNORECASE)
+DURUM_KILIDI = re.compile(r"^[ \t]*CONTINUOUS ACTION\s*:\s*\S", re.MULTILINE)
+TEK_KLIP_GEREKCESI = re.compile(r"TEK\s+KL[İI]P\s+GEREK[ÇC]ES[İI]\s*:\s*[^\s⬜]", re.IGNORECASE)   # ⬜ = yazılmamış
+# Zincir dili: DEVAM_KLIBI muafiyetini tetikleyen her kalıp + önceki klibe bağlanan START FRAME.
+ZINCIR_DILI = re.compile(
+    r"continues?\s+the\s+previous\s+clip|exact\s+last\s+frame|last\s+frame\s+of\s+the\s+previous|"
+    r"picks?\s+up\s+where\s+the\s+previous|(?:second|third|fourth|latter)\s+(?:half|part)\s+of\s+a\s+single|"
+    r"START\s+FRAME\s*:[^\n]*\b(?:previous|preceding|prior)\s+(?:clip|scene|shot)",
+    re.IGNORECASE)
+SAHNE_KILIDI_SATIRLARI = (("image", "LIGHT"), ("video", "PHYSICS"), ("video", "AUDIO"))
 
 
 def film_klasoru(yol):
@@ -1165,9 +1195,9 @@ def iskelet_bul(yol, metin):
 # ⭐ DÖNÜŞ İŞARETİ (ACI_YAYI §7 ⑥): dönen sahne geometriyi birebir
 #    kopyalar ve bu satırı taşır. Küme klibi AYRICA devam cümlesini
 #    (DEVAM_KLIBI) taşır — ikisi farklı iş yapar, §3 🕰️.
-DONUS_ISARETI = re.compile(
-    r"same\s+position,?\s+height\s+and\s+lens\s+as\s+scene|"
-    r"same\s+(?:position|setup|camera|framing)\b[^.;]{0,60}\bas\s+scene\s+\d+",
+DONUS_ISARETI = re.compile(          # 22.09.2026: "as Clip N" (çok klipli sahne rejimi) da dönüştür
+    r"same\s+position,?\s+height\s+and\s+lens\s+as\s+(?:scene|clip)|"
+    r"same\s+(?:position|setup|camera|framing)\b[^.;]{0,60}\bas\s+(?:scene|clip)\s+\d+",
     re.IGNORECASE)
 
 
@@ -1204,8 +1234,12 @@ A1_ICERIK = re.compile(
 # Yedek sürümler: "### 🎥 VIDEO PROMPT — B SÜRÜMÜ" → sayıma girmez
 BASLIK = re.compile(r"^#{2,4}\s*.*?\b(IMAGE|GÖRSEL|VIDEO|VİDEO)\s+PROMPT(.*)$",
                     re.IGNORECASE)
-SAHNE_BASLIK = re.compile(r"^##\s+.*\bSAHNE\s+\d+", re.IGNORECASE | re.MULTILINE)
-SCENE_N_OF_X = re.compile(r"Scene\s+(\d+)\s+of\s+(\d+)", re.IGNORECASE)
+# 22.09.2026: çok klipli sahne rejiminde birim başlığı `## 🎬 KLİP n`dir (SAHNE
+# üst birim olur, tek '#' ile yazılır ve burada sayılmaz). Eski `## … SAHNE n`
+# aynen tanınır. Sayı yakalayan tek desen budur — satır içi kopyası yazılmaz.
+BIRIM_BASLIK = re.compile(r"^##\s+.*?\b(?:SAHNE|KL[İI]P)\s+(\d+)", re.IGNORECASE | re.MULTILINE)
+SAHNE_BASLIK = BIRIM_BASLIK
+SCENE_N_OF_X = re.compile(r"(?:Scene|Clip)\s+(\d+)\s+of\s+(\d+)", re.IGNORECASE)
 TURKCE = re.compile(r"[ğĞşŞıİçÇöÖüÜ]")
 
 
@@ -1717,7 +1751,7 @@ def prompt_denetle(p, yeni=False):
 #      çalışmasına yazılan taslak prompt kendi yasak listesini ihlal eder.
 # D117'nin kalıbı: "plandaki örnek bir prompt sahne dizisine karışır."
 # Desen eklenirken ölçüldü: mevcut hiçbir dosyayı FAZLADAN atlamıyor (0).
-ATLA = re.compile(r"/kilavuzlar/|SABLON|ŞABLON|TEMPLATE|00_ANALIZ", re.IGNORECASE)
+ATLA = re.compile(r"/kilavuzlar/|SABLON|ŞABLON|TEMPLATE|00_ANALIZ|00_ON_PLAN", re.IGNORECASE)  # 22.09.2026: ön plan klasörü (film_klasoru_ac.sh)
 
 
 def sahneli_dosyalar(klasor):
@@ -1742,10 +1776,15 @@ def bolunmus_film(yol):
 def dosya_denetle(yol):
     if ATLA.search(str(yol)):
         return None
-    return metin_denetle(yol, yol.read_text(encoding="utf-8", errors="replace"))
+    sonuc = metin_denetle(yol, yol.read_text(encoding="utf-8", errors="replace"))
+    # ㉜ tek dosyalık filmde burada koşar; bölünmüş filmde klasör modu koşar.
+    if sonuc and yol.is_file() and not bolunmus_film(yol) and not FILM_DISI.search(yol.name) \
+            and SAHNE_BASLIK.search(yol.read_text(encoding="utf-8", errors="replace")):
+        sonuc["dosya_bulgulari"] += cok_klipli_sahne_kapisi(yol.parent, [yol])
+    return sonuc
 
 
-def metin_denetle(yol, metin, promptlar=None):
+def metin_denetle(yol, metin, promptlar=None, birlesik=False):
     """Bir METİN gövdesini denetler. `yol` yalnız ad ve komşu araması içindir.
 
     01.09.2026'da `dosya_denetle`den ayrıldı. Sebep: film artık klasöre
@@ -1847,11 +1886,18 @@ def metin_denetle(yol, metin, promptlar=None):
     # (right third) bu boşluğu KAPATMAZ — kılavuz §2 İLKE 4.
     # ⛔ Dosya seviyesi bilerek: yönelim tek bir SPATIAL LOCK BIBLE
     #    bloğunda kurulup sahnelerde kısaltılabilir, bu meşru.
-    arac_gecisi = list(ARAC_IZI.finditer(poz_tum))
+    # ⚠️ 24.09.2026 · TIRNAK İÇİ ARAÇ TETİKLEMEZ. Kapının amacı KADRAJA GİREN
+    #    aracın yönelimini kilitlemek; replikte ADI GEÇEN araç çizilmez.
+    #    THE_FALSE_EARTH K072: gemi kadrajda yok (yalnız penceredeki ışığı var,
+    #    onun yönelimi yazılı), ama Mira telsizde "Take the ship up." diyor ve
+    #    kapı bunu kadrajdaki araç sanıyordu. Araç gövdede de geçiyorsa kapı
+    #    yine koşar — yalnız tırnak, tek başına tetik olmaktan çıkar.
+    poz_tirnaksiz = re.sub(r'"[^"]*"', ' ', poz_tum)
+    arac_gecisi = list(ARAC_IZI.finditer(poz_tirnaksiz))
     if arac_gecisi:
         kilitli = any(
-            YONELIM_IZI.search(poz_tum[max(0, m.start() - YONELIM_PENCERE):
-                                       m.end() + YONELIM_PENCERE])
+            YONELIM_IZI.search(poz_tirnaksiz[max(0, m.start() - YONELIM_PENCERE):
+                                             m.end() + YONELIM_PENCERE])
             for m in arac_gecisi)
         if not kilitli:
             sonuc["dosya_bulgulari"].append(Bulgu(
@@ -1939,6 +1985,19 @@ def metin_denetle(yol, metin, promptlar=None):
         # dönüşe iten SIFIR kapı vardı — üst bant "NOT"tu, 87 uzun dosyanın
         # 63'ü onu aşıyordu ve hiçbiri durmuyordu. Bu blok o boşluğu kapatır.
         iskelet, i_kaynak = iskelet_bul(yol, metin)
+        # ⚠️ 23.09.2026 · BÖLÜNMÜŞ FİLM — ⑩④ TANIMI GEREĞİ DOSYA İÇİ BİR KAPIDIR.
+        #    Birleşik koşuda gövde bütün bölüm dosyalarının toplamıdır; içinde
+        #    her dosyanın KENDİ iskelet satırı vardır ama iskelet_bul yalnız
+        #    BİRİNCİSİNİ (ya da PLAN'ın film-geneli satırını) döndürür. Sonuç
+        #    sahte FIX'ti: "96 harf ↔ 12 video promptu", "12 harf ↔ 24 video
+        #    promptu". Harfler dosyalar arası PAYLAŞILMAZ — bölüm 1'in A'sı ile
+        #    bölüm 2'nin A'sı farklı kurulumlardır — dolayısıyla film ölçeğinde
+        #    küme/dönüş sayımı zaten geçersizdir [THE_FALSE_EARTH 03 §4].
+        #    Her bölüm dosyasının kendi koşusunda ⑩④ tam olarak ölçülür.
+        #    ⛔ Yalnız İSKELETİ BÖLÜM DOSYASINDA duran filmler için: iskelet
+        #    PLAN'da film-geneliyse harfler PAYLAŞILIR ve kapı meşru koşar.
+        if birlesik:
+            iskelet = None
         if iskelet and len(iskelet) != n:
             sonuc["dosya_bulgulari"].append(Bulgu(
                 "FIX", f"KURULUM İSKELETİ {len(iskelet)} harf ↔ dosyada {n} "
@@ -1969,7 +2028,9 @@ def metin_denetle(yol, metin, promptlar=None):
                 # ⛔ 6-11 sahne ve dikey shorts MUAF (§4b): kısa formatta iki
                 #    küme filmin üçte ikisini iki kuruluma bağlar, §4 alt bandı
                 #    ile çakışır.
-                if len(kumeler) < 2:
+                # 22.09.2026: çok klipli sahne rejiminde KÜME yoktur (zincir
+                #    kaldırıldı) — bekleme sahne içi kapsamayla kurulur, ㉜.
+                if len(kumeler) < 2 and not sahne_plani_bul(yol, metin):
                     sonuc["dosya_bulgulari"].append(Bulgu(
                         "FIX", f"KÜME {len(kumeler)} — {n} sahnede en az 2 olmalı "
                                f"(ACI_YAYI §4b)",
@@ -2237,8 +2298,7 @@ def metin_denetle(yol, metin, promptlar=None):
 #    saymak ölçüm değil gürültü üretir.
 def ilk_sahne(metin):
     """Dosyadaki en küçük sahne numarası — birleştirme sırası budur."""
-    nolar = [int(n) for n in re.findall(r"^##\s+.*\bSAHNE\s+(\d+)", metin,
-                                        re.IGNORECASE | re.MULTILINE)]
+    nolar = [int(n) for n in BIRIM_BASLIK.findall(metin)]
     return min(nolar) if nolar else -1
 
 
@@ -2391,8 +2451,9 @@ def cizelge_kapisi(klasor):
     return out
 
 
-def hikaye_onayi_kapisi(klasor, sahne_sayisi):
-    """㉙ 00_HIKAYE_ONAYI: ONAY tarihli · S-satırı = sahne sayısı · jargon yok."""
+def hikaye_onayi_kapisi(klasor, sahne_sayisi, plan=None):
+    """㉙ 00_HIKAYE_ONAYI: ONAY tarihli · S-satırı = sahne sayısı · jargon yok.
+    22.09.2026: SAHNE PLANI varsa satır = SAHNE (üst birim), `(n klip)` toplamı = klip sayısı."""
     f = klasor.joinpath(*REJIM_MARKER)
     metin = f.read_text(encoding="utf-8", errors="replace")
     out = []
@@ -2402,7 +2463,15 @@ def hikaye_onayi_kapisi(klasor, sahne_sayisi):
                          "Sahip onayı olmadan analiz/prompt yazılmaz (yeni-film adım 0.7)"))
     satirlar = HIKAYE_SATIR.findall(metin)
     n_satir = len(set(satirlar))
-    if sahne_sayisi and n_satir != sahne_sayisi:
+    if plan:
+        if n_satir != len(plan):
+            out.append(Bulgu("BLOCK", f"㉙ HİKÂYE ONAYI — {n_satir} sahne satırı, SAHNE PLANI {len(plan)} sahne",
+                             "Çok klipli sahne rejimi: onay satırı SAHNE başınadır — `S3 (4 klip · 0:40–1:20): …`"))
+        klip_top = sum(int(k) for k in HIKAYE_KLIP.findall(metin))
+        if sahne_sayisi and klip_top != sahne_sayisi:
+            out.append(Bulgu("BLOCK", f"㉙ HİKÂYE ONAYI — satırlardaki `(n klip)` toplamı {klip_top}, bölüm dosyalarında {sahne_sayisi} klip",
+                             "Sahip klip sayısını da onaylar; sapma varsa SAPMA: satırı + yeniden onay"))
+    elif sahne_sayisi and n_satir != sahne_sayisi:
         out.append(Bulgu("BLOCK", f"㉙ HİKÂYE ONAYI — {n_satir} sahne satırı, bölüm dosyalarında {sahne_sayisi} sahne",
                          "Onaylı hikâye sahne sayısı kadar satır taşır; sapma varsa SAPMA: satırı + yeniden onay"))
     govde = bolum_al(metin, r"^## .{0,4}\s*SAHNELER") or metin
@@ -2413,8 +2482,9 @@ def hikaye_onayi_kapisi(klasor, sahne_sayisi):
     return out
 
 
-def sahne_tablosu_kapisi(klasor, sahne_sayisi):
-    """㉚ >8 sahnede 00_SAHNE_TABLOSU satırı = sahne sayısı · 5 kilit sahne dosyası."""
+def sahne_tablosu_kapisi(klasor, sahne_sayisi, plan=None):
+    """㉚ >8 sahnede 00_SAHNE_TABLOSU satırı = sahne sayısı · 5 kilit sahne dosyası.
+    22.09.2026: SAHNE PLANI varsa satır = KLİP (`| K07 | S03 | 2/3 · EYLEM |`), SAHNE sütunu plana uyar."""
     if not sahne_sayisi or sahne_sayisi <= KILIT_SAHNE_ESIGI:
         return []
     d = klasor / "00_ANALIZ" / "05_SAHNE_CALISMALARI"
@@ -2424,25 +2494,232 @@ def sahne_tablosu_kapisi(klasor, sahne_sayisi):
         out.append(Bulgu("FIX", "㉚ SAHNE TABLOSU — 05_SAHNE_CALISMALARI/00_SAHNE_TABLOSU.md yok",
                          "film_klasoru_ac.sh >8 sahnede tabloyu üretir (14.09.2026)"))
     else:
-        n = len(re.findall(r"^\|\s*S\d{1,3}\b", t.read_text(encoding="utf-8", errors="replace"), re.MULTILINE))
-        if n != sahne_sayisi:
-            out.append(Bulgu("FIX", f"㉚ SAHNE TABLOSU — {n} satır, {sahne_sayisi} sahne", "her sahne bir satır"))
+        tmetin = t.read_text(encoding="utf-8", errors="replace")
+        if plan:
+            satirlar = re.findall(r"^\|\s*K(\d{1,3})\s*\|\s*S(\d{1,3})\b", tmetin, re.MULTILINE)
+            if len(satirlar) != sahne_sayisi:
+                out.append(Bulgu("FIX", f"㉚ SAHNE TABLOSU — {len(satirlar)} klip satırı, {sahne_sayisi} klip",
+                                 "çok klipli sahne rejimi: her KLİP bir satır, ikinci sütun sahnesi"))
+            beklenen = [i + 1 for i, k in enumerate(plan) for _ in range(k)]
+            gercek = [int(sn) for _, sn in satirlar]
+            if len(gercek) == len(beklenen) and gercek != beklenen:
+                ilk = next(i for i, (a, b) in enumerate(zip(gercek, beklenen)) if a != b)
+                out.append(Bulgu("FIX", f"㉚ SAHNE TABLOSU — SAHNE sütunu plana uymuyor (ilk fark K{ilk + 1:02d}: "
+                                        f"S{gercek[ilk]:02d} ↔ plan S{beklenen[ilk]:02d})"))
+        else:
+            n = len(re.findall(r"^\|\s*S\d{1,3}\b", tmetin, re.MULTILINE))
+            if n != sahne_sayisi:
+                out.append(Bulgu("FIX", f"㉚ SAHNE TABLOSU — {n} satır, {sahne_sayisi} sahne", "her sahne bir satır"))
     roller = set()
-    for f in d.glob("S*_*.md") if d.is_dir() else []:
-        m = re.match(r"S\d{1,3}_([A-Z]+)\.md$", f.name)
+    for f in sorted(d.glob("[SK]*_*.md")) if d.is_dir() else []:
+        m = re.match(r"[SK]\d{1,3}_([A-Z]+)\.md$", f.name)
         if m and m.group(1) in KILIT_SAHNE_ROLLERI:
             roller.add(m.group(1))
     eksik = [r for r in KILIT_SAHNE_ROLLERI if r not in roller]
     if eksik:
         out.append(Bulgu("FIX", f"㉚ KİLİT SAHNE — rol dosyası eksik: {' · '.join(eksik)}",
-                         "film_klasoru_ac.sh --kilit-sahne <FMT> <FILM> S<nn> <ROL> (HOOK · NOVUM · DORUK · BEDEL · FINAL)"))
+                         "film_klasoru_ac.sh --kilit-sahne <FMT> <FILM> S<nn>|K<nn> <ROL> (HOOK · NOVUM · DORUK · BEDEL · FINAL)"))
     return out
 
 
 def yeni_rejim_kapilari(klasor, metin):
-    sahne_sayisi = len(set(re.findall(r"^##\s+.*\bSAHNE\s+(\d+)", metin, re.IGNORECASE | re.MULTILINE)))
+    sahne_sayisi = len(set(BIRIM_BASLIK.findall(metin)))
+    plan = sahne_plani_bul(klasor, metin)
     return (kilit_tavani_kapisi(klasor) + cizelge_kapisi(klasor)
-            + hikaye_onayi_kapisi(klasor, sahne_sayisi) + sahne_tablosu_kapisi(klasor, sahne_sayisi))
+            + hikaye_onayi_kapisi(klasor, sahne_sayisi, plan)
+            + sahne_tablosu_kapisi(klasor, sahne_sayisi, plan))
+
+
+# ─── ㉜ ÇOK KLİPLİ SAHNE [COK_KLIPLI_SAHNE_KILAVUZU · sahip kararı 22.09.2026] ───
+# Bir SAHNE aynı mekânda, aynı eylemin içinde 2-6 klip sürer; klipler BAĞIMSIZ
+# üretilir (her biri kendi imajından), son kare zinciri YOK. Klipleri birbirine
+# bağlayan şey metindir: sahnenin 2.+ klibi `CONTINUOUS ACTION:` durum kilidini,
+# sahnenin bütün klipleri AYNI LIGHT / PHYSICS / AUDIO-ilk-cümle satırını taşır.
+# Zincir olmadığı için ACI_YAYI §3 kalkanı sahne İÇİNDE de geçerlidir: ardışık
+# iki klip aynı kurulumu kullanamaz (⑩① BLOCK — DEVAM_KLIBI muafiyeti bu rejimde
+# ZINCIR_DILI olarak yasak).
+def sahne_plani_bul(yol, metin=""):
+    """`SAHNE PLANI: 1 3 4 …` → [1, 3, 4, …]; önce metinde, sonra film klasöründe."""
+    adaylar = [metin] if metin else []
+    kl = film_klasoru(yol)
+    for f in sorted(kl.glob("*.md")):
+        try:
+            adaylar.append(f.read_text(encoding="utf-8", errors="replace"))
+        except OSError:
+            continue
+    for t in adaylar:
+        m = SAHNE_PLANI_SATIRI.search(t)
+        if m:
+            sayilar = [int(x) for x in re.findall(r"\d+", m.group(1))]
+            if sayilar:
+                return sayilar
+    return None
+
+
+def sahne_yapisi(dosyalar):
+    """Bölüm dosyalarını sırayla okur → (sahneler, sahnesiz_klipler).
+
+    sahne = {no, beyan, dosya, gerekce, klipler: [{no, dosya, image, video}]}
+    Bir dosya 📍 başlığı olmadan KLİP ile açılırsa o klipler önceki dosyanın son
+    sahnesine eklenir ve sahne `tasan` işaretlenir (bölüm sınırını aşan sahne)."""
+    sahneler, sahnesiz = [], []
+    for f in dosyalar:
+        satirlar = f.read_text(encoding="utf-8", errors="replace").split("\n")
+        kisa = f.stem
+        dosyada_sahne_var = False
+        klip, govde = None, []
+
+        def klip_kapat():
+            if klip is None:
+                return
+            ps = promptlari_cikar("\n".join(govde))
+            klip["image"] = next((p["govde"] for p in ps if p["tip"] == "image" and not p["yedek"]), None)
+            klip["video"] = next((p["govde"] for p in ps if p["tip"] == "video" and not p["yedek"]), None)
+
+        for s in satirlar:
+            mb = SAHNE_BLOK_BASLIK.match(s)
+            mk = KLIP_BASLIK.match(s)
+            if mb or mk:
+                klip_kapat()
+                klip, govde = None, []
+            if mb:
+                dosyada_sahne_var = True
+                sahneler.append({"no": int(mb.group(1)), "beyan": int(mb.group(2)), "dosya": kisa,
+                                 "gerekce": False, "tasan": False, "klipler": []})
+                continue
+            if mk:
+                klip = {"no": int(mk.group(1)), "dosya": kisa, "image": None, "video": None}
+                if not sahneler:
+                    sahnesiz.append(klip)
+                else:
+                    if not dosyada_sahne_var:
+                        sahneler[-1]["tasan"] = True
+                    sahneler[-1]["klipler"].append(klip)
+                continue
+            if klip is not None:
+                govde.append(s)
+            elif sahneler and dosyada_sahne_var and TEK_KLIP_GEREKCESI.search(s):
+                sahneler[-1]["gerekce"] = True
+        klip_kapat()
+    return sahneler, sahnesiz
+
+
+def kilit_satiri(govde, anahtar):
+    """`LIGHT:` / `PHYSICS:` satırı; AUDIO için yalnız İLK cümle (ses köprüsü)."""
+    if not govde:
+        return None
+    m = re.search(rf"^[ \t]*{anahtar}\s*:\s*(.+)$", govde, re.MULTILINE)
+    if not m:
+        return None
+    deger = m.group(1).strip()
+    if anahtar == "AUDIO":
+        deger = re.split(r"(?<=[.;])\s", deger, maxsplit=1)[0]
+    return deger
+
+
+def cok_klipli_sahne_kapisi(klasor, dosyalar, metin=""):
+    """㉜ SAHNE PLANI beyan edilmiş filmde sahne ↔ klip yapısı, durum kilidi, zincir yasağı,
+    sahne kilidi birebirliği ve sahne içi kurulum çeşitliliği."""
+    plan = sahne_plani_bul(klasor, metin)
+    if not plan:
+        return []
+    sahneler, sahnesiz = sahne_yapisi(dosyalar)
+    out = []
+    klipler = [k for s in sahneler for k in s["klipler"]]
+    n_klip = len(klipler) + len(sahnesiz)
+    gercek = [len(s["klipler"]) for s in sahneler]
+
+    # ① YAPI — plan ↔ başlık ↔ beyan (BLOCK)
+    if sahnesiz:
+        out.append(Bulgu("BLOCK", f"㉜ SAHNE — {len(sahnesiz)} klip hiçbir `# 📍 SAHNE` başlığının altında değil "
+                                  f"(KLİP {', '.join(str(k['no']) for k in sahnesiz[:5])})",
+                         "Her klip bir sahneye aittir: `# 📍 SAHNE nn — AD  (k klip · 0:00–0:30)` başlığı kliplerin üstüne yazılır."))
+    if sum(plan) != n_klip:
+        out.append(Bulgu("BLOCK", f"㉜ SAHNE PLANI toplamı {sum(plan)} ↔ bölüm dosyalarında {n_klip} KLİP başlığı",
+                         "SAHNE PLANI sahne başına klip sayısıdır; toplamı CLIP COUNT'a eşit olmak ZORUNDA."))
+    if plan != gercek and not sahnesiz:
+        out.append(Bulgu("BLOCK", f"㉜ SAHNE PLANI ↔ dosya uyuşmuyor — plan {' '.join(map(str, plan))} · "
+                                  f"dosya {' '.join(map(str, gercek))}",
+                         "Plan satırı ile `# 📍 SAHNE` bloklarının altındaki klip sayıları sahne sahne aynı olmalı."))
+    beyan_hata = [f"S{s['no']:02d} beyan {s['beyan']} · gerçek {len(s['klipler'])}"
+                  for s in sahneler if s["beyan"] != len(s["klipler"])]
+    if beyan_hata:
+        out.append(Bulgu("BLOCK", "㉜ SAHNE başlığındaki `(n klip)` beyanı tutmuyor: " + " · ".join(beyan_hata[:4])))
+    nolar = [s["no"] for s in sahneler]
+    if nolar and nolar != list(range(1, len(nolar) + 1)):
+        out.append(Bulgu("FIX", f"㉜ SAHNE numaraları 1'den kesintisiz değil: {' '.join(map(str, nolar[:12]))}"))
+    knolar = [k["no"] for k in klipler]
+    if knolar and knolar != list(range(1, len(knolar) + 1)):
+        out.append(Bulgu("FIX", "㉜ KLİP numaraları 1'den film sonuna kesintisiz değil",
+                         "Klip numarası sahneden bağımsız artar (KLİP 01 … KLİP 48); `Clip n of N` bu numarayı kullanır."))
+
+    # ② BANT (FIX)
+    alt, ust = SAHNE_KLIP_BANDI
+    for s in sahneler:
+        k = len(s["klipler"])
+        if k > ust:
+            out.append(Bulgu("FIX", f"㉜ S{s['no']:02d} {k} klip — tavan {ust} ({ust * 10} s)",
+                             "Daha uzun sahne güvenlik kamerası hissine döner; ikiye böl ya da klip düşür."))
+        elif k < alt and not s["gerekce"]:
+            out.append(Bulgu("FIX", f"㉜ S{s['no']:02d} tek klip ve `TEK KLİP GEREKÇESİ:` satırı yok",
+                             "Tek kliplik sahne yalnız HOOK ya da geçiş içindir; gerekçe 📍 başlığının altına yazılır."))
+
+    # ③ BÖLÜM SINIRI (FIX)
+    tasan = [f"S{s['no']:02d}" for s in sahneler if s["tasan"]]
+    if tasan:
+        out.append(Bulgu("FIX", f"㉜ sahne bölüm dosyası sınırını aşıyor: {', '.join(tasan)}",
+                         "Her bölüm dosyası tam sahnelerle başlar ve biter; QA part masterı sahne ortasından kesilmez."))
+
+    # ④ DURUM KİLİDİ + ⑤ ZİNCİR DİLİ
+    eksik_kilit, yanlis_kilit, zincir = [], [], []
+    for s in sahneler:
+        for i, k in enumerate(s["klipler"]):
+            for tip in ("image", "video"):
+                g = k[tip]
+                if g is None:
+                    continue
+                poz = pozitif_govde(g)
+                var = bool(DURUM_KILIDI.search(poz))
+                if i > 0 and not var:
+                    eksik_kilit.append(f"K{k['no']:02d} {tip}")
+                elif i == 0 and var:
+                    yanlis_kilit.append(f"K{k['no']:02d} {tip}")
+                if ZINCIR_DILI.search(poz):
+                    zincir.append(f"K{k['no']:02d} {tip}")
+    if eksik_kilit:
+        out.append(Bulgu("BLOCK", f"㉜ DURUM KİLİDİ yok ({len(eksik_kilit)}): {', '.join(eksik_kilit[:6])}"
+                                  + ("…" if len(eksik_kilit) > 6 else ""),
+                         "Sahnenin 2.+ klibi IMAGE ve VIDEO promptunda `CONTINUOUS ACTION: <önceki klibin son durumu>` "
+                         "satırını taşır — zincir yok, poz/mekân/kir bu satırla taşınır (AMBER LATTICE: poz sıfırlandı)."))
+    if yanlis_kilit:
+        out.append(Bulgu("FIX", f"㉜ DURUM KİLİDİ sahnenin İLK klibinde: {', '.join(yanlis_kilit[:6])}",
+                         "Sahne başı yeni bir durumdur; önceki sahneye bağ SINIR SATIRI olarak planda kalır."))
+    if zincir:
+        out.append(Bulgu("BLOCK", f"㉜ ZİNCİR DİLİ ({len(zincir)}): {', '.join(zincir[:6])}",
+                         "Son kare zinciri kaldırıldı (22.09.2026). \"continues the previous clip\" / \"exact last frame\" / "
+                         "önceki klibe bağlanan START FRAME yazılmaz; START FRAME yalnız bu klibin kendi imajıdır."))
+
+    # ⑥ SAHNE KİLİDİ birebir (FIX)
+    for s in sahneler:
+        if len(s["klipler"]) < 2:
+            continue
+        for tip, anahtar in SAHNE_KILIDI_SATIRLARI:
+            degerler = [kilit_satiri(k[tip], anahtar) for k in s["klipler"]]
+            dolu = {d for d in degerler if d}
+            if len(dolu) > 1 or (dolu and None in degerler):
+                ad = "AUDIO ilk cümlesi" if anahtar == "AUDIO" else f"{anahtar}:"
+                out.append(Bulgu("FIX", f"㉜ S{s['no']:02d} SAHNE KİLİDİ — {tip} {ad} klipler arasında birebir değil",
+                                 "Aynı sahnenin bütün kliplerinde ışık, fizik ve ses yatağı harfi harfine aynı yazılır; "
+                                 "değişen yalnız kurulum, eylem evresi ve vurgu sesidir."))
+
+    # ⑦ SAHNE İÇİ KURULUM (FIX) — ardışık aynı kurulumu ⑩① zaten BLOCK'lar
+    for s in sahneler:
+        imzalar = [kurulum_imzasi(kamera_cumleleri(k["video"])) for k in s["klipler"] if k["video"]]
+        dolu = [i for i in imzalar if any(i)]
+        if len(dolu) >= 2 and len(set(dolu)) == 1:
+            out.append(Bulgu("FIX", f"㉜ S{s['no']:02d} {len(dolu)} klibin hepsi TEK kurulumda",
+                             "Sahne içi kapsama: kurulum → eylem → tepki en az iki kurulum ister (COK_KLIPLI §2)."))
+    return out
 
 
 def prompt_bulgularini_topla(sonuc):
@@ -2474,13 +2751,14 @@ def klasor_denetle(klasor):
     dosyalar = [f for f in sorted(klasor.glob("*.md"))
                 if not ATLA.search(str(f)) and not FILM_DISI.search(f.name)]
 
-    parcalar, promptlar, sahneli = [], [], 0
+    parcalar, promptlar, sahneli, bolumler = [], [], 0, []
     for f in sorted(dosyalar, key=lambda p: (ilk_sahne(
             p.read_text(encoding="utf-8", errors="replace")), p.name)):
         metin = f.read_text(encoding="utf-8", errors="replace")
         parcalar.append(metin)
         if SAHNE_BASLIK.search(metin):
             sahneli += 1
+            bolumler.append(f)
             # Satır numarası DOSYASIYLA birlikte taşınır: birleşik koşuda
             # çıplak "satır 990" hiçbir dosyada bulunamaz, operatör aramayı
             # bırakır ve bulgu ölür.
@@ -2491,13 +2769,23 @@ def klasor_denetle(klasor):
     if not promptlar:
         return None
 
-    sonuc = metin_denetle(klasor, "\n\n".join(parcalar), promptlar)
+    # ⑩④ İSKELET REJİMİ: iskelet PLAN'da film-geneli olarak duruyorsa harfler
+    # dosyalar arası PAYLAŞILIR ve birleşik koşu meşrudur. Her BÖLÜM DOSYASI
+    # kendi iskeletini taşıyorsa (32 dk rejimi) harfler paylaşılmaz ve film
+    # ölçeğinde sayım geçersizdir [THE_FALSE_EARTH 03 §4 · 23.09.2026].
+    kendi_iskeleti = sum(
+        1 for f in bolumler
+        if ISKELET_SATIRI.search(f.read_text(encoding="utf-8", errors="replace")))
+    sonuc = metin_denetle(klasor, "\n\n".join(parcalar), promptlar,
+                          birlesik=kendi_iskeleti >= 2)
     if not sonuc:
         return None
     sonuc["klasor"] = True
     sonuc["parca"] = sahneli
     # ㉓ ㉔ — yalnız klasör modunda [13.09.2026]
     sonuc["dosya_bulgulari"] += replik_kapisi(klasor, promptlar) + spec_tamlik_kapisi(klasor)
+    # ㉜ — SAHNE PLANI beyan eden filmde (22.09.2026); satır yoksa boş döner
+    sonuc["dosya_bulgulari"] += cok_klipli_sahne_kapisi(klasor, bolumler, "\n\n".join(parcalar))
     # ㉕ ㉘ ㉙ ㉚ + per-prompt toplama — yalnız YENİ rejim [14.09.2026]
     if sonuc.get("yeni_rejim"):
         sonuc["dosya_bulgulari"] += prompt_bulgularini_topla(sonuc)

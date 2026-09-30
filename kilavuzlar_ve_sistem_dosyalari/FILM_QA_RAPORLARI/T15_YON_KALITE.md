@@ -58,6 +58,10 @@ Biri bile hayırsa satır YAZILMAZ; ham rapor 02_HAM_RAPORLAR/<FILM>/<FILM>_YON_
 
 | Film | Tarih | Mod | Hedef | Bakış | Dönüş/Gidiş | Uzanma/Nişan | Ateş/Atış | Kesme yönü | Kamera | Sonuç | Toplam | Not |
 |---|---|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|---|
+| **The Falling World** B2 ⚠️ | 19.09 | D | ⬜ | 12 | 9 | — | 7 | — | — | 8 | — | 9 | **8,2** | ⬜ |
+| **The Inward Fall** ⚠️ | 30.09 | D | — | — | — | — | — | — | — | — | **—** | ✅ **EVERY VECTOR LANDS** — 24/24 HIT; merkez kovan ve Coriolis savrulma yönleri tam kilitli; 8 kategori kusursuz (10/10 → — uyarınca D186) [D184] |
+| **The Signal Keepers** | 30.09 | D | 10 | 10 | 10 | 10 | — | 10 | 10 | 10 | **10,0** | ✅ **EVERY VECTOR LANDS** — 24/24 HIT · sıfır sapma · bakış, el uzatma ve ilerleme mekânsal hedeflere tam kilitli [D184] |
+| **The Static Veil** ⚠️ | 30.09 | D | 8 | — | 9 | — | — | 7 | 9 | — | **8,2** | WRONG WAY · V11 (01:50) S11 fener sağdan sola FLIP (Pattern ①/⑩) · 10/11 HIT · kurguda yatay flip ile çözülebilir [D184] |
 
 ⛔ Sayılar bu tabloya ELLE yazılmaz — rapordan gelir ve `rapor_kontrol.py`
 GO/ŞARTLI döndükten sonra betik yazar [kural ① · D161].

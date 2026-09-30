@@ -50,6 +50,10 @@ gördü" o zaman bir doğrulama değil, tek raporun dört kopyasıdır.
 | **The Counted Turn** ⚠️ | YATAY | 3-5dk | 7 | — | 4 | 7 | 6 | — | 4 | 7 | 7 | 3 | **5,6** |
 | **The Resonant Strand** ⚠️ | YATAY | ⬜ | ⬜ | 7 | 6 | ⬜ | ⬜ | ⬜ | 8 | 6 | ⬜ | 6 | **7,0** |
 | **The Hard Dock** | YATAY | 3-5dk | 9 | 8 | 8 | 9 | 8 | 8 | 8 | 8 | 7 | 8 | **8,1** |
+| **The Slow Rain** B2 ⚠️ | YATAY | ⬜ | — | 9 | — | 9 | 10 | — | 9 | 10 | 9 | — | **9,3** |
+| **The Inward Fall** | YATAY | ⬜ | 9 | 9 | 9 | 8 | 9 | — | 8 | 9 | 9 | 8 | **8,7** |
+| **The Signal Keepers** ⚠️ | YATAY | ⬜ | 9 | 9 | — | 9 | 10 | 9 | — | — | 9 | — | **9,2** |
+| **The Static Veil** | YATAY | 2 dk | 9 | 9 | 9 | 8 | 9 | — | 8 | 9 | 9 | 8 | **8,7** |
 
 
 > **The Rose Coat · 26.08.2026 · Ⓥ mod V · ⛔ ÖN KOŞU · ⚠️ ŞARTLI**

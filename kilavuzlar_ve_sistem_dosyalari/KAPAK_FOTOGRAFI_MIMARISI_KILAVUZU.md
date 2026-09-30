@@ -1,5 +1,10 @@
 # 🎨 Yapay Zeka Filmleri İçin Kapak Fotoğrafı (Thumbnail) & Motion Poster Mimarisi
 
+> ⚠️ **20.09.2026 — ANA KAYNAK ARTIK `FILM_KAPAGI_KILAVUZU.md`** (sahibin resmî kaynaklı araştırması
+> `URETIM_ONCESI_ANALIZ/26_…` üzerine; her filme İKİ aday · tek deney · A/B). Bu dosya KANIT olarak
+> duruyor: §2 yüz/13 ms/%60 kadraj, §7 CTR skalası, 1280×720 teslim ve "A/B altyapısı yok" satırları
+> ÖLÇÜ DEĞİLDİR. Dışarıdan atıf aldığı için silinmedi (PAKETLEME §0 · YAYIN §2.2 · 08 §5).
+
 > **Dikkat Ekonomisinde Viral Etki, Görsel Psikoloji, Güvenli Alan (Safe Zone) ve Optimizasyon Stratejileri**
 
 ---
@@ -136,6 +141,13 @@ Shorts ve Reels için durağan kapağı 4-5 saniyelik sinematik döngüye (motio
 > koşulmadı; KAPAK_QA rubriği de 12.08.2026'da hiç çalıştırılmadan
 > kaldırıldı. Tek zorunlu test: 120 px posta pulu — elle, üretimden
 > önce (REHBER §6 adım 10).
+
+> ⚠️ **20.09.2026 → `YOUTUBE_VIRAL_SANS_KILAVUZU.md` §3:** aşağıdaki evrensel CTR skalası
+> ÖLÇÜ olmaktan çıktı (YouTube: CTR içerik · izleyici · gösterim yerine göre değişir —
+> answer/7628154); karşılaştırma kanalın kendi benzer videolarıdır. A/B: Studio testi artık
+> ≤3 varyant (answer/16391400). Önerilen kapak boyutu 3840×2160 (DIS_SAYILAR §1); 1280×720
+> çalışır, 120 px testi kalır. Plan B kapağı kalır; tetik evrensel %4 değil, kanal-içi düşüş.
+> Satırlar KANIT olarak duruyor, silinmedi.
 
 ### 🎯 CTR (Tıklama Oranı) Başarı Skalası
 * **%1 - %2 CTR:** Vasatın altında (Alarm seviyesi). Kapak ve başlık derhal değiştirilmelidir.

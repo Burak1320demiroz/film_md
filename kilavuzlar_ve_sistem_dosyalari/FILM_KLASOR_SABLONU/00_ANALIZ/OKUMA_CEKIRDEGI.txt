@@ -30,8 +30,13 @@ SENARYO_VE_VIRAL_KAMERA_KILAVUZU.md | - | ⭐VİRAL ölçütü (YÜZ + HAREKET) 
 KURGU_RITMI_VE_IHRAC_KILAVUZU.md | - | §2 örüntü kırıcı · kurgu kapısı · süre = sahne × klip
 KARAKTER_KARTI_VE_DAVRANIS_KILAVUZU.md | - | §1 sekiz satırlık kart · §3 karar mimarisi · §4 davranış şeridi · §10 kart bağı
 OYUNCULUK_YAZIM_KILAVUZU.md | - | §1 izleyici cümlesi · §2 gövde fiili · §3 niyet kanalı · §4 tempo · §8 çapa üçlüsü
+COK_KLIPLI_SAHNE_KILAVUZU.md | [cok-klip] | yatay film: sahne 2-6 klip · §2 kapsama şablonu · §3 CONTINUOUS ACTION · §4 sahne kilidi · zincir yok · ㉜ (PLAN'da SAHNE PLANI yoksa "—")
+FIZIKSEL_EFOR_VE_YERCEKIMI_KILAVUZU.md | [efor] | §1 destek·gövde·işaret·duraksama · §1.5 saydamlık tuzağı [D175] · §2 düşük g'de düşüş dili · çarpma üç evre (efor/düşüş yoksa "—")
+POST_TRAVMA_VE_DURUM_HAFIZASI_KILAVUZU.md | [darbe] | §1 toparlanma merdiveni = D207 · §2 hasar düz cümle + referans sayfası · §3 kadro sayı kilidi (darbe/hasar/kadro çıkışı yoksa "—")
+MIKRO_AKSIYON_VE_HALUSINASYON_KILAVUZU.md | - | §1 mikro→makro · §2 yürüme platosu · §3 temas iki klibe · §4 filigran = araç · tripod ADAY-98
 SAHNE_DOLULUGU_KILAVUZU.md | - | §1 kilit fiili SÜREÇ · §2 üç evre / TIMELINE ≤3 satır, son satır sürdürme · §6 ölü sahne 5 soru (15.09.2026 · TUR 19 · ⬜ sahip vetosu: manifest satır hedefini aşar)
 POLITIKA_VE_URETILEBILIRLIK_KILAVUZU.md | - | red sözlüğü · nötr tarif · ⑯ politika kapısı
+PROMPT_HATA_ONLEME_KILAVUZU.md | - | §1 on kilit · §2 ORTAM CÜMLELERİ (kopyala-yapıştır) · §3 15 hata sınıfı · §4 promptun kapatamadığı üç sınıf · §5 novum kilidi · §7 --kilit ölçümü (19.09.2026 · 31 film / 688 bulgu)
 IKI_KISI_VE_AYRILIK_KILAVUZU.md | [iki-insan] | §2 istek çaprazı · §5 ayrılık kartı · §6 konum kilidi · §8 faz farkı
 DIYALOG_SAHNESI_VE_MUHATAP_KILAVUZU.md | [replik] | §2-§3 değiş-tokuş tablosu · §4 dinleyen bedeni · §5-§7 değişim satırı
 SES_VE_DIYALOG_URETIM_KILAVUZU.md | [replik] | §1a kadraj dışı ses · §2a register · replik tablosu İŞLEV sütunu

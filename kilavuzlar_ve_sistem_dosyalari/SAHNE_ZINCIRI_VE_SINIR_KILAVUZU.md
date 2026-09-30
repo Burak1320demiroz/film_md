@@ -262,6 +262,14 @@ SINIR SATIRI (İngilizce, plana yazılır, prompta değil):
 ⛔ SINIR SATIRI PROMPT GÖVDESİNE KOPYALANMAZ.
    Prompt tek sahneyi anlatır; "bir önceki sahnede şu olmuştu" cümlesi
    modele geçmiş vermez, yalnız o cümlenin ismini çizdirir [D59].
+
+🆕 22.09.2026 · ÇOK KLİPLİ SAHNE (COK_KLIPLI_SAHNE_KILAVUZU §3):
+   Bu dosyadaki "sahne" sınırı o rejimde SAHNELER ARASIDIR; End/Start
+   satırı orada aynen planda kalır. Sahne İÇİNDEKİ klip sınırında End
+   cümlesi bir sonraki klibin CONTINUOUS ACTION: satırı olur ve prompta
+   GİRER — ama geçmiş anlatarak değil, ŞİMDİKİ durum olarak ("she is
+   already at the hatch, right glove on the lever …") [D59 · D207].
+   ⚠️ "I2V zincirine hizmet eder" cümlesi o rejimde geçersiz: zincir yok.
 ```
 
 ---
