@@ -32,7 +32,13 @@
 # 🔢 SAYIM
 
 ```
-TOPLAM FİLM                119 ← kaynak her zaman sayac.sh'tir; betik artık
+TOPLAM FİLM                121 ← kaynak her zaman sayac.sh'tir; betik artık
+                                (05.10.2026: +2 → sayac.sh 121 ölçtü — THE_SINKING_HARBOR (04.10,
+                                 yatay 16 dk) bu bloğa yazılmamıştı + BLIND_ORBIT yazıldı — yatay 4 dk ·
+                                 24 klip / 6 sahne / 48 prompt · hikâye SAHİBİN · §3.1 + §3.10 (0 g, tek
+                                 PHYSICS) · tema GÜVEN (aday, depoda 2.) · novum İLİŞKİ · 2 kişi · 17 replik /
+                                 konuşan ağız 0 · 8 sayfa referans paketi · klasör modu GO / 0 BLOCK ·
+                                 üretim 0 kare.)
                                 (30.09.2026: +1 → THE_LAST_GATE yazıldı — yatay 16 dk ·
                                  96 klip / 25 sahne / 184 prompt · hikâye SAHİBİN (kapsamlı plan
                                  00_ANALIZ/00_ON_PLAN/ altında) · §3.1 + §3.10 · tema DAYANIŞMA (aday) ·
@@ -767,6 +773,8 @@ tarama / plan sadakati / uyum tablosunda satırı var (matrise girmez).
 | **THE_INVERSION** | ✅ | ❌ | ⚠️ eski 3.0 | ❌ | ⚠️ eski 5.0 | **0/4** | — | — | ‖ [format tablosu] 📖🧩 · **senaryo + mantık** · — · **📖5.0/10 ⚠️** · **🧩3.0/10** · **3** · [→](01_FILM_RAPORLARI/THE_INVERSION.md) 📖🧩 ham rapor ✅ · 🚨 **DERS 45+46+49'un kaynağı** · **serinin en düşük mantık skoru** · teknik QA hiç yapılmadı |
 | **THE_KALEIDA_CRASH** | ✅ | ⚠️ eski 4.5 | ⚠️ eski 4.0 | ❌ | ⚠️ eski 5.1 | **0/4** | — | — | — |
 | **THE_LAST_GATE** | ❌ | ❌ | ❌ | ❌ | ❌ | **0/4** | — | — | 🆕 30.09.2026 · yatay 16 dk · 96 klip / 25 sahne / 184 prompt · **hikâye SAHİBİN** (724 satırlık kapsamlı plan referans alındı) · §3.1 VAKUM + **§3.10 iç hacim (kartın ilk BASKIN kullanımı)** · tema DAYANIŞMA (aday) · novum SON GEÇİT · 32 replik + 4 dış ses · 21 sayfa referans paketi (KAPI 0) · prompt_kontrol **klasör modu GO / 0 BLOCK**, 8 gerekçeli FIX · ÜRETİM 0 KARE → beş mercek hücresi ❌ |
+| **THE_SINKING_HARBOR** | ❌ | ❌ | ❌ | ❌ | ❌ | **0/4** | — | — | 🆕 04.10.2026 · yatay 16 dk · 96 klip / **24 sahne × 4 klip** / 184 prompt · **hikâye SAHİBİN** (96 bloklu tretman birebir taşındı) · §3.9 uyarlaması **gaz devi bulut katmanı — zemin YOK, ufuk YOK**, 1,00 g · tema İLK TEMAS · novum TUTMAYI BIRAKAN KATMAN · 38 replik (34 prompt + 4 kart) · 26 kurulum betikle ölçüldü · 7 sayfa referans paketi (KAPI 0) · prompt_kontrol **klasör modu 0 BLOCK**, 6 gerekçeli FIX · ⭐ üç ölçülmüş kapı çelişkisi adaylaştı (⑩ DÖNÜŞ birimi · referans şablonunun kendi kapısını yanlış tarif etmesi · MEDIUM LOCK sözlüğünün kapı olmaması) · ÜRETİM 0 KARE → beş mercek hücresi ❌ |
+| **BLIND_ORBIT** | ❌ | ❌ | ❌ | ❌ | ❌ | **0/4** | — | — | 🆕 05.10.2026 · yatay 4 dk · 24 klip / **6 sahne** (`SAHNE PLANI: 2 6 4 6 4 2`) / 48 prompt · **hikâye SAHİBİN** (tam plan `00_ON_PLAN/` altında) · §3.1 VAKUM + §3.10 iç hacim, 0 g tek PHYSICS · tema GÜVEN · novum İLİŞKİ · pilot + mühendis (iki kişi aynı kadrajda K04 K06 K08) · 17 replik / konuşan ağız 0 · SPEC A/B/C/E + ÇAPA + KİMLİK DİZİSİ + E1-E6 kuru koşu DOĞRULANDI · referans paketi 8 sayfa / 23 panel (KAPI 0) · İPTAL KAPISI K15 · klasör GO / 0 BLOCK · üretim 0 kare — QA koşulmadı |
 | **THE_LAST_ARCHIVE** | ✅ | ⚠️ eski 4.0 | ⚠️ eski 5.0 | ❌ | ❌ | **0/4** | — | — | — |
 | **THE_LAST_BLOOM** | ❌ | ❌ | ❌ | ❌ | ❌ | **0/4** | — | — | [format tablosu] ❌ · — · — · — · — |
 | **THE_LAST_CROSSING** | ✅ | ⚠️ eski 4.0 | ❌ | ❌ | ❌ | **0/4** | — | — | — |

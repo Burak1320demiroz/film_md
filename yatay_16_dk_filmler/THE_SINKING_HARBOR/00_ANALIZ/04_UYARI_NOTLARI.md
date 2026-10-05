@@ -1,0 +1,120 @@
+# ⚠️ THE_SINKING_HARBOR — UYARI NOTLARI
+
+> **Girdi:** `01_QA_DERS_HASADI.md` (ne bozulmuş) × `03_SAHNE_SIRALAMASI.md`
+> (bu filmde ne var). **Çıktı:** sahne sahne, ölçülmüş arızaya bağlı uyarı.
+>
+> ⛔ Bu dosya genel tavsiye taşımaz. Her satır ÜÇ şeyi birden taşır:
+> **hangi sahne · hangi ölçülmüş kayıt · ne yapılacak.** Üçünden biri
+> yoksa satır yazılmamıştır.
+> ⛔ Kaynağı olmayan uyarı yazılmaz — "dikkat edilmeli" bir uyarı değildir.
+
+---
+
+## 1. 🔴 ⛔ SATIRLARI — kapatılmadan prompt yazılmaz
+
+| # | sahne | ölçülmüş kayıt (ders / film / red) | risk | ne yapılacak | durum |
+|:--:|---|---|---|---|:--:|
+| 1 | **film geneli · 38 dış klip** | **D56** · THE_DEEP_PRESSURE 🧩 3,0/10 · Kostüm-Prop **1/10** (deponun en düşük kategorisi): bir gaz devi filminde ekranda okyanus çıktı — kabarcık, scuba tüpü, mercan, denizaltı | Filmin ADI *SINKING*, olayı *batmak*, mekânı *bulut derinliği*, varlığı *kasılan katman*, hareketi *dalga*. **Beş kanal da suya işaret ediyor** | `01_QA_DERS_HASADI` §1c MEDIUM LOCK: 11 satırlık yasak sözlük + pozitif gövde cümlesi (`a dense hydrogen-helium cloud layer, not water`) + 38 dış klipte sahneye özel su negatifi + İPTAL KAPISI ③ | ✅ kapandı |
+| 2 | **S05 · K16-K19** | **Red defteri vaka 3** (COLD BURN S28 · PB): "bedenden bir şeyin ÇIKARILMASI eylemi" → `I can't make that type of video`, iki kez. GEÇEN çözüm: sahne BAŞTAN yazıldı | Bir adamın bacağı devrilmiş panelin altında; panel kaldırılıyor, bacak serbest kalıyor. Dört klip sürüyor | `02_KONSEPT` §6: eylem BEDENDEN değil PANELDEN okunur — *the panel's edge lifts clear of his boot and shin, and he draws the leg back himself*. 17 kelimelik yasak sözlük (trapped · pinned · crushed · injury · pain · blood …) 96/96 | ✅ kapandı |
+| 3 | **S05 · K18** + **S19 · K74-K76** + **S21 · K81-K82** | **Red defteri vaka 13** (YERCEKIMI F1 S8 · PB): kelimeler TEMİZDİ, kompozisyon reddetti — yan yana iki ön kol + tepeden makro + yüzsüz izolasyon. ① sözcük değişti → **YETMEDİ** ② kadraj değişti → ⛔ SAHNE İPTAL | Beş makro klip: eldiven + alet, yüz kadrajda yok | ⭐ ÜÇ KARAR, üçü de KADRAJ tarafında: ① kadraj kenarında ÇAPA (omuz hattı + göğüs plakası) ② iki el yan yana DEĞİL — biri önde krankta, biri arkada köşede ③ eylem nesneden okunur. **Sözlük çözümü buraya YAZILMAZ** — deponun ölçülmüş tek boşa emeği bu | ✅ kapandı |
+| 4 | **film geneli · 29 yüz klibi** | **D146** · ⛔ **ÇALIŞMIYOR** damgalı, **4 vaka**: SKYLIGHT (1 filmde 3 kask) · YERÇEKİMİ F2 (reçete harfi harfine uygulandı, 6 klibin 5'inde kubbe) · STANDING WIRE (24 klibin çoğunda kubbe, `prompt_kontrol` GO verdi) · OPEN CIRCUIT (referans paketi VARDI, 23 klibin hepsinde kubbe) | Üç karakter, üçü de kapalı kask + berrak vizör, 96/96 klip. **Metinle tutulamıyor — dört kez ölçüldü** | ⭐ Tek aday araç uygulandı: **REFERANS PAKETİ KAPI 0** — vizör sayfası ONAYLI ve seed'i yazılı olmadan yüz içeren hiçbir klip üretilmez [D168]. Metin tarafında D95'in ÜÇ GÖRÜNÜR İŞARETİ: ① çerçeve ② yaka mühür halkası ③ üst kenarda TEK ince parlama. `seamless · bubble · dome · sphere` 0 kez | ✅ kapandı (araç referans paketi, metin değil) |
+| 5 | **S09-S11 · K33-K44** | **UZAYLI_VARLIK** §5'in ilk ölçülmüş vakası (THE UPWARD FALL, 04.09.2026): K0-K2 sahnesinde WORLD bloğu varlığın TAM anatomisini verdi → ekranda İKİ sütun uzuv, tabanları zemine BASIYOR | Canlı katman 24 sahnenin 4'ünde K2+ kademesinde; promptun varlığı "envanter" olarak okuma riski | ⛔ **K0-K2 kliplerinde ANATOMİ SAYISI YAZILMAZ** — yalnız kadrajın GÖRDÜĞÜ parça. Sayı yalnız K4 kliplerinde (K41 · K95). Ayrıca göz/yüz/ağız **hiç anılmaz** (yasak kelime prompta girer [D123]) | ✅ kapandı |
+| 6 | **S11 · K41 ↔ S06 · K23** | **D174** · THE LEANING ROOM: aynı promptta iki cümle yöne İKİ FARKLI sadakat üretti; novum bir YÖNDÜ ve yuvarlandı. + **LOSS OF LIFT madde 6**: `4:00'da sonda ayrılıp DÜŞÜYOR` ↔ ekran yönü kilidi "batan altta oturur" | Bu filmde İKİ zıt yön aynı filmde: liman AŞAĞI, gemi YUKARI, sonda AŞAĞI | ⭐ ALÇALMA YÖNÜ KİLİDİ, nesneye bağlı [D174 ①-③]: *"toward the cloud boundary that fills the lower third"* · ikinci cisim teyit eder (kolon ışıkları aynı yöne iner) · negatif NESNEYLE: *"nothing ever rises past the cloud boundary"*. K93'te gemi yukarı — ve o klipte liman AYNI KAREDE aşağı iner, iki yön birbirini kanıtlar | ✅ kapandı |
+| 7 | **film geneli · 31 efor klibi** | **D206** · T8 EFOR deponun EN DÜŞÜK ekseni: **0,0 · 1,0 · 1,4 · 2,7 · 2,9 · 4,4** — `NOBODY PAYS` / `WEIGHTLESS WORK`. + THE_STOLEN_SKY ⑧ 1,7 (20 efor olayının 17'si) | Bu bir FİZİKSEL İŞ filmi: kriko, kol, pim, 80 m yol, emniyet bağı, panel | `03_SAHNE_SIRALAMASI` §2c **BEDEL EĞRİSİ**: 14 klibe `<kanal> @ <saniye>` yazıldı; her efor klibinde ≥2 kanal; ÖNKOL kanalı D175 biçiminde (eldivenin ÜSTÜNDE) | ✅ kapandı |
+| 8 | **S23 · K92** | **D141** · THE THIN ROOF: kurgu kapısının üç satırı da geçti (klip 6=6 · süre 60,03 · şerit 111111) ve filmin twist'i ekranda YOKTU | Finalin vuruşu "dört kenet açılır" — tek karede kanıtlanmazsa final teslim edilmemiş olur | **FİNAL VURUŞ KANITI** SPEC B'ye: *dört kenet AÇIK · 15:14 · sayılabilir 4 adet · her biri 280 px*. İkinci kanıt K94'te alan ışığı **0**. İPTAL KAPISI ⑤ | ✅ kapandı |
+
+---
+
+## 2. 🟡 ⚠️ SATIRLARI — yazılırken izlenir, üretimde ölçülür
+
+| # | sahne | kaynak | risk | ne yapılacak | durum |
+|:--:|---|---|---|---|:--:|
+| 1 | **9 replik: K07 · K15 · K39 · K46 · K60 · K68 · K70 · K72 · K82** | **D217** · 2 film: THE AMBER LATTICE ④ 5/10 (`0:58 line narrating what the shaking frame already shows`) · MARS_SON_CIKIS ④ 6/10 (`1:31 Electrical fire behind service hatch` — yangın kadrajda) | Dokuz replik ekranda görünen bir şeyi adlandırıyor: "Four clamps ready" · "The harbor is losing altitude" · "We pull. It contracts." · "Two respond." · "Beginning descent." · "Load is falling." · "Releasing now." · "The pin is bent." · "Pin clear." | ⛔ **DOKUZU DA SİLİNMEDİ — plan KANON.** İŞLEV hücreleri kadraj dışı bir ALICIYA yazıldı: hepsi, konuşanın göremediği birine söylenmiş telsiz cümleleri. ⭐ **SAHİBE AÇIK ÖNERİ (uygulanmadı):** dokuzun her birinde ilk yarı silinip ikinci yarı bırakılabilir — örn. *"Two respond. The third needs us outside."* → *"The third needs us outside."* Dört kelime düşer, bilgi düşmez. **Karar sahibin** | ⬜ SAHİP KARARI |
+| 2 | **S07 · K28** | **D1** + sahibin planı §6: *"İki ayrı basit eylem, planlı kesmeyle."* | Plan bu klipte bir KESME istiyor; depo kuralı klip içi kesmeyi yasaklıyor (her blok tek çekim) | İki eylem TEK karede, tek çekimde: mühendis arkada/solda operatörü panelden uzaklaştırırken pilotun eli önde/sağda kumandayı indiriyor. Kesme YOK, iki eylem VAR. ⚠️ Sahibin "planlı kesme" ifadesi bir KURGU önerisidir; ızgara onu klip sınırına taşıyor | ✅ çözüldü, kayıtlı |
+| 3 | **S08 · K30 · K39** | **KART 5** + sahibin planı: *"İki sade eğri; grafik sonradan eklenir."* | Yük göstergesi bir EKRANDIR; model ekrana rakam/eksen/birim basar [D13 · D138] | Grafik üretimde DEĞİL kurguda eklenir (sahibin kendi kararı). Promptta ekran **boş ve geometrik**: *two plain curved lines on a dark panel, no numbers, no ticks, no labels*. SPEC'e: ekran metni 0,0 s | ✅ çözüldü |
+| 4 | **S12 · K45** | **KART 5** + *"üç taşıyıcı kilidin FİZİKSEL şemasını açar"* | "Şema" kelimesi diyagram üretir; diyagram metin üretir | Şema değil **kabartma kesit modeli**: üç yükseltilmiş biçim, biri eğilmiş muhafazalı. Parça SAYISI kadrajda PARÇA olarak var; rakam yok | ✅ çözüldü |
+| 5 | **S16 · K61** | **D179** + sahibin planı: *"Beyaz astronotlar kısa süre sisin içinde siluet olur."* | Siluet = okunmayan figür; 24mm@90 m'de figür 54 px → D179 kapısı düşer | Kurulum Q'ya (45 m) çekildi: figür **108 px** ✅ ve kaburga YİNE taşıyor. "Siluet" etkisi mesafeyle değil IŞIKLA kuruluyor (arkadan amber, önden sıfır dolgu) — sahibin cümlesi korundu, ölçü kurtarıldı | ✅ çözüldü |
+| 6 | **S15 · K57** | **D179** + sahibin §10: *"Ana kapak adayı K57"* | Kapak karesi hem "insan–gemi–liman–gezegen birlikte" hem figür ≥100 px istiyor; ikisi 24mm'de aynı mesafede olmaz | ⭐ ÖLÇÜLDÜ VE OLDU: kamera figürlerden 45 m, gemi onların 80 m ARKASINDA. Figür 108 px (45 m'de) · gemi **573 px** (125 m'de) — gemi mutlak olarak büyük olduğu için uzakta da büyük. Dört öğenin dördü de kadrajda | ✅ ölçüldü |
+| 7 | **film geneli · ızgara** | **D124** · klip süresi ARAÇTAN ölçülür, seçilmez | 10,000 s kabul edilerek 96 klip/960 s kuruldu; araç başka bir süre veriyorsa bütün zaman kodları kayar | ⬜ **ÖLÇÜM RANDEVUSU**: ilk klip üretilince ffprobe ile ölçülür ve SPEC A'nın `KIRPMA` satırına yazılır. Tahmin YAZILMADI | ⬜ ÖLÇÜM |
+| 8 | **S11 · K41 → S11 · K42** | **ACI_YAYI** §3: 2+ kademe şok bandı, filmde en fazla 1-2 | Bu çift 4 kademe atlıyor (EWS → CU) | **BİLİNÇLİ** ve filmin tek smash cut'ı: kıtasal nabız → bir adamın göğsündeki daireye bakışı. `03_SAHNE_SIRALAMASI` §3'te gerekçeli | ✅ kayıtlı |
+| 9 | **film geneli · 31 çift** | **ACI_YAYI** §3 ↔ **COK_KLIPLI_SAHNE** §2 | §3 "2+ kademe en fazla 1-2 kez" diyor; §2'nin KAPSAMA ŞABLONLARI her sahnenin içine geniş→yakın (2-3 kademe) diziyor. Ölçüm: 91 çiftin **31'i** 2+ kademe. İkisi aynı anda sağlanamıyor | ⭐ **ÖLÇÜLMÜŞ ÇELİŞKİ — DERS ADAYI.** Kılavuz "yanlış" denmiyor; ölçüm yazıldı ve `GOZLEM_DEFTERI`'ne aday olarak gider. Karar sahibin | ⬜ SAHİP KARARI |
+| 10 | **8 bölüm · 3 part sınırı** | **§2.8 kartı**: ② DEVAMLILIK üç sınır çiftini (K24↔K25 · K48↔K49 · K72↔K73) hiçbir part masterında yan yana GÖREMEZ | Part masterları 24 klipte kesiliyor; sınır çiftleri iki ayrı dosyaya düşüyor | SPEC B'ye **SINIR SATIRI** + elle kare: üç çiftin altı karesi ffmpeg ile çıkarılıp yan yana konur. Üçü de ardışık çift bandından geçti (ölçüldü) | ✅ yazıldı · ⬜ kare ölçümü |
+
+---
+
+## 3. 🧯 FİLM GENELİ — tek sahneye bağlanmayanlar
+
+| kaynak | risk | filmin tamamında ne yapılacak |
+|---|---|---|
+| **D200** · 6 film TWO GRAVITIES (son vaka THE_STOLEN_SKY: enkaz 1,56 ↔ 9,60 m/s²) | İki yerçekimi aynı kadrajda; bırakılan nesne süzülür | TEK g = **1,00 g**, 92/92 promptta BİREBİR PHYSICS cümlesi. Düşüş tablosu PLAN fizik defterinde (0,2 m → 0,20 s · 1 m → 0,45 s · 2 m → 0,64 s). Bırakılan her nesne TIMELINE'da **kadrajı terk SÜRESİYLE** yazılır, ivmeyle değil [D127] |
+| **D214** · 3 film + LOCKED_PULSE ölçümü (10/10 insert promptu kadrajda olmayan yüzü tarif ediyordu) | Model yazılanı kadraja sokar: ikinci bacak, ikinci mürettebat | `IN FRAME:` ilk satır 96/96 · 23 insert klibinde yüz cümlesi YOK · kelime bandı image 100-250 / video 120-300 |
+| **D208** · 4 film, kimlik beş kanalda kaydı | Yüz · renk · rozet · kask · kir sahneden sahneye başka aktöre geçer | SPEC C'ye **ÜÇ AYRI KİMLİK DİZİSİ** satırı: kask K 96/96 · rozet konumu (göğüs, değişmez) · diz desteği K19+ · diz çiziği K65+ · kriko K18→K19→K59→K82 |
+| **D42 · D147** · THE_STOLEN_SKY (00:30 yırtık → 01:40 temiz) | Yıpranma sıfırlanıyor | YIPRANMA MERDİVENİ **monotonik ve KONUMLU**: faz ADI prompta GİRMEZ [D155], yalnız fazın TARİFİ. `CONTINUOUS ACTION:` satırının sıfırlanamazlar listesinde kir ve hasar var |
+| **D58** · THE_DEEP_PRESSURE Coğrafya 4/10 (portal iki sahnede iki yer) | Dönen 7 varlık ikinci gelişte başka bir şeye dönüşür | **RECURRING ENTITY BIBLE** 7 kart (KESTREL · liman kaburgası · D1 yuvası · sonda başı + üç bağlantı · kontrol odası · bakım yolu · kriko); geçtiği HER klipte kartın tamamı BİREBİR |
+| **D193 · KART 6b** · 5 film ışık takvimi | Sönen kolon geri yanar; katman ışığı sahne sahne sıçrar | `02_KONSEPT` §2b **LAYER LIGHT SCHEDULE**: 24 sahne, irtifa bandı, kubbe parlaklığı 6→5→4→3→2, kolon 6→5→4→2→0. Monotonik; tek istisna K93 (gemi yukarı) ve o karede liman AYNI ANDA aşağı |
+| **D216** · 3 film ses miksi | Katman 5'e çıkıyor, ducking yok, kesmede dijital sıfır | MUZIK'e DÖRT SAYI: katman ≤4 · köprü ≥0,2 s · diyalog altında −6 dB · kesmede dijital sıfır 0 kare. Kadraj dışı replikte telsiz band-pass **38/38** |
+| **D180** · 3 vaka ⛔ ÇALIŞMIYOR | Planlı sessizlik video modelinden istendi, hiç gelmedi | Sessizlik BIÇAĞI kurgudadır: MUZIK'e `KURGUDA HARD MUTE` üç pencere (K40 son 1,5 s · K79 orta 1,0 s · K96 son 2,0 s). Prompt cümlesi YEDEK; ölçüm üç eşikte (−50/−40/−30 dB) |
+| **D215** · 6 film | Ekran metni / filigran / hareketsiz ağız | `URETIM_DEFTERI` motor satırına ÜÇ KUTU: altyazı KAPALI · filigran YOK · konuşan ağız kadraj dışı. Kurgu kapısı ④ üç sayıyı masterda ölçer |
+| **D167** · red defteri vaka 15 (OMNI, üretim DURDU) | Kimlik yığını "ünlü tarifi" kalıbına benziyor | Prompt gövdesinde öznitelik ≤3 · boy GÖRELİ · ten/saç/yaş PLAN'da ve referans paketinde. Üç karakterin ayrımı GEOMETRİDE ve RENK BANDINDA (`02_KONSEPT` §7b) |
+| **LOSS_OF_LIFT** ④ · başlık kartı 8. vaka | Prompt yasağı tuttu, KURGU masasında delindi | Kurgu kapısı ③: ekran metni **0,0 s** · kapak çıktısı kurguya GİRMEZ · son klip `the shot simply ends` taşır [D34] |
+| **LOSS_OF_LIFT** ⑤ İNSAN ŞERİDİ | Plan ↔ teslim şeridi kaydı; doruk yanlış yuvada | SPEC C'ye **96 karakterlik İNSAN ŞERİDİ**. İnsansız 17 klip: K06 · K21 · K23 · K24 · K26 · K33 · K34 · K38 · K40 · K41 · K61 · K69 · K79 · K84 · K93 · K94 · K95 |
+
+---
+
+## 4. 📋 BU DEPONUN TEKRAR EDEN ARIZALARI — her filmde tek tek cevaplanır
+
+> ⛔ **"Bu filmde yok" cevabı GEREKÇE ister.** Boş bırakılan satır
+> "bakılmadı" demektir.
+
+| # | tekrar eden arıza | kaynak | bu filmde durumu | önlem |
+|:--:|---|---|---|---|
+| 1 | Biçim kilidi METİNLE tutulmuyor | D146 · SKYLIGHT · STANDING WIRE | ⛔ **VAR, EN AĞIR HÂLİYLE**: üç kask + 48 km liman + sonda başı + kriko = dört biçim kilidi, 96/96 klip | ⛔ satır 4: REFERANS PAKETİ KAPI 0. Dört vakanın dördü metinle denendi ve dördü düştü; beşinci kez metin denemiyoruz |
+| 2 | Yasak kelime kumaş sanılıp DALGALANDIRILIYOR | D59 · D153 · OPEN CIRCUIT | ⚠️ **KISMEN VAR**: filmde kumaş yok ama **yalıtım örtüsü / gevşek kablo / emniyet hattı** var; D153'ün "loose folds" vakası ayrı bir BRANDA nesnesi doğurmuştu | Örtü **gergin ve düz** yazılır (UZAY_USSU §6: `rigid, taut, drum-tight, seamed in flat rectangles`); emniyet hattı GERGİN ve tek çizgi, kıvrımsız [D26]; `fabric` · `cloth` · `folds` kelimeleri 0 kez |
+| 3 | Optik aritmetiği hiç yapılmamış | OPEN CIRCUIT denetimi (beş kurulumun beşi tutmuyordu) | ✅ **YAPILDI VE BETİKLE** — `kamera.py`: 26 kurulumun 26'sı, kadraj eni + ana nesne px'i | `03_SAHNE_SIRALAMASI` §4a tablosu. 26/26 D179 GEÇTİ. K57 ve K61 ölçümle düzeltildi (⚠️ satır 5-6) |
+| 4 | Uzak nesne ~60 piksel — okunmuyor | D179 | ⚠️ **İKİ VAKA ÇIKTI VE İKİSİ DE DÜZELTİLDİ**: K61'de figür 54 px (90 m) → 108 px (45 m) · K57'de gemi önce "sığmaz" sanıldı → aynı kamerada 573 px ölçüldü | §4a tablosunda her kurulumun px'i yazılı; ⬜ üretimde ikinci kez ölçülmez, kabul ölçütü İPTAL KAPISI ② |
+| 5 | Ayrım RENKLE kuruldu, iki koyu gövde ayrılmıyor | BLIND BERTH · ASTRONOT_DONANIM §2 | ⚠️ **TERS YÖNDEN VAR**: üç gövde de BEYAZ ve ortam KÖMÜR SİYAHI — risk gövdelerin birbirinden değil, hepsinin zeminden ayrılmaması DEĞİL; risk ÜÇ BEYAZIN birbirine karışması | Ayrım üç kanalda ve RENKTEN BAĞIMSIZ (`02_KONSEPT` §7b): SİLUET (sert kabuk ↔ panelli ↔ ağır iş) · KABARTMA YÜZEY (üç kanatlı ↔ dikdörtgen ızgara ↔ dairesel) · HAREKET (eli kumandada kalır ↔ iki aşamalı ↔ tek taraflı yük). Renk bandı DÖRDÜNCÜ kanal, tek başına taşımıyor |
+| 6 | Ortam kartının NEGATİF bloğu prompta hiç girmemiş (maket okuması) | UZAY_USSU §6 · OPEN CIRCUIT ④ | ⛔ **VAR**: kadrajda 48 km'lik yapı; maket/tilt-shift okuması en yüksek riskli sınıf | PLAN Negative Bible'a **[YAPI]** bloğu; sahneye özel cümle olarak 11 yapı klibine: *no tilt-shift look, no miniature or toy-model read, no vertical band of blur across the frame; the far end of the rib is as sharp as the near end* [§5.4: yasak bulanıklık DEĞİL, bulanıklık GRADYANI] |
+| 7 | Tema yazıldı ama sahne indeksi yok → tema dekoratif | KALEIDA CRASH | ✅ **YOK** — gerekçe: `02_KONSEPT` §4'te tema **İLK TEMAS** + TANIM cümlesi + dört motif kanalı, her kanalda klip numaraları (nesne K33·K34·K38·K63·K79·K84 · kinesik K22↔K28·K36↔K37·K78 · kamera K23↔K24·K33→K40 · ışık K26·K79·K95) | — |
+| 8 | Bedel var ama sahne numarası yok → bedel boş | 03_PLAN_ONCESI B5 | ✅ **YOK** — gerekçe: BEDEL İKİ AŞAMALI ve ikisi de numaralı: **S17 · K65** (dönüş yolu) ve **S20 · K80** (liman). ÇAPA ÜÇLÜSÜ'nde BEFORE/AFTER beden çifti + saniye | — |
+| 9 | Yasak cümlesi yazıldı ve model onu ÜRETTİ | D123 | ⛔ **ÜÇ YERDE RİSK**: ① canlı katmanın gözü/ağzı — "no eyes, no face" yazarsak göz çağırır ② su — "no ocean" tek başına okyanus çağırır ③ hasar — "no wound" yara çağırır | ① göz/yüz/ağız **hiç anılmaz**, varlık yön/ön/arka belirsiz form olarak yazılır (HUŞU kalıbı) ② su negatifi her zaman POZİTİF gövde cümlesiyle birlikte (`a dense hydrogen-helium cloud layer, not water`) ③ hasar SAYILI ve POZİTİF (`whole except for exactly two points`) |
+| 10 | Politika: nesne ADLANDIRILDI (formu tarif edilmedi) | D67 · red defteri | ⛔ **VAR**: panel altındaki bacak · kopan döşeme · eğilmiş yuva | Üçü de FORM olarak yazılır: *the panel's lower edge* · *an eighteen-metre length of decking separates and falls away* · *the socket's lip is bent a finger's width out of line*. Organ ve yaralanma adı 0 kez |
+| 11 | Replik zamanı ELLE yazıldı, ızgara formülüyle çelişti | D122 | ⬜ **AÇIK — ÖLÇÜM RANDEVUSU**: 38 repliğin saniyesi `replik(Kn) = (n−1) × 10 s + TIMELINE ofseti` ile HESAPLATILIR, elle yazılmaz | SPEC A'ya formül + 38 satır; doruk saati `(84−1) × 10 = 830 s = 13:50`. ⚠️ H1-H4'ün okuma SÜRELERİ ⬜ ölçülecek (ffprobe) — tahmin yazılmadı |
+| 12 | Klip içi durum değişimi — ölçülmüş EN ZAYIF eksen | T2V-CompBench 0,0687 · SAHNE_ZINCIRI §1 | ⛔ **VAR VE FİLMİN OMURGASI**: K34 (kıvrım gerilir→gevşer) · K38 (gevşer) · K23 (yükselir) · K24 (aşağı yük alır) · K65 (yol kopar) · K82 (pim çıkar) · K92 (dört kenet açılır) | Her değişim klibi ÜÇ TIMELINE satırı taşır (TEMAS · DEĞİŞİM · SONUÇ ≥1 s) [D213] ve değişim bir ÖLÇEN KENARLA yazılır [D90]: K34'te bileziğin kenarı kıvrımın içine basar · K65'te emniyet hattı düz çizgi olarak gerilir · K24'te bulut sınırı pencere çerçevesine göre YÜKSELİR. ⛔ ARA DURUM YASAĞI yazılmıyor — değişim sınıra taşındı: sahne içinde nicelik değişmez, SAHNE SINIRINDA değişir |
+| 13 | Prompt "BIBLE'a bak" diyor — self-contained değil | kural ③ | ✅ **YOK** — gerekçe: 192 promptun hiçbirinde `[CHARACTER BIBLE]`, `[WORLD BIBLE]` ya da "see the bible" atfı yok; köşeli parantezli etiket 0 [D45]. Self-contained = kadrajdaki her şey, kadraj dışı hiçbir şey [D214] | — |
+| 14 | Makine kapısı KURULU OLMAYAN ffmpeg filtresine yazıldı | D142 · `vidstabdetect` | ⬜ **AÇIK — KURU KOŞU RANDEVUSU**: SPEC E'nin her makine kapısı `ffmpeg -hide_banner -filters \| grep -q " <filtre> "` ile doğrulanacak | Her kapı ÜÇ satır taşır: KOMUT · DOĞRULANDI (<sürüm·tarih>) · İKAME. ⛔ DOĞRULANDI satırı olmayan kapı YAZILMAMIŞTIR |
+| 15 | Çıplak deri negatifi bölge saymıyor | D175 · ㉑ | ⛔ **VAR**: üç karakter, 96 klip, 31'i efor klibi; D175'in kaynağı tam bu sınıftı (önkol tendon cümlesi deriyi çizdirdi) | Negatif ÜÇ BÖLGELİ ve bölünmez, 96/96: *No bare skin anywhere — none above the collar, none at the wrists between glove and sleeve, none at the ankles between boot and leg.* Zorlanma ELDİVENİN ÜSTÜNDE; `through the glove` · `under the glove` 0 kez |
+| 16 | Filmin 1 NUMARALI riski yalnız SIFATLA korunmuş | D192 · OPEN CIRCUIT · A5 | ✅ **SAYIYLA YAZILDI**: 1 numaralı risk **SU**; pozitif biçim dört sayı taşıyor (bir çizgi · sıfır sıçrama · sıfır yapı · sıfır derinlik) | `02_KONSEPT` §A5. ⚠️ İlk yazımda bu cümle K41 ile çarpışıyordu ("opaque to the eye" ↔ "bulutların altından damarlar") ve **yazım anında yakalandı** [D174/D176 kalıbı]: bulut YAPIYA opak, IŞIĞA geçirgen |
+
+⭐ **Bu tablo BÜYÜR.** Yeni bir tam denetim yeni bir tekrar eden arıza
+bulursa satır buraya eklenir — şablona, tek filme değil.
+
+### 4a. 🆕 BU FİLMİN EKLEDİĞİ SEKİZ SATIR ADAYI (şablona önerilir, sahip kararı)
+
+| # | aday satır | kaynak | neden şablona |
+|:--:|---|---|---|
+| 17 | **Ortamın MADDESİ değişiyor** — film adı/olayı/mekânı suya işaret ediyorsa model gazı su yapar | D56 · THE_DEEP_PRESSURE 3,0 · Kostüm-Prop 1/10 | D56 yaşayan 40 listesinde YOK ve tekrar eden arıza tablosunda da yok; oysa ölçülmüş en pahalı kategori skorunun kaynağı. Bu film onu havuzdan çağırmak zorunda kaldı |
+| 18 | **§3'ün şok bandı ile §2'nin kapsama şablonları çelişiyor** | `ACI_YAYI` §3 ↔ `COK_KLIPLI_SAHNE` §2 · bu filmde 31/91 çift | İki kılavuz aynı anda sağlanamıyor ve hiçbir kapı bunu söylemiyor. 24 sahnelik bir filmde ölçüldü |
+
+| 19 | **⑳ EFOR sözlüğünde `lever` AD olarak yanlış-pozitif** — dördüncü sınıf | `prompt_kontrol` ⑳ · bu filmde K28 · K36 · K38 | Sözlüğün kendi kalibrasyon notu üç yanlış-pozitif sınıfı kapatmış (`carries` · `push` · `press` · `wrench`). `lever` bu depoda da NESNEDİR: kontrol odasında bir kol. `wrench` tam bu sebeple çıkarılmıştı; `levers?` aynı gerekçeyle çıkmalı. Ek vaka: **insansız klipte** `lifts off` (K38) — insan olmayan kadrajda gövde tepkisi aranamaz |
+| 20 | **⑩ DÖNÜŞ bandının `n`'i KLİP sayıyor, oysa §4b'nin %40'ı SAHNE üzerine kalibreli** | `ACI_YAYI` §4b ↔ `prompt_kontrol` satır 2024-2045 · bu filmde 8 bölümün 5'i | Ölçüm: B4 = 2/12 ve **kısıtlı optimum da 2/12**. 3/12'ye çıkmanın tek yolu K37'yi A yapmaktı; o da K36(H·MS) → K37(A·MS) çiftini 0 ölçek kademesine düşürüp §3'ü ihlal ediyor. Yani §3 ile §4b aynı anda sağlanamıyor. ⭐ Kök sebep: çok klipli rejimde 12 kliplik bölüm 3 SAHNEDİR; §4b'nin bandı sahne sayısına göre yazılmış. Aynı §4b'nin KÜME denetimi `--sahne-plani` dosyalarında ZATEN muaf tutulmuş (satır 2033) — DÖNÜŞ muaf tutulmamış. Ölçülen oranlar: B2 %42 · B3 %42 (sahneleri tek odada) ↔ B4 %25 · B5 %25 · B6 %17 · B7 %17 · B8 %17 (sahneleri dörder ayrı mekân) |
+| 21 | **Camera Bible'ın mekân etiketi iskeletle doğrulanmıyor** | bu filmde `A` kurulumu | `A` "kokpit · oturan figür" diye tanımlanmıştı; iskelet onu YALNIZ kontrol odası panelinde kullanıyor (K30·K39·K43·K47), kokpiti B ve X taşıyor. Hiçbir kapı "harfin tanımlı mekânı ile kullanıldığı mekân aynı mı" diye sormuyor. Betikle bir satır: her harfin ATAMA'daki kliplerinin mekânı, Bible'ın mekânıyla karşılaştırılır |
+
+| 22 | **Referans yükleme birimi SAHNE değil KLİP** | `REFERANS_PAKETI_KILAVUZU` §5 ↔ `COK_KLIPLI_SAHNE` · bu filmde S24 | §5 "bir sahnede en çok 3 kayıt" diyor; çok klipli rejimde 4 kliplik bir sahne dört ayrı mekân gezebiliyor ve sahne toplamı 4 kayda çıkıyor (S24 ölçüldü: 4). Klip başına bakıldığında en çok 2. Kural klip birimiyle yazılmalı; sahne birimiyle yazılı olduğu sürece ya yanlış ⛔ verir ya sessizce geçer |
+| 23 | **Referans paketi şablonu kendi kapısını yanlış tarif ediyor** | şablon satırı ↔ `prompt_kontrol` satır 595 · ölçüldü | Şablon diyor: *"referans sayfası bölüm promptu değildir, kelime bandı/㉗ koşmaz (14.09.2026)"*. Oysa `FILM_DISI = FRAGMAN\|KAPAK\|TEASER` — REFERANS yok. Bant KOŞUYOR ve bu film R1'de 285 kelimeyle ⛔ BLOCK aldı; ㉖ IN FRAME ve ② insan sayısı imzası da istendi. ⭐ İki seçenek: ya `FILM_DISI`'ye REFERANS eklenir, ya şablonun o satırı silinir. Şu anda şablon ajanı yanlış yönlendiriyor |
+| 24 | **MEDIUM LOCK sözlüğü yazılı ama KAPI DEĞİL** ⭐ en pahalı aday | `01_QA_DERS_HASADI` §1c ↔ `prompt_kontrol` · bu filmde 6 ihlal | Bu film D56 için 11 yasaklı sözcük + karşılıklarını yazdı, sonra kendi listesini **altı promptta ihlal etti** (`sinking` · K44 ×3 · K94 ×3) ve ON SEKİZ kapının hiçbiri bunu söylemedi. Elle bulundu, betikle doğrulandı, düzeltildi. ⭐ Öneri: `prompt_kontrol`'e film-başına-sözlük kapısı — film klasöründe `01_QA_DERS_HASADI.md` §1c varsa oradaki yasaklı sözcükler pozitif gövdede aranır. Sözlüğü film yazıyor, kapı yalnız okuyup tarıyor. Düşük maliyet, ölçülmüş getiri: bu filmde 6 ihlal |
+
+---
+
+## ✅ KAPI
+
+```
+☑ 🔴 ⛔ satırlarının hepsi kapatıldı — 8/8 ✅
+☑ 🟡 ⚠️ satırları QA_SPEC'e ölçüm olarak taşınacak biçimde işaretlendi —
+  10 satır: 7 ✅ çözüldü · 3 ⬜ (sahip kararı ×2 · ölçüm ×1)
+☑ tekrar eden arıza tablosunun HER satırı cevaplandı — 16/16, "yok" diyen
+  üç satırın üçü de GEREKÇELİ (7 · 8 · 13)
+☑ sekiz yeni satır adayı yazıldı (17 · 18 · 19 · 20 · 21 · 22 · 23 · 24) — şablona önerilir
+⚠️ 20 AÇIK KALIR: B4-B8 ⑩ DÖNÜŞ'te ⚠️ FIX verir ve bu FIX **ölçülmüş**
+  olarak bırakılır — kapatmanın tek yolu §3'ü ihlal etmek. BLOCK değildir.
+→ 05_SAHNE_CALISMALARI/ açılabilir
+```

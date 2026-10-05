@@ -1184,6 +1184,20 @@ def plan_sahne_sayisi(film_dir, bolum=None):
                             per = k // m_bol
                             secim = sayilar[(n - 1) * per: n * per]
                             return SahnePlaniSayisi(len(secim), sum(secim), " ".join(map(str, secim))), f.name
+                        elif sum(sayilar) % m_bol == 0:
+                            # 16 dk hat (§2.8): sahneler eşit bölünmeyebilir (6+6+6+7=25) ama klipler tam bölünür (24+24+24+24=96)
+                            hedef_klip = sum(sayilar) // m_bol
+                            parcalar = []
+                            cur_k, cur_s = 0, []
+                            for s in sayilar:
+                                cur_s.append(s)
+                                cur_k += s
+                                if cur_k == hedef_klip:
+                                    parcalar.append(cur_s)
+                                    cur_s, cur_k = [], 0
+                            if len(parcalar) == m_bol:
+                                secim = parcalar[n - 1]
+                                return SahnePlaniSayisi(len(secim), sum(secim), " ".join(map(str, secim))), f.name
                     return SahnePlaniSayisi(len(sayilar), sum(sayilar), " ".join(map(str, sayilar))), f.name
         except OSError:
             continue

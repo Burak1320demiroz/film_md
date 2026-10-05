@@ -34,3 +34,18 @@ freeze.txt
 *.wav
 *.mp3
 *.m4a
+
+# ⛔ ARAÇ ARTIĞI DEPOYA GİRMEZ (30.09.2026)
+# RESUME.md Claude Code'un oturum checkpoint'idir — 40 gün bekleyen ölü bir
+# kopyası .git/info/exclude ile gizlenmişti. O dosya SÜRÜMLENMEZ, yani kural
+# temiz klonda yoktu. Kural görünür olmalı: adresi burasıdır.
+.claude/RESUME.md
+.claude/settings.local.json
+
+# işletim sistemi / oturum artığı
+.DS_Store
+output.log
+# ⚠️ .DS_Store (3 kopya) ve output.log HÂLÂ TAKİPLİ — bu satırlar yalnız
+#    yenilerini durdurur. Takipten düşürmek indeksi değiştirir → sahibin işi:
+#    git rm --cached .DS_Store kilavuzlar_ve_sistem_dosyalari/.DS_Store \
+#                    yatay_4_dk_filmler/.DS_Store output.log

@@ -1,8 +1,21 @@
 ---
 name: video
+disable-model-invocation: true
 license: CC-BY-4.0 (attribution required — Serge Shima, github.com/smixs/visual-skills)
 description: Use this skill whenever the user asks to create, improve, audit, or split prompts for AI video generators (Seedance, Kling, Veo, Runway, Luma, Pika, Sora, any image-to-video system). The skill also covers storyboards, shot lists, director treatments, dynamic montage, multi-clip story structure, camera direction, lighting, blocking, pacing, character continuity, dialogue, and sound design. Trigger even when the user says things like "придумай сцену для видео", "разбей на склейки", "сделай раскадровку", "улучши промпт для Kling", "переведи сценарий в промпты", "как снять X в AI-видео", or shares a prompt and asks to fix it.
 ---
+
+> ⚠️ **YEREL DEĞİŞİKLİK — film_md deposu · 30.09.2026.** Frontmatter'a
+> `disable-model-invocation: true` eklendi: bu skill artık **kendiliğinden
+> ateşlemez**, yalnız `/video` ile ya da adıyla çağrılır. Gerekçe: tetik ifadesi
+> (*"create, improve, audit, or split prompts for AI video generators … shares a
+> prompt and asks to fix it"*) bu deponun günlük işinin birebir tanımı; kendiliğinden
+> ateşlediğinde ⭐ kendi **zorunlu okuma sırasını** ve ⭐ **Seedance varsayılanını**
+> getiriyor — oysa depo hattı `references/veo.md` olarak sabitli ve zorunlu okuma
+> sırası `yeni-film` adım 2'dir. Skill, deponun negatif çekirdeğini, 10 s klip
+> ızgarasını ve SPEC sistemini bilmiyor.
+> Kayıt ve kullanım: `kilavuzlar_ve_sistem_dosyalari/SKILL_KULLANIM_KILAVUZU.md` §2.1.
+> Üst kaynak CC BY 4.0 · Serge Shima · github.com/smixs/visual-skills — **değiştirilmiştir**.
 
 # AI Director, Screenwriter & Editor
 

@@ -32,6 +32,30 @@
 > kendi promptu yoktur (sahibin kapsamlı planı §9 · §16). Kapı ㉜ prompt taşımayan
 > klibi atlar; bu ÖLÇÜLDÜ. Prompt sayısı bu rejimde `üretilen klip × 2`dir.
 
+> 🆕 **04.10.2026 · KLASÖRÜN ÜÇÜNCÜ FİLMİ: THE_SINKING_HARBOR.** Kartın ilk
+> **ÇOK KLİPLİ SAHNE** 16 dk filmi: 96 klip **24 sahne × 4 klip** olarak yazıldı
+> (THE_STOLEN_SKY ve THE_LAST_GATE sahne≈klip rejimindeydi). Dört kliplik sahne
+> kapsama şablonunu tam taşıyor: KURULUM → EYLEM → GELİŞME → TEPKİ.
+> ⭐ **Kartın ⬜ kalan satırlarına bu filmden gelen veri:**
+> · **"16 dk'da oran seti ölçümü YOK"** → bu film de yüzde YAZDI, bant İDDİA
+>   ETMEDİ: beliriş %42,7 (K41) · merkezî seçim %50,0 (K48) · bedel %83,1 (K80) ·
+>   doruk %86,5 (K84) · final %99,0 (K96). ⚠️ THE_LAST_GATE'in doruğu %95,8,
+>   bunun %86,5 — iki 16 dk filmi arasında **9,3 puan** fark var ve ikisi de
+>   "bant içinde" demiyor. Üçüncü ölçüm bir bant önerebilir.
+> · **"viral ara sahne süreyle ölçeklenir: 96'da 16"** → bu film de hedef
+>   YAZMADI (§2.3'ün 0-3 bandı · çürütülmüş süre-ölçekleme).
+> ⚠️ **Bu filmde ortaya çıkan yapısal ölçüm: ⑩ DÖNÜŞ BANDI 16 DK'DA TUTMUYOR.**
+> THE_LAST_GATE %8-33 ile duvara çarpmış ve 8 FIX'i gerekçeli bırakmıştı; bu film
+> SEBEBİ ölçtü: B4'ün kısıtlı optimumu **2/12** ve 3/12'ye çıkmanın tek yolu
+> `ACI_YAYI` §3'ün "≥1 ölçek kademesi" kuralını ihlal etmek. İki kılavuz aynı anda
+> sağlanamıyor. ⭐ Kök sebep: kapının `n`'i KLİP sayıyor, §4b'nin %40 bandı ise
+> SAHNE üzerine kalibreli — çok klipli rejimde bunlar ~4× ayrışıyor. Aynı §4b'nin
+> KÜME denetimi `--sahne-plani` dosyalarında ZATEN muaf; DÖNÜŞ muaf değil.
+> → `THE_SINKING_HARBOR/00_ANALIZ/04_UYARI_NOTLARI.md` §4a aday 20.
+> ⚠️ İki ölçüm daha adaylaştı: referans paketi şablonu kendi kapısını yanlış tarif
+> ediyor (aday 23) · film-başına MEDIUM LOCK sözlüğü yazılıyor ama KAPI DEĞİL —
+> bu film kendi listesini altı promptta ihlal etti, hiçbir kapı söylemedi (aday 24).
+
 ---
 
 ## 📐 FORMAT KURALLARI

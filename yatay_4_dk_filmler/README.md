@@ -18,7 +18,12 @@
 > **ardışık çiftlerin 23/23'ü TAM 1 ölçek kademesi, ⚡şok 0**) · dördüncü film:
 > **`THE_INWARD_FALL/`** (28.09.2026 · 24 klip / **6 sahne** · `SAHNE PLANI: 3 4 5 3 5 4` ·
 > §3.7 ROTASYONEL YAPAY YERÇEKİMİ + HARD VACUUM alt bandı · 0 replik · 2 ⭐viral ·
-> referans paketi VAR · Coriolis sapması novum'u, 15° eğim dinamik dengesi, %62.5 dönüş oranı ve 0 küme).
+> referans paketi VAR · Coriolis sapması novum'u, 15° eğim dinamik dengesi, %62.5 dönüş oranı ve 0 küme) · beşinci film:
+> **`BLIND_ORBIT/`** (05.10.2026 · 24 klip / **6 sahne** · `SAHNE PLANI: 2 6 4 6 4 2` ·
+> §3.1 VAKUM + §3.10 BASINÇLI İÇ HACİM, tek PHYSICS satırı (0 g) · **17 replik / konuşan ağız 0** ·
+> 1 ⭐viral (K18) · iki kişi (pilot + mühendis, iki kişi aynı kadrajda yalnız K04 K06 K08) ·
+> referans paketi VAR (8 sayfa / 23 panel) · novum İLİŞKİ: gören göz süremiyor, süren el göremiyor ·
+> DÖNÜŞ 10/24 = %41,7 · ⚡şok 1 · hikâye SAHİBİN).
 > Aşağıdaki gövde "24 SAHNE" diyor; yeni rejimde bu **24 KLİP**tir:
 >
 > ```

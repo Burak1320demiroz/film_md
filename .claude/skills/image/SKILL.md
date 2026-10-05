@@ -1,5 +1,6 @@
 ---
 name: image
+disable-model-invocation: true
 license: CC-BY-4.0 (attribution required — Serge Shima, github.com/smixs/visual-skills)
 description: >
   Image prompting skill for Nano Banana (NBP/NB2) and GPT Image 2. Writes ready-to-use
@@ -10,6 +11,16 @@ description: >
   ecommerce product photography, fashion editorial, food/beverage ads, cinematic portraits.
   Do NOT use for: video (use video skill), 3D models, audio, non-image tasks.
 ---
+
+> ⚠️ **YEREL DEĞİŞİKLİK — film_md deposu · 30.09.2026.** Frontmatter'a
+> `disable-model-invocation: true` eklendi: bu skill artık **kendiliğinden
+> ateşlemez**, yalnız `/image` ile ya da adıyla çağrılır. Gerekçe: tetik ifadesi
+> ("image prompt", "storyboards", "character sheets", kapak) bu deponun günlük
+> işinin birebir tanımı, gövdesi ise deponun negatif çekirdeğini, klip ızgarasını
+> ve SPEC sistemini bilmiyor. ⭐ Ayrıca `references/models.md` "50mm / f-stop / ISO
+> YAZMA" diyor; bu deponun Camera Bible'ı tam bunun üstüne kurulu — çelişki canlı.
+> Kayıt ve kullanım: `kilavuzlar_ve_sistem_dosyalari/SKILL_KULLANIM_KILAVUZU.md` §2.1.
+> Üst kaynak CC BY 4.0 · Serge Shima · github.com/smixs/visual-skills — **değiştirilmiştir**.
 
 # Image Prompting — Nano Banana & GPT Image 2
 

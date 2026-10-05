@@ -68,9 +68,47 @@ her kurala tek satır eklenir: `Kaynak: Serge Shima — github.com/smixs/visual-
 - ⚠️ Model lehçesi örneği (skill dosyalarından okunur, ezberden yazılmaz):
   Nano Banana lens sayılarını (50mm, f/1.8) YOK SAYAR; GPT Image 2'de
   "stunning/epic/masterpiece" kaliteyi DÜŞÜRÜR.
-- ⛔ Sınırları: bu skill'ler SPEC sistemini, 8 saniyelik klip ızgarasını ve
-  negatif çekirdeği BİLMEZ. Ürettikleri prompt depo iskeletine oturtulur,
-  yasaklar eklenir, sonra Kart P koşulur (§0-③).
+- ⛔ Sınırları: bu skill'ler SPEC sistemini, klip ızgarasını (süre araçtan
+  ölçülür [D124]) ve negatif çekirdeği BİLMEZ. Ürettikleri prompt depo
+  iskeletine oturtulur, yasaklar eklenir, sonra Kart P koşulur (§0-③).
+
+### ⭐ 30.09.2026 · İKİSİNİN OTO-TETİĞİ KAPATILDI — yerel değişiklik
+
+§0① *"çelişkide depo kazanır"* bir **doktrindi**, mekanik koruma değildi. Ölçüm:
+dokuz skill'den `disable-model-invocation` taşıyan yalnız `yayin-takip`'ti, ve bu
+ikisinin tetiği **deponun günlük işinin birebir tanımıydı.**
+
+```
+video  tetik: "create, improve, audit, or split prompts for AI video generators …
+               shares a prompt and asks to fix it"
+       ⭐ kendiliğinden ateşlerse getirdiği iki şey depoyla ÇATIŞIR:
+         ① kendi "Mandatory reading order — DO NOT WRITE A PROMPT WITHOUT THIS"
+            sırası ↔ deponun zorunlu okuması `yeni-film` adım 2'dir
+         ② "Default … Multi-shot narrative or fast montage drama → Seedance"
+            ↔ depo hattı §2.1'de `references/veo.md` olarak SABİT
+image  tetik: "image prompt · storyboards · character sheets · blog covers"
+       ⭐ `references/models.md`: "50mm / f-stop / ISO YAZMA" (NBP lehçesi)
+          ↔ deponun Camera Bible'ı tam lens sayıları üstüne kurulu
+          (emsal: THE_LAST_GATE 16 kurulum, hepsi `NNmm lens` ile başlar)
+```
+
+**Yapılan:** her iki `SKILL.md` frontmatter'ına `disable-model-invocation: true`
+eklendi + gövdenin başına YEREL DEĞİŞİKLİK bloğu (CC BY 4.0'ın "değişikliği
+belirt" yükümlülüğü burada karşılanır). Skill'ler **silinmedi, kısıtlanmadı** —
+`/video` · `/image` ile ya da adıyla tam güçle çağrılır; yalnız artık **çağrılmadan
+devreye girmez.** §4'ün örnek çağrıları bu yüzden açık biçime çevrildi.
+
+⛔ **`skills-lock.json`'a DOKUNULMADI** ve dokunulmayacak. İki sebep:
+```
+① Lock'un computedHash'i dosyanın ham sha256'sı DEĞİL (30.09 ölçümü: ikisi de
+   farklı çıktı, dosyalar 02.09'dan beri hiç değişmemişken). Şema bilinmiyor →
+   oraya yazılacak sayı DOĞRULANAMAZ. Bu depoda doğrulanamayan sayı yazılmaz.
+② İşimize geliyor: lock eski hash'i tuttuğu için `npx skills update` dosyayı
+   "yerel değiştirilmiş" görür. Hash'i güncellemek, bir sonraki güncellemenin
+   bu kararı SESSİZCE ezmesi demekti.
+```
+⚠️ Yine de `npx skills update` koşulduktan sonra **bu iki frontmatter satırı
+kontrol edilir** — yoksa geri eklenir (§5).
 - Not: marketingskills'in eski `video` skill'i (araç kataloğu) bu kurulumla
   DEĞİŞTİRİLDİ — 27.08.2026. Gerekirse `npx skills add
   coreyhaines31/marketingskills --skill video` ile geri gelir (ad çakışır,
@@ -87,6 +125,16 @@ her kurala tek satır eklenir: `Kaynak: Serge Shima — github.com/smixs/visual-
   skill'in "tek değişken" ilkesiyle aynı — birlikte kullanılır.
 - **`content-strategy`** — seri/kanal içerik planı;
   `SERI_VE_KANAL_STRATEJI_KILAVUZU.md` ile yan yana okunur.
+
+⚠️ **İZLENECEK (30.09.2026): üçünün oto-tetiği AÇIK BIRAKILDI — ama `social` sürtünüyor.**
+Tetik listesinde `"viral content"` · `"video hook"` · `"short-form video"` ·
+`"Shorts"` geçiyor; bunlar deponun ⭐viral bandı, `HOOK_VE_ILK_SAHNE` kılavuzu ve
+dikey shorts hattıyla aynı kelimeler. `video`/`image` kapatıldı (§2.1) ama bu üçü
+kapatılmadı, çünkü ürettikleri şey **film dosyasına girmiyor** — `<FILM>_YAYIN_PAKETI.md`'ye,
+yani §3'te yazılı çok daha geç bir aşamaya giriyor; yanlış ateşlerse çıktı bariz
+biçimde konu dışı olur ve fark edilir. `video`/`image`'in riski başkaydı: **doğru
+görünen ama negatif çekirdeği atlayan prompt.** Ölçüm: `social` film yazımı sırasında
+kendiliğinden ateşlerse buraya satır yazılır ve o da kapatılır.
 
 ## 2.3 `creative-director` — smixs (⭐ DAMITILDI, KURULMADI · 21.09.2026)
 
@@ -172,12 +220,16 @@ SERİ PLANI   content-strategy (SERI_VE_KANAL_STRATEJI ile)
 /qa-isle dikey_shorts_filmler/THE_X ~/masaustu/THE_X_master.mp4
 /yayin-takip THE_X once
 
-"S7'nin promptunu Veo JSON formatına çevir"                → video
-"Audit this prompt: <prompt>"                              → video (D modu)
-"Bu sahne için 6 kareli animatic keyframe seti yaz"        → image → video
-"Kapak için metinsiz sinematik imaj promptu yaz: <sahne>"  → image
-"Bu film için TikTok/Shorts açıklaması yaz"                → social
-"Kapak A/B deneyi kur: <iki kapak>"                        → ab-testing
+⭐ 30.09.2026: video/image artık KENDİLİĞİNDEN ateşlemiyor (§2.1) — ADI YAZILIR.
+/video  "S7'nin promptunu Veo JSON formatına çevir"
+/video  "Audit this prompt: <prompt>"                        (D modu)
+/image  "Bu sahne için 6 kareli animatic keyframe seti yaz"  → sonra /video
+/image  "Kapak için metinsiz sinematik imaj promptu yaz: <sahne>"
+        ⛔ Çıktı doğrudan film dosyasına GİRMEZ: depo iskeletine oturur,
+           negatif çekirdek eklenir, sonra Kart P koşulur (§0③).
+
+"Bu film için TikTok/Shorts açıklaması yaz"                → social      (oto-tetik AÇIK)
+"Kapak A/B deneyi kur: <iki kapak>"                        → ab-testing  (oto-tetik AÇIK)
 "Bu konu için fikir turu koş, üç aday çıkar"               → yeni-film 0.7a
                                                               (HIKAYE_FIKIR_TURU §2-§6)
 ```
@@ -188,6 +240,20 @@ SERİ PLANI   content-strategy (SERI_VE_KANAL_STRATEJI ile)
 
 ```
 □ GÜNCELLEME   npx skills update        (kilit dosyası: kökteki skills-lock.json)
+               ⛔ KOŞUDAN SONRA: §2.1'in iki frontmatter satırı
+               (`disable-model-invocation: true` → video · image) DURUYOR MU?
+               Güncelleme onları ezerse geri eklenir; kayıt §2.1'dedir.
+□ YEREL        Dış skill'in dosyası değiştirildiyse (30.09.2026 emsali):
+  DEĞİŞİKLİK   ① gövdenin BAŞINA `> ⚠️ YEREL DEĞİŞİKLİK — <tarih>` bloğu —
+                  ne · neden · kaydın adresi. CC BY 4.0 bunu ZORUNLU kılar
+                  ("indicate if changes were made"), tercih değil.
+               ② gerekçe bu kılavuza iner (§2.x), skill dosyasına değil.
+               ③ ⛔ `skills-lock.json` GÜNCELLENMEZ — eski hash, güncellemenin
+                  kararı sessizce ezmesini engelleyen tek işarettir. Ayrıca
+                  lock'un hash şeması dosyanın ham sha256'sı değil; oraya
+                  doğrulanamayan sayı yazılmaz.
+               ⭐ Skill SİLMEK yerine oto-tetiği kapatmak: yetenek durur,
+                  yalnız çağrılmadan devreye girmez. İlk tercih bu olsun.
 □ YENİ SKILL   SKILL.md + varsa scripts/ OKUNMADAN kurulmaz (güvenlik +
                uygunluk). Kurulunca: bu kılavuza satır eklenir; AGENTS
                haritası DEĞİŞMEZ (harita buraya işaret eder).

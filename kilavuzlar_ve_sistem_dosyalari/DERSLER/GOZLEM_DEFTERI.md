@@ -2257,7 +2257,7 @@ makarada yok; ⑩ seçimi joystick'e (S4) yazdı, bu D190'dır.
 
 **Tarih / kaynak:** 28.09.2026 · THE_LAST_TOW yazımında `00_ANALIZ/03_SAHNE_SIRALAMASI.md` §3 kurulum tablosu kurulurken, `00_ANALIZ/05_SAHNE_CALISMALARI/K01_HOOK.md` OPTİK satırında yakalandı.
 **MOD:** yazım turu (üretim 0 kare) — hata ekranda sınanmadı, üretimden ÖNCE düştü, bu yüzden ADAY.
-**KAPI:** aday — muhtemel LİSTE (`03_PLAN_ONCESI` B4'e tek satır). **Vaka:** 1.
+**KAPI:** aday — muhtemel LİSTE (`03_PLAN_ONCESI` B4'e tek satır). **Vaka:** **2** (bkz. ⭐ VAKA 2, aşağıda).
 
 **Gözlem (ölçülmüş):**
 - Filmin HOOK klibi (K01) bir nesnenin tek karelik bilmecesidir: 56 cm'lik çelik bir anahtar bir metal levhanın üstünde DİK duruyor.
@@ -2270,7 +2270,34 @@ makarada yok; ⑩ seçimi joystick'e (S4) yazdı, bu D190'dır.
 
 **Öneri (ÖNERİ · maliyeti sıfır):** kurulum tablosuna **iki sütun daha**: `kadraj eni (m)` ve `bu kurulumda en küçük/en büyük ana nesne (m)`. Tablo kurulurken sığmayan eşleşme kırmızı görünür. `03_PLAN_ONCESI` B4'e tek satır: *"her kurulumun kadraj eni, o kurulumu kullanan kliplerin EN BÜYÜK ana nesnesinden büyük mü?"*
 
-**Kapatma:** ikinci bir filmde aynı çelişki sahne çalışma dosyasına kadar yakalanmadan geçerse ve üretimde kare kırpılırsa → ders. DEĞİŞEN SATIR: `URETIM_ONCESI_ANALIZ/03_PLAN_ONCESI_KONTROL_LISTESI.md` B4 + `ACI_YAYI_VE_SEKANS_KILAVUZU` §4.
+**⭐ VAKA 2 — 01.10.2026 · THE_LAST_GATE (16 dk · 96 klip).** Aynı boşluk, tek klip değil **altı** klip:
+```
+K11  J 100mm@0,55 m → 0,20 m kadraj · "four hard clamps AROUND THE COLLAR"   sığmaz
+K35  C  35mm@2,0 m  → 1,54 m        · üç yetişkin "either side of her"       sığmaz
+K49  K  24mm@60 m   → 90 m          · 16.000 m halka "all round"             178×
+K52  A  24mm@40 m   → 60 m          · "One frame holds the whole geography"  150×
+K64  K                              · 900 m açıklık + 480 m gemi profili      10×
+K69  K                              · 480 m kesit ⨯ 420 m açıklık   5,3× ⭐ TEK KARE
+```
+⛔ **Kapatma koşulu YANLIŞ testte duruyordu.** ADAY-101 *"üretimde kare kırpılırsa"*
+diyordu; bu filmde üretim **0 kare** ve hasar yine tam: `00_SAHNE_TABLOSU.md`'nin
+OPTİK sütunu 96 satırın 96'sında hesaplanmadı (yalnız şartnamenin kendi örnek
+satırında "px" var), KAPI sütunu 96/96 ⬜ kaldı — oysa kuralı *"✅ olmadan o sahnenin
+promptu yazılmaz"* — ve **92 prompt imzasız kapıyla yazıldı.** Yani çelişki üretime
+değil, 184 promptun TAMAMINA yayıldı; onarım artık Camera Bible'ın harf kümesini
+değiştiriyor (yeni mesafeler: 690 m ortak · 6.900 m · 12.270 m) ve 8 bölümün
+KURULUM İSKELETİ başlıklarıyla DÖNÜŞ ölçümüne kadar dalgalanıyor.
+⭐ Ölçülen fark: tek klipte (LAST_TOW) maliyet bir harf; 96 klipte maliyet
+**iskeletin tamamı**. Yani kapı ne kadar geç koşarsa, maliyeti klip sayısıyla
+DOĞRUSAL değil, kurulum paylaşımıyla ÇARPAN olarak büyüyor (K52↔K56 zinciri,
+K64+K69 ortaklığı).
+
+**Kapatma (DÜZELTİLDİ):** iki vaka doldu ve ikisi de üretimden ÖNCE yakalandı → kapatma
+testi "üretimde kare kırpılması" değil **"sahne tablosunun OPTİK sütunu promptlar
+yazılmadan önce dolu mu"** olmalıdır. Bu hâliyle **DERSE hazır**. DEĞİŞEN SATIR:
+`URETIM_ONCESI_ANALIZ/03_PLAN_ONCESI_KONTROL_LISTESI.md` B4 + `ACI_YAYI_VE_SEKANS_KILAVUZU` §4
++ `prompt_kontrol.py`'ye aday kapı: *tablonun OPTİK sütununda "px" taşımayan satır varken
+o klibin promptu yazılmışsa FIX*.
 
 🔗 `ACI_YAYI_VE_SEKANS_KILAVUZU` §4 · `KILAVUZ_REHBERI` §5.2 · [[D179]] · THE_OPEN_CIRCUIT denetimi
 
@@ -2338,3 +2365,117 @@ makarada yok; ⑩ seçimi joystick'e (S4) yazdı, bu D190'dır.
 **Kapatma:** ikinci bir film aynı kalıpla (yasağı yazarken kelimeyi taşıyarak) yakalanırsa → ders + kapı. DEĞİŞEN SATIR: `prompt_kontrol.py` `POLITIKA_T2` + ⑯ alt kontrolü.
 
 🔗 `FILM_QA_RAPORLARI/09_URETIM_RED_DEFTERI` #8 · [[D123]] · [[D59]]
+
+---
+
+## ADAY-105 — PROMPT ŞABLONDAN KURULUYOR: `IN FRAME:` İLE GÖVDE/IŞIK/FİZİK ARASINDAKİ ÇELİŞKİYİ HİÇBİR KAPI GÖRMÜYOR
+
+**Tarih / kaynak:** 01.10.2026 · THE_LAST_GATE · sahip iki kez *"eksik sahneler var yazılammaış"* / *"bölüm 1 de eksik sahneler var"* dedikten sonra yapılan tutarlılık taraması.
+**MOD:** yazım sonrası denetim (üretim 0 kare) — ekranda sınanmadı. **KAPI:** aday — muhtemel KAPI EKLEMESİ (`prompt_kontrol.py` yeni ㉝). **Vaka:** 1 (ama tek filmde 118 blok).
+
+**Gözlem (ölçülmüş):**
+- Film `prompt_kontrol.py` klasör modundan **0 BLOCK · GO** ile geçmişti ve ben sahibe "bitti" demiştim. Sahip "eksik" dedi. **Yapı sayımı onu doğrulamıyordu** (96 klip başlığı · 25 sahne · 184 prompt · 0 tekrar) — ama içerik doğruladı.
+- Kök sebep tek cümle: ⭐ **sabit bloklar `IN FRAME:` satırına göre süzülmemiş, her prompta olduğu gibi yapıştırılmıştı.** Promptlar yazılmamış, ŞABLONDAN KURULMUŞTU.
+- Üç ayrı blokta, üç ayrı ölçüm:
+  - **PHYSICS · 92/92 video promptu.** Tek varyant vardı ve ikinci cümlesi *"A boot locks to the deck grating before the next step, a body is pulled forward by a rail …"* diyordu — bu bir KADRAJ İÇİ görsel talimattır. Aynı promptların **31'inde** NEGATIVE *"Exactly 0 human characters in frame, no people, no figures, no silhouettes of people"* diyor. Prompt kendi kendisiyle çelişiyor ve motora kadraja figür sokma daveti çıkarıyordu.
+  - **Character Bible · 26 image promptu.** Kadrajda olmayan gövde tarif ediliyordu. En keskini: K28·K51·K68·K78 `IN FRAME: hands` (100mm@... → 1,27 m kadraj) ama *"The tall systems engineer **stands a head and a half above the humans** … two symmetrical bony plates **on the face** behind a clear helmet."* — el kadrajında tam boy figür ve YÜZ. K19'da `IN FRAME: hands` ile *"The two figures keep separate halves of the frame and never overlap."*
+  - **LIGHT · 4 sahne.** *"faces stay readable behind the clear visors"* insan olmayan kliplerde de vardı (K87·K90·K94 `IN FRAME: none`).
+- **Hiçbir mevcut kapı bunu görmedi.** Sebep ölçüldü: kapılar **VARLIK** sayıyor — cümle var mı, kelime bandında mı, sahne içinde birebir mi. **TUTARLILIK** saymıyor; `IN FRAME:` satırını bir BEYAN olarak okuyup gövdeyle karşılaştıran kimse yok. ㉖ yalnız `IN FRAME:` satırının VAR olmasını istiyor.
+
+**Hipotez:** `IN FRAME:` 14.09'da promptun ilk satırı yapıldı (D214: *"self-contained ≠ Bible'ın tamamı — yalnız IN FRAME satırındaki tarif edilir"*) ama **yazanın** uyması gereken bir kural olarak kaldı, **ölçülen** bir kapıya dönüşmedi. Şablonla üretim (bu filmde `06_PROMPT_URETECI`) kuralı sistematik olarak deliyor: üreteç Bible paragrafını değişkene koyup her klibe basıyor, ve 184 promptun hepsi aynı anda ihlal ediyor. Tek tek yazılan filmlerde hata rastgele, üreteçle yazılanlarda **tam**.
+
+**⚠️ ㉜ İLE ÇARPIŞMA — ölçüldü ve çözüldü.** Düzeltmeye klip başına başladım ve S22'nin ışık kilidini KIRDIM (yeni FIX doğdu): sahne içinde LIGHT/PHYSICS birebir olmak zorunda, ama sahneler insanlı + insansız klip KARIŞTIRIYOR (S02 · S03 · S09 · S22 · S23 · S25). Çözüm klip başına düzeltme DEĞİL, **her iki koşulda da doğru olan cümle**: PHYSICS'in insan örnekleri temas-nötr yazıldı (*"Nothing changes course without contact: whatever moves has been gripped, pushed against or thrust …"*) ve 92/92'de birebir kaldı; ışıkta yüz cümlesi sahne bütünüyle nötrlendi. ⭐ Kayıp sıfır çıktı çünkü yüz taşıyan 5 klip vizör berraklığını **gövdesinde zaten taşıyor**. Sonuç: 9 FIX → 8 FIX + 1 GO.
+
+**Öneri (ÖNERİ · maliyeti bir sözlük + bir regex):** `prompt_kontrol.py`'ye ㉝ — *`IN FRAME:` satırında beyan edilmeyen gövde parçası prompt gövdesinde, LIGHT'ta veya PHYSICS'te tarif edilemez.* Eşleme: `yüz` → face|full body · `ön göğüs / rozet / kaburga` → torso|full body (⛔ `back` beyanı ön göğsü GEÇERSİZ kılar) · `kemer` → torso|full body · `bacak / boot` → full body · `tam boy / "stands … above"` → full body. `IN FRAME: none` ise herhangi bir gövde parçası → BLOCK.
+
+**⚠️ YANLIŞ POZİTİF TUZAKLARI — kapı yazılırken kayıtlı olsun (hepsi bu taramada ölçüldü):**
+```
+`faces?` deseni "sur·face" içinde eşleşir → 14 yanlış pozitif. \b yetmez, "surface" hariç tutulur.
+NEGATIVE'in "exactly one tall figure with two arms, two legs and one head" cümlesi
+   bir MUTASYON kilidi, kadraj iddiası DEĞİL → 17 yanlış pozitif.
+`torso · hands` ÖN gövdedir; göğüs kabuğu orada MEŞRU (K59 · K67) — yalnız gövde metni
+   "shoulder … at the frame edge" diyorsa omuzla sınırlıdır (K12).
+"from collar to hip" bir GİYSİ tarifidir, tam boy iddiası değil (K14).
+AUDIO'daki "breathing inside the closed helmet" KADRAJ DIŞI ses olabilir → arıza DEĞİL.
+   Ayrım: PHYSICS ve LIGHT kadrajda GÖRÜNENİ yönetir, AUDIO yönetmez.
+```
+
+**Kapatma:** ikinci bir film üreteçle yazılır ve aynı sınıf (beyan edilmeyen gövde parçası) elle taranmadan geçerse → ders + kapı. DEĞİŞEN SATIR: `prompt_kontrol.py` ㉝ + `IMAGE_VIDEO_PROMPT_TEMPLATES.md` V3 (`IN FRAME:` bölümüne süzme kuralı) + `yeni-film/SKILL.md` adım 8.
+
+🔗 [[D214]] · [[D74]] · `KILAVUZ_REHBERI` §5.1 · ADAY-101 (aynı filmin optik yarısı) · `prompt_kontrol.py` ㉖ ㉜
+
+
+---
+
+## 🔭 ADAY-103 — ⑩ DÖNÜŞ BANDININ `n`'İ KLİP SAYIYOR, §4b'NİN %40'I SAHNE ÜZERİNE KALİBRELİ
+**05.10.2026 · THE_SINKING_HARBOR (16 dk · 24 sahne × 4 klip) · İKİNCİ ÖLÇÜM**
+
+**Olgu:** `prompt_kontrol.py` (satır 2024-2045) bölüm dosyası başına
+`donusler = [j for j in range(1,n) if iskelet[j] in iskelet[max(0,j-4):j]]`
+hesaplıyor ve `n >= 12` ise oranın ≥%40 olmasını istiyor. Bu filmde sekiz
+bölümün **beşi** düştü: B4 %17 · B5 %25 · B6 %17 · B7 %17 · B8 %17
+(geçenler B2 %42 · B3 %42; B1 n=8 olduğu için muaf).
+
+**Bu bir ihmal değil, KANITLANMIŞ ULAŞILAMAZLIK.** B4 için bütün serbest
+pozisyonlar üzerinde tarandı: kısıtlı optimum **2/12**. 3/12'ye çıkmanın tek
+yolu K37'yi A yapmaktı ve o da K36(H·MS) → K37(A·MS) çiftini **0 ölçek
+kademesine** düşürüp `ACI_YAYI` §3'ü ihlal ediyor. Yani §3 ile §4b aynı anda
+sağlanamıyor — bir kılavuzu geçmek için diğerini kırmak gerekiyor.
+
+**Hipotez:** §4b'nin %40'ı **sahne** sayısı üzerine yazıldı. Çok klipli
+rejimde 12 kliplik bir bölüm **3 SAHNEDİR** ve her sahne kapsama şablonu
+gereği 4 ayrı mekân gezebiliyor; kapının `n`'i ise KLİP sayıyor. İki birim
+~4× ayrışıyor. Sahne birimiyle okunduğunda bu film geçiyor: S10'un C'si,
+S12'nin C/A'sı tekrar ediyor. ⭐ Aynı §4b'nin **KÜME** denetimi
+`--sahne-plani` taşıyan dosyalarda ZATEN muaf tutulmuş (satır 2033, 22.09
+reformu); DÖNÜŞ muaf tutulmamış — reform yarım kalmış.
+
+**İKİNCİ ÖLÇÜM olduğu için önemli:** THE_LAST_GATE (30.09.2026) aynı duvara
+%8-33 ile çarpmış ve 8 FIX'ini "on bir mekân" gerekçesiyle açık bırakmıştı.
+O film sahne≈klip rejimindeydi, bu film 4 kliplik sahne rejiminde. İki ayrı
+rejim, aynı kapı, aynı sonuç → sebep filmlerde değil kapıda.
+
+**Öneri (maliyeti bir koşul):** `sahne_plani_bul(yol, metin)` doğruysa
+DÖNÜŞ'ün `n`'i **sahne sayısı** olur (12 klip → 3) ve pencere sahne sınırına
+genişler; ya da KÜME gibi tamamen muaf tutulur. Üçüncü seçenek: bandın
+kendisi çok klipli rejim için yeniden ölçülür (bu film %32 film-geneli verdi).
+
+**Kapatma:** üçüncü bir çok klipli film aynı sınıfta düşerse → kapı düzeltilir.
+İki ölçüm var, üçüncüsü bekleniyor.
+
+🔗 `ACI_YAYI` §3 ↔ §4b · `COK_KLIPLI_SAHNE` §2 · `prompt_kontrol.py` ⑩ satır 2024-2045
+· THE_LAST_GATE 8 FIX · `THE_SINKING_HARBOR/00_ANALIZ/04_UYARI_NOTLARI.md` §4a aday 20
+
+---
+
+## 🔭 ADAY-104 — FİLMİN KENDİ YASAKLI SÖZCÜK LİSTESİ KAPI DEĞİL
+**05.10.2026 · THE_SINKING_HARBOR · ⭐ bu turun en pahalı bulgusu**
+
+**Olgu:** Bu film D56 (MEDIUM LOCK) için `01_QA_DERS_HASADI.md` §1c'ye **11
+yasaklı sözcük + karşılıkları** yazdı (sinking→losing altitude · dive→descent
+· deep→far below · wave→load wave · current→drift · floats→is held ·
+surface→face · tissue→layer · tentacle→fold · swirl→travel · wet→dry). Sonra
+**kendi listesini altı promptta ihlal etti**: `sinking` K44 (image · video ·
+CA) ve K94 (image · video · CA).
+
+**On sekiz kapının hiçbiri bunu söylemedi.** Elle yazılmış bir betikle
+tarandı, bulundu, düzeltildi (`going down` · `settling`), ikinci koşu temiz.
+
+**Hipotez:** yasaklı sözcük listesi bu depoda **insan belleğine** bırakılmış.
+`prompt_kontrol.py`'nin `YASAK` sözlüğü depo-geneli sabitleri tutuyor (bloom,
+glowing, swirl…) ama **film-başına** sözlük tutmuyor. Oysa D56'nın tanımı tam
+olarak film-başınadır: tehlikeli kelime filmin KONUSUNA bağlı. Ve en kötü
+durum tam burada: yasaklı kelime **filmin adında** geçiyorsa (THE SINKING
+HARBOR) yazarken en kolay kaçan kelimedir.
+
+**Öneri (maliyeti bir dosya okuması + bir regex):** film klasöründe
+`00_ANALIZ/01_QA_DERS_HASADI.md` §1c varsa oradaki yasaklı sözcükler
+**pozitif gövdede** aranır. Sözlüğü FİLM yazıyor, kapı yalnız okuyup tarıyor —
+kapı hiçbir şey bilmek zorunda değil. Ölçülmüş getiri: bu filmde 6 ihlal.
+
+**Kapatma:** kapı yazılır ve bu film üzerinde koşulursa 6 bulgu basmalı
+(düzeltme öncesi hâle `git show` ile bakılabilir). Basmazsa desen yanlıştır.
+
+🔗 [[D56]] · `01_QA_DERS_HASADI` §1c · THE_DEEP_PRESSURE 3,0 (D56'nın kaynağı)
+· `THE_SINKING_HARBOR/00_ANALIZ/04_UYARI_NOTLARI.md` §4a aday 24 ·
+`06_URETIM_ONCESI_KONTROL.md` A5

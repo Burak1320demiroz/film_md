@@ -27,7 +27,13 @@
 > (yatay trailer · 2:00 · **14 vuruş sıfırdan üretim, 8 s klip** · mekanik
 > EKSİLME · logo blokları + replikler POST'ta [F6 gömülü altyazı vakası] ·
 > ⚠️ üretim BEKLİYOR, prompt kontrol GO)
-> Beşini de şablon olarak aç; bu kılavuz oradaki kararları genelleştirir.
+> `yatay_16_dk_filmler/THE_LAST_GATE/FRAGMAN/` (yatay · **1:00** · 12 vuruş ·
+> aynı oranlı → §1.1b · yeni üretim 0 kare, risk 0/9 · mekanik DARALMA ·
+> ⭐ **ilk KLASÖR biçimli teslim** (üç dosya: eşleme · kare hassasiyetli kesim
+> listesi · müzik+vurgu) ve ⭐ **ilk 1:00 yatay** — §0 bandının (1:20-2:00)
+> ALTINDA, sapma dosyada sayısal karşılığıyla kayıtlı · ⚠️ kaynak film 0 kare
+> üretildi, teslim KURGU TALİMATI)
+> Altısını da şablon olarak aç; bu kılavuz oradaki kararları genelleştirir.
 
 ---
 
@@ -164,6 +170,11 @@ Borrowed W.  → TERAZİ       her vuruş kefe değiştirir: dünya hafifler,
 YERÇEKİMİ    → EKSİLME      her vuruş bir şeyi eksiltir (cıvata → rutin →
                             platform → halat → cevap → yakıt → ışık →
                             ritim); butonda kalan tek şey camdaki gezegen
+LAST GATE    → DARALMA      her vuruşta bir SAYI küçülür ve izleyici onu
+                            kendi öğrenir (16.000 → 9.000 → 1.200 → 900 m);
+                            ölçüt vuruşu (480 m gemi kesiti) sondan bir önce
+                            konur, button iki sayıyı çarpıştırıp CEVAPSIZ keser.
+                            ⭐ TAKVİM'in TERSİ: sayaç ilerlemez, GERİ SAYAR.
 diğer adaylar→ ÖLÇEK (merdiven yukarı) · TAKVİM (sayaç ilerler)
               · YAKLAŞMA (tehdit her vuruşta yakında)
 
