@@ -1,0 +1,83 @@
+# THE_INWARD_FALL
+KAYNAK: ham rapor 15 (geçerli 14 · mod V/GEÇERSİZ 1 [⑬ UYUM `INPUT MODE: MISSING` — mercek koşmadı, 0 bulgu; tool 15/15 geçerli sayıyor] · KESİK 0) · bulgu 36 (🔴 18 · 🟠 18)
+SAYIM KURALI: satır = (mercek, olay, sahne). `--film` listesi 25 satır verdi; tekrar eden satırlar (S05·S16·S24 ×2) birleşti, çok sahneli tek ham satır sahneye bölündü → 36 satır. Bunların 12'si `(listede yok)`: ② 3 · ⑨ 7 (Setup Fidelity ×6 + Rhyme Pair) · ⑫ 2 (⑨ Return Consistency 3 satırı listede tek satır "S12" olarak var). 🟡 satırlar (⑤ filigran, ② vizör buğusu, ⑪ amber sıfırlama, ⑭ M9/M17) kapsam dışı.
+S = KLİP no (tool'da "sahne" = klip; plan sahnesi S01-S06 değil). Film 24 klip / 6 sahne, 10 s ızgara, tüm bulgular zaman damgasıyla klibe oturdu. ⑦ AKSİYON, ⑩ OYUNCULUK, ⑪ IŞIK, ⑮ YÖN, ③ SES, ④ HİKÂYE: 0 adet 🔴/🟠.
+SPEC: yeni rejim (00_HIKAYE_ONAYI 28.09.2026), bilinçli kararlar: repliksiz film, sabit lockoff, kapsül finalde insansız. Üretim defteri BOŞ (master kimliği yok).
+
+## BULGULAR
+| S | şiddet | mercek | tür | hüküm | promptta ne yazıyor (≤20 kelime alıntı ya da "YOK") | kapanma | not (≤12 kelime) |
+|---|---|---|---|---|---|---|---|
+| S16 (K16-24) | 🔴 | ① KARE | hikâye/anlatım/kurgu | 🅒 | K16: "The vertical ladder terminates abruptly at 55 meters altitude, leaving a 5-meter open zero-g gap" | QA | ⑥⑦⑧⑨⑩⑪⑭⑮ özgün K16-24 olayı görüyor; master doğrulanmadı |
+| S24 | 🔴 | ① KARE | hikâye/anlatım/kurgu | 🅒 | "sleek white cylindrical escape pod ... drifts in a perfectly straight, motionless line toward the foreground" | QA | ⑦ B24, ⑨ S24 MATCH, ⑩, ⑪ kapsülü görüyor |
+| S05 | 🟠 | ① KARE | yerçekimi/süzülme | 🅐 | K05: "swings forward through a heavy short arc, and slams down onto the track 40 cm ahead" | araç ayarı | Topuk 3 cm, mıknatıs, 40 cm adım yazılı; bot yine kaydı |
+| S20 | 🟠 | ① KARE | yerçekimi/süzülme | 🅒 | K20: "The technician kicks his feet out of the locked boots, launching his unburdened body" | QA | K20'de yürüyüş yok; "recycled" döngü iddiasına bağlı |
+| S04 | 🟠 | ② DEVAMLILIK (listede yok) | kask/giysi/ekipman kayması | 🅑 | K04: "segmented thigh plates and bright yellow safety chevrons" (taraf YOK; K01: "yellow chevron striping") | prompt | SPEC: sağ kol+sağ bacak; hiçbir promptta taraf yazılı değil |
+| S04 | 🟠 | ② DEVAMLILIK (listede yok) | hikâye/anlatım/kurgu | 🅒 | K02: "the pin spins away out of frame" | QA | Pim hiç tutulmuyor; "elden kayboldu" iddiası yanlış okuma |
+| S11 | 🔴 | ② DEVAMLILIK (listede yok) | kask/giysi/ekipman kayması | 🅑 | K11: "he clings to the tubular rungs with both gloves following the tool pouch loss" | prompt | Çanta yalnız K10'da tanıtılmış; K11'de kalça durumu yazılı değil |
+| S10 | 🟠 | ⑥ FİZİK | yerçekimi/süzülme | 🅑+ | "tool pouch tears loose ..., floating backward into the open space cavity along a curving tangential path" | prompt | "Floating/drifts" istiyor; PHYSICS 0.90→0.70 g aralık, düşüş süresi yok |
+| S04 | 🔴 | ⑧ EFOR | efor/beden | 🅐 | K04: "his knees bend 5 cm under the heavier 1.0 g downward pull" ... "takes one heavy step forward" | araç ayarı | Diz 5 cm ve ağır adım yazılı; model hafif yürüdü |
+| S06 | 🟠 | ⑧ EFOR | efor/beden | 🅐 | K06: "as his upper body pitches 20 degrees sideways against the guardrail" | araç ayarı | Asimetri 20° yazılı; simetrik gövde üretildi |
+| S08 | 🔴 | ⑧ EFOR | efor/beden | 🅑 | K08: "he steps his right boot up onto the third rung, pulling his torso upward" | prompt | Oran düşüşü/dinlenme yok; 50 sn tırmanış sayısız (🅑5) |
+| S10 | 🟠 | ⑧ EFOR | efor/beden | 🅑 | "grimaces behind his visor, ignoring the lost equipment and firmly clamping his right glove onto the next rung" | prompt | Omuz darbesi K11'e inmemiş; ayna vizörde yüz buruşmaz |
+| S11 | 🔴 | ⑧ EFOR | efor/beden | 🅑+ | "his hands advance smoothly to the next rung, establishing a stable upward cadence" | prompt | "Smoothly/stable" tutuş kaybını bizzat siliyor |
+| S17 | 🔴 | ⑧ EFOR | efor/beden | 🅑 | K17: "his gloved fingers slip off the frozen gate mechanism as the wire hums" | prompt | Eldiven sertliği/titreme cümlesi yok; yalnız kaba çekme |
+| S18 | 🟠 | ⑧ EFOR | efor/beden | 🅑 | K18: "dragging his torso down 15 cm against the top hoop" | prompt | Yer değiştirme sayısı var; nefes/ağrı tepkisi yok |
+| S19 | 🔴 | ⑧ EFOR | efor/beden | 🅑 | K19: "the gloved hands bearing down with full arm strength" | prompt | "Full arm strength" sayısız; ECU kol/omzu kadraja almıyor |
+| S21 | 🟠 | ⑧ EFOR | efor/beden | 🅐 | K21: "swings his floating body through a short 30-degree arc before his shoulders absorb the arrest" | araç ayarı | Arrest yazılı; itiş K20'de "gliding smoothly" (davetli) |
+| S12 | 🔴 | ⑨ KADRAJ (listede yok) | kamera/kesme/kadraj | 🅑+ | K12: "50mm ... 1.2 m away" Medium close-up ↔ "looking down past his boots at the spinning floor 15 meters below" | prompt | Yakın plan ↔ 15 m derinlik; model EWS üretti (dolaylı) |
+| S17 | 🔴 | ⑨ KADRAJ (listede yok) | kamera/kesme/kadraj | 🅑+ | K17: "Tight canted view focused on the technician's lower back and utility harness" | prompt | "Tight" ↔ 2.0 m 65mm "Clip 9 ile aynı" (orta plan) |
+| S18 | 🔴 | ⑨ KADRAJ (listede yok) | kamera/kesme/kadraj | 🅑+ | K18: "High-angle medium shot" ↔ CAMERA "vertical upward-looking wide shot" | prompt | Yüksek açı ↔ yukarı bakan geniş; çelişen iki istek |
+| S19 | 🔴 | ⑨ KADRAJ (listede yok) | kamera/kesme/kadraj | 🅑+ | K19: "85mm master prime lens on a low mount 1.5 m from the deck, camera height 0.4 m" | prompt | K02 kamerası kopya; sahne 55 m merdiven ucu, "deck" yok |
+| S22 | 🔴 | ⑨ KADRAJ (listede yok) | kamera/kesme/kadraj | 🅐 | K22: "Wide shot from beside the stationary escape hub" ... "35mm wide prime lens 3.5 m away" | kadraj kararı | Geniş yazılı, gözlenen MCU gövde; QA plan harfini "B" sanmış |
+| S23 | 🔴 | ⑨ KADRAJ (listede yok) | kamera/kesme/kadraj | 🅐 | K23: "50mm macro prime lens 1.2 m from the hub collar, camera height 1.0 m, low-angle close-up" | kadraj kararı | Alçak açı yazılı; gözlenen yüksek açı vizör yakını |
+| S01·S24 | 🔴 | ⑨ KADRAJ (listede yok) | kamera/kesme/kadraj | 🅑 | K01 "35mm ... 3.2 m ... eye-level wide" ↔ K24 "24mm ultra-wide ... 15.0 m ... along station spin axis" | hikâye/plan | SPEC "tek değişen: sisteme bağlılık" ama eş kadraj yazılmamış (A≠J) |
+| S12 | 🟠 | ⑨ KADRAJ (Return Consistency) | kamera/kesme/kadraj | 🅑+ | K12 plan harfi C (50mm MCU); aynı alıntı yukarıdaki S12 satırı | prompt | Aynı kök: MCU ↔ derin boşluk çelişkisi |
+| S18 | 🟠 | ⑨ KADRAJ (Return Consistency) | kamera/kesme/kadraj | 🅒 | K18: "28mm wide anamorphic lens 4.2 m away ... same position, height and lens as Clip 8" (E) | QA | Plan harfi E; QA "C" bekleyip kendi dizisini kaydırmış |
+| S23 | 🟠 | ⑨ KADRAJ (Return Consistency) | kamera/kesme/kadraj | 🅒 | K23: "the same position, height and lens as Clip 21" (H) | QA | Plan harfi H; QA "G/C" demiş, dizi bir kaymış |
+| S05·S06 | 🟠 | ⑫ HOOK (listede yok) | hikâye/anlatım/kurgu | 🅒 | K06: "A severe station vibration dislodges his safety runner clamp" | hikâye/plan | Plato tahmini; sabit 10 s ızgara tasarım, K06'da engel var |
+| S09·S10·S11 | 🟠 | ⑫ HOOK (listede yok) | hikâye/anlatım/kurgu | 🅒 | K10: "his right shoulder strikes the steel cage upright" | hikâye/plan | Plato tahmini; F-E-F dönüş bilinçli (DÖNÜŞ %62,5) |
+| S02 | 🟠 | ⑭ HAREKET | oyunculuk | 🅒 | K02: "the pin skips sideways across two deck ribs, eluding the outstretched glove" | QA | Iskalama tasarım; "PHANTOM" saymış |
+| S04 | 🔴 | ⑭ HAREKET | oyunculuk | 🅑+ | K04: "both hands resting lightly on the side safety cables" (IMG'de kablo YOK) | prompt | Video, start-frame'de olmayan nesneyi istiyor |
+| S05 | 🟠 | ⑭ HAREKET | yerçekimi/süzülme | 🅐 | K05: "swings forward through a heavy short arc, and slams down onto the track 40 cm ahead" | araç ayarı | ①'deki S05 ile aynı olay |
+| S06 | 🔴 | ⑭ HAREKET | efor/beden | 🅐 | K06: "he wraps both gloved arms over the tubular railing, chest heaving against the steel bar" | araç ayarı | Çömelme yazılı değil; model kendi eylemini ekledi |
+| S10 | 🟠 | ⑭ HAREKET | oyunculuk | 🅐 | K10: "grimaces behind his visor, ignoring the lost equipment" | araç ayarı | Prompt çantaya uzanmayı yasaklıyor; model uzandı |
+| S13 | 🔴 | ⑭ HAREKET | oyunculuk | 🅑 | K13: "preparing his legs for a rapid leaping climb" (baş/bakış cümlesi YOK) | prompt | Kask yönü yazılmamış; 180° döndü |
+| S17 | 🟠 | ⑭ HAREKET | el-nesne kaynaşması | 🅐 | NEG: "Hand-to-surface contact keeps a clear boundary, no merging, no phasing, no extra fingers." | kadraj kararı | Karabina/halat/plaka nesne-nesne; cümle yalnız el-yüzey |
+
+## ÖZET
+hüküm: 🅐 10 · 🅑 9 · 🅑+ 8 · 🅒 9 · 🅓 0 (36 satır) → prompt payı (🅑+🅑+)/(🅐+🅑+🅑+) = 17/27 = %63 · QA yanılgısı 9/36 = %25.
+mercek: ① 4 · ② 3 · ⑥ 1 · ⑧ 9 · ⑨ 10 · ⑫ 2 · ⑭ 7.
+tür (en sık 5): kamera/kesme/kadraj 10 · efor/beden 10 · hikâye/anlatım/kurgu 5 · oyunculuk 4 · yerçekimi/süzülme 4 (diğer: kask/giysi/ekipman kayması 2 · el-nesne kaynaşması 1).
+kapanma yeri: prompt 16 · araç ayarı 7 · QA 7 · kadraj kararı 3 · hikâye/plan 3.
+Okuma: 🅐'lar eforun sayılı yazıldığı klipler (K04 5 cm, K06 20°, K21 30°) ve temas/ayak cümlesinin açık olduğu yerler. 🅑+ kümesi iki kaynaktan: (1) kamera cümlesinin başka klipten kopyalanması ("same position ... as Clip n"), (2) IMG ↔ VID çelişkisi. ⑧'in 9 satırının 5'i 🅑, yani "efor oranı" kuralı bu filmde yazılmamış.
+
+## PROMPT METNİNİN KENDİ KUSURLARI
+(24 klibin tamamı, IMAGE+VIDEO, okundu.)
+1. **Meta etiket** — 24/24 IMAGE ve VIDEO'nun 2. satırı: `Clip 4 of 24.` / `Clip 4 of 24. Duration 10 seconds.` Sahne içeriği değil, ardışık numara; 🅑6 sınıfının (S04 stencil, PHASE 1) aynı mekanizması. Bu filmde kadraja yazı basılmadı (0 bulgu) ama tehlike açık.
+2. **Başka prompta atıf** — 15 klip (K05·K06·K07·K10·K11·K12·K14–K20·K22·K23). K05 CAMERA: "… 60 degrees azimuth toward the outer guardrail. — the same position, height and lens as Clip 2." Model Clip 2'yi görmez; BÖLÜM_1 başlığı "hiçbir prompt atıf yapmaz" diyor (D214). Üstelik atıf, zaten tam yazılmış kamera cümlesinin ARDINA eklenmiş (çift kayıt).
+3. **Kopya kamera yanlış mekâna** — K19 CAMERA: "85mm ... on a low mount 1.5 m from the deck, camera height 0.4 m, low-angle close-up, 60 degrees azimuth toward the outer guardrail" (K02'den kopya). K19 sahne 55 m yükseklikte merdiven ucu; ne "deck" ne "outer guardrail" var. K13/K16/K20/K22'de "camera height 30.0 m" aynı sayı 30 m, 55 m ve 60 m (hub) konumlarında tekrarlanmış; "extreme wide ... eye-level at 105 degrees azimuth" kendi içinde çelişik.
+4. **IMG ↔ VID çelişkisi (CONTINUOUS ACTION ters dönmüş)** — K19 VID: "CONTINUOUS ACTION: the technician has drawn the manual cutter across the tether sheath, severing the safety line completely" ama aynı VID TIMELINE 0.0 s: "the cutter blades bite into the orange cable jacket" (kesme henüz başlıyor) ve IMG: "he reaches down to his chest holster ... drawing the cord-cutter". K20 VID CA: "has released the magnetic boot locks, his unweighted suit floating upward" ↔ TIMELINE 0.0 s "his gloved hands flick the quick-release boot levers"; IMG (start frame) zaten "floats entirely free across the 5-meter vacuum gap". K18 VID CA: "has climbed past the midpoint spoke junction" ↔ IMG: merdiven ucu, botlar son basamakta. Video, start-frame'in tersini 0. saniyede istiyor.
+5. **Motorun gösteremeyeceği yüz/ifade** — Character Bible: "semi-mirrored gold-reflective curved visor completely concealing the face" ve NEG "no open mouth". Ama K03 IMG: "faintly visible through internal helmet illumination, wide dilated eyes convey immediate shock"; K07 VID: "breathing steadily through his teeth"; K10 VID: "grimaces behind his visor"; K12 IMG: "Sweat droplets cling to his forehead inside the illuminated helmet interior". ② raporu bu yüzden "Male, mid-30s, fair complexion, short brown hair" yüz pasaportu yazdı (kimlik üretilmiş).
+6. **NEGATIVE şişkinliği** — IMG 1057 karakter, VID 1138 karakter, 24/24 klipte birebir aynı; prompt toplamının %50'si ve %43'ü. İçinde kendi çelişkisi: "real skin pores and sweat, no airbrushing, no waxy texture, no face morphing" ile "No bare skin, no flesh, no skin visible above the collar ... fully sealed neck" aynı blokta; yüzü kapalı figürde "skin pores" istemek de K03/K12'deki yüz tariflerini besliyor.
+7. **Plan sayıları kendi fiziğiyle tutmuyor** — PHYSICS K01: "0.40 g at 5 RPM on the outer 60-meter ring"; K04: "1.00 g ... accelerates to 8 RPM". a = ω²r ile 60 m'de 5 RPM = 16,5 m/s² (1,68 g), 8 RPM = 42 m/s² (4,3 g). K01 VID zaman çizelgesi: 1,4 m düşüş için "3.5s — the pin drops through the halfway mark" (0,40 g'de 1,4 m ≈ 0,85 s); ⑥ ölçümü model bu çizelgeyi değil 0,40 g'yi izlediğini gösteriyor (0,6 s, 0,42 g).
+8. **SPEC ile prompt sayısı farklı** — SPEC YERÇEKİMİ: K08–K12 0.80 g, K16–K20 0.20 g. Prompt PHYSICS: K08–K12 "decreases from 0.90 g to 0.70 g" (aralık, tek sayı değil), K16–K20 "drops to 0.15 g". 10 klipte kilit ≠ SPEC. K10'da ⑥ tam bu sahnede 0,23 g ölçtü.
+9. **Ortama aykırı ses isteği** — K21–K24 AUDIO aynı kopya blok: "Complete vacuum silence outside the pressure suit, with only the mechanical clunk of locking latches and the hiss of pneumatic separation pistons." K24'te bu cümle yalnız dışarıdan 15 m ölçekte kapsülü gösteren klibe yapışmış ve hemen ardından "Absolute silence of outer space, with zero atmospheric sound" geliyor — aynı satırda hem "sadece tıslama" hem "sıfır ses". K02/K10/K14/K19 AUDIO'ları iletim yolu söylemeden havadan ses tarif ediyor ("metallic scraping screech", "sharp dull thud", "dull twang").
+10. **Vakumda parçacık isteği** — K21 VID: "floating frost crystals scatter across his gold visor ... tiny ice crystals puffing from his suit fabric"; K23 IMG: "venting a tiny jet of vaporized nitrogen that drifts away" — World Bible "no floating dust motes", NEG "No floating atmospheric dust in space" ile aynı promptta.
+11. **Bible'a aykırı malzeme/ışık** — World Bible: "dark unpainted metal surfaces". K13–K15 LIGHT: "revealing weathered white paint and worn yellow safety markings"; K14 AUDIO "painted truss brace". K07 IMG: "faint green instrument reflection" (kaynak yok); K23: "green pneumatic status indicator". LIGHT satırı 24/24 yazılı ama 6 ayrı metin (birebir değil).
+12. **Anlatım boşluğu** — K23 IMG/VID: teknisyen kapsülün DIŞINDA "hatch dogging wheel" çeviriyor ve ayırma pimleri patlıyor; K24'te kapsül ayrılıyor, "hatch ... rotated shut". İçeri girme klibi yok; SPEC "K24 kapsül içi insan" diyor. ⑦ B22 ("outer hatch swings shut") bu boşluğu kendi uydurmasıyla doldurdu.
+13. Yazım kazası: K21 IMG "The semi-mirrored optically clear semi-mirrored gold-reflective visor"; K03 "curved optically clear semi-mirrored" — "optically clear" ile "semi-mirrored ... completely concealing" bir arada.
+
+## 19.09 KURALLARI BU FİLMDE
+| kural | yazılı mı (kaç sahnede) | yine de bulgu çıktı mı |
+|---|---|---|
+| 🅑1 ses yasası | AUDIO satırı 24/24; ortam adı ("vacuum") yalnız 7/24 (K01·K05·K12·K21–K24); K21–K24 aynı kopya blok, K24'te çelişik | ③ SES: 0 🔴/🟠 (SOUNDTRACK HOLDS; "vakumda darbe sesi" yalnız out-of-scope notu) |
+| 🅑2/2a temas | el-yüzey cümlesi IMG 24/24 + VID 24/24; nesne-nesne 0/24 | 1 🟠 (⑭ K17 MISGRIP "fingers pass through metal"); ⑭ out-of-scope 0:15 parmak birleşmesi şiddetsiz |
+| 🅑3 giysi birebir | genel "Equipment and clothing identical throughout" 24/24; Bible giysisi birebir 0/24 (chevron 3/24, taraf 0/24, altın vizör 5/24) | 3 (② K04 chevron 🟠 · ② K11 çanta 🔴 · ② K04 pim 🅒) |
+| 🅑4 ortam sayısı+adı | PHYSICS'te sayı 24/24; ad ("vacuum") IMG NEG 24/24; ama 10 klipte sayı ≠ SPEC (0.90→0.70 ↔ 0.80 · 0.15 ↔ 0.20) | 1 🟠 (⑥ K10: 0,23 g ölçüldü, 0,80 g yazılı); K01'de 0,42 g PASS |
+| 🅑5 efor oranı | oran düşüşü 0/24 (VID'de azalma/titreme anahtarı yalnız K05, K15); K11 tersini ("stable upward cadence") yazıyor | 9 (⑧: 5 🔴 + 4 🟠); 5'i 🅑, 1'i 🅑+ |
+| 🅑6 büyük harfli jeton yok | etiket dışı büyük harf: "RPM" 12× (11 klip), "EVA" 1×; "Clip n of 24" meta 24/24 | kadraja basılan yazı: 0 (🔴/🟠 yok; ⑤ yalnız 🟡 filigran) |
+| 🅑7 ekran/metin çelişkisi yok | 0/24 (ekran/okunacak metin istenmiyor) | 0 |
+| 🅑8 dünya çapası | LIGHT satırı 24/24 ama 6 farklı metin; 60 m halka/kovan sahneye göre yeniden yazılmış (birebir değil) | 0 🔴/🟠 (⑤ FIELD HOLDS; ② kafes çaprazı 🟡) |
+| 🅑13 ışık saat yönü | 0/24 ("at 15 degrees" açısı var, saat yönü yok) | 0 🔴/🟠 (⑪ LIGHT HOLDS; 1 🟡 K05→K06 amber sıfırlama) |
+
+Ölçüm notu: 19.09 kuralları KISMEN işe yaramış gibi görünüyor ama bu filmde yazım standardı sahne başına elle yazılmış: kuralların "tam" uygulandığı tek satır temas cümlesi (24/24, ama yalnız el-yüzey). Bulgu çıkaran üç alan — efor oranı (🅑5), kamera/kurulum çelişkisi, IMG↔VID çelişkisi — 19.09 listesinde ya hiç yok ya "efor" olarak var; ikisi (kamera kopyası, CONTINUOUS ACTION çelişkisi) yeni sınıf adayı.

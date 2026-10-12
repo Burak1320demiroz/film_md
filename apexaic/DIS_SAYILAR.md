@@ -29,6 +29,7 @@
 | YPP uzun form | 1.000 abone + 4.000 geçerli izlenme saati / 12 ay | ✅ | 30.08.2026 | YouTube Yardım (timelapse_md doğrulaması) |
 | YPP Shorts | 1.000 abone + 10 M geçerli Shorts izlenmesi / 90 gün | ✅ | 30.08.2026 | aynı |
 | AI beyanı | "Altered or synthetic content" — gerçekçi, gerçekleşmemiş sahne → ZORUNLU · öneri/para cezası yok · 27.05.2026'dan beri otomatik etiket | ✅ | 01.09.2026 | answer/14328491 · thenextweb 27.05.2026 |
+| AI beyanı (ek) | "Disclosing AI content won't limit a video's audience or impact its eligibility to earn money." · bildirmemek → manuel etiket, kaldırma ya da YPP askısı · C2PA metadatası varsa YouTube etiketi kendisi koyar, değiştirilemez · sayfanın yeni adı "Disclosing use of GenAI content", ayarın adı "AI use" | ✅ | 07.10.2026 | answer/14328491 |
 | "Inauthentic content" | 15.07.2025 · izinli: her bölümü ayrı hikâyeli seri · yasak: şablon/seri üretim izlenimi | ✅ | 01.09.2026 | answer/1311392 |
 | Kapak boyutu | yatay **3840×2160** · Shorts kapağı **2160×3840** (öneri; 1280×720 çalışır, 120 px testi yine koşulur) | ✅ | 20.09.2026 | answer/72431 · FILM_KAPAGI §9 |
 | Kapak alt sınır · format · dosya | yatay ≥640 px genişlik · Shorts ≥640 px yükseklik · JPG/PNG · masaüstü ≤50 MB · mobil video kapağı ≤2 MB · Shorts özel kapağı yalnız masaüstü Studio · özel kapak = doğrulanmış hesap | ✅ | 20.09.2026 | answer/72431 |
@@ -36,9 +37,14 @@
 | Shorts sınıfı | kare ya da dikey · **≤3 dk** → Shorts; 16:9 iki dakikalık film YATAY kalır | ✅ | 20.09.2026 | answer/15424877 |
 | Shorts → Related Video | Shorts'a ilgili uzun video bağlanır · gelişmiş özellik erişimi gerekir · geçiş ölçülür | ✅ | 20.09.2026 | answer/14075157 |
 | Başlık/kapak testi | Studio "Test & Compare": **≤3 varyant** (başlık · kapak · birleşim) · izlenme süresine göre seçer · birkaç gün–2 hafta · masaüstü + gelişmiş özellik · Shorts'ta YOK | ✅ | 20.09.2026 | answer/16391400 |
+| Başlık/kapak testi (ek) | görsellerden biri **1280×720'nin altındaysa hepsi 480p** test edilir · test sürerken başlık ya da kapak değişirse **test durur** | ✅ | 07.10.2026 | answer/16391400 |
 | CTR | evrensel eşik YOK — içerik · izleyici · gösterim yerine göre değişir; karşılaştırma kendi benzer videoların | ✅ | 20.09.2026 | answer/7628154 · YOUTUBE_VIRAL_SANS §0 ② |
 | Görüntülenme sayımı | **24.08.2026'dan itibaren** tüm formatlarda video OYNATILMAYA BAŞLADIĞINDA sayılır · Engaged views · Shorts "Stayed to watch" | ✅ | 20.09.2026 | answer/12220281 |
 | Tutma verisi | işlenme 1–2 gün · "Intro" = 30 s sonrası kalan oran | ✅ | 20.09.2026 | answer/9314415 |
+| Kilit anlar | giriş · en iyi anlar · sıçrama · düşüş yalnız video **≥60 s ve ≥100 görüntülenme** ise gösterilir | ✅ | 07.10.2026 | answer/9314415 |
+| Tutma eğrisi (API) | `elapsedVideoTimeRatio` her video için **100 eşit nokta** (0.01–1.0; değer aralığın bitişi) → 4 dk 2,4 s · 8 dk 4,8 s · 16 dk 9,6 s · tek video filtresi zorunlu · `audienceWatchRatio` (1'i geçebilir) · `relativeRetentionPerformance` 0–1, ortanca 0,5 · yetki `yt-analytics.readonly` | ✅ | 07.10.2026 | developers.google.com/youtube/analytics (dimensions · metrics · channel_reports) |
+| Gösterim tanımı | küçük resim **1 saniyeden uzun** ve **en az %50** görünürse sayılır | ✅ | 07.10.2026 | answer/7577430 |
+| Shorts tıklama karşılığı | "How many chose to view" (izledi ↔ kaydırdı) | ◐ | 07.10.2026 | answer/12942217 (Shorts sürümü) |
 | Bitiş ekranı | son **5–20 s** | ✅ | 20.09.2026 | answer/6388789 |
 | Yükleme sıklığı · etiket · saat | günlük yükleme zorunlu değil · etiket rolü sınırlı · yayın saatinin uzun dönem etkisi bilinen kural değil | ✅ | 20.09.2026 | answer/141805 |
 | Kanal (bizim) | 3.210 abone · 225 video · 486.630 görüntülenme · 14.09.2025 | 📸 | 01.09.2026 | sahibin dökümü |

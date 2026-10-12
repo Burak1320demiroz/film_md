@@ -1,0 +1,36 @@
+{
+  "film": "THE_FALSE_SUN",
+  "medya_kok": "~/film_medya/THE_FALSE_SUN",
+  "cozunurluk": "1920x1080",
+  "fps": 24,
+  "klip_sesi": false,
+  "parcalar": [
+    {"cekim": "C01", "dosya": "ham/C01_d1.mp4", "giris": 0.0, "cikis": 10.0},
+    {"cekim": "C02", "dosya": "ham/C02_d1.mp4", "giris": 0.0, "cikis": 10.0, "gecis": {"tur": "kesme", "sure": 0.0}},
+    {"cekim": "C03", "dosya": "ham/C03_d1.mp4", "giris": 0.0, "cikis": 10.0, "gecis": {"tur": "kesme", "sure": 0.0}},
+    {"cekim": "C04", "dosya": "ham/C04_d1.mp4", "giris": 0.0, "cikis": 10.0, "gecis": {"tur": "kesme", "sure": 0.0}},
+    {"cekim": "C05", "dosya": "ham/C05_d1.mp4", "giris": 0.0, "cikis": 10.0, "gecis": {"tur": "kesme", "sure": 0.0}},
+    {"cekim": "C06", "dosya": "ham/C06_d1.mp4", "giris": 0.0, "cikis": 10.0, "gecis": {"tur": "kesme", "sure": 0.0}},
+    {"cekim": "C07", "dosya": "ham/C07_d1.mp4", "giris": 0.0, "cikis": 10.0, "gecis": {"tur": "kesme", "sure": 0.0}},
+    {"cekim": "C08", "dosya": "ham/C08_d1.mp4", "giris": 0.0, "cikis": 10.0, "gecis": {"tur": "kesme", "sure": 0.0}},
+    {"cekim": "C09", "dosya": "ham/C09_d1.mp4", "giris": 0.0, "cikis": 10.0, "gecis": {"tur": "kesme", "sure": 0.0}},
+    {"cekim": "C10", "dosya": "ham/C10_d1.mp4", "giris": 0.0, "cikis": 10.0, "gecis": {"tur": "kesme", "sure": 0.0}},
+    {"cekim": "C11", "dosya": "ham/C11_d1.mp4", "giris": 0.0, "cikis": 10.0, "gecis": {"tur": "kesme", "sure": 0.0}},
+    {"cekim": "C12", "dosya": "ham/C12_d1.mp4", "giris": 0.0, "cikis": 10.0, "gecis": {"tur": "kesme", "sure": 0.0}}
+  ],
+  "ses": [
+    {"dosya": "ses/R01.wav", "baslangic": 0.5, "kazanc_db": 0},
+    {"dosya": "ses/R02.wav", "baslangic": 13.0, "kazanc_db": 0},
+    {"dosya": "ses/R03.wav", "baslangic": 25.0, "kazanc_db": 0},
+    {"dosya": "ses/R04.wav", "baslangic": 43.0, "kazanc_db": 0},
+    {"dosya": "ses/R05.wav", "baslangic": 53.0, "kazanc_db": 0},
+    {"dosya": "ses/R06.wav", "baslangic": 64.0, "kazanc_db": 0},
+    {"dosya": "ses/R07.wav", "baslangic": 73.0, "kazanc_db": 0},
+    {"dosya": "ses/R08.wav", "baslangic": 103.0, "kazanc_db": 0},
+    {"dosya": "ses/R09.wav", "baslangic": 112.0, "kazanc_db": 0}
+  ],
+  "yataklar": [
+    {"dosya": "ses/yatak_kokpit.wav", "baslangic": 0.0, "bitis": 120.0, "kazanc_db": -18, "gecis": 1.0},
+    {"dosya": "ses/yatak_motor.wav", "baslangic": 0.0, "bitis": 25.0, "kazanc_db": -20, "gecis": 1.0}
+  ]
+}

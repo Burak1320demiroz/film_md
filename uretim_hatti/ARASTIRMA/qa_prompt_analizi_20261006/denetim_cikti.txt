@@ -1,0 +1,66 @@
+film 50 · prompt 2913 · ort uzunluk 2325 kr
+NEGATIVE payı ortanca 0.405 · aynı NEGATIVE bloğu ortanca 0.125
+meta: Scene n of N                         film  37/50 · prompt  1595
+meta: S07/R3/K12/PHASE etiketi             film   4/50 · prompt    42
+büyük harfli jeton                         film  48/50 · prompt  1702
+Türkçe kelime prompt içinde                film   4/50 · prompt    67
+ekran kelimesi büyük harfle (WARNING/ERROR…) film   3/50 · prompt     4
+video promptunda IMAGE prompt atfı         film  25/50 · prompt   976
+çelişki: yüz gizli ↔ cam berrak/okunur     film   5/50 · prompt    35
+çelişki: deri yok ↔ 'real skin pores'      film  19/50 · prompt   784
+çelişki: ekran/okuma ↔ metin yasağı        film  25/50 · prompt   265
+vakum + AUDIO'da dış ses tarifi            film   8/50 · prompt    30
+zihinsel/soyut fiil                        film  13/50 · prompt    19
+
+film                        n  uzun  NEG%  aynı   TL   1   2   3   4   5   6   7   8   9  10  11
+BENI_HATIRLAMA             99  2234  0.46  0.12  0.0  99   0  52   0   0  49   0  44   0   0   0
+BLIND_ORBIT                48  2265  0.39  0.19  0.0   0   0  24   0   0  24   0   4  15  13   0
+GUNES_MEZARI               48  2321  0.46  0.10  0.0   0   0  24   0   0  24   0   8   0   0   0
+KRONOS_SON_SINYAL          48   870  0.32  0.31  0.0   0   0  14   0   1   0   0   0  13   0   1
+LOOK_UP                    24  1739  0.42  0.04  0.0  24  16  24   0   0  12   0   0   3   0   0
+MARS_SON_CIKIS             72  1211  0.26  0.17  3.0  72   0  43   0   0  36   0   0  17   0   1
+SUSMAYAN_NOBETCI           96  2044  0.43  0.05  0.0  96   0  48   0   0  48   0   0  23   5   0
+THE_AMBER_LATTICE          20  1216  0.47  0.50  2.0  20  10   0   0   0   0   0   0   3   0   0
+THE_BENT_GRASS             28  4431  0.53  0.50  0.0  28   0  14   0   0   0   0  22   1   0   0
+THE_BRITTLE_EDGE           24  2377  0.43  0.04  3.0  24   0  10   0   0  10   0  24   0   0   1
+THE_BURNING_ENTRY          24  2015  0.65  0.50  2.9  24   0  12   0   0   0   0   0   3   0   0
+THE_COUNTED_RIVET          48  2599  0.44  0.15  0.0   0   0  40   0   0  24   0  48   0   0   0
+THE_COUNTED_TURN           50  3680  0.49  0.60  0.0  50   0  44   0   0   0   0  28   0   0   1
+THE_CRACKED_HELMET         24   328  0.00  0.00  0.0   0   0   4   0   0   0   0   0   0   0   0
+THE_DEEP_PRESSURE           4   440  0.16  0.25  0.0   0   0   2   4   0   1   0   0   0   0   0
+THE_DRY_ANCHOR             28  3844  0.48  0.50  0.0  28   0  28   0   0   0   0  28   0   0   0
+THE_FALLING_WORLD          96  2319  0.47  0.09  0.0  96   0  48   0   0  48   0   0   0   0   1
+THE_FALSE_EARTH           384  2313  0.41  0.01  0.0   0   0 192   0   0 192   0 160  23   1   5
+THE_GRAVITY_ANCHOR         20  1104  0.31  0.05  3.1  20   0  20   0   0   0   0   0   5   0   0
+THE_GREEN_CEILING          50  3915  0.41  0.68  0.0  50   0  50   0   0   0   0  34  50   0   0
+THE_HARD_DOCK              48  3140  0.28  0.12  0.0  48   0  24   0   0  24   0   0   7   0   0
+THE_HEALING_GROUND         28  2758  0.20  0.07  0.0  28   0  26   0   0   0   0   0   4   0   0
+THE_INWARD_FALL            48  2421  0.47  0.50  0.0   0   0  27   0   0  24   2  48   0   2   1
+THE_KEPT_LIGHT             50  3350  0.32  0.06  0.0  50   0  25   0   0  25   0   0   0   2   0
+THE_LAST_GATE             184  1991  0.41  0.05  0.0   0   0   0   0   0   0   0   0   2   1   0
+THE_LAST_TOW               96  2326  0.45  0.19  3.0   0   0  48   0   0  48   0  12   0   4   0
+THE_LEANING_ROOM           24  3247  0.25  0.29  0.0  24   0  20   0   0   0   0   0   0   0   0
+THE_LISTENING_WORLD        32  1923  0.47  0.47  0.0  32   0  32  32   0  16   0  30   0   0   0
+THE_LOCKED_PULSE           50  3686  0.28  0.44  0.0  50   0  49   0   0  25   0   0   0   0   0
+THE_MIRROR_FAUNA           30  1583  0.16  0.10  0.0  30   0  28   0   1   0   0   0   6   0   0
+THE_OPEN_CIRCUIT           50  3440  0.30  0.02  0.0  25   0  50   0   0   0   0   0  14   0   1
+THE_PRESSED_FIELD          20  2587  0.21  0.10  0.0  20   0  16   0   0   0   0   0   0   0   0
+THE_RESONANT_STRAND        28  2199  0.40  0.50  0.0  28   0  12   0   0   0   8   0   2   0   1
+THE_SHADOW_LINE            26  1181  0.36  0.50  0.0  26   1   1   1   0   0  13   0   0   0   1
+THE_SHATTERED_BREATH       24  2163  0.47  0.21  0.0  24   0  24   0   0   0   0  12  24   0   0
+THE_SIGNAL_KEEPERS         48  2533  0.43  0.06  0.0   0   0  24   0   0  24   0  14   0   0   0
+THE_SILENT_PERIHELION      24  1164  0.00  0.00  0.0   0   0  24   0   2   0   0   0   0   0   0
+THE_SINKING_HARBOR        184  2386  0.45  0.09  0.0   0   0  92   0   0  92   0 124   1   0   2
+THE_SINKING_STAKE          50  3068  0.28  0.02  0.0  25   0  48   0   0  25   0   0   0   0   0
+THE_SLOW_RAIN              96  2487  0.48  0.20  0.0  96   0  48   0   0  48   0  96   0   0   0
+THE_SOLAR_MIRROR           24  1844  0.43  0.04  0.0  24  15  24   0   0   0   0  24   2   0   0
+THE_STANDING_WIRE          50  3081  0.32  0.02  0.0  25   0  44   0   0  25   0   0   0   0   0
+THE_STATIC_SHADOW          30  1687  0.31  0.13  0.0  30   0  30  30   0   0   4   0   5   0   0
+THE_STATIC_VEIL            24  2539  0.42  0.25  3.0  24   0  12   0   0  12   8  24   0   0   2
+THE_STILL_POINT            48  1778  0.39  0.46  0.0  48   0  29   0   0  24   0   0   3   0   0
+THE_STILL_SWARM            28  3238  0.27  0.14  0.0  28   0  14   0   0   0   0   0   0   2   1
+THE_STOLEN_SKY            192  2430  0.41  0.01  0.0 192   0  96   0   0  96   0   0  22   0   0
+THE_TETHERED_MASS          32   865  0.39  1.00  2.3  32   0  32   0   0   0   0   0   5   0   0
+THE_UPWARD_FALL            50  2825  0.27  0.02  0.0  25   0  50   0   0   0   0   0   0   0   0
+THE_WHITE_FLOOD            60  3101  0.26  0.02  0.0  30   0  60   0   0   0   0   0  12   0   0
+sütunlar: {1: 'meta: Scene n of N', 2: 'meta: S07/R3/K12/PHASE etiketi', 3: 'büyük harfli jeton', 4: 'Türkçe kelime prompt içinde', 5: 'ekran kelimesi büyük harfle (WARNING/ERROR…)', 6: 'video promptunda IMAGE prompt atfı', 7: 'çelişki: yüz gizli ↔ cam berrak/okunur', 8: "çelişki: deri yok ↔ 'real skin pores'", 9: 'çelişki: ekran/okuma ↔ metin yasağı', 10: "vakum + AUDIO'da dış ses tarifi", 11: 'zihinsel/soyut fiil'}

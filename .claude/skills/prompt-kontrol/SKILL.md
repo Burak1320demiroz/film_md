@@ -1,8 +1,14 @@
 ---
 name: prompt-kontrol
+disable-model-invocation: true
 description: Üretim öncesi prompt denetim kapısı (AGENTS.md Kart P). Film promptları yazıldığında veya "üretime geçelim", "promptlar hazır", "video/imaj üretelim" dendiğinde TEK KARE ÜRETMEDEN ÖNCE MUTLAKA koşulur — kullanıcı açıkça istemese bile. Girdi: FİLM KLASÖRÜNÜN yolu (tek bölüm dosyası değil).
 allowed-tools: Bash(python3:*), Read, Grep, Glob, Edit
 ---
+
+> ⏸️ **05.10.2026 · DONDURULDU (sahip kararı).** Bu skill kendiliğinden açılmaz;
+> yalnız adıyla çağrılırsa çalışır. Bahsettiği kontrat artık `AGENTS_ESKI_HAT.md`'dir.
+> Geçerli hat: `AGENTS.md` + `uretim_hatti/`. Geri almak: frontmatter'daki
+> `disable-model-invocation: true` satırını sil.
 
 # Kart P — Üretim öncesi prompt denetimi
 

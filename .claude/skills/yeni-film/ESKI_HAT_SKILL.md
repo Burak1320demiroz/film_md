@@ -1,8 +1,14 @@
 ---
 name: yeni-film
+disable-model-invocation: true
 description: Yeni film yazma akışı (AGENTS.md Kart A). "Yeni film yazalım", "yeni bir shorts / uzay filmi", "film fikrim var" dendiğinde MUTLAKA kullan. Akış DÖRT soruyla başlar (konu · format · sahne sayısı · referans paketi), sonra hikâye hiçbir dosya okunmadan — fikir turuyla açılan havuzdan seçilerek (21.09.2026) — sohbette yazılır ve BEŞİNCİ soruyla sahibe onaylatılır (14.09.2026); onaysız klasör açılmaz. Yaşayan dersler + çekirdek kılavuzlar + QA raporları okunmadan analiz yazılmaz, analiz bitmeden film yazılmaz.
 allowed-tools: AskUserQuestion, Bash(bash:*), Bash(python3:*), Bash(git status:*), Bash(ls:*), Bash(wc:*), Read, Grep, Glob, Write, Edit
 ---
+
+> ⏸️ **05.10.2026 · DONDURULDU (sahip kararı).** Bu skill kendiliğinden açılmaz;
+> yalnız adıyla çağrılırsa çalışır. Bahsettiği kontrat artık `AGENTS_ESKI_HAT.md`'dir.
+> Geçerli hat: `AGENTS.md` + `uretim_hatti/`. Geri almak: frontmatter'daki
+> `disable-model-invocation: true` satırını sil.
 
 # Kart A — Yeni film
 

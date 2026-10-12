@@ -1,0 +1,19 @@
+{
+  "film": "FILM_ADI",
+  "medya_kok": "~/film_medya/FILM_ADI",
+  "cozunurluk": "1920x1080",
+  "fps": 24,
+  "klip_sesi": false,
+  "parcalar": [
+    {"cekim": "C01", "dosya": "ham/C01_d1.mp4", "giris": 0.0, "cikis": 10.0},
+    {"cekim": "C02", "dosya": "ham/C02_d2.mp4", "giris": 0.5, "cikis": 10.5, "gecis": {"tur": "karisim", "sure": 0.5}, "klip_sesi": true},
+    {"cekim": "C03", "dosya": "ham/C03_d1.mp4", "giris": 0.0, "cikis": 10.0, "gecis": {"tur": "karartma", "sure": 1.0}}
+  ],
+  "ses": [
+    {"dosya": "ses/R01.wav", "baslangic": 2.0, "kazanc_db": 0}
+  ],
+  "yataklar": [
+    {"dosya": "ses/yatak_kokpit.wav", "baslangic": 0.0, "bitis": 19.5, "kazanc_db": -18, "gecis": 1.0},
+    {"dosya": "ses/yatak_dis.wav", "baslangic": 18.5, "bitis": 28.5, "kazanc_db": -20, "gecis": 1.0}
+  ]
+}

@@ -411,7 +411,7 @@ cat "$K/DERSLER/"0[1-7]_*.md | grep -E "^## .{0,4} DERS [0-9]+" | cut -c1-92 \
   | awk '{ if (match($0, /DERS [0-9]+/)) { n = substr($0, RSTART+5, RLENGTH-5) + 0; print n "\t" $0 } }' \
   | sort -n | tail -5 | cut -f2- | sed 's/^## //; s/^/      /'
 echo "   ── rubrik hacmi (tavan 25 KB · üstü çıktı kapısına taşınır, rubriğe eklenmez) ──"
-for f in "$K"/QA_PROMPTLARI/_KAYNAK/[1-9]_*CRITIQUE_PROMPT.md "$K"/QA_PROMPTLARI/_KAYNAK/1[0-5]_*CRITIQUE_PROMPT.md; do   # 9-12: D184 · 13: ⑬ UYUM · 14-15: ⑭ HAREKET ⑮ YÖN (14.09) · _EK dosyaları rubrik değil
+for f in "$K"/QA_PROMPTLARI/ARSIV_20261006/_KAYNAK/[1-9]_*CRITIQUE_PROMPT.md "$K"/QA_PROMPTLARI/ARSIV_20261006/_KAYNAK/1[0-5]_*CRITIQUE_PROMPT.md; do   # 9-12: D184 · 13: ⑬ UYUM · 14-15: ⑭ HAREKET ⑮ YÖN (14.09) · _EK dosyaları rubrik değil
     b=$(wc -c < "$f"); kb=$((b / 1024)); flag=""; [ "$kb" -gt 25 ] && flag="⚠️ tavan üstü"
     printf "      %-38s %3s KB  %s\n" "$(basename "$f" | cut -c1-38)" "$kb" "$flag"
 done

@@ -1,5 +1,11 @@
 # 🔍 QA PROMPTLARI — RUBRİK KLASÖRÜ REHBERİ
 
+> 🗄️ **ARŞİV — 06.10.2026 (sahip kararı).** Bu klasördeki promptlar artık kullanılmıyor.
+> 15 mercek (`_KAYNAK/`) ve üç geçişli QA (`UC_GECISLI_QA/`) **`ARSIV_20261006/`** altına taşındı.
+> Yeni hattın 4 QA promptu `uretim_hatti/QA_PROMPTLARI/`'dadır. Gerekçe ve eşleme: `ARSIV_20261006/00_README.md`.
+> Aşağıdaki metin tarihtir; içindeki `_KAYNAK/` yolları artık `ARSIV_20261006/_KAYNAK/` demektir.
+
+
 > **Üç dosya türü, üç ayrı ev:**
 >
 > | Ne | Nerede |

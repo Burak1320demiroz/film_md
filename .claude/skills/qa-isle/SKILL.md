@@ -1,8 +1,14 @@
 ---
 name: qa-isle
+disable-model-invocation: true
 description: QA raporu işleme akışı (AGENTS.md Kart C/D/E/E3/F/F2 + ortak kapılar ①-⑪). Bir QA/critique raporu yapıştırıldığında veya "rapor geldi", "kare/devamlılık/ses/hikaye/arka plan/fizik raporu" dendiğinde MUTLAKA kullan. Girdi: film klasörü ve varsa master video yolu.
 allowed-tools: Bash(bash:*), Bash(python3:*), Bash(ls:*), Bash(ffprobe:*), Bash(ffmpeg:*), Read, Grep, Glob, Write, Edit
 ---
+
+> ⏸️ **05.10.2026 · DONDURULDU (sahip kararı).** Bu skill kendiliğinden açılmaz;
+> yalnız adıyla çağrılırsa çalışır. Bahsettiği kontrat artık `AGENTS_ESKI_HAT.md`'dir.
+> Geçerli hat: `AGENTS.md` + `uretim_hatti/`. Geri almak: frontmatter'daki
+> `disable-model-invocation: true` satırını sil.
 
 # QA raporu işleme — kapı sırası
 

@@ -1,0 +1,329 @@
+# 🖼️ THE_MAYDAY_SEA — Prompt grubu G01 (çekimler C01–C08)
+
+> Yazan: goruntu-yonetmeni (faz 5, tur 1). Kaynak: `ODA/SAHIP_PLANI.md` (sahip planı, "bunu bozmadan aynı şekilde hazırla").
+> Bu dosya yeniden tasarım değil, biçim çevirisidir: kompozisyon, olay, ışık, tasarım ve hareket yönü planın kendisi;
+> cümleler olabildiğince planın İngilizcesi. Çıkarılan plan kalıpları (NOTLAR KARARLAR 12.10.2026): araç/oran/süre etiketleri,
+> olumsuz kapanış bloğu ("No readable text… / No cuts, new characters…"), zincir dili ("first frame", "uploaded scene still"),
+> "All spoken lines will be added in the edit" (bu filmde tersi), "Audio:" satırları (efekt ve yatak kurguda, FILM §6), genel
+> "preserve the referenced…" cümlesi, "reference sheet or collage" girişi, çekim atfı ("established earlier").
+> Prompt gövdesine çekim kodu, referans kodu (R04), başlık satırı, "Clip n of N" YAZILMAZ; bunlar kod bloğunun DIŞINDA durur.
+> Karakterin adı prompta yazılmaz (`the woman`); kimlik yığını (yaş/ten/saç) yalnız sayfa 1'de, çekimde yüz panelden gelir.
+> Kelime güvenliği (BILINEN_TUZAKLAR §A): "body" ve benzeri kelimeler hiçbir promptta geçmez (full-length · torso · hull yazıldı).
+> **Sahip kararı 10.10.2026 (film_dogrula M):** referans dosyası `ref/<No>.<AD>_v1.png`; her eklenen referans görsel promptun
+> başında `Reference <No> (<rol>): …` diye adlandırılır; video promptu 10 s'yi 2-4 vuruşa böler (0'da başlar, 10'da biter, boşluksuz, vuruş ≥2 s,
+> son vuruş donmaz). **Özne başına TEK referans sayfası:** açılar ve durumlar panel; çekim promptunda her referanstan yalnız TEK panel adı anılır.
+> **Sahip kararı 12.10.2026 (model sesi):** bütün replikler video promptunda birebir; konuşanı ve kaynağı tarif edilir; alıcıdan/telsizden gelen
+> sesde kadrajdaki kişinin ağzı kapalı yazılır. **Replik biçimi: iki nokta** (`… says: <line>` · `… plays a tired man's voice: <line>`).
+> Gerekçe: Vertex rehberi tırnağın ekrana yazı bastırdığını söylüyor ve BILINEN_TUZAKLAR §C aynı yönde; Gemini API tırnak öneriyor. SMOKE P9
+> karar verene kadar film_dogrula iki biçimi de kabul eder; P9 tırnağı seçerse bu dosyadaki replik cümleleri tırnak içine alınır (metin değişmez).
+> **Sahip kararı 12.10.2026 (kesme sürekliliği, GECIS_VE_SES_SUREKLILIGI §1):** her görsel ve video promptunun sonunda ORTAK GÖRÜNÜM cümlesi birebir;
+> mekân ışığı cümlesi görsel promptta birebir; mekân ortam ses cümlesi video promptunda birebir; ilk vuruş hareketle başlar.
+> Panel adları — sayfa 1: `front full-length panel` · `rear full-length panel` · `head-and-shoulders portrait panel` · `three-quarter portrait panel` · `gloved hands panel`;
+> sayfa 2: `three-quarter exterior panel` · `side view panel` · `nose close panel` · `nose after separation panel` · `rear-above panel`;
+> sayfa 3: `wide interior panel` · `lever upright panel` · `lever pulled panel` · `receiver switch-on panel` · `receiver switch-off panel`;
+> sayfa 4: `wide exterior panel` · `living network panel` · `underside panel` · `wreck fleet panel`;
+> sayfa 5: `exterior wide panel` · `open-clamp close panel` · `closed-clamp close panel`;
+> sayfa 6: `airlock entry panel` · `reverse low panel` · `floor-edge close panel` · `cabinet close panel`;
+> sayfa 7: `wide interior panel` · `window close panel` · `console close panel`;
+> sayfa 8: üç nesne (sol alıcı · orta verici · sağ bilek tarayıcı); sayfa 9: `membrane panel` · `wall-climb panel` · `ring-wrap panel` · `floor-run panel` · `wreck-cord panel`. Panel üstünde yazı/etiket/ok yok.
+
+---
+
+## REFERANS PROMPTLARI (yalnız ilk grupta · özne başına TEK sayfa, sahip kararı 10.10.2026)
+
+> Sıra: 1 → 9. Sayfa 3 önce 2'yi, sayfa 5 önce 4'ü, sayfa 7 önce 6'yı ister (KAYNAK satırı; planın "attached" referansları). Sahip her sayfayı seçip `ref/` altına
+> `<No>.<AD>_v1.png` adıyla kaydeder; yüz/giysi/halka/çerçeve değiştiren sayfa kullanılmaz, önce o düzeltilir (plan: kabul ettiğin tasarımı sabitle).
+> Sayfalar C01-C24'ün (FILM §4) istediği açıları ve durumları taşır: kapsülün halkalı/halkasız burnu, kokpitte kol dik/çekilmiş ve anahtar açık/kapalı,
+> kelepçenin açık/kapalı hâli, okyanusun sakin/ağlı hâli ve alttan görünüşü, koridorun ters görünüşü, tırmanan/dolanan/ilerleyen su.
+
+### 1.MARA
+```
+DOSYA     ref/1.MARA_v1.png
+PANELLER  beş panel: önden tam boy · arkadan tam boy · baş-omuz portre (önden) · baş-omuz ¾ portre (sağ ön; yara tarafı) · beyaz eldivenler yakın (başı görünen her panelde vizör kapalı)
+```
+```text
+A single reference sheet on a plain mid-grey studio background showing exactly the same adult woman in five panels, with clear gaps between the panels, in identical soft even light, arranged as three panels on the top row and two panels on the bottom row. Top row: full-length from the front; full-length from the back; a large head-and-shoulders portrait facing the camera. Bottom row: a head-and-shoulders three-quarter portrait from her right front, her right cheek toward the camera; a close view of her two white gloves side by side, one seen from the back of the hand and one from the palm. She is a 34-year-old deep-space rescue pilot with light olive skin, grey eyes, a short straight black bob tucked inside her helmet, a small pale scar along her right cheekbone and a focused expression. She wears an elegant ivory-white pressure suit with graphite joint seals, dark navy shoulder armor, narrow burnt-orange bands on both forearms, a single circular gold-and-blue mission badge with an abstract triangle on her left chest, white gloves, black boots and a compact life-support pack on her back. A closed round ivory helmet with a completely clear visor in every panel that shows her head, so her face is plainly visible. Identical face, helmet and suit in all panels. Photorealistic, clean panels with plain unmarked surfaces.
+```
+
+### 2.KAPSUL
+```
+DOSYA     ref/2.KAPSUL_v1.png
+PANELLER  beş panel: ¾ dış, burun solda (plan R02) · tam yan görünüm, burun solda · burun yakın yan (halka takılı) · burun yakın yan (halka ayrılmış, dört kısa bağlantı çıplak, kapak sağlam) · arka-üstten, burun sağda (iki itici)
+```
+```text
+A single reference sheet showing exactly the same small wingless deep-space rescue pod five times, with clear gaps between the panels, in identical cold directional starlight from the upper left against deep black space, arranged as three panels on the top row and two panels on the bottom row. Three-quarter exterior panel: the pod in a three-quarter side view, nose pointing toward frame-left. Side view panel: a full side view level with the pod, nose pointing toward frame-left. Nose close panel: a close side view of the pod's nose with the dark docking ring attached on its four short rigid mounts. Nose after separation panel: the same close side view of the nose with the dark docking ring gone, the four short mounts standing as bare stubs around the sealed flat inner pressure hatch. Rear-above panel: the pod seen from behind and above, flying toward frame-right, showing its two vertically stacked recessed blue-white rear thrusters. In every panel the pod has a short boat-shaped graphite fuselage with curved ivory armor panels, a burnt-orange band behind the nose, a broad dark canopy above the nose, and two vertically stacked recessed blue-white rear thrusters. At the front, a sacrificial dark-grey cylindrical docking ring sits on four short rigid mounts, with a sealed flat inner pressure hatch at its centre; the ring can be left behind in an emergency separation while the hatch stays sealed. Scuffed metal, coherent mechanical detail. Photoreal cinematic reference, plain unmarked surfaces.
+```
+
+### 3.KOKPIT
+```
+DOSYA     ref/3.KOKPIT_v1.png
+PANELLER  beş panel: göz hizası geniş iç (kol dik; plan R03) · sol konsol yakın, kol dik · sol konsol yakın, kol durdurucuya çekilmiş (sola) · sağ kenar alıcı yakın, anahtar yukarıda (açık), gösterge yanık · aynı yakın, anahtar aşağıda (kapalı), gösterge sönük
+KAYNAK    ref (yükleme sırası): ref/2.KAPSUL_v1.png
+```
+```text
+Reference 2 (rescue pod): take the ivory armor-panel finish, the scuffed graphite metal and the broad dark canopy shape from it, using the three-quarter exterior panel. A single reference sheet of the empty single-pilot cockpit inside that same rescue pod, in five panels with clear gaps between the panels, in identical cool blue starlight with very faint amber console illumination, arranged as three panels on the top row and two panels on the bottom row. Wide interior panel: an eye-level wide view; one dark navy bucket seat, an ivory overhead shell, a forward canopy with two rigid graphite mullions, a short paired control stick, and a low graphite console with small cyan status lights and abstract geometric interfaces made only of light shapes. At the right edge of the console sit a small receiver speaker grille and one broad physical comms toggle; at the left edge, a broad silver emergency-release lever with an orange grip and a plainly visible fixed hinge and mechanical stop, the lever standing upright. Lever upright panel: a close view of the left console edge with the lever standing upright, its hinge and stop clear. Lever pulled panel: the same close view with the lever swung down toward frame-left through a short arc until it rests against its mechanical stop. Receiver switch-on panel: a close view of the right console edge, the broad toggle up in its on position beneath a lit cyan indicator. Receiver switch-off panel: the same close view with the toggle down in its off position and the indicator dark. Photoreal cinematic production design, plain unmarked surfaces.
+```
+
+### 4.OKYANUS
+```
+DOSYA     ref/4.OKYANUS_v1.png
+PANELLER  dört panel: geniş dış (plan R04) · geniş dış, canlı ağ silik görünür · alttan görünüş (zar) · enkaz filosu su altı
+```
+```text
+A single reference sheet in four panels, with clear gaps between the panels, in identical cold white distant starlight against deep black space, arranged as two panels on the top row and two panels on the bottom row. Wide exterior panel: a colossal flat oval slab of dark seawater suspended in deep black space, about ten kilometres wide and much wider than it is thick, unmistakably an ocean rather than a rocky planet: a broad rippled top surface and a thick translucent curved hanging underside, with open black space above, below and around it. Three immense fixed rectangular black containment frames surround it at separate depths, and a thin continuous cyan field boundary outlines the water. Small old spacecraft wrecks are visible just below the surface. At the near-right edge of the water, a much smaller graphite research station rests with its lower half immersed, its round docking port above the waterline and outside the field boundary; a tiny ivory rescue pod floats outside at frame-right. Living network panel: the same wide exterior, with an immense branching network of faint cyan-gold capillary lines now faintly visible throughout the whole water volume beneath the rippled surface, a purely abstract vein-like pattern; the station and the wrecks unchanged. Underside panel: a wide view from below, looking up through the thick translucent curved hanging underside of the floating ocean; a broad continuous water membrane carries a fixed branching network of faint cyan-gold capillary lines across an immense area, small old wrecks caught against the same network, one straight black containment beam crossing the far background and deep space visible beyond the curved edge of the water. Wreck fleet panel: a view through translucent dark water at several old rigid spacecraft wrecks at distinct depths: a corroded narrow survey hull with a dark canopy and a small broken antenna housing, a broad broken freight pod and a small white shuttle nearest the viewer, with many smaller hull silhouettes receding below and the edge of one black containment frame far beneath. Deep indigo shadows, cyan edges, sparse stars. Photoreal cinematic science-fiction design with a stable physical scale, plain unmarked surfaces.
+```
+
+### 5.ISTASYON
+```
+DOSYA     ref/5.ISTASYON_v1.png
+PANELLER  üç panel: dış geniş (plan R05; anten solda, gözlem ortada, kuru port sağda, kelepçe açık) · yanaşma yakın yan, kelepçe açık · yanaşma yakın yan, kelepçe düz koyu halkaya kapalı
+KAYNAK    ref (yükleme sırası): ref/4.OKYANUS_v1.png
+```
+```text
+Reference 4 (ocean): take the dark teal water, the thin cyan field boundary and the graphite colour of the small station from it, using the wide exterior panel. A single reference sheet of that same abandoned graphite research station in three panels side by side with clear gaps, in identical cold starlight with faint amber emergency lamps. Exterior wide panel: three short cylindrical pressure modules in a row with oxidized seams and a wide dark reinforced-glass observation window in the central module; the lower half of the station sits in dark teal water held by the visible thin cyan field boundary. On the dry right-hand module, a round docking socket above the waterline points toward frame-right into clear space, and one broad hinged mechanical clamp stands open above and beside it. At the far-left end, a crooked dish antenna on a broken support has a disconnected feed cable hanging from it. No craft is attached. Open-clamp close panel: a close side view of the dry right-hand module's round docking socket facing right, the single broad rigid clamp open above it with its hinge and closing path visible, and a narrow strip of dark teal water with the thin cyan boundary below the dry connection. Closed-clamp close panel: the same close side view with the clamp closed around a plain dark-grey cylindrical ring seated in the socket, nothing else attached. Photoreal cinematic production design, plain unmarked surfaces.
+```
+
+### 6.KORIDOR
+```
+DOSYA     ref/6.KORIDOR_v1.png
+PANELLER  dört panel: hava kilidi girişi, göz hizası geniş (plan R06; su sağda, dolap solda) · ters alçak görünüş (gözlem ucundan hava kilidine; su solda, dolap sağda) · zemin kenarı yakın (ızgara + dikey duvar + birikinti) · servis dolabı yakın (verici, fiş çıkmış)
+```
+```text
+A single reference sheet of one empty pressurized corridor inside an abandoned research station, in four panels with clear gaps between the panels, in identical faint amber emergency lamps from above and cool cyan light from the wet floor and the window, arranged as two panels on the top row and two panels on the bottom row. Airlock entry panel: an eye-level wide view; a round airlock opening near the camera, its rigid hatch fully open and recessed beside the opening, leads into a straight narrow graphite-metal passage with a level grated floor and waist-high handrails; a shallow dark teal water channel runs along the right floor edge; on the left wall a hinged service cabinet stands open, showing a small black transmitter module with its power plug pulled out; at the far end an open rectangular doorway leads into the observation room. Reverse low panel: a low view from the observation-room end looking back along the same passage to the open round airlock at the far end, the water channel along the left floor edge and the open service cabinet on the right wall. Floor-edge close panel: a low close view where the grated floor meets the vertical graphite wall: a shallow puddle, a handrail support and plain level grate showing the direction of gravity. Cabinet close panel: a close view into the open service cabinet: corroded metal supports, a small wet streak on the inner wall, the scuffed black transmitter module with its thick grey plug hanging fully out of its socket, every lamp dark. Scuffed human-scale industrial architecture, clear still air, the corridor empty, photoreal cinematic production design, plain unmarked surfaces.
+```
+
+### 7.GOZLEM_ODASI
+```
+DOSYA     ref/7.GOZLEM_ODASI_v1.png
+PANELLER  üç panel: geniş iç (plan R07; cam uzak duvarda, kapı sağda) · pencere yakın (kask camın dışında) · konsol yakın (pilli alıcı, konsol arka kenarı)
+KAYNAK    ref (yükleme sırası): ref/6.KORIDOR_v1.png
+```
+```text
+Reference 6 (corridor): take the scuffed graphite metal, the wet floor and the faint amber emergency lamp light from it, using the airlock entry panel. A single reference sheet of the empty pressurized observation room joined directly to that corridor, in three panels side by side with clear gaps, in identical faint amber light from one ceiling lamp and cool cyan light from the window. Wide interior panel: an eye-level wide view; a broad reinforced glass window fills the far wall, its bottom edge below the exterior ocean's waterline; through the glass, dark blue water holds one abandoned ivory helmet near the left edge and several rigid spacecraft wrecks deeper below; a low console runs under the window with a small battery-powered receiver on it and a dim cyan status lamp; the floor is wet graphite; a simple open corridor doorway is at frame-right. Window close panel: a close view through the reinforced glass of the old ivory helmet drifting alone in dark blue water, its scratched clear visor angled toward the camera and showing only an empty dark interior, the window's black vertical edge with a few mineral streaks at frame-right, the faint silhouette of an old ship far below. Console close panel: a close view of the low console with the small receiver — matte-black case, silver speaker grille, one cyan indicator, one broad physical toggle — and the console's rear lip. The room is empty of people. Photoreal cinematic production design with detailed metal and glass, plain unmarked surfaces.
+```
+
+### 8.AKSESUARLAR
+```
+DOSYA     ref/8.AKSESUARLAR_v1.png
+PANELLER  tek sayfa, üç nesne yan yana: solda pilli alıcı · ortada çıkık fişli verici modülü · sağda bilek tarayıcı
+```
+```text
+Product reference photograph of three objects side by side on a plain charcoal background. Left: a small battery-powered radio receiver with a matte-black casing, one silver speaker grille, a single cyan indicator and one broad physical toggle, all unmarked. Centre: a scuffed black transmitter module with one thick grey power plug hanging fully disconnected beside it on its cable; every indicator lamp dark. Right: an ivory wrist scanner with a single plain cyan ring on a black glass face and a broad dark wrist strap. Even soft directional light, sharp coherent industrial detail, photorealistic. The surface holds only these three objects.
+```
+
+### 9.CANLI_SU
+```
+DOSYA     ref/9.CANLI_SU_v1.png
+PANELLER  beş panel: su altı zar ağı · duvara tırmanan tek şerit · rijit halkaya bir kez dolanmış şerit · ızgara zeminde ilerleyen şerit · enkazın anten yuvasına bağlı kordon
+```
+```text
+A single photorealistic reference sheet of the same dark teal alien water in five related details, with clear gaps between the panels, in cold soft light and precise water reflections, arranged as three panels on the top row and two panels on the bottom row. Membrane panel: a broad translucent underwater membrane carrying a fixed branching network of faint cyan-gold capillary lines, a purely abstract vein-like pattern. Wall-climb panel: one thick continuous ribbon of glossy dark turquoise water climbing a scratched vertical metal wall, its base visibly continuous with a small floor puddle; it behaves like one coherent liquid cord with a round smooth cross-section. Ring-wrap panel: the same ribbon wrapped once around a rigid dark metal docking ring, preserving its smooth rounded cross-section, the ring unchanged. Floor-run panel: the same single ribbon lying along a grated metal floor, its leading end flat and rounded on the grate and pointing away from the camera, the cross-section unchanged. Wreck-cord panel: underwater, one coherent glossy cord drawn from the broad cyan-gold membrane to the small broken antenna housing of an old corroded survey wreck, attached at the housing and at the wreck's receiver compartment, the rest of the capillary network receding into the background. This is one distributed aquatic organism, a single continuous water. Clean panels with plain unmarked surfaces.
+```
+
+---
+
+## C01 — Yıldızlar arasındaki okyanus
+
+```
+FLOW      Frames to Video
+EKLE      KARE (Görsel): referans (yükleme sırası): ref/2.KAPSUL_v1.png · ref/4.OKYANUS_v1.png · VİDEO (Frames to Video): yalnız kare/C01.png
+```
+
+> Not: Plan Hook'u ve **öncelikli deneme 1** (SAHIP_PLANI §8: okyanus küre gibi görünmesin → karede "flat oval slab", üç çerçeve, kara yok; kare onaylanmadan video koşulmaz).
+> Replik R01 (Mara VO, kadraj dışı) ilk saniyede başlar; kadrajda kimse yok. Kamera sağa kayar; kapsül ve istasyon sağ kenarda, dalga soldan sağa (FILM §4 Taraf). Logo yok.
+> Klip sesi filme girer (yalnız replik; timeline klip_sesi); yatak Y1 kurguda.
+
+### Görsel
+```text
+Reference 2 (rescue pod): take the wingless ivory-and-graphite hull, the burnt-orange nose band and the dark docking ring from it, using the side view panel. Reference 4 (ocean): take the flat oval water volume, the three black containment frames, the thin cyan field boundary, the wrecks under the surface and the small station on the right rim from it, using the wide exterior panel. Extreme wide exterior view on an 18 mm lens in deep space: an enormous flat oval slab of dark seawater fills the central two thirds of the frame, much wider than it is thick, with broad ripples across its top surface and a thick translucent curved underside hanging beneath it against sparse stars. Three fixed black rectangular containment frames enclose the water at different depths, and a thin continuous cyan field boundary outlines it. Two old spacecraft wrecks are readable just below the near surface. At the right rim of the water sits a small half-submerged graphite research station, its lower half in the water and its round docking port facing right; further right, in open black space, a tiny ivory rescue pod is a speck of light with its nose pointing left. Open black space surrounds the water above, below and on every side. The light is cold white distant starlight from upper left, deep indigo shadows, faint cyan edge light from the containment boundary. Photoreal live-action cinematic science-fiction image with restrained anamorphic lens character, fine 35 mm film grain, cold blue-teal shadows, faint amber practical lights, readable blacks, and realistic metal and wet-surface detail.
+```
+
+### Video
+```text
+0-5 s: The camera begins a restrained slow slide to the right while one broad low ripple enters the top surface of the water from the left and starts across it. Starting within the first second, an unseen woman's voice, close and calm, says: We found an ocean between the stars. Then it called for help. 5-10 s: The slide continues, and the small station and the tiny pod at the right edge appear to drift slowly inward against the immense ocean, giving parallax, while the ripple crosses the rippled surface rightward, reaches the right rim and fades into the water; the oval volume and all three black frames stay rigid and unchanged. The only ambient sound is a low, steady, non-diegetic pressure tone with a faint bed of radio static. Photoreal live-action cinematic science-fiction image with restrained anamorphic lens character, fine 35 mm film grain, cold blue-teal shadows, faint amber practical lights, readable blacks, and realistic metal and wet-surface detail.
+```
+
+## C02 — Çağrıyı duyup cevap vermek
+
+```
+FLOW      Frames to Video
+EKLE      KARE (Görsel): referans (yükleme sırası): ref/1.MARA_v1.png · ref/3.KOKPIT_v1.png · VİDEO (Frames to Video): yalnız kare/C02.png
+```
+
+> Not: İki replik: R02 (erkek çağrı, kokpit alıcısından, 1. sn, kadrajdaki kadının ağzı KAPALI) ve R03 (Mara, ağız kadrajda, vizör şeffaf → dudak senkronu, ~5. sn, ≤5 s; SMOKE P9 · P18).
+> Yüz 1.MARA baş-omuz portre panelinden; kimlik yığını (yaş/ten/saç) çekimde yok. Ağız yalnız kendi cümlesinde hareket eder. Eller kadraj dışı. Alıcı kadrajın sağ kenarında (plan).
+> Plan C12/C23'te bu cümleyi alıcıdan yeniden çalar; Omni aynı sesi veremezse bu klibin sesi kurguda C07/C12/C23'e yedek olarak yerleşir (NOTLAR KARARLAR).
+
+### Görsel
+```text
+Reference 1 (woman): take her face, the clear visor and the ivory-white pressure suit from it, using the head-and-shoulders portrait panel. Reference 3 (cockpit): take the navy seat, the ivory overhead shell, the graphite canopy mullions and the receiver at the console edge from it, using the wide interior panel. Medium close-up on an 85 mm lens of an adult woman in an ivory-white pressure suit with graphite joint seals and dark navy shoulder armor, and a round ivory helmet with a completely clear closed visor, strapped into the pilot seat of a small rescue pod. Her face is crisp behind the visor: grey eyes attentive with cautious concern, a small pale scar on her right cheekbone. She faces the camera almost squarely, her head turned slightly toward frame-left, her eyes directed out through the canopy at frame-left. The light is cool blue water reflections from the canopy at frame-left, very faint amber console glow from below. The reflections slide across the clear visor. At the right edge of the frame the receiver's small cyan status lamp glows. Her hands are below the frame, and the cabin is dry. Photoreal live-action cinematic science-fiction image with restrained anamorphic lens character, fine 35 mm film grain, cold blue-teal shadows, faint amber practical lights, readable blacks, and realistic metal and wet-surface detail.
+```
+
+### Video
+```text
+0-4 s: A restrained slow push-in begins on her face behind the clear visor. At about 1 s the small receiver at the right edge plays a tired man's voice, softened by a light radio filter: Mayday. Please. Come closer. Her lips stay closed and her eyes stay on the canopy at frame-left, while the receiver's cyan status lamp pulses softly with the call. 4-7 s: Her eyes slide from the canopy toward the receiver at frame-right as the push-in continues, and at about 5 s she says in a calm, professional voice: Rescue vessel. I hear you. Her lips move with the sentence. 7-10 s: Her lips close and she draws one slow controlled breath while the push-in closes slightly tighter and the cool blue reflections slide across the clear visor; her face, scar and helmet stay consistent. The only ambient sound is soft cabin ventilation and close, calm breathing inside the helmet. Photoreal live-action cinematic science-fiction image with restrained anamorphic lens character, fine 35 mm film grain, cold blue-teal shadows, faint amber practical lights, readable blacks, and realistic metal and wet-surface detail.
+```
+
+## C03 — Yarı batmış istasyon
+
+```
+FLOW      Frames to Video
+EKLE      KARE (Görsel): referans (yükleme sırası): ref/4.OKYANUS_v1.png · ref/5.ISTASYON_v1.png · VİDEO (Frames to Video): yalnız kare/C03.png
+```
+
+> Not: Ana mekân planı (plan §8): anten SOLDA, gözlem modülü ORTADA, kuru yanaşma portu SAĞDA — sonraki dış planlar bu yerleşimi korur. Soket açık kalır.
+> Replik R04 (AI, telsiz, kadraj dışı; kimse kadrajda değil). Klip sesi yalnız replik için; yön çanı ve gerilim tasarımı kurguda.
+
+### Görsel
+```text
+Reference 4 (ocean): take the dark teal water, the thin cyan field boundary and the black containment frame from it, using the wide exterior panel. Reference 5 (station): take the three graphite pressure modules, the central observation window, the dry round docking socket with its open clamp, the crooked dish antenna and the amber lamps from it, using the exterior wide panel. Wide exterior view on a 28 mm lens, closer to the abandoned research station: three short cylindrical graphite modules in a row with oxidized seams, their lower halves immersed in dark teal water. At frame-left, the crooked dish antenna stands on a broken support, its feed cable hanging disconnected; at the centre, the broad reinforced observation window sits close to the waterline; at frame-right, the dry round docking socket of the right-hand module opens toward frame-right into clear space above the waterline, a single hinged clamp open beside it. Part of one fixed black containment frame rises behind the station, with the thin cyan field boundary running along the water. Faint amber emergency lamps glow on the hull and cold starlight skims the rusted seams. Small ripples ring the submerged halves of the modules. The light is cold white distant starlight from upper left, deep indigo shadows, faint cyan edge light from the containment boundary. Photoreal live-action cinematic science-fiction image with restrained anamorphic lens character, fine 35 mm film grain, cold blue-teal shadows, faint amber practical lights, readable blacks, and realistic metal and wet-surface detail.
+```
+
+### Video
+```text
+0-4 s: A slow controlled push begins toward the dry docking module at frame-right; small ripples ring the submerged halves of the hull while the three modules, the window and the antenna stay rigid. 4-7 s: As the push continues and the dry module grows in the frame, an unseen calm adult man's voice over the pod's comms says: A research station. Half submerged. 7-10 s: The push carries on toward the round socket, which stays open at frame-right, and the ripples keep circling the hull. The only ambient sound is a low, steady, non-diegetic pressure tone with a faint bed of radio static. Photoreal live-action cinematic science-fiction image with restrained anamorphic lens character, fine 35 mm film grain, cold blue-teal shadows, faint amber practical lights, readable blacks, and realistic metal and wet-surface detail.
+```
+
+## C04 — Kuru bağlantıya hizalanma
+
+```
+FLOW      Frames to Video
+EKLE      KARE (Görsel): referans (yükleme sırası): ref/2.KAPSUL_v1.png · ref/5.ISTASYON_v1.png · VİDEO (Frames to Video): yalnız kare/C04.png
+```
+
+> Not: Tek hareket düz yaklaşma; temas ve kelepçe bu çekimde YOK (C05). Kapsül sağdan sola, burnu sola; yalpa yok, halka dairesel, soket sabit.
+> Replik R05 (AI, telsiz, kadraj dışı). Dış çekim: Y1 yatağı kurguda. C03→C04 kesmesi ölçek geniş → orta (FILM §4 kesme sürekliliği).
+
+### Görsel
+```text
+Reference 2 (rescue pod): take the wingless ivory-and-graphite hull, the burnt-orange nose band, the dark docking ring on its four short rigid mounts and the sealed flat hatch from it, using the side view panel. Reference 5 (station): take the dry round docking socket of the right-hand module, the open hinged clamp and the dark water below from it, using the open-clamp close panel. Medium exterior side view on a 50 mm lens, the camera level with the docking interface. At frame-right, the wingless ivory-and-graphite rescue pod sits level with its nose pointing left; at frame-left, the station's dry round docking socket faces right. The pod's dark-grey cylindrical docking ring is level with the socket, separated from it by a short gap. The burnt-orange nose band, the four short rigid mounts and the sealed flat inner hatch behind the ring are readable. Below the interface lie the thin cyan field edge and dark water. The station's single hinged clamp stands open. The light is cold white distant starlight from upper left, deep indigo shadows, faint cyan edge light from the containment boundary. Photoreal live-action cinematic science-fiction image with restrained anamorphic lens character, fine 35 mm film grain, cold blue-teal shadows, faint amber practical lights, readable blacks, and realistic metal and wet-surface detail.
+```
+
+### Video
+```text
+0-4 s: The camera is locked off and the pod, level with no roll or yaw, begins to slide slowly leftward in a straight line toward the socket. 4-7 s: As the pod keeps gliding and the gap between the ring and the socket narrows, an unseen calm adult man's voice over the pod's comms says: Dock above the waterline. 7-10 s: The glide eases and the ring comes to a smooth stop just short of the socket, a thin gap still open, the ring staying circular and the socket fixed. The only ambient sound is a low, steady, non-diegetic pressure tone with a faint bed of radio static. Photoreal live-action cinematic science-fiction image with restrained anamorphic lens character, fine 35 mm film grain, cold blue-teal shadows, faint amber practical lights, readable blacks, and realistic metal and wet-surface detail.
+```
+
+## C05 — Halkalar temas eder, kelepçe kapanır
+
+```
+FLOW      Frames to Video
+EKLE      KARE (Görsel): referans (yükleme sırası): ref/2.KAPSUL_v1.png · ref/5.ISTASYON_v1.png · VİDEO (Frames to Video): yalnız kare/C05.png
+```
+
+> Not: T01 temas kadrajda (plan: tek halka hareketi + tek kelepçe; ek donanım üretilmesin). Plan kare kaynağı olarak C04 son karesini isterdi; bağımlılık KALDIRILDI —
+> kompozisyon (boşluk, açık kelepçe, burun solda) görsel promptta tam yazılı, kare tek başına üretilir. Replik yok; plan "metal sesi, kısa sessizlik" kurguda
+> (temas vuruşu, mandal, karartma C05→C06). Kelepçe istasyon tarafında, menteşe üstte, yukarıdan aşağı kapanır. Hareket 7-9. saniyede biter, oturan kelepçe son vuruşta kalır.
+
+### Görsel
+```text
+Reference 2 (rescue pod): take the dark-grey cylindrical docking ring, its four short rigid mounts and the sealed flat hatch behind it from it, using the nose close panel. Reference 5 (station): take the round docking socket, the single broad hinged clamp and the strip of dark teal water from it, using the open-clamp close panel. Close exterior insert on an 85 mm lens: the pod's dark-grey cylindrical docking ring, on its four short rigid mounts, faces the station's round docking socket with only a thin gap between them; the pod sits at frame-right with its nose pointing left. The station's single broad rigid hinged clamp stands open above the interface, its hinge on the station side and its closing path from top to bottom clearly visible. Behind the ring sits the sealed flat inner hatch. Below the dry connection lies a narrow strip of dark teal water with the thin cyan field edge. The frame holds only the ring, the four mounts, the socket, the one clamp and the strip of water. The light is cold white distant starlight from upper left, deep indigo shadows, faint cyan edge light from the containment boundary. Photoreal live-action cinematic science-fiction image with restrained anamorphic lens character, fine 35 mm film grain, cold blue-teal shadows, faint amber practical lights, readable blacks, and realistic metal and wet-surface detail.
+```
+
+### Video
+```text
+0-3 s: The camera is fixed and the pod's ring begins a short straight movement toward the socket, closing the thin gap. 3-7 s: The ring meets the socket edge to edge, and the station's single clamp turns on its hinge, swinging down from above toward the ring; the ring, the four mounts and the sealed hatch stay intact and only the ring and the clamp move. 7-10 s: The clamp finishes its swing, seats around the ring and locks, while the small ripple in the strip of water below keeps moving. The only ambient sound is a low, steady, non-diegetic pressure tone with a faint bed of radio static. Photoreal live-action cinematic science-fiction image with restrained anamorphic lens character, fine 35 mm film grain, cold blue-teal shadows, faint amber practical lights, readable blacks, and realistic metal and wet-surface detail.
+```
+
+## C06 — Islak koridor
+
+```
+FLOW      Frames to Video
+EKLE      KARE (Görsel): referans (yükleme sırası): ref/1.MARA_v1.png · ref/6.KORIDOR_v1.png · VİDEO (Frames to Video): yalnız kare/C06.png
+```
+
+> Not: İçeride normal yerçekimi ve basınç (plan §8): zemin suyu yalnız küçük dalgacık. Replik R06 (AI, telsiz, kadraj dışı); Mara kadrajda, AĞZI KAPALI (yazılı).
+> Hava kilidi ve servis dolabı açık ve rijit. Kesme C05→C06 karartma (iç mekâna geçiş kesmede). Ölçek geniş; C07 ek, C08 yakın-orta (kesme sürekliliği).
+> Mara sol ön planda, torsu koridora dönük, kaskı hafifçe kameraya; video kaskın kapıya dönmesini ister.
+
+### Görsel
+```text
+Reference 1 (woman): take her ivory-white pressure suit, white gloves, black boots and clear-visor helmet from it, using the front full-length panel. Reference 6 (corridor): take the open round airlock opening, the grated floor, the handrails, the water channel, the open service cabinet and the amber lamps from it, using the airlock entry panel. Wide eye-level view on a 24 mm lens from the airlock threshold into an empty corridor. In the left foreground, an adult woman in an ivory-white pressure suit with graphite joint seals and dark navy shoulder armor, narrow burnt-orange forearm bands, white gloves and black boots, and a round ivory helmet with a completely clear closed visor, stands fully inside the open round airlock opening, her boots planted on the level grated floor and her arms resting close to her sides, her torso angled toward frame-right and the corridor, her helmet turned slightly toward the camera. The rigid airlock hatch is fully open and recessed beside the opening. A shallow dark teal water channel runs along the right floor edge, and the hinged service cabinet on the left wall stands open. Faint amber emergency lamps lead along the straight graphite passage between empty waist-high handrails and scuffed pressure walls to the open rectangular doorway of the observation room at the far end. The light is faint amber emergency lamps from above, cool cyan light from the wet floor and the window. Photoreal live-action cinematic science-fiction image with restrained anamorphic lens character, fine 35 mm film grain, cold blue-teal shadows, faint amber practical lights, readable blacks, and realistic metal and wet-surface detail.
+```
+
+### Video
+```text
+0-4 s: A slow forward dolly begins from the airlock frame toward the woman in the left foreground and the empty corridor; she stands planted with her arms close to her sides, and the water in the floor channel makes small natural ripples. 4-7 s: As the dolly continues, an unseen calm adult man's voice over the comms says: The station's transmitter has no power. Her lips stay closed behind the clear visor while her helmet begins to turn toward the observation-room doorway. 7-10 s: The dolly carries on and her helmet finishes turning toward the far doorway, her boots still planted, the amber lamps receding down the corridor; the open hatch and the cabinet stay rigid. The only ambient sound is a low, steady pressure-system ventilation hum with sparse distant water drips. Photoreal live-action cinematic science-fiction image with restrained anamorphic lens character, fine 35 mm film grain, cold blue-teal shadows, faint amber practical lights, readable blacks, and realistic metal and wet-surface detail.
+```
+
+## C07 — Enerjisiz verici
+
+```
+FLOW      Frames to Video
+EKLE      KARE (Görsel): referans (yükleme sırası): ref/6.KORIDOR_v1.png · ref/8.AKSESUARLAR_v1.png · VİDEO (Frames to Video): yalnız kare/C07.png
+```
+
+> Not: T06 yazı/rakam/el yok (okunacak ekran yok; gösterge lambaları söner, soyut). Fiş HER ZAMAN soket dışında, sağda sarkar; kadraj dışı ayrı alıcıdan çağrı (R07, erkek, telsiz filtresi) —
+> ses ölü modülden gelmez, modül sessiz ve karanlık kalır (plan §8 enerji kuralı). Amber ışık koridordan. Kadrajda kimse yok (zamir yazılmaz).
+> Replik C02'deki cümlenin aynısı; Omni aynı sesi veremezse C02 klibinin sesi kurguda yedek (NOTLAR KARARLAR).
+
+### Görsel
+```text
+Reference 6 (corridor): take the open hinged service cabinet on the left wall, its corroded metal supports and the amber corridor light from it, using the cabinet close panel. Reference 8 (accessories): take the scuffed black transmitter module and its thick grey power plug from it, using the centre object. Tight insert on a 100 mm macro lens inside the corridor's open left-wall service cabinet. The scuffed black transmitter module sits on corroded metal supports; its thick grey power plug hangs fully out of its socket on its cable at frame-right of the module, dangling free beside it. Every indicator lamp on the module is dark. A small wet streak runs down the cabinet's inner wall, and one small drop clings to the cabinet's lower edge. The light is faint amber emergency lamps from above, cool cyan light from the wet floor and the window. The amber comes from the corridor lamps outside the cabinet; the module gives no light of its own. The frame holds only the cabinet, the module and the plug, all with plain unmarked surfaces. Photoreal live-action cinematic science-fiction image with restrained anamorphic lens character, fine 35 mm film grain, cold blue-teal shadows, faint amber practical lights, readable blacks, and realistic metal and wet-surface detail.
+```
+
+### Video
+```text
+0-4 s: A small slow push-in begins toward the disconnected power plug and the dark transmitter module; everything physical stays in place while the small drop gathers weight at the cabinet's lower edge. 4-8 s: As the push-in continues, a separate receiver somewhere off-frame plays a tired man's voice, softened by a light radio filter: Mayday. Please. Come closer. The transmitter module stays dark and gives no sound, and the plug keeps hanging clear of the socket. 8-10 s: The drop slides down the cabinet edge and falls as the push-in ends close to the plug, the module's lamps still dark. The only ambient sound is a low, steady pressure-system ventilation hum with sparse distant water drips. Photoreal live-action cinematic science-fiction image with restrained anamorphic lens character, fine 35 mm film grain, cold blue-teal shadows, faint amber practical lights, readable blacks, and realistic metal and wet-surface detail.
+```
+
+## C08 — Çağrının kaynağı
+
+```
+FLOW      Frames to Video
+EKLE      KARE (Görsel): referans (yükleme sırası): ref/1.MARA_v1.png · ref/6.KORIDOR_v1.png · VİDEO (Frames to Video): yalnız kare/C08.png
+```
+
+> Not: Replik R08 (Mara, ağız kadrajda, vizör şeffaf → dudak senkronu, ~5. sn, ≤5 s; SMOKE P9 · P18). Ani baş çevirme/yürüme yok; ölçek C06'dan bir basamak yakın (C06 geniş → C07 ek → C08 yakın-orta).
+> Yüz 1.MARA ¾ portre panelinden (yara sağ elmacık: kamera onun sağ önünde, başı sağ kadraja dönük; ışık: amber sol yanağa, camgöbeği sağ yanağa — plan). Eller kadraj dışı. C08→C09 geçişi oyuk su rezonansı J (kurgu).
+
+### Görsel
+```text
+Reference 1 (woman): take her face, the clear visor, the helmet and the ivory-white pressure suit from it, using the three-quarter portrait panel. Reference 6 (corridor): take the open hinged service cabinet, the transmitter module with its hanging grey plug, the grated floor and the amber lamps from it, using the cabinet close panel. Medium close-up on an 85 mm lens of an adult woman in an ivory-white pressure suit with graphite joint seals and dark navy shoulder armor, and a round ivory helmet with a completely clear closed visor, standing beside the open service cabinet on the corridor's left wall. She is seen in three-quarter view from her right front, her head turned toward frame-right and her grey eyes directed toward the observation-room doorway beyond the frame. Her grey eyes and the small pale scar on her right cheekbone are plainly visible behind the clear visor. The light is faint amber emergency lamps from above, cool cyan light from the wet floor and the window. The amber touches her left cheek and the cool cyan touches her right cheek. The cabinet edge and the hanging grey plug are soft in the background behind her. Her hands are below the frame. Photoreal live-action cinematic science-fiction image with restrained anamorphic lens character, fine 35 mm film grain, cold blue-teal shadows, faint amber practical lights, readable blacks, and realistic metal and wet-surface detail.
+```
+
+### Video
+```text
+0-4 s: A restrained slow push-in begins on her face behind the clear visor; she stands planted, listening, her breathing calm. 4-7 s: As a sound draws her attention, her gaze lifts toward the corridor's far doorway beyond the frame at frame-right, and at about 5 s she says in a quiet, hesitant voice: Then who is calling? Her lips move with the question. 7-10 s: Her breathing grows a little shallower and quicker while the push-in closes slightly tighter; the visor stays clear, her head moves only slowly and her feet stay planted. The only ambient sound is a low, steady pressure-system ventilation hum with sparse distant water drips. Photoreal live-action cinematic science-fiction image with restrained anamorphic lens character, fine 35 mm film grain, cold blue-teal shadows, faint amber practical lights, readable blacks, and realistic metal and wet-surface detail.
+```
+
+---
+
+## FLOW İŞ EMRİ
+
+> **Flow proje ayarları (bir kez, üretimden önce):** Return silent videos **KAPALI** (bu filmde replikler model sesidir; klibin sesi filme girer) · Visible watermarking **KAPALI** (SynthID her çıktıda kalır).
+> **Model / süre:** sahip planı görselleri GPT Image, videoları Gemini Omni 1.1 Flash 10 s ile hedefler; Flow'da Görsel modu aynı promptla ve aynı referans sırasıyla kullanılabilir. Omni'nin Frames to Video süresi ve repliği videoda üretmesi
+> SMOKE P11 · P14 · P18'de ölçülür (`FLOW_GERCEKLERI.md` §1 · §9); ölçüm gelmeden videolar (sıra 18-25) koşulmaz. Replik biçimi (iki nokta ↔ tırnak) SMOKE P9.
+> **Frames to Video'ya referans eklenmez** (yalnız kare); referanslar yalnız referans sayfası ve kare üretiminde.
+> **Sıra:** 1-9 referans sayfaları → 10 (C01 karesi, ÖNCELİKLİ DENEME) → 18 (C01 videosu) → kalan kareler → kalan videolar. Referanslar onaylanmadan kare, kare onaylanmadan video üretilmez.
+
+| Sıra | Çekim | İndirilecek dosya | Mod | Eklenecek | Deneme | Tahmini kredi |
+|:--:|:--:|---|---|---|:--:|:--:|
+| 1 | 1.MARA | `ref/1.MARA_v1.png` | Görsel | — (yalnız prompt) | 2 | |
+| 2 | 2.KAPSUL | `ref/2.KAPSUL_v1.png` | Görsel | — (yalnız prompt) | 2 | |
+| 3 | 3.KOKPIT | `ref/3.KOKPIT_v1.png` | Görsel | ref/2.KAPSUL_v1.png (¾ dış panel) | 2 | |
+| 4 | 4.OKYANUS | `ref/4.OKYANUS_v1.png` | Görsel | — (yalnız prompt) | 2 | |
+| 5 | 5.ISTASYON | `ref/5.ISTASYON_v1.png` | Görsel | ref/4.OKYANUS_v1.png (geniş dış panel) | 2 | |
+| 6 | 6.KORIDOR | `ref/6.KORIDOR_v1.png` | Görsel | — (yalnız prompt) | 2 | |
+| 7 | 7.GOZLEM_ODASI | `ref/7.GOZLEM_ODASI_v1.png` | Görsel | ref/6.KORIDOR_v1.png (hava kilidi girişi paneli) | 2 | |
+| 8 | 8.AKSESUARLAR | `ref/8.AKSESUARLAR_v1.png` | Görsel | — (yalnız prompt) | 2 | |
+| 9 | 9.CANLI_SU | `ref/9.CANLI_SU_v1.png` | Görsel | — (yalnız prompt) | 2 | |
+| 10 | C01 kare | `kare/C01.png` | Görsel | ref/2.KAPSUL_v1.png (yan görünüm paneli) · ref/4.OKYANUS_v1.png (geniş dış panel; bu sırayla) · **ÖNCELİKLİ DENEME (plan §8): ilk üretilen kareler arasında** | 2 | |
+| 11 | C02 kare | `kare/C02.png` | Görsel | ref/1.MARA_v1.png (baş-omuz portre paneli) · ref/3.KOKPIT_v1.png (geniş iç panel; bu sırayla) | 2 | |
+| 12 | C03 kare | `kare/C03.png` | Görsel | ref/4.OKYANUS_v1.png (geniş dış panel) · ref/5.ISTASYON_v1.png (dış geniş panel; bu sırayla) | 2 | |
+| 13 | C04 kare | `kare/C04.png` | Görsel | ref/2.KAPSUL_v1.png (yan görünüm paneli) · ref/5.ISTASYON_v1.png (kelepçe açık yakın panel; bu sırayla) | 2 | |
+| 14 | C05 kare | `kare/C05.png` | Görsel | ref/2.KAPSUL_v1.png (burun yakın paneli) · ref/5.ISTASYON_v1.png (kelepçe açık yakın panel; bu sırayla) — C04 karesine bağlı değil | 2 | |
+| 15 | C06 kare | `kare/C06.png` | Görsel | ref/1.MARA_v1.png (önden tam boy panel) · ref/6.KORIDOR_v1.png (hava kilidi girişi paneli; bu sırayla) | 2 | |
+| 16 | C07 kare | `kare/C07.png` | Görsel | ref/6.KORIDOR_v1.png (servis dolabı yakın paneli) · ref/8.AKSESUARLAR_v1.png (orta nesne; bu sırayla) | 2 | |
+| 17 | C08 kare | `kare/C08.png` | Görsel | ref/1.MARA_v1.png (¾ portre paneli) · ref/6.KORIDOR_v1.png (servis dolabı yakın paneli; bu sırayla) | 2 | |
+| 18 | C01 | `ham/C01_d1.mp4` | Frames to Video | kare/C01.png · **ÖNCELİKLİ DENEME: önce üretilir** | 2 | |
+| 19 | C02 | `ham/C02_d1.mp4` | Frames to Video | kare/C02.png | 2 | |
+| 20 | C03 | `ham/C03_d1.mp4` | Frames to Video | kare/C03.png | 2 | |
+| 21 | C04 | `ham/C04_d1.mp4` | Frames to Video | kare/C04.png | 2 | |
+| 22 | C05 | `ham/C05_d1.mp4` | Frames to Video | kare/C05.png | 2 | |
+| 23 | C06 | `ham/C06_d1.mp4` | Frames to Video | kare/C06.png | 2 | |
+| 24 | C07 | `ham/C07_d1.mp4` | Frames to Video | kare/C07.png | 2 | |
+| 25 | C08 | `ham/C08_d1.mp4` | Frames to Video | kare/C08.png | 2 | |
+
+> Ses ölçümü: replik taşıyan klipler C01-C04 · C06-C08 (C05 yok). Ağız kadrajda: C02 (R03) · C08 (R08). İlk dört klipte (18-21) replik biçimi ve ses profilleri (Mara kadın · AI sakin erkek · çağrı yorgun erkek) SMOKE P9 · P18'e göre kontrol edilir; tutmazsa
+> FILM §5 notundaki yedek yöntem (C02 sesi kurguda C07/C12/C23'e) uygulanır.

@@ -1,3 +1,8 @@
+> ⏸️ **05.10.2026 · ESKİ HAT DONDURULDU (sahip kararı).** Bu dosya 05.10.2026'ya kadar
+> `AGENTS.md` adıyla geçerli kontrattı. Neden donduruldu: 121 film yazıldı, hiçbirinin izleyici verisi
+> ölçülmedi (kanalda 225 video var, performans tablosu boş); ham QA raporlarındaki ölümcül hatalar kural eklendikçe azalmadı. Bu dosya artık yalnız ARŞİV HARİTASIDIR —
+> eski bir dosyanın yerini bulmak için okunur, akış dayatmaz. Geçerli kontrat: `AGENTS.md`.
+
 # 🤖 AGENTS.md — Ajan Çalışma Kontratı
 
 > **Bu dosyayı her görevden önce oku.** Amacı sana içerik öğretmek değil,

@@ -1,5 +1,9 @@
 {
+  "model": "fable",
   "permissions": {
+    "additionalDirectories": [
+      "~/film_medya"
+    ],
     "deny": [
       "Bash(git commit*)",
       "Bash(git push*)",
