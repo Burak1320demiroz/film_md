@@ -1,4 +1,8 @@
-<h1 align="center">🎬 film_md</h1>
+<p align="center"><img src="readme_banner.png" alt="System overview: markdown sources, a main agent with 18 sub-agents, Google Flow renders and the test run" width="100%"></p>
+
+<p align="center"><img src="readme_logo.png" alt="film_md logo: an apex mark over a film frame inside a thin circle" width="112"></p>
+
+<h1 align="center">film_md</h1>
 
 <p align="center">
   <b>An agentic, text-only production pipeline for AI sci-fi short films.</b><br>
@@ -59,6 +63,8 @@ Think of it as a build system for films:
 | code review | critic sub-agents + auditor |
 | CI | `test/kos.py` (36 regression tests) |
 | release | the owner's publish approval |
+
+<p align="center"><img src="readme_pipeline.png" alt="Architecture: the text-only git repo, the media workspace outside git, Google Flow and the six data-flow steps between them" width="90%"></p>
 
 > **Language note.** The method documents, agent definitions and notes are written in **Turkish**. Every prompt sent to a model, and every publish package (`YAYIN_PAKETI.md`), is in **English**.
 
@@ -203,6 +209,8 @@ All agents live in `.claude/agents/`. None of them can spawn other agents. Write
 | `denetci` | process auditor: were the required checks done? | Opus | Read · Grep · Glob · Bash |
 
 **The independent viewer is sandboxed.** A `PreToolUse` hook (`uretim_hatti/araclar/izleyici_kanca.py`) blocks `izleyici` from reading anything outside `~/film_medya/<FILM>/izleyici*/`. It cannot open the plan, so its confusion is real confusion.
+
+<p align="center"><img src="readme_agent_room.png" alt="Agent topology: the main agent in the centre, 18 sub-agents in eight clusters, the sandboxed viewer and the owner's two approvals" width="90%"></p>
 
 
 ---
@@ -495,6 +503,8 @@ BLIND_ORBIT · GUNES_MEZARI · LOSS_OF_LIFT · LOW_POWER · THE_BLACK_CRADLE · 
 NINE_MINUTES · THE_BRIGHT_TETHER · THE_DULL_EDGE · THE_FIRST_MORNING · THE_HALF_SKY · THE_HEAVY_SIDE · THE_IRON_SLOPE · THE_LOW_MOON · THE_NEAR_PASS · THE_OPEN_SEAM · THE_QUIET_IMPACT · THE_SINKING_HOUR · THE_SLOW_STONE · THE_SLOW_TIDE · THE_THIN_ROOF · THE_WALKING_DAY · THE_WINTER_LINE · THE_WRONG_SHADOW
 
 </details>
+
+<p align="center"><img src="readme_films.png" alt="Catalogue dashboard: film folders by format, archive counts and the state of the four new-pipeline films" width="100%"></p>
 
 
 ---

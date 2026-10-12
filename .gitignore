@@ -49,3 +49,7 @@ output.log
 #    yenilerini durdurur. Takipten düşürmek indeksi değiştirir → sahibin işi:
 #    git rm --cached .DS_Store kilavuzlar_ve_sistem_dosyalari/.DS_Store \
 #                    yatay_4_dk_filmler/.DS_Store output.log
+
+# ✅ TEK İSTİSNA (sahip kararı 12.10.2026): yalnız kök dizindeki README görselleri depoya girer.
+#    Film medyası kuralı değişmedi: ref · kare · ham · ses · cikti hâlâ ~/film_medya/<FILM>/ altında.
+!/readme_*.png

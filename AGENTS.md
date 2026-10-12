@@ -45,6 +45,7 @@ Halka n'nin bitiş karesi, halka n+1'in başlangıç karesidir.
      ref/ referans · kare/ başlangıç kareleri · ham/ Flow denemeleri · ses/ replik·efekt·müzik
      cikti/ taslak ve final · kareler/ kontak sayfaları · izleyici/ izleyici ajanına gösterilenler
   Repoya yalnız METİN girer: plan, prompt, seçim (timeline.json), not, ajan çıktısı, ölçüm.
+  Tek istisna (sahip kararı 12.10.2026): kök dizindeki README görselleri `readme_*.png` (.gitignore'da tek satır).
 ③ HİÇBİR ŞEY SİLİNMEZ. Eski hat olduğu yerde kalır; kılavuz ve raporlar düzenlenmez.
 ④ HATA KURAL OLMAZ. Üretimde görülen hata filmin NOTLAR.md'sine "ret nedeni" satırı olur.
   Yeni ders, yeni kapı, yeni kılavuz YAZILMAZ. Aynı hata iki ayrı filmde, kayıtlı vakayla
