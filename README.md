@@ -17,6 +17,7 @@
   <img alt="python" src="https://img.shields.io/badge/python-3%20stdlib-2E9BD6?style=flat-square&labelColor=05080E">
   <img alt="ffmpeg" src="https://img.shields.io/badge/ffmpeg-required-2E9BD6?style=flat-square&labelColor=05080E">
   <img alt="media" src="https://img.shields.io/badge/media%20in%20repo-none-E8F7FF?style=flat-square&labelColor=05080E">
+  <a href="LICENSE"><img alt="license" src="https://img.shields.io/badge/license-MIT-E8F7FF?style=flat-square&labelColor=05080E"></a>
 </p>
 
 ---
@@ -360,6 +361,8 @@ film_md/
 ├── AGENTS.md                    the agent contract: flow, rules, who approves what
 ├── CLAUDE.md                    entry note for Claude Code
 ├── AGENTS_ESKI_HAT.md           frozen map of the old pipeline (archive only)
+├── LICENSE                      MIT
+├── THIRD_PARTY_NOTICES.md       licenses and local changes of the 5 third-party skills
 ├── .claude/
 │   ├── settings.json            main model + git deny list
 │   ├── agents/                  18 sub-agent definitions
@@ -558,6 +561,7 @@ These three differences are the pipeline's open hypotheses. Each new film record
 3. **Do not edit frozen material.** That means `kilavuzlar_ve_sistem_dosyalari/`, `AGENTS_ESKI_HAT.md` and the old reports. Add new work next to them.
 4. **Keep the tests green.** If you change a tool, run `python3 uretim_hatti/test/kos.py`. If an expected value changes, write the reason in `kos.py`.
 5. **Rules need evidence.** A new rule needs a recorded case in two films, and the owner decides.
+6. **License.** By opening a pull request, you agree that your contribution is released under the MIT License of this repository.
 
 ---
 
@@ -569,7 +573,8 @@ These three differences are the pipeline's open hypotheses. Each new film record
   - `ab-testing`, `content-strategy` and `social` come from [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills);
   - `image` and `video` come from [smixs/visual-skills](https://github.com/smixs/visual-skills).
 
-  They keep their own licenses.
-- **License:** not chosen yet. Until a `LICENSE` file is added, all rights are reserved by the repository owner.
+  They keep their own licenses: MIT for the first three and CC BY 4.0 for the last two. Each license text sits in the skill's folder. Details and the local changes are in [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md).
+- **License:** [MIT](LICENSE) © 2026 Burak1320demiroz. It covers the original code and text in this repository: tools, agents, skills, guides, templates, film folders, reports and README images. Third-party skills keep their own licenses, as listed above.
+- **Names and marks:** the license does not grant rights to the name *Apex AI Cinema / APEXAIC*, the Λ mark or the logo (see [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md#names-and-marks)).
 
 <p align="center"><sub>Λ · Apex AI Cinema</sub></p>
