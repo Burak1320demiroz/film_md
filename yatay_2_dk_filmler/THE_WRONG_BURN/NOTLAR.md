@@ -35,31 +35,101 @@ Ret nedeninin sonuna hatanın DOĞDUĞU YER yazılır (AGENTS.md §3):
 
 | Tarih | Video / kare modu | Zaman | Çekim (`kurgu.py liste`) | Tür (T1-T14) | Ne görüldü | Gemini | İnsan doğrulaması |
 |---|---|---|:--:|---|---|:--:|:--:|
+| 15.10.2026 | video (1 fps) | 00:00.0–00:09.9 | C01 | T9 YANLIŞ SÜZÜLME | İstasyon korkuluğuna bağlı olan kopuk uçlu halat sert metal çubuk gibi kaskatı duruyor | SURE | doğrulanacak (esnek süzülme) |
+| 15.10.2026 | video (1 fps) | 00:08.5–00:09.5 | C01 | T8 YANLIŞ SES | Uzay vakumu kuralına aykırı dış metalik kopma/çarpma sesi duyuluyor | SURE | doğrulanacak (vakum sesi kaldırılacak) |
+| 15.10.2026 | video (1 fps) | 00:14.0–00:19.9 | C02 | T11 DİĞER (FİZİK) | Sağdaki turuncu nokta aniden büyüyerek ikinci bir küçük güneşe/ateş küresine dönüşüyor | SURE | doğrulanacak (ışık ölçeği) |
+| 15.10.2026 | video (1 fps) | 00:16.0–00:18.5 | C02 | T8 YANLIŞ SES | Telsizden gelen erkek sesi yapay zekâ üretimi bozuk ve anlamsız hecelerden oluşuyor | SURE | doğrulanacak (model sesi silinecek, R02 kurguda) |
+| 15.10.2026 | video (1 fps) | 00:20.0–00:22.0 | C03 | T8 YANLIŞ SES | Bilekteki LED sönerken vakumda bulunmaması gereken sert hava/whoosh efekti duyuluyor | SURE | doğrulanacak (whoosh silinecek) |
+| 15.10.2026 | video (1 fps) | 00:20.0–00:29.9 | C03 | T11 DİĞER (FİZİK) | Bilek yakın planında Dünya bulutları yörünge hızıyla açıklanamayacak kadar hızlı akıyor | LIKELY | doğrulanacak |
+| 15.10.2026 | video (1 fps) | 00:30.0–00:39.9 | C04 | T6 GÖRÜNÜM DEĞİŞİMİ | Bram'ın kaskının tepesinde küçük bir güneş gibi parlayan sarı-turuncu ışık topu var | SURE | doğrulanacak (kask lambası referansa çekilecek) |
+| 15.10.2026 | video (1 fps) | 00:47.0–00:52.0 | C05–C06 | T8 YANLIŞ SES | Gözler kapanırken (00:47) ve C06'da rüzgâr uğultusu/whoosh efektleri duyuluyor | SURE | doğrulanacak (efektler kaldırılacak) |
+| 15.10.2026 | video (1 fps) | 00:50.0–00:59.9 | C06 | T6 GÖRÜNÜM DEĞİŞİMİ | Kask camının içinde yanak ve çeneden geçen ikinci bir iç cam çizgisi/çift vizör var | SURE | doğrulanacak |
+| 15.10.2026 | video (1 fps) | 00:53.0–01:02.9 | C06–C07a | T8 YANLIŞ SES | Telsizden duyulan üç ayrı konuşma bozuk ve anlamsız hecelerden oluşuyor | SURE | doğrulanacak (model sesi atılacak, temiz diyalog kurguda) |
+| 15.10.2026 | video (1 fps) | 01:00.0–01:02.9 | C07a | T13 BOŞ TUTUŞ | Sağ eldiven kumanda kutusunun köşesinde çevirme hareketi yapıyor ama düğme yok | LIKELY | doğrulanacak |
+| 15.10.2026 | video (1 fps) | 01:03.0–01:09.9 | C07b | T11 DİĞER (FİZİK) | Dünya 6 saniyede gündüz-gece çizgisi ve kıtalar dönecek kadar aşırı hızlı dönüyor | SURE | doğrulanacak |
+| 15.10.2026 | video (1 fps) | 01:25.0–01:27.9 | C09 | T11 DİĞER (PERSPEKTİF) | Ön plandaki dev eldiven ile uzaktaki küçük astronotun eli aynı düzlemde değiyor | SURE | doğrulanacak (ölçek uyuşmazlığı) |
+| 15.10.2026 | video (1 fps) | 01:30.0–01:34.0 | C10 | T8 YANLIŞ SES | Astronot elini kaldırırken vakuma aykırı yüksek seri mekanik/elektriksel tıkırtı sesi geliyor | SURE | doğrulanacak (tıkırtı efekti atılacak) |
+| 15.10.2026 | video (1 fps) | 01:39.0–01:45.0 | C11 | T8 YANLIŞ SES | Dış uzayda makara, sürtünme ve metal çarpışma sesleri duyuluyor | SURE | doğrulanacak (vakumda dış ses yok) |
+| 15.10.2026 | video (1 fps) | 01:40.0–01:44.0 | C11 | T6 GÖRÜNÜM DEĞİŞİMİ | Astronotlar arasındaki halat kendi kendine kısalıp gövdelerin içinde eriyerek kayboluyor | SURE | doğrulanacak |
+| 15.10.2026 | video (1 fps) | 01:41.0–01:47.9 | C11 | T12 AĞIRLIKSIZ EFOR | Soldaki astronot hızlanıp sağdakine çarpıyor, bedenler darbe esnemesi olmadan kaskatı kayıyor | SURE | doğrulanacak |
+| 15.10.2026 | video (1 fps) | 01:48.5–01:55.0 | C12 | T8 YANLIŞ SES | Dış uzayda metalik tıkırtılar ve bozuk kadın telsiz sesi duyuluyor | SURE | doğrulanacak (model sesi atılacak, R12 kurguda) |
+| 15.10.2026 | video (1 fps) | 01:58.0–02:03.4 | C13 | T3 TEXT / T10 LAYOUT | Ekranda büyük harflerle başlık ve slogan yazısı beliriyor | SURE | doğrulanacak (jenerik kartı ayrılacak) |
 
 ## SÜREKLİLİK (Gemini · `SUREKLILIK.md`)
 
 | Tarih | Sürüm | Kesme no · zaman | Çekimler (önce → sonra) | Tür (S1-S7) | Önce → sonra | Gemini | Karar (düzeltildi · kabul · yanlış alarm) |
 |---|---|---|---|---|---|:--:|---|
+| 15.10.2026 | the wrong burn.mp4 | 1 · 00:10.0 | C01 → C02 | S1 LOOK JUMP | C01'de kol şeridi yok, korkuluk tutuyor → C02'de turuncu şerit var, sırtında çift halat süzülüyor | SURE | düzeltilecek (SELA_v1 referansına kilitlenecek) |
+| 15.10.2026 | the wrong burn.mp4 | 1 · 00:10.0 | C01 → C02 | S4 WORLD JUMP | C01'de korkuluk, gövde, güneş paneli → C02'de istasyon kayıp, uzayda parlayan turuncu nokta | SURE | düzeltilecek (mekân/arka plan hizası) |
+| 15.10.2026 | the wrong burn.mp4 | 1 · 00:10.0 | C01 → C02 | S7 SOUND JUMP | C01 sonundaki metalik çarpma yankısı kesmede aniden bıçak gibi kesiliyor | SURE | düzeltilecek (vakum dış sesi kaldırılacak) |
+| 15.10.2026 | the wrong burn.mp4 | 2 · 00:20.0 | C02 → C03 | S1 LOOK JUMP | C02'de düz beyaz kumaş ve ince siyah kayış → C03'te yuvarlak delikli beyaz LED halkalı bilezik | SURE | düzeltilecek (BILEK_2-2 referansı) |
+| 15.10.2026 | the wrong burn.mp4 | 2 · 00:20.0 | C02 → C03 | S7 SOUND JUMP | Kesme anında önceki planda olmayan sert hava/whoosh efekti devreye giriyor | SURE | düzeltilecek (whoosh silinecek) |
+| 15.10.2026 | the wrong burn.mp4 | 3 · 00:30.0 | C03 → C04 | S1 LOOK JUMP | C03'te LED bilezikli kalkık kol → C04'te eller korkulukta, kask kenarında turuncu şerit | SURE | düzeltilecek |
+| 15.10.2026 | the wrong burn.mp4 | 3 · 00:30.0 | C03 → C04 | S5 STATE RESET | C01'de uzaktaki astronotta kask lambası yokken C04'te aşırı parlak sarı-turuncu ışık küresi yanıyor | SURE | düzeltilecek (lamba dozu ayarlanacak) |
+| 15.10.2026 | the wrong burn.mp4 | 4 · 00:40.0 | C04 → C05 | S1 LOOK JUMP | C04'te kask dışı turuncu şeritli → C05'te kask içinde siyah bere, omuzda dikey turuncu askılar | SURE | düzeltilecek (SELA_yuz_v1 kilitlenecek, bere yok) |
+| 15.10.2026 | the wrong burn.mp4 | 4 · 00:40.0 | C04 → C05 | S2 LIGHT JUMP | C04'te güneş sol üstte yüksekte → C05'te sol alt ufukta omuz arkasına inmiş | SURE | düzeltilecek (güneş açısı tablosuna uyulacak) |
+| 15.10.2026 | the wrong burn.mp4 | 5 · 00:50.0 | C05 → C06 | S1 LOOK JUMP | C05'te gözler kapalı, siyah bere var → C06'da gözler açık, bere yok saç görünüyor, yüz değişmiş | SURE | düzeltilecek (SELA_yuz_v1 kimliği sabit) |
+| 15.10.2026 | the wrong burn.mp4 | 5 · 00:50.0 | C05 → C06 | S3 DIRECTION FLIP | C05'te Sela sağa bakıyor → C06'da sola bakıyor | SURE | kabul (S6 tretman kararı: dönüş kesmede tamamlanır) |
+| 15.10.2026 | the wrong burn.mp4 | 5 · 00:50.0 | C05 → C06 | S4 WORLD JUMP | C05'te Dünya gündüz mavi/beyaz → C06'da Dünya gece şehir ışıklı | SURE | düzeltilecek (alacakaranlık geçişi korunacak) |
+| 15.10.2026 | the wrong burn.mp4 | 6 · 01:00.0 | C06 → C07a | S1 LOOK JUMP | C06'da sağ eldiven düz beyaz → C07a'da tek beyaz ışıklı bilezik beliriyor | SURE | düzeltilecek (BILEK_1-3 referansı) |
+| 15.10.2026 | the wrong burn.mp4 | 6 · 01:00.0 | C06 → C07a | S2 LIGHT JUMP | C06'da sol ufuk güneşi sarı kontur ışığı verirken C07a'da güneş kaybolup üstten soğuk ışık vuruyor | SURE | düzeltilecek (ışık sürekliliği) |
+| 15.10.2026 | the wrong burn.mp4 | 7 · 01:03.0 | C07a → C07b | S4 WORLD JUMP | C07a'da sol taraf açık uzayken C07b'de sol kenarda aniden istasyon duvarı beliriyor, Dünya gece iken gündüze fırlıyor | SURE | düzeltilecek (C07'de istasyon kadraj dışıdır) |
+| 15.10.2026 | the wrong burn.mp4 | 8 · 01:10.0 | C07b → C08 | S4 WORLD JUMP | C07b'de Dünya altta ve sol istasyon varken C08'de Dünya baş aşağı tavanda, sağda gece solda güneş patlıyor | SURE | kabul (S8 tretmanı: Dünya başının üstüne geçer) |
+| 15.10.2026 | the wrong burn.mp4 | 9 · 01:20.0 | C08 → C09 | S4 WORLD JUMP | C08'de Dünya üstte ve figürler uzaktayken C09'da Dünya tekrar alta iniyor ve eller değecek kadar yaklaşıyor | SURE | düzeltilecek (C09'da Dünya üstte kalmalı) |
+| 15.10.2026 | the wrong burn.mp4 | 10 · 01:28.0 | C09 → C10 | S5 STATE RESET | C09'da halatsız parmak teması → C10'da kadın kayıp, mavi astronotun sırtında delik ve gergin halat bağlı | SURE | düzeltilecek (KANCA_cantada referansı) |
+| 15.10.2026 | the wrong burn.mp4 | 10 · 01:30.0 | C10 | S7 SOUND JUMP | Mavi astronot elini kaldırırken uyumsuz mekanik/elektriksel seri tıkırtı sesi başlıyor | SURE | düzeltilecek (tıkırtı sesi atılacak) |
+| 15.10.2026 | the wrong burn.mp4 | 11 · 01:38.0 | C10 → C11 | S3 DIRECTION FLIP | C10'da tek başına halat ucundayken C11'de soldan gelen turuncu astronot çarpıp istasyondan uzaklaşıyor | SURE | düzeltilecek (itki eve doğru olmalı) |
+| 15.10.2026 | the wrong burn.mp4 | 11 · 01:38.0 | C10 → C11 | S4 WORLD JUMP | C10'da Dünya altta yatayken C11'de Dünya üst ortada tam küre ve sağda istasyon beliriyor | SURE | düzeltilecek (mekân sürekliliği) |
+| 15.10.2026 | the wrong burn.mp4 | 12 · 01:48.0 | C11 → C12 | S5 STATE RESET | C11'de uzaya savrulup kadrajdan çıkmışken C12'de aniden tekrar istasyon korkuluğuna tutunmuş görünüyor | SURE | düzeltilecek (C11 savrulma değil kapağa varış hazırlığıdır) |
+| 15.10.2026 | the wrong burn.mp4 | 12 · 01:48.0 | C11 → C12 | S4 WORLD JUMP | C11'de Dünya üstte gece iken C12'de Dünya alta iniyor ve güneş sağ alttan doğuyor | SURE | düzeltilecek (ikinci gün doğumu C12 ufuk çizgisi) |
+| 15.10.2026 | the wrong burn.mp4 | 13 · 01:58.0 | C12 → C13 | S1 LOOK JUMP | C12'de kask yanında şeritler varken C13 jenerik kartında kask kulaklık yapısı değişiyor | LIKELY | düzeltilecek (jenerik kartı yerine film sonu karesi) |
 
 ## ANLATIM (Gemini · `ANLATIM_TESTI.md`)
 
 | Tarih | Sürüm | Çekim | Planlanan bilgi | İzleyicinin anladığı | Tuttu mu |
 |---|---|:--:|---|---|:--:|
+| 15.10.2026 | the wrong burn.mp4 | C01 | Bram'ın ipi koptu, istasyondan uzaklaşıyor, korkuluktaki tek kişi Sela | Turuncu şeritli astronot korkulukta, yanında kopuk halat ucu, mavi şeritli astronot boşlukta sürükleniyor | ✅ TUTTU |
+| 15.10.2026 | the wrong burn.mp4 | C02 | Sela kancayı çözüp Bram'a doğru ateşliyor | Boş bağlantı halatı süzülürken uzakta turuncu ışık noktasına bakıyor, telsiz sesi duyuluyor | ✅ TUTTU |
+| 15.10.2026 | the wrong burn.mp4 | C03 | İlk ateşleme gazın yarısına mal oldu (bilekte 2/4) | Bileğindeki gösterge bileziğinde yanmakta olan beyaz ışıklardan biri sönüyor | ✅ TUTTU |
+| 15.10.2026 | the wrong burn.mp4 | C04 | Kural gözle kanıtlanıyor: yükselen geride kalır, Bram aşağı iniyor | Sürüklenen astronotun kaskındaki ışık aşağı doğru uzaklaşmaya devam ediyor | ✅ TUTTU |
+| 15.10.2026 | the wrong burn.mp4 | C05 | Takas: Bram'dan uzağa yakmak; Sela gözlerini kapatıp dönüyor | Kadın astronot yüz yakın planda gözlerini kapatıyor, telsizden ses duyuluyor | ✅ TUTTU |
+| 15.10.2026 | the wrong burn.mp4 | C06 | KARAR: Sırtını dönüp ateşliyor, ışık arkada küçülüyor | Göğsündeki cihazdan ayar yapıp tutunduğu yeri bırakarak boşluğa kendini itiyor | ✅ TUTTU |
+| 15.10.2026 | the wrong burn.mp4 | C07 | Düzeltmeden vazgeçiş: el kumandadan çekilir, gece | İstasyon paneline tutunuyor, göğsündeki cihaza bakıyor | ⚠️ KISMEN (Aniden beliren duvar kafa karıştırdı) |
+| 15.10.2026 | the wrong burn.mp4 | C08 | Gün doğumu, Bram tam önünde | İki astronot Dünya'nın önünde uzay boşluğunda karşılıklı süzülüyor | ✅ TUTTU |
+| 15.10.2026 | the wrong burn.mp4 | C09 | Bram yanından geçiyor, el yetişmiyor (ıska) | Elini diğer astronota doğru uzatıyor ve parmak uçları birbirine değiyor | ⚠️ KISMEN (Dokunma değil bir boy boşluk kalmalı) |
+| 15.10.2026 | the wrong burn.mp4 | C10 | Halat takılı, Bram ayılıyor (kolunu kaldırıyor) | Sırt çantası hasarlı mavi astronot gergin halatla dururken elini kaldırıp sallıyor | ✅ TUTTU |
+| 15.10.2026 | the wrong burn.mp4 | C11 | Son gazla eve dönüş itişi; ip Bram'ı çekiyor | Soldaki astronot sağdakine yaklaşıp çarpıyor ve istasyondan uzaklaşıp savruluyor | ❌ KAFAM KARIŞTI (Kurtarma değil savrulma algılandı) |
+| 15.10.2026 | the wrong burn.mp4 | C12 | İkisi kapakta, tutamakta duruyor (gösterge 0/4) | Turuncu şeritli astronot yeniden korkuluğa tutunmuş ve diğerini halatla tutar halde | ❌ ÇELİŞKİLİ (C11 savrulmasıyla C12 varışı birbirini yalanladı) |
 
 Duyulan replikler (madde 7) ↔ `FILM.md` §5 · A3/A4 satırları:
 
 | Tarih | Sürüm | Zaman | Tür (A1-A4) | Ne duyuldu / görüldü | Replik no | Karar |
 |---|---|---|---|---|---|---|
+| 15.10.2026 | the wrong burn.mp4 | 00:10 | A1 CONFUSED | 00:00 korkulukta kopuk uç ↔ 00:10 sırtta serbest çift halat | C01→C02 | SELA_v1 ve KANCA_bosta referansına uyulacak; sırtında çift halat silinecek |
+| 15.10.2026 | the wrong burn.mp4 | 00:16 | A3 REPLIK BELIRSIZ | Telsizden gelen erkek sesi bozuk ve anlamsız seslerden oluşuyor | R02 (C02) | Model sesi atılacak; insan ses kaydı ("No, no— don't burn at me!") kurguda telsiz filtreli girer |
+| 15.10.2026 | the wrong burn.mp4 | 00:30 | A1 CONFUSED | Uzaktaki kaskta aniden parlayan güneş benzeri aşırı sarı ışık küresi | C04 | Bram kask lambası nokta boyutuna çekilecek, dev küre olmayacak |
+| 15.10.2026 | the wrong burn.mp4 | 00:53 | A3 REPLIK BELIRSIZ | Telsiz konuşmasında kelimeler bozuk telaffuzla birbirine karışıyor | R08 (C05) | Model sesi atılacak; insan kaydı ("At me— you're home. Away from me— you might reach me...") mikslenecek |
+| 15.10.2026 | the wrong burn.mp4 | 01:01 | A3 REPLIK BELIRSIZ | Astronot göğsündeki cihaza bakarken duyulan ses tamamen boğuk | R09 (C06) | Model sesi atılacak; kask içi temiz Sela repliği ("Sunrise. You be there.") yerleştirilecek |
+| 15.10.2026 | the wrong burn.mp4 | 01:03 | A1 CONFUSED | Uzay boşluğundayken 01:03'te aniden solda beliren istasyon duvarı | C07 | C07'de istasyon kadraj dışıdır; aniden beliren duvar kesmesi montajdan çıkarılacak |
+| 15.10.2026 | the wrong burn.mp4 | 01:29 | A1 CONFUSED | Sürüklenen astronotun bir anda gergin halata bağlı görünmesi | C10 | Halat bağlantısı kancanın çantaya takılması C09/C10 arasına kurgulanacak, KANCA_cantada korunacak |
+| 15.10.2026 | the wrong burn.mp4 | 01:30 | A4 SES UYUMSUZ | Astronot elini kaldırırken uyumsuz yüksek seri mekanik tıkırtı sesi | C10 | Yersiz mekanik/elektriksel tıkırtı efekti kurgudan silinecek |
+| 15.10.2026 | the wrong burn.mp4 | 01:39 | A1 CONFUSED | İki astronotun birbirine çarpıp istasyondan uzaklaşarak savrulması | C11 | C11'deki savrulma kaldırılacak; kapağa doğru yumuşak çekme ve ortak ilerleme kurgulanacak |
+| 15.10.2026 | the wrong burn.mp4 | 01:48 | A1 CONFUSED | Uzaya savrulduktan sonra 01:48'de aniden tekrar korkuluğa tutunmuş olması | C11→C12 | C11'in sonu istasyona varış eksenine oturtulacak, C12'deki tutamak varışı mantıksal sonuca bağlanacak |
+| 15.10.2026 | the wrong burn.mp4 | 01:50 | A3 REPLIK BELIRSIZ | Telsizdeki kadın sesi anlaşılmıyor ("Okay... complete") | R12 (C12) | Yanlış model fısıltısı atılacak; Bram'ın onay repliği ("Good call.") ve Sela nefesi konulacak |
 
 ## İZLEME (insan · `IZLEME_FORMU.md`)
 
-| Tarih | Kim | Sürüm | Cevaplar |
-|---|---|---|---|
+| tarih | kim (A / B1 / B2 / B3) | sürüm (taslak_xx) | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2026-10-15 | A (AI Ön Kontrol) | `the wrong burn.mp4` | Kısmen (01:29, 01:39, 01:48) | Hayır (00:10, 00:50) | 00:10 çift halat, 00:30 kask ışığı, 01:03 aniden beliren duvar, 01:41-01:48 savrulup geri dönme | 00:00 donuk tepki, 01:31 el sallama, 01:41 kaskatı çarpışma | 00:16, 00:53, 01:01, 01:50 telsiz replikleri anlaşılmıyor | 00:08 vakumda kopma sesi, 00:20 whoosh, 01:30 mekanik tıkırtı | 00:20-00:39, 01:10-01:19 | Kurgu hatası nedeniyle kafa karışıklığı |
+| 2026-10-15 | B1 (AI İzleyici Simülasyonu) | `the wrong burn.mp4` | Halatı kopan astronotu kurtarmak için boşluğa atladı, halatla bağlandılar ama son iki sahne çelişti | Sürüklenen arkadaşını kurtarmak | Kopan halat, mesafe, bilekte sönen ışık | Belirsiz; hem savruldular hem istasyona tutunmuş göründüler | Hayır, telsiz sesleri bozuk ve anlaşılmazdı | 01:29 halatın aniden belirmesi ve 01:39-01:48 savrulma/istasyon çelişkisi | 00:53 (bozuk diyalog) ve 01:10 (hareketsiz plan) | Kopuk |
 
 ## KARARLAR
 
 | Tarih | Karar | Neden |
 |---|---|---|
+| 15.10.2026 | **QA DÜZELTME EMRİ (F8 / SES / MODEL SESİ):** Videodaki tüm model sesi ve yapay telsiz heceleri (00:16, 00:53, 01:01, 01:50) ile vakum kuralına aykırı dış sesler (00:08 çarpma, 00:20 whoosh, 01:30 mekanik tıkırtı) tamamen kaldırılır. `FILM.md` §6 kuralı uygulanır: video sesleri sessizleşir; insan diyalogları (Bram R01-R12, Sela R04-R10) telsiz ve kask içi filtreleriyle mikslenir. | AGENTS.md §3 ses kuralı; FILM.md §6 ("Model sesi kullanılmaz; ses kurguda"); Anlatım Testi A3/A4 bulguları |
+| 15.10.2026 | **KURGU VE DEVAMLILIK DÜZELTMESİ (C11 → C12):** 01:39–01:48 arasındaki anlatı çelişkisi (C11'de uzaya savrulup C12'de aniden kapakta olma) kurguda giderilir: C11'de istasyondan kopuş/çarpışma sahnesi yerine, Sela'nın eve doğru itiş yaptığı ve Bram'ı arkasından çektiği plan kullanılır. C07b'deki aniden beliren istasyon duvarı kaldırılır. | AGENTS.md §3 Kurgu/Seçim; İzleme Testi A ve B1 bulguları (son iki sahne mantık kopukluğu) |
 | 09.10.2026 | **F5 KAPANDI** (Fable; denetci KAPANABİLİR, ❌ yok). G01.md: 20 referans + 12 çekim (Görsel + Video + 7-10 s bloğu) + iş emri 48 satır; FILM §3 20 ref, §4 Durum ✍️. Denetci notları: (1) **hat dersi:** birleştirme geçişinden önce PROMPTLAR/<grup>.md kopyası ODA/F5_<grup>_tur1.md olarak alınır (bu filmde alınmadı, tur 1 metni eleştiri alıntılarında) · (2) F7'de uygulanacak belge G01 FLOW İŞ EMRİ, FILM §4 Referans sütunu F3 hâli (§4 yorum satırı) · (3) birleşik sürüm eleştirilmedi: kabul edilen risk, F7 devamlilik kare denetimi kapatır · (4) DUNYA_gunduz_alt_v1 'directly overhead' ↔ C04 65°: kare üretiminde **metin esas**, C04 okunmazsa F7 yeniden tasarım referansı böler · (5) FAZ GÜNLÜĞÜ yazıldı. F5 toplam 4 çağrı (+2 SendMessage sayılmadı) | yeni-film §2e-f; cekim-yaz §F5.5 Durum ✍️ |
 | 09.10.2026 | **FILM §4 SAPMA (F5 promptları, 14 madde — PROMPTLAR/G01.md YAZAR NOTLARI §2, birebir orada):** C01 kopuk uç kımıldamaz · C08 siluet aynı boy, Dünya limbi döndürülmüş (güneş yüz hizasında, siluetin arkasında) · C04 güneş 'high at the left, two-thirds down' · ip 'about four person-heights long' · C09 7-10 s Bram sağ üste uzaklaşır, toplam dönüş < çeyrek · C12 kamera korkuluk yüksekliğinde kapak kenarında, eldiven tutamağa geri uzanır · ışık yüzeylere bağlı · C06 bilek gizli · C07 kask-giysi tek parça açılı · C07 bitiş yok · 'pushed' yok · EKLE kare/video ayrı · §3 kullanım listesi daraldı + 2 yeni referans. FILM §4 metni değişmedi (yönetmen eseri); F7 KARE denetiminde bilgi ('Bram önünde', 'uç yerinde', 'ışık yayıldı') ölçülür; sapma bilgi kaybına yol açarsa goruntu-yonetmeni yeniden tasarım (F7) | yeni-film §5 Fable yazmaz; §2d yerleştirme: promptlar PROMPTLAR/'da, §4 yeniden yazılmaz; sapma kaydı devamlilik/denetci için |
 | 09.10.2026 | F5 tur 1 KAPANIYOR (devamlilik · teknik-danisman ÖLÜMCÜL 0; CİDDİ 7+6, KÜÇÜK 6+8). Bütçe 44 → yeni çağrı yok; bulgular BİRLEŞTİRME GEÇİŞİ ile goruntu-yonetmeni'ne SendMessage (sayılmaz) → G01.md yerinde revize, KABUL/RED YAZAR NOTLARI'na. Fable: **C07 bitiş karesi KULLANILMAZ** (teknik B9 = varsayılan; satır 26 yedek) · **C08 siluet iki karede aynı boy** (teknik B8 = sahneleyici §4b yedeği) · C01 uç 'stays' · FILM §4 metni bu fazda değişmez, sapmalar (C01 uç kayması · C08 siluet büyümesi · yazarın ekleyecekleri) KARARLAR'a 'FILM §4 SAPMA' olarak girer, F7 KARE denetimi bilgiyi ölçer · yeni referans (SELA_yuz / SELA_arka) yazarın KABUL/RED'i; kabul edilen için §3 satırı yazar yazar, Fable kopyalar · ölçülmemiş çıkarımlar (teknik B3/3 B4 B12) yazarın kararı | yeni-film §4 (40 sonrası yalnız ÖLÜMCÜL turu) + §2c (Fable CİDDİ birleştirir) + §5 (Fable yazmaz → yazara); F5_teknik-danisman_1 §Fable kararı |

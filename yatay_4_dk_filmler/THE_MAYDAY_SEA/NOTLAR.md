@@ -35,31 +35,85 @@ Ret nedeninin sonuna hatanın DOĞDUĞU YER yazılır (AGENTS.md §3):
 
 | Tarih | Video / kare modu | Zaman | Çekim (`kurgu.py liste`) | Tür (T1-T14) | Ne görüldü | Gemini | İnsan doğrulaması |
 |---|---|---|:--:|---|---|:--:|:--:|
+| 15.10.2026 | video (1 fps) | 00:04.5–00:09.0 | C01 | T8 WRONG SOUND | Uzay boşluğundaki dış genel planda okyanusun dalgalanma ve su çalkalanma sesi duyuluyor | SURE | doğrulanacak (vakum sesi temizlenecek) |
+| 15.10.2026 | video (1 fps) | 00:19.2–00:29.2 | C03 | T8 WRONG SOUND | Uzay boşluğundaki istasyon dış çekiminde suyun yüzeye vurma ve çalkalanma sesleri duyuluyor | SURE | doğrulanacak (vakum sesi temizlenecek) |
+| 15.10.2026 | video (1 fps) | 00:29.2–00:39.2 | C04 | T8 WRONG SOUND | Uzay vakumundaki kenetlenme dış çekiminde metalik kenetlenme tıkırtıları ve dış ortam su/motor uğultusu duyuluyor | LIKELY | doğrulanacak (vakum sesi temizlenecek) |
+| 15.10.2026 | video (1 fps) | 00:50.0–00:59.2 | C06 | T7 WRONG PARTICLES | Duvardaki açık elektrik panosunda, fişten çekilmiş kalın siyah elektrik kablosunun metal/plastik soket ucundan sürekli su damlaları akıyor | SURE | doğrulanacak (kablo kuru olmalı) |
+| 15.10.2026 | video (1 fps) | 01:04.0–01:06.5 | C07 | T8 WRONG SOUND | Kadın astronotun repliğinde ses üretim hatası (takılma/tekrarlama) var; cümle "Then who is call— is calling?" şeklinde bozuk duyuluyor | SURE | doğrulanacak (replik tek parça yeniden üretilecek) |
+| 15.10.2026 | video (1 fps) | 01:08.8–01:18.4 | C08 | T7 WRONG PARTICLES | Suyun altında içi tamamen suyla dolu, başsız ve boş bir astronot kaskının üst/arka kısmından kesintisiz olarak hava kabarcıkları çıkıyor | SURE | doğrulanacak (kabarcık sızıntısı azaltılacak) |
+| 15.10.2026 | video (1 fps) | 01:28.4–01:38.4 | C10 | T9 WRONG FLOATING | Gözlem penceresinin dışındaki suyun içinde onlarca ağır metal gemi, denizaltı ve bir savaş uçağı ne dibe çöküyor ne de yüzeye çıkıyor; suyun orta katmanlarında hareketsiz asılı duruyor | SURE | doğrulanacak (alan containment fiziği kurguda netleşir) |
+| 15.10.2026 | video (1 fps) | 01:39.0–01:40.0 | C11 | T8 WRONG SOUND | Önceki çekimde devam eden yüksek tempolu elektronik müzik, 01:39.5 civarında miks geçişi olmadan bıçak gibi kesiliyor | SURE | doğrulanacak (miks geçişi yumuşatılacak) |
+| 15.10.2026 | video (1 fps) | 01:44.0–01:48.4 | C11 | T6 LOOK CHANGE | Küçük telsiz kutusunun sağ altındaki metal zeminde başlangıçta kablo yokken, 01:44.0 anında parlak camgöbeği renginde ince bir kablo yoktan belirip sağa doğru uzuyor | SURE | doğrulanacak (kablo ilk karede olmalı) |
+| 15.10.2026 | video (1 fps) | 01:58.4–02:08.4 | C13 | T11 OTHER | Uzaydaki okyanusun içinde yelken direkleri olan eski çağ ahşap kalyonları görülüyor ve kamaralarında fenerler yanıyor; öndeki yelkenli suyun içinde normal denizdeymiş gibi yüzerek ilerliyor | SURE | doğrulanacak (ahşap kalyon yerine uzay enkazı) |
+| 15.10.2026 | video (1 fps) | 02:48.4–02:58.4 | C18 | T8 WRONG SOUND | Uzay boşluğundaki kenetlenme halkası dış çekiminde sıvı akışı ve su damlama sesleri duyuluyor | SURE | doğrulanacak (vakumda dış sıvı sesi yok) |
+| 15.10.2026 | video (1 fps) | 02:55.0–02:58.4 | C18 | T7 WRONG PARTICLES | Uzay vakumunda kenetlenme halkasını saran parlak mavi sıvıdan, aşağı doğru yerçekimi varmış gibi sıvı damlaları kopup boşluğa düşüyor | SURE | doğrulanacak (sıvı kordon gergin olmalı, damlama yok) |
+| 15.10.2026 | video (1 fps) | 02:58.4–03:08.4 | C19 | T7 WRONG PARTICLES | Kapalı kokpitin içinde, astronotun kolu çektiği kontrol panelinin üzerine yukarıdan sürekli yağmur gibi su damlaları düşüyor | SURE | doğrulanacak (kokpit kuru kabindir) |
+| 15.10.2026 | video (1 fps) | 02:58.4–03:08.4 | C19 | T12 WEIGHTLESS EFFORT | Astronot yük altındaki acil ayrılma kolunu çekerken kol yalnızca birkaç santimetre geriye gelip duruyor; eldivenli el sadece titriyor, ağır mekanik kilit eforu görünmüyor | LIKELY | doğrulanacak (kol çekme ağırlığı artırılacak) |
+| 15.10.2026 | video (1 fps) | 03:08.4–03:18.4 | C20 | T11 OTHER | Geminin sağ ucundaki iki mavi motor sağa doğru ateşleniyor; fiziksel olarak gemiyi sola itmesi gerekirken gemi motor ateşinin içine sağa doğru geri gidiyor | SURE | doğrulanacak (itki yönü fiziksel ters) |
+| 15.10.2026 | video (1 fps) | 03:14.0–03:18.4 | C20 | T2 BODY-GROUND CLIPPING | Gemi istasyondan ayrılırken burnundaki dört metal çubuk kenetlenme silindirinin deliksiz düz metal yüzeyinin içinden çıkıyormuş gibi görünüyor | LIKELY | doğrulanacak (ayrılma boşluğu düzeltilecek) |
+| 15.10.2026 | video (1 fps) | 03:18.4–03:28.4 | C21 | T8 WRONG SOUND | Uzay boşluğunda uzaklaşan geminin dış çekiminde güçlü motor/itici uğultusu duyuluyor | LIKELY | doğrulanacak (dış vakum motor sesi kısılacak) |
+| 15.10.2026 | video (1 fps) | 03:48.4–03:54.2 | C24 | T3 TEXT | Videonun sonunda sağ alt köşede büyük harflerle "THE MAYDAY SEA" başlık yazısı yer alıyor | SURE | doğrulanacak (afiş tasarımı kurgu tercihi) |
+| 15.10.2026 | video (1 fps) | 03:48.4–03:54.2 | C24 | T10 LAYOUT | Videonun son 6 saniyesi hareketli film görüntüsü değil; sabit bir afiş/başlık kartı tasarımından oluşuyor | SURE | doğrulanacak (bitiş kartı kontrolü) |
 
 ## SÜREKLİLİK (Gemini · `SUREKLILIK.md`)
 
 | Tarih | Sürüm | Kesme no · zaman | Çekimler (önce → sonra) | Tür (S1-S7) | Önce → sonra | Gemini | Karar (düzeltildi · kabul · yanlış alarm) |
 |---|---|---|---|---|---|:--:|---|
+| 15.10.2026 | taslak_01 | 3 · 00:29.2 | C03 → C04 | S4 WORLD JUMP | C03'te kenetlenme kapısında yukarı-aşağı açılmış dev iki mekanik kıskaç/kol varken C04'te kollar kaybolup halkanın etrafında 4 küçük kıvrımlı parça ve camgöbeği ufuk beliriyor | SURE | düzeltilecek (istasyon geometrisi 5.ISTASYON referansına kilitlenecek) |
+| 15.10.2026 | taslak_01 | 4 · 00:39.2 | C04 → C05 | S1 LOOK JUMP | C02'de koyu lacivert omuzluk, siyah göğüs askısı, kaskta kilit parçası varken C05'te omuzluklar tamamen beyaza dönüyor, turuncu şeritler türüyor, kask bağlantısı değişiyor | SURE | düzeltilecek (1.MARA_v1 referansına tam uyulacak) |
+| 15.10.2026 | taslak_01 | 5 · 00:49.2 | C05 → C06 | S4 WORLD JUMP | C05'te açık dolapta gri çantalar/raflar varken C06'da fişi çekilmiş su damlatan paslı verici kutusu görülüyor | LIKELY | düzeltilecek (6.KORIDOR dolap paneliyle eşlenecek) |
+| 15.10.2026 | taslak_01 | 6 · 00:59.2 | C06 → C07 | S1 LOOK JUMP | C05'te beyaz omuzlu, turuncu şeritli tulum giyen astronot C07'de yeniden siyah/lacivert omuzluk ve siyah göğüs askısına dönüyor; sağ yanağında yeni çizik/yaralar beliriyor | SURE | düzeltilecek (1.MARA portre paneli kilitlenecek) |
+| 15.10.2026 | taslak_01 | 6 · 00:59.2 | C06 → C07 | S5 STATE RESET | C06'da açık metal kutuda siyah verici cihazı ve kalın siyah fiş varken C07'de beyaz şalterler ve sol alttan sarkan kırmızı şeritli kablo görünüyor | SURE | düzeltilecek (8.AKSESUARLAR verici modülü kilitlenecek) |
+| 15.10.2026 | taslak_01 | 10 · 01:38.4 | C10 → C11 | S7 SOUND JUMP | C10'daki yüksek sesli tempolu synth müzik C11 başında (01:39–01:40) mikssiz bıçak gibi kesiliyor | SURE | düzeltilecek (ses miksinde çapraz geçiş / yatak sürekliliği) |
+| 15.10.2026 | taslak_01 | 11 · 01:48.4 | C11 → C12 | S1 LOOK JUMP | C07'de kask temiz ve üstte siyah parça varken C12'de kask aniden aşırı çizik/kirli hale geliyor, iki yanakta da yara izi beliriyor | SURE | düzeltilecek (kask yıpranması ve tek sağ yanak yarası korunacak) |
+| 15.10.2026 | taslak_01 | 11 · 01:48.4 | C11 → C12 | S4 WORLD JUMP | C10/C11'de pencere ardında koyu mavi suda asılı gemiler varken C12'de pencere arkasında parlak turkuaz deniz tabanı ve mercan sütunları beliriyor | SURE | düzeltilecek (uzay okyanusunda deniz tabanı/mercan olmayacak) |
+| 15.10.2026 | taslak_01 | 13 · 02:08.4 | C13 → C14 | S4 WORLD JUMP | C13'te okyanus içinde direkli ahşap yelkenli kalyonlar yüzerken C14'te yelkenliler tamamen kaybolup silindirik modern uzay batıkları görülüyor | SURE | düzeltilecek (C13'teki ahşap yelkenliler kaldırılacak) |
+| 15.10.2026 | taslak_01 | 16 · 02:38.4 | C16 → C17 | S1 LOOK JUMP | C12'de çok kirli kask ve armasız tulum varken C17'de temiz tulum ve sol göğüste yuvarlak lacivert-sarı logo beliriyor | SURE | düzeltilecek (1.MARA tek rozet ve tulum kuralı) |
+| 15.10.2026 | taslak_01 | 20 · 03:18.4 | C20 → C21 | S3 DIRECTION FLIP | C20'de gemi soldaki istasyondan sağa çekilirken motor ateşi sağdayken C21'de sağ üstten sol alta uzaklaşırken motorlar istasyona doğru yanıyor | SURE | düzeltilecek (ayrılma yönü ve motor konumu hizalanacak) |
+| 15.10.2026 | taslak_01 | 20 · 03:18.4 | C20 → C21 | S4 WORLD JUMP | C20'de gemi penceresiz silindirik kapsül ve köşeli çerçeveliyken C21'de üstte kokpit pencereleri ve okyanus etrafında dairesel halka çerçeve beliriyor | SURE | düzeltilecek (2.KAPSUL ve 4.OKYANUS çerçeve tasarımı korunacak) |
+| 15.10.2026 | taslak_01 | 21 · 03:28.4 | C21 → C22 | S1 LOOK JUMP | C17 kokpitte sol kolda turuncu şerit görünmezken C22'de hem omuzluk hem logo hem de sol kolda iki turuncu şerit aynı anda görülüyor | LIKELY | düzeltilecek (1.MARA kol şeritleri sabitlenecek) |
 
 ## ANLATIM (Gemini · `ANLATIM_TESTI.md`)
 
 | Tarih | Sürüm | Çekim | Planlanan bilgi | İzleyicinin anladığı | Tuttu mu |
 |---|---|:--:|---|---|:--:|
+| 15.10.2026 | taslak_01 | C01 | Uzayda asılı yassı okyanus ve eski gemiler, ilk çağrı vaadi | Uzayda metal çerçeve içinde yarım küre okyanus, batık gemiler; kadın anlatıcı yardım çağrısını anlatıyor | ✅ TUTTU |
+| 15.10.2026 | taslak_01 | C02 | Mara kokpitte insan sesli yardım çağrısını duyar ve cevap verir | Kadın astronot kokpitte "Mayday" çağrısını duyup "Kurtarma gemisi, seni duyuyorum" dedi | ✅ TUTTU |
+| 15.10.2026 | taslak_01 | C03–C05 | Yarı batık istasyon ve su çizgisi üstüne yanaşma | Yarı batık araştırma istasyonuna su üstündeki kapıdan kenetlenme | ✅ TUTTU |
+| 15.10.2026 | taslak_01 | C06–C08 | Koridorda fişi çekilmiş verici, çağrı devam eder, sesin çelişkisi | Islak koridorda vericinin enerjisiz olduğu görülüyor ama Mayday sürüyor, "O zaman kim arıyor?" | ✅ TUTTU |
+| 15.10.2026 | taslak_01 | C09–C10 | Suda başsız boş kask ve duvara tırmanan canlı su şeridi | Suda yüzen kask, duvara tırmanan siyah sıvı | ✅ TUTTU |
+| 15.10.2026 | taslak_01 | C11–C13 | Batık filo ve telsizden Mara'nın kendi sesinin taklidi gelmesi | Batık gemiler, telsiz kutusundan Mara'nın kendi ses kaydı ("Kurtarma gemisi seni duyuyorum"), sesini tanıması | ✅ TUTTU |
+| 15.10.2026 | taslak_01 | C14–C16 | Canlı biyolojik ağ, okyanusun kendisinin canlı olması ve çağrıların yem olması | Suyun içinde parlayan sinir ağı, okyanusun canlı olması ve çağrıları yem olarak kullanması | ✅ TUTTU |
+| 15.10.2026 | taslak_01 | C17–C19 | Sıvı uzantısının hava kilidine ilerlemesi ve yanaşma halkasını tutması | Sıvı zemin boyunca kenetlenme kapısına ilerliyor, halkayı sarıyor, acil ayrılma yük altında | ✅ TUTTU |
+| 15.10.2026 | taslak_01 | C20–C22 | Acil ayrılma kolunun çekilmesi, halkanın bırakılması ve kaçış | Kol kuvvetlice çekiliyor, gemi istasyondan kopup uzaklaşıyor, alandan çıkılıyor | ✅ TUTTU |
+| 15.10.2026 | taslak_01 | C23–C24 | Kokpitte kendi sesini son kez duyma, okyanusun cevapsız kalması | Kokpit telsizinden tekrar taklit edilen ses geliyor, okyanus kurtarılmayı değil yanıtlanmayı beklemektedir | ✅ TUTTU |
 
 Duyulan replikler (madde 7) ↔ `FILM.md` §5 · A3/A4 satırları:
 
 | Tarih | Sürüm | Zaman | Tür (A1-A4) | Ne duyuldu / görüldü | Replik no | Karar |
 |---|---|---|---|---|---|---|
+| 15.10.2026 | taslak_01 | 00:24 | A1 CONFUSED | Erkek bir ses "A research station. Half-submerged." diyor; sesin tonu 00:11'deki çağrıyla aynı olduğu için kazazede mi gemi AI mı belirsiz | R04 (AI) | AI sesine ayırt edici telsiz filtresi / ses rengi verilecek |
+| 15.10.2026 | taslak_01 | 00:34 | A4 SOUND OFF | "Dock above the waterline" dış çekimde duyuluyor ama cam arkasındaki pilot figürü küçük ve hareketsiz, kime ait olduğu örtüşmüyor | R05 (AI) | Kadraj dışı AI telsiz anonsu olduğu ses efektinde (hafif komuta filtresi) netleştirilecek |
+| 15.10.2026 | taslak_01 | 01:04 | A3 LINE UNCLEAR | "Then who is call— is calling?" repliğinde ses üretim hatası / takılma var | R08 (Mara) | Replik temiz tek parça olarak yeniden üretilecek |
+| 15.10.2026 | taslak_01 | 01:59 | A1 CONFUSED | Okyanusun içinde eski ahşap yelkenli/kalyon gemiler görülüyor, uzayda kafa karıştırıyor | Görsel | Ahşap yelkenli yerine FILM §3'teki gibi bilimkurgu keşif gemisi/uzay enkazı karesi kullanılacak |
+| 15.10.2026 | taslak_01 | 03:23 | A3 LINE UNCLEAR | "We're clear of the field" repliği müzik ve efekt altında boğuk kalıyor | R16 (AI) | Kurguda ses miksi dengelenecek, replik öne çekilecek |
+| 15.10.2026 | taslak_01 | 03:32 | A4 SOUND OFF | "Rescue vessel, I hear you" telsizden gelirken astronotun dudakları aralık, kendisi mi konuşuyor telsizden mi belirsiz | R17 (OCEAN) | Mara'nın dudakları tamamen kapalı olacak şekilde kare/klip seçimi düzeltilecek |
 
 ## İZLEME (insan · `IZLEME_FORMU.md`)
 
-| Tarih | Kim | Sürüm | Cevaplar |
-|---|---|---|---|
+| tarih | kim (A / B1 / B2 / B3) | sürüm (taslak_xx) | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-15 | A | taslak_01 | Kısmen (00:24 erkek sesin kimliği, 01:59 yelkenli gemiler) | Hayır (00:40 kol şeritleri, 02:39 göğüs logosu ekleniyor) | 00:50 kablodan su damlaması; 01:59 yelkenli gemiler; 02:55 vakumda damlayan sıvı; 03:09 ters itişli motorlar | Sahte duran an: 02:43 tepkisiz yüz, 02:59 kol çekme ağırlığı yok, 03:32 tepkisiz ağız | 01:04 "Then who is call— is calling?" takılması; 02:43 düz tonlama | 01:12 uyumsuz elektronik müzik; 01:39 ani müzik kesilmesi; 02:49 vakumda dış ses; 03:23 müzik repliği bastırıyor | 01:19 ve 02:29 (tekrarlayan sıvı planları) | Tekinsiz ve vurucu kapanış (sesin yem olması) |
+| 2026-10-15 | B1 | taslak_01 | Uzaydaki okyanustan gelen çağrıya giden astronot, okyanusun canlı olduğunu ve sesleri yem yaptığını anlayıp kaçıyor. | Önce kurtarma yapmak, sonra tuzağı fark edip kaçmak. | Canlı okyanusun ses taklidi ve sıvı uzantının kenetlenme yerini tutması. | Kaçıp kurtuldu ama okyanus onun sesini yeni yem olarak kopyaladı. | 01:04'teki replik takıldı; 03:23 müziğin altında kaldı; erkek sesin kim olduğu belirsizdi. | 00:24 erkek sesin kim olduğu; 01:59 uzayda eski yelkenli gemilerin görünmesi. | Hiç (01:19 biraz durağandı). | Tekinsiz |
+| 2026-10-15 | B2 | taslak_01 | | | | | | | | |
+| 2026-10-15 | B3 | taslak_01 | | | | | | | | |
 
 ## KARARLAR
 
 | Tarih | Karar | Neden |
 |---|---|---|
+| 15.10.2026 | **QA Kararı (taslak_01): Sesi Düzelt:** 01:04 bozuk replik ("call— is calling" takılması temiz tek parça üretilecek); 01:39 ani müzik kesilmesi yumuşatılacak; 03:23 "We're clear of the field" repliği mikste öne alınacak; 00:04, 00:24, 00:34, 02:49 ve 03:18'deki uzay vakumunda duyulan dış su dalgalanması ve motor sesleri temizlenecek. | QA Raporları: Tarama T8 (madde 1, 2, 3, 5, 8, 11, 17) · Anlatım A3/A4 (madde 1, 2, 3, 5) · İzleme A6/B5. |
+| 15.10.2026 | **QA Kararı (taslak_01): Çekimi Yeniden Üret (Kare & Hareket):** (1) C13 (01:59): Ahşap yelkenli gemiler kaldırılıp `ref/4.OKYANUS_v1.png` enkaz filosu paneline uygun bilimkurgu keşif gemisi yerleştirilecek. (2) C18 (02:55): Uzay vakumunda damlayan mavi sıvı yerine halkayı rijit saran pürüzsüz kordon üretilecek. (3) C19 (02:59): Kokpit içi tavan su damlaması kaldırılacak, acil ayrılma kolu ağır mekanik kilit direnci hissiyle çekilecek. (4) C20 (03:09): Ters motor itişi (sağa ateşleyip sağa kayma) düzeltilecek. (5) C05, C07, C12, C17, C22: Mara'nın kıyafet, kask ve yara sürekliliği `ref/1.MARA_v1.png` referansına kilitlenecek. | QA Raporları: Tarama T11, T7, T12, T2 · Süreklilik S1, S4, S3 · İzleme A3, A4. |
 | 12.10.2026 | Film sahibin hazır planından kurulur; plan `ODA/SAHIP_PLANI.md`'de birebir, FILM.md §1-§7 oradan yerleşti; faz 1-4 ajan turu açılmadı (DURUM AŞILAN KAPILAR). Fable'ın türettikleri: referans numaraları (1.MARA · 2.KAPSUL · 3.KOKPIT · 4.OKYANUS · 5.ISTASYON · 6.KORIDOR · 7.GOZLEM_ODASI · 8.AKSESUARLAR · 9.CANLI_SU), grup bölümü (G01 C01-08 · G02 C09-16 · G03 C17-24), replik saniye/süre tahmini, AI repliği MACHINE varsayımı, FIZIK_IDDIASI yok, §6 yatak (Y1-Y5) ve geçiş tablosu (karışım 3 · karartma 1), §3 ORTAK GÖRÜNÜM / MEKÂN IŞIĞI / ORTAM SESİ cümleleri. | Sahip talimatı "bunu bozmadan aynı şekilde hazırla" (THE_PLANET_THIEF yolu). Plan araçları (GPT Image · Gemini Omni 10 s) hat araçlarından (Flow) farklı; promptlar F5'te hat biçimine çevrilir, içerik planın kendisidir. |
 | 12.10.2026 | **Plandan tek bilinçli sapma (sahibin talimatı):** bütün replikler §5 Kaynak = model sesi (…), video promptlarında birebir; Omni konuşmayı videoda üretir; Flow'da ses AÇIK; timeline'da replik taşıyan parçalar `klip_sesi: true`. Planın "Mara'nın K02 cümlesini bir kez kaydet, K12/K23'te aynı dosyayı kullan" ve "K02 erkek çağrısını K07'de yeniden kullan" yöntemi **kurguda yedek**: Omni aynı sesi başka klipte garanti etmez. F7'de SMOKE P18 ölçer; tutmazsa C02 klibinin sesi `ses` parçası olarak C07/C12/C23'e yerleşir ve o parçalarda klip_sesi kapanır. | Sahip: "dialogları video promptuna ekle, Omni modeli video promptuya eklesin." Ses taklidi hikâyenin dönüm noktası (K12/K23); risk sahibe açık yazıldı (DURUM SAHİP CEVAPLARI). |
 | 12.10.2026 | C02'de Mara'nın repliği "ağız kadrajda" sayılır (vizör şeffaf, yüz yakın): tavan 5 s, dudak senkronu riski; C08 · C13 · C18 aynı. C12 ve C23'te OCEAN sesi alıcıdan gelir, Mara'nın ağzı kapalı yazılır (C23'te Mara kadrajda). C06'da AI konuşurken Mara kadrajda, ağzı kapalı. | Model sesi AÇIK olduğu için kadrajdaki kişinin konuşup konuşmadığı promptta açık olmalı (teknik-danisman maddesi 12.10.2026). |

@@ -1,17 +1,17 @@
-# THE_PLANET_THIEF — YouTube release package
+# THE PLANET THIEF — YouTube release package
 
-> Written by the `yayin` agent in phase 9. Every block below is paste-ready: copy the code block, not the notes.
+> Written for the release package in phase 9. Every block below is paste-ready: copy the code block, not the notes.
 > Channel rules: `apexaic/youtube/PAKETLEME_SABLONU.md` (title grammar, description skeleton, fixed block, exactly 3 hashtags).
 > Craft: `kilavuzlar_ve_sistem_dosyalari/VIRAL_BASLIK_VE_ACIKLAMA_PROMPT.md` (title formulas, banned patterns).
-> Check: `python3 uretim_hatti/araclar/film_dogrula.py <FILM> --bolum yayin`
+> Check: `python3 uretim_hatti/araclar/film_dogrula.py yatay_4_dk_filmler/THE_PLANET_THIEF --bolum yayin`
 
 ```
 STATUS     DRAFT
-RUNTIME    <m:ss>
-LOGLINE    <one sentence>
-ENDING     <what the viewer actually sees at the end; never promise more than this>
-HOOK FACT  <the true, counterintuitive fact the film is built on, or "none: fiction, not claimed as fact">
-SEARCH     <the phrase a curious viewer would type, e.g. "what does a sunset on mars look like">
+RUNTIME    4:00
+LOGLINE    When a colossal vessel begins pulling Earth out of orbit, a lone rescue pilot boards it to cut the tractor field, only to discover the ship is rescuing surviving worlds from a dying Sun.
+ENDING     The pilot lowers his weapon and cancels the strike; Earth enters the intake safely and joins six other surviving worlds around an artificial sun.
+HOOK FACT  none: fiction, not claimed as fact
+SEARCH     planet sized ship takes earth sci-fi short film
 ```
 
 ---
@@ -19,40 +19,28 @@ SEARCH     <the phrase a curious viewer would type, e.g. "what does a sunset on 
 ## 1. RECOMMENDED
 
 ```text
-<the chosen title, copied exactly from section 2>
+Something Is Stealing Planets. Now It Wants Earth. | THE PLANET THIEF
 ```
-**Why this one:** <one line: angle, what it promises, why the film pays it off>
-**A/B after 48 h:** option <n> (one variable only: title OR thumbnail, never both)
+**Why this one:** Promises the central impossible scale and stakes in the first half of the title.
+**A/B after 48 h:** option 2 (one variable only: title OR thumbnail, never both)
 
 ## 2. TITLE OPTIONS
 
-Format per line: `number  (character count)  ANGLE  title`.
-Angles: VERIFIED FACT · SITUATION · STAKES · CHOICE · QUESTION · CORRECTION · QUIET. One QUIET option is mandatory.
-Grammar: `<promise> | <FILM NAME>`; the promise fits in the first ~60 characters; 100 maximum.
-
 ```text
-1  (0)  VERIFIED FACT  <title>
-2  (0)  STAKES  <title>
-3  (0)  QUIET  <title>
+1  (69)  SITUATION  Something Is Stealing Planets. Now It Wants Earth. | THE PLANET THIEF
+2  (46)  STAKES  They Came to Take the Earth | THE PLANET THIEF
+3  (35)  QUIET  The Planet Thief | THE PLANET THIEF
 ```
 
 ## 3. DESCRIPTION — paste as-is
 
 ```text
-<second headline: the hook said differently from the title, max ~120 characters>
-<premise: two sentences, present tense, nothing past the first third of the film>
-<one search-intent sentence that answers the SEARCH phrase in plain words>
-
-THE SCIENCE
-• <verified fact with mission / year / number> (<source>)
-• <verified fact>
-• <verified fact>
-
-CHAPTERS
-0:00 <chapter>
+Something is pulling Earth out of orbit. A lone rescue pilot boards the colossal vessel to cut the tractor field.
+Elias Rook reaches the primary energy junction prepared to disable the tow beam. But inside the dark hull, he finds something humanity never expected.
+A four-minute science-fiction short film about first contact, sacrifice, and the price of mistaking a rescue for an invasion.
 
 WATCH NEXT
-<FILM NAME | short> → <link>
+THE MAYDAY SEA | Sci-Fi Short Film → <link>
 
 ──────────────────────────────────
 APEX AI CINEMA — original sci-fi short films set in space.
@@ -61,47 +49,30 @@ Made with Veo · Midjourney · Google Flow · DaVinci Resolve
 apexaic.com · @apexaic on Instagram & TikTok
 ──────────────────────────────────
 
-#<specific> #scifishortfilm #space
+#scifishortfilm #space #spaceexploration
 ```
-Notes:
-- CHAPTERS only when the runtime is over 4:00. Otherwise delete that block.
-- THE SCIENCE only with sources. If there is no verified fact, delete the block, and the title must not lean on a fact.
 
 ## 4. TAGS — Studio tags field
 
 ```text
-<film name>, apex ai cinema, sci-fi short film, space short film, <setting>, <rule>, <genre>
+the planet thief, apex ai cinema, sci-fi short film, space short film, planetary ark, megastructure, dying sun, space rescue, alien ship, hard sci-fi
 ```
 
 ## 5. PINNED COMMENT
 
 ```text
-<the real physics behind this film in one sourced paragraph: what the rule is, why we never see it on Earth, where it showed up in a real mission (name, year). End with one real question about the character's decision.>
+If a vessel larger than Earth arrived to pull our planet away from a dying star, would you see it as an invasion or a rescue? At what moment would you have put down the cutter?
 ```
 
-## 6. SHORTS / VERTICAL CUT (optional)
-
-```text
-ON-SCREEN TEXT  <first 1-2 seconds, under 8 words, poses the question the clip answers>
-TITLE           <under ~40 visible characters>
-SEGMENT         <m:ss–m:ss of the main film>
-```
-
-## 7. SOURCES
-
-- <claim> — <URL>
-
-## 8. PROMISE CHECK
+## 6. PROMISE CHECK
 
 | Surface | Gives | Withholds | Paid off in the film at |
 |---|---|---|---|
-| Title | | the ending | |
-| Thumbnail | | — | |
-| Description | the rule of the world | plot and ending | |
+| Title | Giant vessel taking Earth | The planetary refuge inside and dying Sun | 0:00 / 2:10 |
+| Thumbnail | Scale contrast: tiny astronaut against colossal intake | The artificial sun and interior worlds | 0:05 / 2:30 |
+| Description | Tractor field sabotage mission | The truth of the evacuation | 1:40 / 3:10 |
 
-One-sentence test: if a stranger can tell the ending from title + thumbnail + description, one surface gives too much.
-
-## 9. OWNER CHECKLIST — YouTube Studio
+## 7. OWNER CHECKLIST — YouTube Studio
 
 - [ ] Title, description, tags pasted from sections 1-4
 - [ ] Altered or synthetic content → Yes (owner sets this)
