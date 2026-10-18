@@ -7,6 +7,12 @@ allowed-tools: Agent, Read, Grep, Glob, Write, Edit, Bash(python3:*), Bash(git d
 
 # Sahneleme odası — §F3b (tavan 2 tur)
 
+> ⏸️ **16.10.2026: yalnız zincir açıkken koşulur** (AGENTS §2, yeni-film §1 "Faz 3'ün üç adımı"): yonetmen `ZİNCİR ADAYI` yazdı ·
+> künyedeki araç başlangıç + bitiş karesi alıyor · `SMOKE_TEST.md` zincir sonuç tablosu dolu. Üçünden biri yoksa ajan çağrılmaz;
+> Fable `SAHNELEME.md` §5'e "zincir yok — <gerekçe>" yazar ve `ADIM pilot`'a geçer. Neden: zincirin dayandığı araç davranışı hiç
+> ölçülmedi, 5 yeni hat filminde 0 zincir üretildi, adım film başına 2-7 çağrı harcıyordu. Mekân ve ekran yönü sorusunu F3'te
+> kurgucu sorar (kurgu gözü).
+
 Çekim listesi kapısı (§F3) kapandıktan sonra, ses planından (faz 4) önce çalışır: uzun
 planlar müzik ve ses noktalarını kaydırır. `DURUM.md`: `FAZ 3 · ADIM sahneleme`.
 Faz döngüsü `yeni-film` §2'dedir. Görev metinleri: `uretim_hatti/AJAN_GOREVLERI.md`.

@@ -15,16 +15,30 @@
 
 ## DENEMELER
 
-| Tarih | Çekim | Deneme | Flow modu | Prompt sürümü | Sonuç | Kredi |
-|---|:--:|:--:|---|:--:|---|:--:|
-| <GG.AA> | C01 | d1 | Frames to Video | p1 | ✅ kullanılabilir 01.2–04.6 | |
-| <GG.AA> | C01 | d2 | Frames to Video | p1 | ❌ el tokaya eriyor 03.1 → hareket | |
+> 16.10.2026: satırı **`medya.py al <FILM> --yaz`** yazar (ham/'daki her yeni `Cxx_dN` için); elle yazılmaz.
+> Prompt sütunundaki `p:<sha8>` çekimin o günkü Görsel + Video metninden üretilir: prompt sonradan değişirse kimlik de değişir.
+> Girdi = EKLE satırındaki kare + referans numaraları. Sahip başka bir şey yüklediyse (başka referans, düzeltilmiş kare) satırı düzeltir.
+> Sonuç sütununu sahibin işareti doldurur (İŞARETLEME); Fable oradan kopyalar.
+
+| Tarih | Çekim | Deneme | Araç · mod | Prompt (dosya · p:sha8) | Girdi (kare · ref) | Süre · ses | Sonuç | Kredi |
+|---|:--:|:--:|---|---|---|---|---|:--:|
 
 ```
+Örnek (medya.py al çıktısı, sonra işaretle):
+| 16.10 | C01 | d1 | Frames to Video | G01 · p:3f9a1c20 | kare/C01 + ref 1,5 | 10.0 s · sessiz · 1920x1080 | ✅ kullanılabilir 01.2–04.6 | |
+| 16.10 | C01 | d2 | Frames to Video | G01 · p:3f9a1c20 | kare/C01 + ref 1,5 | 8.0 s · sessiz · 1920x1080 | ❌ el tokaya eriyor 03.1 → hareket | |
 Ret nedeninin sonuna hatanın DOĞDUĞU YER yazılır (AGENTS.md §3):
-  → kare · → hareket · → seçim · → kurgu · → anlatım
+  → kare · → hareket · → seçim · → kurgu · → anlatım · → ses · → araç
 İki deneme AYNI sebeple bozuksa üçüncüsü aynı promptla gönderilmez (AGENTS.md §4).
 ```
+
+## MONTAJ EŞLEMESİ (hat dışı montaj · `medya.py bol`)
+
+> Montaj hat dışında yapıldıysa (`cikti/` altında taslak/final dışı bir video) `medya.py bol <montaj> <FILM>` kesmeleri bulur.
+> QA raporları çekimi **kesme sırasıyla** sayar; plan numarası değildir. Her QA bulgusu bu tablodan plan çekimine çevrilir.
+
+| Kesme sırası (QA no) | Zaman | Plan çekimi | Deneme | Nasıl doğrulandı (kare · benzerlik) |
+|:--:|---|:--:|:--:|---|
 
 ## RED (üretim reddi)
 

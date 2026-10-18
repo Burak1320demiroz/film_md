@@ -1,27 +1,65 @@
 ---
 name: cekim-yaz
-description: Yeni hat faz 5 (referans · başlangıç karesi · video promptları + Flow iş emri) ve faz 7 üretim döngüsü (kare denetimi, kareli animatik, başarısız çekimin yeniden tasarımı) prosedürü. /yeni-film tarafından dosya olarak okunur; sahip /cekim-yaz ile doğrudan da çağırabilir.
+description: Yeni hat faz 3p pilotu (16.10.2026), faz 5 (referans · başlangıç karesi · video promptları + Flow iş emri) ve faz 7 üretim döngüsü (kare denetimi, kareli animatik, başarısız çekimin yeniden tasarımı) prosedürü. /yeni-film tarafından dosya olarak okunur; sahip /cekim-yaz ile doğrudan da çağırabilir.
 disable-model-invocation: true
 allowed-tools: Agent, Read, Grep, Glob, Write, Edit, Bash(python3:*), Bash(ffmpeg:*), Bash(ffprobe:*), Bash(shasum:*), Bash(ls:*), Bash(mkdir:*), Bash(cp:*)
 ---
 
-# Çekim yaz — faz 5 · faz 7
+# Çekim yaz — faz 3p · faz 5 · faz 7
 
 Prompt yazım kuralları **goruntu-yonetmeni** ajanının dosyasındadır (`.claude/agents/goruntu-yonetmeni.md`);
 burada tekrar edilmez. Burası ana ajanın prosedürüdür.
 
 Faz döngüsü: `yeni-film` §2.
 
+## §F3p — Pilot (16.10.2026 · tek yazım çağrısı + gerçek görüntü)
+
+Amaç: bütün promptlar yazılmadan **filmin kendi riskini** gerçek görüntüyle denemek. Her filmde aynı liste değil
+(SMOKE_TEST.md'nin 19 maddesinin 0'ı koşuldu; o dosya artık deney kataloğu: pilot gerekirse oradan madde alır, ör. P17 panel sayfası).
+`DURUM.md` → `FAZ 3 · ADIM pilot` · `PILOT <çekimler>` (seçim: hikaye-odasi §F3 adım 7).
+
+1. **goruntu-yonetmeni** (pilot modu, AJAN_GOREVLERI şablonu): `{CIKTI}` = `<FILM>/PROMPTLAR/PILOT.md`, sırasıyla:
+   - `## KİMLİK CÜMLELERİ` — §3'teki **her** referans için kadraj parçası başına tek İngilizce cümle: yüz · giysi + işaret
+     (sayı, taraf, konum, `the only marking`) · nesne/araç (biçim + ölçü + taraf). Fable tabloyu `FILM.md` §3
+     `### KİMLİK CÜMLELERİ`'ne **birebir** kopyalar; bundan sonra her Görsel prompt onu kelime kelime taşır (film_dogrula DERS Y2).
+   - `REFERANS PROMPTLARI` — yalnız pilot çekimlerinin referansları (özne başına tek sayfa).
+   - pilot çekimlerinin `## Cxx` bölümleri (G dosyası biçimi) + `## FLOW İŞ EMRİ` (çekim başına 2 deneme).
+   - `## PİLOT SORUSU` — çekim başına tek satır: bu denemenin cevaplayacağı soru ("iki eldiven aynı halkayı tutunca el kaynaşıyor mu?").
+2. **Mekanik:** `python3 uretim_hatti/araclar/film_dogrula.py <FILM> --bolum cekim pilot` 0 hata. DERS satırı varsa F5 adım 4'teki gibi
+   cevaplanır. Bu adımda yazılı eleştiri yok: gerçek görüntü eleştirmenin yerine geçer.
+3. **Sahibe iş listesi, sonra dur:** pilot referansları → `ref/<No>.<AD>_v1.png` · kareler → `kare/Cxx.png` · her çekime 2 deneme →
+   `ham/Cxx_d1.mp4`, `ham/Cxx_d2.mp4` (model sesi filminde sesli). Montaj yok. Beklerken F4 (ses + müzik) yürür.
+4. **Dönüş:** `medya.py al <FILM> --yaz` → `medya.py durum <FILM> --yaz` → her deneme için
+   `kareler.py cikar <deneme> --hedef ~/film_medya/<FILM>/analiz/kareler/<deneme>/ --aralik 0.5 --sayfa` → sahibin işareti (NOTLAR İŞARETLEME).
+5. **Paralel eleştiri (tek mesaj):**
+   - **devamlilik** (kare modu): referans sayfası ↔ başlangıç karesi ↔ deneme kareleri; kimlik cümlesinin tutan ve tutmayan parçası.
+   - **teknik-danisman** (pilot modu): her PİLOT SORUSU'nun cevabı (kare adı ve zamanla) + bozulan her denemenin doğduğu yer.
+6. **Karar tablosu** `ODA/F3p_pilot_karar.md` (Fable yazar, ajan çıktısı değil — karar):
+   `çekim · soru · ne istendi (prompt alıntısı) · ne geldi (kare/zaman) · doğduğu yer · F5'e not · karar`. Karar dört türlü:
+   - **GEÇTİ** → F5'te çekimin grubu PILOT.md bölümünü birebir taşır.
+   - **PROMPT DEĞİŞİR** → nota göre yeniden yazılır; not aynı kelimeyi taşıyan bütün gruplara gider (kimlik cümlesi, yazı kilidi…).
+   - **ÇEKİM DEĞİŞİR** → yonetmen yalnız o çekimi ve aynı riski taşıyanları yeniden tasarlar (1 çağrı, hikaye-odasi §F3).
+   - **REFERANS DEĞİŞİR** → referans sayfası yeniden üretilir, sürüm artar.
+   Not film içidir, hat kuralı olmaz (AGENTS §1 ④); iki ayrı filmin pilotu aynı şeyi gösterirse sahibe "kural olsun mu" diye sorulur.
+7. **Kapı:** `denetci` (Ö + F3p) → Fable. `DURUM.md` → F4 bittiyse `FAZ 5`, değilse `FAZ 4`.
+   Sahip "pilot yok" derse: AŞILAN KAPILAR'a yaz; KİMLİK CÜMLELERİ'ni F5'te G01 yazar.
+Bütçe: 3-4 çağrı (yazım · devamlilik · teknik-danisman · gerekirse yonetmen); metin tavanına (30) sayılmaz.
+
 ## §F5 — Promptlar (tavan 2 tur)
 
-1. **Gruplar:** `FILM.md` §4'teki `Grup` sütunu (8-12 çekim). Her grup için bir **goruntu-yonetmeni**
-   çağrısı; grupları **tek mesajda paralel** çağır.
+1. **Gruplar (16.10.2026: önce G01, sonra paralel):** `FILM.md` §4'teki `Grup` sütunu (8-12 çekim), grup başına bir **goruntu-yonetmeni**.
+   - **Önce G01 tek başına.** Görev: G01 çekimleri + `REFERANS PROMPTLARI` (pilotta üretilmiş referanslar hariç; **özne başına tek sayfa**,
+     açılar/yüz/durumlar panel, 10.10.2026) + pilot notu (`ODA/F3p_pilot_karar.md`). Pilot koşulmadıysa G01 ayrıca `## KİMLİK CÜMLELERİ`
+     yazar → Fable `FILM.md` §3'e kopyalar. G01'in eleştirisi (adım 2) ve turu kapanır.
+   - **Sonra kalan gruplar tek mesajda paralel.** Her görev metni `PROMPTLAR/G01.md`'yi örnek grup olarak verir: kimlik, işaret, yazı
+     kilidi, mekân ışığı ve ortak görünüm cümleleri oradan **birebir** kopyalanır.
+     Neden: FURNACE'ta paralel yazılan G03 rozet konumunu 4 çekimde yazdı, G04 0/12; rozet kaymalarının 4/4'ü G04'te (ARASTIRMA/16 Y1).
+   - Pilot çekimi hangi gruptaysa o grup PILOT.md bölümünü taşır (GEÇTİ → birebir · PROMPT DEĞİŞİR → nota göre).
    - `{CIKTI}` = `<FILM>/PROMPTLAR/<grup>.md`.
-   - İlk grup ayrıca `REFERANS PROMPTLARI` bölümünü yazar (FILM.md §3'teki referanslar; **özne başına tek sayfa**, açılar/yüz/durumlar panel, 10.10.2026).
    - Zincirli çekimlerin anahtar kareleri (`SAHNELEME.md` §2) o zincirin ilk çekiminin grubunda
      `## Zk.n` bölümleri olarak yazılır (yıldız düzeni). Bir zincir iki gruba bölünmez.
 2. **Paralel eleştiri**, grup başına:
-   - **devamlilik:** o grubun dosyası + `FILM.md` §3.
+   - **devamlilik:** o grubun dosyası + `FILM.md` §3. Kendi dosyasındaki **8 soruyu** çekim çekim cevaplar (DO-CONFIRM: yokluk da bulgudur).
    - **teknik-danisman:** yalnız risk sütunu dolu çekimler.
 
    Bütün gruplar bittikten sonra **devamlilik**'e bir **gruplar arası** geçiş daha:
@@ -31,6 +69,10 @@ Faz döngüsü: `yeni-film` §2.
 4. **Mekanik kontrol:** `python3 uretim_hatti/araclar/film_dogrula.py <FILM> --bolum cekim sahneleme prompt`
    (meta etiket · ≤4.300 karakter · her çekimin promptu · iş emri · **referans anahtarı** `Reference <No>` ↔ `ref/<No>.<AD>` ·
    **10 s vuruş planı** `a-b s`; ikisi sahip kararı 10.10.2026, yalnız §3'ü numaralı yeni filmlerde; eski biçimde ⚠️ ile atlanır).
+   **DERS uyarıları (16.10.2026, HİPOTEZ — AGENTS §1b):** `⚠️ DERS Yn` satırları kapı değildir ama cevapsız kalmaz.
+   - Revizyon turu açılacaksa satırlar eleştirilerle aynı görev metnine girer (ayrı çağrı yok); yazar düzeltir ya da gerekçe yazar.
+   - Tur açılmayacaksa Fable her satıra `ODA/F5_uyari_cevaplari.md`'de karar yazar: `Ders · çekimler · düzeltilecek (tek revizyon
+     çağrısı) | gerekçe (ör. "C14 atmosferli liman, 'mist' doğru")`. Denetçi KABUL F5.11'de bakar.
 5. **Kapı:** `denetci` (Ö + F5) → Fable. `FILM.md` §4 Durum sütunu → ✍️.
 6. **Sahibe iş listesi (faz 7 başlangıcı):** önce Flow proje ayarları (model sesi KAPALI filmde Return silent videos AÇIK; **model sesi AÇIK filmde**
    — `FILM.md` §5'te Kaynak = model sesi varsa — Return silent videos **KAPALI**, replik klipten gelir (12.10.2026) · Visible watermarking KAPALI;
@@ -41,7 +83,10 @@ Faz döngüsü: `yeni-film` §2.
 ## §F7 — Üretim döngüsü (sahip Flow'da üretir; Fable yalnız kare kanıtıyla onaylar)
 
 ```
-7a REFERANS      sahip ref/ karelerini üretir (dosya adı <No>.<AD>_v1.png, §3'teki numarayla) → SHA-256: shasum -a 256 <dosya> | cut -c1-12
+⭐ HER DÖNÜŞTE (16.10.2026): medya.py al <FILM> --yaz (yeni denemeler DENEMELER'e, p:sha8 + girdi) → medya.py durum <FILM> --yaz
+                 (gerçek durum ↔ DURUM; adı kurala uymayan dosyalar sahibe). Kayıt olmadan işaretleme ve seçim başlamaz.
+7a REFERANS      sahip ref/ karelerini üretir (dosya adı <No>.<AD>_v1.png, §3'teki numarayla) → SHA-256: medya.py al çıktısı (ya da
+                 shasum -a 256 <dosya> | cut -c1-12)
                  → devamlilik (kare modu): referanslar birbiriyle ve kimlik tablosuyla tutarlı mı
                  → Fable onaylar → FILM.md §3 Onay ✅ (dosya + SHA). Referans değişirse sürüm artar.
 7b KARELER      sahip zincir dışı çekimlerin kare/Cxx.png'lerini ve zincirlerin anahtar karelerini

@@ -1,0 +1,24 @@
+# FR · tur 1 birleştirme kararı — 8 prompt (Fable, 17.10.2026)
+
+> Kaynak: `ODA/FR_teknik-danisman_2.md` (TD: ÖLÜMCÜL 2 · V3b siren, V4b açılıyor okunması) · `ODA/FR_devamlilik_1.md` (DV: ÖLÜMCÜL 0 · CİDDİ 11 · KÜÇÜK 14).
+> İki ÖLÜMCÜL tek cümleyle çözülür (yazar düzeltir, Fable mekanik kontrolle doğrular). Yazar her bulguya KABUL/RED yazar.
+> Önceki sürüm `ODA/FR_goruntu-yonetmeni_1.md` (düzenlenmez); yeni sürüm `ODA/FR_goruntu-yonetmeni_2.md`.
+
+| Konu | Bulgular | Fable seçimi |
+|---|---|---|
+| Fırın ışığının yönü (V1a V2a V4b) | TD (5) · DV D1 D7 | İKİSİ: MEKÂN IŞIĞI DIŞ cümlesi birebir kalır (çapa) + kadraj sola ağırlaşır (kaburgalar ve en güçlü ışık ALT-SOLDA, DV) + ışık cümlesinden hemen sonra tek yön cümlesi (TD): `In this vertical view the furnace glow lies in the lower-left of the frame behind the ribs and edge-lights the hull from below.` (kart sapma ⑨) |
+| V4b loop eşi | TD (3) · TD V4b ÖLÜMCÜL · DV D25 | **V4b, onaylı V1a karesinden düzenlemeyle üretilir — AYNI kamera (ark kıçı, gövde yukarı, halka üstte), burun yok.** EKLE: `fragman_dikey/kare/V1a.png` (onaylı) + `ref/5.FOUNDRY_v1.png`. Görsel: ilk görselin açısı, kaburgalar, kıç, gövde, tug, halkanın yeri ve çapı, gezegen AYNEN; değişen tek şey kepenkler (yaklaşık yarı kapalı). Video: kamera kilitli; üç eşit rijit kepenk düz raylarında merkeze doğru doğrusal kayar, yalnız üç bıçak, dış halka sabit, her saniye açıklığı biraz daha kapatır; 6,5-10 s'de fırın kabarması yok, kayış sürer. TD V4b CİDDİ'leri (doğrusal kayış, yarı kapalı) birlikte. |
+| Kepenk durumu sırası | DV D5 | V1a `about one third closed around a wide circular opening` · V4a `about half closed` (V4b'nin ilk durumuyla aynı, onun bakışı) · V4b `about half closed`, kayar. |
+| V1a kare | TD T01 · TD T(yeni) ışık · DV D1-D4 | halka `a dark graphite structure` + açıklık `shows black space` + gaz devi `a soft curved glow at the lower right of the background` (DIŞ DÜNYA birebir kalır, konum ayrı cümle) · ışık `from a faint glow to about twice its strength within the first three seconds` · kıç `slightly right of centre` · tug `on the right-hand side of the stern` · `straight rows` (sayı yok) · halka `clear of the very top edge`. |
+| V1b | DV D6 | `a vanishing point slightly left of centre, about a third of the way down the frame`. |
+| V2a | TD T03 ×2 · TD T13 · DV D7-D10 | çene iki yarım + ince dikiş, flanşın iki yüzüne bastırılmış, koyu çene ↔ açık flanş renkle ayrık; kol `in a straight vertical line`; **kamera kilitli** (ilk deneme; hareket ışıktır → D10 düşer); ışık tepesi 2-4 s; `the two jaw halves stay pressed on the flange from first to last second`; ribs alt-solda; `the ribs and the planet`. |
+| V2b | DV D11 D12 D13 · TD T11 | `down to her waist` · yeşil yalnız `a thin rim along the upper edge of her helmet shell, above the visor` + vizörde `a thin soft green reflection along its outer edge` (YEDEK aynı) · rozet sol göğüste kameraya dönük · `her right cheek and chin, with its small scar, turned fully away from the camera, her face pointing to frame-left`. |
+| V3a | DV D14 D15 D16 · TD T05/T09 | amber derinleşmesi ÇIKAR → `holds its steady warm light` · mandal `swung open at frame-left, clear of the carry handle` · `the compact rectangular unused graphite core, wide enough to fill both gloved hands` · `single rigid top carry handle`. |
+| V3b | TD T02 ÖLÜMCÜL + CİDDİ · TD bakış · DV D17 D18 D19 · TD T15 | lamba sabit, tek renk: `the lamp itself stays fixed in place and its single dull red glow swells and fades on the spot, lighting the doorway frame and the wall beside it evenly each time, the light never travelling or turning` (sweeping/washing yok) · kırmızı yalnız kask tepesi ve duvarda, yüz ve vizör amber lambalarla · karede `The lamp is lit at a low steady glow.` · bakış `drops from the lamp to eye level and travels across the vault toward frame-left` · vuruş 2-4,5 s · sandık ÇIKAR (panel adı kalır: kapı + lamba onun içinde) · DV D20 kabul (kapı açık = KASA ALARM "open doorway"). |
+| V4a | TD T06 ×2 · TD T(yeni) ×4 · DV D21 D22 D23 · DV D24 | derin odak, yüz ve camın ardı eşit keskin; halka `exactly three equal rigid radial shutters, three clear dark blades with three thin pale seams`; halka koyu grafit, dış kenarında ince soğuk mavi rim, açıklık siyah uzay; yüzdeki mavi gaz devinden; konsol + kollar ÇIKAR; `clear, transparent window glass`; kare: bakış camın alt kısmında; halka camın SOL yarısında (sağ şerit); rozet sol göğüste, uzak tarafta görünmez; vuruşlar 0-4 (bakış ~3,5 s yükselir, 4'te hâlâ yükseliyor) · 4-7 · 7-10. D24 (göz hattı sağ-yukarı ↔ V4b halka sol) bilinçli kabul — loop önceliği. |
+| Uzunluk | — | her blok ≤ 4.300. |
+
+```
+Yazar: `ODA/FR_goruntu-yonetmeni_2.md` — 8 çekim tam (değişmeyen çekimler de birebir taşınır) + ÜRETİM İŞ EMRİ (sıra: V1a → V4b [V1a.png'den] → V3a → V3b → V2b → V4a → V2a → V1b)
+       + sonda `## TUR 1 CEVAPLARI` (her TD ve DV bulgusuna KABUL/RED + gerekçe).
+```

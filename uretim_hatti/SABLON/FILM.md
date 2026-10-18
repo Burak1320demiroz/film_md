@@ -61,6 +61,22 @@ promptta "Reference <No> (<rol>)" anahtarı. Yeni özne sona, sıradaki numarayl
 "SELA_arka" gibi ikinci dosya açılmaz (film_dogrula hata). Yeni panel gerekirse sayfa yeniden üretilir, sürüm artar.
 ```
 
+### KİMLİK CÜMLELERİ (16.10.2026 · F3p'de goruntu-yonetmeni yazar, pilot yoksa F5 G01 · Görsel promptta BİREBİR)
+
+| No | Parça | Cümle (İngilizce, birebir) |
+|:--:|---|---|
+| 1 | yüz | <a woman in her thirties with close-cropped black hair and a small scar under her left eye> |
+| 1 | giysi + işaret | <a pearl-white pressure suit with one narrow teal band around each upper arm, the only marking on the suit> |
+| 2 | nesne | <the core, a matte graphite box the size of a shoebox with one amber light on its top face> |
+
+```
+Kadrajda görünen her parça çekimin Görsel promptuna kelime kelime girer; kısaltılmaz, özne yeniden adlandırılmaz (5/5 filmde
+kimlik kayması, ARASTIRMA/16 Y1-Y3). İşaret: sayı + taraf + konum + "the only marking". Nesne: biçim + ölçü + taraf.
+film_dogrula DERS Y2: referansı eklenen çekimde hiçbir parçası birebir geçmeyen özneyi gösterir (uyarı).
+ORTAK GÖRÜNÜM cümlesi (varsa) yalnız film boyu değişmeyeni taşır: kimlik + doku/stil. Işık, su, gezegen, ses mekân ya da çekim
+cümlesine gider (DERS Y6).
+```
+
 ## 4. ÇEKİM LİSTESİ
 
 | No | Anlatacağı TEK bilgi | Ekranda görünen | Kadraj · kamera | Taraf / yön | Süre | Flow modu | Risk → nasıl gösterilir | Referans | Grup | Durum | Zincir | Baş. karesi | Bitiş karesi |

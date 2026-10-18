@@ -1,5 +1,10 @@
 # 🧪 SMOKE TEST — ajanlı döngünün ilk canlı denemesi
 
+> **16.10.2026 — rolü değişti (AGENTS §2 F3p):** P1-P19'un hiçbiri koşulmadı; her filmde aynı uzun listeyi koşmak tutmadı.
+> Bu dosya artık **deney kataloğudur**: her filmin pilotu (F3p, 1-3 çekim) kendi riskine uyan maddeyi buradan alır
+> (ör. P14 10 s yolu · P17 panel sayfası · P18 model sesi · P19 ortak görünüm). Sonuç yine bu dosyanın sonuna yazılır.
+> **Zincir bölümü** zincir açılacak filmde ön koşul olarak kalır (F3b).
+
 > **Neden ayrı dosya:** ajan tanımları (`.claude/agents/`) oturum açılırken yüklenir.
 > 05.10.2026'da kurulumu yapan oturumda yeni ajanlar ilk denemede çağrılamadı ("Agent type
 > 'izleyici' not found"); oturum sürerken sonradan yüklendiler. Tam test yine de **yeni bir

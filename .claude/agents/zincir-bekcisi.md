@@ -1,6 +1,6 @@
 ---
 name: zincir-bekcisi
-description: Yeni hat zincir bekçisi — üretimde zincirlerin görsel denetçisi. Anahtar kareleri referansla ve birbiriyle karşılaştırır (yıldız düzeni, kayma); her halka üretildikten sonra dikiş şeritlerini, fark görüntülerini ve kuyruk raporlarını inceleyip her dikiş için karar önerir (tamam · kırp · yeniden üret · A′/A+ · kesmeye çevir). Zincir başına tek çağrı. Salt okur. /yeni-film içinden çağrılır.
+description: ⏸️ KOŞULLU (16.10.2026) — yalnız zincir açıkken çağrılır (yonetmen ZİNCİR ADAYI + araç başlangıç/bitiş karesi alıyor + SMOKE zincir bölümü koşuldu; AGENTS §2 F3b). Yeni hat zincir bekçisi — üretimde zincirlerin görsel denetçisi. Anahtar kareleri referansla ve birbiriyle karşılaştırır (yıldız düzeni, kayma); her halka üretildikten sonra dikiş şeritlerini, fark görüntülerini ve kuyruk raporlarını inceleyip her dikiş için karar önerir (tamam · kırp · yeniden üret · A′/A+ · kesmeye çevir). Zincir başına tek çağrı. Salt okur. /yeni-film içinden çağrılır.
 tools: Read, Grep, Glob
 disallowedTools: Agent, Write, Edit
 model: sonnet

@@ -29,16 +29,16 @@
 | diyalog-yazari | opus | yazar · eleştirmen (F4) | 2 · 4 | BT | `ODA/F2_diyalog-yazari_<t>.md` → FILM §5 + konuşma/ses profilleri |
 | dramaturg | opus | eleştirmen | 1 · 2 · 8 | AL (H) · EP | — |
 | izleyici | sonnet | eleştirmen | 1 · 2 · 3 · 3b · 6 · 7 · 8 · 9 | **hiçbir dosya** — yalnız görev metni ya da `~/film_medya/<FILM>/izleyici*/` kareleri (kanca) | — |
-| yonetmen | opus | yazar (F3) · eleştirmen (F1 · 3b · 6) | 1 · 3 · 3b · 6 | BT · AL | `ODA/F3_yonetmen_<t>.md` → FILM §4 |
-| sahneleyici | opus | yazar | 3b | BT · AL · `SABLON/SAHNELEME.md` | `ODA/F3_sahneleyici_<t>.md` → SAHNELEME §1 §2 §4 §5 + FILM §4 zincir sütunları |
-| mekan-haritacisi | sonnet | yazar · eleştirmen | 3b | EP · FILM §4 | `ODA/F3_mekan-haritacisi_<t>.md` → SAHNELEME §3 |
-| teknik-danisman | sonnet | eleştirmen | 3 · 3b · 5 · 7 | BT · AL (T) · EP | — |
-| goruntu-yonetmeni | sonnet | yazar | 5 · 7 (yeniden tasarım) | BT · FILM §3-§4 | `PROMPTLAR/<GRUP>.md` (doğrudan) |
-| devamlilik | sonnet | eleştirmen | 5 · 7 | BT §B §C · EP · FILM §3-§4 | — |
-| zincir-bekcisi | sonnet | eleştirmen | 7 (7b · 7f) | BT §B · EP · SAHNELEME §2 §4 | — |
+| yonetmen | opus | yazar (F3 · F3p yeniden tasarım) · eleştirmen (F1 · 3b · 6) | 1 · 3 · 3b · 3p · 6 | BT · AL | `ODA/F3_yonetmen_<t>.md` → FILM §4 |
+| sahneleyici ⏸️ | opus | yazar (yalnız zincir açıkken) | 3b | BT · AL · `SABLON/SAHNELEME.md` | `ODA/F3_sahneleyici_<t>.md` → SAHNELEME §1 §2 §4 §5 + FILM §4 zincir sütunları |
+| mekan-haritacisi ⏸️ | sonnet | yazar · eleştirmen (yalnız zincir açıkken) | 3b | EP · FILM §4 | `ODA/F3_mekan-haritacisi_<t>.md` → SAHNELEME §3 |
+| teknik-danisman | sonnet | eleştirmen | 3 · 3b · 3p · 5 · 7 | BT · AL (T) · EP | — |
+| goruntu-yonetmeni | sonnet | yazar | 3p (PILOT.md + KİMLİK CÜMLELERİ) · 5 (G01 önce) · 7 (yeniden tasarım) | BT · FILM §3-§4 · örnek grup G01 · pilot notu | `PROMPTLAR/PILOT.md` · `PROMPTLAR/<GRUP>.md` (doğrudan) |
+| devamlilik | sonnet | eleştirmen (F5: 8 soru tablosu) | 3p · 5 · 7 | BT §B §C · EP · FILM §3-§4 | — |
+| zincir-bekcisi ⏸️ | sonnet | eleştirmen (yalnız zincir açıkken) | 7 (7b · 7f) | BT §B · EP · SAHNELEME §2 §4 | — |
 | ses-tasarimcisi | sonnet | yazar (F4) · eleştirmen (F2) | 2 · 4 | BT · FILM §4-§5 (F2'de §4 yok: tretman + §5) | `ODA/F4_ses-tasarimcisi_<t>.md` → FILM §6 (+ kayıt, efekt, ortam listeleri ODA'da) |
 | besteci | sonnet | yazar (koşullu: MUZIK var) | 4 · 8 | FILM §1-§5 | `ODA/F4_besteci_<t>.md` → FILM §7 · `ODA/F8_besteci_<t>.md` (Flow Music promptu) |
-| kurgucu | sonnet | yazar (F8) · eleştirmen (F4) | 4 · 8 | BT §B §D · FILM §4 · NOTLAR | `ODA/F8_kurgucu_<t>.md` → `timeline.json` |
+| kurgucu | sonnet | yazar (F8 · hat dışı montajın timeline'ı) · eleştirmen (F3 kurgu gözü · F4) | 3 · 4 · 8 | BT §B §D · FILM §4-§5 · NOTLAR | `ODA/F8_kurgucu_<t>.md` → `timeline.json` (Bash: kurgu.py · kareler.py · medya.py) |
 | kapak-tasarimcisi | opus | yazar | 6 · 9 | BT §A §C · FILM · `SABLON/KAPAK_VE_YAYIN.md` | `ODA/F6_kapak-tasarimcisi_<t>.md` → KAPAK_VE_YAYIN §1 |
 | yayin | sonnet | yazar (F9) · eleştirmen (F6) | 6 · 9 | kanal şablonları · `SABLON/YAYIN_PAKETI.md` | `YAYIN_PAKETI.md` (doğrudan) |
 | bilim-danismani | sonnet | eleştirmen (koşullu: FIZIK_IDDIASI var) | 2-3 (inandırıcılık) · 9 (doğrulama) | EP · web | — |
@@ -77,9 +77,18 @@ Faz {FAZ}, tur {TUR}. {F1: Üretilebilirlik görüşü — adaylar: {ADAY_DOSYAS
 ### goruntu-yonetmeni
 ```
 Faz 5 (ya da 7 yeniden tasarım), tur {TUR}. Çekim listesi: {FILM}/FILM.md §4 (altındaki notlar bloğu dahil).
-Kimlik tablosu: {FILM}/FILM.md §3. Bu görevde yalnız şu çekimler: {CEKIMLER} (grup {GRUP}).
+Kimlik tablosu: {FILM}/FILM.md §3 (### KİMLİK CÜMLELERİ dahil). Bu görevde yalnız şu çekimler: {CEKIMLER} (grup {GRUP}).
+{G01 değilse: Örnek grup: {FILM}/PROMPTLAR/G01.md — kimlik, işaret, yazı kilidi, mekân ışığı ve ortak görünüm cümlelerini oradan birebir al.}
+{Pilot koştuysa: Pilot notu: {FILM}/ODA/F3p_pilot_karar.md · pilot bölümü: {FILM}/PROMPTLAR/PILOT.md (bu gruptaki pilot çekimleri: {PILOT_CEKIMLERI}).}
+{Revizyonsa: eleştiriler: {ELESTIRI_DOSYALARI} · film_dogrula DERS satırları: {DERS_SATIRLARI} — her birine KABUL/RED ya da düzelt/gerekçe.}
 {F7 ise: reddedilen deneme notu: {RET_NOTU} · hatanın doğduğu yer: {YER}.}
-Çıktı: {FILM}/PROMPTLAR/{GRUP}.md (prompt + Flow iş emri satırları). Yalnız oraya yaz.
+Çıktı: {FILM}/PROMPTLAR/{GRUP}.md (prompt + Flow iş emri satırları + ## 8 SORU tablosu). Yalnız oraya yaz.
+```
+```
+PİLOT MODU · Faz 3p. Çekim listesi: {FILM}/FILM.md §4 · kimlik tablosu: §3. Pilot çekimleri: {PILOT_CEKIMLERI} (gerekçe: {PILOT_GEREKCE}).
+Görev: kendi dosyandaki "Pilot modu" — KİMLİK CÜMLELERİ (bütün referanslar) · REFERANS PROMPTLARI (yalnız pilotunkiler) · pilot çekimleri ·
+FLOW İŞ EMRİ (çekim başına 2 deneme) · PİLOT SORUSU.
+Çıktı: {FILM}/PROMPTLAR/PILOT.md. Yalnız oraya yaz.
 ```
 
 ### ses-tasarimcisi · besteci · kapak-tasarimcisi · yayin · kurgucu
@@ -115,7 +124,17 @@ Her halka için mesafe/süre · 180° · görünürlük. ELESTIRI_PROTOKOLU biç
 ```
 Faz {FAZ}, tur {TUR}. Eleştireceğin eser: {ESER_DOSYASI}.
 {TUR>1 ise: önceki bulgular: {ONCEKI_ELESTIRI} · yazarın cevapları: {CEVAPLAR} · yalnız değişen kısım: {DEGISEN}.}
-uretim_hatti/ELESTIRI_PROTOKOLU.md biçimiyle eleştir. Gerekçe verilmedi; yalnız eseri değerlendir.
+uretim_hatti/ELESTIRI_PROTOKOLU.md biçimiyle eleştir (v2: YER · KANIT · ETKİ · DOĞDUĞU · KURAL · ARIZA · DÜZELTME).
+Dosyanda bu faz için numaralı soru listesi varsa hepsini cevapla. Gerekçe verilmedi; yalnız eseri değerlendir.
+```
+```
+PİLOT · Faz 3p (devamlilik kare modu · teknik-danisman pilot modu). Pilot dosyası: {FILM}/PROMPTLAR/PILOT.md.
+Kareler: referans {~/film_medya/<FILM>/ref/…} · başlangıç {kare/Cxx.png} · deneme kare sayfaları {analiz/kareler/<deneme>/sayfa_NN.png}.
+Sahibin işareti: {FILM}/NOTLAR.md İŞARETLEME. Kendi dosyandaki "Faz 3p" bölümüne göre cevap ver; görmediğin hareket için "görülmedi".
+```
+```
+KURGU GÖZÜ · Faz 3, tur {TUR} (kurgucu, eleştirmen modu). Çekim listesi: {FILM}/FILM.md §4 · replikler: §5.
+Kendi dosyandaki "Eleştirmen modu (faz 3 — kurgu gözü)" 7 sorusunu sırayla cevapla. Dosya yazma.
 ```
 
 ### zincir-bekcisi
@@ -167,5 +186,6 @@ Kendi dosyandaki "kapak" sorularını cevapla.
 ```
 Faz {FAZ} kapısı. Film: {FILM}. Kabul listesi: uretim_hatti/KABUL_LISTELERI.md (Ö + F{FAZ}).
 Fazın ODA dosyaları: {ODA_LISTESI}. Fazın eseri: {ESER}. Önceki sürüm: {ONCEKI_SURUM}.
+{F5 ise: DERS uyarı cevapları: {FILM}/ODA/F5_uyari_cevaplari.md (varsa).} {FAZ ≥ 3p ise: medya.py durum <FILM> çıktısını kanıt koy.}
 Her maddeye ✅/❌ + kanıt. Sonunda: KAPANABİLİR | KAPANAMAZ (mekanik: … / yargı: …).
 ```

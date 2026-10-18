@@ -3,9 +3,17 @@
 
     python3 uretim_hatti/araclar/film_dogrula.py <film klasörü> [--bolum cekim prompt …]
 
-Bölümler: kunye · hikaye · cekim · replik · sahneleme · prompt · muzik · durum  (varsayılan: hepsi) · yayin (yalnız açıkça)
-Faz kapıları: F3 çekim → --bolum kunye hikaye cekim · F3 sahneleme → --bolum sahneleme · F4 → --bolum replik muzik ·
-              F5 → --bolum cekim sahneleme prompt · F9 → --bolum yayin (YAYIN_PAKETI.md).
+Bölümler: kunye · hikaye · cekim · replik · sahneleme · pilot · prompt · muzik · durum  (varsayılan: hepsi) · yayin (yalnız açıkça)
+Faz kapıları: F3 çekim → --bolum kunye hikaye cekim · F3 sahneleme → --bolum sahneleme · F3 pilot → --bolum cekim pilot ·
+              F4 → --bolum replik muzik · F5 → --bolum cekim sahneleme prompt · F9 → --bolum yayin (YAYIN_PAKETI.md).
+
+16.10.2026 hat güncellemesi (AGENTS.md §1b kural türleri):
+  · pilot: PROMPTLAR/PILOT.md (F3p, 1-3 çekim) çekim promptlarının bütün kontrollerinden geçer; "prompt" bölümü PILOT*.md'yi
+    okumaz (F5 grup dosyaları pilot çekimlerini yeniden taşır);
+  · DERS UYARILARI (⚠️, kapı değil — HİPOTEZ türü): ARASTIRMA/16_QA_PROMPT_DERSLERI'nin mekanik yakalanabilen dersleri
+    Y1 işaret tarafı · Y2 §3 KİMLİK CÜMLELERİ birebir · Y5 akışkan kelime · Y6 ORTAK GÖRÜNÜM'de çekime bağlı öğe ·
+    Y8 ekran + yazı kilidi · Y10 "slow" birikimi · Y13 model sesi kapalı filmde ses tarifi. Ders başına tek satır, çekim listesiyle.
+    Yazar her satıra ya düzeltme ya tek cümle gerekçe yazar (KABUL F5.11); cevapsız uyarıyı denetçi ❌ sayar.
 
 12.10.2026 sahip kararları (THE_MAYDAY_SEA ile):
   · §5 Kaynak "model sesi (telsiz | voice-over | ağız kadrajda)": replik video promptuna BİREBİR yazılır (tırnak ya da
@@ -71,6 +79,33 @@ ZAMAN = re.compile(r"(\d+(?:[.,]\d+)?)\s*(?:-|–|to)\s*(\d+(?:[.,]\d+)?)\s*s(?:
 VURUS_MIN, VURUS_SAYI = 2.0, (2, 4)
 KAMERA_SABIT = re.compile(r"\bcamera (stays|holds|remains|is held) (still|locked|fixed)\b", re.I)
 DONMA = re.compile(r"\b(holds? (still|the pose|position|there)|freez(es|e)|frozen|motionless|stays still|remains still)\b", re.I)
+# 16.10.2026 · DERS UYARILARI (ARASTIRMA/16_QA_PROMPT_DERSLERI · 5 film · 269 bulgu). Olumsuz kalıp ("no smoke",
+# "without any sound") sayılmaz. Uyarıdır: kelime doğru yerde de geçebilir (atmosferli mekân, sabit ekran), yazar gerekçe yazar.
+ISARET = re.compile(r"\b(patch(es)?|badges?|emblems?|insignias?|decals?)\b|\b(arm|shoulder|sleeve|chest|upper-arm)[- ](bands?|stripes?)\b|"
+                    r"\b(bands?|stripes?)\s+(on|around|across)\s+(\S+\s+){0,3}?(arms?|shoulders?|sleeves?|chest)\b", re.I)
+TARAF = re.compile(r"\b(left|right|each|both)\b", re.I)
+TEK_ISARET = re.compile(r"\bonly marking|\bno other marking", re.I)
+AKISKAN = re.compile(r"\b(smoke|smoky|steam(ing)?|mist|misty|fog(gy)?|vapou?r|plumes?|exhaust|drips?|dripping|droplets?|"
+                     r"splash(es|ing)?|bubbles?|wet|puddles?|rain|flames?|soot)\b", re.I)
+EKRAN = re.compile(r"\b(displays?|screens?(?![- ](left|right|direction))|monitors?|readouts?|indicators?|gauges?|HUD|holograms?|"
+                   r"tablets?|status)\b", re.I)
+YAZI_KILIDI = re.compile(r"\bno (readable |visible )?(text|lettering|writing|numbers|letters|words)\b|\bwithout (any )?"
+                         r"(text|lettering|writing)\b|\bunmarked\b|\bblank\b|\btextless\b|\bplain dark glass\b", re.I)
+YAVAS = re.compile(r"\bslow(ly|er|s)?\b", re.I)
+SES_TARIF = re.compile(r"\b(sounds?|audio|ambien(t|ce)|hums?|humming|whir(s|ring)?|rumbl(e|es|ing)|echo(es|ing)?|noise|"
+                       r"beeps?|beeping|music|soundtrack)\b", re.I)
+ORTAK_DISI = re.compile(r"\b(light|lights|lit|lighting|glow|sun|sunlight|starlight|water|wet|rain|ocean|sea|earth|planet|"
+                        r"sound|audio|hum)\b", re.I)
+OLUMSUZ_ON = re.compile(r"\b(no|without|never|not|nor|zero|free of)\s+([\w-]+[\s,]+){0,3}$", re.I)
+DERS = {   # kod → (ders, düzeltme yönü) · kanıt: ARASTIRMA/16 §B
+    "Y1": "işaret var, tarafı yok — sayı + taraf + konum + 'the only marking' (5/5 film)",
+    "Y2": "§3 KİMLİK CÜMLELERİ'nden hiçbir parça birebir yok — kadrajda görünen parça kelime kelime (5/5 film)",
+    "Y5": "akışkan/ateş/su kelimesi — vakumda ve kuru kabinde duman, damla, yağmur çağırdı; hedef hâl katı ve olumlu (4/5 film)",
+    "Y6": "§3 ORTAK GÖRÜNÜM çekime bağlı öğe taşıyor — ortak cümle yalnız kimlik + doku/stil; ışık, su, gezegen, ses mekân cümlesine (4/5 film)",
+    "Y8": "ekran/gösterge var, yazı kilidi yok — adı yerine biçim ('a plain dark glass panel with one thin amber light bar') + 'plain unmarked surfaces' (4/5 film)",
+    "Y10": "'slow' üç kez ya da daha çok — hareket donar; vuruşa tek taşıyıcı olay (4/5 film)",
+    "Y13": "model sesi kapalı filmde ses tarifi — vakumda yankı, insan sesi çağırdı; ses kurguda kurulur (SKY 24/24)",
+}
 BASLIKLAR = ["## 1. HİKÂYE", "## 2. TRETMAN", "## 3. GÖRSEL KİMLİK", "## 4. ÇEKİM LİSTESİ",
              "## 5. REPLİKLER", "## 6. SES PLANI", "## 7. MÜZİK PLANI"]
 HIKAYE_ALAN = ["LOGLINE", "AMAÇ", "ENGEL", "KARAR", "SONUÇ", "BEDEL", "TEK SORU"]
@@ -134,7 +169,7 @@ def hikaye(film):
 def referanslar(film):
     """§3 GÖRSEL KİMLİK: (yeni biçim mi, {No: AD}). Yeni biçim = başlıkta "No" sütunu (10.10.2026 sahip kararı).
     Dosya adı ref/<No>.<AD>_v<k>.png olmalı; numara tablodaki No ile aynı."""
-    b = bolum(film, BASLIKLAR[2])
+    b = bolum(film, BASLIKLAR[2]).split("\n### ", 1)[0]     # alt başlık (### KİMLİK CÜMLELERİ, 16.10.2026) ayrı tablo
     yeni = bool(re.search(r"^\|\s*No\s*\|", b, re.M))
     refler, kokler = {}, {}
     if not yeni:
@@ -476,11 +511,72 @@ def zaman_plani(no, metin):
                      f"hareket 10. saniyede bitsin")
 
 
-def prompt(klasor, cekimler, film="", refler=None, yeni_ref=False):
-    dosyalar = sorted((klasor / "PROMPTLAR").glob("*.md"))
-    if not dosyalar:
-        hata.append("PROMPTLAR/: dosya yok")
-        return
+def _norm(s):
+    return re.sub(r"\s+", " ", s.replace("’", "'").strip().strip("`").rstrip(".")).lower()
+
+
+def kimlik_cumleleri(film):
+    """§3 '### KİMLİK CÜMLELERİ' tablosu (16.10.2026): {No: [parça cümlesi, …]}; yer tutucu satır sayılmaz."""
+    k = {}
+    for r in tablo(bolum(film, "### KİMLİK CÜMLELERİ"), r"^\|\s*\d+\s*\|"):
+        if len(r) >= 3 and not bos(r[2].strip("`")):
+            k.setdefault(r[0], []).append(_norm(r[2]))
+    return k
+
+
+def ortak_gorunum(film):
+    """§3'teki 'ORTAK GÖRÜNÜM …:' satırının altındaki girintili cümle (12.10.2026 biçimi)."""
+    m = re.search(r"^ORTAK GÖRÜNÜM[^\n]*\n((?:[ \t]+\S[^\n]*\n?)+)", bolum(film, BASLIKLAR[2]), re.M)
+    return " ".join(s.strip() for s in m.group(1).splitlines()) if m else ""
+
+
+def olumlu(desen, metin):
+    """Olumsuz kalıbın içinde olmayan eşleşmeler ('no smoke' · 'without any sound' sayılmaz)."""
+    return [m.group(0) for m in desen.finditer(metin) if not OLUMSUZ_ON.search(metin[max(0, m.start() - 60):m.start()])]
+
+
+def ekli_refler(govde):
+    bas = govde.split("### ", 1)[0]
+    return {n for s in re.findall(r"^(?:EKLE|KAYNAK)\s+(.*)$", bas, re.M) for n, _ad in REF_DOSYA.findall(s)}
+
+
+def ders_uyarilari(no, govde, bloklar, ders, model_sesi_var, kimlik):
+    """Tek çekimin DERS UYARILARI (16.10.2026) — ders kodu → çekim listesine eklenir, sonda ders başına tek satır."""
+    gorsel, video = bloklar.get("Görsel", ""), bloklar.get("Video", "")
+    if not bos(gorsel):
+        # taraf işaretin cümleciğinde aranır (virgül/nokta arası): "her right glove", "from the left" (ışık) sayılmaz
+        isaret = [m for m in ISARET.finditer(gorsel) if not OLUMSUZ_ON.search(gorsel[max(0, m.start() - 60):m.start()])]
+        def cumlecik(m):
+            bas = max(gorsel.rfind(c, 0, m.start()) for c in ",;.:")
+            son = min([i for i in (gorsel.find(c, m.end()) for c in ",;.:") if i >= 0] or [len(gorsel)])
+            return gorsel[bas + 1:son]
+        if any(not TARAF.search(cumlecik(m)) for m in isaret):
+            ders.setdefault("Y1", []).append(no)
+        if olumlu(EKRAN, gorsel) and not YAZI_KILIDI.search(gorsel):
+            ders.setdefault("Y8", []).append(no)
+        n = _norm(gorsel)
+        for r in sorted(ekli_refler(govde) & set(kimlik), key=int):
+            if not any(c in n for c in kimlik[r]):
+                ders.setdefault("Y2", []).append(f"{no}·{r}")
+    for metin in (gorsel, video):
+        if not bos(metin) and olumlu(AKISKAN, metin):
+            ders.setdefault("Y5", []).append(no)
+            break
+    if not bos(video):
+        if len(YAVAS.findall(video)) >= 3:
+            ders.setdefault("Y10", []).append(no)
+        if not model_sesi_var and olumlu(SES_TARIF, video):
+            ders.setdefault("Y13", []).append(no)
+
+
+def ders_yaz(ders, kaynak="prompt"):
+    for kod in DERS:
+        if kod in ders:
+            ck = list(dict.fromkeys(ders[kod]))
+            uyari.append(f"DERS {kod} ({kaynak}) {len(ck)} çekim: {' '.join(ck[:24])}{' …' if len(ck) > 24 else ''} — {DERS[kod]}")
+
+
+def prompt_bolumleri(dosyalar):
     bulunan, is_emri = {}, set()
     for f in dosyalar:
         t = f.read_text(encoding="utf-8")
@@ -489,6 +585,59 @@ def prompt(klasor, cekimler, film="", refler=None, yeni_ref=False):
         for r in tablo(bolum(t, "## FLOW İŞ EMRİ"), r"^\|\s*\d+\s*\|"):
             if len(r) > 1:
                 is_emri.add(r[1])
+    return bulunan, is_emri
+
+
+def cekim_promptu(no, bilgi, ad, govde, is_emri, agiz, refler, yeni_ref, ders, kimlik):
+    bloklar = dict(re.findall(r"### (Görsel|Video)\s*\n```text\n(.*?)```", govde, re.S))
+    zincirli = bool(bilgi.get("zincir"))
+    gerek = ["Video"] + ([] if bilgi["mod"] == "Text to Video" or zincirli else ["Görsel"])
+    if zincirli and not bilgi["bas"].startswith(("son:", "t:")):
+        ekle = re.search(r"^EKLE\s+(.*)$", govde, re.M)
+        if not ekle or bilgi["bas"] not in ekle.group(1) or bilgi["bit"] not in ekle.group(1):
+            hata.append(f"prompt {no}: EKLE satırı başlangıç {bilgi['bas']} ve bitiş {bilgi['bit']} karelerini taşımıyor")
+    for g in gerek:
+        if g not in bloklar or bos(bloklar[g]):
+            hata.append(f"prompt {no} ({ad}): {g} promptu yok ya da doldurulmamış")
+    for g, metin in bloklar.items():
+        if not bos(metin):
+            metin_kontrol(no, g, metin, agiz.get(no))
+    if yeni_ref:
+        referans_anahtari(no, govde, bloklar, refler or {})
+        if "Video" in bloklar and not bos(bloklar["Video"]):
+            zaman_plani(no, bloklar["Video"])
+    ders_uyarilari(no, govde, bloklar, ders, bool(agiz), kimlik)
+    if no not in is_emri:
+        hata.append(f"prompt {no}: Flow iş emrinde satırı yok")
+
+
+def pilot(klasor, cekimler, film="", refler=None, yeni_ref=False):
+    """F3p (16.10.2026): PROMPTLAR/PILOT.md — 1-3 çekim, her biri çekim listesinde; çekim promptlarının bütün kontrolleri."""
+    f = klasor / "PROMPTLAR" / "PILOT.md"
+    if not f.exists():
+        hata.append("PROMPTLAR/PILOT.md yok (F3p pilot: 1-3 çekim, AGENTS.md §2)")
+        return
+    bulunan, is_emri = prompt_bolumleri([f])
+    pc = [k for k in bulunan if k.startswith("C")]
+    if not 1 <= len(pc) <= 3:
+        hata.append(f"pilot: {len(pc)} çekim — 1-3 olmalı (en riskli an · açılış · kimlik/konuşma)")
+    agiz, ders, kimlik = model_sesi_satirlari(film), {}, kimlik_cumleleri(film)
+    for no in pc:
+        if no not in cekimler:
+            hata.append(f"pilot {no}: çekim listesinde yok")
+            continue
+        ad, govde = bulunan[no]
+        cekim_promptu(no, cekimler[no], ad, govde, is_emri, agiz, refler, yeni_ref, ders, kimlik)
+    ders_yaz(ders, "pilot")
+
+
+def prompt(klasor, cekimler, film="", refler=None, yeni_ref=False):
+    # PILOT*.md (F3p) bu bölümün dışında: F5 grup dosyaları pilot çekimlerini yeniden taşır (16.10.2026)
+    dosyalar = [f for f in sorted((klasor / "PROMPTLAR").glob("*.md")) if not f.name.upper().startswith("PILOT")]
+    if not dosyalar:
+        hata.append("PROMPTLAR/: dosya yok")
+        return
+    bulunan, is_emri = prompt_bolumleri(dosyalar)
     anahtarlar = sorted({k for c in cekimler.values() if c.get("zincir") for k in (c["bas"], c["bit"])
                          if re.fullmatch(r"Z\d+\.\d+", k or "")})
     for k in anahtarlar:
@@ -504,31 +653,17 @@ def prompt(klasor, cekimler, film="", refler=None, yeni_ref=False):
                 referans_anahtari(k, bulunan[k][1], g, refler or {})
         if k not in is_emri:
             hata.append(f"prompt {k}: anahtar kare Flow iş emrinde yok")
-    agiz = model_sesi_satirlari(film)
+    agiz, ders, kimlik = model_sesi_satirlari(film), {}, kimlik_cumleleri(film)
     for no, bilgi in cekimler.items():
         if no not in bulunan:
             hata.append(f"prompt {no}: PROMPTLAR/ içinde '## {no}' bölümü yok")
             continue
         ad, govde = bulunan[no]
-        bloklar = dict(re.findall(r"### (Görsel|Video)\s*\n```text\n(.*?)```", govde, re.S))
-        zincirli = bool(bilgi.get("zincir"))
-        gerek = ["Video"] + ([] if bilgi["mod"] == "Text to Video" or zincirli else ["Görsel"])
-        if zincirli and not bilgi["bas"].startswith(("son:", "t:")):
-            ekle = re.search(r"^EKLE\s+(.*)$", govde, re.M)
-            if not ekle or bilgi["bas"] not in ekle.group(1) or bilgi["bit"] not in ekle.group(1):
-                hata.append(f"prompt {no}: EKLE satırı başlangıç {bilgi['bas']} ve bitiş {bilgi['bit']} karelerini taşımıyor")
-        for g in gerek:
-            if g not in bloklar or bos(bloklar[g]):
-                hata.append(f"prompt {no} ({ad}): {g} promptu yok ya da doldurulmamış")
-        for g, metin in bloklar.items():
-            if not bos(metin):
-                metin_kontrol(no, g, metin, agiz.get(no))
-        if yeni_ref:
-            referans_anahtari(no, govde, bloklar, refler or {})
-            if "Video" in bloklar and not bos(bloklar["Video"]):
-                zaman_plani(no, bloklar["Video"])
-        if no not in is_emri:
-            hata.append(f"prompt {no}: Flow iş emrinde satırı yok")
+        cekim_promptu(no, bilgi, ad, govde, is_emri, agiz, refler, yeni_ref, ders, kimlik)
+    og = ortak_gorunum(film)
+    if og and olumlu(ORTAK_DISI, og):
+        ders.setdefault("Y6", []).append("§3 → '" + "' '".join(dict.fromkeys(w.lower() for w in olumlu(ORTAK_DISI, og))) + "'")
+    ders_yaz(ders)
 
 
 KOK = Path(__file__).resolve().parents[2]
@@ -641,13 +776,17 @@ def durum(klasor):
             hata.append(f"DURUM: FAZ {m.group(1)} — 0-10 olmalı")
         elif k == "AJAN_CAGRI" and int(m.group(1)) > int(m.group(2)):
             uyari.append(f"DURUM: ajan çağrısı {m.group(1)} bütçeyi ({m.group(2)}) aştı")
+    m = re.search(r"^METIN_CAGRI\s+(\d+)\s*/\s*(\d+)\s*$", t, re.M)     # 16.10.2026: F1-F6 tavanı (yoksa eski DURUM)
+    if m and int(m.group(1)) > int(m.group(2)):
+        uyari.append(f"DURUM: metin fazları {m.group(1)} çağrı — tavan {m.group(2)}; F3p ve F7-F9 ajansız kalmasın (AGENTS §2 bütçe)")
 
 
 def main():
     ap = argparse.ArgumentParser(description="yeni hat film klasörü yapı kontrolü")
     ap.add_argument("klasor")
     ap.add_argument("--bolum", nargs="+", default=["hepsi"],
-                    choices=["hepsi", "kunye", "hikaye", "cekim", "replik", "sahneleme", "prompt", "muzik", "durum", "yayin"])
+                    choices=["hepsi", "kunye", "hikaye", "cekim", "replik", "sahneleme", "pilot", "prompt", "muzik", "durum",
+                             "yayin"])
     a = ap.parse_args()
     klasor = Path(a.klasor)
     f = klasor / "FILM.md"
@@ -664,7 +803,7 @@ def main():
         hikaye(film)
     cekimler = {}
     yeni_ref, refler = False, {}
-    if hep or {"cekim", "replik", "sahneleme", "prompt", "muzik"} & sec:
+    if hep or {"cekim", "replik", "sahneleme", "pilot", "prompt", "muzik"} & sec:
         n = len(hata)
         yeni_ref, refler = referanslar(film)
         if not yeni_ref:
@@ -676,6 +815,8 @@ def main():
         replik(film, alan, cekimler)
     if hep or "sahneleme" in sec:
         sahneleme(klasor, film, alan, cekimler)
+    if "pilot" in sec or (hep and (klasor / "PROMPTLAR" / "PILOT.md").exists()):   # 16.10.2026: F3p
+        pilot(klasor, cekimler, film, refler, yeni_ref)
     if hep or "prompt" in sec:
         prompt(klasor, cekimler, film, refler, yeni_ref)
     if hep or "muzik" in sec:                # 12.10.2026: müzik promptu (M, yeni biçim) + §6 yatak/geçiş (uyarı)

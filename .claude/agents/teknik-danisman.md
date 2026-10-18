@@ -47,6 +47,12 @@ Gerekince başvur (07.10.2026, zorunlu değil): `uretim_hatti/FLOW_GERCEKLERI.md
 **Faz 5 — promptlar:** yalnız risk sütunu dolu çekimlere bak. Promptta riskli an hâlâ
 isteniyor mu? Meta etiket, büyük harfli kısa jeton ya da çekim kodu var mı (BILINEN_TUZAKLAR §C)?
 
+**Faz 3p — pilot (16.10.2026):** girdi PILOT.md (`## PİLOT SORUSU`), sahibin işareti ve deneme kare sayfaları.
+- Her pilot sorusuna tek cevap: **tuttu · tutmadı · görülmedi** + kanıt (kare adı ve zamanı). Kare sayfasında görünmeyen hareket
+  için "görülmedi" yaz; hareket kararı sahibin işaretidir.
+- Bozulan her deneme için doğduğu yer: `kare` · `hareket` · `prompt kelimesi` (hangi kelime) · `referans` · `araç`.
+- F5'e not: aynı riski taşıyan **diğer** çekimler hangileri (çekim listesinden), onlarda ne değişmeli. Not film içidir; hat kuralı önerme.
+
 **Faz 7 — reddedilen deneme:** sahibin ret notu ve (varsa) karesi verilir. Hatanın doğduğu yeri seç:
 - `kare` · `hareket` · `seçim` · `kurgu` · `anlatım`
 - Bir yeniden tasarım öner: hareketi sadeleştir · çekimi böl · anı kesmeyle atla · Flow modunu değiştir.

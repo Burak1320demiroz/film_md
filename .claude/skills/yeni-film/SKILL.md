@@ -1,6 +1,6 @@
 ---
 name: yeni-film
-description: Yeni hat film döngüsü — TEK giriş noktası. "Yeni film", "film fikrim var", "film yazalım" dendiğinde yeni film başlatır; bir film klasöründe ODA/DURUM.md varken "devam", "kaldığımız yerden", "kareleri ürettim", "klipler geldi", "denemeleri indirdim", "tarama sonucu", "yayına hazırla", "tutma eğrisi geldi" dendiğinde o filmi kaldığı fazdan sürdürür. Alt ajanları (senarist, yonetmen, izleyici, dramaturg …) çağırır, faz kapılarını denetçiyle yürütür.
+description: Yeni hat film döngüsü — TEK giriş noktası. "Yeni film", "film fikrim var", "film yazalım" dendiğinde yeni film başlatır; bir film klasöründe ODA/DURUM.md varken "devam", "kaldığımız yerden", "kareleri ürettim", "pilotu ürettim", "klipler geldi", "denemeleri indirdim", "montajı bitirdim", "tarama sonucu", "yayına hazırla", "tutma eğrisi geldi" dendiğinde o filmi kaldığı fazdan sürdürür. Alt ajanları (senarist, yonetmen, izleyici, dramaturg …) çağırır, faz kapılarını denetçiyle yürütür.
 allowed-tools: Agent, AskUserQuestion, Read, Grep, Glob, Write, Edit, Bash(python3:*), Bash(ffmpeg:*), Bash(ffprobe:*), Bash(git status:*), Bash(git diff:*), Bash(mkdir:*), Bash(cp:*), Bash(ls:*), Bash(shasum:*)
 ---
 
@@ -11,11 +11,13 @@ allowed-tools: Agent, AskUserQuestion, Read, Grep, Glob, Write, Edit, Bash(pytho
 Sen **ana ajansın**. Proje ayarına göre modelin Fable; değilse sahibe bir satırla `/model fable`
 hatırlat ve devam et.
 
-İşin dört parça:
+İşin beş parça:
 - alt ajanları doğru sırada, doğru girdiyle çağırmak;
 - çıktılarını dosyalara oturtmak;
 - denetçiyle faz kapılarını yürütmek;
-- kapıları **onaylamak**.
+- kapıları **onaylamak**;
+- **filmi teslim etmek** (16.10.2026, AGENTS §1 ⑨): referans, kare, deneme, seçim, ses, taslak, final ve paket dosyada var
+  olana kadar iş bitmez. Durumu hafızadan değil dosyadan okursun (`medya.py durum`).
 
 İçeriği kendin yazmazsın. Senaryoyu senarist, çekim listesini yönetmen yazar.
 
@@ -33,7 +35,13 @@ hatırlat ve devam et.
 1. **Hangi film?** Sahip bir film adı verdiyse ya da `<FORMAT>_filmler/<FILM>/ODA/DURUM.md` varsa
    (açık yeni hat filmleri: `ls */*/ODA/DURUM.md`):
    önce `DURUM.md`'yi oku, sonra `FILM.md`'yi, sonra `NOTLAR.md`'yi (son satırlarını). Bu üçü
-   bağlamın kendisidir. Kaldığın faza git (aşağıdaki tablo).
+   bağlamın kendisidir.
+   **Gerçek durum (16.10.2026):** FAZ ≥ 3 ise `python3 uretim_hatti/araclar/medya.py durum <FILM> --yaz` koş.
+   - `⚠️ DURUM.md FAZ … dosyalar daha ileriyi gösteriyor` → DURUM'u dosyaya göre düzelt (FAZ · ADIM · SIRADAKI) ve
+     FAZ GÜNLÜĞÜ'ne `medya taraması: <GERÇEK DURUM satırı>` yaz. Sahibin hat dışında yaptığını yok sayma.
+   - Kayıtsız deneme varsa `medya.py al <FILM> --yaz`; adı kurala uymayan dosya varsa sahibe yeniden adlandırma listesi ver.
+   - Hat dışı montaj varsa (`cikti/` altında taslak/final dışı video) `.claude/skills/medya-denetle/SKILL.md` uygula.
+   Sonra kaldığın faza git (aşağıdaki tablo).
 2. **Yeni film:** `AskUserQuestion` ile TEK turda üç soru:
    - **konu** (sahip verir ya da "sen öner");
    - **format / hedef süre** (yatay 2 · 4 · 8 · 16 dk · dikey shorts) → künyede `FORMAT` + `HEDEF_SURE`;
@@ -61,10 +69,11 @@ hatırlat ve devam et.
 |:--:|---|---|---|---|
 | 1 Hikâye odası | `.claude/skills/hikaye-odasi/SKILL.md` §F1 | senarist | dramaturg · yonetmen · izleyici (logline) | Fable seçer → **SAHİP vetosu** |
 | 2 Tretman | hikaye-odasi §F2 | senarist (+ diyalog-yazari) | dramaturg · izleyici · ses-tasarimcisi | denetci → Fable |
-| 3 Çekim listesi | hikaye-odasi §F3 | yonetmen | teknik-danisman · izleyici (metin animatiği) | film_dogrula + denetci → Fable |
-| 3b Sahneleme (ADIM sahneleme) | `.claude/skills/sahneleme-odasi/SKILL.md` | sahneleyici · mekan-haritacisi | mekan-haritacisi · teknik-danisman · yonetmen · izleyici (anahtar kare tarifleri) | film_dogrula --bolum sahneleme + denetci → Fable |
-| 4 Ses + müzik | `.claude/skills/ses-muzik/SKILL.md` §F4 | ses-tasarimcisi (+ besteci) | kurgucu · diyalog-yazari (koşullu) | denetci → Fable |
-| 5 Promptlar | `.claude/skills/cekim-yaz/SKILL.md` §F5 | goruntu-yonetmeni (grup başına paralel) | devamlilik · teknik-danisman | film_dogrula + denetci → Fable |
+| 3 Çekim listesi | hikaye-odasi §F3 | yonetmen | teknik-danisman · izleyici (metin animatiği) · kurgucu (kurgu gözü, 16.10) | film_dogrula + denetci → Fable |
+| 3b Sahneleme (ADIM sahneleme) ⏸️ yalnız zincir açıkken | `.claude/skills/sahneleme-odasi/SKILL.md` | sahneleyici · mekan-haritacisi | mekan-haritacisi · teknik-danisman · yonetmen · izleyici (anahtar kare tarifleri) | film_dogrula --bolum sahneleme + denetci → Fable |
+| 3p Pilot (ADIM pilot, 16.10) | `.claude/skills/cekim-yaz/SKILL.md` §F3p | goruntu-yonetmeni (PILOT.md) · **SAHİP üretir** | devamlilik (kare) · teknik-danisman (pilot) | film_dogrula --bolum cekim pilot + medya.py durum + denetci → Fable |
+| 4 Ses + müzik | `.claude/skills/ses-muzik/SKILL.md` §F4 (pilot üretilirken yürür) | ses-tasarimcisi (+ besteci) | kurgucu · diyalog-yazari (koşullu) | denetci → Fable |
+| 5 Promptlar | `.claude/skills/cekim-yaz/SKILL.md` §F5 | goruntu-yonetmeni: **G01 önce**, kalan gruplar sonra paralel | devamlilik (8 soru) · teknik-danisman | film_dogrula (DERS uyarılarına cevap) + denetci → Fable |
 | 6 Kapak konsepti | `.claude/skills/paketleme/SKILL.md` §F6 | kapak-tasarimcisi | izleyici (kapak) · yonetmen · yayin | Fable |
 | 7 Üretim | cekim-yaz §F7 + `.claude/skills/klip-sec/SKILL.md` §F7 | **SAHİP Flow'da** · goruntu-yonetmeni (yeniden tasarım) | devamlilik (kareler) · zincir-bekcisi (anahtar kare + dikiş) · izleyici (animatik) · teknik-danisman (ret) | Fable (yalnız kare kanıtıyla) |
 | 8 Seçim + kurgu | klip-sec §F8 + ses-muzik §F8 | kurgucu · besteci | izleyici (kareler) · dramaturg (bitiş) | kurgu.py kontrol + denetci → Fable |
@@ -74,8 +83,12 @@ hatırlat ve devam et.
 **Koşullu ajanlar:** diyalog-yazari yalnız `REPLIK var`, besteci yalnız `MUZIK var`,
 bilim-danismani yalnız `FIZIK_IDDIASI var` ise çağrılır. zincir-bekcisi yalnız zincir varsa.
 
-**Faz 3'ün iki adımı:** `DURUM.md` → `FAZ 3 · ADIM çekim`, sonra `ADIM sahneleme`. İkisinin ayrı kapısı
-var. Sahneleme kapısı kapanınca `FAZ 4 · ADIM —`.
+**Faz 3'ün üç adımı (16.10.2026):** `DURUM.md` → `FAZ 3 · ADIM çekim` → `ADIM sahneleme` → `ADIM pilot`. Her birinin ayrı kapısı var.
+- **sahneleme** yalnız zincir açıkken ajanla koşulur: yonetmen `ZİNCİR ADAYI` yazdıysa **ve** künyedeki araç başlangıç + bitiş
+  karesi alıyorsa **ve** `SMOKE_TEST.md` zincir sonuç tablosu doluysa. Değilse ajan çağırmadan kapat: `SAHNELEME.md` §5'e
+  "zincir yok — <gerekçe>" satırı, FAZ GÜNLÜĞÜ'ne bir satır (0 çağrı). Zincir planı FILM §4'te "—" kalır.
+- **pilot** sahibin üretimini bekler; beklerken F4 (ses + müzik) yürür. Pilot kapısı kapanınca `FAZ 5`. Sahip "pilot yok" derse
+  AŞILAN KAPILAR'a yaz, `FAZ 4`'ten devam et.
 
 **Zincir kapısı:** Flow'un başlangıç + bitiş karesi davranışı bu depoda doğrulanmadı. Bir filmde
 zincir varsa ve `uretim_hatti/SMOKE_TEST.md` zincir bölümünün sonuç tablosu boşsa, faz 7'de
@@ -128,6 +141,8 @@ f. KAYIT      DURUM.md (FAZ, TUR, AJAN_CAGRI, SIRADAKI, FAZ GÜNLÜĞÜ) + NOTLA
 
 - `DURUM.md` → `AJAN_CAGRI n / 50`. Her alt ajan çağrısı +1. Zincir başına üretimde 2 zincir-bekcisi
   çağrısı (anahtar kareler · dikişler); halka başına çağrı açılmaz.
+- **Metin tavanı (16.10.2026):** F1-F6'nın (pilot hariç) toplamı en çok 30 (`DURUM.md` `METIN_CAGRI n / 30`, eski DURUM'da satır yoksa ekle). 30'a gelince metin fazında yalnız ÖLÜMCÜL'e tur
+  açılır. Kalan 20 çağrı F3p ve F7-F9 içindir: seçim, kurgu, kare denetimi ve paket ajansız kalmaz.
 - 40'ı geçince KÜÇÜK ve CİDDİ bulgular için tur açılmaz; yalnız ÖLÜMCÜL.
 - 50'de sahibe sor: bütçe artırılsın mı?
 
@@ -143,6 +158,7 @@ f. KAYIT      DURUM.md (FAZ, TUR, AJAN_CAGRI, SIRADAKI, FAZ GÜNLÜĞÜ) + NOTLA
 
 Sahibe kısa rapor:
 - hangi faz, ne kapandı, kaç ajan çağrısı;
+- FAZ ≥ 3p ise `medya.py durum` **TESLİM** satırı (ref · denenen · ✅ · timeline · taslak · final);
 - açık ÖLÜMCÜL bulgular;
 - aşılan kapılar;
 - sıradaki adım: senin mi, sahibin mi.

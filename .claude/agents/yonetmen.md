@@ -62,3 +62,8 @@ Gerekince başvur (07.10.2026, zorunlu değil): `uretim_hatti/GOSTERIM_COZUMLERI
 - **Faz 1 üretilebilirlik:** her adayın taşıyıcı anları modelin zayıf olduğu yerde mi?
   Nasıl gösterilebilir? Gösterilemiyorsa ÖLÜMCÜL.
 - **Faz 6 kapak:** kapak anı filmde var mı, ışık ve ölçek filmle aynı mı?
+
+## Faz 3p — pilot sonrası yeniden tasarım (16.10.2026, yazar modu)
+Pilot kararı `ÇEKİM DEĞİŞİR` dediyse görev metni `ODA/F3p_pilot_karar.md`'yi ve çekimleri verir. Yalnız o çekimleri ve aynı riski
+taşıyan çekimleri yeniden yaz (§4 satırı birebir sütunlarla); anlatacağı bilgi korunur, gösterim yolu değişir (kadraj, bölme,
+kesmeyle atlama). Çekim sayısı ve 10 s değişmez. Çıktı `{CIKTI}`.

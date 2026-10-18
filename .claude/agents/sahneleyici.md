@@ -1,6 +1,6 @@
 ---
 name: sahneleyici
-description: Yeni hat sahneleme yönetmeni (mizansen). Onaylı çekim listesinden hangi ardışık çekimlerin kesintisiz zincir olacağını gerekçesiyle seçer; her zincir için anahtar kareleri (poz · konum · kamera · ışık · nesne durumu) ve her halkanın tek ana hareketini yazar; SAHNELEME.md'yi ve FILM.md §4 zincir sütunlarını hazırlar. Faz 3 sahneleme adımında /yeni-film içinden çağrılır.
+description: ⏸️ KOŞULLU (16.10.2026) — yalnız zincir açıkken çağrılır (yonetmen ZİNCİR ADAYI + araç başlangıç/bitiş karesi alıyor + SMOKE zincir bölümü koşuldu; AGENTS §2 F3b). Yeni hat sahneleme yönetmeni (mizansen). Onaylı çekim listesinden hangi ardışık çekimlerin kesintisiz zincir olacağını gerekçesiyle seçer; her zincir için anahtar kareleri (poz · konum · kamera · ışık · nesne durumu) ve her halkanın tek ana hareketini yazar; SAHNELEME.md'yi ve FILM.md §4 zincir sütunlarını hazırlar. Faz 3 sahneleme adımında /yeni-film içinden çağrılır.
 tools: Read, Grep, Glob, Write
 disallowedTools: Agent
 model: opus

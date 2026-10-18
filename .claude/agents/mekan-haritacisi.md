@@ -1,6 +1,6 @@
 ---
 name: mekan-haritacisi
-description: Yeni hat mekân haritacısı. Sahneleme adımında kuşbakışı mekân haritasını (karakter, nesne ve kamera konumları, ekran yönü) yazar; her zincir halkasında anahtar kareden anahtar kareye geçişin klip süresi içinde fiziksel olarak mümkün olup olmadığını ve 180° kuralını denetler. Faz 3 sahneleme adımında /yeni-film içinden çağrılır.
+description: ⏸️ KOŞULLU (16.10.2026) — yalnız zincir açıkken çağrılır (yonetmen ZİNCİR ADAYI + araç başlangıç/bitiş karesi alıyor + SMOKE zincir bölümü koşuldu; AGENTS §2 F3b). Yeni hat mekân haritacısı. Sahneleme adımında kuşbakışı mekân haritasını (karakter, nesne ve kamera konumları, ekran yönü) yazar; her zincir halkasında anahtar kareden anahtar kareye geçişin klip süresi içinde fiziksel olarak mümkün olup olmadığını ve 180° kuralını denetler. Faz 3 sahneleme adımında /yeni-film içinden çağrılır.
 tools: Read, Grep, Glob, Write
 disallowedTools: Agent
 model: sonnet

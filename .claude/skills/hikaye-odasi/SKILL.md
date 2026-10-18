@@ -62,6 +62,9 @@ Burada her fazın **neye özel** olduğu yazar. Görev metinleri: `uretim_hatti/
      sırasıyla. Replik varsa yalnız duyulan metin "(ses) …" olarak araya.
      "Anlatacağı bilgi" sütunu ASLA verilmez.
    - **bilim-danismani** (koşullu): fizik iddiası ekranda görülebiliyor mu.
+   - **kurgucu** (16.10.2026, F3 kurgu gözü): çekim listesi + replik tablosu. Kesmenin iki yanı, tepki/bağlantı planı,
+     mekân ilişkisi, 10 s'yi taşıyan hareket, kritik bilginin yedek yolu (`kurgucu.md` § Eleştirmen modu — faz 3). Bütün
+     görüntü üretildikten sonra "burada bağlantı planı lazım" demek pahalı; burada söylenir.
 3. **Metin animatiği karşılaştırması:** her çekim için tek tablo, `ODA/F3_animatik_<tur>.md`:
    `çekim · anlatacağı bilgi · izleyicinin anladığı (alıntı) · tuttu / kısmen / tutmadı`.
    - Kritik bilgiyi (amaç, engel, karar, sonuç) taşıyan çekimlerde "tutmadı" = ÖLÜMCÜL → yonetmen revize eder.
@@ -70,5 +73,11 @@ Burada her fazın **neye özel** olduğu yazar. Görev metinleri: `uretim_hatti/
 5. **Mekanik kontrol:** `python3 uretim_hatti/araclar/film_dogrula.py <FILM> --bolum kunye hikaye cekim`.
    Hata varsa yonetmen'e geri.
 6. **Kapı:** `denetci` (Ö + F3) → Fable.
-7. **Sonra sahneleme:** `DURUM.md` → `ADIM sahneleme` ve `.claude/skills/sahneleme-odasi/SKILL.md`.
-   Zincir adayı olmasa da adım kısa koşulur: bütün çekimler zincir dışı, gerekçeyle.
+7. **Pilot çekimleri (16.10.2026):** Fable kapıyı kapatırken 1-3 pilot çekimi seçer ve `DURUM.md` `PILOT` satırına yazar:
+   - **en riskli an:** teknik-danisman'ın F3'te en ağır bulguyu verdiği çekim (temas, iki kişi aynı nesnede, kapıdan geçiş, vakumda itki);
+   - **açılış:** C01 (ILK_30_SANIYE §6: deneme hakkı en çok onda);
+   - **kimlik / konuşma:** ana karakterin yüzünün ve giysi işaretinin okunduğu çekim; model sesi filminde replikli olanı.
+   Aynı çekim iki rolü taşıyorsa sayı azalır. Seçim gerekçesi tek satır.
+8. **Sonra sahneleme:** `DURUM.md` → `ADIM sahneleme` ve `.claude/skills/sahneleme-odasi/SKILL.md` — **yalnız zincir açıkken**
+   (yeni-film §1 "Faz 3'ün üç adımı"). Değilse ajansız kapanır: `SAHNELEME.md` §5'e "zincir yok — gerekçe", sonra `ADIM pilot`
+   (`.claude/skills/cekim-yaz/SKILL.md` §F3p).

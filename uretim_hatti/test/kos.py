@@ -11,6 +11,9 @@ Ne sınar:
   kurgu.py         kontrol (parça 10 s) · liste --kesmeler · taslak · ses kırpma · zincir sırası · yukseklik (−14 LUFS)
   kareler.py       cikar (100+ kare sırası) · dikis (doğru ↔ yanlış dikiş SSIM) · kuyruk (donma · gizli kesme) ·
                    kapak (yüzey kopyaları · 480p uyarısı · sağ alt köşe bayrağı)
+  16.10.2026       film_dogrula DERS uyarıları (Y1 Y2 Y5 Y6 Y8 Y10 Y13, hata değil) + pilot bölümü (PILOT.md, 1-3 çekim) ·
+                   medya.py durum (gerçek durum ↔ DURUM FAZ · adı kurala uymayan) · al (DENEMELER satırı, tekrar eklemez) ·
+                   bol (montajı kesmelerinden böler, başlangıç karesiyle eşler)
 
 Video ve ses REPOYA GİRMEZ: test medyası ffmpeg ile geçici klasörde üretilir ve test bitince silinir.
 Örnekler yalnız metindir (uretim_hatti/test/ornekler/). Çıkış kodu: 0 hepsi geçti · 1 en az bir test düştü.
@@ -73,6 +76,10 @@ FILM_ORNEKLERI = [
     # 12.10.2026 sahip kararı: MUZIK var → §7 MÜZİK PROMPTU ```text bloğu (yeni biçimde hata, eskide uyarı); §6 yatak/geçiş uyarı
     ("muzik_gecerli", [], 0, ["yapı geçerli"]),
     ("muzik_bozuk", ["--bolum", "muzik"], 1, ["MÜZİK PROMPTU bloğu yok", "ORTAM YATAĞI tablosu yok"]),
+    # 16.10.2026: DERS uyarıları kapı değildir (hata 0); her ders kendi satırında · pilot 1-3 çekim, listede olan, tam kontrol
+    ("ders_uyari", [], 0, ["DERS Y1 ", "DERS Y2 ", "DERS Y5 ", "DERS Y6 ", "DERS Y8 ", "DERS Y10 ", "DERS Y13 ", "yapı geçerli"]),
+    ("pilot_bozuk", ["--bolum", "pilot"], 4,
+     ["1-3 olmalı", "pilot C09: çekim listesinde yok", "Video promptu yok", "C03: Flow iş emrinde satırı yok"]),
     ("yayin_gecerli", ["--bolum", "yayin"], 0, []),
     ("yayin_bozuk", ["--bolum", "yayin"], 6,
      ["Türkçe karakter", "karakter sayısı yanlış", "tam 3", "#viral", "sabit bloğu", "araç/CGI"]),
@@ -112,6 +119,17 @@ def film_dogrula_testleri():
         if len(f.hata) != beklenen:
             sonuc.append(f"{metin_} → {f.hata}")
     test("film_dogrula ağız repliği: tırnak ve iki nokta geçer, yokluğu yakalanır", not sonuc, "\n".join(sonuc))
+    # 16.10.2026 DERS uyarıları: olumsuz kalıp, cümlecikteki taraf ve yazı kilidi uyarı doğurmaz
+    kod, out = kos(ARAC / "film_dogrula.py", ORNEK / "ders_uyari", "--bolum", "pilot")
+    test("film_dogrula pilot: kimlik cümlesi birebir, taraf, yazı kilidi → 0 hata, 0 ders uyarısı",
+         kod == 0 and "DERS" not in out and "yapı geçerli" in out, out)
+    temiz = {"Görsel": "Reference 1 (woman): take her face from it. A woman in a white suit with a round blue-and-gold badge on her "
+                       "left chest, the only marking on the suit, beside a plain dark glass panel with one thin amber light bar, "
+                       "plain unmarked surfaces, no smoke and no mist in the dry cabin.",
+             "Video": "0-5 s: she turns toward the panel without any sound cue. 5-10 s: her glove settles on the grip."}
+    ders = {}
+    f.ders_uyarilari("T", "", temiz, ders, False, {})
+    test("film_dogrula ders uyarısı yanlış alarm: olumsuz kalıp · cümlecikte taraf · yazı kilidi → 0", not ders, str(ders))
 
 
 # ── izleyici kancası ───────────────────────────────────────────────────────
@@ -271,6 +289,52 @@ def kareler_testleri(t):
     test("kareler kapak: ayrıntılı sağ alt köşe → süre rozeti bayrağı", kod == 0 and "sağ alt köşe kapağın" in out, out)
 
 
+# ── medya.py (16.10.2026) ──────────────────────────────────────────────────
+def medya_testleri(t):
+    import shutil
+    film, md = t / "film", t / "medya"
+    shutil.copytree(ORNEK / "referans_gecerli", film)
+    shutil.copy(KOK / "uretim_hatti" / "SABLON" / "NOTLAR.md", film / "NOTLAR.md")
+    for d in ("ref", "kare", "ham", "cikti"):
+        (md / d).mkdir(parents=True)
+    ffmpeg("-f", "lavfi", "-i", "color=c=gray:s=320x180", "-frames:v", "1", md / "ref" / "1.KARAKTER_v1.png")
+    kaynak = {"C01": "testsrc=duration=10:size=320x180:rate=24", "C02": "smptebars=duration=10:size=320x180:rate=24",
+              "C03": "mandelbrot=size=320x180:rate=24"}
+    for c, k in kaynak.items():
+        ffmpeg("-f", "lavfi", "-i", k, "-t", "10", "-pix_fmt", "yuv420p", t / f"{c}.mp4")
+        ffmpeg("-ss", "0.5", "-i", t / f"{c}.mp4", "-frames:v", "1", md / "kare" / f"{c}.png")
+    shutil.copy(t / "C02.mp4", md / "ham" / "C02_d1.mp4")
+    shutil.copy(t / "C02.mp4", md / "ham" / "C02_d2.mp4")
+    shutil.copy(t / "C01.mp4", md / "ham" / "C01_d1.mp4")
+    shutil.copy(t / "C03.mp4", md / "ham" / "Gemini_Generated_Video.mp4")
+
+    kod, out = kos(ARAC / "medya.py", "durum", film, "--medya", md)
+    test("medya durum: gerçek durum F7 (2/3 çekim) ↔ DURUM FAZ 0 · adı kurala uymayan 1 · kayıtsız 3",
+         kod == 0 and "F7 üretim — 2/3 çekim denendi" in out and "DURUM.md FAZ 0" in out
+         and "Gemini_Generated_Video.mp4" in out and "DENEMELER 0/3" in out and "eksik: 2.KOKPIT" in out, out)
+    kod, out = kos(ARAC / "medya.py", "al", film, "--medya", md, "--yaz")
+    notlar = (film / "NOTLAR.md").read_text(encoding="utf-8")
+    test("medya al --yaz: DENEMELER'e 3 satır (p:sha8 · kare + ref girdisi · süre), SHA önerisi",
+         kod == 0 and "3 satır eklendi" in out and notlar.count("⏳ işaret bekliyor") == 3
+         and re.search(r"\| C02 \| d2 \| Frames to Video \| G01 · p:[0-9a-f]{8} \| kare/C02 \+ ref 1,2 \| 10\.0 s", notlar)
+         and "SHA " in out, out + notlar[-900:])
+    kod, out = kos(ARAC / "medya.py", "al", film, "--medya", md, "--yaz")
+    test("medya al: ikinci koşu satır eklemez", kod == 0 and "kayıtsız deneme: 0" in out
+         and (film / "NOTLAR.md").read_text(encoding="utf-8").count("⏳ işaret bekliyor") == 3, out)
+
+    ffmpeg("-i", t / "C01.mp4", "-i", t / "C02.mp4", "-i", t / "C03.mp4", "-filter_complex",
+           "[0:v][1:v][2:v]concat=n=3:v=1[v]", "-map", "[v]", "-pix_fmt", "yuv420p", md / "cikti" / "montaj_disari.mp4")
+    kod, out = kos(ARAC / "medya.py", "durum", film, "--medya", md)
+    test("medya durum: hat dışı montaj → F8 · DURUM geride uyarısı", kod == 0 and "hat dışı montaj" in out
+         and "DURUM'u dosyaya göre güncelle" in out, out)
+    kod, out = kos(ARAC / "medya.py", "bol", md / "cikti" / "montaj_disari.mp4", film, "--medya", md)
+    zaman = re.findall(r"^\| (\d) \| (\d\d:\d\d\.\d) \| .*?\| (C\d\d) \(", out, re.M)
+    test("medya bol: 30 s montaj → 3 parça, kesmeler 10 · 20 s, her parça kendi başlangıç karesiyle eşleşir",
+         kod == 0 and "3 parça" in out and [(s, c) for s, _z, c in zaman] == [("1", "C01"), ("2", "C02"), ("3", "C03")]
+         and [z for _s, z, _c in zaman] == ["00:00.0", "00:10.0", "00:20.0"]
+         and (md / "analiz" / "montaj" / "montaj_disari" / "bolum.md").exists(), out)
+
+
 def main():
     global AYRINTI
     ap = argparse.ArgumentParser(description="yeni hat araçları regresyon testi")
@@ -282,9 +346,11 @@ def main():
         t = Path(d)
         (t / "kurgu").mkdir()
         (t / "kareler").mkdir()
+        (t / "medya").mkdir()
         try:
             kurgu_testleri(t / "kurgu")
             kareler_testleri(t / "kareler")
+            medya_testleri(t / "medya")
         except subprocess.CalledProcessError as e:
             test(f"test medyası üretilemedi (ffmpeg): {e}", False)
     gecen = sum(1 for _, ok in sonuclar if ok)

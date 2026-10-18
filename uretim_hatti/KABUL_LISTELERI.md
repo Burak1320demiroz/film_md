@@ -16,6 +16,9 @@
 - Ö5 — RED gerekçeleri bulgunun kanıtına cevap veriyor ("katılmıyorum" gerekçe değildir).
 - Ö6 — Açık ÖLÜMCÜL bulgu yok ya da tur tavanı doldu ve Fable'ın kararı gerekçesiyle yazılı.
 - Ö7 **M** — `ODA/DURUM.md` güncel: faz, tur, ajan çağrı sayacı, sıradaki adım.
+- Ö2b — (16.10.2026) Eleştiriler `ELESTIRI_PROTOKOLU` v2 biçiminde: her bulguda YER + DÜZELTME; listeli eleştirmen (devamlilik 8 · kurgucu 7) her soruyu cevaplamış; oran paydasıyla.
+- Ö8 — (16.10.2026) Metin fazları (F1-F6, pilot hariç) 30 çağrıyı geçmedi; geçtiyse yalnız ÖLÜMCÜL'e tur açıldı (AGENTS §2 bütçe).
+- Ö9 — (16.10.2026) FAZ ≥ 3p ise `medya.py durum` GERÇEK DURUM'u DURUM.md ile çelişmiyor (dosyalar ileride değil); kayıtsız deneme yok.
 
 ## F1 · Hikâye odası
 
@@ -46,8 +49,13 @@
 - F3.5 — Çekim sayısı × 10 s = HEDEF_SURE; son çekim bir sonuç gösteriyor (H02).
 - F3.6 **M** — `GEREKEN REFERANSLAR` numaralı (`<No>.<AD>`), §3 tablosunda `No` sütunu ve dosya adı `<No>.<AD>_v1.png`; §4 Referans sütunu aynı numarayı taşıyor; **özne başına tek satır**, açılar/yüz/durumlar o satırın panel listesinde (sahip kararı 10.10.2026).
 - F3.7 — (12.10.2026) §4 AÇILIŞ tablosu dolu (C01-C03: sorun · insan · replik/yazı · kapak bağı · sesi kapalı okunur mu); C01 ilk karede hareket hâlinde bir sorun, insan en geç C02; sapma gerekçeli (`ILK_30_SANIYE_KILAVUZU.md` §2).
+- F3.8 — (16.10.2026) kurgucu çekim listesini kurgu gözüyle okudu (7 soru: kesmenin iki yanı · mekân · tepki · 10 s hareketi · yedek yol · replik yerleşimi · açılış/bitiş); ÖLÜMCÜL açık değil.
+- F3.9 — (16.10.2026) `DURUM.md` `PILOT` satırında 1-3 pilot çekimi ve tek satır gerekçe (en riskli an · açılış · kimlik/konuşma) ya da sahibin "pilot yok" kararı.
 
 ## F3b · Sahneleme (faz 3, ADIM sahneleme)
+
+- F3b.0 — (16.10.2026) Adım yalnız zincir açıkken ajanla koştu (ZİNCİR ADAYI + araç başlangıç/bitiş karesi alıyor + SMOKE zincir sonucu var);
+  değilse `SAHNELEME.md` §5'te "zincir yok — gerekçe" satırı var, ajan çağrılmadı ve aşağıdaki maddeler atlanır.
 
 - F3b.1 **M** — `film_dogrula.py --bolum cekim sahneleme` hata vermiyor:
   - her zincirli çekimin SAHNELEME karşılığı;
@@ -62,6 +70,15 @@
 - F3b.4 — mekan-haritacisi her halkanın mesafe/süre ve 180° denetimini yaptı; ÖLÜMCÜL açık değil.
 - F3b.5 — izleyici anahtar kare tariflerinden akışı anlattı; zincirin taşıması gereken bilgi tuttu.
 - F3b.6 — Zincir yoksa: §5'te bütün çekimler gerekçesiyle "zincir dışı".
+
+## F3p · Pilot (16.10.2026 · faz 3, ADIM pilot)
+
+- F3p.1 **M** — `film_dogrula.py --bolum cekim pilot` 0 hata: PILOT.md 1-3 çekim, hepsi çekim listesinde, çekim promptunun bütün kontrolleri.
+- F3p.2 — `## KİMLİK CÜMLELERİ` §3'e birebir kopyalandı; DERS uyarılarının her satırı cevaplı.
+- F3p.3 **M** — `medya.py durum`: her pilot çekiminin en az bir denemesi `ham/`'da ve DENEMELER'de kayıtlı (`medya.py al`).
+- F3p.4 — Sahibin işareti her pilot denemesinde var (İŞARETLEME); devamlilik (kare) ve teknik-danisman (pilot) çıktıları ODA'da.
+- F3p.5 — `ODA/F3p_pilot_karar.md`: her çekim için soru · istenen · gelen (kare kanıtı) · doğduğu yer · F5 notu · karar (GEÇTİ · PROMPT DEĞİŞİR · ÇEKİM DEĞİŞİR · REFERANS DEĞİŞİR).
+- F3p.6 — Pilot notu F5 görev metnine girdi; hat kuralına çevrilmedi (AGENTS §1 ④).
 
 ## F4 · Ses + müzik planı
 
@@ -91,6 +108,9 @@
 - F5.8 — devamlilik baktı (12.10.2026, `GECIS_VE_SES_SUREKLILIGI.md` §1): §3 ORTAK GÖRÜNÜM cümlesi her görsel ve video promptunda birebir; mekân ışık cümlesi birebir; model sesi AÇIK filmde mekân başına ORTAM SESİ cümlesi birebir; ilk vuruş hareketle başlıyor; ardışık aynı-mekân çekimlerinde ölçek ya da açı farkı var.
 - F5.9 **M** — Model sesi repliği olan her çekimin Video promptu repliği birebir taşıyor (`film_dogrula.py` prompt bölümü); alıcıdan gelen ses için kadrajdaki kişinin ağzı kapalı yazılı.
 - F5.10 — (12.10.2026) C01-C03 promptlarında görüntüde yazı ve logo yok; kalabalık, hızlı kamera ve karmaşık el-nesne teması yok; şeffaf vizörde yüz yakın planı varsa risk sütununda yazılı (teknik-danisman; `ILK_30_SANIYE_KILAVUZU.md` §6).
+- F5.11 — (16.10.2026) G01 kalan gruplardan **önce** yazıldı ve eleştirildi; kalan grupların görev metni G01'i örnek grup olarak verdi.
+  `film_dogrula` her `⚠️ DERS Yn` satırı ya düzeltildi ya `ODA/F5_uyari_cevaplari.md`'de (ya da grup dosyasının `## 8 SORU` tablosunda) gerekçeli.
+- F5.12 — (16.10.2026) devamlilik 8 soruluk tabloyu her çekim için doldurdu (yokluk da bulgu); G01'deki bir kilit başka grupta düşmüşse bulgu var.
 - F5.5 **M** — Zincir varsa:
   - her anahtar karenin görsel promptu ve iş emri satırı var;
   - zincirli çekimin EKLE satırı başlangıç + bitiş karesini taşıyor;
@@ -109,6 +129,7 @@
 - F7.2 — devamlilik başlangıç karelerini görsel olarak karşılaştırdı (kask, giysi, yüz, eşya).
 - F7.3 — Kareli animatik izleyiciye gösterildi; kopma noktaları not edildi.
 - F7.4 — Sahibin deneme işaretlemesi `NOTLAR.md`'de; reddedilen her denemenin "doğduğu yer" yazılı.
+- F7.8 **M** — (16.10.2026) `medya.py durum`: `ham/`'daki her deneme NOTLAR DENEMELER'de kayıtlı (prompt `p:sha8` + girdi); adı kurala uymayan dosya yok.
 - F7.5 — Aynı sebeple iki kez bozulan çekim üçüncü kez aynı promptla gönderilmedi (bütçe kuralı).
 - F7.7 — (12.10.2026) C01-C03 ilk üretilenler arasında; kare kapısında filigran, logo, yazı, el kaynaşması, yüz bozulması ve kimlik kayması arandı; biri olan çekim açılışta kullanılmadı (`ILK_30_SANIYE_KILAVUZU.md` §6).
 - F7.6 — Zincir varsa:
@@ -119,6 +140,7 @@
 ## F8 · Seçim + kurgu
 
 - F8.1 **M** — `kurgu.py kontrol` 0 hata.
+- F8.10 — (16.10.2026) Montaj hat dışında yapıldıysa `medya.py bol` koştu, NOTLAR MONTAJ EŞLEMESİ dolu, QA bulguları plan numarasına çevrilmiş; timeline montajdan geri kuruldu.
 - F8.2 — Seçilen her aralık sahibin "kullanılabilir" işaretlediği bir denemeden.
 - F8.3 — izleyici kare sayfasından filmi anlattı; dramaturg bitişi doğruladı (H02).
 - F8.4 — Müzik varsa: final Flow Music promptu gerçek kesme noktalarıyla yazıldı.

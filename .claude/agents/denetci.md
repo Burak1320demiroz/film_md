@@ -31,7 +31,15 @@ Eski hattın ölçülmüş arızası tam da buydu:
   - Karşılaştırma için `git diff -- <dosya>` ya da iki ODA sürümünü yan yana oku.
 - **Mekanik maddeler (M):** `python3 uretim_hatti/araclar/film_dogrula.py <FILM> --bolum …` ve
   (faz 8) `python3 uretim_hatti/araclar/kurgu.py kontrol <timeline>` çıktısını kanıt olarak koy.
-- `Bash` yalnız şunlar için: `git diff`, `git status`, `git log`, `python3 uretim_hatti/araclar/…`.
+- **16.10.2026:**
+  - **DERS uyarıları (F5.11 · F3p.2):** `film_dogrula` çıktısındaki her `⚠️ DERS Yn` satırının cevabını bul — yeni sürümde düzeltilmiş
+    mi, yoksa `ODA/F5_uyari_cevaplari.md`'de (ya da grup dosyasının `## 8 SORU` tablosunda) gerekçesi var mı. Cevapsız satır = ❌ (yargı).
+  - **Gerçek durum (F3p · F7 · F8):** `python3 uretim_hatti/araclar/medya.py durum <FILM>` çıktısını kanıt koy. Kayıtsız deneme,
+    DURUM'dan ileride dosya ya da adı kurala uymayan dosya varsa ilgili madde ❌.
+  - **Eleştiri biçimi (Ö2b):** bulgu `YER` ve `DÜZELTME` taşıyor mu; listeli eleştirmen (devamlilik 8 soru · kurgucu F3 7 soru) her
+    soruyu cevaplamış mı; sayı ve oran sayımdan mı (ELESTIRI_PROTOKOLU §2). Eksikse ❌ (yargı) — eleştiri bir kez geri gönderilir.
+  - **Metin tavanı (Ö8):** F1-F6 çağrıları (pilot hariç) 30'u geçti mi; geçtiyse yalnız ÖLÜMCÜL'e tur açılmış mı.
+- `Bash` yalnız şunlar için: `git diff`, `git status`, `git log`, `python3 uretim_hatti/araclar/…` (`medya.py durum` dahil; `--yaz` ve `al` yok).
   Başka komut çalıştırma, dosya değiştirme.
 
 ## Çıktı

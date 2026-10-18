@@ -1,0 +1,69 @@
+# 🎬 TEST — deneme
+
+```
+FILM           TEST_FILM
+FORMAT         yatay 16:9
+HEDEF_SURE     0:30
+KLIP_SURESI    ölçülmedi
+REPLIK         var
+MUZIK          yok
+FIZIK_IDDIASI  yok
+MEDYA          ~/film_medya/TEST_FILM/
+```
+
+## 1. HİKÂYE
+
+```
+LOGLINE   A pilot must dock blind.
+AMAÇ      kenetlenmek
+ENGEL     kamera kör
+KARAR     mühendisin sesine güvenir
+SONUÇ     kancalar kapanır
+BEDEL     son yakıt · sahne 2
+TEK SORU  kenetlenecek mi?
+```
+
+## 2. TRETMAN
+
+| Sahne | Süre | Ne olur | Ne değişir |
+|:--:|:--:|---|---|
+| S1 | 0:00–0:12 | yaklaşma | |
+
+## 3. GÖRSEL KİMLİK — onay dosyaya bağlıdır
+
+| No | Referans | Dosya (`ref/`) | Sürüm | SHA-256 (ilk 12) | Onay | Kullanan çekimler |
+|:--:|---|---|:--:|---|:--:|---|
+| 1 | Karakter — yüz + giysi | `1.KARAKTER_v1.png` | v1 | | ⬜ | C02 |
+| 2 | Mekân — kokpit | `2.KOKPIT_v1.png` | v1 | | ⬜ | C02 |
+
+```
+ORTAK GÖRÜNÜM (her görsel ve video promptunun sonunda birebir):
+  Photoreal cinematic image, fine 35 mm film grain, cold blue-teal shadows and realistic metal and wet-surface detail.
+```
+
+### KİMLİK CÜMLELERİ (16.10.2026 · Görsel promptta birebir, kadrajda görünen parça)
+
+| No | Parça | Cümle (İngilizce, birebir) |
+|:--:|---|---|
+| 1 | yüz | a woman in her thirties with close-cropped black hair |
+| 1 | giysi + işaret | a pearl-white pressure suit with one narrow teal band around each upper arm, the only marking on the suit |
+| 2 | <parça> | <cümle> |
+
+## 4. ÇEKİM LİSTESİ
+
+| No | Anlatacağı TEK bilgi | Ekranda görünen | Kadraj · kamera | Taraf / yön | Süre | Flow modu | Risk → nasıl gösterilir | Referans | Grup | Durum | Zincir | Baş. karesi | Bitiş karesi |
+|:--:|---|---|---|---|:--:|---|---|---|:--:|:--:|:--:|:--:|:--:|
+| C01 | istasyon dev ve dönüyor | small ship approaches a huge rotating station | wide, locked | ship left to right | 10 | Text to Video | — | — | G01 | ⬜ | — | — | — |
+| C02 | ekran karardı | the cockpit display goes black, her hand stays on the grip | MCU | — | 10 | Frames to Video | T06 → ekran yazısız | 1.KARAKTER · 2.KOKPIT | G01 | ⬜ | — | — | — |
+| C03 | kenetlendi | four hooks close around the collar | wide exterior | — | 10 | Text to Video | — | — | G01 | ⬜ | — | — | — |
+
+## 5. REPLİKLER
+
+| No | Çekim | Saniye | Konuşan | Kaynak | Kayıt | Metin (İngilizce) | Süre |
+|:--:|:--:|:--:|---|---|:--:|---|:--:|
+| 1 | C02 | 1.0 | mühendis | telsiz | HUMAN | "Stay with my voice." | 2 |
+
+## 6. SES PLANI — model sesi kullanılmaz
+
+## 7. MÜZİK PLANI
+yok — sessiz film

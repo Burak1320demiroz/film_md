@@ -20,8 +20,9 @@ Fable videonun hareketini **göremez**. Bu fazda karar dört kaynağa dayanır:
 ## §F7 — Denemeler ve işaretleme
 
 1. **Düzen:** sahip denemeleri `~/film_medya/<FILM>/ham/Cxx_dN.mp4` adlarıyla indirir.
-   Her deneme `NOTLAR.md` DENEMELER'e bir satır: mod · prompt sürümü · kredi.
-   Süre: `ffprobe -v error -show_entries format=duration -of csv=p=0 <dosya>`.
+   Her deneme `NOTLAR.md` DENEMELER'e bir satır — **16.10.2026'dan beri `medya.py al <FILM> --yaz`** yazar: süre · ses akışı ·
+   araç/mod · prompt (`G0n · p:sha8`) · girdi (kare + referans). Sonra `medya.py durum <FILM> --yaz`: adı kurala uymayan dosyaları
+   sahibe yeniden adlandırma listesi olarak ver (`Gemini_Generated_Video_….mp4` → `ham/C07_d1.mp4`).
 2. **İşaretleme (sahibin işi):** her deneme için ✅ kullanılabilir (aralıkla) ya da ❌ (tek cümle neden)
    → `NOTLAR.md` İŞARETLEME. ❌ olanlar `cekim-yaz` §F7 başarısız çekim döngüsüne gider.
 3. **Kör karşılaştırma (isteğe bağlı, riskli çekimde):**
@@ -52,6 +53,9 @@ Fable videonun hareketini **göremez**. Bu fazda karar dört kaynağa dayanır:
    (fark görüntüsü + SSIM: jump cut ya da renk sıçraması bayrağı; `GECIS_VE_SES_SUREKLILIGI.md` §3). Çıktı klasörleri kurgucuya girdi.
 3. **kurgucu** (faz 8): işaretleme + tarama + kare klasörleri + dikiş klasörleri + çekim listesi + `FILM.md` §6 ORTAM YATAĞI/GEÇİŞ + (varsa) zincir dikiş kararları
    (`NOTLAR.md`) → seçim tablosu + `timeline.json` taslağı + kesin GEÇİŞ tablosu. Çıktı: `ODA/F8_kurgucu_<tur>.md`.
+   16.10.2026'dan beri kurgucunun Bash'i var: taslağını kendisi `kurgu.py kontrol` ile sınar, `medya.py durum` ile eksik ✅'yi görür.
+   **Hat dışı montaj** (sahip montajı kendisi yaptıysa): önce `.claude/skills/medya-denetle/SKILL.md` — montaj bölünür, plan çekimine
+   eşlenir; kurgucu o eşlemeden timeline'ı geri kurar (montajdaki aralıklar) ve düzeltmeleri önerir.
    Taslağı `<FILM>/timeline.json`'a, kesin GEÇİŞ tablosunu `FILM.md` §6'ya kopyala.
    - Zincirli halkalar `"zincir": "Zk"` alanını taşır, ardışık durur, dikişte ≤0,3 s kırpılır.
    - Her parçanın `gecis` alanı (kesme varsayılan · karisim 0,3-0,8 · karartma 0,5-1,5; karışım ≤ kesmelerin ¼'ü, karartma ≤ 2), `yataklar` mekân başına,

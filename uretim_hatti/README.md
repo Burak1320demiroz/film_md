@@ -16,27 +16,38 @@ uretim_hatti/
   KABUL_LISTELERI.md      faz kapıları — denetci okur, Fable karar verir
   FLOW_GERCEKLERI.md      Google Flow olgu sayfası (mod ↔ model, süre, 4K, kredi, ses, müzik) — araç bilgisi yalnız buradan
   PROMPT_HATA_ATLASI.md   kanıtlı prompt kalıpları: bunu yazma → şunu yaz (14 girdi + karantina)
+                          yeni hat adayları (16.10.2026, sahip kararı bekliyor): ARASTIRMA/16_QA_PROMPT_DERSLERI (5 film · 269 bulgu · 13 ders Y1-Y13)
   GOSTERIM_COZUMLERI.md   zor anı kadraj, kesme ve sesle gösterme kataloğu
   GECIS_VE_SES_SUREKLILIGI.md  klipler arası keskin kesme + kesmede değişen arka ses çözümü (12.10.2026): prompt · yatak · geçiş (kurgu.py gecis/yataklar/klip_sesi)
   ILK_30_SANIYE_KILAVUZU.md    ✅ (12.10.2026) her filmde açılış hook'u: üç çekim iskeleti · vaat · sessiz okunurluk · üretim · deney defteri (ARASTIRMA/07 → 08)
   KAPAK_VE_BASLIK_KILAVUZU.md  ✅ (12.10.2026) yüzeyler · okunurluk · kareler.py kapak · başlık kalıbı · üretim yolu ve vaat sınırı · test · eski video bakımı (ARASTIRMA/09 → 10)
+  GPT_IMAGE_OMNI_KILAVUZU.md   (16.10.2026) GPT Image karesi → Gemini Omni hareketi: pilot · referans/durum · kare düzeltme · devamlılık · diyalog · sorun-aşama · kayıt (ARASTIRMA/ham/26 → 11; K1-K8 sahipte)
+  REPLIK_VE_KLIP_SESI_KILAVUZU.md  (16.10.2026) replik kaynağı seçimi · montaj öncesi ses kapısı · klip sesi ve vakum · telsiz filtresi (ARASTIRMA/12 → 13)
+  KIMLIK_VE_REFERANS_KILAVUZU.md   (16.10.2026) yüz/giysi/bant tutarlılığı · ≤3 referans + rol · sayılı giysi tarifi · düzeltme · P17 deneyi · kare kabul listesi
+  UZAY_FIZIGI_GORUNTU_KILAVUZU.md  (16.10.2026) vakumda itki, sıvı, EVA, itki yönü, Dünya hızı, kenetlenme: kamerada görünen + olumlu İngilizce tarif
+  SECIM_VE_KURGU_KILAVUZU.md       (16.10.2026) medya → seçim → timeline → taslak: beş karar · süreklilik · 10 s doldurma · ffmpeg kontrolleri · kim neyi görür · taslak kapısı
   QA_OKUMA_KILAVUZU.md    QA bulgusu → zaman → çekim → prompt → sınıf (sözleşme v1.0) — rapor-prompt skill'inin omurgası
+                          (16.10.2026) hat dışı montajda QA numarası = kesme sırası → önce medya.py bol + NOTLAR MONTAJ EŞLEMESİ
   IZLEYICI_VERISI.md      yayın sonrası YouTube verisi: ne, nasıl, nereye, nasıl okunur
   AJAN_GOREVLERI.md       alt ajanlara verilen sabit görev metinleri
   QA_PROMPTLARI/          4 QA promptu (06.10.2026): Gemini için TARAMA (klip içi) · SUREKLILIK (kesme iki yanı) ·
                           ANLATIM_TESTI (plansız izleyici) · insan için IZLEME_FORMU. Eski 15 mercek arşivde.
   ARASTIRMA/              dış derin araştırma promptları (salt prompt: 01 · 03 · 05) · ham/ cevaplar · süzme (02 · 04 · 06) · kural dosyaların sonunda
+                          qa_prompt_analizi_20261006/ (eski hat, 12 film) · qa_prompt_analizi_20261016/ (yeni hat, 5 film) → 16_QA_PROMPT_DERSLERI
   SABLON/                 yeni film klasörünün şablonu (FILM · SAHNELEME · KAPAK_VE_YAYIN · YAYIN_PAKETI · NOTLAR · timeline · ODA · PROMPTLAR)
-  araclar/                film_dogrula · kurgu · kareler · kor_ab · izleyici_kanca · ham_rapor_say
+  araclar/                film_dogrula (+ pilot · DERS uyarıları, 16.10) · medya (16.10: durum · al · bol) · kurgu · kareler ·
+                          kor_ab · izleyici_kanca · ham_rapor_say
   test/                   kos.py (tek komut regresyon) · ornekler/ (yalnız metin; geçerli + kasıtlı bozuk film klasörleri)
 
-.claude/agents/           18 alt ajan (senarist, diyalog-yazari, dramaturg, izleyici, yonetmen,
+.claude/agents/           18 alt ajan, 6 rolde (AGENTS §2b; sahneleyici · mekan-haritacisi · zincir-bekcisi ⏸️ yalnız zincir açıkken)
+                          (senarist, diyalog-yazari, dramaturg, izleyici, yonetmen,
                           teknik-danisman, goruntu-yonetmeni, devamlilik, bilim-danismani,
                           ses-tasarimcisi, besteci, kapak-tasarimcisi, yayin, kurgucu, denetci,
                           sahneleyici, mekan-haritacisi, zincir-bekcisi)
 .claude/skills/yeni-film  yönetici akış (tek otomatik tetik)
-.claude/skills/{hikaye-odasi, sahneleme-odasi, ses-muzik, cekim-yaz, paketleme, klip-sec}
+.claude/skills/{hikaye-odasi, sahneleme-odasi, ses-muzik, cekim-yaz, paketleme, klip-sec, medya-denetle}
                           faz prosedürleri — ana ajan dosya olarak okur; sahip /adıyla çağırabilir
+                          (medya-denetle 16.10.2026: medyayı hatta alır, DURUM'u dosyaya getirir, hat dışı montajı böler)
 ```
 
 ## Film klasörü
@@ -48,8 +59,10 @@ uretim_hatti/
   SAHNELEME.md       zincirler · anahtar kareler · mekân haritası · delta kontrolü (sahneleme odası)
   KAPAK_VE_YAYIN.md  kapak A/B
   YAYIN_PAKETI.md    tamamen İngilizce, yapıştırmaya hazır: başlık · açıklama · etiket · sabit yorum · Shorts
-  PROMPTLAR/G01.md…  çekim grubu başına promptlar + Flow iş emri
-  ODA/               ajanların ham çıktıları (F<faz>_<ajan>_<tur>.md) + DURUM.md
+  PROMPTLAR/PILOT.md F3p pilot (1-3 çekim + KİMLİK CÜMLELERİ + PİLOT SORUSU, 16.10.2026)
+  PROMPTLAR/G01.md…  çekim grubu başına promptlar + Flow iş emri + 8 SORU tablosu (G01 önce, kalanlar G01'i örnek alarak)
+  ODA/               ajanların ham çıktıları (F<faz>_<ajan>_<tur>.md) + DURUM.md + MEDYA_DURUMU.md (medya.py üretir) +
+                     F3p_pilot_karar.md · F5_uyari_cevaplari.md
   NOTLAR.md          denemeler · işaretleme · red · tarama · anlatım · izleme · kararlar · ajan günlüğü
   timeline.json      seçilen saniyeler
 ```
@@ -63,7 +76,8 @@ uretim_hatti/
   ham/        Flow'dan inen denemeler: Cxx_dN.mp4
   ses/        R01.wav replik · E01.wav efekt · O01.wav ortam · muzik_v1.wav
   cikti/      taslak_*.mp4 · final.mp4 · kapak_A.png / kapak_B.png
-  analiz/     türetilen, izleyiciye gitmeyen: kareler/<deneme>/ · tarama/<Cxx>/ · dikis/<Zk>_<i>/ · kor/<tur>/
+  analiz/     türetilen, izleyiciye gitmeyen: kareler/<deneme>/ · tarama/<Cxx>/ · dikis/<Zk>_<i>/ · kor/<tur>/ ·
+              montaj/<montaj adı>/ (medya.py bol: NN_ilk.png · NN_orta.png · bolum.md · bolum.tsv)
   izleyici/   YALNIZ izleyici ajanının okuyabildiği (kanca): taslak_<n>/ · animatik_<n>/ · kapak/
 ```
 ⛔ `izleyici/` altına yalnız izleyiciye gösterilecek kare kopyalanır; kanca başka yeri okutmaz.
@@ -72,7 +86,9 @@ uretim_hatti/
 ## Komutlar
 
 ```bash
-python3 uretim_hatti/araclar/film_dogrula.py <FILM klasörü>          # yapı/biçim kontrolü (+ --bolum yayin: faz 9)
+python3 uretim_hatti/araclar/film_dogrula.py <FILM klasörü>          # yapı/biçim kontrolü (+ --bolum yayin: faz 9 · pilot: F3p)
+python3 uretim_hatti/araclar/medya.py durum|al <FILM> [--yaz]          # gerçek durum ↔ DURUM · NOTLAR DENEMELER satırları (16.10)
+python3 uretim_hatti/araclar/medya.py bol <montaj.mp4> <FILM>          # hat dışı montajı kesmelerinden böl, başlangıç karesiyle eşle
 python3 uretim_hatti/araclar/kurgu.py kontrol|liste|taslak <timeline>  # seçim → taslak film
 python3 uretim_hatti/araclar/kurgu.py yukseklik <video> [--uygula]     # final ses −14 LUFS · −1 dBTP
 python3 uretim_hatti/araclar/kareler.py cikar|kucult|kare|dikis|kuyruk …  # kare · kontak · dikiş · kuyruk

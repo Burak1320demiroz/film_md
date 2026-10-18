@@ -7,13 +7,22 @@
 
 ## 1. Bulgu biçimi
 
+**v2 (16.10.2026 — bundan sonraki bütün eleştiriler).** Neden: bugüne kadarki "kök neden" cümlelerinin bir kısmı prompta bakılmadan
+yazılmıştı ve çürüdü (WRONG_BURN C11 "yanlış klip seçildi" denmişti, prompt o hareketi istiyordu); "devamlılık kötü" gibi yeri ve
+düzeltmesi olmayan bulgu kimseye iş vermedi.
+
 ```
 ### B<n> · <ÖLÜMCÜL | CİDDİ | KÜÇÜK> · <kısa başlık>
-KANIT    eserden BİREBİR alıntı ya da çekim/sahne no (alıntısız bulgu geçersizdir)
-NEDEN    izleyici ya da üretim için ne bozulur — tek cümle
-ARIZA    uretim_hatti/ARIZA_LISTESI.md'den eşleşen madde (H01…/T01…) ya da "yeni"
-ÖNERİ    somut değişiklik — aynı uzunlukta ya da daha kısa; "daha iyi yaz" öneri değildir
+YER       çekim + saniye (C07 3-4 s) · kare adı · ya da dosya:satır — bulgunun tam yeri
+KANIT     eserden BİREBİR alıntı (prompt, tablo, replik) ya da karede görülen (kare adıyla); alıntısız bulgu geçersizdir
+ETKİ      izleyici ya da üretim için ne bozulur — tek cümle
+DOĞDUĞU   metin · kare · hareket · seçim · kurgu · anlatım · ses · araç (AGENTS §3; F1-F6'da çoğunlukla "metin")
+KURAL     dayandığı yazılı kural: dosya:satır + tür [SÖZLEŞME | ARAÇ | HİPOTEZ | TERCİH] (AGENTS §1b) · yoksa "—"
+ARIZA     uretim_hatti/ARIZA_LISTESI.md'den eşleşen madde (H01…/T01…) ya da "yeni"
+DÜZELTME  en küçük değişiklik: `eski metin` → `yeni metin` · ya da "kesme 3.2 s'den önce" · "çekimi ikiye böl"
+          (aynı uzunlukta ya da daha kısa; "daha iyi yaz" düzeltme değildir)
 ```
+v1 biçimi (`KANIT · NEDEN · ARIZA · ÖNERİ`) 16.10.2026'dan önceki ODA dosyalarında geçerli kalır; NEDEN = ETKİ, ÖNERİ = DÜZELTME.
 
 **Şiddet:**
 - **ÖLÜMCÜL:** bu hâliyle film izlenmez, anlaşılmaz ya da üretilemez. Tur kapanmaz.
@@ -31,6 +40,15 @@ ARIZA    uretim_hatti/ARIZA_LISTESI.md'den eşleşen madde (H01…/T01…) ya da
   verilmişse yok say.
 - **Kapsam dışına çıkma.** Kendi listende olmayan konuyu `KAPSAM DIŞI:` satırıyla tek
   cümle bırak, bulgu yazma.
+- **(16.10.2026) Liste varsa hepsi cevaplanır.** Dosyanda numaralı soru listesi olan eleştirmen (devamlilik F5 8 soru · kurgucu F3
+  7 soru) her soruyu ayrı cevaplar: `evet/hayır · kanıt`. Olmayan cümle de bulgudur: "rozet tutarlı" demek, rozet konumunun hiç
+  yazılmadığı 12 çekimi kaçırdı (FURNACE G04). Atlanan soru = eksik eleştiri.
+- **(16.10.2026) Sayı sayımdan gelir.** Oran ve yüzde yalnız sayılmış bir kümeden yazılır, paydasıyla (`7/24`). Tahmin `≈` ve
+  "tahmin" sözüyle. Paydası olmayan yüzde biçim dışıdır (değerlendirme raporlarında uydurma yüzdeler bulundu).
+- **(16.10.2026) Görülmeyen temiz değildir.** Kareyle çalışan eleştiri hangi kareleri gördüğünü `GİRDİ`'ye yazar. Birkaç temiz kare,
+  videonun hareket boyunca temiz olduğunu kanıtlamaz: hareket için "görülmedi" yaz.
+- **(16.10.2026) Simülasyon insan değildir.** Ajanın "izleyici şöyle hisseder" tahmini İZLEME tablosuna ya da dış izleyici
+  satırına yazılmaz (WRONG_BURN ve SKY_CATCH'in İZLEME tablosunda "dış izleyici" satırları AI simülasyonuydu, 11_SUZME §B).
 
 ## 3. Tur kuralı
 

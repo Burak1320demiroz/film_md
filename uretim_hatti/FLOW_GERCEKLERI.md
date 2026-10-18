@@ -195,6 +195,56 @@ Hat dışı (API forum raporları, doğrulanmadı): 9:16 isteğinin 16:9'a zorla
 
 Hat bağlamı: 1 s'den kısa kusur (parmak erimesi, tek karelik sıçrama) taramada kaçabilir (02 R5 KABUL).
 
+## Ek 2 · Gemini uygulaması — Omni (üretim aracı, Flow değil) · 16.10.2026
+
+> Kaynak: `ARASTIRMA/11_SUZME_20261016.md` §A (V1-V10). `gm` = gemini.google/overview/video-generation (tr) · `gh/16126339` = support.google.com/gemini/answer/16126339.
+> THE_SKY_CATCH bu yolla üretildi (GPT Image → Gemini). Yöntem: `GPT_IMAGE_OMNI_KILAVUZU.md`.
+
+| Olgu | Değer | Durum | Kaynak |
+|---|---|---|---|
+| Model | Gemini Omni, Gemini uygulamasında Veo 3.1'in yerini alıyor | RESMİ | V1 · gm |
+| Süre | "10 saniyelik videolar oluşturun" | RESMİ · dosya süresi ÖLÇÜLECEK (ffprobe) | V2 · gm |
+| Ses | "Doğal ses üretme" · "You can also ask Gemini to generate audio with your video." | RESMİ | V2 · gm · gh/16126339 |
+| Görsel girdi | "You can upload one video and up to 5 images." · "Referans fotoğraflar kullanarak (5 adede kadar)" | RESMİ | V3 |
+| Oran | "If you upload a reference image or video, the aspect ratio will match your uploaded content." | RESMİ | V5 · gh/16126339 |
+| Uzatma · videodan videoya · etkileşimli düzenleme | var; "Özellikler katmana ve coğrafi konuma göre değişir." | RESMİ (varlığı) · hesapta ÖLÇÜLECEK | V4 · gm |
+| Ayrı başlangıç + bitiş karesi | Gemini uygulamasında resmî cümle yok (Flow web'de var, §1). Geliştirici blogu (API): "specifying the starting and ending frames of a shot" | uygulamada BİLİNMİYOR · API RESMİ | V6 · `13` V12 |
+| Sahne uzatma süresi (API) | "You can extend videos in 10-second increments up to a total cumulative length of 40 seconds." · çıkış 27.08.2026 | RESMİ (API) · uygulamada ÖLÇÜLECEK | `13` V11 · blog …/build-with-gemini-omni-1-1-flash |
+| Video referansı (API) | "Reference up to three seconds of video when crafting your scene." | RESMİ (API) | `13` V13 |
+| Veo 3.1 referans görseli (karşılaştırma) | "Veo 3.1 now accepts up to 3 reference images" — Veo için; Omni değil | RESMİ | `13` V19 · api |
+| fps · çözünürlük · seed · günlük kota · kredi | yazmıyor | BİLİNMİYOR | — |
+
+Hat bağlamı:
+- Zincir (AGENTS §0) yalnız Flow web'de kurulur; Gemini uygulamasında devamlılık `GPT_IMAGE_OMNI_KILAVUZU.md` §8.
+- 5 görsel = 5 referans; 5 zaman anahtarı ya da 5 sabit kamera açısı değildir.
+- Oran karenin pikselinden gelir: 1536×1024 (3:2) kare 16:9 video vermez → `GPT_IMAGE_OMNI_KILAVUZU.md` §13.
+
+## Ek 3 · GPT Image (OpenAI) — başlangıç karesi aracı · 16.10.2026
+
+> Kaynak: `ARASTIRMA/15_SUZME_20261016.md` §A (V25-V40). `oai/guide` = developers.openai.com/api/docs/guides/image-generation ·
+> `oai/sb` = …/models/gpt-image-2.5-sunburst · `oai/d3` = …/models/dall-e-3 · `oai/forum` = community.openai.com duyurusu (08.09.2026).
+> help.openai.com "Images in ChatGPT" 403 verdi; ChatGPT satırları ◐.
+
+| Olgu | Değer | Durum | Kaynak |
+|---|---|---|---|
+| Güncel modeller (API) | `gpt-image-2.5-sunburst` ("Our most capable model for image generation and editing"; hassas düzenleme, daha yavaş; snapshot `…-2026-09-08`) · `gpt-image-2.5-flare` (hızlı) | RESMİ | oai/sb · oai/guide · oai/forum |
+| ChatGPT | "ChatGPT Images 2.5", 08.09.2026'dan beri bütün ChatGPT kullanıcılarına; hangi API modelini kullandığı yazmıyor | RESMİ (duyuru) · model eşlemesi BİLİNMİYOR | oai/forum |
+| DALL·E 3 | "deprecated and removed from the API" | RESMİ | oai/d3 |
+| Boyut (API) | hazır: 1024×1024 · 1536×1024 · 1024×1536; özel `WIDTHxHEIGHT` ("such as 1536x864"): kenarlar 16'nın katı, oran 1:3-3:1, en uzun kenar ≤3840 | RESMİ | oai/guide |
+| 16:9 (API) | 1280×720 · 1536×864 · 2048×1152 · 2560×1440 · 3840×2160 (1920×1080 olmaz: 1080 16'nın katı değil) | RESMİ kurala göre hesap | 15 V28 |
+| Oran (ChatGPT) | "any aspect ratio", oran seçici ya da promptta oran | ◐ · indirilen dosyanın pikseli ÖLÇÜLECEK | 15 V29 |
+| Kalite | low · medium · high · xhigh · max · auto (xhigh/max yalnız 2.5) | RESMİ | oai/guide |
+| Girdi görseli | örnekte 4; en çok sayı yazmıyor | BİLİNMİYOR → ÖLÇÜLECEK | oai/guide |
+| `input_fidelity` | "controls how strongly a model preserves details from input images during edits"; gpt-image-2'de değiştirilemez; 2.5 değerleri açılmadı | RESMİ (varlığı) · ÖLÇÜLECEK | oai/guide |
+| Maske | alfa kanallı; çok görselde ilk görsele uygulanır | RESMİ | oai/guide |
+| Çok turlu | `previous_response_id` · `action: "edit"` | RESMİ (API) | oai/guide |
+| Biçim · şeffaflık | png (varsayılan) · jpeg · webp · `background: "transparent"` | RESMİ | oai/guide |
+| Fiyat (Sunburst) | 1M token: metin girdi $5 · görsel girdi $8 · görsel çıktı $30 (Batch $15) | RESMİ (16.10.2026) | oai/sb |
+| Olumsuz ifade | ayrı parametre yok; resmî örneklerde "No logos" · "No watermarks" · "No text" satırları | RESMİ | 13 V17 |
+
+Hat bağlamı: başlangıç karesi **16:9 piksel** üretilir (API'de özel boyut, ChatGPT'de oran seçici + ölçüm); olmazsa kırpılır (`GPT_IMAGE_OMNI_KILAVUZU` §13).
+Kullanılan model ve arayüz her denemede NOTLAR'a yazılır.
+
 > **Bu sayfa ne zaman değişir:** SMOKE sonucu gelince satır ÖLÇÜLECEK'ten "ölçüldü (tarih · film · değer)"e geçer.
 > Resmî sayfa değişirse satır yeni tarih ve kaynakla yazılır; eski değer §10'a taşınır, silinmez.
 > Kaynaksız ya da tarihsiz satır girmez. Değişiklik sahibin kararıyla.
