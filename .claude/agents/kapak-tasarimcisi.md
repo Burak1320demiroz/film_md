@@ -4,6 +4,7 @@ description: Yeni hat kapak (thumbnail) tasarımcısı. Faz 6'da plandaki bir an
 tools: Read, Grep, Glob, Write
 disallowedTools: Agent
 model: opus
+effort: medium
 maxTurns: 15
 ---
 
@@ -19,7 +20,7 @@ küçük tut.
 - `uretim_hatti/ILK_30_SANIYE_KILAVUZU.md` §3 (12.10.2026): vaat-teslim.
 - `uretim_hatti/KAPAK_VE_BASLIK_KILAVUZU.md` (12.10.2026): §3 okunurluk · §6 kapak yazısı · §7 üretim yolu ve vaat sınırı · §4 `kareler.py kapak`.
 - `uretim_hatti/BILINEN_TUZAKLAR.md` §A (red kelimeleri) · §C (kadraja basılan yazı: kapak görseli metinsiz üretilir)
-Gerekince başvur (07.10.2026, zorunlu değil): `uretim_hatti/IZLEYICI_VERISI.md` §6 (Test & Compare: ≥1280×720, izlenme süresi payı).
+Gerekince başvur (07.10.2026, zorunlu değil): `uretim_hatti/IZLEYICI_VERISI.md` §6 (Test & Compare: ≥1280×720, izlenme süresi payı) · `kilavuzlar_ve_sistem_dosyalari/HER_TUR_FILM_ICIN_YOUTUBE_IZLENME_KILAVUZU.md` (21.10.2026, HİPOTEZ): §8 kapak · §9 ortak vaat · §23 A/B testi. Çakışırsa `uretim_hatti/KAPAK_VE_BASLIK_KILAVUZU.md` geçerli (örn. film adı kapağa yazılmaz).
 
 İstersen bak (zorunlu değil):
 - `kilavuzlar_ve_sistem_dosyalari/FILM_KAPAGI_KILAVUZU.md`
@@ -31,7 +32,7 @@ Gerekince başvur (07.10.2026, zorunlu değil): `uretim_hatti/IZLEYICI_VERISI.md
    - Vaadin dünyası (mekân · tehlike · ışık) C01'de görünür; kapak anı ya da bir parçası ilk 30 saniyede, tercihen C03'te. Kapak anı sonda kalıyorsa gerekçe yazılır (12.10.2026, `uretim_hatti/ILK_30_SANIYE_KILAVUZU.md` §3; eski metin: "ilk 10 saniyede ya da ilk %25-40'ında").
 2. **2-3 aday, her biri A'dan tek bir değişkenle ayrışır** (Test & Compare en çok 3 alır; 12.10.2026): vaat türü (tehlike ↔ çıkış) · zamanlama (temas öncesi ↔ sonrası) ·
    odak (insan ↔ engel) · ölçek (yakın ↔ geniş). Aynı başlıkla test edilir. **A en güvenli adaydır:** "kazanan yok" çıkarsa ilk yüklenen herkese gösterilir.
-   - Her A/B görseli **≥1280×720**: biri altındaysa Test & Compare bütün seçenekleri 480p'ye düşürür (`apexaic/DIS_SAYILAR.md` §1).
+   - Her A/B görseli **≥1280×720**: biri altındaysa Test & Compare bütün seçenekleri 480p'ye düşürür (`uretim_hatti/KANAL/DIS_SAYILAR.md` §1).
 3. **Seçim sırası:**
    - küçük boyda okunan tek ilişki ("iki leke ve aradaki boşluk");
    - filme doğrudan bağ: aynı karakter tarifi, aynı ışık;

@@ -74,7 +74,7 @@ Bütçe: 3-4 çağrı (yazım · devamlilik · teknik-danisman · gerekirse yone
    - Tur açılmayacaksa Fable her satıra `ODA/F5_uyari_cevaplari.md`'de karar yazar: `Ders · çekimler · düzeltilecek (tek revizyon
      çağrısı) | gerekçe (ör. "C14 atmosferli liman, 'mist' doğru")`. Denetçi KABUL F5.11'de bakar.
 5. **Kapı:** `denetci` (Ö + F5) → Fable. `FILM.md` §4 Durum sütunu → ✍️.
-6. **Sahibe iş listesi (faz 7 başlangıcı):** önce Flow proje ayarları (model sesi KAPALI filmde Return silent videos AÇIK; **model sesi AÇIK filmde**
+6. **Sahibe iş listesi (faz 7 başlangıcı):** önce Flow proje ayarları (21.10.2026'dan beri yeni filmde model sesi AÇIK; model sesi KAPALI eski filmde Return silent videos AÇIK; **model sesi AÇIK filmde**
    — `FILM.md` §5'te Kaynak = model sesi varsa — Return silent videos **KAPALI**, replik klipten gelir (12.10.2026) · Visible watermarking KAPALI;
    iş emri şablonunun başı), sonra yalnız **referans kareleri**. Hangi prompt, hangi
    dosya adıyla (`~/film_medya/<FILM>/ref/1.KARAKTER_v1.png …` — numara §3'ten; Flow'a yüklerken `EKLE` satırındaki sırayla).

@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this pipeline or methodology in your research, please cite it as below."
+authors:
+  - family-names: "Demiröz"
+    given-names: "Burak"
+title: "film_md: An Agentic, Docs-as-Code Production Pipeline for Photoreal AI Sci-Fi Cinema"
+version: 2.0.0
+date-released: 2026-10-22
+url: "https://github.com/Burak1320demiroz/film_md"
+repository-code: "https://github.com/Burak1320demiroz/film_md"
+keywords:
+  - "generative-ai"
+  - "multi-agent-systems"
+  - "autonomous-agents"
+  - "ai-filmmaking"
+  - "cinematography"
+  - "docs-as-code"
+  - "claude-code"
+  - "google-flow"
+  - "veo"
+license: MIT

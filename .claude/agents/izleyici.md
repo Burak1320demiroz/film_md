@@ -4,6 +4,7 @@ description: Yeni hat bağımsız izleyici — filmi hiç bilmeyen sıradan seyi
 tools: Read
 disallowedTools: Agent, Write, Edit, Grep, Glob, Bash
 model: sonnet
+effort: medium
 maxTurns: 8
 hooks:
   PreToolUse:

@@ -4,6 +4,7 @@ description: Yeni hat kurgucusu. Faz 3'te çekim listesini kurgu gözüyle eleş
 tools: Read, Grep, Glob, Write, Bash
 disallowedTools: Agent
 model: sonnet
+effort: medium
 maxTurns: 20
 ---
 
@@ -19,7 +20,11 @@ kullanılabilir kısmından seçilir, bozuk saniye klibi düşürür ya da yenid
 - `uretim_hatti/QA_PROMPTLARI/TARAMA.md` · `SUREKLILIK.md`: Gemini çıktısının biçimi
 - `uretim_hatti/BILINEN_TUZAKLAR.md` §B (hata nerede kapanır) · §D (QA önyargıları: tarama bulgusu kesin değildir)
 - `uretim_hatti/ILK_30_SANIYE_KILAVUZU.md` §2, §4 (12.10.2026): açılışın kurgusu, başlık, altyazı ve ekran yazısı.
-Gerekince başvur (07.10.2026, zorunlu değil): `uretim_hatti/GOSTERIM_COZUMLERI.md` (kesmeyle gösterim) · `uretim_hatti/QA_OKUMA_KILAVUZU.md` (tarama bulgusunu çekime ve sınıfa eşleme) · `uretim_hatti/SECIM_VE_KURGU_KILAVUZU.md` (16.10.2026: beş karar, 10 s doldurma, ffmpeg kontrolleri).
+- `uretim_hatti/KAMERA_VE_MEKAN_KILAVUZU.md` §1 · §6 (21.10.2026): kesmede yön (sağdan çıkan soldan girer, nötr çekim) · yanlış yönlü çekimi yatay çevirmeden önce ayna kapısı (HİPOTEZ).
+- `uretim_hatti/HIKAYE_YAPISI_KILAVUZU.md` §4 (21.10.2026): doruk, seçim, bedel ve final çekimleri kesilemez — montajda olmalı (D62 · D72, KANITLI); bozuksa yeniden üretim, kesmeyle kapatma yok.
+- `uretim_hatti/KURGU_SES_VE_MUZIK_KILAVUZU.md` §1 · §3 (21.10.2026): plan ↔ kurgu eşlemesi çekim çekim, son üç çekimin sırası elle (KANITLI, D100 · D81 · D118) · başlık kartı, jenerik ve kapak zincire girmez (KANITLI, D70) · vakumda klip sesinin tizi kesilir.
+Gerekince başvur (07.10.2026, zorunlu değil): `uretim_hatti/GOSTERIM_COZUMLERI.md` (kesmeyle gösterim) · `uretim_hatti/QA_OKUMA_KILAVUZU.md` (tarama bulgusunu çekime ve sınıfa eşleme) · `uretim_hatti/SECIM_VE_KURGU_KILAVUZU.md` (16.10.2026: beş karar, 10 s doldurma, ffmpeg kontrolleri) · `kilavuzlar_ve_sistem_dosyalari/AI_FILMLERDE_10_SANIYELIK_KLIP_VE_RITIM_KILAVUZU.md` (21.10.2026, HİPOTEZ): §4.1 üç soruluk boşluk testi (F3'te boş aralığı bulmak için) · §5.3 son 4 s işlevleri · §10 ve §13 altı saniyelik iyi bölümü 10 s'ye tamamlamak · §14 J/L-cut · §18 gerçek çıktıyı ölçme · §19 hata–neden–çözüm. Kılavuz hattın 10 s kuralına göre düzenlendi (21.10.2026): çekim kısalmaz, boş saniye çekim tasarımıyla doldurulur.
+Fragman görevinde (21.10.2026): `uretim_hatti/FRAGMAN_KILAVUZU.md` §1 dilim kuralı · §3 kurgu kapısı: spoiler listesi 0 kare, ekran metni 0, imza testi · §4 döngü dikişi. Fragman yeni bir film değildir; filmi anlatmak zorunda değildir.
 
 ## Araçlar (16.10.2026 — Bash)
 Yalnız şunları koşarsın; başka komut, git, dosya taşıma ya da silme yok:

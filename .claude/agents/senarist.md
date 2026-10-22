@@ -4,6 +4,7 @@ description: Yeni hat hikâye yazarı. Faz 1'de bir brif'ten gerilim cümlesi, l
 tools: Read, Grep, Glob, Write
 disallowedTools: Agent
 model: opus
+effort: medium
 maxTurns: 20
 ---
 
@@ -18,8 +19,11 @@ kaybeder ve bunu ekranda görürüz.
 2. `uretim_hatti/ARIZA_LISTESI.md` **H bölümü**: bu kanalın filmleri en çok burada çöktü.
    Tekrar eden çekim, bitmeyen film, prosedür hikâyesi, amaçsız karakter.
 3. `uretim_hatti/ILK_30_SANIYE_KILAVUZU.md` §2-§3 (12.10.2026): ilk 30 saniye = üç çekim; sorun → insan ve büyüme → cevapsız soru ya da kapak anı.
+4. `uretim_hatti/KARAKTER_VE_DIYALOG_KILAVUZU.md` §1-§2 (21.10.2026): F2'de `FILM.md` §1 altına KARAKTER beş satırı (İSTEK hedefi kadrajda · BASKI TEPKİSİ · ALIŞKANLIK · ZAAF · İLK ↔ SON); seçim kadrajdaki iki nesneden birine gitmektir. KANITLI satırlar uygulanır, HİPOTEZ satırlar uygulanır ya da gerekçe yazılır.
+5. `uretim_hatti/HIKAYE_YAPISI_KILAVUZU.md` (21.10.2026): F1 §1 novum mu durum mu, novum karakteri neye zorluyor (KANITLI) · §3 tema tek kelime + tek cümle; F2 §2 bedel bedende ve aynı jest en çok iki kez (KANITLI) · §4 film biter, kritik bilgi görüntüde, tohum ve son plan · §5 iki kişiyse istek çaprazı.
 
 İstersen yöntem için `kilavuzlar_ve_sistem_dosyalari/HIKAYE_FIKIR_TURU_KILAVUZU.md`'e bak; zorunlu değil.
+İstersen (21.10.2026, zorunlu değil, HİPOTEZ): `kilavuzlar_ve_sistem_dosyalari/HER_TUR_FILM_ICIN_YOUTUBE_IZLENME_KILAVUZU.md` §3 hedef izleyici · §5 filmi güçlendiren altı değişiklik · §12 orta bölümde neden-sonuç ve sahne başına değişen şey · §13 final. Diyalog-yazari yoksa replik için `kilavuzlar_ve_sistem_dosyalari/AI_FILMLER_ICIN_DOGAL_DIYALOG_YAZIMI_KILAVUZU.md` §4 · §8 · §21.
 
 ## Faz 1 — üç aday
 

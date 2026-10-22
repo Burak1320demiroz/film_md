@@ -13,7 +13,7 @@
 
 ```
 ESKİ HAT  121 film yazıldı · 63 kılavuz ~27.000 satır · 2.950 satırlık kontrol betiği.
-          Kanalda 225 video yayında (apexaic/DIS_SAYILAR.md §1) ama deponun performans
+          Kanalda 225 video yayında (uretim_hatti/KANAL/DIS_SAYILAR.md §1) ama deponun performans
           tablosuna hiçbiri işlenmedi — hiçbir filmin izleyici verisi ölçülmedi.
           Ham QA analizi (05.10.2026 · 49 tam film): hikâye kararı veren raporların çoğu
           "yapıyı yeniden kur / önermeyi baştan yaz" dedi; ölümcül teknik hataların ~%45'i
@@ -43,7 +43,8 @@ Halka n'nin bitiş karesi, halka n+1'in başlangıç karesidir.
 **Giriş noktası tek:** `/yeni-film`. Yeni film başlatır ya da `ODA/DURUM.md`'den sürdürür.
 - Faz skill'leri (`hikaye-odasi` · `sahneleme-odasi` · `ses-muzik` · `cekim-yaz` · `paketleme` · `klip-sec`)
   kendiliğinden açılmaz. Ana ajan onları dosya olarak okur; sahip `/adıyla` çağırabilir.
-- Eski hattın skill'leri (`prompt-kontrol` · `qa-isle` · `yeni-film/ESKI_HAT_SKILL.md`) dondurulmuştur.
+- Eski hattın skill'leri dondurulmuştur: `yeni-film/ESKI_HAT_SKILL.md`; `prompt-kontrol` · `qa-isle` · `yayin-takip`
+  21.10.2026'da `kilavuzlar_ve_sistem_dosyalari/ARSIV/skills/`'e taşındı (dış pazarlama skill'leriyle birlikte).
 
 ---
 
@@ -56,7 +57,7 @@ Halka n'nin bitiş karesi, halka n+1'in başlangıç karesidir.
      ref/ referans · kare/ başlangıç kareleri · ham/ Flow denemeleri · ses/ replik·efekt·müzik
      cikti/ taslak ve final · kareler/ kontak sayfaları · izleyici/ izleyici ajanına gösterilenler
   Repoya yalnız METİN girer: plan, prompt, seçim (timeline.json), not, ajan çıktısı, ölçüm.
-  Tek istisna (sahip kararı 12.10.2026): kök dizindeki README görselleri `readme_*.png` (.gitignore'da tek satır).
+  Tek istisna (sahip kararı 12.10.2026): README görselleri `images/readme_*.png` (.gitignore'da tek satır; 21.10.2026'da kökten images/'a taşındı).
 ③ HİÇBİR ŞEY SİLİNMEZ. Eski hat olduğu yerde kalır; kılavuz ve raporlar düzenlenmez.
 ④ HATA KURAL OLMAZ. Üretimde görülen hata filmin NOTLAR.md'sine "ret nedeni" satırı olur.
   Yeni ders, yeni kapı, yeni kılavuz YAZILMAZ. Aynı hata iki ayrı filmde, kayıtlı vakayla
@@ -126,7 +127,9 @@ Halka n'nin bitiş karesi, halka n+1'in başlangıç karesidir.
    ya da konuşmanın okunduğu çekim. Her filmde aynı uzun liste değil (SMOKE 19 maddenin 0'ı koşuldu); filmin kendi riski denenir.
    Pilotun dersi FİLM İÇİ nottur (ODA/F3p_pilot_karar.md → F5 görevine girdi), hat kuralı olmaz (§1 ④). Sahip "pilot yok" derse
    AŞILAN KAPILAR'a yazılır.
-⭐ Model sesi KAPALI: taslakta atılır. Replikler tek ses profilinden; ortam, efekt, müzik ayrı katman.
+⭐ Diyalog kurguda eklenmez (sahip kararı 21.10.2026): yeni filmde her replik model sesiyle videoda üretilir — künye `DIYALOG model sesi`,
+   FILM §5 Kaynak = model sesi (…), film_dogrula M. Kanıt: "kurguda kaydedilecek" 3/3 filmde kayıt yapılmadı, izleyici anlamadı; model
+   sesli MAYDAY anlaşıldı. Klibin geri kalan sesi taslakta atılır; ortam, efekt, müzik ayrı katman. Künyesinde DIYALOG olmayan eski film kendi kuralıyla sürer.
 ⭐ Her çekim 10 s (sahip kararı 08.10.2026): çekim sayısı = HEDEF_SURE / 10 (2 dk 12 · 4 dk 24 · 8 dk 48 ·
    16 dk 96); timeline'da her video parçası 10 s. Flow'un Veo klibi 4/6/8 s verir; 10 s'ye nasıl ulaşılacağı
    SMOKE P14'te ölçülür. Ritim süreyle değil çekim içi hareket ve kadraj değişimiyle kurulur (ARIZA H10).
@@ -140,7 +143,7 @@ Halka n'nin bitiş karesi, halka n+1'in başlangıç karesidir.
    Eski biçim film (§3 numarasız, örn. THE_WRONG_BURN) ⚠️ ile atlanır, eski kuralıyla sürer.
 ⭐ Model sesi replik (sahip kararı 12.10.2026, THE_MAYDAY_SEA ile): FILM §5 Kaynak "model sesi (telsiz | voice-over | ağız kadrajda)"
    → replik video promptuna BİREBİR yazılır, Omni konuşmayı videoda üretir; o parçanın sesi filme girer (timeline klip_sesi, yalnız
-   replik için; yatak planda kalır); kurgu kaydı yedek. Model sesi KAPALI kuralı diğer filmlerde sürer. film_dogrula M · SMOKE P18.
+   replik için; yatak planda kalır); 21.10.2026'dan beri yeni filmlerin tek diyalog yolu (yukarıda); kurgu kaydı yalnız eski filmlerde yedek. film_dogrula M · SMOKE P18.
 ⭐ Kesme sürekliliği (sahip, 12.10.2026: "geçişler keskin, kesmede arka ses komple değişiyor"): üç katman —
    PROMPT: §3 ORTAK GÖRÜNÜM cümlesi her promptta birebir, mekân ışık cümlesi birebir, ilk vuruş hareketle, aynı-mekân kesmesinde ölçek/açı farkı;
    SES: mekân başına TEK kesintisiz yatak klipleri aşar (timeline yataklar), mekân değişiminde 1-2 s çapraz, J/L zorunlu, müzik kesmede kesilmez;
@@ -282,6 +285,10 @@ uretim_hatti/                  ortak metinler · QA promptları · şablon · ar
 ESKİ HAT (donduruldu, dokunulmaz)
 AGENTS_ESKI_HAT.md             eski kontrat — arşiv haritası
 kilavuzlar_ve_sistem_dosyalari/ kılavuzlar · eski QA rubrikleri · raporlar · betikler
+                               ARSIV/ emekli formatlar: yatay_6_dk · yatay_10_dk · dikey_shorts_filmler (21.10.2026, eski hat shorts'ları)
+                               21.10.2026 üç yeni kılavuz (HİPOTEZ, ajan dosyalarında "gerekince başvur"): AI_FILMLER_ICIN_DOGAL_DIYALOG_YAZIMI ·
+                               AI_FILMLERDE_10_SANIYELIK_KLIP_VE_RITIM · HER_TUR_FILM_ICIN_YOUTUBE_IZLENME;
+                               üçü de sahip kararıyla 10 s kuralına göre düzenlendi, ilk sürümler _ham_kilavuzlar/ altında
 yatay_* / dikey_* içindeki eski hat filmleri (<FILM>_PLAN.md / BOLUM_*.md) dokunulmaz; yeni hat filmi aynı format
                                klasörüne FILM.md + ODA/ yapısıyla açılır (08.10.2026).
 ```

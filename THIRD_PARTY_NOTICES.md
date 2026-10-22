@@ -3,22 +3,22 @@
 The original work in this repository is released under the MIT License (see [`LICENSE`](LICENSE)).
 The five skills listed below were written by other authors and **are not covered by that license**.
 Each one keeps its own license, and a copy of that license sits next to its files.
-Sources and content hashes are recorded in [`skills-lock.json`](skills-lock.json).
+Sources and content hashes of the installed skills (`image`, `video`) are recorded in [`skills-lock.json`](skills-lock.json). The three marketingskills skills were archived on 21.10.2026: they are no longer installed, but their files and licenses are kept in the repository.
 
 | Skill | Path | Source | License | Copyright | Local changes |
 |---|---|---|---|---|---|
-| `ab-testing` | `.claude/skills/ab-testing/` | [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) | MIT | © 2025 Corey Haines | none recorded |
-| `content-strategy` | `.claude/skills/content-strategy/` | [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) | MIT | © 2025 Corey Haines | none recorded |
-| `social` | `.claude/skills/social/` | [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) | MIT | © 2025 Corey Haines | none recorded |
+| `ab-testing` | `kilavuzlar_ve_sistem_dosyalari/ARSIV/skills/ab-testing/` (archived 21.10.2026) | [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) | MIT | © 2025 Corey Haines | none recorded |
+| `content-strategy` | `kilavuzlar_ve_sistem_dosyalari/ARSIV/skills/content-strategy/` (archived 21.10.2026) | [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) | MIT | © 2025 Corey Haines | none recorded |
+| `social` | `kilavuzlar_ve_sistem_dosyalari/ARSIV/skills/social/` (archived 21.10.2026) | [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) | MIT | © 2025 Corey Haines | none recorded |
 | `image` | `.claude/skills/image/` | [smixs/visual-skills](https://github.com/smixs/visual-skills) | CC BY 4.0 | © 2026 Serge Shima | **modified**, see below |
 | `video` | `.claude/skills/video/` | [smixs/visual-skills](https://github.com/smixs/visual-skills) | CC BY 4.0 | © 2026 Serge Shima | **modified**, see below |
 
 ## coreyhaines31/marketingskills (MIT)
 
 The full MIT license text, including the copyright notice, is in:
-- `.claude/skills/ab-testing/LICENSE`
-- `.claude/skills/content-strategy/LICENSE`
-- `.claude/skills/social/LICENSE`
+- `kilavuzlar_ve_sistem_dosyalari/ARSIV/skills/ab-testing/LICENSE`
+- `kilavuzlar_ve_sistem_dosyalari/ARSIV/skills/content-strategy/LICENSE`
+- `kilavuzlar_ve_sistem_dosyalari/ARSIV/skills/social/LICENSE`
 
 ## smixs/visual-skills (CC BY 4.0)
 
@@ -34,7 +34,7 @@ Each folder includes two files from the upstream repository, copied verbatim: th
 
 ## Names and marks
 
-The MIT License covers code and text. It does not grant rights to the channel name **Apex AI Cinema / APEXAIC**, the **Λ** mark or the `readme_logo.png` logo. You may use the name to describe where the project came from. Do not use it in a way that suggests your work is the channel's own or is endorsed by it.
+The MIT License covers code and text. It does not grant rights to the channel name **Apex AI Cinema / APEXAIC**, the **Λ** mark or the `images/readme_logo.png` logo. You may use the name to describe where the project came from. Do not use it in a way that suggests your work is the channel's own or is endorsed by it.
 
 ## Services mentioned
 

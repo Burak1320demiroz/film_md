@@ -1,0 +1,13 @@
+{
+  "film": "THE_SNAP_LINE",
+  "medya_kok": "~/film_medya/THE_SNAP_LINE",
+  "cozunurluk": "1920x1080",
+  "fps": 24,
+  "klip_sesi": false,
+  "parcalar": [],
+  "ses": [],
+  "yataklar": [
+    {"dosya": "ses/yatak_sualti_taban.wav", "baslangic": 0.0, "bitis": 120.0, "kazanc_db": -18},
+    {"dosya": "ses/yatak_kordon_gerilim.wav", "baslangic": 20.0, "bitis": 90.0, "kazanc_db": -22}
+  ]
+}

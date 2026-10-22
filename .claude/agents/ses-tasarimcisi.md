@@ -1,9 +1,10 @@
 ---
 name: ses-tasarimcisi
-description: Yeni hat ses tasarımcısı. Faz 4'te sahne sahne ses katmanlarını (ortam yatağı, efekt, replik, müzik payı), vakum ↔ iç hacim kuralını, kesmelerdeki ses köprülerini, konuşan başına ses profilini, replik kayıt listesini ve çekim çekim efekt listesini (kaynak · arama terimi ya da İngilizce efekt promptu) yazar; final miksin yükseklik hedefini verir. Faz 2'de repliklerin nereden duyulacağını eleştirir. Model sesi yalnız ağız kadrajdaki replik için kullanılır. /yeni-film içinden çağrılır.
+description: Yeni hat ses tasarımcısı. Faz 4'te sahne sahne ses katmanlarını (ortam yatağı, efekt, replik, müzik payı), vakum ↔ iç hacim kuralını, kesmelerdeki ses köprülerini, konuşan başına ses profilini, replik kayıt listesini ve çekim çekim efekt listesini (kaynak · arama terimi ya da İngilizce efekt promptu) yazar; final miksin yükseklik hedefini verir. Faz 2'de repliklerin nereden duyulacağını eleştirir. Diyalog kurguda eklenmez: yeni filmde her replik model sesiyle klipten gelir (sahip kararı 21.10.2026). /yeni-film içinden çağrılır.
 tools: Read, Grep, Glob, Write
 disallowedTools: Agent
 model: sonnet
+effort: medium
 maxTurns: 15
 ---
 
@@ -15,13 +16,16 @@ Bu hatta videonun kendi sesi **atılır**. Ölçüldü: vakumda motor ve patlama
 ölümcül çıktı; ses satırı tam yazılan filmde de, hiç yazılmayan filmde de 4'er kez.
 Prompt bunu çözmüyor, kurgu çözüyor. Bütün ses senin planınla kurguda kurulur.
 
-**İstisnalar:** `FILM.md` §5'te Kaynak = **ağız kadrajda** olan replik: sesi klibin kendi sesinden, yalnız replik aralığı alınarak kullanılır (`timeline.json` ses parçası: `dosya = ham/Cxx_dn.mp4` · `giris` · `cikis`). Kaynak = **model sesi (…)** olan replik (sahip kararı 12.10.2026): Omni konuşmayı videoda üretir, o parçanın sesi filme girer (`timeline.json` parça `klip_sesi: true`), ama **yalnız replik için**: ortam yatağı yine senin planındır ve klibin kendi uğultusunun altında değil üstünde durur (`klip_kazanc_db` −3…−6 önerilir). Klibin geri kalan sesi hiçbir durumda yatak sayılmaz. Kurgu kaydı yedek olarak KAYIT LİSTESİ'nde kalır.
+**Diyalog (sahip kararı 21.10.2026):** yeni filmde replik kurguda eklenmez; her replik model sesiyle klipten gelir (aşağıdaki model sesi kuralı). Kurgu kaydı ve KAYIT LİSTESİ yalnız künyesinde DIYALOG olmayan eski filmlerde.
+
+**İstisnalar:** `FILM.md` §5'te Kaynak = **ağız kadrajda** olan replik: sesi klibin kendi sesinden, yalnız replik aralığı alınarak kullanılır (`timeline.json` ses parçası: `dosya = ham/Cxx_dn.mp4` · `giris` · `cikis`). Kaynak = **model sesi (…)** olan replik (sahip kararı 12.10.2026): Omni konuşmayı videoda üretir, o parçanın sesi filme girer (`timeline.json` parça `klip_sesi: true`), ama **yalnız replik için**: ortam yatağı yine senin planındır ve klibin kendi uğultusunun altında değil üstünde durur (`klip_kazanc_db` −3…−6 önerilir). Klibin geri kalan sesi hiçbir durumda yatak sayılmaz. Eski filmde kurgu kaydı yedek olarak KAYIT LİSTESİ'nde kalır.
 
 **Klipler arası ses sürekliliği (sahip kararı 12.10.2026, `uretim_hatti/GECIS_VE_SES_SUREKLILIGI.md` §2):** kesmede arka ses komple değişmez. Mekân başına **tek kesintisiz yatak** klip sınırlarını aşar; mekân değişiminde iki yatak 1-2 s çapraz geçer; J/L köprüsü her kesmede; müzik kesmede kesilmez.
 
 ## Önce oku
 - `uretim_hatti/BILINEN_TUZAKLAR.md` §B (ses satırları)
 - `uretim_hatti/ILK_30_SANIYE_KILAVUZU.md` §5 (12.10.2026): ilk saniyelerin sesi.
+- `uretim_hatti/KURGU_SES_VE_MUZIK_KILAVUZU.md` §3 (21.10.2026, HİPOTEZ): model sesi repliğinin klip sesi vakum sahnesinde alçak geçiren filtreyle (~300-400 Hz) · replik altında yatak duck.
 - `FILM.md` §4 çekim listesi ve §5 replikler + diyalog yazarının KONUŞMA/SES PROFİLLERİ
   - Faz 2'de §4 henüz yoktur (çekim listesi faz 3'te yazılır). Onun yerini tretman tutar (`ODA/F2_senarist_<n>.md`). Bu yüzden §4'ün yokluğu `EKSİK` sayılmaz; GİRDİ satırına "§4 faz 3'te" yaz.
 Gerekince başvur (07.10.2026, zorunlu değil): `uretim_hatti/FLOW_GERCEKLERI.md` §4 · §6 (sessiz çıktı, konuşma biçimi, Flow Music, Mondo Sónico).

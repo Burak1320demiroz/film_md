@@ -1,0 +1,50 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    name: Regression Tests & Linting
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install System Dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg ffprobe
+
+      - name: Install Python Tool Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pillow
+
+      - name: Run Full Regression Test Suite (kos.py)
+        run: |
+          python3 uretim_hatti/test/kos.py
+
+      - name: Run Structure Linter on Flagship Film
+        run: |
+          python3 uretim_hatti/araclar/film_dogrula.py yatay_4_dk_filmler/THE_MAYDAY_SEA
+
+      - name: Enforce No Media Invariant
+        run: |
+          # Verify that no media files (video/audio) are tracked in git
+          FORBIDDEN=$(git ls-files '*.mp4' '*.mov' '*.wav' '*.mp3' '*.m4a' | grep -v 'test/ornekler' || true)
+          if [ -n "$FORBIDDEN" ]; then
+            echo "❌ ERROR: Invariant broken! Media files found tracked in git:"
+            echo "$FORBIDDEN"
+            exit 1
+          fi
+          echo "✅ Invariant verified: Strictly text only in git."

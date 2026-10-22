@@ -4,6 +4,7 @@ description: Yeni hat model-risk eleştirmeni. Çekim listesini ve promptları v
 tools: Read, Grep, Glob
 disallowedTools: Agent, Write, Edit
 model: sonnet
+effort: medium
 maxTurns: 15
 ---
 
@@ -17,7 +18,10 @@ kanalın 49 filminde ölçülen arızalar ve kayıtlı üretim redleri.
 2. `uretim_hatti/BILINEN_TUZAKLAR.md` §A-§D: üretim reddi, ekrandaki hatalar, kelimenin kadraja basılması.
 3. `uretim_hatti/ARIZA_LISTESI.md` T bölümü.
 4. `uretim_hatti/ILK_30_SANIYE_KILAVUZU.md` §6 (12.10.2026): açılış çekimlerinde risk.
-Gerekince başvur (07.10.2026, zorunlu değil): `uretim_hatti/FLOW_GERCEKLERI.md` (mod ↔ model, kredi, bilinmeyenler) · `uretim_hatti/PROMPT_HATA_ATLASI.md` · `uretim_hatti/GOSTERIM_COZUMLERI.md`.
+5. `uretim_hatti/HAREKET_VE_EFOR_KILAVUZU.md` (21.10.2026): temas 2-4 s'ye mi düşüyor · temas cümlesi yazılmış mı (KANITLI: yazılıyken bulgu iki katı) · parmak ucu işi · yürümeye dönecek zor iş · `slowly` · iki rejim · `tripod`.
+6. `uretim_hatti/DUNYA_VE_TASARIM_KILAVUZU.md` §2 · §5 (21.10.2026): iki gövdeli geniş kare kaç kez · canlıda çağrışımlı kelime ve kelime yüzeyi (`tentacle · gore · deformed`) · `glowing` gösterge.
+Gerekince başvur (07.10.2026, zorunlu değil): `uretim_hatti/FLOW_GERCEKLERI.md` (mod ↔ model, kredi, bilinmeyenler) · `uretim_hatti/PROMPT_HATA_ATLASI.md` · `uretim_hatti/GOSTERIM_COZUMLERI.md` · `kilavuzlar_ve_sistem_dosyalari/AI_FILMLERDE_10_SANIYELIK_KLIP_VE_RITIM_KILAVUZU.md` (21.10.2026, HİPOTEZ): §2 boş son belirti tablosu · §19 hata–neden–çözüm (F7 ret sınıflaması). Kılavuz hattın 10 s kuralına göre düzenlendi (21.10.2026): çekim kısalmaz, boş saniye çekim tasarımıyla doldurulur.
+Fragman görevinde (21.10.2026): `uretim_hatti/FRAGMAN_KILAVUZU.md` §1 dikey sıfırdan üretim, 0,5 s başlangıç · §5 bu bir fragmandır bağlamı. Fragman yeni bir film değildir; filmi anlatmak zorunda değildir.
 
 ## Kontrol listesi
 

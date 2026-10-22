@@ -7,8 +7,10 @@ allowed-tools: Agent, Read, Grep, Glob, Write, Edit, Bash(python3:*)
 
 # Ses ve müzik — faz 4 · faz 8 (müzik)
 
-Ortak kural: **modelin ürettiği ses kullanılmaz**. Taslakta atılır (`kurgu.py`), ham
-dosyada kalır. Bütün ses kurguda bu planla kurulur.
+Ortak kural: **modelin ürettiği ses kullanılmaz** — repliğin kendisi hariç. Taslakta atılır (`kurgu.py`), ham
+dosyada kalır. Ortam, efekt ve müzik kurguda bu planla kurulur.
+
+- ⭐ **Diyalog kurguda eklenmez (sahip kararı 21.10.2026):** yeni filmde her replik model sesidir (aşağıdaki istisna 2 kural olur); kurgu kaydı ve kayıt listesi yalnız künyesinde DIYALOG olmayan eski filmlerde.
 
 - İstisna 1: `FILM.md` §5'te Kaynak = ağız kadrajda olan replik. O repliğin sesi klipten alınır (`timeline.json` ses parçası `giris`/`cikis` ile).
 - İstisna 2 (sahip kararı 12.10.2026): Kaynak = **model sesi (…)** olan replik: Omni konuşmayı videoda üretir; o parça `timeline.json`'da
@@ -49,7 +51,7 @@ Faz döngüsü: `yeni-film` §2. Görev metinleri: `uretim_hatti/AJAN_GOREVLERI.
 4. **Sahibe iş:**
    - Google Flow Music'te üretim (resmî ürün, eski adı ProducerAI; Lyria 3.5); indirme `~/film_medya/<FILM>/ses/muzik_v1.wav`.
    - ⚠️ Ticari kullanım: resmî kaynakta açık izin cümlesi YOK; yalnız Google Hizmet Şartları ("Google won't claim ownership over that content").
-     Para kazanan yayından önce sahip koşulları kendisi kontrol eder (`apexaic/POLITIKA_VE_RISK.md` §4). "Ücretli plan gerekir" ve "14 gün içinde silinir" bilgileri doğrulanmadı (`ARASTIRMA/04_SUZME_20261007.md` R8); dosyayı yine hemen indir.
+     Para kazanan yayından önce sahip koşulları kendisi kontrol eder (`uretim_hatti/KANAL/POLITIKA_VE_RISK.md` §4). "Ücretli plan gerekir" ve "14 gün içinde silinir" bilgileri doğrulanmadı (`ARASTIRMA/04_SUZME_20261007.md` R8); dosyayı yine hemen indir.
 5. Müzik, efektler ve replikler `timeline.json` → `ses` listesine (başlangıç saniyesi + kazanç; gerekirse `giris`/`cikis` ve `solma`);
    ortam yatakları → `yataklar` listesine (mekân başına, `baslangic`/`bitis` klipleri aşar, `gecis` 1-2 s örtüşme = çapraz geçiş);
    model sesi replik taşıyan parçalar `klip_sesi: true`. `kurgu.py taslak` sesli taslak üretir.

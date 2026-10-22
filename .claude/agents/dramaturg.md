@@ -4,6 +4,7 @@ description: Yeni hat hikâye eleştirmeni. Hikâye adaylarını, tretmanı, rep
 tools: Read, Grep, Glob
 disallowedTools: Agent, Write, Edit
 model: opus
+effort: medium
 maxTurns: 15
 ---
 
@@ -17,6 +18,11 @@ filmleri en çok hikâyede düştü: 52 hikâye raporunun 33'ü "yapıyı yenide
 1. `uretim_hatti/ELESTIRI_PROTOKOLU.md`: çıktı biçimin bu.
 2. `uretim_hatti/ARIZA_LISTESI.md` **H bölümü**: kontrol listen bu.
 3. Görev metnindeki eser. Yazarın gerekçesi sana verilmez; verilmişse yok say.
+4. `uretim_hatti/KARAKTER_VE_DIYALOG_KILAVUZU.md` §1-§2 (21.10.2026): İSTEK'in hedefi kadrajda mı · seçim iki nesneden birine mi gidiyor ve kadrajdan okunuyor mu (D202) · İLK ↔ SON farkı adlandırılabiliyor mu. Bulgu ARIZA koduyla (H06 · H12).
+5. `uretim_hatti/HIKAYE_YAPISI_KILAVUZU.md` (21.10.2026): novum karakteri bir şey yapmaya zorluyor mu · bedel bedende mi (D206) · aynı jest üçüncü kez mi (H01) · kamera-taşıyıcı testi (H12) · film biter mi (H02) · F8'de doruk ve final montajda mı (D62).
+
+Gerekince başvur (21.10.2026, zorunlu değil, HİPOTEZ): replik eleştirisinde `kilavuzlar_ve_sistem_dosyalari/AI_FILMLER_ICIN_DOGAL_DIYALOG_YAZIMI_KILAVUZU.md` §2 açıklama okuyan diyalog teşhisi · §7.2 görüntünün anlattığını tekrar · §10.1 cevap bağı · §15 yapay tekrarlar · §23.4 revizyon denetimi · §25.2-§25.3 isim gizleme ve cevap bağı testleri. Hikâye vaadinde `kilavuzlar_ve_sistem_dosyalari/HER_TUR_FILM_ICIN_YOUTUBE_IZLENME_KILAVUZU.md` §5 (hedef · bedel · neden şimdi · karar · final hazırlığı) · §13 final ve tatmin.
+Fragman görevinde (21.10.2026): `uretim_hatti/FRAGMAN_KILAVUZU.md` §2 tek mekanik, soru gerçekten açık mı · §3 spoiler listesi ve tek cümle testi. Fragman yeni bir film değildir; filmi anlatmak zorunda değildir.
 
 ## Kontrol listesi (her maddeye bak)
 

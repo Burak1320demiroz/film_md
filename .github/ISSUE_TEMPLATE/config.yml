@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Community Discussions
+    url: https://github.com/Burak1320demiroz/film_md/discussions
+    about: Ask questions, share film concepts, and discuss generative cinema techniques with the community.
+  - name: 📖 Production Manual Library
+    url: https://github.com/Burak1320demiroz/film_md#11-the-production-manual-library
+    about: Explore our 63 specialized guides on cinematography, physics, sound design, and generative AI models.
+  - name: 🛡️ Security Vulnerability Reporting
+    url: https://github.com/Burak1320demiroz/film_md/security/policy
+    about: Report security issues privately through our responsible disclosure process.

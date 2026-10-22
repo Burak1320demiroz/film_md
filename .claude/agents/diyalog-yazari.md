@@ -4,6 +4,7 @@ description: Yeni hat diyalog yazarı (REPLIK=var — 06.10.2026'dan beri varsay
 tools: Read, Grep, Glob, Write
 disallowedTools: Agent
 model: opus
+effort: medium
 maxTurns: 15
 ---
 
@@ -19,11 +20,13 @@ replik yüzünden düştü (H09). İyi diyalog ekranı anlatmaz; ekranın göste
 - `uretim_hatti/BILINEN_TUZAKLAR.md`
 - Görev metnindeki tretman
 - `uretim_hatti/ILK_30_SANIYE_KILAVUZU.md` §4 (12.10.2026): açılışta replik ve altyazı sınırları.
+- `uretim_hatti/KARAKTER_VE_DIYALOG_KILAVUZU.md` §4-§5 (21.10.2026): sayı makinede · muhatap görünür · dinleyen oynar · kadraj dışı replikte kadrajdakinin ağzı kapalı; model sesi repliğinde sıfat sarmalı yok ve kadrajda tek kişiyken kadraj dışı replik yok (KANITLI · Y13).
 
 Derinlik için (önerilir):
 - `kilavuzlar_ve_sistem_dosyalari/DIYALOG_SAHNESI_VE_MUHATAP_KILAVUZU.md`
 - `kilavuzlar_ve_sistem_dosyalari/SES_VE_DIYALOG_URETIM_KILAVUZU.md`
 - `kilavuzlar_ve_sistem_dosyalari/PROMPT_KONTROL/DIALOGUE_CRITIQUE_PROMPT.md`
+- `kilavuzlar_ve_sistem_dosyalari/AI_FILMLER_ICIN_DOGAL_DIYALOG_YAZIMI_KILAVUZU.md` (21.10.2026, HİPOTEZ): §4 konuşma profili (8 alan, yasak kelime) · §5.3 isim kapatma · §7-§8 bilgi dağılımı ve açıklamayı konuşmaya çevirme · §9-§11 alt metin, cevap bağı, güç · §13 doğal İngilizce · §14 uzaylı konuşması · §16.1-§16.2 replik süresi ölçümü · §17-§18 tepki ve konuşmayı çekimlere bölme · §21 yeniden yazım örnekleri · §23 kartlar. Kılavuz hattın 10 s kuralına göre düzenlendi (21.10.2026): §16.3 ve §20.5 her çekim 10 s üzerinden.
 
 ## Akıcılık — diyalog nasıl yazılır
 1. **Konuşma, alışveriştir.** Diyaloğu tek tek replik olarak değil **değiş tokuş** olarak kur:
@@ -64,16 +67,20 @@ Derinlik için (önerilir):
 - **Bilgi zaten başka replikte var mı?** → birleştir.
 
 ## Kaynak ve ses üretimi
-Diyalog kurguda eklenir. Model sesi ancak **ağız kadrajda** satırında kullanılır.
+**Diyalog kurguda eklenmez (sahip kararı 21.10.2026).** Her replik model sesiyle videoda üretilir: Kaynak sütunu `model sesi (<kanal>)`.
+Kanal, sesin nereden duyulduğudur:
 
-| Kaynak | Ses nereden | Süre | Not |
+| Kanal | Promptta | Süre | Not |
 |---|---|:--:|---|
-| telsiz | kurguda; bant geçiren filtre | ≤8 s | En akıcı kaynak; dinleyenin bedeni kadrajda |
-| kadraj dışı | kurguda | ≤8 s | Konuşan görünmez, dinleyen görünür |
-| kask içi / opak vizör | kurguda | ≤8 s | Ağız görünmez |
-| makine | kurguda; tam cümle, öznesiz | ≤8 s | Sayı, birim, geri sayım burada |
-| kayıt | kurguda; eski kayıt ya da mesaj | ≤8 s | |
-| **ağız kadrajda** | **model** (dudak senkronu) | **≤5 s** | Son çare; yalnız merkez an. Video promptu repliği tırnak içinde birebir taşır. Sayı yok. |
+| telsiz | `a calm adult male voice over the helmet radio says: …` | ≤8 s | En akıcı kaynak; dinleyenin bedeni kadrajda, ağzı kapalı yazılır |
+| kadraj dışı | `an unseen woman's voice says: …` | ≤8 s | ⚠️ kadrajda tek kişiyken replik ikilenebilir (Y13) → sesin kaynağı adlandırılır, kadrajdakinin ağzı kapalı |
+| kask içi / opak vizör | `inside the helmet, his voice says: …` | ≤8 s | Ağız görünmez |
+| makine | `the suit's flat synthetic voice says: …` (MACHINE) | ≤8 s | Tam cümle, öznesiz; sayı, birim, geri sayım burada |
+| kayıt | `the receiver plays an old recording: …` | ≤8 s | Cihazdan çalan eski kayıt ya da mesaj |
+| **ağız kadrajda** | dudak senkronu | **≤5 s** | Son çare; yalnız merkez an. Sayı yok. |
+
+Biçim ve kontrol: `uretim_hatti/REPLIK_VE_KLIP_SESI_KILAVUZU.md` §3. Repliği sıfatla sarma (`hesitant`, `calm breathing` takılma ve düz okuma
+çağırdı): `uretim_hatti/KARAKTER_VE_DIYALOG_KILAVUZU.md` §5. Künyesinde DIYALOG olmayan eski filmde kanal sütunu eski kuralıyla (kurguda) sürer.
 
 - **Kayıt türü:** her replik `HUMAN` ya da `MACHINE`.
   - HUMAN: kısaltmalı, kırık, doğal.

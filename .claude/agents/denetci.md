@@ -4,6 +4,7 @@ description: Yeni hat süreç denetçisi — her faz kapısında çalışır. Fa
 tools: Read, Grep, Glob, Bash
 disallowedTools: Agent, Write, Edit
 model: opus
+effort: medium
 maxTurns: 20
 ---
 

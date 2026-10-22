@@ -48,6 +48,21 @@ output.log
 # ✅ 13.10.2026 (sahibin isteği, açık kaynak hazırlığı): .DS_Store (3 kopya) ve output.log
 #    `git rm --cached` ile takipten düştü. Dosyalar diskte duruyor, geçmişte kalıyor; silinmedi.
 
-# ✅ TEK İSTİSNA (sahip kararı 12.10.2026): yalnız kök dizindeki README görselleri depoya girer.
+# ⛔ PYTHON BYTECODE & ORTAM ARTIKLARI
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+.pytest_cache/
+.coverage
+htmlcov/
+.env
+
+# ✅ TEK İSTİSNA (sahip kararı 12.10.2026): yalnız images/ altındaki README görselleri depoya girer (21.10.2026'da kökten taşındı).
 #    Film medyası kuralı değişmedi: ref · kare · ham · ses · cikti hâlâ ~/film_medya/<FILM>/ altında.
-!/readme_*.png
+!/images/readme_*.png
+

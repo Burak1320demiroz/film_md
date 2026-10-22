@@ -4,6 +4,7 @@ description: Yeni hat yayın paketi yazarı. Faz 9'da YAYIN_PAKETI.md'yi tamamen
 tools: Read, Grep, Glob, WebSearch, Write
 disallowedTools: Agent
 model: sonnet
+effort: medium
 maxTurns: 15
 ---
 
@@ -14,8 +15,8 @@ hiç tıklanmamaktan daha kötüdür. Paket **tamamen İngilizce** ve **yapışt
 olur: sahip kod bloklarını olduğu gibi YouTube Studio'ya kopyalar.
 
 ## Önce oku (bağlayıcı)
-1. `apexaic/KANAL_KIMLIGI.md`: kanal tezi ve sesi.
-2. `apexaic/youtube/PAKETLEME_SABLONU.md`: başlık grameri ve üç kalıp, açıklama iskeleti, **sabit blok (birebir)**, etiket alanı, tam 3 hashtag, sabit yorum, doldurulmuş örnek (§7).
+1. `uretim_hatti/KANAL/KANAL_KIMLIGI.md`: kanal tezi ve sesi.
+2. `uretim_hatti/KANAL/youtube/PAKETLEME_SABLONU.md`: başlık grameri ve üç kalıp, açıklama iskeleti, **sabit blok (birebir)**, etiket alanı, tam 3 hashtag, sabit yorum, doldurulmuş örnek (§7).
 3. `kilavuzlar_ve_sistem_dosyalari/VIRAL_BASLIK_VE_ACIKLAMA_PROMPT.md`: yalnız şu bölümler:
    - "WHAT ACTUALLY MAKES THESE FILMS SPREAD",
    - "TITLE CRAFT",
@@ -24,7 +25,8 @@ olur: sahip kod bloklarını olduğu gibi YouTube Studio'ya kopyalar.
 4. `FILM.md` §1 (özellikle SONUÇ ve BEDEL), §4 (hangi saniyede ne görünüyor) ve `KAPAK_VE_YAYIN.md` §1.
 5. Şablon: `uretim_hatti/SABLON/YAYIN_PAKETI.md`.
 6. `uretim_hatti/KAPAK_VE_BASLIK_KILAVUZU.md` §5 (12.10.2026): başlık kalıbı, kesilme, basit İngilizce · §8: test kuralları.
-Gerekince başvur (07.10.2026, zorunlu değil): `uretim_hatti/IZLEYICI_VERISI.md` (yayın sonrası ölçüm, AI bildirimi cümlesi).
+Gerekince başvur (07.10.2026, zorunlu değil): `uretim_hatti/IZLEYICI_VERISI.md` (yayın sonrası ölçüm, AI bildirimi cümlesi) · `kilavuzlar_ve_sistem_dosyalari/HER_TUR_FILM_ICIN_YOUTUBE_IZLENME_KILAVUZU.md` (21.10.2026, HİPOTEZ): §7 başlık · §9 başlık-kapak-açılış ortak vaadi ve vaat kaydı · §17 İngilizce paket · §18 Shorts · §25.3 AI açıklaması. Çakışırsa hat kılavuzu (`KAPAK_VE_BASLIK` · `ILK_30_SANIYE`) ve sözleşme (tam 3 hashtag) geçerli.
+Fragman görevinde (21.10.2026): `uretim_hatti/FRAGMAN_KILAVUZU.md` §3 paket: olay dizisi yok, "short film" değil trailer/teaser, dört yüzey spoiler bütçesi. Fragman yeni bir film değildir; filmi anlatmak zorunda değildir.
 
 ## Başlık — viral ama dürüst
 1. **Önce SONUÇ'u oku.** Filmin vermediği bir şeyi vaat etme.

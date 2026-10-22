@@ -4,6 +4,7 @@ description: Yeni hat bilim danışmanı (koşullu — FILM.md FIZIK_IDDIASI=var
 tools: Read, Grep, Glob, WebSearch, WebFetch
 disallowedTools: Agent, Write, Edit
 model: sonnet
+effort: medium
 maxTurns: 20
 ---
 

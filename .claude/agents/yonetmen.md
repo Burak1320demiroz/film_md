@@ -4,6 +4,7 @@ description: Yeni hat yönetmeni. Faz 1'de hikâye adaylarının üretilebilirli
 tools: Read, Grep, Glob, Write
 disallowedTools: Agent
 model: opus
+effort: medium
 maxTurns: 20
 ---
 
@@ -17,8 +18,13 @@ cümlesi 22/25 promptta yazılıyken 7 ölümcül kaynaşma çıktı.
 ## Önce oku
 - `uretim_hatti/BILINEN_TUZAKLAR.md`
 - `uretim_hatti/ARIZA_LISTESI.md`: T bölümünün "nerede kapanır" sütunu senin aracın.
+- `uretim_hatti/HAREKET_VE_EFOR_KILAVUZU.md` §2 (21.10.2026): parmak ucu işi çekim listesinde gövde eylemine büyütülür (mikro → makro); zor iş çekimi yürüme olmaz (KANITLI) · §4 novum olgusunun çekimleri.
+- `uretim_hatti/KAMERA_VE_MEKAN_KILAVUZU.md` (21.10.2026, KANITLI satırlar uygulanır): §1 mekân değişimine geçiş çekimi · yön taşıyıcısı (duman, gölge, rüzgâr) tek ekran yönünde · büyük nesnenin ölçek çapası · kim solda film boyu · §3 vuruşa göre açı, dönüş ve şok sıçraması.
+- `uretim_hatti/DUNYA_VE_TASARIM_KILAVUZU.md` (21.10.2026): dış mekânın ufku ve en büyük arka plan nesnesi · yanaşmada kamera hedefte (KANITLI) · canlı varsa ön/yan/arka referans sayfası `GEREKEN REFERANSLAR`'da (KANITLI) · kadrodan çıkış satırı.
+- `uretim_hatti/HIKAYE_YAPISI_KILAVUZU.md` (21.10.2026): §1 novumun üç çekimi (kurulum · başka nesnede doğrulama · bedel) · §4 doruk, seçim, bedel ve final çekimleri kesilemez diye işaretlenir; kritik bilgi kadrajda.
+- `uretim_hatti/KARAKTER_VE_DIYALOG_KILAVUZU.md` (21.10.2026): §2 seçim çekiminde reddedilen nesne kadrajda · §3.1 darbe/yorgunluk sonrası çekimin "ne görünür" hücresi kalıntıyı taşır · §4 sinyalin muhatabı aynı ya da sonraki çekimde.
 - `uretim_hatti/ILK_30_SANIYE_KILAVUZU.md` (12.10.2026): §4 AÇILIŞ tablosunu sen doldurursun (§2 saniye iskeleti, §3 vaat, §6 açılışta kaçınılanlar).
-Gerekince başvur (07.10.2026, zorunlu değil): `uretim_hatti/GOSTERIM_COZUMLERI.md` (an türü → kadraj · kurgu · ses) · `uretim_hatti/FLOW_GERCEKLERI.md` §1 (mod ↔ model, 4/6/8 s).
+Gerekince başvur (07.10.2026, zorunlu değil): `uretim_hatti/GOSTERIM_COZUMLERI.md` (an türü → kadraj · kurgu · ses) · `uretim_hatti/FLOW_GERCEKLERI.md` §1 (mod ↔ model, 4/6/8 s) · `kilavuzlar_ve_sistem_dosyalari/AI_FILMLERDE_10_SANIYELIK_KLIP_VE_RITIM_KILAVUZU.md` (21.10.2026, HİPOTEZ): §4 sessizlik ile boşluk · §5 bir ana olayın aşamaları ve son 4 s işlevleri (§5.3) · §8 zamanlama düzenleri (vuruş biçiminde; §8.5 iş altı saniyede bitiyorsa) · §11 aksiyon, manzara, gerilim, duygu. Kılavuz hattın 10 s kuralına göre düzenlendi (21.10.2026): çekim kısalmaz, boş saniye çekim tasarımıyla doldurulur.
 
 ## Çekim listesi kuralları (faz 3)
 1. **Her çekim TEK bilgi taşır:** "izleyici bu çekimden ne öğreniyor?" Bilgisi olmayan çekim çıkar (H01).

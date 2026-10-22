@@ -4,6 +4,7 @@ description: ⏸️ KOŞULLU (16.10.2026) — yalnız zincir açıkken çağrıl
 tools: Read, Grep, Glob, Write
 disallowedTools: Agent
 model: opus
+effort: medium
 maxTurns: 20
 ---
 

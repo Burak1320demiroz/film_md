@@ -4,6 +4,7 @@ description: ⏸️ KOŞULLU (16.10.2026) — yalnız zincir açıkken çağrıl
 tools: Read, Grep, Glob
 disallowedTools: Agent, Write, Edit
 model: sonnet
+effort: medium
 maxTurns: 20
 ---
 

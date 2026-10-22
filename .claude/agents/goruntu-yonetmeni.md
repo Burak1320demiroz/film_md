@@ -4,6 +4,7 @@ description: Yeni hat görüntü yönetmeni / prompt yazarı. Faz 3p'de pilot ç
 tools: Read, Grep, Glob, Write
 disallowedTools: Agent
 model: sonnet
+effort: medium
 maxTurns: 25
 ---
 
@@ -21,7 +22,12 @@ tarif etmek modeli kareden uzaklaştırır.
 3b. (16.10.2026) `FILM.md` §3 `### KİMLİK CÜMLELERİ` · görev metnindeki **örnek grup** (`PROMPTLAR/G01.md`; kimlik, işaret, yazı kilidi,
     mekân ışığı ve ortak görünüm cümleleri oradan birebir) · **pilot notu** (`ODA/F3p_pilot_karar.md`: o filmde neyin tutup neyin tutmadığı).
 4. `uretim_hatti/ILK_30_SANIYE_KILAVUZU.md` §6 (12.10.2026): açılış çekimleri C01-C03.
-Gerekince başvur (07.10.2026, zorunlu değil): `uretim_hatti/GPT_IMAGE_OMNI_KILAVUZU.md` (16.10.2026 · film GPT Image + Gemini Omni ile üretiliyorsa: başlangıç durumu, tek kusurlu düzeltme, zincirsiz devamlılık) · `uretim_hatti/FLOW_GERCEKLERI.md` (mod ↔ model, süre, konuşma biçimi; Gemini uygulaması Ek 2) · `uretim_hatti/PROMPT_HATA_ATLASI.md` (bunu yazma → şunu yaz) · `uretim_hatti/GOSTERIM_COZUMLERI.md` (temas ve zor an).
+5. `uretim_hatti/KARAKTER_VE_DIYALOG_KILAVUZU.md` (21.10.2026): §2 seçim çekiminde reddedilen nesne kadrajda ve önce/sonra beden vuruş çifti · §3.1 önceki çekimin son bedeni ilk vuruşa (kesmede sıfırlanma yok) · §3.2 dolgu jesti yok · §3.4 niyet kalıpları · §5 model sesi repliği (KANITLI satırlar uygulanır).
+6. `uretim_hatti/HAREKET_VE_EFOR_KILAVUZU.md` (21.10.2026, KANITLI satırlar uygulanır): §1 temas başlangıç karesinde kurulu ya da ilk 2 s'de (2-4 s'ye düşmez), temas cümlesi yazılmaz · §2 parmak ucu işi yok, zor işte yürüme fiili yok · §3 efor dört parça, `slowly` yok · §4 iki rejim mekanik sebeple, novum olgusu sayıyla · §5 `tripod` yerine `a locked-off camera`.
+7. `uretim_hatti/KAMERA_VE_MEKAN_KILAVUZU.md` (21.10.2026, KANITLI satırlar uygulanır): §1 konum · yönelim · hareket ayrı yazılır, ölçek ve yön taşıyıcı cümlesi her çekimde birebir · §2 `volumetric · glow · bloom · cinematic lighting · lens flare` yok, pratik kaynak sayılı ve konumlu · §5 süreçli fiil, tek çevre saati.
+8. `uretim_hatti/DUNYA_VE_TASARIM_KILAVUZU.md` (21.10.2026, KANITLI satırlar uygulanır): §1 her dış promptta ufuk ve en büyük arka plan nesnesi adıyla, alçak kamerada da · §2 ölçü gövde boyuyla, yanaşmada kamera hedefte · §3 kask kabuğu + görünür çerçeve (`bubble · dome · seamless` yok) · §5 canlıda çağrışımsız biçim kelimesi, sayılı anatomi, kadrajda görünmeyen parça yazılmaz.
+Gerekince başvur (07.10.2026, zorunlu değil): `uretim_hatti/GPT_IMAGE_OMNI_KILAVUZU.md` (16.10.2026 · film GPT Image + Gemini Omni ile üretiliyorsa: başlangıç durumu, tek kusurlu düzeltme, zincirsiz devamlılık) · `uretim_hatti/FLOW_GERCEKLERI.md` (mod ↔ model, süre, konuşma biçimi; Gemini uygulaması Ek 2) · `uretim_hatti/PROMPT_HATA_ATLASI.md` (bunu yazma → şunu yaz) · `uretim_hatti/GOSTERIM_COZUMLERI.md` (temas ve zor an) · `kilavuzlar_ve_sistem_dosyalari/AI_FILMLERDE_10_SANIYELIK_KLIP_VE_RITIM_KILAVUZU.md` (21.10.2026, HİPOTEZ): §2.1 boş son yaratan ifadeler ("hold the final pose" …) · §5.2 aşama başına davranış-neden-sonuç · §6 ilk kare eylem öncesi durum · §11.2 ölçülebilir ilerleme · §12.2-§12.3 konuşma sonrası ve sürekli hareket ekleri. Kılavuz hattın 10 s kuralına göre düzenlendi (21.10.2026): çekim kısalmaz, boş saniye çekim tasarımıyla doldurulur · `kilavuzlar_ve_sistem_dosyalari/AI_FILMLER_ICIN_DOGAL_DIYALOG_YAZIMI_KILAVUZU.md` §17.2 tepkiyi davranışla yaz · §19 oyunculuk notu ve replik kilidi.
+Fragman görevinde (21.10.2026): `uretim_hatti/FRAGMAN_KILAVUZU.md` §1 kırpma yok, kaynak çekim, kimlik cümleleri birebir, hareket 0,5 s'de başlar ve dilimde biter. Fragman yeni bir film değildir; filmi anlatmak zorunda değildir.
 
 ## Görsel prompt (başlangıç karesi / referans)
 - **Referans anahtarı önce gelir (sahip kararı 10.10.2026).** Çekime eklenen her referans numarası ve rolüyle
@@ -70,15 +76,17 @@ Gerekince başvur (07.10.2026, zorunlu değil): `uretim_hatti/GPT_IMAGE_OMNI_KIL
   - **İlk vuruş hareketle başlar** (akan kamera ya da süren beden hareketi), durağan fotoğrafla değil; kesme hareket üstüne düşer.
   - **Ortak görünüm cümlesi** (`FILM.md` §3 ORTAK GÖRÜNÜM) her görsel **ve** video promptunun sonunda **birebir** yazılır.
   - Model sesi AÇIK filmde (§5'te Kaynak = model sesi olan film) **mekân başına ortam ses cümlesi** (`FILM.md` §3 ORTAM SESİ)
-    aynı mekânın her video promptunda birebir yazılır. Model sesi KAPALI filmde ses tarifi yazılmaz.
+    aynı mekânın her video promptunda birebir yazılır. Model sesi KAPALI eski filmde ses tarifi yazılmaz.
 - **Ingredients to Video** çekiminde (referans ekli, görsel blok yok) referans anahtarı video promptunun başında durur.
 - Çekim listesi temas anını atlıyorsa video da onu istemez: öncesi ya da sonrası.
-- Replik yazılmaz: ses kurguda eklenir, model sesi kullanılmaz.
+- **Replik model sesiyle videoda üretilir (sahip kararı 21.10.2026: diyalog kurguda eklenmez).** Künyesinde `DIYALOG model sesi` olan filmde §5'teki
+  her replik aşağıdaki biçimle promptuna yazılır. Künyesinde DIYALOG olmayan eski filmde: replik yazılmaz, ses kurguda eklenir; istisnalar:
   - **İstisna 1 — ağız kadrajda:** `FILM.md` §5'te o çekim için Kaynak = **ağız kadrajda** olan replik (≤5 s, sayı yok).
-  - **İstisna 2 — model sesi (sahip kararı 12.10.2026):** `FILM.md` §5'te Kaynak = **model sesi (telsiz | voice-over | ağız kadrajda)**
+  - **Model sesi (yeni filmde kural · eski filmde istisna 2, sahip kararı 12.10.2026):** `FILM.md` §5'te Kaynak = **model sesi (telsiz | voice-over | ağız kadrajda)**
     olan replik. Omni modeli konuşmayı videoda üretir; replik kurguda eklenmez (kayıt yedek). Çekimdeki **her** model sesi repliği yazılır.
     - Konuşanı ve kaynağı tarif et: `a calm adult male voice over the cockpit comms says: <line>` · `the small receiver on the console plays a woman's voice: <line>` · `an unseen woman's voice, close and calm, says: <line>`.
     - Alıcıdan gelen ses için kadrajdaki kişinin ağzı kapalı kalır; bunu yaz (`her mouth stays closed`).
+    - Kadrajda tek kişi varken kadraj dışı replik ikilenebilir (FURNACE, Y13): sesin kaynağını adlandır (`the voice comes from the small receiver`), ağzı kapalı yaz; repliği sıfatla sarma (`uretim_hatti/KARAKTER_VE_DIYALOG_KILAVUZU.md` §5).
     - Replik hangi vuruşta söyleniyorsa oraya yazılır; geçiş aralığına (ilk/son 1 s) düşmez.
   - Video promptu repliği **birebir** taşır, iki biçimden biriyle: `she says, "<line>"` ya da `she says: <line>`.
     - İki biçim neden var: Google'ın iki resmî belgesi çelişiyor. Vertex rehberi tırnağın ekrana yazı bastırdığını söylüyor ve iki nokta istiyor; Gemini API tırnak öneriyor (`uretim_hatti/FLOW_GERCEKLERI.md`). SMOKE P9 karar verene kadar ikisi de geçer.
@@ -115,7 +123,7 @@ yasak ses cümlesi, FURNACE G04'te 0/12 rozet konumu (ARASTIRMA/16 §C). Dosyan�
 5. Vakumda ya da kuru kabinde akışkan, ateş ya da su çağıran kelime var mı (`plume` · `smoke` · `drip` · `wet` · `bubbles`)? Hedef hâl katı ve olumlu yazılır.
 6. Ekran ya da gösterge **adıyla** mı yazılmış (`status display`)? Biçimiyle yaz + yazı kilidi (`plain unmarked surfaces`).
 7. Her `Reference n (rol)` yalnız o sayfada görüneni mi istiyor?
-8. Model sesi KAPALI filmde Video'da ses kelimesi var mı (`sound` · `hum` · `ambient`)? Aynı promptta zıt iki istek var mı?
+8. Model sesi KAPALI eski filmde Video'da ses kelimesi var mı (`sound` · `hum` · `ambient`)? Aynı promptta zıt iki istek var mı?
 
 ## Pilot modu (faz 3p, 16.10.2026)
 Görev metni pilot çekimlerini (1-3) verir. `{CIKTI}` = `{FILM}/PROMPTLAR/PILOT.md`, sırasıyla:

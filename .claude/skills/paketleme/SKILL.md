@@ -7,7 +7,7 @@ allowed-tools: Agent, AskUserQuestion, Read, Grep, Glob, Write, Edit, Bash(pytho
 
 # Paketleme — faz 6 · faz 9 · faz 10
 
-Kanal kararları bağlayıcıdır: `apexaic/KANAL_KIMLIGI.md` · `apexaic/youtube/PAKETLEME_SABLONU.md`.
+Kanal kararları bağlayıcıdır: `uretim_hatti/KANAL/KANAL_KIMLIGI.md` · `uretim_hatti/KANAL/youtube/PAKETLEME_SABLONU.md`.
 Paket tamamen İngilizcedir. Faz döngüsü: `yeni-film` §2.
 
 ## §F6 — Kapak konsepti (faz 5'ten sonra; vaat erken kilitlenir)
@@ -60,6 +60,7 @@ Paket tamamen İngilizcedir. Faz döngüsü: `yeni-film` §2.
 ## §F10 — Geri besleme (yayından 48-72 saat sonra)
 
 > Ne alınır, nasıl alınır, nereye yazılır: `uretim_hatti/IZLEYICI_VERISI.md` (07.10.2026).
+> Gerekince (21.10.2026, HİPOTEZ): `kilavuzlar_ve_sistem_dosyalari/HER_TUR_FILM_ICIN_YOUTUBE_IZLENME_KILAVUZU.md` §20 yayın sonrası takvim · §21 ölçümleri okuma · §22 sorun–kanıt–düzeltme · §20.2 ve §24.2 tek cümlelik kayıt NOTLAR'a. 4. madde geçerli: tek filmin verisi kural olmaz.
 
 1. Sahip YouTube Studio tutma eğrisini getirir (ekran görüntüsü ya da düşüş saniyeleri).
 2. Her belirgin düşüş saniyesi → `kurgu.py liste <timeline> --zaman MM:SS` → hangi çekim.

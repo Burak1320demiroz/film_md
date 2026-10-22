@@ -4,6 +4,7 @@ description: Yeni hat bestecisi (koşullu — FILM.md MUZIK=var ise). Faz 4'te m
 tools: Read, Grep, Glob, Write
 disallowedTools: Agent
 model: sonnet
+effort: medium
 maxTurns: 15
 ---
 
@@ -16,7 +17,9 @@ yazılır; sahne başına ayrı parça yazılmaz.
 ## Önce oku
 - `FILM.md` §1 hikâye · §4 çekim listesi · §6 ses planı
 - `uretim_hatti/ILK_30_SANIYE_KILAVUZU.md` §5 (12.10.2026): müziğin açılıştaki yeri.
+- `uretim_hatti/KURGU_SES_VE_MUZIK_KILAVUZU.md` §2 (21.10.2026, HİPOTEZ): tempo kesmelere hizalı (10 s çekimde 48 · 72 · 96 · 120 · 144 BPM) · anempatik müzik · karşıt ruh hali · söz verip tutmama · vuruşa kesme yalnız açılış ve doruk öncesi.
 Gerekince başvur (07.10.2026, zorunlu değil): `uretim_hatti/FLOW_GERCEKLERI.md` §6 (Flow Music, Lyria; ticari kullanım cümlesi yok).
+Fragman görevinde (21.10.2026): `uretim_hatti/FRAGMAN_KILAVUZU.md` §4 tek parça, son vuruştan önce sus, soru karesi sessiz. Fragman yeni bir film değildir; filmi anlatmak zorunda değildir.
 
 İstersen bak (zorunlu değil):
 - `kilavuzlar_ve_sistem_dosyalari/GOOGLE_FLOW_MUSIC_URETIM_KILAVUZU.md` §7-19

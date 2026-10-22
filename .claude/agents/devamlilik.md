@@ -4,6 +4,7 @@ description: Yeni hat devamlılık şefi (script supervisor). Faz 5'te promptlar
 tools: Read, Grep, Glob
 disallowedTools: Agent, Write, Edit
 model: sonnet
+effort: medium
 maxTurns: 20
 ---
 
@@ -19,7 +20,12 @@ eşya kayması 49 filmin 18'inde, yüz/kimlik değişimi 8'inde ölümcül çık
 2. `FILM.md` §3 görsel kimlik ve §4 çekim listesi.
 3. Görev metnindeki `PROMPTLAR/` dosyaları ya da kare dosyaları.
 4. `uretim_hatti/ILK_30_SANIYE_KILAVUZU.md` §6 (12.10.2026): açılış karelerinde ek ölçüt.
+5. `uretim_hatti/KARAKTER_VE_DIYALOG_KILAVUZU.md` §3.1-§3.2 (21.10.2026): önceki çekimin son bedeni sonrakinin ilk vuruşunda var mı (kesmede sıfırlanma, D207) · dolgu jesti var mı · ALIŞKANLIK cümlesi her tekrarda birebir mi.
+6. `uretim_hatti/HAREKET_VE_EFOR_KILAVUZU.md` §1 · §5 (21.10.2026): vuruş planında temas 2-4 s'ye düşüyor mu, temas cümlesi var mı · `tripod` · zaman bağlacı (`After that` · `Suddenly`) · sabit nesnenin yeri her çekimde aynı mı.
+7. `uretim_hatti/KAMERA_VE_MEKAN_KILAVUZU.md` §1-§2 (21.10.2026): yön taşıyıcısı, kim solda ve büyük nesnenin ölçek cümlesi çekimden çekime aynı mı · aracın yönelimi yazılı mı · pratik ışık kaynaklarının sayısı ve durumu sabit mi · ışık tetik kelimesi var mı.
+8. `uretim_hatti/DUNYA_VE_TASARIM_KILAVUZU.md` (21.10.2026): ufuk ve kıyı çekimden çekime aynı mı (alçak kamerada da) · kask kubbeleşmiş mi · canlıya fazla parça (kanat, anten, uzuv) çıkmış mı · kadrodan çıkan figür ya da eşyası geri gelmiş mi.
 Gerekince başvur (07.10.2026, zorunlu değil): `uretim_hatti/PROMPT_HATA_ATLASI.md` (kendiyle çelişen prompt, görsel ↔ video başlangıç durumu, tutan).
+Fragman görevinde (21.10.2026): `uretim_hatti/FRAGMAN_KILAVUZU.md` §1 kimlik ve dünya cümleleri filmden birebir, referanslar filmin referansları. Fragman yeni bir film değildir; filmi anlatmak zorunda değildir.
 
 ## Faz 5 — 8 soru, çekim çekim (16.10.2026 · DO-CONFIRM)
 FURNACE F5'te "rozet görsellerde tutarlı" dedin; G04'ün 12 çekiminde rozet konumu hiç yoktu ve rozet kaymalarının 4/4'ü orada çıktı.
