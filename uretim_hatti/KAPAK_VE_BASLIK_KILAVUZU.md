@@ -44,7 +44,7 @@ Video video:
 ## 1. Yüzeyler
 
 - **Tek kapak bütün yüzeylerde çalışır.** Yüzeye göre ayrı kapak yüklenmez; kapak testi de tek kazanan seçer. **ÖLÇÜLDÜ.**
-- Kapak 16:9, en az 1280×720, önerilen 3840×2160 olarak yüklenir. Bir test seçeneği 1280×720'nin altındaysa bütün seçenekler 480p'ye düşer. **ÖLÇÜLDÜ** (`apexaic/DIS_SAYILAR.md` §1).
+- Kapak 16:9, en az 1280×720, önerilen 3840×2160 olarak yüklenir. Bir test seçeneği 1280×720'nin altındaysa bütün seçenekler 480p'ye düşer. **ÖLÇÜLDÜ** (`uretim_hatti/KANAL/DIS_SAYILAR.md` §1).
 - Gösterim, kapak 1 saniyeden uzun ve en az yarısı görünürse sayılır. Her görüntülenme gösterimden gelmez. **ÖLÇÜLDÜ.**
 - Ana sayfada ve aramada kapak, üzerinde durulunca sessiz önizlemeye döner (`ILK_30_SANIYE_KILAVUZU.md` §1). Kapak ile ilk karenin aynı dünyayı göstermesi bu yüzden önemlidir.
 - **Denetim boyları** (gerçek boylar araç ölçümleridir, **UYGULAMA**):
@@ -108,7 +108,7 @@ python3 uretim_hatti/araclar/kareler.py kapak <kapak.png> --hedef ~/film_medya/<
 - **Basit İngilizce:** sık kullanılan kısa kelimeler. Deyim, kelime oyunu ve büyük harfli cümle yok. İzleyicinin çoğu anadili İngilizce olmayan ülkelerden.
 - **Seri numarası yok** ("Episode 3"): yeni izleyiciye öncesini kaçırdığını söyler. **UYGULAMA.**
 - **Merak cümlesinin cevabı filmdedir.** Teslim edilmeyen vaat tıklama tuzağıdır: yüksek tıklama, düşük izlenme ve beklenenden az gösterim (**ÖLÇÜLDÜ**). YouTube bu tür başlık ve kapakları Hindistan'dan başlayarak kaldırıyor (18.12.2024).
-- Kanal kuralı sürer: başlıkta "AI" ve üretim aracı adı yok; Stunning, Epic, Mind-Blowing yok (`apexaic/KANAL_KIMLIGI.md`).
+- Kanal kuralı sürer: başlıkta "AI" ve üretim aracı adı yok; Stunning, Epic, Mind-Blowing yok (`uretim_hatti/KANAL/KANAL_KIMLIGI.md`).
 - **Sahibin kararı (PROB):** başlık ve açıklamayı hedef dillere elle çevirmek (Studio → Diller). Otomatik çeviri merak cümlesini bozabilir. Denenirse deney defterine yazılır.
 
 ## 6. Kapak yazısı

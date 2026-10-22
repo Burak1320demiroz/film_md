@@ -73,6 +73,8 @@ FILM_ORNEKLERI = [
     ("diyalog_gecerli", [], 0, []),
     ("diyalog_bozuk", [], 6,
      ["en çok 5 s", "en çok 8 s (kurguda eklenen ses)", "en çok 8 s (model sesi", "replik birebir yok", "konuşma/ses tarifi"]),
+    # 21.10.2026 sahip kararı: diyalog kurguda eklenmez → künyede DIYALOG model sesi olan filmde kurgu kaynağı hata (replik 2 telsiz)
+    ("diyalog_modelsesi_bozuk", [], 1, ["diyalog kurguda eklenmez"]),
     # 12.10.2026 sahip kararı: MUZIK var → §7 MÜZİK PROMPTU ```text bloğu (yeni biçimde hata, eskide uyarı); §6 yatak/geçiş uyarı
     ("muzik_gecerli", [], 0, ["yapı geçerli"]),
     ("muzik_bozuk", ["--bolum", "muzik"], 1, ["MÜZİK PROMPTU bloğu yok", "ORTAM YATAĞI tablosu yok"]),

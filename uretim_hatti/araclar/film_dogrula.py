@@ -149,6 +149,9 @@ def kunye(film):
     for k in ["REPLIK", "MUZIK", "FIZIK_IDDIASI"]:
         if alan.get(k) and alan[k] not in {"var", "yok"}:
             hata.append(f"künye: {k} = '{alan[k]}' — 'var' ya da 'yok' olmalı")
+    # 21.10.2026 sahip kararı: diyalog kurguda eklenmez → yeni filmin künyesinde DIYALOG = model sesi (eski filmde alan yok)
+    if "DIYALOG" in alan and alan["DIYALOG"] != "model sesi":
+        hata.append(f"künye: DIYALOG = '{alan['DIYALOG']}' — 'model sesi' olmalı (diyalog kurguda eklenmez, 21.10.2026)")
     for b in BASLIKLAR:
         if b not in film:
             hata.append(f"başlık yok: {b}")
@@ -190,7 +193,10 @@ def referanslar(film):
         # 10.10.2026 sahip kararı: özne başına TEK referans sayfası (açılar, yüz yakın, durumlar aynı görselde panel);
         # SELA + SELA_yuz + SELA_arka gibi ayrı dosyalar yok
         kok = m.group(2).split("_")[0].upper()
-        if kok in kokler:
+        # 19.10.2026 sahip kararı (RAIN_THIEF R01/R02): satırın Referans hücresinde "SAHİP İSTİSNASI" yazıyorsa ikinci sayfa uyarıdır
+        if kok in kokler and "SAHİP İSTİSNASI" in _ad:
+            uyari.append(f"referans {no}: '{m.group(2)}' — '{kok}' ikinci sayfa, sahip istisnası (§3 satırı)")
+        elif kok in kokler:
             hata.append(f"referans {no}: '{m.group(2)}' — {kokler[kok]} numaralı '{kok}' zaten var; aynı öznenin açıları, yüzü ve "
                         f"durumları TEK referans sayfasında panel olur (sahip kararı 10.10.2026)")
         kokler[kok] = no
@@ -298,13 +304,16 @@ def replik(film, alan, cekimler):
             hata.append(f"replik {no}: çekim '{ck}' listede yok")
         if kayit not in {"HUMAN", "MACHINE"}:
             hata.append(f"replik {no}: kayıt '{kayit}' — HUMAN | MACHINE")
+        if alan.get("DIYALOG") == "model sesi" and not model:
+            hata.append(f"replik {no}: Kaynak '{kaynak}' kurguda eklenen ses — diyalog kurguda eklenmez (sahip kararı 21.10.2026); "
+                        f"Kaynak = model sesi (telsiz | voice-over | kadraj dışı | ağız kadrajda)")
         try:
             if float(re.sub(r"[^\d.,]", "", sure).replace(",", ".")) > tavan:
                 hata.append(f"replik {no}: {sure} s — en çok {tavan} s ({tur})")
         except ValueError:
             hata.append(f"replik {no}: süre sayı değil ('{sure}')")
         if agiz and kayit == "HUMAN" and re.search(r"\d", metin):
-            uyari.append(f"replik {no}: ağız kadrajdaki insan repliğinde rakam — dudak senkronu bozulur, sayıyı kurguda eklenen ses söylesin")
+            uyari.append(f"replik {no}: ağız kadrajdaki insan repliğinde rakam — dudak senkronu bozulur, sayıyı makine sesi söylesin")
     if alan.get("REPLIK") == "var" and satir:
         try:
             hedef = sure_oku(alan.get("HEDEF_SURE", ""))
@@ -667,7 +676,7 @@ def prompt(klasor, cekimler, film="", refler=None, yeni_ref=False):
 
 
 KOK = Path(__file__).resolve().parents[2]
-KANAL_SABLON = KOK / "apexaic" / "youtube" / "PAKETLEME_SABLONU.md"
+KANAL_SABLON = KOK / "uretim_hatti" / "KANAL" / "youtube" / "PAKETLEME_SABLONU.md"
 TURKCE = re.compile(r"[çğıöşüÇĞİÖŞÜ]")
 YASAK_BASLIK = re.compile(r"you won.t believe|^\s*ai short film|\b(INSANE|EPIC|MIND-BLOWING|SHOCKING)\b|"
                           r"[\U0001F300-\U0001FAFF\u2600-\u27BF]", re.I)

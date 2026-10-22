@@ -7,7 +7,7 @@
 > **Ne değildir:** hedef ya da "iyi oran" tablosu değil (kaynaklı aralık yok, §9) · algoritma tavsiyesi değil · betik değil
 > (§2 yalnız sorgu alanlarını verir) · kural kaynağı değil (§8).
 > **Tarih:** 07.10.2026. **Kaynak:** `ARASTIRMA/04_SUZME_20261007.md` R10 + §F Y1-Y9; bu dosya yazılırken açılan resmî
-> sayfalar ("gör. 07.10"). Ham rapor (`ARASTIRMA/ham/10_…`) kanıt sayılmaz. Sayıların tek kaynağı `apexaic/DIS_SAYILAR.md` §1'dir;
+> sayfalar ("gör. 07.10"). Ham rapor (`ARASTIRMA/ham/10_…`) kanıt sayılmaz. Sayıların tek kaynağı `uretim_hatti/KANAL/DIS_SAYILAR.md` §1'dir;
 > burada yalnız bu işin gerektirdiği satırlar anılır.
 
 `yt/N` = support.google.com/youtube/answer/N · `api/…` = developers.google.com/youtube/analytics/{metrics · dimensions ·
@@ -114,8 +114,8 @@ Eski videoda ya da yeni filmde her paket değişikliği bir satır. Aynı videod
 
 **Kanal düzeyi: sahibe öneri** (bu dosya hiçbir tablo açmaz):
 - Eski `kilavuzlar_ve_sistem_dosyalari/FILM_QA_RAPORLARI/08_YAYIN_PERFORMANS_TABLOSU.md` eski hattadır, düzenlenmez (AGENTS §1 ③).
-- Öneri: `apexaic/` altında tek dosya (ad önerisi `YAYIN_PERFORMANSI.md`). Film başına bu satırın 28g hücreleri + NOTLAR bağlantısı; ayrı bölümde taban olarak eski videolar (§4).
-- ⚠ `apexaic/YAYIN_PLANI.md` §6 hâlâ 08'e işaret ediyor ve iki yerde bu dosyadan ayrılıyor: "24 / 48 / 72 saat" (burada 48s / 7g / 28g) ve "ÜÇ AYRI FİLMDE" (burada AGENTS §1 ④: iki film → sahibe sor). Uyum sahibin kararıdır.
+- Öneri: `uretim_hatti/KANAL/` altında tek dosya (ad önerisi `YAYIN_PERFORMANSI.md`). Film başına bu satırın 28g hücreleri + NOTLAR bağlantısı; ayrı bölümde taban olarak eski videolar (§4).
+- ⚠ `uretim_hatti/KANAL/YAYIN_PLANI.md` §6 hâlâ 08'e işaret ediyor ve iki yerde bu dosyadan ayrılıyor: "24 / 48 / 72 saat" (burada 48s / 7g / 28g) ve "ÜÇ AYRI FİLMDE" (burada AGENTS §1 ④: iki film → sahibe sor). Uyum sahibin kararıdır.
 
 ---
 
@@ -146,6 +146,13 @@ TABAN   "karşılaştırma kendi benzer videoların" (DIS_SAYILAR §1 "CTR"): ay
         Geriye dönük kimlik satırı açılmaz (00_KANAL_DENETIMI §0 ③).
 SAYI    kaynaklı bir "kaç video" eşiği bulunamadı (§9). Hattın tek sayısı AGENTS §1 ④: iki film.
 ```
+
+### 4b · Suçlu arama sırası ve yapay zekâ algısı (HİPOTEZ · 21.10.2026 · `ARASTIRMA/24` #39 #40)
+
+- Bir düşüş çekime çevrildiğinde neden ucuzdan pahalıya aranır: **paket** (başlık ve kapağın vaadi o çekimde karşılanıyor mu) → **kurgu** (ritim, kesme) →
+  **ses** (yatak o kesmede koptu mu) → **çekimin içeriği** (olay var mı) → **plan** (hikâye orada duruyor mu, sonraki filmi bağlar) → **format** (süre bandı; en pahalı, en son).
+- **Yapay zekâ algısı sayacı:** 28. günde yorumlarda "AI · fake · CGI · slop" geçen yorum sayısı ÷ toplam yorum, §3 satırının NOTLAR'ına. İlk üç filmde
+  kaydedilir; `KANAL/POLITIKA_VE_RISK.md` "AI slop" kriz kartının ölçüsü budur.
 
 ---
 
@@ -182,7 +189,7 @@ dokunma       "If a video's title or thumbnail is changed during the test, the t
 yer · süre    → DIS_SAYILAR §1 "Başlık/kapak testi" (masaüstü Studio · Shorts'ta yok)
 ```
 **Hat bağlamı:** konsept faz 6'da tek değişkenle kurulur (`KAPAK_VE_YAYIN.md` §1); görsel ölçüsünü kapak-tasarimcisi tutar.
-Test bitmeden başlık ya da kapak elle değişmez (`apexaic/YAYIN_PLANI.md` §4 tek değişken kilidi). Sonuç §3 "A/B sonucu" hücresine.
+Test bitmeden başlık ya da kapak elle değişmez (`uretim_hatti/KANAL/YAYIN_PLANI.md` §4 tek değişken kilidi). Sonuç §3 "A/B sonucu" hücresine.
 
 ---
 
@@ -191,9 +198,9 @@ Test bitmeden başlık ya da kapak elle değişmez (`apexaic/YAYIN_PLANI.md` §4
 > "Disclosing AI content won't limit a video's audience or impact its eligibility to earn money."
 
 - **Bildirmemenin yaptırımı:** "manual application of a label, or penalties … removal of content or suspension from the YouTube Partner Program."
-- **C2PA:** dosyada C2PA metadatası varsa YouTube etiketi kendisi koyar ve bu etiket değiştirilemez. C2PA temizlenmez (`apexaic/CAPRAZ_YAYIN.md` §2).
+- **C2PA:** dosyada C2PA metadatası varsa YouTube etiketi kendisi koyar ve bu etiket değiştirilemez. C2PA temizlenmez (`uretim_hatti/KANAL/CAPRAZ_YAYIN.md` §2).
 - **Bildirimi SAHİP yapar** (`paketleme` §F9.2). Resmî cümle gereği bildirim, veri okumasında düşüş nedeni sayılmaz.
-- ⚠ Sayfanın adı artık "Disclosing use of GenAI content", ayarın adı "AI use" (Y4). Ama `apexaic/POLITIKA_VE_RISK.md` §3 ve
+- ⚠ Sayfanın adı artık "Disclosing use of GenAI content", ayarın adı "AI use" (Y4). Ama `uretim_hatti/KANAL/POLITIKA_VE_RISK.md` §3 ve
   `SABLON/YAYIN_PAKETI.md` hâlâ "Altered or synthetic content" yazıyor. Bu, sahibe not.
 
 ---
@@ -203,7 +210,7 @@ Test bitmeden başlık ya da kapak elle değişmez (`apexaic/YAYIN_PLANI.md` §4
 - ⛔ **Tek filmin verisi kural olmaz** (AGENTS §1 ④). NOTLAR'a satır olur, o kadar.
 - **İki ayrı filmde aynı yön** görülürse (aynı tür düşüş aynı tür çekimde, ya da aynı tahmin kaynağı sürekli kaçırıyor),
   sahibe sorulur: "ARIZA_LISTESI'ne / BILINEN_TUZAKLAR'a girsin mi?" (`paketleme` §F10.4).
-- **Dış bulgu** önce "sınanacak" diye yazılır (`apexaic/YAYIN_PLANI.md` §6.1 biçimi). Kendi verimiz iki filmde aynı yönü
+- **Dış bulgu** önce "sınanacak" diye yazılır (`uretim_hatti/KANAL/YAYIN_PLANI.md` §6.1 biçimi). Kendi verimiz iki filmde aynı yönü
   göstermeden kural olmaz.
 
 ---

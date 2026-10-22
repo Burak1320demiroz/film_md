@@ -25,6 +25,13 @@ uretim_hatti/
   REPLIK_VE_KLIP_SESI_KILAVUZU.md  (16.10.2026) replik kaynağı seçimi · montaj öncesi ses kapısı · klip sesi ve vakum · telsiz filtresi (ARASTIRMA/12 → 13)
   KIMLIK_VE_REFERANS_KILAVUZU.md   (16.10.2026) yüz/giysi/bant tutarlılığı · ≤3 referans + rol · sayılı giysi tarifi · düzeltme · P17 deneyi · kare kabul listesi
   UZAY_FIZIGI_GORUNTU_KILAVUZU.md  (16.10.2026) vakumda itki, sıvı, EVA, itki yönü, Dünya hızı, kenetlenme: kamerada görünen + olumlu İngilizce tarif
+  FRAGMAN_KILAVUZU.md              (21.10.2026) fragman yeni film değil · tek mekanik · spoiler kapısı kurguda ve pakette · 10 s dilim (FURNACE emsali) · ikinci fragman (eski FRAGMAN + PAKETLEME → ARASTIRMA/24)
+  KURGU_SES_VE_MUZIK_KILAVUZU.md   (21.10.2026) plan ↔ kurgu eşlemesi · başlık kartı zincire girmez · tempo kesmeye hizalı · anempatik müzik · vakum sesi · ihraç (eski 3 kılavuz → ARASTIRMA/23)
+  DUNYA_VE_TASARIM_KILAVUZU.md     (21.10.2026) ufuk ve arka plan nesnesi · yanaşma kadrajı · istasyon ölçüleri · kask çerçevesi, malzeme, kir · yüz · uzaylı canlı · kadro (eski 8 kılavuz → ARASTIRMA/22)
+  KAMERA_VE_MEKAN_KILAVUZU.md      (21.10.2026) yön taşıyıcıları · mekân geçişi · ölçek çapası · konum/yönelim/hareket · ışık tetik kelimeleri · açı ve kurulum dizisi (eski 7 kılavuz → ARASTIRMA/21)
+  HAREKET_VE_EFOR_KILAVUZU.md      (21.10.2026) temas ilk 2 s / kurulu, temas cümlesi yok · mikro → makro · yürüme platosu · efor dört parça · iki rejim · tripod (eski 11 kılavuz → ARASTIRMA/20)
+  HIKAYE_YAPISI_KILAVUZU.md        (21.10.2026) novum karakteri zorlar · bedel bedende · jest en çok iki kez · film biter, doruk ve final kurgudan düşmez · tema · iki kişi (eski 8 kılavuz → ARASTIRMA/19)
+  KARAKTER_VE_DIYALOG_KILAVUZU.md  (21.10.2026) karakter beş satırı · seçim kadrajda ve bedende · kesmede sıfırlanma yok · dolgu jesti yok · diyalog ekleri · model sesi tuzakları (eski 7 kılavuz → ARASTIRMA/18)
   SECIM_VE_KURGU_KILAVUZU.md       (16.10.2026) medya → seçim → timeline → taslak: beş karar · süreklilik · 10 s doldurma · ffmpeg kontrolleri · kim neyi görür · taslak kapısı
   QA_OKUMA_KILAVUZU.md    QA bulgusu → zaman → çekim → prompt → sınıf (sözleşme v1.0) — rapor-prompt skill'inin omurgası
                           (16.10.2026) hat dışı montajda QA numarası = kesme sırası → önce medya.py bol + NOTLAR MONTAJ EŞLEMESİ

@@ -32,7 +32,7 @@
 - F2.1 — Sahne sahne olay dili; her sahne öncekinden doğuyor (seçim ya da başarısız deneme).
 - F2.2 — izleyici tretmanı okudu: anladığı amaç ve son, planlananla aynı.
 - F2.3 — Replikler (REPLIK varsayılan var):
-  - kurguda eklenen ses ≤8 s, ağız kadrajda ≤5 s ve sayısız;
+  - model sesi ≤8 s, ağız kadrajda ≤5 s ve sayısız; yeni filmde Kaynak her satırda model sesi (diyalog kurguda eklenmez, 21.10.2026);
   - HUMAN/MACHINE kaydı;
   - görüneni anlatan replik yok;
   - diyalog alışveriş olarak kurulu (her alışveriş bilgi, ilişki ya da karar değiştiriyor);
@@ -86,7 +86,7 @@
 - F4.2 — Replik kayıt listesi var: metin · ses profili · ton · hedef süre · filtre.
 - F4.5 — Efekt listesi her çekimi kapsıyor (sessiz çekim gerekçeli); her satırda kaynak + nereden (arama terimi ya da İngilizce efekt promptu); sahne başına ortam yatağı.
 - F4.3 — Müzik varsa: okuma cümlesi · en az bir müziksiz an · vuruş/susma noktaları · tempo kesme noktalarına bağlı.
-- F4.4 — Model sesinin kullanılmayacağı yazılı; istisnalar §5 Kaynak sütununda: **ağız kadrajda** (≤5 s, sesi klipten) ya da **model sesi** (12.10.2026: replik video promptunda birebir, Omni konuşur; klip sesi yalnız replik için `klip_sesi`, yatak planda; kurgu kaydı yedek).
+- F4.4 — (21.10.2026) Yeni filmde her replik model sesi (künye `DIYALOG model sesi`; replik video promptunda birebir, klip sesi yalnız replik için `klip_sesi`, yatak planda). Eski filmde: model sesinin kullanılmayacağı yazılı; istisnalar §5 Kaynak sütununda: **ağız kadrajda** (≤5 s, sesi klipten) ya da **model sesi** (12.10.2026: replik video promptunda birebir, Omni konuşur; klip sesi yalnız replik için `klip_sesi`, yatak planda; kurgu kaydı yedek).
 - F4.6 — §6 ORTAM YATAĞI tablosu: mekân başına TEK kesintisiz yatak (kapsadığı çekimler, İngilizce üretim/arama cümlesi, seviye, dosya); GEÇİŞ tablosu her kesme için tür taslağı + ses köprüsü (`GECIS_VE_SES_SUREKLILIGI.md` §2). Model sesi AÇIK filmde mekân başına ortam ses cümlesi (§3 ORTAM SESİ).
 - F4.7 **M** — MUZIK var ise §7 `### MÜZİK PROMPTU` bloğu dolu (İngilizce, ≥200 karakter): `film_dogrula.py --bolum muzik` 0 hata (F4 taslak, F8 kesin).
 - F4.8 — (12.10.2026) İlk 2 s insan sesi yok, açılış efekt/nefes/ortamla; müzik C01'de girmiyor ya da çok düşük zemin; C01'de en çok bir kısa replik (`ILK_30_SANIYE_KILAVUZU.md` §4-§5).

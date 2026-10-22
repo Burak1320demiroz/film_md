@@ -91,7 +91,7 @@
 | 3 | yonetmen · teknik-danisman | ardışık çekimlerde ölçek/açı farkı; kesme hareket üstüne düşecek şekilde çekim bölünmesi |
 | 4 | ses-tasarimcisi (+ kurgucu eleştiri) | ORTAM YATAĞI tablosu · GEÇİŞ taslağı (tür önerisi + köprü) · yatak dosyaları için üretim/arama cümlesi |
 | 5 | goruntu-yonetmeni · devamlilik | ortak görünüm cümlesi birebir · mekân ışık cümlesi · (model sesi açıksa) ortam ses cümlesi · ilk vuruş hareketli |
-| 7 | sahip | Flow proje ayarı: model sesi KAPALI filmde "Return silent videos" AÇIK; model sesi AÇIK filmde KAPALI (replik klipten) |
+| 7 | sahip | Flow proje ayarı: model sesi AÇIK filmde (21.10.2026'dan beri her yeni film) "Return silent videos" KAPALI, replik klipten; model sesi KAPALI eski filmde AÇIK |
 | 8 | kurgucu · Fable | `gecis` + `yataklar` + `klip_sesi` timeline'da · her kesmede `kareler.py dikis` · `kurgu.py kontrol/taslak` · renk eşleme notları |
 
 ## 6. Ölçüm

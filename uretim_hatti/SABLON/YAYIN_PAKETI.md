@@ -1,7 +1,7 @@
 # <FILM_NAME> — YouTube release package
 
 > Written by the `yayin` agent in phase 9. Every block below is paste-ready: copy the code block, not the notes.
-> Channel rules: `apexaic/youtube/PAKETLEME_SABLONU.md` (title grammar, description skeleton, fixed block, exactly 3 hashtags).
+> Channel rules: `uretim_hatti/KANAL/youtube/PAKETLEME_SABLONU.md` (title grammar, description skeleton, fixed block, exactly 3 hashtags).
 > Craft: `kilavuzlar_ve_sistem_dosyalari/VIRAL_BASLIK_VE_ACIKLAMA_PROMPT.md` (title formulas, banned patterns).
 > Check: `python3 uretim_hatti/araclar/film_dogrula.py <FILM> --bolum yayin`
 

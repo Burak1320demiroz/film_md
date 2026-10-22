@@ -49,26 +49,69 @@ Ret nedeninin sonuna hatanın DOĞDUĞU YER yazılır (AGENTS.md §3):
 
 | Tarih | Video / kare modu | Zaman | Çekim (`kurgu.py liste`) | Tür (T1-T14) | Ne görüldü | Gemini | İnsan doğrulaması |
 |---|---|---|:--:|---|---|:--:|:--:|
+| 2026-10-22 | video | 00:22 - 00:29 | C03 | T2 BODY-GROUND CLIPPING | Dev yaratığın sol kanadı bulut kütlesini yarmak yerine bulutun içinden hayalet gibi geçiyor | LIKELY | Doğrulandı |
+| 2026-10-22 | video | 00:36 - 00:39 | C04 | T1 HAND-OBJECT FUSION | İnsansı karakterin sağ el parmakları yavrunun alt gövdesiyle kaynaşıp şekil değiştiriyor | LIKELY | Doğrulandı |
+| 2026-10-22 | video | 00:51 - 00:53 | C06 | T6 LOOK CHANGE | Kucaktaki yavru yaratığın sırtından aniden ejderha/yarasa benzeri iki büyük mavi kanat açılıyor | SURE | Doğrulandı (yeniden üretim önceliği) |
+| 2026-10-22 | video | 01:21 - 01:26 | C09 | T13 SLIDING / EMPTY GRIP | Karakter taş iskelenin üzerinde yürürken ayak tabanları ıslak zeminde ağırlıksız kayıyor | LIKELY | Doğrulandı |
+| 2026-10-22 | video | 01:33 - 01:38 | C10 | T9 WRONG FLOATING | Dalga çarptığında iskelenin ucundaki dev kaya bloğu köpük gibi hafifçe havaya kalkıp devriliyor | SURE | Doğrulandı |
+| 2026-10-22 | video | 01:41 - 01:47 | C11 | T13 SLIDING / EMPTY GRIP | Yavru uçup gittikten sonra karakter ellerini 6 saniye boyunca kaskatı açık tutmaya devam ediyor | SURE | Doğrulandı |
+| 2026-10-22 | video | 01:52 - 01:57 | C12 | T8 WRONG SOUND | Yalnızca yerde yatan yavru varken mikrofona çok yakın yetişkin insan nefes alma/iç çekme sesi duyuluyor | SURE | Doğrulandı (kurguda sessize alınacak) |
+| 2026-10-22 | video | 02:01 - 02:02 | C13 | T8 WRONG SOUND | Ağzı olmayan uzaylı çömelirken çok net ham insan hıçkırık/iç çekme sesi ("Hıı-ah") duyuluyor | SURE | Doğrulandı (kurguda sessize alınacak) |
+| 2026-10-22 | video | 02:06 - 02:09 | C13 | T6 LOOK CHANGE | Yerde yatan yavrunun kafasından aniden parlayan iki adet anten uzuyor | SURE | Doğrulandı (yeniden üretim önceliği) |
+| 2026-10-22 | video | 02:13 - 02:14 | C14 | T8 WRONG SOUND | Ağzı olmayan uzaylı yavruyu okşarken tamamen doğal insan "Hmm" mırıldanması duyuluyor | SURE | Doğrulandı (kurguda sessize alınacak) |
+| 2026-10-22 | video | 03:05 - 03:09 | C19 | T2 BODY-GROUND CLIPPING | Yavru yaratık kanada konduğunda alt gövdesi ve sol yüzgeci kanadın içine gömülüp kaynaşıyor | LIKELY | Doğrulandı |
+| 2026-10-22 | video | 03:11 - 03:18 | C20 | T8 WRONG SOUND | Karakter kanada yaslanmışken mikrofona çok yakın insan nefes sesi ve "Hmm" mırıldanması duyuluyor | SURE | Doğrulandı (kurguda sessize alınacak) |
+| 2026-10-22 | video | 03:21 - 03:29 | C21 | T11 OTHER | Kanat yükselirken sol uçurumun kuru üst yüzeyinden yoktan var olan dev şelale akıyor | SURE | Doğrulandı |
+| 2026-10-22 | video | 03:34 - 03:39 | C23 | T8 WRONG SOUND | Bulutlar üzerinde uçulurken mikrofona çok yakın oda akustiğinde insan nefes ve "Hmm" sesi duyuluyor | SURE | Doğrulandı (kurguda sessize alınacak) |
+| 2026-10-22 | video | 03:50 - 03:55 | C24 | T3 / T10 | Ekranın ortasında MOONMOTHER başlık kartı yer alıyor (son 5 saniye) | SURE | Kabul (başlık kartı) |
 
 ## SÜREKLİLİK (Gemini · `SUREKLILIK.md`)
 
 | Tarih | Sürüm | Kesme no · zaman | Çekimler (önce → sonra) | Tür (S1-S7) | Önce → sonra | Gemini | Karar (düzeltildi · kabul · yanlış alarm) |
 |---|---|---|---|---|---|:--:|---|
+| 2026-10-22 | moonmother_01 | Kesme 01 · 00:10.0 | C01 → C02 | S4 WORLD JUMP | Bulutlar ve halkalı gezegen → turuncu ay/güneş yansıması | SURE | Kabul (açılış akışı) |
+| 2026-10-22 | moonmother_01 | Kesme 01-23 | Tüm kesmeler | S7 SOUND JUMP | Her 10 saniyelik klip geçişinde dalga ve müzik sesi bıçak gibi kesilip sıfırdan başlıyor | SURE | Kurguda kesintisiz yatak döşenecek |
+| 2026-10-22 | moonmother_01 | Kesme 04 · 00:40.0 | C04 → C05 | S5 STATE RESET | Anne yaratığın göz altı ışıkları C04'te yanarken C05'te sönük başlayıp yeniden yanıyor | SURE | Kabul |
+| 2026-10-22 | moonmother_01 | Kesme 05 · 00:50.0 | C05 → C06 | S1 LOOK JUMP | Kucaktaki yavru yüzgeçli formdan aniden ejderha/yarasa kanatlı forma dönüşüyor | SURE | Yeniden üretim adayı |
+| 2026-10-22 | moonmother_01 | Kesme 05 · 00:50.0 | C05 → C06 | S6 PHYSICS MISMATCH | Gökyüzünde dağ/gezegen ölçeğindeki yaratık denizde aşırı küçülüyor | SURE | Yeniden üretim |
+| 2026-10-22 | moonmother_01 | Kesme 06 · 01:00.0 | C06 → C07 | S3 DIRECTION FLIP | Yaratık sağdan sola süzülürken kesmede aniden soldan sağa dönüyor | SURE | Kurguda yön kontrolü |
+| 2026-10-22 | moonmother_01 | Kesme 07 · 01:10.0 | C07 → C08 | S1 LOOK JUMP | Yavrudaki ejderha kanatları kayboluyor, yavru tekrar küçük yüzgeçli formuna dönüyor | SURE | C06 düzeltmesiyle çözülür |
+| 2026-10-22 | moonmother_01 | Kesme 08 · 01:20.0 | C08 → C09 | S5 STATE RESET | Karakter iskelenin henüz başındayken kesmede bir anda en uç noktasına varmış yürüyor | SURE | Kurguda kısaltma |
+| 2026-10-22 | moonmother_01 | Kesme 09 · 01:30.0 | C09 → C10 | S5 STATE RESET | Karakter iskelenin ucundayken kesmede iskele boş görünüyor ve dalga ucu yıkıyor | SURE | Kurguda bağlantı yumuşatılacak |
+| 2026-10-22 | moonmother_01 | Kesme 10 · 01:40.0 | C10 → C11 | S5 STATE RESET | İskele yıkılmışken karakter kesmede tekrar sağlam ve yüksek uçurumda duruyor | SURE | Kabul |
+| 2026-10-22 | moonmother_01 | Kesme 11 · 01:50.0 | C11 → C12 | S5 STATE RESET | Yavru uçarak uzaklaşmışken kesmede hiçbir düşüş olmadan ıslak kayalarda bitkin yatıyor | SURE | Kurgusal geçiş yumuşatılacak |
+| 2026-10-22 | moonmother_01 | Kesme 13 · 02:10.0 | C13 → C14 | S1 LOOK JUMP | Yavrunun kafasındaki iki anten ve karın ışığı kesmede aniden tamamen kayboluyor | SURE | C13 düzeltmesiyle çözülür |
+| 2026-10-22 | moonmother_01 | Kesme 16 · 02:40.0 | C16 → C17 | S6 PHYSICS MISMATCH | Denizden orta boyda çıkan yaratık yakın çekimde tekrar bulutlar arasında devasa ölçekte | LIKELY | Kabul |
+| 2026-10-22 | moonmother_01 | Kesme 20 · 03:20.0 | C20 → C21 | S5 STATE RESET | Karakter kıyıda kanada yaslanıp veda ederken kesmede bir anda kanadın üstüne binmiş havalanıyor | SURE | Kanada biniş kurguda düzeltilecek |
+| 2026-10-22 | moonmother_01 | Kesme 22 · 03:40.0 | C22 → C23 | S2 LIGHT JUMP | Gece mavisinden bir anda sağ ufukta parlak altın gün doğumuna ve aydınlanan kanada geçiş | SURE | Dramatik ışık geçişi, kabul |
 
 ## ANLATIM (Gemini · `ANLATIM_TESTI.md`)
 
 | Tarih | Sürüm | Çekim | Planlanan bilgi | İzleyicinin anladığı | Tuttu mu |
 |---|---|:--:|---|---|:--:|
+| 2026-10-22 | moonmother_01 | C01-C05 | Zırhlı karakterin yavruyu koruması ve gökteki dev anneyle kurulan ışık bağı | Dev yaratıkla yavrunun aynı türe ait olduğu ve çağrı bağı net anlaşıldı | Evet |
+| 2026-10-22 | moonmother_01 | C06-C10 | Karakterin yavruyu iskeleye taşıması ve dalganın iskeleyi yıkması | Yavruyu göndermek istediği anlaşıldı ancak iskelenin yıkılmasıyla ilişki kısmen havada kaldı | Kısmen (A1) |
+| 2026-10-22 | moonmother_01 | C11-C14 | Yavrunun uçurulduktan sonra düşüp kayalıklarda bitkin kalması ve karakterin şefkati | Düşüş anı gösterilmediği için şaşırtıcı oldu ama şefkat ve bağ çok iyi anlaşıldı | Kısmen |
+| 2026-10-22 | moonmother_01 | C15-C19 | Dev annenin kıyıya yaklaşıp kanadını uzatması ve yavrunun kanada konması | Annenin yardıma gelişi ve yavrunun yuvaya dönüşü tam anlaşıldı | Evet |
+| 2026-10-22 | moonmother_01 | C20-C23 | Karakterin de kanada binip bulutların üstüne, halkalı gezegene uçması | Mutlu son ve adalet duygusu anlaşıldı; ancak veda jestinden sonra ani biniş kafa karıştırdı | Kısmen (A1) |
 
 Duyulan replikler (madde 7) ↔ `FILM.md` §5 · A3/A4 satırları:
 
 | Tarih | Sürüm | Zaman | Tür (A1-A4) | Ne duyuldu / görüldü | Replik no | Karar |
 |---|---|---|---|---|---|---|
+| 2026-10-22 | moonmother_01 | 01:52 | A4 | Yerde yatan yavru ekrandayken işlenmemiş insan nefes/iç çekişi | — | Kurguda sessize alınacak (Mute) |
+| 2026-10-22 | moonmother_01 | 02:01 | A4 | Ağzı olmayan uzaylı çömelirken ham insan iç çekmesi/hıçkırık ("Hıı-aah") | — | Kurguda sessize alınacak (Mute) |
+| 2026-10-22 | moonmother_01 | 02:13 | A4 | Yavruyu okşarken mikrofona çok yakın insan mırıldanması ("Hmm") | — | Kurguda sessize alınacak (Mute) |
+| 2026-10-22 | moonmother_01 | 02:22 | A4 | Dalgalar çarparken insan iniltisi/seslenmesi ("Huuu...") | — | Kurguda sessize alınacak (Mute) |
+| 2026-10-22 | moonmother_01 | 03:11 & 03:17 | A4 | Kanada yaslanmış bakarken ham insan nefesi ve "Hmm" sesi | — | Kurguda sessize alınacak (Mute) |
+| 2026-10-22 | moonmother_01 | 03:34 - 03:38 | A4 | Bulutlar üstünde uçulurken mikrofona yakın insan nefes ve "Hmm" sesi | — | Kurguda sessize alınacak (Mute) |
 
 ## İZLEME (insan · `IZLEME_FORMU.md`)
 
 | Tarih | Kim | Sürüm | Cevaplar |
 |---|---|---|---|
+| 2026-10-22 | A (Sahip Taslak) | taslak_01 | 1: Kısmen (01:30 iskele, 01:50 düşüş, 03:20 biniş kopuk) · 2: Hayır (00:52 ejderha kanadı, 02:07 anten, 02:23 ölçek) · 3: 00:10 gezegen kaybı, 00:52 kanat, 02:07 anten · 4: Şefkat sahneleri iyi; 01:46 ve 02:01 yapay · 5: Replik yok; 01:52, 02:01, 02:13, 03:17, 03:38 insan nefes/mırıldanmaları yapay · 6: Her 10 sn geçişte ses kesiliyor; uzaylıda ham insan sesi var · 7: 01:10–01:29 arası çift yürüyüş planı · 8: Görsel olarak huzurlu ve epik ama veda ile birlikte gitme çelişiyor |
+| 2026-10-22 | B0 (AI İzleyici) | taslak_01 | 1: Koruyucunun yavruyu anneye kavuşturması · 2: Yavruyu doğasına kavuşturmak · 3: Hırçın dalgalar ve yavrunun uçamaması · 4: Yavru kavuştu, karakter de birlikte gitti · 5: İnsan nefes sesleri uzaylıyla uyuşmuyor · 6: Yavrunun düşüşü ve kanada ani biniş · 7: İskelede çift yürüyüş · 8: Epik ve huzurlu (teknik ses kusurlu) |
 
 ## KARARLAR
 

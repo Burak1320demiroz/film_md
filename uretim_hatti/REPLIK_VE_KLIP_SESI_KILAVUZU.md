@@ -22,6 +22,10 @@ Neden                                  montaj kurgu.py dışında yapıldı; kur
 
 ## 1 · Film başında seçim — her replik için kaynak
 
+> ⭐ **21.10.2026 sahip kararı: diyalog kurguda eklenmez.** Yeni filmde (künye `DIYALOG model sesi`) her replik **model sesi**dir; aşağıdaki
+> "kayıt" ve "karma" satırları yalnız künyesinde DIYALOG olmayan eski filmler içindir. Kanıt: §0 (3/3 filmde kayıt yapılmadı).
+> Model sesinin riskleri (aynı ses, takılma, ikilenme) seçimle ve başka denemeyle çözülür, kayda geçilmez.
+
 `FILM.md` §5'in Kaynak sütunu her replik için şu üçünden biridir. Seçim F4'te yapılır, sonra değişirse NOTLAR'a yazılır.
 
 | Kaynak | Ne zaman | Risk |
@@ -30,7 +34,7 @@ Neden                                  montaj kurgu.py dışında yapıldı; kur
 | **kayıt** (sentetik ses ya da insan) | hızlı karşılıklı konuşma · yüzü görünmeyen konuşmacı (kask, telsiz, iç ses) · uzun filmde aynı ses · aksan/ton kontrolü · iki benzer ses (iki erkek) | **yapılmadan montaja geçilmesi** (3/3 filmde oldu) |
 | **karma** | ortam ve mekanik ses yataktan, ana diyalog kayıttan, kısa ağız-kadraj repliği klipten | iki ortamın ve müziğin üst üste binmesi |
 
-- Aynı konuşmacının bütün satırları **tek kaynaktan** gelir. Model sesi bir satırda tutmazsa o konuşmacının bütün satırları kayda geçer (P18 kuralı).
+- Aynı konuşmacının bütün satırları **tek kaynaktan** gelir. Model sesi bir satırda tutmazsa: yeni filmde aynı çekimin başka denemesi; eski filmde o konuşmacının bütün satırları kayda geçer (P18 kuralı).
 - Sentetik ses aracının ticari koşulu araca ve plana bağlıdır; araç seçimi sahibindir. Google çıktılarının ticari koşulu `FLOW_GERCEKLERI` §6'da BİLİNMİYOR.
 
 ---

@@ -31,6 +31,7 @@
 | Kesme sırası (QA no) | Zaman | Plan çekimi | Deneme | Nasıl doğrulandı (kare · benzerlik) |
 |:--:|---|:--:|:--:|---|
 | 1–24 | 00:00–04:00 | C01–C24 | taslak_01 | İçerik ve zaman çapasından doğrulandı (10 sn klip periyodu) |
+| 1–20 | 00:00–03:19 | C01–C20 | THE_PRICE_OF_HOME (2) | 20 çekimlik revize montaj taslağı (2026-10-22) |
 
 ## TARAMA (Gemini · `uretim_hatti/QA_PROMPTLARI/TARAMA.md`)
 
@@ -66,6 +67,21 @@
 | 16.10.2026 | video (1 fps) | 03:30–03:39 | C22 | T6 | İki astronot da aynı mavi üçgen armayı takıyor | SURE | 🅑 Eli ve Mara armaları ayrı ayrı yazılacak (→ prompt) |
 | 16.10.2026 | video (1 fps) | 03:40–03:49 | C23 | T6 | Vey'in kafa yapısı, göz rengi ve omuz zırhı değişiyor | SURE | 🅑 Koyu mor ten ve dar yüz prompta eklenecek (→ prompt) |
 | 16.10.2026 | video (1 fps) | 03:50–03:59 | C24 | T6 | Mara'nın kolunda ABD bayrağı ve mavi ekran beliriyor | SURE | 🅑 Kostüm tarifi C24'e eksiksiz eklenecek (→ prompt) |
+| 2026-10-22 | video (1 fps) | 00:08.5 | C01 | T13 | Beyaz uzay gemisi itici olmadan yana doğru kayıyor | LIKELY | Doğrulandı |
+| 2026-10-22 | video (1 fps) | 00:15.2 | C03 | T13 | İki astronot zemin üzerinde kaskatı durup hafifçe havada süzülüyor | LIKELY | Doğrulandı |
+| 2026-10-22 | video (1 fps) | 00:25.4 | C04 | T1 | Konsoldaki parlayan kristal temas çizgisi olmadan kaideyle kaynaşıyor | SURE | Doğrulandı |
+| 2026-10-22 | video (1 fps) | 00:35.2 | C05 | T6 | Mara'nın eldiven parmakları konsol kenarıyla hafifçe eriyip kaynaşıyor | LIKELY | Doğrulandı |
+| 2026-10-22 | video (1 fps) | 00:41.1 | C05 | T6 | Erkek astronotun kaskı aniden kaybolup saçı/sakalı açığa çıkıyor | SURE | Doğrulandı (yeniden üretim önceliği) |
+| 2026-10-22 | video (1 fps) | 00:45.0 | C06 | T11 | Eldivenli ellerde tutulan sahil fotoğrafının arkasında 3. astronot kaskı beliriyor | SURE | Doğrulandı (temizlenecek) |
+| 2026-10-22 | video (1 fps) | 00:58.3 | C07 | T1 | Erkek astronotun dudak hareketi ve sesi arasında senkron kayması var | LIKELY | Doğrulandı |
+| 2026-10-22 | video (1 fps) | 01:21.0 | C09 | T7 | Mara'nın kapalı vizörünün içinden yukarı doğru buhar/duman yükseliyor | SURE | Doğrulandı |
+| 2026-10-22 | video (1 fps) | 01:31.2 | C10 | T13 | Erkeğin eldivenli parmakları konsol üzerinde yüzey teması olmadan kayıyor | LIKELY | Doğrulandı |
+| 2026-10-22 | video (1 fps) | 01:41.0 | C11 | T1 | Mara'nın eldiven uçları holografik ışık hüzmeleriyle kaynaşıyor | LIKELY | Doğrulandı |
+| 2026-10-22 | video (1 fps) | 02:03.1 | C13 | T2 | Konsoldaki parlayan ışık halkası metal çemberin içinden hayalet gibi geçiyor | SURE | Doğrulandı |
+| 2026-10-22 | video (1 fps) | 02:12.4 | C14 | T9 | Geçit içindeki Dünya istasyon yapısına göre yerçekimsiz/rotasyonsuz duruyor | LIKELY | Doğrulandı |
+| 2026-10-22 | video (1 fps) | 02:22.0 | C16 | T13 | Gemi itici alevlerine rağmen geçide doğru kayma hareketiyle ilerliyor | LIKELY | Doğrulandı |
+| 2026-10-22 | video (1 fps) | 02:40.1 | C18 | T6 | Kokpitte her iki astronotun emniyet kemerleri/kayışları kayboluyor | SURE | Doğrulandı |
+| 2026-10-22 | video (1 fps) | 02:56.2 | C19 | T13 | Karakterlerin baş dönüşlerinde AI interpolasyon kayması (glide) var | LIKELY | Doğrulandı |
 
 ## SÜREKLİLİK (Gemini · `SUREKLILIK.md`)
 
@@ -92,6 +108,18 @@
 | 16.10.2026 | taslak_01 | Cut 21 · 03:30.0 | C21 → C22 | S2 (LIGHT) | Bembeyaz portal ışığı parlaması → aniden normal kokpit aydınlığına sert kesme | SURE | 🅒 Kurguda beyaz parlamadan kokpite çözünme/karışım geçişi verilecek |
 | 16.10.2026 | taslak_01 | Cut 22 · 03:40.0 | C22 → C23 | S1 (LOOK) | Koyu mor tenli Vey → gri-kahverengi tenli geniş başlı Vey | SURE | 🅑 Koyu mor ten prompta yazılacak (→ prompt) |
 | 16.10.2026 | taslak_01 | Cut 23 · 03:50.0 | C23 → C24 | S1 (LOOK) | Mara düz beyaz kol → Amerikan bayrağı ve mavi ekran | SURE | 🅑 C24'e kostüm kısıtları eklenecek (→ prompt) |
+| 2026-10-22 | THE_PRICE_OF_HOME (2) | Kesme 01 · 00:10.0 | C01 → C02 | S3 / S4 | Gemi yönü ters dönüyor, gaz devi soldan sağa sıçrıyor | SURE | Kabul |
+| 2026-10-22 | THE_PRICE_OF_HOME (2) | Kesme 03 · 00:25.0 | C03 → C04 | S5 STATE RESET | Parlayan kristal sönük/siyah oluyor, karakterler konsol dibinden kayboluyor | SURE | Kabul |
+| 2026-10-22 | THE_PRICE_OF_HOME (2) | Kesme 04 · 00:35.0 | C04 → C05 | S1 / S5 | Konsol üstü kapalı kapak oluyor; 00:41'de erkeğin kaskı yok oluyor | SURE | Yeniden üretim önceliği |
+| 2026-10-22 | THE_PRICE_OF_HOME (2) | Kesme 05 · 00:45.0 | C05 → C06 | S4 WORLD JUMP | Fotoğraf tutulurken arkada siyah vizörlü 3. astronot kaskı beliriyor | SURE | Düzeltilecek |
+| 2026-10-22 | THE_PRICE_OF_HOME (2) | Kesme 06 · 00:55.0 | C06 → C07 | S1 / S4 | Erkeğin kaskı geri geliyor, uzaylı yok oluyor, arka duvar ekrana dönüyor | SURE | Kabul |
+| 2026-10-22 | THE_PRICE_OF_HOME (2) | Kesme 09 · 01:25.0 | C09 → C10 | S1 / S5 | Erkeğin omuz kayışları kayboluyor, arması rozete dönüyor, kristal yok oluyor | SURE | Kabul |
+| 2026-10-22 | THE_PRICE_OF_HOME (2) | Kesme 11 · 01:45.0 | C11 → C12 | S7 SOUND JUMP | 01:47'de orkestral müzik aniden kesilip 01:48'de solo yaylıya atlıyor | SURE | Kurguda crossfade ile bağlanacak |
+| 2026-10-22 | THE_PRICE_OF_HOME (2) | Kesme 14 · 02:15.0 | C14 → C15 | S3 / S4 | İstasyon ve geçit yönü ters dönüyor, gaz devi kayboluyor, Dünya dışarı taşıyor | SURE | Kabul |
+| 2026-10-22 | THE_PRICE_OF_HOME (2) | Kesme 15 · 02:20.0 | C15 → C16 | S1 LOOK JUMP | Küt burunlu kapsül yan kanatlı uzun mekiğe dönüşüyor | SURE | Kabul |
+| 2026-10-22 | THE_PRICE_OF_HOME (2) | Kesme 17 · 02:40.0 | C17 → C18 | S1 / S4 | Kokpitte kemerler yok oluyor; camda hem geçit hem Dünya aynı anda görünüyor | SURE | Mekânsal çelişki |
+| 2026-10-22 | THE_PRICE_OF_HOME (2) | Kesme 19 · 03:00.0 | C19 → C20 | S1 LOOK JUMP | Mor tenli uzaylı bej renkli geniş kemik başlıklı yaratığa dönüşüyor | SURE | Prompt kısıtı |
+| 2026-10-22 | THE_PRICE_OF_HOME (2) | Kesme 20 · 03:10.0 | C20 → C21 | S1 LOOK JUMP | Mara'nın kolunda sarı şerit yerine ABD bayrağı ve mavi ekran beliriyor | SURE | C21 kurgudan atılınca çözülür |
 
 ## ANLATIM (Gemini · `ANLATIM_TESTI.md`)
 
@@ -121,6 +149,14 @@
 | 16.10.2026 | taslak_01 | C22 | Dünya yörüngesi: Mara Eli'yi tanımaz | Dünya yörüngesi, Mara'nın sözüyle yıkılış | ✅ (Fısıltı boğuk ama tepki tuttu) |
 | 16.10.2026 | taslak_01 | C23 | Vey kristaldeki anıları içine çeker | Uzaylı ışık ağıyla dolan kristale bakıp iç çeker | ✅ |
 | 16.10.2026 | taslak_01 | C24 | Yeni başlangıç: Eli sabırla bakar | İkisi kokpitte birbirine gülümser | ⚠️ Kalıcı unutuş anlaşılamadı |
+| 2026-10-22 | THE_PRICE_OF_HOME (2) | C01–C02 | İstasyona yaklaşım ve kenetlenme | Gemi istasyona yanaşıp kenetlenir | Evet |
+| 2026-10-22 | THE_PRICE_OF_HOME (2) | C03–C06 | Takas konsolu ve sahil fotoğrafı (kaybolacak anı) | Kristalli konsol başında duruş ve fotoğraf tutuş | Kısmen (00:15-00:44 donukluk) |
+| 2026-10-22 | THE_PRICE_OF_HOME (2) | C07–C10 | Zaman daralıyor, erkeğin fedakarlık teklifi | Erkeğin onun yerini almayı teklif ettiği tam anlaşıldı | Evet |
+| 2026-10-22 | THE_PRICE_OF_HOME (2) | C11–C13 | Mara'nın teklifi reddedip elini basması | Mara elini panele basıp altın ışık dalgası yayar | Evet |
+| 2026-10-22 | THE_PRICE_OF_HOME (2) | C14–C16 | Geçidin açılışı ve Dünya'ya uçuş | Halka içinde Dünya görünür, gemi geçide dalar | Evet |
+| 2026-10-22 | THE_PRICE_OF_HOME (2) | C17–C19 | Dünya'ya varış, Mara'nın hafıza kaybı | Mara "Who are you?" diyerek unuttuğunu gösterir, erkek yıkılır | Evet (Vurucu) |
+| 2026-10-22 | THE_PRICE_OF_HOME (2) | C20 | Kristale hapsolan anılar ve uzaylının nefesi | Kristal anılarla parlar, uzaylı derin iç çeker | Evet |
+| 2026-10-22 | THE_PRICE_OF_HOME (2) | C21 | Final | İkisi birden tekrar birbirine gülümsüyor | Hayır (A1 - Bedeli sıfırlıyor) |
 
 ### Duyulan Replikler ve Anlatım Tablosu (A1–A4)
 
@@ -137,6 +173,11 @@
 | 16.10.2026 | taslak_01 | 03:36 | A3 LINE UNCLEAR | Mara'nın fısıldadığı "Who are you?" anlaşılmıyor | C22 / R24 | R24 repliği net ses kaydıyla eklenecek |
 | 16.10.2026 | taslak_01 | 03:46 | A4 SOUND OFF | Uzaylı insan sesiyle yüksek sesli "Ahhh" iç çekişi yapıyor | C23 | Klip sesi kurguda tamamen susturulacak |
 | 16.10.2026 | taslak_01 | 03:50 | A1 CONFUSED | Yıkılıştan sonra ikisi birden mutlu gülümseyince bedel boşa düştü | C24 | Eli iç sesi R26–R27 kurguda eklenecek |
+| 2026-10-22 | THE_PRICE_OF_HOME (2) | 00:58–01:02 | A4 | "I'm trying to find a way" aynı ses kaydı iki kez üst üste çalıyor | R02 | Kurguda mükerrer ses silinecek |
+| 2026-10-22 | THE_PRICE_OF_HOME (2) | 01:19–01:21 | A3 | "...for years" fısıltısı fon müziği altında boğuluyor | R05 | Müzik ducking / ses düzeltilecek |
+| 2026-10-22 | THE_PRICE_OF_HOME (2) | 01:47–01:48 | A4 | Orkestral müzik aniden kesilip solo yaylıya atlıyor | — | Kurguda crossfade yapılacak |
+| 2026-10-22 | THE_PRICE_OF_HOME (2) | 02:56 | — | Mara: "Who are you?" | R10 | Korunacak (Trajik zirve) |
+| 2026-10-22 | THE_PRICE_OF_HOME (2) | 03:06 | A4 | Uzaylı insan nefesiyle derin iç çekiyor | R11 | Klip sesi kurguda kısılacak |
 
 ## İZLEME (Gemini Simülasyonu — insan izleyici değil)
 
@@ -146,6 +187,8 @@
 |---|---|---|---|---|---|---|---|---|---|---|
 | 16.10.2026 | A (Gemini) | taslak_01 | kısmen (02:10-03:09 feda mantığı boşta) | hayır (01:16 kask yok, 03:40 uzaylı değişiyor, 03:50 ABD bayrağı) | 00:00 arkada Dünya, 00:10 gemi yan uçuyor, 01:18 kask dışından buhar, 03:00 çift Dünya | 01:37 ve 03:36 dudaksız ses; 02:04 bozuk yüz | 01:34 çift tekrar, 02:04 bozuk telaffuz, 03:36 "Her you" | 00:18, 00:21, 00:41 vakumda ses; 03:46 insan iç çekişi | 00:50-01:15 ve 01:40-02:00 | Kısmi rahatlama ama katarsis zayıf |
 | 16.10.2026 | B1 (Gemini) | taslak_01 | İstasyona kenetlendiler, kadın butona bastı, Dünya'ya döndüler | Eve dönmek | Bedelin ne olduğu anlaşılmadı (ikisi de döndü) | İkisi de kurtulup Dünya'ya döndü | 02:04 anlaşılmadı, 01:34 iki kez söylendi, 03:36 kopuktu | 00:00 Dünya'nın başta olması, 02:15'te yerini alayım deyip ikisinin dönmesi | 01:40-02:00 arası durağan planlar | Kopuk |
+| 2026-10-22 | A (Sahip - Taslak) | THE_PRICE_OF_HOME (2) | Kısmen (00:15-00:44 donukluk, 02:40 mekân, 03:10 tezat) | Hayır (00:41 kask yok, 01:25 arma, 03:10 bayrak) | 00:41 kasksız erkek; 00:45 3. astronot; 02:40 çift Dünya/geçit; 03:10 mutlu bakışma | 00:15 donukluk; 01:39 mekanik el; 03:10 sahte gülümseme | 00:58 çift ses; 01:19 "...for years" boğuk | 00:00 & 02:20 vakumda ses; 00:58 çift ses; 01:19 müzik bastırıyor; 01:47 ani müzik kesilmesi | 00:15-00:44, 01:05-01:18 | 02:56 vurucu ve buruk, 03:10 duyguyu bozuyor → Kurguyu değiştir / sesi düzelt / çekimi yeniden üret |
+| 2026-10-22 | B1 (Simülasyon) | THE_PRICE_OF_HOME (2) | İki astronot kristalle geçidi açıp Dünya'ya döndü, kadın hafızasını kaybetti | Geçidi açıp Dünya'ya dönmek | Birinin hafızasını feda etmesi | Eve döndüler ama kadın unuttu; son gülümseme belirsiz | 00:58 tekrarlandı; 01:19 müzikten anlaşılmadı | 00:15-00:44 sessiz bekleyiş; 00:41 kask kaybı; 02:40 geçit konumu; 03:10 mutlu son | 00:35-00:44 | Buruk |
 
 ## KARARLAR
 

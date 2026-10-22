@@ -126,7 +126,7 @@ Hat bağlamı:
 | Ticari kullanım (Flow ve Flow Music çıktısı) | **açık izin cümlesi yok**; yalnız "Google won't claim ownership over that content." | BİLİNMİYOR | G6d ∅ · pol |
 | ses-muzik skill'indeki "ticari kullanım: ücretli plan gerekir · 14 gün içinde silinebilir" | resmî kaynakta bulunamadı | BİLİNMİYOR | 04 §D 4 |
 
-Hat bağlamı: ticari koşul Google Hizmet Şartları'na bağlı. Haklar satırı `apexaic/POLITIKA_VE_RISK.md` §4'te, sahibin kontrolünde (04 §D 4).
+Hat bağlamı: ticari koşul Google Hizmet Şartları'na bağlı. Haklar satırı `uretim_hatti/KANAL/POLITIKA_VE_RISK.md` §4'te, sahibin kontrolünde (04 §D 4).
 
 ## 7 · Filigran ve köken
 
@@ -137,11 +137,11 @@ Hat bağlamı: ticari koşul Google Hizmet Şartları'na bağlı. Haklar satır�
 | C2PA → YouTube | C2PA metadatası varsa YouTube etiketi kendisi koyar; değiştirilemez | RESMİ | Y4 · yt/14328491 |
 | YouTube bildirimi | "Disclosing AI content won't limit a video's audience or impact its eligibility to earn money." | RESMİ | Y4 · yt/14328491 |
 | Fotogerçekçi yapay zekâ içeriği bildirilir | "disclose … photorealistic content" | RESMİ | A5 · YouTube yardımı · gör. 06.10 |
-| Flow dosyası C2PA taşıyor mu | `apexaic/CAPRAZ_YAYIN.md` §2 "gömer" diyor; süzmede resmî cümle yok | BİLİNMİYOR · P yok | — |
+| Flow dosyası C2PA taşıyor mu | `uretim_hatti/KANAL/CAPRAZ_YAYIN.md` §2 "gömer" diyor; süzmede resmî cümle yok | BİLİNMİYOR · P yok | — |
 
 Hat bağlamı:
 - Filigran promptla çözülmez → ARAÇ AYARI + yeniden dışa aktarma (ARIZA_LISTESI T17). İş emrine "Visible watermarking KAPALI" 04 §D 3'te önerildi.
-- C2PA temizlenmez (`apexaic/CAPRAZ_YAYIN.md` §2).
+- C2PA temizlenmez (`uretim_hatti/KANAL/CAPRAZ_YAYIN.md` §2).
 
 ## 8 · Veri
 
@@ -179,7 +179,7 @@ Açık ya da kapalı olması sahibin tercihidir (04 R8 NOT).
 |---|---|---|---|
 | "Aracın verdiği 10 s klip" (eski hat) | Veo 3.1 Flow'da 4/6/8 s. 10 s yalnız Omni Flash 1.1'in malzemeden video seçeneğinde var | ÇÜRÜTÜLDÜ | A2 · G1 · 03 SINAMA SETİ |
 | YouTube hedefi −16 LUFS / −1.5 dBTP | YouTube resmî sayı yayımlamıyor, yalnız sesi kısıyor. Hat −14 LUFS / ≤ −1 dBTP (yaygın değer; `kurgu.py yukseklik`) | ÇÜRÜTÜLDÜ | A6 |
-| Ünlü yüz filtresini metinle ya da tek pikseli değiştirerek aşmak | politika atlatma; kanal sağlığı riski. Yanlış ret olursa kare yeniden tasarlanır (kask, vizör, açı); filtre aşılmaz | ÇÜRÜTÜLDÜ · **RED: politika atlatma** | 04 R8 · `apexaic/POLITIKA_VE_RISK.md` |
+| Ünlü yüz filtresini metinle ya da tek pikseli değiştirerek aşmak | politika atlatma; kanal sağlığı riski. Yanlış ret olursa kare yeniden tasarlanır (kask, vizör, açı); filtre aşılmaz | ÇÜRÜTÜLDÜ · **RED: politika atlatma** | 04 R8 · `uretim_hatti/KANAL/POLITIKA_VE_RISK.md` |
 | Nano Banana 2 Flow'da varsayılan | 26.02.2026'da öyleydi; bugün değil (§5) | ÇÜRÜTÜLDÜ (eskidi) | G12c |
 | Görsel maliyeti "1.000 görsel 0,034 $" | açıkça yanlış sayı | ÇÜRÜTÜLDÜ | 02 R3 |
 | "Zincir 4. halkada kopar" | sayfa gövdesi açılmıyor, yöntem yok. ≤4 halka tavanı hipotez olarak kalır | ÇÜRÜTÜLDÜ (kanıt olarak) | A10 |

@@ -9,6 +9,7 @@ REPLIK         var
 MUZIK          var
 FIZIK_IDDIASI  yok
 MEDYA          ~/film_medya/<FILM_ADI>/
+DIYALOG        model sesi
 URETIM         Google Flow (web) · QA Gemini uygulaması
 ```
 
@@ -18,6 +19,7 @@ URETIM         Google Flow (web) · QA Gemini uygulaması
 > Her çekim **10 s** (sahip kararı 08.10.2026): çekim sayısı = HEDEF_SURE / 10. Zincir için KLIP_SURESI ≥ 10 gerekir (SMOKE P14).
 > `REPLIK` · `MUZIK` · `FIZIK_IDDIASI` = **var | yok**. Koşullu ajanlar
 > (diyalog-yazari · besteci · bilim-danismani) yalnız `var` ise çağrılır.
+> `DIYALOG` = **model sesi** (sahip kararı 21.10.2026): diyalog kurguda eklenmez; her replik videoda model sesiyle üretilir (film_dogrula M).
 > `REPLIK` ve `MUZIK` varsayılan **var**: filmlerde akıcı diyalog, ses ve efekt olur (sahip kararı, 06.10.2026).
 > `yok` yalnız hikâye bunu istiyorsa, gerekçesi §5'in altına yazılarak.
 > Başlıkları ve sütun sırasını değiştirme: `film_dogrula.py` bunlara bakar.
@@ -118,15 +120,14 @@ Sapma serbest; gerekçesi bu tablonun altına tek satır yazılır.
 |:--:|:--:|:--:|---|---|:--:|---|:--:|
 
 ```
-Kaynak: telsiz · kadraj dışı · kask içi · makine · kayıt → ses kurguda eklenir, ≤ 8 s
-        ağız kadrajda (son çare) → model dudak senkronu, ≤ 5 s, sayı yok, video promptunda tırnak içinde birebir
-        model sesi (telsiz | voice-over | ağız kadrajda) → replik video promptuna BİREBİR yazılır, Omni konuşmayı videoda
-        üretir (sahip kararı 12.10.2026); ≤ 8 s (ağız kadrajda ≤ 5 s); klip sesi filme girer (timeline klip_sesi), kurgu kaydı yedek
+Kaynak: model sesi (telsiz | kadraj dışı | kask içi | makine | kayıt | ağız kadrajda) — diyalog kurguda eklenmez (sahip kararı 21.10.2026)
+        → replik video promptuna BİREBİR yazılır, Omni konuşmayı videoda üretir; ≤ 8 s (ağız kadrajda ≤ 5 s, sayı yok);
+        klip sesi yalnız replik için filme girer (timeline klip_sesi), yatak planda
 Kayıt: HUMAN | MACHINE · bant: 2 dk 6-12 · 4 dk 12-24 · 8 dk 20-40 · 16 dk 40-70 replik
 Konuşma ve ses profilleri: ODA/F2_diyalog-yazari_<n>.md
 ```
 
-## 6. SES PLANI — model sesi kullanılmaz (istisna: §5 Kaynak = model sesi, yalnız replik)
+## 6. SES PLANI — klibin sesi kullanılmaz, yalnız §5 replikleri klipten gelir
 
 | Sahne | Katmanlar (≤4) | Kesmede köprü (J/L) | Not |
 |:--:|---|---|---|

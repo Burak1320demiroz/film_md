@@ -281,7 +281,8 @@ C04 sonucun kanıtı (bağlı gövdeler, çok yavaş geri çekilme, ölçek aç�
 | **Ayrı kayıt** | uzun filmde aynı ses, telsiz, iç ses, kadraj dışı konuşma | sesin karakter ve mekânla uyumu, kesmede ritim |
 | **Karma** | ortam/mekanik sesi klipten, ana diyalog kayıttan | iki ortamın ve müziğin üst üste binmemesi |
 
-- ⭐ **Kurgu kaydı seçildiyse replikler montajdan ÖNCE kaydedilir.** Repliksiz montaj "taslak" sayılmaz, izleyiciye gösterilmez.
+- ⭐ **21.10.2026 sahip kararı: diyalog kurguda eklenmez** — yeni filmde yalnız ilk satır (Omni içinde konuşma) kullanılır; ayrı kayıt ve karma eski filmler içindir.
+- ⭐ **Kurgu kaydı seçildiyse (eski film) replikler montajdan ÖNCE kaydedilir.** Repliksiz montaj "taslak" sayılmaz, izleyiciye gösterilmez.
   (THE_WRONG_BURN · THE_PLANET_THIEF · THE_SKY_CATCH repliksiz izlendi; üçünde de hikâye çöktü.)
 - Metinle ses tarifi kimlik kilidi değildir: Omni aynı sesi her klipte vermeyebilir (P18). İki konuşanın tonu karışırsa
   (THE_MAYDAY_SEA 00:11 ↔ 00:24) birinin satırları kayıtla değiştirilir ya da telsiz filtresiyle ayrıştırılır.
